@@ -84,7 +84,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the first solution. You will have to do the 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;guess-and-check method to figure out the second solution
 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Set the deflection in cell B16 to -2 by changing cell B11 (**x**)
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Both locations are between 0 in and 150 in
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Set the deflection in cell B16 to -2 by changing cell B11 (**x**)
+      &nbsp;&nbsp;&nbsp;&nbsp;b. Both locations are between 0 in and 150 in
 
-21. Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box
+**Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
