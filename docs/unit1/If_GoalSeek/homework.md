@@ -37,10 +37,12 @@
 #### Part 3
 12. In the “Subcontractors & Budgeting” table, create dropdowns in cells I6, I7, and I8:I9 that all contain the company options “Tesla", “Enphase", “Altair", and “Solaredge”
 13. In cells J6 - J9 use VLOOKUP and MATCH to find the service costs/labor in the table below that corresponds with the company options in the dropdown menus in I6, I7, and I8:I9 (i.e. if the company is changed using the dropdown menu in cell I6, the value of cell J6 should also correctly change to whatever that company charges for the service in the table).
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Use absolute cell references when referring to the tables in your function so that dragging down the cell will fill them properly</br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Use absolute cell references when referring to the tables in your function so that dragging </br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;down the cell will fill them properly</br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** The MATCH function in J9 must reference I8 since merged cells only preserve the topmost value
 15. Choose the company in I6 - I9 that offers the cheapest price for each service
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Solaredge has the cheapest rate for panel installation when combined with their number of installers</br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Solaredge has the cheapest rate for panel installation when combined with their number of </br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;installers
 17. In cell J11, write a formula that will calculate the total cost of all of the services. Then use Goal Seek to calculate the maximum number of hours it must take for the panels to be installed so the budget does not exceed $15,523
 
 ---
@@ -81,8 +83,8 @@
        ![Deflection2.png](images/Deflection2.png)
 
 20. Use Goal seek to compute the two x locations that result in a deflection of -2.0 inches.  Write your answer somewhere on your spreadsheet for the TA to see
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the first solution. You will have to do </br> 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the guess-and-check method to figure out the second solution
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the </br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first solution. You will have to do the guess-and-check method to figure out the second solution
 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Set the deflection in cell B16 to -2 by changing cell B11 (**x**)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Both locations are between 0 in and 150 in</br>
 
