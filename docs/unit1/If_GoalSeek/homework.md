@@ -37,10 +37,10 @@
 #### Part 3
 12. In the “Subcontractors & Budgeting” table, create dropdowns in cells I6, I7, and I8:I9 that all contain the company options “Tesla", “Enphase", “Altair", and “Solaredge”
 13. In cells J6 - J9 use VLOOKUP and MATCH to find the service costs/labor in the table below that corresponds with the company options in the dropdown menus in I6, I7, and I8:I9 (i.e. if the company is changed using the dropdown menu in cell I6, the value of cell J6 should also correctly change to whatever that company charges for the service in the table).
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Use absolute cell references when referring to the tables in your function so that dragging down the cell will fill them properly
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Use absolute cell references when referring to the tables in your function so that dragging down the cell will fill them properly</br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** The MATCH function in J9 must reference I8 since merged cells only preserve the topmost value
 15. Choose the company in I6 - I9 that offers the cheapest price for each service
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Solaredge has the cheapest rate for panel installation when combined with their number of installers
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Solaredge has the cheapest rate for panel installation when combined with their number of installers</br>
 17. In cell J11, write a formula that will calculate the total cost of all of the services. Then use Goal Seek to calculate the maximum number of hours it must take for the panels to be installed so the budget does not exceed $15,523
 
 ---
@@ -63,7 +63,7 @@
       Moment of Inertia  |   B13  |  Iu
       Deflection         |   B16  |  v
 
-18. Use the following table to write equations in the corresponding named cells in the formula<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations</br>
+18. Use the following table to write equations in the corresponding named cells in the formula<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your equations
 
       Cell      |  Picture of the equation
       --------- | ------------------------
@@ -73,7 +73,7 @@
       B15 (x>a) |   ![equationv2.png](images/equationv2.png)
 
 19. Next, write an IF or IFS statement in cell B16 that will give the answer found in cell B14 if x is less than or equal to ***a*** (B7) and in cell B15 if x is greater than ***a***(B7)
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** If ***x*** is less than or equal to ***a***, then use Deflection (***v***) for ***x≤a***</br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** If ***x*** is less than or equal to ***a***, then use Deflection (***v***) for ***x≤a***</br>
 
        If written correctly, your sheet should look like this when **x** is set to 278 and 15:
 
@@ -81,10 +81,9 @@
        ![Deflection2.png](images/Deflection2.png)
 
 20. Use Goal seek to compute the two x locations that result in a deflection of -2.0 inches.  Write your answer somewhere on your spreadsheet for the TA to see
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the first solution. You will have to do the 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;guess-and-check method to figure out the second solution
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the first solution. You will have to do </br> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the guess-and-check method to figure out the second solution
 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Set the deflection in cell B16 to -2 by changing cell B11 (**x**)
-      &nbsp;&nbsp;&nbsp;&nbsp;b. Both locations are between 0 in and 150 in
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Set the deflection in cell B16 to -2 by changing cell B11 (**x**)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Both locations are between 0 in and 150 in</br>
 
 **Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
