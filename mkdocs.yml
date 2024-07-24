@@ -10,6 +10,8 @@ theme:
 nav:
   - Home: index.md
   - Unit 1:
+    - If Statements and Goal Seek:
+      - Homework: unit1/If_GoalSeek/homework.md
     - Lookups and Match:
       - Homework: unit1/homework/lookups_and_match.md
     - Query Function:
