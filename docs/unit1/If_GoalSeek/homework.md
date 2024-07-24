@@ -15,12 +15,12 @@
 5. Change the dropdown in cell C6 to “East”
 6. In cell C7, write an IFS statement that changes the cell's value based on the dropdown in cell C6. Use these values for each direction:
   
-Variable |  Value
--------- | -------
-East     |   600 
-West     |   630 
-North    |   500
-South    |   710
+   Variable |  Value
+   -------- | -------
+   East     |   600 
+   West     |   630 
+   North    |   500
+   South    |   710
 
 7. In cell C9, write a formula that calculates the total annual kilowatt-hour (kWh) generation of the solar panel system. Then use Goal Seek to calculate the number of panels needed for the annual kWh generation to be 120% of the annual kWh usage
 
@@ -47,37 +47,36 @@ South    |   710
 16. Navigate to the Simply Supported Beam sheet
 17. Name the cells in the spreadsheet according to this table:
 
-Variable           |  Cell  | Name
------------------- | ------ | -----
-Load               |   B4   |  P
-Modulus            |   B5   |  E
-Length             |   B6   |  L
-Load offset        |   B7   |  a
-Load offset        |   B8   |  b
-Base               |   B9   |  base
-Height             |   B10  |  ht
-Distance           |   B11  |  x
-Moment of Inertia  |   B13  |  Iu
-Deflection         |   B16  |  v
+   Variable           |  Cell  | Name
+   ------------------ | ------ | -----
+   Load               |   B4   |  P
+   Modulus            |   B5   |  E
+   Length             |   B6   |  L
+   Load offset        |   B7   |  a
+   Load offset        |   B8   |  b
+   Base               |   B9   |  base
+   Height             |   B10  |  ht
+   Distance           |   B11  |  x
+   Moment of Inertia  |   B13  |  Iu
+   Deflection         |   B16  |  v
 
 18. Use the following table to write equations in the corresponding named cells in the formula<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations</br>
 
-Cell      |  Picture of the equation
---------- | ------------------------
-   B8     |   ![equationb.png](images/equationb.png) 
-   B13    |   ![equationIu.png](images/equationIu.png) 
-B14 (x≤a) |   ![equationv1.png](images/equationv1.png)
-B15 (x>a) |   ![equationv2.png](images/equationv2.png)
+   Cell      |  Picture of the equation
+   --------- | ------------------------
+      B8     |   ![equationb.png](images/equationb.png) 
+      B13    |   ![equationIu.png](images/equationIu.png) 
+   B14 (x≤a) |   ![equationv1.png](images/equationv1.png)
+   B15 (x>a) |   ![equationv2.png](images/equationv2.png)
 
 19. Next, write an IF or IFS statement in cell B16 that will give the answer found in cell B14 if x is less than or equal to ***a*** (B7) and in cell B15 if x is greater than ***a*** (B7)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** If ***x*** is less than or equal to ***a***, then use Deflection (***v***) for ***x≤a***</br>
 
-If written correctly, your sheet should look like this when **x** is set to 278 and 15:
+   If written correctly, your sheet should look like this when **x** is set to 278 and 15:
 
-![Deflection1.png](images/Deflection1.png)
-![Deflection2.png](images/Deflection2.png)
+   ![Deflection1.png](images/Deflection1.png)
+   ![Deflection2.png](images/Deflection2.png)
 
 20. Use Goal seek to compute the two x locations that result in a deflection of -2.0 inches.  Write your answer somewhere on your spreadsheet for the TA to see
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the first solution. You will have to do the 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;guess-and-check method to figure out the second solution
 
