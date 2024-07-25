@@ -60,4 +60,6 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 
 ![readingex6.png](images/readingex6.png)
 
-## Pre-Class Quiz Challenge
+---
+
+# Pre-Class Quiz Challenge
