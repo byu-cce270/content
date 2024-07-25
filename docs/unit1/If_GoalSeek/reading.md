@@ -52,7 +52,7 @@ An IFS statement only technically requires two arguments, both of which are near
 
 Using the same premise as the IF statement, we can utilize the table we used before. This time around, we will categorize the different lengths of driveways into three tiers: short, medium, and long.
 
-![readingex5.png](images/readingex5.png)
+![readingex5fixed.png](images/readingex5fixed.png)
 
 **Note**: The third condition ```<=50``` includes ```=``` so that 50 is included in "less than or **equal** to 50
 
