@@ -13,6 +13,7 @@ nav:
     - If Statements and Goal Seek:
       - Reading:
         - IF/IFS Statements: unit1/If_GoalSeek/IF_Statement_Reading.md
+        - Goal Seek: unit1/If_GoalSeek/Goal_Seek_Reading.md
       - Homework: unit1/If_GoalSeek/homework.md
     - Lookups and Match:
       - Homework: unit1/homework/lookups_and_match.md
