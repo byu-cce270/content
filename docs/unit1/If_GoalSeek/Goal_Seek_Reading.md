@@ -21,9 +21,9 @@ Goal seek should now be installed and ready to use!
 To use Goal Seek, you will find it on the top ribbon, **Extensions > Add-ons > Goal Seek > Open**
 
 Goal seek takes three steps to use after your sheet is setup:
-- **Set Cell**
-- **To Value**
-- **By Changing Cell**
+  - **Set Cell**
+  - **To Value**
+  - **By Changing Cell**
 
 ## Example Problem 
 Let's use the example of a contractor wanting to find what he would have to charge to make a profit of **$1250**, by building his friend a 12' x 12' deck. Given the cost of materials ($6000) and the $22/hr of pay for each employee, we can calculate the project cost. Using goal seek, we can allow the computer to do the rest of the work for us.
