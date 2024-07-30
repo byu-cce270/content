@@ -1,6 +1,6 @@
 # Goal Seek
 
-**Goal Seek** is an add-on plugin for Google Sheets. It is a powerful tool that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. A great example of this is often found in sales when trying to determine how many units need to be sold to break even or meet a certain quota.
+**Goal Seek** is an add-on plugin for Google Sheets. It is a powerful tool that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. A great example of this is often found in sales when determining how many units need to be sold to break even or meet a certain quota.
 
 ## Installing Goal Seek
 
@@ -29,7 +29,9 @@ Goal seek takes three steps to use after your sheet is setup:
 ## Example Problem 
 Let's use the example of a contractor wanting to find what he would have to charge to make a profit of **$1250**, by building his friend a 12' x 12' deck. Given the cost of materials ($6000) and the $22/hr of pay for each employee, we can calculate the project cost. Using goal seek, we can allow the computer to do the rest of the work for us.
 
-First, select the cell you want to set our ba by 1) selecting the cell (B11) and 2) clicking the **Set Cell** grid icon on the goal seek tab
+First, select the cell you want to set by 1) selecting the cell (B11) and 2) clicking the **Set Cell** grid icon on the goal seek tab. 
+
+**Hint**: This cell should **almost always** be the cell that contains your formula.
 
 ![GoalSeekex1.png](images/GoalSeekex1.png)
 
