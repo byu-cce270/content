@@ -14,8 +14,8 @@ nav:
       - Reading:
         - IF/IFS Statements: unit1/3_if_goalseek/IF_Statement_Reading.md
         - Goal Seek: unit1/3_if_goalseek/Goal_Seek_Reading.md
-      - In Class: unit1/3_if_goalseek/ifgs_exercise.md
-      - Homework: unit1/3_if_goalseek/ifgs_homework.md
+      - In Class: unit1/3_if_goalseek/ifgs_class.md
+      - Homework: unit1/3_if_goalseek/ifgs_hw.md
     - Lookups and Match:
       - Homework: unit1/homework/lookups_and_match.md
     - Query Function:
