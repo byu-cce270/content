@@ -11,6 +11,7 @@
 
 #### Part 1
 3. In the first code block, make a dictionary called MaterialsDictionary. Inside of this, use the following keys and their corresponding values to populate the dictionary:
+
       Key         |             Value
       ----------- | ------------------------------------
       "Guide"     |  ["$ per ton","$ ship ton per mile"] 
@@ -39,6 +40,7 @@ The input statements should create three different variables with names related 
       “Cement”    |  [130,2]  |    90
       "Lumber"    |  [34,4]   |    90
       "Glass"     |  [50,15]  |    90
+
   Your total should come out to **$5574**
 
 10. Turn on sharing and editing. Turn in the link to the Learning Suite feedback box!
