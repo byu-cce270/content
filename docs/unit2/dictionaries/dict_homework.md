@@ -28,9 +28,9 @@
 **Hint**: Use the "amountmat" variable in your for-loop statement
 6. In the loop, use three input statements that:
    
-   - Ask what material the user wants to buy
-   - Ask how much of that material the user wants to buy
-   - Ask how far the material will be shipped
+      - Ask what material the user wants to buy
+      - Ask how much of that material the user wants to buy
+      - Ask how far the material will be shipped
      
 The input statements should create three different variables with names related to their prompts
 
