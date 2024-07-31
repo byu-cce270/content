@@ -34,6 +34,7 @@ The input statements should create three different variables with names related 
 7. Create a variable called "cost" that references the dictionary and pulls the value related to whatever material is input by the user
 8. Finally, multiply the cost of the material and its amount and add this to the cost of shipping the material times the distance. Add this to the total variable
 9. Run all the cells and then test the function using this table:
+    
       Key         |   Value   |  Distance
       ----------- | --------- | ----------
       “Steel”     |  [700,5]  |    90
