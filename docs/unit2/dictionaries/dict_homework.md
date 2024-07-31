@@ -27,10 +27,13 @@
 5. Write a **for-loop** that will iterate as many times as there are different types of materials (at the very end, it should loop 4 times)
 **Hint**: Use the "amountmat" variable in your for-loop statement
 6. In the loop, use three input statements that:
+   
    - Ask what material the user wants to buy
    - Ask how much of that material the user wants to buy
    - Ask how far the material will be shipped
+     
 The input statements should create three different variables with names related to their prompts
+
 7. Create a variable called "cost" that references the dictionary and pulls the value related to whatever material is input by the user
 8. Finally, multiply the cost of the material and its amount and add this to the cost of shipping the material times the distance. Add this to the total variable
 9. Run all the cells and then test the function using this table:
@@ -43,5 +46,4 @@ The input statements should create three different variables with names related 
       "Glass"     |  [50,15]  |    90
 
   Your total should come out to **$5574**
-
-10. Turn on sharing and editing. Turn in the link to the Learning Suite feedback box!
+  Turn on sharing and editing. Turn in the link to the Learning Suite feedback box!
