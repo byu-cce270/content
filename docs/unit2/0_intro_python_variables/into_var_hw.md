@@ -2,13 +2,15 @@
 
 **Problem/Program:** Building an Open Channel Flow Calculator
 
-**Purpose:** To use your knowledge of different variables to calculate the flow in an open channel. 
+**Purpose:** To use your knowledge of different variables to calculate the flow in an open channel. You will create different types of variables and then use them in equations.
+
+**Challenge:** While working on this assignment, look through the code that was already written and try to see if you understand it. We will be teaching you about this later on. 
 
 There are two common types of channel geometries: Rectangular and Trapezoidal as shown here:
 
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet- HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/u/0/d/1rUlyf8lmHztFnhjQZp-jJvgtg7bNhADAEoz0q4NbXms/edit)
+   [Starter Sheet - HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/u/0/d/1rUlyf8lmHztFnhjQZp-jJvgtg7bNhADAEoz0q4NbXms/edit)
 2. Rename it something like “[your name] HW - Introduction to Python and Variables”
 
 Don’t be too overwhelmed by the code. It will clearly indicate where to put different steps.
