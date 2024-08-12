@@ -38,12 +38,12 @@
 8. Finally, multiply the cost of the material and its quantity and add this to the cost of shipping the material times the distance. Add this to the total variable
 9. Run all the cells and then test the function using this table:
     
-      Key         |   Value   |  Distance
+      Material    |   Amount  |  Distance
       ----------- | --------- | ----------
-      “Steel”     |  [700,5]  |    90
-      “Cement”    |  [130,2]  |    90
-      "Lumber"    |  [34,4]   |    90
-      "Glass"     |  [50,15]  |    90
+      “Steel”     |     4     |    90
+      “Cement”    |     1     |    90
+      "Lumber"    |     6     |    90
+      "Glass"     |     2     |    90
 
      Your total should come out to **$5574**
   
