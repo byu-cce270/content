@@ -15,9 +15,8 @@ Don’t be too overwhelmed by the code. It will clearly indicate where to put di
 
 ---
 Step 3. Find the part of the code that looks like this:
-```python
-################################ Step 3 here ##################################
-```
+> ################################ Step 3 here ##################################
+
 Create the following variables with comments explaining the options:
 
 | Variable name |                     Things the comments                     | Variable Type |
