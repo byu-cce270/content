@@ -1,11 +1,11 @@
 #  HW: Dictionaries
 
-**Purpose:** Learn how to create a dictionary and how to call information from it
+**Purpose:** Learn how to create a dictionary and how to call information from it.
 
 ## Instructions
 1. First, make a copy of the starter sheet here:
-   [Starter Sheet- HW IF Statements & Goal Seek](https://colab.research.google.com/drive/118eLrrkwC5i3f_dR_WrOxBOsVSKCbwzY)
-2. Rename is something like "[Your Name] HW 2.4 - Dictionaries"
+   [Starter Sheet- HW Dictionaries](https://colab.research.google.com/drive/118eLrrkwC5i3f_dR_WrOxBOsVSKCbwzY)
+2. Rename it something like "[Your Name] HW 2.5 - Dictionaries"
 
 ---
 
@@ -32,10 +32,10 @@
       - Ask how much of that material the user wants to buy
       - Ask how far the material will be shipped
      
-      The input statements should create three different variables with names related to their prompts
+      The input statements should create three different variables with appropriate names related to their prompts
 
 7. Create a variable called "cost" that references the dictionary and pulls the value related to whatever material is input by the user
-8. Finally, multiply the cost of the material and its amount and add this to the cost of shipping the material times the distance. Add this to the total variable
+8. Finally, multiply the cost of the material and its quantity and add this to the cost of shipping the material times the distance. Add this to the total variable
 9. Run all the cells and then test the function using this table:
     
       Key         |   Value   |  Distance
