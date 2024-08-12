@@ -10,7 +10,9 @@ There are two common types of channel geometries: Rectangular and Trapezoidal as
 
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet - HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/u/0/d/1rUlyf8lmHztFnhjQZp-jJvgtg7bNhADAEoz0q4NbXms/edit)
+  <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/0_intro_python_variables/Starter_Sheet_HW_Introduction_to_Python_and_Variables.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+   </br>It should be called: **Starter Sheet HW - Introduction to Python and Variables**
+
 2. Rename it something like “[your name] HW - Introduction to Python and Variables”
 
 Don’t be too overwhelmed by the code. It will clearly indicate where to put different steps.
