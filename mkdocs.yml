@@ -24,6 +24,7 @@ nav:
       - Homework: unit1/homework/safety_db.md
   - Unit 2:
     - Introduction to Python and Variables:
+      - Reading: unit2/0_intro_python_variables/into_var_read.md 
       - Homework: unit2/0_intro_python_variables/into_var_hw.md
     - Variables:
       - Reading: unit2/reading/variables.md
