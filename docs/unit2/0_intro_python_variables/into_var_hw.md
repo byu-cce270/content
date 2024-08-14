@@ -36,15 +36,15 @@ Create the following variables with comments explaining the options:
 
 Steps 4-10. Use the  following table to write equations in the indicated  places. They should be written under the ########### Step # ############# line:
 
-|    Location     | Output Variable | Indentation |            Equation            |
-|:---------------:|:---------------:|:-----------:|:------------------------------:|
-| ### Step 4 ###  |        A        |     yes     |             A = by             |
-| ### Step 5 ###  |        A        |     yes     |         A = (b+T)/2*y          |
-| ### Step 6 ###  |        P        |     yes     |            P = b+2y            |
-| ### Step 7 ###  |        P        |     yes     |  P = b+2*(((T-b)/2)^2+y^2)^.5  |
-| ### Step 8 ###  |       Rh        |     no      |            Rh = A/P            |
-| ### Step 9 ###  |        Q        |     no      | Q = (u/n)A(Rh^(2/3))*(So**.5)  |
-| ### Step 10 ### |        V        |     no      |            V = Q/A             |
+|    Location     | Output Variable | Indentation |           Equation           |
+|:---------------:|:---------------:|:-----------:|:----------------------------:|
+| ### Step 4 ###  |        A        |     yes     |            A = by            |
+| ### Step 5 ###  |        A        |     yes     |        A = (b+T)/2*y         |
+| ### Step 6 ###  |        P        |     yes     |           P = b+2y           |
+| ### Step 7 ###  |        P        |     yes     | P = b+2*(((T-b)/2)^2+y^2)^.5 |
+| ### Step 8 ###  |       Rh        |     no      |           Rh = A/P           |
+| ### Step 9 ###  |        Q        |     no      | Q = (u/n)A(Rh^(2/3))*(So^.5) |
+| ### Step 10 ### |        V        |     no      |           V = Q/A            |
 
 ## Test Your Code
 Try out your code! Use the following inputs:

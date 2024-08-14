@@ -1,11 +1,15 @@
 # **HW: Lists**
+
 ---
+
 **Purpose:** Learn how to create and manipulate lists to call certain information from them.
 
-**Instructions**
 ---
-1.   Create a new Python notebook and rename it something like "[Your Name] HW 2.2 - Lists"
-2.   In the first code block, create four new lists with names: task_names, task_durations, material_names, and material_quanities.
+
+**Instructions**
+
+1.  Create a new Python notebook and rename it something like "[Your Name] HW 2.2 - Lists"
+2. In the first code block, create four new lists with names: task_names, task_durations, material_names, and material_quanities.
 3. In the task_names list, add at least 7 activities that would take place during the construction of building. (Ex. Foundation, Framing, Landscaping, etc.)
 4. In the task_durations list, add the associated durations of each activity in days. 
 5. In the material_names lists, add at least 4 materials you would need for the construction of this building.
