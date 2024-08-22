@@ -22,3 +22,9 @@ By inserting a pivot table, we can create a table summarizing the data. One vari
 
 ## Pre-Class Quiz Challenge
 
+### Additional Readings
+Below are some links to additional readings.
+https://support.google.com/docs/answer/1272900?hl=en-GB&co=GENIE.Platform%3DDesktop
+https://www.howtogeek.com/407943/what-are-pivot-tables-in-google-sheets-and-how-do-i-use-them/
+https://www.benlcollins.com/spreadsheets/pivot-tables-google-sheets/
+
