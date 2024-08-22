@@ -72,3 +72,4 @@ Turn sharing, editing on. Then turn in the link to learning suite in the feedbac
 |:---------------------------------------------------------------------------------------------------------------:|:---------------:|
 | Input statements are made correctly, stored in the correct variable and are stored as the correct variable type |       15        |
 |                     Equations are typed in correctly and are stored in the correct variable                     |       15        |
+|                                 <div style="text-align: right">**Total**</div>                                  |       30        |

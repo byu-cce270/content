@@ -10,18 +10,28 @@ theme:
 nav:
   - Home: index.md
   - Unit 1:
+    - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
+    - Lookups, Match, Data Validation, and Conditional Formatting:
+        - Reading: unit1/1_lookup_match/lookmat_read.md
+        - In Class: unit1/1_lookup_match/lookmat_class.md
+        - Homework: unit1/1_lookup_match/lookmat_hw.md
+    - Analyzing and Managing Data:
+        - Reading: unit1/2_analyzing_managing_data/data_read.md
+        - In Class: unit1/2_analyzing_managing_data/data_class.md
+        - Homework: unit1/2_analyzing_managing_data/data_hw.md
     - If Statements and Goal Seek:
-      - Reading:
-        - IF/IFS Statements: unit1/3_if_goalseek/IF_Statement_Reading.md
-        - Goal Seek: unit1/3_if_goalseek/Goal_Seek_Reading.md
+      - Reading: unit1/3_if_goalseek/ifgs_read.md
       - In Class: unit1/3_if_goalseek/ifgs_class.md
       - Homework: unit1/3_if_goalseek/ifgs_hw.md
-    - Lookups and Match:
-      - Homework: unit1/homework/lookups_and_match.md
-    - Query Function:
-      - Reading: unit1/reading/query_function.md
-      - In Class: unit1/exercises/employee_db.md
-      - Homework: unit1/homework/safety_db.md
+    - Pivot Table and Query Function:
+      - Reading: unit1/4_pivot_querey/pivquer_read.md
+      - In Class: unit1/4_pivot_querey/pivquer_class.md
+      - Homework: unit1/4_pivot_querey/pivquer_hw.md
+    - Pivot Table and Query Function:
+        - Reading: unit1/5_grantt_charts/grantt_read.md
+        - In Class: unit1/5_grantt_charts/grantt_class.md
+        - Homework: unit1/5_grantt_charts/grantt_hw.md
+
   - Unit 2:
     - Introduction to Python and Variables:
       - Reading: unit2/0_intro_python_variables/into_var_read.md
