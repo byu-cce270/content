@@ -4,13 +4,13 @@
 
 # Pre Class Reading Assignment
 
-Before class, you will be learning about a few different type of IF Statements. For example IF and IF. You will also learn about Goal Seek.
+Before class, you will learn about a few types of IF Statements: IF and IFS. You will also learn about Goal Seek.
 
 ---
 
 ## IF Statements
 
-**IF Statements** are a function within Google Sheets that can compare two values and determine if it is true or false. This type of two-outcome expression in programming is known as a boolean.
+**IF Statements** are a function within Google Sheets that can compare two values and determine if they are true or false. This type of two-outcome expression in programming is known as a boolean.
 
 ### Syntax
 
@@ -30,7 +30,7 @@ Let's look at a simple example of an IF statement using strings. Here are a few 
 
 ![readingex1.png](images/readingex1.png)
 
-We can write a single statement in cell C2 and drag it down and watch it populate with either a "Yes" or a "No", all depending on the conditional statement we gave the function.
+We can write a single statement in cell C2, drag it down, and watch it populate with either a "Yes" or a "No" depending on the conditional statement we gave the function.
 
 ![readingex2.png](images/readingex2.png)
 
@@ -142,3 +142,13 @@ Each attempt by the computer tries to get closer and closer by guessing a number
 ---
 
 # Pre-Class Quiz Challenge
+
+Here is a link for the pre-class starter sheet: [IF Statement Pre-Class](https://docs.google.com/spreadsheets/d/1THgXpQWhGptdaxTNjyA9lHC3aBrUcUookT472WKRKFk/edit?usp=sharing)
+
+## Instructions
+
+1. In column D, use RANDBETWEEN to give points to Students randomly. Points should be between 0 and 100. Then copy and paste the results to lock in the values.
+2. In column E, write a simple IF statement in the Pass/Fail column to indicate "Pass" or "Fail" depending on whether they scored over 60/100.
+3.  In column F, write a complex IF statement in the "Grade" column to assign a letter grade to each student based on their points:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90-100 = A, 80-89 = B, 70-79 = C, 60-69 = D, < 60 = F
