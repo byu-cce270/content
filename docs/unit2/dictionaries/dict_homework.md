@@ -4,7 +4,7 @@
 
 ## Instructions
 1. First, make a copy of the starter sheet here:
-   [Starter Sheet- HW Dictionaries](https://colab.research.google.com/drive/118eLrrkwC5i3f_dR_WrOxBOsVSKCbwzY)
+   <a href=\"https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/dictionaries/Starter_Sheet_HW_Dictionaries.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>
 2. Rename it something like "[Your Name] HW 2.5 - Dictionaries"
 
 ---
