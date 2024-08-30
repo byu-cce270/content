@@ -68,7 +68,7 @@
 
 19. Use the following table to write equations in the corresponding named cells in the formula<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your equations
 
-      Cell      |  Picture of the equation
+      Cell      |  Equation
       --------- | ------------------------
          B8     |   ![equationb.png](images/equationb.png) 
          B13    |   ![equationIu.png](images/equationIu.png) 
