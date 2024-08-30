@@ -29,12 +29,12 @@
 
       Cell | Equation
      ----- | ---------------
-       E6  | $`°C=(°F-32)*\frac{5}{9}`$
-       E9  | $`F_T = -4.85 + \frac{°C}{4}`$
+       E6  | $`C=(F-32)*\frac{5}{9}`$
+       E9  | $`F_T = -4.85 + \frac{C}{4}`$
    
 7. vlookup
-8. $`°C=(°F-32)*\frac{5}{9}`$
-9. $`F_T = -4.85 + \frac{°C}{4}`$
+8. $`C=(F-32)*\frac{5}{9}`$
+9. $`F_T = -4.85 + \frac{C}{4}`$
 10. enter in the formulas in these cells and apply them to the entire columns
 
 ---
