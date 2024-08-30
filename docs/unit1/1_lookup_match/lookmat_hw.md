@@ -40,10 +40,12 @@
      ----- | ---------------
        C15  | ![equationrcp.png](images/equationrcp.png)
        D15  | ![equationpf.png](images/equationpf.png)
-       E15  | ![equationrcl.png](images/equationrcl.png)
+       E15  | ![equationcl.png](images/equationcl.png)
        G15  | ![equationd.png](images/equationd.png)
    
-8. If you did everything right the first row should look like this: 
+8. If you did everything right the first row should look like this:
+
+   ![checkwork.png](images/checkwork.png)
 ---
 
 #### Part 2
