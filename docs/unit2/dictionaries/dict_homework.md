@@ -53,12 +53,12 @@
 
 # Rubric
 
-   |**Item**                                                            | **Amount** |  
-   |------------------------------------------------------------------- | ---------  |
-   |The dictionary is properly created                                  |     5      |
-   |The for loop is defined correctly                                   |     6      |
-   |The input statements and related variables are properly created     |     6      |
-   |The information is taken from the dictionary correctly              |     4      |
-   |The total cost is calculated correctly                              |     5      |
-   |The total is returned                                               |     2      |
-   |<div style="text-align: right">**Total**</div>                      |   **30**   |
+   | **Item**                                                             |  **Amount**  |  
+   |:------------------------------------------------------------------- :|: ---------  :|
+   | The dictionary is properly created                                   |       5      |
+   | The for loop is defined correctly                                    |       6      |
+   | The input statements and related variables are properly created      |       6      |
+   | The information is taken from the dictionary correctly               |       4      |
+   | The total cost is calculated correctly                               |       5      |
+   | The total is returned                                                |       2      |
+   | <div style="text-align: right">**Total**</div>                       |    **30**    |
