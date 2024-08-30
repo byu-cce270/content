@@ -18,7 +18,8 @@
    8. Screenshot 4: (Take a screenshot showing that you have joined the class teams)
    9. Screenshot 5: (Take a screenshot showing you have a Google folder set up for this class)
    10. Sign up for a time to meet with a TA:
-   Once you meet with a TA they will give you the appropriate amount of points in Learning Suite. 
+       [Fall 2024 TA Sign Up](https://docs.google.com/spreadsheets/d/1nqcw1yafB527-MO8wGG0HVdsEkRI3NXKXWsEookGgos/edit?usp=sharing)
+   </br> Once you meet with a TA they will give you the appropriate amount of points in Learning Suite. 
    You will have until the end of the second full week to do so.
 
 
@@ -29,8 +30,9 @@ Turn sharing, editing on. Then turn in the link to learning suite in the feedbac
 
 |                       Item                       | Points Possible |
 |:------------------------------------------------:|:---------------:|
-|     All the questions are answered correctly     |        9        |
+|     All the questions are answered correctly     |        8        |
 | All the screenshots are included and are correct |       10        |
-|   At least 4 times are included in question 1    |        3        |
-|   At least 4 times are included in question 1    |        8        |
+|   At least 4 times are included in question 1    |        4        |
+|     Signed up for a time to meet a TA            |        2        |
+|                  Met with a TA                   |        6        |
 |  <div style="text-align: right">**Total**</div>  |       30        |
