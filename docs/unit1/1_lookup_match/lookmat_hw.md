@@ -33,7 +33,7 @@
        E9  | $`F_T = -4.85 + \frac{C}{4}`$
    
 7. vlookup
-8. $`C = \frac{(F - 32) \cdot 5}{9}`$
+8. $\frac{5}{9}$
 9. $`F_T = -4.85 + \frac{C}{4}`$
 10. enter in the formulas in these cells and apply them to the entire columns
 
