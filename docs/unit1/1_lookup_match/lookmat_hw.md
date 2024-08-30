@@ -29,12 +29,10 @@
 
       Cell | Equation
      ----- | ---------------
-       E6  | $`\[ C = \frac{(F - 32) \cdot 5}{9} \]`$
-       E9  | $`F_T = -4.85 + \frac{C}{4}`$
+       E6  | 
+       E9  | 
    
 7. vlookup
-8. $\frac{5}{9}$
-9. $`F_T = -4.85 + \frac{C}{4}`$
 10. enter in the formulas in these cells and apply them to the entire columns
 
 ---
