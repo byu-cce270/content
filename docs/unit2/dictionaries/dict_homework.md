@@ -3,11 +3,9 @@
 **Purpose:** Learn how to create a dictionary and how to call information from it.
 
 ## Instructions
-1. First, make a copy of the starter sheet here:
+1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/dictionaries/Starter_Sheet_HW_Dictionaries.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-   <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/dictionaries/Starter_Sheet_HW_Dictionaries.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-3. Rename it something like "[Your Name] HW 2.5 - Dictionaries"
+2. Rename it something like "[Your Name] HW 2.5 - Dictionaries"
 
 ---
 
