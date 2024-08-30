@@ -29,8 +29,8 @@
 
       Cell | Equation
      ----- | ---------------
-       E6  | 
-       E9  | 
+       E6  | ![equationc.png](images/equationc.png)
+       E9  | ![equationft.png](images/equationft.png)
    
 7. vlookup
 10. enter in the formulas in these cells and apply them to the entire columns
