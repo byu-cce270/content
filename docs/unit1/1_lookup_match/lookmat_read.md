@@ -28,7 +28,7 @@ There will be 3 short reading assignment before the next class. It will be on Lo
 3. Now add dropdowns in cells D2 to D25 for the level of each service can recieve (Full, Partial, and Finishing)
 4. In cells E2 to E25 use the Vlookup and Match functions to correctly give a quote for the service and type that the customer would like mulitplied by the quantity.
 
-Look below for a solution to see if you did it correctly and for some hints
+Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
 <details>
 <summary><b>Solution</b></summary>
