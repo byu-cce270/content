@@ -24,13 +24,13 @@ nav:
       - In Class: unit1/3_if_goalseek/ifgs_class.md
       - Homework: unit1/3_if_goalseek/ifgs_hw.md
     - Pivot Table and Query Function:
-      - Reading: unit1/4_pivot_querey/pivquer_read.md
-      - In Class: unit1/4_pivot_querey/pivquer_class.md
-      - Homework: unit1/4_pivot_querey/pivquer_hw.md
+      - Reading: unit1/4_pivot_query/pivquer_read.md
+      - In Class: unit1/4_pivot_query/pivquer_class.md
+      - Homework: unit1/4_pivot_query/pivquer_hw.md
     - Pivot Table and Query Function:
-        - Reading: unit1/5_grantt_charts/grantt_read.md
-        - In Class: unit1/5_grantt_charts/grantt_class.md
-        - Homework: unit1/5_grantt_charts/grantt_hw.md
+        - Reading: unit1/5_gantt_charts/gantt_read.md
+        - In Class: unit1/5_gantt_charts/gantt_class.md
+        - Homework: unit1/5_gantt_charts/gantt_hw.md
 
   - Unit 2:
     - Introduction to Python and Variables:

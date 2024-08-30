@@ -18,17 +18,8 @@
    8. Screenshot 4: (Take a screenshot showing that you have joined the class teams)
    9. Screenshot 5: (Take a screenshot showing you have a Google folder set up for this class)
    10. Sign up for a time to meet with a TA:
-   Once you meet with a TA they will give you the appropriate amount of points in Learning Suite
-
-
-
-
-
-
-
-
-
-
+   Once you meet with a TA they will give you the appropriate amount of points in Learning Suite. 
+   You will have until the end of the second full week to do so.
 
 
 ## Turning in/Rubric
