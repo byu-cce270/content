@@ -25,16 +25,25 @@
       Stoke's law coefficient           |   E10  |  A
       Specific gravity correction factor|   E11  |  Gc
 
-5. Use the following table to write equations in the corresponding named cells in the formula:
+5. Use the table of equations below to calculate the following cell values:
 
       Cell | Equation
      ----- | ---------------
        E6  | ![equationc.png](images/equationc.png)
        E9  | ![equationft.png](images/equationft.png)
    
-7. vlookup
-10. enter in the formulas in these cells and apply them to the entire columns
-
+6. In cell E10, use VLOOKUP and MATCH to find the correct Stokes’ law coefficient (Use the purple Table of Stokes Law Coefficients in the “Tables” sheet)
+7. Use the table of equations below to calculate the following cell values, then apply the equations to the rest of their related columns:
+   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** You will need to use both absolute and relative cell references in your equations </br>
+   
+      Cell | Equation
+     ----- | ---------------
+       C15  | ![equationrcp.png](images/equationrcp.png)
+       D15  | ![equationpf.png](images/equationpf.png)
+       E15  | ![equationrcl.png](images/equationrcl.png)
+       G15  | ![equationd.png](images/equationd.png)
+   
+8. If you did everything right the first row should look like this: 
 ---
 
 #### Part 2
