@@ -9,4 +9,5 @@
 ---
 
 #### Part 1
-3. 
+3. Using the chart below, write six functions that calculate the deflection and moment for each beam scenario shown
+  ![beamchart.png](images/beamchart.png)
