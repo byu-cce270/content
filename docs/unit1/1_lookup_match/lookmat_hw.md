@@ -55,7 +55,7 @@
 #### Part 2
 1. Navigate to the Soil Services sheet
 2. In column D, use the VLOOKUP and MATCH functions to find the correct price per test for each row (Use the blue table in the Tables sheet)
-   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Be careful with the search_type parameter in your MATCH function - in this case, your search_key must be approximated </br>
+   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Be careful with the search_type parameter in your MATCH function - in this case, your </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_key must be approximated rather than exact</br>
 4. In column E, multiply the test quantities and prices per test to get the total price for each row
 5. In cell E33, sum the total prices in column E - if you did it correctly, your total should be $15,202
 
