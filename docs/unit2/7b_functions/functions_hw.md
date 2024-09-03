@@ -16,7 +16,7 @@
 
 4. Calculate and return the moment of inertia using this formula
 
-  ![momentofinertia.png](images/momentofinertia.png)
+  ![equationIu.png](images/equationIu.png)
 
 5. Calculate and return maximum bending stress using this formula
 
