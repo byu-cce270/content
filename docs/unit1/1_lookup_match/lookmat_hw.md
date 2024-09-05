@@ -66,6 +66,24 @@
 #### Part 3
 1. Navigate to the Material Estimator sheet
 2. In the merged cell B2:C2, create a dropdown menu using data validation that includes the four gravel types in the red table in the Tables sheet
-3. In cell B7, use the VLOOKUP function to find the correct price based on the gravel type that is chosen using the dropdown menu
+3. Create a Data Validation in B3 and B4 to allow the input of only numbers greater than 0. Have it reject any invalid input
+4. In B5, convert the area of the gravel into volume. You will also need to go from square feet to cubic yards
+5. To convert the volume to tons multiply B5 by 1.4 in cell B6
+6. In cell B7, use the VLOOKUP function to find the correct price based on the gravel type that is chosen using the dropdown menu
+7. Finally in cell B8, multipy cells B6 and B7 to get your total.
+8. You can make sure everything is right by checking your anwser below
 
-**Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
+
+## Turning in/Rubric
+Turn sharing, editing on. Then turn in the link to learning suite in the feedback box
+
+**Rubric:**
+
+|                       Item                       | Points Possible |
+|:------------------------------------------------:|:---------------:|
+|     All the questions are answered correctly     |        8        |
+| All the screenshots are included and are correct |       10        |
+|   At least 4 times are included in question 1    |        4        |
+|     Signed up for a time to meet a TA            |        2        |
+|                  Met with a TA                   |        6        |
+|  <div style="text-align: right">**Total**</div>  |       30        |
