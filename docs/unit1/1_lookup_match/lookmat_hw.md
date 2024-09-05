@@ -71,7 +71,9 @@
 5. To convert the volume to tons multiply B5 by 1.4 in cell B6
 6. In cell B7, use the VLOOKUP function to find the correct price based on the gravel type that is chosen using the dropdown menu
 7. Finally in cell B8, multipy cells B6 and B7 to get your total.
-8. You can make sure everything is right by checking your anwser below
+8. You can make sure everything is right by checking your anwser below:
+   
+   ![mat_est_table.png](images/mat_est_table.png)
 
 
 ## Turning in/Rubric
@@ -81,7 +83,7 @@ Turn sharing, editing on. Then turn in the link to learning suite in the feedbac
 
 |                       Item                       | Points Possible |
 |:------------------------------------------------:|:---------------:|
-|     All the questions are answered correctly     |        8        |
+| Part 1 - All cells named like the table instructs |        2        |
 | All the screenshots are included and are correct |       10        |
 |   At least 4 times are included in question 1    |        4        |
 |     Signed up for a time to meet a TA            |        2        |
