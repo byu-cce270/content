@@ -23,7 +23,7 @@ There will be 3 short reading assignment before the next class. It will be on Lo
 # Pre-Class Quiz Challenge
 
 ## Instructions
-1. First make a copy of the starter sheet here: [VLOOKUP](https://docs.google.com/spreadsheets/d/1uMdVl5TzfQAnsSvh1fv3kuw2ci_jPpJNpaVRDbW3EH8/edit?usp=sharing)
+1. First make a copy of the starter sheet here: [Starter Sheet Pre - Lookups, Match, Data Validation](https://docs.google.com/spreadsheets/d/1uMdVl5TzfQAnsSvh1fv3kuw2ci_jPpJNpaVRDbW3EH8/edit?usp=sharing)
 2. Using Data Validations, add dropdowns in cells B2 to B25 for all the different types of services. (Tree Removal, Sidewalk Replacement, Siding Replacement, Gutter Cleaning, Gutter Replacement, Grass Removal, and Grass Replacement)
 3. Now add dropdowns in cells D2 to D25 for the level of each service can recieve (Full, Partial, and Finishing)
 4. In cells E2 to E25 use the Vlookup and Match functions to correctly give a quote for the service and type that the customer would like mulitplied by the quantity.
