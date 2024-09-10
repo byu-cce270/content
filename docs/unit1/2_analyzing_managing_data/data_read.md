@@ -33,4 +33,5 @@ There will be 2 reading assignment before the next class, with an optional one a
    </br> **Hint**: Filter column E to show cells that are empty.
 7. When you're finished, your spreadsheet should look like this:
    ![google_sheets_sort_filter.png](images/google_sheets_sort_filter.png)
+8. Change the access so anyone with the link can edit. Copy the Link and paste into the pre-class quiz.
    
