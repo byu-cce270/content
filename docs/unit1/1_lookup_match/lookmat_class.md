@@ -6,7 +6,5 @@ You can find the Material Cost & Availability starter sheet here: [Lookups, Matc
 
 ## Instructions
 
-  1. Solve for the total cubic volume (cell E16)
-  2. Write an IFS statement in E18 to give the price per cubic foot based on the volume
-  3. Solve for the total price (cell E19)
-  4. Try adjusting the lengths of the concrete to see if it changes the price per cubic foot and total price correctly
+  1. Navigate to the Project Budget sheet
+  2. 
