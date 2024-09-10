@@ -13,3 +13,6 @@ You can find the Material Cost & Availability starter sheet here: [Lookups, Matc
   5. In column D, use the VLOOKUP and MATCH functions to find the correct unit cost for each row
   6. In column E, multiply the material quantities and unit costs to get the total price for each row
   7. In column F, use the VLOOKUP and MATCH functions to find the available quantities for each row
+
+## Turning in/Rubric
+Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
