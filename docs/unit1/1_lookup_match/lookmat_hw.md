@@ -67,11 +67,11 @@
 1. Navigate to the Material Estimator sheet
 2. In the merged cell B2:C2, create a dropdown menu using data validation that includes the four gravel types in the red table in the Tables sheet
 3. Create a Data Validation in B3 and B4 to allow the input of only numbers greater than 0. Have it reject any invalid input
-4. In B5, convert the area of the gravel into volume. You will also need to go from square feet to cubic yards
-5. To convert the volume to tons multiply B5 by 1.4 in cell B6
+4. In cell B5, convert the area of the gravel into volume. You will also need to go from square feet to cubic yards
+5. In cell B6, convert the volume to tons by multiplying B5 by 1.4
 6. In cell B7, use the VLOOKUP function to find the correct price based on the gravel type that is chosen using the dropdown menu
-7. Finally in cell B8, multipy cells B6 and B7 to get your total.
-8. You can make sure everything is right by checking your anwser below:
+7. In cell B8, multiply cells B6 and B7 to get your total
+8. You can make sure everything is right by checking your answer below:
    
    ![mat_est_table.png](images/mat_est_table.png)
 
@@ -83,9 +83,15 @@ Turn sharing, editing on. Then turn in the link to learning suite in the feedbac
 
 |                       Item                       | Points Possible |
 |:------------------------------------------------:|:---------------:|
-| Part 1 - All cells named like the table instructs |        2        |
-| All the screenshots are included and are correct |       10        |
-|   At least 4 times are included in question 1    |        4        |
-|     Signed up for a time to meet a TA            |        2        |
-|                  Met with a TA                   |        6        |
+| Part 1 - All cells named like the table instructs|        1        |
+| Part 1 - VLOOKUP and MATCH equation is correct   |       5         |
+| Part 1 - Equations are written correctly         |       2         |
+| Part 1 - All table values are calculated correctly|       2         |
+| Part 2 - VLOOKUP and MATCH equations are correct |       5         |
+| Part 2 - Total price column is correct           |       2         |
+| Part 3 - Dropdown menu is correct                |       2         |
+| Part 3 - B3:B4 data validation is correct        |       2         |
+| Part 3 - Equations are written correctly         |       2         |
+| Part 3 - VLOOKUP equation is correct             |        5        |
+| Part 3 - Total cost is correct                   |        2        |
 |  <div style="text-align: right">**Total**</div>  |       30        |
