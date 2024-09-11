@@ -90,3 +90,28 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Set the deflection in cell B16 to -2 by changing cell B11 (**x**)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Both locations are between 0 in and 150 in</br>
 
 **Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
+
+---
+
+**Rubric:**
+
+|             Item (Solar Installation)            | Points Possible |
+|:------------------------------------------------:|:---------------:|
+|     Data validation $ IFS statement is correct in 1st table     |        2        |
+| Equation written correctly in 1st table |       2        |
+|   The correct # of panels is found with goal seek in 1st table (±2)   |        2        |
+|     Data validation and IF/IFS statement correct in 2nd table            |        2        |
+|                  Equation written correctly in 2nd table               |        2        |
+|   The correct price per watt is found with goal seek in 2nd table (±2)    |        2        |
+|       Data validation and VLOOKUP statements correct in 3rd table         |        2        |
+|        Equation written correctly in 3rd table               |        2        |
+|     The correct # of hours is found with goal seek in 3rd table (±2)      |        2        |
+|  <div style="text-align: right">**Total**</div>  |       18        |
+
+|            Item (Simply Supported Beam)          | Points Possible |
+|:------------------------------------------------:|:---------------:|
+|     Cells named correctly     |        2        |
+| Equations are written correctly and use cell names |       3        |
+|   The IF statement is written correctly   |        3        |
+|     The two correct values are found with goal seek (±2)           |        4        |
+|  <div style="text-align: right">**Total**</div>  |       12        |
