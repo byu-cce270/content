@@ -5,7 +5,7 @@
 
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet- HW Analyzing/Managing Data, Conditional Formatting]([https://docs.google.com/spreadsheets/d/1AVq6HfUD7hCXnJXD6L9dSqogVHGz_7yDUDuqRiZO5n0/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1z9aHndUNtykZRRPncvE9h9ZbW7JfEta5npLSiirBanQ/edit?usp=sharing))
+   [Starter Sheet- HW Analyzing/Managing Data, Conditional Formatting](https://docs.google.com/spreadsheets/d/1z9aHndUNtykZRRPncvE9h9ZbW7JfEta5npLSiirBanQ/edit?usp=sharing)
 2. Rename it something like “[Your Name] HW Analyzing/Managing Data, Conditional Formatting”
 
 ---
