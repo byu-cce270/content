@@ -5,15 +5,19 @@
 
 There will be 2 reading assignment before the next class, with an optional one as well. It will be on Conditional Formatting, Filter and Sorting Data, and Working with Functions being optional.
 
- [Conditional Formatting](https://blog.coupler.io/conditional-formatting-google-sheets/)
+ [Conditional Formatting](https://blog.coupler.io/conditional-formatting-google-sheets/) - Read Whole Document
  
- [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/)
+ [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/) - Read until you see "Challenge" **do not do the challenge**
  
  [Working with Functions](https://edu.gcfglobal.org/en/googlespreadsheets/working-with-functions/1/) - **Optional**
  
 
 ## Thing to look out for and think about
-- 
+- Why do we use conditional formatting?
+- How would you use conditional formatting when given a table full of data?
+- How do you add a filter to your data set?
+- What are at least 3 different ways you can filter your data?
+- Why do we want to filter our data?
 
 
 ---
