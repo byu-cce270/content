@@ -1,6 +1,7 @@
 #  HW: Analyzing/Managing Data, Conditional Formatting
 
 **Purpose:** This assignment aims to test your ability to manage and format data. In this assignment, you will filter out certain types of data in different sheets. You will use the different ways of managing data that we went over in class: Conditional formatting and filters. The data we will be using is measurements taken from the Provo river. If you are interested in looking at more data from the Provo river you can access it at this link: 
+
 </br> https://waterdata.usgs.gov/monitoring-location/10163000/#parameterCode=00065&period=P7D 
 
 ## Instructions
