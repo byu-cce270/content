@@ -95,23 +95,23 @@
 
 **Rubric:**
 
-|             Item (Solar Installation)            | Points Possible |
-|:------------------------------------------------:|:---------------:|
-|     Data validation $ IFS statement is correct in 1st table     |        2        |
-| Equation written correctly in 1st table |       2        |
-|   The correct # of panels is found with goal seek in 1st table (±2)   |        2        |
-|     Data validation and IF/IFS statement correct in 2nd table            |        2        |
-|                  Equation written correctly in 2nd table               |        2        |
+|                      Item (Solar Installation)                            | Points Possible |
+|:-------------------------------------------------------------------------:|:---------------:|
+|     Data validation and IFS statement is correct in 1st table             |        2        |
+|               Equation written correctly in 1st table                     |        2        |
+|   The correct # of panels is found with goal seek in 1st table (±2)       |        2        |
+|     Data validation and IF/IFS statement are correct in 2nd table         |        2        |
+|                  Equation is written correctly in 2nd table               |        2        |
 |   The correct price per watt is found with goal seek in 2nd table (±2)    |        2        |
 |       Data validation and VLOOKUP statements correct in 3rd table         |        2        |
-|        Equation written correctly in 3rd table               |        2        |
+|                 Equation written correctly in 3rd table                   |        2        |
 |     The correct # of hours is found with goal seek in 3rd table (±2)      |        2        |
-|  <div style="text-align: right">**Total**</div>  |       18        |
+|  <div style="text-align: right">**Total**</div>                           |       18        |
 
-|            Item (Simply Supported Beam)          | Points Possible |
-|:------------------------------------------------:|:---------------:|
-|     Cells named correctly     |        2        |
-| Equations are written correctly and use cell names |       3        |
-|   The IF statement is written correctly   |        3        |
-|     The two correct values are found with goal seek (±2)           |        4        |
-|  <div style="text-align: right">**Total**</div>  |       12        |
+|               Item (Simply Supported Beam)                | Points Possible |
+|:---------------------------------------------------------:|:---------------:|
+|                Cells named correctly                      |        2        |
+| Equations are written correctly and use cell names        |        3        |
+|   The IF statement is written correctly                   |        3        |
+|     The two correct values are found with goal seek (±2)  |        4        |
+|  <div style="text-align: right">**Total**</div>           |       12        |
