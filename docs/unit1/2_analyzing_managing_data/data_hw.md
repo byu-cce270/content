@@ -1,6 +1,7 @@
 #  HW: Analyzing/Managing Data, Conditional Formatting
 
-**Purpose:** Learn how to use lookups, match functions, and data validation when working with tables of data.
+**Purpose:** This assignment aims to test your ability to manage and format data. In this assignment, you will filter out certain types of data in different sheets. You will use the different ways of managing data that we went over in class: Conditional formatting and filters. The data we will be using is measurements taken from the Provo river. If you are interested in looking at more data from the Provo river you can access it at this link: 
+
 
 ## Instructions
 1. First make a copy of the starter sheet here:
