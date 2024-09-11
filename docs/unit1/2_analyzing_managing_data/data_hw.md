@@ -44,7 +44,7 @@
 #### Part 4
 
 1. In the calculated stress column use this formula: Stress = (Load Applied to Bridge Segment * Height of Bridge Segment) / (Width of Bridge Segment * Length of Bridge Segment^2)
-  i.  If you want to check to check your work, use this table
+  i. If you want to check to check your work, use this table
 ---
 1. Navigate to the Hydrometer Analysis sheet
 2. Name the cells in the spreadsheet according to this table:
