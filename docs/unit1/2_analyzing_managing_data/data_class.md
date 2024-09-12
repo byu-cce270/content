@@ -2,7 +2,7 @@
 
 The following exercise is based on conditional formatting, data validation, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. 
 
-You can find the in-class sheet here: [Analyzing/Managing Data, Conditional Formatting - Starter Sheet](https://docs.google.com/spreadsheets/d/1o2_qgtB7Ggw3v8IjGLdc61Ld1jZy3snVAdMJGT7ZjuA/edit?usp=sharing)
+You can find the in-class workbook here: [Analyzing/Managing Data, Conditional Formatting - Starter Sheet](https://docs.google.com/spreadsheets/d/1o2_qgtB7Ggw3v8IjGLdc61Ld1jZy3snVAdMJGT7ZjuA/edit?usp=sharing)
 
 ## Part 1 - Company Inventory
 
@@ -17,11 +17,23 @@ You can find the in-class sheet here: [Analyzing/Managing Data, Conditional Form
 ## Part 2 - Analyze Materials Purchased
 
 
-  1. Navigate to the Project Budget sheet.
+  1. Navigate to the Analyze Materials Purchased sheet.
+  2. Format the Table to look nice (bold title, alternating colors)
+  3. Add a color scale to the values in the tables using conditional formatting. Have the low numbers be a lighter shade and the higher numbers be a darker shade.				
+  4. Add filters in columns B-E
+  5. Practice using the filters by finding the customers that ordered 50 tons or more of material for order #2
 
 ## Part 3 - Tempertaure Conversions
 
 
-  1. Navigate to the Project Budget sheet.
+  1. Navigate to the Temperature Conversions sheet.
+  2. Create your own functions in cells I13-I14 that converts numbers entered into cells H13-H14 to have a new value
+  3. In Column B, create a list of valid dates. Use data validation to reject any value that is not a date.
+  4. In cell C2 create an equation that will convert from F to C.
+  5. In cell D2 create an equation that will convert to Kelvin.
+  6. Fill out the rest of the table with dates, Temp(C), and Temp(K).					
+  7. Using functions find the average, max, min, stdv, and median for the Temp(F), Temp(C), and Temp(K)
+
+			
 ## Turning in/Rubric
 Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
