@@ -34,7 +34,7 @@
        E6  | ![equationc.png](images/equationc.png)
        E9  | ![equationft.png](images/equationft.png)
    
-4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient (Use the purple Table of Stokes Law Coefficients in the Tables sheet)
+4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient by pulling the temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law Coefficients in the Tables sheet)
 5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
    
