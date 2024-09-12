@@ -14,14 +14,14 @@
 #### Part 1
 
 1. Navigate to the sheet that says “Streamflow data Part 1”
-2. Add a filter to the header of the table.
-3. Filter by Approved status so it only shows rows with an approved status P
+2. Select the entire table and create a filter, the filter icon should be in each of the headers
+3. Filter by Approved status so it only shows rows with an approved status "P"
 4. Duplicate that sheet and rename it: “Part 1 Approved Status”
-5. Go back to Streamflow data Part 1
+5. Go back to sheet called "Streamflow data Part 1"
 6. Reset the filter
 7. Next filter the data by date. Only show rows of data that were taken before 6/21/21
 8. Duplicate that sheet and rename it “Part 1 Date”
-9. Go back to Streamflow data Part 1
+9. Go back to sheet called "Streamflow data Part 1"
 10. Reset the filter
 11. Next filter the data by Flowrate (CFS). Only show the rows whose flow is between 45 - 50
 12. Duplicate that sheet and rename it “Part 1 Flow Rate”
