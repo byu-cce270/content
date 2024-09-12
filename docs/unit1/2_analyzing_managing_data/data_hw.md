@@ -29,8 +29,7 @@
 #### Part 2
 
 1. Navigate to the sheet that says “Streamflow Data Part 2”
-2. Make a copy of it and don’t rename it
-3. Format your newly made table nicely (use colors, make it easy to read)
+3. Format the table using colors, bold the headers, and make it easy to read.
 4. Give the data in column B a scaled color scheme that will have the low numbers be green the high numbers be red and the middle numbers be yellow
 5. Give the data in column C a color if it is greater than 180
 6. Give the data in column D a color if it is equal to 230
@@ -40,7 +39,7 @@
 #### Part 3
 
 1. Navigate to the Summary Statistics page.
-2. On this page, you will see spots to use formulas to summarize the data taken at different places on the river (or stations). Use the appropriate formula and data from your “Copy of Streamflow data Part 2” sheet to make those calculations in the top half of the table.
+2. On this page, you will see spots to use formulas to summarize the data taken at different places on the river (or stations). Use the appropriate formula and data from your “Streamflow data Part 2” sheet to make those calculations in the top half of the table.
 3. Most engineers when making calculations use Meters per Second. Using the conversion factor below (and absolute cell references) convert all of the cfs to cms
 
 #### Part 4
@@ -67,8 +66,8 @@ Turn sharing, editing on. Then turn in the link to learning suite in the feedbac
 | Part 1 - Approved Status is filtered correctly   |       2         |
 | Part 1 - Date  is filtered correctly         |       2         |
 | Part 1 - Flow Rate is filtered correctly|       2         |
-| Part 2 - Copy of Streamflow Data Part 2 is nicely formatted |       2         |
-| Part 2 - Copy of Streamflow Data Part 2 columns are colored correctly           |       5         |
+| Part 2 - Streamflow Data Part 2 is nicely formatted |       2         |
+| Part 2 - Streamflow Data Part 2 columns are colored correctly           |       5         |
 | Part 3 - Correct equations and data are used in the Summary Statistics page                |       4         |
 | Part 3 - Absolute cell reference is used in the 2nd half of the table of the Summary Statistics page        |       4         |
 | Part 4 - The stress equation is written correctly             |        2        |
