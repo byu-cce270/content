@@ -1,4 +1,4 @@
-# In-Class Workbook
+/# In-Class Workbook
 
 The following exercise is based on conditional formatting, data validation, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. 
 
@@ -7,9 +7,9 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
 ## Part 1 - Company Inventory
 
   1. Navigate to the Company Inventory sheet.
-  2. Add data validation to only allow the user to input a valid date in column A below the header materials purchased						
-  3. Create a dropdown for the types of material found in I3:L3 in column B below the Materials Purchased						
-  4. Add data validation in column C that ensures that the quantity does not exceed 25 tons (each customer is limited to <=25 tons)						
+  2. In column A, add data validation to allow the user to input a valid date.
+  3. In Column B, Create a dropdown for the 4 types of materials found in Column E (Steel, Concrete, Lumber, Rebar)
+  4. In column C, add data validation that ensures that the quantity does not exceed 25 tons (each customer is limited to <=25 tons)
   5. Fill out the rest of the table with dates, purchases, and quantities from the table found in E15-E18. Sum all values in cell C18						
   6. Freeze the dates and the headers of the table	
   7. Highlight the largest order using conditional formatting
