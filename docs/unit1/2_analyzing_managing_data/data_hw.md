@@ -38,19 +38,20 @@
 
 #### Part 3
 
-1. Navigate to the Summary Statistics page.
+1. Navigate to the Summary Statistics sheet.
 2. On this page, you will see spots to use formulas to summarize the data taken at different places on the river (or stations). Use the appropriate formula and data from your “Streamflow data Part 2” sheet to make those calculations in the top half of the table.
-3. Most engineers when making calculations use Meters per Second. Using the conversion factor below (and absolute cell references) convert all of the cfs to cms
+3. Most engineers when making calculations use Meters per Second. In the bottom half of the table, use the conversion factor in cell C20 to convert all of the values in the top half of the table from cfs to cms. Hint: Don't forget to use absolute cell references!
 
 #### Part 4
 
-1. In the calculated stress column use this formula: Stress = (Load Applied to Bridge Segment * Height of Bridge Segment) / (Width of Bridge Segment * Length of Bridge Segment^2)
+1. Navigate to the Calculations sheet.
+2. In the calculated stress column use this formula: Stress = (Load Applied to Bridge Segment * Height of Bridge Segment) / (Width of Bridge Segment * Length of Bridge Segment^2)
    * If you want to check your work, use this table
 
 ![HW_1.3_Stressssss.png](images/HW_1.3_Stressssss.png)
 
-2. Add up all of the stresses from the table in cell G34 using the sum function
-3. In cell G35, total the amount of calculations you made from the table,
+2. Add up all of the stresses from the calculated stress column in cell G34 using the sum function
+3. In cell G35, use the count function to total the amount of calculations you made in the Calculated Stress column.
 4. In cell G36, Find the average stress along the bridge from all of the calculations.
 
 ---
