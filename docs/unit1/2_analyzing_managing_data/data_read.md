@@ -12,7 +12,7 @@ There will be 2 reading assignment before the next class, with an optional one a
  [Working with Functions](https://edu.gcfglobal.org/en/googlespreadsheets/working-with-functions/1/) - **Optional**
  
 
-## Thing to look out for and think about
+## Things to look out for and think about
 - Why do we use conditional formatting?
 - How would you use conditional formatting when given a table full of data?
 - How do you add a filter to your data set?
