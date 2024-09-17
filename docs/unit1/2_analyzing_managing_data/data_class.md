@@ -21,7 +21,7 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
   1. Navigate to the Analyze Materials Purchased sheet.
   2. Format the Table to look nice (bold title, borders, etc.)
   3. Add a color scale to the values in the table using conditional formatting. Have the low numbers be a lighter shade and the higher numbers be a darker shade.				
-  4. Add filters in columns A:E
+  4. Add filters in columns A:E in row 2
   5. Create a filter that only includes the customers that ordered 50 tons or more of material for Order #2 (column C)
 
 # Exercise 3 - Temperature Conversions
