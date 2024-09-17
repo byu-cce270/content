@@ -22,7 +22,11 @@
       North    |   500
       South    |   710
 
-7. In cell C9, write a formula that calculates the total annual kilowatt-hour (kWh) generation of the solar panel system. Then use Goal Seek to calculate the number of panels needed for the annual kWh generation to be 120% of the annual kWh usage
+7. In cell C9, write the following formula to calculate the total annual kilowatt-hour (kWh) generation of the solar panel system. Then use Goal Seek to calculate the number of panels needed for the annual kWh generation to be 120% (14,400 kWh) of the annual kWh usage
+
+      Cell      |  Equation
+      --------- | ------------------------
+         C9     |   # of Panels * Annual kWh Generated per Panel
 
 ---
 
@@ -30,7 +34,11 @@
 8. In the “Solar System Cost” table, create a dropdown data validation in cell F8 with the options “Yes” and “No”
 9. Change the dropdown in cell F8 to “Yes”
 10. In cell F9, write an IF or IFS statement that changes the cell's value based on the dropdown in cell F8. If a battery is included in the cost, F9 should be $13,000. Otherwise, it should be $0.00
-11. In cell F10, write a formula that will calculate the total solar system cost. Then use Goal Seek to calculate what the price per watt should be for the total cost to equal $36,184
+11. In cell F10, write the following formula to calculate the total solar system cost. Then use Goal Seek to calculate what the price per watt should be for the total cost to equal $36,184
+
+      Cell      |  Equation
+      --------- | ------------------------
+         F10    |   (# of Panels * Watts per Panel * Price per Watt) + Battery Cost
 
 ---
 
@@ -43,7 +51,11 @@
 15. Choose the company in I6 - I9 that offers the cheapest price for each service
       <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Solaredge has the cheapest rate for panel installation when combined with their number of </br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;installers
-17. In cell J11, write a formula that will calculate the total cost of all of the services. Then use Goal Seek to calculate the maximum number of hours it must take for the panels to be installed so the budget does not exceed $15,523
+17. In cell J11, write the following formula to calculate the total cost of all of the services. Then use Goal Seek to calculate the maximum number of hours it must take for the panels to be installed so the budget does not exceed $15,523
+
+      Cell      |  Equation
+      --------- | ------------------------
+         J11    |   Engineering Plans + Material + (Installing Panels (per hour) * # of Installers * # of Hours)
 
 ---
 
