@@ -27,7 +27,7 @@
       Stoke's law coefficient           |   E10  |  A
       Specific gravity correction factor|   E11  |  Gc
 
-3. Use the equations below to calculate the following cell values:
+3. Use the equations below to calculate the following cell values: $°C = (°F-32)\dfrac{5}{9}$
 
       Cell | Equation
      ----- | ---------------
