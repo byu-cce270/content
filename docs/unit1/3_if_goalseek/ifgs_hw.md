@@ -87,7 +87,7 @@
       B14 (x≤a) |   ![equationv1.png](images/equationv1.png)
       B15 (x>a) |   ![equationv2.png](images/equationv2.png)
 
-20. Next, write an IF or IFS statement in cell B16 that will give the answer found in cell B14 if x is less than or equal to ***a*** (B7) and in cell B15 if x is greater than ***a***(B7)
+20. Next, write an IF or IFS statement in cell B16 that will return cell B14 if ***x≤a*** (B7) or cell B15 if ***x>a*** (B7)
       <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** If ***x*** is less than or equal to ***a***, then use Deflection (***v***) for ***x≤a***</br>
 
        If written correctly, your sheet should look like this when **x** is set to 278 and 15:
@@ -95,7 +95,7 @@
        ![Deflection1.png](images/Deflection1.png)
        ![Deflection2.png](images/Deflection2.png)
 
-21. Use Goal seek to compute the two x locations that result in a deflection of -2.0 inches.  Write your answer somewhere on your spreadsheet for the TA to see
+24. Use Goal seek to compute the two x locations that result in a deflection of -2.0 inches.  Write your answer somewhere on your spreadsheet for the TA to see
       <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the </br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first solution. You will have to do the guess-and-check method to figure out the second solution
 
