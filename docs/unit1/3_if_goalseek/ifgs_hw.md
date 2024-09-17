@@ -96,7 +96,6 @@
        ![Deflection2.png](images/Deflection2.png)
 
 24. Use Goal seek to compute the two x locations that result in a deflection of -2.0 inches.  Record your answers in cells B20 and B21
-
       <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the </br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first solution. You will have to do the guess-and-check method to figure out the second solution
 
