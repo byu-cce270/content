@@ -29,12 +29,11 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
 ## Instructions
 
   1. Navigate to the Temperature Conversions sheet
-  2. Create your own functions in cells I13-I14 that converts numbers entered into cells H13-H14 to have a new value
-  3. In Column B, create a list of valid dates. Use data validation to reject any value that is not a date
-  4. In cell C2 create an equation that will convert from F to C
-  5. In cell D2 create an equation that will convert to Kelvin
-  6. Fill out the rest of the table with dates, Temp(C), and Temp(K)
-  7. Using functions find the average, max, min, stdv, and median for the Temp(F), Temp(C), and Temp(K)
+  2. In Column B, create a list of valid dates. Use data validation to reject any value that is not a date
+  3. In cell C2 create an equation that will convert from F to C
+  4. In cell D2 create an equation that will convert to Kelvin
+  5. Fill out the rest of the table with dates, Temp(C), and Temp(K)
+  6. Using functions find the average, max, min, stdv, and median for the Temp(F), Temp(C), and Temp(K)
 
 			
 ## Turning in/Rubric
