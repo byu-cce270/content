@@ -1,10 +1,10 @@
-/# In-Class Workbook
+# Exercise 1 - Company Inventory
 
-The following exercise is based on conditional formatting, data validation, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. 
+The following exercises are based on conditional formatting, data validation, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. 
 
 You can find the in-class workbook here: [Analyzing/Managing Data, Conditional Formatting - Starter Sheet](https://docs.google.com/spreadsheets/d/1o2_qgtB7Ggw3v8IjGLdc61Ld1jZy3snVAdMJGT7ZjuA/edit?usp=sharing)
 
-## Part 1 - Company Inventory
+## Instructions
 
   1. Navigate to the Company Inventory sheet.
   2. In column A, add data validation to allow the user to input a valid date.
@@ -14,7 +14,9 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
   6. Freeze the dates and the headers of the table	
   7. Highlight the largest order using conditional formatting
 				
-## Part 2 - Analyze Materials Purchased
+# Exercise 2 - Analyze Materials Purchased
+
+## Instructions
 
   1. Navigate to the Analyze Materials Purchased sheet.
   2. Format the Table to look nice (bold title, borders, etc.)
@@ -22,7 +24,9 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
   4. Add filters in columns A:E
   5. Create a filter that only includes the customers that ordered 50 tons or more of material for Order #2 (column C)
 
-## Part 3 - Tempertaure Conversions
+# Exercise 3 - Temperature Conversions
+
+## Instructions
 
   1. Navigate to the Temperature Conversions sheet
   2. Create your own functions in cells I13-I14 that converts numbers entered into cells H13-H14 to have a new value
