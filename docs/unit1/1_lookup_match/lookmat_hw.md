@@ -31,7 +31,7 @@
 
       Cell | Equation
      ----- | ---------------
-       E6  | ![equationc.png](images/equationc.png)
+       E6  | $°C = (°F-32)\dfrac{5}{9}$
        E9  | ![equationft.png](images/equationft.png)
    
 4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient by pulling the temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law Coefficients in the Tables sheet)
