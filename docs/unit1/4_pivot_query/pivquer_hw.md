@@ -6,7 +6,7 @@
 1. First make a copy of the starter sheet here:
    [Starter Sheet - HW Pivot Tables & Query](https://docs.google.com/spreadsheets/d/1pGdgsPzEM5ut-0GVPKQJ8Kz7nSL1OHsaVC_KOrr0MKk/edit?usp=sharing){:target="_blank"}
 2. Rename it something like "[Your Name] HW Pivot Tables & Query"
-
+ 
 ---
 
 #### Part 1
