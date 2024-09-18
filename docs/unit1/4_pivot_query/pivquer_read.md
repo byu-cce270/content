@@ -22,9 +22,10 @@ By inserting a pivot table, we can create a table summarizing the data. One vari
 
 ## Additional Readings
 Below are some links to additional readings.
-https://support.google.com/docs/answer/1272900?hl=en-GB&co=GENIE.Platform%3DDesktop
-https://www.howtogeek.com/407943/what-are-pivot-tables-in-google-sheets-and-how-do-i-use-them/
-https://www.benlcollins.com/spreadsheets/pivot-tables-google-sheets/
+
+* [Google Sheets - Pivot Tables](https://support.google.com/docs/answer/1272900?hl=en-GB&co=GENIE.Platform%3DDesktop){:target="_blank"}
+* [How to Use Pivot Tables in Google Sheets](https://www.howtogeek.com/407943/what-are-pivot-tables-in-google-sheets-and-how-do-i-use-them/){:target="_blank"}
+* [Pivot Tables in Google Sheets](https://www.benlcollins.com/spreadsheets/pivot-tables-google-sheets/){:target="_blank"}
 
 # Query Function
 The **Query** function is a powerful function that is not available in Microsoft Excel, but is available in Google Sheets. In some ways, the query function is similar to applying a filter to a table containing a large set of data. Like the list option, it allows you to create a custom and often simplified view of the data in the table by apply one or more conditions and only display the rows in the table that match certain conditions. However, unlike a filter, the query function allows you to select and reorganize the columns that you want to view, including sorting the data by the values in one or more of the columns. Furthermore, with the query function you can create this summary of the table in an entirely different sheet.
@@ -116,5 +117,5 @@ Here is a screenshot of the results:
 This is just a sample of the many things you can do with the query function. It is easy to use and can be extremely 
 powerful and convenient. Here are some additional resources that you may find helpful:
 
-- [Google Sheets Query Function Documentation](https://support.google.com/docs/answer/3093343?hl=en)
-- [Google Sheets Query function: The Most Powerful Function in Google Sheets](https://www.benlcollins.com/spreadsheets/google-sheets-query-sql/)
+* [Google Sheets Query Function Documentation](https://support.google.com/docs/answer/3093343?hl=en){:target="_blank"}
+* [Google Sheets Query function: The Most Powerful Function in Google Sheets](https://www.benlcollins.com/spreadsheets/google-sheets-query-sql/){:target="_blank"}
