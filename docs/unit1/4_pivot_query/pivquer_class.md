@@ -2,7 +2,7 @@
 
 The following exercise is based on the Pivot Table and Query Functions we have just covered. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
-You can find the Employee Data starter sheet here: [Pivot Tables/Query Starter Sheet](https://docs.google.com/spreadsheets/d/19msUPf9DYVBAMNnoIhYO6RMpdSlKobbJM3Ul7W-qiCU/edit?usp=sharing).
+You can find the Employee Data starter sheet here: [Pivot Tables/Query Starter Sheet](https://docs.google.com/spreadsheets/d/19msUPf9DYVBAMNnoIhYO6RMpdSlKobbJM3Ul7W-qiCU/edit?usp=sharing){:target="_blank"}.
 
 ## Instructions
 1. Navigate to the high_salary sheet.
