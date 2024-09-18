@@ -121,7 +121,7 @@ powerful and convenient. Here are some additional resources that you may find he
 * [Google Sheets Query function: The Most Powerful Function in Google Sheets](https://www.benlcollins.com/spreadsheets/google-sheets-query-sql/){:target="_blank"}
 
 ## Pre-Class Quiz Challenge
-Here is a link for the pre-class starter sheet: * [Pre-Class Challenge] https://docs.google.com/spreadsheets/d/19yz49DVrQadNCDGhVzRTAzaIuQeNE4hTiGFP1HJRcoM/edit?usp=sharing
+Here is a link for the pre-class starter sheet: * [Pre-Class Challenge](https://docs.google.com/spreadsheets/d/19yz49DVrQadNCDGhVzRTAzaIuQeNE4hTiGFP1HJRcoM/edit?usp=sharing)
 
 ### Instructions
 1. In column E, create a query that will return all the material names that have less than 10 pounds of material.
