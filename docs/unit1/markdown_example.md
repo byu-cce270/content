@@ -18,6 +18,17 @@ Note that you can simply put raw HTML anywhere and it will render if for you.
     <img src="https://cms-assets.recognizeapp.com/wp-content/uploads/2020/05/05175946/sheets-logo.png" alt="Open In Google Sheets">
 </a>
 
+## Create a 3x3 table
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+| Cell 7   | Cell 8   | Cell 9   |
+
+#make a link to espn.com
+[ESPN](http://www.espn.com)
+
 
 ## List Example
 
