@@ -11,7 +11,7 @@
 
 #### Part 1
 3. Navigate to the **2021_med_claims** sheet.
-4. Create a query in cell **B1** that references the safety data in the Data sheet that returns the columns **Date**, **Plant**,
+4. Create a query in cell **A1** that references the safety data in the Data sheet that returns the columns **Date**, **Plant**,
    **Shift**, and **Department**.
 5. Find all incidents in 2021 involving a medical claim (hint: look in column H).
 6. Sort the results by plant.
