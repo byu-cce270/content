@@ -57,4 +57,4 @@ Turn sharing and editing on. Turn in the link to Learning Suite in the feedback 
 |                 Table includes month and year columns                     |        2        |
 |        Column created showing the count of the number of incidents        |        4        |
 |            Column created showing the sum of the incident cost            |        4        |
-|  <div style="text-align: right">**Total**</div>                           |       16        |
+|  <div style="text-align: right">**Total**</div>                           |       14        |
