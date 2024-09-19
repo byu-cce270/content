@@ -38,7 +38,7 @@
 15. Now that most of your data is inserted into the Gantt Chart, format the headers and add borders to certain cells to display the data in the way that makes the most sense to you.
 16. Create a conditional formatting rule that applies to cells I4:AJ5 that will highlight the cells if the date in those cells is today's date.
   * Hint: Use the TODAY() function.
-17. In row C in your table, insert percentages for how complete at least 4 of your tasks are. (These don't have to be accurate)
+17. In row C in your table, insert percentages for how complete at least 4 of your tasks are. 
 18. In row D in your table, use the IFERROR and SPARKLINE function to create a bar chart to display the completion progress of each your tasks.
   * Hint: If you did your formula correctly, nothing will display in the D column if there is no percentage complete given for a task.
 
