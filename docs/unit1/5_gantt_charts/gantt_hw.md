@@ -6,12 +6,18 @@
 1. Create a new Google Sheet and rename is something like "[Your Name] HW 1.6 - Gantt Charts"
 2. Following the same format as the in class activity, give your project a project title, insert your company name, project manager name, and the start date as the =TODAY() function. 
 3. Create a header starting in cell A5 with the following titles:
+   
   * A5: TASK
   * B5: ASSIGNED TO
   * C5-D5: PROGRESS (merge these two columns)
   * E5: START
   * F5: DURATION
   * G5: END
+
+    When you're finished your sheet should look something like this:
+
+
+  
 4. Set up the dates on your schedule by referencing your start date in cell I4 and then adding one day in cell J4. Continue so your project schedule dates end on cell AJ4.
 5. In cell I4, modify the formula to always start the project schedule on a Monday. You will do this using the WEEKDAY() function.
   * Hint: The formula will look like =  [cell where your project start date is] - WEEKDAY([cell where your project start date is], 3).
