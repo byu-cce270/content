@@ -49,7 +49,7 @@ Turn sharing and editing on. Turn in the link to Learning Suite in the feedback 
 |                Results are sorted in reverse order by cost                |        2        |
 |  <div style="text-align: right">**Total**</div>                           |       16        |
 
-
+---
 
 |                           Item (Pivot Tables)                             | Points Possible |
 |:-------------------------------------------------------------------------:|:---------------:|
