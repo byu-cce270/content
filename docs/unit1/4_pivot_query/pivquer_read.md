@@ -11,7 +11,7 @@
 2. In the side panel, next to 'Values', click Add, then choose the value that you want to see over your rows or columns.
   -Sheets often offers suggestions based on the information you choose. You can
    these instead of adding specific values.
-4. It is possible to change how your data is listed, sorted, summarized, or filtered. Click the down arrow next to anything you want to change.
+4. It is possible to change how your data are listed, sorted, summarized, or filtered. Click the down arrow next to anything you want to change.
 
 ## Example Problem
 Let's look at an example of a pivot table. Here is a data set showing the division, subdivision, product number, number of units, and price per unit.
@@ -30,7 +30,7 @@ Below are some links to additional readings.
 # Query Function
 The **Query** function is a powerful function that is not available in Microsoft Excel, but is available in Google Sheets. In some ways, the query function is similar to applying a filter to a table containing a large set of data. Like the list option, it allows you to create a custom and often simplified view of the data in the table by apply one or more conditions and only display the rows in the table that match certain conditions. However, unlike a filter, the query function allows you to select and reorganize the columns that you want to view, including sorting the data by the values in one or more of the columns. Furthermore, with the query function you can create this summary of the table in an entirely different sheet.
 
-The query function uses a query string that is based on SQL syntax. SQL stands for _Structured Query Language_. SQL is a standard language for storing, manipulating and retrieving data in databases. In the case of using the query function in Google Sheets, the data is stored in a table in Google Sheets and the query function is used to extract data from the table based on a set of conditions. Here is the general structure for the query function:
+The query function uses a query string that is based on SQL syntax. SQL stands for _Structured Query Language_. SQL is a standard language for storing, manipulating and retrieving data in databases. In the case of using the query function in Google Sheets, the data are stored in a table in Google Sheets and the query function is used to extract data from the table based on a set of conditions. Here is the general structure for the query function:
 
 ## Syntax
 
@@ -40,9 +40,9 @@ The syntax for the query function is as follows:
 
 The query function has three arguments:
 
-- **data**: This is the range of cells that contains the data that you want to query. The data can be in the form of a range of cells, a named range, or a range of cells in another sheet. The data can be in the form of a range of cells, a named range, or a range of cells in another sheet.
+- **data**: This is the range of cells that contains the data that you want to query. The data can be in the form of a range of cells, a named range, or a range of cells in another sheet.
 - **query**: This is a text string in double quotes representing the query that you want to run on the data. The query is written in the form of a SQL query. The query can be a simple query that selects all the data in the table or a more complex query that selects only the data that meets certain conditions.
-- **headers**: This is an optional argument that specifies whether the first row of the data contains headers. If the headers argument is set to TRUE, the first row of the data is treated as headers and is not included in the results of the query. If the headers argument is set to FALSE, the first row of the data is treated as data and is included in the results of the query. The default value for the headers argument is TRUE.
+- **headers**: This is an optional argument that specifies whether the first row of the data contains headers. If the headers argument is set to TRUE, the first row of the data are treated as headers and is not included in the results of the query. If the headers argument is set to FALSE, the first row of the data are treated as data and is included in the results of the query. The default value for the headers argument is TRUE.
 
 The way you formulate a query string is similar to how you would write a SQL query, but the syntax is slightly different. While SQL query strings can be fairly complex, for google sheets the syntax is simplified. The general structure of a query string is as follows:
 
