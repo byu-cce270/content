@@ -6,13 +6,13 @@
 1. Create a new Google Sheet and rename is something like "[Your Name] HW 1.6 - Gantt Charts"
 2. Following the same format as the in class activity, give your project a project title, insert your company name, project manager name, and the start date as the =TODAY() function. 
 3. Create a header starting in cell A5 with the following titles:
-   
-  * A5: TASK
-  * B5: ASSIGNED TO
-  * C5-D5: PROGRESS (merge these two columns)
-  * E5: START
-  * F5: DURATION
-  * G5: END
+      
+      * A5: TASK
+      * B5: ASSIGNED TO
+      * C5-D5: PROGRESS (merge these two columns)
+      * E5: START
+      * F5: DURATION
+      * G5: END
 
     When you're finished your sheet should look something like this:
 
