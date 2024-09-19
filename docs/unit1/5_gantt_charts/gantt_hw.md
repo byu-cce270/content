@@ -16,8 +16,8 @@
 
     When you're finished your sheet should look something like this:
 
-
-  
+    ![header_format.png](images/header_format.png)
+    
 4. Set up the dates on your schedule by referencing your start date in cell I4 and then adding one day in cell J4. Continue so your project schedule dates end on cell AJ4.
 5. In cell I4, modify the formula to always start the project schedule on a Monday. You will do this using the WEEKDAY() function.
   * Hint: The formula will look like =  [cell where your project start date is] - WEEKDAY([cell where your project start date is], 3).
