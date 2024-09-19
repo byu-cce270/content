@@ -12,6 +12,7 @@ This formula returns a number representing the day of the week of the day provid
 **Syntax**
 
 WEEKDAY(date, [type])
+
   * date - the date for which to determine the day of the week
   * type - [OPTIONAL - 1 by default] - a number that indicates which numbering system to use to represent weekdays. If type is 1, days are counted from Sunday; the value of Sunday is 1 and the value of Saturday is 7. If type is 2, days are counted from Monday; the valye of Monday is 1 and the value of Sunday is 7.
 
