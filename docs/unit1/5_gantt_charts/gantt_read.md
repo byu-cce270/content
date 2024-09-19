@@ -23,6 +23,7 @@ This formula converts a number into text according to a specified format.
 **Syntax**
 
 TEXT(number, format)
+
   * number - the number, date, or time that needs formatted
   * format - the pattern by which to format the number, must be enclosed in quotation marks.
 
@@ -32,6 +33,7 @@ This formula returns a specified number of characters from the beginning of a sp
 **Syntax**
 
 LEFT(string, [number_of_characters])
+
   * string - the string from which the left portion will be returned.
   * number_of_characters - [OPTIONAL - 1 by default] - the number of characters you want to return from the left side of the string
 
@@ -41,6 +43,7 @@ This formula returns the first argument if there is not an error value. If an er
 **Syntax**
 
 IFERROR(value, [value_if_error])
+
   * value - the value to return if value itself is not an error
   * value_if_error - [OPTIONAL - blank by default] - the value the function returns if value is an error
 
@@ -50,6 +53,7 @@ This formula creates a miniature chart contained within a single cell.
 **Syntax**
 
 SPARKLINE(data, [options])
+
   * data - the range or array containing the data to plot
   * options - [OPTIONAL] - a range or array of optional settings and associated values used to customize the chart. For more information on the options argument, view the sparkline help page linked above.
 
