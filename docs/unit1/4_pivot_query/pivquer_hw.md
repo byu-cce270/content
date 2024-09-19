@@ -39,21 +39,23 @@ Turn sharing and editing on. Turn in the link to Learning Suite in the feedback 
 **Rubric**
 |                              Item (Query)                                 | Points Possible |
 |:-------------------------------------------------------------------------:|:---------------:|
-|         Query is created in cell B1 on 2021_med_claims sheet.             |        2        |
-|      Query returns the Date, Plant, Shift, and Department columns.        |        2        |
-|         All incidents involving a medical claim were found.               |        2        |
-|                       Results are sorted by plant.                        |        2        |
-|         Query is created in cell B1 on days_lost_claims sheet.            |        2        |
-|      Query returns the 5 columns specified in the instructions.           |        2        |
-|  All incidents where # of days lost > 0 and incident cost >0 were found.  |        2        |
-|                Results are sorted in reverse order by cost.               |        2        |
+|         Query is created in cell B1 on 2021_med_claims sheet              |        2        |
+|      Query returns the Date, Plant, Shift, and Department columns         |        2        |
+|         All incidents involving a medical claim were found                |        2        |
+|                       Results are sorted by plant                         |        2        |
+|         Query is created in cell B1 on days_lost_claims sheet             |        2        |
+|      Query returns the 5 columns specified in the instructions            |        2        |
+|  All incidents where # of days lost > 0 and incident cost >0 were found   |        2        |
+|                Results are sorted in reverse order by cost                |        2        |
 |  <div style="text-align: right">**Total**</div>                           |       16        |
+
+
 
 |                           Item (Pivot Tables)                             | Points Possible |
 |:-------------------------------------------------------------------------:|:---------------:|
-|                  Pivot table is created on a new sheet.                   |        2        |
-|               Table created using the data in the Data tab.               |        2        |
-|                 Table includes month and year columns.                    |        2        |
-|        Column created showing the count of the number of incidents.       |        4        |
+|                  Pivot table is created on a new sheet                    |        2        |
+|               Table created using the data in the Data tab                |        2        |
+|                 Table includes month and year columns                     |        2        |
+|        Column created showing the count of the number of incidents        |        4        |
 |            Column created showing the sum of the incident cost            |        4        |
 |  <div style="text-align: right">**Total**</div>                           |       16        |
