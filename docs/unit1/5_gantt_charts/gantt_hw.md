@@ -26,7 +26,7 @@
 7. Merge cells I4:O4. Set the value of the new merged cell to the date in cell I4, or the start of the week.
 8. Use the format painter to apply these same changes to the rest of the weeks. When you're done, the formatting of your weeks should look something like this:
 
-![week_view.png](images/week_view.png)
+      ![week_view.png](images/week_view.png)
 
 9. In the TASK column (column A), write PHASE 1 in cell A6. Below this cell, create four tasks that will take place during phase 1.
 10. Below the first phase and its 4 tasks, write PHASE 2, and create four tasks below it that will take place during phase 2.
