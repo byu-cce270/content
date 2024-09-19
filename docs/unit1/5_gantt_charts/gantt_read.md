@@ -2,7 +2,7 @@
 
 **Gantt Charts** are bar charts showing the start and finish dates of the different tasks that comprise a project. These charts can help in scheduling, managing, and monitoring specific tasks and resources in a project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task and is widely used in project management.
 
-![image](https://github.com/user-attachments/assets/2d6fb4e8-6846-46f6-8a23-bb71b7c48a85)
+![gantt_chart.png](images/gantt_chart.png)
 
 
 ## Formulas Used in Gantt Chart Creation
