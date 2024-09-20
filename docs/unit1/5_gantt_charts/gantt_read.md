@@ -60,9 +60,29 @@ SPARKLINE(data, [options])
   * data - the range or array containing the data to plot
   * options - [OPTIONAL] - a range or array of optional settings and associated values used to customize the chart. For more information on the options argument, view the sparkline help page linked above.
 
-# Pre Class Challenge
 
-Here is the link to the pre-class challenge to submit with your quiz: [Pre-Class Challenge: Gantt Charts and Project Scheduling](https://docs.google.com/spreadsheets/d/1kWWKcEMHJBMgLYg-by6k-AcVT_QcRzi-yzFtLiWq2JI/edit?usp=sharing)
+# Pre-Class Quiz Challenge
+Here is a link for the pre-class starter sheet: [Pre-Class Challenge: Gantt Charts and Project Scheduling](https://docs.google.com/spreadsheets/d/1kWWKcEMHJBMgLYg-by6k-AcVT_QcRzi-yzFtLiWq2JI/edit?usp=sharing)
+
+
+## Instructions
+
+1. Use the =TODAY() formula in cell B2 to input today’s date.
+2. Use the =WEEKDAY() formula in cell B3 to return the weekday today’s date falls on.
+3. Use the =TEXT() formula in cell B4 to return the weekday today’s date falls in the “DDD” format.
+4. Use the =LEFT() formula in cell B5 to return the first letter of the weekday today’s date falls on.
+5. Use the following sparkling formula in cell B7 to create a progress bar:
+=SPARKLINE(B6, {“charttype”, “bar”; “color1”, “pink”; “max”, 1})
+6. In cell B9, copy the same formula above but modify it to reference B8 instead of B6.
+
+   * Hint: if you did this step correctly, you will get an error when you enter the formula.
+
+7. Use the =IFERROR() formula to return nothing in the cell if an error is computed in the cell.
+8. Do your best to explain what each of these functions is doing in the C column under formula explanation.
+   
+Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas and we will clarify confusion in class.
+
+
 
 
 **References Used:**
