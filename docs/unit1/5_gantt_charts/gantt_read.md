@@ -75,7 +75,7 @@ Here is a link for the pre-class starter sheet: [Pre-Class Challenge: Gantt Char
 =SPARKLINE(B6, {“charttype”, “bar”; “color1”, “pink”; “max”, 1})
 6. In cell B9, copy the same formula above but modify it to reference B8 instead of B6.
 
-   * Hint: if you did this step correctly, you will get an error when you enter the formula.
+   - Hint: if you did this step correctly, you will get an error when you enter the formula.
 
 7. Use the =IFERROR() formula to return nothing in the cell if an error is computed in the cell.
 8. Do your best to explain what each of these functions is doing in the C column under formula explanation.
