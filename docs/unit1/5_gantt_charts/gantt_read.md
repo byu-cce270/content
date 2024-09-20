@@ -60,6 +60,11 @@ SPARKLINE(data, [options])
   * data - the range or array containing the data to plot
   * options - [OPTIONAL] - a range or array of optional settings and associated values used to customize the chart. For more information on the options argument, view the sparkline help page linked above.
 
+# Pre Class Challenge
+
+Here is the link to the pre-class challenge to submit with your quiz: [Pre-Class Challenge: Gantt Charts and Project Scheduling](https://docs.google.com/spreadsheets/d/1kWWKcEMHJBMgLYg-by6k-AcVT_QcRzi-yzFtLiWq2JI/edit?usp=sharing)
+
+
 **References Used:**
 
 [Gantt Charts](https://www.investopedia.com/terms/g/gantt-chart.asp)
