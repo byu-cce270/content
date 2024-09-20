@@ -36,6 +36,8 @@ nav:
         - Reading: unit1/5_gantt_charts/gantt_read.md
         - In Class: unit1/5_gantt_charts/gantt_class.md
         - Homework: unit1/5_gantt_charts/gantt_hw.md
+    - Unit 1 Project:
+        - Project Prompt: unit1/6_unit1_project/u1_pro_promt.md
 
   - Unit 2:
     - Introduction to Python and Variables:
