@@ -4,7 +4,7 @@
 
 ## Instructions
 1. Form a team of 3 members and choose a group name. Record your team name and members of our team here: 
-       [Fall 2024 Team Sign Up Sheet](https://docs.google.com/spreadsheets/d/1M5wcMbjZQoYJGmpG7rlZ5Y9DnLdN6QDcRKndbbrm2-U/edit?gid=2018473579#gid=2018473579)
+       [Fall 2024 Team Sign Up Sheet](https://docs.google.com/spreadsheets/d/1M5wcMbjZQoYJGmpG7rlZ5Y9DnLdN6QDcRKndbbrm2-U/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 </br>(Please note that you will be with this team for all other projects and will use this name the whole semester. So chose wisely)
 
 2. You will then choose one of the three prompts listed below.
