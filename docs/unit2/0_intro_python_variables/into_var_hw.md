@@ -23,7 +23,7 @@ Don’t be too overwhelmed by the code. These instuctions will clearly indicate 
 Step 3. Find the part of the code that looks like this:
 > ################################ Step 3 here ##################################
 
-Create the following variables with comments explaining the options:
+Create the following input statements with comments explaining the options (put no space before the start of the variables):
 
 | Variable name |                     Things the comments                     | Variable Type |
 |:-------------:|:-----------------------------------------------------------:|:-------------:|
@@ -47,7 +47,7 @@ Steps 4-10. Use the  following table to write equations in the indicated  places
 | ### Step 10 ### |        V        |     no      |           V = Q/A            |
 
 ## Test Your Code
-Try out your code! Use the following inputs:
+Try out your code! When running your code, use the following inputs:
 
 | Variable name |   Input   |
 |:-------------:|:---------:|
