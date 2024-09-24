@@ -143,7 +143,7 @@ Each attempt by the computer tries to get closer and closer by guessing a number
 
 # Pre-Class Quiz Challenge
 
-Here is a link for the pre-class starter sheet: [IF Statement Pre-Class](https://docs.google.com/spreadsheets/d/1THgXpQWhGptdaxTNjyA9lHC3aBrUcUookT472WKRKFk/edit?usp=sharing)
+Here is a link for the pre-class starter sheet: [IF Statement Pre-Class](https://docs.google.com/spreadsheets/d/1THgXpQWhGptdaxTNjyA9lHC3aBrUcUookT472WKRKFk/edit?usp=sharing){:target="_blank"}
 
 ## Instructions
 
