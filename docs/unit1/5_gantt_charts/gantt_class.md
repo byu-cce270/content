@@ -9,7 +9,7 @@ You can find the Gantt Chart In-Class Exercise here: [Gantt Chart In-Class Start
   1. In the cells indicated, insert your company name and write your name as the PM.
   2. Set the project start date for today's date using the =TODAY() formula in cell D3.
   3. Set cell E5 to be equal to the project start date minus the weekday the project falls on, use ',3' to set the start of the week to Monday.
-  4. Set cell E5 to be E5+1 and drag over the dates to fill row 5 all the way to cell T5.
+  4. Set cell F5 to be E5+1 and drag over the dates to fill row 5 all the way to cell T5.
   5. Adjust the size of columns F:T to be small boxes.
   6. Use the formula =LEFT(TEXT(E5,"ddd"),1) in cell E6 to give the day of the week the date falls on in the schedule.
   7. List a minimum of 5 taks to be completed.
