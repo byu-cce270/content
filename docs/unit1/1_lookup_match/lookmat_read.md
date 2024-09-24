@@ -6,11 +6,11 @@
 
 There will be 3 short reading assignment before the next class. It will be on Lookups (specifically vlookup), Match, and Data Validation.
 
- [VLOOKUP](https://www.benlcollins.com/spreadsheets/vlookup-function/) - **Read Until** you get the the heading "VLOOKUP function template"
+ [VLOOKUP](https://www.benlcollins.com/spreadsheets/vlookup-function/){:target="_blank"} - **Read Until** you get the the heading "VLOOKUP function template"
  
- [MATCH](https://blog.sheetgo.com/google-sheets-formulas/match-formula-google-sheets/) - **Read Until** you get the the heading "How to use the INDEX MATCH function combination"
+ [MATCH](https://blog.sheetgo.com/google-sheets-formulas/match-formula-google-sheets/){:target="_blank"} - **Read Until** you get the the heading "How to use the INDEX MATCH function combination"
 
- [Data Validations](https://unito.io/blog/data-validation-google-sheets/)
+ [Data Validations](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
  
 
 ## Thing to look out for and think about
@@ -23,7 +23,7 @@ There will be 3 short reading assignment before the next class. It will be on Lo
 # Pre-Class Quiz Challenge
 
 ## Instructions
-1. First make a copy of the starter sheet here: [Starter Sheet Pre - Lookups, Match, Data Validation](https://docs.google.com/spreadsheets/d/1uMdVl5TzfQAnsSvh1fv3kuw2ci_jPpJNpaVRDbW3EH8/edit?usp=sharing)
+1. First make a copy of the starter sheet here: [Starter Sheet Pre - Lookups, Match, Data Validation](https://docs.google.com/spreadsheets/d/1uMdVl5TzfQAnsSvh1fv3kuw2ci_jPpJNpaVRDbW3EH8/edit?usp=sharing){:target="_blank"}
 2. Using Data Validations, add dropdowns in cells B2 to B25 for all the different types of services. (Tree Removal, Sidewalk Replacement, Siding Replacement, Gutter Cleaning, Gutter Replacement, Grass Removal, and Grass Replacement)
 3. Now add dropdowns in cells D2 to D25 for the level of each service can recieve (Full, Partial, and Finishing)
 4. In cells E2 to E25 use the Vlookup and Match functions to correctly give a quote for the service and type that the customer would like mulitplied by the quantity.

@@ -2,7 +2,7 @@
 
 The following exercise is based on the IF/IFS statements we have just covered. For this exercise, open the in-class workbook, make a copy, and follow the instructions. 
 
-You can find the Concrete Price Estimator/Brick Making Business starter sheet here: [IF Statement/Goal Seek Starter Sheet](https://docs.google.com/spreadsheets/d/1dRBdakgxpdWYoMZUzLZTinmhpVqI01joI3EBHkIl3ek/edit?gid=783593226#gid=783593226)
+You can find the Concrete Price Estimator/Brick Making Business starter sheet here: [IF Statement/Goal Seek Starter Sheet](https://docs.google.com/spreadsheets/d/1dRBdakgxpdWYoMZUzLZTinmhpVqI01joI3EBHkIl3ek/edit?gid=783593226#gid=783593226){:target="_blank"}
 
 ## Instructions
 

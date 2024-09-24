@@ -4,7 +4,7 @@
 
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet- HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/u/0/d/1rUlyf8lmHztFnhjQZp-jJvgtg7bNhADAEoz0q4NbXms/edit)
+   [Starter Sheet- HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/u/0/d/1rUlyf8lmHztFnhjQZp-jJvgtg7bNhADAEoz0q4NbXms/edit){:target="_blank"}
 2. Rename it something like “[Your Name] HW 1.4 - IF Statements and Goal Seek”
 
 ---

@@ -5,11 +5,11 @@
 
 There will be 2 reading assignment before the next class, with an optional one as well. It will be on Conditional Formatting, Filter and Sorting Data, and Working with Functions being optional.
 
- [Conditional Formatting](https://blog.coupler.io/conditional-formatting-google-sheets/) - Read Whole Document
+ [Conditional Formatting](https://blog.coupler.io/conditional-formatting-google-sheets/){:target="_blank"} - Read Whole Document
  
- [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/) - Read until you see "Challenge" **do not do the challenge**
+ [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"} - Read until you see "Challenge" **do not do the challenge**
  
- [Working with Functions](https://edu.gcfglobal.org/en/googlespreadsheets/working-with-functions/1/) - **Optional**
+ [Working with Functions](https://edu.gcfglobal.org/en/googlespreadsheets/working-with-functions/1/){:target="_blank"} - **Optional**
  
 
 ## Things to look out for and think about
@@ -25,8 +25,8 @@ There will be 2 reading assignment before the next class, with an optional one a
 # Pre-Class Quiz Challenge
 
 ## Instructions
-1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing/Managing Data, Conditional Formatting](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing)
-   </br> The challenge comes from the [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/) reading. 
+1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing/Managing Data, Conditional Formatting](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing){:target="_blank"}
+   </br> The challenge comes from the [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"} reading. 
 2. Select the **Equipment Log** tab if it is not already open.
 3. **Freeze** row 1.
 4. **Sort** the spreadsheet by the **Checked Out** date from most recent to the oldest.
