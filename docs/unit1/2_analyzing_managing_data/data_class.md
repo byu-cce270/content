@@ -10,9 +10,10 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
   2. In column A, add data validation to allow the user to input a valid date.
   3. In Column B, Create a dropdown for the 4 types of materials found in Column E (Steel, Concrete, Lumber, Rebar)
   4. In column C, add data validation that ensures that the quantity does not exceed 25 tons (each customer is limited to <=25 tons)
-  5. Fill out the rest of the table with dates, purchases, and quantities from the table found in E15-E18. Sum all values in cell C18						
+  5. Fill out the rest of the table with dates, purchases, and quantities from the table titled "Purchases to Add". Sum all the values of column C in cell C18						
   6. Freeze the dates and the headers of the table	
-  7. Highlight the largest order using conditional formatting
+  7. Highlight the largest order on column C using conditional formatting. Use the 'is equal to' option and enter this formula in the box below: =MAX($C$2:$C$17)
+
 				
 # Exercise 2 - Analyze Materials Purchased
 
