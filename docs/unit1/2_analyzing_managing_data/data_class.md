@@ -2,7 +2,7 @@
 
 The following exercises are based on conditional formatting, data validation, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. 
 
-You can find the in-class workbook here: [Analyzing/Managing Data, Conditional Formatting - Starter Sheet](https://docs.google.com/spreadsheets/d/1o2_qgtB7Ggw3v8IjGLdc61Ld1jZy3snVAdMJGT7ZjuA/edit?usp=sharing)
+You can find the in-class workbook here: [Analyzing/Managing Data, Conditional Formatting - Starter Sheet](https://docs.google.com/spreadsheets/d/1o2_qgtB7Ggw3v8IjGLdc61Ld1jZy3snVAdMJGT7ZjuA/edit?usp=sharing){:target="_blank"}
 
 ## Instructions
 
