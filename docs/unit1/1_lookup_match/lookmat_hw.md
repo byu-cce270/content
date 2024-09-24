@@ -4,7 +4,7 @@
 
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet- HW Lookups, Match, Data Validation](https://docs.google.com/spreadsheets/d/1AVq6HfUD7hCXnJXD6L9dSqogVHGz_7yDUDuqRiZO5n0/edit?usp=sharing)
+   [Starter Sheet- HW Lookups, Match, Data Validation](https://docs.google.com/spreadsheets/d/1AVq6HfUD7hCXnJXD6L9dSqogVHGz_7yDUDuqRiZO5n0/edit?usp=sharing){:target="_blank"}
 2. Rename it something like “[Your Name] HW 1.2 - Lookups, Match, Data Validation”
 
 ---
