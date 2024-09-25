@@ -54,7 +54,7 @@
     - Hint: Use the TODAY() function.
     
 18. In column C in your table, insert percentages for how complete at least 4 of your tasks are. 
-19. In colum.n D in your table, use the IFERROR and SPARKLINE function to create a bar chart to display the completion progress of each your tasks.
+19. In column D in your table, use the IFERROR and SPARKLINE function to create a bar chart to display the completion progress of each your tasks.
     
     - Hint: If you did your formula correctly, nothing will display in the column D if there is no percentage complete given for a task.
 
