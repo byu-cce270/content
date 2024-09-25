@@ -25,8 +25,8 @@
 
     ![header_format.png](images/header_format.png)
 
-5. Set up the dates on your schedule by referencing your start date (G2) in cell I4 and then adding one day in cell J4, like done on the in-class. Continue so your project schedule dates end on cell AJ4.
-6. In cell I4, write this formula: =G2-weekday(G2,3)+(G3-1)*7.
+5. In cell I4, write this formula: =G2-weekday(G2,3)+(G3-1)*7.
+6. In cell J4, write =I4+1 and hit enter. Drag this formula/cell out to AJ4.
 
    - Hint: The formula will look like = [cell where your project start date is] - WEEKDAY([cell where your project start date is], 3).
     
@@ -41,7 +41,7 @@
 
 10. In the TASK column (column A), write PHASE 1 in cell A6. Below this cell, create four tasks that will take place during phase 1.
 11. Below the first phase and its 4 tasks, write PHASE 2, and create four tasks below it that will take place during phase 2.
-12. For your first task, reference it's start date as the start of the project. 
+12. For your first task, reference its start date as the start of the project. 
 13. Create a duration for each of the tasks and set the end date for the tasks as their start date + the duration.
 14. Once all task start and end dates are in, input the start and end dates of PHASE 1 and PHASE 2 by referencing the day the first task in the phase started as the start date, and the last day the last task in the phase ended as the end date.
 15. Create a conditional formatting rule that will take the duration of the task and input a bar in the schedule for the correct amount of days.
@@ -53,10 +53,10 @@
     
     - Hint: Use the TODAY() function.
     
-18. In row C in your table, insert percentages for how complete at least 4 of your tasks are. 
-19. In row D in your table, use the IFERROR and SPARKLINE function to create a bar chart to display the completion progress of each your tasks.
+18. In column C in your table, insert percentages for how complete at least 4 of your tasks are. 
+19. In column D in your table, use the IFERROR and SPARKLINE function to create a bar chart to display the completion progress of each your tasks.
     
-    - Hint: If you did your formula correctly, nothing will display in the D column if there is no percentage complete given for a task.
+    - Hint: If you did your formula correctly, nothing will display in the column D if there is no percentage complete given for a task.
 
 ---
 
