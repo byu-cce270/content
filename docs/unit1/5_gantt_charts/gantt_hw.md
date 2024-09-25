@@ -4,7 +4,7 @@
 
 ## Instructions
 1. Create a new Google Sheet and rename is something like "[Your Name] HW 1.6 - Gantt Charts"
-2. Following the same format as the in class activity, give your project a project title, insert your company name, project manager name, and the start date as the =TODAY() function. 
+2. Following the same format as the in class activity, give your project a project title, insert your company name, project manager name, and the start date as today's current date. 
 3. Create a header starting in cell A5 with the following titles:
       
       * A5: TASK
@@ -34,7 +34,7 @@
    
    - Hint: Use the LEFT() and TEXT() functions to do this.
     
-8. Merge cells I4:O4. Set the value of the new merged cell to the date in cell I4, or the start of the week.
+8. Merge cells I3:O3. Set the value of the new merged cell to the date in cell I4, or the start of the week.
 9. Use the format painter to apply these same changes to the rest of the weeks. When you're done, the formatting of your weeks should look something like this:
 
       ![week_view.png](images/week_view.png)
