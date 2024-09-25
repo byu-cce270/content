@@ -21,7 +21,7 @@
       * G2: Outline the box and enter a random date you would like to start on
       * G3: Outline the box and enter 1
 
-    When you're finished your sheet should look something like this:
+    When you're finished your sheet should look something like this (use your own colors and fonts to make it your own):
 
     ![header_format.png](images/header_format.png)
 
