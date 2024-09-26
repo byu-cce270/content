@@ -6,7 +6,7 @@
 
 Google Colab is a cloud-based coding network that allows us to code using Python without downloading any software to our computers. 
 
-Put instructions on how to use Colab
+On Google search "colab" and that will take you to a blank Colab notebook. This is another tool like Google Sheets and Google Docs that can be found in your Google Drive.
 
 # Pre Class Reading Assignment
 
