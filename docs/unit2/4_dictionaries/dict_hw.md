@@ -12,13 +12,13 @@
 #### Part 1
 3. In the first code block, make a dictionary called MaterialsDictionary. Inside of this, use the following keys and their corresponding values to populate the dictionary:
 
-      Key         |             Value
-      ----------- | ------------------------------------
-      "Guide"     |  ["$ per ton","$ ship ton per mile"] 
-      “Steel”     |  [700,5] 
-      “Cement”    |  [130,2]
-      "Lumber"    |  [34,4]
-      "Glass"     |  [50,15]
+   | Key      |             Value|
+      |----------| ------------------------------------
+   | "Guide"  |  ["$ per ton","$ ship ton per mile"] |
+   | “Steel”  |  [700,5] |
+   | “Cement” |  [130,2]|
+   | "Lumber" |  [34,4]|
+   |  "Glass" |  [50,15]|
 
 ---
 
@@ -38,14 +38,14 @@
 8. Finally, multiply the cost of the material and its quantity and add this to the cost of shipping the material times the distance. Add this to the total variable
 9. Run all the cells and then test the function using this table:
     
-      Material    |   Amount  |  Distance
-      ----------- | --------- | ----------
-      “Steel”     |     4     |    90
-      “Cement”    |     1     |    90
-      "Lumber"    |     6     |    90
-      "Glass"     |     2     |    90
+   | Material | Amount | Distance |
+      |----------|--------|----------
+   | “Steel”  | 4      | 90       |
+   | “Cement” | 1      | 90       |
+   | "Lumber" | 6      | 90       |
+   | "Glass"  | 2      | 90       |
 
-     Your total should come out to **$5574**
+   Your total should come out to **$5574**
   
  10. Turn on sharing and editing. Turn in the link to the Learning Suite feedback box!
 
