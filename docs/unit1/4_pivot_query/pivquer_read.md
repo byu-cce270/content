@@ -11,7 +11,7 @@
 2. In the side panel, next to 'Values', click Add, then choose the value that you want to see over your rows or columns.
   -Sheets often offers suggestions based on the information you choose. You can
    these instead of adding specific values.
-4. It is possible to change how your data are listed, sorted, summarized, or filtered. Click the down arrow next to anything you want to change.
+3. It is possible to change how your data are listed, sorted, summarized, or filtered. Click the down arrow next to anything you want to change.
 
 ## Example Problem
 Let's look at an example of a pivot table. Here is a data set showing the division, subdivision, product number, number of units, and price per unit.
@@ -44,7 +44,7 @@ The query function has three arguments:
 - **query**: This is a text string in double quotes representing the query that you want to run on the data. The query is written in the form of a SQL query. The query can be a simple query that selects all the data in the table or a more complex query that selects only the data that meets certain conditions.
 - **headers**: This is an optional argument that specifies whether the first row of the data contains headers. If the headers argument is set to TRUE, the first row of the data are treated as headers and is not included in the results of the query. If the headers argument is set to FALSE, the first row of the data are treated as data and is included in the results of the query. The default value for the headers argument is TRUE.
 
-The way you formulate a query string is similar to how you would write a SQL query, but the syntax is slightly different. While SQL query strings can be fairly complex, for google sheets the syntax is simplified. The general structure of a query string is as follows:
+The way you formulate a query string is similar to how you would write a SQL query, but the syntax is slightly different. While SQL query strings can be fairly complex, for Google Sheets the syntax is simplified. The general structure of a query string is as follows:
 
 ```"SELECT _list of columns_ WHERE _conditional expression_ ORDER BY _column_"```
 
@@ -56,7 +56,7 @@ Here is an example of a simple query that selects all the data in a table:
 
 ```=QUERY(A1:F5, "SELECT * WHERE C > 10")```
 
-This query selects all of the rows in A1:F5 where the value in column C are greater than 10 and returns all of the columns. By contrast, this query:
+This query selects all the rows in A1:F5 where the value in column C are greater than 10 and returns all the columns. By contrast, this query:
 
 ```=QUERY(A1:F5, "SELECT A, B, D WHERE C > 10")```
 
@@ -70,7 +70,7 @@ You can also use the OR operator to select data that meets one of two conditions
 
 ```=QUERY(A1:C5, "SELECT * WHERE A > 10 OR B < 20")```
 
-In some cases, it is convenient to sort the data by the values in one of the columns. You can do this by using the ORDER BY clause in the query. For example, the following query selects the data in the range A1:C5 that meet the specified conditon and sorts the data by the values in column A:
+In some cases, it is convenient to sort the data by the values in one of the columns. You can do this by using the ORDER BY clause in the query. For example, the following query selects the data in the range A1:C5 that meet the specified condition and sorts the data by the values in column A:
 
 ```=QUERY(A1:C5, "SELECT * WHERE C > 10 ORDER BY A")```
 
@@ -80,7 +80,7 @@ You can also use the ORDER BY clause to sort the data in descending order. For e
 
 ## Example Problem - Employee Database
 
-To best illustrate how the query function works, let's consider the following example. The following worksheet contains a table of information about employees in a large multi-national corporation.
+To best illustrate how the query function works, let's consider the following example. The following worksheet contains a table of information about employees in a large multinational corporation.
 
 [Employee Data](https://docs.google.com/spreadsheets/d/1sUXazdoYdaaf5bpILrYyn8qKoJO5BTQ9aQ1Pdomc5J0/edit?usp=sharing){:target="_blank"}
 
@@ -103,7 +103,7 @@ also note that a query function is dynamic. If the data in the source table chan
 Here is another query using the same data. In this case, we want to select only employees in the United States that 
 are still active and have worked for the company at least 20 years. To determine if they are active, we will check 
 to see if the exit date in column N is blank. We will also sort the results by the date that they employees were 
-hired so that the longest servie employees are listed first. We will only include a few of the columns of interest 
+hired so that the longest service employees are listed first. We will only include a few of the columns of interest 
 in the result. As before, we will put the query in a separate sheet. Here is the query:
 
 ```=QUERY(data!A1:P1001,"SELECT A,B,C,I,H,P WHERE L='United States' AND P>=20 AND N is null ORDER BY I")```

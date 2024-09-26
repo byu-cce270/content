@@ -46,12 +46,12 @@
    | "Glass"  | 2      | 90       |
 
    Your total should come out to **$5574**
-  
-7. Turn on sharing and editing. Turn in the link to the Learning Suite feedback box!
 
 ---
 
-# Rubric
+# Turning In/Rubric
+
+Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 |                            **Item**                             | **Amount** |  
 |:---------------------------------------------------------------:|:----------:|
