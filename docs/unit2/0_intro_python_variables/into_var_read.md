@@ -4,6 +4,8 @@
 
 ## Getting started with Python (Using Google Colab)
 
+Google Colab is a cloud-based coding network that allows us to code using Python without downloading any software to our computers. 
+
 Put instructions on how to use Colab
 
 # Pre Class Reading Assignment
