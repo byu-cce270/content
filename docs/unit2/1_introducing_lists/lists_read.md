@@ -11,7 +11,10 @@ Remember that you will have to sign in to you free account that you created earl
 
 ## Things to Look Out For
 
-
+* A list is always enclosed in a set of square brackets.
+* Python indexing in lists starts at 0, not 1.
+* A list can be composed of all variable types; integers, strings, or floats.
+* Watch out for the different methods to edit lists, those will be used in the in-class workbook and homework!
 
 ---
 
