@@ -26,10 +26,7 @@
     ![header_format.png](images/header_format.png)
 
 5. In cell I4, write this formula: =G2-weekday(G2,3)+(G3-1)*7.
-6. In cell J4, write =I4+1 and hit enter. Drag this formula/cell out to AJ4.
-
-   - Hint: The formula will look like = [cell where your project start date is] - WEEKDAY([cell where your project start date is], 3).
-    
+6. In cell J4, write =I4+1 and hit enter. Drag this formula/cell out to AJ4.    
 7. In cell I5, we will reference the day of the week the date above it will fall on.
    
    - Hint: Use the LEFT() and TEXT() functions to do this.
