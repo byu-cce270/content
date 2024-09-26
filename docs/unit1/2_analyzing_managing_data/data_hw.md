@@ -6,7 +6,7 @@
    
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet- HW Analyzing/Managing Data, Conditional Formatting](https://docs.google.com/spreadsheets/d/1z9aHndUNtykZRRPncvE9h9ZbW7JfEta5npLSiirBanQ/edit?usp=sharing){:target="_blank"}
+   [Starter Sheet - HW Analyzing/Managing Data, Conditional Formatting](https://docs.google.com/spreadsheets/d/1z9aHndUNtykZRRPncvE9h9ZbW7JfEta5npLSiirBanQ/edit?usp=sharing){:target="_blank"}
 2. Rename it something like “[Your Name] HW Analyzing/Managing Data, Conditional Formatting”
 
 ---
@@ -29,18 +29,18 @@
 #### Part 2
 
 1. Navigate to the sheet that says “Streamflow Data Part 2”
-3. Format the table using colors, bold the headers, and make it easy to read.
-4. Give the data in column B a scaled color scheme that will have the low numbers be green the high numbers be red and the middle numbers be yellow
-5. Give the data in column C a color if it is greater than 180
-6. Give the data in column D a color if it is equal to 230
-7. Give the data in column E a scaled color where the lower numbers are the darker version of the color and the higher numbers are the lighter version of that color
-8. Give the data in column F a color if the text does not contain a 5
+2. Format the table using colors, bold the headers, and make it easy to read.
+3. Give the data in column B a scaled color scheme that will have the low numbers be green the high numbers be red and the middle numbers be yellow
+4. Give the data in column C a color if it is greater than 180
+5. Give the data in column D a color if it is equal to 230
+6. Give the data in column E a scaled color where the lower numbers are the darker version of the color and the higher numbers are the lighter version of that color
+7. Give the data in column F a color if the text does not contain a 5
 
 #### Part 3
 
 1. Navigate to the Summary Statistics sheet.
 2. On this page, you will see spots to use formulas to summarize the data taken at different places on the river (or stations). Use the appropriate formula and data from your “Streamflow data Part 2” sheet to make those calculations in the top half of the table.
-3. Most engineers when making calculations use Meters per Second. In the bottom half of the table, use the conversion factor in cell C20 to convert all of the values in the top half of the table from cfs to cms. Hint: Don't forget to use absolute cell references!
+3. Most engineers when making calculations use Meters per Second. In the bottom half of the table, use the conversion factor in cell C20 to convert all the values in the top half of the table from cfs to cms. Hint: Don't forget to use absolute cell references!
 
 #### Part 4
 
@@ -48,11 +48,11 @@
 2. In the calculated stress column use this formula: Stress = (Load Applied to Bridge Segment * Height of Bridge Segment) / (Width of Bridge Segment * Length of Bridge Segment^2)
    * If you want to check your work, use this table
 
-![HW_1.3_Stressssss.png](images/HW_1.3_Stressssss.png)
+   ![HW_1.3_Stressssss.png](images/HW_1.3_Stressssss.png)
 
-2. Add up all of the stresses from the calculated stress column in cell G34 using the sum function
-3. In cell G35, use the count function to total the amount of calculations you made in the Calculated Stress column.
-4. In cell G36, Find the average stress along the bridge from all of the calculations.
+3. Add up all the stresses from the calculated stress column in cell G34 using the sum function
+4. In cell G35, use the count function to total the amount of calculations you made in the Calculated Stress column.
+5. In cell G36, Find the average stress along the bridge from all the calculations.
 
 ---
 
@@ -61,16 +61,16 @@ Turn sharing, editing on. Then turn in the link to learning suite in the feedbac
 
 **Rubric:**
 
-|                       Item                       | Points Possible |
-|:------------------------------------------------:|:---------------:|
-|All sheets in workbook are named as the instructions say to be named |        4        |
-| Part 1 - Approved Status is filtered correctly   |       2         |
-| Part 1 - Date  is filtered correctly         |       2         |
-| Part 1 - Flow Rate is filtered correctly|       2         |
-| Part 2 - Streamflow Data Part 2 is nicely formatted |       2         |
-| Part 2 - Streamflow Data Part 2 columns are colored correctly           |       5         |
-| Part 3 - Correct equations and data are used in the Summary Statistics page                |       4         |
-| Part 3 - Absolute cell reference is used in the 2nd half of the table of the Summary Statistics page        |       4         |
-| Part 4 - The stress equation is written correctly             |        2        |
-| Part 4 - Correct values for total stress, number of calculations made, and average stress                   |        3        |
-|  <div style="text-align: right">**Total**</div>  |       30        |
+|                                                 Item                                                 | Points Possible |
+|:----------------------------------------------------------------------------------------------------:|:---------------:|
+|                 All sheets in workbook are named as the instructions say to be named                 |        4        |
+|                            Part 1 - Approved Status is filtered correctly                            |        2        |
+|                                 Part 1 - Date  is filtered correctly                                 |        2        |
+|                               Part 1 - Flow Rate is filtered correctly                               |        2        |
+|                         Part 2 - Streamflow Data Part 2 is nicely formatted                          |        2        |
+|                    Part 2 - Streamflow Data Part 2 columns are colored correctly                     |        5        |
+|             Part 3 - Correct equations and data are used in the Summary Statistics page              |        4        |
+| Part 3 - Absolute cell reference is used in the 2nd half of the table of the Summary Statistics page |        4        |
+|                          Part 4 - The stress equation is written correctly                           |        2        |
+|      Part 4 - Correct values for total stress, number of calculations made, and average stress       |        3        |
+|                            <div style="text-align: right">**Total**</div>                            |       30        |

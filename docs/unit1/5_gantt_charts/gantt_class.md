@@ -1,6 +1,6 @@
 # Gantt Chart In-Class Practice
 
-The following exercise will have you create a simple Gantt chart in a google sheets. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
+The following exercise will have you create a simple Gantt chart in a Google sheets. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
 You can find the Gantt Chart In-Class Exercise here: [Gantt Chart In-Class Starter Sheet](https://docs.google.com/spreadsheets/d/1k8ACDgTKBveKUnfcdLnX6djCPG3-Sa6K8LO9h9yh3A0/edit?usp=sharing){:target="_blank"}
 

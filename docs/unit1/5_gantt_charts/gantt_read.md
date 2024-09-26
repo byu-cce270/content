@@ -17,7 +17,7 @@ This formula returns a number representing the day of the week of the day provid
 WEEKDAY(date, [type])
 
   * date - the date for which to determine the day of the week
-  * type - [OPTIONAL - 1 by default] - a number that indicates which numbering system to use to represent weekdays. If type is 1, days are counted from Sunday; the value of Sunday is 1 and the value of Saturday is 7. If type is 2, days are counted from Monday; the valye of Monday is 1 and the value of Sunday is 7.
+  * type - [OPTIONAL - 1 by default] - a number that indicates which numbering system to use to represent weekdays. If type is 1, days are counted from Sunday; the value of Sunday is 1 and the value of Saturday is 7. If type is 2, days are counted from Monday; the value of Monday is 1 and the value of Sunday is 7.
 
 
 ### [TEXT()](https://support.google.com/docs/answer/3094139?hl=en&sjid=3583168966296803426-NC){:target="_blank"}
@@ -80,7 +80,7 @@ Here is a link for the pre-class starter sheet: [Pre-Class Challenge: Gantt Char
 7. Use the =IFERROR() formula to return nothing in the cell if an error is computed in the cell.
 8. Do your best to explain what each of these functions is doing in the C column under formula explanation.
    
-Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas and we will clarify confusion in class.
+Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas, and we will clarify confusion in class.
 
 
 

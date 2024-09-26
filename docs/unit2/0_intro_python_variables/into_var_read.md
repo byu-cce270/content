@@ -13,7 +13,7 @@ On the O'Reilly's website read chapter 2 in _Python Crash Course, 3rd Edition_  
 
 Remember that you will have to sign in to you free account that you created earlier.
 
-## Thing to Look Out For
+## Things to Look Out For
 
 
 

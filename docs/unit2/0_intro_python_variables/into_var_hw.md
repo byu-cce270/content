@@ -17,7 +17,7 @@ There are two common types of channel geometries: Rectangular and Trapezoidal as
 
 2. Rename it something like “[your name] HW - Introduction to Python and Variables”
 
-Don’t be too overwhelmed by the code. These instuctions will clearly indicate where to put different steps.
+Don’t be too overwhelmed by the code. These instructions will clearly indicate where to put different steps.
 
 ---
 Step 3. Find the part of the code that looks like this:

@@ -16,7 +16,7 @@ There will be 2 reading assignment before the next class, with an optional one a
 - Why do we use conditional formatting?
 - How would you use conditional formatting when given a table full of data?
 - How do you add a filter to your data set?
-- What are at least 3 different ways you can filter your data?
+- What is at least 3 different ways you can filter your data?
 - Why do we want to filter our data?
 
 

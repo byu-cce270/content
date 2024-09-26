@@ -26,10 +26,7 @@
     ![header_format.png](images/header_format.png)
 
 5. In cell I4, write this formula: =G2-weekday(G2,3)+(G3-1)*7.
-6. In cell J4, write =I4+1 and hit enter. Drag this formula/cell out to AJ4.
-
-   - Hint: The formula will look like = [cell where your project start date is] - WEEKDAY([cell where your project start date is], 3).
-    
+6. In cell J4, write =I4+1 and hit enter. Drag this formula/cell out to AJ4.    
 7. In cell I5, we will reference the day of the week the date above it will fall on.
    
    - Hint: Use the LEFT() and TEXT() functions to do this.
@@ -67,15 +64,15 @@
 
 **Rubric:**
 
-|                     Gantt Chart                  | Points Possible |
-|:-------------------------------------------------------------------------:|:---------------:|
-|   Sheet notes project title, company name, and student name as the project manager       |        2        |
-|  Headers are all included correctly as noted in step 3      |        6        |
-|   Tasks and phases are included with each phase including 4 tasks      |        4        |
-|     Start and end dates for each task are computed correctly  | 4  |
-| Phase start and end dates are computed correctly    |        2        |
-|  Conditional formatting rule for task durations is input correctly and displays task durations correctly    |        5        |
-|      Table is formatted with colors and headers         |        2        |
-|       Conditional formatting rule to highlight today's date works correctly       |        2        |
-|     SPARKLINE and IFERROR formulas are used correctly together    |        3        |
-|  <div style="text-align: right">**Total**</div>                           |       30        |
+|                                               Gantt Chart                                               | Points Possible |
+|:-------------------------------------------------------------------------------------------------------:|:---------------:|
+|            Sheet notes project title, company name, and student name as the project manager             |        2        |
+|                          Headers are all included correctly as noted in step 3                          |        6        |
+|                     Tasks and phases are included with each phase including 4 tasks                     |        4        |
+|                        Start and end dates for each task are computed correctly                         |        4        |
+|                            Phase start and end dates are computed correctly                             |        2        |
+| Conditional formatting rule for task durations is input correctly and displays task durations correctly |        5        |
+|                               Table is formatted with colors and headers                                |        2        |
+|                  Conditional formatting rule to highlight today's date works correctly                  |        2        |
+|                       SPARKLINE and IFERROR formulas are used correctly together                        |        3        |
+|                             <div style="text-align: right">**Total**</div>                              |       30        |

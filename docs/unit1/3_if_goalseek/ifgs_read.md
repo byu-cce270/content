@@ -94,7 +94,7 @@ Goal seek should now be installed and ready to use!
 
 To use Goal Seek, you will find it on the top ribbon, **Extensions > Add-ons > Goal Seek > Open**
 
-Goal seek takes three steps to use after your sheet is setup:
+Goal seek takes three steps to use after your sheet is set up:
 
 - **Set Cell**
 - **To Value**

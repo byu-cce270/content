@@ -10,26 +10,26 @@
 ---
 
 #### Part 1
-3. Navigate to the **2021_med_claims** sheet.
-4. Create a query in cell **A1** that references the safety data in the Data sheet that returns the columns **Date**, **Plant**,
+1. Navigate to the **2021_med_claims** sheet.
+2. Create a query in cell **A1** that references the safety data in the Data sheet that returns the columns **Date**, **Plant**,
    **Shift**, and **Department**.
-5. Find all incidents in 2021 involving a medical claim (hint: look in column H).
-6. Sort the results by plant.
+3. Find all incidents in 2021 involving a medical claim (hint: look in column H).
+4. Sort the results by plant.
 
 ---
 
 #### Part 2
-7. Navigate to the **days_lost_claims** sheet.
-8. Create a query in cell **A1** that references the safety data in the Data sheet that returns the columns **Incident 
+1. Navigate to the **days_lost_claims** sheet.
+2. Create a query in cell **A1** that references the safety data in the Data sheet that returns the columns **Incident 
    Type**, **Days Lost**, **Age Group**, **Gender**, and **Incident Cost**.
-9. Find all incidents where the number of days lost > 0 and the incident cost > 0.
-10. List the results in reverse order by cost (highest to lowest).
+3. Find all incidents where the number of days lost > 0 and the incident cost > 0.
+4. List the results in reverse order by cost (highest to lowest).
 
 ---
 
 #### Part 3
-11. Create a pivot table that references the incident data found in the Data tab. The table should include Month and Year columns.
-12. For each year/month combo, include a count of the number of incidents during that time and a sum of the incident cost.
+1. Create a pivot table that references the incident data found in the Data tab. The table should include Month and Year columns.
+2. For each year/month combo, include a count of the number of incidents during that time and a sum of the incident cost.
 
 ## Submission/Rubric
 Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box.
@@ -50,11 +50,11 @@ Turn sharing and editing on. Turn in the link to Learning Suite in the feedback 
 |              Results are sorted in reverse order by cost               |        2        |
 |             <div style="text-align: right">**Total**</div>             |       16        |
 
-|                           Item (Pivot Tables)                             | Points Possible |
+|                            Item (Pivot Tables)                            | Points Possible |
 |:-------------------------------------------------------------------------:|:---------------:|
-|                  Pivot table is created on a new sheet                    |        2        |
+|                   Pivot table is created on a new sheet                   |        2        |
 |               Table created using the data in the Data tab                |        2        |
-|                 Table includes month and year columns                     |        2        |
+|                   Table includes month and year columns                   |        2        |
 |        Column created showing the count of the number of incidents        |        4        |
 |            Column created showing the sum of the incident cost            |        4        |
-|  <div style="text-align: right">**Total**</div>                           |       14        |
+|              <div style="text-align: right">**Total**</div>               |       14        |
