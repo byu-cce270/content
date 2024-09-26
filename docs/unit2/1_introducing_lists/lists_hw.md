@@ -37,12 +37,15 @@
 |                                               Lists                                                     | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
 |                         4 new lists are created and named correctly                                     |        4        |
-|                          Required items are added to the 4 lists as instructed                          |        6        |
+|                          Required items are added to the 4 lists as instructed                          |        5        |
 |                          Total project duration is summed and printed                                   |        2        |
-|         New task titled "Final Inspection" with associated duration is added to correct lists           |        3        |
-|                            New updated                             |        2        |
-| Conditional formatting rule for task durations is input correctly and displays task durations correctly |        5        |
-|                               Table is formatted with colors and headers                                |        2        |
-|                  Conditional formatting rule to highlight today's date works correctly                  |        2        |
-|                       SPARKLINE and IFERROR formulas are used correctly together                        |        3        |
+|                    Lists are all printed with list descriptions included in comments                    |        3        |
+|         New task titled "Final Inspection" with associated duration is added to correct lists           |        2        |
+|       A task is removed from the task_names list and its duration is removed from the durations list    |        2        |
+|                       New updated lists with total project duration are printed                         |        2        |
+|                 A new material and new material quantity are added to the correct lists                 |        2        |
+|                  Duration and name of the longest task are correctly found and printed                  |        2        |
+|                 Duration and name of the shortest task are correctly found and printed                  |        2        |
+|                        Average duration of tasks is found and printed correctly                         |        2        |
+|                  Code is organized and comments are used to explain and separate code                   |        2        |
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
