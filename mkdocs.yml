@@ -43,6 +43,7 @@ nav:
     - How to access course book: home/accessing_book/access_book.md
     - Introduction to Python and Variables:
       - Reading: unit2/0_intro_python_variables/into_var_read.md
+      - In Class: unit2/0_intro_python_variables/into_var_class.md
       - Homework: unit2/0_intro_python_variables/into_var_hw.md
     - Introducing List:
       - Reading: unit2/1_introducing_lists/lists_read.md
