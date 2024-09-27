@@ -61,5 +61,15 @@ nav:
         - Reading: unit2/4_dictionaries/dict_read.md
         - In Class: unit2/4_dictionaries/dict_class.md
         - Homework: unit2/4_dictionaries/dict_hw.md
+    - While Loops:
+        - Reading: unit2/5_while_loops/while_read.md
+        - In Class: unit2/5_while_loops/while_class.md
+        - Homework: unit2/5_while_loops/while_hw.md
+    - Functions (Part 1):
+        - Reading: unit2/6a_functions/functions_1_read.md
+        - In Class: unit2/6a_functions/functions_1_class.md
+        - Homework: unit2/6a_functions/functions_1_hw.md
     - Functions (Part 2):
-      - Homework: unit2/6b_functions/functions_1_hw.md
+      - Reading: unit2/6b_functions/functions_2_read.md
+      - In Class: unit2/6b_functions/functions_2_class.md
+      - Homework: unit2/6b_functions/functions_2_hw.md
