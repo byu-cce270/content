@@ -13,7 +13,7 @@ theme:
   name: null
   custom_dir: 'cinder'
 nav:
-  - Home: home/index.md
+  - Home: index.md
   - Unit 1:
     - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
     - Lookups, Match, and Data Validation:
