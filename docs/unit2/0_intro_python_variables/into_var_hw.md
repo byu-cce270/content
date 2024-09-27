@@ -20,8 +20,10 @@ There are two common types of channel geometries: Rectangular and Trapezoidal as
 Don’t be too overwhelmed by the code. These instructions will clearly indicate where to put different steps.
 
 ---
-Step 3. Find the part of the code that looks like this:
-> ################################ Step 3 here ##################################
+Step 3. Find the part of the code that looks like this: 
+```python
+################################ Step 3 here ##################################
+```
 
 Create the following input statements with comments explaining the options (put no space before the start of the variables):
 
