@@ -40,7 +40,7 @@ nav:
         - Project Prompt: unit1/6_unit1_project/u1_pro_promt.md
 
   - Unit 2:
-    - How to access course book: unit2/00_set_uo/access_book.md
+    - How to access course book: unit2/00_set_up/access_book.md
     - Introduction to Python and Variables:
       - Reading: unit2/0_intro_python_variables/into_var_read.md
       - Homework: unit2/0_intro_python_variables/into_var_hw.md
