@@ -30,7 +30,7 @@ Open a new colab notebook do the following:
    2. Integer
    3. Float
 
-2. Create and import statement asking you the user's name. Then using print function, print the name given.
+2. Use the input() function to prompt for the user's name. Then using print() function, print the name given.
 
 3. Create comments explaining what each of the 4-5 lines of code is. For example:
 
