@@ -1,4 +1,4 @@
-# **HW: Lists**
+# HW: Introducing Lists
 
 ---
 

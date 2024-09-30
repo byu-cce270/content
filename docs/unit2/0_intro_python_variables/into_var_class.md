@@ -1,4 +1,4 @@
-# In Class Exercise: Introduction to Python, Variables, and input Statements
+# In Class Exercise: Introducing Lists
 
 The following exercises will have you create a formulas and input statements in python. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
