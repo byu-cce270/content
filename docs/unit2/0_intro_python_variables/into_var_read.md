@@ -10,7 +10,7 @@ On Google search "colab" and that will take you to a blank Colab notebook. This 
 
 # Pre Class Reading Assignment
 
-On the O'Reilly's website read chapter 2 in _Python Crash Course, 3rd Edition_  and chapter 7, the section on "How the input() Function Works". 
+On the O'Reilly's website read Chapter 2 in _Python Crash Course, 3rd Edition_  and Chapter 7, the section on "How the input() Function Works". Don't bother with the other sections in Chapter 7.
 </br>Here is a direct link to the readings: [PCC Chapter 2: Variables and Simple Data Types](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c02.xhtml){:target="_blank"} and [PCC Chapter 7: How the input() Fucntion Works](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c07.xhtml#h1-502703c07-0001){:target="_blank"}.
 
 Remember that you will have to sign in to you free account that you created earlier.
