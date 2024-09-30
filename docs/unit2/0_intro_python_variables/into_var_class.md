@@ -2,7 +2,7 @@
 
 The following exercises will have you create a formulas and input statements in python. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
-You can find the In Class Exercise here: [Gantt Chart In-Class Starter Sheet](https://docs.google.com/spreadsheets/d/1k8ACDgTKBveKUnfcdLnX6djCPG3-Sa6K8LO9h9yh3A0/edit?usp=sharing){:target="_blank"}
+You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/0_intro_python_variables/%5BStarter_Sheet%5D_In_Class_Introduction_to_Python%2C_Variables%2C_and_input_Statements.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 
