@@ -9,6 +9,7 @@ extra_javascript:
 markdown_extensions:
     - mdx_math
     - attr_list
+    - sane_lists
 theme:
   name: null
   custom_dir: 'cinder'
