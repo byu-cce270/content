@@ -1,44 +1,36 @@
-# In Class Exercise: Introduction to Python, Variables, and input Statements
+# In Class Exercise: Introduction to Lists and Common List Methods
 
-The following exercises will have you create a formulas and input statements in python. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
+The following exercises will have you create and edit lists. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
-You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/0_intro_python_variables/%5BStarter_Sheet%5D_In_Class_Introduction_to_Python%2C_Variables%2C_and_input_Statements.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+You can find the In Class Exercise here: <a href="https://colab.research.google.com/drive/1yssYpud0ViGO2FNrNfn8WwOT0VokANku?usp=sharing" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 
-1. In the first code block, write a print function that should return/print "Hello world".
+1. In the first code block, write code that will add mySecondlist to the end of mylist using append() and extend(). Notice the difference between the two methods.
     ```python
-    ####             THE PRINT FUNCTION                 ####
+    ####             APPEND()  &  EXTEND()                 ####
     ```
 
-2. In the following code block, create 3 good variable names and 3 bad ones. Print out your working variables and then using comments, explain why your bad one's don't work.
+2. In the following code block, practice editing lists by adding 5 foods to the end of the foodList and printing the new list out.
+3. Insert another food in the middle of the list somewhere and print the new foodList.
+4. Remove the 6th item from the foodList and print the new list and the item you removed.
+5. Remove 'beef' from your list and print out the new list.
+6. Sort the list and print the sorted list out.
+7. Reverse the list and print the reversed list out.
+8. Count your lsit and print out the count of the items in the list.
     ```python
-    ####              CREATING VARIABLES                 ####
+    ####       INSERT() & POP() & REMOVE() & SORT() & REVERSE()           ####
     ```
 
-3. In the following code block, write 2 variables that show how variables are case sensitive and then print them out. (Hint: try using the variables "a" and "A") 
+9. In the following code block, write code to access the first list within another_list and print the first list out.
+10. Write code to access and print 'Batman' from the first list.
+11. Write code to access and print 'Clark Kent'.
+12. Write code to access and print 'George'. 
     ```python
-    ####             VARIABLES ARE CASE SENSITIVE         ####
+    ####             INDEXING IN LISTS & EMBEDDED LISTS         ####
     ```
    
-4. In the following code block, write code to print out what type of variable y and z are.
-    ```python
-    ##STRINGS:
-    ```
-   
-5. In the following code block, write and print two or more boolean statements for Python to evaluate using the Python assignment or comparison operators on the W3schools website. [W3Schools Boolean Statements](https://www.w3schools.com/python/python_operators.asp){:target="_blank"}
-    ```python
-    ####                BOOLEAN VALUES                ####
-    ```   
-
-6. In the following code block, write a comment next to the variables d, e, and f and categorize its type. Then write code to change the variable d into a string, e into a float, and f into an integer. Finally print your newly categorized variables. 
-    ```python
-    ####        SWITCHING HOW A VARIABLE IS CATEGORIZED          ####
-    ```   
-
-7. In the following code block, write your own input statement and print our the response. 
-    ```python
-    ####              THE INPUT FUNCTION           ####
+Turn sharing on, copy link, and submit your completed notebook in Learning Suite.
     ```
    
 
