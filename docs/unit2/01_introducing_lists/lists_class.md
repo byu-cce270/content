@@ -2,7 +2,8 @@
 
 The following exercises will have you create and edit lists. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
-You can find the In Class Exercise here:     "<a href=\"https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/lists/lists_in_class_activity.ipynb\" target=\"_blank\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+You can find the In Class Exercise here:     <a href=\"https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/lists/lists_in_class_activity.ipynb\" target=\"_blank\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>
+
 
 
 ## Instructions
