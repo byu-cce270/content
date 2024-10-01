@@ -42,24 +42,24 @@ nav:
   - Unit 2:
     - How to access course book: home/accessing_book/access_book.md
     - Introduction to Python and Variables:
-      - Reading: unit2/0_intro_python_variables/into_var_read.md
-      - In Class: unit2/0_intro_python_variables/into_var_class.md
-      - Homework: unit2/0_intro_python_variables/into_var_hw.md
+      - Reading: unit2/00_intro_python_variables/into_var_read.md
+      - In Class: unit2/00_intro_python_variables/into_var_class.md
+      - Homework: unit2/00_intro_python_variables/into_var_hw.md
     - Introducing List:
-      - Reading: unit2/1_introducing_lists/lists_read.md
-      - In Class: unit2/1_introducing_lists/lists_class.md
-      - Homework: unit2/1_introducing_lists/lists_hw.md
+      - Reading: unit2/01_introducing_lists/lists_read.md
+      - In Class: unit2/01_introducing_lists/lists_class.md
+      - Homework: unit2/01_introducing_lists/lists_hw.md
     - Working with Lists (For Loops):
-        - Reading: unit2/2_for_loops_into_functions/for_read.md
-        - In Class: unit2/2_for_loops_into_functions/for_class.md
-        - Homework: unit2/2_for_loops_into_functions/for_hw.md
+        - Reading: unit2/02_for_loops_into_functions/for_read.md
+        - In Class: unit2/02_for_loops_into_functions/for_class.md
+        - Homework: unit2/02_for_loops_into_functions/for_hw.md
     - IF Statements:
-        - Reading: unit2/3_if_statements/if_read.md
-        - In Class: unit2/3_if_statements/if_class.md
-        - Homework: unit2/3_if_statements/if_hw.md
+        - Reading: unit2/03_if_statements/if_read.md
+        - In Class: unit2/03_if_statements/if_class.md
+        - Homework: unit2/03_if_statements/if_hw.md
     - Dictionaries:
-        - Reading: unit2/4_dictionaries/dict_read.md
-        - In Class: unit2/4_dictionaries/dict_class.md
-        - Homework: unit2/4_dictionaries/dict_hw.md
+        - Reading: unit2/04_dictionaries/dict_read.md
+        - In Class: unit2/04_dictionaries/dict_class.md
+        - Homework: unit2/04_dictionaries/dict_hw.md
     - Functions (Part 2):
-      - Homework: unit2/6b_functions/functions_hw.md
+      - Homework: unit2/06b_functions/functions_hw.md
