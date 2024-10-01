@@ -20,4 +20,4 @@ Remember that you will have to sign in to you free account that you created earl
 
 # Pre-Class Quiz Challenge
 
-Please complete exercises 3-4, 3-5, and 3-6 in a new Python notebook and submit your notebook in the pre-class quiz.
+In a Colab notebook, complete Exercises 3-4, 3-5, and 3-6 found in chapter 3 of the textbook. Submit a link to the completed problem in your Pre-Class Quiz.
