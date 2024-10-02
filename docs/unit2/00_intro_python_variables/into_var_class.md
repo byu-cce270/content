@@ -22,7 +22,7 @@ You can find the In Class Exercise here: <a href="https://colab.research.google.
     
     ```##STRINGS:```
 
-5. In the following code block, write and print two or more boolean statements for Python to evaluate using the Python assignment or comparison operators on the W3schools website. [W3Schools Boolean Statements](https://www.w3schools.com/python/python_operators.asp){:target="_blank"}
+5. In the following code block, write and print two or more boolean statements for Python to evaluate using the Python assignment or comparison operators on the W3schools website. [W3Schools Boolean Statements](https://www.w3schools.com/python/python_booleans.asp){:target="_blank"}
     
     ```####                BOOLEAN VALUES                ####```   
 
