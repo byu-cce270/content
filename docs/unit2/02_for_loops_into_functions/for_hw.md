@@ -21,5 +21,6 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 1.  Create a copy of the starter sheet and rename it something like "[Your Name] HW 2.3 - For Loops"
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/02_for_loops_into_functions/for_loops_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Follow the instructions on the notebook.
-3. When you are finished, submit the notebook to Learning Suite. Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box
+3. When you are finished, turn sharing and editing on, and then turn in the link to your notebook to Learning Suite in 
+   the feedback box.
 
