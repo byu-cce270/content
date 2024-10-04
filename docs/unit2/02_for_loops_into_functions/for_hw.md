@@ -2,7 +2,10 @@
 
 ---
 
-**Purpose:** Learn how to use for loops to analyze lists.
+**Purpose:** Learn how to use for loops to analyze lists. You will work with a list of beams and use for loops to calculate and print the deflection of the beams. Assume that the beams are cantilevered with point loads at some distances x as shown in the diagram below. To calculate the deflection of the beams, use the equation given below.
+![image](https://github.com/user-attachments/assets/fde39a5d-6ce6-4cf7-8346-31a93105ce1c)
+
+
 
 ---
 
