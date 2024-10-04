@@ -2,11 +2,13 @@
 
 ---
 
-**Purpose:** Learn how to use for loops to analyze lists. You will work with a list of beams and use for loops to calculate and print the deflection of the beams. Assume that the beams are cantilevered with point loads at some distances a from the fixed side on the left as shown in the following diagram. 
+**Purpose:** Learn how to use for loops to analyze lists. You will work with a list of beams and use for loops to 
+calculate and print the deflection of the beams. Assume that the beams are cantilevered with a point load at some 
+distance **a** from the fixed side on the left as shown in the following diagram. 
 
 ![image](https://www.vcalc.com/attachments/f79744e5-e005-11e3-b7aa-bc764e2038f2/CantileverBeamConcentratedloadPatanypoint-illustration.png)
 
-The maximum deflection at the end of the beam is given by the following equation:
+The deflection at the end of the beam is given by the following equation:
 
 $$\delta_{max}=\frac{Pa^2}{6EI}\left(3l-a\right)$$
 
