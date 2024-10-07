@@ -12,6 +12,20 @@ The deflection at the end of the beam is given by the following equation:
 
 $$\delta_{max}=\frac{Pa^2}{6EI}\left(3l-a\right)$$
 
+where:
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(\delta_{max}\) = the maximum deflection at the end of the beam
+   
+&nbsp;&nbsp;&nbsp;&nbsp;\(P\) = the point load
+   
+&nbsp;&nbsp;&nbsp;&nbsp;\(a\) = the distance from the fixed side to the point load
+   
+&nbsp;&nbsp;&nbsp;&nbsp;\(l\) = the length of the beam
+   
+&nbsp;&nbsp;&nbsp;&nbsp;\(E\) = the modulus of elasticity
+   
+&nbsp;&nbsp;&nbsp;&nbsp;\(I\) = the moment of inertia
+
 For multiple loads, the total deflection is the sum of the deflections due to each individual load.
 
 ---
