@@ -3,7 +3,7 @@
 The following exercises will have you edit and analyze lists using for loops. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
 You can find the In Class Exercise here:
-<a href="https://colab.research.google.com/drive/13jfBHj1o0OuzWmsYkGwLen27rJuQ3A7g" target="_blank"><img src="https://colab.research.google.com/drive/13jfBHj1o0OuzWmsYkGwLen27rJuQ3A7g" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/drive/13jfBHj1o0OuzWmsYkGwLen27rJuQ3A7g" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 1. In the first code block, create an input that asks what your favorite U.S. state is.
