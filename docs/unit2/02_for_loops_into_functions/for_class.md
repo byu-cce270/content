@@ -2,7 +2,8 @@
 
 The following exercises will have you edit and analyze lists using for loops. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
-You can find the In Class Exercise here:     
+You can find the In Class Exercise here:
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/02_for_loops_into_functions/For_Loops_In_Class.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 1. In the second code block, create your own list of animal names.
