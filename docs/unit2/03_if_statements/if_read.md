@@ -10,7 +10,7 @@ On the O'Reilly's website read chapter 5 in _Python Crash Course, 3rd Edition_.
 Remember that you will have to sign in to you free account that you created earlier.
 
 ## Things to Look Out For
-- if statement
+- if statements
 - elif statements
 - comparative operators such as >,<,==
 
@@ -18,4 +18,4 @@ Remember that you will have to sign in to you free account that you created earl
 ---
 
 # Pre-Class Quiz Challenge
-https://colab.research.google.com/drive/1HAWeYZgMcKdVHOEmAMJiUkMm5i_tJM1Y
+<a href="https://colab.research.google.com/drive/1HAWeYZgMcKdVHOEmAMJiUkMm5i_tJM1Y" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
