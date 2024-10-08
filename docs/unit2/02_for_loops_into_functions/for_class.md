@@ -1,17 +1,14 @@
 # In Class Exercise: Introduction to For Loops
 
-The following exercises will have you edit and analyze lists using for loops. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
+The following exercises will have you edit and analyze lists using for loops. 
 
 You can find the In Class Exercise here:
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/02_for_loops_into_functions/For_Loops_In_Class.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
-1. In the second code block, create your own list of animal names.
-2. Then, create a for loop that will print all of the names in your list.
-3. In the fourth code block, create a nested for loop given the adj and fruit lists.
-4. In the sixth code block, write your own for loop using mylist.
-5. Also, create and print a new list that says "Hello [name]" for each name in the list.
-
+1. Open the in-class workbook using the link above.
+2. Rename the notebook as `For_Loops_In_Class_(lastname, firstname).ipynb`.
+2. Follow the instructions in the notebook to complete the exercise.
 
 ---
 
