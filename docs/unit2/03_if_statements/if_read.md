@@ -9,7 +9,7 @@ On the O'Reilly's website read chapter 5 in _Python Crash Course, 3rd Edition_.
 
 Remember that you will have to sign in to you free account that you created earlier.
 
-## Things to Look Out For
+## Things to look out for
 - indentation of if and elif statements
 - comparative operators such as >, <, and ==
 
@@ -17,4 +17,8 @@ Remember that you will have to sign in to you free account that you created earl
 ---
 
 # Pre-Class Quiz Challenge
-<a href="https://colab.research.google.com/drive/1HAWeYZgMcKdVHOEmAMJiUkMm5i_tJM1Y" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+Open the following notebook and complete the instructions in the comments:
+
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_if_statements/%5BStarter_Sheet%7D_If_Statement_Pre_Class.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Save changes to your Google Drive and submit the link to the notebook in your Pre-Class Quiz.
