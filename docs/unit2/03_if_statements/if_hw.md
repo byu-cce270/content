@@ -37,12 +37,12 @@ For this example, a student has given you a list of trusses he needs to solve fo
    - Members = 3
    - Reaction forces = 3
    - Result = "Statically determinate"
-8. Scenario #2
+9. Scenario #2
    - Joints = 4
    - Members = 6
    - Reaction forces = 3
    - Result = "Statically indeterminate"
-9. Scenario #3
+10. Scenario #3
     - Joints = 8
     - Members = 9
     - Reaction forces = 4
