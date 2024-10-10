@@ -73,16 +73,10 @@ For this example, a student has given you a list of trusses he needs to solve fo
 
 |                                               If Statements                                                     | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
-|                         4 new lists are created and named correctly                                     |        4        |
-|                          Required items are added to the 4 lists as instructed                          |        5        |
-|                          Total project duration is summed and printed                                   |        2        |
-|                    Lists are all printed with list descriptions included in comments                    |        3        |
-|         New task titled "Final Inspection" with associated duration is added to correct lists           |        2        |
-|       A task is removed from the task_names list and its duration is removed from the durations list    |        2        |
-|                       New updated lists with total project duration are printed                         |        2        |
-|                 A new material and new material quantity are added to the correct lists                 |        2        |
-|                  Duration and name of the longest task are correctly found and printed                  |        2        |
-|                 Duration and name of the shortest task are correctly found and printed                  |        2        |
-|                        Average duration of tasks is found and printed correctly                         |        2        |
-|                  Code is organized and comments are used to explain and separate code                   |        2        |
+|                         Part 1 - Correct value for scenario 1                                           |        5        |
+|                          Part 1 - Correct value for scenario 2                                          |        5        |
+|                          Part 1 - Correct value for scenario 3                                          |        5        |
+|                           Part 2 - Correct value wood                                                   |        5        |
+|                            Part 2 - Correct value for steel                                             |        5        |
+|                               Part 2- Correct value for brick                                           |        5        |
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
