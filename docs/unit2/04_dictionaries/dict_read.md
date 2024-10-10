@@ -19,3 +19,4 @@ Remember that you will have to sign in to you free account that you created earl
 # Pre-Class Quiz Challenge
 In a Colab notebook, complete Problem 6-5 found in chapter 6 of the textbook. Submit a link to the completed problem in your Pre-Class Quiz. 
 
+![preclasschallenge.png](images/preclasschallenge.png)
