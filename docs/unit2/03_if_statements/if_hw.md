@@ -6,7 +6,7 @@
 
 ---
 ## Part 1
-### Objective: Create a code that can, when given the correct inputs, solve the determinacy of any given truss. Determinacy is a Statics principle that helps us know whether or not we can solve the forces in a given system using statics equations.
+### Objective: Create a code that can solve the determinacy of any given truss when given the correct inputs. Determinacy is a Statics principle that helps us know whether or not we can solve the forces in a given system using statics equations.
 
 Here is an example of a truss labeled with the joints, reaction forces, and members:
 
@@ -23,7 +23,7 @@ For this example, a student has given you a list of trusses he needs to solve fo
   - The number of reaction forces acting on the truss. (Must be an integer)
 4. Write IF, ELIF, and ElSE statements on the next line under the "Write If statements here" line for the following scenarios. 
 
-  | Equation      | Result                                |  |
+  | Equation      | Result                                |
    |----------|--------------------------------------|
    | # of members + # of reaction forces = 2 * (# of joints) | Statically determinate |
    | # of members + # of reaction forces > 2 * (# of joints) | Statically Indeterminate |
