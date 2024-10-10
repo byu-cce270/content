@@ -47,9 +47,9 @@ For this example, a student has given you a list of trusses he needs to solve fo
     - Members = 9
     - Reaction forces = 4
     - Result = "Unstable"
-  
+
 ##Part 2
-### Objective: 
+### Objective:  You are helping a company count the orders of materials they have. THey have given you the list, they want you to count it.
 
 
 ---
