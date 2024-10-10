@@ -11,7 +11,7 @@
 
 Here is an example of a truss labeled with the joints, reaction forces, and members:
 
-![TRUSS_ANALYSES.png](images/TRUSS_ANALYSES.png){: style="width:1000px"}
+![Warren-Truss2.png](images/Warren-Truss2.png)
 
 For this example, a student has given you a list of trusses he needs to solve for in his statics class. Because of your charitable heart, and your superb coding skills, you have agreed to help him.
 
