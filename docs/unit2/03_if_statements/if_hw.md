@@ -9,7 +9,7 @@
 
 **Objective**: Create a code that can solve the determinacy of any given truss when given the correct inputs. Determinacy is a Statics principle that helps us know whether or not we can solve the forces in a given system using statics equations.
 
-Here is an example of a truss labeled with the joints, reaction forces, and members:
+Here is an example of a truss. The blue lines are the members, the joints are the white circles where the members meet, and the red arrows are the reaction forces.:
 
 ![Warren-Truss2.png](images/Warren-Truss2.png)
 _(image from [www.engineeringskills.com](https://www.engineeringskills.com/posts/truss-analysis-using-method-of-joints-and-sections))_
