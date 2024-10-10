@@ -76,7 +76,7 @@ For this example, a student has given you a list of trusses he needs to solve fo
 |                         Part 1 - Correct value for scenario 1                                           |        5        |
 |                          Part 1 - Correct value for scenario 2                                          |        5        |
 |                          Part 1 - Correct value for scenario 3                                          |        5        |
-|                           Part 2 - Correct value wood                                                   |        5        |
+|                           Part 2 - Correct value for wood                                               |        5        |
 |                            Part 2 - Correct value for steel                                             |        5        |
 |                               Part 2- Correct value for brick                                           |        5        |
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
