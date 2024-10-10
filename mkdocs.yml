@@ -67,13 +67,13 @@ nav:
         - In Class: unit2/05_while_loops/while_class.md
         - Homework: unit2/05_while_loops/while_hw.md
     - Functions (Part 1):
-        - Reading: unit2/06a_functions/functions_read.md
-        - In Class: unit2/06a_functions/functions_class.md
-        - Homework: unit2/06a_functions/functions_hw.md
+        - Reading: unit2/06a_functions/functions1_read.md
+        - In Class: unit2/06a_functions/functions1_class.md
+        - Homework: unit2/06a_functions/functions1_hw.md
     - Functions (Part 2):
-        - Reading: unit2/06b_functions/functions_read.md
-        - In Class: unit2/06b_functions/functions_class.md
-        - Homework: unit2/06b_functions/functions_hw.md
+        - Reading: unit2/06b_functions/functions2_read.md
+        - In Class: unit2/06b_functions/functions2_class.md
+        - Homework: unit2/06b_functions/functions2_hw.md
     - MatPlotLib:
         - Reading: unit2/07_matplotlib/matplot_read.md
         - In Class: unit2/07_matplotlib/matplot_class.md
