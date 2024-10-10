@@ -48,7 +48,7 @@ For this example, a student has given you a list of trusses he needs to solve fo
 **Objective**:  You are helping a company count the orders of materials it has. They have given you the list and want you to count it.
 
 ###Steps
-1. Under the line "main for loop", create a for loop that will go through each order in the given "order" list.
+1. Under the line "main for loop", create a for loop that will go through each order in the given "orders " list.
 2. In the next line, create a for loop that will read each item in the "Total_order" list.
 3. Now, compare if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item.
     - EX: If steel is in the "order" list and "total_orders" list, then the value for steel in the "total_orders" list should increase by 1 for each occurrence of steel. This should be the same for wood and brick.
