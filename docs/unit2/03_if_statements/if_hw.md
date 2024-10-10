@@ -34,15 +34,15 @@ For this example, a student has given you a list of trusses he needs to solve fo
 6. Have your code print the result. For example, if my truss had more joints than reaction forces + my members, then my code would print "truss is statically unstable"
 7. Test your code with the following scenarios:
 8. Scenario #1
-   - Joints = 3
-   - Members = 3
-   - Reaction forces = 3
-   - Result = "Statically determinate"
+    - Joints = 3
+    - Members = 3
+    - Reaction forces = 3
+    - Result = "Statically determinate"
 10. Scenario #2
-   - Joints = 4 
-   - Members = 6
-   - Reaction forces = 3
-   - Result = "Statically indeterminate"
+    - Joints = 4 
+    - Members = 6
+    - Reaction forces = 3
+    - Result = "Statically indeterminate"
 11. Scenario #3
     - Joints = 8
     - Members = 9
