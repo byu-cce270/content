@@ -37,12 +37,12 @@ For this example, a student has given you a list of trusses he needs to solve fo
    - Members = 3
    - Reaction forces = 3
    - Result = "Statically determinate"
-9. Scenario #2
-   - Joints = 4
+10. Scenario #2
+   - Joints = 4 
    - Members = 6
    - Reaction forces = 3
    - Result = "Statically indeterminate"
-10. Scenario #3
+11. Scenario #3
     - Joints = 8
     - Members = 9
     - Reaction forces = 4
@@ -50,6 +50,9 @@ For this example, a student has given you a list of trusses he needs to solve fo
 
 ##Part 2
 ### Objective:  You are helping a company count the orders of materials they have. THey have given you the list, they want you to count it.
+
+###Steps
+1. 
 
 
 ---
