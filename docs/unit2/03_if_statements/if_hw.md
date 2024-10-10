@@ -29,11 +29,11 @@ For this example, a student has given you a list of trusses he needs to solve fo
    | # of members + # of reaction forces = 2 * (# of joints) | Statically determinate |
    | # of members + # of reaction forces > 2 * (# of joints) | Statically Indeterminate |
    | # of members + # of reaction forces < 2 * (# of joints) | Unstable |
-   | N/A | [34,4]                               |
 
-5. Have your code print the result. For example, if my truss had more joints than reaction forces + my members, then my code would print "truss is statically unstable"
-6. Test your code with the following scenarios:
-7. Scenario #1
+5. Write an else statement that will print "Invalid input" for any input that does not fit the table above.
+6. Have your code print the result. For example, if my truss had more joints than reaction forces + my members, then my code would print "truss is statically unstable"
+7. Test your code with the following scenarios:
+8. Scenario #1
    - Joints = 3
    - Members = 3
    - Reaction forces = 3
@@ -51,11 +51,17 @@ For this example, a student has given you a list of trusses he needs to solve fo
 
 ##Part 2
 
-**Objective**:  You are helping a company count the orders of materials they have. THey have given you the list, they want you to count it.
+**Objective**:  You are helping a company count the orders of materials it has. They have given you the list and want you to count it.
 
 ###Steps
-1. 
-
+1. Under the line "main for loop", create a for loop that will go through each material in the given "order" list.
+2. In the next line, create a for loop that will read each item in the "Total_order" list.
+3. Now, compare if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item.
+- EX: If steel is in the "order" list and "total_orders" list, then the value for steel in the "total_orders" list should increase by 1 for each occurrence of steel. This should be the same for wood and brick.
+4. Print each of the final values for wood, brick, and steel. Here are the final values that you should get:
+  - 14 orders of wood
+  - 10 orders of brick
+  - 8 orders of steel
 
 ---
 
