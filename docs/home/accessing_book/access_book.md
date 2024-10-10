@@ -14,6 +14,6 @@ Click "Got It"
 
 ![pcc_oreilly3.png](images/pcc_oreilly3.png)
 
-The page will reload, and now you will have access to the book. Click either "Start" or "Continue" to start reading and gain access to the book.
+The page will reload, and now you will have access to the book. Click either "Start" or "Continue" to start reading and gain access to the book. You will need to do this each time you access the book. Once you are logged in, the links to the book will immediately load. After a period of time, you will be logged out and need to repeat the process.
 
 ![pcc_oreilly4.png](images/pcc_oreilly4.png)
