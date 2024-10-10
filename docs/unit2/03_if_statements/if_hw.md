@@ -6,11 +6,12 @@
 
 ---
 ## Part 1
-### Objective: Create a code that can solve the determinacy of any given truss when given the correct inputs. Determinacy is a Statics principle that helps us know whether or not we can solve the forces in a given system using statics equations.
+
+**Objective**: Create a code that can solve the determinacy of any given truss when given the correct inputs. Determinacy is a Statics principle that helps us know whether or not we can solve the forces in a given system using statics equations.
 
 Here is an example of a truss labeled with the joints, reaction forces, and members:
 
-![TRUSS_ANALYSES.png](TRUSS_ANALYSES.png)
+![TRUSS_ANALYSES.png](images/TRUSS_ANALYSES.png)
 
 For this example, a student has given you a list of trusses he needs to solve for in his statics class. Because of your charitable heart, and your superb coding skills, you have agreed to help him.
 
@@ -49,7 +50,8 @@ For this example, a student has given you a list of trusses he needs to solve fo
     - Result = "Unstable"
 
 ##Part 2
-### Objective:  You are helping a company count the orders of materials they have. THey have given you the list, they want you to count it.
+
+**Objective**:  You are helping a company count the orders of materials they have. THey have given you the list, they want you to count it.
 
 ###Steps
 1. 
