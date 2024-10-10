@@ -21,6 +21,57 @@ For this example, a student has given you a list of trusses he needs to solve fo
   - The number of joints in the truss. (Must be an integer)
   - The number of members in the truss. (Must be be an integer)
   - The number of reaction forces acting on the truss. (Must be an integer)
-4. Write IF, ELIF and ElSE statements on the next line under the "Write If statements here" line for the following scenerios
-- 
-    
+4. Write IF, ELIF, and ElSE statements on the next line under the "Write If statements here" line for the following scenarios. 
+
+  | Equation      | Result                                |  |
+   |----------|--------------------------------------|
+   | # of members + # of reaction forces = 2 * (# of joints) | Statically determinate |
+   | # of members + # of reaction forces > 2 * (# of joints) | Statically Indeterminate |
+   | # of members + # of reaction forces < 2 * (# of joints) | Unstable |
+   | N/A | [34,4]                               |
+
+5. Have your code print the result. For example, if my truss had more joints than reaction forces + my members, then my code would print "truss is statically unstable"
+6. Test your code with the following scenarios:
+7. Scenario #1
+   - Joints = 3
+   - Members = 3
+   - Reaction forces = 3
+   - Result = "Statically determinate"
+8. Scenario #2
+   - Joints = 4
+   - Members = 6
+   - Reaction forces = 3
+   - Result = "Statically indeterminate"
+9. Scenario #3
+    - Joints = 8
+    - Members = 9
+    - Reaction forces = 4
+    - Result = "Unstable"
+  
+##Part 2
+### Objective: 
+
+
+---
+
+**Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
+
+---
+
+**Rubric:**
+
+|                                               If Statements                                                     | Points Possible |
+|:-------------------------------------------------------------------------------------------------------:|:---------------:|
+|                         4 new lists are created and named correctly                                     |        4        |
+|                          Required items are added to the 4 lists as instructed                          |        5        |
+|                          Total project duration is summed and printed                                   |        2        |
+|                    Lists are all printed with list descriptions included in comments                    |        3        |
+|         New task titled "Final Inspection" with associated duration is added to correct lists           |        2        |
+|       A task is removed from the task_names list and its duration is removed from the durations list    |        2        |
+|                       New updated lists with total project duration are printed                         |        2        |
+|                 A new material and new material quantity are added to the correct lists                 |        2        |
+|                  Duration and name of the longest task are correctly found and printed                  |        2        |
+|                 Duration and name of the shortest task are correctly found and printed                  |        2        |
+|                        Average duration of tasks is found and printed correctly                         |        2        |
+|                  Code is organized and comments are used to explain and separate code                   |        2        |
+|                             <div style="text-align: right">**Total**</div>                              |       30        |
