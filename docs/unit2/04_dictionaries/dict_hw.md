@@ -24,19 +24,22 @@
 
 #### Part 2
 1. The existing function has two parameters: a dictionary (titled MaterialsDictionary) and the number of different types of materials there are in the dictionary (amountmat)
-2. Write a **for-loop** that will iterate as many times as there are different types of materials (at the very end, it should loop 4 times)
+2. In the function, write a **for-loop** that loops through the keys and values of the MaterialsDictionary. 
+3. In the for-loop, create an if statement that passes the loop every time the key is equal to "Guide"
+4. In the for-loop, create an else statement that prints a sentence saying how much each material costs per ton and how much they cost to ship.
+5. Write a for-loop that will iterate as many times as there are different types of materials (at the very end, it should loop 4 times)
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the "amountmat" variable in your for-loop statement</br>
-3. In the loop, use three input statements that:
+6. In the loop, use three input statements that:
    
       - Ask what material the user wants to buy
       - Ask how much of that material the user wants to buy
       - Ask how far the material will be shipped
      
-      The input statements should create three different variables with appropriate names related to their prompts
+      The input statements should create three different variables with appropriate names related to their prompts. Make sure the variables are the correct data type (i.e. material should be a string, material quantity and distance should be floats/integers)
 
-4. Create a variable called "cost" that references the dictionary and pulls the value related to whatever material is input by the user
-5. Finally, multiply the cost of the material and its quantity and add this to the cost of shipping the material times the distance. Add this to the total variable
-6. Run all the cells and then test the function using this table:
+7. Create a variable called "cost" that references the dictionary and pulls the value related to whatever material is input by the user
+8. Finally, multiply the cost of the material and its quantity and add this to the cost of shipping the material times the distance. Add this to the total variable
+9. Run all the cells and then test the function using this table:
     
    | Material | Amount | Distance |
    |----------|--------|----------|
