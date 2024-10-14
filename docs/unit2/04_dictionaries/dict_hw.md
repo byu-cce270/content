@@ -3,14 +3,18 @@
 **Purpose:** Learn how to create a dictionary and how to call information from it.
 
 ## Instructions
+
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/04_dictionaries/dictionaries_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 2. Rename it something like "[Your Name] HW 2.5 - Dictionaries"
 
+In this assignment, you will be creating a dictionary and using it to calculate the cost of materials and shipping. The dictionary will contain the cost of each material per ton and the cost to ship each material per mile. You will then use this dictionary to calculate the total cost of a shipment of materials.
+
 ---
 
 #### Part 1
-1. In the first code block, make a dictionary called MaterialsDictionary. Use the following keys and their corresponding values to populate the dictionary:
+
+In the first code block, make a dictionary called MaterialsDictionary. Use the following keys and their corresponding values to populate the dictionary:
 
    | Key      | Value                                |
    |----------|--------------------------------------|
@@ -23,11 +27,12 @@
 ---
 
 #### Part 2
+
+In the second code block, you will write the code for a function called "MaterialCost" that will calculate the total cost of a shipment of materials. The function will take two parameters: a dictionary and the number of different types of materials there are in the dictionary. The function will return the total cost of the shipment. The structure of the function is already set up for you.
+
 1. The existing function has two parameters: a dictionary (titled MaterialsDictionary) and the number of different types of materials there are in the dictionary (amountmat)
 2. In the function (where it says "Write the first for-loop starting here"), write a for-loop that loops through the keys and values of the MaterialsDictionary. 
-3. In the for-loop, create an if statement that skips the loop when the key is equal to "Guide."
-   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the "continue" statement in your for-loop</br>
-4. In the for-loop, create an else statement that prints a sentence saying how much each material costs per ton and how much they cost to ship.
+3. In the for-loop, use an if statement to ensure that the key is **not** equal to "Guide." Then print a sentence saying how much each material costs per ton and how much they cost to ship.
 5. In the function (where it says "Write the second for-loop starting here"), write a second for-loop that will iterate as many times as there are different types of materials
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the "amountmat" variable in your for-loop statement</br>
 6. In the new for-loop, create the following input statements:
