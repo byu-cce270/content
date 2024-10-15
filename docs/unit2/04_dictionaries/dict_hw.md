@@ -28,10 +28,10 @@ In the first code block, make a dictionary called MaterialsDictionary. Use the f
 
 #### Part 2
 
-In the second code block, you will write the code for a function called "MaterialCost" that will calculate the total cost of a shipment of materials. The function will take two parameters: a dictionary and the number of different types of materials there are in the dictionary. The function will return the total cost of the shipment. The structure of the function is already set up for you.
+In the second code block, you will write the code for a function called "invoice_calc" that will calculate the total cost of a shipment of materials. The function will take two parameters: a dictionary and the number of different types of materials there are in the dictionary. The function will return the total cost of the shipment. The structure of the function is already set up for you.
 
 1. The existing function has two parameters: a dictionary (titled MaterialsDictionary) and the number of different types of materials there are in the dictionary (amountmat)
-2. In the function (where it says "Write the first for-loop starting here"), write a for-loop that loops through the keys and values of the MaterialsDictionary. 
+2. In the function (where it says "Write the first for-loop starting here"), write a for-loop that loops through the keys and values of the MaterialsDictionary. Make sure that you start writing your code with at least one indentation since it is within a function.
 3. In the for-loop, use an if statement to ensure that the key is **not** equal to "Guide." Then print a sentence saying how much each material costs per ton and how much they cost to ship.
 5. In the function (where it says "Write the second for-loop starting here"), write a second for-loop that will iterate as many times as there are different types of materials
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the "amountmat" variable in your for-loop statement</br>
