@@ -12,7 +12,7 @@ Remember that you will have to sign in to you free account that you created earl
 ## Things to Look Out For
 - Dictionaries use braces {} as opposed to lists which use square brackets []
 - Keys and values are separated by colons, and key-value pairs are separated by commas
-- Dictionaries can have lists as their values
+- A dictionary's keys cannot be lists, but its values can be
 
 ---
 
