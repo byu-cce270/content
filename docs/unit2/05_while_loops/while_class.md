@@ -1,4 +1,4 @@
-# In Class Exercise: Introduction to While Loops
+# In-Class Exercise: Introduction to While Loops
 
 The following exercises will have you create and understand what a while loop does and when it is used.
 
@@ -7,7 +7,7 @@ You can find the In Class Exercise here:
 
 ## Instructions
 1. Open the in-class workbook using the link above.
-2. Rename the notebook as `dictionaries_in_class_(lastname, firstname).ipynb`.
+2. Rename the notebook with your name.
 2. Follow the instructions in the notebook to complete the exercise.
 
 
