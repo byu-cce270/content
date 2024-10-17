@@ -19,4 +19,5 @@ Remember that you will have to sign in to you free account that you created earl
 
 # Pre-Class Quiz Challenge
 In a Colab notebook, complete Problem 8-3 found in chapter 8 of the textbook. Do not worry about calling the function using keyword arguments, just call it once using positional arguments. Submit a link to the completed problem in your Pre-Class Quiz. 
+
 ![preclasschallenge.png](images/preclasschallenge.png)
