@@ -40,18 +40,31 @@ In this assignment, you will be creating a while loop and using it to calculate 
 
 ---
 
+#### Test Code
+
+If you'd like to check your code so that it is working properly, run the first code block an enter these values: 
+* Watershed Area = 10 acres
+* Watershed Height = 10 feet
+* Water Depth = 5 feet
+
+Next, run the second code block and enter these values for precipitation:
+* 23, 14, 2, 17, 8, 26
+
+You should get code that looks like this.
+![]()
+
 # Turning In/Rubric
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 |                            **Item**                               | **Amount** |  
 |:-----------------------------------------------------------------:|:----------:|
-| The variables are defined properly                                |           |
-| The while loop is created under the correct first break condition |           |
-| The input statements have a clear prompt string                   |           |
-| The new total depth is calculated based on the old depth          |           |
-| The function prints the correct statement for each outcome        |           |
-| The function prints the days elapsed after each outcome           |           |
-| the loop breaks under the second condition                        |           |
+| The variables are defined properly                                |     6      |
+| The input statements have a clear prompt string                   |     6      |
+| The function prints the correct statement for each outcome        |     6      |
+| The while loop is created under the correct first break condition |     3      |
+| The new total depth is calculated based on the old depth          |     3      |
+| The function prints the days elapsed after each outcome           |     3      |
+| the loop breaks under the second condition                        |     3      |
 |         <div style="text-align: right">**Total**</div>            |   **30**   |
    
