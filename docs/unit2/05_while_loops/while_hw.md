@@ -50,8 +50,8 @@ If you'd like to check your code so that it is working properly, run the first c
 Next, run the second code block and enter these values for precipitation:
 * 23, 14, 2, 17, 8, 26
 
-You should get code that looks like this.
-![]()
+You should get an output that looks something like this:
+![HW_2_6_Example_1_2.png](images/HW_2_6_Example_1_2.png)
 
 # Turning In/Rubric
 
