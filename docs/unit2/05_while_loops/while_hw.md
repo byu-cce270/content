@@ -51,6 +51,8 @@ Next, run the second code block and enter these values for precipitation:
 * 23, 14, 2, 17, 8, 26
 
 You should get an output that looks something like this:
+
+![HW_2_6_Example_1_1.png](images/HW_2_6_Example_1_1.png)
 ![HW_2_6_Example_1_2.png](images/HW_2_6_Example_1_2.png)
 
 # Turning In/Rubric
