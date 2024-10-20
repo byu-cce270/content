@@ -20,7 +20,8 @@ In this assignment, you will be creating functions that calculate the total area
 5. Within the function, calculate the volume of the gravel in cubic yards, then return it
 6. On a new line within the code block, define a function called "volToTon" with one input parameter, "volYards", which is the volume of the gravel in cubic yards
 7. Within the function, calculate the tonnage of the gravel (1 cubic yard of gravel weighs about 1.4 tons), then return it
-8. On a new line within the code block, define a function called "getCostofGravel" that 
+8. On a new line within the code block, define a function called "getCostofGravel" with one input parameter, "Gravel", which will take a dictionary with gravel types as the keys and their price per ton as the values (don't worry about creating the dictionary until Part 2)
+9. 
 
 ---
 
