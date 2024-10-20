@@ -14,14 +14,15 @@ In this assignment, you will be creating functions that calculate the total area
 
 #### Part 1
 
-1. In the first code block, define a function called "getCuFt" with two input parameters, "areaFt" and "depthIn", which is the area of the gravel in feet and the depth of the gravel in inches respectively
+1. In the first code block, define a function called "getCuFt" with two input parameters, "areaFt" and "depthIn", which is the area of the gravel in feet and the depth of the gravel in inches, respectively
 2. Within the function, calculate the volume of the gravel in cubic feet using the given parameters (remember: you will need to convert the depth from inches into feet), then return it using the return statement
 4. On a new line within the code block, define a function called "cuftToCuyd" with one input parameter: "cubicFeet", which is the volume of gravel in cubic feet
 5. Within the function, calculate the volume of the gravel in cubic yards, then return it
 6. On a new line within the code block, define a function called "volToTon" with one input parameter, "volYards", which is the volume of the gravel in cubic yards
 7. Within the function, calculate the tonnage of the gravel (1 cubic yard of gravel weighs about 1.4 tons), then return it
-8. On a new line within the code block, define a function called "getCostofGravel" with one input parameter, "Gravel", which will take a dictionary with gravel types as the keys and their price per ton as the values (don't worry about creating the dictionary until Part 2)
-9. 
+8. On a new line within the code block, define a function called "getCostofGravel" with two input parameters, "dictionary" and "Gravel", which is a dictionary of gravel types/costs and the type of gravel, respectively
+9. Within the function, create a variable called "cost" that pulls the cost associated with the gravel type from the dictionary
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: You will use both parameters to correctly pull the cost</br>
 
 ---
 
