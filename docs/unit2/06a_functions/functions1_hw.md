@@ -47,10 +47,13 @@ In this assignment, you will be creating functions that calculate the total area
    |    Gravel     |          Asks what gravel type the user wants to buy        |    string     |
    |       D       |         Asks what the depth of the gravel is in inches      |    integer    |
 
-3. One a new line within the code block, start calling your functions
-4. Create a variable that calls the functio
-5. Use five separate print statements that print the area of the gravel, depth of the gravel, volume of the gravel, tons of gravel, and cost of the gravel
-6. Run all the cells, then input "Rainbow Beach" as the gravel type and "3" for depth (do not include quotations). If done correctly, the total should come out to be **$9126**
+3. On a new line within the code block, create a variable that calls the function "getArea" with arguments "xList" and "yList" in that order - this will calculate the area of the gravel in square feet
+4. On a new line within the code block, create a variable that calls the function "getCuFt" with the area and the depth as its arguments in that order - this will calculate the volume of the gravel in cubic feet
+5. On a new line within the code block, create a variable that calls the function "cuftToCuyd" with the cubic feet as its argument - this will calculate the volume of the gravel in cubic yards
+6. On a new line within the code block, create a variable that calls the function "volToTon" with the volume in cubic yards as its argument - this will calculate the tonnage of the gravel
+7. On a new line within the code block, create a variable that calls the function "getCostOfGravel" with the dictionary and gravel type as its arguments, and multiplies that function by the tonnage of gravel. This will calculate the total cost of the gravel
+8. Use five separate print statements that print the area of the gravel, depth of the gravel, volume of the gravel, tons of gravel, and cost of the gravel
+9. Run all the cells, then input "Rainbow Beach" as the gravel type and "3" for depth (do not include quotations). If done correctly, the total should come out to be **$9126**
 
 ---
 
@@ -61,8 +64,8 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |                            **Item**                             | **Amount** |  
 |:---------------------------------------------------------------:|:----------:|
 |               getCuFt function is defined correctly             |     4      |
-|             cubicFeet function is defined correctly             |     4      |
-|              volYards function is defined correctly             |     4      |
+|             cuftToCuyd function is defined correctly            |     4      |
+|              volToTon function is defined correctly             |     4      |
 |          getCostofGravel function is defined correctly          |     4      |
 | The input statements and related variables are properly created |     2      |
 |               All functions are called correctly                |     7      |
