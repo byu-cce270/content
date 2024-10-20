@@ -49,9 +49,8 @@ In this assignment, you will be creating functions that calculate the total area
 
 3. One a new line within the code block, start calling your functions
 4. Create a variable that calls the functio
-5. Use print statements that:
-6. 
-7. Run all the cells, then input "Rainbow Beach" as the gravel type and "3" for depth (do not include quotations). If done correctly, the total should come out to be **$9126**
+5. Use five separate print statements that print the area of the gravel, depth of the gravel, volume of the gravel, tons of gravel, and cost of the gravel
+6. Run all the cells, then input "Rainbow Beach" as the gravel type and "3" for depth (do not include quotations). If done correctly, the total should come out to be **$9126**
 
 ---
 
