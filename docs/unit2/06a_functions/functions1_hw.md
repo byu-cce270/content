@@ -49,7 +49,7 @@ In this assignment, you will be creating functions that calculate the total area
 
 3. On a new line within the code block, create a variable that calls the function "getArea" with arguments "xList" and "yList" in that order - this will calculate the area of the gravel in square feet
 4. On a new line within the code block, create a variable that calls the function "getCuFt" with the area and the depth as its arguments in that order - this will calculate the volume of the gravel in cubic feet
-5. On a new line within the code block, create a variable that calls the function "cuftToCuyd" with the cubic feet as its argument - this will calculate the volume of the gravel in cubic yards
+5. On a new line within the code block, create a variable that calls the function "cuftToCuyd" with the volume in cubic feet as its argument - this will calculate the volume of the gravel in cubic yards
 6. On a new line within the code block, create a variable that calls the function "volToTon" with the volume in cubic yards as its argument - this will calculate the tonnage of the gravel
 7. On a new line within the code block, create a variable that calls the function "getCostOfGravel" with the dictionary and gravel type as its arguments, and multiplies that function by the tonnage of gravel. This will calculate the total cost of the gravel
 8. Use five separate print statements that print the area of the gravel, depth of the gravel, volume of the gravel, tons of gravel, and cost of the gravel
@@ -71,3 +71,10 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |               All functions are called correctly                |     7      |
 |             All print statements created correctly              |     5      |
 |         <div style="text-align: right">**Total**</div>          |   **30**   |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                    **Reasons for Points Lost**                  | **Amount** |  
+|:---------------------------------------------------------------:|:----------:|
+|  No comments explaining why AI is used and what its provided code does   |     2-3    |
+|                     Link shared incorrectly                              |      3     |
