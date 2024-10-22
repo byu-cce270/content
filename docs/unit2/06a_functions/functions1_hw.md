@@ -14,21 +14,19 @@ In this assignment, you will be creating functions that calculate the total area
 
 #### Part 1
 
-1. In the first code block, define a function called "getCuFt" with two input parameters, "areaFt" and "depthIn", which is the area of the gravel in feet and the depth of the gravel in inches, respectively
-2. Within the function, calculate the volume of the gravel in cubic feet using the given parameters (remember: you will need to convert the depth from inches into feet), then return it using the return statement
-4. On a new line within the code block, define a function called "cuftToCuyd" with one input parameter: "cubicFeet", which is the volume of gravel in cubic feet
-5. Within the function, calculate the volume of the gravel in cubic yards, then return it
-6. On a new line within the code block, define a function called "volToTon" with one input parameter, "volYards", which is the volume of the gravel in cubic yards
-7. Within the function, calculate the tonnage of the gravel (1 cubic yard of gravel weighs about 1.4 tons), then return it
-8. On a new line within the code block, define a function called "getCostofGravel" with two input parameters, "dictionary" and "Gravel", which is a dictionary of gravel types/costs and the type of gravel, respectively
-9. Within the function, create a variable called "cost" that pulls the cost associated with the gravel type from the dictionary
+1. In the first code block, define a function called **get_cubic_ft** with two input parameters, **area_ft** and **depth_in**, which is the area of the gravel in feet and the depth of the gravel in inches, respectively. Within the function, calculate the volume of the gravel in cubic feet using the given parameters (remember: you will need to convert the depth from inches into feet), then return it using the return statement
+4. On a new line within the code block, define a function called **cuft_to_cuyd** with one input parameter: **cubic_ft**, which is the volume of gravel in cubic feet. Within the function, calculate the volume of the gravel in cubic yards, then return it
+6. On a new line within the code block, define a function called **vol_to_ton** with one input parameter, **vol_yds**, which is the volume of the gravel in cubic yards. Within the function, calculate the tonnage of the gravel (1 cubic yard of gravel weighs about 1.4 tons), then return it
+8. On a new line within the code block, define a function called **get_gravel_cost** with two input parameters, **gravel_dict** and **gravel**, which is a dictionary of gravel types/costs and the type of gravel, respectively. Within the function, create a variable called **cost** that pulls the cost associated with the gravel type from the dictionary
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: You will use both parameters to correctly pull the cost</br>
 
 ---
 
 #### Part 2
 
-1. In the second code block, make a dictionary called gravelCosts. Use the following keys and their corresponding values to populate the dictionary:
+1. In the second code block, make a dictionary called **gravel_costs**. Use the following keys and their corresponding 
+   values to 
+   populate the dictionary:
 
    | Key              | Value |
    |------------------|-------|
@@ -40,20 +38,21 @@ In this assignment, you will be creating functions that calculate the total area
    | "Canadian Blend" | 115   |                           
    | "Rainbow Beach"  | 160   |                      
 
-2. On a new line within the code block, create the following input statements:
+2. On a new line within the code block, print the **gravel_cost** dictionary and then create the following input statements:
 
    | Variable Name |                            Prompt                           | Variable Type |
    |:-------------:|:-----------------------------------------------------------:|:-------------:|
-   |    Gravel     |          Asks what gravel type the user wants to buy        |    string     |
-   |       D       |         Asks what the depth of the gravel is in inches      |    integer    |
+   |    gravel     |          Asks what gravel type the user wants to buy        |    string     |
+   |       d       |         Asks what the depth of the gravel is in inches      |    integer    |
 
-3. On a new line within the code block, create a variable that calls the function "getArea" with arguments "xList" and "yList" in that order - this will calculate the area of the gravel in square feet
-4. On a new line within the code block, create a variable that calls the function "getCuFt" with the area and the depth as its arguments in that order - this will calculate the volume of the gravel in cubic feet
-5. On a new line within the code block, create a variable that calls the function "cuftToCuyd" with the volume in cubic feet as its argument - this will calculate the volume of the gravel in cubic yards
-6. On a new line within the code block, create a variable that calls the function "volToTon" with the volume in cubic yards as its argument - this will calculate the tonnage of the gravel
-7. On a new line within the code block, create a variable that calls the function "getCostOfGravel" with the dictionary and gravel type as its arguments, and multiplies that function by the tonnage of gravel. This will calculate the total cost of the gravel
+3. On a new line within the code block, create a variable that calls the function **get_area** with arguments x_list and y_list in that order - this will calculate the area of the gravel in square feet.
+4. On a new line within the code block, create a variable that calls the function **get_cubic_ft** with the area and the depth as its arguments in that order - this will calculate the volume of the gravel in cubic feet.
+5. On a new line within the code block, create a variable that calls the function **cuft_to_cuyd** with the volume in cubic feet as its argument - this will calculate the volume of the gravel in cubic yards.
+6. On a new line within the code block, create a variable that calls the function **vol_to_ton** with the volume in cubic yards as its argument - this will calculate the tonnage of the gravel.
+7. On a new line within the code block, create a variable that calls the function **get_gravel_cost** with the dictionary and gravel type as its arguments, and multiplies the value returned by that function by the tonnage of gravel. This will calculate the total cost of the gravel.
 8. Use five separate print statements that print the area of the gravel, depth of the gravel, volume of the gravel, tons of gravel, and cost of the gravel
-9. Run all the cells, then input "Rainbow Beach" as the gravel type and "3" for depth (do not include quotations). If done correctly, the total should come out to be **$9126**
+9. Run all the cells, then input **Rainbow Beach** as the gravel type and **3** for depth. If 
+   done correctly, the total should come out to be **$9126**.
 
 ---
 
