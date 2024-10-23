@@ -25,17 +25,47 @@ Scenario 6: Simply supported beam with a distributed load
 
 #### Part 1
 
-1. In the first code block, write six appropriately named functions that calculate and return the deflection and moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
+1. In the first code block, write six appropriately named functions that calculate and return the maximum deflection and maximum moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
 
     ![beamchart.png](images/beamchart.png)
 
-2. Create a seventh function that calculates and returns the moment of inertia using this formula
+where:
 
-    ![equationIu.png](images/equationIu.png)
+&nbsp;&nbsp;&nbsp;&nbsp;\(M\) = the moment load (in lb-in)
 
-3. Create an eighth function that calculates and returns maximum bending stress using this formula
+&nbsp;&nbsp;&nbsp;&nbsp;\(W\) = the point load (in lb)
 
-     ![bendingstress.png](images/bendingstress.png)
+&nbsp;&nbsp;&nbsp;&nbsp;\(w\) = the distributed load (in lb/in)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(L\) = the length of the beam (in inches)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(E\) = the modulus of elasticity (in psi)
+   
+&nbsp;&nbsp;&nbsp;&nbsp;\(I\) = the moment of inertia (in inches^4)
+
+
+2. Create a seventh function that calculates and returns the moment of inertia using this formula:
+
+    $$\ I=\frac{bh^3}{12} \$$
+
+where:
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(b\) = the base of the beam (in inches)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(h\) = the height of the beam (in inches)
+
+3. Create an eighth function that calculates and returns maximum bending stress using this formula:
+
+     $$\sigma_{max}=\frac{My}{I}\$$
+
+where:
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(M\) = the maximum moment (in lb-in)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(y\) = half of the height of the beam (in inches)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(I\) = the moment of inertia (in inches^4)
+
 
 #### Part 2
 
