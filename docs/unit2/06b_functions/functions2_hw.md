@@ -25,7 +25,7 @@ Scenario 6: Simply supported beam with a distributed load
 
 #### Part 1
 
-1. In the first code block, write six appropriately named functions that calculate and return the deflection and moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
+1. In the first code block, write six appropriately named functions that calculate and return the maximum deflection and maximum moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
 
     ![beamchart.png](images/beamchart.png)
 
