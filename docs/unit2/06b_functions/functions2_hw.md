@@ -48,9 +48,24 @@ where:
 
     $$\ I=\frac{bh^3}{12} \$$
 
+where:
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(b\) = the base of the beam (in inches)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(h\) = the height of the beam (in inches)
+
 3. Create an eighth function that calculates and returns maximum bending stress using this formula:
 
      $$\sigma_{max}=\frac{My}{I}\$$
+
+where:
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(M\) = the maximum moment (in lb-in)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(y\) = half of the height of the beam (in inches)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\(I\) = the moment of inertia (in inches^4)
+
 
 #### Part 2
 
