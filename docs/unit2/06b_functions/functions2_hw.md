@@ -29,13 +29,13 @@ Scenario 6: Simply supported beam with a distributed load
 
     ![beamchart.png](images/beamchart.png)
 
-2. Create a seventh function that calculates and returns the moment of inertia using this formula
+2. Create a seventh function that calculates and returns the moment of inertia using this formula:
 
-    ![equationIu.png](images/equationIu.png)
+    $$\ I=\frac{bh^3}{12} \$$
 
-3. Create an eighth function that calculates and returns maximum bending stress using this formula
+3. Create an eighth function that calculates and returns maximum bending stress using this formula:
 
-     ![bendingstress.png](images/bendingstress.png)
+     $$\sigma_{max}=\frac{My}{I}\$$
 
 #### Part 2
 
