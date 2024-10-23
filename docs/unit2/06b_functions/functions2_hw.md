@@ -25,7 +25,7 @@ Scenario 6: Simply supported beam with a distributed load
 
 #### Part 1
 
-1. In the first code block, write six functions that calculate and return the deflection and moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
+1. In the first code block, write six appropriately named functions that calculate and return the deflection and moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
 
     ![beamchart.png](images/beamchart.png)
 
@@ -54,5 +54,13 @@ Scenario 6: Simply supported beam with a distributed load
    |   point_load  |      Asks what the value of the point load is (in lb)       |     float     |
    |   dist_load   |  Asks what the value of the distributed load is (in lb/in)  |     float     |
 
-3. 
+3. On a new line, create the following input statements:
+
+   | Variable Name |                            Prompt                           | Variable Type |
+   |:-------------:|:-----------------------------------------------------------:|:-------------:|
+   |       L       |        Asks what the length of the beam is (in inches)      |     float     |
+   |       E       |        Asks what the modulus of elasticity is (in psi)      |     float     |
+   |       b       |         Asks what the base of the beam is (in inches)       |     float     |
+   |       h       |        Asks what the height of the beam is (in inches)      |     float     |
+   
 
