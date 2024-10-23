@@ -33,7 +33,7 @@ where:
 
 &nbsp;&nbsp;&nbsp;&nbsp;\(M\) = the moment load (in lb-in)
 
-&nbsp;&nbsp;&nbsp;&nbsp;\(W\) = the point load (in lb-in)
+&nbsp;&nbsp;&nbsp;&nbsp;\(W\) = the point load (in lb)
 
 &nbsp;&nbsp;&nbsp;&nbsp;\(w\) = the distributed load (in lb/in)
 
@@ -42,6 +42,7 @@ where:
 &nbsp;&nbsp;&nbsp;&nbsp;\(E\) = the modulus of elasticity (in psi)
    
 &nbsp;&nbsp;&nbsp;&nbsp;\(I\) = the moment of inertia (in inches^4)
+
 
 2. Create a seventh function that calculates and returns the moment of inertia using this formula:
 
