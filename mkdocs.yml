@@ -74,23 +74,23 @@ nav:
         - Reading: unit2/06b_functions/functions2_read.md
         - In Class: unit2/06b_functions/functions2_class.md
         - Homework: unit2/06b_functions/functions2_hw.md
+    - Reading and Writing Files:
+        - Reading: unit2/07_files/file_read.md
+        - In Class: unit2/07_files/file_class.md
+        - Homework: unit2/07_files/file_hw.md
     - MatPlotLib:
-        - Reading: unit2/07_matplotlib/matplot_read.md
-        - In Class: unit2/07_matplotlib/matplot_class.md
-        - Homework: unit2/07_matplotlib/matplot_hw.md
-    - Numpy (Part 1):
-        - Reading: unit2/08a_numpy/numpy1_read.md
-        - In Class: unit2/08a_numpy/numpy1_class.md
-        - Homework: unit2/08a_numpy/numpy1_hw.md
-    - Numpy (Part 2):
-        - Reading: unit2/08b_numpy/numpy2_read.md
-        - In Class: unit2/08b_numpy/numpy2_class.md
-        - Homework: unit2/08b_numpy/numpy2_hw.md
+        - Reading: unit2/08_matplotlib/matplot_read.md
+        - In Class: unit2/08_matplotlib/matplot_class.md
+        - Homework: unit2/08_matplotlib/matplot_hw.md
+    - Numpy:
+        - Reading: unit2/09_numpy/numpy_read.md
+        - In Class: unit2/09_numpy/numpy_class.md
+        - Homework: unit2/09_numpy/numpy_hw.md
     - Pandas (Part 1):
-        - Reading: unit2/09a_pandas/pandas1_read.md
-        - In Class: unit2/09a_pandas/pandas1_class.md
-        - Homework: unit2/09a_pandas/pandas1_hw.md
+        - Reading: unit2/10a_pandas/pandas1_read.md
+        - In Class: unit2/10a_pandas/pandas1_class.md
+        - Homework: unit2/10a_pandas/pandas1_hw.md
     - Pandas (Part 2):
-        - Reading: unit2/09b_pandas/pandas2_read.md
-        - In Class: unit2/09b_pandas/pandas2_class.md
-        - Homework: unit2/09b_pandas/pandas2_hw.md
+        - Reading: unit2/10b_pandas/pandas2_read.md
+        - In Class: unit2/10b_pandas/pandas2_class.md
+        - Homework: unit2/10b_pandas/pandas2_hw.md
