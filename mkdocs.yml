@@ -15,7 +15,7 @@ theme:
   custom_dir: 'cinder'
 nav:
   - Home: index.md
-  - Unit 1:
+  - Unit 1 - Spreadsheet:
     - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
     - Lookups, Match, and Data Validation:
         - Reading: unit1/1_lookup_match/lookmat_read.md
@@ -40,7 +40,7 @@ nav:
     - Unit 1 Project:
         - Project Prompt: unit1/6_unit1_project/u1_pro_promt.md
 
-  - Unit 2:
+  - Unit 2 - Intro to Python:
     - How to access course book: home/accessing_book/access_book.md
     - Introduction to Python and Variables:
         - Reading: unit2/00_intro_python_variables/into_var_read.md
@@ -80,26 +80,26 @@ nav:
         - In Class: unit3/00_files/file_class.md
         - Homework: unit3/00_files/file_hw.md
     - MatPlotLib:
-        - Reading: unit2/01_matplotlib/matplot_read.md
-        - In Class: unit2/01_matplotlib/matplot_class.md
-        - Homework: unit2/01_matplotlib/matplot_hw.md
+        - Reading: unit3/01_matplotlib/matplot_read.md
+        - In Class: unit3/01_matplotlib/matplot_class.md
+        - Homework: unit3/01_matplotlib/matplot_hw.md
     - Numpy:
-        - Reading: unit2/02_numpy/numpy_read.md
-        - In Class: unit2/02_numpy/numpy_class.md
-        - Homework: unit2/02_numpy/numpy_hw.md
+        - Reading: unit3/02_numpy/numpy_read.md
+        - In Class: unit3/02_numpy/numpy_class.md
+        - Homework: unit3/02_numpy/numpy_hw.md
     - Pandas (Part 1):
-        - Reading: unit2/03_pandas_part1/pandas1_read.md
-        - In Class: unit2/03_pandas_part1/pandas1_class.md
-        - Homework: unit2/03_pandas_part1/pandas1_hw.md
+        - Reading: unit3/03_pandas_part1/pandas1_read.md
+        - In Class: unit3/03_pandas_part1/pandas1_class.md
+        - Homework: unit3/03_pandas_part1/pandas1_hw.md
     - Pandas (Part 2):
-        - Reading: unit2/04_pandas_part2/pandas2_read.md
-        - In Class: unit2/04_pandas_part2/pandas2_class.md
-        - Homework: unit2/04_pandas_part2/pandas2_hw.md
+        - Reading: unit3/04_pandas_part2/pandas2_read.md
+        - In Class: unit3/04_pandas_part2/pandas2_class.md
+        - Homework: unit3/04_pandas_part2/pandas2_hw.md
     - XlsxWriter:
-        - Reading: unit2/05_python_and_excel/excel_read.md
-        - In Class: unit2/05_python_and_excel/excel_class.md
-        - Homework: unit2/05_python_and_excel/excel_hw.md
+        - Reading: unit3/05_python_and_excel/excel_read.md
+        - In Class: unit3/05_python_and_excel/excel_class.md
+        - Homework: unit3/05_python_and_excel/excel_hw.md
     - ipywidgets:
-        - Reading: unit2/06_ipywidgets/ipy_read.md
-        - In Class: unit2/06_ipywidgets/ipy_class.md
-        - Homework: unit2/06_ipywidgets/ipy_hw.md
+        - Reading: unit3/06_ipywidgets/ipy_read.md
+        - In Class: unit3/06_ipywidgets/ipy_class.md
+        - Homework: unit3/06_ipywidgets/ipy_hw.md
