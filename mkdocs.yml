@@ -95,9 +95,9 @@ nav:
         - In Class: unit2/10b_pandas/pandas2_class.md
         - Homework: unit2/10b_pandas/pandas2_hw.md
     - XlsxWriter:
-        - Reading: unit2/11_xlsxwriter/xlsx_read.md
-        - In Class: unit2/11_xlsxwriter/xlsx_class.md
-        - Homework: unit2/11_xlsxwriter/xlsx_hw.md
+        - Reading: unit2/11_excel/excel_read.md
+        - In Class: unit2/11_excel/excel_class.md
+        - Homework: unit2/11_excel/excel_hw.md
     - ipywidgets:
         - Reading: unit2/12_ipywidgets/ipy_read.md
         - In Class: unit2/12_ipywidgets/ipy_class.md
