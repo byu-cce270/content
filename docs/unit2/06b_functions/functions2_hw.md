@@ -9,17 +9,17 @@
 
 In this assignment, you will be creating code that will allow a user to find the maximum deflection and maximum bending stress on a beam given these six scenarios:
 
-Scenario 1: Cantilever beam with a moment load
+&nbsp;&nbsp;&nbsp;&nbsp;Scenario 1: Cantilever beam with a moment load
 
-Scenario 2: Cantilever beam with a point load
+&nbsp;&nbsp;&nbsp;&nbsp;Scenario 2: Cantilever beam with a point load
 
-Scenario 3: Cantilever beam with a distributed load
+&nbsp;&nbsp;&nbsp;&nbsp;Scenario 3: Cantilever beam with a distributed load
 
-Scenario 4: Simply supported beam with a moment load
+&nbsp;&nbsp;&nbsp;&nbsp;Scenario 4: Simply supported beam with a moment load
 
-Scenario 5: Simply supported beam with a point load
+&nbsp;&nbsp;&nbsp;&nbsp;Scenario 5: Simply supported beam with a point load
 
-Scenario 6: Simply supported beam with a distributed load
+&nbsp;&nbsp;&nbsp;&nbsp;Scenario 6: Simply supported beam with a distributed load
 
 **These scenarios are in the same exact order of the chart below. For example, scenario 1 corresponds to the very first image in the chart, scenario 2 corresponds to the second image in the chart, and so on.**
 
@@ -31,7 +31,7 @@ Scenario 6: Simply supported beam with a distributed load
 
     ![beamchart.png](images/beamchart.png)
 
-   Source: <a href="https://www.mem50212.com/MDME/MEMmods/MEM09155A-CAE/resources/Beams.htm" target="_blank">
+Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods/MEM09155A-CAE/resources/Beams.htm){:target="_blank"}
 
 &nbsp;&nbsp;&nbsp;&nbsp;where:
 
