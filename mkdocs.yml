@@ -95,7 +95,7 @@ nav:
         - Reading: unit3/04_pandas_part2/pandas2_read.md
         - In Class: unit3/04_pandas_part2/pandas2_class.md
         - Homework: unit3/04_pandas_part2/pandas2_hw.md
-    - XlsxWriter:
+    - Python and Excel:
         - Reading: unit3/05_python_and_excel/excel_read.md
         - In Class: unit3/05_python_and_excel/excel_class.md
         - Homework: unit3/05_python_and_excel/excel_hw.md
