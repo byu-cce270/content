@@ -35,10 +35,11 @@ df = pd.read_excel('data.xlsx', sheet_name='Sheet2')
 
 In each of the examples thus far, we are reading the entire contents of a sheet into the dataframe. In some cases, you may want to start reading on a particular row. You can also specify the header row using the `header` parameter. For example:
     
-    ```python
-    # Read the Excel file starting from the second row
-    df = pd.read_excel('data.xlsx', header=1)
-    ```
+```python
+# Read the Excel file starting from the second row
+df = pd.read_excel('data.xlsx', header=1)
+```
+
 Note that the header row is zero-indexed, so the first row is 0, the second row is 1, and so on.
 
 You can also specify the columns to read using the `usecols` parameter. For example:
@@ -189,6 +190,7 @@ worksheet.insert_chart('E1', chart)
 # Close the workbook
 workbook.close()
 ```
+
 ### Saving a DataFrame to an Excel File with xlsxwriter
 
 You can also save a pandas DataFrame to an Excel file with formatting using the `xlsxwriter` library. Here is an example:
@@ -227,10 +229,13 @@ This is just the tip of the iceberg! You can read more about the `xlsxwriter` li
 
 Open a new Colab notebook and do the following:
 
-1. Click here to download the [data.xlsx]('data.xlsx') file.
-1. Import the file to a dataframe the `pandas` library.
-2. Display the first 5 rows of the dataframe.
-3. Add a new column to the dataframe called 'Sum' that is the sum of columns 2-4.
-4. Save the updated dataframe to a new Excel file called 'output.xlsx' using the `pandas` library.
+1. Click here to download the [data.xlsx](./data.xlsx) file.
+2. Upload the file to your colab notebook by clicking on the folder icon on the left side of the screen and then 
+   clicking on the upload icon. Or you can drag and drop the file into the notebook.
+1. Import the file to a dataframe using the `pandas` library and display the contents of the dataframe.
+3. Change the name of the first column to **Date** and display the updated dataframe.
+3. Add a new column to the dataframe called **Sum** that is the sum of columns 2-4. Display the updated dataframe.
+4. Save the updated dataframe to a new Excel file called **output.xlsx** using the `pandas` library. In a few seconds, 
+   the file will appear in your notebook's file list. Download the file to your computer and check the contents.
 
 Save changes to your Google Drive and submit the link to the notebook in your Pre-Class Quiz.
