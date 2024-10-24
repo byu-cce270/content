@@ -113,4 +113,4 @@ Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods
 
 8. On a new unindented line, create a variable **max_stress** that calls the maximum bending stress function you created earlier, with the variables **max_moment**, **y**, and **I** defined earlier as its arguments
 
-9. Create a print statement that tells the user what the maximum deflection of the beam is (in inches) as well as the maximum bending stress (in psi)
+9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches) as well as the maximum bending stress (in psi)
