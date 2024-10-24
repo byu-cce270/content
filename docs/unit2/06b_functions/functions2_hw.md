@@ -109,7 +109,7 @@ Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods
 
 6. On a new line, create IF and ELIF statements that check if the **beam_type** is a cantilever or a simply supported beam. Within those IF and ELIF statements, nest more IF and ELIF statements that check if the **load_type** is a moment, a point, or a distributed load. 
 
-7. Depending on your **beam_type** and **load_type**, create the variables **max_deflection** and **max_moment** that call its related function within the nested IF and ELIF statements. For example, if your **beam_type** is a cantilever and your **load_type** is a moment load, your variables **max_deflection** and **max_moment** should be set equal to the function you created for a cantilever and moment load.
+7. Depending on your **beam_type** and **load_type**, assign the variables **max_deflection** and **max_moment** to their related function within the nested IF and ELIF statements. For example, if your **beam_type** is a cantilever and your **load_type** is a moment load, your variables **max_deflection** and **max_moment** should be set equal to the function you created for a cantilever and moment load.
 
 8. On a new unindented line, create a variable **max_stress** that calls the maximum bending stress function you created earlier, with the variables **max_moment**, **y**, and **I** defined earlier as its arguments
 
