@@ -74,7 +74,8 @@ nav:
         - Reading: unit2/06b_functions/functions2_read.md
         - In Class: unit2/06b_functions/functions2_class.md
         - Homework: unit2/06b_functions/functions2_hw.md
-  - Unit 3 - Advance Python:
+
+  - Unit 3 - Advanced Python:
     - Reading and Writing Files:
         - Reading: unit3/00_files/file_read.md
         - In Class: unit3/00_files/file_class.md
