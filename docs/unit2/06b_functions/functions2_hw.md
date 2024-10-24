@@ -101,7 +101,7 @@ Scenario 6: Simply supported beam with a distributed load
    |       b       |         Asks what the base of the beam is (in inches)       |     float     |
    |       h       |        Asks what the height of the beam is (in inches)      |     float     |
 
-4. On a new line, create the variable **y**:
+4. On a new line, create the variable **y** using the following equation:
 
    $$\ y=\frac{h}{2} \$$
 
