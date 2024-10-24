@@ -111,7 +111,7 @@ Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods
 
 7. Depending on your **beam_type** and **load_type**, assign the variables **max_deflection** and **max_moment** to their related function within the nested IF and ELIF statements. For example, if your **beam_type** is a cantilever and your **load_type** is a moment load, your variables **max_deflection** and **max_moment** should be set equal to the function you created for a cantilever and moment load.
 
-8. On a new unindented line, create a variable **max_stress** that calls the maximum bending stress function you created earlier, with the variables **max_moment**, **y**, and **I** defined earlier as its arguments
+8. On a new unindented line, create the variable **max_stress** that calls the maximum bending stress function you created earlier, with the variables **max_moment**, **y**, and **I** defined earlier as its arguments
 
 9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches) as well as the maximum bending stress (in psi)
 
@@ -125,7 +125,7 @@ Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods
    |       b       |                              8                              |
    |       h       |                              12                             |
 
-11. If you did everything correct, you should get the following values for each scenario:
+11. If you did everything correct, you should get the following values for each scenario (the deflection values are rounded to the thousandths place:
 
    |                     Scenario                         | Maximum Deflection | Maximum Bending Stress |
    |:----------------------------------------------------:|:------------------:|:----------------------:|
@@ -144,13 +144,20 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 |                            **Item**                             | **Amount** |  
 |:---------------------------------------------------------------:|:----------:|
-|               getCuFt function is defined correctly             |     4      |
-|             cuftToCuyd function is defined correctly            |     4      |
-|              volToTon function is defined correctly             |     4      |
-|          getCostofGravel function is defined correctly          |     4      |
-| The input statements and related variables are properly created |     2      |
-|               All functions are called correctly                |     7      |
-|             All print statements created correctly              |     5      |
+|            1st scenario function is defined correctly           |     2      |
+|            2nd scenario function is defined correctly           |     2      |
+|            3rd scenario function is defined correctly           |     2      |
+|            4th scenario function is defined correctly           |     2      |
+|            5th scenario function is defined correctly           |     2      |
+|            6th scenario function is defined correctly           |     2      |
+|         Moment of inertia function is defined correctly         |     2      |
+|         Max bending stress function is defined correctly        |     2      |
+|   IF and input statements are defined correctly for load_type   |     2      |
+|    Input statements for L, E, b, and h are defined correctly    |     2      |
+|               Variables y and I are defined correctly           |     2      |
+| Functions and related IF statements are called/defined correctly|     4      |
+|                Variable max_stress defined correctly            |     2      |
+| Second code block prints maximum deflection and bending stress  |     2      |
 |         <div style="text-align: right">**Total**</div>          |   **30**   |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
