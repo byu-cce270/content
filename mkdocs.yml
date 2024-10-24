@@ -74,31 +74,32 @@ nav:
         - Reading: unit2/06b_functions/functions2_read.md
         - In Class: unit2/06b_functions/functions2_class.md
         - Homework: unit2/06b_functions/functions2_hw.md
+  - Unit 3 - Advance Python:
     - Reading and Writing Files:
-        - Reading: unit2/07_files/file_read.md
-        - In Class: unit2/07_files/file_class.md
-        - Homework: unit2/07_files/file_hw.md
+        - Reading: unit3/00_files/file_read.md
+        - In Class: unit3/00_files/file_class.md
+        - Homework: unit3/00_files/file_hw.md
     - MatPlotLib:
-        - Reading: unit2/08_matplotlib/matplot_read.md
-        - In Class: unit2/08_matplotlib/matplot_class.md
-        - Homework: unit2/08_matplotlib/matplot_hw.md
+        - Reading: unit2/01_matplotlib/matplot_read.md
+        - In Class: unit2/01_matplotlib/matplot_class.md
+        - Homework: unit2/01_matplotlib/matplot_hw.md
     - Numpy:
-        - Reading: unit2/09_numpy/numpy_read.md
-        - In Class: unit2/09_numpy/numpy_class.md
-        - Homework: unit2/09_numpy/numpy_hw.md
+        - Reading: unit2/02_numpy/numpy_read.md
+        - In Class: unit2/02_numpy/numpy_class.md
+        - Homework: unit2/02_numpy/numpy_hw.md
     - Pandas (Part 1):
-        - Reading: unit2/10a_pandas/pandas1_read.md
-        - In Class: unit2/10a_pandas/pandas1_class.md
-        - Homework: unit2/10a_pandas/pandas1_hw.md
+        - Reading: unit2/03_pandas_part1/pandas1_read.md
+        - In Class: unit2/03_pandas_part1/pandas1_class.md
+        - Homework: unit2/03_pandas_part1/pandas1_hw.md
     - Pandas (Part 2):
-        - Reading: unit2/10b_pandas/pandas2_read.md
-        - In Class: unit2/10b_pandas/pandas2_class.md
-        - Homework: unit2/10b_pandas/pandas2_hw.md
+        - Reading: unit2/04_pandas_part2/pandas2_read.md
+        - In Class: unit2/04_pandas_part2/pandas2_class.md
+        - Homework: unit2/04_pandas_part2/pandas2_hw.md
     - XlsxWriter:
-        - Reading: unit2/11_excel/excel_read.md
-        - In Class: unit2/11_excel/excel_class.md
-        - Homework: unit2/11_excel/excel_hw.md
+        - Reading: unit2/05_python_and_excel/excel_read.md
+        - In Class: unit2/05_python_and_excel/excel_class.md
+        - Homework: unit2/05_python_and_excel/excel_hw.md
     - ipywidgets:
-        - Reading: unit2/12_ipywidgets/ipy_read.md
-        - In Class: unit2/12_ipywidgets/ipy_class.md
-        - Homework: unit2/12_ipywidgets/ipy_hw.md
+        - Reading: unit2/06_ipywidgets/ipy_read.md
+        - In Class: unit2/06_ipywidgets/ipy_class.md
+        - Homework: unit2/06_ipywidgets/ipy_hw.md
