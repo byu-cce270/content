@@ -234,7 +234,6 @@ Open a new Colab notebook and do the following:
 2. Upload the file to your colab notebook by clicking on the folder icon on the left side of the screen and then 
    clicking on the upload icon. Or you can drag and drop the file into the notebook.
 1. Import the file to a dataframe using the `pandas` library and display the contents of the dataframe.
-3. Change the name of the first column to **Date** and display the updated dataframe.
 3. Add a new column to the dataframe called **Sum** that is the sum of columns 2-4. Display the updated dataframe.
 4. Save the updated dataframe to a new Excel file called **output.xlsx** using the `pandas` library. In a few seconds, 
    the file will appear in your notebook's file list. Download the file to your computer and check the contents.
