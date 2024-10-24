@@ -223,7 +223,8 @@ writer.sheets['Sheet1'].set_row(0, None, header_format)
 writer.close()
 ```
 
-This is just the tip of the iceberg! You can read more about the `xlsxwriter` library in the [official documentation](https://xlsxwriter.readthedocs.io/){target='blank'}.
+This is just the tip of the iceberg! You can read more about the `xlsxwriter` library in the [official documentation]
+(https://xlsxwriter.readthedocs.io/){target='blank'}. 
 
 # Pre-Class Quiz Challenge
 
