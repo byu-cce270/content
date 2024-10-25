@@ -88,9 +88,9 @@ Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods
 
    | Variable Name |                            Prompt                           | Variable Type |
    |:-------------:|:-----------------------------------------------------------:|:-------------:|
-   |  moment_load  |    Asks what the value of the moment load is (in lb-in)     |     float     |
-   |   point_load  |      Asks what the value of the point load is (in lb)       |     float     |
-   |   dist_load   |  Asks what the value of the distributed load is (in lb/in)  |     float     |
+   |  moment_load  | Asks what the value of the moment load is (in pound-inches) |     float     |
+   |   point_load  |    Asks what the value of the point load is (in pounds)     |     float     |
+   |   dist_load   | Asks what the value of the distributed load is (in pounds/inch) |     float     |
 
 3. On a new line, create the following input statements:
 
@@ -125,7 +125,7 @@ Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods
    |       b       |                              8                              |
    |       h       |                              12                             |
 
-11. If you did everything correct, you should get the following values for each scenario (the deflection values are rounded to the thousandths place:
+11. If you did everything correct, you should get the following values for each scenario (the deflection values are rounded to the thousandths place):
 
    |                     Scenario                         | Maximum Deflection | Maximum Bending Stress |
    |:----------------------------------------------------:|:------------------:|:----------------------:|
