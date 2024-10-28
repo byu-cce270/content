@@ -19,6 +19,6 @@ Remember that you will have to sign in to you free account that you created earl
 ---
 
 # Pre-Class Quiz Challenge
-In a Colab notebook, complete Problem 10-4 found in chapter 10 of the textbook. Submit a link to the completed problem in your Pre-Class Quiz.
+In a Colab notebook, complete Problem 10-4 found in chapter 10 of the 2nd Edition of the textbook. Submit a link to the completed problem in your Pre-Class Quiz.
 
-![while_preclass_instructions.png](while_preclass_instructions.png)
+![files_preclass_instructions.png](files_preclass_instructions.png)
