@@ -5,7 +5,7 @@
 # Pre Class Reading Assignment
 
 On the O'Reilly's website read chapter 10 in _Python Crash Course, 2nd Edition_. 
-</br>Here is a direct link to the readings: [PCC Chapter 10: File and Exceptions](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch10.xhtml#ch10lev1sec3){:target="_blank"}.
+</br>Here is a direct link to the readings: [PCC Chapter 10: File and Exceptions](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch10.xhtml){:target="_blank"}.
 Only read up until the heading "Exceptions".
 
 Remember that you will have to sign in to you free account that you created earlier.
