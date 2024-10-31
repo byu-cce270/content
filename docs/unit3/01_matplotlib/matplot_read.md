@@ -26,3 +26,7 @@ After running this code, you will be able to use the Matplotlib library in your 
 ---
 
 # Pre-Class Quiz Challenge
+
+Open this starter sheet and follow the instructions on the notebook to complete the challenge. Submit a link to the completed problem in your Pre-Class Quiz.
+
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_matplotlib/matplotlib_pre_class.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
