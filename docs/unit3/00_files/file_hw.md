@@ -33,6 +33,19 @@ ___
 
 ![Sign_Counter_HW](https://github.com/user-attachments/assets/5c6e7b82-2895-4a98-b600-915254db8fb0)
 
+# Turning In/Rubric
+
+Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. 
+
+| Description                          | Points |
+|--------------------------------------|--------|
+| File is imported correctly to a list | 6      |
+| Sign ounters are properly tabulated  | 12     |
+| Results are correctly printed        | 6      |
+| Results are saved to a text file     | 6      |
+| Total                                | 30     |
+
+
 
 
 
