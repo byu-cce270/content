@@ -29,4 +29,8 @@ ___
 3. In the next code block, print each MPH speed limit sign in Sign_counter with its NEW value.
 4. When done, here are the values you should get:
 
+![Sign_Counter_HW](https://github.com/user-attachments/assets/5c6e7b82-2895-4a98-b600-915254db8fb0)
+
+
+
 
