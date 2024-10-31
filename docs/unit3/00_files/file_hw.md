@@ -1,6 +1,6 @@
 #  HW: Reading and Writing Files
 
-**Purpose:** You will count the amount of speed limit signs from a given Excel file.
+**Purpose:** In this assignment you are given a csv file from the UDOT. You are going to go through the file and count how many speed limit signs there are of the various speed limits. You can find where to access this data [here](https://data-uplan.opendata.arcgis.com/datasets/uplan::speed-limit-signs-1/explore?location=40.705286%2C-111.838968%2C12.49 )
 
 ## Instructions
 
