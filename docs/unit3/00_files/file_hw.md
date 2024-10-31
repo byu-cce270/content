@@ -24,8 +24,10 @@ ___
 ### Sign Counter Code
 1. Now time to do the real work! In the second code block, you are given a dictionary named "Sign_counter" where the keys are the MPH of the signs and the value is the signs with the corresponding MPH. Note they are all initialized to zero. The objective is to read our given file and find the total number of each sign. This will be WAY faster than counting it on our own!
 2. In a new line underneath the given dictionary, write code that will loop through the list of strings you imported from the file. For each line (string) you will loop through the items in the dictionary to see if the speed limit is in the string. If so, increment the corresponding counter. 
-   - For example, since Sign_counter has a key value of "10" if the file contains an MPH sign with a speed limit of 10, then I would add 1 to the corresponding value of "10" in Sign_counter for EACH occurrence of "10" in the file. This process would be the same for each key value of Sign_counter.
-   - HINT: Refer back to HW 2.4 (IF statements) for how to compare lists, and HW 2.5 (Dictionaries) for how to access the values of the keys in a dictionary.
+
+      - For example, since Sign_counter has a key value of "10" if the file contains an MPH sign with a speed limit of 10, then I would add 1 to the corresponding value of "10" in Sign_counter for EACH occurrence of "10" in the file. This process would be the same for each key value of Sign_counter.
+     - HINT: Refer back to HW 2.4 (IF statements) for how to compare lists, and HW 2.5 (Dictionaries) for how to access the values of the keys in a dictionary.
+   
 3. In the next code block, print each MPH speed limit sign in Sign_counter with its NEW value.
 4. When done, here are the values you should get:
 
