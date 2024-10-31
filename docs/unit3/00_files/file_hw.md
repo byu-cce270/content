@@ -17,13 +17,13 @@ ___
 ---
 ### Read in your file
 1. In the first code block, read in the 'signs' file in reading mode.
-2. In a new line, turn your file into a list. Save this as a variable. This will allow us easier access to read our data later.
+2. In a new line, read your file into a list of strings where there is one string for each line in the file. Save this as a variable. This will allow us easier access to read our data later.
 
 ---
 
 ### Sign Counter Code
-1. Now time to do the real work! In the second code block, you are given a dictionary named "Sign_counter" where the keys are the MPH of the signs and the value is the starting amount of each sign. The objective is to read our given file and find the total amount of each sign. This will be WAY faster than counting it on our own!
-2. In a new line underneath the given dictionary, write code that will read through the given file (remember, our file is now a variable as a list) and compare it to the keys in our dictionary. If the values are equal, then add 1 to the corresponding key value. You will want to read through EACH line of the file individually and EACH key individually to compare them.
+1. Now time to do the real work! In the second code block, you are given a dictionary named "Sign_counter" where the keys are the MPH of the signs and the value is the signs with the corresponding MPH. Note they are all initialized to zero. The objective is to read our given file and find the total number of each sign. This will be WAY faster than counting it on our own!
+2. In a new line underneath the given dictionary, write code that will loop through the list of strings you imported from the file. For each line (string) you will loop through the items in the dictionary to see if the speed limit is in the string. If so, increment the corresponding counter. 
    - For example, since Sign_counter has a key value of "10" if the file contains an MPH sign with a speed limit of 10, then I would add 1 to the corresponding value of "10" in Sign_counter for EACH occurrence of "10" in the file. This process would be the same for each key value of Sign_counter.
    - HINT: Refer back to HW 2.4 (IF statements) for how to compare lists, and HW 2.5 (Dictionaries) for how to access the values of the keys in a dictionary.
 3. In the next code block, print each MPH speed limit sign in Sign_counter with its NEW value.
