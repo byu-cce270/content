@@ -26,4 +26,3 @@ After running this code, you will be able to use the Matplotlib library in your 
 ---
 
 # Pre-Class Quiz Challenge
-In a Colab notebook, complete Problem 10-4 found in chapter 15 of the 3rd Edition of the textbook. Submit a link to the completed problem in your Pre-Class Quiz.
