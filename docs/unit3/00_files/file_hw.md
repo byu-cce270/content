@@ -39,15 +39,19 @@ ___
 3. Now, write each key and its corresponding value of Sign_counter into your new file. You will need to write each key and its value line by line. Make sure to insert the values on a new line into your file.
      - HINT:  When writing, you can use \n to make a new line in your file. Look at the textbook section from the pre-class reading for examples of using "\n" with files.
 4. To check and make sure the file has been created, click on the folder icon on the far left of your screen. Look for a new ".txt" file
+   
 ![FILEHWPRACTICE](https://github.com/user-attachments/assets/0eacbc96-4e6d-49be-a8d7-4aba055a4ef8)
+
 5. Open the file and **double-check that your values are on separate lines**. Here's an example of what your file should look like:
+
 ![Screenshot 2024-10-31 134127](https://github.com/user-attachments/assets/f04fea9a-024d-4922-a118-752ea23572cc)
 
 
 # Turning In/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created. 
-**
+Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created. **
+
+
 | Description                          | Points |
 |--------------------------------------|--------|
 | File is imported correctly to a list | 6      |
