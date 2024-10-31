@@ -66,19 +66,19 @@ Next, we will export the summary statistics to a new sheet in the Excel file. Do
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box.
 
-| Criteria                                           | Points |
-|----------------------------------------------------|--------|
-| Data is imported correctly                         | 2      |
-| Missing values are interpolated correctly          | 3      |
-| Annual precipitation data is plotted correctly     | 3      |
-| Summary statistics are calculated correctly        | 2      |
-| Summary statistics is plotted correctly            | 3      |
-| Main precip data is exported to Excel correctly    | 3      |
-| Main precip data charted correctly in Excel        | 4      |
-| Summary precip data is exported to Excel correctly | 3      |
-| Summary precip data created correctly in Excel     | 4      |
-| Excel file is saved correctly                      | 3      |
-| **Total**                                          | **30** |
+|                      **Item**                      | **Amount** |
+|:--------------------------------------------------:|:----------:|
+|             Data is imported correctly             |     2      |
+|     Missing values are interpolated correctly      |     3      |
+|   Annual precipitation data is plotted correctly   |     3      |
+|    Summary statistics are calculated correctly     |     2      |
+|      Summary statistics is plotted correctly       |     3      |
+|  Main precip data is exported to Excel correctly   |     3      |
+|    Main precip data charted correctly in Excel     |     4      |
+| Summary precip data is exported to Excel correctly |     3      |
+|   Summary precip data created correctly in Excel   |     4      |
+|           Excel file is saved correctly            |     3      |
+|   <div style="text-align: right">**Total**</div>   |   **30**   |
 
 
 

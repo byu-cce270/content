@@ -52,13 +52,13 @@ ___
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created. 
 **
 
-|                      **Item**                      | **Amount** |
-|:--------------------------------------------------:|:----------:|
-|        File is imported correctly to a list        |     6      |
-|       Sign counters are properly calculated        |     12     |
-|           Results are correctly printed            |     6      |
-| Results are saved to a text file  and on new lines |     6      |
-|                       Total                        |     30     |
+|                      **Item**                       | **Amount** |
+|:---------------------------------------------------:|:----------:|
+|        File is imported correctly to a list         |     6      |
+|        Sign counters are properly calculated        |     12     |
+|            Results are correctly printed            |     6      |
+| Results are saved to a text file  and on new lines  |     6      |
+|   <div style="text-align: right">**Total**</div>    |   **30**   |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
