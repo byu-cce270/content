@@ -53,7 +53,7 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 | File is imported correctly to a list | 6      |
 | Sign counters are properly calculated  | 12     |
 | Results are correctly printed        | 6      |
-| Results are saved to a text file  and on new lines   | 6      |
+| Results are saved to a text file  and on separate lines   | 6      |
 | Total                                | 30     |
 
 
