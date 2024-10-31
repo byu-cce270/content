@@ -5,7 +5,7 @@
 # Pre Class Reading Assignment
 
 On the O'Reilly's website read chapter 15 in _Python Crash Course, 3rd Edition_ and chapters 25-27, 29, and 32 in _Python Data Science Handbook, 2nd Edition_. 
-</br>Here is a direct link to the readings: [PCC Chapter 15: Generating Data](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch15.xhtml){:target="_blank"} and [PDSH Chapter 25: General Matplot Tips](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch25.html){:target="_blank"}.
+</br>Here is a direct link to the readings: [PCC Chapter 15: Generating Data](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c15.xhtml){:target="_blank"} and [PDSH Chapter 25: General Matplot Tips](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch25.html){:target="_blank"}.
 
 Remember that you will have to sign in to you free account that you created earlier.
 
