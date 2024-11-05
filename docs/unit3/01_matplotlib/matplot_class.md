@@ -3,7 +3,7 @@
 The following exercises will have you create graphs from data given from lists and external files. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
 You can find the In Class Exercise here:
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_files/files_in_class_(lastname%2C_firstname).ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_matplotlib/matplotlib_in_class_(lastname%2C_firstname).ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 1. Open the in-class workbook using the link above.
