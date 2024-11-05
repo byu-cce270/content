@@ -39,7 +39,7 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 #### Part 2
 
-1. In the second code block, create a variable 'x' with an empty list. Do this two more times on separate lines with a list 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
+1. In the second code block, create a variable 'x' with an empty list. Do this five more times on separate lines with a list 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
 2. Read in the Provo River Streamflow CSV file and create a for loop just like done in Part 1
 3. Using the xticks function, input the list below into the first parameter and in the second parameter, rotate the ticks by 45 degrees
 
