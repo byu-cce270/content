@@ -21,7 +21,7 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 #### Part 1
 
 1. In the first code block, create a variable 'x' with an empty list. Do this two more times on separate lines with a list 'y_1' and 'y_2'
-2. Read in the Pasadena CSV file in reading mode. Create an appropriately named variable and pass the file through the 'csv.reader', then skip the header row using the 'next()' function with the variable inside
+2. Read in the Pasadena CSV file in reading mode. Create an appropriately named variable and pass the file through the 'csv.reader', then skip the header row using the 'next()' function with the variable as its parameter
 3. Write a for loop referencing your csv file variable. Within the for loop, append each of your lists with the information from each column
 <br>&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use float inside your append function for y_1 and y_2, as most of this data does not include whole numbers
 4. Using the xticks function, input the list below into the first parameter and in the second parameter, rotate the ticks by 45 degrees
