@@ -21,7 +21,7 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 #### Part 1
 
 1. In the first code block, create a variable 'x' with an empty list. Do this two more times on separate lines with a list 'y_1' and 'y_2'
-2. Read in the Pasadena CSV file in reading mode. Create an appropriately named variable and pass the file through the 'csv.reader' 
+2. Read in the Pasadena CSV file in reading mode. Create an appropriately named variable and pass the file through the 'csv.reader', then skip the header row using the 'next()' function with the variable inside
 3. Write a for loop referencing your csv file variable. Within the for loop, append each of your lists with the information from each column
 <br>&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use float inside your append function for y_1 and y_2, as most of this data does not include whole numbers
 4. Using the xticks function, input the list below into the first parameter and in the second parameter, rotate the ticks by 45 degrees
@@ -39,11 +39,11 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 #### Part 2
 
-1. In the second code block, create a variable 'x' with an empty list. Do this five more times on separate lines with a list 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
-2. Read in the Provo River Streamflow CSV file and create a for loop just like done in Part 1
-3. Using the xticks function, input the list below into the first parameter and in the second parameter, rotate the ticks by 45 degrees
+1. In the second code block, create a variable 'x' with an empty list. Do this five more times on separate lines with lists 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
+2. Read in the Provo River Streamflow CSV file and create a for loop just like you did in Part 1
+3. Using the xticks function, input the list below into the first parameter and rotate the ticks by 45 degrees in the second parameter
 
-    ```[0,50,100,150,200,250,300,350]```
+    ```[0,500,1000,1500,2000,2500]```
 
 4. Plot y_1, label it "10163000" and color it purple
 5. Plot y_2, label it "10155200" and color it teal or blue
@@ -53,7 +53,7 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 9. Title the graph "Provo River Streamflow Data (2021)"
 10. Label the x-axis as "Date/Time"
 11. Label the y-axis as "Flowrate (cfs)"
-12. Create a legend in the top right corner, make the font size 10, and title is "Site Numbers"
+12. Create a legend in the top right corner, make the font size 10, and title it "Site Numbers"
 13. Give the chart grid lines
 14. Show the chart
 
