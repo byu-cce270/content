@@ -15,9 +15,9 @@ In this assignment, you will be creating functions that calculate the total area
 #### Part 1
 
 1. In the first code block, define a function called **get_cubic_ft** with two input parameters, **area_ft** and **depth_in**, which is the area of the gravel in feet and the depth of the gravel in inches, respectively. Within the function, calculate the volume of the gravel in cubic feet using the given parameters (remember: you will need to convert the depth from inches into feet), then return it using the return statement
-4. On a new line within the code block, define a function called **cuft_to_cuyd** with one input parameter: **cubic_ft**, which is the volume of gravel in cubic feet. Within the function, calculate the volume of the gravel in cubic yards, then return it
-6. On a new line within the code block, define a function called **vol_to_ton** with one input parameter, **vol_yds**, which is the volume of the gravel in cubic yards. Within the function, calculate the tonnage of the gravel (1 cubic yard of gravel weighs about 1.4 tons), then return it
-8. On a new line within the code block, define a function called **get_gravel_cost** with two input parameters, **gravel_dict** and **gravel**, which is a dictionary of gravel types/costs and the type of gravel, respectively. Within the function, create a variable called **cost** that pulls the cost associated with the gravel type from the dictionary
+2. On a new line within the code block, define a function called **cuft_to_cuyd** with one input parameter: **cubic_ft**, which is the volume of gravel in cubic feet. Within the function, calculate the volume of the gravel in cubic yards, then return it
+3. On a new line within the code block, define a function called **vol_to_ton** with one input parameter, **vol_yds**, which is the volume of the gravel in cubic yards. Within the function, calculate the tonnage of the gravel (1 cubic yard of gravel weighs about 1.4 tons), then return it
+4. On a new line within the code block, define a function called **get_gravel_cost** with two input parameters, **gravel_dict** and **gravel**, which is a dictionary of gravel types/costs and the type of gravel, respectively. Within the function, create a variable called **cost** that pulls the cost associated with the gravel type from the dictionary
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: You will use both parameters to correctly pull the cost</br>
 
 ---
