@@ -9,7 +9,7 @@ You can find the In Class Exercise here:
 1. Open the in-class workbook using the link above.
 2. Rename the notebook as `matplotlib_in_class_(lastname, firstname).ipynb`.
 3. Follow the instructions in the notebook to complete the exercise.
-4. You will be using [this csv file](Real_Students_Grades.csv) as your dataset.
+4. You will be using [this csv file](Weekly_Traffic_Volume.csv) as your dataset.
 
 
 ---
