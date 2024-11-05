@@ -33,7 +33,7 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
     ```[0,50,100,150,200,250,300,350]```
 
-10. Create a legend and put it in the top right corner. Make the font size 10
+10. Create a legend and put it in the lower left corner. Make the font size 10
 11. Give the chart grid lines
 12. Show the chart
 
