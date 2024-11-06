@@ -14,7 +14,7 @@ Remember that you will have to sign in to your free account that you created ear
 - What is the difference between a list and a NumPy array?
 - How to turn a list into a NumPy array?
 - How to append 2 NumPy arrays together?
-- The different functions you can do with a NumOy array
+- The different functions you can do with a NumPy array
 
 
 ---
