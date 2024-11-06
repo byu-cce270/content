@@ -4,13 +4,17 @@
 
 # Pre Class Reading Assignment
 
-On the O'Reilly's website read chapter 4 in Python for Data Analysis, 3rd Edition. 
-</br>Here is a direct link to the readings: [PDA Chapter 4: NumPy Basics: Arrays and Vectorized Computation](https://learning.oreilly.com/library/view/python-for-data/9781098104023/ch04.html){:target="_blank"}.
+On the O'Reilly's website read part II: Intro to NumPy chapters 5, 6, and 11 in
+Python Data Science Handbook, 2nd Edition. 
+</br>Here is a direct link to the readings: [Part II: Introduction to NumPy](https://learning.oreilly.com/library/view/python-data-science/9781098121211/part02.html){:target="_blank"}.
 
-Remember that you will have to sign in to you free account that you created earlier.
+Remember that you will have to sign in to your free account that you created earlier.
 
 ## Things to look out for
-
+- What is the difference between a list and a NumPy array?
+- How to turn a list into a NumPy array?
+- How to append 2 NumPy arrays together?
+- The different functions you can do with a NumOy array
 
 
 ---
