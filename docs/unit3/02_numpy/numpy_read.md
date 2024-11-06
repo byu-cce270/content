@@ -1,4 +1,4 @@
-#  Reading: Numpy Library
+#  Reading: NumPy Library
 
 ---
 
