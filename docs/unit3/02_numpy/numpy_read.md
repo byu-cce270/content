@@ -2,7 +2,7 @@
 
 ---
 
-# Pre Class Reading Assignment
+# Pre-Class Reading Assignment
 
 On the O'Reilly's website read part II: Intro to NumPy chapters 5, 6, and 11 in
 Python Data Science Handbook, 2nd Edition. 
