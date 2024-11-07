@@ -15,7 +15,7 @@ You will be using the following data set:
 
 ### Creating and Formatting the DataFrame
 
-1. Upload the Provo River Data csv file to your python notebook.
+1. Upload the Provo River Data csv file to your Python notebook.
 2. Write appropriate import statements to read the file into a pandas dataframe.
 3. In the second code block display the table that pandas made.
 4. In the third code block write code that will display a table like this:
@@ -23,14 +23,15 @@ You will be using the following data set:
 ![df_python](https://github.com/user-attachments/assets/f6726e28-0559-4b73-8d13-6883bf984877)
 
 5. In the fourth code block find the shape of the initial data frame (how many columns and rows there are).
-6. In the fifth code blcok display a asumary of the Date/Time column. It should look something like this:
+6. In the fifth code block display a summary of the Date/Time column. It should look something like this:
    
 ![python_df](https://github.com/user-attachments/assets/b494e31f-8f49-4a10-8fbf-c6ea8bafe1cc)
 
 7. In the sixth code block display the last 8 rows of the table.
-8. In the seventh code blcok create a table that only shows flowrate over 100.
-9. In the eighth code blcok create a table that only shows Approved Status 'P'.
-10. Turn sharing, editing on. Then turn in your link to Learning Suite.
+8. In the seventh code block create a table that only shows flowrate over 100.
+9. In the eighth code block create a table that only shows Approved Status 'P'.
+10. Create a bar graph using matplotlib to compare how many approved statuses are 'P' v. 'A'.
+11. Turn sharing, and editing on. Then turn in your link to Learning Suite.
 
 ---
 
@@ -41,14 +42,15 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 |                      **Item**                       | **Amount** |
 |:---------------------------------------------------:|:----------:|
-|        First code blcok has import statements and uploads file correctly        |     5      |
-|        Second code blcok displays the table that pandas made        |     3     |
-|            Third code block displays flow rate data summary            |     3      |
-|  Fourth code block finds the shape of the table  |     3      |
-|  Fifth code block displays a summary of the Date/Time column  |     3     |
-|  Sixth code block displays the last 8 rows of the table  |     4     |
-|  Seventh code blcok creates a table that only shows flowrates over 100  |     3      |
+|        First code block has import statements and uploads file correctly        |     5      |
+|        Second code block displays the table that pandas made        |     3     |
+|            Third code block displays flow rate data summary            |     2      |
+|  Fourth code block finds the shape of the table  |     2      |
+|  Fifth code block displays a summary of the Date/Time column  |     2     |
+|  Sixth code block displays the last 8 rows of the table  |     2     |
+|  Seventh code block creates a table that only shows flowrates over 100  |     3      |
 |  Eighth code block only displays data from Approved Status 'P'  |     6      |
+|  Ninth code block displays bar graph correctly  |     5      |
 |   <div style="text-align: right">**Total**</div>    |   **30**   |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
