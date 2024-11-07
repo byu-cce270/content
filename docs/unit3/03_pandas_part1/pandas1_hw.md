@@ -30,7 +30,11 @@ You will be using the following data set:
 7. In the sixth code block display the last 8 rows of the table.
 8. In the seventh code block create a table that only shows flowrate over 100.
 9. In the eighth code block create a table that only shows Approved Status 'P'.
-10. Create a bar graph using matplotlib to compare how many approved statuses are 'P' v. 'A'.
+10. Create a bar graph using matplotlib to compare how many approved statuses are 'P' v. 'A'. When you are done it should look like this:
+
+![pandas_graph](https://github.com/user-attachments/assets/3e9ed32e-626f-4156-acc7-026143845f95)
+
+    
 11. Turn sharing, and editing on. Then turn in your link to Learning Suite.
 
 ---
