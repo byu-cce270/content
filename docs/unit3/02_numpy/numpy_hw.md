@@ -34,7 +34,7 @@ CMI has limited resources that they can use per day across all of their products
 
 To understand better what is happening we are going to plot modified equations. They need to be modified because there is not a way to show three dimensional lines; however, the second set of linear equation given should have the same solutions for the remaining variables.
 
-7. Create the x plot points using the numpy function linspace. Zero to twenty is a good range for this assignment.
+7. Create the x plot points using the numpy function arrange or linspace. Zero to twenty is a good range for this assignment.
 8. Solve each of our linear equation for y and input those formulas as variable y_1, y_2, and y_3 respectively.
 9. Plot the three linear equations with the values for x and y. This will need to be done on three lines of code for y_1, y_2, and y_3. Notice that the intersection of these lines is at x = 12 and y = 15.
 10. Write comments explaining your code because even the best coders forget what their code does.
@@ -45,7 +45,7 @@ To understand better what is happening we are going to plot modified equations. 
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                **Part 1 Items**                | **Amount** |  
+|                **Items**                       | **Amount** |  
 |:----------------------------------------------:|:----------:|
 |        First array is created correctly        |     9      |
 |       Second array is created correctly        |     3      |
