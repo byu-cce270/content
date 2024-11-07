@@ -40,3 +40,15 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 | Actual amounts of resources used are displayed |     3      |
 |       Comments are added to explain code       |     3      |
 | <div style="text-align: right">**Total**</div> |   **30**   |
+
+
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+| No comments explaining why AI is used and what its provided code does |    2-3     |
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+
+
+
+
