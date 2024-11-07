@@ -9,4 +9,26 @@ You can find where to access this data [here](https://waterdata.usgs.gov/nwis/uv
 2. Rename it something like "[Your Name] 3_4_Pandas-Part1_HW"
 
 You will be using the following data set:
-[ProvoRiverData.csv](https://github.com/user-attachments/files/17669682/ProvoRiverData.csv)
+[ProvoRiverData](https://github.com/user-attachments/files/17669682/ProvoRiverData.csv)
+
+---
+
+### Creating and Formatting the DataFrame
+
+1. Upload the Provo River Data csv file to your python notebook.
+2. Write appropriate import statements to read the file into a pandas dataframe.
+3. In the second code block display the table that pandas made.
+4. In the third code block write code that will display a table like this:
+   
+![df_python](https://github.com/user-attachments/assets/f6726e28-0559-4b73-8d13-6883bf984877)
+
+5. In the fourth code block find the shape of the initial data frame (how many columns and rows there are).
+6. In the fifth code blcok display a asumary of the Date/Time column. It should look something like this:
+   
+![python_df](https://github.com/user-attachments/assets/b494e31f-8f49-4a10-8fbf-c6ea8bafe1cc)
+
+7. In the sixth code block display the last 8 rows of the table.
+8. In the seventh code blcok create a table that only shows flowrate over 100.
+9. In the eighth code blcok create a table that only shows Approved Status 'P'.
+10. Turn sharing, editing on. Then turn in your link to Learning Suite.
+
