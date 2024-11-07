@@ -48,10 +48,11 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |                **Part 1 Items**                | **Amount** |  
 |:----------------------------------------------:|:----------:|
 |        First array is created correctly        |     9      |
-|       Second array is created correctly        |     6      |
+|       Second array is created correctly        |     3      |
 |  Amount of units of product made are correct   |     6      |
 | Units produced are displayed in a clear manner |     3      |
 | Actual amounts of resources used are displayed |     3      |
+| Second linear equations are graphed correctly  |     3      |
 |       Comments are added to explain code       |     3      |
 | <div style="text-align: right">**Total**</div> |   **30**   |
 
