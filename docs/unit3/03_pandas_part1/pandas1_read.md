@@ -19,8 +19,8 @@ Remember that you will have to sign in to your free account that you created ear
 ---
 
 # Pre-Class Quiz Challenge
-Open the following notebook and complete the instructions in the comments:
+Open the following notebook and complete the instructions in the markdown:
 
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/02_numpy/%5BYour_Name%5D_3_3_NumPy_Pre_class_ipynb.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/drive/1KnfUY_SD_SPUh0HjIvaLvqic42LhMXwT#scrollTo=YZjJdSzBaBLK" :target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Save changes to your Google Drive and submit the link to the notebook in your Pre-Class Quiz.
