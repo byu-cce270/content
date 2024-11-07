@@ -6,7 +6,7 @@
 
 On the O'Reilly's website read Introducing Pandas Objects & Data Indexing and Selection: Chapters 13 & 14 in
 Python Data Science Handbook, 2nd Edition. 
-</br>Here is a direct link to the readings: [Introducing Pandas Objects](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch13.html){:target="_blank"}.
+</br>Here is a direct link to the readings: [Introducing Pandas Objects](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch13.html) {:target="_blank"}.
 
 Remember that you will have to sign in to your free account that you created earlier.
 
