@@ -1,4 +1,4 @@
-# Working with Excel Files in Python
+# Reading: Working with Excel Files in Python
 
 Spreadsheets are a fundamental tool in civil engineering and construction management. In Unit 1, we learned some advanced techniques for working with spreadsheets. We used Google Sheets, but Microsoft Excel is another popular tool for working with spreadsheets. In this unit, we will learn how to work with Excel files in Python.
 
@@ -319,8 +319,7 @@ workbook.close()
 ```
 
 
-This is just the tip of the iceberg! You can read more about the `xlsxwriter` library in the [official documentation]
-(https://xlsxwriter.readthedocs.io/){target='blank'}. 
+This is just the tip of the iceberg! You can read more about the `xlsxwriter` library in the [official documentation](https://xlsxwriter.readthedocs.io/){target='blank'}. 
 
 # Pre-Class Quiz Challenge
 

@@ -1,4 +1,4 @@
-# Homework - Working with Excel Files in Python
+# Homework: Working with Excel Files in Python
 
 **Objective:** Learn how to export data and charts to an Excel file.
 
