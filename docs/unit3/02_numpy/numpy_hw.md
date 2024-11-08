@@ -26,7 +26,7 @@ CMI has limited resources that they can use per day across all of their products
 2. Create your system of linear equations. (This is already done for you in the starter sheet.) In this system are variables represent the number of units made for each product. Product 1, Product 2, and Product 3 being represented by variables x, y, and z respectively.
 3. Convert the system of linear equations into arrays. The first array will only contain the values in the table above and will be presented almost like a list of lists. The second will contain the values of our resources available.
 4. Use the numpy function linalg.solve to solve our system of linear equations. This should output the number of units we can make of each product. If your code was written correctly, you should be able to make 12 units of product 1, 15 units of product 2, and 8 units of product 3.
-5. Write print statements to display the information from step 4 in a way that is clear. Also include information about the actual amounts of resources used to make that many units of each product.
+5. Write print statements to display the information from step 4 stating how much of each product can be made. Also include information about the actual amounts of labor hours, equipment hours, and units of materials used to make that many units of each product.
 
 ---
 
