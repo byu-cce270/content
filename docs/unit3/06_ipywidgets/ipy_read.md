@@ -143,8 +143,8 @@ For more information, you can refer to the [ipywidgets documentation](https://ip
 Open a new Colab notebook and do the following:
 
 1. Create two different widgets.
-   1. One should be a button. Try to change the description, style (color), and tooltip of the button.
-   2. The other can be any widget of your choice. Try to changing some properties of the widget.
+   - One should be a button. Try to change the description, style (color), and tooltip of the button. 
+   - The other can be any widget of your choice. Try to changing some properties of the widget.
 2. Display the widgets.
 3. Try adding an event to one of the widgets. For example, you can add an event to the button that prints a message when the button is clicked.
 4. Arrange the widgets vertically using `widgets.VBox` and display them.
