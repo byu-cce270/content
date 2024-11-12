@@ -10,7 +10,7 @@ And…we are going to use ‘ipywidgets’ to build graphical user interfaces fo
 
 Examples of GUI’s:
 
-![Window's GUI](images/windows_gui.png){width=100}
+![Window's GUI](images/windows_gui.png)
 
 ![Apple's GUI](images/apple_gui.jpg)
 
