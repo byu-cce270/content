@@ -10,11 +10,11 @@ And…we are going to use ‘ipywidgets’ to build graphical user interfaces fo
 
 Examples of GUI’s:
 
-![Window's GUI](images/windows_gui.png)
+![Window's GUI](images/windows_gui.png){width=500}
 
-![Apple's GUI](images/apple_gui.jpg)
+![Apple's GUI](images/apple_gui.jpg){width=500}
 
-![Game GUI](images/game_gui.jpeg)
+![Game GUI](images/game_gui.jpeg){width=500}
 
 
 
