@@ -28,9 +28,14 @@ You will be using the following data set:
  
 ![python_df](https://github.com/user-attachments/assets/b494e31f-8f49-4a10-8fbf-c6ea8bafe1cc)
 
+
+**extra credit (items 7-9 are extra credit)
 7. In the fifth code block convert the Date/Time column to a date/time data type
 8. Set the index to the date/time column
 9. Show the dataframe header with the new index
+
+**extra credit
+
 
 10. In the sixth code block display the last 8 rows of the table.
 11. In the seventh code block create a table that only shows flowrate over 100.
@@ -55,10 +60,10 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |         Second code block displays the table that pandas made          |     2      |
 |            Third code block displays flow rate data summary            |     2      |
 | Fourth code block finds the shape of the table and summary of DateTime |     2      |
-|                                  Fifth code block - display new index|     2      |                                 
+|                                  Fifth code block - display new index|  2 extra   |                                 
 |      Fifth code block displays a summary of the Date/Time column       |     2      |
 |         Sixth code block displays the last 8 rows of the table         |     2      |
-| Seventh code block creates a table that only shows flowrates over 100  |     3      |
+| Seventh code block creates a table that only shows flowrates over 100  |     5      |
 |     Eighth code block only displays data from Approved Status 'P'      |     5      |
 |             Ninth code block displays bar graph correctly              |     5      |
 |             <div style="text-align: right">**Total**</div>             |   **30**   |
