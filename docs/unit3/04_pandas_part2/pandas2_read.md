@@ -5,7 +5,7 @@
 # Pre-Class Reading Assignment
 
 On the O'Reilly's website read the following chapters in the Python Data Science Handbook, 2nd Edition: 
-Chapter 18, section titled 'Simple Concatenation with pd.concat; Chapter 19, from 'Categories of Joins' to the end of the chapter; & Chapter 20. 
+Chapter 18, section titled 'Simple Concatenation with pd.concat; Chapter 19, from 'Categories of Joins' to the end of the chapter; & Chapter 20, section titled 'groupby: Split, Apply, Combine'. 
 </br>Here is a direct link to the readings: [Combining Datasets](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch18.html#ch_0306-concat-and-append_simple-concatenation-with-pd.concat){:target="_blank"}.
 
 Remember that you will have to sign in to your free account that you created earlier.
