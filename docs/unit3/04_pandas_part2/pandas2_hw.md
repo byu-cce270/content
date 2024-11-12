@@ -1,41 +1,6 @@
 #  HW: Manipulating and Grouping Pandas DataFrames
 
-**Purpose:** In this assignment you are given an excel file for some EPA Highway Data. 
-You will download the file and create a DataFrame out of the data provided, then manipulate, combine, and perform calculations on the DataFrames as instructed. 
-
-## Instructions
-
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_pandas_part1/hw_startersheet_pandas_part1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
-
-You will be using the following data set:
-
-[Drive Cycles Data](https://github.com/user-attachments/files/17670334/HW.3.3.Drive.cycles.KEY.xlsx)
-
----
-
-### Creating and Formatting the DataFrame
-
-1. Upload the Drive Cycles Data excel file to your Python notebook.
-2. Write appropriate import statements to read each separate tab in the spreadsheet into its own pandas dataframe.
-3. Rename the pandas dataframes for EPA_HWY, EPA_CTY, and US_06 so they are useable as their own dataframe.
-4. Add a column called 'cycle' to the three dataframes just renamed and store the different cycle names in the column.
-   * Hint: make sure they are spelled exactly the same as they are in the grade tab on the excel file (they will be merged later).
-5. Stack the different cycles into one DataFrame called cycles.
-6. Add a new column to the new cycles dataframe by calculating speed in units of meters/sec.
-7. Calculate acceleration in meters/s^2 in a new column in the cycles dataframe.
-     * Hint: Calculate acceleration as the change of speed over each second.
-     * accel = (change in speed)/(change in time) = (speed(t)=speed(t-1)/(1-sec)
-     * use the pandas .diff function, you can read more [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.diff.html)
-8. Read the grade tab from the spreadsheet into a dataframe.
-9. Create a new dataframe called cycle_power by merging the grade to the cycles dataframe by the cycle name.
-    * 
-
-
-
     
-11. Turn sharing, and editing on. Then turn in your link to Learning Suite.
-
 ---
 
 # Turning In/Rubric
