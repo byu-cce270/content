@@ -1,12 +1,22 @@
 # Reading: ipywidgets
 
-A graphical user interface , or GUI (pronounced “GOOEY”) is the buttons and text boxes and pictures and stuff that a user of a computer program interacts with.
+A graphical user interface , or GUI (pronounced “GOOEY”) is the buttons, text boxes, pictures, and stuff that a user of a computer program interacts with.
 
 For example, when you start Instagram on your phone, or print a document from Word, or even when you open Learning Suite, you are looking at and interacting with a graphical user interface. Look at this image and consider the various types of interactive components in each of these GUI’s.
 
 As we’ve discussed previously, Google’s Colaboratory Python Notebook environment is only ONE of MANY different ways to write Python code.
 And…Python is only ONE of DOZENS of different programming languages.
 And…we are going to use ‘ipywidgets’ to build graphical user interfaces for your code. But realize that this is only ONE of MANY different tools for making GUI’s in a Python notebook. It is a pretty handy one though, and the principles we learn here are transferable to all of the other tools, Python environments, and programming libraries. 
+
+Examples of GUI’s:
+
+![Window's GUI](images/windows_gui.png){width=100}
+
+![Apple's GUI](images/apple_gui.jpg)
+
+![Game GUI](images/game_gui.jpeg)
+
+
 
 **NOTE:** ipywidgest won’t let us build complex GUI’s like the ones pictures above, but we can actually do quite a lot with it. We can make buttons, sliders, checkboxes, text inputs, dropdown boxes and so much more.
 
