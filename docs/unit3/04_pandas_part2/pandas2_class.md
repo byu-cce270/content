@@ -3,7 +3,7 @@
 The following exercises will have you manipulate and combine different DataFrames data frames from lists and external files. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
 You can find the In Class Exercise here:
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_pandas_part1/in_class_worksheet_pandas_part1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part2/In_Class_Pandas_Part_2.ipynb#scrollTo=sN247seQdOW5" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 1. Open the in-class workbook using the link above.
