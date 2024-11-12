@@ -16,7 +16,7 @@ You will be using the following data set:
 ### Creating and Formatting the DataFrame
 
 1. Upload the Provo River Data csv file to your Python notebook.
-2. Write appropriate import statements to read the file into a pandas dataframe.
+2. Write appropriate import statements and read the file into a pandas dataframe.
 3. In the second code block display the table that pandas made.
 4. In the third code block write code that will display a table like this:
    
