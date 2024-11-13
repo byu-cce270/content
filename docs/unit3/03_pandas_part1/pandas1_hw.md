@@ -1,7 +1,7 @@
 #  HW: Pandas DataFrame
 
 **Purpose:** In this assignment you are given a csv file for the Provo River Flow Summary Statistics. You will download the file and create a DataFrame out of the data provided and manipulate your DataFrame. 
-You can find where to access this data [here](https://waterdata.usgs.gov/nwis/uv?site_no=10163000)
+You can find where to access this data [here](https://waterdata.usgs.gov/nwis/uv?site_no=10163000){:target="_blank"}.
 
 ## Instructions
 
@@ -9,7 +9,7 @@ You can find where to access this data [here](https://waterdata.usgs.gov/nwis/uv
 2. Rename it something like "[Your Name] 3_4_Pandas-Part1_HW"
 
 You will be using the following data set:
-[ProvoRiverData](https://github.com/user-attachments/files/17669682/ProvoRiverData.csv)
+[ProvoRiverData](https://github.com/user-attachments/files/17669682/ProvoRiverData.csv){:target="_blank"}.
 
 ---
 
