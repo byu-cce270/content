@@ -9,7 +9,7 @@ You can find where to access this data [here](https://waterdata.usgs.gov/nwis/uv
 2. Rename it something like "[Your Name] 3_4_Pandas-Part1_HW"
 
 You will be using the following data set:
-[ProvoRiverData](https://github.com/user-attachments/files/17669682/ProvoRiverData.csv){:target="_blank"}.
+[ProvoRiverData](https://github.com/user-attachments/files/17669682/ProvoRiverData.csv)
 
 ---
 
