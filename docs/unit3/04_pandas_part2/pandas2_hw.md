@@ -42,7 +42,8 @@ You will be using the following data set:
 
 ![barchart](https://github.com/user-attachments/assets/967534f5-faff-4f7c-8847-77b3740aaa91)
 
-    *the colors don't have to be the same but make sure they aren't the default colors
+
+* the colors don't have to be the same but make sure they aren't the default colors
     
 ---
 
