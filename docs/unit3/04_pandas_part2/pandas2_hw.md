@@ -11,8 +11,8 @@ You will be using the following data set:
 [Productivity Data - Pandas Part 2](https://github.com/user-attachments/files/17743998/productivity-part2pandas.1.xlsx)
 
 3. In the first code block, import the necessary modules.
-4. Load the excel file into the notebook. Hint: this is just like we did in class.
-5. Load the data from the equipment and productivity sheets in the excel file into seperate dataframes.
+4. Load the Excel file into the notebook. Hint: this is just like we did in class.
+5. Load the data from the equipment and productivity sheets in the Excel file into separate dataframes.
 6. Standardize the column names by making them lowercase and removing any extra spaces.
 7. Remove any duplicate rows using .drop_duplicates().
 8. Display the data to make sure everything is correct.
@@ -30,17 +30,17 @@ You will be using the following data set:
 |          cost per cubic yard ($)        |     total cost ($) / soil moved (cu yds)      |
     
 14. Verify the columns were added correctly by printing a .head() of only the newly added columns.
-15. Using the .groupby() method, compute the following:
+15. Using the .groupby() method, find the following:
 
-|    **New Column Name**                | **Formula** |
-|:---------------------------------------------------:|:----------:|
-|       efficiency (cubic yards/hour)         |     soil moved (cu yds) / hours used      |
-|   fuel efficiency (cubic yards/gallon)    |     soil moved (cu yds) / fuel consumed (gallons)|
-|          total cost ($)         |     hourly rate * hours used      |
-|          cost per cubic yard ($)        |     total cost ($) / soil moved (cu yds)      |
+    * average efficiency by equipment type
+    * total cost by project site
+    * fuel efficiency (cubic yards/gallon) by weather conditions
+   
+16. Sort the merged dataframe to find the top 3 most efficient and cost-effective equipment.
+17. Using matplotlib, recreate the following bar chart:
+![bar chart](https://github.com/user-attachments/assets/e1ca2706-2147-4fab-aa7d-c78d8856bcae)
 
----
-
+    *the colors don't have to be the same but make sure they aren't the default colors
     
 ---
 
@@ -51,15 +51,14 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 |                      **Item**                       | **Amount** |
 |:---------------------------------------------------:|:----------:|
-|        First code block has import statements and uploads file correctly        |     5      |
-|        Second code block displays the table that pandas made        |     3     |
-|            Third code block displays flow rate data summary            |     2      |
-|  Fourth code block finds the shape of the table  |     2      |
-|  Fifth code block displays a summary of the Date/Time column  |     2     |
-|  Sixth code block displays the last 8 rows of the table  |     2     |
-|  Seventh code block creates a table that only shows flowrates over 100  |     3      |
-|  Eighth code block only displays data from Approved Status 'P'  |     6      |
-|  Ninth code block displays bar graph correctly  |     5      |
+|        Correct import statements used and file uploaded correctly        |     5      |
+|        Tabs in the Excel file are loaded in separate data frames        |     3     |
+|            Correct column names created with duplicates removed            |     3      |
+|                Equipment age calculated correctly  |     3     |
+|    Equipment and Productivity dataframes are merged into a new dataframe correctly  |     2     |
+|  Correct columns with correct calculations are added to the merged dataframe  |     8      |
+|              .groupby() is used to filter correctly  |     3      |
+|   Bar graph displays correctly with titles, labels, and colors |     3      |
 |   <div style="text-align: right">**Total**</div>    |   **30**   |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
