@@ -1,5 +1,46 @@
 #  HW: Manipulating and Grouping Pandas DataFrames
 
+**Purpose:** In this assignment you are given an Excel file for different excavation and grading equipment. You will upload the provided file to your Colab notebook and practice merging, grouping, and manipulating the data in Python. 
+
+## Instructions
+
+1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_pandas_part1/hw_startersheet_pandas_part1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
+
+You will be using the following data set:
+[Productivity Data - Pandas Part 2](https://github.com/user-attachments/files/17743998/productivity-part2pandas.1.xlsx)
+
+3. In the first code block, import the necessary modules.
+4. Load the excel file into the notebook. Hint: this is just like we did in class.
+5. Load the data from the equipment and productivity sheets in the excel file into seperate dataframes.
+6. Standardize the column names by making them lowercase and removing any extra spaces.
+7. Remove any duplicate rows using .drop_duplicates().
+8. Display the data to make sure everything is correct.
+9. To calculate the equipment age, convert the 'year purchased' column to a datetime format using the .to_datetime() command.
+10. Calculate the current age of the equipment by subtracting the year purchased from the year 2024.
+11. Merge the equipment and productivity dataframes on the common column 'equipment id'.
+12. Filter out rows where no hours were used.
+13. You will now add the following columns to your merged dataframe using the following formulas:
+
+|    **New Column Name**                | **Formula** |
+|:---------------------------------------------------:|:----------:|
+|       efficiency (cubic yards/hour)         |     soil moved (cu yds) / hours used      |
+|   fuel efficiency (cubic yards/gallon)    |     soil moved (cu yds) / fuel consumed (gallons)|
+|          total cost ($)         |     hourly rate * hours used      |
+|          cost per cubic yard ($)        |     total cost ($) / soil moved (cu yds)      |
+    
+14. Verify the columns were added correctly by printing a .head() of only the newly added columns.
+15. Using the .groupby() method, compute the following:
+
+|    **New Column Name**                | **Formula** |
+|:---------------------------------------------------:|:----------:|
+|       efficiency (cubic yards/hour)         |     soil moved (cu yds) / hours used      |
+|   fuel efficiency (cubic yards/gallon)    |     soil moved (cu yds) / fuel consumed (gallons)|
+|          total cost ($)         |     hourly rate * hours used      |
+|          cost per cubic yard ($)        |     total cost ($) / soil moved (cu yds)      |
+
+---
+
     
 ---
 
