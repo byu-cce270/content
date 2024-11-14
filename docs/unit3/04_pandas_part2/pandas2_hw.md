@@ -4,11 +4,12 @@
 
 ## Instructions
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_pandas_part1/hw_startersheet_pandas_part1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part2/HW_Pandas_Part_2.ipynb#scrollTo=0Z04HkIOYDLu" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
 
 You will be using the following data set:
-[Productivity Data - Pandas Part 2](https://github.com/user-attachments/files/17743998/productivity-part2pandas.1.xlsx)
+
+[Productivity Data - Pandas Part 2](https://github.com/user-attachments/files/17744606/productivity-part2pandas.1.xlsx)
 
 3. In the first code block, import the necessary modules.
 4. Load the Excel file into the notebook. Hint: this is just like we did in class.
@@ -38,7 +39,8 @@ You will be using the following data set:
    
 16. Sort the merged dataframe to find the top 3 most efficient and cost-effective equipment.
 17. Using matplotlib, recreate the following bar chart:
-![bar chart](https://github.com/user-attachments/assets/e1ca2706-2147-4fab-aa7d-c78d8856bcae)
+
+![barchart](https://github.com/user-attachments/assets/967534f5-faff-4f7c-8847-77b3740aaa91)
 
     *the colors don't have to be the same but make sure they aren't the default colors
     
