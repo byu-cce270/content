@@ -33,7 +33,7 @@ import matplotlib.pyplot as plt
 
 1. Next will use the `pandas` library to read the data into a dataframe. Use the `read_excel' method and read the sheet named 'Streamflow Data Part 2'. 
 2. Display the first few rows of the dataframe to see what the data looks like.
-3. Make the 'Date/Time' column the index of the dataframe and display the first few rows again.
+3. Make the 'Date/Time' column the index of the dataframe and display the first few rows again. Verify the Index is of type "DateTime" before making it the index, convert if required.
 
 ### Step 4: Data Analysis
 
