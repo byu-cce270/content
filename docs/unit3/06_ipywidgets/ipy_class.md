@@ -21,7 +21,7 @@ A lot of widgets use HTML for creating text and displaying images. If you click 
    
    </details>
 
-<\n> For the remainder of our work, we don't have to keep installing ipywidgets because it is already in the system now.
+<br> For the remainder of our work, we don't have to keep installing ipywidgets because it is already in the system now.
 
 2. In the code block titled "Input Text Box", create a text box that will allow the user to input their Favorite Food. Try having the text box have a placeholder and a description.
 
@@ -29,3 +29,8 @@ A lot of widgets use HTML for creating text and displaying images. If you click 
    - Now display the widget using the display() function.
 
 3. In the code block titled "Text Box Value", write a print statement to print out the value of the text box
+
+## Part 2: Buttons
+
+In this part, we will create a button that will print out a message when clicked.
+
