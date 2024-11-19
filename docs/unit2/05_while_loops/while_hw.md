@@ -1,6 +1,6 @@
 #  HW: While Loops
 
-**Purpose:** Learn how to create a while loop.
+**Purpose:** Learn how to create a While loop.
 
 ## Instructions
 
