@@ -4,14 +4,7 @@ Spreadsheets are a fundamental tool in civil engineering and construction manage
 
 ## Reading Excel Files Using Pandas
 
-In the previous section, we learned how to use the `pandas` library. Pandas is a powerful data manipulation library that provides data structures and functions to work with structured data. The `pandas` library makes it easy to work with Excel files. We can easily read data from an Excel file into a pandas dataframe and/or export a pandas dataframe to an Excel file. 
-
-To read an Excel file in Python, you need to install the `pandas` library. You can install the `pandas` library using the following command:
-
-```python
-!pip install pandas
-```
-There is a method in Pandas called `read_excel()` that reads an Excel file and returns a dataframe. As you may recall, a DataFrame is a two-dimensional data structure that is similar to a table in a database. You can think of a DataFrame as a spreadsheet in Python.
+In the previous section, we learned how to use the `pandas` library. Pandas is a powerful data manipulation library that provides data structures and functions to work with structured data. The `pandas` library makes it easy to work with Excel files. We can easily read data from an Excel file into a pandas dataframe and/or export a pandas dataframe to an Excel file. There is a method in Pandas called `read_excel()` that reads an Excel file and returns a dataframe. As you may recall, a DataFrame is a two-dimensional data structure that is similar to a table in a database. You can think of a DataFrame as a spreadsheet in Python.
 
 Here is an example of how to read an Excel file using the `read_excel()` method:
 
@@ -167,10 +160,6 @@ data_format = workbook.add_format({'align': 'center'})
 # Write the data to the worksheet
 for row_num, row_data in enumerate(data):
     worksheet.write_row(row_num, 0, row_data, data_format)
-    
-# Center justify the columns and set column width to 12
-
-#worksheet.set_column('A:B', 12, {'align': 'center'})
 
 # Add a chart to the worksheet
 chart = workbook.add_chart({'type': 'column'})
