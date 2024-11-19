@@ -14,17 +14,14 @@ A lot of widgets use HTML for creating text and displaying images. If you click 
 
 1. Find the code block titled "Imports" import the library for using ipywidgets.
 
-<details>
-<summary><b>Hint</b></summary>
-    
-    ```python
-    !pip install ipywidgets
-    import ipywidgets as widgets
-    ```
+   <details>
+   <summary><b>Hint</b></summary>
 
-</details>
+       import ipywidgets as widgets
+   
+   </details>
 
-For the remainder of our work, we don't have to keep installing ipywidgets because it is already in the system now.
+<\n> For the remainder of our work, we don't have to keep installing ipywidgets because it is already in the system now.
 
 2. In the code block titled "Input Text Box", create a text box that will allow the user to input their Favorite Food. Try having the text box have a placeholder and a description.
 
