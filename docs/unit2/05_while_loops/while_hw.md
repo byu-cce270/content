@@ -43,12 +43,12 @@ In this assignment, you will be creating a while loop and using it to calculate 
 #### Test Code
 
 If you'd like to check your code so that it is working properly, run the first code block and enter these values: 
-   * Watershed Area = 10 acres
-   * Watershed Height = 10 feet
-   * Water Depth = 5 feet
+   - Watershed Area = 10 acres
+   - Watershed Height = 10 feet
+   - Water Depth = 5 feet
 
 Next, run the second code block and enter these values for precipitation:
-   * 23, 14, 2, 17, 8, 26
+   - 23, 14, 2, 17, 8, 26
 
 You should get an output that looks something like this:
 
