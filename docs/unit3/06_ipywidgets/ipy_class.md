@@ -14,12 +14,16 @@ A lot of widgets use HTML for creating text and displaying images. If you click 
 
 1. Find the code block titled "Imports" import the library for using ipywidgets.
 
-   <details>
+<details>
    <summary><b>Hint</b></summary>
 
-       import ipywidgets as widgets
-   
-   </details>
+   <div style="margin-left: 20px;">
+      <pre><code>
+         import ipywidgets as widgets
+      </code></pre>
+   </div>
+
+</details>
 
 <br> For the remainder of our work, we don't have to keep installing ipywidgets because it is already in the system now.
 
