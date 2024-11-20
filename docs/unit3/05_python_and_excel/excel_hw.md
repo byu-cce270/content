@@ -18,7 +18,7 @@ Do the following to import the data:
    State, and one for BYU. Each sheet contains monthly precipitation data going back several years. For this 
    exercise, we will focus on the BYU data.
 3. Upload the file to your Colab environment. You can do this by clicking on the folder icon on the left sidebar, then clicking on the upload icon. Or you can drag and drop the file into the file browser.
-4. Read the data into a pandas dataframe called 'precip_df'. Use the `read_excel` method and read the sheet named **'BYU'**.
+4. Read the data into a pandas dataframe called **precip_df**. Use the `read_excel` method and read the sheet named **BYU**.
 5. Display the first few rows of the dataframe to see what the data looks like.
 
 ### Part 2: Data Analysis
