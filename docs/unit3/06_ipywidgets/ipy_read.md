@@ -45,6 +45,7 @@ import ipywidgets as widgets
 ## Creating Widgets
 
 There are many different types of widgets that you can create using ipywidgets. Some of the most common widgets include:
+
  - Button
  - Checkbox
  - Dropdown
@@ -137,6 +138,62 @@ display(vbox)
 
 For more details about widget layout, you can refer to the [ipywidgets documentation - Widget Layout](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Layout.html){target='blank'}.
 
+## Sample Use Cases
+
+Let's create a simple example to demonstrate how to use ipywidgets. In this example, we will create a button widget that displays a message when clicked.
+
+```python
+import ipywidgets as widgets
+
+# Create a button widget
+button = widgets.Button(description='Click me')
+
+# Define a function to handle the click event
+def on_button_click(event):
+    print('Button clicked')
+
+# Handle the click event for the button widget
+button.on_click(on_button_click)
+
+# Display the button widget
+display(button)
+```
+Here is another example where we create a slider widget that displays the value of the slider when it is changed.
+
+```python
+import ipywidgets as widgets
+
+# Create a slider widget
+slider = widgets.IntSlider(value=0, min=0, max=100, description='Value')
+
+# Define a function to handle the change event
+def on_slider_change(event):
+    print('Slider value:', event['new'])
+    
+# Handle the change event for the slider widget
+slider.observe(on_slider_change, names='value')
+
+# Display the slider widget
+display(slider)
+```
+Here is another example where we create a dropdown widget that displays the selected value when it is changed.
+
+```python
+import ipywidgets as widgets
+
+# Create a dropdown widget
+dropdown = widgets.Dropdown(options=['Option 1', 'Option 2', 'Option 3'], value='Option 1', description='Value')
+
+# Define a function to handle the change event
+def on_dropdown_change(event):
+    print('Selected value:', event['new'])
+
+# Handle the change event for the dropdown widget
+dropdown.observe(on_dropdown_change, names='value')
+
+# Display the dropdown widget
+display(dropdown)
+```
 
 ## Conclusion
 
