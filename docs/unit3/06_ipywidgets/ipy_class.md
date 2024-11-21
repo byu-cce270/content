@@ -82,4 +82,6 @@ In this part, the first two code blocks are an example code you can reference to
 
 In this part, we will learn how to use the random module to generate random numbers. To start, go the code block titled "Imports" at the top of the notebook and import the random module.
 
-1.
+1. In the code block titled "Intro to Random", create a variable and set it equal to random.random(). This creates a random number between 0 and 1. Then print out the variable. Then try running the code block a few times to see the different numbers that are generated. Then write a new variable and set it equal to random.random() * 100. This will create a random number between 0 and 100. Print out the variable. We could also make the number an integer by using the int() function. Notice how everytime you run the code block, the number changes.
+
+2.
