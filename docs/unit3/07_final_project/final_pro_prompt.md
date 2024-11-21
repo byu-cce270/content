@@ -6,64 +6,82 @@ You will also have to make and turn in a project proposal. The project proposal,
 
 
 ## Instructions
-1. Form a team of 3 members and choose a group name. Record your team name and members of our team here: 
-       [Fall 2024 Team Sign Up Sheet](https://docs.google.com/spreadsheets/d/1M5wcMbjZQoYJGmpG7rlZ5Y9DnLdN6QDcRKndbbrm2-U/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-</br>(Please note that you will be with this team for all other projects and will use this name the whole semester. So chose wisely)
 
-2. You will then choose one of the three prompts listed below.
+1. You and the rest of your team previously formed will work together will come up with a project idea that will showcase what you have learned in this class. You will need to complete the project requirements listed below. You can find your team here: [Fall 2024 Team Sign Up Sheet](https://docs.google.com/spreadsheets/d/1M5wcMbjZQoYJGmpG7rlZ5Y9DnLdN6QDcRKndbbrm2-U/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
-3. Complete the prompt using all the following requirements (this is where your grade will come from)
+2. You and your team must come up with a project idea that will meet all of the requirements and create a project proposal. The instructions can be found here: [Final Project Proposal](https://byu-cce270.readthedocs.io/en/latest/unit3/07_final_project/final_pro_proposal/){:target="_blank"} ***WARNING*** - You must avoid the temptation to simply find an interesting Python program online and copy and paste it as your own. While we all use other people’s code and examples to learn from, outright copying their code and presenting it as your own is plagiarism.
 
-   - Create a nice cover sheet tab with instructions on how to use your sheet, your group name, and names of the members in your group
-   - Use relative and absolute references
-   - Use named cells
-   - Some cells should be automatically calculated using mathematical equations
-   - Use at least 3 built-in functions such as min, max, vlookup, etc.
-   - Use at least one IF statement
-   - Use conditional formatting on at least one column or row of data
-   - Use data validation
-   - Use at least one type of graph to view data
-   - Add a new function to your project that we didn’t talk about in class to your project  (making 4 functions total).
-        - Make it something useful so it adds value to the sheet
-   - Create a sheet in your project that reports on how each group member contributed (if any group member was not easy to communicate with or didn't show up to help with the project let the head TA or the professor know, and they will take care of it)
+3. You also need to sign up for a time to present your project to the rest of the class. You can find the sign up sheet here: [Final Project Presentation Sign Up](https://docs.google.com/spreadsheets/d/1M5wcMbjZQoYJGmpG7rlZ5Y9DnLdN6QDcRKndbbrm2-U/edit?gid=1979404871#gid=1979404871){:target="_blank"}
 
-4. After you have completed your project, create a video. You can use ScreenCast-O-Matic for this (https://screencast-o-matic.com/ ). Upload your video to YouTube and get a public link for it.  The main purpose of this video is to make grading these projects easier. When making your video:
-   - Keep it short (ideally under 4 min)
-   - Show how your group completed every element in the rubric
-   - Have each group member share one thing they learned. 
+4. Complete the project using all the following requirements (this is where your grade will come from):
+
+      - An introductory text block with: 
+         - Instructions on how to use your code
+         - Link to your external file(s) (if you have any)
+         - Group name
+         - Members of your group
+         - A report on how each team member contributed. (with rubric items that they did)
+         - Links to any out of class resources you used **(Please don't forget this part. If there are no links you will lose points)**
+      - At least 1 loop (for or while)
+      - At least 1 list, dictionary, or panda dataframe
+      - At least 1 if-elif-else statement
+      - At least 3 functions that you write/define
+      - Use xlsxwriter to write to an Excel file, both data and a graph
+      - Use matplotlib to create a graph
+      - Your program is bug free 
+      - Use markdown to organize your code (Using text blocks to separate your code into sections or code blocks)
+      - Comments throughout your code explaining what is happening. (This is not directly apart of the rubric, but you will lose points if you don't have comments)
+      - EXTRA CREDIT OPTIONS (Must be used in some significant way):
+         - Use of GUIs (ipywidgets)
+         - Use of numpy in some way
+
+
 
 ## Turning in/Rubric
 Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:
-   - A spreadsheet link with sharing turned on and editing on so that the data validation is visible.
-   - The link to watch the video
+   - Learning Suite submission of your project links are due at the start of the scheduled presentations.
+   - A colab notebook link with sharing turned on and editing on so that the data validation is visible.
+   - Any files used and created in the project.
 
 **Rubric:**
 
-|                                                               Item                                                                | Points Possible |
-|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------:|
-| Create a nice cover sheet tab with instructions on how to use your sheet, your group name, and names of the members in your group |        7        |
-|                                               Use relative and absolute references                                                |        5        |
-|                                                     Use named cell references                                                     |        5        |
-|                            Some cells should be automatically calculated using mathematical equations                             |        7        |
-|                               Use at least three built in functions such as min, max, vlookup, etc.                               |        7        |
-|                                                   Use at least one IF Statement                                                   |        7        |
-|                                   Use conditional formatting on at least one column or row data                                   |        6        |
-|                                                        Use data validation                                                        |        6        |
-|                                            Use at least one type of graph to view data                                            |        7        |
-|                                Add one new function to your Google sheet (making 4 function total)                                |        6        |
-|                         Create a sheet in your project that reports on how each group member contributed                          |        7        |
-|                                                         Prompt completed                                                          |       10        |
-|                                                          Video uploaded                                                           |       10        |
-|                                                       Participation points                                                        |       10        |
-|                                          <div style="text-align: right">**Total**</div>                                           |       100       |
+|                              Item                               | Points Possible |
+|:---------------------------------------------------------------:|:---------------:|
+|        An introductory text block with all requirements         |        8        |
+|                 At least 1 loop (for or while)                  |        5        |
+|        At least 1 list, dictionary, or pandas dataframe         |        5        |
+|                At least 1 if-elif-else statement                |        5        |
+|           At least 3 functions that you write/define            |       12        |
+| Use xlsxwriter to write to an Excel file, both data and a graph |        5        |
+|                At least 1 graph from matplotlib                 |        5        |
+|                    Your program is bug free                     |       10        |
+|               Use markdown to organize your code                |        5        |
+|       Relative contribution of each team member is given        |        5        |
+|                    Present for presentation                     |       25        |
+|             All links turned in before presentation             |       10        |
+|         <div style="text-align: right">**Total**</div>          |       100       |
+|                    Use of GUIs (ipywidgets)                     |       +5        |
+|                          Use of numpy                           |       +5        |
 
 
-## The Prompts
-### Prompt 1 - Stock Market Data Challenge
-You and two friends have decided to install the Robinhood app on your phones and start making regular stock purchases each week for 12 weeks to see who can choose the best stocks and get the most return on investment. You agree that you will each start with a $100 investment in a stock of your choice (each friend must choose a different stock). You make this initial investment on a Monday morning. Each Monday thereafter for 12 weeks, you each invest an additional $20 - again you must choose one stock, and it can’t be one that you already chose (this kind of restriction is hard to code into a spreadsheet, so you’ll just ensure this requirement when you are entering the data from your friends).  You will need to build a list of stocks that have been bought by the group, including the initial purchase price and the current price (i.e. the cost of one share of the stock). Each week thereafter, you will update the price of one share and compute the percent gain or loss of that stock. You will use this information to update the current value of the investment of each friend in the stocks they purchased. At the end of the 12 weeks, you have agreed that whoever did the best overall (i.e. has the greatest value of their total investments) wins 25% of the gains of each of the other friends. Your job is to build a Google Sheets spreadsheet to manage this process. You can use one or more tabs on the spreadsheet but your resulting product should automatically compute the gains or losses of each of the purchased stocks each week (based on initial and current price per share), and should compute the running total and final total of all the investments of each person, and should determine who is the overall winner and how much money they win from each friend. Fill your spreadsheet with synthetic data for the full challenge to show how it works. Be sure to include the items in the grading rubric.
 
-### Prompt 2 - Friend Group Weight Loss Challenge
-You and two friends decide to enter a 12-week weight-loss challenge. You each pay $20 into a kitty at the beginning of the challenge on a Monday morning and you each submit your current weight to whomever is managing the spreadsheet.  Each of the following 12 Mondays you weigh in and enter your weight in the spreadsheet. The spreadsheet automatically computes the percent body weight lost (or gained) since the previous week for each person. (To keep it simple, you are going to ignore BMI or other metrics, and just focus on percent of weight loss. Let’s assume each friend is generally healthy and doesn’t have any eating disorders and has a “few pounds to lose” to reach whatever they consider to be their target/desired weight.)  The three of you have agreed that each week you will each add another $5 to the kitty - except for the person who did best on the challenge that week (highest percent loss - comparing the current weight to the previous week’s weight - not compared to the original weight.) The money in the kitty gets put into a simple savings account that returns 0.05% interest per month. Make sure this interest rate can’t be changed in your spreadsheet (use an absolute reference to a cell that contains the interest). At the end of the 12 weeks, whoever has the greatest percent loss overall (compared to their very first measurement) wins the kitty. Your job is to build a Google Sheets spreadsheet to manage this process. You can use one or more tabs on the spreadsheet, but your resulting product should automatically compute and name the winner each week and should also compute and name the overall winner and the total amount of money in the kitty that the winner will receive. Once you have built your spreadsheet, fill it with synthetic data including names of the friends and weekly weigh-ins, so that it can demonstrate all of its capabilities. Be sure to include the items in the grading rubric. 
+## Project ideas
+Note: While we are coding Python in the Google Environment, you can find lots of ideas for Python Notebooks by searching for “Jupyter Notebooks”. This is the more generic form of Python Notebooks that runs outside of Google. But they work almost exactly the same. My search links below use the term “Jupyter Notebooks” to help get more results. Feel free to explore these search results for video tutorials, sample code, and other great ideas.
 
-### Prompt 3 - Landscaping Invoice Tracker
-Create a spreadsheet that can help you create bills to send to your landscaping clients. Include 3 different types of foliage, soil, and rocks and how much they cost per foot. Have a spot that indicates how much square footage they bought of each material. Indicate how many person-hours it took to landscape their yard. 
+### Make a Video Game
+Make a simple (or complex) video game in Python. There are several simple (and complex) video game modules that can be imported for use in Python. For example look at these search results to get some ideas of modules, project ideas, and sample code: https://bit.ly/3FDalLk
+
+### Solve an Engineering Problem
+Here are some search results for ideas and modules related to civil engineering. Consider writing a program that will solve several of the most common questions on the Fundamentals of Engineering Exam. https://bit.ly/3qrXt4M 
+
+### Crawl the Internet
+There are several modules available that allow you to grab text from a web page. From this text you can grab hyperlinks and then go to those links and grab more text. You might build a tool to find all references to your favorite food or travel destination and build a guidebook for users: https://bit.ly/3tvMEQZ 
+
+### Do Some Machine Learning!
+Python is probably the most popular tool for machine learning, and there are tons of libraries and example codes and projects for doing machine learning. For example, you could look for patterns in weather, twitter feeds, text streams etc. Here are some search results to get you started: https://bit.ly/3uirvJs
+
+### Read Data from Google Sheets and Do Something Cool!
+As it turns out there are modules to allow you to connect to Google Sheets and read data directly into your Python program. This opens all kinds of opportunities, so you’ll just have to brainstorm on what the project would be… https://bit.ly/3IuM2zh
+
+### Expand upon one of the homework problems, for example: 
+Improve one of the homework problems we did this semester. When choosing this option, you will need to make sure you make significant improvements to the code. You will also need to make sure you have a good project proposal that explains what you are going to do and how you are going to do it. Please talk to a TA a head of time to make sure your project idea is different enough from the homework we did.
