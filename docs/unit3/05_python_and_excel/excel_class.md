@@ -40,9 +40,11 @@ import matplotlib.pyplot as plt
 Note that the first column is a series of dates and times with multiple rows per day. The columns contain streamflow data in cubic feet per second (cfs) for different gauges on the Provo River. 
 
 1. Create a new dataframe called **daily_df** that contains the daily average streamflow for each gauge.
-2. Now that each row is for a specific date (not time), change the index of daily_df from a datetime index to a date index.**Hint**: daily_df.index = daily_df.index.date
+2. Now that each row is for a specific date (not time), change the index of daily_df from a datetime index to a date index. **Hint**: daily_df.index = daily_df.index.date
 2. Display the first few rows of the **daily_df** dataframe.
 3. Create a line plot of the daily average streamflow for each gauge.
+
+
 
 ### Step 5: Write the Data to a New Excel File with a Chart
 
