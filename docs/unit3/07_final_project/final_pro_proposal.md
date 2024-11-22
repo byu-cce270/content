@@ -33,7 +33,7 @@ You and the rest of your team previously formed will work together will come up 
 
 # Turning In/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created. 
+Turn on sharing and editing. Turn in the link to the Learning Suite feedback box.
 **
 
 |                                         **Item**                                          | **Amount** |
