@@ -30,7 +30,7 @@ You and the rest of your team previously formed will work together will come up 
    
     A milestone is the thing that gets completed on each task - a marker of how well you are doing. 
     For a helpful guide on how to create/make a Gantt Chart, you can review when we did Gantt Charts during the spreadsheet unit. [Gantt Chart Reading](https://byu-cce270.readthedocs.io/en/latest/unit1/5_gantt_charts/gantt_read/){:target="_blank"}
-
+ 
 
 # Turning In/Rubric
 
