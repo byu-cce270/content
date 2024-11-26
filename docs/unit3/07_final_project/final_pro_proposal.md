@@ -37,13 +37,13 @@ You and the rest of your team previously formed will work together will come up 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box.
 **
 
-|                                         **Item**                                          | **Amount** |
-|:-----------------------------------------------------------------------------------------:|:----------:|
-|                     2 markdown/HTML instructions (2 points per game)                      |     4      |
-|                     6 GUIs added (3 points per GUI, up to 9 per game)                     |     18     |
-|                    2 results shown in an HTML GUI (2 points per game)                     |     4      |
-| Write comments explaining the the give code to the games you modified (2 points per game) |     4      |
-|                      <div style="text-align: right">**Total**</div>                       |   **30**   |
+|                               **Item**                               | **Amount** |
+|:--------------------------------------------------------------------:|:----------:|
+|            Project Title (Name, Members, Start/End Dates)            |     5      |
+| List of Tasks (Person Responsible, Resources, Order, Time, Relation) |     10     |
+|                    Milestones and Completion Date                    |     5      |
+|                         Project Description                          |     10     |
+|           <div style="text-align: right">**Total**</div>             |   **30**   |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
