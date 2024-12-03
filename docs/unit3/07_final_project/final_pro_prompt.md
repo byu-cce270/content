@@ -39,9 +39,9 @@ You will also have to make and turn in a project proposal. The project proposal,
 
 ## Turning in/Rubric
 Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:
-   - Learning Suite submission of your project links are due at the start of the scheduled presentations.
-   - A colab notebook link with sharing turned on and editing on so that the data validation is visible.
-   - Any files used and created in the project.
+      - Learning Suite submission of your project links are due at the start of the scheduled presentations.
+      - A colab notebook link with sharing turned on and editing on so that the data validation is visible.
+      - Any files used and created in the project.
 
 **Rubric:**
 
