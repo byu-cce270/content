@@ -7,6 +7,8 @@ favicon: 'images/favicon.ico'
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
   - js/mathjax-config.js
+extra_css:
+  - css/custom.css
 markdown_extensions:
     - attr_list
     - sane_lists
@@ -14,9 +16,7 @@ markdown_extensions:
     - admonition
     - pymdownx.arithmatex:
         generic: true
-theme:
-  name: null
-  custom_dir: 'cinder'
+theme: cinder
 nav:
   - Home: index.md
   - Unit 1 - Spreadsheet:
