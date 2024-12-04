@@ -71,19 +71,19 @@ Only one team member needs to turn in the following in the feedback box on the a
 Note: While we are coding Python in the Google Environment, you can find lots of ideas for Python Notebooks by searching for “Jupyter Notebooks”. This is the more generic form of Python Notebooks that runs outside of Google. But they work almost exactly the same. My search links below use the term “Jupyter Notebooks” to help get more results. Feel free to explore these search results for video tutorials, sample code, and other great ideas.
 
 ### Make a Video Game
-Make a simple (or complex) video game in Python. There are several simple (and complex) video game modules that can be imported for use in Python. For example look at these search results to get some ideas of modules, project ideas, and sample code: https://bit.ly/3FDalLk
+Make a simple (or complex) video game in Python. There are several simple (and complex) video game modules that can be imported for use in Python. For example look at these search results to get some ideas of modules, project ideas, and sample code: [Click Here](https://bit.ly/3FDalLk){:target="_blank"}
 
 ### Solve an Engineering Problem
-Here are some search results for ideas and modules related to civil engineering. Consider writing a program that will solve several of the most common questions on the Fundamentals of Engineering Exam. https://bit.ly/3qrXt4M 
+Here are some search results for ideas and modules related to civil engineering. Consider writing a program that will solve several of the most common questions on the Fundamentals of Engineering Exam. [Click Here](https://bit.ly/3qrXt4M){:target="_blank"}
 
 ### Crawl the Internet
-There are several modules available that allow you to grab text from a web page. From this text you can grab hyperlinks and then go to those links and grab more text. You might build a tool to find all references to your favorite food or travel destination and build a guidebook for users: https://bit.ly/3tvMEQZ 
+There are several modules available that allow you to grab text from a web page. From this text you can grab hyperlinks and then go to those links and grab more text. You might build a tool to find all references to your favorite food or travel destination and build a guidebook for users: [Click Here](https://bit.ly/3tvMEQZ){:target="_blank"}
 
 ### Do Some Machine Learning!
-Python is probably the most popular tool for machine learning, and there are tons of libraries and example codes and projects for doing machine learning. For example, you could look for patterns in weather, twitter feeds, text streams etc. Here are some search results to get you started: https://bit.ly/3uirvJs
+Python is probably the most popular tool for machine learning, and there are tons of libraries and example codes and projects for doing machine learning. For example, you could look for patterns in weather, twitter feeds, text streams etc. Here are some search results to get you started: [Click Here](https://bit.ly/3uirvJs){:target="_blank"} 
 
 ### Read Data from Google Sheets and Do Something Cool!
-As it turns out there are modules to allow you to connect to Google Sheets and read data directly into your Python program. This opens all kinds of opportunities, so you’ll just have to brainstorm on what the project would be… https://bit.ly/3IuM2zh
+As it turns out there are modules to allow you to connect to Google Sheets and read data directly into your Python program. This opens all kinds of opportunities, so you’ll just have to brainstorm on what the project would be…   [Click Here](https://bit.ly/3IuM2zh){:target="_blank"}
 
 ### Expand upon one of the homework problems, for example: 
 Improve one of the homework problems we did this semester. When choosing this option, you will need to make sure you make significant improvements to the code. You will also need to make sure you have a good project proposal that explains what you are going to do and how you are going to do it. Please talk to a TA a head of time to make sure your project idea is different enough from the homework we did.
