@@ -10,9 +10,11 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
   2. In column A, add data validation to allow the user to input a valid date.
   3. In Column B, Create a dropdown for the 4 types of materials found in Column E (Steel, Concrete, Lumber, Rebar)
   4. In column C, add data validation that ensures that the quantity does not exceed 25 tons (each customer is limited to <=25 tons)
-  5. Fill out the rest of the table with dates, purchases, and quantities from the table titled "Purchases to Add". Sum all the values of column C in cell C18						
-  6. Freeze the dates and the headers of the table	
-  7. Highlight the largest order on column C using conditional formatting. Use the 'is equal to' option and enter this formula in the box below: =MAX($C$2:$C$17)
+  5. Using the values in column B, create a pie chart to compare the total purchased amount of each material. Make sure it has a title, and that each material is clearly labeled on the graph. When done, your graph should look somthing like this:
+
+![Screenshot 2024-12-23 182437](https://github.com/user-attachments/assets/5d2c8012-484c-42be-926c-dbcba49d5733)
+
+
 
 				
 # Exercise 2 - Analyze Materials Purchased
@@ -20,21 +22,24 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
 ## Instructions
 
   1. Navigate to the Analyze Materials Purchased sheet.
-  2. Format the Table to look nice (bold title, borders, etc.)
-  3. Add a color scale to the values in the table using conditional formatting. Have the lower numbers be a lighter shade and the higher numbers be a darker shade.				
-  4. Add filters in columns A through E in row 2
-  5. Create a filter that only includes the customers that ordered 50 tons or more of material for Order #2 (column C)
+  2. Format the table to look nice by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table.
+  3. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade.
+  4. Create a bar chart using the information from the table. Add a title, labels for the x and y axes, and a legend labeling each order number. Your graph should look somthing like this when done:
+![Screenshot 2024-12-23 185340](https://github.com/user-attachments/assets/a056196d-511b-4f8f-ae97-3be0fa806596)
+
+
+  6. Add filters in columns A through E in row 2
+  7. Create a filter that only includes the customers that ordered 50 tons or more of material for Order #2 (column C)
 
 # Exercise 3 - Temperature Conversions
 
 ## Instructions
 
   1. Navigate to the Temperature Conversions sheet
-  2. In Column B, create a list of valid dates. Use data validation to reject any value that is not a date
-  3. In cell C2 create an equation that will convert from F to C
-  4. In cell D2 create an equation that will convert to Kelvin
-  5. Fill out the rest of the table with dates, Temp(C), and Temp(K)
-  6. Using functions find the average, max, min, stdv, and median for the Temp(F), Temp(C), and Temp(K)
+  2. In Column B, use data validation to reject any date after 9/29/2024
+  3. In cell C2 create an equation that will convert from Fahrenheit to Celsius. Convert the rest of the column to Celsius.
+  4. In cell D2 create an equation that will convert from Celsius to Kelvin. Convert the rest of the column to Kelvin.
+  6. Using functions find the average, max, min, standard deviation, and median for Temp(F), Temp(C), and Temp(K)
 
 			
 ## Turning in/Rubric
