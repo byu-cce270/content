@@ -9,7 +9,7 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
   1. Navigate to the Company Inventory sheet.
   2. In column A, add data validation to allow the user to input a valid date.
   3. In Column B, Create a dropdown for the 4 types of materials found in Column E (Steel, Concrete, Lumber, Rebar)
-  4. In column C, add data validation that ensures that the quantity does not exceed 25 tons (each customer is limited to <=25 tons)
+  4. In column C, add data validation that ensures the quantity of material purchased does not exceed the material available per customer. This amount is found in columns F and G. In this case, the max quantity is 25 tons for EACH material (each customer is limited to <=25 tons)
   5. Using the values in column B, create a pie chart to compare the total purchased amount of each material. Make sure it has a title, and that each material is clearly labeled on the graph. When done, your graph should look somthing like this:
 
 ![Screenshot 2024-12-23 182437](https://github.com/user-attachments/assets/5d2c8012-484c-42be-926c-dbcba49d5733)
@@ -25,21 +25,26 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
   2. Format the table to look nice by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table.
   3. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade.
   4. Create a bar chart using the information from the table. Add a title, labels for the x and y axes, and a legend labeling each order number. Your graph should look somthing like this when done:
+
 ![Screenshot 2024-12-23 185340](https://github.com/user-attachments/assets/a056196d-511b-4f8f-ae97-3be0fa806596)
 
 
-  6. Add filters in columns A through E in row 2
-  7. Create a filter that only includes the customers that ordered 50 tons or more of material for Order #2 (column C)
+  5. Add filters in columns A through E in row 2
+  6. Create a filter that only includes the customers that ordered 50 tons or more of material for Order #2 (column C)
 
 # Exercise 3 - Temperature Conversions
 
 ## Instructions
 
   1. Navigate to the Temperature Conversions sheet
-  2. In Column B, use data validation to reject any date after 9/29/2024
-  3. In cell C2 create an equation that will convert from Fahrenheit to Celsius. Convert the rest of the column to Celsius.
-  4. In cell D2 create an equation that will convert from Celsius to Kelvin. Convert the rest of the column to Kelvin.
-  6. Using functions find the average, max, min, standard deviation, and median for Temp(F), Temp(C), and Temp(K)
+  2. To make the data easier to read, freeze the first row and column A
+  3. In Column A, use data validation to reject any date after 9/29/2024
+  4. In cell C2 use the equation that will convert from Fahrenheit to Celsius found in the "Conversion Equations" table. Convert the rest of the column to Celsius.
+  5. In cell D2 use the equation that will convert from Celsius to Kelvin found in the "Conversion Equations" table. Convert the rest of the column to Kelvin.
+  6. Using functions, find the average, max, min, standard deviation, and median for the values in columns B, C, and D.
+  7. Using the data in the table (A1:D19) create a line graph to show the temperature at each date for the temperature in Fahrenheit, Celcius, and Kelvin. Add a title, label the x and y axes, a legend that corresponds to each temperature (Fahrenheit, Celius, and Kelvin), and make sure each data is labeled on the x-axis. Your graph should look somthing like this when you're done:
+
+![Screenshot 2025-01-04 141427](https://github.com/user-attachments/assets/7540bc77-a5e9-439c-96a4-f64676aed993)
 
 			
 ## Turning in/Rubric
