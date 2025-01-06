@@ -42,7 +42,7 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
   4. In cell C2 use the equation that will convert from Fahrenheit to Celsius found in the "Conversion Equations" table. Convert the rest of the column to Celsius.
   5. In cell D2 use the equation that will convert from Celsius to Kelvin found in the "Conversion Equations" table. Convert the rest of the column to Kelvin.
   6. Using functions, find the average, max, min, standard deviation, and median for the values in columns B, C, and D.
-  7. Using the data in the table (A1:D19) create a line graph to show the temperature at each date for the temperature in Fahrenheit, Celcius, and Kelvin. Add a title, label the x and y axes, a legend that corresponds to each temperature (Fahrenheit, Celius, and Kelvin), and make sure each data is labeled on the x-axis. Your graph should look somthing like this when you're done:
+  7. Using the data in the table (A1:D19) create a line graph to show the temperature at each date for the temperature in Fahrenheit, Celcius, and Kelvin. Add a title, label the x and y axes, and provide a legend corresponding to each temperature (Fahrenheit, Celius, and Kelvin). Ensure each date is labeled on the x-axis. Your graph should look somthing like this when you're done:
 
 ![Screenshot 2025-01-04 141427](https://github.com/user-attachments/assets/7540bc77-a5e9-439c-96a4-f64676aed993)
 
