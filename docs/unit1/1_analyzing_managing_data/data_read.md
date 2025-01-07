@@ -1,7 +1,26 @@
-#  Reading: Analyzing/Managing Data, Conditional Formatting
+#  Reading: Analyzing and Displaying Data
 
 ---
-# Pre Class Reading Assignment
+## Preface:
+In Google sheets, there are many ways to analyze and display data. For this class we will go over Conditional Formatting, Filtering Data, Data Validation, Graphing Data, and Working with Functions. These are all important tools to know when working with data in Google Sheets. They will help you to better understand your data and make it easier to read and analyze. In this reading, we will go over what each of these tools are and how to use them.
+
+## Learning Objectives:
+By the end of this reading, you should be able to:
+- Understand what Conditional Formatting is and how to use it.
+- Understand what Filtering Data is and how to use it.
+- Understand what Data Validation is and how to use it.
+- Understand what Graphing Data is, when to use the different types of graphs, and how to create them.
+- Understand what functions are and how to use them.
+
+## Reading:
+### Conditional Formatting
+Conditional formatting is a feature in Google Sheets that allows you to format cells based on certain conditions. This can be useful when you want to highlight certain data points or make your data easier to read. For example, you can use conditional formatting to highlight cells that contain a certain value, or to format cells based on their value. 
+To use conditional formatting, select the range of cells you want to format, then click on Format > Conditional formatting. You can then choose the condition you want to format the cells based on, and the formatting options you want to apply.
+
+Visual Example:
+![google_sheets_conditional_formatting.png](images/google_sheets_conditional_formatting.png)
+
+
 
 There will be 2 reading assignment before the next class, with an optional one as well. It will be on Conditional Formatting, Filter and Sorting Data, and Working with Functions being optional.
 
