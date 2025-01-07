@@ -15,19 +15,38 @@ By the end of this reading, you should be able to:
 ## Reading:
 ### Conditional Formatting
 Conditional formatting is a feature in Google Sheets that allows you to format cells based on certain conditions. This can be useful when you want to highlight certain data points or make your data easier to read. For example, you can use conditional formatting to highlight cells that contain a certain value, or to format cells based on their value. 
-Now let's go over how to set up conditional formatting in Google Sheets:
+
+#### Initial Set Up
+Now let's go over how to add conditional formatting to your data in Google Sheets:
+
 1. Select the range of cells you want to format
-![CondFormat1.png](..%2F..%2F..%2F..%2F..%2FOneDrive%20-%20Brigham%20Young%20University%2FPictures%2FScreenshots%2FCondFormat1.png)
-2. Click on Format > Conditional formatting
-![CondFormat2.png](..%2F..%2F..%2F..%2F..%2FOneDrive%20-%20Brigham%20Young%20University%2FPictures%2FScreenshots%2FCondFormat2.png)
-3. In the conditional format rules panel, you can set up the conditions you want to format the cells based on. For example, you can choose to format cells that contain a certain value, or cells that are greater than or less than a certain value.
-![CondFormat3.png](..%2F..%2F..%2F..%2F..%2FOneDrive%20-%20Brigham%20Young%20University%2FPictures%2FScreenshots%2FCondFormat3.png)
+
+![CondFormat1](https://github.com/user-attachments/assets/c08529d5-6684-48df-9c42-48a55af6a174)
+
+2. Click on Format --> Conditional formatting
+
+![CondFormat2](https://github.com/user-attachments/assets/1281a3ef-6354-4caf-aa39-f073413642c3)
+
+3. Select the condition you want to format your cells on. In the conditional format rules drop box, you can set up the conditions or rules you want to format the cells based on. For example, you can format the cells if the value of the cell is greater than a given value. Another is to format if the date is between a given date range. 
+
+![CondFormat3](https://github.com/user-attachments/assets/b997402f-1f0e-4d60-bb84-d2677aed8b88)
+
 4. You can also choose the formatting options you want to apply to the cells that meet the condition. For example, you can choose to change the text color, background color, font style, or border style of the cells.
-![CondFormat4.png](..%2F..%2F..%2F..%2F..%2FOneDrive%20-%20Brigham%20Young%20University%2FPictures%2FScreenshots%2FCondFormat4.png)
+
+![CondFormat4](https://github.com/user-attachments/assets/f72dcb82-2388-49c4-92c9-c9fef5c1e152)
+
 5. Once you have set up the conditions and formatting options, click on Done to apply the conditional formatting to the selected range of cells.
-![CondFormat5.png](..%2F..%2F..%2F..%2F..%2FOneDrive%20-%20Brigham%20Young%20University%2FPictures%2FScreenshots%2FCondFormat5.png)
-6. Your cells will now be formatted based on the conditions you set up. For example, in the screenshot below, the cells are formatted to be red if they contain a value greater than 50.
-![CondFormat6.png](..%2F..%2F..%2F..%2F..%2FOneDrive%20-%20Brigham%20Young%20University%2FPictures%2FScreenshots%2FCondFormat6.png)
+
+![CondFormat5](https://github.com/user-attachments/assets/6db829af-8c1a-40d0-8c4b-bb9ddc997db9)
+
+6. Your cells will now be formatted based on the conditions you set up. For example, in the screenshot below, the cells are highlighted red if they contain the number 5.
+
+![Screenshot 2025-01-07 142718](https://github.com/user-attachments/assets/369d360f-07e5-4b70-8828-b270ffb8538f)
+
+#### Specific Examples
+**Color Gradient** - 
+\nThis is useful for sheets with large amounts of data as you can visually distinguish the higher and lower values of the data. 
+
 
 ### Filtering Data
 Filtering data is a feature in Google Sheets that allows you to show only the data that meets certain criteria. This can be useful when you want to focus on specific data
