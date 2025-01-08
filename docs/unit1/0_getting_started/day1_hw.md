@@ -24,7 +24,7 @@
    10. Sign up for a time to meet with a TA:
        [Winter 2025 TA Sign Up](https://docs.google.com/spreadsheets/d/1XAaFf5LP3TieXjtVyfgN5i1Zs6NSUY70smWzctdwMXs/edit?gid=61534873#gid=61534873){:target="_blank"}
    </br> Once you meet with a TA they will give you the appropriate amount of points in Learning Suite. 
-   You will have until the end of the second full week to do so.
+   Meeting will be from January 13th, 2025 to January 17th, 2025. After the 17th, you will lose 3 points for not meeting with a TA until you complete this assignment. 
 
 
 ## Turning in/Rubric
