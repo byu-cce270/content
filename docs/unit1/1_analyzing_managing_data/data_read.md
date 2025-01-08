@@ -2,19 +2,11 @@
 
 ---
 ## Preface:
-In Google sheets, there are many ways to analyze and display data. For this class we will go over Conditional Formatting, Filtering Data, Data Validation, Graphing Data, and Working with Functions. These are all important tools to know when working with data in Google Sheets. They will help you to better understand your data and make it easier to read and analyze. In this reading, we will go over what each of these tools are and how to use them.
-
-## Learning Objectives:
-By the end of this reading, you should be able to:
-- Understand what Conditional Formatting is and how to use it.
-- Understand what Filtering Data is and how to use it.
-- Understand what Data Validation is and how to use it.
-- Understand what Graphing Data is, when to use the different types of graphs, and how to create them.
-- Understand what functions are and how to use them.
+In Google Sheets, there are many ways to analyze and display data. For this class, we will focus on Conditional Formatting, Filtering Data, Data Validation, Graphing Data, and Working with Functions. These are all important tools to know when working with data in Google Sheets. They will help you to better understand your data and make it easier to read and analyze. In this reading, we will go over what each of these tools are and how to use them.
 
 ## Reading:
 ### Conditional Formatting
-Conditional formatting is a feature in Google Sheets that allows you to format cells based on certain conditions. This can be useful when you want to highlight certain data points or make your data easier to read. For example, you can use conditional formatting to highlight cells that contain a certain value, or to format cells based on their value. 
+Conditional formatting is a feature in Google Sheets that allows you to format cells based on certain conditions. This can be useful when you want to highlight certain data points or make your data easier to read. For example, you can use conditional formatting to highlight cells that contain a certain value or to format cells based on their value. 
 
 #### Initial Set Up
 Now let's go over how to add conditional formatting to your data in Google Sheets:
@@ -44,26 +36,83 @@ Now let's go over how to add conditional formatting to your data in Google Sheet
 ![Screenshot 2025-01-07 142718](https://github.com/user-attachments/assets/369d360f-07e5-4b70-8828-b270ffb8538f)
 
 #### Specific Examples
-**Color Gradient** - 
-\nThis is useful for sheets with large amounts of data as you can visually distinguish the higher and lower values of the data. 
+**Color Scale**  
+This is useful for sheets with large amounts of data as you can visually distinguish the higher and lower values of the data. To add this to your data, follow the same steps as above but instead, select color scale instead of single color. 
+
+![CondFormat7](https://github.com/user-attachments/assets/ad3d73a8-5c7d-4452-aabc-562fef9e5c99)
+
+From here you can change the type of color scale you want to use. You can even create your own! The kind of scale you use will depend on the type of data you have. For data that slowly increases/decreases (such as river flow speed at different river spots), doing a scale of the same color may be nice so you can see the gradual change in the water flow.  
+
+![Screenshot 2025-01-07 ](https://github.com/user-attachments/assets/62b50818-e8f3-4af2-9930-650a19f8e542)
+
+**Note** Make sure that you select the correct range of data! In the example below, you must select the data below the third row, or the site number on row 1 will skew our color gradient.
+
+![Screenshot 2025-01-07 161140](https://github.com/user-attachments/assets/7418b1a3-65c5-4247-8730-38abffa6e5cb)
+
+**Multiple Conditional Formats**  
+There may be instances when you want to apply multiple conditional formats to the same data set. This may happen when you want a more precise number range, such as highlighting the cells that contain the values 3-5 and 1-10. Conditional formatting only applies to the first rule (from top to bottom) that is true. Any other, even if it is also true, will not show. You can make sure yours will display by changing the order they appear. This is done by dragging the dots to the left of the rule to the correct position. In the example below, there are 2 conditions. If they are kept as are, ALL of the cells will appear green as each cell fulfills the first condition BEFORE the second. 
+
+![Screenshot 2025-01-07 163902](https://github.com/user-attachments/assets/582cff30-ddd0-49d4-86e4-604f9c7a799b)
+
+
+But if we change the order, we can see that both conditions now show. It's as simple as that!
+
+![Screenshot 2025-01-07 163918](https://github.com/user-attachments/assets/8f43cb38-5d27-44ec-80a6-8fec9b6e0b38)
+
+Here is an extra resource for further examples of conditional formatting: [Conditional Formatting](https://blog.coupler.io/conditional-formatting-google-sheets/){:target="_blank"}
 
 
 ### Filtering Data
-Filtering data is a feature in Google Sheets that allows you to show only the data that meets certain criteria. This can be useful when you want to focus on specific data
-2. then click on Format > Conditional formatting. You can then choose the condition you want to format the cells based on, and the formatting options you want to apply.
+Filtering data is a feature in Google Sheets that allows you to show only the data that meets certain criteria. This can be useful when you have a large data set and only want to focus on a specific section of it. This differs from conditional formatting as filtering allows you to change the range of data you see, while conditional formatting changes the visual aspect of the data but does not alter the view range.
 
-Visual Example:
-![google_sheets_conditional_formatting.png](images/google_sheets_conditional_formatting.png)
+#### Set up
+1. Select the columns of data you want to add filters to.
+2. Select Data, and then create a filter.
+
+![Filter1](https://github.com/user-attachments/assets/e2ced105-71a1-4bef-931f-8ae1b57b4475)
+
+3. Click on the upside-down triangle with 3 lines to edit the filter.
+
+![Screenshot 2025-01-07 170409](https://github.com/user-attachments/assets/9cfd95dc-2932-4ab6-85d9-89e34b61d3c7)
+
+4. There are many ways to filter data, for this class, we will focus on the filter by condition. Select filter by condition, and then the drop box. Select the condition that fits your data, then select ok at the bottom.
+
+![Screenshot 2025-01-07 171430](https://github.com/user-attachments/assets/51b62ef6-aafa-4e96-ad20-e772ff37a830)
+
+5. In the example below, the Width of Bridge Segment column is filtered to only show the cells with values greater than 50.
+
+![Screenshot 2025-01-07 171729](https://github.com/user-attachments/assets/03dbeebd-c718-4732-a8d4-5438de15e5e5)
 
 
+6. To reset a filter, select "None" and then Ok.
 
-There will be 2 reading assignment before the next class, with an optional one as well. It will be on Conditional Formatting, Filter and Sorting Data, and Working with Functions being optional.
+![Screenshot 2025-01-07 172034](https://github.com/user-attachments/assets/f42fb230-1121-43a6-a003-76c94bee78e2)
 
- [Conditional Formatting](https://blog.coupler.io/conditional-formatting-google-sheets/){:target="_blank"} - Read Whole Document
- 
- [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"} - Read until you see "Challenge" **do not do the challenge**
- 
- [Working with Functions](https://edu.gcfglobal.org/en/googlespreadsheets/working-with-functions/1/){:target="_blank"} - **Optional**
+#### Specific Examples
+**Filtering By Date**
+There are many cases when you may want to filter your data to show only dates past a certain day or even a range of dates. To enter an exact date, you will need to use the DD/MM/YYYY format. In the example below, the data is filtered to only show those dates before 6/24/2021, NOT including 6/24/2021.
+
+![Screenshot 2025-01-07 172944](https://github.com/user-attachments/assets/98d7eea0-e65f-4ca5-95d6-3886db868f88)
+
+**Filtering Numerical Data**
+Many data sets will have large amounts of numerical data. To make it easier to read, you can filter out the unwanted data by choosing the condition. This can be very useful for data sets with thousands of inputs! In the example below, the data is filtered to show all data between 35-40 (not including 35 & 40).
+
+![Screenshot 2025-01-07 180024](https://github.com/user-attachments/assets/dcffcfc8-6b19-448d-98f7-1c884dc51b46)
+
+
+**Multiple Filters**
+Like conditional formatting, you can have multiple filters! This may be useful when you want to filter by multiple conditions. Unlike conditional formatting, the order does not matter. This means I can apply the filters in any order I'd like and the same data will show. In the example below, there 2 different filters to show the data that is before 6/21/2021 and has an approved status A. 
+
+![Screenshot 2025-01-07 175522](https://github.com/user-attachments/assets/5e2aaf4c-a296-4784-8324-2db9597885d8)
+
+**DISCLAIMER**
+The value you input to filter by is NOT included unless you choose a filter that has equal to. For example, if I have a filter to only show data greater than 45 then any value that is equal to 45 IS NOT included. This is critical when filtering by date/day! Make sure that the value you filter by includes ALL of the data you want.
+
+Here is an extra resource for further examples of Filters: [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}
+
+
+  
+ [Working with Functions](https://edu.gcfglobal.org/en/googlespreadsheets/working-with-functions/1/){:target="_blank"}
 
 
 ---
