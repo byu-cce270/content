@@ -14,6 +14,7 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
 3. In Column B, Create a dropdown for the 4 types of materials found in Column E (Steel, Concrete, Lumber, Rebar)
 4. In column C, add data validation that ensures the quantity of material purchased does not exceed the material available per customer. This amount is found in columns F and G. In this case, the max quantity is 25 tons for EACH material (each customer is limited to <=25 tons)
 5. Using the values in column B, create a pie chart to compare the total purchased amount of each material with these features:
+
    - A title
    - Each slice is labeled with the corresponding material
    - Display the total for each material on its corresponding slice.
@@ -30,6 +31,7 @@ When done, your graph should look somthing like this:
 2. Format the table by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table.
 3. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade.
 4. Create a bar chart using the information from the table with these features:
+
    - Customer ID is on the X-axis
    - Tons of Material per Order is on the Y-axis
    - A title
@@ -53,6 +55,7 @@ Your graph should look somthing like this when done:
 4. In cell D3 write in the equation that will convert from Celsius to Kelvin found in the "Conversion Equations" table. Convert the rest of the column to Kelvin.
 5. In the "Statistical Data" table, find the average, max, min, standard deviation, and median from the values of Temp(F), Temp(C), and Temp(K) in the "Daily Temperature Data" table.
 6. Create a line graph from the "Daily Temperature Data" chart to show the temperature on each day with these features:
+
    - Day is on the x-axis. Make sure that you check the box to treat labels as text or you will not be able to see all of the dates.
    - Temperature is on the y-axis
    - labels for the x and y axes
