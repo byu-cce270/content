@@ -30,12 +30,11 @@ When done, your graph should look somthing like this:
 2. Format the table by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table.
 3. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade.
 4. Create a bar chart using the information from the table with these features:
-
-   - Customer ID is on the X-axis
-   - Tons of Material per Order is on the Y-axis
-   - A title
-   - labels for the x and y axes
-   - A legend labeling each order number
+      - Customer ID is on the X-axis
+      - Tons of Material per Order is on the Y-axis
+      - A title
+      - labels for the x and y axes
+      - A legend labeling each order number
 
 Your graph should look somthing like this when done:
 
@@ -54,15 +53,14 @@ Your graph should look somthing like this when done:
 4. In cell D3 write in the equation that will convert from Celsius to Kelvin found in the "Conversion Equations" table. Convert the rest of the column to Kelvin.
 5. In the "Statistical Data" table, find the average, max, min, standard deviation, and median from the values of Temp(F), Temp(C), and Temp(K) in the "Daily Temperature Data" table.
 6. Create a line graph from the "Daily Temperature Data" chart to show the temperature on each day with these features:
-
-   - Day is on the x-axis. Make sure that you check the box to treat labels as text or you will not be able to see all of the dates.
-   - Temperature is on the y-axis
-   - labels for the x and y axes
-   - A title
-   - A legend labeling each different temperature type
-   - Give each data point on the Fahrenheit line a circle shape
-   - Give each data point on the Celcius line a triangle shape
-   - Give each data point on the Kelvin line a square shape
+      - Day is on the x-axis. Make sure that you check the box to treat labels as text or you will not be able to see all of the dates.
+      - Temperature is on the y-axis
+      - labels for the x and y axes
+      - A title
+      - A legend labeling each different temperature type
+      - Give each data point on the Fahrenheit line a circle shape
+      - Give each data point on the Celcius line a triangle shape
+      - Give each data point on the Kelvin line a square shape
 
 Your graph should look somthing like this when you're done:
 
