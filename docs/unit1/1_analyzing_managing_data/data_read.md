@@ -61,12 +61,14 @@ But if we change the order, we can see that both conditions now show. It's as si
 
 Here is an extra resource for further examples of conditional formatting: [Conditional Formatting](https://blog.coupler.io/conditional-formatting-google-sheets/){:target="_blank"}
 
+---
 
 ### Filtering Data
 Filtering data is a feature in Google Sheets that allows you to show only the data that meets certain criteria. This can be useful when you have a large data set and only want to focus on a specific section of it. This differs from conditional formatting as filtering allows you to change the range of data you see, while conditional formatting changes the visual aspect of the data but does not alter the view range.
 
 #### Set up
 1. Select the columns of data you want to add filters to.
+**ADD IMAGE**
 2. Select Data, and then create a filter.
 
 ![Filter1](https://github.com/user-attachments/assets/e2ced105-71a1-4bef-931f-8ae1b57b4475)
@@ -89,33 +91,56 @@ Filtering data is a feature in Google Sheets that allows you to show only the da
 ![Screenshot 2025-01-07 172034](https://github.com/user-attachments/assets/f42fb230-1121-43a6-a003-76c94bee78e2)
 
 #### Specific Examples
-**Filtering By Date**
+**Filtering By Date**  
 There are many cases when you may want to filter your data to show only dates past a certain day or even a range of dates. To enter an exact date, you will need to use the DD/MM/YYYY format. In the example below, the data is filtered to only show those dates before 6/24/2021, NOT including 6/24/2021.
 
 ![Screenshot 2025-01-07 172944](https://github.com/user-attachments/assets/98d7eea0-e65f-4ca5-95d6-3886db868f88)
 
-**Filtering Numerical Data**
+**Filtering Numerical Data**  
 Many data sets will have large amounts of numerical data. To make it easier to read, you can filter out the unwanted data by choosing the condition. This can be very useful for data sets with thousands of inputs! In the example below, the data is filtered to show all data between 35-40 (not including 35 & 40).
 
 ![Screenshot 2025-01-07 180024](https://github.com/user-attachments/assets/dcffcfc8-6b19-448d-98f7-1c884dc51b46)
 
 
-**Multiple Filters**
+**Multiple Filters**  
 Like conditional formatting, you can have multiple filters! This may be useful when you want to filter by multiple conditions. Unlike conditional formatting, the order does not matter. This means I can apply the filters in any order I'd like and the same data will show. In the example below, there 2 different filters to show the data that is before 6/21/2021 and has an approved status A. 
 
 ![Screenshot 2025-01-07 175522](https://github.com/user-attachments/assets/5e2aaf4c-a296-4784-8324-2db9597885d8)
 
-**DISCLAIMER**
+**DISCLAIMER**  
 The value you input to filter by is NOT included unless you choose a filter that has equal to. For example, if I have a filter to only show data greater than 45 then any value that is equal to 45 IS NOT included. This is critical when filtering by date/day! Make sure that the value you filter by includes ALL of the data you want.
 
 Here is an extra resource for further examples of Filters: [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}
 
+---
+### Data Validation
+Data validation is a feature in Google Sheets that allows you to control the type of data that can be entered into a cell. This can be useful when you want to ensure that the data entered into a cell is accurate and consistent. For example, you can use data validation to create a drop-down list of options for a cell or to set a range of values that can be entered into a cell.
+This is different from filtering data as data validation controls the data that can be entered into a cell, while filtering data changes the range of data you see.
+Using data validation can help to prevent errors in your data and make it easier to work with.  
 
-  
- [Working with Functions](https://edu.gcfglobal.org/en/googlespreadsheets/working-with-functions/1/){:target="_blank"}
+Lets go over how to add data validation to your data in Google Sheets:
+1. Select the range of cells you want to add data validation to.
+2. Click on Data --> Data validation.
+3. In the data validation criteria box, you can set up the criteria for the data that can be entered into the cells. For example, you can choose to allow only numbers, text, dates, or a list of items.
+4. You can also choose the output of the data validation you want to apply to the cells. For example, you can choose to show a warning message if the data entered does not meet the criteria or to reject the data altogether.
+5. Once you have set up the criteria and output options, click on Save to apply the data validation to the selected range of cells.
 
+#### Specific Examples
+**Dropdown**  
+This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. To do this, follow the same steps as above and select Dropdown. You can then enter the items you want to include in the drop-down list, and choose what color you want the cell to be if the data is selected.
+In the example below, the data validation is set up to allow only the values in the drop-down list to be entered into the cells, each having their own color.
+
+**Dates**  
+This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fits the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
+
+Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
+---
+
+### Graphing Data
 
 ---
+
+### Working with Functions
 
 # Pre-Class Quiz Challenge
 
