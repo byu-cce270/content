@@ -39,13 +39,27 @@ If the the values in the lookup table are edited, all of the weights would be au
 ### Range Lookups
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
 
-|          Range          |   Category  |
-|-------------------------|-------------|
-|        wt <= 1000       | Ultra Light |
-|   1000 <= wt <= 2000    |    Light    |
-|   2000 <= wt <= 10,000  |    Medium   |
-| 10,000 <= wt <= 100,000 |    Heavy    |
-|      100,000 <= wt      | Extra Heavy |
+|          Range        |   Category  |
+|-----------------------|-------------|
+|        wt ≤ 1000      | Ultra Light |
+|   1000 ≤ wt ≤ 2000    |    Light    |
+|   2000 ≤ wt ≤ 10,000  |    Medium   |
+| 10,000 ≤ wt ≤ 100,000 |    Heavy    |
+|      100,000 ≤ wt     | Extra Heavy |
+
+We will then add anew table and an extra column as follows:
+
+Vlookup_Image_4
+
+Note that the weight values in the first column of the weight-category table at the top right has been sorted in ascending order. This is critical in order for the lookup to work. Next, we enter a formula using the VLOOKUP function as follows:
+
+Vlookup_Image_5
+
+Notice that the last argument (range_lookup) has a value of TRUE. This means that we take the lookup_value ("235.6" in this case) and we look through the first column of the table until we find a row where the value on the row is less than or equal to the lookup_value and the value on the next row is greater than the lookup_value. In this case, the match occurs on the first row and so the resulting value from column 2 is "Ultra Light". After copying the formula to the rest of the Category column, the resulting values are as follows:
+
+Vlookup_Image_6
+
+It is important to note that the range_lookup argument to the VLOOKUP function is optional. If it is omitted, it is assumed to be TRUE by default. A common error with the VLOOKUP function is to omit this argument when the VLOOKUP function is intended to be used as an exact match. This can lead to unintended errors, depending on how the values in the first column are ordered. Therefore, it is strongly recommended to always enter a TRUE or FALSE value for the range_lookup argument every time the VLOOKUP function is used.
 
 
 ### Data Validation
