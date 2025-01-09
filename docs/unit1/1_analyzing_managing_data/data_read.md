@@ -1,10 +1,8 @@
 #  Reading: Analyzing & Managing Data
 
 ---
-## Intro:
 In Google Sheets, there are many ways to analyze and display data. For this class, we will focus on Conditional Formatting, Filtering Data, Graphing Data, and Working with Functions. These are all important tools to know when working with data in Google Sheets. They will help you to better understand your data and make it easier to read and analyze. In this reading, we will go over what each of these tools are and how to use them.
 
-## Reading:
 ### Conditional Formatting
 Conditional formatting is a feature in Google Sheets that allows you to format cells based on certain conditions. This can be useful when you want to highlight certain data points or make your data easier to read. For example, you can use conditional formatting to highlight cells that contain a certain value or to format cells based on their value. 
 
