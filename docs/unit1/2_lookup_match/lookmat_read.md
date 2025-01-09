@@ -19,11 +19,11 @@ Once the material values are entered in column E, we are ready to use the VLOOKU
 VLOOKUP(search_key,range,index,[is_sorted])
 
 where:
-|  Parameter  |                                          Explanantion                                           |
-|-------------|-------------------------------------------------------------------------------------------------|
-|  Search_key |                     The value to be found in the first column of the array                      |
-|    Range    | The table of information in which data is looked up. Use a reference to a range or a range name |
-|    Index    |         The column number in table_array from which the matching value must be returned         |
+|  Parameter  |                                                                      Explanantion                                                                       |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  Search_key |                                                 The value to be found in the first column of the array                                                  |
+|    Range    |                             The table of information in which data is looked up. Use a reference to a range or a range name                             |
+|    Index    |                                     The column number in table_array from which the matching value must be returned                                     |
 | [is_sorted] | A logical value (TRUE or FALSE) that specifies whether you want VLOOKUP to find an exact match or an approximate match. Explained in more detail below. |
 
 So for our case, we will use VLOOKUP to select a unit weight value from the table using the user-specified material. The unit weight returned by the function is then multiplied by the volume to compute the cylinder weight as follows:
@@ -36,7 +36,7 @@ Vlookup_Image_3
 
 If the the values in the lookup table are edited, all of the weights would be automatically updated.
 
-Range Lookups
+### Range Lookups
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
 
 |          Range          |   Category  |
