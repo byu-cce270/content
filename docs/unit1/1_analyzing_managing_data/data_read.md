@@ -130,7 +130,7 @@ Lets go over how to add data validation to your data in Google Sheets:
 This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. To do this, follow the same steps as above and select Dropdown. You can then enter the items you want to include in the drop-down list, and choose what color you want the cell to be if the data is selected.
 In the example below, the data validation is set up to allow only the values in the drop-down list to be entered into the cells, each having their own color.
 
-**Dates**  
+**Dates**   
 This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fits the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
 
 Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
