@@ -5,13 +5,13 @@
 # Pre Class Reading Assignment
 
 ### Indexing a List with VLOOKUP
-When writing formulas, we often encounter cases where one or more of the inputs to the function will depend on the value of another input. More specifically, we need to use one of the inputs to lookup the other input from a table. This can be easily accomplished using the VLOOKUP function.
+When writing formulas, we often encounter cases where one or more of the inputs to the function will depend on the value of another input. More specifically, we need to use one of the inputs to lookup the other input from a table. This can be easily accomplished using the VLOOKUP function. 
 
-For example, the following workbook computes the volume and weight of a set of cylinders. The weight is computing from the volume and the unit weight. However, the unit weight depends on the material being used. Unit weights for a set of common materials are shown in a table at the top:
+For example, the following workbook computes the volume and weight of a set of cylinders. The weight is computed from the volume and the unit weight. However, the unit weight depends on the material being used. Unit weights for a set of common materials are shown in a table at the top:
 
 ![Vlookup_Image_1.png](images/Vlookup_Image_1.png)
 
-The objective of this exercise is to determine the appropriate unit weight for each cylinder and calculate the correct weight by multiplying the selected unit weight by the computed volume. We will do this by automatically selecting the correct unit weight from the list using the VLOOKUP function.
+The objective of this example is to determine the appropriate unit weight for each cylinder and calculate the correct weight by multiplying the selected unit weight by the computed volume. We will do this by automatically selecting the correct unit weight from the list using the VLOOKUP function.
 
 ### VLOOKUP Function
 Once the material values are entered in column E, we are ready to use the VLOOKUP function. The syntax for the VLOOKUP function is as follows:
@@ -24,19 +24,19 @@ where:
 |  Search_key |                                                 The value to be found in the first column of the array                                                  |
 |    Range    |                             The table of information in which data is looked up. Use a reference to a range or a range name                             |
 |    Index    |                                     The column number in table_array from which the matching value must be returned                                     |
-| [is_sorted] | A logical value (TRUE or FALSE) that specifies whether you want VLOOKUP to find an exact match or an approximate match. Explained in more detail below. |
+| [Is_sorted] | A logical value (TRUE or FALSE) that specifies whether you want VLOOKUP to find an exact match or an approximate match. Explained in more detail below. |
 
-So for our case, we will use VLOOKUP to select a unit weight value from the table using the user-specified material. The unit weight returned by the function is then multiplied by the volume to compute the cylinder weight as follows:
+For our case, we will use VLOOKUP to select a unit weight value from the table using the user-specified material. The unit weight returned by the function is then multiplied by the volume to compute the cylinder weight as follows:
 
 ![Vlookup_Image_2.png](images/Vlookup_Image_2.png)
 
-The first argument (E13) to the VLOOKUP function refers to the Material value on the same row and is a relative reference. The second argument ($B$5:$C$10) is an absolute reference to the table use for the lookup. The lookup value ("Concrete" in this case) is used to search through the first column in the table to find the row matching the lookup value. In this case, the match is found on the third row of the table (cell B7). The third argument ("2") tells the VLOOKUP function from which column of the table the return value should be selected. Since the value is 2, we go to the second column of the lookup table on the selected row and find our value ("150"). This is the value that is returned by the function and multiplied by the volume ("1.6") to compute the weight. After copying this formula to the rest of the column, the weight values are all correctly computed as follows:
+The first argument (E13) to the VLOOKUP function refers to the Material value on the same row and is a relative reference. The second argument ($B$5:$C$10) is an absolute reference to the table use for the lookup. The search_key ("Concrete" in this case) is used to search through the first column in the table to find the row matching the search_key. In this case, the match is found on the third row of the table (cell B7). The third argument ("2") tells the VLOOKUP function from which column of the table the return value should be selected. Since the value is 2, we go to the second column of the lookup table on the selected row and find our value ("150"). This is the value that is returned by the function and multiplied by the volume ("1.6") to compute the weight. After copying this formula to the rest of the column, the weight values are all correctly computed as follows:
 
 ![Vlookup_Image_3.png](images/Vlookup_Image_3.png)
 
 If the the values in the lookup table are edited, all of the weights would be automatically updated.
 
-### Range Lookups
+### Is Sorted Parameter
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
 
 |          Range        |   Category  |
@@ -55,11 +55,13 @@ Note that the weight values in the first column of the weight-category table at 
 
 ![Vlookup_Image_5.png](images/Vlookup_Image_5.png)
 
-Notice that the last argument (range_lookup) has a value of TRUE. This means that we take the lookup_value ("235.6" in this case) and we look through the first column of the table until we find a row where the value on the row is less than or equal to the lookup_value and the value on the next row is greater than the lookup_value. In this case, the match occurs on the first row and so the resulting value from column 2 is "Ultra Light". After copying the formula to the rest of the Category column, the resulting values are as follows:
+Notice that the last argument (is_sorted) has a value of TRUE. This means that we take the search_key ("235.6" in this case) and we look through the first column of the table until we find a row where the value on the row is less than or equal to the search_key and the value on the next row is greater than the search_key. In this case, the match occurs on the first row and so the resulting value from column 2 is "Ultra Light". After copying the formula to the rest of the Category column, the resulting values are as follows:
 
 ![Vlookup_Image_6.png](images/Vlookup_Image_6.png)
 
-It is important to note that the range_lookup argument to the VLOOKUP function is optional. If it is omitted, it is assumed to be TRUE by default. A common error with the VLOOKUP function is to omit this argument when the VLOOKUP function is intended to be used as an exact match. This can lead to unintended errors, depending on how the values in the first column are ordered. Therefore, it is strongly recommended to always enter a TRUE or FALSE value for the range_lookup argument every time the VLOOKUP function is used.
+It is important to note that the is_sorted argument to the VLOOKUP function is optional. If it is omitted, it is assumed to be TRUE by default. A common error with the VLOOKUP function is to omit this argument when the VLOOKUP function is intended to be used as an exact match. This can lead to unintended errors, depending on how the values in the first column are ordered. Therefore, it is strongly recommended to always enter a TRUE or FALSE value for the is_sorted argument every time the VLOOKUP function is used.
+
+Here is an extra resource for further information on Vlookup: [VLOOKUP](https://www.benlcollins.com/spreadsheets/vlookup-function/){:target="_blank"}
 
 ### MATCH Function
 
@@ -78,9 +80,11 @@ The search_type has 3 different options for an input. If nothing is input for th
 
 MATCH is a great function to pair with the MATCH function. Let's incorporate it in the VLOOKUP example:
 
-![Match_Image_1.png](Match_Image_1.png)
+![Match_Image_1.png](images/Match_Image_1.png)
 
 For this instance, MATCH will always output position 2, but this will be very useful for larger tables or when the search_key may be different for each instances. It should also be noted that MATCH does output the column position, but rather the position in the range. MATCH also works vertically, but must remain 1 dimensional. 
+
+Here is an extra resource for further information on Match: [MATCH](https://blog.sheetgo.com/google-sheets-formulas/match-formula-google-sheets/){:target="_blank"}
 
 ### Data Validation
 Data validation is a feature in Google Sheets that allows you to control the type of data entered into a cell. This can be useful to ensure that the data entered into a cell is accurate and consistent. This is different from filtering data as data validation controls the data that can be entered into a cell while filtering data changes the range of data you see.
@@ -110,18 +114,6 @@ This is useful when you want to limit the data that can be entered into a cell t
 
 
 Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
-
-
-
-
-There will be 3 short reading assignment before the next class. It will be on Lookups (specifically vlookup), Match, and Data Validation.
-
- [VLOOKUP](https://www.benlcollins.com/spreadsheets/vlookup-function/){:target="_blank"} - **Read Until** you get the the heading "VLOOKUP function template"
- 
- [MATCH](https://blog.sheetgo.com/google-sheets-formulas/match-formula-google-sheets/){:target="_blank"} - **Read Until** you get the heading "How to use the INDEX MATCH function combination"
-
- [Data Validations](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
- 
 
 ## Things to look out for and think about
 - Look for the differences in the function syntax between the VLOOKUP and MATCH.
