@@ -47,7 +47,7 @@ In the example shown in the previous section, we are doing an exact match on the
 | 10,000 ≤ wt ≤ 100,000 |    Heavy    |
 |      100,000 ≤ wt     | Extra Heavy |
 
-We will then add anew table and an extra column as follows:
+We will then add a new table and an extra column as follows:
 
 Vlookup_Image_4
 
@@ -61,6 +61,26 @@ Vlookup_Image_6
 
 It is important to note that the range_lookup argument to the VLOOKUP function is optional. If it is omitted, it is assumed to be TRUE by default. A common error with the VLOOKUP function is to omit this argument when the VLOOKUP function is intended to be used as an exact match. This can lead to unintended errors, depending on how the values in the first column are ordered. Therefore, it is strongly recommended to always enter a TRUE or FALSE value for the range_lookup argument every time the VLOOKUP function is used.
 
+### MATCH Function
+
+The MATCH function given a range of cells will return a position. Let's first look at the syntax of the function.
+
+MATCH(search_key,range,[search_type])
+
+where:
+|  Parameter  |                                           Explanation                                           |
+|-------------|-------------------------------------------------------------------------------------------------|
+| Search_key  |                         The value to to be found in the range of cells                          |
+|    Range    | The table of information in which data is looked up. Use a reference to a range or a range name |
+| Search_type |      Optional parameter that directs the function how to find the search_key in the range       |
+
+The search_type has 3 different options for an input. If nothing is input for this parameter, the default value will be 1 which indicates that the values are sorted in ascending order. It will return the largest value less than or equal to the search_key. The second value is -1 and works opposite to 1. It indicates that the values are sorted in descending order and will return the smallest value greater than or equal to the search_key. The last acceptable input is 0. This option directs the function to search for an exact match to the search_key. If the range is not sorted, this is the best option. 
+
+MATCH is a great function to pair with the MATCH function. Let's incorporate it in the VLOOKUP example:
+
+Match_Image_1
+
+For this instance, MATCH will always output position 2, but this will be very useful for larger tables or when the search_key may be different for each instances. It should also be noted that MATCH does output the column position, but rather the position in the range. MATCH also works vertically, but must remain 1 dimensional. 
 
 ### Data Validation
 Data validation is a feature in Google Sheets that allows you to control the type of data entered into a cell. This can be useful to ensure that the data entered into a cell is accurate and consistent. This is different from filtering data as data validation controls the data that can be entered into a cell while filtering data changes the range of data you see.
