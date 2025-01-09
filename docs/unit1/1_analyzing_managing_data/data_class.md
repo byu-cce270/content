@@ -15,9 +15,9 @@ You can find the in-class workbook here: [Analyzing/Managing Data, Conditional F
 4. In column C, add data validation that ensures the quantity of material purchased does not exceed the material available per customer. This amount is found in columns F and G. In this case, the max quantity is 25 tons for EACH material (each customer is limited to <=25 tons)
 5. Using the values in column B, create a pie chart to compare the total purchased amount of each material with these features:
 
-   - A title
-   - Each slice is labeled with the corresponding material
-   - Display the total for each material on its corresponding slice.
+      - A title
+      - Each slice is labeled with the corresponding material
+      - Display the total for each material on its corresponding slice.
 
 When done, your graph should look somthing like this:
 
