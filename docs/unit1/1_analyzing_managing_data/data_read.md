@@ -197,9 +197,9 @@ Throughout this unit, you will learn new and useful functions. For this topic, w
    | Median               | =Median(arguments)    | Returns the median of the arguments                |
 
 
-# Pre-Class Quiz Challenge
+### Pre-Class Quiz Challenge
 
-## Instructions
+#### Instructions
 1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing & Managing Data](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing){:target="_blank"}
    </br> The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
