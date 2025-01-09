@@ -68,7 +68,9 @@ Filtering data is a feature in Google Sheets that allows you to show only the da
 
 #### Set up
 1. Select the columns of data you want to add filters to.
-**ADD IMAGE**
+
+![Screenshot 2025-01-08 170010](https://github.com/user-attachments/assets/346aa4e2-8bc3-4232-96b9-9892b607a05d)
+
 2. Select Data, and then create a filter.
 
 ![Filter1](https://github.com/user-attachments/assets/e2ced105-71a1-4bef-931f-8ae1b57b4475)
@@ -129,8 +131,15 @@ Let's go over how to add data validation to your data in Google Sheets:
 This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. To do this, follow the same steps as above and select Dropdown. You can then enter the items you want to include in the drop-down list, and choose what color you want the cell to be if the data is selected.
 In the example below, the data validation is set up to allow only the values in the drop-down list to be entered into the cells, each having its own color.
 
+![Screenshot 2025-01-08 175658](https://github.com/user-attachments/assets/d1015fee-aae6-4d32-8cf0-7b30e53eca1d)
+
+![Screenshot 2025-01-08 175727](https://github.com/user-attachments/assets/6800e356-c21d-4763-b656-02244eb5bebf)
+
+
 **Dates**   
 This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fit the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
+
+![Screenshot 2025-01-08 182405](https://github.com/user-attachments/assets/73cda15f-3f37-4f4f-a6ca-bbe29bc104b4)
 
 
 Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
