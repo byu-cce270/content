@@ -9,7 +9,7 @@ When writing formulas, we often encounter cases where one or more of the inputs 
 
 For example, the following workbook computes the volume and weight of a set of cylinders. The weight is computing from the volume and the unit weight. However, the unit weight depends on the material being used. Unit weights for a set of common materials are shown in a table at the top:
 
-Vlookup_Image_1
+![Vlookup_Image_1.png](images/Vlookup_Image_1.png)
 
 The objective of this exercise is to determine the appropriate unit weight for each cylinder and calculate the correct weight by multiplying the selected unit weight by the computed volume. We will do this by automatically selecting the correct unit weight from the list using the VLOOKUP function.
 
@@ -28,11 +28,11 @@ where:
 
 So for our case, we will use VLOOKUP to select a unit weight value from the table using the user-specified material. The unit weight returned by the function is then multiplied by the volume to compute the cylinder weight as follows:
 
-Vlookup_Image_2
+![Vlookup_Image_2.png](images/Vlookup_Image_2.png)
 
 The first argument (E13) to the VLOOKUP function refers to the Material value on the same row and is a relative reference. The second argument ($B$5:$C$10) is an absolute reference to the table use for the lookup. The lookup value ("Concrete" in this case) is used to search through the first column in the table to find the row matching the lookup value. In this case, the match is found on the third row of the table (cell B7). The third argument ("2") tells the VLOOKUP function from which column of the table the return value should be selected. Since the value is 2, we go to the second column of the lookup table on the selected row and find our value ("150"). This is the value that is returned by the function and multiplied by the volume ("1.6") to compute the weight. After copying this formula to the rest of the column, the weight values are all correctly computed as follows:
 
-Vlookup_Image_3
+![Vlookup_Image_3.png](images/Vlookup_Image_3.png)
 
 If the the values in the lookup table are edited, all of the weights would be automatically updated.
 
@@ -49,15 +49,15 @@ In the example shown in the previous section, we are doing an exact match on the
 
 We will then add a new table and an extra column as follows:
 
-Vlookup_Image_4
+![Vlookup_Image_4.png](images/Vlookup_Image_4.png)
 
 Note that the weight values in the first column of the weight-category table at the top right has been sorted in ascending order. This is critical in order for the lookup to work. Next, we enter a formula using the VLOOKUP function as follows:
 
-Vlookup_Image_5
+![Vlookup_Image_5.png](images/Vlookup_Image_5.png)
 
 Notice that the last argument (range_lookup) has a value of TRUE. This means that we take the lookup_value ("235.6" in this case) and we look through the first column of the table until we find a row where the value on the row is less than or equal to the lookup_value and the value on the next row is greater than the lookup_value. In this case, the match occurs on the first row and so the resulting value from column 2 is "Ultra Light". After copying the formula to the rest of the Category column, the resulting values are as follows:
 
-Vlookup_Image_6
+![Vlookup_Image_6.png](images/Vlookup_Image_6.png)
 
 It is important to note that the range_lookup argument to the VLOOKUP function is optional. If it is omitted, it is assumed to be TRUE by default. A common error with the VLOOKUP function is to omit this argument when the VLOOKUP function is intended to be used as an exact match. This can lead to unintended errors, depending on how the values in the first column are ordered. Therefore, it is strongly recommended to always enter a TRUE or FALSE value for the range_lookup argument every time the VLOOKUP function is used.
 
@@ -78,7 +78,7 @@ The search_type has 3 different options for an input. If nothing is input for th
 
 MATCH is a great function to pair with the MATCH function. Let's incorporate it in the VLOOKUP example:
 
-Match_Image_1
+![Match_Image_1.png](Match_Image_1.png)
 
 For this instance, MATCH will always output position 2, but this will be very useful for larger tables or when the search_key may be different for each instances. It should also be noted that MATCH does output the column position, but rather the position in the range. MATCH also works vertically, but must remain 1 dimensional. 
 
