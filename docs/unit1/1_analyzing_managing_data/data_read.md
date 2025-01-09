@@ -1,12 +1,15 @@
 #  Reading: Analyzing & Managing Data
 
 ---
+
 In Google Sheets, there are many ways to analyze and display data. For this class, we will focus on Conditional Formatting, Filtering Data, Graphing Data, and Working with Functions. These are all important tools to know when working with data in Google Sheets. They will help you to better understand your data and make it easier to read and analyze. In this reading, we will go over what each of these tools are and how to use them.
 
-### Conditional Formatting
+---
+
+## Conditional Formatting
 Conditional formatting is a feature in Google Sheets that allows you to format cells based on certain conditions. This can be useful when you want to highlight certain data points or make your data easier to read. For example, you can use conditional formatting to highlight cells that contain a certain value or to format cells based on their value. 
 
-#### Set Up
+### Set Up
 Now let's go over how to add conditional formatting to your data in Google Sheets:
 
 1. Select the range of cells you want to format
@@ -33,7 +36,7 @@ Now let's go over how to add conditional formatting to your data in Google Sheet
 
 ![Screenshot 2025-01-07 142718](https://github.com/user-attachments/assets/369d360f-07e5-4b70-8828-b270ffb8538f)
 
-#### Specific Examples
+### Specific Examples
 **Color Scale**  
 This is useful for sheets with large amounts of data as you can visually distinguish the higher and lower values of the data. To add this to your data, follow the same steps as above but instead, select color scale instead of single color. 
 
@@ -61,10 +64,10 @@ Here is an extra resource for further examples of conditional formatting: [Condi
 
 ---
 
-### Filtering Data
+## Filtering Data
 Filtering data is a feature in Google Sheets that allows you to show only the data that meets certain criteria. This can be useful when you have a large data set and only want to focus on a specific section of it. This differs from conditional formatting as filtering allows you to change the range of data you see, while conditional formatting changes the visual aspect of the data but does not alter the view range.
 
-#### Set up
+### Set up
 1. Select the columns of data you want to add filters to.
 
 ![Screenshot 2025-01-08 170010](https://github.com/user-attachments/assets/346aa4e2-8bc3-4232-96b9-9892b607a05d)
@@ -90,7 +93,7 @@ Filtering data is a feature in Google Sheets that allows you to show only the da
 
 ![Screenshot 2025-01-07 172034](https://github.com/user-attachments/assets/f42fb230-1121-43a6-a003-76c94bee78e2)
 
-#### Specific Examples
+### Specific Examples
 **Filtering By Date**  
 There are many cases when you may want to filter your data to show only dates past a certain day or even a range of dates. To enter an exact date, you will need to use the DD/MM/YYYY format. In the example below, the data is filtered to only show those dates before 6/24/2021, NOT including 6/24/2021.
 
@@ -100,7 +103,6 @@ There are many cases when you may want to filter your data to show only dates pa
 Many data sets will have large amounts of numerical data. To make it easier to read, you can filter out the unwanted data by choosing the condition. This can be very useful for data sets with thousands of inputs! In the example below, the data is filtered to show all data between 35-40 (not including 35 & 40).
 
 ![Screenshot 2025-01-07 180024](https://github.com/user-attachments/assets/dcffcfc8-6b19-448d-98f7-1c884dc51b46)
-
 
 **Multiple Filters**  
 Like conditional formatting, you can have multiple filters! This may be useful when you want to filter by multiple conditions. Unlike conditional formatting, the order does not matter. This means I can apply the filters in any order I'd like and the same data will show. In the example below, there 2 different filters to show the data that is before 6/21/2021 and has an approved status A. 
@@ -114,7 +116,7 @@ Here is an extra resource for further examples of Filters: [Filtering and Sortin
 
 ---
 
-### Graphing Data
+## Graphing Data
 Another valuable tool for analyzing data is graphing. This allows us to see trends in data, compare variables, and visualize the values in our data set. This can be hard to do by hand, and Google Sheets makes it much easier! Let's walk through how to graph a given data set. 
 
 1. Highlight the data that you want to graph. Sometimes you don't need all of the data, so only highlight what you need. In the example below, there is too much information for one graph so only the needed columns were highlighted.
@@ -158,7 +160,7 @@ From here, there are many options. Most of these are for visual changes, but hel
 
 Other types of graphs have more unique features to them, but these are the general few! 
 
-#### Specific Examples
+### Specific Examples
 **Line Graph**  
 Use to track changes over time intervals, such as the speed of a car during a drive. In the example below, the temperature of a place is graphed over a few days.
 
@@ -180,26 +182,25 @@ Here is an extra resource for further examples of graphing: [Graphing](https://s
 
 ---
 
-### Working with Functions  
+## Working with Functions  
 In Google Sheets, functions help users to analyze, manage, and compute data. A function is set up in three parts:
 
 ![Screenshot 2025-01-08 221445](https://github.com/user-attachments/assets/76daef2b-be63-4f76-8bcc-cb70ebb098dc)
 
 Throughout this unit, you will learn new and useful functions. For this topic, we will focus on the most common functions for analyzing data:
 
-   | Function           | Syntax              | Purpose                                          |
-   |--------------------|---------------------|--------------------------------------------------|
-   | Sum                | =SUM(arguments)     | Adds all of the arguments together               |
-   | Average            | =AVERAGE(arguments) | Averages arguments together                      |
-   | Max                | =MAX(arguments)     | Returns the highest number out of the arguments  |
-   | Min                | =MIN(arguments)     | Returns the lowest number out if the arguments   |
+   | Function           | Syntax              | Purpose                                         |
+   |--------------------|---------------------|-------------------------------------------------|
+   | Sum                | =SUM(arguments)     | Adds all of the arguments together              |
+   | Average            | =AVERAGE(arguments) | Averages arguments together                     |
+   | Max                | =MAX(arguments)     | Returns the highest number out of the arguments |
+   | Min                | =MIN(arguments)     | Returns the lowest number out if the arguments  |
    | Standard Deviation | =STDEV(arguments)   | Returns the stardard deviation of the arguments |
-   | Median               | =Median(arguments)    | Returns the median of the arguments                |
+   | Median             | =Median(arguments)  | Returns the median of the arguments             |
 
 
-### Pre-Class Quiz Challenge
+## Pre-Class Quiz Challenge
 
-#### Instructions
 1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing & Managing Data](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing){:target="_blank"}
    </br> The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
