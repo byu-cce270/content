@@ -1,14 +1,14 @@
-#  Reading: Analyzing and Displaying Data
+#  Reading: Analyzing & Managing Data
 
 ---
-## Preface:
-In Google Sheets, there are many ways to analyze and display data. For this class, we will focus on Conditional Formatting, Filtering Data, Data Validation, Graphing Data, and Working with Functions. These are all important tools to know when working with data in Google Sheets. They will help you to better understand your data and make it easier to read and analyze. In this reading, we will go over what each of these tools are and how to use them.
+## Intro:
+In Google Sheets, there are many ways to analyze and display data. For this class, we will focus on Conditional Formatting, Filtering Data, Graphing Data, and Working with Functions. These are all important tools to know when working with data in Google Sheets. They will help you to better understand your data and make it easier to read and analyze. In this reading, we will go over what each of these tools are and how to use them.
 
 ## Reading:
 ### Conditional Formatting
 Conditional formatting is a feature in Google Sheets that allows you to format cells based on certain conditions. This can be useful when you want to highlight certain data points or make your data easier to read. For example, you can use conditional formatting to highlight cells that contain a certain value or to format cells based on their value. 
 
-#### Initial Set Up
+#### Set Up
 Now let's go over how to add conditional formatting to your data in Google Sheets:
 
 1. Select the range of cells you want to format
@@ -115,36 +115,6 @@ The value you input to filter by is NOT included unless you choose a filter that
 Here is an extra resource for further examples of Filters: [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}
 
 ---
-### Data Validation
-Data validation is a feature in Google Sheets that allows you to control the type of data entered into a cell. This can be useful to ensure that the data entered into a cell is accurate and consistent. This is different from filtering data as data validation controls the data that can be entered into a cell while filtering data changes the range of data you see.
-Data validation can help prevent errors in your data and make it easier to work with.  
-
-Let's go over how to add data validation to your data in Google Sheets:
-1. Select the range of cells you want to add data validation to.
-2. Click on Data --> Data validation.
-3. In the data validation criteria box, you can set up the criteria for the data that can be entered into the cells. For example, you can choose to allow only numbers, text, dates, or a list of items.
-4. You can also choose the output of the data validation you want to apply to the cells. For example, you can choose to show a warning message if the data entered does not meet the criteria or to reject the data altogether.
-5. Once you have set up the criteria and output options, click on Save to apply the data validation to the selected range of cells.
-
-#### Specific Examples
-**Dropdown**  
-This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. To do this, follow the same steps as above and select Dropdown. You can then enter the items you want to include in the drop-down list, and choose what color you want the cell to be if the data is selected.
-In the example below, the data validation is set up to allow only the values in the drop-down list to be entered into the cells, each having its own color.
-
-![Screenshot 2025-01-08 175658](https://github.com/user-attachments/assets/d1015fee-aae6-4d32-8cf0-7b30e53eca1d)
-
-![Screenshot 2025-01-08 175727](https://github.com/user-attachments/assets/6800e356-c21d-4763-b656-02244eb5bebf)
-
-
-**Dates**   
-This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fit the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
-
-![Screenshot 2025-01-08 182405](https://github.com/user-attachments/assets/73cda15f-3f37-4f4f-a6ca-bbe29bc104b4)
-
-
-Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
-
----
 
 ### Graphing Data
 Another valuable tool for analyzing data is graphing. This allows us to see trends in data, compare variables, and visualize the values in our data set. This can be hard to do by hand, and Google Sheets makes it much easier! Let's walk through how to graph a given data set. 
@@ -219,11 +189,20 @@ In Google Sheets, functions help users to analyze, manage, and compute data. A f
 
 Throughout this unit, you will learn new and useful functions. For this topic, we will focus on the most common functions for analyzing data:
 
+   | Function           | Syntax              | Purpose                                          |
+   |--------------------|---------------------|--------------------------------------------------|
+   | Sum                | =SUM(arguments)     | Adds all of the arguments together               |
+   | Average            | =AVERAGE(arguments) | Averages arguments together                      |
+   | Max                | =MAX(arguments)     | Returns the highest number out of the arguments  |
+   | Min                | =MIN(arguments)     | Returns the lowest number out if the arguments   |
+   | Standard Deviation | =STDEV(arguments)   | Returns the stardard deviations of the arguments |
+   | Mean               | =MEAN(arguments)    | Returns the mean of the arguments                |
+
 
 # Pre-Class Quiz Challenge
 
 ## Instructions
-1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing/Managing Data, Conditional Formatting](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing){:target="_blank"}
+1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing & Managing Data](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing){:target="_blank"}
    </br> The challenge comes from the [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"} reading. 
 2. Select the **Equipment Log** tab if it is not already open.
 3. **Freeze** row 1.
