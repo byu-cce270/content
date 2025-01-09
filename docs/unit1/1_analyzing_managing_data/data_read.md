@@ -161,19 +161,19 @@ From here, there are many options. Most of these are for visual changes, but hel
 Other types of graphs have more unique features to them, but these are the general few! 
 
 #### Specific Examples
-**Line Graph**
+**Line Graph**  
 Use to track changes over time intervals, such as the speed of a car during a drive. In the example below, the temperature of a place is graphed over a few days.
 
 ![Screenshot 2025-01-08 215839](https://github.com/user-attachments/assets/79582e17-4650-4476-a6b4-64a77d314ad1)
 
 
-**Bar/Column chart**
+**Bar/Column chart**  
 Use to track differences between groups, such as grades in a class. In the example below, customers with the same ID are compared to see the amount of each order.
 
 ![Screenshot 2025-01-08 215721](https://github.com/user-attachments/assets/540118f2-144e-4ec8-abb1-38a69751dd96)
 
 
-**Pie Chart**
+**Pie Chart**  
 Used to compare amounts/ratios of a whole such as wins vs losses during a BYU basketball season. In the example below, the percentage of each material purchased is graphed from a customer's order.
 
 ![Screenshot 2025-01-08 220114](https://github.com/user-attachments/assets/3faa6ffe-0f61-4508-86af-ace6b95fa971)
@@ -182,7 +182,7 @@ Here is an extra resource for further examples of graphing: [Graphing](https://s
 
 ---
 
-### Working with Functions
+### Working with Functions  
 In Google Sheets, functions help users to analyze, manage, and compute data. A function is set up in three parts:
 
 ![Screenshot 2025-01-08 221445](https://github.com/user-attachments/assets/76daef2b-be63-4f76-8bcc-cb70ebb098dc)
