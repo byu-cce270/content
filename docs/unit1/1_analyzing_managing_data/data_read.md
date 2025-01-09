@@ -195,24 +195,26 @@ Throughout this unit, you will learn new and useful functions. For this topic, w
    | Average            | =AVERAGE(arguments) | Averages arguments together                      |
    | Max                | =MAX(arguments)     | Returns the highest number out of the arguments  |
    | Min                | =MIN(arguments)     | Returns the lowest number out if the arguments   |
-   | Standard Deviation | =STDEV(arguments)   | Returns the stardard deviations of the arguments |
-   | Mean               | =MEAN(arguments)    | Returns the mean of the arguments                |
+   | Standard Deviation | =STDEV(arguments)   | Returns the stardard deviation of the arguments |
+   | Median               | =Median(arguments)    | Returns the median of the arguments                |
 
 
 # Pre-Class Quiz Challenge
 
 ## Instructions
 1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing & Managing Data](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing){:target="_blank"}
-   </br> The challenge comes from the [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"} reading. 
-2. Select the **Equipment Log** tab if it is not already open.
-3. **Freeze** row 1.
-4. **Sort** the spreadsheet by the **Checked Out** date from most recent to the oldest.
-   </br> **Hint**: Sort by column D from Z to A.
-5. **Sort the range** A2:F9 by column **B** from **A to Z**.
-   </br> **Hint**: Make sure the box next to **data has header** row is left unchecked.
-6. Filter the spreadsheet so it only shows equipment that has never been checked in.
-   </br> **Hint**: Filter column E to show cells that are empty.
-7. When you're finished, your spreadsheet should look like this:
-   ![google_sheets_sort_filter.png](images/google_sheets_sort_filter.png)
-8. Change the access so anyone with the link can edit. Copy the Link and paste into the pre-class quiz.
+   </br> The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
+2. **Highlight** those in the **Type** column that checked out Cameras.
+   <\br > Hint: Use conditional formatting
+3. **Highlight** those in **column A** that have an ID number between 1000 and 2500.
+4. **Add filters** to the table (Columns A:F)
+5. **Sort** the spreadsheet by the **Checked Out** date from most recent to the oldest.
+6. **Sort** the spreadsheet by **Days Checked Out** to only show those who have a value of 5 and higher.
+7. Fill in the **Days Checked out Statistics** chart using the **Days checked out** info in the main table.
+8. Create a **pie chart** of who checked out which equipment type (column B) to see what was checked out most. Give the chart a title and label each slice.
+9. When you're finished, your spreadsheet should look something like this:
+
+![Screenshot 2025-01-08 234149](https://github.com/user-attachments/assets/7bfa3bdb-6e5b-4df7-a099-bfe8b76f5e00)
+
+10. **Change the access so anyone with the link can edit**. Copy the Link and paste it into the pre-class quiz.
    
