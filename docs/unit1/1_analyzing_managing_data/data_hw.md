@@ -75,3 +75,11 @@ Turn sharing and editing on. Then turn in the link to Learning Suite in the feed
 | Part 4 - Correct equations and data are used in the CFS half of the table                                     |        4        |
 |Part 4 - Correct equations, data, and use of the conversion factor are used in the CMS half of the table       |        4        |
 |                            <div style="text-align: right">**Total**</div>                                     |       30        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+
