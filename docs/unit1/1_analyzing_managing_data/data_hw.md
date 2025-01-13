@@ -16,7 +16,7 @@
 1. Ok, so here's what's going on. Your boss from the in-class assignment, you know the one that promoted you... anyways. Well, you have impressed him so much that now he has invested in you to start your own company that monitors the local river for public safety. To start this new company, your old boss has given you projects. Here are his instructions to you:
 2. Navigate to the sheet that says “Streamflow data Part 1”
 3. Select the entire table and create a filter, the filter icon should be in each of the headers
-4. Filter by Approved status so it only shows rows with an approved status "P"
+4. Filter by Approved status so it only shows rows with the approved status as pending, "P"
 5. Duplicate that sheet and rename it: “Part 1 Approved Status”
 6. Go back to the sheet called "Streamflow data Part 1"
 7. Reset the filter
@@ -31,7 +31,7 @@
 
 1. Navigate to the "Streamflow Data Part 1" sheet. Clear any existing filters (if any are still active).
 2. Duplicate the sheet and name it "Part 2 Graphs"
-3. Using the data from the table, create 2 different types of graphs. This could include a pie chart, bar graph, line, column, or whatever you choose. Whichever graph you do, make sure it includes the following:
+3. Using the data from the table, create 2 different types of graphs. This could include a bar graph, line, column, or whatever you choose. Whichever graph you do, make sure it includes the following:
       - Title (ALL Graph types)
       - Label X and Y axes (For line, bar, and column graph types)
       - legend (for line, bar, and column graph types)
@@ -53,7 +53,7 @@
 
 1. Navigate to the Summary Statistics sheet.
 2. On this page, you will see spots to use formulas to summarize the data taken at different places on the river (or stations). Use the appropriate formula and data from your “Streamflow data Part 2” sheet to make those calculations in the top half of the table.
-3. Most engineers when making calculations use Meters per Second. In the bottom half of the table, use the conversion factor in cell C20 to convert all the values in the top half of the table from cfs to cms. Hint: Don't forget to use absolute cell references!
+3. Most engineers when making calculations use cubic meters per second (CMS). In the bottom half of the table, use the conversion factor in cell C20 to convert all the values in the top half of the table from cfs to cms. Hint: Don't forget to use absolute cell references!
 
 ---
 
