@@ -204,7 +204,7 @@ Throughout this unit, you will learn new and useful functions. For this topic, w
 1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing & Managing Data](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing){:target="_blank"}
    </br> The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
-   <\br > Hint: Use conditional formatting
+   <br> Hint: Use conditional formatting
 3. **Highlight** those in **column A** that have an ID number between 1000 and 2500.
 4. **Add filters** to the table (Columns A:F)
 5. **Sort** the spreadsheet by the **Checked Out** date from most recent to the oldest.
