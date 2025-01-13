@@ -34,7 +34,7 @@ When done, your graph should look somthing like this:
 2. Now that you have proven your boss your skills, he has given you a new task with more customer order information. Here are his instructions:
 3. Format the table by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table.
 4. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade.
-5. Create a bar chart using the information from the table with these features:
+5. Create a column chart using the information from the table with these features:
       - Customer ID is on the X-axis
       - Tons of Material per Order is on the Y-axis
       - A title
