@@ -22,9 +22,9 @@
    8. Screenshot 4: (Take a screenshot showing that you have joined the class teams)
    9. Post a message in Microsoft Teams in the Homework Help channel
    10. Sign up for a time to meet with a TA:
-       [Fall 2024 TA Sign Up](https://docs.google.com/spreadsheets/d/1nqcw1yafB527-MO8wGG0HVdsEkRI3NXKXWsEookGgos/edit?usp=sharing){:target="_blank"}
+       [Winter 2025 TA Sign Up](https://docs.google.com/spreadsheets/d/1XAaFf5LP3TieXjtVyfgN5i1Zs6NSUY70smWzctdwMXs/edit?gid=61534873#gid=61534873){:target="_blank"}
    </br> Once you meet with a TA they will give you the appropriate amount of points in Learning Suite. 
-   You will have until the end of the second full week to do so.
+   Meeting will be from January 13th, 2025 to January 17th, 2025. After the 17th, you will lose 3 points for not meeting with a TA until you complete this assignment. 
 
 
 ## Turning in/Rubric
