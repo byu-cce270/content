@@ -19,12 +19,13 @@ Once the material values are entered in column E, we are ready to use the VLOOKU
 VLOOKUP(search_key,range,index,[is_sorted])
 
 where:
-|  Parameter  |                                                                      Explanantion                                                                       |
-|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  Search_key |                                                 The value to be found in the first column of the array                                                  |
-|    Range    |                             The table of information in which data is looked up. Use a reference to a range or a range name                             |
-|    Index    |                                     The column number in table_array from which the matching value must be returned                                     |
-| [Is_sorted] | A logical value (TRUE or FALSE) that specifies whether you want VLOOKUP to find an exact match or an approximate match. Explained in more detail below. |
+
+| Parameter   | Explanation                                                                                                       |
+|-------------|-------------------------------------------------------------------------------------------------------------------|
+| Search_key  | The value to be found in the first column of the array.                                                          |
+| Range       | The table of information in which data is looked up. Use a reference to a range or a range name.                 |
+| Index       | The column number in `table_array` from which the matching value must be returned.                               |
+| [Is_sorted] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |
 
 For our case, we will use VLOOKUP to select a unit weight value from the table using the user-specified material. The unit weight returned by the function is then multiplied by the volume to compute the cylinder weight as follows:
 
@@ -70,11 +71,12 @@ The MATCH function given a range of cells will return a position. Let's first lo
 MATCH(search_key,range,[search_type])
 
 where:
-|  Parameter  |                                           Explanation                                           |
+
+| Parameter   | Explanation                                                                                     |
 |-------------|-------------------------------------------------------------------------------------------------|
-| Search_key  |                         The value to to be found in the range of cells                          |
-|    Range    | The table of information in which data is looked up. Use a reference to a range or a range name |
-| Search_type |      Optional parameter that directs the function how to find the search_key in the range       |
+| Search_key  | The value to be found in the range of cells.                                                    |
+| Range       | The table of information in which data is looked up. Use a reference to a range or a range name.|
+| Search_type | An optional parameter that directs the function on how to find the `search_key` in the range.   |
 
 The search_type has 3 different options for an input. If nothing is input for this parameter, the default value will be 1 which indicates that the values are sorted in ascending order. It will return the largest value less than or equal to the search_key. The second value is -1 and works opposite to 1. It indicates that the values are sorted in descending order and will return the smallest value greater than or equal to the search_key. The last acceptable input is 0. This option directs the function to search for an exact match to the search_key. If the range is not sorted, this is the best option. 
 
@@ -165,3 +167,4 @@ Make the is_sorted false and the search type 0
 
 </details>
 
+<br>
