@@ -41,12 +41,12 @@ When done, your graph should look somthing like this:
       - labels for the x and y axes
       - A legend labeling each order number
 
-Your graph should look somthing like this when done:
+Your graph should look something like this when done:
 
 ![Screenshot 2024-12-23 185340](https://github.com/user-attachments/assets/a056196d-511b-4f8f-ae97-3be0fa806596)
 
-5. Add filters in columns A through E in row 2
-6. Create a filter that only includes the customers that ordered between 20 and 75 tons of material for Order #2 (column C)
+6. Add filters in columns A through E in row 2
+7. Create a filter that only includes the customers that ordered between 20 and 75 tons of material for Order #2 (column C)
 
 ---
 
@@ -67,7 +67,7 @@ Your graph should look somthing like this when done:
       - Give each data point on the Celcius line a triangle shape
       - Give each data point on the Kelvin line a square shape
 
-Your graph should look somthing like this when you're done:
+Your graph should look something like this when you're done:
 
 ![Screenshot 2025-01-06 170922](https://github.com/user-attachments/assets/20404723-e944-4039-81e1-a7a7b061941c)
 
