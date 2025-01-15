@@ -36,6 +36,8 @@
 
 4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient by pulling the temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law Coefficients in the Tables sheet)
 5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Be careful with the search_type parameter in your MATCH function - in this case, your </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_key must be approximated rather than exact</br>
+
    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
    
    | Cell | Equation                                   |
@@ -55,7 +57,6 @@
 #### Part 2
 1. Navigate to the Soil Services sheet
 2. In column D, use the VLOOKUP and MATCH functions to find the correct price per test for each row (Use the blue table in the Tables sheet)
-   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Be careful with the search_type parameter in your MATCH function - in this case, your </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_key must be approximated rather than exact</br>
 3. In column E, multiply the test quantities and prices per test to get the total price for each row
 4. In cell E33, sum the total prices in column E - if you did it correctly, your total should be $15,202
 
