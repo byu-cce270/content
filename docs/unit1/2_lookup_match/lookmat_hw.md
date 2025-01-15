@@ -27,12 +27,16 @@
       | Stokes' law coefficient            | E10  | A    |
       | Specific gravity correction factor | E11  | Gc   |
 
+**Hint**: To name a cell, click on the cell, then click on the name box in the top left corner of the screen and type the name you want to give the cell. Press Enter to save the name. You can then reference the cell by its name in formulas.
+
 3. Use the equations below to calculate the following cell values:
 
-   | Cell | Equation                                 |
-   |------|------------------------------------------|
-   | E6   | ![equationc.png](images/equationc.png)   |
-   | E9   | ![equationft.png](images/equationft.png) |
+   | Cell | Equation                                       |
+   |------|------------------------------------------------|
+   | E6   | $\,^oC = \left(\,^oF - 32\right) \dfrac{5}{9}$ |
+   | E9   | $F_t = -4.85 + \dfrac{\,^oC}{4}$               |
+
+   **Hint:** You will need to use the ROUND function to round the temperature to the nearest whole number
 
 4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient by pulling the temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law Coefficients in the Tables sheet)
 5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
@@ -40,12 +44,12 @@
 
    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
    
-   | Cell | Equation                                   |
-   |------|--------------------------------------------|
-   | C15  | ![equationrcp.png](images/equationrcp.png) |
-   | D15  | ![equationpf.png](images/equationpf.png)   |
-   | E15  | ![equationcl.png](images/equationcl.png)   |
-   | G15  | ![equationd.png](images/equationd.png)     |
+   | Cell | Equation                          |
+   |------|-----------------------------------|
+   | C15  | $R_{cp} = R + F_T - F_Z$          |
+   | D15  | $P_f = \dfrac{AR_{cp}}{W_S}(100)$ |
+   | E15  | $R_{cl} = R + F_m$                |
+   | G15  | $D = A\sqrt{\dfrac{L}{t}}$        |
 
 6. If you did everything right, the first row should look like this:
 
