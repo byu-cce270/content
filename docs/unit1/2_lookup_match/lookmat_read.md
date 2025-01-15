@@ -143,9 +143,7 @@ This is useful when you want to limit the data that can be entered into a cell t
 ![Screenshot 2025-01-08 182405](https://github.com/user-attachments/assets/73cda15f-3f37-4f4f-a6ca-bbe29bc104b4)
 
 
-There are many other options for data validation. Here is an extra resource for further examples of Data Validation: 
-[Data Validation]
-(https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
+There are many other options for data validation. Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
 
 ## Things to look out for and think about
 - Look for the differences in the function syntax between the VLOOKUP and MATCH.
