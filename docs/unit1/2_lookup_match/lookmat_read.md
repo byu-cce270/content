@@ -93,7 +93,7 @@ Starting at row 24, another table is listed and the objective is to fill in the 
 
 For the values shown, the function would return "**Mar**". Then we need to use this text string to automatically find the index of the column corresponding to this month. This can be done with the MATCH function as follows:
 
-    MATCH(TEXT(B28,"MMM"),$C$5:$N$5,0)
+    MATCH(TEXT(B28,"MMM"),$B$7:$N$7,0)
 
 The first argument to the MATCH function is the lookup value, the second argument is an array (row or column of values) and the third argument indicates the type of match to perform (a value of **0** tells it to find an exact match). The function looks through the array to find the lookup value and returns the index of the item if found. For the arguments shown, the function would return a value of **3**. At this point, we are ready to use the VLOOKUP function. We would formulate the function call as follows:
 
