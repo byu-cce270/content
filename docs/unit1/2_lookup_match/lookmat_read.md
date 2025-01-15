@@ -148,6 +148,7 @@ There are many other options for data validation. Here is an extra resource for 
 ## Things to look out for and think about
 - Look for the differences in the function syntax between the VLOOKUP and MATCH.
 - Think about how using Data Validations can help minimize errors in your formulas
+- Watch for white space (e.g., spaces) either before or after your match text, it can cause problems
 
 
 ---
