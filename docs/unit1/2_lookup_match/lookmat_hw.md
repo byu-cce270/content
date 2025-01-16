@@ -30,30 +30,41 @@
 **Hint**: To name a cell, click on the cell, then click on the name box in the top left corner of the screen and type the name you want to give the cell. Press Enter to save the name. You can then reference the cell by its name in formulas.
 
 3. Use the equations below to calculate the following cell values:
+    
+       | Cell | Equation                                       |
+       |------|------------------------------------------------|
+       | E6   | $\,^oC = \left(\,^oF - 32\right) \dfrac{5}{9}$ |
+       | E9   | $F_t = -4.85 + \dfrac{\,^oC}{4}$               |
 
-   | Cell | Equation                                       |
-   |------|------------------------------------------------|
-   | E6   | $\,^oC = \left(\,^oF - 32\right) \dfrac{5}{9}$ |
-   | E9   | $F_t = -4.85 + \dfrac{\,^oC}{4}$               |
 
-   **Hint:** You will need to use the ROUND function to round the temperature to the nearest whole number
+4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient by pulling the 
+   temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law 
+   Coefficients in the Tables sheet). 
 
-4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient by pulling the temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law Coefficients in the Tables sheet)
-5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Be careful with the search_type parameter in your MATCH function - in this case, your </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_key must be approximated rather than exact</br>
+    **NOTE**: For the temperature key used in VLOOKUP, you should not expect an 
+   exact 
+   match so you will 
+   need 
+   to do a range lookup (is_sorted = TRUE). The same is true for the Gs key to the MATCH function, so you will need 
+   to again specify a range lookup (search_type = 1). If you want to do an exact match, you can use the ROUND() 
+   function to round the temperature and Gs values to the nearest whole number inside the argument list as you pass 
+   them as keys to the 
+   functions. 
 
-   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
+   5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
+
+      **Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
    
-   | Cell | Equation                          |
-   |------|-----------------------------------|
-   | C15  | $R_{cp} = R + F_T - F_Z$          |
-   | D15  | $P_f = \dfrac{AR_{cp}}{W_S}(100)$ |
-   | E15  | $R_{cl} = R + F_m$                |
-   | G15  | $D = A\sqrt{\dfrac{L}{t}}$        |
+      | Cell | Equation                          |
+      |------|-----------------------------------|
+      | C15  | $R_{cp} = R + F_T - F_Z$          |
+      | D15  | $P_f = \dfrac{AR_{cp}}{W_S}(100)$ |
+      | E15  | $R_{cl} = R + F_m$                |
+      | G15  | $D = A\sqrt{\dfrac{L}{t}}$        |
 
 6. If you did everything right, the first row should look like this:
 
-   ![checkwork.png](images/checkwork.png)
+ ![checkwork.png](images/checkwork.png)
 
 and the chart should look like this:
 
@@ -65,7 +76,8 @@ and the chart should look like this:
 
 #### Part 2
 1. Navigate to the Soil Services sheet
-2. In column D, use the VLOOKUP and MATCH functions to find the correct price per test for each row (Use the blue table in the Tables sheet)
+2. In column D, use the VLOOKUP and MATCH functions to find the correct price per test for each row (Use the blue 
+   table in the Tables sheet). 
 3. In column E, multiply the test quantities and prices per test to get the total price for each row
 4. In cell E33, sum the total prices in column E - if you did it correctly, your total should be $15,202
 
