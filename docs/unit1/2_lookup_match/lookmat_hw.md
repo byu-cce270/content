@@ -54,6 +54,11 @@
 6. If you did everything right, the first row should look like this:
 
    ![checkwork.png](images/checkwork.png)
+
+and the chart should look like this:
+
+![grain_size_chart.png](images/grain_size_chart.png)
+
 ---
 
 ### Soil Services Sheet
