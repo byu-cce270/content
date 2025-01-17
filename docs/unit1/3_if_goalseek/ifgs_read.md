@@ -16,7 +16,7 @@ Before class, you will learn about a few types of IF Statements: IF and IFS. You
 
 The syntax for an IF statement is as follows:
 
-```=IF(logical_expression, value_if_true, value_if_false)```
+    =IF(logical_expression, value_if_true, value_if_false)
 
 An IF statement has three arguments:
 
@@ -52,9 +52,9 @@ Again, we can see that we can quickly populate the rest of the table by dragging
 
 The syntax for an IFS statement is as follows:
 
-```=IFS(logical_expression1, value_if_true1, [logical_expression2, value_if_true2], [logical_expression3, ...)```
+    =IFS(logical_expression1, value_if_true1, [logical_expression2, value_if_true2], [logical_expression3, ...)
 
-An IFS statement only technically requires two arguments, both of which are nearly the same as the IF statement. However, there can be an infinite amount of logical expressions within one IFS statement.
+An IFS statement only technically requires two arguments, both of which are nearly the same as the IF statement. However, there can be any number of logical expressions within one IFS statement.
 
 **Note**: More than one condition can be true so the function will always return the value for the first condition that is found true.
 
@@ -74,7 +74,7 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 
 ## Goal Seek
 
-**Goal Seek** is an add-on plugin for Google Sheets. It is a powerful tool that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. A great example of this is often found in sales when determining how many units need to be sold to break even or meet a certain quota.
+There are many cases when performing computations in Excel where we need to solve an equation that is either difficult or impossible to solve directly. Therefore, we need to solve it using some sort of iterative process. This is often done using a trial-and-error approach where we enter our formula and then experiment with different input values to the formula until the formula returns the desired output. **Goal Seek** is an add-on plugin for Google Sheets that automates this process. It is a powerful tool that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. One example of this is often found in sales when determining how many units need to be sold to break even or meet a certain quota.
 
 ### Installing Goal Seek
 
