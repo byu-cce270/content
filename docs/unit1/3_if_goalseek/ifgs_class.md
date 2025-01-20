@@ -19,8 +19,8 @@ This exercise is based upon the Goal Seek extension. This exercise should be on 
 
 ## Instructions
   1. Navigate to the Brickmaking Business sheet
-  2. Write an equation to solve for your net profit
-  3. Use Goal Seek add-on to compute the number of bricks you need to sell to make a profit of $100K in cell B8
+  2. Write equations to solve for the total expense, total revenue, and profit in cells B7:B9.
+  3. Use Goal Seek add-on to compute the number of bricks you need to sell to make a profit of $100K in cell B10
 
 ## Turning in/Rubric
 Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
