@@ -13,12 +13,12 @@ You can find the Concrete Price Estimator/Brick Making Business starter sheet he
   5. Try adjusting the lengths of the concrete to see if it changes the price per cubic foot and total price correctly
 
 ---
-# Exercise 2 - Brick Making Business
+# Exercise 2 - Brickmaking Business
 
 This exercise is based upon the Goal Seek extension. This exercise should be on the second sheet of this in-class workbook.
 
 ## Instructions
-  1. Navigate to the Brick Making Business sheet
+  1. Navigate to the Brickmaking Business sheet
   2. Write an equation to solve for your net profit
   3. Use Goal Seek add-on to compute the number of bricks you need to sell to make a profit of $100K in cell B8
 
