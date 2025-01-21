@@ -39,7 +39,7 @@
    |-----------|-----------------------------------------------------------------------------------|
    | D11       | $\sqrt{\dfrac{2 * 9.81 * (HGLj - Elev1)}{(\dfrac{Fric1 * Length1}{Diam1}) -1}}$   |
    | F11       | $\sqrt{\dfrac{2 * 9.81 * (Elev2 - HGLj)}{(\dfrac{Fric2 * Length2}{Diam2}) +1}}$   |
-   | H11       | $\sqrt{\dfrac{2 * 9.81 * HGLj}{(\dfrac{Fric3 * Length3}{Diam3}) -1}}$           |
+   | H11       | $\sqrt{\dfrac{2 * 9.81 * (HGLj - Elev3)}{(\dfrac{Fric3 * Length3}{Diam3}) -1}}$           |
 
 4. Use the following table to write the equations shown below in the cells indicated. 
 
