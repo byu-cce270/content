@@ -8,7 +8,7 @@ For Construction Manangement students, you will take a semester long class that 
 
 ## Formulas Used in Gantt Chart Creation
 
-The following formulas are commonly used in Gantt Chart creation in Google Sheets and Excel. 
+The following formulas are commonly used in Gantt Chart creation in Google Sheets and Excel. If you want more information or are confused on any of the formulas, click on the title of the function and it will take you to a webstie with a more in-depth explanation.
 
 ### [WEEKDAY()](https://support.google.com/docs/answer/3092985?hl=en){:target="_blank"}
 This formula returns a number representing the day of the week of the day provided. 

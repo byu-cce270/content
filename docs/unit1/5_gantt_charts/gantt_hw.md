@@ -5,6 +5,9 @@
 ## Instructions
 1. Create a new Google Sheet and rename is something like "[Your Name] HW 1.6 - Gantt Charts"
 2. Following the same format as the in class activity, give your project a project title, insert your company name, project manager name, and the start date as today's current date. 
+      
+      * Note: A lot of this HW assignment is formatting your Google Sheet. This may seem like busy work but it's actually a lot of what you do in CM internships/work in general. It's important to know how to make something look presentable. 
+        
 3. Create a header starting in cell A5 with the following titles:
       
       * A5: TASK
