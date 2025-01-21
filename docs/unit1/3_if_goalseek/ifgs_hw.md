@@ -31,17 +31,26 @@
    | Pipe 3 Elevation     | F7   | Elev3|
    | Junction Hydraulic Grade Line     | B11   | HGLj|
 
-
 3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
 
 **Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations.
 
    | Cell      | Equation                                                                          |
    |-----------|-----------------------------------------------------------------------------------|
-   | D11       | $\sqrt{\dfrac{2 * 9.81 * (HGLj - Elev1)}{\dfrac{Fric1 * Length1}{Diam1} -1}}$            |
-   | D12       | $I_u=\dfrac{1}{12}base*ht^3$                                                      |
-   | D13       | $v=\dfrac{Pbx}{6EI_uL}\left(b^2+x^2-L^2\right)$                                   |
+   | D11       | $\sqrt{\dfrac{2 * 9.81 * (HGLj - Elev1)}{(\dfrac{Fric1 * Length1}{Diam1}) -1}}$   |
+   | F11       | $\sqrt{\dfrac{2 * 9.81 * (Elev2 - HGLj)}{(\dfrac{Fric2 * Length2}{Diam2}) +1}}$   |
+   | H11       | $\sqrt{\dfrac{2 * 9.81 * HGLj}{(\dfrac{Fric3 * Length3}{Diam3}) -1}}$           |
 
+4. Use the following table to write the equations shown below in the cells indicated. 
+
+   | Cell      | Equation                                                                          |
+   |-----------|-----------------------------------------------------------------------------------|
+   | C11       | D11 * $(\dfrac{\pi}{4}*(Diam1)^2)$   |
+   | E11       | F11 * $(\dfrac{\pi}{4}*(Diam2)^2)$   |
+   | G11       | H11 * $(\dfrac{\pi}{4}*(Diam3)^2)$   |
+   | I11       | E11 - C11 - G11        |
+
+5. Use **Goal seek** to compute the three unknown flowrates through setting Q_j (cell I11) to 0 by changing HGL_j (cell B11).
 ---
 
 #### Part 2
