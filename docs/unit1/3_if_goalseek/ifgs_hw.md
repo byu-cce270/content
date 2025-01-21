@@ -108,7 +108,7 @@ If written correctly, your sheet should look like this when **x** is set to **27
 |                              Cells named correctly                        |        3        |
 |                     Velocity equations written correctly                  |        4        |
 |                     Flowrate equations written correctly                  |        4        |
-|               The correct flowrates are found with goal seek (±2)         |        4        |
+|               The correct flowrates are found with goal seek (±0.005)     |        4        |
 |              <div style="text-align: right">**Total**</div>               |       15        |
 
 |               Item (Simply Supported Beam)                | Points Possible |
