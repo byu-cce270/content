@@ -10,60 +10,41 @@
 ---
 
 #### Part 1
-1. Navigate to the **Solar Installation** sheet
-2. In the “**Solar System Generation**” table, create a dropdown data validation in cell **C6** with the options of “East”, “West”, “North”, and “South”
-3. Change the dropdown in cell **C6** to “East”
-4. In cell **C7**, write an IFS statement that changes the cell's value based on the dropdown in cell C6. Use these values for each direction:
-  
-   | Variable | Value |
-   |----------|-------|
-   | East     | 600   |
-   | West     | 630   |
-   | North    | 500   |
-   | South    | 710   |
+1. Navigate to the **Three Reservoir Problem** sheet
+2. Name the cells in the spreadsheet according to this table:
 
-5. In cell **C9**, write the following formula to calculate the total annual kilowatt-hour (kWh) generation of the solar panel system. 
+**Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
 
-   | Cell | Equation                                     |
-   |------|----------------------------------------------|
-   | C9   | # of Panels * Annual kWh Generated per Panel |
+   | Variable          | Cell | Name |
+   |-------------------|------|------|
+   | Pipe 1 Diameter   | C5   | Diam1|
+   | Pipe 2 Diameter   | C6   | Diam2|
+   | Pipe 3 Diameter   | C7   | Diam3|
+   | Pipe 1 Length     | D5   | Length1|
+   | Pipe 2 Length     | D6   | Length2|
+   | Pipe 3 Length     | D7   | Length3|
+   | Pipe 1 Friction     | E5   | Fric1|
+   | Pipe 2 Friction     | E6   | Fric2|
+   | Pipe 3 Friction     | E7   | Fric3|
+   | Pipe 1 Elevation     | F5   | Elev1|
+   | Pipe 2 Elevation     | F6   | Elev2|
+   | Pipe 3 Elevation     | F7   | Elev3|
+   | Junction Hydraulic Grade Line     | B11   | HGLj|
 
-6. Use **Goal Seek** to calculate the number of panels needed for the annual kWh generation to be 120% (14,400 kWh) of the annual kWh usage.
+
+3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
+
+**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations.
+
+   | Cell      | Equation                                                                          |
+   |-----------|-----------------------------------------------------------------------------------|
+   | D11       | $\sqrt{\dfrac{2 * 9.81 * (HGLj - Elev1)}{\dfrac{Fric1 * Length1}{Diam1} -1}}$            |
+   | D12       | $I_u=\dfrac{1}{12}base*ht^3$                                                      |
+   | D13       | $v=\dfrac{Pbx}{6EI_uL}\left(b^2+x^2-L^2\right)$                                   |
 
 ---
 
 #### Part 2
-1. In the “**Solar System Cost**” table, create a dropdown data validation in cell **F8** with the options “Yes” and “No”
-2. Change the dropdown in cell **F8** to “Yes”
-3. In cell **F9**, write an IF or IFS statement that changes the cell's value based on the dropdown in cell **F8**. If a battery is included in the cost, **F9** should be $13,000. Otherwise, it should be $0.00
-4. In cell **F10**, write the following formula to calculate the total solar system cost. Then use Goal Seek to calculate what the price per watt should be for the total cost to equal $36,184
-
-   | Cell | Equation                                                        |
-   |------|-----------------------------------------------------------------|
-   | F10  | (# of Panels * Watts per Panel * Price per Watt) + Battery Cost |
-
----
-
-#### Part 3
-1. There are 4 different companies that can be selected for plans, materials, and installation. We will use the cells in column I to select companies. Note that cells **I8:I9** have been merged into a single cell both rows 8 and 9 relate to installation. In the “**Subcontractors & Budgeting**” table, create dropdowns in cells **I6**, **I7**, and **I8:I9** that all contain the company options “Tesla", “Enphase", “Altair", and “Solaredge”.
-2. In cells **J6:J9** use VLOOKUP and MATCH to find the service costs/labor in the table below that corresponds with the company options in the dropdown menus in **I6**, **I7**, and **I8:I9** (i.e. if the company is changed using the dropdown menu in cell **I6**, the value of cell **J6** should also correctly change to whatever that company charges for the service in the table).
-
-   **Hint:** Use absolute cell references when referring to the tables in your function so that dragging down the cell will fill them properly</br>
-   **Hint:** The MATCH function in **J9** must reference **I8** since merged cells only preserve the topmost value.
-
-3. Choose the company in **I6:I9** that offers the cheapest price for each service.
-
-   **Hint:** Solaredge has the cheapest rate for panel installation when combined with their number of installers.
-
-4. In cell **J11**, write the following formula to calculate the total cost of all the services. Then use **Goal Seek** to calculate the maximum number of hours it must take for the panels to be installed so the budget does not exceed **$15,523**
-
-   | Cell | Equation                                                                                     |
-   |------|----------------------------------------------------------------------------------------------|
-   | J11  | Engineering Plans + Material + (Installing Panels (per hour) * # of Installers * # of Hours) |
-
----
-
-#### Part 4
 
 1. Navigate to the **Simply Supported Beam** sheet
 2. Name the cells in the spreadsheet according to this table:
