@@ -4,6 +4,7 @@
 
 ![gantt_chart.png](images/gantt_chart.png)
 
+For Construction Manangement students, you will take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
 
 ## Formulas Used in Gantt Chart Creation
 
