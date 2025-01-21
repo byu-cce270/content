@@ -10,60 +10,56 @@
 ---
 
 #### Part 1
-1. Navigate to the Solar Installation sheet
-2. In the “Solar System Generation” table, create a dropdown data validation in cell C6 with the options of “East”, “West”, “North”, and “South”
-3. Change the dropdown in cell C6 to “East”
-4. In cell C7, write an IFS statement that changes the cell's value based on the dropdown in cell C6. Use these values for each direction:
-  
-   | Variable | Value |
-   |----------|-------|
-   | East     | 600   |
-   | West     | 630   |
-   | North    | 500   |
-   | South    | 710   |
+1. Navigate to the **Three Reservoir Problem** sheet
+2. Name the cells in the spreadsheet according to this table:
 
-5. In cell C9, write the following formula to calculate the total annual kilowatt-hour (kWh) generation of the solar panel system. Then use Goal Seek to calculate the number of panels needed for the annual kWh generation to be 120% (14,400 kWh) of the annual kWh usage
+**Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
 
-   | Cell | Equation                                     |
-   |------|----------------------------------------------|
-   | C9   | # of Panels * Annual kWh Generated per Panel |
+   | Variable          | Cell | Name |
+   |-------------------|------|------|
+   | Pipe 1 Diameter   | C5   | Diam1|
+   | Pipe 2 Diameter   | C6   | Diam2|
+   | Pipe 3 Diameter   | C7   | Diam3|
+   | Pipe 1 Length     | D5   | Length1|
+   | Pipe 2 Length     | D6   | Length2|
+   | Pipe 3 Length     | D7   | Length3|
+   | Pipe 1 Friction     | E5   | Fric1|
+   | Pipe 2 Friction     | E6   | Fric2|
+   | Pipe 3 Friction     | E7   | Fric3|
+   | Pipe 1 Elevation     | F5   | Elev1|
+   | Pipe 2 Elevation     | F6   | Elev2|
+   | Pipe 3 Elevation     | F7   | Elev3|
+   | Junction Hydraulic Grade Line     | B11   | HGLj|
+
+3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
+
+**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations.
+
+   | Cell      | Equation                                                                          |
+   |-----------|-----------------------------------------------------------------------------------|
+   | D11       | $\sqrt{\dfrac{2 * 9.81 * (HGLj - Elev1)}{(\dfrac{Fric1 * Length1}{Diam1}) -1}}$   |
+   | F11       | $\sqrt{\dfrac{2 * 9.81 * (Elev2 - HGLj)}{(\dfrac{Fric2 * Length2}{Diam2}) +1}}$   |
+   | H11       | $\sqrt{\dfrac{2 * 9.81 * HGLj}{(\dfrac{Fric3 * Length3}{Diam3}) -1}}$           |
+
+4. Use the following table to write the equations shown below in the cells indicated. 
+
+   | Cell      | Equation                                                                          |
+   |-----------|-----------------------------------------------------------------------------------|
+   | C11       | D11 * $(\dfrac{\pi}{4}*(Diam1)^2)$   |
+   | E11       | F11 * $(\dfrac{\pi}{4}*(Diam2)^2)$   |
+   | G11       | H11 * $(\dfrac{\pi}{4}*(Diam3)^2)$   |
+   | I11       | E11 - C11 - G11        |
+
+5. Use **Goal seek** to compute the three unknown flowrates through setting Q_j (cell I11) to 0 by changing HGL_j (cell B11).
 
 ---
 
 #### Part 2
-1. In the “Solar System Cost” table, create a dropdown data validation in cell F8 with the options “Yes” and “No”
-2. Change the dropdown in cell F8 to “Yes”
-3. In cell F9, write an IF or IFS statement that changes the cell's value based on the dropdown in cell F8. If a battery is included in the cost, F9 should be $13,000. Otherwise, it should be $0.00
-4. In cell F10, write the following formula to calculate the total solar system cost. Then use Goal Seek to calculate what the price per watt should be for the total cost to equal $36,184
 
-   | Cell | Equation                                                        |
-   |------|-----------------------------------------------------------------|
-   | F10  | (# of Panels * Watts per Panel * Price per Watt) + Battery Cost |
-
----
-
-#### Part 3
-1. In the “Subcontractors & Budgeting” table, create dropdowns in cells I6, I7, and I8:I9 that all contain the company options “Tesla", “Enphase", “Altair", and “Solaredge”
-2. In cells J6 - J9 use VLOOKUP and MATCH to find the service costs/labor in the table below that corresponds with the company options in the dropdown menus in I6, I7, and I8:I9 (i.e. if the company is changed using the dropdown menu in cell I6, the value of cell J6 should also correctly change to whatever that company charges for the service in the table).
-     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Use absolute cell references when referring to the tables in your function so that dragging </br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;down the cell will fill them properly</br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** The MATCH function in J9 must reference I8 since merged cells only preserve the topmost value
-3. Choose the company in I6 - I9 that offers the cheapest price for each service
-     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Solaredge has the cheapest rate for panel installation when combined with their number of </br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;installers
-4. In cell J11, write the following formula to calculate the total cost of all the services. Then use Goal Seek to calculate the maximum number of hours it must take for the panels to be installed so the budget does not exceed $15,523
-
-   | Cell | Equation                                                                                     |
-   |------|----------------------------------------------------------------------------------------------|
-   | J11  | Engineering Plans + Material + (Installing Panels (per hour) * # of Installers * # of Hours) |
-
----
-
-#### Part 4
-
-1. Navigate to the Simply Supported Beam sheet
+1. Navigate to the **Simply Supported Beam** sheet
 2. Name the cells in the spreadsheet according to this table:
-   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
+
+**Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
 
    | Variable          | Cell | Name |
    |-------------------|------|------|
@@ -78,28 +74,28 @@
    | Moment of Inertia | B13  | Iu   |
    | Deflection        | B16  | v    |
 
-3. Use the following table to write equations in the corresponding named cells in the formula<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your equations
+3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
 
-   | Cell      | Equation                                 |
-   |-----------|------------------------------------------|
-   | B8        | ![equationb.png](images/equationb.png)   |
-   | B13       | ![equationIu.png](images/equationIu.png) |
-   | B14 (x≤a) | ![equationv1.png](images/equationv1.png) |
-   | B15 (x>a) | ![equationv2.png](images/equationv2.png) |
+**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations.
 
-4. Next, write an IF or IFS statement in cell B16 that will return cell B14 if ***x≤a*** (B7) or cell B15 if ***x>a*** (B7)
-     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** If ***x*** is less than or equal to ***a***, then use Deflection (***v***) for ***x≤a***</br>
+   | Cell      | Equation                                                                          |
+   |-----------|-----------------------------------------------------------------------------------|
+   | B8        | $b=L-a$                                                                           |
+   | B13       | $I_u=\dfrac{1}{12}base*ht^3$                                                      |
+   | B14 (x≤a) | $v=\dfrac{Pbx}{6EI_uL}\left(b^2+x^2-L^2\right)$                                   |
+   | B15 (x>a) | $v=\dfrac{-Pb}{6EI_uL}\left[\dfrac{L}{b}(x-a)^3+\left(L^2-b^2\right)x-x^3\right]$ |
 
-      If written correctly, your sheet should look like this when **x** is set to 278 and 15:
+4. Next, write an **IF** statement in cell **B16** that will return the value in cell **B14** if ***x≤a*** (B7) or cell **B15** if ***x>a*** (B7).
 
-      ![Deflection1.png](images/Deflection1.png)
-      ![Deflection2.png](images/Deflection2.png)
+If written correctly, your sheet should look like this when **x** is set to **278** and **15**:
 
-5. Use Goal seek to compute the two x locations that result in a deflection of -2.0 inches.  Record your answers in cells B20 and B21
-     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint:** Goal seek will find the answer closest to the pre-existing x value so change x after finding the </br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first solution. You will have to do the guess-and-check method to figure out the second solution
+![Deflection1.png](images/Deflection1.png)![Deflection2.png](images/Deflection2.png)
 
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Set the deflection in cell B16 to -2 by changing cell B11 (**x**)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Both locations are between 0 in and 150 in</br>
+5. The force of the load on the beam causes the deflection to take the shape of a parabola as shown in the diagram. Use **Goal seek** to compute the two **x** locations that result in a deflection of **-2.0** inches: one closer to the left support, and one closer to the right support. Record your answers in cells **B20** and **B21**.
+
+**Hint:** Goal seek will find the answer closest to the pre-existing x value so to find the first solution, start with an x value near the left side, and to find the second solution, start with an x value near the right side. Your first solution should fall in the range between 30 and 40 inches while the second should fall in the range between 90 and 100 inches.
+
+---
 
 **Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
 

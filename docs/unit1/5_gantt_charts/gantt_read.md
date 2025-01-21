@@ -4,6 +4,7 @@
 
 ![gantt_chart.png](images/gantt_chart.png)
 
+For Construction Manangement students, you will take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
 
 ## Formulas Used in Gantt Chart Creation
 
@@ -71,16 +72,16 @@ Here is a link for the pre-class starter sheet: [Pre-Class Challenge: Gantt Char
 2. Use the =WEEKDAY() formula in cell B3 to return the weekday today’s date falls on.
 3. Use the =TEXT() formula in cell B4 to return the weekday today’s date falls in the “DDD” format.
 4. Use the =LEFT() formula in cell B5 to return the first letter of the weekday today’s date falls on.
-5. Use the following sparkling formula in cell B7 to create a progress bar:
+5. Use the following SPARKLINE formula in cell B7 to create a progress bar:
 =SPARKLINE(B6, {“charttype”, “bar”; “color1”, “pink”; “max”, 1})
 6. In cell B9, copy the same formula above but modify it to reference B8 instead of B6.
 
    - Hint: if you did this step correctly, you will get an error when you enter the formula.
 
 7. Use the =IFERROR() formula to return nothing in the cell if an error is computed in the cell.
-8. Do your best to explain what each of these functions is doing in the C column under formula explanation.
+8. Explain what each of these functions is doing in the C column under formula explanation.
    
-Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas, and we will clarify confusion in class.
+Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas, and we will clarify confusion in class. You are also more than welcome to come to TA office hours or message a TA for help!
 
 
 

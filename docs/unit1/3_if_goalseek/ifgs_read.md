@@ -147,7 +147,7 @@ Here is a link for the pre-class starter sheet: [IF Statement Pre-Class](https:/
 
 ## Instructions
 
-1. In column D, use RANDBETWEEN to give points to Students randomly. Points should be between 0 and 100. Then copy and paste the results to lock in the values.
+1. In column D, use RANDBETWEEN to give points to Students randomly. Points should be between 0 and 100. Then copy and paste-special (as values) the results to lock in the values. This overwrites the formula with the values it generated.
 2. In column E, write a simple IF statement in the Pass/Fail column to indicate "Pass" or "Fail" depending on whether they scored over 60/100.
 3.  In column F, write a complex IF statement in the "Grade" column to assign a letter grade to each student based on their points:
 
