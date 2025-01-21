@@ -4,53 +4,95 @@
 
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet- HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/u/0/d/1rUlyf8lmHztFnhjQZp-jJvgtg7bNhADAEoz0q4NbXms/edit){:target="_blank"}
+   [Starter Sheet- HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/d/1sIy8cmeFlV-ywMx1ixMTT4DmRqJgFFUSpKn-a7KTaow/edit?gid=1350239100#gid=1350239100){:target="_blank"}
 2. Rename it something like “[Your Name] HW 1.4 - IF Statements and Goal Seek”
 
 ---
 
-#### Part 1
+#### Part 1 - Three Reservoir Problem
+
+For this exercise we will be solving the classic three reservoir problem. Consider the following diagram:
+
+![three_res.png](images/three_res.png)
+
+The diagram shows three reservoirs connected by pipes. The flow rate through each pipe is determined by the 
+difference in water levels between the two reservoirs connected by the pipe. The flow rate is also affected by the pipe diameter, length, and friction factor. The flow rate through each pipe is given by the following equation:
+
+$$Q = \dfrac{\pi}{4} * D^2 * V$$
+
+where: 
+
+- $Q$ is the flow rate in m^3/s
+- $D$ is the diameter of the pipe in meters
+- $V$ is the velocity of the water in the pipe in m/s
+
+The velocity of the water in the pipe is given by the following equation:
+
+$$V = \sqrt{\dfrac{2 * g * (H_1 - H_2)}{\left[\dfrac{f * L}{D}\right] \pm 1}}$$
+
+where:
+
+- $g$ is the acceleration due to gravity (9.81 m/s^2)
+- $H_1$ is the water level in the reservoir (or junction) at the start of the pipe in meters
+- $H_2$ is the water level in the reservoir (or junction) at the end of the pipe in meters
+- $f$ is the friction factor
+- $L$ is the length of the pipe in meters
+- $D$ is the diameter of the pipe in meters
+- $\pm$ is a positive sign for the pipe inflow and a negative sign for outflow
+
+The flow rate for the junction is equal to the sum of the flow rates into the junction, minus the flowrates out of the 
+junction.
+
+$$Q_{j} = \pm Q_{1} \pm Q_{2} \pm Q_{3}$$
+
+The sign depends on the direction of the flow. If the flow is into the junction, the sign is positive. If the flow is out of the junction, the sign is negative.
+
+To solve this problem, we will guess at the hydraulic head at the junction use the **Goal Seek** tool to find a head 
+value
+in the 
+junction that results in a 
+net 
+flow 
+rate at the junction ($Q_j$) of zero. This will give us the water levels that will balance the flow rates through the 
+system.
+
+To solve the problem, do the following:
+
 1. Navigate to the **Three Reservoir Problem** sheet
 2. Name the cells in the spreadsheet according to this table:
 
 **Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
 
-   | Variable          | Cell | Name |
-   |-------------------|------|------|
-   | Pipe 1 Diameter   | C5   | Diam1|
-   | Pipe 2 Diameter   | C6   | Diam2|
-   | Pipe 3 Diameter   | C7   | Diam3|
-   | Pipe 1 Length     | D5   | Length1|
-   | Pipe 2 Length     | D6   | Length2|
-   | Pipe 3 Length     | D7   | Length3|
-   | Pipe 1 Friction     | E5   | Fric1|
-   | Pipe 2 Friction     | E6   | Fric2|
-   | Pipe 3 Friction     | E7   | Fric3|
-   | Pipe 1 Elevation     | F5   | Elev1|
-   | Pipe 2 Elevation     | F6   | Elev2|
-   | Pipe 3 Elevation     | F7   | Elev3|
-   | Junction Hydraulic Grade Line     | B11   | HGLj|
+   | Variable                | Cell | Name |
+   |-------------------------|------|-----|
+   | Gravity                 | C4   | g   |
+   | Head at junction, $H_j$ | C5   | H_j |
 
-3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
+3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the two variables listed above. Use relative addressing for the other variables.
 
 **Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations.
 
-   | Cell      | Equation                                                                          |
-   |-----------|-----------------------------------------------------------------------------------|
-   | D11       | $\sqrt{\dfrac{2 * 9.81 * (HGLj - Elev1)}{(\dfrac{Fric1 * Length1}{Diam1}) -1}}$   |
-   | F11       | $\sqrt{\dfrac{2 * 9.81 * (Elev2 - HGLj)}{(\dfrac{Fric2 * Length2}{Diam2}) +1}}$   |
-   | H11       | $\sqrt{\dfrac{2 * 9.81 * HGLj}{(\dfrac{Fric3 * Length3}{Diam3}) -1}}$           |
+   | Variable | Cell | Equation                                                                     |
+   |:--------:|:----:|------------------------------------------------------------------------------|
+   | V1       | C13  | $\sqrt{\dfrac{2 * g * (H_j - H_1)}{\left[\dfrac{F_1 * L_1}{D_1}\right] -1}}$ |
+   | V2       | D13  | $\sqrt{\dfrac{2 * g * (H_2 - H_j)}{\left[\dfrac{F_2 * L_2}{D_2}\right] +1}}$ |
+   | V3       | E13  | $\sqrt{\dfrac{2 * g * (H_j - H_3)}{\left[\dfrac{F_3 * L_3}{D_3}\right] -1}}$ |
 
-4. Use the following table to write the equations shown below in the cells indicated. 
 
-   | Cell      | Equation                                                                          |
-   |-----------|-----------------------------------------------------------------------------------|
-   | C11       | D11 * $(\dfrac{\pi}{4}*(Diam1)^2)$   |
-   | E11       | F11 * $(\dfrac{\pi}{4}*(Diam2)^2)$   |
-   | G11       | H11 * $(\dfrac{\pi}{4}*(Diam3)^2)$   |
-   | I11       | E11 - C11 - G11        |
+4. Now that we have the velocity in each pipe, we will multiply by the cross-sectional area of the pipe to get the 
+   flow rate in the pipe. Use the 
+   following table to write the equations shown below in the cells indicated. 
 
-5. Use **Goal seek** to compute the three unknown flowrates through setting Q_j (cell I11) to 0 by changing HGL_j (cell B11).
+   | Variable  |  Cell | Equation                       |
+   |:---------:|:---------:|--------------------------------|
+   | Q1        |   C14  | D11 * $\dfrac{\pi}{4}*(D_1)^2$ |
+   | Q2        |   C14  | F11 * $\dfrac{\pi}{4}*(D_2)^2$ |
+   | Q3        |   C14  | H11 * $\dfrac{\pi}{4}*(D_3)^2$ |
+   | Q_j       |   C16  | E11 - C11 - G11                |
+
+5. Using a starting value of H_j, use **Goal seek** to a value for HGL_j that results in $Q_j$ = zero. At this point,
+   the flow rates in and out of the junction will be balanced and we will solved for the correct values of $Q_1$, 
+   $Q_2$, and $Q_3$.
 
 ---
 
