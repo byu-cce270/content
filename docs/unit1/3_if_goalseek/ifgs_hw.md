@@ -74,23 +74,23 @@ To solve the problem, do the following:
 
    | Variable | Cell | Equation                                                                     |
    |:--------:|:----:|------------------------------------------------------------------------------|
-   | V1       | C13  | $\sqrt{\dfrac{2 * g * (H_j - H_1)}{\left[\dfrac{F_1 * L_1}{D_1}\right] -1}}$ |
-   | V2       | D13  | $\sqrt{\dfrac{2 * g * (H_2 - H_j)}{\left[\dfrac{F_2 * L_2}{D_2}\right] +1}}$ |
-   | V3       | E13  | $\sqrt{\dfrac{2 * g * (H_j - H_3)}{\left[\dfrac{F_3 * L_3}{D_3}\right] -1}}$ |
+   |  $V_1$   | C13  | $\sqrt{\dfrac{2 * g * (H_j - H_1)}{\left[\dfrac{F_1 * L_1}{D_1}\right] -1}}$ |
+   |  $V_2$   | D13  | $\sqrt{\dfrac{2 * g * (H_2 - H_j)}{\left[\dfrac{F_2 * L_2}{D_2}\right] +1}}$ |
+   |   $V_3$   | E13  | $\sqrt{\dfrac{2 * g * (H_j - H_3)}{\left[\dfrac{F_3 * L_3}{D_3}\right] -1}}$ |
 
 
 4. Now that we have the velocity in each pipe, we will multiply by the cross-sectional area of the pipe to get the 
    flow rate in the pipe. Use the 
    following table to write the equations shown below in the cells indicated. 
 
-   | Variable  |  Cell | Equation                       |
-   |:---------:|:---------:|--------------------------------|
-   | Q1        |   C14  | D11 * $\dfrac{\pi}{4}*(D_1)^2$ |
-   | Q2        |   C14  | F11 * $\dfrac{\pi}{4}*(D_2)^2$ |
-   | Q3        |   C14  | H11 * $\dfrac{\pi}{4}*(D_3)^2$ |
-   | Q_j       |   C16  | E11 - C11 - G11                |
+   | Variable |  Cell | Equation                       |
+   |:--------:|:---------:|--------------------------------|
+   |  $Q_1$   |   C14  | D11 * $\dfrac{\pi}{4}*(D_1)^2$ |
+   |  $Q_2$   |   C14  | F11 * $\dfrac{\pi}{4}*(D_2)^2$ |
+   |   $Q_3$   |   C14  | H11 * $\dfrac{\pi}{4}*(D_3)^2$ |
+   |   $Q_j$    |   C16  | E11 - C11 - G11                |
 
-5. Using a starting value of H_j, use **Goal seek** to a value for HGL_j that results in $Q_j$ = zero. At this point,
+5. Using a starting value of $H_j$, use **Goal seek** to a value for HGL_j that results in $Q_j$ = zero. At this point,
    the flow rates in and out of the junction will be balanced and we will solved for the correct values of $Q_1$, 
    $Q_2$, and $Q_3$.
 
