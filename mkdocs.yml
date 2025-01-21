@@ -21,6 +21,7 @@ nav:
   - Home: index.md
   - Class Resources:
     - Textbooks: resources/textbooks/textbooks.md
+    - Teaching Assistants (TAs): resources/tas.md
   - Unit 1 - Spreadsheet:
     - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
     - Analyzing/Managing Data, Conditional Formatting:
