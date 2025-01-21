@@ -102,7 +102,7 @@ If written correctly, your sheet should look like this when **x** is set to **27
 
 5. The force of the load on the beam causes the deflection to take the shape of a parabola as shown in the diagram. Use **Goal seek** to compute the two **x** locations that result in a deflection of **-2.0** inches: one closer to the left support, and one closer to the right support. Record your answers in cells **B20** and **B21**.
 
-**Hint:** Goal seek will find the answer closest to the pre-existing x value so to find the first solution, start with an x value near the left side, and to find the second solution, start with an x value near the right side.
+**Hint:** Goal seek will find the answer closest to the pre-existing x value so to find the first solution, start with an x value near the left side, and to find the second solution, start with an x value near the right side. Your first solution should fall in the range between 30 and 40 inches while the second should fall in the range between 90 and 100 inches.
 
 ---
 
