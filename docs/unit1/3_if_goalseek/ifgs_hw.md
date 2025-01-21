@@ -51,6 +51,7 @@
    | I11       | E11 - C11 - G11        |
 
 5. Use **Goal seek** to compute the three unknown flowrates through setting Q_j (cell I11) to 0 by changing HGL_j (cell B11).
+
 ---
 
 #### Part 2
