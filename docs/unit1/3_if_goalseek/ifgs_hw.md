@@ -90,7 +90,7 @@ To solve the problem, do the following:
    |   $Q_3$   |   E14  | $V_3$ * $\dfrac{\pi}{4}*(D_3)^2$ |
    |   $Q_j$    |   C16  | $Q_2$ - $Q_1$ - $Q_3$           |
 
-5. Using a starting value of $H_j$, use **Goal seek** to a value for HGL_j that results in $Q_j$ = zero. At this point,
+5. Using a starting value of $H_j$, use **Goal seek** to a value for $H_j$ that results in $Q_j$ = zero. At this point,
    the flow rates in and out of the junction will be balanced and we will solved for the correct values of $Q_1$, 
    $Q_2$, and $Q_3$.
 
