@@ -47,7 +47,7 @@ $$Q_{j} = \pm Q_{1} \pm Q_{2} \pm Q_{3}$$
 
 The sign depends on the direction of the flow. If the flow is into the junction, the sign is positive. If the flow is out of the junction, the sign is negative.
 
-To solve this problem, we will guess at the hydraulic head at the junction use the **Goal Seek** tool to find a head 
+To solve this problem, we will guess at the hydraulic head at the junction and use the **Goal Seek** tool to find a head 
 value
 in the 
 junction that results in a 
@@ -85,10 +85,10 @@ To solve the problem, do the following:
 
    | Variable |  Cell | Equation                       |
    |:--------:|:---------:|--------------------------------|
-   |  $Q_1$   |   C14  | D11 * $\dfrac{\pi}{4}*(D_1)^2$ |
-   |  $Q_2$   |   C14  | F11 * $\dfrac{\pi}{4}*(D_2)^2$ |
-   |   $Q_3$   |   C14  | H11 * $\dfrac{\pi}{4}*(D_3)^2$ |
-   |   $Q_j$    |   C16  | E11 - C11 - G11                |
+   |  $Q_1$   |   C14  | $V_1$ * $\dfrac{\pi}{4}*(D_1)^2$ |
+   |  $Q_2$   |   D14  | $V_2$ * $\dfrac{\pi}{4}*(D_2)^2$ |
+   |   $Q_3$   |   E14  | $V_3$ * $\dfrac{\pi}{4}*(D_3)^2$ |
+   |   $Q_j$    |   C16  | D14 - C14 - E14                |
 
 5. Using a starting value of $H_j$, use **Goal seek** to a value for HGL_j that results in $Q_j$ = zero. At this point,
    the flow rates in and out of the junction will be balanced and we will solved for the correct values of $Q_1$, 
@@ -145,23 +145,19 @@ If written correctly, your sheet should look like this when **x** is set to **27
 
 **Rubric:**
 
-|                         Item (Solar Installation)                         | Points Possible |
+|                         Item (Three Reservoir Problem)                    | Points Possible |
 |:-------------------------------------------------------------------------:|:---------------:|
-|         Data validation and IFS statement is correct in 1st table         |        2        |
-|                  Equation written correctly in 1st table                  |        2        |
-|     The correct # of panels is found with goal seek in 1st table (±2)     |        2        |
-|       Data validation and IF/IFS statement are correct in 2nd table       |        2        |
-|                Equation is written correctly in 2nd table                 |        2        |
-|   The correct price per watt is found with goal seek in 2nd table (±2)    |        2        |
-|        Data validation and VLOOKUP statements correct in 3rd table        |        2        |
-|                  Equation written correctly in 3rd table                  |        2        |
-|     The correct # of hours is found with goal seek in 3rd table (±2)      |        2        |
-|              <div style="text-align: right">**Total**</div>               |       18        |
+|                             Cells named correctly                         |        3        |
+|           Velocity equations are written correctly and use cell names     |        4        |
+|                    Flow rate equations are written correctly              |        4        |
+|           Correct flow rate values are found with goal seek (±0.005)      |        4        |
+|                <div style="text-align: right">**Total**</div>             |       15        |
+
 
 |               Item (Simply Supported Beam)                | Points Possible |
 |:---------------------------------------------------------:|:---------------:|
-|                   Cells named correctly                   |        2        |
-|    Equations are written correctly and use cell names     |        3        |
-|           The IF statement is written correctly           |        3        |
+|                   Cells named correctly                   |        3        |
+|    Equations are written correctly and use cell names     |        4        |
+|           The IF statement is written correctly           |        4        |
 |   The two correct values are found with goal seek (±2)    |        4        |
-|      <div style="text-align: right">**Total**</div>       |       12        |
+|      <div style="text-align: right">**Total**</div>       |       15        |
