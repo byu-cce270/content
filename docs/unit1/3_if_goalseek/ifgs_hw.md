@@ -88,7 +88,7 @@ To solve the problem, do the following:
    |  $Q_1$   |   C14  | $V_1$ * $\dfrac{\pi}{4}*(D_1)^2$ |
    |  $Q_2$   |   D14  | $V_2$ * $\dfrac{\pi}{4}*(D_2)^2$ |
    |   $Q_3$   |   E14  | $V_3$ * $\dfrac{\pi}{4}*(D_3)^2$ |
-   |   $Q_j$    |   C16  | D14 - C14 - E14                |
+   |   $Q_j$    |   C16  | $Q_2$ - $Q_1$ - $Q_3$           |
 
 5. Using a starting value of $H_j$, use **Goal seek** to a value for HGL_j that results in $Q_j$ = zero. At this point,
    the flow rates in and out of the junction will be balanced and we will solved for the correct values of $Q_1$, 
