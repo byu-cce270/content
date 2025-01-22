@@ -1,4 +1,4 @@
-# Exercise 1 - Employee Data
+# Exercise - Employee Data
 
 The following exercise is based on the Pivot Table and Query Functions we have just covered. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
