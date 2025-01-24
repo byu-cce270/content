@@ -176,5 +176,5 @@ Note that this is a slightly modified version the regional sales data set that w
 
 **Query Function:**
 
-3. In cell **A1** in the **query** sheet, create a query that references the data (A1:F31) in the **regional_sales_data** sheet and selects columns **A**, **C**, **D**, and **F** where the total sales value in column **F** is greater than or equal to **$4000**. Sort the results by the total sales value in descending order. 
+3. In cell **A1** in the **query** sheet, create a query that references the data (A1:F31) in the **regional_sales_data** sheet and selects columns **A**, **C**, **D**, and **F** where the total sales value in column **F** is greater than or equal to **$4000**. Sort the results by the total sales value in descending order. This will show the date, product, sales rep, and total sales for all sales greater than or equal to $4000.
  
