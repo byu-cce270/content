@@ -163,8 +163,18 @@ powerful and convenient. Here are some additional resources that you may find he
 * [Google Sheets Query function: The Most Powerful Function in Google Sheets](https://www.benlcollins.com/spreadsheets/google-sheets-query-sql/){:target="_blank"}
 
 ## Pre-Class Quiz Challenge
-Here is a link for the pre-class starter sheet: * [Pre-Class Challenge](https://docs.google.com/spreadsheets/d/19yz49DVrQadNCDGhVzRTAzaIuQeNE4hTiGFP1HJRcoM/edit?usp=sharing){:target="_blank"}
+Here is a link for the pre-class starter sheet: [Pre-Class Challenge](https://docs.google.com/spreadsheets/d/1U3q5NoCiYXrQ9XyYayJCNSyTibYSjzqggOx4_vNVk20/edit?gid=51987489#gid=51987489){:target="_blank"}
+
+Note that this is a slightly modified version the regional sales data set that we used in the pivot table example above. 
 
 ### Instructions
-1. In column E, create a query that will return all the material names that have less than 10 pounds of material.
-2. In column F, create a query that will return all the material names that cost more than $8 per pound. 
+
+**Pivot Table:**
+
+1. Select the entire table on the **regional_sales_data** sheet and create a pivot table in the existing **pivot** sheet.
+2. Use the Rows|Add feature to add the **Sales Rep** and **Product** columns in that order. Then add the **Units Sold** (Count) and **Total Sales** (Sum) columns as values. This will summarize the total units sold and total sales for each sales rep for each product.
+
+**Query Function:**
+
+3. In cell **A1** in the **query** sheet, create a query that references the data (A1:F31) in the **regional_sales_data** sheet and selects columns **A**, **C**, **D**, and **F** where the total sales value in column **F** is greater than or equal to **$4000**. Sort the results by the total sales value in descending order. 
+ 
