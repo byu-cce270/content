@@ -16,7 +16,7 @@ You can find the Employee Data starter sheet here: [Pivot Tables/Query Starter S
 
     **HINT**: An employee is active if the value in the Exit Date column is empty. Sometimes we can check for an empty value with (N = ") but in this case you have to use (N is null) because it is a date field.
 
-5. Navigate to the sheet titled "Pivot Table" and create a pivot table that includes the Job Title and Department columns.
+5. Navigate to the sheet titled "Pivot Table" and create a pivot table that includes the Job Title and Department rows.
 6. Using the pivot table just created, provide a count of the number of people with each job title and calculate the average salary for each job title.
 
 ## Turning in/Rubric
