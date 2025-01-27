@@ -2,9 +2,23 @@
 
 **Gantt Charts** are bar charts showing the start and finish dates of the different tasks that comprise a project. These charts can help in scheduling, managing, and monitoring specific tasks and resources in a project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task and is widely used in project management.
 
+## Use of Gantt Charts
+Construction managers, Facilty managers, and Civil Engineers use Gantt charts to plan and schedule construction projects. They are used to track the progress of the project and to ensure that the project is completed on time. Gantt charts are also used to allocate resources and to identify potential problems that may arise during the project. They are an essential tool for construction managers to ensure that the project is completed on time and within budget.
+
+They are used on nearly all projects. The CFM studenst will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
+
+This figure is from project management software and shows a Gantt chart for a construction project. The chart shows 
+the start and finish dates of the different tasks that comprise the project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task. In the CFM class, you will learn to associate resources, staff, costs, and other important information with these tasks and perform critical path analysis to identify the most critical tasks in the project.
+
 ![gantt_chart.png](images/gantt_chart.png)
 
-For Construction Manangement students, you will take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
+## Gantt Chart Creation in Google Sheets
+We will learn to create Gantt charts in Google Sheets. This involves several distinct steps
+* Identify the start date of each task
+* Identify the duration or end of each task. One of these can be calculated from the other.
+* Create a "calendar" sheet to draw the task lines
+* Use conditional formatting to color the Gantt chart
+* Use the SPARKLINE function to draw the "percent complete" on Gantt chart
 
 ## Formulas Used in Gantt Chart Creation
 
