@@ -31,6 +31,7 @@ You can find more information about the WEEKDAY() function [here](https://suppor
   4. We are going to set up the Gantt Chart so the weekday will always start on a Monday so the formatting will always be consistent. To do this, set cell E5 to be equal to the project start date minus the weekday the project start date falls on.
 
        * Hint: When using the WEEKDAY() function, set the [type] to '3' to set the start of the week to Monday.
+       * So if today is a Wednesday, the start of the week, and the dates on the sheet, will be Monday of the same week or 2 days before today. So "today" minus 2 is Monday. 
     
       
   5. Set cell F5 to be E5+1.
