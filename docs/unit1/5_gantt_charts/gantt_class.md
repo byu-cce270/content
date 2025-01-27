@@ -5,7 +5,7 @@ The following exercise will have you create a simple Gantt chart in a Google she
 You can find the Gantt Chart In-Class Exercise here: [Gantt Chart In-Class Starter Sheet](https://docs.google.com/spreadsheets/d/1k8ACDgTKBveKUnfcdLnX6djCPG3-Sa6K8LO9h9yh3A0/edit?usp=sharing){:target="_blank"}
 
 ## Overview
-We will do the folloowing:
+We will do the following:
 * Create a Title block that includes the project title, the company name, the project manager's name, and the project start date.
 * We will create a row of cells with dates in them that will represent the days of the project.
 * We will create a row of cells that have the days of the week below the dates (M, T, W, etc.).
