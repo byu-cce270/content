@@ -12,14 +12,13 @@ We will do the following:
 * We will create a list of tasks that need to be completed in the "Task" column.
 * We will create start dates and durations for each task in the "Start" and "Duration" columns.
 * We will compute the end date for each task using the start date and duration.
-* We will use conditional formating to color the cells between the start and end dates of each task. This will 
-  create the Gantt chart.
+* We will use conditional formating to color the cells between the start and end dates of each task. This will   create the Gantt chart.
 * We will format the Gantt chart to make it look nice.
 
 **Note** We are using todays date to start the header columns. THis means that the chart will reformat each day you 
 open the sheet. We use the weekday use the "weekday" function to make sure the week always starts on a Monday. For example, if todays date is a Wednesday, then the chart would start 2 days before today. On next Monday, the chart would reformat to just that week.
 
-**WEEKDAY() Function**  returns a number representing the day of the week of the day provided. The "type" parameter 
+The **WEEKDAY() Function**  returns a number representing the day of the week of the day provided. The "type" parameter 
 is used to determine which numbering system to use to represent weekdays. If type is 1, start on Saturday, if type 
 is 2, start on Sunday, if type is 3, start on Monday. 
 You can find more information about the WEEKDAY() function [here](https://support.google.com/docs/answer/3092985?hl=en){:target="_blank"}.
