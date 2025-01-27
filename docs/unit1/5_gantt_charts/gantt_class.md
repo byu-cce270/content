@@ -4,16 +4,79 @@ The following exercise will have you create a simple Gantt chart in a Google she
 
 You can find the Gantt Chart In-Class Exercise here: [Gantt Chart In-Class Starter Sheet](https://docs.google.com/spreadsheets/d/1k8ACDgTKBveKUnfcdLnX6djCPG3-Sa6K8LO9h9yh3A0/edit?usp=sharing){:target="_blank"}
 
-## Overview
-We will do the following:
-* Create a Title block that includes the project title, the company name, the project manager's name, and the project start date.
-* We will create a row of cells with dates in them that will represent the days of the project.
-* We will create a row of cells that have the days of the week below the dates (M, T, W, etc.).
-* We will create a list of tasks that need to be completed in the "Task" column.
-* We will create start dates and durations for each task in the "Start" and "Duration" columns.
-* We will compute the end date for each task using the start date and duration.
-* We will use conditional formating to color the cells between the start and end dates of each task. This will   create the Gantt chart.
-* We will format the Gantt chart to make it look nice.
+We will be creating a portion of the Gantt chart featured in the video on the in-class page. You will then finish the Gantt chart on your own for your homework assignment. At the end of in-class exercise, your chart should look something like this:
+
+(GET A NEW SCREENSHOT)
+
+There are seven main steps to creating a Gantt chart in Google Sheets.
+
+1. Project Information, Phases, and Tasks 
+2. Creating the Timeline 
+3. Applying Formatting 
+4. Adding Progress Bars for Tasks on Timeline 
+5. Making the Timeline Dynamic 
+6. Adding Summary Progress Bars 
+7. Summary Duration and Grouping 
+
+For the in-class exercise, we will be completing steps 1-4. For the homework, you will complete steps 5-7.
+
+## Step 1 - Project Information, Phases, and Tasks
+
+In this step, you will add the project title, company name, project manager's name, and project start date to the Gantt chart. We will also enter some phases and tasks for the project.
+
+
+INSERT INSTRUCTIONS HERE
+
+
+(see 0:18 - 1:26 of the video)
+
+
+
+
+
+## Step 2 - Creating the Timeline
+
+In this step, you will create the timeline for the Gantt chart. You will use  a series of date functions including TODAY(), WEEKDAY(), LEFT(), and TEXT() to create the timeline.
+
+
+
+INSERT INSTRUCTIONS HERE
+
+(see 1:27 - 3:08 of the video)
+
+
+
+
+## Step 3 - Applying Formatting
+
+In this step, you will apply conditional formatting to the Gantt chart to color the cells between the start and end dates of each task. You will also apply formatting to make the Gantt chart look nice.
+
+
+
+INSERT INSTRUCTIONS HERE
+
+
+(see 3:09 - 5:14 of the video)
+
+
+
+
+## Step 4 - Adding Progress Bars for Tasks on Timeline
+
+In this step, you will add progress bars to the Gantt chart to show the progress of each task. We will use conditional formatting to make the progress bars change color based on the progress of the task.
+
+
+INSERT INSTRUCTIONS HERE
+
+
+(see 5:15 - 6:00 of the video)
+
+
+
+
+
+
+
 
 **Note** We are using todays date to start the header columns. THis means that the chart will reformat each day you 
 open the sheet. We use the weekday use the "weekday" function to make sure the week always starts on a Monday. For example, if todays date is a Wednesday, then the chart would start 2 days before today. On next Monday, the chart would reformat to just that week.

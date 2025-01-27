@@ -15,6 +15,13 @@ While there is dedicated software for creating Gantt charts, you can also create
 !!!Note
       CFM students will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
 
+## Video Overview
+
+This exercise is aimed at recreating tha Gantt Chart shown in the following video. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing.
+
+<iframe width="1024" height="768" src="https://www.youtube.com/embed/8eKk0M2zGIk?si=hMLQdiO63ycpidaf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+
 ## Gantt Chart Creation in Google Sheets
 We will learn to create Gantt charts in Google Sheets. This involves several distinct steps
 

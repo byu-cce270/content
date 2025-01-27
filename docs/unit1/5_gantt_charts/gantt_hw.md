@@ -2,6 +2,57 @@
 
 **Purpose:** Learn how to format and display a project schedule using a Gantt chart in Google Sheets.
 
+For your homework, we will complete the Gantt chart we started in class. We will:
+
+* Make the timeline dynamic so that it always starts on a Monday.
+* Highlight the current day on the timeline.
+* Add summary progress bars to the Gantt chart.
+* Add summary duration and grouping to the Gantt chart.
+
+Start with the Gantt chart you created in class. If you were not able to complete the in-class activity, you will need to complete that first before starting the homework.
+
+## Step 5 - Making the Timeline Dynamic
+
+In this step, you will make the timeline dynamic so that it always starts on a Monday. This will ensure that the formatting of the Gantt chart is consistent. We will also highlight the current day on the timeline.
+
+
+INSERT INSTRUCTIONS HERE
+
+
+(see 6:01 - 7:55 of the video)
+
+
+
+## Step 6 - Adding Summary Progress Bars
+
+In this step, you will add progress bars to the Gantt chart to show the progress of each task. We will use the sparkline feature to show a progress bar for each task.
+
+
+INSERT INSTRUCTIONS HERE
+
+(see 7:55 - 9:24 of the video)
+
+
+
+## Step 7 - Summary Duration and Grouping
+
+In this step, you will add a summary duration for each phase of the project. You will also group the tasks into phases and add a summary duration for each phase.
+
+
+
+INSERT INSTRUCTIONS HERE
+
+(see 9:25 - 10:30 of the video)
+
+
+
+
+
+
+
+
+
+
 ## Instructions
 1. Create a new Google Sheet and rename is something like "[Your Name] HW 1.6 - Gantt Charts"
 2. Following the same format as the in class activity, give your project a project title, insert your company name, project manager name, and the start date as today's current date. 
