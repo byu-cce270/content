@@ -34,6 +34,11 @@ WEEKDAY(date, [type])
   * date - the date for which to determine the day of the week
   * type - [OPTIONAL - 1 by default] - a number that indicates which numbering system to use to represent weekdays. If type is 1, days are counted from Sunday; the value of Sunday is 1 and the value of Saturday is 7. If type is 2, days are counted from Monday; the value of Monday is 1 and the value of Sunday is 7.
 
+**Use** 
+
+* We will use this to convert a date into a number representing the day of the week. We will do some math to that 
+that the week always starts on a Monday.
+
 
 ### [TEXT()](https://support.google.com/docs/answer/3094139?hl=en&sjid=3583168966296803426-NC){:target="_blank"}
 This formula converts a number into text according to a specified format.
@@ -45,6 +50,11 @@ TEXT(number, format)
   * number - the number, date, or time that needs formatted
   * format - the pattern by which to format the number, must be enclosed in quotation marks.
 
+**Use**
+
+* We will use TEXT() to convert the number returned by WEEKDAY() into a text representation of the day of the week. So 
+a "3" becomes "Mon" for a week that starts on Saturday which is the default in Google Sheets.
+
 ### [LEFT()](https://support.google.com/docs/answer/3094079?hl=en){:target="_blank"}
 This formula returns a specified number of characters from the beginning of a specified string.
 
@@ -54,6 +64,11 @@ LEFT(string, [number_of_characters])
 
   * string - the string from which the left portion will be returned.
   * number_of_characters - [OPTIONAL - 1 by default] - the number of characters you want to return from the left side of the string
+
+**Use**
+
+* We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart  
+using only single letters for the days of the week.
 
 ### [IFERROR()](https://support.google.com/docs/answer/3093304?hl=en&sjid=3583168966296803426-NC){:target="_blank"}
 This formula returns the first argument if there is not an error value. If an error value is present, the formula will return the second argument if present, or a blank if the second argument is absent.
@@ -65,6 +80,10 @@ IFERROR(value, [value_if_error])
   * value - the value to return if value itself is not an error
   * value_if_error - [OPTIONAL - blank by default] - the value the function returns if value is an error
 
+**Use**
+* This allows us to return a blank cell if an error is computed in the cell. This is useful for the SPARKLINE() 
+function we will use later.
+
 ### [SPARKLINE()](https://support.google.com/docs/answer/3093289?hl=en&sjid=3583168966296803426-NC){:target="_blank"}
 This formula creates a miniature chart contained within a single cell.
 
@@ -74,6 +93,9 @@ SPARKLINE(data, [options])
 
   * data - the range or array containing the data to plot
   * options - [OPTIONAL] - a range or array of optional settings and associated values used to customize the chart. For more information on the options argument, view the sparkline help page linked above.
+
+**Use**
+* On a more advanced Gantt chart we can have a column that is a sparkline that shows the progress of a task. This is a simple way to visualize the progress of a task in a Gantt chart.
 
 
 # Pre-Class Quiz Challenge
