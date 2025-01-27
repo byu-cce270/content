@@ -70,7 +70,7 @@ LEFT(string, [number_of_characters])
 * We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart  
 using only single letters for the days of the week.
 
-### [IFERROR()](https://support.google.com/docs/answer/3093304?hl=en&sjid=3583168966296803426-NC){:target="_blank"}
+### [IFERROR()](https://support.google.com/docs/answer/3093304?hl=en&sjid=3583168966296803426-NC){:target="blank"}
 This formula returns the first argument if there is not an error value. If an error value is present, the formula will return the second argument if present, or a blank if the second argument is absent.
 
 **Syntax**
