@@ -26,8 +26,8 @@ Notice that the first week always starts on the project start date. But it would
 
 Next, we will add a new control that lets us display the week we want to see. This will allow us to scroll through the weeks of the project beyond the first 4 weeks. For example, given the phases and tasks it is possible that the entire project would take more than 4 weeks. By changing the display week, we can see that week on the left and the subsequent 3 weeks after that.
 
-3. In cell D3, enter "Display Week:".
-4. In Cell E3, enter a number (1, 2, 3, etc.) to represent the week you want to display.
+3. In cell C3, enter "Display Week:".
+4. In Cell D3, enter a number (1, 2, 3, etc.) to represent the week you want to display.
 5. Change the formatting of cells D3 and E3 to make them match the formatting of the project start date (cells C2 and D2). Make sure E3 is formatted as a number and not a date.
 6. In cell F4, edit the formula you edited above to add "+(D3-1)*7" to the end of the formula. This will allow you to change the display week and see the subsequent weeks of the project. 
 7. Try entering different numbers in cell D3 to see how the display week changes.
