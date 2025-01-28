@@ -28,7 +28,7 @@ Next, we will add a new control that lets us display the week we want to see. Th
 
 3. In cell C3, enter "Display Week:".
 4. In Cell D3, enter a number (1, 2, 3, etc.) to represent the week you want to display.
-5. Change the formatting of cells D3 and E3 to make them match the formatting of the project start date (cells C2 and D2). Make sure E3 is formatted as a number and not a date.
+5. Change the formatting of cells C3 and D3 to make them match the formatting of the project start date (cells C2 and D2). Make sure E3 is formatted as a number and not a date.
 6. In cell F4, edit the formula you edited above to add "+(D3-1)*7" to the end of the formula. This will allow you to change the display week and see the subsequent weeks of the project. 
 7. Try entering different numbers in cell D3 to see how the display week changes.
 
