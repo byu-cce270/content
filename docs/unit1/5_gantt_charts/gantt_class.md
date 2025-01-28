@@ -1,4 +1,4 @@
-# In-Class Exercise: Gantt Charts
+# In-Class Exercise: Gantt Chart/Project Scheduling and Tracking
 
 The following exercise will have you create a simple Gantt chart in a Google sheets similar to the one featured in 
 the video on the reading page. There are seven main steps to creating a Gantt chart in Google Sheets.
@@ -13,8 +13,7 @@ the video on the reading page. There are seven main steps to creating a Gantt ch
 
 For the in-class exercise, we will be completing steps 1-4. For the homework, you will complete steps 5-7.
 
-To begin, open the in-class workbook: [Gantt Chart In-Class Starter Sheet](https://docs.google.
-com/spreadsheets/d/1k8ACDgTKBveKUnfcdLnX6djCPG3-Sa6K8LO9h9yh3A0/edit?usp=sharing){:target="_blank"}. Make a copy 
+To begin, open the in-class workbook: [Gantt Chart In-Class Starter Sheet](https://docs.google.com/spreadsheets/d/1H05DH9pcKG1q65efnIZw92OVbZCzvgBX7EyZPLdpek4/edit?gid=0#gid=0){:target="_blank"}. Make a copy 
 and follow the instructions below.
 
 ## Step 1 - Project Information, Phases, and Tasks
@@ -36,6 +35,8 @@ Now we need to enter some phases and tasks for the project.
 
 5. Enter "Phase 1" in cell A6.
 6. Enter a series of tasks for Phase 1 in cells A7:A10.
+
+You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task names. In practice, you would use wider column widths and enter more descriptive phase and task names.
 
 Next, we will enter the start and end dates for each task.
 

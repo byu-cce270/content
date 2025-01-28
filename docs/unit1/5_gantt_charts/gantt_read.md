@@ -1,4 +1,4 @@
-# Gantt Charts
+# Reading: Gantt Chart/Project Scheduling and Tracking
 
 **Gantt Charts** are bar charts showing the start and finish dates of the different tasks that comprise a project. These charts can help in scheduling, managing, and monitoring specific tasks and resources in a project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task and is widely used in project management.
 
@@ -17,9 +17,9 @@ While there is dedicated software for creating Gantt charts, you can also create
 
 ## Video Overview
 
-This exercise is aimed at recreating tha Gantt Chart shown in the following video. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing.
+This exercise is aimed at recreating tha Gantt Chart shown in the following video. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing. Don't worry about remembering all of the details - we will go over them in class. The objective of this video is to give you a general idea of how we will be creating our Gantt chart and how they work.
 
-<iframe width="1024" height="768" src="https://www.youtube.com/embed/8eKk0M2zGIk?si=hMLQdiO63ycpidaf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="700" src="https://www.youtube.com/embed/8eKk0M2zGIk?si=hMLQdiO63ycpidaf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 
 ## Gantt Chart Creation in Google Sheets
