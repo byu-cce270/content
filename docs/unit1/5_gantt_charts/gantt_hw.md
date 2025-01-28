@@ -12,6 +12,8 @@ Start with the Gantt chart you created in class. If you were not able to complet
 
 ## Step 5 - Making the Timeline Dynamic
 
+Before beginning, make a copy of your in class assignment and rename it according to the proper HW naming convention.
+
 In this step, you will make the timeline dynamic so that it always starts on a Monday. This will ensure that the formatting of the Gantt chart is consistent. We will also highlight the current day on the timeline.
 
 Notice that the first week always starts on the project start date. But it would be more convenvient if each of the weeks started on a Monday. We will add a formula to make this happen.
