@@ -67,24 +67,21 @@ In this step, you will create the timeline for the Gantt chart. You will use  a 
 3. Drag the date in cell F4 6 cells to the right to fill in a week's worth of dates.
 4. Select the 7 dates, and use custom formatting to display only the day of the month.
 5. Resize the columns to make the dates small boxes.
-6. In cell F5, use the TEXT function to display the day of the week for the date in cell F4. (Hint: Use the "DDD" 
-   format). Then, use the LEFT function to display only the first letter of the day of the week.
-7. Drag the formula in cell F5 to fill in the rest of row 5.
+6. In cell F5, use the TEXT function to display the day of the week for the date in cell F4. (Hint: Use the "DDD" format). Then, use the LEFT function to display only the first letter of the day of the week.
+7. Drag the formula in cell F5 to fill in the rest of row 5 for the week.
 8. Use the LEFT() and TEXT() functions to display the day of the week in the format "M", "T", "W", etc. in row 6
 
 Now we want to add a header for the week with the date of the first day of the week.
 
-9. Merge the cells F3:L3 and use a formula in the merged cell to reference the date of the first day of the week in 
-   cell F4. 
+9. Merge the cells F3:L3 and use a formula in the merged cell to reference the date of the first day of the week in cell F4. 
 10. Change the date formatting to display the full date in the merged cell.
 
 Next, we will copy our completed week to the next 3 weeks to the right to create a total of 4 weeks.
 
 11. Select columns F:L and copy to the clipboard.
-12. Use the paste-special function to paste the formatting only in columns M:S, T:Y, and Z:AG.
-13. Select the data in cells F3:L5 and drag to the right to fill in the next 3 weeks.
+12. Paste the columns to M:S, T:Y, and Z:AG. At this point you will have 4 weeks of dates. **Note**: this is different from the video. In the video, the formatting is copy-pasted separately from the dates. You can do it that way if you prefer.
 14. Change the date in cell F4 to reference the project start date in cell D2.
-15. Enter a formula in cell G4 to reference the date in cell F4 plus 1 day. Drag the formala all the way to the right to fill in the rest of the dates.
+15. Enter a formula in cell G4 to reference the date in cell F4 plus 1 day. Drag the formula all the way to the right to fill in the rest of the dates for all 4 weeks.
 
 Now try double-clicking on the project start date to select a new date and watch the timeline update.
 
@@ -107,7 +104,7 @@ end dates of each task. You will also apply formatting to make the Gantt chart l
 4. Use horizontal alignment to center the contents of cells B3:AG16.
 5. Left-justify week headers in row 3.
 6. Adjust background colors, font colors, size, etc as needed to make the headers stand out.
-7. Select the first week header (F3:L4) and add an outside border and a light gray fill color.
+7. Select the first week header (F3:L4) and add an outside border and a light fill color of your choice.
 8. Copy-paste this formatting to the other week headers.
 9. Format the phase rows with a background color and bold text.
 10. Add horizontal borders to the task rows.
@@ -121,16 +118,10 @@ At this point, your Gantt chart should look something like this:
 
 ## Step 4 - Adding Progress Bars for Tasks on Timeline
 
-In this step, you will add progress bars to the Gantt chart to show the progress of each task. This will consist of 
-a color bar covering the dates associated with each task. We could add this manually, but there is a way to have it 
-automatically update using conditional formatting.
+In this step, you will add progress bars to the Gantt chart to show the progress of each task. This will consist of a color bar covering the dates associated with each task. We could add this manually, but there is a way to have it automatically update using conditional formatting.
 
 1. Select all of the cells below the timeline where we want to put the progress bars (F6:AG15).
-2. Add a conditional formatting rule to fill the cell with a color if the date in the cell is greater than or equal to 
-   the start date of the task and less than or equal to the end date of the task. Use the "Custom formula is" option 
-   for the conditional formatting rule. Then enter a formula as if you were in the upper left cell of the range. Use 
-   the AND() function to check if the date is greater than or equal to the start date and less than or equal to the 
-   end date. Use absolute references for the row and relative references for the column. 
+2. Add a conditional formatting rule to fill the cell with a color if the date in the cell is greater than or equal to the start date of the task and less than or equal to the end date of the task. Use the "Custom formula is" option for the conditional formatting rule. Then enter a formula as if you were in the upper left cell of the range. Use the AND() function to check if the date is greater than or equal to the start date and less than or equal to the end date. Use absolute references for the row and relative references for the column. Pick a color for the fill.
 
 (see 5:15 - 6:00 of the video)
 

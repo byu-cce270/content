@@ -41,7 +41,7 @@ Next, we will use conditional formatting to highlight the current day on the tim
 ```
 =F$4=TODAY()
 ```
-12. Change the highlight color to red and the font to be white and bold.
+12. Change the highlight color to red (or some other color that stands out) and the font to be white and bold.
 13. Click on "Done" to apply the conditional formatting.
 
 If necessary, change the project start date so that the current day is highlighted on the timeline.
@@ -69,6 +69,8 @@ Next, we will add a sparkline to show the progress of each task based on the per
 ```
 =SPARKLINE(C7,{"charttype","bar";"color1","blue";"max",1})
 ```
+Note: You can choose a different color than blue if you like.
+
 8. Copy the formula in cell D7 to cells D8:D15 using Paste Special|Paste Formula Only.
 
 Note that for cells that do not have a percentage entered in the progress column, the sparkline will show an error. We can use the IFERROR() function to hide the error.
@@ -78,8 +80,6 @@ Note that for cells that do not have a percentage entered in the progress column
 =IFERROR(SPARKLINE(C7,{"charttype","bar";"color1","blue";"max",1}),)
 ```
 10. Copy the formula in cell D7 to cells D8:D15 using Paste Special > Paste Formula Only.
-
-Note that "IFERROR is kind of a misnomer. In reality, it is more like "IF NO ERROR". If there is an error, it will return the second argument, which in this case is a blank cell by default. But if there is no error, it will return the sparkline.
 
 Next, we will do a little cleanup.
 
