@@ -26,7 +26,7 @@
         - Make it something useful so it adds value to the sheet
    - Create a sheet in your project that reports on how each group member contributed (if any group member was not easy to communicate with or didn't show up to help with the project let the head TA or the professor know, and they will take care of it)
 
-4. After you have completed your project, create a video. You can use ScreenCast-O-Matic for this (https://screencast-o-matic.com/ ). Upload your video to YouTube and get a public link for it.  The main purpose of this video is to make grading these projects easier. When making your video:
+4. After you have completed your project, create a video. You can use ScreenPal (formerly ScreenCast-O-Matic) for this [https://screenpal.com/](https://screenpal.com/){:target="_blank"}. SreenPal records your screen and your voice as you demonstrate what your project does and how it works. After you record your video, there is a "share" link in ScreenPal that lets you upload the video to YouTube and get a public link for it.  The main purpose of this video is to make grading these projects easier. When making your video:
    - Keep it short (ideally under 4 min)
    - Show how your group completed every element in the rubric
    - Have each group member share one thing they learned. 
