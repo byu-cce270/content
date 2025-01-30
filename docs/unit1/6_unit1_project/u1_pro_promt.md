@@ -3,9 +3,11 @@
 **Purpose:** The purpose of this assignment is to showcase how much you have learned during this Google Sheets unit of the class. You will get to choose with your team between 3 different prompts listed below.
 
 ## Instructions
-1. Form a team of 3 members and choose a group name. Record your team name and members of our team here: 
-       [Fall 2024 Team Sign Up Sheet](https://docs.google.com/spreadsheets/d/1M5wcMbjZQoYJGmpG7rlZ5Y9DnLdN6QDcRKndbbrm2-U/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+1. Form a team of 3 members and choose a group name. Record your team name and members of our team here:
 </br>(Please note that you will be with this team for all other projects and will use this name the whole semester. So chose wisely)
+
+   - [Section 1 (Tue/Thur) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1UzYiJP2lircfUVAUKqwEMr5OekIEfV-Hudox3Jd9OwM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1c1g7XN_e6pTDDpmfZ5c6ug8Jsork3KS0jV3bZGh8Jm0/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 2. You will then choose one of the three prompts listed below.
 
