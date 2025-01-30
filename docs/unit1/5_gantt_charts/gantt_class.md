@@ -40,18 +40,18 @@ You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task nam
 
 Next, we will enter the start and end dates for each task.
 
-9. Enter the start date for each task in cells B7:B10. Typically, the start date for the first task is the project 
+7. Enter the start date for each task in cells B7:B10. Typically, the start date for the first task is the project 
    start date.
-10. Enter the duration for each task in cells C7:C10.
-11. Calculate the end date for each task using a formula by adding the duration to the start date in cells D7:D10. Add the number of days to the start date and subtract 1 to get the end date.
+8. Enter the duration for each task in cells C7:C10.
+9. Calculate the end date for each task using a formula by adding the duration to the start date in cells D7:D10. Add the number of days to the start date and subtract 1 to get the end date.
 
 **Note**: The instructions in the video say to add 1 to the end date of one task to get the start date of the next task. 
 This assumes that you cannot start the next task until the previous task is completed. This is not always the case. 
 So just enter independent start dates for each task. The start dates should be ascending order - that is, the start 
 date of task 2 should be on the same day or after the start date of task 1, etc.
 
-7. Copy-paste your Phase 1 title and tasks to cells A11:A15.
-8. Modify the start dates and durations for Phase 2 tasks in cells B12:B15 and C12:C15.
+10. Copy-paste your Phase 1 title and tasks to cells A11:A15.
+11. Modify the start dates and durations for Phase 2 tasks in cells B12:B15 and C12:C15.
 
 (see 0:18 - 1:26 of the video)
 
@@ -64,24 +64,23 @@ At this point, your Gantt chart should look something like this:
 In this step, you will create the timeline for the Gantt chart. You will use  a series of date functions including TODAY(), WEEKDAY(), LEFT(), and TEXT() to create the timeline.
 
 1. Enter a date in cell F4 that is 1 day prior to the start date (will adjust this later).
-3. Drag the date in cell F4 6 cells to the right to fill in a week's worth of dates.
-4. Select the 7 dates, and use custom formatting to display only the day of the month.
-5. Resize the columns to make the dates small boxes.
-6. In cell F5, use the TEXT function to display the day of the week for the date in cell F4. (Hint: Use the "DDD" format). Then, use the LEFT function to display only the first letter of the day of the week.
-7. Drag the formula in cell F5 to fill in the rest of row 5 for the week.
-8. Use the LEFT() and TEXT() functions to display the day of the week in the format "M", "T", "W", etc. in row 6
+2. Drag the date in cell F4 6 cells to the right to fill in a week's worth of dates.
+3. Select the 7 dates, and use custom formatting to display only the day of the month.
+4. Resize the columns to make the dates small boxes.
+5. In cell F5, use the TEXT function to display the day of the week for the date in cell F4. (Hint: Use the "DDD" format). Then, use the LEFT function to display only the first letter of the day of the week.
+6. Drag the formula in cell F5 to fill in the rest of row 5 for the week.
 
 Now we want to add a header for the week with the date of the first day of the week.
 
-9. Merge the cells F3:L3 and use a formula in the merged cell to reference the date of the first day of the week in cell F4. 
-10. Change the date formatting to display the full date in the merged cell.
+7. Merge the cells F3:L3 and use a formula in the merged cell to reference the date of the first day of the week in cell F4. 
+8. Change the date formatting to display the full date in the merged cell.
 
 Next, we will copy our completed week to the next 3 weeks to the right to create a total of 4 weeks.
 
-11. Select columns F:L and copy to the clipboard.
-12. Paste the columns to M:S, T:Y, and Z:AG. At this point you will have 4 weeks of dates. **Note**: this is different from the video. In the video, the formatting is copy-pasted separately from the dates. You can do it that way if you prefer.
-14. Change the date in cell F4 to reference the project start date in cell D2.
-15. Enter a formula in cell G4 to reference the date in cell F4 plus 1 day. Drag the formula all the way to the right to fill in the rest of the dates for all 4 weeks.
+9. Select columns F:L and copy to the clipboard.
+10. Paste the columns to M:S, T:Y, and Z:AG. At this point you will have 4 weeks of dates. **Note**: this is different from the video. In the video, the formatting is copy-pasted separately from the dates. You can do it that way if you prefer.
+11. Change the date in cell F4 to reference the project start date in cell D2.
+12. Enter a formula in cell G4 to reference the date in cell F4 plus 1 day. Drag the formula all the way to the right to fill in the rest of the dates for all 4 weeks.
 
 Now try double-clicking on the project start date to select a new date and watch the timeline update.
 
