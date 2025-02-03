@@ -6,6 +6,8 @@
 
 **Challenge:** While working on this assignment, look through the code that was already written and try to see if you understand it. We will be teaching you about this later on. 
 
+## Manning's Equation
+
 Manning's equation is used to calculate the flow of water through an open channel. The equation is as follows:
 
 $$
@@ -35,9 +37,9 @@ For this problem, we will be considering rectangular and trapezoidal channels as
 
 ![channel_flow_example.png](images/channel_flow_example.png){width=1000px}
 
-Based on this information, the area (A) and wetted perimeter (P) can be calculated as follows:
+Based on this information, the area ($A$) and wetted perimeter ($P_w$) can be calculated as follows:
 
-| Channel Type |            Area (A)            |             Wetted Perimeter (P)              |
+| Channel Type |           Area ($A$)           |           Wetted Perimeter ($P_w$)            |
 |:------------:|:------------------------------:|:---------------------------------------------:|
 |  Rectangular |              $by$              |                    $b+2y$                     |
 |  Trapezoidal | $\left(\dfrac{b+T}{2}\right)y$ | $b+2\sqrt{\left(\dfrac{T-b}{2}\right)^2+y^2}$ |
