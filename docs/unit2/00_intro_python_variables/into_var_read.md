@@ -28,11 +28,11 @@ Open a new colab notebook do the following:
 
 1. Create 3 different types of variables:
 
-<blockquote>
+>
    - String<br>
    - Integer<br>
    - Float
-</blockquote>
+
 
 2. Use the **input()** function to prompt for the user's name. Then using **print()** function, print the name given.<br><br>
 
