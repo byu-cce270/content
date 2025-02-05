@@ -62,8 +62,11 @@ Don’t be too overwhelmed by the code. These instructions will clearly indicate
 
 ---
 
-**Step 3.** Use input statements to get the following information from the user. Store the inputs in the appropriate 
-variables.
+**Step 3.** Create the following variables. Use at least one input statement, you can hard-code the rest. 
+
+Add  comments explaining the options for each variable or what the variable is 
+
+(hint put no space before the start of the variables in the input statement):
 
 | Variable name |                     Description/Options                     | Variable Type |
 |:-------------:|:-----------------------------------------------------------:|:-------------:|
