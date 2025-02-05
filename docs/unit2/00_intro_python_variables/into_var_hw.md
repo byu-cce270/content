@@ -10,26 +10,22 @@
 
 Manning's equation is used to calculate the flow of water through an open channel. The equation is as follows:
 
-$$
-Q = \frac{u}{n}A(R_h^{2/3})(S_o^{1/2})
-$$
+>>$Q = \dfrac{u}{n}A(R_h^{2/3})(S_o^{1/2})$
 
 Where:<br>
->>- $Q$ is the flow rate in cubic feet per second<br>
-  - $u$ is units coefficient (1.49 for English units and 1 for metric units)<br>
-  - $n$ is the Manning's roughness coefficient based on the material of the channel<br>
-  - $R_h$ is the hydraulic radius of the channel<br>
-  - $S_o$ is the slope of the channel
+>>$Q$ = the flow rate in cubic feet per second<br>
+  $u$ = units coefficient (1.49 for English units and 1 for metric units)<br>
+  $n$ = the Manning's roughness coefficient based on the material of the channel<br>
+  $R_h$ = the hydraulic radius of the channel<br>
+  $S_o$ = the slope of the channel
 
 The hydraulic radius is calculated as follows:
 
-$$
-R_h = \frac{A}{P_w}
-$$
+>>$R_h = \dfrac{A}{P_w}$
 
 Where:<br>
->>- $A$ is the cross-sectional area of the flow <br>
-  - $P_w$ is the wetted perimeter in feet
+>>$A$ = the cross-sectional area of the flow <br>
+$P_w$ = the wetted perimeter in feet
 
 The wetted perimeter is the length of the channel in the channel cross section that is in contact with the water.
 
@@ -45,9 +41,9 @@ Based on this information, the area ($A$) and wetted perimeter ($P_w$) can be ca
 |  Trapezoidal | $\left(\dfrac{b+T}{2}\right)y$ | $b+2\sqrt{\left(\dfrac{T-b}{2}\right)^2+y^2}$ |
 
 Where:<br>
->>- $b$ is the bottom width of the channel in feet<br>
-  - $T$ is the top width of the channel in feet<br>
-  - $y$ is the water depth in feet
+>>$b$ = the bottom width of the channel in feet<br>
+  $T$ = the top width of the channel in feet<br>
+  $y$ = the water depth in feet
 
 ## Instructions
 
@@ -106,11 +102,13 @@ Try out your code to make sure it is working correctly. When running your code, 
 |       y       |     6     |
 
 It should output something like this:
-> Flow rate =  1608.38  cubic feet per second </br>
-> Average velocity =  13.403  feet per second </br>
-> u=  1.49  n=  0.012  A=  120.0  P=  32.0  Rh=  3.75  Q=  1608.380422171807  V=  13.403170184765058
+
+      Flow rate =  1608.38  cubic feet per second
+      Average velocity =  13.403  feet per second
+      u=  1.49  n=  0.012  A=  120.0  P=  32.0  Rh=  3.75  Q=  1608.380422171807  V=  13.403170184765058
 
 ## Turning in/Rubric
+
 Turn sharing, editing on. Then turn in the link to learning suite in the feedback box
 
 **Rubric:**
