@@ -102,7 +102,7 @@ Try out your code to make sure it is working correctly. When running your code, 
 |   materials   | concrete  |
 |       b       |    20     |
 |       T       |    20     |
-|      S_o      |   0.002   |
+|      So       |   0.002   |
 |       y       |     6     |
 
 It should output something like this:
