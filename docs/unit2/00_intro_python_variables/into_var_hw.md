@@ -13,7 +13,7 @@ Manning's equation is used to calculate the flow of water through an open channe
 >>$Q = \dfrac{u}{n}A(R_h^{2/3})(S_o^{1/2})$
 
 Where:<br>
->>$Q$ = the flow rate in cubic feet per second<br>
+>>$Q$ = the flow rate in cubic feet per second (or cubic meters per second) <br>
   $u$ = units coefficient (1.49 for English units and 1 for metric units)<br>
   $n$ = the Manning's roughness coefficient based on the material of the channel<br>
   $R_h$ = the hydraulic radius of the channel<br>
