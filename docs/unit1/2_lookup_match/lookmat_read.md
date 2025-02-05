@@ -81,7 +81,13 @@ where:
 | range       | The table of information in which data is looked up. Use a reference to a range or a range name.|
 | search_type | An optional parameter that directs the function on how to find the `search_key` in the `range`.   |
 
-The search_type has three different options for an input. If nothing is input for this parameter, the default value will be 1 which indicates that the values are sorted in ascending order. It will return the largest value less than or equal to the search_key. The second value is -1 and works opposite to 1. It indicates that the values are sorted in descending order and will return the smallest value greater than or equal to the search_key. The last acceptable input is 0. This option directs the function to search for an exact match to the search_key. If the range is not sorted, this is the best option. 
+The search_type has three different options for an input as shown in the table below. If nothing is input for this parameter, the default value will be **1** which indicates that the values are sorted in ascending order. It will perform a range lookup and return the largest value less than or equal to the search_key. The second value is **-1** and works opposite to 1. It indicates that the values are sorted in descending order and perform a range lookup and return the smallest value greater than or equal to the search_key. The last acceptable input is **0**. This option directs the function to search for an exact match to the search_key.  
+
+| Search Type |        Explanation        |
+|:-----------:|:-------------------------:|
+|      1      | Ascending Order (default) |
+|      0      |        Exact Match        |
+|     -1      |     Descending Order      |
 
 MATCH is a great function to pair with the VLOOKUP function. Occasionally it is useful to do a two-dimensional lookup where a value is found from a table containing both rows and columns. For example, consider the following sheet containing a table of temperatures in degree F illustrating a relationship between average monthly temp and elevation in ft for a particular location.
 
@@ -93,7 +99,7 @@ Starting at row 24, another table is listed and the objective is to fill in the 
 
 For the values shown, the function would return "**Mar**". Then we need to use this text string to automatically find the index of the column corresponding to this month. This can be done with the MATCH function as follows:
 
-    MATCH(TEXT(B28,"MMM"),$C$5:$N$5,0)
+    MATCH(TEXT(B28,"MMM"),$B$7:$N$7,0)
 
 The first argument to the MATCH function is the lookup value, the second argument is an array (row or column of values) and the third argument indicates the type of match to perform (a value of **0** tells it to find an exact match). The function looks through the array to find the lookup value and returns the index of the item if found. For the arguments shown, the function would return a value of **3**. At this point, we are ready to use the VLOOKUP function. We would formulate the function call as follows:
 

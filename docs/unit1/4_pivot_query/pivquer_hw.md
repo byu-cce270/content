@@ -4,7 +4,7 @@
 
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet - HW Pivot Tables & Query](https://docs.google.com/spreadsheets/d/1pGdgsPzEM5ut-0GVPKQJ8Kz7nSL1OHsaVC_KOrr0MKk/edit?usp=sharing){:target="_blank"}
+   [Starter Sheet - HW Pivot Tables & Query](https://docs.google.com/spreadsheets/d/1__eHBgjb9pZAlpfAtQ35LTMt8a-BroQ79vLmHEwzdzU/edit?gid=0#gid=0){:target="_blank"}
 2. Rename it something like "[Your Name] HW Pivot Tables & Query"
  
 ---
@@ -28,8 +28,30 @@
 ---
 
 #### Part 3
-1. Create a pivot table that references the incident data found in the Data tab. The table should include Month and Year columns.
-2. For each year/month combo, include a count of the number of incidents during that time and a sum of the incident cost.
+
+In this part, you will create a pivot table that summarizes the incident data found in the Data tab. We will 
+checking to see if there are any noticeable trends in the accident data relative to gender and age group.
+
+1. Create a pivot table on the **pivot_table_1** sheet that references the incident data found in the **data** tab. 
+2. Use the **Rows|Add** feature to add a row for the **Gender** and then **Age Group** fields.
+2. Use the **Values|Add** feature to add a value for the **Days Lost** (Average) and **Incident Cost** (Average) fields. 
+
+Are there any noticeable trends in the data?
+
+**FULL DISCLOSURE**: This is a fake dataset and the data is not real.
+
+---
+
+### Part 4
+
+In this part, we want you to create another pivot in the **pivot_table_2** sheet, but in this case we want you to 
+examine the data and create a pivot table that explores data correlations that **YOU** find interesting. Make sure to 
+use at least two combinations of fields in the **Rows** section and at least two combinations of fields in the **Values** 
+section.
+
+For example, are there are plants that have more incidents than others? What are the more common incident types?
+
+---
 
 ## Submission/Rubric
 Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box.

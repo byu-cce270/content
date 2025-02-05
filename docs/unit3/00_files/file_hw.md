@@ -1,6 +1,6 @@
 #  HW: Reading and Writing Files
 
-**Purpose:** In this assignment you are given a csv file from the UDOT. You are going to go through the file and count how many speed limit signs there are of the various speed limits. You can find where to access this data [here](https://data-uplan.opendata.arcgis.com/datasets/uplan::speed-limit-signs-1/explore?location=40.705286%2C-111.838968%2C12.49 )
+**Purpose:** In this assignment you are given a csv file from the UDOT. You are going to go through the file and count how many speed limit signs there are of the various speed limits. You can find where to access this data [here](https://data-uplan.opendata.arcgis.com/datasets/uplan::speed-limit-signs-1/explore?location=40.705286%2C-111.838968%2C12.49 ){:target="_blank"}
 
 ## Instructions
 
@@ -10,7 +10,7 @@
 ___
 
 ### Uploading your file to the Colab Notebook
-1. Open this link to a Google spreadsheet called [Signs](https://docs.google.com/spreadsheets/d/1BZ7EEaaEOXzzgQUbLKVCEBnU4SpjnjWYlR34aQlz4F0/edit?gid=1541112318#gid=1541112318). It contains Speed limit sign data such as the condition of the sign, the speed, and other info.
+1. Open this link to a Google spreadsheet called [Signs](https://docs.google.com/spreadsheets/d/1VCgoaI3w9rs3LF9Tu-RIb-9La8fHyM1h31t_sttrmy8/edit?gid=1541112318#gid=1541112318){:target="_blank"}. It contains Speed limit sign data such as the condition of the sign, the speed, and other info.
 2. Once opened, go to the file tab --> download --> select Comma Separated Files (.csv)
 3. Go back to your Colab notebook and upload your file. For reference, the preclass reading for files has a step-by-step guide on how to upload a file to a Colab notebook
 

@@ -6,8 +6,7 @@
 
 On the O'Reilly's website read chapter 3 in _Python Crash Course, 3rd Edition_. 
 </br>Here is a direct link to the readings: [PCC Chapter 3: Introducing Lists](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c03.xhtml){:target="_blank"}.
-n
-Remember that you will have to sign in to you free account that you created earlier.
+Remember that you will have to log in using your byu netid to get access as described [here](../../resources/textbooks/textbooks.md){:target="_blank"}.
 
 ## Things to Look Out For
 

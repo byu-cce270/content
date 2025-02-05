@@ -6,7 +6,7 @@
 
 ---
 
-**Instructions**
+## Instructions
 
 1.  Create a new Python notebook and rename it something like "[Your Name] HW 2.2 - Lists"
 2. In the first code block, create four new lists with names: task_names, task_durations, material_names, and material_quantities.
