@@ -25,7 +25,11 @@ Step 3. Find the part of the code that looks like this:
 ################################ Step 3 here ##################################
 ```
 
-Create the following input statements with comments explaining the options (put no space before the start of the variables):
+Create the following variables. Use at least one input statement, you can hard-code the rest. 
+
+Add  comments explaining the options for each variable or what the variable is 
+
+(hint put no space before the start of the variables):
 
 | Variable name |                     Things the comments                     | Variable Type |
 |:-------------:|:-----------------------------------------------------------:|:-------------:|
