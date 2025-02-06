@@ -45,6 +45,5 @@ The following is not apart of the rubric, but specifies how you can lose points.
 
 |                      **Reasons for Points Lost**                      | **Amount** |  
 |:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
 |                        Link shared incorrectly                        |     3      |
 |       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
