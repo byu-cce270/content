@@ -117,3 +117,10 @@ Turn sharing, editing on. Then turn in the link to learning suite in the feedbac
 |        Part 3 - VLOOKUP equation is correct        |        5        |
 |           Part 3 - Total cost is correct           |        2        |
 |   <div style="text-align: right">**Total**</div>   |       30        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
