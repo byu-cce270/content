@@ -22,7 +22,7 @@ ___
 ---
 
 ### Sign Counter Code
-1. Now time to do the real work! In the second code block, you are given a dictionary named "Sign_counter" where the keys are the MPH of the signs and the value is the signs with the corresponding MPH. Note they are all initialized to zero. The objective is to read our given file and find the total number of each sign. This will be WAY faster than counting it on our own!
+1. Now it's time to do the real work! In the second code block, you are given a dictionary named "Sign_counter" where the keys are the MPH of the signs and the value is the signs with the corresponding MPH. Note they are all initialized to zero. The objective is to read our given file and find the total number of each sign. This will be WAY faster than counting it on our own!
 2. In a new line underneath the given dictionary, write code that will loop through the list of strings you imported from the file. For each line (string) you will loop through the items in the dictionary to see if the speed limit is in the string. If so, increment the corresponding counter. 
 
       - For example, since Sign_counter has a key value of "10" if the file contains an MPH sign with a speed limit of 10, then I would add 1 to the corresponding value of "10" in Sign_counter for EACH occurrence of "10" in the file. This process would be the same for each key value of Sign_counter.
@@ -31,7 +31,8 @@ ___
 3. In the next code block, print each MPH speed limit sign in Sign_counter with its NEW value.
 4. When done, here are the values you should get:
 
-![Sign_Counter_HW](https://github.com/user-attachments/assets/5c6e7b82-2895-4a98-b600-915254db8fb0)
+![Screenshot 2025-02-06 132024](https://github.com/user-attachments/assets/523a1c5b-e0e4-4b49-8e1f-ea39bcec817b)
+
 
 ### Creating Your New File 
 1. In the last code block you will be creating a new file and put in the new values of Sign_counter.
@@ -44,17 +45,16 @@ ___
 
 5. Open the file and **double-check that your values are on separate lines**. Here's an example of what your file should look like:
 
-![Screenshot 2024-10-31 134127](https://github.com/user-attachments/assets/f04fea9a-024d-4922-a118-752ea23572cc)
+![Screenshot 2025-02-06 132725](https://github.com/user-attachments/assets/b0102f56-0436-4855-bf2d-c02a3173a488)
 
 
 # Turning In/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created. 
-**
+Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created.**
 
 |                      **Item**                       | **Amount** |
 |:---------------------------------------------------:|:----------:|
-|        File is imported correctly to a list         |     6      |
+|        File is imported correctly as a list         |     6      |
 |        Sign counters are properly calculated        |     12     |
 |            Results are correctly printed            |     6      |
 | Results are saved to a text file  and on new lines  |     6      |
