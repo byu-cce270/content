@@ -74,3 +74,11 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |    The function prints every material and its related price     |     4      |
 |                      The total is returned                      |     2      |
 |         <div style="text-align: right">**Total**</div>          |   **30**   |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+| No comments explaining why AI is used and what its provided code does |    2-3     |
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
