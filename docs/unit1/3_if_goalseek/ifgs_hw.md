@@ -161,3 +161,10 @@ If written correctly, your sheet should look like this when **x** is set to **27
 |           The IF statement is written correctly           |        4        |
 |   The two correct values are found with goal seek (±2)    |        4        |
 |      <div style="text-align: right">**Total**</div>       |       15        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
