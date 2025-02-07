@@ -115,7 +115,7 @@ Turn sharing, editing on. Then turn in the link to learning suite in the feedbac
 
 |                                           Item                                            | Points Possible |
 |:-----------------------------------------------------------------------------------------:|:---------------:|
-| Input statements are made correctly, stored in the correct variable with the correct type |       15        |
+| At least one input statements is made and all other variables are made with the correct type |       15        |
 |          Equations are typed in correctly and are stored in the correct variable          |       15        |
 |                      <div style="text-align: right">**Total**</div>                       |       30        |
 
