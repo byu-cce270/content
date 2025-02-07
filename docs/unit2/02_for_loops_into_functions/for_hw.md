@@ -21,7 +21,7 @@ $l$ = the length of the beam<br>
 $E$ = the modulus of elasticity<br>
 $I$ = the moment of inertia
 
-For multiple loads, the total deflection is the sum of the deflections due to each individual load.
+For multiple loads, the total deflection is the sum of the deflections due to each individual load. For this assignment, you will analyze a list of beams and calculate the deflection of each beam. For each beam, you will calculate the total deflection due to multiple loads using the equation above.
 
 ---
 
