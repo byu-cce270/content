@@ -41,7 +41,7 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 ---
 
-**Instructions**
+## Instructions
 
 1.  Create a copy of the starter sheet and rename it something like "[Your Name] HW 2.3 - For Loops"
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/02_for_loops_into_functions/for_loops_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -55,7 +55,7 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 ---
 
-**Rubric:**
+## Rubric
 
 |                                            Lists                                                     | Points Possible |
 |:----------------------------------------------------------------------------------------------------:|:---------------:|
