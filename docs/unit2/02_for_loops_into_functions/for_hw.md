@@ -15,13 +15,29 @@ The deflection at the end of the beam is given by the following equation:
 where:
 
 >>$\delta_{max}$ = the maximum deflection at the end of the beam<br>
-$P$ = the point load<br>
-$a$ = the distance from the fixed side to the point load<br>
-$l$ = the length of the beam<br>
-$E$ = the modulus of elasticity<br>
-$I$ = the moment of inertia
+$P$ = the point load [$mass$]<br>
+$a$ = the distance from the fixed side to the point load $length$]<br>
+$l$ = the length of the beam [$length$]<br>
+$E$ = the modulus of elasticity  [$force/length^2$]<br>
+$I$ = the moment of inertia [$length^4$]
 
-For multiple loads, the total deflection is the sum of the deflections due to each individual load. For this assignment, you will analyze a list of beams and calculate the deflection of each beam. For each beam, you will calculate the total deflection due to multiple loads using the equation above.
+The modulus of elasticity is a measure of the stiffness of the beam. The moment of inertia of a beam depends on its dimensions and cross-sectional properties. Here are some approximate moments of inertia for common beam I-beams:
+
+| Beam Type | Moment of Inertia ($I$) |
+|:---------:|:-----------------------:|
+|   W6×12   |       140 $cm^4$        |
+|   W8x31   |      1,260 $cm^4$       |
+|  W12x50   |      4,800 $cm^4$       |
+|  W18x86   |      17,200 $cm^4$      |   
+|  W24x162  |      66,000 $cm^4$      |
+
+
+For multiple loads, the total deflection is the sum of the deflections due to each individual load. For this assignment, you will analyze a list of beams and calculate the deflection of each beam. For each beam, you will calculate the total deflection due to multiple loads using the equation above. We will assume that we have a steel beam with the following properties:
+
+| Property |     Value     |
+|:--------:|:-------------:|
+| $E$      | 20e6 $N/cm^2$ |
+| $I$      | 4,800 $cm^4$  |
 
 ---
 
