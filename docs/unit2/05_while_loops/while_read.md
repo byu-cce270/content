@@ -17,7 +17,7 @@ Also we will be going over how to create different forms. [Introduction to Forms
  - While loops can run indefinitely if the conditions are never met
  - Input statements always return a string variable by default
  - The modulo operator returns the remainder
- - Creating forms and markdowns
+ - Creating forms and different inputs
 
 
 ---
