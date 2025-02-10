@@ -10,7 +10,7 @@ On the O'Reilly's website read chapter 7 in _Python Crash Course, 3rd Edition_.
 
 Remember that you will have to sign in to you free account that you created earlier.
 
-Also we will be going over how to create forms and markdown. [Introduction to Forms and markdowns.](https://www.tutorialspoint.com/google_colab/google_colab_adding_forms.htm).{:target="_blank"}.
+Also we will be going over how to create forms and markdown. [Introduction to Forms and Markdowns.](https://www.tutorialspoint.com/google_colab/google_colab_adding_forms.htm).{:target="_blank"}.
 
 
 ## Thing to Look Out For
