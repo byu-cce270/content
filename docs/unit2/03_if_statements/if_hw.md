@@ -50,14 +50,14 @@ For this example, a student has given you a list of trusses he needs to solve fo
 ###Steps
 1. Under the line "main for loop", create a for loop that will go through each order in the given "orders " list.
 2. In the next line, create a for loop that will read each item in the "Total_order" list.
-3. Now, compare if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item.
+3. Now, create a 3rd loop that loops through the totals  if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item total.
     - EX: If steel is in the "order" list and "total_orders" list, then the value for steel in the "total_orders" list should increase by 1 for each occurrence of steel. This should be the same for wood and brick.
-4. Print each of the final values for wood, brick, and steel. Here are the final values that you should get:
+4. Write a loop to print each of the final values for wood, brick, and steel. Here are the final values that you should get:
     - 14 orders of wood
     - 10 orders of brick
     - 8 orders of steel
-    - 6 orders of Concrete
     - 12 orders of Glass
+    - 6 orders of Concrete
 
 ---
 
