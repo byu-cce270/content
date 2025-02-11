@@ -9,6 +9,9 @@ On the O'Reilly's website read chapter 5 in _Python Crash Course, 3rd Edition_.
 
 Remember that you will have to sign in to you free account that you created earlier.
 
+_Optional:_ In class we will be going over how to create different forms colab. [Introduction to forms and different inputs.](https://www.tutorialspoint.com/google_colab/google_colab_adding_forms.htm){:target="_blank"}.
+
+
 ## Things to look out for
 - indentation of if and elif statements
 - comparative operators such as >, <, and ==
