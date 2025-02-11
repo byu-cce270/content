@@ -25,6 +25,7 @@
 15. Write code to find and print the duration of the longest task, and the name of the task.
 16. Write code to find and print the duration of the shortest task, and the name of the task.
 17. Write code to find and print the average duration of the tasks.
+18. Add comments to separate and explain each section of your code.
 
 ---
 
