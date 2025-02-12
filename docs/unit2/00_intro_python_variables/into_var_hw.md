@@ -6,6 +6,8 @@
 
 **Challenge:** While working on this assignment, look through the code that was already written and try to see if you understand it. We will be teaching you about this later on. 
 
+---
+
 ## Manning's Equation
 
 Manning's equation is used to calculate the flow of water through an open channel. The equation is as follows:
@@ -45,6 +47,8 @@ Where:<br>
   $T$ = the top width of the channel in feet<br>
   $y$ = the water depth in feet
 
+---
+
 ## Instructions
 
 **Step 1.**  Make a copy of the starter sheet here:
@@ -52,11 +56,7 @@ Where:<br>
 
 **Step 2.** Rename it something like “[your name] HW - Introduction to Python and Variables”
 
----
-
-Don’t be too overwhelmed by the code. These instructions will clearly indicate where to put different steps from here on out.
-
----
+<pre> _Don’t be too overwhelmed by the code. These instructions will clearly indicate where to put different steps from here on out._</pre>
 
 **Step 3.** Create the following variables. Use at least one input statement, you can hard-code the rest. 
 
