@@ -5,7 +5,7 @@
 
 ---
 
-## Getting Started
+### Getting Started
 1. First make a copy of the starter sheet here:
    [HW Analyzing & Managing Data](https://docs.google.com/spreadsheets/d/1z9aHndUNtykZRRPncvE9h9ZbW7JfEta5npLSiirBanQ/edit?usp=sharing){:target="_blank"}
 2. Rename it something like “[Your Name] HW Analyzing & Managing Data”
