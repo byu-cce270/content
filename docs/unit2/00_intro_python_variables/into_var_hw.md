@@ -56,7 +56,7 @@ Where:<br>
 
 **Step 2.** Rename it something like “[your name] HW - Introduction to Python and Variables”
 
->_Don’t be too overwhelmed by the code. These instructions will clearly indicate where to put different steps from here on out._
+>>_Don’t be too overwhelmed by the code. These instructions will clearly indicate where to put different steps from here on out._
 
 **Step 3.** Create the following variables. Use at least one input statement, you can hard-code the rest. 
 
