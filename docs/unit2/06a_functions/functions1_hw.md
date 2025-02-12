@@ -6,7 +6,7 @@
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/06a_functions/functions1_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-2. Rename it something like "[Your Name] HW 2.6a - Functions (Part 1)"
+2. Rename it something like "[Your Name]Functions_(Part 1)_homework.ipynb"
 
 In this assignment, you will be creating functions that calculate the total area, volume, weight, and cost of different gravel types for a landscaping project.
 
