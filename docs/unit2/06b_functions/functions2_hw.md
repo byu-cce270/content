@@ -44,7 +44,7 @@ $I$ = the moment of inertia (in inches^4)
 
 2. Create a seventh function that calculates and returns the moment of inertia using this formula:
 
->>$\ I=\frac{bh^3}{12} $
+>>$\I=\frac{bh^3}{12}$
 
 where:
 
@@ -89,7 +89,7 @@ $I$ = the moment of inertia (in inches^4)
 
 4. On a new line, create the variable **y** using the following equation:
 
->>$\ y=\frac{h}{2} $
+>>$\y=\frac{h}{2}$
 
 5. On a new line within the code block, create a variable **I** that calls the moment of inertia function you created earlier, with the variables **b** and **h** defined earlier as its arguments
 
