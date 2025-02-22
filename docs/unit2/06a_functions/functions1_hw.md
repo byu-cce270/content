@@ -38,9 +38,9 @@ In this assignment, you will be creating functions that calculate the total area
    | "Canadian Blend" | 115   |                           
    | "Rainbow Beach"  | 160   |                      
 
-2. On a new line within the code block, print the **gravel_cost** dictionary and then create the following input statements:
+2. On a new line within the code block, print the **gravel_cost** dictionary and then create the following (input) form fields:
 
-   | Variable Name |                            Prompt                           | Variable Type |
+   | Variable Name |                     Form Field Placeholder                  | Variable Type |
    |:-------------:|:-----------------------------------------------------------:|:-------------:|
    |    gravel     |          Asks what gravel type the user wants to buy        |    string     |
    |       d       |         Asks what the depth of the gravel is in inches      |    integer    |
@@ -51,7 +51,7 @@ In this assignment, you will be creating functions that calculate the total area
 6. On a new line within the code block, create a variable that calls the function **vol_to_ton** with the volume in cubic yards as its argument - this will calculate the tonnage of the gravel.
 7. On a new line within the code block, create a variable that calls the function **get_gravel_cost** with the dictionary and gravel type as its arguments, and multiplies the value returned by that function by the tonnage of gravel. This will calculate the total cost of the gravel.
 8. Use five separate print statements that print the area of the gravel, depth of the gravel, volume of the gravel, tons of gravel, and cost of the gravel
-9. Run all the cells, then input **Rainbow Beach** as the gravel type and **3** for depth. If 
+9. Run all the cells, then input **Rainbow Beach** as the gravel type and **3** for depth in the form fields. If 
    done correctly, the total should come out to be **$9126**.
 
 ---
@@ -66,7 +66,7 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |             cuftToCuyd function is defined correctly            |     4      |
 |              volToTon function is defined correctly             |     4      |
 |          getCostofGravel function is defined correctly          |     4      |
-| The input statements and related variables are properly created |     2      |
+|      The forms and related variables are properly created       |     2      |
 |               All functions are called correctly                |     7      |
 |             All print statements created correctly              |     5      |
 |         <div style="text-align: right">**Total**</div>          |   **30**   |
