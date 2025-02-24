@@ -18,6 +18,7 @@ In this assignment, you will be creating functions that calculate the total area
 2. On a new line within the code block, define a function called **cuft_to_cuyd** with one input parameter: **cubic_ft**, which is the volume of gravel in cubic feet. Within the function, calculate the volume of the gravel in cubic yards, then return it
 3. On a new line within the code block, define a function called **vol_to_ton** with one input parameter, **vol_yds**, which is the volume of the gravel in cubic yards. Within the function, calculate the tonnage of the gravel (1 cubic yard of gravel weighs about 1.4 tons), then return it
 4. On a new line within the code block, define a function called **get_gravel_cost** with two input parameters, **gravel_dict** and **gravel**, which is a dictionary of gravel types/costs and the type of gravel, respectively. Within the function, create a variable called **cost** that pulls the cost associated with the gravel type from the dictionary
+5. Go back and before each code use markdown and explain the function of each code that you created. 
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: You will use both parameters to correctly pull the cost</br>
 
 ---
@@ -67,7 +68,7 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |              volToTon function is defined correctly             |     4      |
 |          getCostofGravel function is defined correctly          |     4      |
 |      The forms and related variables are properly created       |     2      |
-|               All functions are called correctly                |     7      |
+|               All functions are called correctly and used markdown               |     7      |
 |             All print statements created correctly              |     5      |
 |         <div style="text-align: right">**Total**</div>          |   **30**   |
 
