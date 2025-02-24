@@ -10,27 +10,38 @@ distance **a** from the fixed side on the left as shown in the following diagram
 
 The deflection at the end of the beam is given by the following equation:
 
-$$\delta_{max}=\frac{Pa^2}{6EI}\left(3l-a\right)$$
+>>$\delta_{max}=\dfrac{Pa^2}{6EI}\left(3l-a\right)$
 
 where:
 
-&nbsp;&nbsp;&nbsp;&nbsp;\(\delta_{max}\) = the maximum deflection at the end of the beam
-   
-&nbsp;&nbsp;&nbsp;&nbsp;\(P\) = the point load
-   
-&nbsp;&nbsp;&nbsp;&nbsp;\(a\) = the distance from the fixed side to the point load
-   
-&nbsp;&nbsp;&nbsp;&nbsp;\(l\) = the length of the beam
-   
-&nbsp;&nbsp;&nbsp;&nbsp;\(E\) = the modulus of elasticity
-   
-&nbsp;&nbsp;&nbsp;&nbsp;\(I\) = the moment of inertia
+>>$\delta_{max}$ = the maximum deflection at the end of the beam<br>
+$P$ = the point load [$mass$]<br>
+$a$ = the distance from the fixed side to the point load $length$]<br>
+$l$ = the length of the beam [$length$]<br>
+$E$ = the modulus of elasticity  [$force/length^2$]<br>
+$I$ = the moment of inertia [$length^4$]
 
-For multiple loads, the total deflection is the sum of the deflections due to each individual load.
+The modulus of elasticity is a measure of the stiffness of the beam. The moment of inertia of a beam depends on its dimensions and cross-sectional properties. Here are some approximate moments of inertia for common beam I-beams:
+
+| Beam Type | Moment of Inertia ($I$) |
+|:---------:|:-----------------------:|
+|   W6×12   |       140 $cm^4$        |
+|   W8x31   |      1,260 $cm^4$       |
+|  W12x50   |      4,800 $cm^4$       |
+|  W18x86   |      17,200 $cm^4$      |   
+|  W24x162  |      66,000 $cm^4$      |
+
+
+For multiple loads, the total deflection is the sum of the deflections due to each individual load. For this assignment, you will analyze a list of beams and calculate the deflection of each beam. For each beam, you will calculate the total deflection due to multiple loads using the equation above. We will assume that we have a steel beam with the following properties:
+
+| Property |     Value     |
+|:--------:|:-------------:|
+| $E$      | 20e6 $N/cm^2$ |
+| $I$      | 4,800 $cm^4$  |
 
 ---
 
-**Instructions**
+## Instructions
 
 1.  Create a copy of the starter sheet and rename it something like "[Your Name] HW 2.3 - For Loops"
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/02_for_loops_into_functions/for_loops_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -44,7 +55,7 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 ---
 
-**Rubric:**
+## Rubric
 
 |                                            Lists                                                     | Points Possible |
 |:----------------------------------------------------------------------------------------------------:|:---------------:|
@@ -59,3 +70,11 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 |                   For loop is created to calculate the deflection of each beam                       |        5        |
 |        Print statements created that specify the length of the beam and the total deflection         |        3        |
 |                          <div style="text-align: right">**Total**</div>                              |       30        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+| No comments explaining why AI is used and what its provided code does |    2-3     |
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |

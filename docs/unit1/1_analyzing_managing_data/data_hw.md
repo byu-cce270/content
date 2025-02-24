@@ -1,17 +1,18 @@
 #  HW: Analyzing & Managing Data
 
-**Purpose:** This assignment aims to test your ability to manage and format data. In this assignment, you will filter out certain types of data in different sheets. You will use the different ways of managing data that we went over in class: Conditional formatting, filters, graphing, and functions. The data we will be using is measurements taken from the Provo River. If you are interested in looking at more data from the Provo River you can access it at this link: 
-
+**Purpose:** This assignment aims to test your ability to manage and format data. In this assignment, you will filter out certain types of data in different sheets. You will use the different ways of managing data that we went over in class: Conditional formatting, filters, graphing, and functions. The data we will be using is measurements taken from the Provo River. If you are interested in looking at more data from the Provo River you can access it at this link:
 [Provo River Data](https://waterdata.usgs.gov/monitoring-location/10163000/#parameterCode=00065&period=P7D){:target="_blank"}
-   
-## Instructions
+
+---
+
+### Getting Started
 1. First make a copy of the starter sheet here:
    [HW Analyzing & Managing Data](https://docs.google.com/spreadsheets/d/1z9aHndUNtykZRRPncvE9h9ZbW7JfEta5npLSiirBanQ/edit?usp=sharing){:target="_blank"}
 2. Rename it something like “[Your Name] HW Analyzing & Managing Data”
 
 ---
 
-#### Part 1
+### Part 1 - Filtering Data
 
 1. Ok, so here's what's going on. Your boss from the in-class assignment, you know the one that promoted you... anyways. Well, you have impressed him so much that now he has invested in you to start your own company that monitors the local river for public safety. To start this new company, your old boss has given you projects. Here are his instructions to you:
 2. Navigate to the sheet that says “Streamflow data Part 1”
@@ -27,7 +28,9 @@
 12. Next filter the data by Flowrate (CFS). Only show the rows whose flow is between 45 - 50
 13. Duplicate that sheet and rename it “Part 1 Flow Rate”
 
-#### Part 2 
+---
+
+### Part 2 - Graphing Data
 
 1. Navigate to the "Streamflow Data Part 1" sheet. Clear any existing filters (if any are still active).
 2. Duplicate the sheet and name it "Part 2 Graphs"
@@ -38,7 +41,9 @@
       - Each slice is labeled and a count is displayed (ONLY for pie charts)
       - **NOTE:** Refer back to the reading and in-class activity for examples of the different types of graphs. The goal of this is to make sure your graph is clearly labeled and neat.
 
-#### Part 3
+---
+
+### Part 3 - Formatting Data
 
 1. Navigate to the sheet that says “Streamflow Data Part 2”
 2. Format the table using colors, bold the headers, and make it easy to read.
@@ -48,8 +53,9 @@
 6. Give the data in column E a scaled color where the lower numbers are the darker version of the color and the higher numbers are the lighter version of that color
 7. Give the data in column F a color if the text does not contain a 5
 
+---
 
-#### Part 4
+### Part 4 - Summary Statistics
 
 1. Navigate to the Summary Statistics sheet.
 2. On this page, you will see spots to use formulas to summarize the data taken at different places on the river (or stations). Use the appropriate formula and data from your “Streamflow data Part 2” sheet to make those calculations in the top half of the table.
@@ -78,8 +84,8 @@ Turn sharing and editing on. Then turn in the link to Learning Suite in the feed
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+|                **Reasons for Points Lost**                | **Amount** |  
+|:---------------------------------------------------------:|:----------:|
+|                  Link shared incorrectly                  |     3      |
+| Turned in late. 10% or 3 points for every week it's late. |    3-15    |
 

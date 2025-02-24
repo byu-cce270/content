@@ -6,7 +6,7 @@
 
 ---
 
-**Instructions**
+## Instructions
 
 1.  Create a new Python notebook and rename it something like "[Your Name] HW 2.2 - Lists"
 2. In the first code block, create four new lists with names: task_names, task_durations, material_names, and material_quantities.
@@ -25,6 +25,7 @@
 15. Write code to find and print the duration of the longest task, and the name of the task.
 16. Write code to find and print the duration of the shortest task, and the name of the task.
 17. Write code to find and print the average duration of the tasks.
+18. Add comments to separate and explain each section of your code.
 
 ---
 
@@ -49,3 +50,11 @@
 |                        Average duration of tasks is found and printed correctly                         |        2        |
 |                  Code is organized and comments are used to explain and separate code                   |        2        |
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+| No comments explaining why AI is used and what its provided code does |    2-3     |
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |

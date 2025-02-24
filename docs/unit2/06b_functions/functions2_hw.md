@@ -5,7 +5,7 @@
 ##  Instructions
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/06b_functions/functions2_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-2. Rename it something like "[Your Name] HW 2.6b - Functions (Part 2)"
+2. Rename it something like "[Your Name]Functions_(Part 2)_homework"
 
 In this assignment, you will be creating code that will allow a user to find the maximum deflection and maximum bending stress on a beam given these six scenarios:
 
@@ -33,47 +33,33 @@ In this assignment, you will be creating code that will allow a user to find the
 
 Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods/MEM09155A-CAE/resources/Beams.htm){:target="_blank"}
 
-&nbsp;&nbsp;&nbsp;&nbsp;where:
+where:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(M\) = the moment load (in lb-in)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(W\) = the point load (in lb)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(w\) = the distributed load (in lb/in)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(L\) = the length of the beam (in inches)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(E\) = the modulus of elasticity (in psi)
-   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(I\) = the moment of inertia (in inches^4)
-
-<br>
+>>$M$ = the moment load (in lb-in)<br>
+$W$ = the point load (in lb)<br>
+$w$ = the distributed load (in lb/in)<br>
+$L$ = the length of the beam (in inches)<br>
+$E$ = the modulus of elasticity (in psi)<br>
+$I$ = the moment of inertia (in inches^4)
 
 2. Create a seventh function that calculates and returns the moment of inertia using this formula:
 
-    $$\ I=\frac{bh^3}{12} \$$
+>>$I=\frac{bh^3}{12}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;where:
+where:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(b\) = the base of the beam (in inches)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(h\) = the height of the beam (in inches)
-
-<br>
+>>$b$ = the base of the beam (in inches)<br>
+$h$ = the height of the beam (in inches)
 
 3. Create an eighth function that calculates and returns maximum bending stress using this formula:
 
-     $$\sigma_{max}=\frac{My}{I}\$$
+>>$\sigma_{max}=\frac{My}{I}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;where:
+where:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(M\) = the maximum moment (in lb-in)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(y\) = half of the height of the beam (in inches)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(I\) = the moment of inertia (in inches^4)
-
-<br>
+>>$M$ = the maximum moment (in lb-in)<br>
+$y$ = half of the height of the beam (in inches)<br>
+$I$ = the moment of inertia (in inches^4)
 
 #### Part 2
 
@@ -103,7 +89,7 @@ Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods
 
 4. On a new line, create the variable **y** using the following equation:
 
-   $$\ y=\frac{h}{2} \$$
+>>$y=\frac{h}{2}$
 
 5. On a new line within the code block, create a variable **I** that calls the moment of inertia function you created earlier, with the variables **b** and **h** defined earlier as its arguments
 
@@ -121,7 +107,7 @@ Source: [LearnEASY: Beam Bending Formulas](https://www.mem50212.com/MDME/MEMmods
    |:-------------:|:-----------------------------------------------------------:|
    |  moment_load / point_load / dist_load  |                            192000 / 1500 / 1700                        |
    |       L       |                             144                             |
-   |       E       |                           29000000                          |
+   |       E       |                           29e6                          |
    |       b       |                              8                              |
    |       h       |                              12                             |
 

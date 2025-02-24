@@ -6,7 +6,7 @@
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/05_while_loops/[Your_Name]_2_6_While_Loops_HW.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-2. Rename it something like "[Your Name] HW 2.6 - While Loops"
+2. Rename it something like "[Your Name]_While_Loops_Homework"
 
 In this assignment, you will be creating a while loop and using it to calculate the current capacity of a watershed based on a fixed evaporation rate and the amount of precipitation. You will also be counting the days it took for the watershed to either fill or dry up
 

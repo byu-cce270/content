@@ -80,3 +80,10 @@ Turn sharing and editing on. Turn in the link to Learning Suite in the feedback 
 |        Column created showing the count of the number of incidents        |        4        |
 |            Column created showing the sum of the incident cost            |        4        |
 |              <div style="text-align: right">**Total**</div>               |       14        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |

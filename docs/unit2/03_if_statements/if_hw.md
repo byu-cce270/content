@@ -17,8 +17,8 @@ _(image from [www.engineeringskills.com](https://www.engineeringskills.com/posts
 For this example, a student has given you a list of trusses he needs to solve for in his statics class. Because of your charitable heart, and your superb coding skills, you have agreed to help him.
 
 ### Steps
-1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_if_statements/%5Byour_name%5D_if_statements_hw.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-2. Go to the "Part 1 - Truss Determinacy Solver" code block. Starting in line 2, create 3 different input statements 
+1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_if_statements/%5Byour_name%5D_if_statements_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+2. Go to the "Part 1 - Truss Determinacy Solver" code block. Starting in line 2, create 3 different input statements using colab forms 
    to ask the user for the following:
     - The number of joints in the truss. (Must be an integer)
     - The number of members in the truss. (Must be be an integer)
@@ -50,14 +50,14 @@ For this example, a student has given you a list of trusses he needs to solve fo
 ###Steps
 1. Under the line "main for loop", create a for loop that will go through each order in the given "orders " list.
 2. In the next line, create a for loop that will read each item in the "Total_order" list.
-3. Now, compare if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item.
+3. Now, create a 3rd loop that loops through the totals  if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item total.
     - EX: If steel is in the "order" list and "total_orders" list, then the value for steel in the "total_orders" list should increase by 1 for each occurrence of steel. This should be the same for wood and brick.
-4. Print each of the final values for wood, brick, and steel. Here are the final values that you should get:
+4. Write a loop to print each of the final values for wood, brick, steel, glass, and concrete. Here are the final values that you should get:
     - 14 orders of wood
     - 10 orders of brick
     - 8 orders of steel
-    - 6 orders of Concrete
-    - 12 orders of Glass
+    - 12 orders of glass
+    - 6 orders of concrete
 
 ---
 
@@ -78,3 +78,11 @@ For this example, a student has given you a list of trusses he needs to solve fo
 |                            Part 2 - Correct value for glass                                             |        3        |
 |                               Part 2- Correct value for concrete                                        |        3        |
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+| No comments explaining why AI is used and what its provided code does |    2-3     |
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |

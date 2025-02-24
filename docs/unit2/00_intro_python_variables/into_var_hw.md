@@ -6,28 +6,65 @@
 
 **Challenge:** While working on this assignment, look through the code that was already written and try to see if you understand it. We will be teaching you about this later on. 
 
-There are two common types of channel geometries: Rectangular and Trapezoidal as shown here:
+---
 
-![channel_flow_example.png](images/channel_flow_example.png)
+## Manning's Equation
 
-## Instructions
-1. First make a copy of the starter sheet here:
-  <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables/Starter_Sheet_HW_Introduction_to_Python_and_Variables.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-   </br> The original file should be called: **Starter Sheet HW - Introduction to Python and Variables**
+Manning's equation is used to calculate the flow of water through an open channel. The equation is as follows:
 
-2. Rename it something like “[your name] HW - Introduction to Python and Variables”
+>>$Q = \dfrac{u}{n}A(R_h^{2/3})(S_o^{1/2})$
 
-Don’t be too overwhelmed by the code. These instructions will clearly indicate where to put different steps.
+Where:<br>
+>>$Q$ = the flow rate in cubic feet per second (or cubic meters per second) <br>
+  $u$ = units coefficient (1.49 for English units and 1 for metric units)<br>
+  $n$ = the Manning's roughness coefficient based on the material of the channel<br>
+  $R_h$ = the hydraulic radius of the channel<br>
+  $S_o$ = the slope of the channel
+
+The hydraulic radius is calculated as follows:
+
+>>$R_h = \dfrac{A}{P_w}$
+
+Where:<br>
+>>$A$ = the cross-sectional area of the flow <br>
+$P_w$ = the wetted perimeter in feet
+
+The wetted perimeter is the length of the channel in the channel cross section that is in contact with the water.
+
+For this problem, we will be considering rectangular and trapezoidal channels as shown here:
+
+![channel_flow_example.png](images/channel_flow_example.png){width=1000px}
+
+Based on this information, the area ($A$) and wetted perimeter ($P_w$) can be calculated as follows:
+
+| Channel Type |           Area ($A$)           |           Wetted Perimeter ($P_w$)            |
+|:------------:|:------------------------------:|:---------------------------------------------:|
+|  Rectangular |              $by$              |                    $b+2y$                     |
+|  Trapezoidal | $\left(\dfrac{b+T}{2}\right)y$ | $b+2\sqrt{\left(\dfrac{T-b}{2}\right)^2+y^2}$ |
+
+Where:<br>
+>>$b$ = the bottom width of the channel in feet<br>
+  $T$ = the top width of the channel in feet<br>
+  $y$ = the water depth in feet
 
 ---
-Step 3. Find the part of the code that looks like this: 
-```python
-################################ Step 3 here ##################################
-```
 
-Create the following input statements with comments explaining the options (put no space before the start of the variables):
+## Instructions
 
-| Variable name |                     Things the comments                     | Variable Type |
+**Step 1.**  Make a copy of the starter sheet here:
+  <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables/Starter_Sheet_HW_Introduction_to_Python_and_Variables.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+**Step 2.** Rename it something like “[your name] HW - Introduction to Python and Variables”
+
+>>_Don’t be too overwhelmed by the code. These instructions will clearly indicate where to put different steps from here on out._
+
+**Step 3.** Create the following variables. Use at least one input statement, you can hard-code the rest. 
+
+Add  comments explaining the options for each variable or what the variable is 
+
+(hint put no space before the start of the variables in the input statement):
+
+| Variable name |                     Description/Options                     | Variable Type |
 |:-------------:|:-----------------------------------------------------------:|:-------------:|
 |     units     |                      english or metric                      |    string     |
 |   material    | asphalt, concrete, clean earth, weedy earth, natural stream |    string     |
@@ -36,20 +73,24 @@ Create the following input statements with comments explaining the options (put 
 |      So       |                            slope                            |     float     |
 |       y       |                         water depth                         |     float     |
 
-Steps 4-10. Use the  following table to write equations in the indicated  places. They should be written under the ########### Step # ############# line:
+**Step 4.** Run the cell to process the inputs and define the dependent variables: u, shape, and n. You do not need to write any code for this step.
 
-|    Location     | Output Variable | Indentation |           Equation           |
-|:---------------:|:---------------:|:-----------:|:----------------------------:|
-| ### Step 4 ###  |        A        |     yes     |            A = by            |
-| ### Step 5 ###  |        A        |     yes     |        A = (b+T)/2*y         |
-| ### Step 6 ###  |        P        |     yes     |           P = b+2y           |
-| ### Step 7 ###  |        P        |     yes     | P = b+2*(((T-b)/2)^2+y^2)^.5 |
-| ### Step 8 ###  |       Rh        |     no      |           Rh = A/P           |
-| ### Step 9 ###  |        Q        |     no      | Q = (u/n)A(Rh^(2/3))*(So^.5) |
-| ### Step 10 ### |        V        |     no      |           V = Q/A            |
+**Step 5.** Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel. Store the result in the variable A.
+
+**Step 6.** Write an equation to calculate the wetted perimeter (P_w) based on the shape of the channel. Store the 
+result in the variable P.
+
+**Step 7.** Write an equation to calculate the hydraulic radius (R_h), the flow rate (Q), and the flow velocity (V). 
+Use the equations as shown above. Note that V = Q/A. Store 
+the result in the 
+variables Rh, Q, and V.
+
+**Step 8.** Print the results using the code provided.
+
 
 ## Test Your Code
-Try out your code! When running your code, use the following inputs:
+
+Try out your code to make sure it is working correctly. When running your code, use the following inputs:
 
 | Variable name |   Input   |
 |:-------------:|:---------:|
@@ -61,17 +102,28 @@ Try out your code! When running your code, use the following inputs:
 |       y       |     6     |
 
 It should output something like this:
-> Flow rate =  1608.38  cubic feet per second </br>
-> Average velocity =  13.403  feet per second </br>
-> u=  1.49  n=  0.012  A=  120.0  P=  32.0  Rh=  3.75  Q=  1608.380422171807  V=  13.403170184765058
+
+      Flow rate =  1608.38  cubic feet per second
+      Average velocity =  13.403  feet per second
+      u=  1.49  n=  0.012  A=  120.0  P=  32.0  Rh=  3.75  Q=  1608.380422171807  V=  13.403170184765058
 
 ## Turning in/Rubric
+
 Turn sharing, editing on. Then turn in the link to learning suite in the feedback box
+
 
 **Rubric:**
 
-|                                                      Item                                                       | Points Possible |
-|:---------------------------------------------------------------------------------------------------------------:|:---------------:|
-| Input statements are made correctly, stored in the correct variable and are stored as the correct variable type |       15        |
-|                     Equations are typed in correctly and are stored in the correct variable                     |       15        |
-|                                 <div style="text-align: right">**Total**</div>                                  |       30        |
+|                                           Item                                            | Points Possible |
+|:-----------------------------------------------------------------------------------------:|:---------------:|
+| At least one input statements is made and all other variables are made with the correct type |       15        |
+|          Equations are typed in correctly and are stored in the correct variable          |       15        |
+|                      <div style="text-align: right">**Total**</div>                       |       30        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+| No comments explaining why AI is used and what its provided code does |    2-3     |
+|                        Link shared incorrectly                        |     3      |
+|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
