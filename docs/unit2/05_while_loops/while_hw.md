@@ -12,17 +12,18 @@ In this assignment, you will be creating a while loop and using it to calculate 
 
 ---
 
-   1. In the first code block, this is where the variables are going to be defined. In some cases, input statements will be used to test out different values. The variables should be defined as follows:
+   1. In the first code block, this is where the variables are going to be defined. You will need to replace the default assignment statements in the code block with default values, formulas, or input statements as outlined in the following table: 
 
-   | Variable                                     | Value                                           | Units      |
-   |----------------------------------------------|-------------------------------------------------|------------|
-   | Surface Area of Watershed (A)                | input statement                                 | acres      |
-   | Max Height of Watershed (h)                  | input statement                                 | feet       |
-   | Max Volume of Watershed (max)                | Surface Area * Max Height                       | acre-feet  |
-   | Current Depth of the Water (d)               | input statement                                 | feet       |
-   | Rate of Evaporation (evap)                   | 5                                               | inches/day |
-   | Number of Days Elapsed (days)                | 0                                               | days       |
-   | Current Capacity of the Watershed (capacity) | Current Depth * Surface Area / Max Volume * 100 | %          |
+|  Variable   | Description                       |       Units       |      Source/Value      |
+|:-----------:|-----------------------------------|:-----------------:|:----------------------:|
+|      A      | Surface area of watershed         |       acres       |    input statement     |
+|      h      | Max height of watershed           |       feet        |    input statement     |
+|     max     | Max capacity (volume) of watershed |     acre-feet     |         A * h          |
+|      d      | Current depth of the water        |       feet        |    input statement     |
+|    evap     | Rate of evaporation               |    inches/day     |           5            |
+|    days     | Number of days elapsed            |       days        |           0            |
+|  capacity   | Current capacity (volume) of the watershed |         %         |   d * A / max * 100    |
+
 
    2. In the second code block, this is where the while loop is going to be created, but first state the current capacity of the watershed. Write a print statement telling the current capacity of the watershed.
 
