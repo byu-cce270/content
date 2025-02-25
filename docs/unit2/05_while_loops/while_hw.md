@@ -22,7 +22,7 @@ In this assignment, you will be creating a while loop and using it to calculate 
 |      d      | Current depth of the water        |       feet        |    input statement     |
 |    evap     | Rate of evaporation               |    inches/day     |           5            |
 |    days     | Number of days elapsed            |       days        |           0            |
-|  capacity   | Current capacity (volume) of the watershed |         %         |   d * A / max * 100    |
+|  capacity   | Current capacity (volume) of the watershed |         %         |   100 * d * A / max  |
 
 
    2. In the second code block, this is where the while loop is going to be created, but first state the current capacity of the watershed. Write a print statement telling the current capacity of the watershed.
