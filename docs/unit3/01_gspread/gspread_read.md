@@ -3,9 +3,11 @@
 
 ---
 
-# Pre Class Reading Assignment
+There are many ways to interact with data in Python. Last time we learned about how to read in a txt or csv files. There are many other ways to interact with data, and one of the most powerful ways is through APIs. Some include using libraries like gspread to interact with Google Sheets.
 
+## What is an API?
 
+API stands for Application Programming Interface. It is a set of rules and protocols that allow one software application to interact with another. APIs are used to allow different software applications to communicate with each other.
 
 ## Thing to Look Out For
  - How to allow gspread access to your Google Account.
