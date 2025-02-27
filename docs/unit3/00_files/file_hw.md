@@ -2,11 +2,6 @@
 
 **Purpose:** In this assignment you are given a csv file from the UDOT. You are going to go through the file and count how many speed limit signs there are of the various speed limits. You can find where to access this data [here](https://data-uplan.opendata.arcgis.com/datasets/uplan::speed-limit-signs-1/explore?location=40.705286%2C-111.838968%2C12.49 ){:target="_blank"}
 
-![TRUUSSSSS MEE (1)](https://github.com/user-attachments/assets/cf6ed7af-f77e-455b-9e85-b2d1c5121ea0)
-
-![TRUUSSSSS MEE (1)](https://github.com/user-attachments/assets/cf6ed7af-f77e-455b-9e85-b2d1c5121ea0|width=100)
-
-
 ## Instructions
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_files/3_1_Files_HW.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
