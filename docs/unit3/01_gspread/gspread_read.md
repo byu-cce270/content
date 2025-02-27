@@ -25,7 +25,8 @@ Think to yourself: How are APIs us in the as a civil engineer or construction ma
 ---
 
 ## How to Allow API Access for a Project
-1. Head to this link: [Google Dashboard]([https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch10.xhtml](https://console.cloud.google.com/apis/dashboard?project=zinc-tribute-366818)){:target="_blank"}
+
+1. Head to this link: [Google Dashboard](https://console.developers.google.com/){:target="_blank"}
 
 2. Create a new project.
 
