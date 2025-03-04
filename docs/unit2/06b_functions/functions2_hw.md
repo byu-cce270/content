@@ -70,7 +70,7 @@ $I$ = the moment of inertia (in inches^4)
    |   beam_type   | Asks what the beam type is (cantilever or simply supported) |    string     |
    |   load_type   | Asks what the load type is (moment, point, or distributed)  |    string     |
 
-2. On a new line, create IF and ELIF statements that check if the **load_type** entered is a moment, a point, or a distributed load. Depending on which **load_type** is entered, your IF and ELIF statements will return one of the following input statements:
+2. On a new line, create IF and ELIF statements that check if the **load_type** entered is a moment, a point, or a distributed load. Depending on which **load_type** is entered, your IF and ELIF statements will run one of the following input statements:
 
    | Variable Name |                            Prompt                           | Variable Type |
    |:-------------:|:-----------------------------------------------------------:|:-------------:|
@@ -91,13 +91,13 @@ $I$ = the moment of inertia (in inches^4)
 
 >>$y=\frac{h}{2}$
 
-5. On a new line within the code block, create a variable **I** that calls the moment of inertia function you created earlier, with the variables **b** and **h** defined earlier as its arguments
+5. On a new line within the code block, create a variable **I** that you set by calling the moment of inertia function you created earlier, with the variables **b** and **h**  as its arguments. These varibles were defined earlier.
 
 6. On a new line, create IF and ELIF statements that check if the **beam_type** is a cantilever or a simply supported beam. Within those IF and ELIF statements, nest more IF and ELIF statements that check if the **load_type** is a moment, a point, or a distributed load. 
 
-7. Depending on your **beam_type** and **load_type**, assign the variables **max_deflection** and **max_moment** to their related function within the nested IF and ELIF statements. For example, if your **beam_type** is a cantilever and your **load_type** is a moment load, your variables **max_deflection** and **max_moment** should be set equal to the function you created for a cantilever and moment load.
+7. Depending on your **beam_type** and **load_type**, use the appropriate function to assign values to the variables **max_deflection** and **max_moment**  within the nested IF and ELIF statements. For example, if your **beam_type** is a cantilever and your **load_type** is a moment load, your variables **max_deflection** and **max_moment** should be set using the function you created for a cantilever and moment load.
 
-8. On a new unindented line, create the variable **max_stress** that calls the maximum bending stress function you created earlier, with the variables **max_moment**, **y**, and **I** defined earlier as its arguments
+8. On a new unindented line, create the variable **max_stress** and set the value by calling the maximum bending stress function you created earlier, with the variables **max_moment**, **y**, and **I** its arguments. These variables were defined earlier.
 
 9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches) as well as the maximum bending stress (in psi)
 
