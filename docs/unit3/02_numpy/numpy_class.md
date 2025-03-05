@@ -11,6 +11,24 @@ You can find the In Class Exercise here:
 3. Follow the instructions in the notebook to complete the exercise.
 
 
+|                           |             AB            |             BC            | AC | R<sub>A<sub>x</sub></sub> | R<sub>A<sub>y</sub></sub> | R<sub>C<sub>y</sub></sub> |
+|:-------------------------:|:-------------------------:|:-------------------------:|:--:|:-------------------------:|:-------------------------:|:-------------------------:|
+| F<sub>A<sub>x</sub></sub> | -cos(&theta;<sub>A</sub>) |             0             |  1 |             1             |             0             |             0             |
+| F<sub>A<sub>y</sub></sub> | -sin(&theta;<sub>A</sub>) |             0             |  0 |             0             |             1             |             0             |
+| F<sub>B<sub>x</sub></sub> | cos(&theta;<sub>A</sub>)  | -cos(&theta;<sub>C</sub>) |  0 |             0             |             0             |             0             |
+| F<sub>B<sub>y</sub></sub> | sin(&theta;<sub>A</sub>)  | sin(&theta;<sub>C</sub>)  |  0 |             0             |             0             |             0             |
+| F<sub>C<sub>x</sub></sub> |             0             | cos(&theta;<sub>C</sub>)  | -1 |             0             |             0             |             0             |
+| F<sub>C<sub>y</sub></sub> |             0             | -sin(&theta;<sub>A</sub>) |  0 |             0             |             0             |             1             |
+
+|                           | Loads |
+|:-------------------------:|:-----:|
+| F<sub>A<sub>x</sub></sub> |   0   |
+| F<sub>A<sub>y</sub></sub> |   0   |
+| F<sub>B<sub>x</sub></sub> |   0   |
+| F<sub>B<sub>y</sub></sub> |   0   |
+| F<sub>C<sub>x</sub></sub> |   0   |
+| F<sub>C<sub>y</sub></sub> |   0   |
+
 ---
 
 ## Turning in/Rubric
