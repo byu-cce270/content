@@ -91,25 +91,25 @@ nav:
         - In Class: unit3/01_gspread/gspread_class.md
         - Homework: unit3/01_gspread/gspread_hw.md
     - MatPlotLib:
-        - Reading: unit3/01_matplotlib/matplot_read.md
-        - In Class: unit3/01_matplotlib/matplot_class.md
-        - Homework: unit3/01_matplotlib/matplot_hw.md
+        - Reading: unit3/02_matplotlib/matplot_read.md
+        - In Class: unit3/02_matplotlib/matplot_class.md
+        - Homework: unit3/02_matplotlib/matplot_hw.md
     - Numpy:
-        - Reading: unit3/02_numpy/numpy_read.md
-        - In Class: unit3/02_numpy/numpy_class.md
-        - Homework: unit3/02_numpy/numpy_hw.md
+        - Reading: unit3/03_numpy/numpy_read.md
+        - In Class: unit3/03_numpy/numpy_class.md
+        - Homework: unit3/03_numpy/numpy_hw.md
     - Pandas (Part 1):
-        - Reading: unit3/03_pandas_part1/pandas1_read.md
-        - In Class: unit3/03_pandas_part1/pandas1_class.md
-        - Homework: unit3/03_pandas_part1/pandas1_hw.md
+        - Reading: unit3/04_pandas_part1/pandas1_read.md
+        - In Class: unit3/04_pandas_part1/pandas1_class.md
+        - Homework: unit3/04_pandas_part1/pandas1_hw.md
     - Pandas (Part 2):
-        - Reading: unit3/04_pandas_part2/pandas2_read.md
-        - In Class: unit3/04_pandas_part2/pandas2_class.md
-        - Homework: unit3/04_pandas_part2/pandas2_hw.md
+        - Reading: unit3/05_pandas_part2/pandas2_read.md
+        - In Class: unit3/05_pandas_part2/pandas2_class.md
+        - Homework: unit3/05_pandas_part2/pandas2_hw.md
 #    - Python and Excel:
-#        - Reading: unit3/05_python_and_excel/excel_read.md
-#        - In Class: unit3/05_python_and_excel/excel_class.md
-#        - Homework: unit3/05_python_and_excel/excel_hw.md
+#        - Reading: unit3/python_and_excel/excel_read.md
+#        - In Class: unit3/python_and_excel/excel_class.md
+#        - Homework: unit3/python_and_excel/excel_hw.md
     - ipywidgets:
         - Reading: unit3/06_ipywidgets/ipy_read.md
         - In Class: unit3/06_ipywidgets/ipy_class.md
