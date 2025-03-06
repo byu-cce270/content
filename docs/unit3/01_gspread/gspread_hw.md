@@ -34,50 +34,36 @@ For this example, you have been given bids that were submitted for a job and it 
    ```
 7. Outside of the for loop, create two empty lists. One named Drywall, and the other named Concrete. This is where you will store the different bids.
 8. Create a for loop that will loop through the different rows in your Google Sheet and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete.
-9. 
-10.
-11. 
-12. Starting in line 2, create 3 different input statements using colab forms 
-   to ask the user for the following:
-    - The number of joints in the truss. (Must be an integer)
-    - The number of members in the truss. (Must be be an integer)
-    - The number of reaction forces acting on the truss. (Must be an integer)
-13. Write IF, ELIF, and ElSE statements on the next line under the "Write If statements here" line for the following 
-   scenarios. 
+9. Move to the "Drywall Bid Analysis" code block. Line 4 is advanced code that is provided to you for this assignment. It will sort your Drywall list in order from cheapest to most expensive bid.
+10. Write code to delete the most expensive and cheapest bid from your list.
+11. Write code to find the average cost for the remaining bids in your list.
+12. Write code to find the median cost for the remaining bids in your list.
+13. Now that you understand your bids more, write a while loop that will loop through the remaining bids and ask you as the user if you would like to accept the given bid.
+    
+    *  If you do want to accept the bid you should print something like: "Bid accepted. Your final bid for Drywall is: *insert chosen here*." After accepting the bid, you should end the loop.
+    *  If you do not want to accept the bid you should remove the bid from your list of bids and continue the loop.
+    
+14. Write code to add a new sheet to your Google Sheet with the selected bidder's information.
+15. Move to the "Concrete Bid Analysis" code block. Line 4 is the same advanced code given for the Drywall bids.
+16. Repeat steps 10-14 for the concrete bids.
 
-  | Equation      | Result                                |
-   |----------|--------------------------------------|
-   | # of members + # of reaction forces = 2 * (# of joints) | Statically determinate |
-   | # of members + # of reaction forces > 2 * (# of joints) | Statically Indeterminate |
-   | # of members + # of reaction forces < 2 * (# of joints) | Unstable |
+---
+## Part 2
 
-4. Have your code print the result. For example, if my truss had more joints than reaction forces + my members, then 
-   my code would print "truss is statically unstable"
-5. Test your code with the following scenarios:
+**Objective**:  You will now be completing client estimation for different material orders.
 
-
-| Scenario # | Joints | Members | Reaction Forces | Result |
-|------------|--------|---------|-----------------|--------|
-| 1          | 3      | 3       | 3               | Statically determinate |
-| 2          | 4      | 6       | 3               | Statically indeterminate |
-| 3          | 8      | 9       | 4               | Unstable |
-
-##Part 2
-
-**Objective**:  You are helping a company count the orders of materials it has. They have given you the list and want you to count it.
-
-###Steps
-1. Under the line "main for loop", create a for loop that will go through each order in the given "orders " list.
-2. In the next line, create a for loop that will read each item in the "Total_order" list.
-3. Now, create a 3rd loop that loops through the totals  if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item total.
-    - EX: If steel is in the "order" list and "total_orders" list, then the value for steel in the "total_orders" list should increase by 1 for each occurrence of steel. This should be the same for wood and brick.
-4. Write a loop to print each of the final values for wood, brick, steel, glass, and concrete. Here are the final values that you should get:
-    - 14 orders of wood
-    - 10 orders of brick
-    - 8 orders of steel
-    - 12 orders of glass
-    - 6 orders of concrete
-
+### Steps
+1. In the "Client Estimating Portion" code block open the 'Material Cost' worksheet from your workbook to work with that data.
+2. Use the .get_all_values() method to pull all the values from your spreadsheet into a list.
+3. Create a function called client_estimation that will take 2 parameters, one for the quantities ordered by the clients and one for the list of materials costs from your Google Sheet.
+4. Inside the function do the following:
+    - Remove the header row from the quantities list.
+    - Start an empty list for the quantities needed by the client.
+    - Create a variable for the total_cost of the estimate that starts at 0.
+5. Still inside the function, loop through the quantities needed by the client, convert them to floats, and add a waste factor of 10%.
+6. 
+7. 
+8. 
 ---
 
 **Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
