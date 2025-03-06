@@ -74,6 +74,7 @@ Then run the following to make sure the library is up to date:
 ```bash
 pip install --upgrade pip
 ```
+---
 
 ## Importing and Authenticating Gspread
 
@@ -173,6 +174,8 @@ worksheet = spreadsheet.add_worksheet(title="A worksheet", rows="100", cols="20"
 
 In all the examples above, you can see that the variable names are `spreadsheet` and `worksheet`. You can name these variables whatever you want. However, it is important to remember that these variables are objects that represent the Google Sheet and the Worksheet. So it is a good idea to name them something that makes sense. For example, if you are reading in data from a Google Sheet that contains sales data, you could name the variables `sales_sheet` and `sales_worksheet`.
 
+---
+
 ## Reading Data
 
 Once you have selected the worksheet, you can read the data from the worksheet. To read the data from a worksheet, you can use the following command:
@@ -233,10 +236,88 @@ array = np.array(worksheet.get_all_values())
 
 We will go over this in more detail in the later but you may see some code we provide use these libraries.
 
+---
+
 ## Writing Data to Google Sheets
 
+To write data to a Google Sheet, you need to select the worksheet that you want to write to and then write the data. There are several ways to write data to a Google Sheet. Here is an example of how to write data to a Google Sheet:
 
+```python
+worksheet.update('A1', 'Hello World!')
+```
+
+In this example, 'A1' is the cell that you want to write to, and 'Hello World!' is the data that you want to write. You can also write data to a range of cells:
+
+```python
+worksheet.update('A1:B2', [['Hello', 'World'], ['Goodbye', 'World']])
+```
+
+This will write the data 'Hello' to cell A1, 'World' to cell B1, 'Goodbye' to cell A2, and 'World' to cell B2. You can also write data to a specific row or column by using coordinates:
+
+```python
+worksheet.update_cell(1, 1, 'Hello')
+```
+
+This will write the data 'Hello' to cell A1. Antoher way to write data to a Google Sheet is to append data to the end of the worksheet. This is useful when you want to add new data to the sheet without overwriting existing data. Say we have a worksheet that looks like this:
+
+| Name  | Age
+|-------|-----
+| Alice | 25
+
+We can append data to a Google Sheet, you can use the following command:
+
+```python
+worksheet.append_row(['Hello', 'World'])
+```
+
+The sheet will look like this:
+
+| Name  | Age
+|-------|-----
+| Alice | 25
+| Hello | World
+
+This will append the data 'Hello' to cell A1 and 'World' to cell B1. You can also append multiple rows at once:
+
+```python
+worksheet.append_rows([['Hello', 'World'], ['Goodbye', 'World']])
+```
+
+This will append the data 'Hello' to cell A1 and 'World' to cell B1, and 'Goodbye' to cell A2 and 'World' to cell B2. You can also append a dictionary to the worksheet:
+
+```python
+worksheet.append_row({'Name': 'Alice', 'Age': 25})
+```
+
+The sheet will look like this:
+
+| Name  | Age
+|-------|-----
+| Alice | 25
+
+This will append the data 'Alice' to cell A1 and '25' to cell B1. You can also append multiple dictionaries at once:
+
+```python
+worksheet.append_rows([{'Name': 'Alice', 'Age': 25}, {'Name': 'Bob', 'Age': 30}])
+```
+
+The sheet will look like this:
+
+| Name  | Age
+|-------|-----
+| Alice | 25
+| Bob   | 30
+
+**For most of the HW and In Class assignments, we will be using the append_row method to write data to the Google Sheet.**
+
+There are many other ways to write data to a Google Sheet, including to specific cells, ranges, rows, or columns. You can find more information in the [gspread documentation](https://docs.gspread.org/en/latest/user-guide.html#updating-cells){:target="_blank"}. You can also look here to see how to code in data validation, formatting, and other features.
 
 ---
 
 # Pre-Class Quiz Challenge
+
+For your pre-class quiz, you need to follow the instructions to Allow API Access for a Project. Then you will create a new Google doc and put screenshot of the Google API Dashboard showing that you have enabled the Google Sheets API and Google Drive API. Your image should look like this but the blue botton should say "Manage" instead of "Enable":
+
+![googlesheetsapi](https://github.com/user-attachments/assets/e1be68aa-7ffa-403f-a384-ec11ec3036f1)
+
+Submit a link to the completed Google Doc in your Pre-Class Quiz. If you have any questions, please reach out in Teams or met with a TA before class to make sure you are set up correctly. We will not be taking time in class to help you set up your API access.
