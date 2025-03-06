@@ -314,7 +314,7 @@ There are many other ways to write data to a Google Sheet, including to specific
 
 ---
 
-# Pre-Class Quiz Challenge
+## Pre-Class Quiz Challenge
 
 For your pre-class quiz, you need to follow the instructions to Allow API Access for a Project. Then you will create a new Google doc and put screenshot of the Google API Dashboard showing that you have enabled the Google Sheets API and Google Drive API. Your image should look like this but the blue botton should say "Manage" instead of "Enable":
 
