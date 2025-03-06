@@ -16,9 +16,9 @@ There are many ways to interact with data in Python. Last time we learned about 
 
 API stands for Application Programming Interface. It is a set of rules and protocols that allow one software application to interact with another. APIs are used to allow different software applications to communicate with each other. APIs are everywhere, from social media to weather apps, from payment services to authentication services.
 
-Watch this video to learn more about APIs:
+Watch this video bellow to learn more about APIs:
 
-[![APIs](https://img.youtube.com/vi/s7wmiS2mSXY/0.jpg)](https://www.youtube.com/watch?v=s7wmiS2mSXY)
+[![APIs](https://img.youtube.com/vi/s7wmiS2mSXY/0.jpg)](https://www.youtube.com/watch?v=s7wmiS2mSXY){:target="_blank"}
 
 Think to yourself: How are APIs us in the as a civil engineer or construction management career?
 
