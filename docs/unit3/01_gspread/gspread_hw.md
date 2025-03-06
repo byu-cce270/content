@@ -15,14 +15,34 @@ For this example, you have been given bids that were submitted for a job and it 
 ### Steps
 1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_if_statements/%5Byour_name%5D_if_statements_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Go to the "Imports" code block. Write the proper code to import gspread and authentiate yourself.
-3. Create a copy of the following worksheet and open it by url in the same code block. 
-4.
-5. Starting in line 2, create 3 different input statements using colab forms 
+3. Create a copy of the following worksheet and open it by url in the same code block. [Gspread Sample Data](https://docs.google.com/spreadsheets/d/1AtCbzKEuugeq9zCccWDjv9LpaLZX8ftikq6j64JJ1xc/edit?gid=0#gid=0){:target="_blank"}
+4. In the code block titled "Bid Analysis" open the first worksheet in your workbook.
+5. Use the .get_all_values() method to pull all the values from your spreadsheet into a list. Input the following code into your notebook:
+
+   ```python
+   headers = values1[0]
+   rows = values[1:]
+   ```
+   
+   *  Hint: Depending on what you named your values list this code might have to be modified, but the principle is the same.
+  
+6. Using a for loop, loop through the bid amounts in the rows list and convert the numbers into floats so you can perform an analysis on them.
+
+   *  Hint: The following code will remove the $ and , in the bid amounts of the Google Sheet so the numbers can be converted correctly:
+   ```python
+   .replace('$','').replace(',','')
+   ```
+7. Outside of the for loop, create two empty lists. One named Drywall, and the other named Concrete. This is where you will store the different bids.
+8. Create a for loop that will loop through the different rows in your Google Sheet and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete.
+9. 
+10.
+11. 
+12. Starting in line 2, create 3 different input statements using colab forms 
    to ask the user for the following:
     - The number of joints in the truss. (Must be an integer)
     - The number of members in the truss. (Must be be an integer)
     - The number of reaction forces acting on the truss. (Must be an integer)
-6. Write IF, ELIF, and ElSE statements on the next line under the "Write If statements here" line for the following 
+13. Write IF, ELIF, and ElSE statements on the next line under the "Write If statements here" line for the following 
    scenarios. 
 
   | Equation      | Result                                |
