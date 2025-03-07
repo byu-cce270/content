@@ -18,42 +18,49 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 #### Part 1
 
-1. In the first code block, create a variable 'x' with an empty list. Do this two more times on separate lines with a list 'y_1' and 'y_2'
-2. Read in the Pasadena CSV file in reading mode. Create an appropriately named variable and pass the file through the 'csv.reader', then skip the header row using the 'next()' function with the variable as its parameter
-3. Write a for loop referencing your csv file variable. Within the for loop, append each of your lists with the information from each column
-<br>&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use float inside your append function for y_1 and y_2, as most of this data does not include whole numbers
-4. Plot y_1, label it "High Temperature", and color it orange or red
-5. Plot y_2, label is "Low Temperature", and color it teal or blue
-6. Title the graph "Pasadena Temperature Data 2013-2014"
-7. Label the x-axis as "Date"
-8. Label the y-axis as "Degrees (Fahrenheit)"
-9. Using the xticks function, input the list below into the first parameter and in the second parameter, rotate the ticks by 45 degrees
-
-    ```[0,50,100,150,200,250,300,350]```
-
-10. Create a legend and put it in the lower left corner. Make the font size 10
-11. Give the chart grid lines
-12. Show the chart
+1. Connect Google Sheets to the Colab notebook
+2. Create three variables that connect to each worksheet
 
 #### Part 2
 
-1. In the second code block, create a variable 'x' with an empty list. Do this five more times on separate lines with lists 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
-2. Read in the Provo River Streamflow CSV file and create a for loop just like you did in Part 1
-3. Plot y_1, label it "10163000" and color it purple
-4. Plot y_2, label it "10155200" and color it teal or blue
-5. Plot y_3, label it "10155500" and color it green
-6. Plot y_4, label it "10154200" and color it orange
-7. Plot y_5, label it "10155000" and color it orange-red or red
-8. Title the graph "Provo River Streamflow Data (2021)"
-9. Label the x-axis as "Date/Time"
-10. Label the y-axis as "Flowrate (cfs)"
-11. Using the xticks function, input the list below into the first parameter and rotate the ticks by 45 degrees in the second parameter
+1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', and 'y_2'
+2. Plot y_1, label it "High Temperature", and color it orange or red
+3. Plot y_2, label is "Low Temperature", and color it teal or blue
+4. Title the graph "Pasadena Temperature Data 2013-2014"
+5. Label the x-axis as "Date"
+6. Label the y-axis as "Degrees (Fahrenheit)"
+7. Using the xticks function, rotate the ticks by 45 degrees
+8. Create a legend and put it in the lower left corner. Make the font size 10
+9. Give the graph grid lines
+10. Show the graph
 
-     ```[0,500,1000,1500,2000,2500]```
+#### Part 3
 
-12. Create a legend in the top right corner, make the font size 10, and title it "Site Numbers"
-13. Give the chart grid lines
-14. Show the chart
+1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
+2. Plot y_1, label it "10163000" and color it purple
+3. Plot y_2, label it "10155200" and color it teal or blue
+4. Plot y_3, label it "10155500" and color it green
+5. Plot y_4, label it "10154200" and color it orange
+6. Plot y_5, label it "10155000" and color it orange-red or red
+7. Title the graph "Provo River Streamflow Data (2021)"
+8. Label the x-axis as "Date/Time"
+9. Label the y-axis as "Flowrate (cfs)"
+10. Using the xticks function, rotate the ticks by 45 degrees
+11. Create a legend in the top right corner, make the font size 10, and title it "Site Numbers"
+12. Give the graph grid lines
+13. Show the graph
+
+#### Part 4
+
+1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1'.
+2. Plot y_1 and give it a color
+3. Title the graph "Average U.S. Daily Birth Data"
+4. Label the x-axis as "Date"
+5. Label the y-axis as "Births"
+6. Using the xticks function, rotate the ticks by 45 degrees
+7. Give the graph gridlines
+8. Annotate the four major dips caused by holidays on the graph. Specify the holiday and use an arrow to show it on the graph
+9. Show the graph
 
 ---
 
@@ -61,24 +68,29 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                        **Part 1 Items**                         | **Amount** |  
-|:---------------------------------------------------------------:|:----------:|
-|                     Empty lists are created                     |     1      |
-|                     Read in file correctly                      |     3      |
-|              For loop and list appends are correct              |     3      |
-|                  Graph is formatted correctly                   |     8      |
-|         <div style="text-align: right">**Total**</div>          |   **15**   |
-
+|                **Part 2 Items**                | **Amount** |  
+|:----------------------------------------------:|:----------:|
+|       Google Sheets correctly connected        |     3      |
+| <div style="text-align: right">**Total**</div> |   **3**    |
 
 |                **Part 2 Items**                | **Amount** |  
 |:----------------------------------------------:|:----------:|
-|            Empty lists are created             |     1      |
-|             Read in file correctly             |     3      |
-|     For loop and list appends are correct      |     3      |
-|          Graph is formatted correctly          |     8      |
-| <div style="text-align: right">**Total**</div> |   **15**   |
+|          Graph is formatted correctly          |     6      |
+| <div style="text-align: right">**Total**</div> |   **7**    |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                **Part 3 Items**                | **Amount** |  
+|:----------------------------------------------:|:----------:|
+|          Graph is formatted correctly          |     6      |
+| <div style="text-align: right">**Total**</div> |   **7**    |
+
+|                **Part 4 Items**                | **Amount** |  
+|:----------------------------------------------:|:----------:|
+|          Graph is formatted correctly          |     6      |
+|         Annotations are added to graph         |     7      |
+| <div style="text-align: right">**Total**</div> |   **13**   |
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
 |                      **Reasons for Points Lost**                      | **Amount** |  
 |:---------------------------------------------------------------------:|:----------:|
