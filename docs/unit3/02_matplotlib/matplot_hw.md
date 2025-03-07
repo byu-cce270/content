@@ -68,7 +68,7 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                **Part 2 Items**                | **Amount** |  
+|                **Part 1 Items**                | **Amount** |  
 |:----------------------------------------------:|:----------:|
 |       Google Sheets correctly connected        |     3      |
 | <div style="text-align: right">**Total**</div> |   **3**    |
