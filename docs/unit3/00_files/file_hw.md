@@ -4,15 +4,14 @@
 
 ## Instructions
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_files/3_1_Files_HW.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. First, make a copy of the starter Colab notebook here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_files/3_1_Files_HW.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_1_Files_HW"
 
 ___
 
 ### Uploading your file to the Colab Notebook
-1. Open this link to a Google spreadsheet called [Signs](https://docs.google.com/spreadsheets/d/1VCgoaI3w9rs3LF9Tu-RIb-9La8fHyM1h31t_sttrmy8/edit?gid=1541112318#gid=1541112318){:target="_blank"}. It contains Speed limit sign data such as the condition of the sign, the speed, and other info.
-2. Once opened, go to the file tab --> download --> select Comma Separated Files (.csv)
-3. Go back to your Colab notebook and upload your file. For reference, the preclass reading for files has a step-by-step guide on how to upload a file to a Colab notebook
+1. Click here to download a csv file containing traffic sign data: [signs_data.csv](signs_data.csv). It contains speed limit sign data such as the condition of the sign, the speed, and other info.
+2. Go back to your Colab notebook and upload the csv file you downloaded. For reference, the preclass reading for files has a step-by-step guide on how to upload a file to a Colab notebook
 
 ---
 ### Read in your file
@@ -22,22 +21,22 @@ ___
 ---
 
 ### Sign Counter Code
-1. Now it's time to do the real work! In the second code block, you are given a dictionary named "Sign_counter" where the keys are the MPH of the signs and the value is the signs with the corresponding MPH. Note they are all initialized to zero. The objective is to read our given file and find the total number of each sign. This will be WAY faster than counting it on our own!
-2. In a new line underneath the given dictionary, write code that will loop through the list of strings you imported from the file. For each line (string) you will loop through the items in the dictionary to see if the speed limit is in the string. If so, increment the corresponding counter. 
+1. Now it's time to do the real work! In the second code block, you are given a dictionary named "sign_counter" where the keys are the MPH of the signs and the value is the signs with the corresponding MPH. Note they are all initialized to zero. The objective is to read our given file and find the total number of each sign. 
+2. In a new line underneath the given dictionary, write code that will loop through the list of strings you imported from the file. For each line (string) you check the dictionary to see if the speed limit is one of the keys in the dictionary. If so, increment the corresponding value (counter). 
 
-      - For example, since Sign_counter has a key value of "10" if the file contains an MPH sign with a speed limit of 10, then I would add 1 to the corresponding value of "10" in Sign_counter for EACH occurrence of "10" in the file. This process would be the same for each key value of Sign_counter.
+      - For example, since sign_counter has a key value of "10" if the file contains an MPH sign with a speed limit of 10, then I would add 1 to the corresponding value of "10" in sign_counter for EACH occurrence of "10" in the file. This process would be the same for each key value of sign_counter.
      - HINT: Refer back to HW 2.4 (IF statements) for how to compare lists, and HW 2.5 (Dictionaries) for how to access the values of the keys in a dictionary.
    
-3. In the next code block, print each MPH speed limit sign in Sign_counter with its NEW value.
-4. When done, here are the values you should get:
+3. In the next code block, print each MPH speed limit sign in sign_counter with its NEW value.
+4. When done, here are the values you should get (your print statement format may vary):
 
 ![Screenshot 2025-02-06 132024](https://github.com/user-attachments/assets/523a1c5b-e0e4-4b49-8e1f-ea39bcec817b)
 
 
 ### Creating Your New File 
-1. In the last code block you will be creating a new file and put in the new values of Sign_counter.
+1. In the last code block you will be creating a new file and put in the new values of sign_counter.
 2. In the first line, open a new file in writing mode and name it something like "sign_values". Make sure to make the file a .txt as we just want a text file.
-3. Now, write each key and its corresponding value of Sign_counter into your new file. You will need to write each key and its value line by line. Make sure to insert the values on a new line into your file.
+3. Now, write each key and its corresponding value of sign_counter into your new file. You will need to write each key and its value line by line. Make sure to insert the values on a new line into your file.
      - HINT:  When writing, you can use \n to make a new line in your file. Look at the textbook section from the pre-class reading for examples of using "\n" with files.
 4. To check and make sure the file has been created, click on the folder icon on the far left of your screen. Look for a new ".txt" file
    
