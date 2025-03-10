@@ -94,7 +94,7 @@ For this example, you have been given bids that were submitted for a job and it 
 
 **Rubric:**
 
-|                                               If Statements                                                     | Points Possible |
+|                                               Gspread                                                     | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
 |                         Part 1 - Correct import and authentication statements                           |        2        |
 |                          Part 1 - Bid analysis code block is completed correctly                        |        4        |
