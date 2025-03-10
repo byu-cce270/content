@@ -60,10 +60,28 @@ For this example, you have been given bids that were submitted for a job and it 
     - Remove the header row from the quantities list.
     - Start an empty list for the quantities needed by the client.
     - Create a variable for the total_cost of the estimate that starts at 0.
-5. Still inside the function, loop through the quantities needed by the client, convert them to floats, and add a waste factor of 10%.
-6. 
-7. 
-8. 
+5. Still inside the function, loop through the quantities needed by the client, convert them to floats, and add the waste factor given in the client order.
+6. For each material, search the list that contains the material cost to find the corresponding cost per unit.
+    - If the material is found, pull the cost and convert it into a float.
+    - If the material is not found, print a message indicating that the item is missing and move on to the next item in the list.
+7. Calculate the material cost by multiplying the quantity with the waste factor by the cost per unit of that item.
+    - Add this calculated cost to the total_cost variable.
+    - Store the material name and its total cost as an item in the empty list you created earlier.
+8. After looping through all the materials, print the list of materials and their total costs, then print the final total_cost.
+9. Return the quantities list and the total cost from the client_estimation function.
+10. Create another function called update_sheet that takes four parameters:
+    - wb (the workbook you are updating)
+    - client (the client's name)
+    - quantity (the list of material names and costs)
+    - clientcost (the total cost of the order)
+11. Inside the update_sheet function:
+     - Create a new worksheet in the Google Sheet with the client's name as the title.
+     - Loop through the list of materials ancd costs, appending each row to the new worksheet.
+     - Append a final row the contains the final total cost for the client's order.
+12. Call client_estimation for the first client using the quantities from worksheet 2 and store the results.
+13. Call update_sheet to creat a new sheet for the first client and save their estimated costs.
+14. Repeat steps 12-13 for the second client using data from the second bill of quantities.
+     
 ---
 
 **Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
@@ -74,14 +92,14 @@ For this example, you have been given bids that were submitted for a job and it 
 
 |                                               If Statements                                                     | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
-|                         Part 1 - Correct value for scenario 1                                           |        5        |
-|                          Part 1 - Correct value for scenario 2                                          |        5        |
-|                          Part 1 - Correct value for scenario 3                                          |        5        |
-|                           Part 2 - Correct value for wood                                               |        3        |
-|                            Part 2 - Correct value for steel                                             |        3        |
-|                               Part 2- Correct value for brick                                           |        3        |
-|                            Part 2 - Correct value for glass                                             |        3        |
-|                               Part 2- Correct value for concrete                                        |        3        |
+|                         Part 1 - Correct import and authentication statements                           |        2        |
+|                          Part 1 - Bid analysis code block is completed correctly                        |        4        |
+|         Part 1 - Drywall Bid Analysis completed correctly with chosen bid updated in Google Sheet       |        4        |
+|         Part 1 - Concrete Bid Analysis completed correctly with chosen bid updated in Google Sheet      |        4        |
+|                            Part 2 - Correct sheets opened for quantities and costs                      |        3        |
+|                               Part 2- client_estimation function written correctly                      |        5        |
+|                            Part 2 - update_sheet function written correctly                             |        5        |
+|                               Part 2- Correct values updated into Google Sheet                          |        3        |
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
