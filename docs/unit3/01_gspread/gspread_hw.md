@@ -81,7 +81,11 @@ For this example, you have been given bids that were submitted for a job and it 
 12. Call client_estimation for the first client using the quantities from worksheet 2 and store the results.
 13. Call update_sheet to creat a new sheet for the first client and save their estimated costs.
 14. Repeat steps 12-13 for the second client using data from the second bill of quantities.
-     
+15. If you've completed all the steps correctly, you should get the following answers updated into your Google Sheet for the second bill of quantities:
+    
+![quantities](https://github.com/user-attachments/assets/10ba9cc7-21de-4fdc-9feb-58aa8ac0500a)
+
+         
 ---
 
 **Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
