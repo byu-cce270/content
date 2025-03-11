@@ -40,20 +40,24 @@ You will be using the following Google Sheet:
    
 ![bridge bar graph](https://github.com/user-attachments/assets/fb37f510-746b-4aaa-84c8-70a683ea64c7)
 
-7. Under the text block
-8. 
-9. 
-10. Write appropriate import statements and read the file into a pandas dataframe.
-   (remove any columns that have no data)
-11. In the second code block display the table that pandas made.
-12. In the third code block write code that will display a table like this:
-   
-![df_python](https://github.com/user-attachments/assets/f6726e28-0559-4b73-8d13-6883bf984877)
+7. Under the text block titled "TRAFFIC DATAFRAME", write code to display a bar graph of the count of congestion levels throughout the day. Include:
+    - a title
+    - x and y labels
+    - change the default color scheme
 
-5. In the fourth code block find the shape of the initial data frame (how many columns and rows there are).
-6. Display a summary of the Date/Time column. It should look something like this:
- 
-![python_df](https://github.com/user-attachments/assets/b494e31f-8f49-4a10-8fbf-c6ea8bafe1cc)
+    When you are finished your bar graph should look something like this:
+   
+![count of congestion](https://github.com/user-attachments/assets/043a47ea-d73b-41c3-b4a4-fb13d42c769a)
+
+8. Under the text block titled "CONCRETE DATAFRAME", write code to sort the dataframe by the 'Age (day)' column.
+9. Display the sorted dataframe.
+10. In a new code block, write a function with one parameter that returns "Early Strength" if it has been less than 7 days, "Medium Strength" if it has been less than 28 days, and "Long-Term Strength" if it has been longer than 28 days.
+11. Using the .apply method with the function you just created on the 'Age (day)' column in your dataframe, add a new column to your dataframe called "Age Category" that includes whether the concrete measurement is early, medium, or long-term strength.
+12. In a new codeblock, use .describe() to find the statistics of your dataframe.
+13. In a new code      
+14. 
+15. 
+16. 
 
 
 **extra credit (items 7-9 are extra credit)
