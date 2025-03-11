@@ -18,7 +18,7 @@ API stands for Application Programming Interface. It is a set of rules and proto
 
 Watch this video bellow to learn more about APIs:
 
-[![APIs](https://img.youtube.com/vi/s7wmiS2mSXY/0.jpg)](https://www.youtube.com/watch?v=s7wmiS2mSXY){:target="_blank"}
+<iframe width ="560" height="315" src="https://www.youtube.com/embed/s7wmiS2mSXY?si=8KPdJAYfLwC1Hxht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Think to yourself: How are APIs us in the as a civil engineer or construction management career?
 
@@ -28,7 +28,7 @@ Think to yourself: How are APIs us in the as a civil engineer or construction ma
 
 1. Head to this link: [Google Dashboard](https://console.developers.google.com/){:target="_blank"}
 
-2. Create a new project.
+2. Click on the link that says "+ Enable APIs and Services".
 
 3. Find the box labeled "search for APIs & Services", it should look like this: 
 
@@ -66,14 +66,9 @@ Now let's see how to use gspread.
 To use gspread, you will normally need to install the library. However, since we are working in Google Colab, this library is already installed. If you are working in another coding environment, you can install this library this by running the following command in your terminal:
 
 ```bash
-!pip install ipywidgets
+!pip install gspread
 ```
 
-Then run the following to make sure the library is up to date:
-
-```bash
-pip install --upgrade pip
-```
 ---
 
 ## Importing and Authenticating Gspread
@@ -84,7 +79,7 @@ To use gspread, you need to import it. You can do this by using the following co
 import gspread
 ```
 
-To use gspread, you need to authenticate your account. This is done by running the following command:
+Then you need to authenticate your account. This is done by running the following command:
 
 ```python
 from google.auth import default
@@ -96,7 +91,7 @@ from google.colab import auth
 auth.authenticate_user()
 ```
 
-So in summary, to use gspread, you need to import it and authenticate your account. In you imports of your code, you should have the following:
+If you prefer, you can do all of this in one cell or code block as follows:
 
 ```python
 import gspread
@@ -123,7 +118,13 @@ To read data from a Google Sheet, you need to open the sheet and then read the d
 spreadsheet = gc.open('Name of your Google Sheet')
 ``` 
 
-In this example, 'Name of your Google Sheet' is the name of the Google Sheet that you want to open. **Note that the name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** So for this class, we asked that you open the spreadsheet using the URL of the sheet. Here is an example of how to open a sheet by URL:
+In this example, 'Name of your Google Sheet' is the name of the Google Sheet that you want to open. **Note that the name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** 
+
+For this class, we will be sharing google sheets for use with gspread by providing you with a public URL for the 
+sheet. Therefore, we ask that you open the sheets using the 
+URL method. Here is an 
+example of 
+how to open a sheet by URL:
 
 ```python
 spreadsheet = gc.open_by_url('URL of your Google Sheet')
