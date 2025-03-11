@@ -54,35 +54,40 @@ You will be using the following Google Sheet:
 10. In a new code block, write a function with one parameter that returns "Early Strength" if it has been less than 7 days, "Medium Strength" if it has been less than 28 days, and "Long-Term Strength" if it has been longer than 28 days.
 11. Using the .apply method with the function you just created on the 'Age (day)' column in your dataframe, add a new column to your dataframe called "Age Category" that includes whether the concrete measurement is early, medium, or long-term strength.
 12. In a new codeblock, use .describe() to find the statistics of your dataframe.
-13. In a new code      
-14. 
-15. 
-16. 
-
-
-**extra credit (items 7-9 are extra credit)
-7. In the fifth code block convert the Date/Time column to a date/time data type
-8. Set the index to the date/time column
-9. Show the dataframe header with the new index
-
-**extra credit
-
-
-10. In the sixth code block display the last 8 rows of the table.
-11. In the seventh code block create a table that only shows flowrate over 100.
-12. In the eighth code block create a table that only shows Approved Status 'P'.
-13. Create a bar graph using matplotlib to compare how many approved statuses are 'P' v. 'A'. When you are done it should look like this:
-
-![pandas_graph](https://github.com/user-attachments/assets/3e9ed32e-626f-4156-acc7-026143845f95)
-
+13. In a new codeblock, create a new dataframe by grouping the compressive strength of the concrete by the age catgeory column you created in step 11. When you display the new dataframe, it should look something like this:
     
-4. Turn sharing, and editing on. Then turn in your link to Learning Suite.
+    ![concrete strength](https://github.com/user-attachments/assets/7edd177a-c47d-48a4-baef-fce9c2602729)
+
+14. In a new codeblock, write code to display a scatter plot that compares the compressive strength of the concrete with its cement content. Include:
+     - a title
+     - x and y labels
+     - change the default color
+     - change the marker from the default circle marker
+   
+    When you are finished your scatter plot should look something like this:
+
+    ![scatter plot](https://github.com/user-attachments/assets/afa9b630-6990-48ae-be4c-c58cb69ad2e2)
+
+15. In a new codeblock, write code to display a boxplot that compares the compressive strength for each age category. Include:
+     - a title
+     - x and y labels
+     - change the default color
+
+    When you are finished your boxplot should look something like this:
+    
+    ![boxplot](https://github.com/user-attachments/assets/1abbd39f-c61e-4d36-bd23-37f75c62b0d7)
+
+16. For extra credit, create a heatmap that looks like the following:
+
+    ![heatmap](https://github.com/user-attachments/assets/b937857d-eca3-4be5-9298-9f80d3200d65)
+
+17. Turn sharing, and editing on. Then turn in your link to Learning Suite.
 
 ---
 
 # Turning In/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created. 
+Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. 
 **
 
 |                                **Item**                                | **Amount** |
