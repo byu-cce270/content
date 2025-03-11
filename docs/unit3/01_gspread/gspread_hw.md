@@ -88,7 +88,7 @@ For this example, you have been given bids that were submitted for a job and it 
          
 ---
 
-**Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
+**Turn sharing and editing on. Turn in the link to BOTH YOUR COLAB NOTEBOOK AND YOUR GOOGLE SHEET on Learning Suite in the feedback box**
 
 ---
 
