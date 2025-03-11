@@ -244,22 +244,31 @@ We will go over this in more detail in the later but you may see some code we pr
 To write data to a Google Sheet, you need to select the worksheet that you want to write to and then write the data. There are several ways to write data to a Google Sheet. Here is an example of how to write data to a Google Sheet:
 
 ```python
-worksheet.update('A1', 'Hello World!')
+worksheet.update('A1', [['Hello World!']])
 ```
-
 In this example, 'A1' is the cell that you want to write to, and 'Hello World!' is the data that you want to write. You can also write data to a range of cells:
 
 ```python
 worksheet.update('A1:B2', [['Hello', 'World'], ['Goodbye', 'World']])
 ```
 
-This will write the data 'Hello' to cell A1, 'World' to cell B1, 'Goodbye' to cell A2, and 'World' to cell B2. You can also write data to a specific row or column by using coordinates:
+
+This will write the data 'Hello' to cell A1, 'World' to cell B1, 'Goodbye' to cell A2, and 'World' to cell B2. 
+
+If you want to streamline the process a bit when writing text, you can do this:
+
+```python
+worksheet.update_acell('A1', 'Hello World!')
+```
+
+You can also write data to a specific row or column by using coordinates:
 
 ```python
 worksheet.update_cell(1, 1, 'Hello')
 ```
 
-This will write the data 'Hello' to cell A1. Antoher way to write data to a Google Sheet is to append data to the end of the worksheet. This is useful when you want to add new data to the sheet without overwriting existing data. Say we have a worksheet that looks like this:
+This will write the data 'Hello' to cell A1. Another way to write data to a Google Sheet is to append data to the 
+end of the worksheet. This is useful when you want to add new data to the sheet without overwriting existing data. Say we have a worksheet that looks like this:
 
 | Name  | Age
 |-------|-----
