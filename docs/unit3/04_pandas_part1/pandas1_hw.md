@@ -2,29 +2,51 @@
 
 **Purpose:** In this assignment you are given a Google Sheet with different data. You will import the google sheet into your python code and use it to create pandas dataframes. You will then graph information from the different dataframes.
 
-You will be using the following Google Sheet:
+You will be using the following Google Sheet:  
 
 <a href="https://docs.google.com/spreadsheets/d/1W645cg4v6esPkslndyoU2jV31Y4Yg3Z5VT_JB3--t40/edit?gid=210801436#gid=210801436" target="_blank">
-    <img src="https://miro.medium.com/v2/resize:fit:800/1*K_GFTHJpnGQ4YRhexggvHw.png" alt="Google Sheets" width="150"/>
+    <img src="https://miro.medium.com/v2/resize:fit:800/1*K_GFTHJpnGQ4YRhexggvHw.png" alt="Google Sheets" width="100"/>
 </a>
 
 ## Instructions
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part1/starter_sheet_pandas_part_1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_4_Pandas-Part1_HW"
-
-You will be using the following data set:
-[ProvoRiverData](https://github.com/user-attachments/files/17669682/ProvoRiverData.csv)
+3. In the code block titled "Imports and Authentication" input the correct import statements to connect gspread. Also import:
+    - matplotlib.pylot as plt
+    - numpy as np
+    - pandas as pd
+    - seaborn as sns
+4. After inputting the correct input statements, open your google sheet under the comment titled "Read in your Google Sheet here"
 
 ---
 
-### Creating and Formatting the DataFrame
+### Creating and Formatting the DataFrames
 
-1. Upload the Provo River Data csv file to your Python notebook.
-2. Write appropriate import statements and read the file into a pandas dataframe.
+1. Under the code block titled "Create DataFrames", write the appropriate code to turn the three sheets of the Google Sheet into dataframes. When you are done you should have a bridge dataframe, traffic dataframe, and concrete dataframe.
+2. Under the text block titled "BRIDGE DATAFRAME" filter the bridge dataframe into a new dataframe that only includes bridges in critical condition.
+3. Display the dataframe you just created.
+4. The next code block includes code that is given to you. It takes the bridge age data from the dataframe and converts the numbers into actual dates so we can perform analysis on the numbers.
+5. Under the line given, use the .groupby() method to display an average bridge age based on the condition the bridges are in. If you've done everything correctly the following should display:
+   
+![bridge df](https://github.com/user-attachments/assets/242fefdb-276f-496d-957c-11597bd3d5ca)
+
+6. In a new code block, write code to display a bar graph of the number of bridges there are based on their condition rating. Include:
+    - x and y labels
+    - a title
+    - change the default color scheme
+
+    When you are finished your bar graph should look something like this:
+   
+![bridge bar graph](https://github.com/user-attachments/assets/fb37f510-746b-4aaa-84c8-70a683ea64c7)
+
+7. Under the text block
+8. 
+9. 
+10. Write appropriate import statements and read the file into a pandas dataframe.
    (remove any columns that have no data)
-3. In the second code block display the table that pandas made.
-4. In the third code block write code that will display a table like this:
+11. In the second code block display the table that pandas made.
+12. In the third code block write code that will display a table like this:
    
 ![df_python](https://github.com/user-attachments/assets/f6726e28-0559-4b73-8d13-6883bf984877)
 
