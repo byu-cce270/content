@@ -1,7 +1,12 @@
 #  HW: Pandas DataFrame
 
-**Purpose:** In this assignment you are given a csv file for the Provo River Flow Summary Statistics. You will download the file and create a DataFrame out of the data provided and manipulate your DataFrame. 
-You can find where to access this data [here](https://waterdata.usgs.gov/nwis/uv?site_no=10163000){:target="_blank"}.
+**Purpose:** In this assignment you are given a Google Sheet with different data. You will import the google sheet into your python code and use it to create pandas dataframes. You will then graph information from the different dataframes.
+
+You will be using the following Google Sheet:
+
+<a href="https://docs.google.com/spreadsheets/d/1W645cg4v6esPkslndyoU2jV31Y4Yg3Z5VT_JB3--t40/edit?gid=210801436#gid=210801436" target="_blank">
+    <img src="https://miro.medium.com/v2/resize:fit:800/1*K_GFTHJpnGQ4YRhexggvHw.png" alt="Google Sheets" width="150"/>
+</a>
 
 ## Instructions
 
