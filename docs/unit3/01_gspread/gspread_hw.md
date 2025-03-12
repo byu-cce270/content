@@ -20,20 +20,21 @@ For this example, you have been given bids that were submitted for a job and it 
 4. In the code block titled "Bid Analysis" open the first worksheet in your workbook.
 5. Use the .get_all_values() method to pull all the values from your spreadsheet into a list. Input the following code into your notebook:
 
-   ```python
-   headers = values1[0]
-   rows = values[1:]
-   ```
+```python
+headers = values1[0]
+rows = values[1:]
+```
    
    *  Hint: Depending on what you named your values list this code might have to be modified, but the principle is the same.
   
 6. Using a for loop, loop through the bid amounts in the rows list and convert the numbers into floats so you can perform an analysis on them.
 <br>
    *  Hint: The following code will remove the $ and , in the bid amounts of the Google Sheet so the numbers can be converted correctly:
-   ```python
-   .replace('$','').replace(',','')
-   # replace is a string method, so it works on strings, not lists
-   ```
+   
+```python
+.replace('$','').replace(',','')
+# replace is a string method, so it works on strings, not lists
+```
 
 7. Outside of the for loop, create two empty lists. One named Drywall, and the other named Concrete. This is where you will store the different bids.
 8. Create a for loop that will loop through the different rows in your Google Sheet and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete.
@@ -48,9 +49,10 @@ For this example, you have been given bids that were submitted for a job and it 
     *  Insert chosen here*." After accepting the bid, you should end the loop. <br>
     *  If you do not want to accept the bid you should remove the bid from your list of bids and continue the loop. <br>
     * * Hint: You can format your number as a currency by using the following code in your input statement with the f formater: 
-    ```python
-    "${:,.2f}"
-    ```
+    
+```python
+"${:,.2f}"
+```
     
 14. Write code to add a new sheet to your Google Sheet with the selected bidder's information.
 15. Move to the "Concrete Bid Analysis" code block. Line 4 is the same advanced code given for the Drywall bids.
