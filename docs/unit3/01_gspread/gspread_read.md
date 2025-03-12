@@ -26,6 +26,10 @@ Think to yourself: How are APIs us in the as a civil engineer or construction ma
 
 ## How to Allow API Access for a Project
 
+In order to use the Google Sheets and Google Drive in your code, you need to enable it for your project. Once you have enabled the Google Sheets API and Google Drive API, you will be able to access the data in your Google Sheets and Google Drive from your code. You will only need to do this for you gmail account once. If you using a different account, you will need to enable the API for that account as well.
+
+Here are the steps to enable the Google Sheets API:
+
 1. Head to this link: [Google Dashboard](https://console.developers.google.com/){:target="_blank"}
 
 2. Click on the link that says "+ Enable APIs and Services".
@@ -82,26 +86,23 @@ import gspread
 Then you need to authenticate your account. This is done by running the following command:
 
 ```python
+from google.colab import auth
+auth.authenticate_user()
 from google.auth import default
 creds, _ = default()
 gc = gspread.authorize(creds)
-from google.colab import auth
-from google.auth import default
-from google.colab import auth
-auth.authenticate_user()
 ```
 
 If you prefer, you can do all of this in one cell or code block as follows:
 
 ```python
 import gspread
+
+from google.colab import auth
+auth.authenticate_user()
 from google.auth import default
 creds, _ = default()
 gc = gspread.authorize(creds)
-from google.colab import auth
-from google.auth import default
-from google.colab import auth
-auth.authenticate_user()
 ```
 
 ---
@@ -210,12 +211,17 @@ This will return a list of dictionaries, where each dictionary represents a row 
 | Name  | Age
 |-------|-----
 | Alice | 25
+| Bob   | 30
+| Carol | 35
     
 The `data` variable will contain the following list of dictionaries:
 
 ```python
-[{'Name': 'Alice', 'Age': '25'}]
+[{'Name': 'Alice', 'Age': '25'}, {'Name': 'Bob', 'Age': '30'}, {'Name': 'Carol', 'Age': '35'}]
 ```
+
+Note that the values in the dictionary are strings. It is important to note that it generates a list of dictionaries, where each dictionary represents a row in the worksheet. The keys in the dictionary are the values in the header row.
+
 
 There are many other ways to read data from a Google Sheet, including from specific cells, ranges, row, or columns. You can find more information in the [gspread documentation](https://docs.gspread.org/en/latest/user-guide.html#getting-a-cell-value){:target="_blank"}.
 
@@ -244,21 +250,25 @@ We will go over this in more detail in the later but you may see some code we pr
 To write data to a Google Sheet, you need to select the worksheet that you want to write to and then write the data. There are several ways to write data to a Google Sheet. Here is an example of how to write data to a Google Sheet:
 
 ```python
-worksheet.update('A1', [['Hello World!']])
-```
-In this example, 'A1' is the cell that you want to write to, and 'Hello World!' is the data that you want to write. You can also write data to a range of cells:
-
-```python
-worksheet.update('A1:B2', [['Hello', 'World'], ['Goodbye', 'World']])
-```
-
-
-This will write the data 'Hello' to cell A1, 'World' to cell B1, 'Goodbye' to cell A2, and 'World' to cell B2. 
-
-If you want to streamline the process a bit when writing text, you can do this:
-
-```python
 worksheet.update_acell('A1', 'Hello World!')
+```
+In this example, 'A1' is the cell that you want to write to, and 'Hello World!' is the data that you want to write. Another way to write data to a Google Sheet is to write data to a specific cell. This is done by using the following command:
+
+```python
+worksheet.update([['Hello World!']], 'A1')
+```
+
+This will also write the data 'Hello World!' to cell A1. You can also write data to a range of cells:
+
+```python
+worksheet.update([['Hello', 'World'], ['Goodbye', 'World']],'A1:B2')
+```
+
+This will write the data 'Hello' to cell A1, 'World' to cell B1, 'Goodbye' to cell A2, and 'World' to cell B2. Also know you can put the data in a list of lists set to a variable and then use that variable in the update method.
+
+```python
+data = [['Hello', 'World'], ['Goodbye', 'World']]
+worksheet.update(data, 'A1:B2')
 ```
 
 You can also write data to a specific row or column by using coordinates:
