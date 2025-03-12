@@ -108,7 +108,8 @@ For this example, you have been given bids that were submitted for a job and it 
 |                                               Gspread                                                     | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
 |                         Part 1 - Correct import and authentication statements                           |        2        |
-|                          Part 1 - Bid analysis code block is completed correctly                        |        4        |
+|                          Part 1 - Google Sheet is opened using the url link                             |        2        |
+|                          Part 1 - Bid analysis code block is completed correctly                        |        2        |
 |         Part 1 - Drywall Bid Analysis completed correctly with chosen bid updated in Google Sheet       |        4        |
 |         Part 1 - Concrete Bid Analysis completed correctly with chosen bid updated in Google Sheet      |        4        |
 |                            Part 2 - Correct sheets opened for quantities and costs                      |        3        |
@@ -123,4 +124,5 @@ The following is not apart of the rubric, but specifies how you can lose points.
 |:---------------------------------------------------------------------:|:----------:|
 | No comments explaining why AI is used and what its provided code does |    2-3     |
 |                        Link shared incorrectly                        |     3      |
+|                  Google Sheet not opened by url                       |     3      |
 |       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
