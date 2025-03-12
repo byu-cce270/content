@@ -136,7 +136,9 @@ spreadsheet = gc.open_by_url('URL of your Google Sheet')
 ``` 
 
 In this example, 'Name of your Google Sheet' is the name of the Google Sheet that you want to open. 
-<br> **Note that the name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** 
+
+!!! NOTE
+    The name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** 
 
 For this class, we will be sharing google sheets for use with gspread by providing you with a public URL for the 
 sheet. Therefore, we ask that you open the sheets using the 
