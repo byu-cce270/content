@@ -7,40 +7,12 @@
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part2/HW_Pandas_Part_2.ipynb#scrollTo=0Z04HkIOYDLu" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
 
-You will be using the following data set:
 
-[Productivity Data - Pandas Part 2](https://github.com/user-attachments/files/17744606/productivity-part2pandas.1.xlsx)
 
-3. In the first code block, import the necessary modules.
-4. Load the Excel file into the notebook. Hint: this is just like we did in class.
-5. Load the data from the equipment and productivity sheets in the Excel file into separate dataframes.
-6. Standardize the column names by making them lowercase and removing any extra spaces.
-7. Remove any duplicate rows using .drop_duplicates().
-8. Display the data to make sure everything is correct.
-9. To calculate the equipment age, convert the 'year purchased' column to a datetime format using the .to_datetime() command.
-10. Calculate the current age of the equipment by subtracting the year purchased from the year 2024.
-11. Merge the equipment and productivity dataframes on the common column 'equipment id'.
-12. Filter out rows where no hours were used.
-13. You will now add the following columns to your merged dataframe using the following formulas:
+![pavement_rating](https://github.com/user-attachments/assets/b627382e-dc69-44ef-9401-2d9d70505ee6)
 
-|    **New Column Name**                | **Formula** |
-|:---------------------------------------------------:|:----------:|
-|       efficiency (cubic yards/hour)         |     soil moved (cu yds) / hours used      |
-|   fuel efficiency (cubic yards/gallon)    |     soil moved (cu yds) / fuel consumed (gallons)|
-|          total cost ($)         |     hourly rate * hours used      |
-|          cost per cubic yard ($)        |     total cost ($) / soil moved (cu yds)      |
-    
-14. Verify the columns were added correctly by printing a .head() of only the newly added columns.
-15. Using the .groupby() method, find the following:
 
-    * average efficiency by equipment type
-    * total cost by project site
-    * fuel efficiency (cubic yards/gallon) by weather conditions
-   
-16. Sort the merged dataframe to find the top 3 most efficient and cost-effective equipment.
-17. Using matplotlib, recreate the following bar chart:
-
-![barchart](https://github.com/user-attachments/assets/967534f5-faff-4f7c-8847-77b3740aaa91)
+![pandas2](https://github.com/user-attachments/assets/3ae94a3c-c42f-4a7a-9116-689f3df53353)
 
 
 * the colors don't have to be the same but make sure they aren't the default colors
