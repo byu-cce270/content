@@ -64,26 +64,28 @@ For this example, you have been given bids that were submitted for a job and it 
 ### Steps
 1. In the "Client Estimating Portion" code block open the 'Material Cost' worksheet from your workbook to work with that data.
 2. Use the .get_all_values() method to pull all the values from your spreadsheet into a list.
-3. Create a function called client_estimation that will take 2 parameters, one for the quantities ordered by the clients and one for the list of materials costs from your Google Sheet.
-4. Inside the function do the following:
+3. Create code to open either of the client sheets to get a list of their material orders  
+4. Create a function called client_estimation that will take 2 parameters, one for the quantities ordered by the clients and one for the list of materials costs from your Google Sheet. <br>
+   * Your functions have to be defined above the code that calls them. You may want a separate code block for the functions. <br>
+5. Inside the function do the following:
     - Remove the header row from the quantities list.
     - Start an empty list for the quantities needed by the client.
     - Create a variable for the total_cost of the estimate that starts at 0.
-5. Still inside the function, loop through the quantities needed by the client, convert them to floats, and add the waste factor given in the client order.
-6. For each material, search the list that contains the material cost to find the corresponding cost per unit.
+6. Still inside the function, loop through the quantities needed by the client, convert them to floats, and add the waste factor given in the client order.
+7. For each material, search the list that contains the material cost to find the corresponding cost per unit.
     - If the material is found, pull the cost and convert it into a float.
     - If the material is not found, print a message indicating that the item is missing and move on to the next item in the list.
-7. Calculate the material cost by multiplying the quantity with the waste factor by the cost per unit of that item.
+8. Calculate the material cost by multiplying the quantity with the waste factor by the cost per unit of that item.
     - Add this calculated cost to the total_cost variable.
     - Store the material name and its total cost as an item in the empty list you created earlier.
-8. After looping through all the materials, print the list of materials and their total costs, then print the final total_cost.
-9. Return the quantities list and the total cost from the client_estimation function.
-10. Create another function called update_sheet that takes four parameters:
+9. After looping through all the materials, print the list of materials and their total costs, then print the final total_cost.
+10. Return the quantities list and the total cost from the client_estimation function.
+11. Create another function called update_sheet that takes four parameters:
     - wb (the workbook you are updating)
     - client (the client's name)
     - quantity (the list of material names and costs)
     - clientcost (the total cost of the order)
-11. Inside the update_sheet function:
+12. Inside the update_sheet function:
      - Create a new worksheet in the Google Sheet with the client's name as the title.
      - Loop through the list of materials ancd costs, appending each row to the new worksheet.
      - Append a final row the contains the final total cost for the client's order.
