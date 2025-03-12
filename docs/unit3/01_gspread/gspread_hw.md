@@ -14,7 +14,7 @@ For this example, you have been given bids that were submitted for a job and it 
 
 ### Steps
 1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_gspread/HW_Gspread_Starter_Sheet.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-2. Go to the "Imports" code block. Write the proper code to import gspread and authentiate yourself. You can cut-and-paste from previous assignments.
+2. Go to the "Imports" code block. Write the proper code to import gspread and authenticate yourself. You can cut-and-paste from previous assignments.
 3. Create a copy of the following worksheet and open it by url in the same code block. [Gspread Sample Data](https://docs.google.com/spreadsheets/d/1AtCbzKEuugeq9zCccWDjv9LpaLZX8ftikq6j64JJ1xc/edit?gid=0#gid=0){:target="_blank"}
    <br> You should open and look at the Google Sheet to understand the data you are working with.
 4. In the code block titled "Bid Analysis" open the first worksheet in your workbook.
@@ -108,7 +108,8 @@ For this example, you have been given bids that were submitted for a job and it 
 |                                               Gspread                                                     | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
 |                         Part 1 - Correct import and authentication statements                           |        2        |
-|                          Part 1 - Bid analysis code block is completed correctly                        |        4        |
+|                          Part 1 - Google Sheet is opened using the url link                             |        2        |
+|                          Part 1 - Bid analysis code block is completed correctly                        |        2        |
 |         Part 1 - Drywall Bid Analysis completed correctly with chosen bid updated in Google Sheet       |        4        |
 |         Part 1 - Concrete Bid Analysis completed correctly with chosen bid updated in Google Sheet      |        4        |
 |                            Part 2 - Correct sheets opened for quantities and costs                      |        3        |
@@ -123,4 +124,5 @@ The following is not apart of the rubric, but specifies how you can lose points.
 |:---------------------------------------------------------------------:|:----------:|
 | No comments explaining why AI is used and what its provided code does |    2-3     |
 |                        Link shared incorrectly                        |     3      |
+|                  Google Sheet not opened by url                       |     3      |
 |       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
