@@ -186,7 +186,7 @@ spreadsheet = gc.create('A new spreadsheet')
 Then to create a worksheet in the spreadsheet, you can use the following command:
 
 ```python
-worksheet = spreadsheet.add_worksheet(title="A worksheet", rows="100", cols="20")
+worksheet = spreadsheet.add_worksheet(title="A worksheet", rows=100, cols=20)
 ```
 
 ### Important Naming Tip
