@@ -28,17 +28,20 @@ For this example, you have been given bids that were submitted for a job and it 
    *  Hint: Depending on what you named your values list this code might have to be modified, but the principle is the same.
   
 6. Using a for loop, loop through the bid amounts in the rows list and convert the numbers into floats so you can perform an analysis on them.
-
+<br>
    *  Hint: The following code will remove the $ and , in the bid amounts of the Google Sheet so the numbers can be converted correctly:
    ```python
    .replace('$','').replace(',','')
+   # replace is a string method, so it works on strings, not lists
    ```
+
 7. Outside of the for loop, create two empty lists. One named Drywall, and the other named Concrete. This is where you will store the different bids.
 8. Create a for loop that will loop through the different rows in your Google Sheet and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete.
 9. Move to the "Drywall Bid Analysis" code block. Line 4 is advanced code that is provided to you for this assignment. It will sort your Drywall list in order from cheapest to most expensive bid.
 10. Write code to delete the most expensive and cheapest bid from your list.
 11. Write code to find the average cost for the remaining bids in your list.
-12. Write code to find the median cost for the remaining bids in your list.
+12. Write code to find the median cost for the remaining bids in your list. 
+    * The // operator divides a number and round the result to the lower integer. '''mid_num  = len(Drywall) // 2''' will give you the index of the middle number in the list. Remember that Python is 0-indexed.
 13. Now that you understand your bids more, write a while loop that will loop through the remaining bids and ask you as the user if you would like to accept the given bid.
     
     *  If you do want to accept the bid you should print something like: "Bid accepted. Your final bid for Drywall is: *insert chosen here*." After accepting the bid, you should end the loop.
