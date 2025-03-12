@@ -66,7 +66,7 @@ For this example, you have been given bids that were submitted for a job and it 
 2. Use the .get_all_values() method to pull all the values from your spreadsheet into a list.
 3. Create code to open either of the client sheets to get a list of their material orders  
 4. Create a function called client_estimation that will take 2 parameters, one for the quantities ordered by the clients and one for the list of materials costs from your Google Sheet. 
-   * Your functions have to be defined above the code that calls them. <br>
+   - Your functions have to be defined above the code that calls them. <br>
 5. Inside the function do the following:
     - Remove the header row from the quantities list.
     - Start an empty list for the quantities needed by the client.
