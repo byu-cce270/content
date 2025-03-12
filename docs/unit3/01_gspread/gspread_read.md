@@ -46,6 +46,7 @@ Here are the steps to enable the Google Sheets API:
 
 ![googledriveapi](https://github.com/user-attachments/assets/683ffac4-f0f9-4999-9d05-85abfb64233a)
 
+You only need to do this once for your Google account. Once you have enabled the Google Sheets API and Google Drive API, you will be able to access the data in your Google Sheets and Google Drive from your code.
 ---
 
 ## What is Gspread
@@ -70,9 +71,16 @@ Now let's see how to use gspread.
 To use gspread, you will normally need to install the library. However, since we are working in Google Colab, this library is already installed. If you are working in another coding environment, you can install this library this by running the following command in your terminal:
 
 ```bash
-!pip install gspread
+pip install gspread
+```
+or
+```bash
+conda install -c conda-forge gspread
 ```
 
+Depending on your environment.
+You may need to use `!pip install gspread` or `!conda install -c conda-forge gspread` in Jupyter Notebook.
+ 
 ---
 
 ## Importing and Authenticating Gspread
@@ -104,12 +112,17 @@ from google.auth import default
 creds, _ = default()
 gc = gspread.authorize(creds)
 ```
+##
+This will authenticate your account and allow you to access the data in your Google Sheets and Google Drive from your code. 
 
 ---
 
 ## Reading Data from Google Sheets
 
-To read data from a Google Sheet, you need to open the spreadsheet. This is the entire google sheet document that has several pages or worksheets with data and information. Then select the worksheet or page that you want to read. Once you have selected the worksheet, you can read the data from the worksheet.
+To read data from a Google Sheet, you need to open the spreadsheet. 
+<br> Your  entire google sheet document may have several pages or worksheets. 
+<br> You need to  select the worksheet or page that you want to read. 
+<br> Once you have selected the worksheet, you can read the data from the worksheet.
 
 ### Opening a Google Sheet
 
@@ -117,9 +130,12 @@ To read data from a Google Sheet, you need to open the sheet and then read the d
 
 ```python
 spreadsheet = gc.open('Name of your Google Sheet')
+#or
+spreadsheet = gc.open_by_url('URL of your Google Sheet')
 ``` 
 
-In this example, 'Name of your Google Sheet' is the name of the Google Sheet that you want to open. **Note that the name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** 
+In this example, 'Name of your Google Sheet' is the name of the Google Sheet that you want to open. 
+<br> **Note that the name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** 
 
 For this class, we will be sharing google sheets for use with gspread by providing you with a public URL for the 
 sheet. Therefore, we ask that you open the sheets using the 
@@ -174,7 +190,10 @@ worksheet = spreadsheet.add_worksheet(title="A worksheet", rows="100", cols="20"
 
 ### Important Naming Tip
 
-In all the examples above, you can see that the variable names are `spreadsheet` and `worksheet`. You can name these variables whatever you want. However, it is important to remember that these variables are objects that represent the Google Sheet and the Worksheet. So it is a good idea to name them something that makes sense. For example, if you are reading in data from a Google Sheet that contains sales data, you could name the variables `sales_sheet` and `sales_worksheet`.
+In all the examples above, you can see that the variable names are `spreadsheet` and `worksheet`. You can name these variables whatever you want. However, it is important to remember that these variables are objects that represent the Google Sheet and the Worksheet or pages in the Google Sheet. 
+<br> So it is a good idea to name them something that makes sense. For example, if you are reading in data from a Google Sheet that contains sales data, you could name the variables `sales_sheet` and `sales_worksheet` or follow the Excel naming vervention and use 'workbook' and 'worksheet' which is a little less confusing. 
+
+```python
 
 ---
 
@@ -315,7 +334,7 @@ The sheet will look like this:
 |-------|-----
 | Alice | 25
 
-This will append the data 'Alice' to cell A1 and '25' to cell B1. You can also append multiple dictionaries at once:
+This will append the data 'Alice' to cell A1 and '25' to cell B1. You can also append multiple e dictionaries at once where each dictionary represents a row in the worksheet and has the same keys as the header row:
 
 ```python
 worksheet.append_rows([{'Name': 'Alice', 'Age': 25}, {'Name': 'Bob', 'Age': 30}])

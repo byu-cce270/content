@@ -4,15 +4,74 @@
 
 ## Instructions
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part2/HW_Pandas_Part_2.ipynb#scrollTo=0Z04HkIOYDLu" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/starter_sheet_HW_2_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
+3. In the code block titled "Imports and Authentication" input the correct import statements to connect to gspread. Also import:
+    - matplotlib.pyplot as plt
+    - pandas as pd
+    - seaborn as sns
+4. After authenticating yourself, open your google sheet in python using gspread.
+5. In a new code block, write code to open the two different sheets into two seperate pandas dataframes.
+    * Note: You can name the dataframes whatever you would like. For the purposes of these instructions the first sheet will be referred to as the resurface_df and the second sheet will be referred to as the pavement_df.
+6. In a new code block, converte the "Date" column in the resurface_df to a date/time format.
+7. Use the .dt.day_name() method in pandas to add a new column to the resurface_df that specifies what day of the week the resurfacing took place on.
+8. Display the dataframe with the new column added.
+9. In a new code block, use the .groupby() method to count the number of jobs under each borough for both milling and paving.
+
+   When you are done, the dataframe that displays should look like this:
+
+    ![groupby](https://github.com/user-attachments/assets/e52726c4-e0ef-4a37-b9f0-11a3d7028897)
+
+
+10. In a new code block, create a new dataframe that finds that most common street names for paving jobs.
+11. Rename the columns in your new dataframe to be 'Street Name' and 'Job Count'.
+
+    When you are done, the dataframe that displays should look like this:
+
+    ![streets](https://github.com/user-attachments/assets/9a9dcfd3-356e-44cb-9ce6-eb56b1beb9e4)
+
+    
+12. Starting in a new codeblock, assume that each shift for resurfacing last 8 hours. Add a work duration column to the resurface_df that has the value of 8 for each row.
+13. Use the .groupby() method to determine the number of work hours completed by each community board.
+
+    When you are done, the dataframe that displays should look like this:
+
+    ![community hours](https://github.com/user-attachments/assets/d1e44013-40e5-4516-a9b9-0ce9622af326)
+
+14. In a new code block, create a bar graph that displays the number of work jobs by borough. Include:
+     - a title
+     - x and y labels
+     - horizontal gridlines
+     - change the default colors
+
+    When you are done, the graph should look something like this:
+
+    ![pandas2](https://github.com/user-attachments/assets/3ae94a3c-c42f-4a7a-9116-689f3df53353)
+
+15. In a new codeblock under the 'PAVEMENT RATING' text block create a dictionary to map the pavement_df boroughs.
+     - X : Bronx
+     - B : Brooklyn
+     - M : Manhattan
+     - Q : Queens
+     - S : Staten Island
+   
+16. Map the BoroughCod column of the pavement_df to insert a new column titled "Borough" that includes the full name of the boroughs.
+17. In a new code block, use the .groupby() method to sort the different ratings the boroughs have given out.
+
+    When you are done, the data frame that displays should look like this:
+
+    ![ratings](https://github.com/user-attachments/assets/9f6f0a59-18f6-4c4c-9a82-7555da13849d)
+
+18. 
+
+
 
 
 
 ![pavement_rating](https://github.com/user-attachments/assets/b627382e-dc69-44ef-9401-2d9d70505ee6)
 
 
-![pandas2](https://github.com/user-attachments/assets/3ae94a3c-c42f-4a7a-9116-689f3df53353)
+
 
 
 * the colors don't have to be the same but make sure they aren't the default colors
