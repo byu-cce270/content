@@ -48,7 +48,22 @@
 
     ![pandas2](https://github.com/user-attachments/assets/3ae94a3c-c42f-4a7a-9116-689f3df53353)
 
-15. 
+15. In a new codeblock under the 'PAVEMENT RATING' text block create a dictionary to map the pavement_df boroughs.
+     - X : Bronx
+     - B : Brooklyn
+     - M : Manhattan
+     - Q : Queens
+     - S : Staten Island
+   
+16. Map the BoroughCod column of the pavement_df to insert a new column titled "Borough" that includes the full name of the boroughs.
+17. In a new code block, use the .groupby() method to sort the different ratings the boroughs have given out.
+
+    When you are done, the data frame that displays should look like this:
+
+    ![ratings](https://github.com/user-attachments/assets/9f6f0a59-18f6-4c4c-9a82-7555da13849d)
+
+18. 
+
 
 
 
