@@ -44,8 +44,13 @@ For this example, you have been given bids that were submitted for a job and it 
     * The // operator divides a number and round the result to the lower integer. '''mid_num  = len(Drywall) // 2''' will give you the index of the middle number in the list. Remember that Python is 0-indexed.
 13. Now that you understand your bids more, write a while loop that will loop through the remaining bids and ask you as the user if you would like to accept the given bid.
     
-    *  If you do want to accept the bid you should print something like: "Bid accepted. Your final bid for Drywall is: *insert chosen here*." After accepting the bid, you should end the loop.
-    *  If you do not want to accept the bid you should remove the bid from your list of bids and continue the loop.
+    *  If you do want to accept the bid you should print something like: "Bid accepted. Your final bid for Drywall is: <br>
+    *  Insert chosen here*." After accepting the bid, you should end the loop. <br>
+    *  If you do not want to accept the bid you should remove the bid from your list of bids and continue the loop. <br>
+    * * Hint: You can format your number as a currency by using the following code in your input statement with the f formater: 
+    ```python
+    "${:,.2f}"
+    ```
     
 14. Write code to add a new sheet to your Google Sheet with the selected bidder's information.
 15. Move to the "Concrete Bid Analysis" code block. Line 4 is the same advanced code given for the Drywall bids.
