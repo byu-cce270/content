@@ -321,32 +321,9 @@ This will append the data 'Hello' to cell A1 and 'World' to cell B1. You can als
 worksheet.append_rows([['Hello', 'World'], ['Goodbye', 'World']])
 ```
 
-This will append the data 'Hello' to cell A1 and 'World' to cell B1, and 'Goodbye' to cell A2 and 'World' to cell B2. You can also append a dictionary to the worksheet:
+This will append the data 'Hello' to cell A1 and 'World' to cell B1, and 'Goodbye' to cell A2 and 'World' to cell B2.
 
-```python
-worksheet.append_row({'Name': 'Alice', 'Age': 25})
-```
-
-The sheet will look like this:
-
-| Name  | Age
-|-------|-----
-| Alice | 25
-
-This will append the data 'Alice' to cell A1 and '25' to cell B1. You can also append multiple e dictionaries at once where each dictionary represents a row in the worksheet and has the same keys as the header row:
-
-```python
-worksheet.append_rows([{'Name': 'Alice', 'Age': 25}, {'Name': 'Bob', 'Age': 30}])
-```
-
-The sheet will look like this:
-
-| Name  | Age
-|-------|-----
-| Alice | 25
-| Bob   | 30
-
-**For most of the HW and In Class assignments, we will be using the append_row method to write data to the Google Sheet.**
+**For most of the HW and In Class assignments, we will be using the append_row(s) method to write data to the Google Sheet.**
 
 There are many other ways to write data to a Google Sheet, including to specific cells, ranges, rows, or columns. You can find more information in the [gspread documentation](https://docs.gspread.org/en/latest/user-guide.html#updating-cells){:target="_blank"}. You can also look here to see how to code in data validation, formatting, and other features.
 
