@@ -47,6 +47,7 @@ Here are the steps to enable the Google Sheets API:
 ![googledriveapi](https://github.com/user-attachments/assets/683ffac4-f0f9-4999-9d05-85abfb64233a)
 
 You only need to do this once for your Google account. Once you have enabled the Google Sheets API and Google Drive API, you will be able to access the data in your Google Sheets and Google Drive from your code.
+
 ---
 
 ## What is Gspread
@@ -130,16 +131,14 @@ To read data from a Google Sheet, you need to open the sheet and then read the d
 
 ```python
 spreadsheet = gc.open('Name of your Google Sheet')
-#or
-spreadsheet = gc.open_by_url('URL of your Google Sheet')
 ``` 
 
 In this example, 'Name of your Google Sheet' is the name of the Google Sheet that you want to open. 
 <br> **Note that the name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** 
 
 For this class, we will be sharing google sheets for use with gspread by providing you with a public URL for the 
-sheet. Therefore, we ask that you open the sheets using the 
-URL method. Here is an 
+sheet. If you do any editing, you will need to make a copy of the starter sheet. Therefore, we ask that you open the sheets using the 
+URL method. This method is a way to help with any issue when trying to use a sheet that has the same name as another sheet. Here is an 
 example of 
 how to open a sheet by URL:
 
