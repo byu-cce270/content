@@ -46,7 +46,9 @@ Here are the steps to enable the Google Sheets API:
 
 ![googledriveapi](https://github.com/user-attachments/assets/683ffac4-f0f9-4999-9d05-85abfb64233a)
 
-You only need to do this once for your Google account. Once you have enabled the Google Sheets API and Google Drive API, you will be able to access the data in your Google Sheets and Google Drive from your code.
+!!! NOTE
+    You only need to do this once for your Google account. Once you have enabled the Google Sheets API and Google Drive API, you will be able to access the data in your Google Sheets and Google Drive from your code.
+
 ---
 
 ## What is Gspread
@@ -79,7 +81,6 @@ conda install -c conda-forge gspread
 ```
 
 Depending on your environment.
-You may need to use `!pip install gspread` or `!conda install -c conda-forge gspread` in Jupyter Notebook.
  
 ---
 
@@ -135,7 +136,9 @@ spreadsheet = gc.open_by_url('URL of your Google Sheet')
 ``` 
 
 In this example, 'Name of your Google Sheet' is the name of the Google Sheet that you want to open. 
-<br> **Note that the name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** 
+
+!!! NOTE
+    The name of the Google Sheet is case-sensitive. If you have multiple Google Sheets with the same title, only the latest sheet will be opened by this method without throwing an error.** 
 
 For this class, we will be sharing google sheets for use with gspread by providing you with a public URL for the 
 sheet. Therefore, we ask that you open the sheets using the 
@@ -144,7 +147,7 @@ example of
 how to open a sheet by URL:
 
 ```python
-spreadsheet = gc.open_by_url('URL of your Google Sheet')
+spreadsheet = gc.open_by_url('https://docs.google.com/spreadsheets/d/1TYIrDumhMIyXjl2fhqGio91Zkf0tMyjvkgfXBJBm59iE/edit?gid=0#gid=0')
 ```
 
 ### Selecting a Worksheet
@@ -185,15 +188,13 @@ spreadsheet = gc.create('A new spreadsheet')
 Then to create a worksheet in the spreadsheet, you can use the following command:
 
 ```python
-worksheet = spreadsheet.add_worksheet(title="A worksheet", rows="100", cols="20")
+worksheet = spreadsheet.add_worksheet(title="A worksheet", rows=100, cols=20)
 ```
 
 ### Important Naming Tip
 
 In all the examples above, you can see that the variable names are `spreadsheet` and `worksheet`. You can name these variables whatever you want. However, it is important to remember that these variables are objects that represent the Google Sheet and the Worksheet or pages in the Google Sheet. 
 <br> So it is a good idea to name them something that makes sense. For example, if you are reading in data from a Google Sheet that contains sales data, you could name the variables `sales_sheet` and `sales_worksheet` or follow the Excel naming vervention and use 'workbook' and 'worksheet' which is a little less confusing. 
-
-```python
 
 ---
 
@@ -290,13 +291,13 @@ data = [['Hello', 'World'], ['Goodbye', 'World']]
 worksheet.update(data, 'A1:B2')
 ```
 
-You can also write data to a specific row or column by using coordinates:
+You can also write data to a specific row or column by using the row and column indices:
 
 ```python
-worksheet.update_cell(1, 1, 'Hello')
+worksheet.update_cell(1, 2, 'Hello')
 ```
 
-This will write the data 'Hello' to cell A1. Another way to write data to a Google Sheet is to append data to the 
+This will write the data 'Hello' to cell B1 (row 1, column 2). Another way to write data to a Google Sheet is to append data to the 
 end of the worksheet. This is useful when you want to add new data to the sheet without overwriting existing data. Say we have a worksheet that looks like this:
 
 | Name  | Age
