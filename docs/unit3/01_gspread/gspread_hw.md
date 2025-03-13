@@ -203,11 +203,11 @@ Next is easly, we call the function for the 1st client and then for the second c
 
 |                                               Gspread                                                     | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
-|                            Part 2 - Correct sheets opened for quantities and costs                      |        7        |
-|                               Part 2- client_estimation function written correctly                      |        8        |
-|                            Part 2 - update_sheet function written correctly                             |        8       |
-|                               Part 2- Correct values updated into Google Sheet                          |        7       |
-|                             <div style="text-align: right">**Total**</div>                              |       30        |
+|                            Part 2 - Correct sheets opened for quantities and costs                      |       + 7        |
+|                               Part 2- client_estimation function written correctly                      |        + 8        |
+|                            Part 2 - update_sheet function written correctly                             |      + 8       |
+|                               Part 2- Correct values updated into Google Sheet                          |       + 7       |
+|                             <div style="text-align: right">**Total**</div>                              |      + 30        |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
