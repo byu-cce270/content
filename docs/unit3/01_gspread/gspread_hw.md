@@ -94,9 +94,11 @@ Copy and paste the code you wrote for the Drywall bids and modify it for the Con
 ***
 
 
-## Part 2
+## Part 2 - OPTIONAL (Extra Credit)
 
 **Objective**:  You will analyze data to provide estimates for two different client's  material orders.
+
+THIS PART IS OPTIONAL. YOU DO NOT NEED TO DO IT TO RECEIVE FULL CREDIT. HOWEVER, YOU WILL BE GIVEN EXTRA CREDIT IF YOU DO IT (30 POINTS).
 
 For this part of the homework, you use the next 3 sheets in the Workbook. One sheet contains the material costs for the items you will be estimating. The other two sheets contain the quantities of materials ordered by two different clients. You will use the material costs to estimate the total cost of the materials for each client.  
 
