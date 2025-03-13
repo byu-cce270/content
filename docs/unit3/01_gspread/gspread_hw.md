@@ -192,14 +192,18 @@ Next is easly, we call the function for the 1st client and then for the second c
 
 |                                               Gspread                                                     | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
-|                         Part 1 - Correct import and authentication statements                           |        2        |
-|                          Part 1 - Bid analysis code block is completed correctly                        |        4        |
-|         Part 1 - Drywall Bid Analysis completed correctly with chosen bid updated in Google Sheet       |        4        |
-|         Part 1 - Concrete Bid Analysis completed correctly with chosen bid updated in Google Sheet      |        4        |
-|                            Part 2 - Correct sheets opened for quantities and costs                      |        3        |
-|                               Part 2- client_estimation function written correctly                      |        5        |
-|                            Part 2 - update_sheet function written correctly                             |        5        |
-|                               Part 2- Correct values updated into Google Sheet                          |        3        |
+|                         Part 1 - Correct import and authentication statements                           |        6        |
+|                          Part 1 - Bid analysis code block is completed correctly                        |        8        |
+|         Part 1 - Drywall Bid Analysis completed correctly with chosen bid updated in Google Sheet       |        8        |
+|         Part 1 - Concrete Bid Analysis completed correctly with chosen bid updated in Google Sheet      |        8        |
+|                             <div style="text-align: right">**Total**</div>                              |       30        |
+
+
+|                                               Gspread (EXTRA CREDIT)                                    | Points Possible |
+|                            Part 2 - Correct sheets opened for quantities and costs                      |        7        |
+|                               Part 2- client_estimation function written correctly                      |        8        |
+|                            Part 2 - update_sheet function written correctly                             |        8       |
+|                               Part 2- Correct values updated into Google Sheet                          |        7       |
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
