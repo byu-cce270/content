@@ -16,7 +16,7 @@ For this example, you have been given bids in a Google Workbood that were submit
 
 In this section we will authorize our Google account to access the Google Workbook (Steps 1 & 2). Open a the spreadsheet you were given in Colab (Step 4) (actually we will open a copy of the spreadsheet (Step 3)). Then we will read the data from the Google Workbook into the spreadsheet (Step 5). To do this we need to create a variable that represents the Workbook and a variable that represents the sheet in the Workbook we want to read from, this is code you will write (Step 5).  <br>
 
-1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_gspread/HW_Gspread_Starter_Sheet.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_gspread/hw_gspread_starter_sheet.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 2. Go to the "Imports" code block. Write the proper code to import gspread and authenticate yourself. You can cut-and-paste from previous assignments.
 
