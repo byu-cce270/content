@@ -16,12 +16,12 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 ---
 
-#### Part 1
+#### Connecting to Google Sheets
 
 1. Connect the Google Sheets workbook to the Colab notebook
 2. Create three separate variables **temp_data**, **stream_data**, and **birth_data** that connect to their related worksheets. For example, the **temp_data** variable should connect to the worksheet titled "Pasadena Precipitation Data", the **stream_data** variable should connect to the worksheet titled "Provo River Streamflow Data," etc.
    
-#### Part 2
+#### Part 1 - Pasadena Precipitation Data
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', and 'y_2'
 2. Plot y_1, label it "High Temperature", and color it orange or red
@@ -36,7 +36,7 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
     ![pasadenagraph.png](images/pasadenagraph.png)
 
-#### Part 3
+#### Part 2 - Provo River Streamflow Data
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
 2. Plot y_1, label it "10163000" and color it purple
@@ -54,7 +54,7 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
     ![streamflowgraph.png](images/streamflowgraph.png)
 
-#### Part 4
+#### Part 3 - Average U.S. Daily Birth Data
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x' and 'y_1'.
 2. Plot y_1 and give it a color of your choice
