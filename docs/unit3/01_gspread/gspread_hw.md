@@ -18,47 +18,44 @@ In this section we will authorize our Google account to access the Google Workbo
 
 1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_gspread/HW_Gspread_Starter_Sheet.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-2. Go to the "Imports" code block. Write the proper code to import gspread and authentiate yourself. You can cut-and-paste from previous assignments.
+2. Go to the "Imports" code block. Write the proper code to import gspread and authenticate yourself. You can cut-and-paste from previous assignments.
 
 3. Create a copy of the following worksheet and open it by url in the same code block. [Gspread Sample Data](https://docs.google.com/spreadsheets/d/1AtCbzKEuugeq9zCccWDjv9LpaLZX8ftikq6j64JJ1xc/edit?gid=0#gid=0){:target="_blank"}
    <br> You should open and look at the Google Sheet to understand the data you are working with.
 
 4. In the code block titled "Bid Analysis" open the first worksheet in your workbook.
 
-5. Use the .get_all_values() method to pull all the values from your spreadsheet into a list. Input the following code into your notebook:
+5. Use the .get_all_values() method to pull all the values from your spreadsheet into a list. Put the values into a variable called **values1**. Then use the following code to extract the first item into a **header** variable and the remaining values into a **rows** variable. :
 
 ```python
 headers = values1[0]
-rows = values[1:]
+rows = values1[1:]
 ```
-   
-   *  Hint: Depending on what you named your values list this code might have to be modified, but the principle is the same.
 
 #### b) Process the data from the worksheet
 
-Now that you have the data from the Google Sheet, you will analyze the bids for the Drywall scope. We need to take the "list of lists" that we read from the Worksheet and convert the strings representing a number e.g., '10' to a number e.g., 10.0. This is harder than it looks because some of the numbers are strings like this $1,000.45. We need remove both the ''$' sign and the comma.''"
+Now that you have the data from the Google Sheet, you will analyze the bids for the Drywall scope. We need to take the "list of lists" that we read from the Worksheet and convert the strings representing a number e.g., '10' to a number e.g., 10.0. This is harder than it looks because some of the numbers are strings like this \$1,000.45. We need remove both the '$' sign and the comma.
 
-6. Using a for loop, loop through the bid amounts in the rows list and convert the numbers into floats so you can perform an analysis on them.
-<br>
-   *  Hint: The following code will remove the $ and , in the bid amounts of the Google Sheet so the numbers can be converted correctly:
-   
+6. Still in the same code block, use a for loop to loop through the bid amounts in the rows list and convert the numbers into floats so you can perform an analysis on them. For the bid amount in position 3, you will need to convert the string into a float and also remove the dollar sign and comma using the following string method:
+
 ```python
 .replace('$','').replace(',','')
-# replace is a string method, so it works on strings, not lists
 ```
+
+For the performance rating in position 4, you will just need to convert the string into a float.
 
 ### c) Extract the data for analysis
 
-Now that you have the data in a format that you can work with, you will extract the data for analysis. We  need two lists, one with all the drywall bids and one with all the concrete bids. REmember before we put items in a list, we need to create empty lists (Step 7). Then we will loop through the rows and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete (Step 8).
+Now that you have the data in a format that you can work with, you will extract the data for analysis. We  need two lists, one with all the drywall bids and one with all the concrete bids. Remember before we put items in a list, we need to create empty lists (Step 7). Then we will loop through the rows and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete (Step 8).
 
-7. Outside of the for loop, create two empty lists. One named Drywall, and the other named Concrete. This is where you will store the different bids.
-8. Create a for loop that will loop through the different rows in your Google Sheet and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete.
+7. Outside of the for loop, create two empty lists. One named **Drywall**, and the other named **Concrete**. This is where you will store the different bids.
+8. Create a for loop that will loop through the different rows in your Google Sheet and add the row to the Drywall list if the scope is drywall or the Doncrete list if the associated scope is concrete.
 
 ### d) Analyze the bids
 
 Now we have two lists, we want to sort the lists (using code we provide , Step 9) so you can compute both the mean and median values of the drywall bids (Step 10 and 12). We then  remove the most expensive and cheapest bids (Step 11).
 
-9. Move to the "Drywall Bid Analysis" code block. Line 4 is advanced code that is provided to you for this assignment. It will sort your Drywall list in order from cheapest to most expensive bid.
+9. Move to the "Drywall Bid Analysis" code block. Line 4 is code that is provided for you to sort your Drywall list in order from cheapest to most expensive bid.
 10. Write code to delete the most expensive and cheapest bid from your list.
 11. Write code to find the average cost for the remaining bids in your list.
 12. Write code to find the median cost for the remaining bids in your list. <br>
@@ -66,18 +63,19 @@ Now we have two lists, we want to sort the lists (using code we provide , Step 9
 
 ### e) Choose a bid
 
-Now we will step through the bid list and ask the user if they want to accept the remaining bids (Step 13). If the user accepts the bid, we print the bid and end the loop. If the user does not accept the bid, we remove the bid from the list and continue the loop.
+Now that our list is sorted from low to high bid and we have removed the two extreme bids, we will step through the bid list one bid at a time and ask the user if they want to accept the current bid (Step 13). If the user accepts the bid, we print the bid and end the loop. If the user does not accept the bid, we remove the bid from the list and continue the loop.
 
-13. Now that you understand your bids more, write a while loop that will loop through the remaining bids and ask you as the user if you would like to accept the given bid. If they accept the bid, stop looking, if they do not accept, go to the next bid in the list. <br>
+13. Write a while loop that will loop through the remaining bids and ask the user if they would like to accept the given bid. If they accept the bid, stop looking, if they do not accept, go to the next bid in the list. <br>
     
-    *  If you do want to accept the bid you should print something like: "Bid accepted. Your final bid for Drywall is: <br>
-    *  Insert chosen here*." After accepting the bid, you should end the loop. <br>
-    *  If you do not want to accept the bid you should remove the bid from your list of bids and continue the loop. <br>
+   ` *  If the user wants to accept the bid you should print something like: "Bid accepted. Your final bid for Drywall is: <br>
+    *  After accepting the bid, you should end the loop. <br>
+    *  If the user does not want to accept the bid you should remove the bid from your list of bids and continue the loop. <br>
+    *  Note that the "next" item in the list is Drywall[0] because if a bid is rejected, you remove it from the list so you are always looking at the first item in the list." <br>
     
     **Hint**: You can format your number as a currency by using the following code in your input statement with the f formater: 
 
 ```python
-"${:,.2f}"
+"${Drywall[0][2]:.2f}"
 ```
     
 ### f) Update the spreadsheet with the chosen bid
@@ -88,10 +86,10 @@ Now we will take in the information from the bid we selected, create a new sheet
 
 ### g) Repeat the process for concrete bids
 
-If you are careful, you could copy and paste the code you wrote for the Drywall bids and modify it for the Concrete bids. If you want to be a better programmer, you can make several functions that you can call to do the same thing for the Concrete bids as you did for the Drywall bids. Copy-and-paste, with modifications to do concrete is what we expect from this assignment.
+Copy and paste the code you wrote for the Drywall bids and modify it for the Concrete bids. 
 
 15. Move to the "Concrete Bid Analysis" code block. Line 4 is the same advanced code given for the Drywall bids.
-16. Repeat steps 10-14 for the concrete bids.
+16. Repeat steps 9-14 for the concrete bids.
 
 ***
 
