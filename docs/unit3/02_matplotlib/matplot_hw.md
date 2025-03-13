@@ -32,7 +32,9 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 7. Using the xticks function, rotate the ticks by 45 degrees
 8. Create a legend and put it in the lower left corner. Make the font size 10
 9. Give the graph grid lines
-10. Show the graph
+10. Show the graph - it should look something like this:
+
+    ![pasadenagraph.png](images/pasadenagraph.png)
 
 #### Part 3
 
@@ -48,7 +50,9 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 10. Using the xticks function, rotate the ticks by 45 degrees
 11. Create a legend in the top right corner, make the font size 10, and title it "Site Numbers"
 12. Give the graph grid lines
-13. Show the graph
+13. Show the graph - it should look something like this:
+
+    ![streamflowgraph.png](images/streamflowgraph.png)
 
 #### Part 4
 
@@ -60,7 +64,9 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 6. Using the xticks function, rotate the ticks by 45 degrees
 7. Give the graph gridlines
 8. Annotate the four major dips caused by holidays on the graph. Specify the holiday and use an arrow to show it on the graph
-9. Show the graph
+9. Show the graph - it should look something like this:
+
+    ![birthgraph.png](images/birthgraph.png)
 
 ---
 
