@@ -1,6 +1,6 @@
 # HW: Matplotlib
 
-**Purpose:** Learn how to read in file data (.csv) and make graphs from it
+**Purpose:** Learn how to read in data from Google Sheets and make graphs from it
 
 ## Instructions
 
@@ -18,9 +18,9 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 #### Part 1
 
-1. Connect Google Sheets to the Colab notebook
-2. Create three variables that connect to each worksheet
-
+1. Connect the Google Sheets workbook to the Colab notebook
+2. Create three separate variables **temp_data**, **stream_data**, and **birth_data** that connect to their related worksheets. For example, the **temp_data** variable should connect to the worksheet titled "Pasadena Precipitation Data", the **stream_data** variable should connect to the worksheet titled "Provo River Streamflow Data," etc.
+   
 #### Part 2
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', and 'y_2'
@@ -56,17 +56,30 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 #### Part 4
 
-1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1'.
-2. Plot y_1 and give it a color
+1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x' and 'y_1'.
+2. Plot y_1 and give it a color of your choice
 3. Title the graph "Average U.S. Daily Birth Data"
 4. Label the x-axis as "Date"
 5. Label the y-axis as "Births"
 6. Using the xticks function, rotate the ticks by 45 degrees
 7. Give the graph gridlines
-8. Annotate the four major dips caused by holidays on the graph. Specify the holiday and use an arrow to show it on the graph
-9. Show the graph - it should look something like this:
+8. Annotate the chart with arrows that point to and label the following holidays:
+
+&nbsp;&nbsp;&nbsp;&nbsp;New Year’s Day (2012-01-01)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Independence Day (2012-07-04)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Halloween (2012-10-31)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Thanksgiving (2012-11-27)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Christmas (2012-12-25)
+
+10. Show the graph - it should look something like this:
 
     ![birthgraph.png](images/birthgraph.png)
+
+11. Write a comment explaining why you think the birth rate drops during those days
 
 ---
 
@@ -74,27 +87,14 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                **Part 1 Items**                | **Amount** |  
-|:----------------------------------------------:|:----------:|
-|       Google Sheets correctly connected        |     3      |
-| <div style="text-align: right">**Total**</div> |   **3**    |
-
-|                **Part 2 Items**                | **Amount** |  
-|:----------------------------------------------:|:----------:|
-|          Graph is formatted correctly          |     6      |
-| <div style="text-align: right">**Total**</div> |   **7**    |
-
-
-|                **Part 3 Items**                | **Amount** |  
-|:----------------------------------------------:|:----------:|
-|          Graph is formatted correctly          |     6      |
-| <div style="text-align: right">**Total**</div> |   **7**    |
-
-|                **Part 4 Items**                | **Amount** |  
-|:----------------------------------------------:|:----------:|
-|          Graph is formatted correctly          |     6      |
-|         Annotations are added to graph         |     7      |
-| <div style="text-align: right">**Total**</div> |   **13**   |
+|                **Item**                              | **Amount** |  
+|:----------------------------------------------------:|:----------:|
+|         Google Sheets is connected correctly         |     3      |
+|  The temperature data graph has all listed elements  |     8      |
+|   The streamflow data graph has all listed elements  |     8      |
+|     The birth data graph has all listed elements     |     8      |
+|        The annotations are created correctly         |     3      |
+|     <div style="text-align: right">**Total**</div>   |   **30**   |
 
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
