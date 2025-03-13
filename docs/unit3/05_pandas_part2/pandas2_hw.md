@@ -62,19 +62,21 @@
 
     ![ratings](https://github.com/user-attachments/assets/9f6f0a59-18f6-4c4c-9a82-7555da13849d)
 
-18. 
+18. In a new code block, use the .groupby() method to display the average of the manual rating and count of the borough measurements by their inspection time, rating, and borough code.
 
+    When you are done, the data frame that displays should look like this:
 
+    ![df ratings](https://github.com/user-attachments/assets/d0a41271-d9bb-4f0d-8c85-47ac06657784)
 
+19. In a new code block, use the query function to display a dataframe that includes only the strrts in poor condition evaluated by borough B.
+20. In w new code block, create a pie chart that displays the pavement conditions by ratings. Include:
+     - a title
+     - change the default colors
+   
+    When you are done, the chart should look like this:
 
+    ![pavement_rating](https://github.com/user-attachments/assets/b627382e-dc69-44ef-9401-2d9d70505ee6)
 
-![pavement_rating](https://github.com/user-attachments/assets/b627382e-dc69-44ef-9401-2d9d70505ee6)
-
-
-
-
-
-* the colors don't have to be the same but make sure they aren't the default colors
     
 ---
 
