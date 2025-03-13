@@ -199,7 +199,10 @@ Next is easly, we call the function for the 1st client and then for the second c
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
 
 
-|                                               Gspread (EXTRA CREDIT)                                    | Points Possible |
+**EXTRA CREDIT Rubric:**
+
+|                                               Gspread                                                     | Points Possible |
+|:-------------------------------------------------------------------------------------------------------:|:---------------:|
 |                            Part 2 - Correct sheets opened for quantities and costs                      |        7        |
 |                               Part 2- client_estimation function written correctly                      |        8        |
 |                            Part 2 - update_sheet function written correctly                             |        8       |
