@@ -13,8 +13,12 @@
 For this example, you have been given bids in a Google Workbood that were submitted for a job and it is your job as the project manager to determine which bid you will choose. 
 
 ### Steps
-#### Setup
+#### Setup <br>
+
 In this section we will authorize our Google account to access the Google Workbook (Steps 1 & 2). Open a the spreadsheet you were given in Colab (Step 4) (actually we will open a copy of the spreadsheet (Step 3)). Then we will read the data from the Google Workbook into the spreadsheet (Step 5). To do this we need to create a variable that represents the Workbook and a variable that represents the sheet in the Workbook we want to read from, this is code you will write (Step 5).  <br>
+
+---
+##### Steps
 
 1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_gspread/HW_Gspread_Starter_Sheet.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
@@ -37,6 +41,9 @@ In this section we will authorize our Google account to access the Google Workbo
 #### Process the Data from the Worksheet
 Now that you have the data from the Google Sheet, you will analyze the bids for the Drywall scope. We need to take the "list of lists" that we read from the Worksheet and convert the strings representing a number e.g., '10' to a number e.g., 10.0. This is harder than it looks because some of the numbers are strings like this $1,000.45. We need remove both the ''$' sign and the comma.''" 
 
+---
+##### Steps
+
 6. Using a for loop, loop through the bid amounts in the rows list and convert the numbers into floats so you can perform an analysis on them.
 <br>
    *  Hint: The following code will remove the $ and , in the bid amounts of the Google Sheet so the numbers can be converted correctly:
@@ -49,11 +56,17 @@ Now that you have the data from the Google Sheet, you will analyze the bids for 
 
 Now that you have the data in a format that you can work with, you will extract the data for analysis. We  need two lists, one with all the drywall bids and one with all the concrete bids. REmember before we put items in a list, we need to create empty lists (Step 7). Then we will loop through the rows and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete (Step 8).
 
+---
+##### Steps
+
 7. Outside of the for loop, create two empty lists. One named Drywall, and the other named Concrete. This is where you will store the different bids.
 8. Create a for loop that will loop through the different rows in your Google Sheet and add the row to the Drywall list if the scope is Drywall or the Concrete list if the associated scope is Concrete.
 
 ### Analyze the Bids
 Now we have two lists, we want to sort the lists (using code we provide , Step 9) so you can compute both the mean and median values fo the drywall bids (Step 10 and 12). We then  remove the most expensive and cheapest bids (Step 11). 
+
+---
+##### Steps
 
 9. Move to the "Drywall Bid Analysis" code block. Line 4 is advanced code that is provided to you for this assignment. It will sort your Drywall list in order from cheapest to most expensive bid.
 10. Write code to delete the most expensive and cheapest bid from your list.
@@ -63,6 +76,9 @@ Now we have two lists, we want to sort the lists (using code we provide , Step 9
 
 ### Choose a Bid
 Then we step through the bid list and ask the user if they want to accept the remaining bids (Step 13). If the user accepts the bid, we print the bid and end the loop. If the user does not accept the bid, we remove the bid from the list and continue the loop.
+
+---
+##### Steps
 
 13. Now that you understand your bids more, write a while loop that will loop through the remaining bids and ask you as the user if you would like to accept the given bid. If they accept the bid, stop looking, if they do not accept, go to the next bid in the list. <br>
     
@@ -77,15 +93,23 @@ Then we step through the bid list and ask the user if they want to accept the re
 ### Update the Spreadsheet with the Chosen Bid
 Now we will take in the information from the bid we selected, create a new sheet in the workbook, and update the sheet with the selected bidder's information.
 
+---
+##### Steps
+
 14. Write code to add a new sheet to your Google Sheet with the selected bidder's information.
 
 ### Repeat the Process for Concrete Bids
-If you are careful, you could copy and paste the code you wrote for the Drywall bids and modify it for the Concrete bids. If you want to be a better programmer, you can make several functions that you can call to do the same thing for the Concrete bids as you did for the Drywall bids. Copy-and-paste, with modifications to do concrete is what we expect from this assignment.. 
+If you are careful, you could copy and paste the code you wrote for the Drywall bids and modify it for the Concrete bids. If you want to be a better programmer, you can make several functions that you can call to do the same thing for the Concrete bids as you did for the Drywall bids. Copy-and-paste, with modifications to do concrete is what we expect from this assignment.
+
+---
+##### Steps
 
 15. Move to the "Concrete Bid Analysis" code block. Line 4 is the same advanced code given for the Drywall bids.
 16. Repeat steps 10-14 for the concrete bids.
 
----
+***
+
+
 ## Part 2
 
 **Objective**:  You will analyze data to provide estimates for two different client's  material orders.
@@ -96,11 +120,16 @@ For this part of the homework, you use the next 3 sheets in the Workbook. One sh
 #### Get the Data
 For this section, we need to open the 'Material Cost' sheet (Step 1), and read in the data (Step 2). 
 
+---
+
 1. In the "Client Estimating Portion" code block open the 'Material Cost' worksheet from your workbook to work with that data.
 2. Use the .get_all_values() method to pull all the values from your spreadsheet into a list.
 
 ### Client Data
 Now we need to open one of the client sheets and read in the data. We will use the data to estimate the cost of the materials for the client. The sheets are called 'Bill of Quantities 1' and 'Bill of Quantities 2'. You can hard code the sheet names in your code. For now just open one of them (Step 3).
+
+---
+##### Steps
 
 3. Create code to open either of the client sheets to get a list of their material orders. Place this in a varible to process later. 
 
@@ -124,9 +153,12 @@ The function will accept two parameters, one the quantities ordered by the clien
     - Print the list of materials and their total costs, then print the final total_cost.
     - Have the function return the quantities list and the total cost from the client_estimation function.
 
-This seems complex, but if you break it down into steps, it is not too hard. We bascially look for a material in the list of materials, if we find it, we calculate the cost and add it to the total cost. If we do not find it, we print a message and move on to the next material. Keep track of things as we go, them sum them up and print everything at the end. <br>
+This seems complex, but if you break it down into steps, it is not too hard. We basically look for a material in the list of materials, if we find it, we calculate the cost and add it to the total cost. If we do not find it, we print a message and move on to the next material. Keep track of things as we go, them sum them up and print everything at the end. <br>
 
 Remember, this is a function so we can call it for each client and not have to re-write the code.
+
+---
+##### Steps
 
 4. Create a function called client_estimation that will take 2 parameters, one for the quantities ordered by the clients and one for the list of materials costs from your Google Sheet. 
    - Your functions have to be defined above the code that calls them. <br>
@@ -151,7 +183,8 @@ To do this we need to open the workbook and create a new sheet for the client. W
 
 Next is easly, we call the function for the 1st client and then for the second client. Be careful, you need to check to see if the new workhsheet already exists, if it does, you need to delete it before you create a new one. We provide what the answer should look like in the Google Sheet (Step 15).
 
-
+---
+##### Steps
 
 11. Create another function called update_sheet that takes four parameters:
     - wb (the workbook you are updating)
@@ -173,6 +206,7 @@ Next is easly, we call the function for the 1st client and then for the second c
 ---
 
 **Turn sharing and editing on. Turn in the link to BOTH YOUR COLAB NOTEBOOK AND YOUR GOOGLE SHEET on Learning Suite in the feedback box**
+
 
 ---
 
