@@ -67,7 +67,7 @@ Now that our list is sorted from low to high bid and we have removed the two ext
 
 13. Write a while loop that will loop through the remaining bids and ask the user if they would like to accept the given bid. If they accept the bid, stop looking, if they do not accept, go to the next bid in the list. <br>
     
-   ` *  If the user wants to accept the bid you should print something like: "Bid accepted. Your final bid for Drywall is: <br>
+    *  If the user wants to accept the bid you should print something like: "Bid accepted. Your final bid for Drywall is: <br>
     *  After accepting the bid, you should end the loop. <br>
     *  If the user does not want to accept the bid you should remove the bid from your list of bids and continue the loop. <br>
     *  Note that the "next" item in the list is Drywall[0] because if a bid is rejected, you remove it from the list so you are always looking at the first item in the list." <br>
