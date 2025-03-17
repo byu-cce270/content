@@ -74,6 +74,80 @@ and the position of the text. The `arrowprops` argument is optional and specifie
 points to the annotation. The xy argument specifies the position of the annotation, and the xytext argument 
 specifies the position of the text. Both arguments are in data coordinates.
 
+The function parameters are:
+```
+text   : The text of the annotation
+xy     : The point (x,y) to annotate
+xytext : The position (x,y) to place the text at (If None, defaults to xy)
+arrowprops : The properties used to draw an arrow between the positions xy and xytext
+```
+
+## Styles (Optional)
+
+
+The ```with``` construction makes it a temporary style, rather than a permanent one. You can also use the `plt.
+style.use('ggplot')` command to set the style for all plots in the notebook. 
+
+This command will list the styles available in your version of matplotlib:
+```python
+print(plt.style.available)
+``` 
+
+Here is an example that temporally sets the plot style to ```ggplot``` using the ```with``` construction:
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.arange(1, 11)
+y = x**2
+
+with plt.style.context('ggplot'):
+    plt.plot(x, y)
+    plt.title('This is a ggplot style plot')
+    plt.xlabel('x axis')
+    plt.ylabel('y axis')
+    plt.show()
+```
+
+## Just for Fun (Optional)
+One fun style you might want to try is the `xkcd` function which sets a number of matplotlib defaults. 
+
+This "style" makes the plot look like it was drawn by hand. Here is an example of how to use the `xkcd` style. 
+It is different from other styles as you use  the ```plt.xkcd()``` function to set things up. You probably want to 
+use the ```with``` construction to make sure that the style is temporary. 
+
+```python
+import matplotlib.pyplot as plt
+x = np.arange(1, 11)
+y = x**2 
+with plt.xkcd():
+    plt.plot(x, y)
+    plt.title('This is an xkcd plot')
+    plt.xlabel('x axis')
+    plt.ylabel('y axis')
+    # Define the arrow properties, this is a curved arrow
+    # we make the dictionary first, the provide it in the annotate command
+    arrow_prop = dict(arrowstyle="->", connectionstyle="arc3,rad=.5",     color="black")
+
+    plt.annotate('There is a point', xy=(4, 16), xytext=(1, 80), 
+                arrowprops=arrow_prop)
+    plt.show()
+```
+If you try this, you will get a lot of error messages because the `xkcd` function requires fonts that are not 
+installed on the Colab server. 
+
+Try some of your other plots using the `xkcd` function. You can indent your plot commands as shown above, or just run 
+```plt.xkcd()``` then replot any of your plots. 
+However, if you run ```plt.xkcd()``` without the ```with``` to make it temporary, it sets the style for all plots done 
+afterwards.
+To reset to the default settings use
+```python
+plt.rcdefaults()
+```
+
+
+
+
 # Pre-Class Quiz Challenge
 
 Open this starter sheet and follow the instructions on the notebook to complete the challenge. Submit a link to the completed problem in your Pre-Class Quiz.
