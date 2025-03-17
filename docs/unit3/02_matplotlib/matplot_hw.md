@@ -23,6 +23,8 @@ In this assignment, you will be creating graphs of historical weather data in Pa
    
 #### Part 1 - Pasadena Precipitation Data
 
+In Part 1, you will be graphing the temperature data from Pasadena, CA. The data is from 2013-2014 and includes the high and low temperatures for each day. We added the numpy code to create the data arrays for you to make plotting easier. We created an array for the x-data called ```x```, an array for the high temperature data called ```y_1```, and an array for the low temperature data called ```y_2```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will  need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', and 'y_2'
 2. Plot y_1, label it "High Temperature", and color it orange or red
 3. Plot y_2, label is "Low Temperature", and color it teal or blue
@@ -37,6 +39,8 @@ In this assignment, you will be creating graphs of historical weather data in Pa
     ![pasadenagraph.png](images/pasadenagraph.png)
 
 #### Part 2 - Provo River Streamflow Data
+
+In Part 2, we have provided numpy code to create the varables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
 2. Plot y_1, label it "10163000" and color it purple
@@ -55,6 +59,9 @@ In this assignment, you will be creating graphs of historical weather data in Pa
     ![streamflowgraph.png](images/streamflowgraph.png)
 
 #### Part 3 - Average U.S. Daily Birth Data
+Part 3 is similar, we give you numpy code to create the plotting variables similar to the last two plots. However, this time we want you to annotate some interesting data in the graph. We give you a list of dates to annotate with their holiday names. We used a number of different arrow styles to show you some options. The pre-class reading has a link to the documentation for the annotate function with some examples of different arrow properties you can use. You don't need to match our arrow styles, but you should use the annotate function to point to the holidays.
+
+After you annotate the graph, we ask you to explain the drop in birth rates on those days? You don't have to know the answer, but you should be able to make a guess based on the data. **These are real data** not made up for the assignment.
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x' and 'y_1'.
 2. Plot y_1 and give it a color of your choice
