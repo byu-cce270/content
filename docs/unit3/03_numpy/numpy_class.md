@@ -31,5 +31,20 @@ You can find the In Class Exercise here:
 
 ---
 
+## Vectorized Operations in NumPy
+
+NumPy is a powerful library for numerical computing in Python. One of the key features of NumPy is its ability to perform vectorized operations on arrays. Vectorized operations are operations that are applied to each element of an array. For example, if you have two arrays `a` and `b`, you can add them together element-wise using the `+` operator:
+
+```python   
+import numpy as np
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+c = a + b
+print(c)  # Output: [5 7 9]
+```
+
+
 ## Turning in/Rubric
 Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.

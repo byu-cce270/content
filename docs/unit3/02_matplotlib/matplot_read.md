@@ -34,7 +34,67 @@ The `pyplot` interface is a state-based interface that is designed to be familia
 convenient for simple plots, but it is somewhat limited in its flexibility. The object-oriented interface is more 
 powerful and flexible, and it is recommended for more complex plots, especially those involving multiple subplots. In this course, we will primarily use the `pyplot` interface because it is simpler and works great for most plots. In 
 the reading, 
-you will see examples of both interfaces.
+you will see examples of both interfaces. You are welcome to use the object-oriented interface if you prefer.
+
+Here is an example of how to use the object-oriented interface to create a simple line plot:
+
+```python
+import matplotlib.pyplot as plt
+
+ax = plt.axes()
+ax.size = (6, 4)
+ax.plot([1, 2, 3, 4], label='Line 1')   
+ax.set_xlabel('x axis')
+ax.set_ylabel('y axis')
+ax.set_title('This is a simple line plot')
+ax.grid(True)
+ax.legend()
+
+```
+
+This is how you would create the same plot with the `pyplot` interface:
+
+```python
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(6, 4))
+plt.plot([1, 2, 3, 4], label = 'Line 1')
+plt.xlabel('x axis')
+plt.ylabel('y axis')
+plt.title('This is a simple line plot')
+plt.grid(True)
+plt.legend()
+plt.show()
+```
+
+Note the similarities between the two examples. Both examples result in the following plot:
+
+![line_plot.png](images/line_plot.png)
+
+One of the advantages of the object-oriented interface is that it allows you to create multiple subplots in a single figure. Here is an example of how to create a figure with two subplots:
+
+```python
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(2)
+ax[0].plot([1, 2, 3, 4], label='Line 1')
+ax[0].set_ylabel('y axis')
+ax[0].set_title('This is a stacked line plot')
+ax[0].grid(True)
+ax[0].legend()
+ax[1].plot([4, 3, 2, 1], label='Line 2')
+ax[1].set_xlabel('x axis')
+ax[1].set_ylabel('y axis')
+ax[1].grid(True)
+ax[1].legend()
+```
+
+Which results in the following plot:
+
+![line_plot2.png](images/line_plot2.png)
+
+There is a way to do the same thing with the pyplot interface, but it is a little more complicated. The object-oriented 
+interface is more straightforward for creating multiple subplots.
 
 ## Bar Charts
 
@@ -109,6 +169,10 @@ with plt.style.context('ggplot'):
     plt.show()
 ```
 
+The plot will look something like this:
+
+![gg_plot.png](images/gg_plot.png)
+
 ## Just for Fun (Optional)
 One fun style you might want to try is the `xkcd` function which sets a number of matplotlib defaults. 
 
@@ -121,6 +185,7 @@ import matplotlib.pyplot as plt
 x = np.arange(1, 11)
 y = x**2 
 with plt.xkcd():
+    plt.figure(figsize=(6, 4))
     plt.plot(x, y)
     plt.title('This is an xkcd plot')
     plt.xlabel('x axis')
@@ -133,6 +198,11 @@ with plt.xkcd():
                 arrowprops=arrow_prop)
     plt.show()
 ```
+
+The plot will look something like this:
+
+![xckd_plot.png](images/xkcd_plot.png)
+
 If you try this, you will get a lot of error messages because the `xkcd` function requires fonts that are not 
 installed on the Colab server. 
 
@@ -144,9 +214,6 @@ To reset to the default settings use
 ```python
 plt.rcdefaults()
 ```
-
-
-
 
 # Pre-Class Quiz Challenge
 
