@@ -2,9 +2,9 @@
 
 **Purpose:** Create and use numpy arrays to find the forces in a given truss. You will then use matplot to graph it.
 
-## Instructions
+### Instructions
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/02_numpy%5BYour_Name%5D_HW_3_3_Numpy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_numpy/HW_Numpy.ipynb#scrollTo=OJvEUPyMJL4V" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 2. Rename it something like "[name] hw 3.3 numpy"
 
@@ -76,7 +76,7 @@ This may seem daunting! But it can be rather simple. Let's jump into it!
 
 ---
 
-#### Part 1: Solve for the Forces in each segment
+### Part 1: Solve for the Forces in each segment
  
 1. Import the numpy and matplot library into your notebook.
 2. In the next code block, create a function that will take in 3 parameters: the angle at joint A (θA), the angle at joint B (θB), and the load at joint B (P) to find the forces of each member.
@@ -91,7 +91,7 @@ This may seem daunting! But it can be rather simple. Let's jump into it!
 
 ---
 
-#### Part 2: Find Coordinates of each point
+### Part 2: Find Coordinates of each point
 
 Now that you have all the forces, Dr. Doofenshmirtz needs to know how tall his roof is going to be. This will involve solving for the x and y coordinates of joints A, B, and C.
 1. Create a new function that will take in 3 parameters: angle A, Angle C, and the length of AC. This function will solve for the X and y values of each joint. (We will say that A is the origin)
@@ -121,7 +121,7 @@ length_AB = (length_AC / np.sin(angle_B)) * np.sin(angle_C)
 
 ---
 
-#### Part 3: Graph the Truss
+### Part 3: Graph the Truss
 
 Now that we have solved for the forces and the coordinates of each joint, we can graph the truss. The objective is to graph each segment of the truss in either blue or red. Blue will represent a tension (positive) force, and red will represent a compressive (negative) force. You will then label each joint with the letter of the joint (A, B, C).
 
@@ -138,7 +138,7 @@ Now that we have solved for the forces and the coordinates of each joint, we can
 
 ---
 
-##### Part 4: Call Functions
+### Part 4: Call Functions
 
 1. Create inputs statements that prompt the user for the angle at joint A (degrees), the angle at joint C (degrees), the load at joint B (upwards is positive and downwards is negative), and the length of AC (feet). Save these as variables.
 2. Call the function that solves for the forces in each segment. Pass in the angle at joint A, the angle at joint C, and the load at joint B as parameters. Save the output as a variable such as forces.
