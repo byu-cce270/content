@@ -8,7 +8,7 @@
 
 2. Rename it something like "[name] hw 3.3 numpy"
 
-For this assignment, Dr. Doofenshmirtz is partnering with BYU to create a new roof for his building. Instead of a dome, he wants to be fancy and install a triangle roof. He needs you to find the forces in each part of the roof trusses to ensure it will not collapse. Here is the design of the trusses for his roof:
+For this assignment, Dr. Doofenshmirtz is partnering with BYU to create a new roof for his building. Instead of a dome, he wants to be fancy and install a triangle roof. He needs you to find the internal forces in each of the segments of his roof truss to ensure it will not collapse. Here is the design of the trusses for his roof:
 
 <center>
     <img src="https://github.com/user-attachments/assets/d297256a-4b28-4dee-9d92-e634e1cc7d2d" width="60%" height="60%" alt = "Centered Image">
@@ -16,20 +16,60 @@ For this assignment, Dr. Doofenshmirtz is partnering with BYU to create a new ro
 
 _(image updated fron [trussanalysis.com](https://trussanalysis.com/?cat=custom&cmems=0~1~5~29000_0~2~5~29000_1~2~5~29000&cnodes=0~0~p~0~0_4~4~f~0~0_8~0~r~0~0))_
 
-
 Where:
-  - Joints A, B, and C are where the segments intersect.
   - LAB is an unknown length of segment AB
-  - θA and θC are unknown angles at points A and C respectively
-  - P is the load being applied at point B acting downward (hence the downward red arrow)
-  - Joint A has a pin joint (forces in the x and y direction)
+  - θ_A and θ_C are unknown angles at points A and C respectively
+  - P is a load being applied at point B acting downward (denoted with the red arrow)
+  - Joint A has a pin joint (only forces in the x and y direction)
   - Joint C has a roller (only forces in the x direction)
+
+
+Using the Method of Joints we derive the following equations:
+
+
+$$\sum F_{A_x} = ABcos(θ_A) + AC+R_{A_x} = 0$$
+$$\sum F_{A_y} = ABsin(θ_A) + R_{A_y} = 0$$
+$$\sum F_{B_x} = -ABcos(θ_A) + BCcos(θ_C) = 0$$
+$$\sum F_{B_y} = -ABsin(θ_A) - BCcos(θ_C) = -P$$
+$$\sum F_{C_x} = -BCcos(θ_C) - AC = 0$$
+$$\sum F_{C_y} = BCsin(θ_C) + R_{C_y} = 0$$
+
+We can then use these equations to solve for our unknown forces in $$\ AB, AC, BC, R_{A_x}, R_{A_y}$$. Typically this could take a long time when doing it by hand, but can be solved in seconds with some code! The way we go about this is by setting up our forces as a system of equations. These can be written in matrix form as:
+
+$$
+\begin{bmatrix} 
+\cos(\theta_A) & 0 & 1 & 1 & 0 & 0 \\ 
+\sin(\theta_A) & 0 & 0 & 0 & 1 & 0 \\ 
+-\cos(\theta_A) & \cos(\theta_C) & 0 & 0 & 0 & 0 \\ 
+-\sin(\theta_A) & -\sin(\theta_C) & 0 & 0 & 0 & 0 \\ 
+0 & -\cos(\theta_C) & -1 & 0 & 1 & 0 \\ 
+0 & \sin(\theta_C) & 0 & 0 & 0 & 1 
+\end{bmatrix}
+\begin{bmatrix}
+AB \\
+AC \\
+BC \\
+R_{C_y} \\
+R_{A_x} \\
+R_{A_y}
+\end{bmatrix} =
+\begin{bmatrix}
+0 \\
+0 \\
+0 \\
+-P \\
+0 \\
+0
+\end{bmatrix}
+$
+
+This may seem daunting! But it can be rather simple. Let's jump into it!
 
 ---
 
 #### Part 1: Solve for the Forces in each segment
  
-1. Import the numpy and matplot library into your notebook in the first code block.
+1. Import the numpy and matplot library into your notebook.
 2. In the next code block, create a function that will take in 3 parameters: the angle at joint A (θA), the angle at joint B (θB), and the load at joint B (P) to find the forces of each member.
 3. Because Numpy works in radians and not degrees, convert the given theta values for A and C from degrees to radians. Save those values into variables.
 4. F is the solutions dictionary. The current value for each key is initialized to 0 to start with. You will then solve for the forces and then update each key with its respective value.
