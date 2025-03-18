@@ -61,21 +61,6 @@ To create mathematical equations to solve a truss, we need to express the forces
 
 We can now "line up" the equations in a matrix form to solve for the unknowns. 
 
-To insert the LaTeX code into a Markdown document using the $$ equation markers, you can wrap the entire code block with double dollar signs. Here's how you can do it:
-
-
-Sure! Here's the LaTeX code with spaces added between the terms to ensure they line up vertically:
-
-
-Sure! Here's the updated LaTeX code with the \( R_{A_x} \), \( R_{A_y} \), and \( R_{C_y} \) terms lined up vertically:
-
-
-Got it! Here's the updated LaTeX code with missing terms multiplied by 0 and the equals signs lined up:
-
-
-Got it! Here's the updated LaTeX code with each equation including all three \( R \) terms, multiplied by 0 if they don't exist, and the equals signs lined up:
-
-
 $$
 \begin{equation}
 \begin{pmatrix}
@@ -89,12 +74,7 @@ $$
 \end{equation}
 $$
 
-
-
-
 The matrix form of the equations is:
-Sure! Here's the LaTeX code for the matrices that you can insert into a Markdown document:
-
 
 $$
 \begin{pmatrix}
@@ -124,10 +104,7 @@ R_{C_y}
 \end{pmatrix}
 $$
 
-The unknowns are the forces in the members and the reactions at the supports. The knowns are the loads and the angles. We can use NumPy to solve for the unknowns, which are:
-
-Certainly! Here's the LaTeX code for the \( F \) matrix that you can insert into a Markdown document:
-
+You may recognize this as a system of linear equations, which are typically referenced as $Ax = b$, where $A$ is the matrix of coefficients, $x$ is the vector of unknowns, and $b$ is the vector of knowns. The big matrix on the left is a set of coefficients we have derived based on statics and geometry. The vector on the right (mostly zeros) represents the known loads on the truss, and the vector in the middle corresponds to the unknown x vector and it represents the forces in the members and the reactions at the supports. 
 
 $$
 \begin{pmatrix}
@@ -140,9 +117,7 @@ R_{C_y}
 \end{pmatrix}
 $$
 
-Now we can arrange as a table to see the relationships see how we might solve for the unknowns.
-
-In Statics, you now would need to use algebra to solve for the unknowns. This can take a very long time.  But with NumPy, if you can write down the equations,  we can use matrix operations to solve for the unknowns.
+For reference, here are our coefficients and loads in table format:
 
 |                           |             AB            |             BC            | AC | R<sub>A<sub>x</sub></sub> | R<sub>A<sub>y</sub></sub> | R<sub>C<sub>y</sub></sub> |
 |:-------------------------:|:-------------------------:|:-------------------------:|:--:|:-------------------------:|:-------------------------:|:-------------------------:|
@@ -162,7 +137,15 @@ In Statics, you now would need to use algebra to solve for the unknowns. This ca
 | F<sub>C<sub>x</sub></sub> |   0   |
 | F<sub>C<sub>y</sub></sub> |   0   |
 
----
+As you may recall, it is possible to solve a system of linear equations. This can be rather cumbersome, but fortunately, there is a simple way to do it in NumPy using the `np.linalg.solve()` function. Once you have formulated the A matrix and the b vector, you can solve for the unknowns using the following code:
+
+```python
+
+import numpy as np
+
+x = np.linalg.solve(A, b)
+
+```
 
 For the in-class, and homework exercises, you will be given the equations and the knowns. you will need to use NumPy to solve for the unknowns.
 
