@@ -145,18 +145,26 @@ Now that we have solved for the forces and the coordinates of each joint, we can
 3. Call the function that solves for the coordinates of each joint. Pass in the angle at joint A, the angle at joint C, and the length of AC as parameters. Save the output as a variable such as coordinates.
 4. Call the function that graphs the truss. Pass in the forces and coordinate functions as parameters.
 5. Run each code block and test it with the following values:
+
    * Test 1:
       - Angle at joint A: 60 degrees
       - Angle at joint C: 30 degrees
       - Load at joint B: -2000 lbs
       - Length of AC: 10 ft
-      - Expected output: 
+      - Expected output:
+
+![image](https://github.com/user-attachments/assets/39e54366-07d6-4d48-a41f-a35398034cc3)
+
+    
    * Test 2:
-      - Angle at joint A: 45 degrees
+      - Angle at joint A: 35 degrees
       - Angle at joint C: 55 degrees
       - Load at joint B: -3000 lbs
       - Length of AC: 25 ft
       - Expected output:
+    
+ ![image](https://github.com/user-attachments/assets/6fb25179-9485-4d67-a8cd-4f26aa297214)
+
    * Test 3:
       - Angle at joint A: 30 degrees
       - Angle at joint C: 45 degrees
@@ -164,6 +172,7 @@ Now that we have solved for the forces and the coordinates of each joint, we can
       - Length of AC: 15 ft
       - Expected output:
   
+![image](https://github.com/user-attachments/assets/15b6735f-488e-4537-8bcc-3790b4050d08)
 
 
 ---
