@@ -28,10 +28,15 @@ Using the Method of Joints we derive the following equations:
 
 
 $$\sum F_{A_x} = ABcos(θ_A) + AC+R_{A_x} = 0$$
+
 $$\sum F_{A_y} = ABsin(θ_A) + R_{A_y} = 0$$
+
 $$\sum F_{B_x} = -ABcos(θ_A) + BCcos(θ_C) = 0$$
+
 $$\sum F_{B_y} = -ABsin(θ_A) - BCcos(θ_C) = -P$$
+
 $$\sum F_{C_x} = -BCcos(θ_C) - AC = 0$$
+
 $$\sum F_{C_y} = BCsin(θ_C) + R_{C_y} = 0$$
 
 We can then use these equations to solve for our unknown forces in $$\ AB, AC, BC, R_{A_x}, R_{A_y}$$. Typically this could take a long time when doing it by hand, but can be solved in seconds with some code! The way we go about this is by setting up our forces as a system of equations. These can be written in matrix form as:
