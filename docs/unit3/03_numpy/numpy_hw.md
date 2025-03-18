@@ -8,20 +8,22 @@
 
 2. Rename it something like "[name] hw 3.3 numpy"
 
-For this assignment, Dr. Doofenshmirtz is partnering with BYU to create a new roof for his building. Instead of a dome, he wants to be fancy and install a triangle roof. He needs you to find the forces in each part of the roof trusses to make sure it will not collapse. Here is the design of the trusses for his roof:
+For this assignment, Dr. Doofenshmirtz is partnering with BYU to create a new roof for his building. Instead of a dome, he wants to be fancy and install a triangle roof. He needs you to find the forces in each part of the roof trusses to ensure it will not collapse. Here is the design of the trusses for his roof:
 
-<img src="https://github.com/user-attachments/assets/d297256a-4b28-4dee-9d92-e634e1cc7d2d" width="70%" height="70%" align = "center">
+<center>
+    <img src="https://github.com/user-attachments/assets/d297256a-4b28-4dee-9d92-e634e1cc7d2d" width="60%" height="60%" alt = "Centered Image">
+</center>
 
 _(image updated fron [trussanalysis.com](https://trussanalysis.com/?cat=custom&cmems=0~1~5~29000_0~2~5~29000_1~2~5~29000&cnodes=0~0~p~0~0_4~4~f~0~0_8~0~r~0~0))_
 
 
 Where:
- - Joints A, B, and C are where the segments intersect.
- - LAB is an unknown length of segment AB
- - θA and θC are unknown angles at points A and C respectively
- - P is the load being applied at point B acting downward (hence the downward red arrow)
- - Joint A has a pin joint (forces in the x and y direction)
- - Joint C has a roller (only forces in the x direction)
+  - Joints A, B, and C are where the segments intersect.
+  - LAB is an unknown length of segment AB
+  - θA and θC are unknown angles at points A and C respectively
+  - P is the load being applied at point B acting downward (hence the downward red arrow)
+  - Joint A has a pin joint (forces in the x and y direction)
+  - Joint C has a roller (only forces in the x direction)
 
 ---
 
