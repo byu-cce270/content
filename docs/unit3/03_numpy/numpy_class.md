@@ -12,6 +12,25 @@ svg" alt="Open In Colab"/></a>
 2. Rename the notebook with your name.
 3. Follow the instructions in the notebook to complete the exercise.
 
+---
+
+## Vectorized Operations in NumPy
+
+NumPy is a powerful library for numerical computing in Python. One of the key features of NumPy is its ability to perform vectorized operations on arrays. Vectorized operations are operations that are applied to each element of an array. For example, if you have two arrays `a` and `b`, you can add them together element-wise using the `+` operator:
+
+```python   
+import numpy as np
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+c = a + b
+print(c)  # Output: [5 7 9]
+```
+---
+# Last part in In-Class Exercise Explanation
+
+
 ## Truss Analysis with NumPy
 ![truss.png](Images%2Ftruss.png){:width="500px"}
 
@@ -149,20 +168,6 @@ For the in-class, and homework exercises, you will be given the equations and th
 
 ---
 
-
-## Vectorized Operations in NumPy
-
-NumPy is a powerful library for numerical computing in Python. One of the key features of NumPy is its ability to perform vectorized operations on arrays. Vectorized operations are operations that are applied to each element of an array. For example, if you have two arrays `a` and `b`, you can add them together element-wise using the `+` operator:
-
-```python   
-import numpy as np
-
-a = np.array([1, 2, 3])
-b = np.array([4, 5, 6])
-
-c = a + b
-print(c)  # Output: [5 7 9]
-```
 
 
 ## Turning in/Rubric
