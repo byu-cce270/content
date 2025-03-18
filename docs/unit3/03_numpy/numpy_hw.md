@@ -183,12 +183,14 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 |                **Items**                       | **Amount** |  
 |:----------------------------------------------:|:----------:|
-|        First array is created correctly        |     9      |
-|       Second array is created correctly        |     3      |
-|  Amount of units of product made are correct   |     6      |
-| Units produced are displayed in a clear manner |     3      |
-| Actual amounts of resources used are displayed |     3      |
-| Second linear equations are graphed correctly  |     3      |
+|        Part 1: Correctly constructs the force equilibrium equations and loads in matrix form based on the given matrix.    |     4      |
+|       Part 1: solution is added to the total_forces dictionary and dictionary is returned and printed      |     3      |
+|  Part 2: Side lengths AB, BC, and AC are found and printed  |     3      |
+| Part 2: Coordinates for A, B, and C are added to the coordinates dictionary, returned, and printed  |     3      |
+| Part 3: If statements are used to create the correct labeling and coloring based on positive (tension, blue)  and negative (compression, red) force values|     3      |
+| Part 3: Graph contains: title, x/y labels, legend for tension/compression, and labels for each point  |     3      |
+|       Part 4: Values for forces, lengths, and coordinates match given test scenarios      |     4      |
+|       Part 4: Graph matches given test scenarios       |     4      |
 |       Comments are added to explain code       |     3      |
 | <div style="text-align: right">**Total**</div> |   **30**   |
 
