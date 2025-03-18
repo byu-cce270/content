@@ -61,7 +61,7 @@ R_{A_y}
 0 \\
 0
 \end{bmatrix}
-$
+$$
 
 This may seem daunting! But it can be rather simple. Let's jump into it!
 
