@@ -4,7 +4,7 @@
 
 # Pre-Class Reading Assignment
 
-On the O'Reilly's website read Introducing Pandas Objects & Data Indexing and Selection: Chapters 13 & 14 in
+On the O'Reilly's website read Chapter 13 up until The Pandas Index Object subheading (you do not need to read that section) & Chapter 14 under the subheading "Data Selection in DataFrames" in
 Python Data Science Handbook, 2nd Edition. 
 </br>Here is a direct link to the readings: [Introducing Pandas Objects](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch13.html){:target="_blank"}.
 
