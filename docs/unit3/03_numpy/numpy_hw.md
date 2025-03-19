@@ -148,7 +148,7 @@ length_AB = (length_AC / np.sin(angle_B)) * np.sin(angle_C)
 7. For joint A, the x and y coordinates are both 0 (we are saying that A is the origin). Save both the x and y coordinates as a singular variable such as joint_A.
 8. For joint B, the x coordinate is the length of AB times the cosine of angle A. The y coordinate is the length of AB times the sine of angle A. Save this as a variable such as joint_B.
 9. For joint C, the x coordinate is the length of AC. The y coordinate 0 since it is the same level as A. Save this as a variable such as joint_C.
-10. Create a dictionary to store these values. The keys will be the joint names (A, B, C) and the values will be the x and y coordinates of each joint. For example, my dictionary would look like `total_forces = {"AB":A, "BC":B, "AC":C, "R_AX":RX, "R_AY":RY, "R_CY":RC}`, with the varibles set to the cooridnate tuples, for example `A = (0,0)`. For example, your dictionary might look like `"A": (0, 0), "B": (3, 4), "C": (6, 0)` when displayed.
+10. Create a dictionary to store these values. The keys will be the joint names (A, B, C) and the values will be the x and y coordinates of each joint. For example, your dictionary might look like `"A": (0, 0), "B": (3, 4), "C": (6, 0)` when displayed.
 10. Return this dictionary .
 
 
@@ -158,7 +158,11 @@ length_AB = (length_AC / np.sin(angle_B)) * np.sin(angle_C)
 
 Now that we have solved for the forces and the coordinates of each joint, we can graph the truss. The objective is to graph each segment of the truss in either blue or red. Blue will represent a tension (positive) force, and red will represent a compressive (negative) force. You will then label each joint with the letter of the joint (A, B, C). We will use the dictionary to loop through the different members, determine if the force is negative or positive for a color, then plot a line from the beginning coordinates to the end coordinates. For example for member $AC$ we would plot a line from coordinates of  A to the coordinates of  C.
 
-1. You are given a function that takes in 2 parameters: the dictionary of forces, and the dictionary of coordinates. *Note:* Below is a given dictionary where the keys are the starting and ending point of each segment and the value is its corresponding force.
+1. You are given a function that takes in 2 parameters: the dictionary of forces, and the dictionary of coordinates. 
+   *Note:* The provided code includes a dictionary where the keys are the starting and ending point of each 
+   segment 
+   and the 
+   value is its corresponding force.
 2. In the for loop, it is iterating through the keys of the members dictionary. Start represents the starting point of the segment, and end represents the ending point of the segment. The force variable is the force of the segment from the members dictionary.
 3. In the for loop, create an if statement that will check if the force is positive or negative. If the force is positive, plot the segment in "blue" and label it "tension". If the force is negative, plot the segment in red and label it "compression". Hint: It may be helpful to save the color and label as variables. AND make sure that the spelling of the color is the same of what Matplot uses.
 4. Now, create a list for the x values and a list for the y values. The x values will be the x coordinates of the starting and ending points of the segment. The y values will be the y coordinates of the starting and ending points of the segment. Hint: You will need to call the coordinates dictionary to get the x and y coordinates of each joint.
@@ -166,8 +170,9 @@ Now that we have solved for the forces and the coordinates of each joint, we can
 6. Now, we will plot each joint. Create a for loop that will iterate through the keys and values of the coordinates dictionary. The key will be the joint and the value will be the x and y coordinates of the joint. 
 7. Save the x and y coordinates as variables.
 8. Using the plt.scatter function, plot the joint. The first parameter will be the x coordinate, the second parameter will be the y coordinate, and the third parameter will be the color of the joint (you can choose, black is a safe default).
-9. Label each joint with the key of the dictionary. The first parameter will be the x coordinate, the second parameter will be the y coordinate, and the third parameter will be the key of the dictionary.
-10. Add a title, x label, y label, and legend to the graph.
+9. Label each joint with the key of the dictionary using plt.text(). The first parameter will be the x coordinate, the 
+   second parameter will be the y coordinate, and the third parameter will be the key of the dictionary.
+10. Add a title, x label, y label, and legend to the graph. You may wish to use `plt.margins(0.25)` to give some space around the graph.
 
 ---
 
