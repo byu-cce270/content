@@ -21,40 +21,28 @@ Where:
   - $L_{AC}$ is an length of segment AB, you will select
   - $θ_A$ and $θ_C$ are  angles at points A and C, respectively that you will select
   - P is a load being applied at point B acting downward (denoted with the red arrow)
-  - Joint A has a pin joint (only forces in the x and y direction)
-  - Joint C has a roller (only forces in the x direction)
+  - Joint A has a pin joint (reaction forces in the x and y direction)
+  - Joint C has a roller (reaction force only in the y direction)
 
-For this problem: 
- > You will select two angles for $θ_A$ and $θ_C$ amd the length of member $L_{AC}$.
- > Use numpy to solve for the forces in each segment of the truss.  
- > Solve for the length of member $L_{AC}$.  
- > Then you will then use matplot to graph the truss with the forces in each segment.
+For this problem, you will: 
 
-The Reading for this lecture covers this truss problem in detail. 
+>1) Select two angles for $θ_A$ and $θ_C$ amd the length of member $L_{AC}$.<br>
+>2) Use numpy to solve for the forces in each segment of the truss.<br>
+>3) Solve for the length of member $L_{AC}$.<br>
+>4) Use matplot to graph the truss with the forces in each segment.<br>
 
 We will use the Method of Joints to  derive the following equations:
 
-
-$\sum F_{A_x} = ABcos(θ_A) + AC+R_{A_x} = 0$
-
-$\sum F_{A_y} = ABsin(θ_A) + R_{A_y} = 0$
-
-$\sum F_{B_x} = -ABcos(θ_A) + BCcos(θ_C) = 0$
-
-$\sum F_{B_y} = -ABsin(θ_A) - BCcos(θ_C) = -P$
-
-$\sum F_{C_x} = -BCcos(θ_C) - AC = 0$
-
+>>$\sum F_{A_x} = ABcos(θ_A) + AC+R_{A_x} = 0$<br>
+$\sum F_{A_y} = ABsin(θ_A) + R_{A_y} = 0$<br>
+$\sum F_{B_x} = -ABcos(θ_A) + BCcos(θ_C) = 0$<br>
+$\sum F_{B_y} = -ABsin(θ_A) - BCcos(θ_C) = -P$<br>
+$\sum F_{C_x} = -BCcos(θ_C) - AC = 0$<br>
 $\sum F_{C_y} = BCsin(θ_C) + R_{C_y} = 0$
 
-We will arrange the equations so we can create a matrix from the coeficients of the unknowns. This will allow us to solve for the unknowns using numpy.
+We will arrange the equations so we can create a matrix from the coefficients of the unknowns. We can then use these equations to solve for our unknown forces: $AB, AC, BC, R_{A_x}, R_{A_y}$. Typically, this could take a long time when doing it by hand, but can be solved in seconds with some python code and numpy. The way we go about this is by setting up our forces as a system of equations. The equations shown above can be written in matrix form as:
 
-We can then use these equations to solve for our unknown forces in $$\ AB, AC, BC, R_{A_x}, R_{A_y}$$ Typically this could take a long time when doing it by hand, but can be solved in seconds with some code! The way we go about this is by setting up our forces as a system of equations. 
-
-These can be written in matrix form as:
-
-$$
-\begin{bmatrix} 
+>>$\begin{bmatrix} 
 \cos(\theta_A) & 0 & 1 & 1 & 0 & 0 \\ 
 \sin(\theta_A) & 0 & 0 & 0 & 1 & 0 \\ 
 -\cos(\theta_A) & \cos(\theta_C) & 0 & 0 & 0 & 0 \\ 
@@ -77,8 +65,7 @@ R_{A_y}
 -P \\
 0 \\
 0
-\end{bmatrix}
-$$
+\end{bmatrix}$
 
 Where the first matrix is our forces matrix (or a matrix of the coefficients), the second matrix is our internal forces which are unknown, this is what we are solving for, and the third matrix is our external forces.
 
@@ -101,9 +88,9 @@ Inside the function we now need to do the following:
 
 3. Because Numpy works in radians and not degrees, convert the given angles for A and C from degrees to radians. Save those values into variables for the two angles.
 
-Now we need to write the force matrix. This will be a 6x6 matrix. We will use the equations we derived above to create the matrix. The first row will be the coefficients of the first equation, the second row will be the coefficients of the second equation, and so on. The last row will be the external forces acting on the truss. Each row needs to contain coeffiecents for each of the unknowns. If that unknown is not part of that equation, use a coefficient of 0. 
+Now we need to write the force matrix. This will be a 6x6 matrix. We will use the equations we derived above to create the matrix. The first row will be the coefficients of the first equation, the second row will be the coefficients of the second equation, and so on. The last row will be the external forces acting on the truss. Each row needs to contain coefficients for each of the unknowns. If that unknown is not part of that equation, use a coefficient of 0. 
 
-The easiest way to do this is make a matrix for each of the size equations on their own line, then put them together using the square brackets. Here is some example code, you will need to replace the 0's with the actualy number or equation. Some of them will still be 0's. 
+The easiest way to do this is make a matrix for each of the size equations on their own line, then put them together using the square brackets. Here is some example code, you will need to replace the 0's with the actual number or equation. Some of them will still be 0's. 
 
 ```python
 forces = np.array([
@@ -124,10 +111,10 @@ The order of both the unknowns and the external forces is important. They can be
 The  array should be in the  same order as the other arrays, if you follow the examples,   $A_x$ should be the first row, $A_y$ should be the second row, etc. Save this array as a variable such as combined_forces.
 
 5. Now, create a new array for the external forces acting on the truss using the given solution matrix in the introduction. Save this as a variable such as loads. Make sure it is in th same order. 
-7. We can now solve this! Using your forces and loads arrays, solve the system of equations. Have your forces array be the first input and your forces the second. Refer back to your in-class work back with what numpy function to use with solving systems of equations. Save this as a variable such as solutions. This will give you the values for AB, AC, BC, R_AY, R_AX, and R_CY. 
-8. Create a dictionary to store these values for each member/location. For example, my dictionary would look like `total_forces = {"AB":0, "BC":0, "AC":0, "R_AX":0, "R_AY":0, "R_CY":0}`, with the 0's replaced by the actual forces.
-9. With your solved values, you will now update the dictionary total_forces. The current value for each key is initialized to 0 to start with. You will update the values of the dictionary with the values you got from your system of equations. For example, my dictionary would say something like "AB": 3000, "R_AY": -200 when displayed. The dictionary will be used later.
-10. Write a loop that will print the values of the dictionary with the solutions you got from your system of equations. For example, my print statement would say somthing like "AB = 3000 lbs", "R_AY = -200 lbs" when displayed.
+7. We can now solve this! Using your forces and loads arrays, solve the system of equations. Have your forces array be the first input and your forces the second. Refer back to your in-class work back with what numpy function to use with solving systems of equations. Save this as a variable such as solutions. This will give you the values for $AB$, $AC$, $BC$, $R_{AY}$, $R_{AX}$, and $R_{CY}$. 
+8. Create a dictionary to store these values for each member/location. For example, my dictionary would look like `total_forces = {"AB":0, "BC":0, "AC":0, "R_AX":0, "R_AY":0, "R_CY":0}`, with the 0's replaced by the actual forces. This dictionary has already been created for you.
+9. With your solved values, you will now update the dictionary total_forces. The current value for each key is initialized to 0 to start with. You will update the values of the dictionary with the values you got from your system of equations. For example, my dictionary would say something like "AB": 3000, "R_AY": -200 when updated. The dictionary will be used later.
+10. Write a loop that will print the values of the dictionary with the solutions you got from your system of equations. For example, my print statement would say somthing like "AB = 3000 lbs", "R_AY = -200 lbs, etc." when displayed.
 11. Return this dictionary from your function.
 
 ---
@@ -136,10 +123,10 @@ The  array should be in the  same order as the other arrays, if you follow the e
 
 Now that you have all the forces, Dr. Doofenshmirtz needs to know how high his roof is going to be. This will involve solving for the x and y coordinates of joints A, B, and C. We are going to use trigonometry to solve for the coordinates of each joint and the trig functions in numpy to do the calculations. 
 
-We will create a function that will accept $θ_A$,  $θ_C$ and $L_{AC} as inputs, then calculate the coordinates of each of the corners. We will use the sum of the angles to get $θ_B$. We will divide the truss into two right triangles and use the law of sins to get the base and hypotenuse. Using that information, we can solve for the x and y coordinates of each joint.
+We will create a function that will accept $θ_A$,  $θ_C$ and $L_{AC}$ as inputs, then calculate the coordinates of each of the corners. We will use the sum of the angles to get $θ_B$. We will divide the truss into two right triangles and use the law of sins to get the base and hypotenuse. Using that information, we can solve for the x and y coordinates of each joint.
 
 
-1. Create a new function that will take in 3 parameters: $θ_A$,  $θ_C$ and $L_{AC} as inputs. This function will solve for the X and y values of each joint. (We will say that A is the origin with coordinates [0,0])
+1. Create a new function that will take in 3 parameters: $θ_A$,  $θ_C$ and $L_{AC}$ as inputs. This function will solve for the X and y values of each joint. (We will say that A is the origin with coordinates [0,0])
 2. Since we are given angle A and angle B, solve for theta B. Hint: the sum of the angles in a triangle is 180 degrees.
 3. Convert angles A, B, and C from degrees to radians (since this is what Numpy does its calculations in)
 4. Time to bring back your geometry skills, now that you know all of your angles and one side length you can use the law of sines to solve for the other lengths. Save each length of the truss in their own variables.
