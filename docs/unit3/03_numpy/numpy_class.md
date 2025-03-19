@@ -27,6 +27,41 @@ b = np.array([4, 5, 6])
 c = a + b
 print(c)  # Output: [5 7 9]
 ```
+# Speed of vectorized operations
+Numpy vectorization is much faster than using a for loop to iterate over the elements of an array. This is because NumPy uses optimized C code to perform the operations, whereas a for loop in Python is interpreted and slower. Here is an example of how much faster NumPy vectorization is compared to a for loop. We create two numpy arrays with 1 million members each and add them together using both a for loop and NumPy vectorization. We then use the `%timeit` command to measure the time it takes to run each operation. :
+
+```python
+import numpy as np
+
+# function to add two arrays using loops
+def plusarray(x1, x2):
+  x3 = np.zeros(len(x1))
+  for i in range(len(x1)):
+    x3[i] = x1[i] + x2[i]
+  return x3
+
+
+# two arrays with 1 million members
+x4 = np.random.rand(1000000)
+x5 = np.random.rand(1000000)
+
+print('Numpy vectorization')
+%timeit x4 + x5
+
+print('Function using loops')
+%timeit plusarray(x4, x5)
+```
+Which results in the following output:
+```txt
+Numpy vectorization
+1.5 ms ± 169 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+Function using loops
+590 ms ± 151 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+```
+
+the `%timeit` command is a magic command in  notebooks that measures the time it takes to run a piece of code. The output shows that the NumPy vectorization is about 400 times faster than the function using loops. This is because NumPy uses optimized C code to perform the operations, whereas a for loop in Python is interpreted and slower.'
+
 ---
 # Last part in In-Class Exercise Explanation
 
