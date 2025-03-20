@@ -9,14 +9,12 @@ Python Data Science Handbook, 2nd Edition:
 
 [Chapter 13: Introducing Pandas Objects](https://learning.oreilly.
 com/library/view/python-data-science/9781098121211/ch13.html){:target="_blank"} (up to the Pandas Index Object subheading)
-</br>[Chapter 14: Data Indexing and Selection](https://learning.oreilly.
+</br>
+[Chapter 14: Data Indexing and Selection](https://learning.oreilly.
 com/library/view/python-data-science/9781098121211/ch14.html){:target="_blank"} (just the Data Selection in 
 DataFrames section)
-</br>[Chapter 20: Aggregation and Grouping](https://learning.oreilly.
-com/library/view/python-data-science/9781098121211/ch20.html#ch_0308-aggregation-and-grouping_planets-data)
-{:target="_blank"} (stop at the "Iteration over Groups" section)
 
-Remember that you may have to sign in with your byu netid.
+Remember that you may have to sign in with your byu netid to access the reading content.
 
 ## Things to look out for
 - What is a Pandas Series and a Pandas DataFrame?

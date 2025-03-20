@@ -4,11 +4,14 @@
 
 # Pre-Class Reading Assignment
 
-On the O'Reilly's website read the following chapters in the Python Data Science Handbook, 2nd Edition: 
-Chapter 18, section titled 'Simple Concatenation with pd.concat; Chapter 19, from 'Categories of Joins' to the end of the chapter; & Chapter 20, section titled 'groupby: Split, Apply, Combine'. 
-</br>Here is a direct link to the readings: [Combining Datasets](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch18.html#ch_0306-concat-and-append_simple-concatenation-with-pd.concat){:target="_blank"}.
+On the O'Reilly's website read the following chapters in the Python Data Science Handbook, 2nd Edition:
 
-Remember that you will have to sign in to your free account that you created earlier.
+[Chapter 18: Combining Datasets: Concat and Append](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch18.html){:target="_blank"} (Section titled: Simple Concatenation with pd.concat)<br>
+[Chapter 19: Combining Datasets: Merge and Join](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch19.html){:target="_blank"} (from 'Categories of Joins' to the end of the chapter)<br>
+[Chapter 20: Aggregation and Grouping](https://learning.oreilly.
+com/library/view/python-data-science/9781098121211/ch20.html#ch_0308-aggregation-and-grouping_planets-data){:target="_blank"} (everything up to the "Iteration over Groups" heading)
+
+Remember that you may have to sign in with your byu netid to access the reading content.
 
 ## Things to look out for
 - What is the .concat method and what does it do?
