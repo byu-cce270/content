@@ -36,7 +36,7 @@ We will use the Method of Joints to  derive the following equations:
 >>$\sum F_{A_x} = ABcos(θ_A) + AC+R_{A_x} = 0$<br>
 $\sum F_{A_y} = ABsin(θ_A) + R_{A_y} = 0$<br>
 $\sum F_{B_x} = -ABcos(θ_A) + BCcos(θ_C) = 0$<br>
-$\sum F_{B_y} = -ABsin(θ_A) - BCcos(θ_C) = -P$<br>
+$\sum F_{B_y} = ABsin(θ_A) - BCcos(θ_C) = -P$<br>
 $\sum F_{C_x} = -BCcos(θ_C) - AC = 0$<br>
 $\sum F_{C_y} = BCsin(θ_C) + R_{C_y} = 0$
 
@@ -46,8 +46,8 @@ We will arrange the equations so we can create a matrix from the coefficients of
 \cos(\theta_A) & 0 & 1 & 1 & 0 & 0 \\ 
 \sin(\theta_A) & 0 & 0 & 0 & 1 & 0 \\ 
 -\cos(\theta_A) & \cos(\theta_C) & 0 & 0 & 0 & 0 \\ 
--\sin(\theta_A) & -\sin(\theta_C) & 0 & 0 & 0 & 0 \\ 
-0 & -\cos(\theta_C) & -1 & 0 & 1 & 0 \\ 
+\sin(\theta_A) & -\sin(\theta_C) & 0 & 0 & 0 & 0 \\ 
+0 & -\cos(\theta_C) & -1 & 0 & 0 & 0 \\ 
 0 & \sin(\theta_C) & 0 & 0 & 0 & 1 
 \end{bmatrix}
 \begin{bmatrix}
