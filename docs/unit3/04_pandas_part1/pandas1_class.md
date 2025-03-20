@@ -11,9 +11,7 @@ files from the following links:
 [signs.xlsx](signs.xlsx)<br>
 [stream_data.xlsx](stream_data.xlsx)
 
-After opening the notebook, drag and drop the files into the file explorer on the left side of the notebook. 
-
-```python
+After opening the notebook, drag and drop the files into the file explorer on the left side of the notebook.
 
 ## Instructions
 1. Open the in-class workbook using the link above.
