@@ -4,22 +4,60 @@
 
 # Pre-Class Reading Assignment
 
-On the O'Reilly's website read Chapter 13 up until The Pandas Index Object subheading (you do not need to read that section), Chapter 14 under the subheading "Data Selection in DataFrames", and Chapter 20 in
-Python Data Science Handbook, 2nd Edition. 
+Read the following chapters and sections in the
+Python Data Science Handbook, 2nd Edition:
 
-</br>Here is a direct link to the readings: 
+[Chapter 13: Introducing Pandas Objects](https://learning.oreilly.
+com/library/view/python-data-science/9781098121211/ch13.html){:target="_blank"} (up to the Pandas Index Object subheading)
+</br>[Chapter 14: Data Indexing and Selection](https://learning.oreilly.
+com/library/view/python-data-science/9781098121211/ch14.html){:target="_blank"} (just the Data Selection in 
+DataFrames section)
+</br>[Chapter 20: Aggregation and Grouping](https://learning.oreilly.
+com/library/view/python-data-science/9781098121211/ch20.html#ch_0308-aggregation-and-grouping_planets-data)
+{:target="_blank"} (stop at the "Iteration over Groups" section)
 
-[Chapter 13: Introducing Pandas Objects](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch13.html){:target="_blank"}
-</br>[Chapter 14: Data Indexing and Selection](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch14.html){:target="_blank"}
-</br>[Chapter 20: Aggregation and Grouping](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch20.html#ch_0308-aggregation-and-grouping_planets-data){:target="_blank"}
-
-Remember that you will have to sign in to your free account that you created earlier.
+Remember that you may have to sign in with your byu netid.
 
 ## Things to look out for
 - What is a Pandas Series and a Pandas DataFrame?
 - How do you create a Pandas Series and a Pandas DataFrame?
 - What does it mean to index in a Pandas DataFrame and how do you index?
 
+## Reading CSV files into Pandas DataFrames
+
+Pandas is a powerful data manipulation library in Python. It is built on top of NumPy and provides an easy-to-use 
+data structure called a DataFrame. A DataFrame is a two-dimensional labeled data structure with columns of potentially different types. You can think of it like a spreadsheet or SQL table, or a dictionary of Series objects. It is generally the most commonly used pandas object. 
+
+Pandas can read data from a variety of file formats, including CSV files. The `read_csv()` function in pandas is 
+used to read data from a CSV file and create a DataFrame object. When working in Google Colab, you can upload a CSV file to your Colab 
+file folder and then read it into a DataFrame using the following code:
+
+```python
+import pandas as pd
+
+df = pd.read_csv('filename.csv')
+```
+
+Each of the columns in the CSV file will be read into a Series object in the DataFrame. 
+
+## Reading Excel files into Pandas DataFrames
+
+Pandas can also read data from Excel files. The `read_excel()` function in pandas is used to read data from an Excel file and create a DataFrame object. The `read_excel()` function has many parameters that allow you to specify how to read the data. When working in Google Colab, you can upload an Excel file to your Colab file folder and then read it into a DataFrame using the following code:
+
+```python
+import pandas as pd
+
+df = pd.read_excel('filename.xlsx')
+```
+
+If you have multiple sheets in the Excel file, you can specify the sheet name or index using the `sheet_name` 
+parameter as follows:
+
+```python
+df = pd.read_excel('filename.xlsx', sheet_name='data')
+```
+
+Once again, each of the columns in the Excel file will be read into a Series object in the DataFrame.
 
 ---
 
