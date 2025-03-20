@@ -61,6 +61,31 @@ Once again, each of the columns in the Excel file will be read into a Series obj
 
 ---
 
+## Useful Methods for DataFrames
+
+The following methods are useful when working with DataFrames:
+
+| Method | Description                                                            |
+| --- |------------------------------------------------------------------------|
+| `head()` | Returns the first n rows of the DataFrame.                             |
+| `tail()` | Returns the last n rows of the DataFrame.                              |
+| `info()` | Provides a concise summary of the DataFrame.                           |
+| `describe()` | Generates descriptive statistics of the DataFrame.                     |
+| `shape` | Returns a tuple representing the dimensionality of the DataFrame.      |
+| `columns` | Returns the column labels of the DataFrame.                            |
+| `index` | Returns the index (row labels) of the DataFrame.                       |
+| `set_index()` | Sets the DataFrame index using an existing column.                     |
+| `to_datetime()` | Converts date strings in a series of a DataFrame to a datetime format. |
+| `values` | Returns the values of the DataFrame as a 2D NumPy array.               |
+| `sort_values()` | Sorts the DataFrame by the values along the specified axis.            |
+| `dropna()` | Removes missing values from the DataFrame.                             |
+| `fillna()` | Fills missing values in the DataFrame.                                 |
+| `groupby()` | Groups the DataFrame using a mapper or by a Series of columns.         |
+| `to_csv()` | Writes the DataFrame to a CSV file.                                    |
+| `to_excel()` | Writes the DataFrame to an Excel file.                                 |
+
+These methods can help you manipulate and analyze data in a DataFrame efficiently.
+
 # Pre-Class Quiz Challenge
 Open the following notebook and complete the instructions in the markdown:
 
