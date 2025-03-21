@@ -97,7 +97,8 @@ nav:
     - Numpy:
         - Reading: unit3/03_numpy/numpy_read.md
         - In Class: unit3/03_numpy/numpy_class.md
-        - Homework: unit3/03_numpy/numpy_hw.md
+        - Homework (v1): unit3/03_numpy/numpy_hw.md
+        - Homework (v2): unit3/03_numpy/numpy_hw2.md
     - Pandas (Part 1):
         - Reading: unit3/04_pandas_part1/pandas1_read.md
         - In Class: unit3/04_pandas_part1/pandas1_class.md

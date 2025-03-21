@@ -92,7 +92,7 @@ To create mathematical equations to solve a truss, we need to express the forces
 
     $F_{C_y}: \sin(\theta_C) \cdot F_{BC} + 1 \cdot R_{C_y} = 0$
 
-
+**Note**: Even though P is shown in the diagram as acting in the negative y-direction, we treat it as a positive value in the derivation. It has a minus sign after moving it from the left-hand side to the right-hand side. With this solution, for a force P acting downward, we would enter a negative value for P. If P were acting upward, we would enter a positive value for P.
 
 We can now "line up" the equations in a matrix form to solve for the unknowns. 
 
@@ -152,7 +152,7 @@ R_{C_y}
 \end{pmatrix}
 $$
 
-For reference, here are our coefficients and loads in table format:
+For reference, here are our coefficients and loads in table format. **Note**: If you compare this table to the the equations above, you will notice that we have changed the order of the equations so that the two A equations are first, followed by the two B equations, and finally the two C equations. Also, we switched the order of 2nd and 3rd columns.
 
 |                           |             AB            |             BC            | AC | R<sub>A<sub>x</sub></sub> | R<sub>A<sub>y</sub></sub> | R<sub>C<sub>y</sub></sub> |
 |:-------------------------:|:-------------------------:|:-------------------------:|:--:|:-------------------------:|:-------------------------:|:-------------------------:|
