@@ -126,7 +126,7 @@ Income       37000
 Name: Bob, dtype: object
 ```
 
-Note that the .loc[] method is used to access a group of rows and columns by label(s) or a boolean array. In this case, we are accessing the row with the label 'Bob'. To access a row by index (0, 1, 2, etc.), you can use the .iloc[] method.
+Note that the `.loc[]` method is used to access a group of rows and columns by label(s) or a boolean array. In this case, we are accessing the row with the label 'Bob'. To access a row by index (0, 1, 2, etc.), you can use the `.iloc[]` method.
 
 You can also reference columns by name. For example, to access the 'Age' column, you can use the following code:
 
@@ -168,8 +168,6 @@ df
 The `pd.cut()` function is used to segment and sort data values into bins. The `bins` parameter specifies the intervals to use for the bins, and the `labels` parameter specifies the labels for the resulting bins. The output will be:
 
 ![pandas1_04_newcolumn2.png](images/pandas1_04_newcolumn2.png)
-
-)
 
 ## Filtering DataFrames
 
