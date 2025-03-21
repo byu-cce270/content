@@ -94,6 +94,14 @@ Next, we will print the column labels and row labels of the DataFrame:
 print(df.columns)
 print(df.index)
 ```
+
+The output will be:
+
+```python
+Index(['Name', 'Age', 'Education', 'Income'], dtype='object')
+RangeIndex(start=0, stop=6, step=1)
+```
+
 Note that the index of the DataFrame is shown on the left of the image above (0, 1, 2, ..) and it is a RangeIndex starting from 0. This is the default index when you create a DataFrame without specifying an index. The column labels are shown at the top of the image above ('Name', 'Age', 'Education', 'Income').
 
 If you want to set the index of the DataFrame to a specific column, you can use the set_index() method as follows:
