@@ -208,9 +208,22 @@ print(date_range_data)
 ```
 
 # Output:
+```text
+
+Data for 2022-01-02:
+value1    20
+value2    25
+Name: 2022-01-02 00:00:00, dtype: int64
 
 
+Data from 2022-01-02 to 2022-01-03:
+            value1  value2
+date                      
+2022-01-02      20      25
+2022-01-03      30      35
 ```
+
+
 
 We can now select the data by date. 
 ```python
@@ -235,8 +248,7 @@ Name: 2022-01-02 00:00:00, dtype: int64
 
 
 
-Here is 
-Y
+
 
 
 
