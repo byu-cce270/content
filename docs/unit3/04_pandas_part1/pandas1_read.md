@@ -167,6 +167,26 @@ The `pd.cut()` function is used to segment and sort data values into bins. The `
 
 ![pandas1_04_newcolumn2.png](images/pandas1_04_newcolumn2.png)
 
+Another way to create a new column based on conditions is to use the `.apply()` method. For example, you can create a new column called 'Income Level' based on the 'Income' column as follows:
+
+```python
+def categorize_income(income):
+    if income < 50000:
+        return 'Low'
+    elif income < 100000:
+        return 'Medium'
+    else:
+        return 'High'
+```
+
+You can then apply this function to the 'Income' column to create the 'Income Level' column as follows:
+
+```python
+df['Income Level'] = df['Income'].apply(categorize_income)
+```
+
+The output will be the same as above. The `apply()` method is useful when you want to apply a function to each element in a column to create a new column based on the results.
+
 ## Filtering DataFrames
 
 You can filter a DataFrame based on conditions using boolean indexing. For example, to filter the DataFrame to include only rows where the 'Age' column is greater than 30, you can use the following code:

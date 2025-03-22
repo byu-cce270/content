@@ -1,12 +1,10 @@
 #  HW: Pandas DataFrame
 
-**Purpose:** In this assignment you are given a Google Sheet with different data. You will import the google sheet into your python code and use it to create pandas dataframes. You will then graph information from the different dataframes.
-
-You will be using the following excel file: for this assignment:
+**Purpose:** In this assignment you are given an Excel file with three data sets. You will import the sheets in the Excel workbook into your python code to create pandas dataframes. You will then analyze and graph information from the different dataframes. You can download the Exel file from the following link:
 
 [highway_data.xlsx](highway_data.xlsx)
 
-## Instructions
+## Getting Started
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part1/starter_sheet_pandas_part_1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_4_Pandas-Part1_HW"
@@ -18,43 +16,51 @@ You will be using the following excel file: for this assignment:
 
 ---
 
-### Creating and Formatting the DataFrames
+## Creating and Formatting the DataFrames
 
-1. Under the code block titled "Create DataFrames", write the appropriate code to import each of the three sheets of the Excel file into dataframes. When you are done you should have three dataframes: bridge_df, traffic_df, and concrete_df. You will need to open the Excel file and note the names of the sheets to formulate your code correctly. Refer  to the pre-class reading to see how to import a sheet from an Excel file.
-2. Under the text block titled "BRIDGE DATAFRAME" filter the bridge dataframe into a new dataframe that only includes bridges in critical condition.
-3. Display the dataframe you just created.
-4. The next code block includes code that is given to you. It takes the bridge age data from the dataframe and converts the numbers into actual dates so we can perform analysis on the numbers.
-5. Under the line given, use the .groupby() method to display an average bridge age based on the condition the bridges are in. If you've done everything correctly the following should display:
-   
-![bridge df](https://github.com/user-attachments/assets/242fefdb-276f-496d-957c-11597bd3d5ca)
+1. Under the code block titled "Create DataFrames", write the appropriate code to import each of the three sheets of the Excel file into dataframes. When you are done you should have three dataframes: **bridge_df**, **traffic_df**, and **concrete_df**. You will need to open the Excel file and note the names of the sheets to formulate your code correctly. Refer  to the pre-class reading to see how to import a sheet from an Excel file.
 
-6. In a new code block, write code to display a bar graph of the number of bridges there are based on their condition rating. Include:
+## Bridge DataFrame
+
+1. Under the text block titled "BRIDGE DATAFRAME", display the first few lines of the bridge_df dataframe.
+2. Filter the bridge dataframe into a new dataframe that only includes bridges in critical condition.
+3. Display the first few rows of the dataframe you just created.
+4. In the next code block, make a new column called 'Bridge Age' that is the number of years since the bridge was built. Hint: you can use `datetime.now().year` to get the current year. 
+5. Display the first few rows of the dataframe to see your new column.
+6. In the next cell, use the `.describe()` method to display the statistics of the 'Bridge Age' column.
+7. Use the `.value_counts()` method to create and display a series containing the number of bridges in each condition rating.
+8. Make a bar graph that displays the number of bridges in each condition rating. Include:
     - x and y labels
     - a title
     - change the default color scheme
 
     When you are finished your bar graph should look something like this:
    
-![bridge bar graph](https://github.com/user-attachments/assets/fb37f510-746b-4aaa-84c8-70a683ea64c7)
+![pandas1_hw_01_barchart.png](images/pandas1_hw_01_barchart.png)
 
-7. Under the text block titled "TRAFFIC DATAFRAME", write code to display a bar graph of the count of congestion levels throughout the day. Include:
+## Traffic DataFrame
+
+1. Under the text block titled "TRAFFIC DATAFRAME", display the first few lines of the traffic_df dataframe.
+2. Filter the traffic dataframe into a new dataframe that only includes intersections with more than 1500 vehicles and congestion level = 'High'. 
+3. Display the first few rows of the dataframe you just created.
+4. Create a series that contains the count of congestion levels throughout the day.
+5. Create a pie chart that displays the count of congestion levels throughout the day. Include:
     - a title
-    - x and y labels
     - change the default color scheme
 
-    When you are finished your bar graph should look something like this:
-   
-![count of congestion](https://github.com/user-attachments/assets/043a47ea-d73b-41c3-b4a4-fb13d42c769a)
+    When you are finished your pie chart should look something like this:
 
-8. Under the text block titled "CONCRETE DATAFRAME", write code to sort the dataframe by the 'Age (day)' column.
+![pandas1_hw_02_piechart.png](images/pandas1_hw_02_piechart.png)
+
+## Concrete DataFrame
+
+1. Under the text block titled "CONCRETE DATAFRAME", display the first few lines of the concrete_df dataframe.
+2. Use describe to display the statistics of the the entire dataframe.
+3. Write code to sort the dataframe by the 'Age (day)' column.
 9. Display the sorted dataframe.
-10. In a new code block, write a function with one parameter that returns "Early Strength" if it has been less than 7 days, "Medium Strength" if it has been less than 28 days, and "Long-Term Strength" if it has been longer than 28 days.
-11. Using the .apply method with the function you just created on the 'Age (day)' column in your dataframe, add a new column to your dataframe called "Age Category" that includes whether the concrete measurement is early, medium, or long-term strength.
-12. In a new codeblock, use .describe() to find the statistics of your dataframe.
-13. In a new codeblock, create a new dataframe by grouping the compressive strength of the concrete by the age catgeory column you created in step 11. When you display the new dataframe, it should look something like this:
-    
-    ![concrete strength](https://github.com/user-attachments/assets/7edd177a-c47d-48a4-baef-fce9c2602729)
-
+10. In a new code block, write a function called 'categorize_age' that takes one integer parameter called 'days' that returns "Early Strength" if it has been less than 7 days, "Medium Strength" if it has been less than 28 days, and "Long-Term Strength" if it has been longer than 28 days.
+11. Using the `.apply()` method on the 'Age (day)' column and pass it the function you just created to create a new column to your dataframe called "Age Category" that includes whether the concrete measurement is early, medium, or long-term strength.
+12. Display the first few rows of the dataframe to see your new column.
 14. In a new codeblock, write code to display a scatter plot that compares the compressive strength of the concrete with its cement content. Include:
      - a title
      - x and y labels
@@ -63,16 +69,22 @@ You will be using the following excel file: for this assignment:
    
     When you are finished your scatter plot should look something like this:
 
-    ![scatter plot](https://github.com/user-attachments/assets/afa9b630-6990-48ae-be4c-c58cb69ad2e2)
+![pandas1_hw_03_scatter.png](images/pandas1_hw_03_scatter.png)
 
 15. In a new codeblock, write code to display a boxplot that compares the compressive strength for each age category. Include:
      - a title
      - x and y labels
-     - change the default color
 
     When you are finished your boxplot should look something like this:
     
-    ![boxplot](https://github.com/user-attachments/assets/1abbd39f-c61e-4d36-bd23-37f75c62b0d7)
+![pandas1_hw_04_boxplot.png](images/pandas1_hw_04_boxplot.png)
+
+To do this, you will need to use the seaborn library that you imported earlier. You can find more information on how to create a boxplot using seaborn [here](https://seaborn.pydata.org/generated/seaborn.boxplot.html). For this assignment, you will need to use the 'Age Category' column as the x-axis and the 'Compressive Strength' column as the y-axis. Include this line:
+
+```python
+sns.boxplot(x='Strength Category', y='Concrete compressive strength(MPa, megapascals)', data=concrete_df)
+```
+And then include the normal matplotlib commands to alter the title and labels.
 
 16. For extra credit, create a heatmap that looks like the following:
 
