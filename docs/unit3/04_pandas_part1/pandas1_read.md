@@ -1,5 +1,3 @@
-from setuptools.package_index import distros_for_urlfrom setuptools.package_index import distros_for_urlfrom setuptools.package_index import distros_for_url
-
 #  Reading: Pandas Series and DataFrame
 
 ---
@@ -18,7 +16,7 @@ DataFrames section)
 
 Remember that you may have to sign in with your byu netid to access the reading content.
 
-## Things to look out for
+### Things to look out for
 - What is a Pandas Series and a Pandas DataFrame?
 - How do you create a Pandas Series and a Pandas DataFrame?
 - What does it mean to index in a Pandas DataFrame and how do you index?
