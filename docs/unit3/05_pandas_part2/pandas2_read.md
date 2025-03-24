@@ -14,11 +14,10 @@ com/library/view/python-data-science/9781098121211/ch20.html#ch_0308-aggregation
 Remember that you may have to sign in with your byu netid to access the reading content.
 
 # Optional Reading
-Here are some chapters in other O'Reilly books that may be helpful for this assignment:
+Here are some additional chapters in other O'Reilly books that may be helpful for this assignment:
 
 - Plotting with Pandas directly (Learning pandas)
-    - [Chapter 11: Visualizaton](https://learning.oreilly.com/library/view/learning-pandas/9781783985128/ch11s02.html) 
-   {:target="_blank"} (Read through the end of Chapter 11) 
+    - [Chapter 11: Visualizaton](https://learning.oreilly.com/library/view/learning-pandas/9781783985128/ch11s02.html){:target="_blank"} (Read through the end of Chapter 11) 
 - Groupby (Pandas for Everyone: Python Data Analysis, First Edition)
     - [Chapter 10:Data Aggregation and Group Operations](https://learning.oreilly.
     com/library/view/python-for-data/9781491957653/ch10.html#groupby_mech_iteration){:target="_blank"}. (Read 10.1 
@@ -34,9 +33,13 @@ analysis..
 - What is the .groupby operation and when do you use it?
 
 
----
+## NaNs and Missing Values in Pandas
 
-Pandas can help with missing data which are typically represented in your data frames as NaN values.  Here is a short example of using Panda's to find and replace NaN values.
+In Python, sometimes a dataset has values that are empty or missing. These values are represented as NaN (Not a Number) in Pandas. If this happens, you typically need to do something with the NaN values before you can operate on the dataset. You can use the .isna() method to find NaN values in a DataFrame and the .fillna() method to replace NaN values with a specified value. Here is an example of how to use these methods:
+
+```python
+
+Pandas can help with missing data which are typically represented in your data frames as NaN values. Here is a short example of using Panda's to find and replace NaN values.
 
 ```python
 import pandas as pd
@@ -67,8 +70,9 @@ print(data_filled)
 You can replace the NaN's with any value, but typically you will replace them with 0 or the mean of the column.
 
 ---
-#Panda's append and concat
-Pandas has a method called .append() that allows you to add rows to a DataFrame.  This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame.  Here is an example of how to use the .append() method:
+## Pandas append and concat
+
+Pandas has a method called `.append()` that allows you to add rows to a DataFrame.  This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame.  Here is an example of how to use the `.append()` method:
 
 ```python
 import pandas as pd
@@ -83,11 +87,9 @@ print(combined_data)
 2  5  7
 3  6  8
 ```
-The ignore_index=True parameter is used to reset the index of the combined DataFrame.  If you don't use this parameter, the index of the original DataFrames will be preserved."
-But in this case you want the new index to be continuous to add the additional rows. 
+The ignore_index=True parameter is used to reset the index of the combined DataFrame. If you don't use this parameter, the index of the original DataFrames will be preserved." But in this case you want the new index to be continuous to add the additional rows. 
 
-# Concatenating DataFrames
-Pandas also has a method called .concat() that allows you to concatenate two or more DataFrames along a particular axis.  This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame.  Here is an example of how to use the .concat() method:
+Pandas also has a method called `.concat()` that allows you to concatenate two or more DataFrames along a particular axis. This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame. Here is an example of how to use the `.concat()` method:
 
 ```python
 import pandas as pd
@@ -102,12 +104,15 @@ print(combined_data)
 2  5  7
 3  6  8
 ```
-In this case the ignore_index=True parameter is used to reset the index of the combined DataFrame.  If you don't use this parameter, the index of the original DataFrames will be preserved. You want to create a continuous index for the new DataFrame.
+In this case the ignore_index=True parameter is used to reset the index of the combined DataFrame. If you don't use this parameter, the index of the original DataFrames will be preserved. You want to create a continuous index for the new DataFrame.
+
+As you can see, `.append()` and `.concat()` are similar, and can often be used interchangeably.
 
 #
 
-#Panda's groupby
-The .groupby() method in Pandas is used to group data by one or more columns.  This is useful when you want to perform operations on groups of data within a DataFrame.  Here is an example of how to use the .groupby() method:
+## Pandas groupby
+
+One of the most useful methods in pandas is the `.groupby()` method. It is similar to a pivot table in Excel or Google Sheets in that it allows you to group data based on one or more columns and then perform operations on the groups. Here is an example of how to use the `.groupby()` method:
 
 ```python
 import pandas as pd
@@ -149,18 +154,18 @@ print(grouped_data)
 3  bar  4  8
 
 # second print statement
-        C
-A   B
+A   B  C
 bar 2  6
     4  8
 foo 1  5
     3  7
 ``` 
 
-In this case there are two levels of grouping: first by column 'A' and then by column 'B'.  The resulting DataFrame shows the sum of column 'C' for each group. The column has the values of 'foo' and 'bar' as the first level of the index, and the column 'B' values as the second level of the index which are 1, 2, 3, and 4. The command groups them togehter by the values in column 'A' and then by the values in column 'B'. The value 'foo' from column 'A' has two values 1 and 3 from column 'B' and the sum of column 'C' for those values is 12. The value 'bar' from column 'A' has two values 2 and 4 from column 'B' and the sum of column 'C' for those values is 14. The 'sum' command isn't really used since there is only a single value in each group. 
+In this case there are two levels of grouping: first by column 'A' and then by column 'B'.  The resulting DataFrame shows the sum of column 'C' for each group. The column has the values of 'foo' and 'bar' as the first level of the index, and the column 'B' values as the second level of the index which are 1, 2, 3, and 4. The command groups them together by the values in column 'A' and then by the values in column 'B'. The value 'foo' from column 'A' has two values 1 and 3 from column 'B' and the sum of column 'C' for those values is 12. The value 'bar' from column 'A' has two values 2 and 4 from column 'B' and the sum of column 'C' for those values is 14. The 'sum' command isn't really used since there is only a single value in each group. But with large datasets, you can use the sum command to aggregate the data in each group based on multiple category combinations.
 
-# Panda's datetime
-Pandas has a powerful set of tools for working with dates and times.  You can use the pd.to_datetime() function to convert a column of strings to datetime objects.  Here is an with a datetime column and two other columns:
+## Pandas datetime
+
+Pandas has a powerful set of tools for working with dates and times. In engineering and construction, it is common to deal with data associated with a particular date. For example, when reading datasets from Excel or CSV files, the first column in a table is often a date. When you import such a column to a DataFrame, the date values are imported as strings. However, we need to convert the strings to actual datetime objects in order to fully utilize Pandas for analyzing and plotting the data associated with dates. Fortunately, you can use the `.to_datetime()` function to convert a column of strings to datetime objects. Here is an example dataset with a datetime column and two other columns:
 
 ```python   
 import pandas as pd
@@ -174,8 +179,8 @@ print(data)
 0 2022-01-01       1       4
 1 2022-01-02       2       5
 2 2022-01-03       3       6
-````
-YOu often want the datetime column to be the index of the DataFrame so you can access the data by date. Here is an example using the previous data frame:
+```
+You often want the datetime column to be the index of the DataFrame so you can access the data by date. We can achieve this using the `.set_index` method. So when we import a dataset with a date column, we first convert to datetime, then set it to be the index of the DataFrame. Here is an example using the previous data frame:
 
 ```python  
 import pandas as pd
@@ -195,6 +200,10 @@ data.set_index('date', inplace=True)
 
 print(data)
 ```
+
+The output would be as follows:
+
+```python
     #output:
                 value1  value2
     date                      
@@ -208,6 +217,9 @@ print(data)
     2022-01-08      80      85
     2022-01-09      90      95
     2022-01-10     100     105
+```
+
+Now the date column is the index of the DataFrame, and we can access the data by date. For example, to select data for a specific date or a range of dates, you can use the `.loc` method. Here is an example:
 
 ```python
 # Select data for a specific date
@@ -221,14 +233,13 @@ print("\nData from 2022-01-02 to 2022-01-03:")
 print(date_range_data)
 ```
 
-# Output:
-```text
+The output would be as follows:
 
+```text
 Data for 2022-01-02:
 value1    20
 value2    25
 Name: 2022-01-02 00:00:00, dtype: int64
-
 
 Data from 2022-01-02 to 2022-01-03:
             value1  value2
@@ -237,39 +248,44 @@ date
 2022-01-03      30      35
 ```
 
+If you have a DataFrame with a datetime index, you can easily resample the data to a different frequency using the `.resample()` method. For example, you can resample daily data to monthly data or hourly data to daily data. Here is an example:
 
-
-We can now select the data by date. 
 ```python
-import pandas as pd
-data = pd.DataFrame({'date': ['2022-01-01', '2022-01-02', '2022-01-03'],
-                     'value1': [1, 2, 3],
-                     'value2': [4, 5, 6]})
-data['date'] = pd.to_datetime(data['date'])
-data.set_index('date', inplace=True)
-print(data.loc['2022-01-02'])
-# Output:
-value1    2
-value2    5
-Name: 2022-01-02 00:00:00, dtype: int64
-
+# Resample daily data to monthly data
+monthly_data = data.resample('M').sum()
+print("Monthly data:")
+print(monthly_data)
 ```
 
+The output would be as follows:
 
+```text
+Monthly data:
+            value1  value2
+date
+2022-01-31     550     600
+```
 
+In this example, the `.resample('M')` method resamples the daily data to monthly data by summing the values for each month. You can also resample the data to other frequencies such as 'D' for daily, 'H' for hourly, 'W' for weekly, etc.
 
+A datetime index is also useful for plotting time series data. You can use the `.plot()` method to plot the data directly from the DataFrame. Here is an example:
 
+```python
+import matplotlib.pyplot as plt
 
+# Plot the data
+data.plot()
+plt.show()
+```
+Each of the columns are then plotted against the date index.
 
-
-
-
+---
 
 
 # Pre-Class Quiz Challenge
 Open the following notebook and complete the instructions in the markdown:
 
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part2/preclass_pandas_part2.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/preclass_pandas_part2.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 Save changes to your Google Drive and submit the link to the notebook in your Pre-Class Quiz.
