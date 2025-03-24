@@ -2,6 +2,16 @@
 
 **Purpose:** In this assignment you are given an Excel file for different excavation and grading equipment. You will upload the provided file to your Colab notebook and practice merging, grouping, and manipulating the data in Python. 
 
+## Overview
+The Excel file has two sheets: `NY Street Resurfacing Schedule` and `NY Street Pavement Rating`. 
+You will be using the data in these sheets to complete the exercises below.
+
+You will need to download the Excel file from this page, and upload it to your Colab notebook. Then you will need to 
+read the data from the two sheets into two different panda data frames. You will need to covert the `date` data into 
+a panads date-time format and make that your indes. You will also need to add a new column to the first dataframe that 
+specifies the day of the week. 
+
+
 ## Instructions
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/starter_sheet_HW_2_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -18,12 +28,27 @@
 7. In a new code block, converte the "Date" column in the resurface_df to a date/time format.
 8. Use the .dt.day_name() method in pandas to add a new column to the resurface_df that specifies what day of the week the resurfacing took place on.
 9. Display the dataframe with the new column added.
-10. In a new code block, use the .groupby() method to count the number of jobs under each borough for both milling and paving.
+
+# Next Steps
+Now that we have our data loaded, we can start to manipulate it. You probably what to look at the head and tails of 
+the dataframes to see what they look like. You can do this with the .head() and .tail() methods.
+
+We are going to use the .groupby() method to group our data by different columns and put those data into a new 
+dataframe. 
+
+
+10. In a new code block, use the .groupby() method to count the number of jobs under each borough for both milling 
+    and paving. Store these results in a new dataframe called job_count_df.
 
 
    When you are done, the dataframe that displays should look like this:
 
     ![groupby](https://github.com/user-attachments/assets/e52726c4-e0ef-4a37-b9f0-11a3d7028897)
+
+
+Now we want to look at the most common street names for paving jobs and create a dataframe that shows the most 
+common street names for paving jobs. The current column names are a little long, so after you create the dataframe, 
+rename the columns. 
 
 
 10. In a new code block, create a new dataframe that finds that most common street names for paving jobs.
@@ -33,6 +58,12 @@
 
     ![streets](https://github.com/user-attachments/assets/9a9dcfd3-356e-44cb-9ce6-eb56b1beb9e4)
 
+
+Now we want to see when the work was done and how long it took. We will assume each shift is 8 hours, so we can use 
+some math to add a new column to the dataframe that shows how long each job took called `duration`
+
+Now that we know the duration of each job, we can start to group the data by each community board and put that data 
+into a new dataframe. 
     
 12. Starting in a new codeblock, assume that each shift for resurfacing last 8 hours. Add a work duration column to the resurface_df that has the value of 8 for each row.
 13. Use the .groupby() method to determine the number of work hours completed by each community board.
@@ -40,6 +71,9 @@
     When you are done, the dataframe that displays should look like this:
 
     ![community hours](https://github.com/user-attachments/assets/d1e44013-40e5-4516-a9b9-0ce9622af326)
+
+Now we want to visualize the data we have been working with. We will start by creating a bar graph that displays the 
+number of work jobs by borough. 
 
 14. In a new code block, create a bar graph that displays the number of work jobs by borough. Include:
      - a title
@@ -50,6 +84,13 @@
     When you are done, the graph should look something like this:
 
     ![pandas2](https://github.com/user-attachments/assets/3ae94a3c-c42f-4a7a-9116-689f3df53353)
+
+
+# Pavement Ratings
+THe pavement ratings sheet doesn't have the full name of the boroughs, so we will need to create a dictionary to map 
+the values they use to the full names. Once we have that dictionary, we can map the values in the dataframe to the 
+full names and add a new column with the full names. Make sure you use .head() and .tail() to check your dataframe 
+after you do this. 
 
 15. In a new codeblock under the 'PAVEMENT RATING' text block create a dictionary to map the pavement_df boroughs.
      - X : Bronx
