@@ -6,17 +6,20 @@
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/starter_sheet_HW_2_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
-3. In the code block titled "Imports and Authentication" input the correct import statements to connect to gspread. Also import:
+3. In the code block titled "Imports " input the correct import statements for the libraries:
     - matplotlib.pyplot as plt
     - pandas as pd
     - seaborn as sns
-4. After authenticating yourself, open your google sheet in python using gspread.
-5. In a new code block, write code to open the two different sheets into two seperate pandas dataframes.
+4. Download this Excel spreadsheet:
+[pavingdata.xlsx](Data/pavingdata.xlsx)
+5. Upload the file to your Colab notebook by dragging and dropping it into the file explorer on the left side of the notebook.
+6. In a new code block, write code to open the two different sheets into two separate pandas dataframes.
     * Note: You can name the dataframes whatever you would like. For the purposes of these instructions the first sheet will be referred to as the resurface_df and the second sheet will be referred to as the pavement_df.
-6. In a new code block, converte the "Date" column in the resurface_df to a date/time format.
-7. Use the .dt.day_name() method in pandas to add a new column to the resurface_df that specifies what day of the week the resurfacing took place on.
-8. Display the dataframe with the new column added.
-9. In a new code block, use the .groupby() method to count the number of jobs under each borough for both milling and paving.
+7. In a new code block, converte the "Date" column in the resurface_df to a date/time format.
+8. Use the .dt.day_name() method in pandas to add a new column to the resurface_df that specifies what day of the week the resurfacing took place on.
+9. Display the dataframe with the new column added.
+10. In a new code block, use the .groupby() method to count the number of jobs under each borough for both milling and paving.
+
 
    When you are done, the dataframe that displays should look like this:
 
