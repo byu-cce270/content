@@ -1,40 +1,40 @@
 #  HW: Manipulating and Grouping Pandas DataFrames
 
-**Purpose:** In this assignment you are given an Excel file for different excavation and grading equipment. You will upload the provided file to your Colab notebook and practice merging, grouping, and manipulating the data in Python. 
+**Purpose:** In this assignment you are given an Excel file for different road resurfacing work done on New York City streets along with pavement ratings over a few years. You will upload the provided Excel file to your Colab notebook, create dataframes from the two sheets in the Excel file, and practice merging, grouping, and manipulating the data in pandas. 
 
 ## Overview
 The Excel file has two sheets: `NY Street Resurfacing Schedule` and `NY Street Pavement Rating`. 
 You will be using the data in these sheets to complete the exercises below.
 
-You will need to download the Excel file from this page, and upload it to your Colab notebook. Then you will need to 
-read the data from the two sheets into two different panda data frames. You will need to covert the `date` data into 
-a panads date-time format and make that your indes. You will also need to add a new column to the first dataframe that 
-specifies the day of the week. 
+You will need to download the Excel file from this page, and upload it to your Colab notebook. You will need to 
+read the data from the two sheets into two different panda data frames and convert the `date` columns into 
+a pandas  date-time format and make these the dataframe indexes. You will need to add a new column to the first dataframe that 
+specifies the day of the week.  In the second dataframe, you will need to add a column to covert the shorthand names for the boroughs into their full names.
 
 
 ## Instructions
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/starter_sheet_HW_2_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. Make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/starter_sheet_HW_2_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
-3. In the code block titled "Imports " input the correct import statements for the libraries:
+3. In the code block titled "Imports " input the correct import statements for the libraries you will use:
     - matplotlib.pyplot as plt
     - pandas as pd
     - seaborn as sns
 4. Download this Excel spreadsheet:
 [pavingdata.xlsx](Data/pavingdata.xlsx)
 5. Upload the file to your Colab notebook by dragging and dropping it into the file explorer on the left side of the notebook.
-6. In a new code block, write code to open the two different sheets into two separate pandas dataframes.
+6. In a new code block, write code to open the two different sheets and read the data into two separate pandas dataframes.
     * Note: You can name the dataframes whatever you would like. For the purposes of these instructions the first sheet will be referred to as the resurface_df and the second sheet will be referred to as the pavement_df.
-7. In a new code block, converte the "Date" column in the resurface_df to a date/time format.
+7. In a new code block, convert the "Date" column in the resurface_df to a date/time format.
 8. Use the .dt.day_name() method in pandas to add a new column to the resurface_df that specifies what day of the week the resurfacing took place on.
 9. Display the dataframe with the new column added.
 
 # Next Steps
-Now that we have our data loaded, we can start to manipulate it. You probably what to look at the head and tails of 
-the dataframes to see what they look like. You can do this with the .head() and .tail() methods.
+Now that we have our data loaded and we looked at the dataframes, we can start to manipulate and analyze the data. You probably what to look at the head and tails of 
+the dataframes to see what they look like. You can do this with the .head() and .tail() methods before you start.
 
-We are going to use the .groupby() method to group our data by different columns and put those data into a new 
-dataframe. 
+We are going to use the .groupby() method to group our data by different columns and put those data into new 
+dataframes. 
 
 
 10. In a new code block, use the .groupby() method to count the number of jobs under each borough for both milling 
@@ -48,7 +48,7 @@ dataframe.
 
 Now we want to look at the most common street names for paving jobs and create a dataframe that shows the most 
 common street names for paving jobs. The current column names are a little long, so after you create the dataframe, 
-rename the columns. 
+rename the columns. You will need to sort the data to get the most common street names at the top of the dataframe.
 
 
 10. In a new code block, create a new dataframe that finds that most common street names for paving jobs.
@@ -88,7 +88,7 @@ number of work jobs by borough.
 
 # Pavement Ratings
 THe pavement ratings sheet doesn't have the full name of the boroughs, so we will need to create a dictionary to map 
-the values they use to the full names. Once we have that dictionary, we can map the values in the dataframe to the 
+the values in the dataframe to the full names. Once we have that dictionary, we can map the values in the dataframe to the 
 full names and add a new column with the full names. Make sure you use .head() and .tail() to check your dataframe 
 after you do this. 
 
@@ -99,7 +99,7 @@ after you do this.
      - Q : Queens
      - S : Staten Island
    
-16. Map the BoroughCod column of the pavement_df to insert a new column titled "Borough" that includes the full name of the boroughs.
+16. Map the BoroughCod column of the pavement_df to insert a new column titled "Borough" that includes the full name of the boroughs.  
 17. In a new code block, use the .groupby() method to sort the different ratings the boroughs have given out.
 
     When you are done, the data frame that displays should look like this:
