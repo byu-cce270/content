@@ -17,16 +17,16 @@ You will also have to make and turn in a project proposal. The project proposal,
 
       - An introductory text block with: 
          - Instructions on how to use your code
-         - Link to your external file(s) (if you have any)
+         - Link to your Google Sheet
          - Group name
          - Members of your group
          - A report on how each team member contributed. (with rubric items that they did)
          - Links to any out of class resources you used **(Please don't forget this part. If there are no links you will lose points)**
       - At least 1 loop (for or while)
-      - At least 1 list, dictionary, or panda dataframe
+      - At least 1 list, dictionary, or pandas dataframe
       - At least 1 if-elif-else statement
       - At least 3 functions that you write/define
-      - Use xlsxwriter to write to an Excel file, both data and a graph
+      - Use gspread to connect to a Google Sheet
       - Use matplotlib to create a graph
       - Your program is bug free 
       - Use markdown to organize your code (Using text blocks to separate your code into sections or code blocks)
@@ -34,6 +34,7 @@ You will also have to make and turn in a project proposal. The project proposal,
       - EXTRA CREDIT OPTIONS (Must be used in some significant way):
          - Use of GUIs (ipywidgets)
          - Use of numpy in some way
+
 
 
 
@@ -54,12 +55,13 @@ Only one team member needs to turn in the following in the feedback box on the a
 |        At least 1 list, dictionary, or pandas dataframe         |        5        |
 |                At least 1 if-elif-else statement                |        5        |
 |           At least 3 functions that you write/define            |       12        |
-| Use xlsxwriter to write to an Excel file, both data and a graph |        5        |
+|             Use gspread to connect to a Google Sheet            |        5        |
 |                At least 1 graph from matplotlib                 |        5        |
 |                    Your program is bug free                     |       10        |
 |               Use markdown to organize your code                |        5        |
 |       Relative contribution of each team member is given        |        5        |
-|                    Present for presentation                     |       25        |
+|                    Present for presentation                     |       15        |
+|                          TA wow factor                          |       10        |
 |             All links turned in before presentation             |       10        |
 |         <div style="text-align: right">**Total**</div>          |       100       |
 |                    Use of GUIs (ipywidgets)                     |       +5        |
