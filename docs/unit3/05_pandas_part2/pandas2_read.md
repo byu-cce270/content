@@ -13,17 +13,19 @@ com/library/view/python-data-science/9781098121211/ch20.html#ch_0308-aggregation
 
 Remember that you may have to sign in with your byu netid to access the reading content.
 
-# Additional Reading
+# Optional Reading
 Here are some chapters in other O'Reilly books that may be helpful for this assignment:
 
-- Plotting with Pandas directly
+- Plotting with Pandas directly (Learning pandas)
     - [Chapter 11: Visualizaton](https://learning.oreilly.com/library/view/learning-pandas/9781783985128/ch11s02.html) 
    {:target="_blank"} (Read through the end of Chapter 11) 
-- Groupby
+- Groupby (Pandas for Everyone: Python Data Analysis, First Edition)
     - [Chapter 10:Data Aggregation and Group Operations](https://learning.oreilly.
     com/library/view/python-for-data/9781491957653/ch10.html#groupby_mech_iteration){:target="_blank"}. (Read 10.1 
     to 10.4)
-   
+
+Both books are available on the O'Reilly website and provide good overviews and examples of using pandas for data 
+analysis.. 
 
 ## Things to look out for
 - What is the .concat method and what does it do?
