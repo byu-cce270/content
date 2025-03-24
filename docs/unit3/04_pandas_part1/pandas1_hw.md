@@ -58,7 +58,7 @@
 2. Use describe to display the statistics of the the entire dataframe.
 3. Write code to sort the dataframe by the 'Age (day)' column.
 9. Display the sorted dataframe.
-10. In a new code block, write a function called 'categorize_age' that takes one integer parameter called 'days' that returns "Early Strength" if it has been less than 7 days, "Medium Strength" if it has been less than 28 days, and "Long-Term Strength" if it has been longer than 28 days.
+10. In a new code block, write a function called 'categorize_age' that takes one integer parameter called 'days' that returns "Early Strength" if it has been less than 7 days, "Medium Strength" if it has been less than or equal to 28 days, and "Long-Term Strength" if it has been longer than 28 days.
 11. Using the `.apply()` method on the 'Age (day)' column and pass it the function you just created to create a new column to your dataframe called "Age Category" that includes whether the concrete measurement is early, medium, or long-term strength.
 12. Display the first few rows of the dataframe to see your new column.
 14. In a new codeblock, write code to display a scatter plot that compares the compressive strength of the concrete with its cement content. Include:
