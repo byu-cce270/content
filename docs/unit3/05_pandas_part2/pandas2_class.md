@@ -5,7 +5,7 @@ The following exercises will have you manipulate and combine different DataFrame
 
 
 You can find the Colab notebook for the In Class Exercise here:
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part2/In_Class_Pandas_Part_2.ipynb#scrollTo=sN247seQdOW5" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/In_Class_Pandas_Part_2.ipynb#scrollTo=sN247seQdOW5" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 As part of this exercise, you will be asked to import the following Excel file in the in-class workbook. Download the file from this link.
