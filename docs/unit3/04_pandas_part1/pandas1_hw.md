@@ -101,16 +101,19 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 |                                **Item**                                | **Amount** |
 |:----------------------------------------------------------------------:|:----------:|
-|   First code block has import statements and uploads file correctly    |     5      |
-|         Second code block displays the table that pandas made          |     2      |
-|            Third code block displays flow rate data summary            |     2      |
-| Fourth code block finds the shape of the table and summary of DateTime |     2      |
-|                                  Fifth code block - display new index|  2 extra   |                                 
-|      Fifth code block displays a summary of the Date/Time column       |     2      |
-|         Sixth code block displays the last 8 rows of the table         |     2      |
-| Seventh code block creates a table that only shows flowrates over 100  |     5      |
-|     Eighth code block only displays data from Approved Status 'P'      |     5      |
-|             Ninth code block displays bar graph correctly              |     5      |
+|               Import statements and file uploaded correctly            |     3      |
+|         dataframes are appropriately named and created correctly       |     2      |
+|            "Bridge Age" data frame created and displayed               |     2      |
+| "Bridge Age" dataframe described and .value_counts() used correctly    |     2      |                              
+|      Bridge bar graph created w/all requirements per instructions      |     3      |
+|         Traffic dataframe filtered by congestion level                 |     2      |
+|         Traffic pie chart displaying correctly w/all requirements      |     3      |
+|                 Concrete dataframe filtered                            |     2      |
+|             'categorize_age' function properly written                 |     3      |
+|             'Age Category' column created in concrete dataframe        |     2      |
+|  compressive strength v. cement content scatter plot is correct        |     3      |
+|             box plot for compressive strength w/age is correct         |     3      |
+|             heatmat of correlation displaying correctly                |   + 5      |
 |             <div style="text-align: right">**Total**</div>             |   **30**   |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
