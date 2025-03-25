@@ -224,12 +224,12 @@ Now the date column is the index of the DataFrame, and we can access the data by
 ```python
 # Select data for a specific date
 selected_data = data.loc['2022-01-02']
-print("Data for 2022-01-02:")
+print("data for 2022-01-02:")
 print(selected_data)
 
 # Select data for a range of dates
 date_range_data = data.loc['2022-01-02':'2022-01-03']
-print("\nData from 2022-01-02 to 2022-01-03:")
+print("\ndata from 2022-01-02 to 2022-01-03:")
 print(date_range_data)
 ```
 

@@ -6,7 +6,7 @@ The following exercises will have you manipulate and combine different DataFrame
 
 As part of this exercise, you will be asked to read the following Excel file into the in-class workbook and create Panda's dataframes. Download the file from this link.
 
-[accidents.xlsx](Data/accidents.xlsx)
+[accidents.xlsx](data/accidents.xlsx)
 
 After opening the notebook, drag and drop the files into the Colab file explorer on the left side of the notebook. It may be closed, but you can open it by clicking on the folder icon on the left side of the screen, to open the file explorer in Colab. 
 

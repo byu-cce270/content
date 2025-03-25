@@ -12,57 +12,73 @@ a pandas  date-time format and make these the dataframe indexes. You will need t
 specifies the day of the week.  In the second dataframe, you will need to add a column to covert the shorthand names for the boroughs into their full names.
 
 
-## Instructions
+## Part 1: Setup
 
-1. Make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/starter_sheet_HW_2_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. Make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/starter_sheet_hw_pandas_pt2.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
-3. In the code block titled "Imports " input the correct import statements for the libraries you will use:
+3. In the code block titled "Import Required Packages" input the correct import statements for the libraries you will use:
     - matplotlib.pyplot as plt
     - pandas as pd
     - seaborn as sns
 4. Download this Excel spreadsheet:
-[pavingdata.xlsx](Data/pavingdata.xlsx)
+[pavingdata.xlsx](data/pavingdata.xlsx)
 5. Upload the file to your Colab notebook by dragging and dropping it into the file explorer on the left side of the notebook.
 6. In a new code block, write code to open the two different sheets and read the data into two separate pandas dataframes.
-    * Note: You can name the dataframes whatever you would like. For the purposes of these instructions the first sheet will be referred to as the resurface_df and the second sheet will be referred to as the pavement_df.
-7. In a new code block, convert the "Date" column in the resurface_df to a date/time format.
-8. Use the .dt.day_name() method in pandas to add a new column to the resurface_df that specifies what day of the week the resurfacing took place on.
-9. Display the dataframe with the new column added.
+    * Note: You can name the dataframes whatever you would like. For the purposes of these instructions the first sheet will be referred to as the **resurface_df** and the second sheet will be referred to as the **pavement_df**.
 
-# Next Steps
-Now that we have our data loaded and we looked at the dataframes, we can start to manipulate and analyze the data. You probably what to look at the head and tails of 
-the dataframes to see what they look like. You can do this with the .head() and .tail() methods before you start.
+## Part 2: Pavement Resurfacing Jobs
 
-We are going to use the .groupby() method to group our data by different columns and put those data into new 
+Now that we have our data loaded and updated the dataframes, we can start to manipulate and analyze the data. We 
+will first explore the data in the **resurface_df** dataframe. We are going to use the `.groupby()` method to group our 
+data by 
+different columns 
+and put those data 
+into new 
 dataframes. 
 
+1. Display the first few rows of the resurface_df dataframe to review its contents.
+2. Note that the 'Community Board' column has a numeric code for each board, but it was converted from an integer to 
+   a float. Convert the 'Community Board' column back to an integer by running the code provided. Note that the 
+   columns contains some NaN values, so you will need to fill those are skipped by using the `errors='coerce'` 
+   argument.
+2. In a new code block, convert the "Date" column in resurface_df to a date/time format.
+3. Use the `.dt.day_name()` method in pandas to add a new column to the resurface_df that specifies what day of the 
+   week the resurfacing took place on.
+4. Display the dataframe with the new column added.
+5. In a new code block, count the number of jobs under each borough for each work type (milling and paving). Put 
+   your results in a 
+   variable called `borough_work_counts` and display the results.<br>
 
-10. In a new code block, use the .groupby() method to count the number of jobs under each borough for both milling 
-    and paving. Store these results in a new dataframe called job_count_df.
+    **Hint:** 
+    You can do this using either the `.groupby()` method or the `.value_counts()` method. 
 
-
-   When you are done, the dataframe that displays should look like this:
-
-    ![groupby](https://github.com/user-attachments/assets/e52726c4-e0ef-4a37-b9f0-11a3d7028897)
-
+### Common Names
 
 Now we want to look at the most common street names for paving jobs and create a dataframe that shows the most 
 common street names for paving jobs. The current column names are a little long, so after you create the dataframe, 
-rename the columns. You will need to sort the data to get the most common street names at the top of the dataframe.
+rename the column. You will need to sort the data to get the most common street names at the top of the dataframe.
 
-
-10. In a new code block, create a new dataframe that finds that most common street names for paving jobs.
-11. Rename the columns in your new dataframe to be 'Street Name' and 'Job Count'.
+1. In the next block, create a new dataframe using the `.groupby()` method that finds that most common street names 
+    for paving jobs. Reset the index to be 'Job Count'.
+2. With resulting dataframe, sort the data to get the most common street names at the top of the dataframe.
+3. Rename the 'On Street Name' columns in your new dataframe to be 'Street Name'.
+4. Reset the index to preserve the order of "Job Count" and "Street Name" columns. Use `reset_index(drop=True)` method.'
+4. Display the first 10 rows of the resulting dataframe.
 
     When you are done, the dataframe that displays should look like this:
 
-    ![streets](https://github.com/user-attachments/assets/9a9dcfd3-356e-44cb-9ce6-eb56b1beb9e4)
+![hw_image01_namesdf.png](images/hw_image01_namesdf.png)
 
+5. In the next code block, do the same thing, but this time use the `.value_counts()` method to find the most common 
+    street names for paving jobs. Reset the index and rename the columns as you did in the previous step.
+
+Which of these methods do you prefer? Why?
+
+### Work Hours
 
 Now we want to see when the work was done and how long it took. We will assume each shift is 8 hours, so we can use 
-some math to add a new column to the dataframe that shows how long each job took called `duration`
-
-Now that we know the duration of each job, we can start to group the data by each community board and put that data 
+some math to add a new column to the dataframe that shows how long each job took called `duration`. Once we know the 
+duration of each job, we can start to group the data by each community board and put that data 
 into a new dataframe. 
     
 12. Starting in a new codeblock, assume that each shift for resurfacing last 8 hours. Add a work duration column to the resurface_df that has the value of 8 for each row.
@@ -72,10 +88,14 @@ into a new dataframe.
 
     ![community hours](https://github.com/user-attachments/assets/d1e44013-40e5-4516-a9b9-0ce9622af326)
 
-Now we want to visualize the data we have been working with. We will start by creating a bar graph that displays the 
+## Work Jobs by Borough
+
+Now we want to visualize the data we have been working with. We will create a bar graph that displays the 
 number of work jobs by borough. 
 
-14. In a new code block, create a bar graph that displays the number of work jobs by borough. Include:
+14. Use either the `.value_counts()` or `.groupby()` method to count the number of work jobs by borough. Remember 
+    that each row represents a job, so you just need to count the number of rows for each borough.
+15. Create a horizontal bar graph that displays the number of work jobs by borough. Include:
      - a title
      - x and y labels
      - horizontal gridlines
@@ -83,44 +103,75 @@ number of work jobs by borough.
 
     When you are done, the graph should look something like this:
 
-    ![pandas2](https://github.com/user-attachments/assets/3ae94a3c-c42f-4a7a-9116-689f3df53353)
+![hw_image02_barh.png](images/hw_image02_barh.png)
 
+## Part 3 - Pavement Ratings
 
-# Pavement Ratings
-THe pavement ratings sheet doesn't have the full name of the boroughs, so we will need to create a dictionary to map 
+Now we will work with the **pavement_df** dataframe. 
+The pavement_df dataframe doesn't have the full name of the boroughs, so we will need to create a dictionary to map 
 the values in the dataframe to the full names. Once we have that dictionary, we can map the values in the dataframe to the 
-full names and add a new column with the full names. Make sure you use .head() and .tail() to check your dataframe 
-after you do this. 
+full names and add a new column with the full names. 
 
-15. In a new codeblock under the 'PAVEMENT RATING' text block create a dictionary to map the pavement_df boroughs.
+1. Display the first few rows of the pavement_df dataframe to review its contents.
+
+### Borough Name Mapping
+
+15. In 'Borough Mapping' cell create a dictionary to map the pavement_df boroughs.
      - X : Bronx
      - B : Brooklyn
      - M : Manhattan
      - Q : Queens
      - S : Staten Island
    
-16. Map the BoroughCod column of the pavement_df to insert a new column titled "Borough" that includes the full name of the boroughs.  
-17. In a new code block, use the .groupby() method to sort the different ratings the boroughs have given out.
+16. Map the BoroughCod column of the pavement_df to insert a new column titled "Borough" that includes the full name 
+    of the boroughs. Use the `.map()` method to do this and pass it the dictionary you created in the previous step 
+    as an argument. Display the first few rows of the dataframe to verify the new column was added correctly.
+
+### Average Ratings
+
+17. In the next code block, use the `.groupby()` method to calculate the average value of the manual rating 
+    ('ManualRati')
+    in each 
+    rating 
+    category ('RatingLaye') by borough.
 
     When you are done, the data frame that displays should look like this:
 
-    ![ratings](https://github.com/user-attachments/assets/9f6f0a59-18f6-4c4c-9a82-7555da13849d)
+![hw_image03_ratings.png](images/hw_image03_ratings.png)
 
-18. In a new code block, use the .groupby() method to display the average of the manual rating and count of the borough measurements by their inspection time, rating, and borough code.
+### Multiple Grouping and Aggregation
+
+18. In the next code block, use the `.groupby()` method to display the average of the manual rating and count of the 
+    borough measurements by their inspection date, rating, and borough name. To do this, you will need to pass a 
+    list of columns to the `.groupby()` method and you will need to use the `.agg()` method to apply multiple 
+    aggreations to the data. The aggregation functions you will use are 'mean' and 'count' and you will need to pass 
+    them as a dictionary to the `.agg()` method. Display the results.
 
     When you are done, the data frame that displays should look like this:
 
-    ![df ratings](https://github.com/user-attachments/assets/d0a41271-d9bb-4f0d-8c85-47ac06657784)
+![hw_image04_multiagg.png](images/hw_image04_multiagg.png)
 
-19. In a new code block, use the query function to display a dataframe that includes only the strrts in poor condition evaluated by borough B.
-20. In w new code block, create a pie chart that displays the pavement conditions by ratings. Include:
+### Pie Charts for Each Borough
+
+In our final section, we are going to create a pie chart that displays the pavement conditions by ratings for each 
+of the boroughs. To do this, you will need to create a list of unique borough names and then you will use a for loop 
+to loop through each borough and create a pie chart for each borough showing the pavement conditions by ratings 
+('good', 'fair', 'poor').
+
+1. In a new code block, create a list of unique borough names from the 'Borough' column in the pavement_df dataframe 
+   using the `.unique()` method.
+2. In a new code block, create a for loop that loops through each borough in the list of unique borough names.
+3. Inside each loop, filter the pavement_df dataframe to only include the rows for the current borough. Store the 
+   results in a new dataframe called `borough_df`.
+4. On the next line, use the `.value_counts()` method to count the number of pavement ratings for each rating 
+   category ('RatingLaye') in the `borough_df` dataframe. Store the results in a variable called `rating_counts`.
+5. Now create a pie chart that displays the pavement conditions by ratings for the current borough. Include:
      - a title
      - change the default colors
-   
-    When you are done, the chart should look like this:
 
-    ![pavement_rating](https://github.com/user-attachments/assets/b627382e-dc69-44ef-9401-2d9d70505ee6)
+    When you are done, you should see five pie charts. The first part of the charts will look something like this:
 
+![hw_image05_piecharts.png](images/hw_image05_piecharts.png)
     
 ---
 

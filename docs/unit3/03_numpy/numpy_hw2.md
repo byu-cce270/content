@@ -194,7 +194,7 @@ Now that we have solved for the forces and the coordinates of each joint, we can
       - Length of AC: 10 ft
       - Expected output:
 
-![numpyhw_solution1.png](Images/numpyhw_solution1.png)
+![numpyhw_solution1.png](images/numpyhw_solution1.png)
 
    * Test 2:
       - Angle at joint A: 35 degrees
@@ -203,7 +203,7 @@ Now that we have solved for the forces and the coordinates of each joint, we can
       - Length of AC: 25 ft
       - Expected output:
     
-![numpyhw_solution2.png](Images/numpyhw_solution2.png)
+![numpyhw_solution2.png](images/numpyhw_solution2.png)
 
    * Test 3:
       - Angle at joint A: 30 degrees
@@ -212,7 +212,7 @@ Now that we have solved for the forces and the coordinates of each joint, we can
       - Length of AC: 15 ft
       - Expected output:
   
-![numpyhw_solution3.png](Images/numpyhw_solution3.png)
+![numpyhw_solution3.png](images/numpyhw_solution3.png)
 
 ---
 
