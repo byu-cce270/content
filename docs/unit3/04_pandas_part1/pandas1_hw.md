@@ -113,7 +113,7 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |             'Age Category' column created in concrete dataframe        |     2      |
 |  compressive strength v. cement content scatter plot is correct        |     3      |
 |             box plot for compressive strength w/age is correct         |     3      |
-|             heatmat of correlation displaying correctly                |   + 5      |
+|             heatmat of correlation displaying correctly                |   +5      |
 |             <div style="text-align: right">**Total**</div>             |   **30**   |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
