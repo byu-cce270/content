@@ -67,7 +67,15 @@ Only one team member needs to turn in the following in the feedback box on the a
 |                    Use of GUIs (ipywidgets)                     |       +5        |
 |                          Use of numpy                           |       +5        |
 
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
+
+|                      **Reasons for Points Lost**                      | **Amount** |  
+|:---------------------------------------------------------------------:|:----------:|
+| No comments explaining your code and how AI helped and what it does   |     10     |
+|                        Link shared incorrectly                        |     10     |
+
+---
 
 ## Project ideas
 Note: While we are coding Python in the Google Environment, you can find lots of ideas for Python Notebooks by searching for “Jupyter Notebooks”. This is the more generic form of Python Notebooks that runs outside of Google. But they work almost exactly the same. My search links below use the term “Jupyter Notebooks” to help get more results. Feel free to explore these search results for video tutorials, sample code, and other great ideas.
