@@ -124,7 +124,16 @@ Income       37000
 Name: Bob, dtype: object
 ```
 
-Note that the `.loc[]` method is used to access a group of rows and columns by label(s) or a boolean array. In this case, we are accessing the row with the label 'Bob'. To access a row by index (0, 1, 2, etc.), you can use the `.iloc[]` method.
+Note that the `.loc[]` method is used to access a group of rows and columns by label(s) or a boolean array. In this case, we are accessing the row with the label 'Bob'. To access a row by index (0, 1, 2, etc.), you can use the `.iloc[]` method. For example, to access the row at index 1, you can use the following code:
+
+```python
+print(df.iloc[1])
+```
+This corresponds to Bob. The output will be:
+
+```python
+Age             27
+```
 
 You can also reference columns by name. For example, to access the 'Age' column, you can use the following code:
 

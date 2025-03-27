@@ -35,15 +35,13 @@ analysis..
 
 ## NaNs and Missing Values in Pandas
 
-In Python, sometimes a dataset has values that are empty or missing. These values are represented as NaN (Not a Number) in Pandas. If this happens, you typically need to do something with the NaN values before you can operate on the dataset. You can use the .isna() method to find NaN values in a DataFrame and the .fillna() method to replace NaN values with a specified value. Here is an example of how to use these methods:
+In Python, sometimes a dataset has values that are empty or missing. These values are represented as NaN (Not a Number) in Pandas. If this happens, you typically need to do something with the NaN values before you can operate on the dataset. You can use the `.isna()` method to find NaN values in a DataFrame and the `.fillna()` method to replace NaN values with a specified value. Here is an example of how to use these methods:
 
-```python
-
-Pandas can help with missing data which are typically represented in your data frames as NaN values. Here is a short example of using Panda's to find and replace NaN values.
 
 ```python
 import pandas as pd
 import numpy as np
+
 data = pd.DataFrame(np.array([[1, 2, np.nan], [3, np.nan, 6], [np.nan, 8, 9]]), columns=['A', 'B', 'C'])
 print(data)
 # Output:
@@ -51,16 +49,20 @@ print(data)
 0  1.0  2.0  NaN
 1  3.0  NaN  6.0
 2  NaN  8.0  9.0
+
 # Find NaN values
 print(data.isna())
+
 # Output:
        A      B      C
 0  False  False   True
 1  False   True  False
 2   True  False  False
+
 # Replace NaN values with 0
 data_filled = data.fillna(0)
 print(data_filled)
+
 # Output:
      A    B    C
 0  1.0  2.0  0.0    
@@ -70,16 +72,19 @@ print(data_filled)
 You can replace the NaN's with any value, but typically you will replace them with 0 or the mean of the column.
 
 ---
+
 ## Pandas append and concat
 
 Pandas has a method called `.append()` that allows you to add rows to a DataFrame.  This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame.  Here is an example of how to use the `.append()` method:
 
 ```python
 import pandas as pd
+
 data1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
 data2 = pd.DataFrame({'A': [5, 6], 'B': [7, 8]})
 combined_data = data1.append(data2, ignore_index=True)
 print(combined_data)
+
 # Output:
    A  B 
 0  1  3
@@ -87,16 +92,18 @@ print(combined_data)
 2  5  7
 3  6  8
 ```
-The ignore_index=True parameter is used to reset the index of the combined DataFrame. If you don't use this parameter, the index of the original DataFrames will be preserved." But in this case you want the new index to be continuous to add the additional rows. 
+The `ignore_index=True` parameter is used to reset the index of the combined DataFrame. If you don't use this parameter, the index of the original DataFrames will be preserved. But in this case you want the new index to be continuous to add the additional rows. 
 
 Pandas also has a method called `.concat()` that allows you to concatenate two or more DataFrames along a particular axis. This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame. Here is an example of how to use the `.concat()` method:
 
 ```python
 import pandas as pd
+
 data1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
 data2 = pd.DataFrame({'A': [5, 6], 'B': [7, 8]})
 combined_data = pd.concat([data1, data2], ignore_index=True)
 print(combined_data)
+
 # Output:
    A  B
 0  1  3
@@ -108,52 +115,54 @@ In this case the ignore_index=True parameter is used to reset the index of the c
 
 As you can see, `.append()` and `.concat()` are similar, and can often be used interchangeably.
 
-#
-
 ## Pandas groupby
 
 One of the most useful methods in pandas is the `.groupby()` method. It is similar to a pivot table in Excel or Google Sheets in that it allows you to group data based on one or more columns and then perform operations on the groups. Here is an example of how to use the `.groupby()` method:
 
 ```python
 import pandas as pd
+
 data = pd.DataFrame({'A': ['foo', 'bar', 'foo', 'bar'],
                      'B': [1, 2, 3, 4],
                      'C': [5, 6, 7, 8]})
 print(data)
 grouped_data = data.groupby('A').sum()
 print(grouped_data)
-# Output:
-# first print statement
+
+# first print statement output:
      A  B  C
 0  foo  1  5
 1  bar  2  6
 2  foo  3  7
 3  bar  4  8
 
-# second print statement
+# second print statement output:
      B   C 
 A
 bar  6  14
 foo  4  12
 ```
-The code groups the data by the values in column 'A' and then sums the values in columns 'B' and 'C' for each group.  You can also group by multiple columns by passing a list of column names to the .groupby() method.
+The code groups the data by the values in column 'A' and then sums the values in columns 'B' and 'C' for each group.  You can also group by multiple columns by passing a list of column names to the `.groupby()` method.
 
 ```python
 import pandas as pd
+
 data = pd.DataFrame({'A': ['foo', 'bar', 'foo', 'bar'],
                      'B': [1, 2, 3, 4],
                      'C': [5, 6, 7, 8]})
+
+print(data)
 grouped_data = data.groupby(['A', 'B']).sum()
 print(grouped_data)
-# Output:
-# first print statement
+
+# first print statement output:
      A  B  C
 0  foo  1  5
 1  bar  2  6
 2  foo  3  7
 3  bar  4  8
 
-# second print statement
+# second print statement output:
 A   B  C
 bar 2  6
     4  8
