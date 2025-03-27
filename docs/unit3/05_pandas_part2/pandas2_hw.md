@@ -103,8 +103,7 @@ number of work jobs by borough.
 
     When you are done, the graph should look something like this:
 
-![updated graph](https://github.com/user-attachments/assets/6ed74a94-4f93-4512-af24-9ab464ba02f4)
-
+![hw_image02_barh.png](images/hw_image02_barh.png)
 
 ## Part 3 - Pavement Ratings
 
