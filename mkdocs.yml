@@ -115,6 +115,6 @@ nav:
         - Reading: unit3/06_ipywidgets/ipy_read.md
         - In Class: unit3/06_ipywidgets/ipy_class.md
         - Homework: unit3/06_ipywidgets/ipy_hw.md
-#    - Final Project:
-#        - Project Proposal: unit3/07_final_project/final_pro_proposal.md
-#        - Project Prompt: unit3/07_final_project/final_pro_prompt.md
+    - Final Project:
+        - Project Proposal: unit3/07_final_project/final_pro_proposal.md
+        - Project Prompt: unit3/07_final_project/final_pro_prompt.md
