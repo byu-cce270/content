@@ -2,7 +2,10 @@
 
 **Purpose:** The purpose of this assignment is to give you and your group a chance to plan and split up the different parts of the project. 
 
-You and the rest of your team previously formed will work together will come up with a project idea that will showcase what you have learned in this class. You can find your team here: [Fall 2024 Team Sign Up Sheet](https://docs.google.com/spreadsheets/d/1M5wcMbjZQoYJGmpG7rlZ5Y9DnLdN6QDcRKndbbrm2-U/edit?gid=2018473579#gid=2018473579){:target="_blank"}. 
+You and the rest of your team previously formed will work together will come up with a project idea that will showcase what you have learned in this class. You can find your team here: 
+
+   - [Section 1 (Tue/Thur) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1UzYiJP2lircfUVAUKqwEMr5OekIEfV-Hudox3Jd9OwM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1c1g7XN_e6pTDDpmfZ5c6ug8Jsork3KS0jV3bZGh8Jm0/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 
 ## Instructions
