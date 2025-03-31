@@ -117,13 +117,13 @@ For more details about widget events, you can refer to the [ipywidgets documenta
 
 ## Displaying Widgets
 
-To display a widget (you need to use the `widget` name you created), you can use the following command:
+To display a widget (you need to use the name of the `widget` you created), you can use the following command:
 
 ```python
 display(widget)
 ```
 
-For example, to display the `button` widget you created above, you can use the following command:
+For example, to display the widget named 'button' you created above, you can use the following command:
 
 ```python
 display(button)
@@ -148,17 +148,17 @@ import ipywidgets as widgets
 # Create a button widget called 'button'
 button = widgets.Button(description='Click me')
 
-# Define a function to handle the click event
+# Define a function to handle a click event
 def on_button_click(event):
     print('Button clicked')
 
-# Handle the click event for  widget named 'button'
+# Handle the click event for the widget named 'button' call the function you created
 button.on_click(on_button_click)
 
 # Display the button widget
 display(button)
 ```
-Here is another example where we create a slider widget that displays the value of the slider when it is changed.
+Here is another example where we create a slider widget called 'slider' that displays the value of the slider when it is changed.
 
 ```python
 import ipywidgets as widgets
@@ -170,7 +170,7 @@ slider = widgets.IntSlider(value=0, min=0, max=100, description='Value')
 def on_slider_change(event):
     print('Slider value:', event['new'])
     
-# Handle the change event for widget called  'slider'
+# Handle the change event for the widget called  'slider'
 slider.observe(on_slider_change, names='value')
 
 # Display the widget called 'slider'
