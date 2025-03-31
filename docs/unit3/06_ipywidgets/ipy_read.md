@@ -66,7 +66,7 @@ To create a widget, you can use the following command:
 widget = widgets.WidgetName()
 ```
 
-For example, to create a button widget, you can use the following command:
+For example, to create a `button` widget called 'button', you can use the following command:
     
 ```python
 button = widgets.Button(description='Click me')
@@ -77,13 +77,13 @@ For a full list of widgets, you can refer to the [ipywidgets documentation - Wid
 
 ## Setting Widget Properties
 
-You can set the properties of a widget by using the following command:
+You can set the properties of a widget, where `widget` is the name of the widget you created  using the following command:
 
 ```python
 widget.property = value
 ```
 
-For example, to set the description of a button widget, you can use the following command:
+For example, to set the description of a button widget called 'button' you created above, you can use the following command:
 
 ```python
 button.style = 'warning'
@@ -94,7 +94,7 @@ For a full list of properties, you can refer to the [ipywidgets documentation - 
 
 ## Handling Widget Events
 
-You can handle events for a widget by using the following command:
+You can handle events for a widget you create a function that is called by the widget. To call the function, you give the function name to the comment `widget.on_event_name` where `wdiget` is the widget you created and `_name` is the event. Here is an example command you would need to change to match your widget and event to use:
 
 ```python
 def on_event_name(event):
@@ -103,13 +103,13 @@ def on_event_name(event):
 widget.on_event_name(on_event_name)
 ```
 
-For example, to handle the click event for a button widget, you can use the following command:
+For example, to handle the click event for the `button` widget created above, you can use the following command:
 
 ```python
 def on_button_click(event):
     print('Button clicked')
     
-button.on_click(on_button_click)
+button.on_click(on_button_click) # this is your widget name and the event you want to handle
 ```
 
 For more details about widget events, you can refer to the [ipywidgets documentation - Widget Events](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Events.html){target='blank'}.
@@ -117,13 +117,13 @@ For more details about widget events, you can refer to the [ipywidgets documenta
 
 ## Displaying Widgets
 
-To display a widget, you can use the following command:
+To display a widget (you need to use the `widget` name you created), you can use the following command:
 
 ```python
 display(widget)
 ```
 
-For example, to display a button widget, you can use the following command:
+For example, to display the `button` widget you created above, you can use the following command:
 
 ```python
 display(button)
@@ -145,14 +145,14 @@ Let's create a simple example to demonstrate how to use ipywidgets. In this exam
 ```python
 import ipywidgets as widgets
 
-# Create a button widget
+# Create a button widget called 'button'
 button = widgets.Button(description='Click me')
 
 # Define a function to handle the click event
 def on_button_click(event):
     print('Button clicked')
 
-# Handle the click event for the button widget
+# Handle the click event for  widget named 'button'
 button.on_click(on_button_click)
 
 # Display the button widget
@@ -163,32 +163,32 @@ Here is another example where we create a slider widget that displays the value 
 ```python
 import ipywidgets as widgets
 
-# Create a slider widget
+# Create a slider widget called 'slider'
 slider = widgets.IntSlider(value=0, min=0, max=100, description='Value')
 
 # Define a function to handle the change event
 def on_slider_change(event):
     print('Slider value:', event['new'])
     
-# Handle the change event for the slider widget
+# Handle the change event for widget called  'slider'
 slider.observe(on_slider_change, names='value')
 
-# Display the slider widget
+# Display the widget called 'slider'
 display(slider)
 ```
-Here is another example where we create a dropdown widget that displays the selected value when it is changed.
+Here is another example where we create a dropdown widget called 'dropdown' that displays the selected value when it is changed.
 
 ```python
 import ipywidgets as widgets
 
-# Create a dropdown widget
+# Create a dropdown widget called 'dropdown'
 dropdown = widgets.Dropdown(options=['Option 1', 'Option 2', 'Option 3'], value='Option 1', description='Value')
 
 # Define a function to handle the change event
 def on_dropdown_change(event):
     print('Selected value:', event['new'])
 
-# Handle the change event for the dropdown widget
+# Handle the change event for the widget called 'dropdown'
 dropdown.observe(on_dropdown_change, names='value')
 
 # Display the dropdown widget
