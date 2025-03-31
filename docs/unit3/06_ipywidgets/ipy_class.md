@@ -10,7 +10,7 @@ Then rename it something like, '**yourname_In_Class_Workbook_ipywidgets.ipynb'**
 
 Before we add any widgets, let's review another way to make your code easier to read. When you move your cursor between two code blocks, you will see a "+" symbol. Note that you have two options:
 
-![add_code_or_text.png](images/add_code_or_text%10.png)
+![add_code_or_text.png](images%2Fadd_code_or_text.png)
 
 Normally, we add code, but you can also add text. When you add text, you can write comments that will be displayed in the code block. The text is formatting using a simple text formatting language called Markdown. If you double click on the text block at the top of the notebook, you can see some sample Markdown code. Note that it is possible to mix markdown and HTML code in the same text block.
 
