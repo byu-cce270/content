@@ -18,9 +18,9 @@ Examples of GUI’s:
 
 
 
-**NOTE:** ipywidgest won’t let us build complex GUI’s like the ones pictures above, but we can actually do quite a lot with it. We can make buttons, sliders, checkboxes, text inputs, dropdown boxes and so much more.
+**NOTE:** ipywidgest won’t let us build complex GUI’s like the ones pictures above in a notebook, but we can actually do quite a lot with it. We can make buttons, sliders, checkboxes, text inputs, dropdown boxes and so much more. It is a great way to make your code more interactive and user-friendly.
 
-ipywidgets are just one method to create this powerful tool in python. Primarily used in Google Colab or Jupyter notebooks. They can be used to create interactive visualizations, dashboards, and more. In this reading, we will learn how to use ipywidgets to create interactive widgets in Jupyter notebooks.
+ipywidgets are just one method to create this powerful tool in python. Primarily used in Google Colab or Jupyter notebooks. They can be used to create interactive visualizations, dashboards, and more. In this reading, we will learn how to use ipywidgets to create interactive widgets in Colab notebooks.
 
 
 ## Installation
