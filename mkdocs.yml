@@ -119,3 +119,6 @@ nav:
     - Final Project:
         - Project Proposal: unit3/07_final_project/final_pro_proposal.md
         - Project Prompt: unit3/07_final_project/final_pro_prompt.md
+  - Bonus Content:
+    - Python and Excel: bonus/python_and_excel/excel_read.md
+    - Using Python Locally: bonus/python_local/local_read.md

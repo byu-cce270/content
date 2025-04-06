@@ -1,4 +1,4 @@
-# Reading: Working with Excel Files in Python
+# Bons Material: Working with Excel Files in Python
 
 Spreadsheets are a fundamental tool in civil engineering and construction management. In Unit 1, we learned some advanced techniques for working with spreadsheets. We used Google Sheets, but Microsoft Excel is another popular tool for working with spreadsheets. In this unit, we will learn how to work with Excel files in Python.
 
@@ -307,19 +307,5 @@ worksheet.write_column('C2', df['City'], data_format)
 workbook.close()
 ```
 
-
 This is just the tip of the iceberg! You can read more about the `xlsxwriter` library in the [official documentation](https://xlsxwriter.readthedocs.io/){target='blank'}. 
-
-# Pre-Class Quiz Challenge
-
-Open a new Colab notebook and do the following:
-
-1. Click here to download the [data.xlsx](./data.xlsx) file.
-2. Upload the file to your colab notebook by clicking on the folder icon on the left side of the screen and then 
-   clicking on the upload icon. Or you can drag and drop the file into the notebook.
-1. Import the file to a dataframe using the `pandas` library and display the contents of the dataframe.
-3. Add a new column to the dataframe called **Sum** that is the sum of columns 2-4. Display the updated dataframe.
-4. Save the updated dataframe to a new Excel file called **output.xlsx** using the `pandas` library. In a few seconds, 
-   the file will appear in your notebook's file list. Download the file to your computer and check the contents.
-
-Save changes to your Google Drive and submit the link to the notebook in your Pre-Class Quiz.
+anges to your Google Drive and submit the link to the notebook in your Pre-Class Quiz.
