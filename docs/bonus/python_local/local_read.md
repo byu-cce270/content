@@ -252,3 +252,108 @@ Using Python locally can provide you with more flexibility and control over your
 - [Python Virtual Environments Documentation](https://docs.python.org/3/tutorial/venv.html)
 - [Python pip Documentation](https://pip.pypa.io/en/stable/)
 - [Python Installation Guide](https://realpython.com/installing-python/)
+
+## Sample Problem - PYCHARM
+
+For a fun hands-on exercise, try the following. The textbook we have used for this class (Python Crash Course), has a number of exercises related to building a game called "Alien Invasion". You can find the exercises in Chapter 12. Try to implement the game locally on your machine using Python and any of the IDEs mentioned above. This will give you a chance to practice your Python skills and get familiar with running Python locally.
+
+Here is how you would do it with PyCharm.
+
+### Clone the Repository
+
+We are going to cheat and use a solution that someone has already written. This is a common practice in programming, where you can use existing code as a reference or starting point for your own projects. You can find the solution to the Alien Invasion game on GitHub. GitHub is a public code repository hosting service that allows developers to share and collaborate on code. The solution is available in a public repository, which means you can access it for free. You can use this code as a reference or starting point for your own projects.
+
+Follow these steps to clone the repository. This will download the code to your local machine, allowing you to run and modify it as needed. You will need to have Git installed on your machine. This method only works if you have a utility called Git installed. If you don't have Git installed, you can download it from [git-scm.com](https://git-scm.com/).
+
+1. Browse to the repo here: [https://github.com/bryanmacgo/Alien-Invasion](https://github.com/bryanmacgo/Alien-Invasion)
+
+2. Click on the green "Code" button and copy the URL.
+
+![aliens_clone_repo.png](images/aliens_clone_repo.png)
+
+3. Launch PyCharm and create a new project.
+
+4. In the "New Project" dialog, select "Clone Repository":
+
+![aliens_clone_project.png](images/aliens_clone_project.png)
+
+5. and paste the URL you copied earlier.
+
+![aliens_clone_paste.png](images/aliens_clone_paste.png)
+
+### Viewing the Code
+
+Once the repository is cloned, you can view the code in PyCharm. The project structure will look like this:
+
+![aliens_pycharm.png](images/aliens_pycharm.png)
+
+The files you just cloned are in the "alien_invasion" folder. You can open any of the Python files to view the code. 
+For example, you can open "alien_invasion.py" file to see the main code that is launched. The other files contain the game logic, settings, and other components of the game. 
+
+### Running the Game
+
+To run the gamescript, you can right-click on "alien_invasion.py" and select "Run 'alien_invasion'". This will execute the script and launch the game in a new window.
+
+You can also open the console window and run the script from there. To do this, click on the "Terminal" icon at the 
+bottom left of PyCharm and type:
+
+```bash
+python alien_invasion.py
+```
+
+In the terminal bash line as follows:
+
+![aliens_console.png](images/aliens_console.png)
+
+You will then see the game launch in a new window:
+
+![aliens_game.png](images/aliens_game.png){width=800}
+
+## Sample Problem - Jupyter Notebook
+
+As mentioned above, Jupyter Notebook is a popular tool for writing and running Python code in an interactive 
+environment. It allows you to create notebooks that can contain code, text, images, and more. You can use Jupyter 
+Notebook to run Python code locally, similar to how you do it in Google Colab. There is a version of Jupyter 
+Notebook called Jupyter Lab, which is a more advanced version of Jupyter Notebook. It has a more modern interface 
+and additional features, such as support for multiple tabs and file management. The examples below are from Jupyter Lab.
+
+Juptyper Lab is similar to Google Colab and in fact they both use the same underlying technology. Both notebooks are 
+saved in the same format, called "notebook format". This means that you can open a Google Colab notebook in Jupyter 
+Lab and vice versa. Notebooks are saved as *.ipynb files, which are JSON files that contain the code, text, and 
+other components of the notebook. So for example, if you have a notebook called "my_notebook.ipynb", you can open it 
+in Jupyter Lab and run the code cells just like you would in Google Colab. Imagine that you have a notebook that 
+reads and writes a lot of files. With Colab, you have to upload the files to the Colab file space and then download 
+any files you create. If you are running the notebook locally, you can read and write files directly to your local file system.
+
+### Python Crash Course Notebooks
+
+If you want to experiment with Jupyter, here is a public repo that has a copy of all of the notebooks from the 
+Python Crash Course book. You can clone the repo and run the notebooks locally. The repo is available here:
+
+[https://github.com/khiner/notebooks/tree/master/python_crash_course](https://github.com/khiner/notebooks/tree/master/python_crash_course)
+
+To download one of the files, click on the notebook name and it will open in a Preview tab. Then click on the 
+Download icon in the upper right corner of the page. This will download the notebook to your local machine. You can then open it in Jupyter Lab
+
+### Running Jupyter Lab
+
+Then, after installing Jupyter Lab, you can run the following command in your terminal to launch Jupyter Lab:
+
+```bash
+jupyter lab
+```
+
+This will open Jupyter Lab in your web browser. You can create a new notebook by clicking on the "Python 3" icon in 
+the "Launcher" tab. This will create a new notebook with a code cell where you can write and run Python code. You 
+can also path to where you downloaded the notebook and open it from there. Here is one of the notebooks from the repo:
+
+![jupyter2.png](images/jupyter2.png)
+
+You can run the code cells by clicking on the "Run" button in the toolbar or by pressing Shift + Enter, just like in 
+Colab. 
+
+### Installing Packages
+
+One important difference between Jupyter Lab and Google Colab is that you need to install any packages you want to 
+use in Jupyter Lab. In Colab, most of the popular packages are already installed, but in Jupyter Lab, you need to 
+install it them yourself. You can do this using pip or conda, just like you would in a regular Python environment. 
