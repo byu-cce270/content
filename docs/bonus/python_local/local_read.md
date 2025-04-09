@@ -2,6 +2,37 @@
 
 This semester we have been using Python in a Google Colab environment, which is a cloud-based platform. However, you can also run Python locally on your own machine. This can be useful for various reasons, such as working offline, using specific libraries, referencing your files directly without uploading them, or running larger projects. This document provides a brief overview of how to use Python locally, including installation, running scripts, and using virtual environments. We will also discuss some common IDEs (Integrated Development Environments) that can help you write and run Python code more efficiently.
 
+# Different Installation Methods
+There are two ways to locally install python
+1) Install Python from the official website, then use either pip or conda to manage packages.
+2) Use conda (or miniconda) to install Python and manage packages, as a single step
+
+Most people will use the first method, but if you are using Anaconda, the second method can be easier. With condas, you can install Python and manage packages in a single step and also create virtual environments.
+
+We generally recommend using conda, as it keeps all the package management and installations steps together. However, most web resources will use the first method, so we will cover both methods here. Even if you use the first method to install python, you can use conda as a package manager.
+
+For both methods, you will need to interact with the installation using the command line. This is a common practice in programming, where you can use the command line to run commands and scripts. The command line is a powerful tool that allows you to interact with your computer and run commands without using a graphical interface. You can use the command line to run Python scripts, install packages, and manage your Python environment.
+
+For python installed from the python website, open a terminal (Command Prompt on Windows, Terminal on macOS/Linux) and type the following command:
+
+```bash
+python --version
+``` 
+This should display the version of Python you installed. If you see an error message, it means Python is not installed correctly or not added to your PATH.
+
+For conda, open a conda  terminal and type the following command:
+
+```bash
+conda --version
+```
+This should display the version of conda you installed. If you see an error message, it means conda is not installed correctly or not added to your PATH.
+
+THe conda termial is just a windows or mac terminal that has file paths and permissions for python already setup. You can use the regular terminal, but you will need to set the file paths and permissions yourself. We recommend opening the conda terminal and using that for all your work. You can find it under the Anaconda folder in your applications.
+
+![anaconda_Menu.png](images%2Fanaconda_Menu.png)
+
+# Method 1: Installing Python from the Official Website
+
 ## 1. Installing Python Locally
 
 When you run Python in Google Colab, you are using a version of Python that is hosted on Google's servers. To run Python locally, you need to install it on your own machine. Here are the steps to do that:
@@ -30,15 +61,26 @@ pip --version
 ```
 If you see an error message, you can install `pip` by following the instructions on the [pip installation page](https://pip.pypa.io/en/stable/installation/).
 
-### 1.3 Installing Additional Libraries
 
-You can install additional libraries using `pip` as well. For example, to install NumPy and Pandas, you can run:
 
-```bash
-pip install numpy pandas
-```
-You can install any other libraries you need for your projects in a similar way. Just replace `numpy pandas` with the names of the libraries you want to install.
+# Method 2: Installing Python with Conda
+To install Python using conda, you can follow these steps:
 
+1) Go to the Anaconda download page: [Anaconda](https://www.anaconda.com/products/distribution). <br>
+2) Download the installer for your operating system (Windows, macOS, or Linux). <br>
+3) Run the installer and follow the instructions. <br>
+4) Open a terminal and verify the installation by running: <br>
+
+```bash 
+conda --version
+``` 
+The full Anaconda distribution includes Python and many popular libraries, as well as the conda package manager. You can also use Miniconda, which is a lightweight version of Anaconda that includes only the conda package manager and Python. You can install Miniconda by following the same steps as above, but downloading the Miniconda installer instead of the Anaconda installer.
+
+The full Anaconda installation includes a graphical manager called Anaconda Navigator, which allows you to manage packages and environments using a graphical interface. You can also use the command line interface to manage packages and environments.
+
+We recomend you DO NOT use the Anaconda Navigator, as it is not as powerful as the command line interface. The command line interface is more flexible and allows you to use all of the features of conda. However, if you prefer a graphical interface, you can use Anaconda Navigator.
+
+# Running Python Code Locally
 ## 2. Running Python Scripts Locally
 
 Once you have installed Python and any necessary libraries, you can run Python scripts locally. Here are the steps to do that:
@@ -61,11 +103,14 @@ python script.py
 
 This will execute the script and display the output in the terminal. In this case, it should print "Hello, World!" to the console.
 
+# Virtual Environments
+
 ## 3. Using Virtual Environments
 
 When working on Python projects, it's a good practice to use virtual environments. A virtual environment is an isolated environment that allows you to manage dependencies for different projects separately. This way, you can avoid conflicts between different versions of libraries. For example, if you have two projects that require different versions of the same library, using virtual environments allows you to keep them separate.
 
-### 3.1 Creating a Virtual Environment
+## 3.1 Creating a Virtual Environment pip/python
+
 
 To create a virtual environment, navigate to your project directory in the terminal and run the following command:
 
@@ -75,7 +120,7 @@ python -m venv myenv
 
 This will create a new directory called `myenv` that contains the virtual environment.
 
-### 3.2 Activating the Virtual Environment
+### 3.2 Activating the Virtual Environment pip/python
 
 To activate the virtual environment, run the following command:
 
@@ -89,7 +134,7 @@ source myenv/bin/activate
 ```
 Once activated, your terminal prompt will change to indicate that you are now working within the virtual environment.
 
-### 3.3 Installing Packages in the Virtual Environment
+### 3.3 Installing Packages in the Virtual Environment pip/python
 
 When the virtual environment is activated, you can install packages using `pip`, and they will only be available within that environment. For example:
 
@@ -97,7 +142,7 @@ When the virtual environment is activated, you can install packages using `pip`,
 pip install numpy pandas
 ```
 
-### 3.4 Deactivating the Virtual Environment
+### 3.4 Deactivating the Virtual Environment pip/python
 
 To deactivate the virtual environment and return to your system's default Python environment, simply run:
 
@@ -106,7 +151,32 @@ deactivate
 ```
 This will return you to your system's default Python environment.
 
-## 3. Using Conda for Package Management
+### 3.2 Creating a Virtual Environment with conda
+To create a new conda environment, run the following command:
+
+```bash
+conda create --name myenv python=3.9
+```
+This will create a new conda environment named `myenv` with Python 3.9 installed.
+### 3.3 Activating the Conda Environment
+To activate the conda environment, run the following command:
+
+```bash
+conda activate myenv
+```
+
+# Package Management
+
+## 3.1 Installing Additional Libraries with pip
+
+You can install additional libraries using `pip` as well. For example, to install NumPy and Pandas, you can run:
+
+```bash
+pip install numpy pandas
+```
+You can install any other libraries you need for your projects in a similar way. Just replace `numpy pandas` with the names of the libraries you want to install.
+
+## 3.2 Using Conda for Package Management
 
 In addition to using `pip` for package management, you can also use `conda`, which is a package manager that comes with the Anaconda distribution. Conda is particularly useful for managing dependencies and creating isolated environments. It can be used to install Python packages as well as non-Python packages, making it a versatile tool for data science and scientific computing.
 
@@ -124,19 +194,7 @@ To install Miniconda, follow these steps:
 ```bash
 conda --version
 ```
-### 3.2 Creating a Conda Environment
-To create a new conda environment, run the following command:
 
-```bash
-conda create --name myenv python=3.9
-```
-This will create a new conda environment named `myenv` with Python 3.9 installed.
-### 3.3 Activating the Conda Environment
-To activate the conda environment, run the following command:
-
-```bash
-conda activate myenv
-```
 ### 3.4 Installing Packages in the Conda Environment
 
 To install packages in the conda environment, use the following command:
