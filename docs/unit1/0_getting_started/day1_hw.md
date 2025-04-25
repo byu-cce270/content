@@ -3,15 +3,25 @@
 **Purpose:** This assignment will help you understand and become comfortable in using class resources. If you struggle to find any of the prompts, please ask a TA or a friend.
 
 ## Instructions
-1. First create a Google Drive folder for this class and take a screenshot showing that you made the folder.
+###Part 1: Mounting your OneDrive
+1. First, mount your OneDrive to your computer.
 
-2. Create a Google Doc for the purpose of pasting your screenshots and answering the following questions. 
+- Follow these instructions if you are a Mac User: [OneDrive for Mac](https://support.microsoft.com/en-us/office/sync-files-with-onedrive-on-macos-d11b9f29-00bb-4172-be39-997da46f913f){:target="_blank"}
+- Follow these instructions if you are a Windows User: [OneDrive for Windows](https://support.microsoft.com/en-us/office/sync-files-with-onedrive-in-windows-615391c4-2bd3-4aae-a42a-858262e42a49){:target="_blank"}
 
-3. Rename it something like “[your name] HW - A Tour of Class Resources”
+2. Once mounted, create a new folder for the class. Call it somthing like "CCE 270". This will allow you to store all of your Excel assignments in a folder for the class.
 
-4. Paste the screenshot of the Google Drive folder.
+### Part 2: Download and Upload to OneDrive
 
-5. Answer the following questions and add the following screenshots to it: 
+1. Here is the starter sheet for the assignment today:
+2. Rename it something like “[your name] HW - A Tour of Class Resources”
+3. From here
+
+5. 
+
+6. Take a screenshot of the OneDrive folder and paste it into.
+
+7. Answer the following questions and add the following screenshots to it: 
    1. Screenshot 1 (Take a screenshot of the Teaching Assistants page under the content tab)
    2. Question 1: What are some times that would work with your schedule to attend TA office hours? Include at least 4 hours that you could go to. 
    3. Question 2: Who do you talk to if you have a problem with how an assignment is graded or if you turn in an assignment late? 
