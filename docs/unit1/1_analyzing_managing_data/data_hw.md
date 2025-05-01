@@ -7,8 +7,8 @@
 
 ### Getting Started
 1. First make a copy of the starter sheet here: 
-   [[Starter-Workbook]-HW-Analyzing-&-Managing-Data.xlsx](%5BStarter-Workbook%5D-HW-Analyzing-%26-Managing-Data.xlsx)
-2. Rename it something like “[Your-Name]-HW-Analyzing-&-Managing Data”
+   [(Starter-Workbook)-HW-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-HW-Analyzing-%26-Managing-Data.xlsx)
+2. Rename it something like “(Your-Name)-HW-Analyzing-&-Managing Data”
 3. Remember to save it in your OneDrive folder that you created in the first assignment.
 
 ---
