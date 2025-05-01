@@ -9,6 +9,7 @@
 1. First make a copy of the starter sheet here: 
    [[Starter-Workbook]-HW-Analyzing-&-Managing-Data.xlsx](%5BStarter-Workbook%5D-HW-Analyzing-%26-Managing-Data.xlsx)
 2. Rename it something like “[Your-Name]-HW-Analyzing-&-Managing Data”
+3. Remember to save it in your OneDrive folder that you created in the first assignment.
 
 ---
 
@@ -62,19 +63,19 @@ At this point, you should have 6 sheets in your workbook.
 
 **Rubric:**
 
-|                                                     Item                                                     | Points Possible |
-|:------------------------------------------------------------------------------------------------------------:|:---------------:|
-|                   All sheets in the workbook are named as the instructions say to be named                   |        3        |
-|                                Part 1 - Approved Status is filtered correctly                                |        2        |
-|                                     Part 1 - Date  is filtered correctly                                     |        2        |
-|                                   Part 1 - Flow Rate is filtered correctly                                   |        2        |
-|                                 Part 2 - 2 different graph types are created                                 |        4        |
-| Part 2 - Graphs include vital information such as a title, labeled axes/slices, and legend where appropriate |        3        |
-|                             Part 3 -  Streamflow Data Part 2 is nicely formatted                             |        2        |
-|                        Part 3 - Streamflow Data Part 2 columns are colored correctly                         |        5        |
-|                  Part 4 - Correct equations and data are used in the CFS half of the table                   |        4        |
-|   Part 4 - Correct equations, data, and use of the conversion factor are used in the CMS half of the table   |        4        |
-|                                <div style="text-align: right">**Total**</div>                                |       30        |
+|                                                 Item                                                  | Points Possible |
+|:-----------------------------------------------------------------------------------------------------:|:---------------:|
+|                              HW link turned in correctly the first time                               |        3        |
+|           Part 1 - All sheets in the workbook are named as the instructions say to be named           |        3        |
+|                            Part 1 - Approved Status is filtered correctly                             |        2        |
+|                                 Part 1 - Date  is filtered correctly                                  |        2        |
+|                               Part 1 - Flow Rate is filtered correctly                                |        2        |
+|                         Part 2 -  Streamflow Data Part 2 is nicely formatted                          |        3        |
+|                     Part 2 - Streamflow Data Part 2 columns are colored correctly                     |        3        |
+|               Part 3 - Correct equations and data are used in the CFS half of the table               |        5        |
+|                                  Part 3 - Cell name for C20 is made                                   |        2        |
+| Part 3 - Correct equations, data, and use of the conversion factor reference are used in the CMS half |        5        |
+|                            <div style="text-align: right">**Total**</div>                             |       30        |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
