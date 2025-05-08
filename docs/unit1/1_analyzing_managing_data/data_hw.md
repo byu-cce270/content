@@ -35,7 +35,7 @@ At this point, you should have 6 sheets in your workbook.
 ### Part 2 - Formatting Data
 
 1. Navigate to the sheet that says “Streamflow Data Part 2”
-2. Format the table using colors, bold the headers, and make it easy to read.
+2. Format the table using colors, bold the headers, and make it look nice.
 3. Give the data in column B a scaled color scheme that will have the low numbers be green the high numbers be red and the middle numbers be yellow
 4. Give the data in column C a color if it is greater than 180
 5. Give the data in column D a color if it is equal to 230
@@ -59,7 +59,7 @@ At this point, you should have 6 sheets in your workbook.
 
 1. On the top right, click the share button --> share --> settings
 2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Copy the link, then turn it into learning suite in the feedback box for that assignment.
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
 
 **Rubric:**
 
