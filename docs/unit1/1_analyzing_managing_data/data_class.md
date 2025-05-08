@@ -54,7 +54,7 @@ You can find the in-class workbook here: [(Starter-Workbook)-Class-Analyzing-&-M
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
 |                                                |                 |
-| <div style="text-align: right">**Total**</div> |       30        |
+| <div style="text-align: right">**Total**</div> |        5        |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
