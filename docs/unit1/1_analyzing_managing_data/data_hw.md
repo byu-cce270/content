@@ -6,7 +6,7 @@
 ---
 
 ### Getting Started
-1. First make a copy of the starter sheet here: 
+1. First, make a copy of the starter sheet here: 
    [(Starter-Workbook)-HW-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-HW-Analyzing-%26-Managing-Data.xlsx)
 2. Rename it something like “(Your-Name)-HW-Analyzing-&-Managing Data”
 3. Remember to save it in your OneDrive folder that you created in the first assignment.
@@ -21,11 +21,11 @@
 4. Duplicate that sheet and rename it: “Part 1 Approved Status”
 5. Go back to the sheet called "Streamflow data Part 1"
 6. Reset the filter
-7. Next filter the data by date. Only show rows of data that were taken before 6/21/21
+7. Next, filter the data by date. Only show rows of data that were taken before 6/21/21
 8. Duplicate that sheet and rename it “Part 1 Date”
 9. Go back to the sheet called "Streamflow data Part 1"
 10. Reset the filter
-11. Next filter the data by Flowrate (CFS). Only show the rows whose flow is between 45 - 50
+11. Next, filter the data by Flowrate (CFS). Only show the rows whose flow is between 45 - 50
 12. Duplicate that sheet and rename it “Part 1 Flow Rate”
 
 At this point, you should have 6 sheets in your workbook.
