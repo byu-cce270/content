@@ -116,72 +116,6 @@ Here is an extra resource for further examples of Filters: [Filtering and Sortin
 
 ---
 
-## Graphing Data
-Another valuable tool for analyzing data is graphing. This allows us to see trends in data, compare variables, and visualize the values in our data set. This can be hard to do by hand, and Google Sheets makes it much easier! Let's walk through how to graph a given data set. 
-
-1. Highlight the data that you want to graph. Sometimes you don't need all of the data, so only highlight what you need. In the example below, there is too much information for one graph so only the needed columns were highlighted.
-
-![Screenshot 2025-01-08 204941](https://github.com/user-attachments/assets/8e069659-e380-4fc6-968b-34074d903476)
-
-2. Select insert --> chart
-
-![Screenshot 2025-01-08 205053](https://github.com/user-attachments/assets/c7f2955a-daa4-4209-acfc-64474ea5ec20)
-
-3. From here, Google Sheets will give you an auto-generated graph. If that works for your data set then great! For much of the data you are given, you will need to choose the graph that best fits the data. This is done by selecting the drop box underneath the chart type. For this class, we will primarily use line, bar, column, and pie graphs.
-
-![Screenshot 2025-01-08 205510](https://github.com/user-attachments/assets/77e78c7d-a544-4c63-9ad4-a9a268c561a0)
-
-4. After selecting the graph, check and make sure the data are on the proper x and y axes. You can change this by clicking on the grey labels underneath the X-axis label and Series label. 
-5. The checkboxes at the bottom are also very useful to make sure that Google Sheets knows how to read your data properly
-- switch rows/columns - useful when you want to change rows and columns in your data set (like turning a landscape table into a portrait one)
-- Use row 1 as headers - this uses the top highlighted row as a label for the x and y axes. Most of the time this is useful when you have data sets with labeled columns
-- Use columns as labels - this will allow you to use that column as the values for the x-axis.
-- Treat labels as text - this will treat the above column only as text and not numbers. This means that your graph will label every data point. This is useful when wanting to know exact data points. In other cases, only an approximation is needed. In the example below, you can see the difference:
-
-![Screenshot 2025-01-08 211726](https://github.com/user-attachments/assets/a92f7b97-28b8-476d-9f87-7768b530aba1)
-
-![Screenshot 2025-01-08 211817](https://github.com/user-attachments/assets/1e109c7d-462f-414e-99be-db32fd7dcb42)
-
-6. Many times, you may want to add more in-depth features to the graph such as a title, labels for the x and y axes, a legend, or even change the spacing for the data points. This can all be done in the Customize tab.
-
-![Screenshot 2025-01-08 212310](https://github.com/user-attachments/assets/c3874f97-5a13-479a-97dc-e8e848e645dd)
-
-From here, there are many options. Most of these are for visual changes, but help to distinguish our data:
-
-![Screenshot 2025-01-08 212641](https://github.com/user-attachments/assets/c72e210a-c06f-415a-ba9f-ff96580dd5bb)
-
-- Chart style - Edit the background color, border color, font, and other neat features
-- Chart & axis titles - Allows to add titles for the graph and labels for x and y axes
-- Series - Allows edits to the y-axis such as changing the color of the line (for line graphs), and the type of line
-- Legend - Allows edits to the legend of the graph such as its size, color, and placement.
-- Horizontal axis - allows edits to x-axis such as choosing the label font, adding slant labels, etc.
-- Vertical axis - Allows edits to the y-axis such as what value to start and stop at, the scale of the data, and other visual features.
-- Gridline and ticks - Allows to add grid lines to the x and y axes to more accurately see data points.
-
-Other types of graphs have more unique features to them, but these are the general few! 
-
-### Specific Examples
-**Line Graph**  
-Use to track changes over time intervals, such as the speed of a car during a drive. In the example below, the temperature of a place is graphed over a few days.
-
-![Screenshot 2025-01-08 215839](https://github.com/user-attachments/assets/79582e17-4650-4476-a6b4-64a77d314ad1)
-
-
-**Bar/Column chart**  
-Use to track differences between groups, such as grades in a class. In the example below, customers with the same ID are compared to see the amount of each order.
-
-![Screenshot 2025-01-08 215721](https://github.com/user-attachments/assets/540118f2-144e-4ec8-abb1-38a69751dd96)
-
-
-**Pie Chart**  
-Used to compare amounts/ratios of a whole such as wins vs losses during a BYU basketball season. In the example below, the percentage of each material purchased is graphed from a customer's order.
-
-![Screenshot 2025-01-08 220114](https://github.com/user-attachments/assets/3faa6ffe-0f61-4508-86af-ace6b95fa971)
-
-Here is an extra resource for further examples of graphing: [Graphing](https://support.google.com/docs/answer/190718?hl=en#zippy=){:target="_blank"}
-
----
-
 ## Working with Functions  
 In Google Sheets, functions help users to analyze, manage, and compute data. A function is set up in three parts:
 
@@ -201,7 +135,7 @@ Throughout this unit, you will learn new and useful functions. For this topic, w
 
 ## Pre-Class Quiz Challenge
 
-1. First make a copy of the starter sheet here: [Starter Sheet Pre - Analyzing & Managing Data](https://docs.google.com/spreadsheets/d/1nHMTqHvprWHruS2jWq81fNMTIU7UjirWh8wV3Ddkvtg/edit?usp=sharing){:target="_blank"}
+1. First make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx)
    </br> The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
    <br> Hint: Use conditional formatting
@@ -210,8 +144,7 @@ Throughout this unit, you will learn new and useful functions. For this topic, w
 5. **Sort** the spreadsheet by the **Checked Out** date from most recent to the oldest.
 6. **Sort** the spreadsheet by **Days Checked Out** to only show those who have a value of 5 and higher.
 7. Fill in the **Days Checked out Statistics** chart using the **Days checked out** info in the main table.
-8. Create a **pie chart** of who checked out which equipment type (column B) to see what was checked out most. Give the chart a title and label each slice.
-9. When you're finished, your spreadsheet should look something like this:
+8. When you're finished, your spreadsheet should look something like this:
 
 ![Screenshot 2025-01-08 234149](https://github.com/user-attachments/assets/7bfa3bdb-6e5b-4df7-a099-bfe8b76f5e00)
 
