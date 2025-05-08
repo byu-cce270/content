@@ -15,10 +15,6 @@ You can find the in-class workbook here: [Analyzing & Managing Data - Starter Sh
 4. Add a filter that only shows customers who ordered more than 15 tons of material.
 5. Out of those customers, highlight all those who ordered steel. HINT: Use conditional formatting, and only highlight the cell.
 6. At the bottom right of the table, sum the total quantity of material purchased (Cell C14). Note: Even though we have a filter, it will still sum the values of the WHOLE table (including those values not shown).
-7. Using the values in column B, create a pie chart to compare the total purchased amount of each material with these features:
-      - A title
-      - Each slice is labeled with the corresponding material
-      - Display the total for each material on its corresponding slice.
 
 When done, your graph should look somthing like this:
 

@@ -146,7 +146,28 @@ Throughout this unit, you will learn new and useful functions. For this topic, w
 7. Fill in the **Days Checked out Statistics** chart using the **Days checked out** info in the main table.
 8. When you're finished, your spreadsheet should look something like this:
 
-![Screenshot 2025-01-08 234149](https://github.com/user-attachments/assets/7bfa3bdb-6e5b-4df7-a099-bfe8b76f5e00)
+![Pre-Analyzing-&-Managing-Data-Challenge-Solution.png](images/Pre-Analyzing-%26-Managing-Data-Challenge-Solution.png)
 
-10. **Change the access so anyone with the link can edit**. Copy the Link and paste it into the pre-class quiz.
-   
+---
+
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+|                                                |                 |
+| <div style="text-align: right">**Total**</div> |       30        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|               **Reasons for Points Lost**                | **Amount** |  
+|:--------------------------------------------------------:|:----------:|
+|                 Link shared incorrectly                  |     3      |
+|      Turned in late. 10% for every week it's late.       |            |

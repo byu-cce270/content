@@ -16,7 +16,7 @@
 ### Part 1 - Filtering Data
 
 1. Navigate to the sheet that says “Streamflow data Part 1”
-2. Select the entire table and create a filter, the filter icon should be in each of the headers
+2. Select the entire table and create a filter, the filter icon should be in each of the headers. Be sure to reformat the headers so that they can still be read.
 3. Filter by Approved status so it only shows rows with the approved status as pending, "P"
 4. Duplicate that sheet and rename it: “Part 1 Approved Status”
 5. Go back to the sheet called "Streamflow data Part 1"
