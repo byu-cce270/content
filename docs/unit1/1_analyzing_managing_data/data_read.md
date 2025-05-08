@@ -135,7 +135,7 @@ Throughout this unit, you will learn new and useful functions. For this topic, w
 
 ## Pre-Class Quiz Challenge
 
-1. First make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx)
+1. First, make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx)
    </br> The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
    <br> Hint: Use conditional formatting
