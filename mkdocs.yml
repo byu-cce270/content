@@ -29,10 +29,10 @@ nav:
         - Reading: unit1/1_analyzing_managing_data/data_read.md
         - In Class: unit1/1_analyzing_managing_data/data_class.md
         - Homework: unit1/1_analyzing_managing_data/data_hw.md
-    - Lookups, Match, and Data Validation:
-        - Reading: unit1/2_lookup_match/lookmat_read.md
-        - In Class: unit1/2_lookup_match/lookmat_class.md
-        - Homework: unit1/2_lookup_match/lookmat_hw.md
+    - Lookups, Match, and IF Functions:
+        - Reading: unit1/2_lookup_match_if/lookmatif_read.md
+        - In Class: unit1/2_lookup_match_if/lookmatif_class.md
+        - Homework: unit1/2_lookup_match_if/lookmatif_hw.md
     - If Statements and Goal Seek:
       - Reading: unit1/3_if_goalseek/ifgs_read.md
       - In Class: unit1/3_if_goalseek/ifgs_class.md

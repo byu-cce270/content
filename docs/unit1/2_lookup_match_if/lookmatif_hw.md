@@ -1,17 +1,18 @@
-#  HW: Lookups, Match, Data Validation
+#  HW: Lookups, Match, and IF Functions
 
 **Purpose:** Learn how to use lookups, match functions, and data validation when working with tables of data.
 
-## Instructions
-1. First make a copy of the starter sheet here:
-   [Starter Sheet - HW Lookups, Match, Data Validation](https://docs.google.com/spreadsheets/d/1AVq6HfUD7hCXnJXD6L9dSqogVHGz_7yDUDuqRiZO5n0/edit?usp=sharing){:target="_blank"}
-2. Rename it something like “[Your Name] HW 1.2 - Lookups, Match, Data Validation”
+---
+
+### Getting Started
+1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-HW-Lookups-Match-IF.xlsx)
+2. Rename it something like “(Your-Name)-HW-Lookups-Match-IF”
+3. Remember to save it in your OneDrive folder that you created in the first assignment.
 
 ---
 
-### Hydrometer Analysis Sheet
+###  Part 1 - Hydrometer Analysis Sheet
 
-#### Part 1
 1. Navigate to the Hydrometer Analysis sheet
 2. Name the cells in the spreadsheet according to this table:
     
@@ -41,26 +42,18 @@
    temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law 
    Coefficients in the Tables sheet). 
 
-    **NOTE**: For the temperature key used in VLOOKUP, you should not expect an 
-   exact 
-   match so you will 
-   need 
-   to do a range lookup (is_sorted = TRUE). The same is true for the Gs key to the MATCH function, so you will need 
-   to again specify a range lookup (search_type = 1). If you want to do an exact match, you can use the ROUND() 
-   function to round the temperature and Gs values to the nearest whole number inside the argument list as you pass 
-   them as keys to the 
-   functions. 
+**NOTE**: For the temperature key used in VLOOKUP, you should not expect an exact match so you will need to do a range lookup (is_sorted = TRUE). The same is true for the Gs key to the MATCH function, so you will need to again specify a range lookup (search_type = 1). If you want to do an exact match, you can use the ROUND() function to round the temperature and Gs values to the nearest whole number inside the argument list as you pass them as keys to the functions. 
 
-   5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
+5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
 
-      **Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
+   **Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
    
-      | Cell | Equation                          |
-      |------|-----------------------------------|
-      | C15  | $R_{cp} = R + F_T - F_Z$          |
-      | D15  | $P_f = \dfrac{AR_{cp}}{W_S}(100)$ |
-      | E15  | $R_{cl} = R + F_m$                |
-      | G15  | $D = A\sqrt{\dfrac{L}{t}}$        |
+   | Cell | Equation                          |
+   |------|-----------------------------------|
+   | C15  | $R_{cp} = R + F_T - F_Z$          |
+   | D15  | $P_f = \dfrac{AR_{cp}}{W_S}(100)$ |
+   | E15  | $R_{cl} = R + F_m$                |
+   | G15  | $D = A\sqrt{\dfrac{L}{t}}$        |
 
 6. If you did everything right, the first row should look like this:
 
@@ -72,9 +65,8 @@ and the chart should look like this:
 
 ---
 
-### Soil Services Sheet
+### Part 2 - Soil Services Sheet
 
-#### Part 2
 1. Navigate to the Soil Services sheet
 2. In column D, use the VLOOKUP and MATCH functions to find the correct price per test for each row (Use the blue 
    table in the Tables sheet). 
@@ -83,9 +75,8 @@ and the chart should look like this:
 
 ---
 
-### Material Estimator Sheet
+### Part 3 - Material Estimator Sheet
 
-#### Part 3
 1. Navigate to the Material Estimator sheet
 2. In the merged cell B2:C2, create a dropdown menu using data validation that includes the four gravel types in the red table in the Tables sheet
 3. Create a Data Validation in B3 and B4 to allow the input of only numbers greater than 0. It should reject any invalid input
@@ -97,6 +88,50 @@ and the chart should look like this:
    
    ![mat_est_table.png](images/mat_est_table.png)
 
+---
+
+#### Part 4 - Simple Supported Beam Sheet
+
+1. Navigate to the **Simply Supported Beam** sheet
+2. Name the cells in the spreadsheet according to this table:
+
+**Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
+
+   | Variable          | Cell | Name |
+   |-------------------|------|------|
+   | Load              | B4   | P    |
+   | Modulus           | B5   | E    |
+   | Length            | B6   | L    |
+   | Load offset       | B7   | a    |
+   | Load offset       | B8   | b    |
+   | Base              | B9   | base |
+   | Height            | B10  | ht   |
+   | Distance          | B11  | x    |
+   | Moment of Inertia | B13  | Iu   |
+   | Deflection        | B16  | v    |
+
+3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
+
+**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations.
+
+   | Cell      | Equation                                                                          |
+   |-----------|-----------------------------------------------------------------------------------|
+   | B8        | $b=L-a$                                                                           |
+   | B13       | $I_u=\dfrac{1}{12}base*ht^3$                                                      |
+   | B14 (x≤a) | $v=\dfrac{Pbx}{6EI_uL}\left(b^2+x^2-L^2\right)$                                   |
+   | B15 (x>a) | $v=\dfrac{-Pb}{6EI_uL}\left[\dfrac{L}{b}(x-a)^3+\left(L^2-b^2\right)x-x^3\right]$ |
+
+4. Next, write an **IF** statement in cell **B16** that will return the value in cell **B14** if ***x≤a*** (B7) or cell **B15** if ***x>a*** (B7).
+
+If written correctly, your sheet should look like this when **x** is set to **278** and **15**:
+
+![Deflection1.png](images/Deflection1.png)![Deflection2.png](images/Deflection2.png)
+
+5. The force of the load on the beam causes the deflection to take the shape of a parabola as shown in the diagram. Use **Goal seek** to compute the two **x** locations that result in a deflection of **-2.0** inches: one closer to the left support, and one closer to the right support. Record your answers in cells **B20** and **B21**.
+
+**Hint:** Goal seek will find the answer closest to the pre-existing x value so to find the first solution, start with an x value near the left side, and to find the second solution, start with an x value near the right side. Your first solution should fall in the range between 30 and 40 inches while the second should fall in the range between 90 and 100 inches.
+
+---
 
 ## Turning in/Rubric
 Turn sharing, editing on. Then turn in the link to learning suite in the feedback box
