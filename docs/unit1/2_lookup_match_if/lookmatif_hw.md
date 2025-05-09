@@ -32,11 +32,10 @@
 
 3. Use the equations below to calculate the following cell values:
     
-       | Cell | Equation                                       |
-       |------|------------------------------------------------|
-       | E6   | $\,^oC = \left(\,^oF - 32\right) \dfrac{5}{9}$ |
-       | E9   | $F_t = -4.85 + \dfrac{\,^oC}{4}$               |
-
+   | Cell | Equation                                       |
+   |------|------------------------------------------------|
+   | E6   | $\,^oC = \left(\,^oF - 32\right) \dfrac{5}{9}$ |
+   | E9   | $F_t = -4.85 + \dfrac{\,^oC}{4}$               |
 
 4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient by pulling the 
    temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law 
@@ -46,7 +45,7 @@
 
 5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
 
-   **Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
+**Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
    
    | Cell | Equation                          |
    |------|-----------------------------------|
@@ -58,10 +57,6 @@
 6. If you did everything right, the first row should look like this:
 
  ![checkwork.png](images/checkwork.png)
-
-and the chart should look like this:
-
-![grain_size_chart.png](images/grain_size_chart.png)
 
 ---
 
@@ -86,11 +81,11 @@ and the chart should look like this:
 7. In cell B8, multiply cells B6 and B7 to get your total
 8. You can make sure everything is right by checking your answer below:
    
-   ![mat_est_table.png](images/mat_est_table.png)
+![mat_est_table.png](images/mat_est_table.png)
 
 ---
 
-#### Part 4 - Simple Supported Beam Sheet
+### Part 4 - Simple Supported Beam Sheet
 
 1. Navigate to the **Simply Supported Beam** sheet
 2. Name the cells in the spreadsheet according to this table:
@@ -134,7 +129,12 @@ If written correctly, your sheet should look like this when **x** is set to **27
 ---
 
 ## Turning in/Rubric
-Turn sharing, editing on. Then turn in the link to learning suite in the feedback box
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
 
 **Rubric:**
 

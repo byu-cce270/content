@@ -131,7 +131,7 @@ To solve the problem, do the following:
 
 If written correctly, your sheet should look like this when **x** is set to **278** and **15**:
 
-![Deflection1.png](images/Deflection1.png)![Deflection2.png](images/Deflection2.png)
+![Deflection1.png](../2_lookup_match_if/images/Deflection1.png)![Deflection2.png](../2_lookup_match_if/images/Deflection2.png)
 
 5. The force of the load on the beam causes the deflection to take the shape of a parabola as shown in the diagram. Use **Goal seek** to compute the two **x** locations that result in a deflection of **-2.0** inches: one closer to the left support, and one closer to the right support. Record your answers in cells **B20** and **B21**.
 
