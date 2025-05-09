@@ -1,6 +1,6 @@
 #  HW: Lookups, Match, and IF Functions
 
-**Purpose:** Learn how to use lookups, match functions, and data validation when working with tables of data.
+**Purpose:** This assignment aims to test your ability to use more complex functions. In this assignment, you will continue to test your knowledge on how to use the Lookups, Match, and IF functions on different engineering problems. 
 
 ---
 
