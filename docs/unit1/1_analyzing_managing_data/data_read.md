@@ -2,7 +2,7 @@
 
 ---
 
-In Excel, there are many ways to analyze and display data. For this topic, we will focus on Conditional Formatting, Filtering Data, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, we will go over what each of these tools are and how to use them.
+In Excel, there are many ways to analyze and display data. For this topic, you will focus on Conditional Formatting, Filtering Data, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, you will go over what each of these tools are and how to use them.
 
 ---
 
@@ -32,11 +32,11 @@ To set up conditional formatting to your data in Excel, follow these steps:
 
 ![CondFormat3.png](../2_lookup_match_if/images/CondFormat3.png)
 
-4. Once you have selected the type of conditional formatting you want to apply, a dialog box will appear. This dialog box will allow you to set the conditions for the formatting and choose the formatting options. Say for example, we want to highlight any cells that contains a "5" in the data set. We would select "Text that contains" from the drop-down menu.
+4. Once you have selected the type of conditional formatting you want to apply, a dialog box will appear. This dialog box will allow you to set the conditions for the formatting and choose the formatting options. Say for example, you want to highlight any cells that contains a "5" in the data set. You would select "Text that contains" from the drop-down menu.
 
 ![CondFormat4.png](../2_lookup_match_if/images/CondFormat4.png)
 
-5. This will open a dialog box where you can enter the value you want to format. In this case, we would enter "5" in the box. You can also choose the condition to be based on a formula. For example, if you want to highlight cells that are greater than 5, you would enter the formula ">=5" in the box. The condition could also be based off another cell. For example, if you want to highlight cells that are greater than the value in cell A1, you would enter the formula ">=A1" in the box.
+5. This will open a dialog box where you can enter the value you want to format. In this case, you would enter "5" in the box. You can also choose the condition to be based on a formula. For example, if you want to highlight cells that are greater than 5, you would enter the formula ">=5" in the box. The condition could also be based off another cell. For example, if you want to highlight cells that are greater than the value in cell A1, you would enter the formula ">=A1" in the box.
 
 ![CondFormat5.png](../2_lookup_match_if/images/CondFormat5.png)
 
@@ -48,7 +48,7 @@ To set up conditional formatting to your data in Excel, follow these steps:
 
 ![CondFormat7.png](../2_lookup_match_if/images/CondFormat7.png)
 
-8. Once we have selected what the condition is and how we want it to look, we can click OK. This will apply the conditional formatting to the selected cells. 
+8. Once you have selected what the condition is and how you want it to look, you can click OK. This will apply the conditional formatting to the selected cells. 
 
 ![CondFormat8.png](../2_lookup_match_if/images/CondFormat8.png)
 
@@ -59,54 +59,51 @@ To see more examples of conditional formating and the different options availabl
 ---
 
 ## Filtering Data
-Filtering data is a feature in Google Sheets that allows you to show only the data that meets certain criteria. This can be useful when you have a large data set and only want to focus on a specific section of it. This differs from conditional formatting as filtering allows you to change the range of data you see, while conditional formatting changes the visual aspect of the data but does not alter the view range.
+Filtering data is a feature in Excel that allows you to show only the data that meets certain criteria. This can be useful when you have a large data set and only want to focus on a specific section of it. This differs from conditional formatting as filtering allows you to change the range of data you see, while conditional formatting changes the visual aspect of the data but does not alter the view range.
 
-### Set up
-1. Select the columns of data you want to add filters to.
+To set up filtering in Excel, follow these steps:
 
-![Screenshot 2025-01-08 170010](https://github.com/user-attachments/assets/346aa4e2-8bc3-4232-96b9-9892b607a05d)
+1. Select the columns of data you want to add filters to. You can select the entire table or just the headers.
 
-2. Select Data, and then create a filter.
+![FilData1.png](../2_lookup_match_if/images/FilData1.png)
 
-![Filter1](https://github.com/user-attachments/assets/e2ced105-71a1-4bef-931f-8ae1b57b4475)
+2. Then go to the Data tab in the ribbon and select the Filter button. This will add a filter icon to each of the headers in the selected columns. Also on the Home tab in, select "Sort & Filter" and then the Filter button. You can also use the shortcut Ctrl + Shift + L (Cmd + Shift + L for Mac users) to add filters to the selected columns.
 
-3. Click on the upside-down triangle with 3 lines to edit the filter.
+![FilData2.png](../2_lookup_match_if/images/FilData2.png)
+![FilData0.png](../2_lookup_match_if/images/FilData0.png)
 
-![Screenshot 2025-01-07 170409](https://github.com/user-attachments/assets/9cfd95dc-2932-4ab6-85d9-89e34b61d3c7)
+3. This will add filters to the top of the table on the header column.
 
-4. There are many ways to filter data, for this class, we will focus on the filter by condition. Select filter by condition, and then the drop box. Select the condition that fits your data, then select ok at the bottom.
+![FilData3.png](../2_lookup_match_if/images/FilData3.png)
 
-![Screenshot 2025-01-07 171430](https://github.com/user-attachments/assets/51b62ef6-aafa-4e96-ad20-e772ff37a830)
+4. To filter the data, click on the filter icon in the header of the column you want to filter. This will open a drop-down menu with several options for filtering the data.
 
-5. In the example below, the Width of Bridge Segment column is filtered to only show the cells with values greater than 50.
+![FilData4.png](../2_lookup_match_if/images/FilData4.png)
 
-![Screenshot 2025-01-07 171729](https://github.com/user-attachments/assets/03dbeebd-c718-4732-a8d4-5438de15e5e5)
+5. There are many ways to filter data, including:
+   - Filter by values/number: This allows you to filter the data based on specific values or numbers. For example, if you have a column of numbers and only want to see the rows with values greater than 50, you can filter the data to only show those rows.
+   - Filter by color: This allows you to filter the data based on the color of the cells. For example, if you have cells that are highlighted in red, you can filter the data to only show those rows.
+
+![FilData5.png](../2_lookup_match_if/images/FilData5.png)
+
+6. To filter by values, select the "Number Filters" option from the drop-down menu. This will open a sub-menu with several options for filtering the data based on numbers. You can choose to filter by "Equals", "Does Not Equal", "Greater Than", "Less Than", "Between", and more. In this case we will select "Greater Than" and enter the value we want to filter by. This will then open the following dialog box:
+
+![FilData6.png](../2_lookup_match_if/images/FilData6.png)
+
+7. In this dialog box, you can add two conditions to filter by, such as "greater than" and/or "less than". You can also choose to filter by "Top 10" or "Above Average" to show only the top or bottom values in the data set. Once you have selected the conditions you want to filter by, click "OK" to apply the filter.
+
+![FilData7.png](../2_lookup_match_if/images/FilData7.png)
 
 
-6. To reset a filter, select "None" and then Ok.
 
-![Screenshot 2025-01-07 172034](https://github.com/user-attachments/assets/f42fb230-1121-43a6-a003-76c94bee78e2)
+![FilData8.png](../2_lookup_match_if/images/FilData8.png)
 
-### Specific Examples
-**Filtering By Date**  
-There are many cases when you may want to filter your data to show only dates past a certain day or even a range of dates. To enter an exact date, you will need to use the DD/MM/YYYY format. In the example below, the data is filtered to only show those dates before 6/24/2021, NOT including 6/24/2021.
 
-![Screenshot 2025-01-07 172944](https://github.com/user-attachments/assets/98d7eea0-e65f-4ca5-95d6-3886db868f88)
 
-**Filtering Numerical Data**  
-Many data sets will have large amounts of numerical data. To make it easier to read, you can filter out the unwanted data by choosing the condition. This can be very useful for data sets with thousands of inputs! In the example below, the data is filtered to show all data between 35-40 (not including 35 & 40).
+![FilData9.png](../2_lookup_match_if/images/FilData9.png)
 
-![Screenshot 2025-01-07 180024](https://github.com/user-attachments/assets/dcffcfc8-6b19-448d-98f7-1c884dc51b46)
 
-**Multiple Filters**  
-Like conditional formatting, you can have multiple filters! This may be useful when you want to filter by multiple conditions. Unlike conditional formatting, the order does not matter. This means I can apply the filters in any order I'd like and the same data will show. In the example below, there 2 different filters to show the data that is before 6/21/2021 and has an approved status A. 
 
-![Screenshot 2025-01-07 175522](https://github.com/user-attachments/assets/5e2aaf4c-a296-4784-8324-2db9597885d8)
-
-**DISCLAIMER**  
-The value you input to filter by is NOT included unless you choose a filter that has equal to. For example, if I have a filter to only show data greater than 45 then any value that is equal to 45 IS NOT included. This is critical when filtering by date/day! Make sure that the value you filter by includes ALL of the data you want.
-
-Here is an extra resource for further examples of Filters: [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}
 
 ---
 
@@ -115,7 +112,7 @@ In Google Sheets, functions help users to analyze, manage, and compute data. A f
 
 ![Screenshot 2025-01-08 221445](https://github.com/user-attachments/assets/76daef2b-be63-4f76-8bcc-cb70ebb098dc)
 
-Throughout this unit, you will learn new and useful functions. For this topic, we will focus on the most common functions for analyzing data:
+Throughout this unit, you will learn new and useful functions. For this topic, you will focus on the most common functions for analyzing data:
 
    | Function           | Syntax              | Purpose                                         |
    |--------------------|---------------------|-------------------------------------------------|
