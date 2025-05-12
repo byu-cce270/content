@@ -94,16 +94,19 @@ To set up filtering in Excel, follow these steps:
 
 ![FilData7.png](../2_lookup_match_if/images/FilData7.png)
 
-
+8. After a filter is applied, the rows that do not meet the criteria will be hidden from view. You can tell that a filter is applied by looking at the filter icon in the header of the column. The icon will change to show that a filter is applied. (See the difference between the arrows in the top right of the image below) Also note that the row numbers will also reflect the hidden rows.
 
 ![FilData8.png](../2_lookup_match_if/images/FilData8.png)
 
-
+9. To remove a filter, click on the filter icon in the header of the column and select "Clear Filter From [Column Name]". This will remove the filter and show all of the data in the table again. You can also remove all filters by going to the Data tab in the ribbon and selecting "Clear" from the Sort & Filter group.
 
 ![FilData9.png](../2_lookup_match_if/images/FilData9.png)
 
+Filters can also be applied to multiple columns at the same time. To do this, simply repeat the steps above for each column you want to filter. The filters will be applied in the order they are listed in the Filter drop-down menu. You can also use the "Custom Filter" option to create more complex filters that combine multiple criteria. This allows you to filter the data based on multiple conditions, such as showing only rows that meet both criteria.
 
+For more help on creating custom filters, check out: [Filter by using advanced criteria](https://support.microsoft.com/en-us/office/filter-by-using-advanced-criteria-4c9222fe-8529-4cd7-a898-3f16abdff32b){:target="_blank"}
 
+For more general help on filtering data in Excel, check out the following websites: [Filter data in a range or table](https://support.microsoft.com/en-us/office/filter-data-in-a-range-or-table-01832226-31b5-4568-8806-38c37dcc180e){:target="_blank"} and [Excel Filters by W3Schools](https://www.w3schools.com/excel/excel_filter.php){:target="_blank"}
 
 ---
 
@@ -114,14 +117,16 @@ In Google Sheets, functions help users to analyze, manage, and compute data. A f
 
 Throughout this unit, you will learn new and useful functions. For this topic, you will focus on the most common functions for analyzing data:
 
-   | Function           | Syntax              | Purpose                                         |
-   |--------------------|---------------------|-------------------------------------------------|
-   | Sum                | =SUM(arguments)     | Adds all of the arguments together              |
-   | Average            | =AVERAGE(arguments) | Averages arguments together                     |
-   | Max                | =MAX(arguments)     | Returns the highest number out of the arguments |
-   | Min                | =MIN(arguments)     | Returns the lowest number out if the arguments  |
+   | Function           | Syntax              | Purpose                                         | Help Link (W3Schools)                                                          |
+   |--------------------|---------------------|-------------------------------------------------|--------------------------------------------------------------------------------|
+   | Sum                | =SUM(arguments)     | Adds all of the arguments together              | [SUM](https://www.w3schools.com/excel/excel_sum.php){:target="_blank"}         |
+   | Average            | =AVERAGE(arguments) | Averages arguments together                     | [AVERAGE](https://www.w3schools.com/excel/excel_average.php){:target="_blank"} |
+   | Max                | =MAX(arguments)     | Returns the highest number out of the arguments | [MAX](https://www.w3schools.com/excel/excel_max.php){:target="_blank"}         |
+   | Min                | =MIN(arguments)     | Returns the lowest number out if the arguments  | [MIN](https://www.w3schools.com/excel/excel_min.php){:target="_blank"}         |
    | Standard Deviation | =STDEV(arguments)   | Returns the stardard deviation of the arguments |
-   | Median             | =Median(arguments)  | Returns the median of the arguments             |
+   | Median             | =Median(arguments)  | Returns the median of the arguments             | [MEDIAN](https://www.w3schools.com/excel/excel_median.php){:target="_blank"}   |
+
+You can find more functions at W3Schools. You can also find a list of all functions in Excel by going to the Formulas tab in the ribbon and selecting "Insert Function". This will open a dialog box with a list of all the functions available in Excel. You can also search for specific functions by typing in the search box at the top of the dialog box. Within this dialog box, you can also find the function arguments and a description of what the function does. This is a great way to learn about new functions and how to use them. This can also be pulled by clicking on the function name in the formula bar.
 
 
 ## Pre-Class Quiz Challenge
