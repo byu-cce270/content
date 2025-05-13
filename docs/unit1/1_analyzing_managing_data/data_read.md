@@ -117,15 +117,15 @@ In Google Sheets, functions help users to analyze, manage, and compute data. A f
 
 Throughout this unit, you will learn new and useful functions. For this topic, you will focus on the most common functions for analyzing data:
 
-   |      Function      | Syntax              | Purpose                                                  |                             Help Link (W3Schools)                              |
-   |:------------------:|---------------------|----------------------------------------------------------|:------------------------------------------------------------------------------:|
-   |        Sum         | =SUM(arguments)     | Adds all of the arguments together                       |     [SUM](https://www.w3schools.com/excel/excel_sum.php){:target="_blank"}     |
-   |      Average       | =AVERAGE(arguments) | Averages arguments together                              | [AVERAGE](https://www.w3schools.com/excel/excel_average.php){:target="_blank"} |
-   |        Max         | =MAX(arguments)     | Returns the highest number out of the arguments          |     [MAX](https://www.w3schools.com/excel/excel_max.php){:target="_blank"}     |
-   |        Min         | =MIN(arguments)     | Returns the lowest number out if the arguments           |     [MIN](https://www.w3schools.com/excel/excel_min.php){:target="_blank"}     |
-   | Standard Deviation | =STDEV.P(arguments) | Returns the stardard deviation for the entire population | [STDEV.P](https://www.w3schools.com/excel/excel_stdevp.php){:target="_blank"}  |
-   |       Count        | =STDEV.S(arguments) | Returns the stardard deviation for the a sample          | [STDEV.S](https://www.w3schools.com/excel/excel_stdevs.php){:target="_blank"}  |
-   |       Median       | =Median(arguments)  | Returns the median of the arguments                      |  [MEDIAN](https://www.w3schools.com/excel/excel_median.php){:target="_blank"}  |
+   |      Function       | Syntax              | Purpose                                                  |                             Help Link (W3Schools)                              |
+   |:-------------------:|---------------------|----------------------------------------------------------|:------------------------------------------------------------------------------:|
+   |         Sum         | =SUM(arguments)     | Adds all of the arguments together                       |     [SUM](https://www.w3schools.com/excel/excel_sum.php){:target="_blank"}     |
+   |       Average       | =AVERAGE(arguments) | Averages arguments together                              | [AVERAGE](https://www.w3schools.com/excel/excel_average.php){:target="_blank"} |
+   |         Max         | =MAX(arguments)     | Returns the highest number out of the arguments          |     [MAX](https://www.w3schools.com/excel/excel_max.php){:target="_blank"}     |
+   |         Min         | =MIN(arguments)     | Returns the lowest number out if the arguments           |     [MIN](https://www.w3schools.com/excel/excel_min.php){:target="_blank"}     |
+   | Standard Deviation  | =STDEV.P(arguments) | Returns the stardard deviation for the entire population | [STDEV.P](https://www.w3schools.com/excel/excel_stdevp.php){:target="_blank"}  |
+   | Standard Deviation  | =STDEV.S(arguments) | Returns the stardard deviation for the a sample          | [STDEV.S](https://www.w3schools.com/excel/excel_stdevs.php){:target="_blank"}  |
+   |       Median        | =Median(arguments)  | Returns the median of the arguments                      |  [MEDIAN](https://www.w3schools.com/excel/excel_median.php){:target="_blank"}  |
 
 You can find more functions at W3Schools. You can also find a list of all functions in Excel by going to the Formulas tab in the ribbon and selecting "Insert Function". This will open a dialog box with a list of all the functions available in Excel. You can also search for specific functions by typing in the search box at the top of the dialog box. Within this dialog box, you can also find the function arguments and a description of what the function does. This is a great way to learn about new functions and how to use them. This can also be pulled by clicking on the function name in the formula bar.
 
