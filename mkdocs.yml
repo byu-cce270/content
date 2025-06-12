@@ -34,13 +34,13 @@ nav:
         - In Class: unit1/2_lookup_match_if/lookmatif_class.md
         - Homework: unit1/2_lookup_match_if/lookmatif_hw.md
     - If Statements and Goal Seek:
-      - Reading: unit1/3_if_goalseek/ifgs_read.md
-      - In Class: unit1/3_if_goalseek/ifgs_class.md
-      - Homework: unit1/3_if_goalseek/ifgs_hw.md
+      - Reading: unit1/3_pivot_goalseek/pivgolseek_read.md
+      - In Class: unit1/3_pivot_goalseek/pivgolseek_class.md
+      - Homework: unit1/3_pivot_goalseek/pivgolseek_hw.md
     - Pivot Table and Query Function:
-      - Reading: unit1/4_pivot_query/pivquer_read.md
-      - In Class: unit1/4_pivot_query/pivquer_class.md
-      - Homework: unit1/4_pivot_query/pivquer_hw.md
+      - Reading: unit1/4_graphing_numsolver/graphsolver_read.md
+      - In Class: unit1/4_graphing_numsolver/graphsolver_class.md
+      - Homework: unit1/4_graphing_numsolver/graphsolver_hw.md
     - Gantt Chart, Project Scheduling and Tracking:
         - Reading: unit1/5_gantt_charts/gantt_read.md
         - In Class: unit1/5_gantt_charts/gantt_class.md
