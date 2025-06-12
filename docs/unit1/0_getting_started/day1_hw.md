@@ -28,6 +28,7 @@ Let's go over how to take a given file and upload it to the CCE 270 folder in yo
 Answer the following questions and add the following screenshots to your Excel sheet.
 
 Questions:
+
 1. Who do you talk to if you have a problem with how an assignment is graded or if you turn in an assignment late?
 2. What times would work with your schedule to attend TA office hours? Include at least 4 hours that you could go.
 3. What are the next 5 things due for this class?
@@ -35,6 +36,7 @@ Questions:
 5. What is the best method to get hold of TAs or professors?
 
 Screenshots:
+
 1. Take a screenshot of the Teaching Assistants page on our class website.
 2. Take a picture of your OneDrive folder with your Homework starter sheet in it. Make sure the screenshot shows the folder name you created in Part 1.
 3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for September 8th to September 12th.

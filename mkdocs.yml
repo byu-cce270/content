@@ -21,7 +21,7 @@ nav:
   - Home: index.md
   - Class Resources:
     - Textbooks: resources/textbooks/textbooks.md
-#    - Teaching Assistants (TAs): resources/tas.md
+    - Teaching Assistants (TAs): resources/tas.md
     - Office Hours: resources/ta_hours.md
   - Unit 1 - Spreadsheet:
     - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
