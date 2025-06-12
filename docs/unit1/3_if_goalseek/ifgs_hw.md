@@ -64,9 +64,9 @@ To solve the problem, do the following:
 **Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
 
    | Variable                | Cell | Name |
-   |-------------------------|------|-----|
-   | Gravity                 | C4   | g   |
-   | Head at junction, $H_j$ | C5   | H_j |
+   |-------------------------|------|------|
+   | Gravity                 | C4   | g    |
+   | Head at junction, $H_j$ | C5   | H_j  |
 
 3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the two variables listed above. Use relative addressing for the other variables.
 
@@ -76,19 +76,19 @@ To solve the problem, do the following:
    |:--------:|:----:|------------------------------------------------------------------------------|
    |  $V_1$   | C13  | $\sqrt{\dfrac{2 * g * (H_j - H_1)}{\left[\dfrac{F_1 * L_1}{D_1}\right] -1}}$ |
    |  $V_2$   | D13  | $\sqrt{\dfrac{2 * g * (H_2 - H_j)}{\left[\dfrac{F_2 * L_2}{D_2}\right] +1}}$ |
-   |   $V_3$   | E13  | $\sqrt{\dfrac{2 * g * (H_j - H_3)}{\left[\dfrac{F_3 * L_3}{D_3}\right] -1}}$ |
+   |  $V_3$   | E13  | $\sqrt{\dfrac{2 * g * (H_j - H_3)}{\left[\dfrac{F_3 * L_3}{D_3}\right] -1}}$ |
 
 
 4. Now that we have the velocity in each pipe, we will multiply by the cross-sectional area of the pipe to get the 
    flow rate in the pipe. Use the 
    following table to write the equations shown below in the cells indicated. 
 
-   | Variable |  Cell | Equation                       |
-   |:--------:|:---------:|--------------------------------|
-   |  $Q_1$   |   C14  | $V_1$ * $\dfrac{\pi}{4}*(D_1)^2$ |
-   |  $Q_2$   |   D14  | $V_2$ * $\dfrac{\pi}{4}*(D_2)^2$ |
-   |   $Q_3$   |   E14  | $V_3$ * $\dfrac{\pi}{4}*(D_3)^2$ |
-   |   $Q_j$    |   C16  | $Q_2$ - $Q_1$ - $Q_3$           |
+   | Variable |   Cell   | Equation                         |
+   |:--------:|:--------:|----------------------------------|
+   |  $Q_1$   |   C14    | $V_1$ * $\dfrac{\pi}{4}*(D_1)^2$ |
+   |  $Q_2$   |   D14    | $V_2$ * $\dfrac{\pi}{4}*(D_2)^2$ |
+   |  $Q_3$   |   E14    | $V_3$ * $\dfrac{\pi}{4}*(D_3)^2$ |
+   |  $Q_j$   |   C16    | $Q_2$ - $Q_1$ - $Q_3$            |
 
 5. Using a starting value of $H_j$, use **Goal seek** to a value for $H_j$ that results in $Q_j$ = zero. At this point,
    the flow rates in and out of the junction will be balanced and we will solved for the correct values of $Q_1$, 

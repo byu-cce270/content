@@ -43,11 +43,11 @@ If the  values in the lookup table are edited, all of the weights would be autom
 ### Is_Sorted Parameter
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
 
-|         Range         |   Category  |
+|         Range         |  Category   |
 |:---------------------:|:-----------:|
 |       wt ≤ 1000       | Ultra Light |
 |   1000 ≤ wt ≤ 2000    |    Light    |
-|  2000 ≤ wt ≤ 10,000   |    Medium   |
+|  2000 ≤ wt ≤ 10,000   |   Medium    |
 | 10,000 ≤ wt ≤ 100,000 |    Heavy    |
 |     100,000 ≤ wt      | Extra Heavy |
 
@@ -75,10 +75,10 @@ The MATCH function returns the position of an item in a range of cells. Let's fi
 
 where:
 
-| Parameter   | Explanation                                                                                     |
-|-------------|-------------------------------------------------------------------------------------------------|
-| search_key  | The value to be found in the range of cells.                                                    |
-| range       | The table of information in which data is looked up. Use a reference to a range or a range name.|
+| Parameter   | Explanation                                                                                       |
+|-------------|---------------------------------------------------------------------------------------------------|
+| search_key  | The value to be found in the range of cells.                                                      |
+| range       | The table of information in which data is looked up. Use a reference to a range or a range name.  |
 | search_type | An optional parameter that directs the function on how to find the `search_key` in the `range`.   |
 
 The search_type has three different options for an input as shown in the table below. If nothing is input for this parameter, the default value will be **1** which indicates that the values are sorted in ascending order. It will perform a range lookup and return the largest value less than or equal to the search_key. The second value is **-1** and works opposite to 1. It indicates that the values are sorted in descending order and perform a range lookup and return the smallest value greater than or equal to the search_key. The last acceptable input is **0**. This option directs the function to search for an exact match to the search_key.  

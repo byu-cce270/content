@@ -1,12 +1,23 @@
-# In-Class Exercise: Lookups, Match, and Data Validation
+# In-Class Exercise: Lookups, Match, and IF Functions
 
-We will practice using Lookups, Match, and Data Validation in two real-world scenarios. 
+---
+
+We will practice using Lookups, Match, and IF functions is several real-world scenarios. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
+You can find the in-class workbook here:
+
+In this workbook, there are 5 sheets.
+
+- **Project Budget** - Used for Exercise 1. 
+- **Materials** - Data used for Exercise 1.
+- **Employee Work Hours** - Used for Exercise 2.
+- **Concrete Price Estimator** - Used for Exercise 3.
+- **Brickmaking Business** - Used for Exercise 4.
+
+---
 
 ## Exercise 1 - Material Cost & Availability
 
-For this exercise, we will use the Material Cost & Availability starter sheet. This sheet contains two tables: one with material costs and one with material availability. We will use the VLOOKUP functions to find the correct unit cost and available quantities for each material in the Project Budget sheet. We will also use Data Validation to ensure that the material names are correct and that the material quantities are positive numbers.
-
-You can find the **Material Cost & Availability** starter sheet here: [Lookups and Data Validation Starter Sheet](https://docs.google.com/spreadsheets/d/1d05uBVdjckpeUPTVWy4s4ekUqRCkoLP78nDcNvu1nwQ/edit?gid=1293153190#gid=1293153190){:target="_blank"}
+For this exercise, we navigate to the **Project Budget** sheet. This sheet contains two tables: one with material costs and one with material availability. We will use the VLOOKUP functions to find the correct unit cost and available quantities for each material in the Project Budget sheet. We will also use Data Validation to ensure that the material names are correct and that the material quantities are positive numbers.
 
 **Instructions**
 
@@ -16,20 +27,75 @@ You can find the **Material Cost & Availability** starter sheet here: [Lookups a
   4. Apply data validation to cells **C2:C30** that ensures the material quantities are positive numbers.
   5. In column **D**, use the VLOOKUP function to find the correct unit cost for each row from the table in the **Materials** sheet.
   6. In column **E**, multiply the material quantities and unit costs to get the total price for each row.
-7. Look at the SUMIFS() formula in the cells in column **H**. This finds the total materials used in column **C** for each material type.
-  7. In column **I**, use the VLOOKUP function to find the available quantities for material from the table in the **Materials** sheet.
-  8. In column **J**, use the difference in columns **H** and **I** to find the remaining material quantities. Note that we have conditional formattting on to highlight items tha are out of stock.
+  7. Look at the SUMIFS() formula in the cells in column **H**. This finds the total materials used in column **C** for each material type.
+  8. In column **I**, use the VLOOKUP function to find the available quantities for material from the table in the **Materials** sheet.
+  9. In column **J**, use the difference in columns **H** and **I** to find the remaining material quantities. Note that we have conditional formattting on to highlight items tha are out of stock.
+
+---
 
 ## Exercise 2 - Employee Work Hours
 
-For this exercise, we will use the Employee Work Hours starter sheet. This sheet contains hours worked each month for a set of employees. Our objective is a combination of VLOOKUP and MATCH to find numbers in this table.
-
-You can find the **Employee Work Hours** starter sheet here: [Lookups and Match Starter Sheet](https://docs.google.com/spreadsheets/d/1XECW9PeMxbtcPXn8hC6sYhXjaQyJ89srCxFyrmzaRwA/edit?gid=0#gid=0){:target="_blank"}
+For this exercise, we will navigate to the **Employee Work Hours** sheet. This sheet contains hours worked each month for a set of employees. Our objective is a combination of VLOOKUP and MATCH to find numbers in this table.
 
 **Instructions**
 
 1. Note the layout of the table on the top. Each row represents a month and each column represents an employee. The numbers are hours worked each month by the employee.
 2. In the table below, use the VLOOKUP to find the hours worked in the month specified in column **B**. Embed the MATCH function inside the VLOOKUP function to determine what column to use based on the employee name in column **C**. Enter your formula in **D20:D33**.
 
+---
+
+## Exercise 3 - Concrete Price Estimator
+
+For this exercise, we will navigate to the **Concrete Price Estimator** sheet. The following exercise is based on the IF/IFS statements we have just covered.
+
+**Instructions**
+
+  1. Navigate to the Concrete Price Estimator sheet
+  2. Solve for the total cubic volume (cell E16)
+  3. Write an IFS statement in E18 to give the price per cubic foot based on the volume
+  4. Solve for the total price (cell E19)
+  5. Try adjusting the lengths of the concrete to see if it changes the price per cubic foot and total price correctly
+
+---
+
+## Exercise 4- - Concrete Price Estimator
+
+This exercise is based upon the Goal Seek extension. This exercise should be on the second sheet of this in-class workbook.
+
+## Instructions
+  1. Navigate to the Brickmaking Business sheet
+  2. Write equations to solve for the total expense, total revenue, and profit in cells B7:B9.
+  3. Use Goal Seek add-on to compute the number of bricks you need to sell to make a profit of $100K in cell B10
+
+
+
+
+
+
+
+
+
+
+---
+			
 ## Turning in/Rubric
-Turn sharing and editing on, then submit the links to Learning Suite in the feedback box for each exercise. In-class assignment scores are based on valid effort and completion.
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+|                                                |                 |
+| <div style="text-align: right">**Total**</div> |        5        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|               **Reasons for Points Lost**                | **Amount** |  
+|:--------------------------------------------------------:|:----------:|
+|                 Link shared incorrectly                  |     3      |
+|      Turned in late. 10% for every week it's late.       |            |
