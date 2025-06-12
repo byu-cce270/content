@@ -33,11 +33,11 @@ nav:
         - Reading: unit1/2_lookup_match_if/lookmatif_read.md
         - In Class: unit1/2_lookup_match_if/lookmatif_class.md
         - Homework: unit1/2_lookup_match_if/lookmatif_hw.md
-    - If Statements and Goal Seek:
+    - Pivot Tables and Goal Seek:
       - Reading: unit1/3_pivot_goalseek/pivgolseek_read.md
       - In Class: unit1/3_pivot_goalseek/pivgolseek_class.md
       - Homework: unit1/3_pivot_goalseek/pivgolseek_hw.md
-    - Pivot Table and Query Function:
+    - Graphing and Numerical Solver:
       - Reading: unit1/4_graphing_numsolver/graphsolver_read.md
       - In Class: unit1/4_graphing_numsolver/graphsolver_class.md
       - Homework: unit1/4_graphing_numsolver/graphsolver_hw.md
