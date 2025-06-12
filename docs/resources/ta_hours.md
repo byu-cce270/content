@@ -1,7 +1,3 @@
 # Office Hours
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FDenver&mode=WEEK&showPrint=0&showCalendars=0&title=CCE%20270%20TA%20Hours&src=YzdlM2UwOTYyMjU2OGZkYTk1ZTE4ZWU4YWFmNDExODI3Y2NiYjFlNTJkN2Y4ODFmZjAwMzg4MWNiOTZiNDlmMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
-
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FDenver&mode=WEEK&showPrint=0&title=CCE%20270%20TA%20Hours&showCalendars=0&src=YzdlM2UwOTYyMjU2OGZkYTk1ZTE4ZWU4YWFmNDExODI3Y2NiYjFlNTJkN2Y4ODFmZjAwMzg4MWNiOTZiNDlmMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23d50000&color=%230b8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=750&wkst=2&ctz=America%2FDenver&showPrint=0&mode=WEEK&showCalendars=0&title=CCE%20270%20TA%20Hours&src=Y2NlMTcwYnl1QGdtYWlsLmNvbQ&src=YzdlM2UwOTYyMjU2OGZkYTk1ZTE4ZWU4YWFmNDExODI3Y2NiYjFlNTJkN2Y4ODFmZjAwMzg4MWNiOTZiNDlmMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161&color=%23d50000&color=%230b8043" style="border-width:0" width="900" height="750" frameborder="0" scrolling="no"></iframe>
