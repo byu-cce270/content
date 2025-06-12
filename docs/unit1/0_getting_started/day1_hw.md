@@ -17,30 +17,32 @@ Once mounted, create a new folder for the class. Call it somthing like "CCE 270"
 ### Part 2 - Download and Upload to OneDrive
 Let's go over how to take a given file and upload it to the CCE 270 folder in your OneDrive.
 
-1. Here is the starter sheet for the assignment today: [Starter Sheet NOT RIGHT](https://docs.google.com/spreadsheets/d/1XAaFf5LP3TieXjtVyfgN5i1Zs6NSUY70smWzctdwMXs/edit?gid=61534873#gid=61534873){:target="_blank"} </br> Download and open the file.
+1. Here is the starter sheet for the assignment today: [(Starter-Workbook)-HW-A-Tour-of-Class-Resources.xlsx](%28Starter-Workbook%29-HW-A-Tour-of-Class-Resources.xlsx) </br> Download and open the file.
 2. From here, on the top left is the workbook name. Click on this, and a drop-down like this will appear:
 3. NEED SCREEN SHOTS FROM HERE
-4. Rename it something like “[your name] HW - A Tour of Class Resources”
-5. From here, take a screenshot of the OneDrive folder and paste it into your newly created Excel sheet
+4. Rename it something like “(Your-Name)-HW-A-Tour-of-Class-Resources”
 
 ---
 
-### Part 3 - Tour of in-class resources
-Answer the following questions and add the following screenshots to your Excel sheet:
+### Part 3 - Tour of Class Resources
+Answer the following questions and add the following screenshots to your Excel sheet.
 
-1. Screenshot 1: Take a screenshot of the Teaching Assistants page under the content tab
-2. Question 1: Who do you talk to if you have a problem with how an assignment is graded or if you turn in an assignment late?
-3. Question 2: What times would work with your schedule to attend TA office hours? Include at least 4 hours that you could go.
-4. Screenshot 2: Navigate to the schedule tab and take a screenshot
-5. Question 3: What are the next 5 things due for this class?
-6. Screenshot 3: Navigate to the assignment page in the grades tab. Take a screenshot
-7. Question 4: How many Projects and Exams will there be in this class?
-8. Screenshot 5: Post a message in Microsoft Teams in the Homework Help channel. Take a screenshot
-9. Question 5: What is the best method to get hold of TAs or professors :)
-10. Sign up for a time to meet with a TA:
-       [Winter 2025 TA Sign Up](https://docs.google.com/spreadsheets/d/1XAaFf5LP3TieXjtVyfgN5i1Zs6NSUY70smWzctdwMXs/edit?gid=61534873#gid=61534873){:target="_blank"}
+Questions:
+1. Who do you talk to if you have a problem with how an assignment is graded or if you turn in an assignment late?
+2. What times would work with your schedule to attend TA office hours? Include at least 4 hours that you could go.
+3. What are the next 5 things due for this class?
+4. How many Projects and Exams will there be in this class?
+5. What is the best method to get hold of TAs or professors?
+
+Screenshots:
+1. Take a screenshot of the Teaching Assistants page on our class website.
+2. Take a picture of your OneDrive folder with your Homework starter sheet in it. Make sure the screenshot shows the folder name you created in Part 1.
+3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for September 8th to September 12th.
+4. Post a message in Microsoft Teams in the Homework Help channel. Take a screenshot.
+
+Sign up for a time to meet with a TA: [Winter 2025 TA Sign Up](https://docs.google.com/spreadsheets/d/1XAaFf5LP3TieXjtVyfgN5i1Zs6NSUY70smWzctdwMXs/edit?gid=61534873#gid=61534873){:target="_blank"}
    </br> Once you meet with a TA, they will give you the appropriate amount of points in Learning Suite. 
-   Meeting will be from January 13th, 2025 to January 17th, 2025. After the 17th, you will lose 3 points for not meeting with a TA until you complete this assignment. 
+Meetings will be from September 8th, 2025 to September 12th, 2025. After the 12th, you will lose 3 points for not meeting with a TA until you complete this assignment. 
 
 ---
 
@@ -50,22 +52,17 @@ For this class, **you will only turn in the links to your Excel files**. We will
 1. On the top right, click the share button --> share --> settings (little cog wheel next to the send arrow)
 2. From here, we want your Excel sheet so that ANYONE with this link can edit. This will allow us to access the link you turn in. To do this, click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. Your settings should look like this for EVERY Excel assignment that you turn in:
 [INSERT PICTURE HERE]
-4. Copy the link, then turn it into learning suite in the feedback box.
+3. Copy the link, then turn it into learning suite in the feedback box.
 
-> [!IMPORTANT]  
-> Make sure that your Excel file is turned in properly. You WILL be docked points if not shared so anyone with a link can edit, OR if you turn in an Excel file instead of a link :)
+
+>**IMPORTANT** - Make sure that your Excel file is turned in properly. You WILL be docked points if not shared so anyone with a link can edit, OR if you turn in an Excel file instead of a link to the file.
+
 
 ---
 
-## Turning in/Rubric
+## Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
-
-1. On the top right, click the share button --> share --> settings
-2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
-
-**Rubric:**
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable.
 
 |                       Item                       | Points Possible |
 |:------------------------------------------------:|:---------------:|
