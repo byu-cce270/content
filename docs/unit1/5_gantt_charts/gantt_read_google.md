@@ -10,7 +10,7 @@ the start and finish dates of the different tasks that comprise the project. The
 
 ![gantt_chart.png](images/gantt_chart.png)
 
-While there is dedicated software for creating Gantt charts, you can also create them in Excel. This is a useful skill to have as it can be used to create simple Gantt charts for small projects. This is also a good comprehensive exercise to use some of the skills we have learned in Excel. 
+While there is dedicated software for creating Gantt charts, you can also create them in Google Sheets. This is a useful skill to have as it can be used to create simple Gantt charts for small projects. This is also a good comprehensive exercise to use some of the skills we have learned in Google Sheets. 
 
 !!!Note
       CFM students will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
@@ -19,11 +19,11 @@ While there is dedicated software for creating Gantt charts, you can also create
 
 This exercise is aimed at recreating tha Gantt Chart shown in the following video. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing. Don't worry about remembering all of the details - we will go over them in class. The objective of this video is to give you a general idea of how we will be creating our Gantt chart and how they work.
 
-<iframe width="900" height="700" src="https://www.youtube.com/watch?v=un8j6QqpYa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="700" src="https://www.youtube.com/embed/8eKk0M2zGIk?si=hMLQdiO63ycpidaf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 
-## Gantt Chart Creation in Excel
-We will learn to create Gantt charts in Excel. This involves several distinct steps
+## Gantt Chart Creation in Google Sheets
+We will learn to create Gantt charts in Google Sheets. This involves several distinct steps
 
 * Identify the start date of each task
 * Identify the duration or end of each task. One of these can be calculated from the other.
@@ -33,70 +33,87 @@ We will learn to create Gantt charts in Excel. This involves several distinct st
 
 ## Formulas Used in Gantt Chart Creation
 
-Our in-class exercise will involve creating a Gantt chart in Excel. To prepare for that exercise, we will introduce some of the functions that will be used in the exercise. If you want more information or are confused on any of the functions, click on the title of the function and it will take you to a webstie with a more in-depth explanation.
+Our in-class exercise will involve creating a Gantt chart in Google Sheets. To prepare for that exercise, we will introduce some of the functions that will be used in the exercise. If you want more information or are confused on any of the functions, click on the title of the function and it will take you to a webstie with a more in-depth explanation.
 
-### [WEEKDAY()](https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a){:target="_blank"}
+### [WEEKDAY()](https://support.google.com/docs/answer/3092985?hl=en){:target="_blank"}
 This formula returns a number representing the day of the week of the day provided. 
 
 **Syntax**
 
-      WEEKDAY(serial_number,[return_type])
+      WEEKDAY(date, [type])
 
-  * serial_number - A sequential number that represents the date of the day you are trying to find. Dates should be entered by using the DATE function, or as results of other formulas or functions.
-  * return_type - [OPTIONAL - 1 by default] - A number that determines the type of return value. You can look at the documentation for WEEKDAY() to see the different return types. The default is 1, which means that the week starts on Sunday and ends on Saturday. If you want the week to start on Monday, you can use 2 as the return type.
+  * date - the date for which to determine the day of the week
+  * type - [OPTIONAL - 1 by default] - a number that indicates which numbering system to use to represent weekdays. If type is 1, days are counted from Sunday; the value of Sunday is 1 and the value of Saturday is 7. If type is 2, days are counted from Monday; the value of Monday is 1 and the value of Sunday is 7.
 
 **Usage** 
 
-We will use this to convert a date into a number representing the day of the week. We will do some math so that the week always starts on a Monday.
+We will use this to convert a date into a number representing the day of the week. We will do some math to that 
+that the week always starts on a Monday.
 
-### [TEXT()](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c){:target="_blank"}
+### [TEXT()](https://support.google.com/docs/answer/3094139?hl=en&sjid=3583168966296803426-NC){:target="_blank"}
 This formula converts a number into text according to a specified format.
 
 **Syntax**
 
-      TEXT(Value you want to format, "Format code you want to apply")
+      TEXT(number, format)
 
   * number - the number, date, or time that needs formatted
-  * format - the pattern by which to format the number, must be enclosed in quotation marks. You can look up the different format codes in the documentation for TEXT().
+  * format - the pattern by which to format the number, must be enclosed in quotation marks.
 
 **Usage**
 
 We will use TEXT() to convert the number returned by WEEKDAY() into a text representation of the day of the week. So 
-a "3" becomes "Mon" for a week that starts on Saturday which is the default in Excel.
+a "3" becomes "Mon" for a week that starts on Saturday which is the default in Google Sheets.
 
-### [LEFT()](https://support.microsoft.com/en-us/office/left-function-9203d2d2-7960-479b-84c6-1ea52b99640c){:target="_blank"}
-LEFT returns the first character or characters in a text string, based on the number of characters you specify.
+### [LEFT()](https://support.google.com/docs/answer/3094079?hl=en){:target="_blank"}
+This formula returns a specified number of characters from the beginning of a specified string.
 
 **Syntax**
 
-      LEFT(text, [num_chars])
+      LEFT(string, [number_of_characters])
 
-  * text -  The text string that contains the characters you want to extract.
-  * num_chars - [OPTIONAL - 1 by default] - Specifies the number of characters you want LEFT to extract. Num_chars must be greater than or equal to zero. If num_chars is greater than the length of text, LEFT returns all of text.
+  * string - the string from which the left portion will be returned.
+  * number_of_characters - [OPTIONAL - 1 by default] - the number of characters you want to return from the left side of the string
 
 **Usage**
 
 We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart  
 using only single letters for the days of the week.
 
-### [IFERROR()](https://support.microsoft.com/en-us/office/iferror-function-c526fd07-caeb-47b8-8bb6-63f3e417f611){:target="blank"}
+### [IFERROR()](https://support.google.com/docs/answer/3093304?hl=en&sjid=3583168966296803426-NC){:target="blank"}
 This formula returns the first argument if there is not an error value. If an error value is present, the formula will return the second argument if present, or a blank if the second argument is absent.
 
 **Syntax**
 
-      IFERROR(value, value_if_error)
+      IFERROR(value, [value_if_error])
 
   * value - the value to return if value itself is not an error
   * value_if_error - [OPTIONAL - blank by default] - the value the function returns if value is an error
 
 **Usage**
 
-This allows us to return a blank cell if an error is computed in the cell. This is useful for any formula that may return an error. If the cell is blank, we want to return nothing instead of an error.
+This allows us to return a blank cell if an error is computed in the cell. This is useful for the SPARKLINE() 
+function we will use later.
+
+### [SPARKLINE()](https://support.google.com/docs/answer/3093289?hl=en&sjid=3583168966296803426-NC){:target="_blank"}
+This formula creates a miniature chart contained within a single cell.
+
+**Syntax**
+
+      SPARKLINE(data, [options])
+
+  * data - the range or array containing the data to plot
+  * options - [OPTIONAL] - a range or array of optional settings and associated values used to customize the chart. For more information on the options argument, view the sparkline help page linked above.
+
+**Usage**
+
+On a more advanced Gantt chart we can have a column that is a sparkline that shows the progress of a task. This is a simple way to visualize the progress of a task in a Gantt chart.
+
 
 # Pre-Class Quiz Challenge
 Here is a link for the pre-class starter sheet: [Pre-Class Challenge: Gantt Charts and Project Scheduling](https://docs.google.com/spreadsheets/d/1kWWKcEMHJBMgLYg-by6k-AcVT_QcRzi-yzFtLiWq2JI/edit?usp=sharing){:target="_blank"}
 
-This exercise will help you practice the functions we will use in class to create a Gantt chart in Excel.
+This exercise will help you practice the functions we will use in class to create a Gantt chart in Google Sheets.
 
 
 ## Instructions
