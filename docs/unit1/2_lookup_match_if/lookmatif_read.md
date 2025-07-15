@@ -207,4 +207,6 @@ Make the is_sorted false and the search type 0
 
 </details>
 
+Hint 4: <b>VLOOKUP</b>
+
 <br>
