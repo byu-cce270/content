@@ -209,4 +209,11 @@ Make the is_sorted false and the search type 0
 
 Hint 4: <b>VLOOKUP</b>
 
+<details>
+<summary><b>Hint 4: Test</b></summary>
+  
+This is a test
+
+</details>
+
 <br>
