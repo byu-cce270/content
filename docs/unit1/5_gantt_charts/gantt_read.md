@@ -16,16 +16,17 @@ While there is dedicated software for creating Gantt charts, you can also create
       CFM students will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
 
 ## Video Overview
+<p>Please watch the following video as part of your assignment:</p>
+<p>
+  <a href="https://www.youtube.com/watch?v=un8j6QqpYa0" target="_blank">
+    📺 Watch on YouTube
+  </a>
+</p>
+<blockquote>
+  This video is for educational use and to help you create Gantt charts for your own projects. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing. Don't worry about remembering all of the details - we will go over them in class. The objective of this video is to give you a general idea of how we will be creating our Gantt chart and how they work.
+</blockquote>
 
-This exercise is aimed at recreating tha Gantt Chart shown in the following video. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing. Don't worry about remembering all of the details - we will go over them in class. The objective of this video is to give you a general idea of how we will be creating our Gantt chart and how they work.
 
-## Watch this video
-
-<iframe width="900" height="700" 
-src="https://www.youtube.com/watch?v=un8j6QqpYa0" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
 
 ## Gantt Chart Creation in Excel
 We will learn to create Gantt charts in Excel. This involves several distinct steps
