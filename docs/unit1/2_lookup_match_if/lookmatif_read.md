@@ -206,14 +206,4 @@ If you are getting a lot of N/As maybe your is_sorted on your Vlookup is not cor
 Make the is_sorted false and the search type 0
 
 </details>
-
-Hint 4: <b>VLOOKUP</b>
-
-<details>
-<summary><b>Hint 4: Test</b></summary>
-  
-This is a test
-
-</details>
-
 <br>
