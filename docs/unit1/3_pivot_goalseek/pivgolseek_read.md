@@ -76,20 +76,6 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 
 There are many cases when performing computations in Excel where we need to solve an equation that is either difficult or impossible to solve directly. Therefore, we need to solve it using some sort of iterative process. This is often done using a trial-and-error approach where we enter our formula and then experiment with different input values to the formula until the formula returns the desired output. **Goal Seek** is an add-on plugin for Google Sheets that automates this process. It is a powerful tool that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. One example of this is often found in sales when determining how many units need to be sold to break even or meet a certain quota.
 
-### Installing Goal Seek
-
-Installing Goal Seek is fairly simple. Go to the top ribbon and find **Extensions > Add-ons > Get add-ons** and a window for Google's Workshop Marketplace should pop up. Once the window opens, type into the search bar **"Goal Seek"**. The first option for Google's Goal Seek should appear like the picture down below. 
-
-![GoalSeekIcon.png](images/GoalSeekIcon.png)
-
-After clicking on it, a page should open up with a blue button that says **"Install"**. 
-
-![GoalSeekInstall.png](images/GoalSeekInstall.png)
-
-Press the install button and another tab will open up regarding which Google account you want to use. Select which account you prefer to use. Google will ask permission to utilize this account with two separate pop-ups; click **"Continue"** and then **"Allow"**. 
-
-Goal seek should now be installed and ready to use!
-
 ### Using Goal Seek
 
 To use Goal Seek, you will find it on the top ribbon, **Extensions > Add-ons > Goal Seek > Open**
