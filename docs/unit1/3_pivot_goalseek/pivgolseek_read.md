@@ -78,16 +78,18 @@ There are many cases when performing computations in Excel where we need to solv
 
 ### Using Goal Seek
 
-To use Goal Seek, you will find it on the top ribbon, **Extensions > Add-ons > Goal Seek > Open**
+To use Goal Seek, head to **Data** > **What-If Analysis** > **Goal Seek.** This will open the Goal Seek dialog box, 
+where you can enter your desired values and the cells you want to change.
 
-Goal seek takes three steps to use after your sheet is set up:
-
+Goal Seek has three basic components: 
 - **Set Cell**
 - **To Value**
 - **By Changing Cell**
 
 ### Example Problem 
-Let's use the example of a contractor wanting to find what he would have to charge to make a profit of **$1250**, by building his friend a 12' x 12' deck. Given the cost of materials ($6000) and the $22/hr of pay for each employee, we can calculate the project cost. Using goal seek, we can allow the computer to do the rest of the work for us.
+Let's use the example of a contractor wanting to find what he would have to charge to make a profit of **\$1250** by 
+building his friend a 12' x 12' deck. Given the cost of materials (\$6000) and the $22/hr of pay for each employee, we 
+can calculate the project cost. Using Goal Seek, we can allow the computer to do the rest of the work for us.
 
 First, select the cell you want to set by 1) selecting the cell (B11) and 2) clicking the **Set Cell** grid icon on the goal seek tab. 
 
