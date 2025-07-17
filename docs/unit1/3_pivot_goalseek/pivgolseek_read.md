@@ -2,7 +2,7 @@
 
 ---
 ## Data Validation
-Data validation is a feature in Google Sheets that allows you to control the type of data entered into a cell. This 
+Data validation is a feature in Excel that allows you to control the type of data entered into a cell. This 
 can be useful to ensure that the data entered into a cell is appropriate for the context of how it will be used. For 
 example, you may have a formula that only works with positive values. You can use data validation to ensure that 
 the cell(s) used as input to the formula only accepts positive values. 
@@ -12,7 +12,7 @@ data as data
 validation controls the data that can be entered into a cell while filtering data changes the range of data you see.
 Data validation can help prevent errors in your data and make it easier to work with.  
 
-Let's go over how to add data validation to your data in Google Sheets:
+Let's go over how to add data validation to your data in Excel:
 
 1. Select the range of cells you want to add data validation to.<br>
 2. Click on **Data | Data validation**.<br>
@@ -20,27 +20,26 @@ Let's go over how to add data validation to your data in Google Sheets:
 4. You can also choose the output of the data validation you want to apply to the cells. For example, you can choose to show a warning message if the data entered does not meet the criteria or to reject the data altogether.<br>
 5. Once you have set up the criteria and output options, click on Save to apply the data validation to the selected range of cells.
 
-#### Specific Examples
-
 **Dropdown**  
 
-This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. To do this, follow the same steps as above and select **Dropdown**. You can then enter the items you want to include in the drop-down list, and choose what color you want the cell to be if the data is selected.
-In the example below, the data validation is set up to allow only the values in the drop-down list to be entered into the cells, each having a color.
+This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For 
+example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. 
+To do this, follow the same steps as above and select **List**. You can then enter the items you want to include in 
+the drop-down list.
+In the example below, the data validation is set up to allow only the values in the drop-down list to be entered 
+into the cells.
 
-![Screenshot 2025-01-08 175658](https://github.com/user-attachments/assets/d1015fee-aae6-4d32-8cf0-7b30e53eca1d)
+![datavdropdown.png](datavdropdown.png)
 
-![Screenshot 2025-01-08 175727](https://github.com/user-attachments/assets/6800e356-c21d-4763-b656-02244eb5bebf)
-
-If you select the **Dropdown (from a range)** option, you can select a range of cells that contain the items you want to include in the drop-down list. This is useful when you have a long list of items that you want to include in the drop-down list.
+If you're wanting to create a drop-down list from a range of cells, you can select the range of cells that contain the items you want to include in the drop-down list. This is useful when you have a long list of items that you want to include in the drop-down list.
 
 **Dates**  
 
 This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fit the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
 
-![Screenshot 2025-01-08 182405](https://github.com/user-attachments/assets/73cda15f-3f37-4f4f-a6ca-bbe29bc104b4)
+![datavdates.png](datavdates.png)
 
-
-There are many other options for data validation. Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
+There are many other options for data validation. Here is an extra resource for further examples of Data Validation: [Data Validation](https://www.geeksforgeeks.org/excel/what-is-data-validation-in-excel/){:target="_blank"}
 
 ---
 
@@ -118,7 +117,10 @@ Below are some links to additional readings on pivot tables.
 
 ## Goal Seek
 
-There are many cases when performing computations in Excel where we need to solve an equation that is either difficult or impossible to solve directly. Therefore, we need to solve it using some sort of iterative process. This is often done using a trial-and-error approach where we enter our formula and then experiment with different input values to the formula until the formula returns the desired output. **Goal Seek** is an add-on plugin for Google Sheets that automates this process. It is a powerful tool that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. One example of this is often found in sales when determining how many units need to be sold to break even or meet a certain quota.
+In many Excel computations, we encounter equations that are too complex or impractical to solve directly. Instead, 
+we often rely on an iterative, trial-and-error approach—adjusting input values until the formula produces the desired result. **Goal Seek** is a function in Excel that automates this process. It is a 
+powerful tool 
+that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. One example of this is often found in sales when determining how many units need to be sold to break even or meet a certain quota.
 
 ### Using Goal Seek
 
