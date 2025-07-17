@@ -3,6 +3,19 @@
 
 ---
 
+Excel has  there are many ways to analyze and display data. For this topic, you will focus on Conditional Formatting, Filtering Data, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, you will go over what each of these tools are and how to use them.
+
+Before class, you will learn about a few types of IF Statements: IF and IFS. You will also learn about Goal Seek.
+
+#### Things to look out for and think about!
+- Look for the differences in the function syntax between the VLOOKUP and MATCH.
+- Think about how using Data Validations can help minimize errors in your formulas
+- Watch for white space (e.g., spaces) either before or after your match text, it can cause problems
+
+---
+
+## VLOOKUP/HLOOKUP Functions
+
 ### Indexing a List with VLOOKUP
 When writing formulas, we often encounter cases where one or more of the inputs to the function will depend on the value of another input. More specifically, we need to use one of the inputs to lookup the other input from a table. This can be easily accomplished using the VLOOKUP function. 
 
@@ -67,7 +80,10 @@ It is important to note that the is_sorted argument to the VLOOKUP function is o
 
 Here is an extra resource for further information on Vlookup: [VLOOKUP](https://www.benlcollins.com/spreadsheets/vlookup-function/){:target="_blank"}
 
-### MATCH Function
+
+---
+
+## MATCH Function
 
 The MATCH function returns the position of an item in a range of cells. Let's first look at the syntax of the function.
 
@@ -109,8 +125,76 @@ Note that we are using a range lookup on elevation so the last argument to VLOOK
 
 Here is an extra resource for further information on Match: [MATCH](https://blog.sheetgo.com/google-sheets-formulas/match-formula-google-sheets/){:target="_blank"}
 
-### Data Validation
 
+---
+
+## IF/IFS Functions
+
+### IF Statements
+
+**IF Statements** are a function within Google Sheets that can compare two values and determine if they are true or false. This type of two-outcome expression in programming is known as a boolean.
+
+#### Syntax
+
+The syntax for an IF statement is as follows:
+
+    =IF(logical_expression, value_if_true, value_if_false)
+
+An IF statement has three arguments:
+
+- **logical_expression**: This is what is known as the conditional statement. This function can compare whether a number is greater than (**>**), less than (**<**), or if a number or text is equal to (**=**) in the given condition
+- **value_if_true**: This is a placeholder for what will be returned if the given condition is found to be true.
+- **value_if_false**: This is a placeholder for what will be returned if the given condition is found to be false.
+
+#### Example Problem - IF Statement
+
+Let's look at a simple example of an IF statement using strings. Here are a few fictional locations that have different types of material their driveways are made out of. Using an IF statement, we can quickly differentiate for specifically a concrete driveway.
+
+![readingex1.png](images/readingex1.png)
+
+We can write a single statement in cell C2, drag it down, and watch it populate with either a "Yes" or a "No" depending on the conditional statement we gave the function.
+
+![readingex2.png](images/readingex2.png)
+
+One more example is using a number. Using the length of a driveway, we can find which of the driveways are longer than the given distance of 75 ft.
+
+![readingex3.png](images/readingex3.png)
+
+Again, we can see that we can quickly populate the rest of the table by dragging the corner of the cell down.
+
+![readingex4.png](images/readingex4.png)
+
+---
+
+### IFS Statements
+
+**IFS Statements** are an even more powerful version of an IF statement that can allow for multiple conditional statements to take place within one function. This type of function allows for easy categorization by testing a given number or string against one found in a table
+
+#### Syntax
+
+The syntax for an IFS statement is as follows:
+
+    =IFS(logical_expression1, value_if_true1, [logical_expression2, value_if_true2], [logical_expression3, ...)
+
+An IFS statement only technically requires two arguments, both of which are nearly the same as the IF statement. However, there can be any number of logical expressions within one IFS statement.
+
+**Note**: More than one condition can be true so the function will always return the value for the first condition that is found true.
+
+#### Example Problem - IFS Statement
+
+Using the same premise as the IF statement, we can utilize the table we used before. This time around, we will categorize the different lengths of driveways into three tiers: short, medium, and long.
+
+![readingex5fixed.png](images/readingex5fixed.png)
+
+**Note**: The third condition ```<=50``` includes ```=``` so that 50 is included in "less than or **equal** to 50
+
+Dragging them down, we can see the final result. Now each driveway is nicely categorized by its length.
+
+![readingex6.png](images/readingex6.png)
+
+---
+
+## Data Validation
 Data validation is a feature in Google Sheets that allows you to control the type of data entered into a cell. This 
 can be useful to ensure that the data entered into a cell is appropriate for the context of how it will be used. For 
 example, you may have a formula that only works with positive values. You can can use data validation to ensure that 
@@ -151,17 +235,10 @@ This is useful when you want to limit the data that can be entered into a cell t
 
 There are many other options for data validation. Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
 
-## Things to look out for and think about
-- Look for the differences in the function syntax between the VLOOKUP and MATCH.
-- Think about how using Data Validations can help minimize errors in your formulas
-- Watch for white space (e.g., spaces) either before or after your match text, it can cause problems
-
-
 ---
 
-# Pre-Class Quiz Challenge
+## Pre-Class Quiz Challenge
 
-## Instructions
 1. First make a copy of the starter sheet here: [Starter Sheet Pre - Lookups, Match, Data Validation](https://docs.google.com/spreadsheets/d/1uMdVl5TzfQAnsSvh1fv3kuw2ci_jPpJNpaVRDbW3EH8/edit?usp=sharing){:target="_blank"}
 2. Using Data Validations, add dropdowns in cells B2 to B25 for all the different types of services. (Tree Removal, 
    Sidewalk Replacement, Siding Replacement, Gutter Cleaning, Gutter Replacement, Grass Removal, and Grass 
@@ -207,3 +284,27 @@ Make the is_sorted false and the search type 0
 
 </details>
 <br>
+
+---
+
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+|                                                |                 |
+| <div style="text-align: right">**Total**</div> |        5        |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|               **Reasons for Points Lost**                | **Amount** |  
+|:--------------------------------------------------------:|:----------:|
+|                 Link shared incorrectly                  |     3      |
+|      Turned in late. 10% for every week it's late.       |            |
