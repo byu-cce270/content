@@ -72,6 +72,71 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 
 ---
 
+# Pivot Tables
+
+**Pivot Tables** are used to summarize and analyze large sets of data in more meaningful ways. They can be used to narrow down data sets and see relationships between data points among other things. Pivot tables allow us to summarize multiple columns and rows of data at a time.
+
+For example, here is a data set showing sales data for a set of regional sales managers:
+
+The data set shows the sales data for a set of regional sales managers. The data set includes region, the product, 
+the name of the sales rep, the number of units sold, and the total sales. Now suppose we want to create a summary of 
+the units sold and the total sales in each region, organized by sales rep. We could manually extract that 
+information from the table or we could use some combination of COUNTIF and SUMIF to accomplish this. Or we could 
+find that information in a few clicks using a pivot table. The following steps show how to create a pivot table in 
+Excel. If you would like to follow along, you can use the following data set:
+
+[Regional Sales Data](https://docs.google.com/spreadsheets/d/1HygXNHTQ9lTOVWQUdVSqpdcsOC05I2fCadVpGEYwrhs/edit?gid=51987489#gid=51987489){:target="_blank"}
+
+
+## Creating Pivot Table
+
+1. First, we select the data set. In this case, we select the cells in the range A1:F31.
+2. Next, we select the Insert|Pivot table option from the menu. This will bring up the following dialog box:
+
+![creatingpivottableexcel.png](images/creatingpivottableexcel.png)
+
+We can either choose to put the pivot table in a new sheet or in the existing sheet. In this case, we will put the 
+pivot table in an existing sheet named "summary". We will click on the Create button. This will create a new sheet with 
+the 
+pivot table. The pivot table will look like this:
+
+- empty pivot table
+
+## Editing the Pivot Table
+
+Now we need to decide what data we want to summarize in the pivot table. We can do this using the Pivot table editor 
+on the right. The editor will look like this:
+
+- pivot table editor
+
+3. Go to the editor and click on the **Add** button in the **Rows** section. Select the **Region** option. 
+4. Click on the **Add** button in the **Rows** section. This time, select the **Sales Rep** option.
+
+At this point you should see a list of regions and the sales reps for each region in the pivot table. This data set 
+is a little odd in that the same sales rep is listed in multiple regions, so apparently the sales reps are not 
+limited to work in a single region. Now we need to add the data that we want to summarize. 
+
+5. Click on the **Add** button in the **Values** section. Select the **Units Sold** option. Notice that the "Summarize by" option is set to "SUM". This means that the pivot table will show the sum of the units sold for each sales rep in each region.
+6. Click on the **Add** button in the **Values** section. Select the **Total Sales** option. Once agin, the default 
+   is to summarize by sum. You can also summarize by min, max, average, count, and other options.
+
+At this point, the pivot table should look like this:
+
+![pivot_table2.png](pivot_images/pivot_table2.png)
+
+Now we can see the total units sold and total sales for each sales rep in each region. As you can see, it only takes a few clicks to create a pivot table that summarizes a large data set in a meaningful 
+way. Pivot tables are fun!
+
+## Additional Readings
+
+Below are some links to additional readings on pivot tables.
+
+* [Google Sheets - Pivot Tables](https://support.google.com/docs/answer/1272900?hl=en-GB&co=GENIE.Platform%3DDesktop){:target="_blank"}
+* [How to Use Pivot Tables in Google Sheets](https://www.howtogeek.com/407943/what-are-pivot-tables-in-google-sheets-and-how-do-i-use-them/){:target="_blank"}
+* [Pivot Tables in Google Sheets](https://www.benlcollins.com/spreadsheets/pivot-tables-google-sheets/){:target="_blank"}
+
+---
+
 ## Goal Seek
 
 There are many cases when performing computations in Excel where we need to solve an equation that is either difficult or impossible to solve directly. Therefore, we need to solve it using some sort of iterative process. This is often done using a trial-and-error approach where we enter our formula and then experiment with different input values to the formula until the formula returns the desired output. **Goal Seek** is an add-on plugin for Google Sheets that automates this process. It is a powerful tool that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. One example of this is often found in sales when determining how many units need to be sold to break even or meet a certain quota.
