@@ -95,7 +95,7 @@ First, select the cell you want to set by 1) selecting the cell (B11) and 2) cli
 
 **Hint**: This cell should **almost always** be the cell that contains your formula.
 
-![GoalSeekExcelEx1.jpg](images/GoalSeekExcelEx1.jpg)
+![GoalSeekExcel1.png](images/GoalSeekExcel1.png)
 
 Then, set the **To Value** to whatever value you are trying to find. In our case, this number would be 1250.
 
