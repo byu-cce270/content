@@ -1,4 +1,46 @@
-#  Reading: Pivot Tables and Goal Seek
+#  Reading: Data Validation, Pivot Tables & Goal Seek
+
+---
+## Data Validation
+Data validation is a feature in Google Sheets that allows you to control the type of data entered into a cell. This 
+can be useful to ensure that the data entered into a cell is appropriate for the context of how it will be used. For 
+example, you may have a formula that only works with positive values. You can use data validation to ensure that 
+the cell(s) used as input to the formula only accepts positive values. 
+This is different from 
+filtering 
+data as data 
+validation controls the data that can be entered into a cell while filtering data changes the range of data you see.
+Data validation can help prevent errors in your data and make it easier to work with.  
+
+Let's go over how to add data validation to your data in Google Sheets:
+
+1. Select the range of cells you want to add data validation to.<br>
+2. Click on **Data | Data validation**.<br>
+3. In the data validation criteria box, you can set up the criteria for the data that can be entered into the cells. For example, you can choose to allow only numbers, text, dates, or a list of items.<br>
+4. You can also choose the output of the data validation you want to apply to the cells. For example, you can choose to show a warning message if the data entered does not meet the criteria or to reject the data altogether.<br>
+5. Once you have set up the criteria and output options, click on Save to apply the data validation to the selected range of cells.
+
+#### Specific Examples
+
+**Dropdown**  
+
+This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. To do this, follow the same steps as above and select **Dropdown**. You can then enter the items you want to include in the drop-down list, and choose what color you want the cell to be if the data is selected.
+In the example below, the data validation is set up to allow only the values in the drop-down list to be entered into the cells, each having a color.
+
+![Screenshot 2025-01-08 175658](https://github.com/user-attachments/assets/d1015fee-aae6-4d32-8cf0-7b30e53eca1d)
+
+![Screenshot 2025-01-08 175727](https://github.com/user-attachments/assets/6800e356-c21d-4763-b656-02244eb5bebf)
+
+If you select the **Dropdown (from a range)** option, you can select a range of cells that contain the items you want to include in the drop-down list. This is useful when you have a long list of items that you want to include in the drop-down list.
+
+**Dates**  
+
+This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fit the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
+
+![Screenshot 2025-01-08 182405](https://github.com/user-attachments/assets/73cda15f-3f37-4f4f-a6ca-bbe29bc104b4)
+
+
+There are many other options for data validation. Here is an extra resource for further examples of Data Validation: [Data Validation](https://unito.io/blog/data-validation-google-sheets/){:target="_blank"}
 
 ---
 
@@ -16,7 +58,6 @@ the units sold and the total sales in each region, organized by sales rep. We co
 information from the table, or we could use some combination of COUNTIF and SUMIF to accomplish this. Or we could 
 find that information in a few clicks using a pivot table. The following steps show how to create a pivot table in 
 Excel. 
-
 
 ## Creating the Pivot Table
 
