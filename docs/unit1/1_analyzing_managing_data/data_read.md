@@ -129,6 +129,7 @@ Throughout this unit, you will learn new and useful functions. For this topic, y
 
 You can find more functions at W3Schools. You can also find a list of all functions in Excel by going to the Formulas tab in the ribbon and selecting "Insert Function". This will open a dialog box with a list of all the functions available in Excel. You can also search for specific functions by typing in the search box at the top of the dialog box. Within this dialog box, you can also find the function arguments and a description of what the function does. This is a great way to learn about new functions and how to use them. This can also be pulled by clicking on the function name in the formula bar.
 
+---
 
 ## Pre-Class Quiz Challenge
 
