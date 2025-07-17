@@ -95,13 +95,13 @@ First, select the cell you want to set by 1) selecting the cell (B11) and 2) cli
 
 **Hint**: This cell should **almost always** be the cell that contains your formula.
 
-![GoalSeekex.png](images/GoalSeekex.png)
+![GoalSeekExcelEx1.jpg](images/GoalSeekExcelEx1.jpg)
 
 Then, set the **To Value** to whatever value you are trying to find. In our case, this number would be 1250.
 
 Finally, select the cell that would need to change to evaluate the final part of the question. In this instance, this would be cell B9.
 
-![GoalSeekex2.png](images/GoalSeekex2.png)
+![GoakSeekExcel2.png](images/GoakSeekExcel2.png)
 
 When all three inputs are filled on the Goal Seek tab, the Solve button will light up blue. If you press the button, the computer should start jumping between values trying to find the solution to what gets a profit of $1250.
 
