@@ -15,7 +15,7 @@ You can find the Concrete Price Estimator/Brickmaking Business starter sheet her
 ---
 # Exercise 2 - Brickmaking Business
 
-This exercise is based upon the Goal Seek extension. This exercise should be on the second sheet of this in-class workbook.
+This exercise should be on the second sheet of this in-class workbook.
 
 ## Instructions
   1. Navigate to the Brickmaking Business sheet
