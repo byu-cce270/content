@@ -23,12 +23,12 @@
       | Temperature (°F)                   | E5   | Tf   |
       | Temperature (°C)                   | E6   | Tc   |
       | Meniscus correction factor         | E7   | Fm   |
-      | Zero correction Factor		           | E8   | Fz   |
+      | Zero correction Factor	            | E8   | Fz   |
       | Temperature correction factor      | E9   | Ft   |
       | Stokes' law coefficient            | E10  | A    |
       | Specific gravity correction factor | E11  | Gc   |
 
-**Hint**: To name a cell, click on the cell, then click on the name box in the top left corner of the screen and type the name you want to give the cell. Press Enter to save the name. You can then reference the cell by its name in formulas.
+**Hint**: To name a cell, click on the cell, then click on the name box in the top left corner of the screen, it should have the cell reference list. Type the name you want to give the cell. Press Enter to save the name. You can then reference the cell by its name in formulas.
 
 3. Use the equations below to calculate the following cell values:
     
@@ -64,9 +64,10 @@
 
 1. Navigate to the Soil Services sheet
 2. In column D, use the VLOOKUP and MATCH functions to find the correct price per test for each row (Use the blue 
-   table in the Tables sheet). 
+   table in the Tables sheet)
 3. In column E, multiply the test quantities and prices per test to get the total price for each row
-4. In cell E33, sum the total prices in column E - if you did it correctly, your total should be $15,202
+4. In cell E35, sum the total prices in column E - if you did it correctly, your total should be $16,424
+5. Use the Median and Average functions to find the median and average of the total prices in column E. Place the median in cell E33 and the average in cell E36
 
 ---
 
