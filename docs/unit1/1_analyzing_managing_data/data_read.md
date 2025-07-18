@@ -111,7 +111,7 @@ For more general help on filtering data in Excel, check out the following websit
 ---
 
 ## Working with Functions  
-In Google Sheets, functions help users to analyze, manage, and compute data. A function is set up in three parts:
+In Excel, functions help users to analyze, manage, and compute data. A function is set up in three parts:
 
 ![Screenshot 2025-01-08 221445](https://github.com/user-attachments/assets/76daef2b-be63-4f76-8bcc-cb70ebb098dc)
 
@@ -133,7 +133,7 @@ You can find more functions at W3Schools. You can also find a list of all functi
 
 ## Pre-Class Quiz Challenge
 
-1. First, make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx)
+1. First, make a copy of the starter sheet here: 
    </br> The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
    <br> Hint: Use conditional formatting
