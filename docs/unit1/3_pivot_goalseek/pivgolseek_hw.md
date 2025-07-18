@@ -1,11 +1,13 @@
-#  HW: IF Statements and Goal Seek
+#  HW: Goal Seek & Pivot Tables
+
+*change it so that you do data validation that youre not allowed to enter negative numbers/the load has to be a certain weight
 
 **Purpose:** Learn how to use external/API tools to solve complex equations
 
 ## Instructions
 1. First make a copy of the starter sheet here:
    [Starter Sheet- HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/d/1sIy8cmeFlV-ywMx1ixMTT4DmRqJgFFUSpKn-a7KTaow/edit?gid=1350239100#gid=1350239100){:target="_blank"}
-2. Rename it something like “[Your Name] HW 1.4 - IF Statements and Goal Seek”
+2. Rename it something like “[Your Name] HW 1.4 - Pivot Tables and Goal Seek”
 
 ---
 

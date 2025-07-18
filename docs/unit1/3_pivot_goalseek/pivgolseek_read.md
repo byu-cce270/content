@@ -193,3 +193,8 @@ Note that this is a slightly modified version the regional sales data set that w
 1. Use the Pivot Table to find how many units of Widget A Bob Johnson has sold. 
 2. Then, use **Goal Seek** to calculate how many units he would have needed to sell to make **\$6000** in Total Sales. Assume the unit price is $500.
 
+**Data Validation:**
+
+1. In the **data_validation** sheet, select the range of cells A2:A10.
+2. Add data validation to the selected range to allow only whole numbers between 1 and 100.
+
