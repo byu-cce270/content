@@ -4,7 +4,8 @@ This exercise should be on the first sheet of this in-class workbook.
 ## Instructions 
 1. Navigate to the Data Validation sheet
 2. Make a Data Validation parameter in cell B2 that only allows the user to enter a number between 1 and 10.
-3. Make a Data Validation parameter that allows for a dropdown list in cell B3 with the following options: "Red", "Green", "Blue", "Yellow", "Black".
+3. Make a Data Validation parameter that allows for a dropdown list in cell B3 with the following options: "Red", 
+   "Green", "Blue", "Yellow", "Black". 
 4. Make a Data Validation parameter in cell B4 that only allows the user to enter a date in the year 2023.
 5. Make a warning message that appears when the user enters an invalid value in cell B2. (has to be silly)
 
