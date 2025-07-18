@@ -6,9 +6,8 @@
 
 ## Instructions
 1. First make a copy of the starter sheet here:
-   [Starter Sheet- HW IF Statements & Goal Seek](https://docs.google.com/spreadsheets/d/1sIy8cmeFlV-ywMx1ixMTT4DmRqJgFFUSpKn-a7KTaow/edit?gid=1350239100#gid=1350239100){:target="_blank"}
+   [HW_Goal_Seek&PivotTables_EXCEL.xlsx](HW_Goal_Seek%26PivotTables_EXCEL.xlsx){:target="_blank"}
 2. Rename it something like “[Your Name] HW 1.4 - Pivot Tables and Goal Seek”
-
 ---
 
 #### Part 1 - Three Reservoir Problem
@@ -96,50 +95,24 @@ To solve the problem, do the following:
    the flow rates in and out of the junction will be balanced and we will solved for the correct values of $Q_1$, 
    $Q_2$, and $Q_3$.
 
----
-
-#### Part 2
-
-1. Navigate to the **Simply Supported Beam** sheet
-2. Name the cells in the spreadsheet according to this table:
-
-**Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
-
-   | Variable          | Cell | Name |
-   |-------------------|------|------|
-   | Load              | B4   | P    |
-   | Modulus           | B5   | E    |
-   | Length            | B6   | L    |
-   | Load offset       | B7   | a    |
-   | Load offset       | B8   | b    |
-   | Base              | B9   | base |
-   | Height            | B10  | ht   |
-   | Distance          | B11  | x    |
-   | Moment of Inertia | B13  | Iu   |
-   | Deflection        | B16  | v    |
-
-3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
-
-**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations.
-
-   | Cell      | Equation                                                                          |
-   |-----------|-----------------------------------------------------------------------------------|
-   | B8        | $b=L-a$                                                                           |
-   | B13       | $I_u=\dfrac{1}{12}base*ht^3$                                                      |
-   | B14 (x≤a) | $v=\dfrac{Pbx}{6EI_uL}\left(b^2+x^2-L^2\right)$                                   |
-   | B15 (x>a) | $v=\dfrac{-Pb}{6EI_uL}\left[\dfrac{L}{b}(x-a)^3+\left(L^2-b^2\right)x-x^3\right]$ |
-
-4. Next, write an **IF** statement in cell **B16** that will return the value in cell **B14** if ***x≤a*** (B7) or cell **B15** if ***x>a*** (B7).
-
-If written correctly, your sheet should look like this when **x** is set to **278** and **15**:
-
-![Deflection1.png](../2_lookup_match_if/images/Deflection1.png)![Deflection2.png](../2_lookup_match_if/images/Deflection2.png)
-
-5. The force of the load on the beam causes the deflection to take the shape of a parabola as shown in the diagram. Use **Goal seek** to compute the two **x** locations that result in a deflection of **-2.0** inches: one closer to the left support, and one closer to the right support. Record your answers in cells **B20** and **B21**.
-
-**Hint:** Goal seek will find the answer closest to the pre-existing x value so to find the first solution, start with an x value near the left side, and to find the second solution, start with an x value near the right side. Your first solution should fall in the range between 30 and 40 inches while the second should fall in the range between 90 and 100 inches.
+6. Apply Data Validation to the Diameter(D) and Length(L) inputs to only allow positive numbers. This will ensure 
+   that the Diameter and Length values are valid inputs for the equations. Apply data validation to **All three Pipe 
+   inputs** (C8:E9)
 
 ---
+
+#### Part 2 - Flow Rate and Velocity Pivot Table
+1. Create a pivot table on the existing PivotTable sheet using the data from the Reservoir Flow sheet. Notice how 
+   there are multiple scenarios. In this dataset, each scenario is one complete system of water flowing through 
+   **Pipe 1, Pipe 2,** and **Pipe 3** with a shared **junction head** (Hj) but potentially different lengths and 
+   diameters for 
+   each pipe. 
+   - Use **Pipe** and **Flow Direction** as the rows.
+   - Use **Flow Rate** and **Velocity** and  as the values.
+   - Make sure to change the "Value Field Settings" for **Flow Rate** and **Velocity** to Average.
+
+Pipe 1 and 3 are usually **Outflow** pipes, while Pipe 2 is usually an **Inflow** pipe. What does this tell you about 
+the system? Do outflow pipes have a higher or lower average flow rate than inflow pipes? What about average velocity?
 
 **Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
 
@@ -147,22 +120,23 @@ If written correctly, your sheet should look like this when **x** is set to **27
 
 **Rubric:**
 
-|                         Item (Three Reservoir Problem)                    | Points Possible |
-|:-------------------------------------------------------------------------:|:---------------:|
-|                             Cells named correctly                         |        3        |
-|           Velocity equations are written correctly and use cell names     |        4        |
-|                    Flow rate equations are written correctly              |        4        |
-|           Correct flow rate values are found with goal seek (±0.005)      |        4        |
-|                <div style="text-align: right">**Total**</div>             |       15        |
+|                Item (Three Reservoir Problem)                | Points Possible |
+|:------------------------------------------------------------:|:---------------:|
+|                    Cells named correctly                     |        3        |
+| Velocity equations are written correctly and use cell names  |        4        |
+|          Flow rate equations are written correctly           |        4        |
+|  Correct flow rate values are found with goal seek (±0.005)  |        5        |
+| Data validation applied to Pipe inputs (D and L)             |        2        |
+|        <div style="text-align: right">**Total**</div>        |       18        |
 
 
-|               Item (Simply Supported Beam)                | Points Possible |
-|:---------------------------------------------------------:|:---------------:|
-|                   Cells named correctly                   |        3        |
-|    Equations are written correctly and use cell names     |        4        |
-|           The IF statement is written correctly           |        4        |
-|   The two correct values are found with goal seek (±2)    |        4        |
-|      <div style="text-align: right">**Total**</div>       |       15        |
+|   Item (Flow Rate and Velocity Pivot Table)    | Points Possible |
+|:----------------------------------------------:|:---------------:|
+|    Pivot Table is created on existing sheet    |        2        |
+|  Table created using data from Reservoir Flow  |        2        |
+|  Table includes Pipe and Flow Direction Rows   |        4        |
+| Values are **Average** Flow Rate and Velocity  |        4        |
+| <div style="text-align: right">**Total**</div> |       12        |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
