@@ -1,13 +1,11 @@
 #  HW: Goal Seek & Pivot Tables
 
-*change it so that you do data validation that youre not allowed to enter negative numbers/the load has to be a certain weight
-
-**Purpose:** Learn how to use external/API tools to solve complex equations
+**Purpose:** Learn how to use Goal Seek to solve complex equations and how to create Pivot Tables to summarize data.
 
 ## Instructions
 1. First make a copy of the starter sheet here:
    [HW_Goal_Seek&PivotTables_EXCEL.xlsx](HW_Goal_Seek%26PivotTables_EXCEL.xlsx){:target="_blank"}
-2. Rename it something like “[Your Name] HW 1.4 - Pivot Tables and Goal Seek”
+2. Rename it something like “[Your Name] HW 1.4 - Goal Seek and Pivot Tables”
 ---
 
 #### Part 1 - Three Reservoir Problem
@@ -92,17 +90,17 @@ To solve the problem, do the following:
    |  $Q_j$   |   C16    | $Q_2$ - $Q_1$ - $Q_3$            |
 
 5. Using a starting value of $H_j$, use **Goal seek** to a value for $H_j$ that results in $Q_j$ = zero. At this point,
-   the flow rates in and out of the junction will be balanced and we will solved for the correct values of $Q_1$, 
+   the flow rates in and out of the junction will be balanced, and we will solve for the correct values of $Q_1$, 
    $Q_2$, and $Q_3$.
 
-6. Apply Data Validation to the Diameter(D) and Length(L) inputs to only allow positive numbers. This will ensure 
-   that the Diameter and Length values are valid inputs for the equations. Apply data validation to **All three Pipe 
-   inputs** (C8:E9)
+6. Apply Data Validation to the **Diameter (D)** and **Length (L)** inputs to only allow positive numbers. This will 
+   ensure that the Diameter and Length values are valid inputs for the equations. Apply data validation to **all 
+   three pipe inputs** (C8:E9).
 
 ---
 
 #### Part 2 - Flow Rate and Velocity Pivot Table
-1. Create a pivot table on the existing PivotTable sheet using the data from the Reservoir Flow sheet. Notice how 
+1. Create a pivot table on the existing "PivotTable" sheet using the data from the Reservoir Flow sheet. Notice how 
    there are multiple scenarios. In this dataset, each scenario is one complete system of water flowing through 
    **Pipe 1, Pipe 2,** and **Pipe 3** with a shared **junction head** (Hj) but potentially different lengths and 
    diameters for 
@@ -138,7 +136,8 @@ the system? Do outflow pipes have a higher or lower average flow rate than inflo
 | Values are **Average** Flow Rate and Velocity  |        4        |
 | <div style="text-align: right">**Total**</div> |       12        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
+your link correctly.
 
 |                      **Reasons for Points Lost**                      | **Amount** |  
 |:---------------------------------------------------------------------:|:----------:|
