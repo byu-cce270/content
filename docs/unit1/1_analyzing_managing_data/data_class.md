@@ -5,6 +5,8 @@
 The following exercises are based on conditional formatting, graphing, basic equations, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 You can find the in-class workbook here: [(Starter-Workbook)-Class-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Class-Analyzing-%26-Managing-Data.xlsx)
 
+Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Data”.
+
 ---
 
 ## Exercise 1 - Company Inventory
