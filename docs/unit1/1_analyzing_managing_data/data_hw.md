@@ -5,7 +5,8 @@
 
 ---
 
-### Getting Started
+## Getting Started
+
 1. First, make a copy of the starter sheet here: 
    [(Starter-Workbook)-HW-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-HW-Analyzing-%26-Managing-Data.xlsx)
 2. Rename it something like “(Your-Name)-HW-Analyzing-&-Managing Data”
@@ -13,7 +14,7 @@
 
 ---
 
-### Part 1 - Filtering Data
+## Part 1 - Filtering Data
 
 1. Navigate to the sheet that says “Streamflow data Part 1”
 2. Select the entire table and create a filter, the filter icon should be in each of the headers. Be sure to reformat the headers so that they can still be read.
@@ -32,7 +33,7 @@ At this point, you should have 6 sheets in your workbook.
 
 ---
 
-### Part 2 - Formatting Data
+## Part 2 - Formatting Data
 
 1. Navigate to the sheet that says “Streamflow Data Part 2”
 2. Format the table using colors, bold the headers, and make it look nice.
@@ -44,7 +45,7 @@ At this point, you should have 6 sheets in your workbook.
 
 ---
 
-### Part 3 - Summary Statistics
+## Part 3 - Summary Statistics
 
 1. Navigate to the Summary Statistics sheet.
 2. On this page, you will see spots to use formulas to summarize the data taken at different places on the river (or stations). Use the appropriate formula and data from your “Streamflow data Part 2” sheet to make those calculations in the top half of the table.

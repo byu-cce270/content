@@ -2,7 +2,10 @@
 
 **Gantt Charts** are bar charts showing the start and finish dates of the different tasks that comprise a project. These charts can help in scheduling, managing, and monitoring specific tasks and resources in a project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task and is widely used in project management.
 
+---
+
 ## Use of Gantt Charts
+
 Construction managers, facilty managers, and civil engineers use Gantt charts to plan and schedule engineering and construction projects. They are used to track the progress of the project and to ensure that the project is completed on time. Gantt charts are also used to allocate resources and to identify potential problems that may arise during the project. They are an essential tool for managers and engineers to ensure that a project is completed on time and within budget. They are used on nearly all projects. 
 
 This figure is from project management software and shows a Gantt chart for a construction project. The chart shows 
@@ -15,7 +18,10 @@ While there is dedicated software for creating Gantt charts, you can also create
 !!!Note
       CFM students will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
 
+---
+
 ## Gantt Chart Tutorial Video
+
 <p>Please watch the following video as part of your assignment. This video is for educational use and to help you create Gantt charts for your own projects. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing. Don't worry about remembering all of the details - we will go over them in class. The objective of this video is to give you a general idea of how we will be creating our Gantt chart and how they work.</p>
 <p>
   <a href="https://www.youtube.com/watch?v=un8j6QqpYa0" target="_blank">
@@ -23,7 +29,10 @@ While there is dedicated software for creating Gantt charts, you can also create
   </a>
 </p>
 
+---
+
 ## Gantt Chart Creation in Excel
+
 We will learn to create Gantt charts in Excel. This involves several distinct steps
 
 * Identify the start date of each task
@@ -31,6 +40,8 @@ We will learn to create Gantt charts in Excel. This involves several distinct st
 * Create a "calendar" sheet to draw the task lines
 * Use conditional formatting to color the Gantt chart
 * Use the SPARKLINE function to draw the "percent complete" on Gantt chart
+
+---
 
 ## Formulas Used in Gantt Chart Creation
 
