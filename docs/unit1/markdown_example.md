@@ -59,13 +59,13 @@ Links for how to use Markup language:
 
 ^Note the syntax used here. For internal documents it is simpler:
 
-[Lists Homework](lists.md)
+[//]: # ([Lists Homework]&#40;lists.md&#41;)
 
-[Lists Exercise](../exercises/lists.md)
+[//]: # ([Lists Exercise]&#40;../exercises/lists.md&#41;)
 
 A link to a file to download for homework:
 
-Click here to download sample CSV file: [sample wells file](variables-files/ut_2015-2020_wells.csv)
+[//]: # (Click here to download sample CSV file: [sample wells file]&#40;variables-files/ut_2015-2020_wells.csv&#41;)
 
 That seesms to work fine. Or you can use raw html.
 
@@ -73,7 +73,7 @@ Let's try this: <a href="variables-files/ut_2015-2020_wells.csv" download="sampl
 
 Here is how you link an image:
 
-![Alt text](variables-images/table.png)
+[//]: # (![Alt text]&#40;variables-images/table.png&#41;)
 
 This is how you embed python code:
 

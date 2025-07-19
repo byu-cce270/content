@@ -91,7 +91,7 @@ Create a new section in your notebook called 'Part 2: Accident Database Analysis
 
 ### Step 1: Uploading the Excel File to Colab.
 
-1. Download the Excel file from [accident_database.xlsx](accident_database.xlsx).
+[//]: # (1. Download the Excel file from [accident_database.xlsx]&#40;accident_database.xlsx&#41;.)
 2. Upload the file to your Colab environment by clicking on the folder icon on the left sidebar, and then clicking on the upload icon. Or you can drag and drop the file into the file browser.
 
 ### Step 2: Read the Data
