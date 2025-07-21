@@ -67,7 +67,7 @@ Excel.
 
 We can either choose to put the pivot table in a new sheet or in the existing sheet. In this case, we will put the 
 pivot table in an existing sheet named "summary". We will click the Ok button. This will create a pivot table in the 
-existing "summary sheet." The empty pivot table will look like this:
+existing "summary" sheet.  The empty pivot table will look like this:
 
 ![emptypivottableexcel.png](images/emptypivottableexcel.png)
 
@@ -79,7 +79,8 @@ on the right. The editor will look like this:
 ![editingthepivottable.png](images/editingthepivottable.png)
 
 Now we can start adding data to the pivot table. Adding data to the pivot table is done by dragging and dropping the 
-desired data into the appropriate sections in the editor. The sections are **Rows**, **Columns**, and **Values**.
+desired data into the appropriate sections in the editor. The sections are **Filters**, **Rows**, **Columns**, and 
+**Values**.
 
 3. Go to the editor and click and drag the **Region** category into the **Rows** section. 
 4. Click on the **Sales Rep** option and drag it to the **Rows** section. 
@@ -88,14 +89,15 @@ At this point you should see a list of regions and the sales reps for each regio
 is a little odd in that the same sales rep is listed in multiple regions, so apparently the sales reps are not 
 limited to work in a single region. Now we need to add the data that we want to summarize. 
 
-5. Click and drag the **Units Sold** option to the **Values** section. If you click on the "Sum of Units Sold" 
-   button, you'll notice 
+5. Click and drag the **Units Sold** option to the **Values** section. If you click on **Sum of Units Sold | Value 
+   Field Settings** you'll notice 
    that 
-   the "Summarize Values By" option is set to "Sum". This means that the pivot table will show the sum of the units 
-   sold for each sales rep in each region.
-6. Click and drag the **Total Sales** option to the **Values** section. Select the . Once agin, 
+   the "Summarize Values By" option is set to "Sum." This means that the pivot table will show the sum of the units 
+   sold for each sales rep in each region. You can also summarize by min, max, average, count, and other options. 
+   Let's keep the default of "Sum" for now.
+6. Click and drag the **Total Sales** option to the **Values** section. Once again, 
    the default 
-   is to summarize by sum. You can also summarize by min, max, average, count, and other options.
+   is to summarize by sum. 
 
 At this point, the pivot table should look like this:
 
@@ -108,8 +110,8 @@ way. Pivot tables are fun!
 
 Below are some links to additional readings on pivot tables.
 
-* [Create a PivotTable to Analyze Worksheet Data](https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576){:target="_blank"}
 * [Introduction Excel PivotTable](https://www.w3schools.com/excel/excel_table_pivot_intro.php){:target="_blank"}
+* [Create a PivotTable to Analyze Worksheet Data](https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576){:target="_blank"}
 * [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html){:target="_blank"} (bonus 
   functions of pivot tables)
 
@@ -124,20 +126,22 @@ that utilizes an algorithm that plugs in different calculations to find a soluti
 
 ### Using Goal Seek
 
-To use Goal Seek, head to **Data** > **What-If Analysis** > **Goal Seek.** This will open the Goal Seek dialog box, 
+To use Goal Seek, head to **Data | What-If Analysis | Goal Seek.** This will open the Goal Seek dialog box, 
 where you can enter your desired values and the cells you want to change.
 
-Goal Seek has three basic components: 
-- **Set Cell**
-- **To Value**
-- **By Changing Cell**
+Goal Seek has three basic components:
+
+* **Set Cell**
+* **To Value**
+* **By Changing Cell**
 
 ### Example Problem 
 Let's use the example of a contractor wanting to find what he would have to charge to make a profit of **\$1250** by 
-building his friend a 12' x 12' deck. Given the cost of materials (\$6000) and the $22/hr of pay for each employee, we 
+building his friend a 12' x 12' deck. Given the cost of materials (**\$6000**) and the **$22**/hr of pay for each employee,
+we 
 can calculate the project cost. Using Goal Seek, we can allow the computer to do the rest of the work for us.
 
-First, select the cell you want to set by 1) selecting the cell (B11) and 2) clicking the **Set Cell** grid icon on the goal seek tab. 
+First, click the **Set Cell** grid icon on the **Goal Seek** tab, then select the cell you want to set. 
 
 **Hint**: This cell should **almost always** be the cell that contains your formula.
 
@@ -147,11 +151,11 @@ Then, set the **To Value** to whatever value you are trying to find. In our case
 
 Finally, select the cell that would need to change to evaluate the final part of the question. In this instance, this would be cell B9.
 
-![GoakSeekExcel2.png](images/GoakSeekExcel2.png)
+![goalseekexredo.png](goalseekexredo.png)
 
 When all three inputs are filled on the Goal Seek tab, the Solve button will light up blue. If you press the button, the computer should start jumping between values trying to find the solution to what gets a profit of $1250.
 
-In this example, our solution is $8240.000057, or **$8240**!
+In this example, our solution is \$8240.000057, or **\$8240**!
 
 ### How does this work?
 
@@ -177,24 +181,70 @@ Each attempt by the computer tries to get closer and closer by guessing a number
 
 # Pre-Class Quiz Challenge
 
-Here is a link for the pre-class starter sheet: [pre-class practice.xlsx](pre-class%20practice.xlsx){:target="_blank"}
+Here is a link for the pre-class starter sheet:[pre-class-pivot-goalseek-datav.xlsx](pre-class-pivot-goalseek-datav.xlsx) {:target="_blank"}
 
-Note that this is a slightly modified version the regional sales data set that we used in the pivot table example above. 
+Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
 
+---
 ## Instructions
+
+**Data Validation:**
+
+Navigate to the **dogshow** sheet, and use the Data Validation tool (found under the Data tab) to limit
+1. The breed of dogs (C6:C23) to the list provided 
+2. The judges' scores (D6:G13) to whole numbers 0 - 10
+3. The winners (C28:C30) to the names of entered dogs
+
+Fill in the red chart to check your data validation (randomly select breeds and individual judge scores).  Enter a Sum function for the total scores. Then enter the names and scores of the 1st, 2nd, and 3rd place winners. 
+
+---
 
 **Pivot Table:**
 
 1. Select the entire table on the **regional_sales_data** sheet and create a pivot table in the existing **pivot** sheet.
-2. Use the Rows|Add feature to add the **Sales Rep** and **Product** columns in that order. Then add the **Units Sold** (Count) and **Total Sales** (Sum) columns as values. This will summarize the total units sold and total sales for each sales rep for each product.
+2. Drag and drop **Sales Rep** and **Product**  into the rows section in that order. Then add the **Units Sold** 
+   (Count) 
+   and 
+   **Total 
+   Sales** (Sum) into the value category. This will summarize the total units sold and total sales for each sales rep 
+   for each 
+   product.
+
+---
 
 **Goal Seek:**
 
-1. Use the Pivot Table to find how many units of Widget A Bob Johnson has sold. 
-2. Then, use **Goal Seek** to calculate how many units he would have needed to sell to make **\$6000** in Total Sales. Assume the unit price is $500.
+Navigate to the "fishing" sheet. 
 
-**Data Validation:**
+You are out fly-fishing and a huge fish just jumped high out of the water for your fly. You just happen to know the parabolic equation that all trout jumps follow which is:
 
-1. In the **data_validation** sheet, select the range of cells A2:A10.
-2. Add data validation to the selected range to allow only whole numbers between 1 and 100.
+y = -(x-2)^2 + 5 
 
+You want to figure out how far it jumped. 
+1. Use goal seek to determine the two x values that make y = 0. 
+2. Copy your answers into C28 and C29.
+3. As an extra curiosity you want to figure out how high the fish jumped. Use a solver to find the max y value. Copy the answer to E28.
+
+
+---
+
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
+**Rubric:**
+
+|                              Item                              | Points Possible |
+|:--------------------------------------------------------------:|:--------------:|
+|         <div style="text-align: right">**Total**</div>         |        5       |
+
+The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|               **Reasons for Points Lost**                | **Amount** |  
+|:--------------------------------------------------------:|:----------:|
+|                 Link shared incorrectly                  |     3      |
+|      Turned in late. 10% for every week it's late.       |            |
