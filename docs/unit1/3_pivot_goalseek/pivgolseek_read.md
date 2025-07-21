@@ -43,7 +43,7 @@ There are many other options for data validation. Here is an extra resource for 
 
 ---
 
-# Pivot Tables
+## Pivot Tables
 
 **Pivot Tables** are used to summarize and analyze large sets of data in more meaningful ways. They can be used to narrow down data sets and see relationships between data points among other things. Pivot tables allow us to summarize multiple columns and rows of data at a time.
 
@@ -58,7 +58,7 @@ information from the table, or we could use some combination of COUNTIF and SUMI
 find that information in a few clicks using a pivot table. The following steps show how to create a pivot table in 
 Excel. 
 
-## Creating the Pivot Table
+### Creating the Pivot Table
 
 1. First, we select the data set. In this case, we select the cells in the range A1:F31.
 2. Next, we select the Insert|Pivot Table option from the menu. This will bring up the following dialog box:
@@ -71,7 +71,7 @@ existing "summary" sheet.  The empty pivot table will look like this:
 
 ![emptypivottableexcel.png](images/emptypivottableexcel.png)
 
-## Editing the Pivot Table
+### Editing the Pivot Table
 
 Now we need to decide what data we want to summarize in the pivot table. We can do this using the Pivot table editor 
 on the right. The editor will look like this:
@@ -106,7 +106,7 @@ At this point, the pivot table should look like this:
 Now we can see the total units sold and total sales for each sales rep in each region. As you can see, it only takes a few clicks to create a pivot table that summarizes a large data set in a meaningful 
 way. Pivot tables are fun!
 
-## Additional Readings
+### Additional Readings
 
 Below are some links to additional readings on pivot tables.
 
@@ -191,6 +191,7 @@ Note that this is an expanded version of the regional sales data set that we use
 **Data Validation:**
 
 Navigate to the **dogshow** sheet, and use the Data Validation tool (found under the Data tab) to limit
+
 1. The breed of dogs (C6:C23) to the list provided 
 2. The judges' scores (D6:G13) to whole numbers 0 - 10
 3. The winners (C28:C30) to the names of entered dogs
@@ -221,6 +222,7 @@ You are out fly-fishing and a huge fish just jumped high out of the water for yo
 y = -(x-2)^2 + 5 
 
 You want to figure out how far it jumped. 
+
 1. Use goal seek to determine the two x values that make y = 0. 
 2. Copy your answers into C28 and C29.
 3. As an extra curiosity you want to figure out how high the fish jumped. Use a solver to find the max y value. Copy the answer to E28.
@@ -242,9 +244,10 @@ You want to figure out how far it jumped.
 |:--------------------------------------------------------------:|:--------------:|
 |         <div style="text-align: right">**Total**</div>         |        5       |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
+your link correctly.
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|
 |                 Link shared incorrectly                  |     3      |
-|      Turned in late. 10% for every week it's late.       |            |
+|      Turned in late. 10% for every week it's late.       |    3-15    |
