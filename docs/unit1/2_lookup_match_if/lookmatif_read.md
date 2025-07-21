@@ -119,7 +119,7 @@ The first argument to the MATCH function is the lookup value, the second argumen
 
 Note that we are using a range lookup on elevation so the last argument to VLOOKUP is **TRUE**.
 
-Here is an extra resource for further information on Match: [MATCH](https://blog.sheetgo.com/google-sheets-formulas/match-formula-google-sheets/){:target="_blank"}
+Here is an extra resource for further information on Match: [MATCH](https://support.microsoft.com/en-us/office/match-function-e8dffd45-c762-47d6-bf89-533f4a37673a){:target="_blank"}
 
 ---
 

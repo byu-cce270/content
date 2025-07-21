@@ -87,7 +87,7 @@
 
 1. Navigate to the Material Estimator sheet
 
-2. In the merged cell B2:C2, create a dropdown menu using data validation that includes the four gravel types in the red table in the Tables sheet
+2. In the merged cell B2:C2, create a dropdown menu using data validation that includes the four gravel types in the yellow table in the Tables sheet
 
 3. Create a Data Validation in B3 and B4 to allow the input of only numbers greater than 0. It should reject any invalid input
 
