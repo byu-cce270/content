@@ -7,6 +7,7 @@ In Excel, there are many ways to analyze and display data. For this topic, you w
 ---
 
 ## Conditional Formatting
+
 Conditional formatting is a feature in Excel that allows you to format cells based on certain conditions. This can be useful when you want to highlight certain data points or make your data easier to read.
 
 There are many different ways to use conditional formatting in Excel. Some common uses include:
@@ -59,6 +60,7 @@ To see more examples of conditional formating and the different options availabl
 ---
 
 ## Filtering Data
+
 Filtering data is a feature in Excel that allows you to show only the data that meets certain criteria. This can be useful when you have a large data set and only want to focus on a specific section of it. This differs from conditional formatting as filtering allows you to change the range of data you see, while conditional formatting changes the visual aspect of the data but does not alter the view range.
 
 To set up filtering in Excel, follow these steps:
@@ -110,7 +112,8 @@ For more general help on filtering data in Excel, check out the following websit
 
 ---
 
-## Working with Functions  
+## Working with Functions 
+
 In Excel, functions help users to analyze, manage, and compute data. A function is set up in three parts:
 
 ![Screenshot 2025-01-08 221445](https://github.com/user-attachments/assets/76daef2b-be63-4f76-8bcc-cb70ebb098dc)
@@ -133,8 +136,9 @@ You can find more functions at W3Schools. You can also find a list of all functi
 
 ## Pre-Class Quiz Challenge
 
-1. First, make a copy of the starter sheet here: 
-   </br> The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
+1. First download the starter sheet: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx)
+   <br>Before you start, make sure to make a copy of the file and rename it something like “(Your-Name)-Pre-Analyzing-&-Managing-Data”.
+   <br>The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
    <br> Hint: Use conditional formatting
 3. **Highlight** those in **column A** that have an ID number between 1000 and 2500.

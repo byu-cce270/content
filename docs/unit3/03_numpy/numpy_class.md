@@ -67,7 +67,7 @@ the `%timeit` command is a magic command in  notebooks that measures the time it
 
 
 ## Truss Analysis with NumPy
-![truss.png](Images%2Ftruss.png){:width="500px"}
+![truss.png](images/truss.png){:width="500px"}
 
 We will use a truss as an example of solving simultaneous equations. A truss is a structure made up of members that are connected at their ends. The members are usually made of steel or wood and are used to support loads. The truss in the image above is a simple truss with three members and three joints. The members are labeled AB, BC, and AC. The joints are labeled A, B, and C. The loads are applied at joint B and joint C.
 

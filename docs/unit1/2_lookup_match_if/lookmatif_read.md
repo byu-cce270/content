@@ -2,30 +2,17 @@
 
 ---
 
-Excel has  there are many ways to analyze and display data. For this topic, you will focus on Conditional Formatting, Filtering Data, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, you will go over what each of these tools are and how to use them.
+Excel has  many powerful functions that can be used to automate calculations and data analysis. In this reading, we will focus on three important functions: VLOOKUP/HLOOKUP, MATCH, and IF/IFS. These functions are essential for working with large datasets and can help you quickly find and manipulate data in Excel.
 
 Before class, you will learn about a few types of IF Statements: IF and IFS. You will also learn about Goal Seek.
-
-#### Things to look out for and think about!
-- Look for the differences in the function syntax between the VLOOKUP and MATCH.
-- Think about how using Data Validations can help minimize errors in your formulas
-- Watch for white space (e.g., spaces) either before or after your match text, it can cause problems
 
 ---
 
 ## VLOOKUP/HLOOKUP Functions
 
-### Indexing a List with VLOOKUP
-When writing formulas, we often encounter cases where one or more of the inputs to the function will depend on the value of another input. More specifically, we need to use one of the inputs to lookup the other input from a table. This can be easily accomplished using the VLOOKUP function. 
+The VLOOKUP and HLOOKUP functions are used to look up values in a table based on a search key. VLOOKUP is used for vertical lookups, while HLOOKUP is used for horizontal lookups. These functions are particularly useful when you have a large dataset and need to find specific information quickly.
 
-For example, the following workbook computes the volume and weight of a set of cylinders. The weight is computed from the volume and the unit weight. However, the unit weight depends on the material being used. Unit weights for a set of common materials are shown in a table at the top:
-
-![Vlookup_Image_1.png](images/Vlookup_Image_1.png)
-
-The objective of this example is to determine the appropriate unit weight for each cylinder and calculate the correct weight by multiplying the selected unit weight by the computed volume. We will do this by automatically selecting the correct unit weight from the list using the VLOOKUP function.
-
-### VLOOKUP Function
-Once the material values are entered in column E, we are ready to use the VLOOKUP function. The syntax for the VLOOKUP function is as follows:
+The syntax for the VLOOKUP function is as follows:
 
     VLOOKUP(search_key, range, index, [is_sorted])
 
@@ -36,7 +23,16 @@ where:
 | search_key  | The value to be found in the first column of the array.                                                                     |
 | range       | The table of information in which data is looked up. Use a reference to a range or a range name.                            |
 | index       | The column number in the table defined by `range` from which the matching value must be returned.                             |
-| [Is_sorted] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |
+| [Is_sorted] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |  
+
+The syntax for the HLOOKUP function is similar, but it searches horizontally across rows instead of vertically across columns. For this reading, we will focus on VLOOKUP, but the concepts are similar for HLOOKUP. 
+
+### Example of VLOOKUP
+The following workbook computes the volume and weight of a set of cylinders. The weight is computed from the volume and the unit weight. However, the unit weight depends on the material being used. Unit weights for a set of common materials are shown in a table at the top:
+
+![Vlookup_Image_1.png](images/Vlookup_Image_1.png)
+
+The objective of this example is to determine the appropriate unit weight for each cylinder and calculate the correct weight by multiplying the selected unit weight by the computed volume. We will do this by automatically selecting the correct unit weight from the list using the VLOOKUP function.
 
 For our case, we will use VLOOKUP to select a unit weight value from the table using the user-specified material. The unit weight returned by the function is then multiplied by the volume to compute the cylinder weight as follows:
 
@@ -52,7 +48,7 @@ argument (2) tells the VLOOKUP function from which column of the table the retur
 
 If the  values in the lookup table are edited, all of the weights would be automatically updated.
 
-### Is_Sorted Parameter
+### The [Is_Sorted] Parameter
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
 
 |         Range         |  Category   |
@@ -77,14 +73,15 @@ Notice that the last argument (is_sorted) has a value of TRUE. This means that w
 
 It is important to note that the is_sorted argument to the VLOOKUP function is optional. If it is omitted, it is assumed to be TRUE by default. A common error with the VLOOKUP function is to omit this argument when the VLOOKUP function is intended to be used as an exact match. This can lead to unintended errors, depending on how the values in the first column are ordered. Therefore, it is strongly recommended to always enter a TRUE or FALSE value for the is_sorted argument every time the VLOOKUP function is used.
 
-Here is an extra resource for further information on Vlookup: [VLOOKUP](https://www.benlcollins.com/spreadsheets/vlookup-function/){:target="_blank"}
-
+Here is an extra resource for further information on VLOOKUP: [VLOOKUP](https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1){:target="_blank"}
 
 ---
 
 ## MATCH Function
 
-The MATCH function returns the position of an item in a range of cells. Let's first look at the syntax of the function.
+The MATCH function returns the position of an item in a range of cells. It is often used in conjunction with the VLOOKUP function to find the index of a value in a row or column. The MATCH function can be used to perform exact matches or range lookups, depending on the search type specified.
+
+Let's first look at the syntax of the function.
 
     MATCH(search_key, range, [search_type])
 
@@ -104,11 +101,11 @@ The search_type has three different options for an input as shown in the table b
 |      0      |        Exact Match        |
 |     -1      |     Descending Order      |
 
-MATCH is a great function to pair with the VLOOKUP function. Occasionally it is useful to do a two-dimensional lookup where a value is found from a table containing both rows and columns. For example, consider the following sheet containing a table of temperatures in degree F illustrating a relationship between average monthly temp and elevation in ft for a particular location.
+The MATCH function when pair with the VLOOKUP function allows you to do a two-dimensional lookup where a value is found from a table containing both rows and columns. For example, consider the following sheet containing a table of temperatures in degree F illustrating a relationship between average monthly temp and elevation in ft for a particular location.
 
 ![match_fig1.png](images/match_fig1.png)
 
-Starting at row 24, another table is listed and the objective is to fill in the **Temp** column with a formula that looks up the temperature corresponding to the elevation from column **C** and the month associated with the date provided in column **B**. This requires a double lookup. We use VLOOKUP to find the row we need based on a range lookup of elevation using the VLOOKUP function. Then, for the third argument to VLOOKUP, we need to determine which column to use based on the month desired. To find the right column based on the month, we first need to find the month label ("Jan", "Feb", etc.) from a date value. This can be accomplished using the **TEXT** function which takes a date as an argument and returns the month or day value depending on the format specified by the second argument as follows:
+Starting at row 24, another table is listed and the objective is to fill in the **Temp** column with a formula that looks up the temperature corresponding to the elevation from column **C** and the month associated with the date provided in column **B**. This requires a double lookup. We use VLOOKUP to find the row we need based on a range lookup of elevation using the VLOOKUP function. Then, for the third argument to VLOOKUP, we need to determine which column to use based on the month desired. To find the right column based on the month, we first need to find the month label ("Jan", "Feb", etc.) from a date value. This can be accomplished using the **[TEXT](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c)** function which takes a date as an argument and returns the month or day value depending on the format specified by the second argument as follows:
 
     TEXT(B28,"MMM")
 
@@ -123,7 +120,6 @@ The first argument to the MATCH function is the lookup value, the second argumen
 Note that we are using a range lookup on elevation so the last argument to VLOOKUP is **TRUE**.
 
 Here is an extra resource for further information on Match: [MATCH](https://blog.sheetgo.com/google-sheets-formulas/match-formula-google-sheets/){:target="_blank"}
-
 
 ---
 
@@ -195,25 +191,28 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 
 ## Pre-Class Quiz Challenge
 
-1. First make a copy of the starter sheet here: [Starter Sheet Pre - Lookups, Match, Data Validation](https://docs.google.com/spreadsheets/d/1uMdVl5TzfQAnsSvh1fv3kuw2ci_jPpJNpaVRDbW3EH8/edit?usp=sharing){:target="_blank"}
-2. Using Data Validations, add dropdowns in cells B2 to B25 for all the different types of services. (Tree Removal, 
-   Sidewalk Replacement, Siding Replacement, Gutter Cleaning, Gutter Replacement, Grass Removal, and Grass 
-   Replacement). Use the **Dropdown (from a range)** option to reference the first column in the table on the right.
-3. Now add dropdowns in cells D2 to D25 for the level of each service can receive (Full, Partial, and Finishing)
-4. In cells E2 to E25 use the Vlookup and Match functions to correctly give a quote for the service and type that 
-   the customer would like multiplied by the quantity. You will use the VLOOKUP function to find a price from the 
-   service table based on the service selected in column B, and you will use the MATCH function to find the correct 
-   column in the service table from which to find a price, based on the type selected in column D.
+1. First download the starter sheet: [(Starter-Workbook)-Pre-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Pre-Lookups-Match-IF.xlsx)
+    <br>Be sure to make a copy of the sheet and rename it something like “(Your-Name)-Pre-Lookups-Match-IF”.
+
+2. Go to the "LOOKUP-MATCH" sheet in the workbook. You will notice the "Service" and the "Type" columns will continue to change when ever you update any cell in the sheet. This is of a fun combination of other functions that take a list of values in other cells and select a random value from that list. Take a moment to look at the formulas in those cells and see how they work. You might want to use them in the future for your own projects. If you want you can copy the table and paste-special (as values) the results to lock in the values. Again, this overwrites the formula with the values it generated
+
+Often times, the VLOOKUP and MATCH functions are hard to understand and use right away. Especially when combining and writing a function inside other functions. To help with this, we will first practice by using each function separately, then combine them together.
+
+3. In column E, you will use the MATCH function to find the index of the type of service listed in column D in the table in cells K1:N8. If written correctly, the function will return a number, depending on the type of service 
+
+4. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of you VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
+
+5. In column G, you will multiply the values in columns C and F to get the total cost for each service
+
+6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should return the total cost for each service based on the service type, quantity, and cost per service
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
 <details>
 <summary><b>Solution</b></summary>
 
-For any customer with the Service: "Sidewalk Replacement", Quantity: "10", and Type: "Full", the cost should be $1,890.
-
+For any customer with the Service: "Sidewalk Replacement", Quantity: "10", and Type: "Full", the cost should be $1,890. You can test this by overwriting the formula that are randomly generated in the "Service" and "Type" columns with these values.
 </details>
-
 
 <details>
 <summary><b>Hint 1: Function Syntax</b></summary>
@@ -221,25 +220,32 @@ For any customer with the Service: "Sidewalk Replacement", Quantity: "10", and T
 Column B - Search Key
 Column C - Multiply the total of your VLOOKUP and Match Function at the end
 Column D - Search Key for the Index or MATCH Function
-
 </details>
-
 
 <details>
 <summary><b>Hint 2: N/A Errors</b></summary>
 
 If you are getting a lot of N/As maybe your is_sorted on your Vlookup is not correct or your search type for match is incorrect. Look over the pre-class readings for help
-
 </details>
-
 
 <details>
 <summary><b>Hint 3: N/A Errors Part 2</b></summary>
   
 Make the is_sorted false and the search type 0
-
 </details>
 <br>
+
+7. Go to the "IF-IFs" In column D, use RANDBETWEEN to give points to Students randomly. Points should be between 0 and 100. Then copy and paste-special (as values) the results to lock in the values. Again, this overwrites the formula with the values it generated. Try writing the formula on your own, if you need help, look at the solution below
+
+8. In column E, write a simple IF statement in the Pass/Fail column to indicate "Pass" or "Fail" depending on whether they scored over 60/100
+
+9. In column F, write a complex IF statement in the "Grade" column to assign a letter grade to each student based on their points: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90-100 = A, 80-89 = B, 70-79 = C, 60-69 = D, < 60 = F
+
+<details>
+<summary><b>RANDBETWEEN Function</b></summary>
+  
+=RANDBETWEEN(0,100)
+</details>
 
 ---
 

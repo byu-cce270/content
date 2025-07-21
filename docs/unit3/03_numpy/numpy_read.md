@@ -131,7 +131,7 @@ plt.title('Sin and Cos')
 plt.legend()
 plt.show()
 ```
-![sin_plot.png](Images%2Fsin_plot.png)
+![sin_plot.png](images/sin_plot.png)
 
 In the code above we use the `np.radians()` function to convert the degrees to radians. This is because the `np.sin()` and `np.cos()` functions expect the input to be in radians. We then use Matplotlib to plot the data.
 
