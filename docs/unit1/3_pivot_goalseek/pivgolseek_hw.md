@@ -105,9 +105,10 @@ To solve the problem, do the following:
    **Pipe 1, Pipe 2,** and **Pipe 3** with a shared **junction head** (Hj) but potentially different lengths and 
    diameters for 
    each pipe. 
-   - Use **Pipe** and **Flow Direction** as the rows.
-   - Use **Flow Rate** and **Velocity** and  as the values.
-   - Make sure to change the "Value Field Settings" for **Flow Rate** and **Velocity** to Average.
+
+   * Use **Pipe** and **Flow Direction** as the rows.
+   * Use **Flow Rate** and **Velocity** and  as the values.
+   * Make sure that the Value settings are set to find the _Average_ **Flow Rate** and **Velocity**.
 
 Pipe 1 and 3 are usually **Outflow** pipes, while Pipe 2 is usually an **Inflow** pipe. What does this tell you about 
 the system? Do outflow pipes have a higher or lower average flow rate than inflow pipes? What about average velocity?
