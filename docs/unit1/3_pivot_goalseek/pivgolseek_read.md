@@ -20,7 +20,7 @@ Let's go over how to add data validation to your data in Excel:
 4. You can also choose the output of the data validation you want to apply to the cells. For example, you can choose to show a warning message if the data entered does not meet the criteria or to reject the data altogether.<br>
 5. Once you have set up the criteria and output options, click on Save to apply the data validation to the selected range of cells.
 
-**Dropdown**  
+### Dropdown  
 
 This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For 
 example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. 
@@ -33,7 +33,7 @@ into the cells.
 
 If you're wanting to create a drop-down list from a range of cells, you can select the range of cells that contain the items you want to include in the drop-down list. This is useful when you have a long list of items that you want to include in the drop-down list.
 
-**Dates**  
+### Dates 
 
 This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fit the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
 
@@ -190,7 +190,7 @@ Note that this is an expanded version of the regional sales data set that we use
 
 **Data Validation:**
 
-Navigate to the **dogshow** sheet, and use the Data Validation tool (found under the Data tab) to limit
+Navigate to the "dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit
 
 1. The breed of dogs (C6:C23) to the list provided 
 2. The judges' scores (D6:G13) to whole numbers 0 - 10
@@ -202,7 +202,7 @@ Fill in the red chart to check your data validation (randomly select breeds and 
 
 **Pivot Table:**
 
-1. Select the entire table on the **regional_sales_data** sheet and create a pivot table in the existing **pivot** sheet.
+1. Select the entire table on the "regional_sales_data" sheet and create a pivot table in the existing "pivot" sheet.
 2. Drag and drop **Sales Rep** and **Product**  into the rows section in that order. Then add the **Units Sold** 
    (Count) 
    and 
@@ -225,7 +225,9 @@ You want to figure out how far it jumped.
 
 1. Use goal seek to determine the two x values that make y = 0. 
 2. Copy your answers into C28 and C29.
-3. As an extra curiosity you want to figure out how high the fish jumped. Use a solver to find the max y value. Copy the answer to E28.
+3. As an extra curiosity you want to figure out how high the fish jumped. Use Goal Seek to find the max y value. Copy 
+   the 
+   answer to E28.
 
 
 ---

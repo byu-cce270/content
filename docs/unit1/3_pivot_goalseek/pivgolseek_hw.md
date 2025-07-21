@@ -8,7 +8,7 @@
 2. Rename it something like “[Your Name] HW 1.4 - Goal Seek and Pivot Tables”
 ---
 
-#### Part 1 - Three Reservoir Problem
+#### Part 1: Three Reservoir Problem
 
 For this exercise we will be solving the classic three reservoir problem. Consider the following diagram:
 
@@ -99,7 +99,7 @@ To solve the problem, do the following:
 
 ---
 
-#### Part 2 - Flow Rate and Velocity Pivot Table
+#### Part 2: Flow Rate & Velocity Pivot Table
 1. Create a pivot table on the existing "PivotTable" sheet using the data from the Reservoir Flow sheet. Notice how 
    there are multiple scenarios. In this dataset, each scenario is one complete system of water flowing through 
    **Pipe 1, Pipe 2,** and **Pipe 3** with a shared **junction head** (Hj) but potentially different lengths and 
@@ -119,17 +119,17 @@ the system? Do outflow pipes have a higher or lower average flow rate than inflo
 
 **Rubric:**
 
-|                Item (Three Reservoir Problem)                | Points Possible |
-|:------------------------------------------------------------:|:---------------:|
-|                    Cells named correctly                     |        3        |
-| Velocity equations are written correctly and use cell names  |        4        |
-|          Flow rate equations are written correctly           |        4        |
-|  Correct flow rate values are found with goal seek (±0.005)  |        5        |
-| Data validation applied to Pipe inputs (D and L)             |        2        |
-|        <div style="text-align: right">**Total**</div>        |       18        |
+|               Part 1: Three Reservoir Problem               | Points Possible |
+|:-----------------------------------------------------------:|:---------------:|
+|                    Cells named correctly                    |        3        |
+| Velocity equations are written correctly and use cell names |        4        |
+|          Flow rate equations are written correctly          |        4        |
+| Correct flow rate values are found with goal seek (±0.005)  |        5        |
+|      Data validation applied to Pipe inputs (D and L)       |        2        |
+|       <div style="text-align: right">**Total**</div>        |       18        |
 
 
-|   Item (Flow Rate and Velocity Pivot Table)    | Points Possible |
+|    Part 2: Flow Rate & Velocity Pivot Table    | Points Possible |
 |:----------------------------------------------:|:---------------:|
 |    Pivot Table is created on existing sheet    |        2        |
 |  Table created using data from Reservoir Flow  |        2        |

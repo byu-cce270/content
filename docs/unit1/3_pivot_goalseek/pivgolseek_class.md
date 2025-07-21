@@ -5,16 +5,19 @@
 The following exercises are based on learning how **Data Validation, Goal Seek,** and **Pivot Tables** can help us 
 find key 
 data. For 
-this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here:
+this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here:[(Starter-Workbook)-Class-Pivot-&-Goal-Seek.xlsx](%28Starter-Workbook%29-Class-Pivot-%26-Goal-Seek.xlsx)
 
-[(Starter-Workbook)-Class-Pivot-&-Goal-Seek.xlsx](%28Starter-Workbook%29-Class-Pivot-%26-Goal-Seek.xlsx)
+Be sure to rename it something like “(Your-Name)-Class-Pivot-&-Goal-Seek”.
+
+In this workbork there are four sheets: "Data Validation"- used for Exercise 1, "Brickmaking Business" used for 
+Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet contains a table with employee data.
 
 ---
 
 ## Exercise 1 - Data Validation
 1. Navigate to the "Data Validation" sheet.
-2. Select a column from the table. Go to the data Tab in the ribbon above and click on Data Validation under the 
-   Data Tools section.
+2. Select a column from the table. Go to the **Data** tab in the ribbon above and click on **Data Validation** under the 
+   **Data Tools** section.
 3. In column 1, validate that the data entered into the cell is a number greater than 0.
 4. In column 2, Create a dropdown list from the list of items in the range I25:I31 (You can either select the range 
    or type in each option separated by commas).
@@ -26,6 +29,7 @@ this exercise, open the in-class workbook, make a copy, and follow the instructi
 --- 
 
 ## Exercise 2 - Brickmaking Business
+
   1. Navigate to the "Brickmaking Business" sheet.
   2. Write equations to solve for the total expense, total revenue, and profit in cells B8:B10.
   3. Use Goal Seek to compute the number of Bricks you need to sell to make a profit of $100K.
