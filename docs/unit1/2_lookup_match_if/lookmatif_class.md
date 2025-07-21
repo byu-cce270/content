@@ -37,7 +37,7 @@ This sheet contains two tables: one with material costs and one with material av
 
 8. In column **I**, use the VLOOKUP function to find the available quantities for material from the table in the **Materials** sheet
 
-9. In column **J**, use the difference in columns **H** and **I** to find the remaining material quantities. Note that we have conditional formattting on to highlight items tha are out of stock
+9. In column **J**, use the difference in columns **H** and **I** to find the remaining material quantities. Note that we have conditional formatting on to highlight items that are out of stock
 
 ---
 
@@ -49,7 +49,7 @@ This sheet contains hours worked each month for a set of employees. Our objectiv
 
 2. In the table below, use the VLOOKUP to find the hours worked in the month specified in column **B**. Embed the MATCH function inside the VLOOKUP function to determine what column to use based on the employee name in column **C**. Enter your formula in **D20:D33**
 
-3. Add a function in D36 to compute the total hours worked on this project
+3. Add a function in D35 to compute the total hours worked on this project
 
 ---
 
@@ -97,7 +97,6 @@ Use IF statements and user inputs/selections to determine how many years that th
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-|                                                |                 |
 | <div style="text-align: right">**Total**</div> |        5        |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.

@@ -155,7 +155,7 @@ Finally, select the cell that would need to change to evaluate the final part of
 
 When all three inputs are filled on the Goal Seek tab, the Solve button will light up blue. If you press the button, the computer should start jumping between values trying to find the solution to what gets a profit of $1250.
 
-In this example, our solution is \$8240.000057, or **\$8240**!
+In this example, our solution is \$8240.000057, or **\$8240!**
 
 ### How does this work?
 
@@ -179,22 +179,22 @@ Each attempt by the computer tries to get closer and closer by guessing a number
 
 ---
 
-# Pre-Class Quiz Challenge
+## Pre-Class Quiz Challenge
 
-Here is a link for the pre-class starter sheet:[pre-class-pivot-goalseek-datav.xlsx](pre-class-pivot-goalseek-datav.xlsx) {:target="_blank"}
+Here is a link for the pre-class starter sheet:[pre-class-pivot-goalseek-datav.xlsx](pre-class-pivot-goalseek-datav.xlsx){:target="_blank"}
 
 Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
 
 ---
-## Instructions
+### Instructions
 
 **Data Validation:**
 
 Navigate to the "dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit
 
-1. The breed of dogs (C6:C23) to the list provided 
-2. The judges' scores (D6:G13) to whole numbers 0 - 10
-3. The winners (C28:C30) to the names of entered dogs
+1. The breed of dogs (C6:C23) to the list provided.
+2. The judges' scores (D6:G13) to whole numbers 0 - 10.
+3. The winners (C28:C30) to the names of entered dogs.
 
 Fill in the red chart to check your data validation (randomly select breeds and individual judge scores).  Enter a Sum function for the total scores. Then enter the names and scores of the 1st, 2nd, and 3rd place winners. 
 
@@ -232,7 +232,7 @@ You want to figure out how far it jumped.
 
 ---
 
-## Turning in/Rubric
+### Turning in/Rubric
 
 **_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
 

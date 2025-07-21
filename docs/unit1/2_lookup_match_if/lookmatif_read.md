@@ -46,7 +46,7 @@ argument (2) tells the VLOOKUP function from which column of the table the retur
 
 ![Vlookup_Image_3.png](images/Vlookup_Image_3.png)
 
-If the  values in the lookup table are edited, all of the weights would be automatically updated.
+If the  values in the lookup table are edited, all the weights would be automatically updated.
 
 ### The [Is_Sorted] Parameter
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
@@ -105,7 +105,9 @@ The MATCH function when pair with the VLOOKUP function allows you to do a two-di
 
 ![match_fig1.png](images/match_fig1.png)
 
-Starting at row 24, another table is listed and the objective is to fill in the **Temp** column with a formula that looks up the temperature corresponding to the elevation from column **C** and the month associated with the date provided in column **B**. This requires a double lookup. We use VLOOKUP to find the row we need based on a range lookup of elevation using the VLOOKUP function. Then, for the third argument to VLOOKUP, we need to determine which column to use based on the month desired. To find the right column based on the month, we first need to find the month label ("Jan", "Feb", etc.) from a date value. This can be accomplished using the **[TEXT](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c)** function which takes a date as an argument and returns the month or day value depending on the format specified by the second argument as follows:
+Starting at row 24, another table is listed and the objective is to fill in the **Temp** column with a formula that 
+looks up the temperature corresponding to the elevation from column **C** and the month associated with the date 
+provided in column **B**. This requires a double lookup. We use VLOOKUP to find the row we need based on a range lookup of elevation using the VLOOKUP function. Then, for the third argument to VLOOKUP, we need to determine which column to use based on the month desired. To find the right column based on the month, we first need to find the month label ("Jan", "Feb", etc.) from a date value. This can be accomplished using the **[TEXT](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c){:target="_blank"}** function which takes a date as an argument and returns the month or day value depending on the format specified by the second argument as follows:
 
     TEXT(B28,"MMM")
 
@@ -163,7 +165,8 @@ Again, we can see that we can quickly populate the rest of the table by dragging
 
 ### IFS Statements
 
-**IFS Statements** are an even more powerful version of an IF statement that can allow for multiple conditional statements to take place within one function. This type of function allows for easy categorization by testing a given number or string against one found in a table
+**IFS Statements** are an even more powerful version of an IF statement that can allow for multiple conditional 
+statements to take place within one function. This type of function allows for easy categorization by testing a given number or string against one found in a table.
 
 #### Syntax
 
@@ -181,7 +184,7 @@ Using the same premise as the IF statement, we can utilize the table we used bef
 
 ![readingex5fixed.png](images/readingex5fixed.png)
 
-**Note**: The third condition ```<=50``` includes ```=``` so that 50 is included in "less than or **equal** to 50
+**Note**: The third condition ```<=50``` includes ```=``` so that 50 is included in "less than or **equal** to 50"
 
 Dragging them down, we can see the final result. Now each driveway is nicely categorized by its length.
 
@@ -204,7 +207,8 @@ Often times, the VLOOKUP and MATCH functions are hard to understand and use righ
 
 5. In column G, you will multiply the values in columns C and F to get the total cost for each service
 
-6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should return the total cost for each service based on the service type, quantity, and cost per service
+6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should 
+   return the total cost for each service based on the service type, quantity, and cost per service
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
@@ -261,12 +265,12 @@ Make the is_sorted false and the search type 0
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-|                                                |                 |
 | <div style="text-align: right">**Total**</div> |        5        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
+your link correctly.
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|
 |                 Link shared incorrectly                  |     3      |
-|      Turned in late. 10% for every week it's late.       |            |
+|      Turned in late. 10% for every week it's late.       |    1-5     |
