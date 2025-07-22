@@ -1,11 +1,11 @@
-# HW: Pivot Tables & Query
+# HW: Query
 
-**Purpose:** Learn how to use pivot tables and query functions to summarize data.
+**Purpose:** Learn how to use query function to summarize data.
 
 ## Instructions
 1. First make a copy of the starter sheet here:
    [Starter Sheet - HW Pivot Tables & Query](https://docs.google.com/spreadsheets/d/1__eHBgjb9pZAlpfAtQ35LTMt8a-BroQ79vLmHEwzdzU/edit?gid=0#gid=0){:target="_blank"}
-2. Rename it something like "[Your Name] HW Pivot Tables & Query"
+2. Rename it something like "[Your Name] HW Query"
  
 ---
 
@@ -24,32 +24,6 @@
    Type**, **Days Lost**, **Age Group**, **Gender**, and **Incident Cost**.
 3. Find all incidents where the number of days lost > 0 and the incident cost > 0.
 4. List the results in reverse order by cost (highest to lowest).
-
----
-
-#### Part 3
-
-In this part, you will create a pivot table that summarizes the incident data found in the Data tab. We will 
-be checking to see if there are any noticeable trends in the accident data relative to gender and age group.
-
-1. Create a pivot table on the **pivot_table_1** sheet that references the incident data found in the **data** tab. 
-2. Use the **Rows|Add** feature to add a row for the **Gender** and then **Age Group** fields.
-2. Use the **Values|Add** feature to add a value for the **Days Lost** (Average) and **Incident Cost** (Average) fields. 
-
-Are there any noticeable trends in the data?
-
-**FULL DISCLOSURE**: This is a fake dataset and the data is not real.
-
----
-
-### Part 4
-
-In this part, we want you to create another pivot in the **pivot_table_2** sheet, but in this case we want you to 
-examine the data and create a pivot table that explores data correlations that **YOU** find interesting. Make sure to 
-use at least two combinations of fields in the **Rows** section and at least two combinations of fields in the **Values** 
-section.
-
-For example, are there are plants that have more incidents than others? What are the more common incident types?
 
 ---
 

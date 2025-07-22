@@ -1,5 +1,6 @@
 
 # Query Function
+
 The **Query** function is a powerful function that is not available in Microsoft Excel, but is available in Google Sheets. In some ways, the query function is similar to applying a filter to a table containing a large set of data. Like the list option, it allows you to create a custom and often simplified view of the data in the table by apply one or more conditions and only display the rows in the table that match certain conditions. However, unlike a filter, the query function allows you to select and reorganize the columns that you want to view, including sorting the data by the values in one or more of the columns. Furthermore, with the query function you can create this summary of the table in an entirely different sheet.
 
 The query function uses a query string that is based on SQL syntax. SQL stands for _Structured Query Language_. SQL is a standard language for storing, manipulating and retrieving data in databases. In the case of using the query function in Google Sheets, the data are stored in a table in Google Sheets and the query function is used to extract data from the table based on a set of conditions. Here is the general structure for the query function:
@@ -34,7 +35,7 @@ This query selects all the rows in A1:F5 where the value in column C are greater
 
 returns only columns A, B, and D from the rows where the value in column C is greater than 10.
 
-In some cases, you may want to apply multiple conditions to the data. You can do this by using the AND and OR operators in the query. For example, the following query selects all the data in the range A1:C5 where the value in column A is greater than 10 and the value in column B is less than 20:
+In some cases, you may want to apply multiple conditions to the data. You can do this by using the _AND_ and _OR_ operators in the query. For example, the following query selects all the data in the range A1:C5 where the value in column A is greater than 10 and the value in column B is less than 20:
 
 ```=QUERY(A1:C5, "SELECT * WHERE A > 10 AND B < 20")```
 
@@ -110,7 +111,7 @@ Note that this is a slightly modified version the regional sales data set that w
 
 1. On the top right, click the share button --> share --> settings
 2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+3. Copy the link, then turn it into Learning Suite in the feedback box for this assignment.
 
 **Rubric:**
 
@@ -122,4 +123,4 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|
-|                 Link shared incorrectly                  |     3      |
+|                 Link shared incorrectly                  |     5      |

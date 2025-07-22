@@ -6,7 +6,8 @@
 
 ## Use of Gantt Charts
 
-Construction managers, facilty managers, and civil engineers use Gantt charts to plan and schedule engineering and construction projects. They are used to track the progress of the project and to ensure that the project is completed on time. Gantt charts are also used to allocate resources and to identify potential problems that may arise during the project. They are an essential tool for managers and engineers to ensure that a project is completed on time and within budget. They are used on nearly all projects. 
+Construction managers, facility managers, and civil engineers use Gantt charts to plan and schedule engineering and 
+construction projects. They are used to track the progress of the project and to ensure that the project is completed on time. Gantt charts are also used to allocate resources and to identify potential problems that may arise during the project. They are an essential tool for managers and engineers to ensure that a project is completed on time and within budget. They are used on nearly all projects. 
 
 This figure is from project management software and shows a Gantt chart for a construction project. The chart shows 
 the start and finish dates of the different tasks that comprise the project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task. You can use the information in this chart to associate resources, staff, costs, and other important information with tasks and perform critical path analysis to identify the most critical tasks in the project.
@@ -16,13 +17,14 @@ the start and finish dates of the different tasks that comprise the project. The
 While there is dedicated software for creating Gantt charts, you can also create them in Excel. This is a useful skill to have as it can be used to create simple Gantt charts for small projects. This is also a good comprehensive exercise to use some of the skills we have learned in Excel. 
 
 !!!Note
-      CFM students will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful headstart on the concepts talked about in scheduling.
+      CFM students will later take a semester long class that teaches you the specifics of scheduling and go more 
+in-depth so this will be a helpful head-start on the concepts talked about in scheduling.
 
 ---
 
 ## Gantt Chart Tutorial Video
 
-<p>Please watch the following video as part of your assignment. This video is for educational use and to help you create Gantt charts for your own projects. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing. Don't worry about remembering all of the details - we will go over them in class. The objective of this video is to give you a general idea of how we will be creating our Gantt chart and how they work.</p>
+<p>Please watch the following video as part of your assignment. This video is for educational use and to help you create Gantt charts for your own projects. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing. Don't worry about remembering all the details - we will go over them in class. The objective of this video is to give you a general idea of how we will be creating our Gantt chart and how they work.</p>
 <p>
   <a href="https://www.youtube.com/watch?v=un8j6QqpYa0" target="_blank">
     📺 Watch on YouTube
@@ -45,7 +47,9 @@ We will learn to create Gantt charts in Excel. This involves several distinct st
 
 ## Formulas Used in Gantt Chart Creation
 
-Our in-class exercise will involve creating a Gantt chart in Excel. To prepare for that exercise, we will introduce some of the functions that will be used in the exercise. If you want more information or are confused on any of the functions, click on the title of the function and it will take you to a webstie with a more in-depth explanation.
+Our in-class exercise will involve creating a Gantt chart in Excel. To prepare for that exercise, we will introduce 
+some of the functions that will be used in the exercise. If you want more information or are confused on any of the 
+functions, click on the title of the function, and it will take you to a website with a more in-depth explanation.
 
 ### [WEEKDAY()](https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a){:target="_blank"}
 This formula returns a number representing the day of the week of the day provided. 
@@ -84,7 +88,8 @@ LEFT returns the first character or characters in a text string, based on the nu
       LEFT(text, [num_chars])
 
   * text -  The text string that contains the characters you want to extract.
-  * num_chars - [OPTIONAL - 1 by default] - Specifies the number of characters you want LEFT to extract. Num_chars must be greater than or equal to zero. If num_chars is greater than the length of text, LEFT returns all of text.
+  * num_chars - [OPTIONAL - 1 by default] - Specifies the number of characters you want LEFT to extract. Num_chars 
+    must be greater than or equal to zero. If num_chars is greater than the length of text, LEFT returns all the text.
 
 **Usage**
 

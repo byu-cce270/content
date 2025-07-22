@@ -1,6 +1,6 @@
 # Exercise - Employee Data
 
-The following exercise is based on the Pivot Table and Query Functions we have just covered. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
+The following exercise is based on the Query Function we have just covered. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
 You can find the Employee Data starter sheet here: [Pivot Tables/Query Starter Sheet](https://docs.google.com/spreadsheets/d/19msUPf9DYVBAMNnoIhYO6RMpdSlKobbJM3Ul7W-qiCU/edit?usp=sharing){:target="_blank"}.
 
@@ -16,8 +16,6 @@ You can find the Employee Data starter sheet here: [Pivot Tables/Query Starter S
 
     **HINT**: An employee is active if the value in the Exit Date column is empty. Sometimes we can check for an empty value with (N = ") but in this case you have to use (N is null) because it is a date field.
 
-5. Navigate to the sheet titled "Pivot Table" and create a pivot table that includes the Job Title and Department rows.
-6. Using the pivot table just created, provide a count of the number of people with each job title and calculate the average salary for each job title.
 
 ## Turning in/Rubric
 Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
