@@ -17,8 +17,7 @@ the start and finish dates of the different tasks that comprise the project. The
 While there is dedicated software for creating Gantt charts, you can also create them in Excel. This is a useful skill to have as it can be used to create simple Gantt charts for small projects. This is also a good comprehensive exercise to use some of the skills we have learned in Excel. 
 
 !!!Note
-      CFM students will later take a semester long class that teaches you the specifics of scheduling and go more 
-in-depth so this will be a helpful head-start on the concepts talked about in scheduling.
+      CFM students will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful head-start on the concepts talked about in scheduling.
 
 ---
 
