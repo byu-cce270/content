@@ -246,10 +246,8 @@ You want to figure out how far it jumped.
 |:--------------------------------------------------------------:|:--------------:|
 |         <div style="text-align: right">**Total**</div>         |        5       |
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
-your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points.
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|
 |                 Link shared incorrectly                  |     3      |
-|      Turned in late. 10% for every week it's late.       |    3-15    |

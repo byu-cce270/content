@@ -267,10 +267,8 @@ Make the is_sorted false and the search type 0
 |:----------------------------------------------:|:---------------:|
 | <div style="text-align: right">**Total**</div> |        5        |
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
-your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|
 |                 Link shared incorrectly                  |     3      |
-|      Turned in late. 10% for every week it's late.       |    1-5     |

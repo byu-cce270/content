@@ -7,7 +7,7 @@
 ## Getting Started
 1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-HW-Lookups-Match-IF.xlsx)
 
-2. Rename it something like “(Your-Name)-HW-Lookups-Match-IF
+2. Rename it something like "(Your-Name-HW-Lookups-Match-IF"
 
 3. Remember to save it in your OneDrive folder that you created in the first assignment
 
@@ -79,7 +79,8 @@
 
 6. In column F, use the IF function to determine if the total price in column E is above or below the average price in cell E33. If it is above or equal to, return "Above Average", if it is below, return "Below Average"
 
-7. In coumn G, use the IF function to determine if the total price in column E is above or below the median price in cell E34. If it is above, return "Above Median", if it is equal to or below, return "Below Median"
+7. In column G, use the IF function to determine if the total price in column E is above or below the median price 
+   in cell E34. If it is above, return "Above Median", if it is equal to or below, return "Below Median"
 
 ---
 
@@ -172,7 +173,8 @@ If written correctly, your sheet should look like this when **x** is set to **27
 |           Part 3 - Total cost is correct           |        2        |
 |   <div style="text-align: right">**Total**</div>   |       30        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
+your link correctly.
 
 |                      **Reasons for Points Lost**                      | **Amount** |  
 |:---------------------------------------------------------------------:|:----------:|

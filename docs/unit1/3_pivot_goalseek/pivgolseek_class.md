@@ -9,7 +9,7 @@ this exercise, open the in-class workbook, make a copy, and follow the instructi
 
 Be sure to rename it something like “(Your-Name)-Class-Pivot-&-Goal-Seek”.
 
-In this workbork there are four sheets: "Data Validation"- used for Exercise 1, "Brickmaking Business" used for 
+In this workbook there are four sheets: "Data Validation"- used for Exercise 1, "Brickmaking Business" used for 
 Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet contains a table with employee data.
 
 ---
@@ -50,3 +50,16 @@ Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet conta
 
 ## Turning in/Rubric
 Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|          **Reasons for Points Lost**          | **Amount** |  
+|:---------------------------------------------:|:----------:|
+|            Link shared incorrectly            |    0.5     |
+| Turned in late. 10% for every week it's late. |    0.5     |

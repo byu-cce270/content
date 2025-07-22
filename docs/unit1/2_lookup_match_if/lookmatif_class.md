@@ -99,7 +99,7 @@ Use IF statements and user inputs/selections to determine how many years that th
 |:----------------------------------------------:|:---------------:|
 | <div style="text-align: right">**Total**</div> |        5        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|

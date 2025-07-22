@@ -78,7 +78,7 @@ At this point, you should have 6 sheets in your workbook.
 | Part 3 - Correct equations, data, and use of the conversion factor reference are used in the CMS half |        5        |
 |                            <div style="text-align: right">**Total**</div>                             |       30        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
 |                **Reasons for Points Lost**                | **Amount** |  
 |:---------------------------------------------------------:|:----------:|

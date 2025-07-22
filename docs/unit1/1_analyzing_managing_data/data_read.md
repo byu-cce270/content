@@ -100,7 +100,7 @@ To set up filtering in Excel, follow these steps:
 
 ![FilData8.png](../2_lookup_match_if/images/FilData8.png)
 
-9. To remove a filter, click on the filter icon in the header of the column and select "Clear Filter From [Column Name]". This will remove the filter and show all of the data in the table again. You can also remove all filters by going to the Data tab in the ribbon and selecting "Clear" from the Sort & Filter group.
+9. To remove a filter, click on the filter icon in the header of the column and select "Clear Filter From [Column Name]". This will remove the filter and show all the data in the table again. You can also remove all filters by going to the Data tab in the ribbon and selecting "Clear" from the Sort & Filter group.
 
 ![FilData9.png](../2_lookup_match_if/images/FilData9.png)
 
@@ -126,8 +126,8 @@ Throughout this unit, you will learn new and useful functions. For this topic, y
    |       Average       | =AVERAGE(arguments) | Averages arguments together                              | [AVERAGE](https://www.w3schools.com/excel/excel_average.php){:target="_blank"} |
    |         Max         | =MAX(arguments)     | Returns the highest number out of the arguments          |     [MAX](https://www.w3schools.com/excel/excel_max.php){:target="_blank"}     |
    |         Min         | =MIN(arguments)     | Returns the lowest number out if the arguments           |     [MIN](https://www.w3schools.com/excel/excel_min.php){:target="_blank"}     |
-   | Standard Deviation  | =STDEV.P(arguments) | Returns the stardard deviation for the entire population | [STDEV.P](https://www.w3schools.com/excel/excel_stdevp.php){:target="_blank"}  |
-   | Standard Deviation  | =STDEV.S(arguments) | Returns the stardard deviation for the a sample          | [STDEV.S](https://www.w3schools.com/excel/excel_stdevs.php){:target="_blank"}  |
+   | Standard Deviation  | =STDEV.P(arguments) | Returns the standard deviation for the entire population | [STDEV.P]<br/>(https://www.w3schools.com/excel/excel_stdevp.php){:target="_blank"}  |
+   | Standard Deviation  | =STDEV.S(arguments) | Returns the standard deviation for the a sample          | [STDEV.S]<br/>(https://www.w3schools.com/excel/excel_stdevs.php){:target="_blank"}  |
    |       Median        | =Median(arguments)  | Returns the median of the arguments                      |  [MEDIAN](https://www.w3schools.com/excel/excel_median.php){:target="_blank"}  |
 
 You can find more functions at W3Schools. You can also find a list of all functions in Excel by going to the Formulas tab in the ribbon and selecting "Insert Function". This will open a dialog box with a list of all the functions available in Excel. You can also search for specific functions by typing in the search box at the top of the dialog box. Within this dialog box, you can also find the function arguments and a description of what the function does. This is a great way to learn about new functions and how to use them. This can also be pulled by clicking on the function name in the formula bar.
@@ -164,12 +164,11 @@ You can find more functions at W3Schools. You can also find a list of all functi
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-|                                                |                 |
 | <div style="text-align: right">**Total**</div> |        5        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
+your link correctly.
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|
 |                 Link shared incorrectly                  |     3      |
-|      Turned in late. 10% for every week it's late.       |            |

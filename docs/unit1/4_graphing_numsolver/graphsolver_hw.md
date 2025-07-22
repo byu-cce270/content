@@ -30,7 +30,7 @@
 #### Part 3
 
 In this part, you will create a pivot table that summarizes the incident data found in the Data tab. We will 
-checking to see if there are any noticeable trends in the accident data relative to gender and age group.
+be checking to see if there are any noticeable trends in the accident data relative to gender and age group.
 
 1. Create a pivot table on the **pivot_table_1** sheet that references the incident data found in the **data** tab. 
 2. Use the **Rows|Add** feature to add a row for the **Gender** and then **Age Group** fields.
@@ -81,7 +81,7 @@ Turn sharing and editing on. Turn in the link to Learning Suite in the feedback 
 |            Column created showing the sum of the incident cost            |        4        |
 |              <div style="text-align: right">**Total**</div>               |       14        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
 |                      **Reasons for Points Lost**                      | **Amount** |  
 |:---------------------------------------------------------------------:|:----------:|
