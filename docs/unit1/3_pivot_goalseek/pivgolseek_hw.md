@@ -5,7 +5,7 @@
 ## Instructions
 1. First make a copy of the starter sheet here:
    [HW_Goal_Seek&PivotTables_EXCEL.xlsx](HW_Goal_Seek%26PivotTables_EXCEL.xlsx){:target="_blank"}
-2. Rename it something like “[Your Name] HW 1.4 - Goal Seek and Pivot Tables”
+2. Rename it something like “[Your Name]-HW-Goal Seek and Pivot Tables”
 ---
 
 #### Part 1: Three Reservoir Problem

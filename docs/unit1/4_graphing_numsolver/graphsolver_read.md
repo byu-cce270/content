@@ -89,8 +89,8 @@ Here is a screenshot of the results:
 This is just a sample of the many things you can do with the query function. It is easy to use and can be extremely 
 powerful and convenient. Here are some additional resources that you may find helpful:
 
-* [Google Sheets Query Function Documentation](https://support.google.com/docs/answer/3093343?hl=en){:target="_blank"}
-* [Google Sheets Query function: The Most Powerful Function in Google Sheets](https://www.benlcollins.com/spreadsheets/google-sheets-query-sql/){:target="_blank"}
+* (query link) {:target="_blank"}
+* (query link) {:target="_blank"}
 
 ## Pre-Class Quiz Challenge
 Here is a link for the pre-class starter sheet: [Pre-Class Challenge](https://docs.google.com/spreadsheets/d/1U3q5NoCiYXrQ9XyYayJCNSyTibYSjzqggOx4_vNVk20/edit?gid=51987489#gid=51987489){:target="_blank"}
@@ -103,4 +103,23 @@ Note that this is a slightly modified version the regional sales data set that w
 
 3. In cell **A1** in the **query** sheet, create a query that references the data (A1:F31) in the 
    **regional_sales_data** sheet and selects columns **A**, **C**, **D**, and **F** where the total sales value in column **F** is greater than or equal to **\$4000**. Sort the results by the total sales value in descending order. This will show the date, product, sales rep, and total sales for all sales greater than or equal to $4000.
- 
+
+ ## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|               **Reasons for Points Lost**                | **Amount** |  
+|:--------------------------------------------------------:|:----------:|
+|                 Link shared incorrectly                  |     3      |

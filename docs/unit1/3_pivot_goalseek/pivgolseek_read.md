@@ -15,7 +15,7 @@ Data validation can help prevent errors in your data and make it easier to work 
 Let's go over how to add data validation to your data in Excel:
 
 1. Select the range of cells you want to add data validation to.<br>
-2. Click on **Data | Data validation**.<br>
+2. Click on **Data | Data Validation**.<br>
 3. In the data validation criteria box, you can set up the criteria for the data that can be entered into the cells. For example, you can choose to allow only numbers, text, dates, or a list of items.<br>
 4. You can also choose the output of the data validation you want to apply to the cells. For example, you can choose to show a warning message if the data entered does not meet the criteria or to reject the data altogether.<br>
 5. Once you have set up the criteria and output options, click on Save to apply the data validation to the selected range of cells.
@@ -61,12 +61,12 @@ Excel.
 ### Creating the Pivot Table
 
 1. First, we select the data set. In this case, we select the cells in the range A1:F31.
-2. Next, we select the Insert|Pivot Table option from the menu. This will bring up the following dialog box:
+2. Next, we select the **Insert|Pivot Table** option from the menu. This will bring up the following dialog box:
 
 ![creatingpivottableexcel.png](images/creatingpivottableexcel.png)
 
 We can either choose to put the pivot table in a new sheet or in the existing sheet. In this case, we will put the 
-pivot table in an existing sheet named "summary". We will click the Ok button. This will create a pivot table in the 
+pivot table in an existing sheet named "summary." We will click the "Ok" button. This will create a pivot table in the 
 existing "summary" sheet.  The empty pivot table will look like this:
 
 ![emptypivottableexcel.png](images/emptypivottableexcel.png)
@@ -190,7 +190,7 @@ Note that this is an expanded version of the regional sales data set that we use
 
 **Data Validation:**
 
-Navigate to the "dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit
+Navigate to the "dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit:
 
 1. The breed of dogs (C6:C23) to the list provided.
 2. The judges' scores (D6:G13) to whole numbers 0 - 10.
@@ -217,15 +217,15 @@ Fill in the red chart to check your data validation (randomly select breeds and 
 
 Navigate to the "fishing" sheet. 
 
-You are out fly-fishing and a huge fish just jumped high out of the water for your fly. You just happen to know the parabolic equation that all trout jumps follow which is:
+You are out fly-fishing, when a huge fish jumps high out of the water to eat your fly. You just happen to know the parabolic equation that all trout jumps follow which is:
 
-y = -(x-2)^2 + 5 
+$y = -(x-2)^2 + 5$
 
-You want to figure out how far it jumped. 
-
-1. Use goal seek to determine the two x values that make y = 0. 
+You want to figure out how **far** it jumped.
+1. Use goal seek to determine the two $x$ values that make $y = 0.$ 
 2. Copy your answers into C28 and C29.
-3. As an extra curiosity you want to figure out how high the fish jumped. Use Goal Seek to find the max y value. Copy 
+3. As an extra curiosity, you want to figure out how high the fish jumped. Use Goal Seek to find the max $y$ value. 
+   Copy 
    the 
    answer to E28.
 
@@ -250,4 +250,4 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|
-|                 Link shared incorrectly                  |     3      |
+|                 Link shared incorrectly                  |     5      |
