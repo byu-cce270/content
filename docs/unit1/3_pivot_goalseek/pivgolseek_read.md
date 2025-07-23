@@ -30,7 +30,7 @@ the drop-down list.
 In the example below, the data validation is set up to allow only the values in the drop-down list to be entered 
 into the cells.
 
-![datavdropdown.png](datavdropdown.png)
+![datavdropdown.png](datav_images/datavdropdown.png)
 
 If you're wanting to create a drop-down list from a range of cells, you can select the range of cells that contain the items you want to include in the drop-down list. This is useful when you have a long list of items that you want to include in the drop-down list.
 
@@ -38,7 +38,7 @@ If you're wanting to create a drop-down list from a range of cells, you can sele
 
 This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fit the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
 
-![datavdates.png](datavdates.png)
+![datavdates.png](datav_images/datavdates.png)
 
 There are many other options for data validation. Here is an extra resource for further examples of Data Validation: [Data Validation](https://www.geeksforgeeks.org/excel/what-is-data-validation-in-excel/){:target="_blank"}
 
@@ -64,20 +64,20 @@ Excel.
 1. First, we select the data set. In this case, we select the cells in the range A1:F31.
 2. Next, we select the **Insert|Pivot Table** option from the menu. This will bring up the following dialog box:
 
-![creatingpivottableexcel.png](images/creatingpivottableexcel.png)
+![creatingpivottableexcel.png](pivottable_images/creatingpivottableexcel.png)
 
 We can either choose to put the pivot table in a new sheet or in the existing sheet. In this case, we will put the 
 pivot table in an existing sheet named "summary." We will click the "Ok" button. This will create a pivot table in the 
 existing "summary" sheet.  The empty pivot table will look like this:
 
-![emptypivottableexcel.png](images/emptypivottableexcel.png)
+![emptypivottableexcel.png](pivottable_images/emptypivottableexcel.png)
 
 ### Editing the Pivot Table
 
 Now we need to decide what data we want to summarize in the pivot table. We can do this using the Pivot table editor 
 on the right. The editor will look like this:
 
-![editingthepivottable.png](images/editingthepivottable.png)
+![editingthepivottable.png](pivottable_images/editingthepivottable.png)
 
 Now we can start adding data to the pivot table. Adding data to the pivot table is done by dragging and dropping the 
 desired data into the appropriate sections in the editor. The sections are **Filters**, **Rows**, **Columns**, and 
@@ -102,7 +102,7 @@ limited to work in a single region. Now we need to add the data that we want to 
 
 At this point, the pivot table should look like this:
 
-![finishedpivottable.png](images/finishedpivottable.png)
+![finishedpivottable.png](pivottable_images/finishedpivottable.png)
 
 Now we can see the total units sold and total sales for each sales rep in each region. As you can see, it only takes a few clicks to create a pivot table that summarizes a large data set in a meaningful 
 way. Pivot tables are fun!
@@ -146,13 +146,13 @@ First, click the **Set Cell** grid icon on the **Goal Seek** tab, then select th
 
 **Hint**: This cell should **almost always** be the cell that contains your formula.
 
-![GoalSeekExcel1.png](images/GoalSeekExcel1.png)
+![GoalSeekExcel1.png](goalseek_images/GoalSeekExcel1.png)
 
 Then, set the **To Value** to whatever value you are trying to find. In our case, this number would be 1250.
 
 Finally, select the cell that would need to change to evaluate the final part of the question. In this instance, this would be cell B9.
 
-![goalseekexredo.png](goalseekexredo.png)
+![goalseekexredo.png](goalseek_images/goalseekexredo.png)
 
 When all three inputs are filled on the Goal Seek tab, the Solve button will light up blue. If you press the button, the computer should start jumping between values trying to find the solution to what gets a profit of $1250.
 
@@ -164,19 +164,19 @@ Each attempt by the computer tries to get closer and closer by guessing a number
 
 **Attempt 1**
 
-![guess1.jpg](images/guess1.jpg)
+![guess1.jpg](goalseek_images/guess1.jpg)
 
 **Attempt 2**
 
-![guess2.jpg](images/guess2.jpg)
+![guess2.jpg](goalseek_images/guess2.jpg)
 
 **Attempt 3**
 
-![guess3.jpg](images/guess3.jpg)
+![guess3.jpg](goalseek_images/guess3.jpg)
 
 **Attempt 4 and onwards**
 
-![guessTo6.jpg](images/guessTo6.jpg)
+![guessTo6.jpg](goalseek_images/guessTo6.jpg)
 
 ---
 
