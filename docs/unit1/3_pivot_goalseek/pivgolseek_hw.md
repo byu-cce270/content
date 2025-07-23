@@ -1,4 +1,4 @@
-#  HW: Goal Seek & Pivot Tables
+#  HW: Pivot Tables, Goal Seek, and Data Validation
 
 **Purpose:** Learn how to use Goal Seek to solve complex equations and how to create Pivot Tables to summarize data.
 

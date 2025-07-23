@@ -1,6 +1,7 @@
-#  Reading: Data Validation, Pivot Tables & Goal Seek
+#  Reading: Pivot Tables, Goal Seek, and Data Validation
 
 ---
+
 ## Data Validation
 Data validation is a feature in Excel that allows you to control the type of data entered into a cell. This 
 can be useful to ensure that the data entered into a cell is appropriate for the context of how it will be used. For 
