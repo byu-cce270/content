@@ -113,7 +113,21 @@ To solve the problem, do the following:
 Pipe 1 and 3 are usually **Outflow** pipes, while Pipe 2 is usually an **Inflow** pipe. What does this tell you about 
 the system? Do outflow pipes have a higher or lower average flow rate than inflow pipes? What about average velocity?
 
-**Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
+---
+
+#### Part 2.1: Personal Pivot Table 
+
+In this part, we want you to create another pivot table in a **New Worksheet**, but in this case we want you to examine the data and create a pivot table that explores data correlations that **YOU** find interesting. Make sure to use at least two combinations of fields in the **Rows** section and at least two combinations of fields in the **Values** section.
+
+For example, how does the average flow rate change with different pipe diameters? Or how does the average velocity change with different pipe lengths?
+
+---
+
+**_REMINDER_** - For this class, **you will only turn in the _links_ to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the "share" button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Turn in the link to Learning Suite in the feedback box.
 
 ---
 
@@ -133,8 +147,9 @@ the system? Do outflow pipes have a higher or lower average flow rate than inflo
 |:----------------------------------------------:|:---------------:|
 |    Pivot Table is created on existing sheet    |        2        |
 |  Table created using data from Reservoir Flow  |        2        |
-|  Table includes Pipe and Flow Direction Rows   |        4        |
-| Values are **Average** Flow Rate and Velocity  |        4        |
+|  Table includes Pipe and Flow Direction Rows   |        3        |
+| Values are **Average** Flow Rate and Velocity  |        3        |
+|          Pivot Table in new worksheet          |        2        |
 | <div style="text-align: right">**Total**</div> |       12        |
 
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 

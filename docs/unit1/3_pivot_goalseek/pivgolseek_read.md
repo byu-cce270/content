@@ -181,16 +181,17 @@ Each attempt by the computer tries to get closer and closer by guessing a number
 
 ## Pre-Class Quiz Challenge
 
-Here is a link for the pre-class starter sheet:[pre-class-pivot-goalseek-datav.xlsx](pre-class-pivot-goalseek-datav.xlsx){:target="_blank"}
+Here is a link for the pre-class starter sheet:
+[(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx){:target="_blank"} 
 
-Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
+Make sure to rename it something like “(Your-Name)-Pre-Pivot-GoalSeek-DataV.” Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
 
 ---
 ### Instructions
 
 **Data Validation:**
 
-Navigate to the "dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit:
+Navigate to the "Dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit:
 
 1. The breed of dogs (C6:C23) to the list provided.
 2. The judges' scores (D6:G13) to whole numbers 0 - 10.
@@ -202,7 +203,7 @@ Fill in the red chart to check your data validation (randomly select breeds and 
 
 **Pivot Table:**
 
-1. Select the entire table on the "regional_sales_data" sheet and create a pivot table in the existing "pivot" sheet.
+1. Select the entire table on the "Reg_sales_data" sheet and create a pivot table in the existing "PivotTable" sheet.
 2. Drag and drop **Sales Rep** and **Product**  into the rows section in that order. Then add the **Units Sold** 
    (Count) 
    and 
@@ -215,26 +216,23 @@ Fill in the red chart to check your data validation (randomly select breeds and 
 
 **Goal Seek:**
 
-Navigate to the "fishing" sheet. 
+Navigate to the "Fishing" sheet. 
 
 You are out fly-fishing, when a huge fish jumps high out of the water to eat your fly. You just happen to know the parabolic equation that all trout jumps follow which is:
 
 $y = -(x-2)^2 + 5$
 
 You want to figure out how **far** it jumped.
+
 1. Use goal seek to determine the two $x$ values that make $y = 0.$ 
 2. Copy your answers into C28 and C29.
-3. As an extra curiosity, you want to figure out how high the fish jumped. Use Goal Seek to find the max $y$ value. 
-   Copy 
-   the 
-   answer to E28.
-
+3. As an extra curiosity, you want to figure out how high the fish jumped. Use Goal Seek to find the max $y$ value. Copy the answer to E28.
 
 ---
 
 ### Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+**_REMINDER_** - For this class, **you will only turn in the _links_ to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
 
 1. On the top right, click the share button --> share --> settings
 2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
@@ -250,4 +248,4 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 |               **Reasons for Points Lost**                | **Amount** |  
 |:--------------------------------------------------------:|:----------:|
-|                 Link shared incorrectly                  |     5      |
+|                 Link shared incorrectly                  |    0.5     |

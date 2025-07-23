@@ -4,10 +4,9 @@
 
 The following exercises are based on learning how **Data Validation, Goal Seek,** and **Pivot Tables** can help us 
 find key 
-data. For 
-this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here:[(Starter-Workbook)-Class-Pivot-&-Goal-Seek.xlsx](%28Starter-Workbook%29-Class-Pivot-%26-Goal-Seek.xlsx)
+data. You can find the in-class workbook here:[(Starter-Workbook)-Class-Pivot-&-Goal-Seek.xlsx](%28Starter-Workbook%29-Class-Pivot-%26-Goal-Seek.xlsx)
 
-Be sure to rename it something like “(Your-Name)-Class-Pivot-&-Goal-Seek”.
+Be sure to rename it something like “(Your-Name)-Class-Pivot-&-Goal-Seek.”
 
 In this workbook there are four sheets: "Data Validation"- used for Exercise 1, "Brickmaking Business" used for 
 Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet contains a table with employee data.
@@ -50,7 +49,15 @@ Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet conta
 ---
 
 ## Turning in/Rubric
-Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the "share" button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Submit the link to Learning Suite in the feedback box.
+
+In-class assignment scores are based on valid effort and 
+   completion.
 
 **Rubric:**
 
