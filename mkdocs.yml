@@ -21,11 +21,13 @@ nav:
   - Home: index.md
   - Class Resources:
     - Textbooks: resources/textbooks/textbooks.md
-    - Teaching Assistants (TAs): resources/ta/tas.md
-    - Office Hours: resources/ta/ta_hours.md
+    - Teaching Assistants (TAs):
+      - TAs: resources/ta/tas.md
+      - Office Hours: resources/ta/ta_hours.md
     - Grading Policy: resources/ta/grading_policy.md
+    - Excel Review:
+        - Cells and Formulas Review: resources/excel_review/basic_excel_review.md
   - Unit 1 - Excel:
-    - Review - Cells and Formulas: unit1/0_cells_and_formulas_review/pre_class_review.md
     - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
     - Analyzing/Managing Data, Conditional Formatting:
         - Reading: unit1/1_analyzing_managing_data/data_read.md
