@@ -3,7 +3,7 @@ site_url: https://byu-cce270.readthedocs.io/en/latest/
 site_description: Course materials for CCE 270 at BYU
 site_author: Instructors and TAs of CCE 270 at BYU
 repo_url: https://github.com/byu-cce270/content/
-#favicon: 'images/favicon.ico'
+#favicon: 'goalseek_images/favicon.ico'
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
   - js/mathjax-config.js

@@ -12,7 +12,7 @@
 
 For this exercise we will be solving the classic three reservoir problem. Consider the following diagram:
 
-![three_res.png](images/three_res.png)
+![three_res.png](goalseek_images/three_res.png)
 
 The diagram shows three reservoirs connected by pipes. The flow rate through each pipe is determined by the 
 difference in water levels between the two reservoirs connected by the pipe. The flow rate is also affected by the pipe diameter, length, and friction factor. The flow rate through each pipe is given by the following equation:

@@ -9,24 +9,24 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
 
 1. Highlight the data that you want to graph. Sometimes you don't need all the data, so only highlight what you need. In the example below, there is too much information for one graph so only the needed columns were highlighted.
 
-![Graphex_1.png](Graphex_1.png)
+![Graphex_1.png](graphing_images/Graphex_1.png)
 
 2. Select **Insert** > **Chart**
 
-![Graphex_2.png](Graphex_2.png)
+![Graphex_2.png](graphing_images/Graphex_2.png)
 
 3. From here, Excel offers a large variety of options for a graph that suits your data. There is even an option for 
    Recommended Charts, which will automatically select the best graph for your data set. This is a great option if 
    you are unsure what type of graph to use. For this class, we will primarily use line, bar, column, and pie graphs.
 
-![graphex_3.png](graphex_3.png)
+![graphex_3.png](graphing_images/graphex_3.png)
 
 4. After selecting the graph, check and make sure the data are on the proper x and y axes. You can change this by 
    clicking on the grey labels underneath the x-axis label and Series label.
 5. There are two sidebars next to the graph. The first is the plus sign (+) which is the Chart Elements sidebar. 
    This allows you to add or remove elements from the graph such as a title, labels, and a legend.
 
-![Graphex_chartelm.png](Graphex_chartelm.png)
+![Graphex_chartelm.png](graphing_images/Graphex_chartelm.png)
 
 6. The second option is the paintbrush icon which is the Chart Styles sidebar. This allows you to change the style 
    and color of 
@@ -36,7 +36,7 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
 8. If you would like to switch the x and y-axis, you can do so by right-clicking on the graph and selecting **Select 
    Data**. This will open a new window where you can change the data for the x and y axes.
 
-![graphex_selectdata.png](graphex_selectdata.png)
+![graphex_selectdata.png](graphing_images/graphex_selectdata.png)
 
 9. From here you can change the data for the x and y axes, switch rows and columns, and edit the labels for the axes, 
    OR you can click on the **Switch Row/Column** which is useful when you want to change rows and columns in your data 
@@ -48,27 +48,22 @@ From here, there are many options. Most of these are for visual changes, but hel
 Other types of graphs have more unique features to them, but these are the general few! 
 
 ### Specific Examples
-**Line Graph**  
-Use to track changes over time intervals, such as the speed of a car during a drive. In the example below, the temperature of a place is graphed over a few days.
+**Line Graph**
 
-![img_3.png](img_3.png)
+![img_3.png](graphing_images/img_3.png)
 
-**Bar/Column chart**  
-Use to track differences between groups, such as grades in a class. In the example below, customers with the same ID are compared to see the amount of each order.
+**Bar/Column chart**
 
-![Screenshot 2025-01-08 215721](https://github.com/user-attachments/assets/540118f2-144e-4ec8-abb1-38a69751dd96)
+![img_5.png](graphing_images/img_5.png)
 
+**Pie Chart**
 
-**Pie Chart**  
-Used to compare amounts/ratios of a whole such as wins vs losses during a BYU basketball season. In the example below, the percentage of each material purchased is graphed from a customer's order.
-
-![img_4.png](img_4.png)
+![img_4.png](graphing_images/img_4.png)
 
 Here is an extra resource for further examples of graphing: [Graphing](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90){:target="_blank"}
 
 ---
 
-[Employee Data](https://docs.google.com/spreadsheets/d/1sUXazdoYdaaf5bpILrYyn8qKoJO5BTQ9aQ1Pdomc5J0/edit?usp=sharing){:target="_blank"}
 ## Solver in Excel
 The Solver is a powerful tool in Excel that allows you to find an optimal value for a formula in one cell, subject 
 to constraints on the values of other cells.The Solver can be used to find the maximum or minimum value of a formula by changing the values in the cells that are referenced by the formula. 
@@ -101,7 +96,7 @@ The following workbook is an example of how to use the Solver. You are the owner
 are trying to calculate the cost per test that will allow your company to pay off a $25,000 piece of soil 
 testing equipment in exactly 12 months, given they expect to perform 40 tests per month.
 
-![Solver_example.png](Solver_example.png)
+![Solver_example.png](solver_images/Solver_example.png)
 
 To open up the solver we go to **Data** > **Analysis** > **Solver** 
 
@@ -113,7 +108,7 @@ value of) and a set of constraints can be defined. When we use the **Value Of** 
 as Goal Seek. We are going to set the **Set Objective** to the cell that contains the number of months it will take 
 to pay off the equipment, which is cell B7 in this case.
 
-![Solving_newWindow.png](Solving_newWindow.png)
+![Solving_newWindow.png](solver_images/Solving_newWindow.png)
 
 The **Set Objective** cell is the cell containing the formula that represents the objective of the problem. In this case, it is the cell that contains the cost per test.
 
@@ -128,7 +123,7 @@ Using the options shown above, we can solve for by clicking the **Solve** button
 
 Generally you want to select the OK option to keep the solver solution. The solution found by the solver is: **$52.08**
 
-![Solver_Answer.png](Solver_Answer.png)
+![Solver_Answer.png](solver_images/Solver_Answer.png)
 
 The real power of the solver is to perform optimization using the **Max** and **Min** options. This is something 
 that cannot be done with Goal Seek. For example, suppose we wanted to find the lowest possible cost per test that 
