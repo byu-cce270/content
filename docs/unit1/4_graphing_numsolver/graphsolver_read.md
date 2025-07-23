@@ -29,6 +29,7 @@ This is just a sample of the many things you can do with a solver. It is easy to
 powerful and convenient. Here are some additional resources that you may find helpful:
 
 * [Define and solve a problem by using Solver](https://support.microsoft.com/en-us/office/define-and-solve-a-problem-by-using-solver-5d1a388f-079d-43ac-a7eb-f63e45925040){:target="_blank"}
+* [How to use Solver in Excel with examples](https://www.ablebits.com/office-addins-blog/excel-solver-examples/){:target="_blank"}
 
 ## Pre-Class Quiz Challenge
 Here is a link for the pre-class starter sheet: [Pre-Class Challenge](https://docs.google.com/spreadsheets/d/1U3q5NoCiYXrQ9XyYayJCNSyTibYSjzqggOx4_vNVk20/edit?gid=51987489#gid=51987489){:target="_blank"}
