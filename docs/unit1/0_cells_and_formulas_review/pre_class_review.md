@@ -1,4 +1,4 @@
-# Pre-Class Review: Cells and Formulas
+# Review: Cells and Formulas
 
 ---
 
