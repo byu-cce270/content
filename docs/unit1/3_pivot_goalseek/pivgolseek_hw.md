@@ -3,12 +3,12 @@
 **Purpose:** Learn how to use Goal Seek to solve complex equations and how to create Pivot Tables to summarize data.
 
 ## Instructions
-1. First make a copy of the starter sheet here:
-   [HW_Goal_Seek&PivotTables_EXCEL.xlsx](HW_Goal_Seek%26PivotTables_EXCEL.xlsx){:target="_blank"}
-2. Rename it something like “[Your Name]-HW-Goal Seek and Pivot Tables”
+1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-HW-Pivot-GoalSeek-DataV.xlsx)
+2. Rename it something like "(Your-Name)-HW-Pivot-GoalSeek-DataV.xlsx"
+3. 
 ---
 
-#### Part 1: Three Reservoir Problem
+## Part 1: Three Reservoir Problem
 
 For this exercise we will be solving the classic three reservoir problem. Consider the following diagram:
 
@@ -99,7 +99,7 @@ To solve the problem, do the following:
 
 ---
 
-#### Part 2: Flow Rate & Velocity Pivot Table
+## Part 2: Flow Rate & Velocity Pivot Table
 1. Create a pivot table on the existing "PivotTable" sheet using the data from the Reservoir Flow sheet. Notice how 
    there are multiple scenarios. In this dataset, each scenario is one complete system of water flowing through 
    **Pipe 1, Pipe 2,** and **Pipe 3** with a shared **junction head** (Hj) but potentially different lengths and 
@@ -115,7 +115,7 @@ the system? Do outflow pipes have a higher or lower average flow rate than inflo
 
 ---
 
-#### Part 2.1: Personal Pivot Table 
+## Part 3: Personal Pivot Table 
 
 In this part, we want you to create another pivot table in a **New Worksheet**, but in this case we want you to examine the data and create a pivot table that explores data correlations that **YOU** find interesting. Make sure to use at least two combinations of fields in the **Rows** section and at least two combinations of fields in the **Values** section.
 

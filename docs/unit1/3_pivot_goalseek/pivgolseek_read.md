@@ -187,10 +187,7 @@ Here is a link for the pre-class starter sheet:
 
 Make sure to rename it something like “(Your-Name)-Pre-Pivot-GoalSeek-DataV.” Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
 
----
-### Instructions
-
-**Data Validation:**
+### Part 1: Data Validation
 
 Navigate to the "Dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit:
 
@@ -200,9 +197,7 @@ Navigate to the "Dogshow" sheet, and use the Data Validation tool (found under t
 
 Fill in the red chart to check your data validation (randomly select breeds and individual judge scores).  Enter a Sum function for the total scores. Then enter the names and scores of the 1st, 2nd, and 3rd place winners. 
 
----
-
-**Pivot Table:**
+### Part 2: Pivot Table
 
 1. Select the entire table on the "Reg_sales_data" sheet and create a pivot table in the existing "PivotTable" sheet.
 2. Drag and drop **Sales Rep** and **Product**  into the rows section in that order. Then add the **Units Sold** 
@@ -213,9 +208,7 @@ Fill in the red chart to check your data validation (randomly select breeds and 
    for each 
    product.
 
----
-
-**Goal Seek:**
+### Part 3: Goal Seek
 
 Navigate to the "Fishing" sheet. 
 
@@ -231,7 +224,7 @@ You want to figure out how **far** it jumped.
 
 ---
 
-### Turning in/Rubric
+## Turning in/Rubric
 
 **_REMINDER_** - For this class, **you will only turn in the _links_ to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
 
