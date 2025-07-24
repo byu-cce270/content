@@ -89,6 +89,7 @@ Add-in** and
 click **OK**.
 
 After you load the Solver Add-in, the **Solver** command is available in the **Analysis** group on the **Data** tab. These steps only need to be completed once.
+
 ---
 ### Example Problem
 
@@ -119,21 +120,25 @@ The **Subject to the Constraints** section allows you to add constraints to the 
 
 Using the options shown above, we can solve for by clicking the **Solve** button. Doing so brings up the following message:
 
-![Solver Results.png](Solver%20Results.png)
+![Solver Results.png](solver_images/Solver%20Results.png)
 
 Generally you want to select the OK option to keep the solver solution. The solution found by the solver is: **$52.08**
 
 ![Solver_Answer.png](solver_images/Solver_Answer.png)
 
 The real power of the solver is to perform optimization using the **Max** and **Min** options. This is something 
-that cannot be done with Goal Seek. For example, suppose we wanted to find the lowest possible cost per test that 
-still pays off the equipment in 12 months or less. We can do this by changing the **Set Objective** to **Min** and 
-then clicking the **Solve** button again. The result is shown below:
+that cannot be done with Goal Seek. 
 
+For example, suppose we wanted to find the maximum number of months it takes to 
+pay off equipment without changing the price. We can input our Total revenue and Profit to see how it affects our data. We can do this by changing the **Set 
+Objective** to **Max**, and adding the constraint that the site tests per month is not greater than 60. To add a 
+constraint, click **Add** > input your **Cell Reference** and the **Constraint**. As the Solver iterates, a variety of input values are tested. Such constraints can ensure that the Solver algorithm stays stable and will be more likely to converge on a solution.
 
--image again
+![solver_max1.png](solver_images/solver_max1.png)
 
-While not applicable in this case, we can enter a series of constraints such as "B4>=0". As the Solver iterates, a variety of input values are tested. Such constraints can ensure that the Solver algorithm stays stable and will be more likely to converge on a solution.
+We then click the **Solve** button again. The result is shown below:
+
+![solver_max2.png](solver_images/solver_max2.png)
 
 ---
 
@@ -149,13 +154,21 @@ This is just a sample of the many things you can do with a solver. It is easy to
 
 ## Pre-Class Quiz Challenge
 
-### Instructions
+
+
+### Excercise #2 - Topographic Map
+
+Make sure to rename the starter sheet something like “[Your Name]-Pre-Graphing-and-Solver”.
 
 You need to create a topographic map of a hillside for a project. Your team has set up some GPS points with known 
 horizontal distances from the base of the hill. Since the GPS device isn't accurate at giving elevations use the 
-calculator below to find the correct elevations. Set up a goal seek on D18 dependent upon D19 changing to the values 
-shown at the flag (you could also just type the value into the x input directly but practice using goal seek). To 
-find the minimum and maximum elevations set up a solver for D18 dependent upon D19 that has the conditions $x>=1$ and 
+calculator below to find the correct elevations. 
+
+
+1. Set up a goal seek on D18 dependent upon D19 changing to the values 
+shown at the flag (you could also just type the value into the x input directly but practice using goal seek).
+2. To find the minimum and maximum elevations set up a solver for D18 dependent upon D19 that has the conditions 
+   $x>=1$ and 
 $x<=1000$.
 
 ---
