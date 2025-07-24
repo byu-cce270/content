@@ -3,7 +3,7 @@ site_url: https://byu-cce270.readthedocs.io/en/latest/
 site_description: Course materials for CCE 270 at BYU
 site_author: Instructors and TAs of CCE 270 at BYU
 repo_url: https://github.com/byu-cce270/content/
-#favicon: 'goalseek_images/favicon.ico'
+#favicon: 'images/favicon.ico'
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
   - js/mathjax-config.js
@@ -21,11 +21,13 @@ nav:
   - Home: index.md
   - Class Resources:
     - Textbooks: resources/textbooks/textbooks.md
-    - Teaching Assistants (TAs): resources/ta/tas.md
-    - Office Hours: resources/ta/ta_hours.md
+    - Teaching Assistants (TAs):
+      - TAs: resources/ta/tas.md
+      - Office Hours: resources/ta/ta_hours.md
     - Grading Policy: resources/ta/grading_policy.md
+    - Excel Review:
+        - Cells and Formulas Review: resources/excel_review/basic_excel_review.md
   - Unit 1 - Excel:
-    - Review - Cells and Formulas: unit1/0_cells_and_formulas_review/pre_class_review.md
     - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
     - Analyzing/Managing Data, Conditional Formatting:
         - Reading: unit1/1_analyzing_managing_data/data_read.md
@@ -48,41 +50,35 @@ nav:
         - In Class: unit1/5_gantt_charts/gantt_class.md
         - Homework: unit1/5_gantt_charts/gantt_hw.md
     - Unit 1 Project:
-        - Project Prompt: unit1/6_unit1_project/u1_pro_promt.md
+        - Project Prompt: unit1/6_unit_project/u1_pro_promt.md
 
   - Unit 2 - Intro to Python:
-    - Introduction to Python and Variables:
-        - Reading: unit2/00_intro_python_variables/into_var_read.md
-        - In Class: unit2/00_intro_python_variables/into_var_class.md
-        - Homework: unit2/00_intro_python_variables/into_var_hw.md
-    - Introducing Lists:
-        - Reading: unit2/01_introducing_lists/lists_read.md
-        - In Class: unit2/01_introducing_lists/lists_class.md
-        - Homework: unit2/01_introducing_lists/lists_hw.md
+    - Introduction to Python, Variables, and Lists:
+        - Reading: unit2/00_intro_python_variables_lists/into_var_list_read.md
+        - In Class: unit2/00_intro_python_variables_lists/into_var_list_class.md
+        - Homework: unit2/00_intro_python_variables_lists/into_var_list_hw.md
     - Working with Lists (For Loops):
-        - Reading: unit2/02_for_loops_into_functions/for_read.md
-        - In Class: unit2/02_for_loops_into_functions/for_class.md
-        - Homework: unit2/02_for_loops_into_functions/for_hw.md
+        - Reading: unit2/01_for_loops_into_functions/for_read.md
+        - In Class: unit2/01_for_loops_into_functions/for_class.md
+        - Homework: unit2/01_for_loops_into_functions/for_hw.md
     - IF Statements:
-        - Reading: unit2/03_if_statements/if_read.md
-        - In Class: unit2/03_if_statements/if_class.md
-        - Homework: unit2/03_if_statements/if_hw.md
-    - Dictionaries:
-        - Reading: unit2/04_dictionaries/dict_read.md
-        - In Class: unit2/04_dictionaries/dict_class.md
-        - Homework: unit2/04_dictionaries/dict_hw.md
-    - While Loops:
-        - Reading: unit2/05_while_loops/while_read.md
-        - In Class: unit2/05_while_loops/while_class.md
-        - Homework: unit2/05_while_loops/while_hw.md
-    - Functions (Part 1):
-        - Reading: unit2/06a_functions/functions1_read.md
-        - In Class: unit2/06a_functions/functions1_class.md
-        - Homework: unit2/06a_functions/functions1_hw.md
-    - Functions (Part 2):
-        - Reading: unit2/06b_functions/functions2_read.md
-        - In Class: unit2/06b_functions/functions2_class.md
-        - Homework: unit2/06b_functions/functions2_hw.md
+        - Reading: unit2/02_if_statements/if_read.md
+        - In Class: unit2/02_if_statements/if_class.md
+        - Homework: unit2/02_if_statements/if_hw.md
+    - Dictionaries and While Loops:
+        - Reading: unit2/03_dictionaries_while_loops/dict_while_read.md
+        - In Class: unit2/03_dictionaries_while_loops/dict_while_class.md
+        - Homework: unit2/03_dictionaries_while_loops/dict_while_hw.md
+    - Intro to Functions:
+        - Reading: unit2/04_functions_intro/intro_functions_read.md
+        - In Class: unit2/04_functions_intro/intro_functions_class.md
+        - Homework: unit2/04_functions_intro/intro_functions_hw.md
+    - Advance Functions and Files:
+        - Reading: unit2/05_advance_functions_files/advance_functions_files_read.md
+        - In Class: unit2/05_advance_functions_files/advance_functions_files_class.md
+        - Homework: unit2/05_advance_functions_files/advance_functions_files_hw.md
+    - Unit 2 Project:
+        - Project Prompt: unit2/06_unit_project/u2_pro_prompt.md
 
   - Unit 3 - Advanced Python:
     - Reading and Writing Files:
