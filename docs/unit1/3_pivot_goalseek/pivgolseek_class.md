@@ -4,7 +4,7 @@
 
 The following exercises are based on learning how **Data Validation, Goal Seek,** and **Pivot Tables** can help us 
 find key 
-data. You can find the in-class workbook here:[(Starter-Workbook)-Class-Pivot-&-Goal-Seek.xlsx](%28Starter-Workbook%29-Class-Pivot-%26-Goal-Seek.xlsx)
+data. You can find the in-class workbook here: [(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Class-Pivot-GoalSeek-DataV.xlsx)
 
 Be sure to rename it something like “(Your-Name)-Class-Pivot-&-Goal-Seek.”
 
