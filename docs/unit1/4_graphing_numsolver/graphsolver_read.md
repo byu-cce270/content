@@ -166,14 +166,13 @@ This is just a sample of the many things you can do with a solver. It is easy to
 The starter workbook can be found here: [(Your Name)-Pre-Graphing-and-Solver.xlsm](../../../../../OneDrive%20-%20Brigham%20Young%20University/%28Your%20Name%29-Pre-Graphing-and-Solver.xlsm)
 Make sure to rename the starter sheet something like “(Your Name)-Pre-Graphing-and-Solver.”
 
-In this workbook, we are going to be focusing on three main sheets: Sales_Data, Graphing, and Topographic Map. 
+In this workbook, we are going to be focusing on three main sheets: Sales_Data, Graphing, and Topo-Solver. 
 
 Navigate to the Sales_Data sheet in the starter workbook. This data contains sales information for an engineering 
-surplus store. The data includes the month, region, product, units sold, unit price, and total sales. 
+surplus store. The data includes the month, region, product, units sold, unit price, and total sales. You are the 
+employee tasked with creating graphs to visualize this data. 
 
-You are the employee tasked with creating graphs to visualize this data. 
-
-First, your boss wants you to create a **pie chart** that shows **total sales by product.** Your end result should look 
+First, your boss wants you to create a **pie chart** that shows **Total Sales by Product.** Your end result should look 
 similar to this: 
 
 ![img_5.png](graphing_images/piechartexcel.png)
@@ -194,19 +193,19 @@ Finally, to visualize any trends in the data, your boss wants you to create a **
 
 ![img_6.png](graphing_images/img_6.png)
 
+Note: Make sure that all graphs have appropriate titles, axis labels, and legends.
+
 ### Exercise #2 - Topographic Map
 
-
+Navigate to the Topo-Solver sheet in the starter workbook.
 You need to create a topographic map of a hillside for a project. Your team has set up some GPS points with known 
-horizontal distances from the base of the hill. Since the GPS device isn't accurate at giving elevations use the 
-calculator below to find the correct elevations. 
-
+horizontal distances from the base of the hill. Since the GPS device isn't accurate at giving elevations, use the 
+calculator in the workbook to find the correct elevations. 
 
 1. Set up a goal seek on D18 dependent upon D19 changing to the values 
 shown at the flag (you could also just type the value into the x input directly but practice using goal seek).
 2. To find the minimum and maximum elevations set up a solver for D18 dependent upon D19 that has the conditions 
-   $x>=1$ and 
-$x<=1000$.
+   $x>=1$ and $x<=1000$.
 
 ---
 

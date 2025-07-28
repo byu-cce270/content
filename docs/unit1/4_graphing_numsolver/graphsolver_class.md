@@ -11,9 +11,12 @@ Make sure to rename the starter sheet something like “[Your Name]-Class-Graphi
 
 Take a look at the data, it contains information about employees, including their names, departments, salaries, and years of service.
 
+Navigat to the first sheet in the employee data workbook, which is designed to graph employee data. 
+
 1. Try to make a graph that shows the average salary by department. You can use the **Insert** tab in Excel to create 
-a chart.
-2. Make a pie chart that shows the distribution of employees by department.
+a chart. Make sure that each chart is created on its own sheet and is titled appropriately. Make sure that the axis 
+   are labeled and the chart has a legend. Play around with the chart styles and colors to make it visually appealing.
+2. Make a pie chart that shows the distribution of employees by department. 
 3. Show a bar graph that shows the number of employees in each department.
 4. Make a line graph that shows the trend of average salary over the years of service.
 
