@@ -21,44 +21,53 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
 
 ![graphex_3.png](graphing_images/graphex_3.png)
 
-4. After selecting the graph, check and make sure the data are on the proper x and y axes. You can change this by 
-   clicking on the grey labels underneath the x-axis label and Series label.
-5. There are two sidebars next to the graph. The first is the plus sign (+) which is the Chart Elements sidebar. 
-   This allows you to add or remove elements from the graph such as a title, labels, and a legend.
-
-![Graphex_chartelm.png](graphing_images/Graphex_chartelm.png)
-
-6. The second option is the paintbrush icon which is the Chart Styles sidebar. This allows you to change the style 
-   and color of 
-   the graph. 
-7. If you would like to change the font, size, and color of the text in the graph, you can do so by 
-   clicking on the text in the graph.
-8. If you would like to switch the x and y-axis, you can do so by right-clicking on the graph and selecting **Select 
+4. After selecting the graph, check and make sure the data is on the proper x and y axes. If you would like to switch the x and y-axis, you can do so by right-clicking on the graph and selecting **Select 
    Data**. This will open a new window where you can change the data for the x and y axes.
 
 ![graphex_selectdata.png](graphing_images/graphex_selectdata.png)
 
-9. From here you can change the data for the x and y axes, switch rows and columns, and edit the labels for the axes, 
+5. From here you can change the data for the x and y axes, switch rows and columns, and edit the labels for the axes, 
    OR you can click on the **Switch Row/Column** which is useful when you want to change rows and columns in your data 
 set 
 (like turning a landscape table into a portrait one)
+6. There are two sidebars next to the graph. The first is the plus sign (+) which is the _Chart Elements_ sidebar. 
+   This allows you to add or remove elements from the graph such as a title, labels, and a legend.
 
-From here, there are many options. Most of these are for visual changes, but help to distinguish our data:
+![Graphex_chartelm.png](graphing_images/Graphex_chartelm.png)
 
-Other types of graphs have more unique features to them, but these are the general few! 
+7. The second option is the paintbrush icon which is the _Chart Styles_ sidebar. This allows you to change the style 
+   and color of 
+   the graph. 
+8. If you would like to change the font, size, and color of the text in the graph, you can do so by 
+   clicking on the text in the graph.
+
+These are just a few of the ways that organizing/formatting can help us to distinguish 
+our 
+data. Other types of graphs have more unique features to them, but these are the general few! 
 
 ### Specific Examples
+
+Often when we are trying to organize our data, we are trying to find the best possible way to visulize it. Here are 
+just a few examples of specific types of graphs and their uses: 
+
 **Line Graph**
 
-![img_3.png](graphing_images/img_3.png)
+Line graphs are used to show trends over time. They are useful for showing how a variable changes over a period of time, such as sales or temperature.
 
 **Bar/Column chart**
+
+Bar and column charts are used to compare different categories of data. They are useful for showing the differences between groups, such as sales by region or product.
 
 ![img_5.png](graphing_images/img_5.png)
 
 **Pie Chart**
 
+Pie charts are used to show the proportion of different categories in a whole. They are useful for showing how a variable is divided into different parts, such as market share or budget allocation.
+
 ![img_4.png](graphing_images/img_4.png)
+
+This pie chart shows the amount of moisture content in different types of sand. Each slice represents a different 
+type of sand, and the size of each slice represents the proportion of moisture content in that type of sand.
 
 Here is an extra resource for further examples of graphing: [Graphing](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90){:target="_blank"}
 
@@ -75,18 +84,14 @@ choose an optimal budget allocation, or minimize costs in a project.
 
 ### How to add Solver to Excel
 
-The Solver is an add-in that is not enabled by default in Excel. To enable it, go to:
-1. **File** >
-2. on the 
-left-hand side towards the bottom, click the **Options** button
-3. click **Add-ins** > 
-4. and then in the **Manage** box, select **Excel Add-ins** 
-5. In the **Add-Ins available** box, check 
-the 
-box next to 
-**Solver 
-Add-in** and 
-click **OK**.
+To enable the **Solver Add-in** in Excel (it is not enabled by default), follow these steps:
+
+1. Go to **File** > **Options** (found near the bottom of the left-hand menu).  
+2. In the **Excel Options** window, select **Add-ins** from the sidebar.  
+3. At the bottom, in the **Manage** dropdown, select **Excel Add-ins**, then click **Go...**  
+4. In the **Add-Ins available** box, check the box next to **Solver Add-in**.  
+5. Click **OK** to enable it.
+
 
 After you load the Solver Add-in, the **Solver** command is available in the **Analysis** group on the **Data** tab. These steps only need to be completed once.
 
@@ -101,12 +106,12 @@ testing equipment in exactly 12 months, given they expect to perform 40 tests pe
 
 To open up the solver we go to **Data** > **Analysis** > **Solver** 
 
-In general, the Solver is like Goal Seek in that it 
+In general, the Solver is like [Goal Seek](https://byu-cce270.readthedocs.io/en/latest/unit1/3_pivot_goalseek/pivgolseek_read/#goal-seek){:target="_blank"} in that it 
 iteratively changes one 
 (or 
 more) input cell(s) until some condition is met. But in this case there are three possible conditions (max, min, 
 value of) and a set of constraints can be defined. When we use the **Value Of** option, it is essentially the same 
-as Goal Seek. We are going to set the **Set Objective** to the cell that contains the number of months it will take 
+as Goal Seek. We are going to change **Set Objective** to the cell that contains the number of months it will take 
 to pay off the equipment, which is cell B7 in this case.
 
 ![Solving_newWindow.png](solver_images/Solving_newWindow.png)
@@ -114,7 +119,7 @@ to pay off the equipment, which is cell B7 in this case.
 The **Set Objective** cell is the cell containing the formula that represents the objective of the problem. In this case, it is the cell that contains the cost per test.
 
 The **By Changing Variable Cells** are the cells that the solver will change to find the optimal solution. In this 
-case, it is the cell that contains the number of projected site tests per month and cost per service.
+case, it is the cells that contains the number of projected site tests per month and cost per service.
 
 The **Subject to the Constraints** section allows you to add constraints to the problem.
 
@@ -126,11 +131,13 @@ Generally you want to select the OK option to keep the solver solution. The solu
 
 ![Solver_Answer.png](solver_images/Solver_Answer.png)
 
-The real power of the solver is to perform optimization using the **Max** and **Min** options. This is something 
+The real power of the solver is performing optimization using the **Max** and **Min** options. This is something 
 that cannot be done with Goal Seek. 
 
 For example, suppose we wanted to find the maximum number of months it takes to 
-pay off equipment without changing the price. We can input our Total revenue and Profit to see how it affects our data. We can do this by changing the **Set 
+pay off equipment without changing the price. We might as well input our Total revenue and Profit to see how it affects 
+our data.
+We can do this by changing the **Set 
 Objective** to **Max**, and adding the constraint that the site tests per month is not greater than 60. To add a 
 constraint, click **Add** > input your **Cell Reference** and the **Constraint**. As the Solver iterates, a variety of input values are tested. Such constraints can ensure that the Solver algorithm stays stable and will be more likely to converge on a solution.
 
@@ -154,11 +161,40 @@ This is just a sample of the many things you can do with a solver. It is easy to
 
 ## Pre-Class Quiz Challenge
 
+### Exercise #1 - Graphing 
 
+Make sure to rename the starter sheet something like “[Your Name]-Pre-Graphing-and-Solver.”
 
-### Excercise #2 - Topographic Map
+In this workbook, we are going to be focusing on three main sheets: Sales_Data, Graphing, and Topographic Map. 
 
-Make sure to rename the starter sheet something like “[Your Name]-Pre-Graphing-and-Solver”.
+Navigate to the Sales_Data sheet in the starter workbook. This data contains sales information for an engineering 
+surplus store. The data includes the month, region, product, units sold, unit price, and total sales. 
+
+You are the employee tasked with creating graphs to visualize this data. 
+
+First, your boss wants you to create a **pie chart** that shows **total sales by product.** Your end result should look 
+similar to this: 
+
+![img_5.png](img_5.png)
+
+<details>
+<summary><b>Hint!</b></summary>
+it may be helpful to use a Pivot Table to summarize the data first...
+</details>
+<br>
+
+Your boss would also like to see a **bar graph** that shows the **Monthly Sales of Concrete Mix** You should end up 
+with a 
+graph that looks similar to this: 
+
+![img_7.png](img_7.png)
+
+Finally, to visualize any trends in the data, your boss wants you to create a **line graph** that shows the **Total Sales by Month.** Your end result should look similar to this:
+
+![img_6.png](img_6.png)
+
+### Exercise #2 - Topographic Map
+
 
 You need to create a topographic map of a hillside for a project. Your team has set up some GPS points with known 
 horizontal distances from the base of the hill. Since the GPS device isn't accurate at giving elevations use the 
