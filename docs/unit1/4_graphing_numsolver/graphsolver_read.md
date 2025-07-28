@@ -47,7 +47,7 @@ data. Other types of graphs have more unique features to them, but these are the
 
 ### Specific Examples
 
-Often when we are trying to organize our data, we are trying to find the best possible way to visulize it. Here are 
+Often when we are trying to organize our data, we are trying to find the best possible way to visualize it. Here are 
 just a few examples of specific types of graphs and their uses: 
 
 **Line Graph**
@@ -64,7 +64,7 @@ Bar and column charts are used to compare different categories of data. They are
 
 Pie charts are used to show the proportion of different categories in a whole. They are useful for showing how a variable is divided into different parts, such as market share or budget allocation.
 
-![img_4.png](graphing_images/img_4.png)
+![img_4.png](graphing_images/alsopiechart.png)
 
 This pie chart shows the amount of moisture content in different types of sand. Each slice represents a different 
 type of sand, and the size of each slice represents the proportion of moisture content in that type of sand.
@@ -161,9 +161,10 @@ This is just a sample of the many things you can do with a solver. It is easy to
 
 ## Pre-Class Quiz Challenge
 
-### Exercise #1 - Graphing 
+### Exercise #1 - Graphing Sales Data 
 
-Make sure to rename the starter sheet something like “[Your Name]-Pre-Graphing-and-Solver.”
+The starter workbook can be found here: [(Your Name)-Pre-Graphing-and-Solver.xlsm](../../../../../OneDrive%20-%20Brigham%20Young%20University/%28Your%20Name%29-Pre-Graphing-and-Solver.xlsm)
+Make sure to rename the starter sheet something like “(Your Name)-Pre-Graphing-and-Solver.”
 
 In this workbook, we are going to be focusing on three main sheets: Sales_Data, Graphing, and Topographic Map. 
 
@@ -175,7 +176,7 @@ You are the employee tasked with creating graphs to visualize this data.
 First, your boss wants you to create a **pie chart** that shows **total sales by product.** Your end result should look 
 similar to this: 
 
-![img_5.png](img_5.png)
+![img_5.png](graphing_images/piechartexcel.png)
 
 <details>
 <summary><b>Hint!</b></summary>
@@ -187,11 +188,11 @@ Your boss would also like to see a **bar graph** that shows the **Monthly Sales 
 with a 
 graph that looks similar to this: 
 
-![img_7.png](img_7.png)
+![img_7.png](graphing_images/img_7.png)
 
 Finally, to visualize any trends in the data, your boss wants you to create a **line graph** that shows the **Total Sales by Month.** Your end result should look similar to this:
 
-![img_6.png](img_6.png)
+![img_6.png](graphing_images/img_6.png)
 
 ### Exercise #2 - Topographic Map
 

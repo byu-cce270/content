@@ -11,7 +11,7 @@ Unfortunately a building is in the way, and you need to know if you can clear it
 land the remains in a safe zone. Use goal seek to determine the horizontal location of the missile when it reaches the height of the building. Copy and paste your answers into the appropriate cells. If you are right, something magical will happen!
 
 1. First make a copy of the starter sheet here:
-2. Rename it something like “[Your Name]-HW-Graphing and Numerical Solver”
+2. Rename it something like “[Your Name]-HW-Graphing-and-Solver”
 
 <details>
 <summary><b>Hint!</b></summary>
@@ -25,15 +25,15 @@ Type the equation into K21 dependent on K22 (X). Run a Goal seek on K21 to equal
 
 1. Using the data in the Streamflow data sheet recreate this graph but change the colors to something else and put the chart on its own page called chart 1:
 
-![img_2.png](img_2.png)
+![img_2.png](graphing_images/img_2.png)
 
 2. Using the data in the Streamflow data sheet recreate this graph but change the colors to something else and put the chart on its own page called chart 2:
 
-![img_3.png](img_3.png)
+![img_3.png](graphing_images/img_3.png)
 
 3. Using the data in the Load Calculations sheet recreate this graph but change the colors to something else. Put the chart on its own sheet called chart 3:
 
-![img_4.png](img_4.png)
+![img_4.png](graphing_images/img_4.png)
 ---
 ### Turning in/Rubric
 
