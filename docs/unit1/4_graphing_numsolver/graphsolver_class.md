@@ -11,7 +11,7 @@ Make sure to rename the starter sheet something like “[Your Name]-Class-Graphi
 
 Take a look at the data, it contains information about employees, including their names, departments, salaries, and years of service.
 
-Navigat to the first sheet in the employee data workbook, which is designed to graph employee data. 
+Navigate to the first sheet in the employee data workbook, which is designed to graph employee data. 
 
 1. Try to make a graph that shows the average salary by department. You can use the **Insert** tab in Excel to create 
 a chart. Make sure that each chart is created on its own sheet and is titled appropriately. Make sure that the axis 
