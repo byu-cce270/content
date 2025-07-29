@@ -1,46 +1,59 @@
-# Exercise - Employee Data
+# Exercise #1- Graphing Construction Surplus Store Data
 
-We will practice graphing and using the Solver function in Excel. The data we will use is from a sample employee dataset. You can access the data here:
-
-- employee data  [Pivot Tables/Query Starter Sheet](https://docs.google.com/spreadsheets/d/19msUPf9DYVBAMNnoIhYO6RMpdSlKobbJM3Ul7W-qiCU/edit?usp=sharing){:target="_blank"}.
+We will practice graphing and using the Solver function in Excel. The data we will use is an expanded edition of the 
+preclass construction surplus store. You can 
+access the data here:
+[(Your Name)-Class-Graphing-and-Solver.xlsx](%28Your%20Name%29-Class-Graphing-and-Solver.xlsx){:target="_blank"}.
 
 Make sure to rename the starter sheet something like “[Your Name]-Class-Graphing-and-Solver”.
 
 ---
 ## Exercise #1- Graphing Employee Data 
 
-Take a look at the data, it contains information about employees, including their names, departments, salaries, and years of service.
+Take a look at the data, it contains information about specific sales, including the date, region, product, sales 
+associate and more. 
 
-Navigate to the first sheet in the employee data workbook, which is designed to graph employee data. 
+Navigate to the first sheet in the  data workbook, which is designed to graph employee data. 
 
-1. Try to make a graph that shows the average salary by department. You can use the **Insert** tab in Excel to create 
-a chart. Make sure that each chart is created on its own sheet and is titled appropriately. Make sure that the axis 
-   are labeled and the chart has a legend. Play around with the chart styles and colors to make it visually appealing.
-2. Make a pie chart that shows the distribution of employees by department. 
-3. Show a bar graph that shows the number of employees in each department.
-4. Make a line graph that shows the trend of average salary over the years of service.
+You are tasked with creating various graphs to visualize the data. Make sure that each chart is created on **its own 
+sheet** and is titled appropriately. Each chart should have the x and y-axis labeled and have a legend. 
+
+1. Try to make a pie chart that shows the total sales by product. You can use the **Insert** tab in Excel to create 
+a chart. 
+2. Your boss wants to know the relationship between quality sold and revenue. Make a scatter plot that shows the units 
+   sold vs total 
+   sales.   Does higher quantity sales lead to higher revenue?
+3. Show a bar graph that shows the average total sales by region. With this graph we are looking to see which 
+   regions are performing the best in terms of sales.
+4. Make a line graph that shows the total monthly sales trend over time.
+
+The goal of this exercise is to practice creating different types of graphs in Excel and to understand how to visualize data effectively, so feel free to experiment with different colors and styles! 
 
 ---
 ## Exercise #2- Using Solver in Excel (with Goal Seek)
-Open the second sheet in the employee data workbook,which is designed to solve a quadratic equation using Excel's Solver function.
+
+Navigate to the second sheet in the employee data workbook, "Parabola-Solver", which is designed to solve a 
+quadratic 
+equation 
+using Excel's Solver function.
 The workbook is designed to solve a quadratic equation of the form:
 
-$y = ax2 + bx + c$
+$y = ax^2 + bx + c$
 
 The user enters the coefficients a, b, & c in cells C4:C6. For the case shown above, we are solving:
 
-$y = x2 - 3x + 1$
+$y = x^2 - 3x + 1$
 
 The chart at the bottom is used to graph the parabola corresponding to the equation over a specified range. The 
 solution to the equation is the two points where the parabola intercepts the y-axis. These are called the "roots" and represent the solution to:
 
-$ax2 + bx + c = 0$
+$ax^2 + bx + c = 0$
 
 As can be seen on the chart, the roots are approximately 0.4 and 2.6.
 
 We can find the roots using cells F4 and F5. We enter a value for x in cell F4. The corresponding value of y is computed in cell F5 as:
 
-**=C4*F4^2+C5*F4+C6**
+**=C4*F$4^2$+C5*F4+C6**
 
 To find a root, we can enter a guess (0.4 for starters) into F4 and iteratively tweak that number until the value 
 computed for y in F5 is roughly equal to zero. While this works, it can be time-consuming and tedious.
@@ -49,4 +62,23 @@ computed for y in F5 is roughly equal to zero. While this works, it can be time-
 2. Find the x location corresponding the lowest point on the parabola.
 
 ## Turning in/Rubric
-Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+|               **Reasons for Points Lost**                | **Amount** |  
+|:--------------------------------------------------------:|:----------:|
+|                 Link shared incorrectly                  |    0.5     |
+|      Turned in late. 10% for every week it's late.       |    0.5     |
+
