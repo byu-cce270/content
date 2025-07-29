@@ -1,17 +1,17 @@
 # HW: Graphing and Numerical Solver
-- pivot table link-   [Starter Sheet - HW Pivot Tables & Query](https://docs.google.com/spreadsheets/d/1__eHBgjb9pZAlpfAtQ35LTMt8a-BroQ79vLmHEwzdzU/edit?gid=0#gid=0){:target="_blank"}
 
 **Purpose:** Learn how to use Solver to solve complex equations and graph data.
 
 ## Asteroid Defense Missile Trajectory
 An asteroid is headed for earth. You need to determine if the trajectory of an "asteroid-stopping" defense missile will clear the nearby buildings and destroy the asteroid before it impacts with earth.
 
+1. First make a copy of the starter sheet here:[(Your Name)-HW-Graphing-and-Solver.xlsm](%28Your%20Name%29-HW-Graphing-and-Solver.xlsm)
+2. Rename it something like [Your Name]-HW-Graphing-and-Solver{:target="_blank"}
+
+
 An asteroid is on a collision course with earth, and you need to shoot a missile at it to obliterate it. 
 Unfortunately a building is in the way, and you need to know if you can clear it with the current trajectory and 
 land the remains in a safe zone. Use goal seek to determine the horizontal location of the missile when it reaches the height of the building. Copy and paste your answers into the appropriate cells. If you are right, something magical will happen!
-
-1. First make a copy of the starter sheet here:
-2. Rename it something like “[Your Name]-HW-Graphing-and-Solver”
 
 <details>
 <summary><b>Hint!</b></summary>
@@ -19,6 +19,18 @@ land the remains in a safe zone. Use goal seek to determine the horizontal locat
 Type the equation into K21 dependent on K22 (X). Run a Goal seek on K21 to equal 50 by changing the (X) value. Approach the Y value from both sides (You will need to initially set your (x) value to a low number and then a high number).
 </details>
 <br>
+
+Use Solver to optimize the launch angle or velocity so the missile: Clears the building height of 50 m before a 
+specific X value (e.g., < 155 m) and lands in a target zone (e.g., between 200 m and 250 m).
+
+- Set Objective: A calculated Landing X or Missile Clearance
+- To: Maximize or Set to target
+- By Changing: Angle, Initial Velocity, etc.
+
+Don't forget to add constraints! The Height at X = 155 ≥ 50, and the final X should be between 200 and 250.
+
+Final X between 200 and 250
+ 
 
 ---
 ## Graphing Astronomical Data
@@ -47,17 +59,17 @@ Type the equation into K21 dependent on K22 (X). Run a Goal seek on K21 to equal
 
 **Rubric**
 
-|                             Item (Solver)                              | Points Possible |
-|:----------------------------------------------------------------------:|:---------------:|
-|                    Solved for Vertical Location (Y)                    |        2        |
-|                   Solved for Horizontal Location (X)                   |        2        |
-|                        Found the first location                        |        2        |
-|                       Found the second location                        |        2        |
-|         Query is created in cell A1 on days_lost_claims sheet          |        2        |
-|       Query returns the 5 columns specified in the instructions        |        2        |
-| All incidents where # of days lost > 0 and incident cost >0 were found |        2        |
-|              Results are sorted in reverse order by cost               |        2        |
-|             <div style="text-align: right">**Total**</div>             |       16        |
+|                 Item (Solver)                  | Points Possible |
+|:----------------------------------------------:|:---------------:|
+|        Solved for Vertical Location (Y)        |        2        |
+|       Solved for Horizontal Location (X)       |        2        |
+|            Found the first location            |        2        |
+|           Found the second location            |        2        |
+|      Used Solver to optimize launch angle      |        2        |
+|        Used Solver to optimize velocity        |        2        |
+|               Added constraints                |        2        |
+|          Final x between 200 and 250           |        2        |
+| <div style="text-align: right">**Total**</div> |       16        |
 
 |                Item (Graphing)                 | Points Possible |
 |:----------------------------------------------:|:---------------:|
