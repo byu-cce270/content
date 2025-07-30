@@ -2,8 +2,7 @@
 
 We will practice graphing and using the Solver function in Excel. The data we will use is an expanded edition of the 
 preclass construction surplus store. You can 
-access the data here:
-[(Your Name)-Class-Graphing-and-Solver.xlsx](%28Your%20Name%29-Class-Graphing-and-Solver.xlsx){:target="_blank"}.
+access the data here:[(Your Name)-Class-Graphing-and-Solver.xlsx](%28Your%20Name%29-Class-Graphing-and-Solver.xlsx){:target="_blank"}.
 
 Make sure to rename the starter sheet something like “[Your Name]-Class-Graphing-and-Solver”.
 

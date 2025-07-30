@@ -3,10 +3,15 @@
 **Purpose:** Learn how to use Solver to solve complex equations and graph data.
 
 ## Asteroid Defense Missile Trajectory
+
+1. First make a copy of the starter sheet here:[(Your Name)-HW-Graphing-and-Solver.xlsm](%28Your%20Name%29-HW-Graphing-and-Solver.xlsm){:target="_blank"}
+2. Rename it something like [Your Name]-HW-Graphing-and-Solver
+
 An asteroid is headed for earth. You need to determine if the trajectory of an "asteroid-stopping" defense missile will clear the nearby buildings and destroy the asteroid before it impacts with earth.
 
-1. First make a copy of the starter sheet here:[(Your Name)-HW-Graphing-and-Solver.xlsm](%28Your%20Name%29-HW-Graphing-and-Solver.xlsm)
-2. Rename it something like [Your Name]-HW-Graphing-and-Solver{:target="_blank"}
+!!!Note
+      While all of our previous files in class have been **.xls** files, (Excel files), This file is an **.xlm** file.
+That means that the file contains macros, which are small programs that can automate tasks in Excel. You will need to enable macros when you open the file to use the Solver and Goal Seek functions. The macros in this file reveal a secret message when you solve the problems correctly.
 
 
 An asteroid is on a collision course with earth, and you need to shoot a missile at it to obliterate it. 
@@ -30,7 +35,7 @@ specific X value (e.g., < 155 m) and lands in a target zone (e.g., between 200 m
 Don't forget to add constraints! The Height at X = 155 ≥ 50, and the final X should be between 200 and 250.
 
 Final X between 200 and 250
- 
+
 
 ---
 ## Graphing Astronomical Data
