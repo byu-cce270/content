@@ -29,7 +29,7 @@ nav:
         - Cells and Formulas Review: resources/excel_review/basic_excel_review.md
   - Unit 1 - Excel:
     - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
-    - Analyzing/Managing Data, Conditional Formatting:
+    - Analyzing & Managing Data:
         - Reading: unit1/1_analyzing_managing_data/data_read.md
         - In Class: unit1/1_analyzing_managing_data/data_class.md
         - Homework: unit1/1_analyzing_managing_data/data_hw.md

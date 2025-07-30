@@ -95,20 +95,6 @@ LEFT returns the first character or characters in a text string, based on the nu
 We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart  
 using only single letters for the days of the week.
 
-### [IFERROR()](https://support.microsoft.com/en-us/office/iferror-function-c526fd07-caeb-47b8-8bb6-63f3e417f611){:target="blank"}
-This formula returns the first argument if there is not an error value. If an error value is present, the formula will return the second argument if present, or a blank if the second argument is absent.
-
-**Syntax**
-
-      IFERROR(value, value_if_error)
-
-  * value - the value to return if value itself is not an error
-  * value_if_error - [OPTIONAL - blank by default] - the value the function returns if value is an error
-
-**Usage**
-
-This allows us to return a blank cell if an error is computed in the cell. This is useful for any formula that may return an error. If the cell is blank, we want to return nothing instead of an error.
-
 # Pre-Class Quiz Challenge
  First, make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Gantt-Chart.xlsx](%28Starter-Workbook%29-Pre-Gantt-Chart.xlsx)
 

@@ -45,12 +45,6 @@ Prepare a Gantt chart that includes the following:
 
 - Include dependencies when applicable (e.g., Task B can’t start until Task A is done)
 
-
-
-
-
-
-
 ---
 
 ## Turning in/Rubric
@@ -63,23 +57,26 @@ Prepare a Gantt chart that includes the following:
 
 **Rubric:**
 
-|                                                 Item                                                    | Points Possible |
-|:-------------------------------------------------------------------------------------------------------:|:---------------:|
-|            Sheet notes project title, company name, and student name as the project manager             |        2        |
-|                          Headers are all included correctly as noted in step 3                          |        6        |
-|                     Tasks and phases are included with each phase including 4 tasks                     |        4        |
-|                        Start and end dates for each task are computed correctly                         |        4        |
-|                            Phase start and end dates are computed correctly                             |        2        |
-| Conditional formatting rule for task durations is input correctly and displays task durations correctly |        5        |
-|                               Table is formatted with colors and headers                                |        2        |
-|                  Conditional formatting rule to highlight today's date works correctly                  |        2        |
-|                       SPARKLINE and IFERROR formulas are used correctly together                        |        3        |
-|                             <div style="text-align: right">**Total**</div>                              |       30        |
+|                                                    Item                                                     | Points Possible |
+|:-----------------------------------------------------------------------------------------------------------:|:---------------:|
+|               Project title, team member names, and project manager name are clearly labeled                |        2        |
+|                              Project start and end dates are clearly indicated                              |        2        |
+|                              Project is divided into 3 clearly labeled phases                               |        3        |
+|                                 Each phase includes 3–4 well-defined tasks                                  |        4        |
+|                     Tasks are logically ordered and match realistic project progression                     |        3        |
+|                    Tasks are assigned to 3 different team members (workload is balanced)                    |        3        |
+|                           Each task includes clearly defined start and end dates                            |        3        |
+|                 Phase start and end dates are correctly calculated based on task timelines                  |        2        |
+|                          Dependencies are indicated between tasks when appropriate                          |        3        |
+|                Gantt chart includes color-coded bars or highlights to indicate task duration                |        3        |
+|                      Chart includes headers, labels, and clean layout for readability                       |        3        |
+|             Today’s date is clearly marked using a formatting element (e.g., color, line, etc.)             |        2        |
+|                               <div style="text-align: right">**Total**</div>                                |       33        |
 
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
 your link correctly.
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |

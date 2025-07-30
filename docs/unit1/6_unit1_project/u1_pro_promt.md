@@ -41,7 +41,17 @@ You and two friends have decided to install the Robinhood app on your phones and
 You and two friends decide to enter a 12-week weight-loss challenge. You each pay $20 into a kitty at the beginning of the challenge on a Monday morning and you each submit your current weight to whomever is managing the spreadsheet.  Each of the following 12 Mondays you weigh in and enter your weight in the spreadsheet. The spreadsheet automatically computes the percent body weight lost (or gained) since the previous week for each person. (To keep it simple, you are going to ignore BMI or other metrics, and just focus on percent of weight loss. Let’s assume each friend is generally healthy and doesn’t have any eating disorders and has a “few pounds to lose” to reach whatever they consider to be their target/desired weight.)  The three of you have agreed that each week you will each add another $5 to the kitty - except for the person who did best on the challenge that week (highest percent loss - comparing the current weight to the previous week’s weight - not compared to the original weight.) The money in the kitty gets put into a simple savings account that returns 0.05% interest per month. Make sure this interest rate can’t be changed in your spreadsheet (use an absolute reference to a cell that contains the interest). At the end of the 12 weeks, whoever has the greatest percent loss overall (compared to their very first measurement) wins the kitty. Your job is to build a Google Sheets spreadsheet to manage this process. You can use one or more tabs on the spreadsheet, but your resulting product should automatically compute and name the winner each week and should also compute and name the overall winner and the total amount of money in the kitty that the winner will receive. Once you have built your spreadsheet, fill it with synthetic data including names of the friends and weekly weigh-ins, so that it can demonstrate all of its capabilities. Be sure to include the items in the grading rubric below. 
 
 ### Prompt 3 - Landscaping Invoice Tracker
-Create a spreadsheet that can help you create bills to send to your landscaping clients. Include 3 different types of foliage, soil, and rocks and how much they cost per foot. Have a spot that indicates how much square footage they bought of each material. Indicate how many person-hours it took to landscape their yard. Be sure to include the items in the grading rubric below. 
+Create a professional spreadsheet that can be used to generate bills for landscaping clients. Your spreadsheet must include:
+
+- At least three types of foliage, soil, and rocks, along with their cost per square foot
+
+- A section where the client’s square footage purchase for each material is entered
+
+- A way to calculate total costs based on quantity and unit prices
+
+- An entry field for person-hours required to complete the landscaping
+
+- Any other details needed for a clear and useful client invoice
 
 
 ---
