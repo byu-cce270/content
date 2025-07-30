@@ -152,10 +152,11 @@ For example, how does the average flow rate change with different pipe diameters
 |          Pivot Table in new worksheet          |        2        |
 | <div style="text-align: right">**Total**</div> |       12        |
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
-your link correctly.
+---
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |

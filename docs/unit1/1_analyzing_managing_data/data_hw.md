@@ -78,10 +78,12 @@ At this point, you should have 6 sheets in your workbook.
 | Part 3 - Correct equations, data, and use of the conversion factor reference are used in the CMS half |        5        |
 |                            <div style="text-align: right">**Total**</div>                             |       30        |
 
+---
+
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
-|                **Reasons for Points Lost**                | **Amount** |  
-|:---------------------------------------------------------:|:----------:|
-|                  Link shared incorrectly                  |     3      |
-| Turned in late. 10% or 3 points for every week it's late. |    3-15    |
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |
 

@@ -119,3 +119,26 @@ This exercise will help you practice the functions we will use in class to creat
    
 Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas, and we will clarify confusion in class. You are also more than welcome to come to TA office hours or message a TA for help!
 
+---
+
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |

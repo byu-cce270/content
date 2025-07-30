@@ -166,9 +166,10 @@ You can find more functions at W3Schools. You can also find a list of all functi
 |:----------------------------------------------:|:---------------:|
 | <div style="text-align: right">**Total**</div> |        5        |
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
-your link correctly.
+---
 
-|               **Reasons for Points Lost**                | **Amount** |  
-|:--------------------------------------------------------:|:----------:|
-|                 Link shared incorrectly                  |     3      |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |

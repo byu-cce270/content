@@ -73,8 +73,9 @@ Prepare a Gantt chart that includes the following:
 |             Today’s date is clearly marked using a formatting element (e.g., color, line, etc.)             |        2        |
 |                               <div style="text-align: right">**Total**</div>                                |       33        |
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
-your link correctly.
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|

@@ -99,9 +99,11 @@ Use IF statements and user inputs/selections to determine how many years that th
 |:----------------------------------------------:|:---------------:|
 | <div style="text-align: right">**Total**</div> |        5        |
 
+---
+
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
-|               **Reasons for Points Lost**                | **Amount** |  
-|:--------------------------------------------------------:|:----------:|
-|                 Link shared incorrectly                  |    0.5     |
-|      Turned in late. 10% for every week it's late.       |    0.5     |
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |

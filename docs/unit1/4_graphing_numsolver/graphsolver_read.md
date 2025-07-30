@@ -223,8 +223,10 @@ shown at the flag (you could also just type the value into the x input directly 
 |:----------------------------------------------:|:---------------:|
 | <div style="text-align: right">**Total**</div> |        5        |
 
+---
+
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
-|               **Reasons for Points Lost**                | **Amount** |  
-|:--------------------------------------------------------:|:----------:|
-|                 Link shared incorrectly                  |    0.5     |
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |

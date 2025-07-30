@@ -173,10 +173,11 @@ If written correctly, your sheet should look like this when **x** is set to **27
 |           Part 3 - Total cost is correct           |        2        |
 |   <div style="text-align: right">**Total**</div>   |       30        |
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share 
-your link correctly.
+---
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |
