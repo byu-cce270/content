@@ -57,8 +57,8 @@ For this class, **you will only turn in the links to your Excel files**. We will
 3. Copy the link, then turn it into learning suite in the feedback box.
 
 
->**IMPORTANT** - Make sure that your Excel file is turned in properly. You WILL be docked points if not shared so anyone with a link can edit, OR if you turn in an Excel file instead of a link to the file.
-
+!!!IMPORTANT
+   Make sure that your Excel file is turned in properly. You WILL be docked points if not shared so anyone with a link can edit, OR if you turn in an Excel file instead of a link to the file.
 
 ---
 
