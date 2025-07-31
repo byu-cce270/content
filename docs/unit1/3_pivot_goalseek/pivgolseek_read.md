@@ -21,6 +21,11 @@ Let's go over how to add data validation to your data in Excel:
 4. You can also choose the output of the data validation you want to apply to the cells. For example, you can choose to show a warning message if the data entered does not meet the criteria or to reject the data altogether.<br>
 5. Once you have set up the criteria and output options, click on Save to apply the data validation to the selected range of cells.
 
+!!!Note
+      You can also add multiple data validation rules to the same range of cells. For example, you can set up a rule that allows only numbers and another rule that allows only dates.
+
+---
+
 ### Dropdown  
 
 This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For 
