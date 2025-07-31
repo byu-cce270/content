@@ -6,8 +6,7 @@ and organize data through creating various styles of graph.
 ---
 ## Getting Started
 
-1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Graphing-and-Solver.xlsm]
-   (%28Starter-Workbook%29-HW-Graphing-and-Solver.xlsm){:target="_blank"}
+1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Graphing-and-Solver.xlsm](%28Starter-Workbook%29-HW-Graphing-and-Solver.xlsm){:target="_blank"}
 2. Rename it something like "[Your Name]-HW-Graphing-and-Solver"
 3. Remember to save it in your OneDrive folder that you created in the first assignment.
 
@@ -38,16 +37,18 @@ $y = -(x^2)+ 155 *x$
 5. Set the **"Set cell"** to K21 (the trajectory equation) and set the **"To value"** to 50 (the height of the building).
 6. In the **"By changing cell"** box, enter K22 (the horizontal distance of the missile).
 7. Click **"OK"** to run the Goal Seek. Excel will change the value in K22 to find the horizontal location of the missile when it reaches the height of the building.
-8. Copy and paste the value of K22 into cell K28 or **"1st Location"**. This is the first horizontal location of the missile when it reaches the height of the building.
+8. Copy and paste the value of K22 into cell K28 or **"1st Location."** This is the first horizontal location of the 
+   missile when it reaches the height of the building.
 9. Now, you need to find the second horizontal location of the missile when it reaches the height of the building. 
    To do this, you will need to change the value in K22 to a larger number and run Goal Seek again.
-10. Copy and paste the value of K22 into cell K29 or **"2nd Location"**. This is the second horizontal location of the missile when it reaches the height of the building.
+10. Copy and paste the value of K22 into cell K29 or **"2nd Location."** This is the second horizontal location of 
+    the missile when it reaches the height of the building.
 
 Congratulations! You have found the horizontal locations of the missile when it reaches the height of the building!
 
 ---
 
-## Solver Section 
+## Part 2 - Missile Force Calculation 
 
 Now that you've determined the horizontal location of the missile when it reaches the height of the building, 
     you need to find how much 
@@ -78,7 +79,7 @@ Solver**. The Solver Parameters window will open. Set the objective to cell N31 
    force of the missile equal to the force of the asteroid.
 
 ---
-## Part 2 - Graphing Streamflow Data
+## Part 3 - Graphing Streamflow Data
 
 This data comes from [USGS Water Data for the Nation](https://waterdata.usgs.gov/nwis){:target="_blank"} and contains 
 streamflow data for the 

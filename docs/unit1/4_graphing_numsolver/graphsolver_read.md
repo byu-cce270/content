@@ -3,11 +3,14 @@
 ---
 
 ## Graphing Data
-One of the most helpful tools in Excel is Graphing. This allows us to see trends in data, compare variables, and 
+One of the most helpful tools in Excel is the chart feature. This allows us to see trends in data, compare variables, 
+and 
 visualize the values in our data set. 
 This can be hard to do by hand, and Excel makes it much easier! Let's walk through how to graph a given data set. 
 
-1. Highlight the data that you want to graph. Sometimes you don't need all the data, so only highlight what you need. In the example below, there is too much information for one graph so only the needed columns were highlighted.
+1. Highlight the data that you want to graph. Sometimes you don't need all the data, so only highlight what you need.
+   In the example below, there is too much information for the desired graph so only the needed columns were 
+   highlighted.
 
 ![Graphex_1.png](graphing_images/Graphex_1.png)
 
@@ -16,14 +19,15 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
 ![Graphex_2.png](graphing_images/Graphex_2.png)
 
 3. From here, Excel offers a large variety of options for a graph that suits your data. There is even an option for 
-   Recommended Charts, which will automatically select the best graph for your data set. This is a great option if 
-   you are unsure what type of graph to use. For this class, we will primarily use line, bar, column, and pie charts.
+   **Recommended Charts**, which will automatically select the best graph for your data set. This is a great option if 
+   you are unsure which type of graph to use. For this class, we will primarily use line, bar, column, and pie 
+   charts. A **Bar chart** is shown below:
 
 ![graphex_3.png](graphing_images/graphex_3.png)
 
 4. After selecting the type of graph you want, Excel will create a graph based on the data you highlighted. You can 
    then move the graph to a new sheet by right-clicking on the graph and selecting **Move Chart**. This will allow you 
-   to have a cleaner view of your data and graph.
+   to have a clearer view of your data and graph.
 5. If you would like to edit the graph, you can do so by clicking on the graph and selecting the **Chart Design** tab. This will allow you to change the chart type, add chart elements, and change the chart style.
 6. If you would like to switch the x and y-axis, you can 
    do so by selecting **Select 
@@ -36,16 +40,14 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
 
 7. From here you can change the data for the x and y axes and switch rows and columns. There is also a **Switch 
    Row/Column** option in the **Chart Design** ribbon that is useful when you have to make a quick change to the data.
-(like turning a landscape table into a portrait one)
-
-8. One of the other useful tools in the **Chart Design** tab is the _Add Chart Elements_ tool. 
+8. One of the other useful tools in the **Chart Design** tab is the **Add Chart Elements** tool. 
    This allows you to add or remove elements from the graph such as a title, labels, and a legend.
 
 ![img_2.png](img_2.png)
 
 9. Similarly, if you click on the chart, there are 
    icons 
-   next to 
+   next to the 
    chart 
    that have 
    the same 
@@ -53,29 +55,35 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
    Elements**, **Chart Styles**, 
    and **Chart Filters**. These icons have the same tools as the Chart Design tab, but which can sometimes be more 
     convenient.
-10. **Chart Styles** allows the user to change the style of the chart adn the colors of the chart, Whereas **Chart 
+10. **Chart Styles** allows the user to change the style of the chart and the colors of the chart. **Chart 
    Filters** allows the user to filter the data that is displayed in the chart. This can be useful if you want to focus on a specific subset of your data.
 11. If you would like to change the font, size, and color of the text in the graph, you can do so by 
-   clicking on the text in the graph.
+   clicking on the text you would like to change.
 
-These are just a few of the ways that organizing/formatting can help us to distinguish 
-our 
-data. Other types of graphs have more unique features to them, but these are the general few! 
+These are just a few ways we can organize and format our graph to helps us better see patterns and trends in data. 
+Other 
+types of 
+graphs 
+have 
+more unique features 
+to them, but these are the general few! 
 
 ### Specific Examples
 
-Often when we are trying to organize our data, we are trying to find the best possible way to visualize it. Here are 
-just a few examples of specific types of graphs and their uses: 
+When organizing data, we are often looking for the most effective way to visualize it. Below are a few examples of 
+specific graph types and how they're commonly used. 
 
 **Line Graph**
 
 Line graphs are used to show trends over time. They are useful for showing how a variable changes over a period of time, such as sales or temperature.
 
+![img_3.png](img_3.png)
+
 **Bar/Column chart**
 
 Bar and column charts are used to compare different categories of data. They are useful for showing the differences between groups, such as sales by region or product.
 
-![img_5.png](graphing_images/img_5.png)
+![img_4.png](img_4.png)
 
 **Pie Chart**
 
@@ -86,36 +94,42 @@ Pie charts are used to show the proportion of different categories in a whole. T
 This pie chart shows the amount of moisture content in different types of sand. Each slice represents a different 
 type of sand, and the size of each slice represents the proportion of moisture content in that type of sand.
 
-Here is an extra resource for further examples of graphing: [Graphing](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90){:target="_blank"}
+Here is an extra resource for further examples of graphing: [Available chart types in Office](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90){:target="_blank"}
 
 ---
 
 ## Solver in Excel
-The Solver is a powerful tool in Excel that allows you to find an optimal value for a formula in one cell, subject 
-to constraints on the values of other cells.The Solver can be used to find the maximum or minimum value of a formula by changing the values in the cells that are referenced by the formula. 
+
+The Solver is a powerful tool in Excel that allows you to find an optimal value for a formula in one cell, by 
+adjusting other cells and adhering to constraints. The Solver can be used to find the maximum or minimum value of a 
+formula by changing the values in the cells that are referenced by the formula. 
 
 It can be used for various purposes, such as optimization problems, 
 resource allocation, and financial modeling. The solver can handle linear and nonlinear problems, making it a 
-versatile tool for data analysis. You can use the solver to find the maximum profit for a business, 
-choose an optimal budget allocation, or minimize costs in a project.
+versatile tool for data analysis. You can use the solver to find the maximum profit for a business within constraints, 
+choose an optimal budget allocation, or minimize costs in a project. Solver is pretty cool!
 
-### How to add Solver to Excel
+### How to add Solver in Excel
 
 To enable the **Solver Add-in** in Excel (it is not enabled by default), follow these steps:
 
 1. Go to **File** > **Options** (found near the bottom of the left-hand menu).  
 2. In the **Excel Options** window, select **Add-ins** from the sidebar.  
-3. At the bottom, in the **Manage** dropdown, select **Excel Add-ins**, then click **Go...**  
+3. At the bottom, in the **Manage** dropdown, select **Excel Add-ins**, then click **Go**  
 4. In the **Add-Ins available** box, check the box next to **Solver Add-in**.  
 5. Click **OK** to enable it.
 
 
-After you load the Solver Add-in, the **Solver** command is available in the **Analysis** group on the **Data** tab. These steps only need to be completed once.
+After you load the Solver Add-in, the **Solver** command is available in the **Analysis** group on the **Data** tab. 
+These steps only need to be completed once. If you do not see the **Solver** option in the **Data** tab, you may need to restart Excel after enabling the add-in.
+
+!!!Note
+    You may notice that there is a **Solver** option in the **Home** tab. This is a different solver that is used for solving equations, not for optimization problems. The **Solver** in the **Data** tab is the one we will be using in this class.
 
 ---
 ### Example Problem
 
-The following workbook is an example of how to use the Solver. You are the owner of a soil testing business, and you 
+The following workbook demonstrates how to use the Solver. You are the owner of a soil testing business, and you 
 are trying to calculate the cost per test that will allow your company to pay off a $25,000 piece of soil 
 testing equipment in exactly 12 months, given they expect to perform 40 tests per month.
 
@@ -126,10 +140,12 @@ To open up the solver we go to **Data** > **Analysis** > **Solver**
 In general, the Solver is like [Goal Seek](https://byu-cce270.readthedocs.io/en/latest/unit1/3_pivot_goalseek/pivgolseek_read/#goal-seek){:target="_blank"} in that it 
 iteratively changes one 
 (or 
-more) input cell(s) until some condition is met. But in this case there are three possible conditions (max, min, 
-value of) and a set of constraints can be defined. When we use the **Value Of** option, it is essentially the same 
+more) input cell(s) until some condition is met. However, Solver allows for three possible objectives—maximising, 
+minimizing, or setting a specific value—and lets you define a 
+set of 
+constraints. When we use the **Value Of** option, it is essentially the same 
 as Goal Seek. We are going to change **Set Objective** to the cell that contains the number of months it will take 
-to pay off the equipment, which is cell B7 in this case.
+to pay off the equipment, which, in this case, is cell B7.
 
 ![Solving_newWindow.png](solver_images/Solving_newWindow.png)
 
@@ -180,12 +196,12 @@ This is just a sample of the many things you can do with a solver. It is easy to
 
 ### Exercise #1 - Graphing Sales Data 
 
-The starter workbook can be found here: [(Your Name)-Pre-Graphing-and-Solver.xlsm](../../../../../OneDrive%20-%20Brigham%20Young%20University/%28Your%20Name%29-Pre-Graphing-and-Solver.xlsm)
+The starter workbook can be found here: [(Starter-Workbook)-Pre-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Pre-Graphing-and-Solver.xlsx){:target="_blank"} <br>
 Make sure to rename the starter sheet something like “(Your Name)-Pre-Graphing-and-Solver.”
 
-In this workbook, we are going to be focusing on three main sheets: Sales_Data, Graphing, and Topo-Solver. 
+In this workbook, we are going to be focusing on three main sheets: "Sales_Data", "Graphing", and "Topo-Solver." 
 
-Navigate to the Sales_Data sheet in the starter workbook. This data contains sales information for an engineering 
+Navigate to the "Sales_Data" sheet in the starter workbook. This data contains sales information for an engineering 
 surplus store. The data includes the month, region, product, units sold, unit price, and total sales. You are the 
 employee tasked with creating graphs to visualize this data. 
 
@@ -210,11 +226,12 @@ Finally, to visualize any trends in the data, your boss wants you to create a **
 
 ![img_6.png](graphing_images/img_6.png)
 
-Note: Make sure that all graphs have appropriate titles, axis labels, and legends.
+!!!Note 
+   Make sure that all graphs have appropriate titles, axis labels, and legends.
 
 ### Exercise #2 - Topographic Map
 
-Navigate to the Topo-Solver sheet in the starter workbook.
+Navigate to the "Topo-Solver" sheet in the starter workbook.
 You need to create a topographic map of a hillside for a project. Your team has set up some GPS points with known 
 horizontal distances from the base of the hill. Since the GPS device isn't accurate at giving elevations, use the 
 calculator in the workbook to find the correct elevations. 

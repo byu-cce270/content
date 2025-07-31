@@ -1,4 +1,4 @@
-# In-Class Exercise: Graphing and Solver in Excel
+# In-Class Exercise: Graphing and Solver
 
 We will practice graphing and using the Solver function in Excel. The data we will use is an expanded edition of the 
 preclass construction surplus store. You can 
@@ -8,35 +8,34 @@ access the data here: [(Your Name)-Class-Graphing-and-Solver.xlsx](%28Your%20Nam
 Make sure to rename the starter sheet something like “[Your Name]-Class-Graphing-and-Solver.”
 
 ---
-## Exercise #1- Graphing Employee Data 
+## Exercise #1- Graphing Sales Data 
 
-Take a look at the data, it contains information about specific sales, including the date, region, product, sales 
-associate and more. 
-
-Navigate to the first sheet in the  data workbook, which is designed to graph employee data. 
-
-You are tasked with creating various graphs to visualize the data. Make sure that each chart is created on **its own 
+This data contains information about specific sales, including the date, region, product, sales 
+associate and more. You are tasked with creating various graphs to visualize the data. Make sure that each chart is created on **its own 
 sheet** and is titled appropriately. Each chart should have the x and y-axis labeled and have a legend. 
 
-1. Try to make a pie chart that shows the total sales by product. You can use the **Insert** tab in Excel to create 
+1. Navigate to the first sheet in the data workbook,"Construction_Sales" which is the data that we will be graphing.
+2. Try to make a pie chart that shows the total sales by product. You can use the **Insert** tab in Excel to create 
 a chart. 
-2. Your boss wants to know the relationship between quality sold and revenue. Make a scatter plot that shows the units 
+3. Your boss wants to know the relationship between quality sold and revenue. Make a scatter plot that shows the units 
    sold vs total 
-   sales.   Does higher quantity sales lead to higher revenue?
-3. Show a bar graph that shows the average total sales by region. With this graph we are looking to see which 
+   sales. Does higher quantity sales lead to higher revenue?
+4. Create a bar graph that shows the average total sales by region. With this graph, we are looking to see which 
    regions are performing the best in terms of sales.
-4. Make a line graph that shows the total monthly sales trend over time.
+5. Make a line graph that shows the total monthly sales trend over time. (Include a trendline to show the overall trend.) 
+   This will help us understand how sales are changing over time.
 
 The goal of this exercise is to practice creating different types of graphs in Excel and to understand how to visualize data effectively, so feel free to experiment with different colors and styles! 
 
 ---
 ## Exercise #2- Using Solver in Excel (with Goal Seek)
 
-Navigate to the second sheet in the employee data workbook, "Parabola-Solver", which is designed to solve a 
+Navigate to the second sheet in the Graphing-and-Solver workbook, "Parabola-Solver", which is designed to solve a 
 quadratic 
 equation 
 using Excel's Solver function.
-The workbook is designed to solve a quadratic equation of the form:
+
+This sheet is designed to solve a quadratic equation of the form:
 
 $y = ax^2 + bx + c$
 
@@ -51,13 +50,15 @@ $ax^2 + bx + c = 0$
 
 As can be seen on the chart, the roots are approximately 0.4 and 2.6. We can find the roots using cells F4 and F5. We enter a value for x in cell F4. The corresponding value of y is computed in cell F5 as:
 
-**=C4*F$4^2$+C5*F4+C6**
+**=C4*F4$^2$+C5*F4+C6**
 
 To find a root, we can enter a guess (0.4 for starters) into F4 and iteratively tweak that number until the value 
 computed for y in F5 is roughly equal to zero. While this works, it can be time-consuming and tedious.
 
-1. Solve for one of the roots of the parabola using Solver.
+1. Solve for one of the roots of the parabola using **Solver.**
 2. Find the x location corresponding the lowest point on the parabola.
+
+---
 
 ## Turning in/Rubric
 
@@ -66,6 +67,8 @@ computed for y in F5 is roughly equal to zero. While this works, it can be time-
 1. On the top right, click the share button --> share --> settings
 2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
 3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
+---
 
 **Rubric:**
 
