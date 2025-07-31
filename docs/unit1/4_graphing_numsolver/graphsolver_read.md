@@ -25,37 +25,37 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
    then move the graph to a new sheet by right-clicking on the graph and selecting **Move Chart**. This will allow you 
    to have a cleaner view of your data and graph.
 5. If you would like to edit the graph, you can do so by clicking on the graph and selecting the **Chart Design** tab. This will allow you to change the chart type, add chart elements, and change the chart style.
-4. If you would like to switch the x and y-axis, you can 
+6. If you would like to switch the x and y-axis, you can 
    do so by selecting **Select 
    Data** (or right-clicking the chart and choosing **Select Data**). This will open a new window where you can change 
    the 
    data for 
-   the x and y axes.
-
-
-
+   the x and y-axis.
 
 ![graphex_selectdata.png](graphing_images/graphex_selectdata.png)
 
-
-5. From here you can change the data for the x and y axes, switch rows and columns, and edit the labels for the axes, 
-   OR you can click on the **Switch Row/Column** which is useful when you want to change rows and columns in your data 
-set 
+7. From here you can change the data for the x and y axes and switch rows and columns. There is also a **Switch 
+   Row/Column** option in the **Chart Design** ribbon that is useful when you have to make a quick change to the data.
 (like turning a landscape table into a portrait one)
 
-8. Similarly, if you click on the chart, there are icons next to chart that have the same functions, **Chart 
-   Elements**, **Chart Styles**, 
-   and **Chart Filters**. These icons have the same tools as the Chart Design tab, but are more convenient to use.
-
-6. There are two sidebars next to the graph. The first is the plus sign (+) which is the _Chart Elements_ sidebar. 
+8. One of the other useful tools in the **Chart Design** tab is the _Add Chart Elements_ tool. 
    This allows you to add or remove elements from the graph such as a title, labels, and a legend.
 
-![Graphex_chartelm.png](graphing_images/Graphex_chartelm.png)
+![img_2.png](img_2.png)
 
-7. The second option is the paintbrush icon which is the _Chart Styles_ sidebar. This allows you to change the style 
-   and color of 
-   the graph. 
-8. If you would like to change the font, size, and color of the text in the graph, you can do so by 
+9. Similarly, if you click on the chart, there are 
+   icons 
+   next to 
+   chart 
+   that have 
+   the same 
+   functions, **Chart 
+   Elements**, **Chart Styles**, 
+   and **Chart Filters**. These icons have the same tools as the Chart Design tab, but which can sometimes be more 
+    convenient.
+10. **Chart Styles** allows the user to change the style of the chart adn the colors of the chart, Whereas **Chart 
+   Filters** allows the user to filter the data that is displayed in the chart. This can be useful if you want to focus on a specific subset of your data.
+11. If you would like to change the font, size, and color of the text in the graph, you can do so by 
    clicking on the text in the graph.
 
 These are just a few of the ways that organizing/formatting can help us to distinguish 
@@ -226,7 +226,7 @@ shown at the flag (you could also just type the value into the x input directly 
 
 ---
 
- ## Turning in/Rubric
+## Turning in/Rubric
 
 **_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
 

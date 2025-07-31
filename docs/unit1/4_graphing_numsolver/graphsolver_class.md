@@ -1,10 +1,11 @@
-# Exercise #1- Graphing Construction Surplus Store Data
+# In-Class Exercise: Graphing and Solver in Excel
 
 We will practice graphing and using the Solver function in Excel. The data we will use is an expanded edition of the 
 preclass construction surplus store. You can 
-access the data here:[(Your Name)-Class-Graphing-and-Solver.xlsx](%28Your%20Name%29-Class-Graphing-and-Solver.xlsx){:target="_blank"}.
+access the data here: [(Your Name)-Class-Graphing-and-Solver.xlsx](%28Your%20Name%29-Class-Graphing-and-Solver.xlsx)
+{:target="_blank"}
 
-Make sure to rename the starter sheet something like “[Your Name]-Class-Graphing-and-Solver”.
+Make sure to rename the starter sheet something like “[Your Name]-Class-Graphing-and-Solver.”
 
 ---
 ## Exercise #1- Graphing Employee Data 
@@ -48,16 +49,14 @@ solution to the equation is the two points where the parabola intercepts the y-a
 
 $ax^2 + bx + c = 0$
 
-As can be seen on the chart, the roots are approximately 0.4 and 2.6.
-
-We can find the roots using cells F4 and F5. We enter a value for x in cell F4. The corresponding value of y is computed in cell F5 as:
+As can be seen on the chart, the roots are approximately 0.4 and 2.6. We can find the roots using cells F4 and F5. We enter a value for x in cell F4. The corresponding value of y is computed in cell F5 as:
 
 **=C4*F$4^2$+C5*F4+C6**
 
 To find a root, we can enter a guess (0.4 for starters) into F4 and iteratively tweak that number until the value 
 computed for y in F5 is roughly equal to zero. While this works, it can be time-consuming and tedious.
 
-1. Solve for one of the roots of the parabola 
+1. Solve for one of the roots of the parabola using Solver.
 2. Find the x location corresponding the lowest point on the parabola.
 
 ## Turning in/Rubric
