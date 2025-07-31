@@ -17,19 +17,36 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
 
 3. From here, Excel offers a large variety of options for a graph that suits your data. There is even an option for 
    Recommended Charts, which will automatically select the best graph for your data set. This is a great option if 
-   you are unsure what type of graph to use. For this class, we will primarily use line, bar, column, and pie graphs.
+   you are unsure what type of graph to use. For this class, we will primarily use line, bar, column, and pie charts.
 
 ![graphex_3.png](graphing_images/graphex_3.png)
 
-4. After selecting the graph, check and make sure the data is on the proper x and y axes. If you would like to switch the x and y-axis, you can do so by right-clicking on the graph and selecting **Select 
-   Data**. This will open a new window where you can change the data for the x and y axes.
+4. After selecting the type of graph you want, Excel will create a graph based on the data you highlighted. You can 
+   then move the graph to a new sheet by right-clicking on the graph and selecting **Move Chart**. This will allow you 
+   to have a cleaner view of your data and graph.
+5. If you would like to edit the graph, you can do so by clicking on the graph and selecting the **Chart Design** tab. This will allow you to change the chart type, add chart elements, and change the chart style.
+4. If you would like to switch the x and y-axis, you can 
+   do so by selecting **Select 
+   Data** (or right-clicking the chart and choosing **Select Data**). This will open a new window where you can change 
+   the 
+   data for 
+   the x and y axes.
+
+
+
 
 ![graphex_selectdata.png](graphing_images/graphex_selectdata.png)
+
 
 5. From here you can change the data for the x and y axes, switch rows and columns, and edit the labels for the axes, 
    OR you can click on the **Switch Row/Column** which is useful when you want to change rows and columns in your data 
 set 
 (like turning a landscape table into a portrait one)
+
+8. Similarly, if you click on the chart, there are icons next to chart that have the same functions, **Chart 
+   Elements**, **Chart Styles**, 
+   and **Chart Filters**. These icons have the same tools as the Chart Design tab, but are more convenient to use.
+
 6. There are two sidebars next to the graph. The first is the plus sign (+) which is the _Chart Elements_ sidebar. 
    This allows you to add or remove elements from the graph such as a title, labels, and a legend.
 
