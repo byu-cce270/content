@@ -41,11 +41,11 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
 7. From here you can change the data for the x and y axes and switch rows and columns. There is also a **Switch 
    Row/Column** option in the **Chart Design** ribbon that is useful when you have to make a quick change to the data.
 8. One of the other useful tools in the **Chart Design** tab is the **Add Chart Elements** tool. 
-   This allows you to add or remove elements from the graph such as a title, labels, and a legend.
-
+   This allows you to add or remove elements from the graph such as a title, labels, and legend.
 ![img_2.png](img_2.png)
-
-9. Similarly, if you click on the chart, there are 
+9. A trendline can also be added to the graph by selecting **Add Chart Elements** > **Trendline**. This will add a 
+   trendline to the graph that shows the overall trend of the data. It can be added to a scatter plot to help visualize the relationship between the two variables.
+10. Similarly, if you click on the chart, there are 
    icons 
    next to the 
    chart 
@@ -55,9 +55,9 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
    Elements**, **Chart Styles**, 
    and **Chart Filters**. These icons have the same tools as the Chart Design tab, but which can sometimes be more 
     convenient.
-10. **Chart Styles** allows the user to change the style of the chart and the colors of the chart. **Chart 
+11. **Chart Styles** allows the user to change the style of the chart and the colors of the chart. **Chart 
    Filters** allows the user to filter the data that is displayed in the chart. This can be useful if you want to focus on a specific subset of your data.
-11. If you would like to change the font, size, and color of the text in the graph, you can do so by 
+12. If you would like to change the font, size, and color of the text in the graph, you can do so by 
    clicking on the text you would like to change.
 
 These are just a few ways we can organize and format our graph to helps us better see patterns and trends in data. 
@@ -81,9 +81,14 @@ Line graphs are used to show trends over time. They are useful for showing how a
 
 **Bar/Column chart**
 
-Bar and column charts are used to compare different categories of data. They are useful for showing the differences between groups, such as sales by region or product.
+Bar and column charts are used to compare values across different categories of data. They are useful for showing the 
+differences between groups, such as sales by region or product.
 
 ![img_4.png](img_4.png)
+
+Bar charts are horizontally oriented and typically used for categorical data, while column charts are vertically 
+oriented and used 
+for numerical data.
 
 **Pie Chart**
 
@@ -93,6 +98,20 @@ Pie charts are used to show the proportion of different categories in a whole. T
 
 This pie chart shows the amount of moisture content in different types of sand. Each slice represents a different 
 type of sand, and the size of each slice represents the proportion of moisture content in that type of sand.
+
+**Scatter Plot**
+
+Scatter plots are used to show the relationship between two variables. They are useful for showing how one variable affects another, such as the relationship between temperature and sales.
+
+![img_5.png](img_5.png)
+
+This scatter plot shows the relationship between temperature and ice cream sales. Each point represents a different 
+day, and the position of each point shows the temperature and sales for that day.
+
+
+There are many other types of graphs that can be used to visualize data, such as scatter plots, funnel charts, and 
+radar charts. 
+Each type of graph has its own strengths and weaknesses, and the best type of graph to use depends on the data you are working with and the message you want to convey.
 
 Here is an extra resource for further examples of graphing: [Available chart types in Office](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90){:target="_blank"}
 
