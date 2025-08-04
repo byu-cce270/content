@@ -64,7 +64,8 @@ asteroid on impact, but you need to ensure that the missile has enough force to 
 
 Now that we have all of our data filled out, we are going to find the point where the force of the missile and 
    the asteroid are **equal** to each other. We are going to do this by changing the acceleration of the missile using 
-**Solver**.The solver has three basic functions. The "Set Objective" parameter should always be the cell that contains the 
+**Solver**. The solver has three basic functions. The "Set Objective" parameter should always be the cell that 
+contains the 
 equation that you want to optimize. You can find a Max, Min, or a specific value. "By Changing Variable Cells" are 
 the cells that you want to change to optimize the objective. "Subject to the Constraints" are the constraints that you want to apply to the optimization.
 
