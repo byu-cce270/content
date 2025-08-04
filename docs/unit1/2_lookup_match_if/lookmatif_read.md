@@ -129,7 +129,8 @@ Here is an extra resource for further information on Match: [MATCH](https://supp
 
 ### IF Statements
 
-**IF Statements** are a function within Google Sheets that can compare two values and determine if they are true or false. This type of two-outcome expression in programming is known as a boolean.
+**IF Statements** are a function within Excel that can compare two values and determine if they are true or false. This 
+type of two-outcome expression in programming is known as a boolean.
 
 #### Syntax
 
