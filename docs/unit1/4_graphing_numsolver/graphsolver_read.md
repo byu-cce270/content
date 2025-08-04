@@ -141,8 +141,10 @@ To enable the **Solver Add-in** in Excel (it is not enabled by default), follow 
 5. Click **OK** to enable it.
 
 
-After you load the Solver Add-in, the **Solver** command is available in the **Analysis** group on the **Data** tab. 
+After you load the Solver Add-in, the **Solver** command is available in the **Analyze** group on the **Data** tab. 
 These steps only need to be completed once. If you do not see the **Solver** option in the **Data** tab, you may need to restart Excel after enabling the add-in.
+
+
 
 !!!Note
     You may notice that there is a **Solver** option in the **Home** tab. This is a different solver that is used for solving equations, not for optimization problems. The **Solver** in the **Data** tab is the one we will be using in this class.
@@ -170,12 +172,17 @@ to pay off the equipment, which, in this case, is cell B7.
 
 ![Solving_newWindow.png](solver_images/Solving_newWindow.png)
 
-The **Set Objective** cell is the cell containing the formula that represents the objective of the problem. In this case, it is the cell that contains the cost per test.
+The **Set Objective** cell is the cell containing the formula that represents the objective of the problem, or the 
+result that you're trying to optimize. In this case, it is the cell that contains the cost per test.
 
 The **By Changing Variable Cells** are the cells that the solver will change to find the optimal solution. In this 
 case, it is the cells that contains the number of projected site tests per month and cost per service.
 
 The **Subject to the Constraints** section allows you to add constraints to the problem.
+
+The **Select a Solver Method** dropdown lets you choose how Solver will find a solution. The default option, **GRG 
+Nonlinear**, is used for nonlinear problems. The **Simplex LP** method is used for linear problems, and the 
+**Evolutionary** method works best for problems that are hard to define or have sudden changes in the data. In this class, we will primarily use the _**GRG Nonlinear**_ method, as it is the most versatile and works well for most problems.
 
 Using the options shown above, we can solve for by clicking the **Solve** button. Doing so brings up the following message:
 
@@ -247,8 +254,9 @@ Finally, to visualize any trends in the data, your boss wants you to create a **
 
 ![img_6.png](graphing_images/img_6.png)
 
-!!!Note 
-   Make sure that all graphs have appropriate titles, axis labels, and legends.
+**Make sure that all graphs have appropriate titles, axis labels, and legends.**
+
+---
 
 ### Exercise #2 - Topographic Map
 
