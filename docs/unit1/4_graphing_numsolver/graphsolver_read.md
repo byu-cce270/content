@@ -5,7 +5,7 @@
 ## Graphing Data
 One of the most helpful tools in Excel is the chart feature. This allows us to see trends in data, compare variables, 
 and 
-visualize the values in our data set. 
+visualize the values in our data set.
 This can be hard to do by hand, and Excel makes it much easier! Let's walk through how to graph a given data set. 
 
 1. Highlight the data that you want to graph. Sometimes you don't need all the data, so only highlight what you need.
@@ -109,7 +109,9 @@ This scatter plot shows the relationship between temperature and ice cream sales
 day, and the position of each point shows the temperature and sales for that day.
 
 
-There are many other types of graphs that can be used to visualize data, such as scatter plots, funnel charts, and 
+There are many other types of graphs that can be used to visualize data, such as area plots (the area under the line is 
+filled), 
+funnel charts, and 
 radar charts. 
 Each type of graph has its own strengths and weaknesses, and the best type of graph to use depends on the data you are working with and the message you want to convey.
 
