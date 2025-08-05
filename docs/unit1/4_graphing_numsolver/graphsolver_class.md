@@ -17,7 +17,7 @@ sheet** and is titled appropriately. Each chart should have the x and y-axis lab
 1. Navigate to the first sheet in the data workbook,"Construction_Sales" which is the data that we will be graphing.
 2. Try to make a pie chart that shows the total sales by product. You can use the **Insert** tab in Excel to create 
 a chart. 
-3. Your boss wants to know the relationship between quality sold and revenue. Make a scatter plot that shows the units 
+3. Your boss wants to know the relationship between quantity sold and revenue. Make a scatter plot that shows the units 
    sold vs total 
    sales. Does higher quantity sales lead to higher revenue?
 4. Create a bar graph that shows the average total sales by region. With this graph, we are looking to see which 
