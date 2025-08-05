@@ -26,9 +26,9 @@ Note that some of the information has already been entered in the starter sheet 
 
 First, you will need to enter the following information:
 
-1. Enter a name for your project in cell A1. [optional]
-2. Enter your company name in cell A2. [optional]
-3. Enter your name as the project manager in cell A3. [optional]
+1. Enter a name for your project in cell A1.
+2. Enter your company name in cell A2.
+3. Enter your name as the project manager in cell A3.
 4. Enter a date in cell E5 for the project start date.
 
 Now we need to enter some phases and tasks for the project. 
