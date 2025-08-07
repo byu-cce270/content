@@ -114,28 +114,24 @@ streamflow data for the
 
 **Rubric**
 
-|           Item (Goal Seek & Solver)            | Points Possible |
+|                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-|        Solved for Vertical Location (Y)        |        2        |
-|       Solved for Horizontal Location (X)       |        2        |
-|            Found the first location            |        2        |
-|           Found the second location            |        2        |
-|         Used Force formula for missile         |        2        |
-|        Used Force formula for asteroid         |        2        |
-|                Added constraint                |        1        |
-|       Found equal force by using Solver        |        2        |
-| <div style="text-align: right">**Total**</div> |       15        |
-
-|                Item (Graphing)                 | Points Possible |
-|:----------------------------------------------:|:---------------:|
-|            Chart 1 resembles image             |        2        |
-|         Chart 1 is on a separate sheet         |        1        |
-|            Chart 2 resembles image             |        2        |
-|         Chart 2 is on a separate sheet         |        1        |
-|            Chart 3 resembles image             |        2        |
-|         Chart 3 is on a separate sheet         |        1        |
-|       Charts are all labeled and titled        |        6        |
-| <div style="text-align: right">**Total**</div> |       15        |
+|    Part 1: Solved for Vertical Location (Y)    |        2        |
+|   Part 1: Solved for Horizontal Location (X)   |        2        |
+|        Part 1: Found the first location        |        2        |
+|       Part 1: Found the second location        |        2        |
+|     Part 1: Used Force formula for missile     |        2        |
+|    Part 1: Used Force formula for asteroid     |        2        |
+|            Part 1: Added constraint            |        1        |
+|   Part 1: Found equal force by using Solver    |        2        |
+|        Part 2: Chart 1 resembles image         |        2        |
+|     Part 2: Chart 1 is on a separate sheet     |        1        |
+|        Part 2: Chart 2 resembles image         |        2        |
+|     Part 2: Chart 2 is on a separate sheet     |        1        |
+|        Part 2: Chart 3 resembles image         |        2        |
+|     Part 2: Chart 3 is on a separate sheet     |        1        |
+|   Part 2: Charts are all labeled and titled    |        6        |
+| <div style="text-align: right">**Total**</div> |       30        |
 
 ---
 

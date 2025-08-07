@@ -133,19 +133,19 @@ For example, how does the average flow rate change with different pipe diameters
 
 **Rubric:**
 
-|                      Part 1: Three Reservoir Problem                       | Points Possible |
-|:--------------------------------------------------------------------------:|:---------------:|
-|                       Part 1: Cells named correctly                        |        3        |
-|    Part 1: Velocity equations are written correctly and use cell names     |        4        |
-|             Part 1: Flow rate equations are written correctly              |        4        |
-|     Part1: Correct flow rate values are found with goal seek (±0.005)      |        5        |
-|          Part 1: Data validation applied to Pipe inputs (D and L)          |        2        |
-|              Part 2: Pivot Table is created on existing sheet              |        2        |
-|            Part 2: Table created using data from Reservoir Flow            |        2        |
-|            Part 2: Table includes Pipe and Flow Direction Rows             |        3        |
-|           Part 2: Values are **Average** Flow Rate and Velocity            |        3        |
-|                    Part 2: Pivot Table in new worksheet                    |        2        |
-|               <div style="text-align: right">**Total**</div>               |       30        |
+|                                Item                                 | Points Possible |
+|:-------------------------------------------------------------------:|:---------------:|
+|                    Part 1: Cells named correctly                    |        3        |
+| Part 1: Velocity equations are written correctly and use cell names |        4        |
+|          Part 1: Flow rate equations are written correctly          |        4        |
+|  Part1: Correct flow rate values are found with goal seek (±0.005)  |        5        |
+|      Part 1: Data validation applied to Pipe inputs (D and L)       |        2        |
+|          Part 2: Pivot Table is created on existing sheet           |        2        |
+|        Part 2: Table created using data from Reservoir Flow         |        2        |
+|         Part 2: Table includes Pipe and Flow Direction Rows         |        3        |
+|        Part 2: Values are **Average** Flow Rate and Velocity        |        3        |
+|                Part 2: Pivot Table in new worksheet                 |        2        |
+|           <div style="text-align: right">**Total**</div>            |       30        |
 
 ---
 
