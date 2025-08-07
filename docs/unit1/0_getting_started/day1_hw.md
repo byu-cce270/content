@@ -56,9 +56,9 @@ For this class, **you will only turn in the links to your Excel files**. We will
 [INSERT PICTURE HERE]
 3. Copy the link, then turn it into learning suite in the feedback box.
 
-
 !!!IMPORTANT
-   Make sure that your Excel file is turned in properly. You WILL be docked points if not shared so anyone with a link can edit, OR if you turn in an Excel file instead of a link to the file.
+    Make sure that your Excel file is turned in properly. You WILL be docked points if not shared so anyone with a link can edit, OR if you turn in an Excel file instead of a link to the file.
+
 
 ---
 
@@ -66,14 +66,16 @@ For this class, **you will only turn in the links to your Excel files**. We will
 
 **_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable.
 
-|                       Item                       | Points Possible |
-|:------------------------------------------------:|:---------------:|
-|     All the questions are answered correctly     |        8        |
-| All the screenshots are included and are correct |       10        |
-|   At least 4 times are included in question 1    |        4        |
-|     Signed up for a time to meet a TA            |        2        |
-|                  Met with a TA                   |        6        |
-|  <div style="text-align: right">**Total**</div>  |       30        |
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+|       The worksheet is renamed correctly       |        1        |
+|             Question 1 is correct              |        1        |
+|  At least 4 times are included in question 2   |        4        |
+|      Question 3-5 are answered correctly       |        3        |
+|   All screenshots include proper information   |        8        |
+|       Signed up for a time to meet a TA        |        3        |
+|                 Met with a TA                  |       10        |
+| <div style="text-align: right">**Total**</div> |       30        |
 
 ---
 
