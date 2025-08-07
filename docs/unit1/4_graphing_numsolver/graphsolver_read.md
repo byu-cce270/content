@@ -42,7 +42,7 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
    Row/Column** option in the **Chart Design** ribbon that is useful when you have to make a quick change to the data.
 8. One of the other useful tools in the **Chart Design** tab is the **Add Chart Elements** tool. 
    This allows you to add or remove elements from the graph such as a title, labels, and legend.
-![img_2.png](img_2.png)
+![img_2.png](graphing_images/img_2.png)
 9. A trendline can also be added to the graph by selecting **Add Chart Elements** > **Trendline**. This will add a 
    trendline to the graph that shows the overall trend of the data. It can be added to a scatter plot to help visualize the relationship between the two variables.
 10. Similarly, if you click on the chart, there are 
@@ -77,14 +77,14 @@ specific graph types and how they're commonly used.
 
 Line graphs are used to show trends over time. They are useful for showing how a variable changes over a period of time, such as sales or temperature.
 
-![img_3.png](img_3.png)
+![img_3.png](graphing_images/img_3.png)
 
 **Bar/Column chart**
 
 Bar and column charts are used to compare values across different categories of data. They are useful for showing the 
 differences between groups, such as sales by region or product.
 
-![img_4.png](img_4.png)
+![img_4.png](graphing_images/columnchartsoil.png)
 
 Bar charts are horizontally oriented and typically used for categorical data, while column charts are vertically 
 oriented and used 
@@ -103,7 +103,7 @@ type of sand, and the size of each slice represents the proportion of moisture c
 
 Scatter plots are used to show the relationship between two variables. They are useful for showing how one variable affects another, such as the relationship between temperature and sales.
 
-![img_5.png](img_5.png)
+![img_5.png](graphing_images/scatterplot.png)
 
 This scatter plot shows the relationship between temperature and ice cream sales. Each point represents a different 
 day, and the position of each point shows the temperature and sales for that day.

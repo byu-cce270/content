@@ -89,13 +89,13 @@ streamflow data for the
 1. Using the data in the "Streamflow" data sheet recreate this graph. Make sure to change the colors and include a 
    Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 1."
 
-![img_2.png](graphing_images/img_2.png)
+![img_2.png](graphing_images/hwlinegraph.png)
 
 2. Using the data in the "Summary Statistics" data sheet recreate this graph. Make sure to change the colors and 
    include a 
    Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 2."
 
-![img_3.png](graphing_images/img_3.png)
+![img_3.png](graphing_images/columnchart.png)
 
 3. Using the data in the "Load Calculations" sheet recreate this graph. Make sure to change the colors and include a 
    Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 3."
