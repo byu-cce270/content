@@ -70,7 +70,6 @@ Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Da
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-|                                                |                 |
 | <div style="text-align: right">**Total**</div> |        5        |
 
 ---
