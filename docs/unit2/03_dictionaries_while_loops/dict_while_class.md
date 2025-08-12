@@ -7,7 +7,7 @@ You can find the In Class Exercise here:
 
 ## Instructions
 1. Open the in-class workbook using the link above.
-2. Rename the notebook as `[Your_Name]dictionaries_in_class.ipynb`.
+2. Rename the notebook as `[Your_Name]dictionaries/input/while_in_class.ipynb`.
 3. Follow the instructions in the notebook to complete the exercise.
 
 
