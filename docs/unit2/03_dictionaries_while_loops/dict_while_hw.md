@@ -33,7 +33,7 @@ In the second code block, you will write the code for a function called "invoice
 1. The existing function has two parameters: a dictionary (titled MaterialsDictionary) and the number of different types of materials there are in the dictionary (amountmat)
 2. In the function (where it says "Write the first for-loop starting here"), write a for-loop that loops through the keys and values of the MaterialsDictionary. Make sure that you start writing your code with at least one indentation since it is within a function.
 3. In the for-loop, use an if statement to ensure that the key is **not** equal to "Guide." Then print a sentence saying how much each material costs per ton and how much they cost to ship.
-5. In the function (where it says "Write the second for-loop starting here"), write a second for-loop that will iterate as many times as there are different types of materials
+5. In the function (where it says "Write the while-loop starting here"), write a while-loop that will iterate as many times as there are different types of materials, asking how many tons they want and how many miles it will be shipped
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the "amountmat" variable in your for-loop statement</br>
 6. In the new for-loop, create the following input statements:
 

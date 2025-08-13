@@ -2,7 +2,7 @@
 # HW: Gspread
 ---
 **Purpose:**  
-    - Learn how to connect  a google sheet to Python and read the data. You can then manipulate the data in python and update into your google sheet.  
+    - Learn how to connect an Excel sheet to Python and read the data. You can then manipulate the data in python and update into your google sheet.  
     - Practice using functions and loops with gspread.
 
 ---
