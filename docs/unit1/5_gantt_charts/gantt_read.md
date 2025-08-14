@@ -100,9 +100,6 @@ using only single letters for the days of the week.
 
 This exercise will help you practice the functions we will use in class to create a Gantt chart in Excel.
 
-
-## Instructions
-
 1. Use the =TODAY() formula in cell B2 to input today’s date.
 2. Use the =WEEKDAY() formula in cell B3 to return the weekday today’s date falls on. Use the value in B2 as your argument.
 3. Use the =TEXT() formula in cell B4 to return the weekday today’s date falls in the “DDD” format. Use the value in B3 as your argument.

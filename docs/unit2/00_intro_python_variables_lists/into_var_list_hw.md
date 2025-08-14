@@ -1,4 +1,4 @@
-#  HW: Introduction to Python and Variables
+#  HW: Introduction to Python, Variables, and Lists
 
 **Problem/Program:** Building an Open Channel Flow Calculator
 
@@ -52,7 +52,7 @@ Where:<br>
 ## Instructions
 
 **Step 1.**  Make a copy of the starter sheet here:
-  <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables/Starter_Sheet_HW_Introduction_to_Python_and_Variables.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+  <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables_lists/Starter_Sheet_HW_Introduction_to_Python_and_Variables.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 **Step 2.** Rename it something like “[your name] HW - Introduction to Python and Variables”
 
