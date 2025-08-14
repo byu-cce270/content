@@ -6,9 +6,9 @@
 
 ## Getting Started
 
-First, make a copy of the starter sheet here: 
+First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables_lists/(Starter_Workbook)_HW_Introduction_to_Python_Variables_Lists.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Rename it something like “
+Rename it something like “(Your-Name)-HW_Introduction_to_Python_Variables_Lists.ipynb”.
 
 ---
 
