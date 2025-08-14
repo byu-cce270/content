@@ -2,9 +2,9 @@
 
 The following exercises will have you create a set of variables, formulas, and list in Python. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
-You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables_lists/%5BStarter_Sheet%5D_In_Class_Introduction_to_Python%2C_Variables%2C_and_input_Statements.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables_lists/(Starter_Workbook)_Class_Introduction_to_Python_Variables_Lists.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Be sure to rename the workbook something like "
+Be sure to rename the workbook something like "(Your-Name)-Class-Introduction-to-Python-Variables-Lists.ipynb".
 
 ## Instructions
 
