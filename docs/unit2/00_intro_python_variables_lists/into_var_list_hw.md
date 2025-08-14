@@ -79,17 +79,19 @@ Where:<br>
 
 2. Run the cell to store the variables in the notebook. You do not need to write any code for this step.
 
-3. Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel. Store the result in the variable A.
+3. Run the code block call "Variable Processing" to set the values of the variables based on the inputs you provided. This code block will set the values of the variables `u` and `n` based on the `units` and `material` variables. There are two option to use. You can use either "Option Block 1" or "Option Block 2". Look at the code and tyr to understand what it is doing. We will go over this later in this unit.
 
-4. Write an equation to calculate the wetted perimeter (P_w) based on the shape of the channel. Store the 
+4. Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel. Store the result in the variable A.
+
+5. Write an equation to calculate the wetted perimeter (P_w) based on the shape of the channel. Store the 
 result in the variable P.
 
-5. Write an equation to calculate the hydraulic radius (R_h), the flow rate (Q), and the flow velocity (V). 
+6. Write an equation to calculate the hydraulic radius (R_h), the flow rate (Q), and the flow velocity (V). 
 Use the equations as shown above. Note that V = Q/A. Store 
 the result in the 
 variables Rh, Q, and V.
 
-6. Print the results using the code provided.
+7. Print the results using the code provided.
 
 ---
 
@@ -166,7 +168,7 @@ It should output something like this:
 |                                                  Item                                                   | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
 |  Part 1 - At least one input statements is made and all other variables are made with the correct type  |        6        |
-|            Part 1 - Equations are typed in correctly and are stored in the correct variable             |        9        |
+|            Part 1 - Equations are typed in correctly and are stored in the correct variable             |       10        |
 |                          Part 2 - 4 new lists are created and named correctly                           |        4        |
 |                     Part 2 - Required items are added to the 4 lists as instructed                      |        5        |
 |                          Part 2 - Total project duration is summed and printed                          |        2        |
@@ -179,7 +181,7 @@ It should output something like this:
 |             Part 2 - Duration and name of the shortest task are correctly found and printed             |        2        |
 |                    Part 2 - Average duration of tasks is found and printed correctly                    |        2        |
 |              Part 2 - Code is organized and comments are used to explain and separate code              |        2        |
-|                             <div style="text-align: right">**Total**</div>                              |       45        |
+|                             <div style="text-align: right">**Total**</div>                              |       46        |
 
 ---
 
