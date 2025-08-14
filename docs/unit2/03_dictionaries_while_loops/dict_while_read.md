@@ -14,9 +14,11 @@ Here is a direct link to the readings:</br>
 Remember that you will have to sign in to you free account that you created earlier.
 
 ## Things to Look Out For in Dictionaries
+(either questions or bullet points)
 - What type of Dictionaries use braces {} as opposed to lists which use square brackets []
 - Keys and values are separated by colons, and key-value pairs are separated by commas
 - A dictionary's keys cannot be lists, but its values can be
+
 
 - What is the main difference in syntax between a list and a dictionary?
 - How are keys and values separated in a dictionary?
