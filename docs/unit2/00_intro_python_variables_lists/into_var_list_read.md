@@ -1,4 +1,4 @@
-#  Reading: Introduction to Python, Variables, and input Statements
+#  Reading: Introduction to Python, Variables, and Lists
 
 ---
 
@@ -6,7 +6,7 @@
 
 Google Colab is a cloud-based coding network that allows us to code using Python without downloading any software to our computers. On Google, search "colab" and that will take you to a blank Colab notebook. This is a tool like Google Sheets or Google Docs that can be found in your Google Drive.
 
-# Pre Class Reading Assignment
+## Pre Class Reading Assignment
 
 On the O'Reilly's website read Chapter 2 in _Python Crash Course, 3rd Edition_  and Chapter 3.
 
@@ -16,44 +16,55 @@ Here is a direct link to the reading:<br>
 
 Click [here](../../resources/textbooks/textbooks.md){:target="_blank"} for a refresher on how to access the O'Reilly's website. Once you have signed in, the links above will take you directly to the chapters.
 
-## Things to Look Out For
+### Things to Look Out For
 
 - In Python, square brackets **[]** indicate a list, and individual elements in the list are separated by commas. 
 - Python considers the first item in a list to be at position 0, not position 1. To access an element in a list, write the name of the list followed by the index of the item enclosed in square brackets.
 - There are many ways to organize a list, you can use the sort method or the reverse method. 
 - How do you add something to the end of the list and how do you add something to the middle of the list?
 - What is the difference between deleting an item, popping or removing it? 
+- A list is always enclosed in a set of square brackets.
+- Python indexing in lists starts at 0, not 1.
+- A list can be composed of all variable types; integers, strings, or floats.
+- Watch out for the different methods to edit lists, those will be used in the in-class workbook and homework!
+
 ---
 
-# Pre-Class Quiz Challenge
+## Pre-Class Quiz Challenge
 
 Open a new colab notebook do the following:
 
-1. Create 3 different types of variables:
+### Exercises 1 - From Chapter 2
+
+Create 3 different types of variables:
 
 >
    - String<br>
    - Integer<br>
    - Float
 
+Label each variable with a comment so that it is clear what type of variable it is. 
 
-2. Use the **input()** function to prompt for the user's name. Then using **print()** function, print the name given.<br><br>
+### Exercises 2 - From Chapter 3
 
-3. Create comments explaining what each of the 4-5 lines of code is. For example:
+In the same Colab notebook, complete Exercises 3-4, 3-5, and 3-6 found in chapter 3 of the textbook.
 
-```python
-#comment for variable 1
-v1 =
+---
 
-#comment for variable 2
-v1 =
+## Turning in/Rubric
 
-#comment for variable 3
-v1 =
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
-#comment for input statement
-i1 =
+**Rubric:**
 
-#comment for print
-print()
-```
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        | 

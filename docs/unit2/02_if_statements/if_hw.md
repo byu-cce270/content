@@ -17,7 +17,7 @@ _(image from [www.engineeringskills.com](https://www.engineeringskills.com/posts
 For this example, a student has given you a list of trusses he needs to solve for in his statics class. Because of your charitable heart, and your superb coding skills, you have agreed to help him.
 
 ### Steps
-1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_if_statements/%5Byour_name%5D_if_statements_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/02_if_statements/%5Byour_name%5D_if_statements_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Go to the "Part 1 - Truss Determinacy Solver" code block. Starting in line 2, create 3 different input statements using colab forms 
    to ask the user for the following:
     - The number of joints in the truss. (Must be an integer)

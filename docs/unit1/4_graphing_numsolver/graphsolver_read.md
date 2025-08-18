@@ -1,5 +1,6 @@
 
-# Graphing and Numerical Solver
+# Reading: Graphing and Numerical Solver
+
 ---
 
 ## Graphing Data
