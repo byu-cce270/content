@@ -187,9 +187,9 @@ It should output something like this:
 
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
-|                      **Reasons for Points Lost**                      |    **Amount**     |  
-|:---------------------------------------------------------------------:|:-----------------:|
-|                        Link shared incorrectly                        |       -10%        |
-|                       Turned in late (per week)                       | -10% (up to -50%) |
-| No comments explaining why AI is used and what its provided code does |       -10%        |
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
 
