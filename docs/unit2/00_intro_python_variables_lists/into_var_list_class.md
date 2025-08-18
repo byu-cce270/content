@@ -12,19 +12,22 @@ After opening the workbook, follow the instructions in the workbook to complete 
 
 For Part 2, here is a list of common list methods. Here is a list of some the methods you will be using:
 
-|   Method   | Description                                                      |
-|:----------:|------------------------------------------------------------------|
-|  append()  | Adds an element to the end of the list.                          |
-|  extend()  | Adds all elements of a list to the end of the list.              |
-|  insert()  | Inserts an element at the specified position.                    |
-|  remove()  | Removes the first item with the specified value.                 |
-|   pop()    | Removes the element at the specified position.                   |
-|  clear()   | Removes all items from the list.                                 |
-|  index()   | Returns the index of the first element with the specified value. |
-|  count()   | Returns the number of elements with the specified value.         |
-|   sort()   | Sorts the list.                                                  |
-| reverse()  | Reverses the order of the list.                                  |
+|  Method   | Description                                                      |
+|:---------:|------------------------------------------------------------------|
+| append()  | Adds an element to the end of the list.                          |
+| extend()  | Adds all elements of a list to the end of the list.              |
+| insert()  | Inserts an element at the specified position.                    |
+| remove()  | Removes the first item with the specified value.                 |
+|   pop()   | Removes the element at the specified position.                   |
+|  clear()  | Removes all items from the list.                                 |
+|  index()  | Returns the index of the first element with the specified value. |
+|  count()  | Returns the number of elements with the specified value.         |
+|  sort()   | Sorts the list.                                                  |
+| reverse() | Reverses the order of the list.                                  |
+|   len()   | Returns the length of items in a sequence or collection.         |
 
+!!! Note 
+    The len() method and count() method are both similar, but they are not the same. The len() method returns the number of items in a list, while the count() method returns the number of times a specific item appears in a list.
 ---
 			
 ## Turning in/Rubric

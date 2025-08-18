@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables_lists/(Starter_Workbook)_HW_Introduction_to_Python_Variables_Lists.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+First,open the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/00_intro_python_variables_lists/(Starter_Workbook)_HW_Introduction_to_Python_Variables_Lists.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Rename it something like “(Your-Name)-HW_Introduction_to_Python_Variables_Lists.ipynb”.
 
@@ -41,7 +41,7 @@ Where:<br>
 >>$A$ = the cross-sectional area of the flow <br>
 $P_w$ = the wetted perimeter in feet
 
-The wetted perimeter is the length of the channel in the channel cross section that is in contact with the water.
+The wetted perimeter is the length of the channel in the channel cross-section that is in contact with the water.
 
 For this problem, we will be considering rectangular and trapezoidal channels as shown here:
 
@@ -79,7 +79,7 @@ Where:<br>
 
 2. Run the cell to store the variables in the notebook. You do not need to write any code for this step.
 
-3. Run the code block call "Variable Processing" to set the values of the variables based on the inputs you provided. This code block will set the values of the variables `u` and `n` based on the `units` and `material` variables. There are two option to use. You can use either "Option Block 1" or "Option Block 2". Look at the code and tyr to understand what it is doing. We will go over this later in this unit.
+3. Run the code block call "Variable Processing" to set the values of the variables based on the inputs you provided. This code block will set the values of the variables `u` and `n` based on the `units` and `material` variables. There are two options to use. You can use either "Option Block 1" or "Option Block 2". Look at the code and try to understand what it is doing. We will go over this later in this unit.
 
 4. Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel. Store the result in the variable A.
 
