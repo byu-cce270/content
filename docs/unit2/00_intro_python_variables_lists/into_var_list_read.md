@@ -18,7 +18,7 @@ Click [here](../../resources/textbooks/textbooks.md){:target="_blank"} for a ref
 
 ## Things to Look Out For
 
-- In Python, square brackets (**[]**) indicate a list, and individual elements in the list are separated by commas. 
+- In Python, square brackets **[]** indicate a list, and individual elements in the list are separated by commas. 
 - Python considers the first item in a list to be at position 0, not position 1. To access an element in a list, write the name of the list followed by the index of the item enclosed in square brackets.
 - There are many ways to organize a list, you can use the sort method or the reverse method. 
 - How do you add something to the end of the list and how do you add something to the middle of the list?
