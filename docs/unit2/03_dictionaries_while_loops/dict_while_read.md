@@ -14,23 +14,15 @@ Here is a direct link to the readings:</br>
 Remember that you will have to sign in to you free account that you created earlier.
 
 
-## Things to Look Out For in Dictionaries
-(either questions or bullet points)
-- What type of Dictionaries use braces {} as opposed to lists which use square brackets []
-- Keys and values are separated by colons, and key-value pairs are separated by commas
-- A dictionary's keys cannot be lists, but its values can be
-
-
-- What is the main difference in syntax between a list and a dictionary?
-- How are keys and values separated in a dictionary?
-- In a dictionary, what is the difference between a key and a value?
-
-## Things to Look out For in Input/While Loops
+## Things to Look Out For
+- Dictionaries use braces {} as opposed to lists which use square brackets [].
+- Keys and values are separated by colons, and key-value pairs are separated by commas.
+- A dictionary's keys cannot be lists, but its values can be.
 - What is the input statement used for? 
-- How do you format a prompt question if it doesn't fit on its initial line. 
-- int?
+- How do you format a prompt question if it doesn't fit on its initial line.
 - What is the difference between for loops and while loops?
 - How would you code a stopping point if you wanted to stop the input program?
+- While loops will only run while a condition is true, and will stop when the condition is false.
 
 ---
 
@@ -56,4 +48,21 @@ The Nile runs through Egypt.
 6. Use another while loop to print only the names of the countries.
 
 ---
-# Rubric
+
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
