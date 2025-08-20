@@ -1,4 +1,4 @@
-# In Class Exercise: Introduction to Dictionaries
+# In Class Exercise: Introduction to Dictionaries, input statements, and while loops
 
 The following exercises will have you create, manipulate, and loop through dictionaries. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
