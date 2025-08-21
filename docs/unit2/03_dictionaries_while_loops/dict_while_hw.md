@@ -4,15 +4,15 @@
 
 ## Instructions
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_dictionaries_while_loops/dictionaries_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_dictionaries_while_loops/dictionaries_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-2. Rename it something like "[Your Name]dictionaries_homework.ipynb"
+Rename it something like "[Your Name]dictionaries_while_loops_input.ipynb"
 
 In this assignment, you will be creating a dictionary and using it to calculate the cost of materials and shipping. The dictionary will contain the cost of each material per ton and the cost to ship each material per mile. You will then use this dictionary to calculate the total cost of a shipment of materials.
 
 ---
 
-#### Part 1
+## Part 1 - Dictionary Creation
 
 1. In the first code block, make a dictionary called MaterialsDictionary. Use the following keys and their 
 corresponding values to populate the dictionary:
@@ -27,7 +27,7 @@ corresponding values to populate the dictionary:
 
 ---
 
-#### Part 2: Function Definition
+## Part 2 - Function Definition
 
 2. In the second code block, you will write the code for a function called "invoice_calc" that will calculate the 
 total cost of a shipment of materials. The function will take two parameters: a dictionary and the number of different types of materials there are in the dictionary. The function will return the total cost of the shipment. The structure of the function is already set up for you.
@@ -35,7 +35,9 @@ total cost of a shipment of materials. The function will take two parameters: a 
 3. The existing function has two parameters: a dictionary (titled MaterialsDictionary) and the number of different 
 types of materials there are in the dictionary (amountmat)
 
-#### Part 3: For Loop
+---
+
+## Part 3 - For Loop
 
 4. In the function (where it says "Write the first for-loop starting here"), write a for-loop that loops through the 
 keys and values of the MaterialsDictionary. Make sure that you start writing your code with at least one indentation since it is within a function.
@@ -43,7 +45,9 @@ keys and values of the MaterialsDictionary. Make sure that you start writing you
 5. In the for-loop, use an if statement to ensure that the key is **not** equal to "Guide." Then print a sentence 
 saying how much each material costs per ton and how much they cost to ship.
 
-#### Part 4: While Loop
+---
+
+## Part 4 - While Loop
 
 6. In the function (where it says "Write the while-loop starting here"), write a while-loop that will iterate as many 
    times as there are different types of materials, asking how many tons they want and how many miles it will be shipped
@@ -75,7 +79,7 @@ saying how much each material costs per ton and how much they cost to ship.
 
 ---
 
-# Turning In/Rubric
+## Turning In/Rubric
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
