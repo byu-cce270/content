@@ -72,11 +72,11 @@ $I$ = the moment of inertia (in inches^4)
 
 2. On a new line, create IF and ELIF statements that check if the **load_type** entered is a moment, a point, or a distributed load. Depending on which **load_type** is entered, your IF and ELIF statements will run one of the following input statements:
 
-   | Variable Name |                            Prompt                           | Variable Type |
-   |:-------------:|:-----------------------------------------------------------:|:-------------:|
-   |  moment_load  | Asks what the value of the moment load is (in pound-inches) |     float     |
-   |   point_load  |    Asks what the value of the point load is (in pounds)     |     float     |
-   |   dist_load   | Asks what the value of the distributed load is (in pounds/inch) |     float     |
+   | Variable Name |                            Prompt                            | Variable Type |
+   |:-------------:|:------------------------------------------------------------:|:-------------:|
+   |  moment_load  |   Asks what the value of the moment load is (in lb-inches)   |     float     |
+   |   point_load  |      Asks what the value of the point load is (in lbs)       |     float     |
+   |   dist_load   | Asks what the value of the distributed load is (in lbs/inch) |     float     |
 
 3. On a new line, create the following input statements:
 
@@ -91,13 +91,16 @@ $I$ = the moment of inertia (in inches^4)
 
 >>$y=\frac{h}{2}$
 
-5. On a new line within the code block, create a variable **I** that you set by calling the moment of inertia function you created earlier, with the variables **b** and **h**  as its arguments. These varibles were defined earlier.
+5. On a new line within the code block, create a variable **I** that you set by calling the moment of inertia 
+   function you created earlier, with the variables **b** and **h**  as its arguments. These variables were defined earlier.
 
 6. On a new line, create IF and ELIF statements that check if the **beam_type** is a cantilever or a simply supported beam. Within those IF and ELIF statements, nest more IF and ELIF statements that check if the **load_type** is a moment, a point, or a distributed load. 
 
 7. Depending on your **beam_type** and **load_type**, use the appropriate function to assign values to the variables **max_deflection** and **max_moment**  within the nested IF and ELIF statements. For example, if your **beam_type** is a cantilever and your **load_type** is a moment load, your variables **max_deflection** and **max_moment** should be set using the function you created for a cantilever and moment load.
 
-8. On a new unindented line, create the variable **max_stress** and set the value by calling the maximum bending stress function you created earlier, with the variables **max_moment**, **y**, and **I** its arguments. These variables were defined earlier.
+8. On a new unindented line, create the variable **max_stress** and set the value by calling the maximum bending 
+   stress function you created earlier, with the variables **max_moment**, **y**, and **I** as its arguments. These 
+   variables were defined earlier.
 
 9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches) as well as the maximum bending stress (in psi)
 
@@ -128,7 +131,7 @@ $I$ = the moment of inertia (in inches^4)
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                            **Item**                             | **Amount** |  
+|                            **Item**                             | **Amount** |
 |:---------------------------------------------------------------:|:----------:|
 |            1st scenario function is defined correctly           |     2      |
 |            2nd scenario function is defined correctly           |     2      |
@@ -146,7 +149,8 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 | Second code block prints maximum deflection and bending stress  |     2      |
 |         <div style="text-align: right">**Total**</div>          |   **30**   |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain 
+your code when using AI to help you create it or fail to share your link correctly.
 
 |                      **Reasons for Points Lost**                         | **Amount** |  
 |:------------------------------------------------------------------------:|:----------:|
