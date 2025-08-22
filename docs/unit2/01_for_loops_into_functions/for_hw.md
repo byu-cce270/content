@@ -55,7 +55,11 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 ---
 
-## Rubric
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+
+**Rubric:**
 
 |                                            Lists                                                     | Points Possible |
 |:----------------------------------------------------------------------------------------------------:|:---------------:|
@@ -71,10 +75,13 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 |        Print statements created that specify the length of the beam and the total deflection         |        3        |
 |                          <div style="text-align: right">**Total**</div>                              |       30        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+---
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
+
