@@ -53,6 +53,7 @@ saying how much each material costs per ton and how much they cost to ship.
    times as there are different types of materials, asking how many tons they want and how many miles it will be shipped
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the "amountmat" variable in your while-loop 
    statement</br>
+
 7. In the new while-loop, create the following input statements:
 
    | Variable Name |                            Prompt                           | Variable Type |
@@ -63,9 +64,11 @@ saying how much each material costs per ton and how much they cost to ship.
 
 8. Still inside the while loop, create a variable called "cost" that references the dictionary and pulls the value 
    related to whatever material is input by the user
+
 9. Still in the loop, add the cost of the material multiplied by its quantity to the cost of shipping the material 
    multiplied by its distance. Add this to the variable "total" that was already included in the function
    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the += operator when adding the costs to the total </br>
+
 10. Run all the cells and then test the function using this table:
     
    | Material | Amount | Distance |
