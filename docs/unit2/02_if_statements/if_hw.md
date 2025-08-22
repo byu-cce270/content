@@ -43,11 +43,11 @@ For this example, a student has given you a list of trusses he needs to solve fo
 | 2          | 4      | 6       | 3               | Statically indeterminate |
 | 3          | 8      | 9       | 4               | Unstable |
 
-##Part 2
+## Part 2
 
 **Objective**:  You are helping a company count the orders of materials it has. They have given you the list and want you to count it.
 
-###Steps
+### Steps
 1. Under the line "main for loop", create a for loop that will go through each order in the given "orders " list.
 2. In the next line, create a for loop that will read each item in the "Total_order" list.
 3. Now, create a 3rd loop that loops through the totals  if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item total.
@@ -79,10 +79,13 @@ For this example, a student has given you a list of trusses he needs to solve fo
 |                               Part 2- Correct value for concrete                                        |        3        |
 |                             <div style="text-align: right">**Total**</div>                              |       30        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+---
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
+

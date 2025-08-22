@@ -20,7 +20,11 @@ Remember that you will have to sign in to you free account that you created earl
 
 ## Pre-Class Quiz Challenge
 
-In a Colab notebook, complete Problem 4-1 found in chapter 4 of the textbook. Submit a link to the completed problem in your Pre-Class Quiz. 
+1. Create a new colab notebook.
+
+2. Title the notebook "(Your_Name)_Pre_For_Loops.ipynb".
+
+3. In a Colab notebook, complete Problem 4-1 found in chapter 4 of the textbook. Submit a link to the completed problem in your Pre-Class Quiz. 
 
 ![image](https://github.com/user-attachments/assets/9bef8f36-8bd3-4cca-8e18-3c72e72d2c9d)
 

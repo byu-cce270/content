@@ -32,7 +32,7 @@ Click [here](../../resources/textbooks/textbooks.md){:target="_blank"} for a ref
 
 ## Pre-Class Quiz Challenge
 
-Open a new colab notebook do the following:
+Open a new colab notebook do the following. Please be sure to rename the notebook something like "(Your_Name)_Pre_Intro_to_Python_Variables_Lists.ipynb".
 
 ### Exercises 1 - From Chapter 2
 
