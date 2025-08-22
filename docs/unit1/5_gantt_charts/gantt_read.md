@@ -108,11 +108,7 @@ This exercise will help you practice the functions we will use in class to creat
 
    _Hint: if you did this step correctly, you will get an error when you enter the formula._
 
-6. Use the =IFERROR() function in cell B9 to return nothing in the cell if an error is computed in the cell. You will put the LEFT formula as the argument to the function.
-
-   _Hint: if you did this step correctly, you will see nothing in cell B9. You can test this by changing the value in B8 to be the value in B5. If you change it back to an empty cell, nothing will be shown in B9._
-
-7. Explain what each of these functions is doing in the C column under formula explanation.
+6. Explain what each of these functions is doing in the C column under formula explanation.
    
 Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas, and we will clarify confusion in class. You are also more than welcome to come to TA office hours or message a TA for help!
 
