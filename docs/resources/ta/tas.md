@@ -60,4 +60,5 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **Samantha Farnsworth** - I'm from Orem, Utah, and currently a junior in the Civil Engineering program! I’m also minoring in Art History (feel free to ask me about the crossover sometime lol). In my free time, I love painting, drawing, playing tennis, and listening to music. This is my first semester as a TA, and I'm so excited to meet you all!!
 
+![luke_g_ta_profile.jpg](images/luke_g_ta_profile.jpg){width=100px}
 - **Luke Gonzalez** - 
