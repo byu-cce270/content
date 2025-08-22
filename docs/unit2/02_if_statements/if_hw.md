@@ -1,10 +1,13 @@
 # HW: IF Statements
+
 ---
+
 **Purpose:** 
 - Learn how to use IF, ELIF, and ELSE statements to analyze inputs and lists to determine a desired result.
 - Practice using if statements with for loops and lists.
 
 ---
+
 ## Part 1
 
 **Objective**: Create a code that can solve the determinacy of any given truss when given the correct inputs. Determinacy is a Statics principle that helps us know whether or not we can solve the forces in a given system using statics equations.
@@ -46,6 +49,8 @@ For this example, a student has given you a list of trusses he needs to solve fo
 | 1          | 3      | 3       | 3               | Statically determinate   |
 | 2          | 4      | 6       | 3               | Statically indeterminate |
 | 3          | 8      | 9       | 4               | Unstable                 |
+
+---
 
 ## Part 2
 
