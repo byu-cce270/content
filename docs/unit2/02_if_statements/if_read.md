@@ -13,8 +13,13 @@ _Optional:_ In class we will be going over how to create different forms colab. 
 
 
 ## Things to look out for
-- indentation of if and elif statements
-- comparative operators such as >, <, and ==
+- The structure of an if statement, including the use of colons and indentation.
+- How do you check if a value is or isn't in a list?
+- Indentation of if and elif statements.
+- What is a boolean expression?
+- The difference between if, elif, and else statements.
+- Can you use multiple elif statements in a single if statement?
+- Note the different types of comparative operators such as >, <, and ==.
 
 
 ---
