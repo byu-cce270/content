@@ -19,6 +19,7 @@ _Optional:_ In class we will be going over how to create different forms colab. 
 - The difference between if, elif, and else statements.
 - Can you use multiple elif statements in a single if statement?
 - Note the different types of comparative operators such as >, <, and ==.
+
 =======
 
 ## Pre-Class Quiz Challenge
