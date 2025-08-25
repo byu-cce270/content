@@ -36,18 +36,42 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 | Property |     Value     |
 |:--------:|:-------------:|
-| $E$      | 20e6 $N/cm^2$ |
-| $I$      | 4,800 $cm^4$  |
+|   $E$    | 20e6 $N/cm^2$ |
+|   $I$    | 4,800 $cm^4$  |
 
 ---
 
-## Instructions
+## Getting Started
 
-1.  Create a copy of the starter sheet and rename it something like "[Your Name] HW 2.3 - For Loops"
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/01_for_loops_into_functions/for_loops_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-2. Follow the instructions on the notebook.
-3. When you are finished, turn sharing and editing on, and then turn in the link to your notebook to Learning Suite in 
-   the feedback box.
+Create a copy of the starter sheet: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/01_for_loops_into_functions/(Starter_Workbook)_HW_For_Loops.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Rename the notebook something like "(Your_Name)_HW_For_Loops.ipynb".
+
+---
+
+## Part 1 - Looping over beam lengths
+
+1. Run Code Block 1 to create a list of beam lengths in meters.
+
+2. In Code Block 2, append a value of 5.7 to the beam_lengths list.
+
+3. Create a variable to store the value of the total length of all beams. Also create a for loop to calculate the total length of all the beams using the variable. After the loop finished, print the total length you find. This should be done in Code Block 3.
+
+4. Calculate the average length of the beams and print the result. This should be done in Code Block 4.
+
+5. Create a for loop to count the number of beams longer than 5 meters. Print the result. This should be done in Code Block 5.
+
+---
+
+## Part 2 - Calculating beam deflections
+
+1. Run Code Block 6 to create the 'beam_lenghts' list.
+
+2. In Code Block 7, delete the last length from the list and then display the contents of the list.
+
+3. You will find in Code Block 8, are the given values for E, I, and the loads given that it's a steel beam. Run this cell to initialize the variables and the list
+
+4. Finally, in Code Block 9, calculate the total deflection of the beam using the set of loads in the loads list for each beam length. To do this, you will need to loop over the beam lengths and then loop over the loads in a nested loop. Create a variable for the total deflection and set it to zero at the beginning of the outer loop, then add to this variable in the inner loop to add up the total deflection for that beam length. As you complete the outer loop for each beam length, print the beam length and the total deflection.
 
 ---
 
@@ -55,7 +79,11 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 ---
 
-## Rubric
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+
+**Rubric:**
 
 |                                            Lists                                                     | Points Possible |
 |:----------------------------------------------------------------------------------------------------:|:---------------:|
@@ -71,10 +99,13 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 |        Print statements created that specify the length of the beam and the total deflection         |        3        |
 |                          <div style="text-align: right">**Total**</div>                              |       30        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+---
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
+

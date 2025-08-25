@@ -1,4 +1,4 @@
-#  Reading: if Statements
+#  Reading: If Statements
 
 ---
 
@@ -33,11 +33,17 @@ _Optional:_ In class we will be going over how to create different forms colab. 
 4. In a new code block, use an if statment to check that the user's grade is greater than or equal to 60. Print a message telling the user whether they pass or fail
 
 5. In a new code block, use if, elif, and else statements to assign a letter grade based on the value of 'exam_score' using the following scale:
-   - A: 90-100
-   - B: 80-89
-   - C: 70-79
-   - D: 60-69
-   - F: Below 60
+
+
+| **Letter Grade** | **Grade Scale** |  
+|:----------------:|:---------------:|
+|        A         |     90-100      | 
+|        B         |      80-89      |
+|        C         |      70-79      |
+|        D         |      60-69      |
+|        F         |    Below 60     |
+
+6. Create a print statement that tells the user what their letter grade is. Great job!
 
 ---
 
