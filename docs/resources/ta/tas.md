@@ -16,7 +16,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 ## About the TAs
 
-![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
+![brandan_w_ta_profile.jpg](images/brandan_w_ta_profile.jpg){width=100px}
 <br>**Brandan Williamson** - I'm the head TA for the class. I'm from Ripon, California. I'm a Senior here at BYU studying Civil Engineering and Computer Science. I also got married earlier this year. This is my third year as a TA. I've helped redo some of the coursework each semester. I'll be helping answer questions and grading assignments, and writing the free response for the exams. Feel free to message me during the evenings for help too.
 
 ![tyler_t_ta_profile.jpg](images/tyler_t_ta_profile.jpg){width=100px}
