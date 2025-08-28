@@ -75,10 +75,6 @@ Rename the notebook something like "(Your_Name)_HW_For_Loops.ipynb".
 
 ---
 
-**Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
-
----
-
 ## Turning in/Rubric
 
 **_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
