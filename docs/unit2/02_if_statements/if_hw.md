@@ -3,6 +3,7 @@
 ---
 
 **Purpose:** 
+
 - Learn how to use IF, ELIF, and ELSE statements to analyze inputs and lists to determine a desired result.
 - Practice using if statements with for loops and lists.
 
@@ -15,6 +16,7 @@
 Here is an example of a truss. The blue lines are the members, the joints are the white circles where the members meet, and the red arrows are the reaction forces.:
 
 ![Warren-Truss2.png](images/Warren-Truss2.png)
+
 _(image from [www.engineeringskills.com](https://www.engineeringskills.com/posts/truss-analysis-using-method-of-joints-and-sections))_
 
 For this example, a student has given you a list of trusses he needs to solve for in his statics class. Because of your charitable heart, and your superb coding skills, you have agreed to help him.
@@ -60,7 +62,7 @@ For this example, a student has given you a list of trusses he needs to solve fo
 
 2. In the next line, create a for loop that will read each item in the "Total_order" list. 
 
-3. Now, create a 3rd loop that loops through the totals  if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item total.
+3. Now, create a 3rd loop that loops through the totals if the material from the "order" list is equal to the item in the "Total_order" list, then add 1 to the item total.
     - EX: If steel is in the "order" list and "total_orders" list, then the value for steel in the "total_orders" list should increase by 1 for each occurrence of steel. This should be the same for wood and brick.
    
 4. Write a loop to print each of the final values for wood, brick, steel, glass, and concrete. Divide this code using comments. Here are the final values that you should get:
