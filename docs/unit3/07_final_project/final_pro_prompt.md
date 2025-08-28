@@ -8,16 +8,17 @@ You will also have to make and turn in a project proposal. The project proposal,
 ## Instructions
 
 1. You and the rest of your team previously formed will work together will come up with a project idea that will showcase what you have learned in this class. You will need to complete the project requirements listed below. You can find your team here:
+</br>(If you need to change teams for any reason, please contact the head TA or the professor)
 
-   - [Section 1 (Tue/Thur) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1UzYiJP2lircfUVAUKqwEMr5OekIEfV-Hudox3Jd9OwM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-   - [Section 2 (Mon/Wed) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1c1g7XN_e6pTDDpmfZ5c6ug8Jsork3KS0jV3bZGh8Jm0/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 1 (Tue/Thur) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/12VCbgRsAJrJWk5hbK98ahBvKskItZlTTD7nFtJCSJCM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1PwaCFo-o9sOVHv4-ttZSH_Glckj8CqV-4SZ03U7sJzw/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 2. You and your team must come up with a project idea that will meet all of the requirements and create a project proposal. The instructions can be found here: [Final Project Proposal](https://byu-cce270.readthedocs.io/en/latest/unit3/07_final_project/final_pro_proposal/){:target="_blank"} ***WARNING*** - You must avoid the temptation to simply find an interesting Python program online and copy and paste it as your own. While we all use other people’s code and examples to learn from, outright copying their code and presenting it as your own is plagiarism.
 
 3. You also need to sign up for a time to present your project to the rest of the class. You can find the sign up sheet here:
 
-   - [Section 1 (Tue/Thur) W25 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1UzYiJP2lircfUVAUKqwEMr5OekIEfV-Hudox3Jd9OwM/edit?gid=583099764#gid=583099764){:target="_blank"}
-   - [Section 2 (Mon/Wed) W25 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1c1g7XN_e6pTDDpmfZ5c6ug8Jsork3KS0jV3bZGh8Jm0/edit?gid=583099764#gid=583099764){:target="_blank"}
+   - [Section 1 (Tue/Thur) W25 Final Project Presentation Time](){:target="_blank"}
+   - [Section 2 (Mon/Wed) W25 Final Project Presentation Time](){:target="_blank"}
 
 4. Complete the project using all the following requirements (this is where your grade will come from):
 
@@ -41,8 +42,7 @@ You will also have to make and turn in a project proposal. The project proposal,
          - Use of GUIs (ipywidgets)
          - Use of numpy in some way
 
-
-
+---
 
 ## Turning in/Rubric
 Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:

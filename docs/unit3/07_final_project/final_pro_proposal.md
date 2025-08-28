@@ -3,10 +3,10 @@
 **Purpose:** The purpose of this assignment is to give you and your group a chance to plan and split up the different parts of the project. 
 
 You and the rest of your team previously formed will work together will come up with a project idea that will showcase what you have learned in this class. You can find your team here: 
+</br>(If you need to change teams for any reason, please contact the head TA or the professor)
 
-   - [Section 1 (Tue/Thur) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1UzYiJP2lircfUVAUKqwEMr5OekIEfV-Hudox3Jd9OwM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-   - [Section 2 (Mon/Wed) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1c1g7XN_e6pTDDpmfZ5c6ug8Jsork3KS0jV3bZGh8Jm0/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-
+   - [Section 1 (Tue/Thur) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/12VCbgRsAJrJWk5hbK98ahBvKskItZlTTD7nFtJCSJCM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1PwaCFo-o9sOVHv4-ttZSH_Glckj8CqV-4SZ03U7sJzw/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 ## Instructions
 
@@ -34,6 +34,7 @@ You and the rest of your team previously formed will work together will come up 
     A milestone is the thing that gets completed on each task - a marker of how well you are doing. 
     For a helpful guide on how to create/make a Gantt Chart, you can review when we did Gantt Charts during the spreadsheet unit. [Gantt Chart Reading](https://byu-cce270.readthedocs.io/en/latest/unit1/5_gantt_charts/gantt_read/){:target="_blank"}
  
+---
 
 # Turning In/Rubric
 
@@ -48,11 +49,13 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |                         Project Description                          |     10     |
 |           <div style="text-align: right">**Total**</div>             |   **30**   |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+---
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every day it's late.        |    3-15    |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
 

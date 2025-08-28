@@ -3,11 +3,12 @@
 **Purpose:** The purpose of this assignment is to showcase how much you have learned during this Google Sheets unit of the class. You will get to choose with your team between 3 different prompts listed below.
 
 ## Instructions
+
 1. Form a team of 3 members and choose a group name. Record your team name and members of our team here:
 </br>(Please note that you will be with this team for all other projects and will use this name the whole semester. So chose wisely)
 
-   - [Section 1 (Tue/Thur) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1UzYiJP2lircfUVAUKqwEMr5OekIEfV-Hudox3Jd9OwM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-   - [Section 2 (Mon/Wed) W25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1c1g7XN_e6pTDDpmfZ5c6ug8Jsork3KS0jV3bZGh8Jm0/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 1 (Tue/Thur) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/12VCbgRsAJrJWk5hbK98ahBvKskItZlTTD7nFtJCSJCM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1PwaCFo-o9sOVHv4-ttZSH_Glckj8CqV-4SZ03U7sJzw/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 2. You will then choose one of the three prompts listed below.
 
@@ -34,6 +35,7 @@
 ---
 
 ## The Prompts
+
 ### Prompt 1 - Stock Market Data Challenge
 You and two friends have decided to install the Robinhood app on your phones and start making regular stock purchases each week for 12 weeks to see who can choose the best stocks and get the most return on investment. You agree that you will each start with a $100 investment in a stock of your choice (each friend must choose a different stock). You make this initial investment on a Monday morning. Each Monday thereafter for 12 weeks, you each invest an additional $20 - again you must choose one stock, and it can’t be one that you already chose (this kind of restriction is hard to code into a spreadsheet, so you’ll just ensure this requirement when you are entering the data from your friends).  You will need to build a list of stocks that have been bought by the group, including the initial purchase price and the current price (i.e. the cost of one share of the stock). Each week thereafter, you will update the price of one share and compute the percent gain or loss of that stock. You will use this information to update the current value of the investment of each friend in the stocks they purchased. At the end of the 12 weeks, you have agreed that whoever did the best overall (i.e. has the greatest value of their total investments) wins 25% of the gains of each of the other friends. Your job is to build a Google Sheets spreadsheet to manage this process. You can use one or more tabs on the spreadsheet but your resulting product should automatically compute the gains or losses of each of the purchased stocks each week (based on initial and current price per share), and should compute the running total and final total of all the investments of each person, and should determine who is the overall winner and how much money they win from each friend. Fill your spreadsheet with synthetic data for the full challenge to show how it works. Be sure to include the items in the grading rubric below.
 
@@ -53,12 +55,12 @@ Create a professional spreadsheet that can be used to generate bills for landsca
 
 - Any other details needed for a clear and useful client invoice
 
-
 ---
 
 ## Turning in/Rubric
+
 Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:
-   - A spreadsheet link with sharing turned on and editing on so that the data validation is visible.
+   - A spreadsheet link with sharing turned on and editing on
    - The link to watch the video
 
 **Rubric:**
