@@ -65,7 +65,7 @@ Rename the notebook something like "(Your_Name)_HW_For_Loops.ipynb".
 
 ## Part 2 - Calculating beam deflections
 
-1. Run Code Block 6 to create the 'beam_lenghts' list.
+1. Run Code Block 6 to create the 'beam_lengths' list.
 
 2. In Code Block 7, delete the last length from the list and then display the contents of the list.
 
