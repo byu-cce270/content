@@ -59,8 +59,14 @@ Create a professional spreadsheet that can be used to generate bills for landsca
 
 ## Turning in/Rubric
 
+**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+
+1. On the top right, click the share button --> share --> settings
+2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
+3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+
 Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:
-   - A spreadsheet link with sharing turned on and editing on
+   - A Excel link with sharing turned on and editing on
    - The link to watch the video
 
 **Rubric:**
@@ -83,5 +89,11 @@ Only one team member needs to turn in the following in the feedback box on the a
 |                                                       Participation points                                                        |       10        |
 |                                          <div style="text-align: right">**Total**</div>                                           |       100       |
 
+---
 
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
 
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |
