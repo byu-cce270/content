@@ -14,6 +14,40 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 ---
 
+## About the TAs
+
+![brandan_w_ta_profile.jpg](images/brandan_w_ta_profile.jpg){width=100px}
+<br>**Brandan Williamson** - I'm the head TA for the class. I'm from Ripon, California. I'm a Senior here at BYU studying Civil Engineering and Computer Science. I also got married earlier this year. This is my third year as a TA. I've helped redo some of the coursework each semester. I'll be helping answer questions and grading assignments, and writing the free response for the exams. Feel free to message me during the evenings for help too.
+
+![tyler_t_ta_profile.jpg](images/tyler_t_ta_profile.jpg){width=100px}
+<br>**Tyler Johnson (TJ)** - I'm from Rancho Santa Margarita, California, and I'm a senior in the civil engineering program. This will be my fifth semester as a TA. I like to snowboard, golf, play pickleball, and play video games.
+							
+![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
+<br>**Paige Logan** - I am from Kaysville, Utah and am a junior studying Civil Engineering! This is my second year as a TA for this class! I like to go skiing in the winter and boating in the summer! I'm excited to get to know all of you!
+
+![griffin_i_ta_profile.jpg](images/griffin_i_ta_profile.jpg){width=100px}
+<br>**Griffin Izu** - I'm from Irvine, California, and I am a junior in the Civil Engineering program. This will be my third semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, and playing video games. I'm very excited to meet you all!
+
+![tyler_p_ta_profile.jpg](images/tyler_p_ta_profile.jpg){width=100px}
+<br>**Tyler Piercy** - I am from Royal City, Washington and am currently a junior in Civil Engineering. I grew up farming and doing construction for work and love hiking, baseball, skiing, and board games. This is my second semester as a TA. I am pretty responsive and can be flexible to help if you need it.
+
+![mauricio_f_ta_profile.jpg](images/mauricio_f_ta_profile.jpg){width=100px}
+<br>**Mauricio Fernandez Celestino** - I am from Provo, UT, and I am a Junior in the Civil Engineering program. This is my first semester as a TA, and I am so excited! I love playing sports especially rugby, soccer and rugby. And my favorite thing is spending time with my wife! I am excited to get to know most of you, but hopefully all!
+
+![reagan_b_ta_profile.jpg](images/reagan_b_ta_profile.jpg){width=100px}
+<br>**Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my fourth year at BYU. I'm studying construction management and this will be my first semester as a TA for this class!!! I am so excited! I love playing volleyball and reading :) I can't wait to meet you all!
+
+![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
+<br>**Preston Cobabe** - 
+
+![samantha_f_ta_profile.jpg](images/samantha_f_ta_profile.jpg){width=100px}
+<br>**Samantha Farnsworth** - I'm from Orem, Utah, and currently a junior in the Civil Engineering program! I’m also minoring in Art History (feel free to ask me about the crossover sometime lol). In my free time, I love painting, drawing, playing tennis, and listening to music. This is my first semester as a TA, and I'm so excited to meet you all!!
+
+![luke_g_ta_profile](images/luke_g_ta_profile.jpg){width=100px}
+<br>**Luke Gonzalez** - Hello! I'm in my sophomore/junior year of Civil Engineering. First time as a TA, so I ask for your patience, but I’m more than willing to help as much as I can! I love music! And sports! And all sorts of stuff I guess idk. Excited to be here!
+
+---
+
 ## Grading Responsibilities
 
 - **HW 1.1**: The TA you signed up and met with.
@@ -37,27 +71,3 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 - **Samantha**: 
 
 - **Luke**:
-
----
-
-## About the TAs
-
-- **Brandan Williamson** - I'm the head TA for the class. I'm from Ripon, California. I'm a Senior here at BYU studying Civil Engineering and Computer Science. I also got married earlier this year. This is my third year as a TA. I've helped redo some of the coursework each semester. I'll be helping answer questions and grading assignments, and writing the free response for the exams. Feel free to message me during the evenings for help too.
-
-- **Tyler Johnson (TJ)** - I'm from Rancho Santa Margarita, California, and I'm a senior in the civil engineering program. This will be my fifth semester as a TA. I like to snowboard, golf, play pickleball, and play video games.
-							
-- **Paige Logan** - I am from Kaysville, Utah and am a junior studying Civil Engineering! This is my second year as a TA for this class! I like to go skiing in the winter and boating in the summer! I'm excited to get to know all of you!
-
-- **Griffin Izu** - I'm from Irvine, California, and I am a junior in the Civil Engineering program. This will be my third semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, and playing video games. I'm very excited to meet you all!
-
-- **Tyler Piercy** - I am from Royal City, Washington and am currently a junior in Civil Engineering. I grew up farming and doing construction for work and love hiking, baseball, skiing, and board games. This is my second semester as a TA. I am pretty responsive and can be flexible to help if you need it.
-
-- **Mauricio Fernandez Celestino** - I am from Provo, UT, and I am a Junior in the Civil Engineering program. This is my first semester as a TA, and I am so excited! I love playing sports especially rugby, soccer and rugby. And my favorite thing is spending time with my wife! I am excited to get to know most of you, but hopefully all!
-
-- **Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my fourth year at BYU. I'm studying construction management and this will be my first semester as a TA for this class!!! I am so excited! I love playing volleyball and reading :) I can't wait to meet you all!
-
-- **Preston Cobabe** - 
-
-- **Samantha Farnsworth** - I'm from Orem, Utah, and currently a junior in the Civil Engineering program! I’m also minoring in Art History (feel free to ask me about the crossover sometime lol). In my free time, I love painting, drawing, playing tennis, and listening to music. This is my first semester as a TA, and I'm so excited to meet you all!!
-
-- **Luke Gonzalez** - 

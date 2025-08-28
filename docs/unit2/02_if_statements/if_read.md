@@ -34,7 +34,6 @@ _Optional:_ In class we will be going over how to create different forms colab. 
 
 5. In a new code block, use if, elif, and else statements to assign a letter grade based on the value of 'exam_score' using the following scale:
 
-
 | **Letter Grade** | **Grade Scale** |  
 |:----------------:|:---------------:|
 |        A         |     90-100      | 
