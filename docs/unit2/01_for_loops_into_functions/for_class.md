@@ -1,4 +1,4 @@
-# In Class Exercise: Introduction to For Loops
+# In Class Exercise: Working with Lists (For Loops)
 
 The following exercises will have you edit and analyze lists using for loops. 
 
