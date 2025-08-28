@@ -17,6 +17,7 @@ markdown_extensions:
     - pymdownx.arithmatex:
         generic: true
 theme: readthedocs
+
 nav:
   - Home: index.md
   - Class Resources:
@@ -27,6 +28,7 @@ nav:
     - Grading Policy: resources/ta/grading_policy.md
     - Excel Review:
         - Cells and Formulas Review: resources/excel_review/basic_excel_review.md
+
   - Unit 1 - Excel:
     - A Tour of Class Resources: unit1/0_getting_started/day1_hw.md
     - Analyzing & Managing Data:
