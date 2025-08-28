@@ -6,6 +6,8 @@ You can find the In Class Exercise here: <a href="https://colab.research.google.
 
 Be sure to rename the workbook something like "(Your_Name)_Class_Introduction_to_Python_Variables_Lists.ipynb".
 
+---
+
 ## Instructions
 
 After opening the workbook, follow the instructions in the workbook to complete the exercises. There are two parts to this exercise. Part 1 will go over the basics of Python and variables. Part 2 will give you practice with the basics of Lists in Python.
@@ -28,6 +30,7 @@ For Part 2, here is a list of common list methods. Here is a list of some the me
 
 !!! Note 
     The len() method and count() method are both similar, but they are not the same. The len() method returns the number of items in a list, while the count() method returns the number of times a specific item appears in a list.
+
 ---
 			
 ## Turning in/Rubric
