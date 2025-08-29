@@ -41,7 +41,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 <br>**Preston Cobabe** - 
 
 ![samantha_f_ta_profile.jpg](images/samantha_f_ta_profile.jpg){width=100px}
-<br>**Samantha Farnsworth** - I'm from Orem, Utah, and currently a junior in the Civil Engineering program! I’m also minoring in Art History (feel free to ask me about the crossover sometime lol). In my free time, I love painting, drawing, playing tennis, and listening to music. This is my first semester as a TA, and I'm so excited to meet you all!!
+<br>**Samantha Farnsworth** - I'm from Orem, Utah, and currently a junior in the Civil Engineering program! I’m also minoring in Art History (feel free to ask me about the crossover sometime lol). In my free time, I love drawing, playing tennis, and listening to music. This is my first semester as a TA, and I'm so excited to meet you all!!
 
 ![luke_g_ta_profile](images/luke_g_ta_profile.jpg){width=100px}
 <br>**Luke Gonzalez** - Hello! I'm in my sophomore/junior year of Civil Engineering. First time as a TA, so I ask for your patience, but I’m more than willing to help as much as I can! I love music! And sports! And all sorts of stuff I guess idk. Excited to be here!
