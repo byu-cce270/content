@@ -17,6 +17,8 @@ To begin, open the in-class workbook and follow the instructions below. [(Starte
 
 Be sure to rename the file to something like "(Your-Name)-Gantt-Chart-Class.xlsx" and save it in your OneDrive folder.
 
+---
+
 ## Step 1 - Project Information, Phases, and Tasks
 
 In this step, you will add the project title, company name, project manager's name, and project start date to the Gantt chart. We will also enter some phases and tasks for the project.
@@ -30,66 +32,64 @@ First, you will need to enter the following information:
 1. Enter a name for your project in cell A1.
 2. Enter your company name in cell A2.
 3. Enter your name as the project manager in cell A3.
-4. Enter a date in cell E5 for the project start date.
+4. Enter a date in cell C3 for the project start date. This should be the next time you have class. Also name this cell "project_start" (We will be using this name in formulas later).
 
 Now we need to enter some phases and tasks for the project. 
 
-5. Enter "Phase 1" in cell A6.
-6. Enter a series of tasks for Phase 1 in cells A7:A10.
+5. Enter "Phase 1" in cell A7.
+6. Enter a series of tasks for Phase 1 starting in cells A8.
 
-You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task names. In practice, you would use wider column widths and enter more descriptive phase and task names.
+You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task names. In practice, you would use wider column widths and enter more descriptive phase and task names. Create at least 2 phases with 3-4 tasks each.
 
 Next, we will enter the start and end dates for each task.
 
-7. Enter the start date for each task in cells B7:B10. Typically, the start date for the first task is the project 
-   start date.
-8. Enter the duration for each task in cells C7:C10.
-9. Calculate the end date for each task using a formula by adding the duration to the start date in cells D7:D10. Add the number of days to the start date and subtract 1 to get the end date.
+7. Enter the start date for each task in column B next to each task. Typically, the start date for the first task is the project 
+   start date. The start date for the first task should reference the project start date in cell C3.
 
-**Note**: The instructions in the video say to add 1 to the end date of one task to get the start date of the next task. 
-This assumes that you cannot start the next task until the previous task is completed. This is not always the case. 
-So just enter independent start dates for each task. The start dates should be ascending order - that is, the start 
-date of task 2 should be on the same day or after the start date of task 1, etc.
+**Note**: The instructions in the pre class video say to add 1 to the end date of one task to get the start date of the next task. This assumes that you cannot start the next task until the previous task is completed. This is not always the case. So just enter independent start dates for each task. The start dates should be ascending order - that is, the start date of task 2 should be on the same day or after the start date of task 1, etc.
 
-10. Copy-paste your Phase 1 title and tasks to cells A11:A15.
-11. Modify the start dates and durations for Phase 2 tasks in cells B12:B15 and C12:C15.
-
-(see 0:18 - 1:26 of the video)
+8. In E6, enter "WORK DAYS" to indicate that the duration for each task is in work days (not calendar days).
+9. Enter the duration in column F for each task in column C.
+10. In D8, enter a formula to calculate the end date for each task based on the start date and duration. Use the WORKDAY() function to calculate the end date. The WORKDAY() function takes a start date and a number of work days and returns the end date. Use absolute references for the start date and relative references for the duration.
+11. Modify the formula in D8 to show nothing if the start date or duration is blank. Use the IF() function to check if either the start date or duration is blank. If either is blank, return nothing. Otherwise, return the end date using the WORKDAY() function. Then copy this formula to the rest of the tasks in column D.
+12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a color, indent the task and phase names, and add some borders to the table. You can board and highlight the project start date, work days, and start dates to help indicate that it is something to be filled in. You don't have to use the same colors as shown in our pictures. 
+13. Select column B and insert a new column to the left. This will become the new column B.
+14. In cell the new cell B6, enter "ASSIGNED TO". This is where you can enter the person responsible for each task.
+15. Adjust the column widths as needed to fit the new column.
 
 At this point, your Gantt chart should look something like this:
 
-![gantt_1_end.png](images/gantt_1_end.png)
+![gantt_step1.png](images/gantt_step1.png)
+
+---
 
 ## Step 2 - Creating the Timeline
 
 In this step, you will create the timeline for the Gantt chart. You will use  a series of date functions including TODAY(), WEEKDAY(), LEFT(), and TEXT() to create the timeline.
 
-1. Enter a date in cell F4 that is 1 day prior to the start date (will adjust this later).
-2. Drag the date in cell F4 6 cells to the right to fill in a week's worth of dates.
-3. Select the 7 dates, and use custom formatting to display only the day of the month.
-4. Resize the columns to make the dates small boxes.
-5. In cell F5, use the TEXT function to display the day of the week for the date in cell F4. (Hint: Use the "DDD" format). Then, use the LEFT function to display only the first letter of the day of the week.
-6. Drag the formula in cell F5 to fill in the rest of row 5 for the week.
+1. Have cell H5 reference the project start date in cell D3.
+2. In cell I5, enter a formula to reference the date in cell H5 plus 1 day. Then drag the formula to the right to fill in the rest of row 5 for the week.
+3. Select the 7 dates, and use custom formatting to display only the day of the month. (You can quickly pull up the custom formatting dialog by pressing Ctrl+1 on Windows or Command+1 on Mac).
+4. Resize the columns to make the dates small boxes and center the dates.
+5. In cell H6, use the TEXT function to display the day of the week for the date in cell H5. (Hint: Use the "DDD" format). Then, use the LEFT function to display only the first letter of the day of the week.
+6. Drag the formula in cell H6 to fill in the rest of row 5 for the week.
 
 Now we want to add a header for the week with the date of the first day of the week.
 
-7. Merge the cells F3:L3 and use a formula in the merged cell to reference the date of the first day of the week in cell F4. 
+7. Merge the cells H4:N4 and use a formula in the merged cell to reference the date of the first day of the week in cell H5. 
 8. Change the date formatting to display the full date in the merged cell.
+9. Add a border around the week header and fill it with a color of your choice.
 
 Next, we will copy our completed week to the next 3 weeks to the right to create a total of 4 weeks.
 
-9. Select columns F:L and copy to the clipboard.
-10. Paste the columns to M:S, T:Y, and Z:AG. At this point you will have 4 weeks of dates. **Note**: this is different from the video. In the video, the formatting is copy-pasted separately from the dates. You can do it that way if you prefer.
-11. Change the date in cell F4 to reference the project start date in cell D2.
-12. Enter a formula in cell G4 to reference the date in cell F4 plus 1 day. Drag the formula all the way to the right to fill in the rest of the dates for all 4 weeks.
+10. Select columns H:N and copy to the clipboard. Paste the columns to O:U. You will then need to modify O5 to reference the date in N5 plus 1 day. Now copy the columns O:U to the clipboard.
+11. Paste the new columns to V:AB and AC:AI. At this point you will have 4 weeks of dates.
 
 Now try double-clicking on the project start date to select a new date and watch the timeline update.
 
-(see 1:27 - 3:08 of the video)
-
 At this point, your Gantt chart should look something like this:
 
-![gantt_2_end.png](images/gantt_2_end.png)
+![gantt_step2.png](images/gantt_step2.png)
 
 ## Step 3 - Applying Formatting
 
