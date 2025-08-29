@@ -65,17 +65,13 @@ Rename the notebook something like "(Your_Name)_HW_For_Loops.ipynb".
 
 ## Part 2 - Calculating beam deflections
 
-1. Run Code Block 6 to create the 'beam_lenghts' list.
+1. Run Code Block 6 to create the 'beam_lengths' list.
 
 2. In Code Block 7, delete the last length from the list and then display the contents of the list.
 
 3. You will find in Code Block 8, are the given values for E, I, and the loads given that it's a steel beam. Run this cell to initialize the variables and the list
 
 4. Finally, in Code Block 9, calculate the total deflection of the beam using the set of loads in the loads list for each beam length. To do this, you will need to loop over the beam lengths and then loop over the loads in a nested loop. Create a variable for the total deflection and set it to zero at the beginning of the outer loop, then add to this variable in the inner loop to add up the total deflection for that beam length. As you complete the outer loop for each beam length, print the beam length and the total deflection.
-
----
-
-**Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
 
 ---
 
