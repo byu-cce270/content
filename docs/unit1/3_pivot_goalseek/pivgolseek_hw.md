@@ -5,7 +5,7 @@
 ## Instructions
 1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-HW-Pivot-GoalSeek-DataV.xlsx)
 2. Rename it something like "(Your-Name)-HW-Pivot-GoalSeek-DataV.xlsx"
-3. 
+
 ---
 
 ## Part 1: Three Reservoir Problem

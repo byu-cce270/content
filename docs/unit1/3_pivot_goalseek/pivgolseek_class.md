@@ -23,7 +23,7 @@ Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet conta
 5. In column 3, validate that the data entered is a date in the past.
 6. In column 4, validate that the number entered is a decimal number between 0 and 1.
 7. Create an input message for each column that will appear when the user selects a cell in that column.
-7. Create a warning message for each column that will appear if the data entered does not meet the validation criteria. 
+8. Create a warning message for each column that will appear if the data entered does not meet the validation criteria. 
    The warning message should be descriptive and helpful, guiding the user to enter valid data.
 
 --- 
