@@ -67,32 +67,29 @@ At this point, your Gantt chart should look something like this:
 
 In this step, you will create the timeline for the Gantt chart. You will use  a series of date functions including TODAY(), WEEKDAY(), LEFT(), and TEXT() to create the timeline.
 
-1. Enter a date in cell F4 that is 1 day prior to the start date (will adjust this later).
-2. Drag the date in cell F4 6 cells to the right to fill in a week's worth of dates.
-3. Select the 7 dates, and use custom formatting to display only the day of the month.
-4. Resize the columns to make the dates small boxes.
-5. In cell F5, use the TEXT function to display the day of the week for the date in cell F4. (Hint: Use the "DDD" format). Then, use the LEFT function to display only the first letter of the day of the week.
-6. Drag the formula in cell F5 to fill in the rest of row 5 for the week.
+1. Have cell H5 reference the project start date in cell D3.
+2. In cell I5, enter a formula to reference the date in cell H5 plus 1 day. Then drag the formula to the right to fill in the rest of row 5 for the week.
+3. Select the 7 dates, and use custom formatting to display only the day of the month. (You can quickly pull up the custom formatting dialog by pressing Ctrl+1 on Windows or Command+1 on Mac).
+4. Resize the columns to make the dates small boxes and center the dates.
+5. In cell H6, use the TEXT function to display the day of the week for the date in cell H5. (Hint: Use the "DDD" format). Then, use the LEFT function to display only the first letter of the day of the week.
+6. Drag the formula in cell H6 to fill in the rest of row 5 for the week.
 
 Now we want to add a header for the week with the date of the first day of the week.
 
-7. Merge the cells F3:L3 and use a formula in the merged cell to reference the date of the first day of the week in cell F4. 
+7. Merge the cells H4:N4 and use a formula in the merged cell to reference the date of the first day of the week in cell H5. 
 8. Change the date formatting to display the full date in the merged cell.
+9. Add a border around the week header and fill it with a color of your choice.
 
 Next, we will copy our completed week to the next 3 weeks to the right to create a total of 4 weeks.
 
-9. Select columns F:L and copy to the clipboard.
-10. Paste the columns to M:S, T:Y, and Z:AG. At this point you will have 4 weeks of dates. **Note**: this is different from the video. In the video, the formatting is copy-pasted separately from the dates. You can do it that way if you prefer.
-11. Change the date in cell F4 to reference the project start date in cell D2.
-12. Enter a formula in cell G4 to reference the date in cell F4 plus 1 day. Drag the formula all the way to the right to fill in the rest of the dates for all 4 weeks.
+10. Select columns H:N and copy to the clipboard. Paste the columns to O:U. You will then need to modify O5 to reference the date in N5 plus 1 day. Now copy the columns O:U to the clipboard.
+11. Paste the new columns to V:AB and AC:AI. At this point you will have 4 weeks of dates.
 
 Now try double-clicking on the project start date to select a new date and watch the timeline update.
 
-(see 1:27 - 3:08 of the video)
-
 At this point, your Gantt chart should look something like this:
 
-![gantt_2_end.png](images/gantt_2_end.png)
+![gantt_step2.png](images/gantt_step2.png)
 
 ## Step 3 - Applying Formatting
 
