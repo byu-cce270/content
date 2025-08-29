@@ -17,6 +17,8 @@ To begin, open the in-class workbook and follow the instructions below. [(Starte
 
 Be sure to rename the file to something like "(Your-Name)-Gantt-Chart-Class.xlsx" and save it in your OneDrive folder.
 
+---
+
 ## Step 1 - Project Information, Phases, and Tasks
 
 In this step, you will add the project title, company name, project manager's name, and project start date to the Gantt chart. We will also enter some phases and tasks for the project.
@@ -30,35 +32,36 @@ First, you will need to enter the following information:
 1. Enter a name for your project in cell A1.
 2. Enter your company name in cell A2.
 3. Enter your name as the project manager in cell A3.
-4. Enter a date in cell E5 for the project start date.
+4. Enter a date in cell C3 for the project start date. This should be the next time you have class. Also name this cell "project_start" (We will be using this name in formulas later).
 
 Now we need to enter some phases and tasks for the project. 
 
-5. Enter "Phase 1" in cell A6.
-6. Enter a series of tasks for Phase 1 in cells A7:A10.
+5. Enter "Phase 1" in cell A7.
+6. Enter a series of tasks for Phase 1 starting in cells A8.
 
-You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task names. In practice, you would use wider column widths and enter more descriptive phase and task names.
+You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task names. In practice, you would use wider column widths and enter more descriptive phase and task names. Create at least 2 phases with 3-4 tasks each.
 
 Next, we will enter the start and end dates for each task.
 
-7. Enter the start date for each task in cells B7:B10. Typically, the start date for the first task is the project 
-   start date.
-8. Enter the duration for each task in cells C7:C10.
-9. Calculate the end date for each task using a formula by adding the duration to the start date in cells D7:D10. Add the number of days to the start date and subtract 1 to get the end date.
+7. Enter the start date for each task in column B next to each task. Typically, the start date for the first task is the project 
+   start date. The start date for the first task should reference the project start date in cell C3.
 
-**Note**: The instructions in the video say to add 1 to the end date of one task to get the start date of the next task. 
-This assumes that you cannot start the next task until the previous task is completed. This is not always the case. 
-So just enter independent start dates for each task. The start dates should be ascending order - that is, the start 
-date of task 2 should be on the same day or after the start date of task 1, etc.
+**Note**: The instructions in the pre class video say to add 1 to the end date of one task to get the start date of the next task. This assumes that you cannot start the next task until the previous task is completed. This is not always the case. So just enter independent start dates for each task. The start dates should be ascending order - that is, the start date of task 2 should be on the same day or after the start date of task 1, etc.
 
-10. Copy-paste your Phase 1 title and tasks to cells A11:A15.
-11. Modify the start dates and durations for Phase 2 tasks in cells B12:B15 and C12:C15.
-
-(see 0:18 - 1:26 of the video)
+8. In E6, enter "WORK DAYS" to indicate that the duration for each task is in work days (not calendar days).
+9. Enter the duration in column F for each task in column C.
+10. In D8, enter a formula to calculate the end date for each task based on the start date and duration. Use the WORKDAY() function to calculate the end date. The WORKDAY() function takes a start date and a number of work days and returns the end date. Use absolute references for the start date and relative references for the duration.
+11. Modify the formula in D8 to show nothing if the start date or duration is blank. Use the IF() function to check if either the start date or duration is blank. If either is blank, return nothing. Otherwise, return the end date using the WORKDAY() function. Then copy this formula to the rest of the tasks in column D.
+12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a color, indent the task and phase names, and add some borders to the table. You can board and highlight the project start date, work days, and start dates to help indicate that it is something to be filled in. You don't have to use the same colors as shown in our pictures. 
+13. Select column B and insert a new column to the left. This will become the new column B.
+14. In cell the new cell B6, enter "ASSIGNED TO". This is where you can enter the person responsible for each task.
+15. Adjust the column widths as needed to fit the new column.
 
 At this point, your Gantt chart should look something like this:
 
-![gantt_1_end.png](images/gantt_1_end.png)
+![gantt_step1.png](images/gantt_step1.png)
+
+---
 
 ## Step 2 - Creating the Timeline
 
