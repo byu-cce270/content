@@ -55,7 +55,7 @@ There are many other options for data validation. Here is an extra resource for 
 
 For example, here is a data set showing sales data. If you would like to follow 
 along, you can use this data set:
-[reg_sales_data.xlsx](reg_sales_data.xlsx){:target="_blank"}
+[reg_sales_data.xlsx](reg_sales_data.xlsx)
 
 The data set shows the sales data for a set of regional sales managers. The data set includes region, the product, 
 the name of the sales rep, the number of units sold, and the total sales. Now suppose we want to create a summary of 
@@ -187,7 +187,7 @@ Each attempt by the computer tries to get closer and closer by guessing a number
 
 ## Pre-Class Quiz Challenge
 
-Here is a link for the pre-class starter sheet: [(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx){:target="_blank"} 
+Here is a link for the pre-class starter sheet: [(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx) 
 
 Make sure to rename it something like “(Your-Name)-Pre-Pivot-GoalSeek-DataV.” Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
 

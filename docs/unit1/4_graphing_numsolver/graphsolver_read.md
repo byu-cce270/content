@@ -116,7 +116,7 @@ funnel charts, and
 radar charts. 
 Each type of graph has its own strengths and weaknesses, and the best type of graph to use depends on the data you are working with and the message you want to convey.
 
-Here is an extra resource for further examples of graphing: [Available chart types in Office](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90){:target="_blank"}
+Here is an extra resource for further examples of graphing: [Available chart types in Office](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90)
 
 ---
 

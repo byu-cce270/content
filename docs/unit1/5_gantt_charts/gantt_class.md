@@ -13,8 +13,9 @@ the video on the reading page. There are seven main steps to creating a Gantt ch
 
 For the in-class exercise, we will be completing steps 1-4. For the homework, you will complete steps 5-7.
 
-To begin, open the in-class workbook: [Gantt Chart In-Class Starter Sheet](https://docs.google.com/spreadsheets/d/1H05DH9pcKG1q65efnIZw92OVbZCzvgBX7EyZPLdpek4/edit?gid=0#gid=0){:target="_blank"}. Make a copy 
-and follow the instructions below.
+To begin, open the in-class workbook and follow the instructions below. [(Starter-Workbook)-Class-Gantt-Chart.xlsx](%28Starter-Workbook%29-Class-Gantt-Chart.xlsx)
+
+Be sure to rename the file to something like "(Your-Name)-Gantt-Chart-Class.xlsx" and save it in your OneDrive folder.
 
 ## Step 1 - Project Information, Phases, and Tasks
 
@@ -22,7 +23,7 @@ In this step, you will add the project title, company name, project manager's na
 
 Note that some of the information has already been entered in the starter sheet for you. You should see the following:
 
-![gant_1_start.png](images/gantt_1_start.png)
+![gantt_start.png](images/gantt_start.png)
 
 First, you will need to enter the following information:
 
