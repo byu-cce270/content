@@ -52,7 +52,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **HW 1.1**: The TA you signed up and met with.
 
-- **Brandan**: 
+- **Brandan**: Exams and Projects
 
 - **Tyler J.**: 
 
