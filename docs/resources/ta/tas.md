@@ -56,7 +56,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **Tyler J.**: 
 
-- **Paige**: 
+- **Paige**: All Pre Class Quiz and In Class Workbooks
 
 - **Griffin**: 
 
