@@ -122,12 +122,13 @@ In this part, we want you to create another pivot table in a **New Worksheet**, 
 For example, how does the average flow rate change with different pipe diameters? Or how does the average velocity change with different pipe lengths?
 
 ---
+## Turning in/Rubric
 
 **_REMINDER_** - For this class, **you will only turn in the _links_ to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
 
-1. On the top right, click the "share" button --> share --> settings
+1. On the top right, click the share button --> share --> settings
 2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Turn in the link to Learning Suite in the feedback box.
+3. Submit the link to Learning Suite in the feedback box.
 
 ---
 

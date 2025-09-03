@@ -16,7 +16,7 @@ where:
 
 >>$\delta_{max}$ = the maximum deflection at the end of the beam<br>
 $P$ = the point load [$mass$]<br>
-$a$ = the distance from the fixed side to the point load $length$]<br>
+$a$ = the distance from the fixed side to the point load [$length$]<br>
 $l$ = the length of the beam [$length$]<br>
 $E$ = the modulus of elasticity  [$force/length^2$]<br>
 $I$ = the moment of inertia [$length^4$]
