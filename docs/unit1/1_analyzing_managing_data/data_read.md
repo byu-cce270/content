@@ -136,7 +136,7 @@ You can find more functions at W3Schools. You can also find a list of all functi
 
 ## Pre-Class Quiz Challenge
 
-1. First download the starter sheet: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx)
+1. First download the starter sheet: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the OneDrive folder you created for this class.
    <br>Before you start, make sure to make a copy of the file and rename it something like “(Your-Name)-Pre-Analyzing-&-Managing-Data”.
    <br>The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
@@ -156,7 +156,8 @@ You can find more functions at W3Schools. You can also find a list of all functi
 
 **_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
 
-1. On the top right, click the share button --> share --> settings
+1. Make sure your file is saved to your OneDrive folder.
+2. On the top right, click the share button --> share --> settings
 2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
 3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
 
