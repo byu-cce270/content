@@ -55,7 +55,8 @@ To set up conditional formatting to your data in Excel, follow these steps:
 
 You can also add multiple conditional formatting rules to the same range of cells. To do this, simply repeat the steps above for each rule you want to add. The rules will be applied in the order they are listed in the Conditional Formatting Rules Manager. Conditional formatting rules can be edited or deleted at any time by selecting the rule in the Conditional Formatting Rules Manager and clicking "Edit Rule" or "Delete Rule". It is important to note that the order of the rules can affect how they are applied. For example, if you have two rules that apply to the same cells, the first rule will take precedence over the second rule. This means that if the first rule is true, the second rule will not be applied. Conditional formatting rules can also be copied and pasted to other cells. To do this, simply select the cells with the conditional formatting you want to copy, right-click, and select "Copy". Then, right-click on the cells where you want to paste the formatting and select "Paste Special". In the Paste Special dialog box, select "Formats" and click "OK". This will apply the conditional formatting to the selected cells.
 
-To see more examples of conditional formating and the different options available, check out this link from W3Schools: [Conditional Formatting](https://www.w3schools.com/excel/excel_conditional_formatting.asp){:target="_blank"}
+To see more examples of conditional formating and the different options available, check out this link from 
+W3Schools: [Conditional Formatting](https://www.w3schools.com/excel/excel_conditional_formatting.php){:target="_blank"}
 
 ---
 

@@ -32,7 +32,7 @@ corresponding values to populate the dictionary:
 2. In the second code block, you will write the code for a function called "invoice_calc" that will calculate the 
 total cost of a shipment of materials. 
 3. The function will take two parameters: a dictionary (titled MaterialsDictionary) and the number of materials that 
-   the user has requested to buy (a variable titled amountmat). The function will return the total 
+   the user has requested to buy (a variable titled **amountmat**). The function will return the total 
    cost of the shipment. The structure of the function is already set up for you.
 
 ---
@@ -54,7 +54,7 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
 
 6. In the function where it says "Write the while loop starting here," write a while loop that will iterate however 
    many items the user ordered, asking how many tons they want and how many miles it will be shipped.
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the "amountmat" variable in your while-loop 
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the **"amountmat"** variable in your while-loop 
    statement to know how many items the user wants to order.</br>
 7. Create an if statement that checks if the user has inputted a valid material. If the material is not in the 
    dictionary, print a message that says "Material not found. Please enter a valid material." and use the 
@@ -68,13 +68,15 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
    |    quantity   | Asks how much of that material the user wants to buy in tons|     float     |
    |    distance   |      Asks how far the material will be shipped in miles     |     float     |
 
- <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**:Use the ".capitalize()" so that you don't have to worry 
- about capitalization problems.</br>
+!!!Hint
+      Use the ".capitalize()" function so that you don't have to worry about capitalization problems with your 
+materials!
+
 9. Still in the loop, add the cost of the material multiplied by its quantity to the cost of shipping the material 
    multiplied by its distance. Store this in a variable that represents the item cost.
 10. Add each item cost to the variable "total" that was already included in the function.
    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the += operator when adding the costs to the total. </br>
-11. Make sure that the amountmat variable is decreased by 1 at the end of each iteration of the while loop so that the loop will 
+11. Make sure that the **amountmat** variable is decreased by 1 at the end of each iteration of the while loop so that the loop will 
    eventually stop according to how many items the user wants to order.
 10. Run all the cells and then test the function using this table:
     
