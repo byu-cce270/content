@@ -22,7 +22,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 ![tyler_t_ta_profile.jpg](images/tyler_t_ta_profile.jpg){width=100px}
 <br>**Tyler Johnson (TJ)** - I'm from Rancho Santa Margarita, California, and I'm a senior in the civil engineering program. This will be my fifth semester as a TA. I like to snowboard, golf, play pickleball, and play video games.
 							
-![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
+![paige_l_ta_profile.jpg](images/paige_l_ta_profile.jpg){width=100px}
 <br>**Paige Logan** - I am from Kaysville, Utah and am a junior studying Civil Engineering! This is my second year as a TA for this class! I like to go skiing in the winter and boating in the summer! I'm excited to get to know all of you!
 
 ![griffin_i_ta_profile.jpg](images/griffin_i_ta_profile.jpg){width=100px}
@@ -37,8 +37,8 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 ![reagan_b_ta_profile.jpg](images/reagan_b_ta_profile.jpg){width=100px}
 <br>**Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my fourth year at BYU. I'm studying construction management and this will be my first semester as a TA for this class!!! I am so excited! I love playing volleyball and reading :) I can't wait to meet you all!
 
-![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
-<br>**Preston Cobabe** - 
+![preston_c_ta_profile.jpg](images/preston_c_ta_profile.jpg){width=100px}
+<br>**Preston Cobabe** - Hi, I’m Preston. I love lifting weights, cooking especially smoking meat on my Traeger, and shooting film photography. I’ve been married for a year now to my wife Kate, and when I’m not working or studying, I enjoy traveling, exploring new food spots, and spending time outdoors.
 
 ![samantha_f_ta_profile.jpg](images/samantha_f_ta_profile.jpg){width=100px}
 <br>**Samantha Farnsworth** - I'm from Orem, Utah, and currently a junior in the Civil Engineering program! I’m also minoring in Art History (feel free to ask me about the crossover sometime lol). In my free time, I love drawing, playing tennis, and listening to music. This is my first semester as a TA, and I'm so excited to meet you all!!
@@ -52,11 +52,11 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **HW 1.1**: The TA you signed up and met with.
 
-- **Brandan**: 
+- **Brandan**: Exams and Projects
 
 - **Tyler J.**: 
 
-- **Paige**: 
+- **Paige**: All Pre Class Quiz and In Class Workbooks
 
 - **Griffin**: 
 

@@ -91,12 +91,11 @@ At this point, your Gantt chart should look something like this:
 
 ![gantt_step2.png](images/gantt_step2.png)
 
+---
+
 ## Step 3 - Applying Formatting
 
-Now, let's clean things up. In this step, you will apply conditional formatting to the Gantt chart to color the cells 
-between 
-the start and 
-end dates of each task. You will also apply formatting to make the Gantt chart look nice.
+Now, let's clean things up. In this step, you will apply conditional formatting to the Gantt chart to color the cells between the start and end dates of each task. You will also apply formatting to make the Gantt chart look nice.
 
 1. Select the entire worksheet and change the vertical alignment to center.
 2. Adjust the column widths as needed to better fit the data.

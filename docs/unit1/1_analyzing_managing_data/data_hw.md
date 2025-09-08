@@ -58,7 +58,8 @@ At this point, you should have 6 sheets in your workbook.
 
 **_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
 
-1. On the top right, click the share button --> share --> settings
+1. Make sure your file is saved to your OneDrive folder.
+2. On the top right, click the share button --> share --> settings
 2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
 3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
 
