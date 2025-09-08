@@ -42,6 +42,8 @@ Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Da
 
 ## Exercise 3 - Temperature Conversions
 
+If you do these steps out of order, your formulas will look weird when the filters are applied first. Wait until the end to add filters.
+
 1. Navigate to the Temperature Conversions sheet
 
 2. Your boss loved your work so much that now you are the lead intern for the Google Spreadsheet division. He has now given you the task of analyzing the temperatures on one of his work sites to ensure building safety
