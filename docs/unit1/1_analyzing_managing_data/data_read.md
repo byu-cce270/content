@@ -142,7 +142,7 @@ You can find more functions at W3Schools. You can also find a list of all functi
 2. **Highlight** those in the **Type** column that checked out Cameras.
    <br> Hint: Use conditional formatting
 3. **Highlight** those in **column A** that have an ID number between 1000 and 2500.
-4. **Add filters** to the table (Columns A:F)
+4. Select cells **A1:F30** and add a **Filter**. 
 5. **Sort** the spreadsheet by the **Checked Out** date from most recent to the oldest.
 6. **Sort** the spreadsheet by **Days Checked Out** to only show those who have a value of 5 and higher.
 7. Fill in the **Days Checked out Statistics** chart using the **Days checked out** info in the main table.
