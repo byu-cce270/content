@@ -2,7 +2,7 @@
 
 ---
 
-The following exercises are based on conditional formatting, graphing, basic equations, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here: [(Starter-Workbook)-Class-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Class-Analyzing-%26-Managing-Data.xlsx)
+The following exercises are based on conditional formatting, basic equations, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here: [(Starter-Workbook)-Class-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Class-Analyzing-%26-Managing-Data.xlsx)
 
 Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Data”.
 
@@ -12,7 +12,7 @@ Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Da
 
 1. Navigate to the Company Inventory sheet
 
-2. Your boss has given you a list of customer orders. He wants you to sort through the customer data to show the top steel buyers, and then graph the ratio of material purchased
+2. Your boss has given you a list of customer orders. He wants you to sort through the customer data to show the top steel buyers.
 
 3. Add filters to the table (Columns A:C)
 
