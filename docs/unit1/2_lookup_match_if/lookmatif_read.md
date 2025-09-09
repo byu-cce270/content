@@ -198,18 +198,17 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 1. First download the starter sheet: [(Starter-Workbook)-Pre-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Pre-Lookups-Match-IF.xlsx)
     <br>Be sure to make a copy of the sheet and rename it something like “(Your-Name)-Pre-Lookups-Match-IF”.
 
-2. Go to the "LOOKUP-MATCH" sheet in the workbook. You will notice the "Service" and the "Type" columns will continue to change when ever you update any cell in the sheet. This is of a fun combination of other functions that take a list of values in other cells and select a random value from that list. Take a moment to look at the formulas in those cells and see how they work. You might want to use them in the future for your own projects. If you want you can copy the table and paste-special (as values) the results to lock in the values. Again, this overwrites the formula with the values it generated
+2. The workbook contains two sections: the first sheet is for practicing VLOOKUP and MATCH functions, and the second sheet is for practicing IF and IFS functions.. Take a minute to review the contents of the LOOKUP-MATCH sheet. 
 
 Often times, the VLOOKUP and MATCH functions are hard to understand and use right away. Especially when combining and writing a function inside other functions. To help with this, we will first practice by using each function separately, then combine them together.
 
-3. In column E, you will use the MATCH function to find the index of the type of service listed in column D in the table in cells K1:N8. If written correctly, the function will return a number, depending on the type of service 
+2. In column E, you will use the MATCH function to find the index of the type of service listed in column D in the table in cells K1:N8. If written correctly, the function will return a number between 2-4, depending on the type of service, listed in column D. We will use this number in the next step.
 
-4. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of you VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
+3. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of you VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
 
-5. In column G, you will multiply the values in columns C and F to get the total cost for each service
+4. In column G, you will multiply the values in columns C and F to get the total cost for each service
 
-6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should 
-   return the total cost for each service based on the service type, quantity, and cost per service
+5. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should return the total cost for each service based on the service type, quantity, and cost per service
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
@@ -240,11 +239,24 @@ Make the is_sorted false and the search type 0
 </details>
 <br>
 
-7. Go to the "IF-IFs" In column D, use RANDBETWEEN to give points to Students randomly. Points should be between 0 and 100. Then copy and paste-special (as values) the results to lock in the values. Again, this overwrites the formula with the values it generated. Try writing the formula on your own, if you need help, look at the solution below
+Next, look at the IF-IFS sheet. This sheet is a simple grade book for a class. You will use IF and IFS statements to assign points, pass/fail status, and letter grades to students.
+
+7. Go to column D ("Points") and use RANDBETWEEN to give points to students randomly. Points should be between 0 and 100. Note that the RANDBETWEEN function will be updated and generate new values each time the sheet is updated. To make the values static, select the entire column, and then copy and paste-special (as values) the results to lock in the values. This overwrites the formula with the values it generated. If you need help, look at the solution below.
 
 8. In column E, write a simple IF statement in the Pass/Fail column to indicate "Pass" or "Fail" depending on whether they scored over 60/100
 
-9. In column F, write a complex IF statement in the "Grade" column to assign a letter grade to each student based on their points: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90-100 = A, 80-89 = B, 70-79 = C, 60-69 = D, < 60 = F
+9. In column F, write a complex IF statement in the "Grade" column to assign a letter grade to each student based on their points as follows:
+
+| Grading Scale | Letter Grade |
+|:-------------:|:------------:|
+|   90 - 100    |      A       |
+|    80 - 89    |      B       |
+|    70 - 79    |      C       |
+|    60 - 69    |      D       |
+|     < 60      |      F       |
+
+Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
+
 
 <details>
 <summary><b>RANDBETWEEN Function</b></summary>
