@@ -17,7 +17,7 @@ markdown_extensions:
     - pymdownx.arithmatex:
         generic: true
     - pymdownx.tasklist:
-        custom_checkbox: false
+        custom_checkbox: true
         clickable_checkbox: true
 theme: readthedocs
 
