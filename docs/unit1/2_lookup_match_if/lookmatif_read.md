@@ -202,13 +202,13 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 
 Often times, the VLOOKUP and MATCH functions are hard to understand and use right away. Especially when combining and writing a function inside other functions. To help with this, we will first practice by using each function separately, then combine them together.
 
-2. In column E, you will use the MATCH function to find the index of the type of service listed in column D in the table in cells K1:N8. If written correctly, the function will return a number between 2-4, depending on the type of service, listed in column D. We will use this number in the next step.
+3. In column E, you will use the MATCH function to find the position or index of the type of service listed in column D based on the small table in cells K1:N8. If written correctly, the function will return a number between 2-4, depending on the type of service, listed in column D. We will use this number in the next step. Hint: The entire table in cells K1:N8 is not used for this step.
 
-3. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of you VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
+4. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of you VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
 
-4. In column G, you will multiply the values in columns C and F to get the total cost for each service
+5. In column G, you will multiply the values in columns C and F to get the total cost for each service
 
-5. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should return the total cost for each service based on the service type, quantity, and cost per service
+6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should return the total cost for each service based on the service type, quantity, and cost per service
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
