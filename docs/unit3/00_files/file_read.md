@@ -10,7 +10,7 @@
 - [x] Fix bug in login page
 - [ ] Add unit tests
 - [ ] Review pull requests
-- [ ] Test 6
+- [ ] Test 7
 
 On the O'Reilly's website read chapter 10 in _Python Crash Course, 2nd Edition_. 
 </br>Here is a direct link to the readings: [PCC Chapter 10: File and Exceptions](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch10.xhtml){:target="_blank"}.
