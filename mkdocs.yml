@@ -19,6 +19,8 @@ markdown_extensions:
     - pymdownx.tasklist:
         custom_checkbox: false
         clickable_checkbox: true
+    - pymdownx.emoji:
+
 theme: readthedocs
 
 nav:
