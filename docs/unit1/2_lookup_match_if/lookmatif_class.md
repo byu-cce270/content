@@ -33,7 +33,7 @@ This sheet contains two tables: one with material costs and one with material av
 
 6. In column **E**, multiply the material quantities and unit costs to get the total price for each row
 
-7. Look at the SUMIFS() formula in the cells in column **H**. This finds the total materials used in column **C** for each material type
+7. Look at the SUMIF() formula in the cells in column **H**. This finds the total materials used in column **C** for each material type (This formula is already done for you).
 
 8. In column **I**, use the VLOOKUP function to find the available quantities for material from the table in the **Materials** sheet
 
