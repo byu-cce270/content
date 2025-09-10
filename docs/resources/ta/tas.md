@@ -29,7 +29,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 <br>**Griffin Izu** - I'm from Irvine, California, and I am a junior in the Civil Engineering program. This will be my third semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, and playing video games. I'm very excited to meet you all!
 
 ![tyler_p_ta_profile.jpg](images/tyler_p_ta_profile.jpg){width=100px}
-<br>**Tyler Piercy** - I am from Royal City, Washington and am currently a junior in Civil Engineering. I grew up farming and doing construction for work and love hiking, baseball, skiing, and board games. This is my second semester as a TA. I am pretty responsive and can be flexible to help if you need it.
+<br>**Tyler Piercy** - I am from Royal City, Washington and am currently a senior in Civil Engineering. I grew up farming and doing construction for work and love hiking, baseball, skiing, and board games. This is my third semester as a TA for this class and Surveying (CE 122).
 
 ![mauricio_f_ta_profile.jpg](images/mauricio_f_ta_profile.jpg){width=100px}
 <br>**Mauricio Fernandez Celestino** - I am from Provo, UT, and I am a Junior in the Civil Engineering program. This is my first semester as a TA, and I am so excited! I love playing sports especially rugby, soccer and rugby. And my favorite thing is spending time with my wife! I am excited to get to know most of you, but hopefully all!
