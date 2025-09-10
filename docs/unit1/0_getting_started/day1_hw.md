@@ -51,8 +51,8 @@ in the spaces provided.
 3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for September 8th to September 12th.
 4. Post a message in Microsoft Teams in the Homework Help channel. Take a screenshot.
 
-Next, sign up for a time to meet with a TA: [Fall 2025 TA Sign Up](https://docs.google.
-com/spreadsheets/d/1-Bh8VJSgd64NqzSXTpAwxWb9tHoDet4bmJpfBLBqsG8/edit?usp=sharing){:target="_blank"}
+Next, sign up for a time to meet with a TA using the following link: **[Fall 2025 TA Sign Up](https://docs.google.com/spreadsheets/d/1-Bh8VJSgd64NqzSXTpAwxWb9tHoDet4bmJpfBLBqsG8/edit?usp=sharing){:target="_blank"}**
+
    </br> Once you meet with a TA, they will give you the appropriate amount of points in Learning Suite. 
 Meetings will be from September 8th, 2025 to September 12th, 2025. After the 12th, you will lose 3 points for not meeting with a TA until you complete this assignment. 
 
