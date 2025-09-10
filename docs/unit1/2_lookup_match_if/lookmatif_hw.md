@@ -73,7 +73,7 @@
 
 3. In column E, multiply the test quantities and prices per test to get the total price for each row
 
-4. In cell E35, sum the total prices in column E - if you did it correctly, your total should be $16,424
+4. In cell E35, sum the total prices in column E - if you did it correctly, your total should be $16,774.00
 
 5. Use the Median and Average functions to find the median and average of the total prices in column E. Place the median in cell E34 and the average in cell E33
 
