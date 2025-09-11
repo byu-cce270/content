@@ -14,16 +14,16 @@ The VLOOKUP and HLOOKUP functions are used to look up values in a table based on
 
 The syntax for the VLOOKUP function is as follows:
 
-    VLOOKUP(search_key, range, index, [is_sorted])
+    VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
 
 where:
 
-| Parameter   | Explanation                                                                                                                 |
-|-------------|-----------------------------------------------------------------------------------------------------------------------------|
-| search_key  | The value to be found in the first column of the array.                                                                     |
-| range       | The table of information in which data is looked up. Use a reference to a range or a range name.                            |
-| index       | The column number in the table defined by `range` from which the matching value must be returned.                             |
-| [Is_sorted] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |  
+| Parameter      | Explanation                                                                                                                 |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------|
+| lookup_value   | The value to be found in the first column of the array.                                                                     |
+| table_array    | The table of information in which data is looked up. Use a reference to a range or a range name.                            |
+| col_index_num  | The column number in the table defined by `range` from which the matching value must be returned.                           |
+| [range_lookup] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |  
 
 The syntax for the HLOOKUP function is similar, but it searches horizontally across rows instead of vertically across columns. For this reading, we will focus on VLOOKUP, but the concepts are similar for HLOOKUP. 
 
@@ -48,7 +48,7 @@ argument (2) tells the VLOOKUP function from which column of the table the retur
 
 If the  values in the lookup table are edited, all the weights would be automatically updated.
 
-### The [Is_Sorted] Parameter
+### The [range_lookup] Parameter
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
 
 |         Range         |  Category   |
@@ -83,15 +83,15 @@ The MATCH function returns the position of an item in a range of cells. It is of
 
 Let's first look at the syntax of the function.
 
-    MATCH(search_key, range, [search_type])
+    MATCH(lookup_value, lookup_array, [match_type])
 
 where:
 
-| Parameter   | Explanation                                                                                       |
-|-------------|---------------------------------------------------------------------------------------------------|
-| search_key  | The value to be found in the range of cells.                                                      |
-| range       | The table of information in which data is looked up. Use a reference to a range or a range name.  |
-| search_type | An optional parameter that directs the function on how to find the `search_key` in the `range`.   |
+| Parameter    | Explanation                                                                                      |
+|--------------|--------------------------------------------------------------------------------------------------|
+| lookup_value | The value to be found in the range of cells.                                                     |
+| lookup_array | The table of information in which data is looked up. Use a reference to a range or a range name. |
+| [match_type] | An optional parameter that directs the function on how to find the `search_key` in the `range`.  |
 
 The search_type has three different options for an input as shown in the table below. If nothing is input for this parameter, the default value will be **1** which indicates that the values are sorted in ascending order. It will perform a range lookup and return the largest value less than or equal to the search_key. The second value is **-1** and works opposite to 1. It indicates that the values are sorted in descending order and perform a range lookup and return the smallest value greater than or equal to the search_key. The last acceptable input is **0**. This option directs the function to search for an exact match to the search_key.  
 
@@ -198,18 +198,17 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 1. First download the starter sheet: [(Starter-Workbook)-Pre-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Pre-Lookups-Match-IF.xlsx)
     <br>Be sure to make a copy of the sheet and rename it something like “(Your-Name)-Pre-Lookups-Match-IF”.
 
-2. Go to the "LOOKUP-MATCH" sheet in the workbook. You will notice the "Service" and the "Type" columns will continue to change when ever you update any cell in the sheet. This is of a fun combination of other functions that take a list of values in other cells and select a random value from that list. Take a moment to look at the formulas in those cells and see how they work. You might want to use them in the future for your own projects. If you want you can copy the table and paste-special (as values) the results to lock in the values. Again, this overwrites the formula with the values it generated
+2. The workbook contains two sections: the first sheet is for practicing VLOOKUP and MATCH functions, and the second sheet is for practicing IF and IFS functions.. Take a minute to review the contents of the LOOKUP-MATCH sheet. 
 
 Often times, the VLOOKUP and MATCH functions are hard to understand and use right away. Especially when combining and writing a function inside other functions. To help with this, we will first practice by using each function separately, then combine them together.
 
-3. In column E, you will use the MATCH function to find the index of the type of service listed in column D in the table in cells K1:N8. If written correctly, the function will return a number, depending on the type of service 
+3. In column E, you will use the MATCH function to find the position or index of the type of service listed in column D based on the small table in cells K1:N8. If written correctly, the function will return a number between 2-4, depending on the type of service, listed in column D. We will use this number in the next step. Hint: The entire table in cells K1:N8 is not used for this step.
 
 4. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of you VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
 
 5. In column G, you will multiply the values in columns C and F to get the total cost for each service
 
-6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should 
-   return the total cost for each service based on the service type, quantity, and cost per service
+6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should return the total cost for each service based on the service type, quantity, and cost per service
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
@@ -240,11 +239,24 @@ Make the is_sorted false and the search type 0
 </details>
 <br>
 
-7. Go to the "IF-IFs" In column D, use RANDBETWEEN to give points to Students randomly. Points should be between 0 and 100. Then copy and paste-special (as values) the results to lock in the values. Again, this overwrites the formula with the values it generated. Try writing the formula on your own, if you need help, look at the solution below
+Next, look at the IF-IFS sheet. This sheet is a simple grade book for a class. You will use IF and IFS statements to assign points, pass/fail status, and letter grades to students.
+
+7. Go to column D ("Points") and use RANDBETWEEN to give points to students randomly. Points should be between 0 and 100. Note that the RANDBETWEEN function will be updated and generate new values each time the sheet is updated. To make the values static, select the entire column, and then copy and paste-special (as values) the results to lock in the values. This overwrites the formula with the values it generated. If you need help, look at the solution below.
 
 8. In column E, write a simple IF statement in the Pass/Fail column to indicate "Pass" or "Fail" depending on whether they scored over 60/100
 
-9. In column F, write a complex IF statement in the "Grade" column to assign a letter grade to each student based on their points: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90-100 = A, 80-89 = B, 70-79 = C, 60-69 = D, < 60 = F
+9. In column F, write a complex IF statement in the "Grade" column to assign a letter grade to each student based on their points as follows:
+
+| Grading Scale | Letter Grade |
+|:-------------:|:------------:|
+|   90 - 100    |      A       |
+|    80 - 89    |      B       |
+|    70 - 79    |      C       |
+|    60 - 69    |      D       |
+|     < 60      |      F       |
+
+Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
+
 
 <details>
 <summary><b>RANDBETWEEN Function</b></summary>

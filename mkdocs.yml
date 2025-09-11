@@ -16,6 +16,11 @@ markdown_extensions:
     - admonition
     - pymdownx.arithmatex:
         generic: true
+    - pymdownx.tasklist:
+        custom_checkbox: false
+        clickable_checkbox: true
+    - pymdownx.emoji:
+
 theme: readthedocs
 
 nav:

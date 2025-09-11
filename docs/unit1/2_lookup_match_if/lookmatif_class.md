@@ -23,17 +23,11 @@ This sheet contains two tables: one with material costs and one with material av
 
 1. Navigate to the **Project Budget** sheet
 
-2. Apply dropdown (from a range) data validation to cells **B2:B30** that references cells **A4:A12** on the **Materials** sheet
-
-3. Fix the error in the **Project Budget** sheet that the data validation detected
-
-4. Apply data validation to cells **C2:C30** that ensures the material quantities are positive numbers
-
 5. In column **D**, use the VLOOKUP function to find the correct unit cost for each row from the table in the **Materials** sheet
 
 6. In column **E**, multiply the material quantities and unit costs to get the total price for each row
 
-7. Look at the SUMIFS() formula in the cells in column **H**. This finds the total materials used in column **C** for each material type
+7. Look at the SUMIF() formula in the cells in column **H**. This finds the total materials used in column **C** for each material type (This formula is already done for you).
 
 8. In column **I**, use the VLOOKUP function to find the available quantities for material from the table in the **Materials** sheet
 
