@@ -14,16 +14,16 @@ The VLOOKUP and HLOOKUP functions are used to look up values in a table based on
 
 The syntax for the VLOOKUP function is as follows:
 
-    VLOOKUP(search_key, range, index, [is_sorted])
+    VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
 
 where:
 
-| Parameter   | Explanation                                                                                                                 |
-|-------------|-----------------------------------------------------------------------------------------------------------------------------|
-| search_key  | The value to be found in the first column of the array.                                                                     |
-| range       | The table of information in which data is looked up. Use a reference to a range or a range name.                            |
-| index       | The column number in the table defined by `range` from which the matching value must be returned.                             |
-| [Is_sorted] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |  
+| Parameter      | Explanation                                                                                                                 |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------|
+| lookup_value   | The value to be found in the first column of the array.                                                                     |
+| table_array    | The table of information in which data is looked up. Use a reference to a range or a range name.                            |
+| col_index_num  | The column number in the table defined by `range` from which the matching value must be returned.                           |
+| [range_lookup] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |  
 
 The syntax for the HLOOKUP function is similar, but it searches horizontally across rows instead of vertically across columns. For this reading, we will focus on VLOOKUP, but the concepts are similar for HLOOKUP. 
 
@@ -48,7 +48,7 @@ argument (2) tells the VLOOKUP function from which column of the table the retur
 
 If the  values in the lookup table are edited, all the weights would be automatically updated.
 
-### The [Is_Sorted] Parameter
+### The [range_lookup] Parameter
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
 
 |         Range         |  Category   |
@@ -83,15 +83,15 @@ The MATCH function returns the position of an item in a range of cells. It is of
 
 Let's first look at the syntax of the function.
 
-    MATCH(search_key, range, [search_type])
+    MATCH(lookup_value, lookup_array, [match_type])
 
 where:
 
-| Parameter   | Explanation                                                                                       |
-|-------------|---------------------------------------------------------------------------------------------------|
-| search_key  | The value to be found in the range of cells.                                                      |
-| range       | The table of information in which data is looked up. Use a reference to a range or a range name.  |
-| search_type | An optional parameter that directs the function on how to find the `search_key` in the `range`.   |
+| Parameter    | Explanation                                                                                      |
+|--------------|--------------------------------------------------------------------------------------------------|
+| lookup_value | The value to be found in the range of cells.                                                     |
+| lookup_array | The table of information in which data is looked up. Use a reference to a range or a range name. |
+| [match_type] | An optional parameter that directs the function on how to find the `search_key` in the `range`.  |
 
 The search_type has three different options for an input as shown in the table below. If nothing is input for this parameter, the default value will be **1** which indicates that the values are sorted in ascending order. It will perform a range lookup and return the largest value less than or equal to the search_key. The second value is **-1** and works opposite to 1. It indicates that the values are sorted in descending order and perform a range lookup and return the smallest value greater than or equal to the search_key. The last acceptable input is **0**. This option directs the function to search for an exact match to the search_key.  
 
