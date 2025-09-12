@@ -114,18 +114,18 @@
 
 **Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
 
-   | Variable          | Cell | Name |
-   |-------------------|------|------|
-   | Load              | B4   | P    |
-   | Modulus           | B5   | E    |
-   | Length            | B6   | L    |
-   | Load offset       | B7   | a    |
-   | Load offset       | B8   | b    |
-   | Base              | B9   | base |
-   | Height            | B10  | ht   |
-   | Distance          | B11  | x    |
-   | Moment of Inertia | B13  | Iu   |
-   | Deflection        | B16  | v    |
+   | Variable          | Cell | Name  |
+   |-------------------|------|-------|
+   | Load              | B4   | P     |
+   | Modulus           | B5   | E     |
+   | Length            | B6   | L     |
+   | Load offset       | B7   | LoadA |
+   | Load offset       | B8   | LoadB |
+   | Base              | B9   | base  |
+   | Height            | B10  | ht    |
+   | Distance          | B11  | x     |
+   | Moment of Inertia | B13  | Iu    |
+   | Deflection        | B16  | v     |
 
 3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
 
