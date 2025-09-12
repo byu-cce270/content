@@ -60,7 +60,7 @@
 
 6. If you did everything right, the first row should look like this:
 
- ![checkwork.png](images/checkwork.png)
+ ![checkwork.png](images/checkwork.png){width=750px}
 
 ---
 
