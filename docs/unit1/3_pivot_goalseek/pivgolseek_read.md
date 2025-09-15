@@ -196,7 +196,7 @@ Make sure to rename it something like â€œ(Your-Name)-Pre-Pivot-GoalSeek-DataV.â€
 Navigate to the "Dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit:
 
 1. The breed of dogs (C6:C23) to the list provided.
-2. The judges' scores (D6:G13) to whole numbers 0 - 10.
+2. The judges' scores (D6:F23) to whole numbers 0 - 10.
 3. The winners (C28:C30) to the names of entered dogs.
 
 Fill in the red chart to check your data validation (randomly select breeds and individual judge scores).  Enter a Sum function for the total scores. Then enter the names and scores of the 1st, 2nd, and 3rd place winners. 
