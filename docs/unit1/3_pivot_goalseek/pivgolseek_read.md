@@ -205,7 +205,7 @@ Fill in the red chart to check your data validation (randomly select breeds and 
 
 1. Select the entire table on the "Reg_sales_data" sheet and create a pivot table in the existing "PivotTable" sheet.
 2. Drag and drop **Sales Rep** and **Product**  into the rows section in that order. Then add the **Units Sold** 
-   (Count) 
+   (Sum) 
    and 
    **Total 
    Sales** (Sum) into the value category. This will summarize the total units sold and total sales for each sales rep 
@@ -224,7 +224,7 @@ You want to figure out how **far** it jumped.
 
 1. Use goal seek to determine the two $x$ values that make $y = 0.$ 
 2. Copy your answers into C28 and C29.
-3. As an extra curiosity, you want to figure out how high the fish jumped. Use Goal Seek to find the max $y$ value. Copy the answer to E28.
+3. As an extra curiosity, you want to figure out how high the fish jumped. Input the average of the two $x$ values in cell E28 to find the max $y$ value.
 
 ---
 
