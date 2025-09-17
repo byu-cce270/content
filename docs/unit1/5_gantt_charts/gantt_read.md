@@ -95,7 +95,7 @@ LEFT returns the first character or characters in a text string, based on the nu
 We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart  
 using only single letters for the days of the week.
 
-# Pre-Class Quiz Challenge
+## Pre-Class Quiz Challenge
  First, make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Gantt-Chart.xlsx](%28Starter-Workbook%29-Pre-Gantt-Chart.xlsx)
 
 This exercise will help you practice the functions we will use in class to create a Gantt chart in Excel.
@@ -104,15 +104,7 @@ This exercise will help you practice the functions we will use in class to creat
 2. Use the =WEEKDAY() formula in cell B3 to return the weekday today’s date falls on. Use the value in B2 as your argument.
 3. Use the =TEXT() formula in cell B4 to return the weekday today’s date falls in the “DDD” format. Use the value in B3 as your argument.
 4. Use the =LEFT() formula in cell B5 to return the first letter of the weekday today’s date falls on. Use the value in B4 as your argument.
-5. In cell B9, copy the same formula above but modify it to reference B8 instead of B6.
-
-   _Hint: if you did this step correctly, you will get an error when you enter the formula._
-
-6. Use the =IFERROR() function in cell B9 to return nothing in the cell if an error is computed in the cell. You will put the LEFT formula as the argument to the function.
-
-   _Hint: if you did this step correctly, you will see nothing in cell B9. You can test this by changing the value in B8 to be the value in B5. If you change it back to an empty cell, nothing will be shown in B9._
-
-7. Explain what each of these functions is doing in the C column under formula explanation.
+5. Explain what each of these functions is doing in the C column under formula explanation.
    
 Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas, and we will clarify confusion in class. You are also more than welcome to come to TA office hours or message a TA for help!
 
