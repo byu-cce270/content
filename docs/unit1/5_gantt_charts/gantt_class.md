@@ -1,7 +1,7 @@
 # In-Class Exercise: Gantt Chart/Project Scheduling and Tracking
 
-The following exercise will have you create a simple Gantt chart in a Google sheets similar to the one featured in 
-the video on the reading page. There are seven main steps to creating a Gantt chart in Google Sheets.
+The following exercise will have you create a simple Gantt chart in Excel similar to the one featured in 
+the video on the reading page. There are seven main steps to creating a Gantt chart in Excel.
 
 1. Project Information, Phases, and Tasks 
 2. Creating the Timeline 
@@ -46,7 +46,7 @@ Next, we will enter the start and end dates for each task.
 7. Enter the start date for each task in column B next to each task. Typically, the start date for the first task is the project 
    start date. The start date for the first task should reference the project start date in cell C3.
 
-**Note**: The instructions in the pre class video say to add 1 to the end date of one task to get the start date of the next task. This assumes that you cannot start the next task until the previous task is completed. This is not always the case. So just enter independent start dates for each task. The start dates should be ascending order - that is, the start date of task 2 should be on the same day or after the start date of task 1, etc.
+**Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date of the next task. This assumes that you cannot start the next task until the previous task is completed. This is not always the case. So just enter independent start dates for each task. The start dates should be ascending order - that is, the start date of task 2 should be on the same day or after the start date of task 1, etc.
 
 8. In E6, enter "WORK DAYS" to indicate that the duration for each task is in work days (not calendar days).
 9. Enter the duration in column F for each task in column C.
