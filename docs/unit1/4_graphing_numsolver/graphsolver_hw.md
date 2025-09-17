@@ -72,8 +72,8 @@ the cells that you want to change to optimize the objective. "Subject to the Con
 4. Go to **Data > Analyze > 
 Solver**. The Solver Parameters window will open. Set the objective to cell N31 (the force of the missile) and set the 
     "Value of" to the value in cell Q31 (the force of the asteroid).
-5. In the "By Changing Variable Cells" box, enter the cell that contains the acceleration of the missile (cell M31).
-6. Click on "Add" to add a constraint. Set the constraint to be that the acceleration of the missile (cell M31) must 
+5. In the "By Changing Variable Cells" box, enter the cell that contains the acceleration of the missile (cell N30).
+6. Click on "Add" to add a constraint. Set the constraint to be that the acceleration of the missile (cell N30) must 
    be greater than 0. This ensures that the missile has a positive acceleration.
 7. Click "OK" to close the Add Constraint window.
 8. Click "Solve" to run the Solver. The Solver will find the optimal acceleration for the missile that will make the 
