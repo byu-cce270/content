@@ -43,10 +43,15 @@ You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task nam
 
 Next, we will enter the start and end dates for each task.
 
-7. Enter the start date for each task in column B next to each task. Typically, the start date for the first task is the project 
+7. Enter the start date for each task in column C next to each task. Typically, the start date for the first task is 
+   the project 
    start date. The start date for the first task should reference the project start date in cell C3.
 
-**Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date of the next task. This assumes that you cannot start the next task until the previous task is completed. This is not always the case. So just enter independent start dates for each task. The start dates should be ascending order - that is, the start date of task 2 should be on the same day or after the start date of task 1, etc.
+**Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date of 
+the next task. This assumes that you cannot start the next task until the previous task is completed. This is not 
+always the case. So just enter independent start dates for each task. The start dates should be ascending order - 
+that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Add uyour own 
+start dates to fill the column.
 
 8. In E6, enter "WORK DAYS" to indicate that the duration for each task is in work days (not calendar days).
 9. Enter the duration in column F for each task in column C.
