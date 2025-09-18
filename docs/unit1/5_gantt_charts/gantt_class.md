@@ -93,29 +93,7 @@ At this point, your Gantt chart should look something like this:
 
 ---
 
-## Step 3 - Applying Formatting
-
-Now, let's clean things up. In this step, you will apply conditional formatting to the Gantt chart to color the cells between the start and end dates of each task. You will also apply formatting to make the Gantt chart look nice.
-
-1. Select the entire worksheet and change the vertical alignment to center.
-2. Adjust the column widths as needed to better fit the data.
-3. Turn off gridlines for the entire worksheet.
-4. Use horizontal alignment to center the contents of cells B3:AG16.
-5. Left-justify week headers in row 3.
-6. Adjust background colors, font colors, size, etc as needed to make the headers stand out.
-7. Select the first week header (F3:L4) and add an outside border and a light fill color of your choice.
-8. Copy-paste this formatting to the other week headers.
-9. Format the phase rows with a background color and bold text.
-10. Add horizontal borders to the task rows.
-
-(see 3:09 - 5:14 of the video)
-
-At this point, your Gantt chart should look something like this:
-
-![gantt_3_end.png](images/gantt_3_end.png)
-
-
-## Step 4 - Adding Progress Bars for Tasks on Timeline
+## Step 3 - Adding Progress Bars for Tasks on Timeline
 
 In this step, you will add progress bars to the Gantt chart to show the progress of each task. This will consist of a color bar covering the dates associated with each task. We could add this manually, but there is a way to have it automatically update using conditional formatting.
 
