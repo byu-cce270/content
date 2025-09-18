@@ -45,6 +45,8 @@ Prepare a Gantt chart that includes the following:
 
 - Include dependencies when applicable (e.g., Task B can’t start until Task A is done)
 
+In the end, your Gantt chart should have all the same elements as the one we made in class.
+
 ---
 
 ## Turning in/Rubric

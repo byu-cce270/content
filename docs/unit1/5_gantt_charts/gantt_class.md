@@ -1,7 +1,6 @@
 # In-Class Exercise: Gantt Chart/Project Scheduling and Tracking
 
-The following exercise will have you create a simple Gantt chart in Excel similar to the one featured in 
-the video on the reading page. There are seven main steps to creating a Gantt chart in Excel.
+The following exercise will have you create a simple Gantt chart in Excel similar to the one featured in the video on the reading page and a few other features. There are seven main steps to creating a Gantt chart in Excel.
 
 1. Project Information, Phases, and Tasks 
 2. Creating the Timeline 
@@ -11,7 +10,7 @@ the video on the reading page. There are seven main steps to creating a Gantt ch
 6. Adding Summary Progress Bars 
 7. Summary Duration and Grouping 
 
-For the in-class exercise, we will be completing steps 1-4. For the homework, you will complete steps 5-7.
+For the in-class exercise, we will be creating a basic Gantt.
 
 To begin, open the in-class workbook and follow the instructions below. [(Starter-Workbook)-Class-Gantt-Chart.xlsx](%28Starter-Workbook%29-Class-Gantt-Chart.xlsx)
 
@@ -98,54 +97,18 @@ At this point, your Gantt chart should look something like this:
 
 ---
 
-## Step 3 - Applying Formatting
-
-Now, let's clean things up. In this step, you will apply conditional formatting to the Gantt chart to color the cells between the start and end dates of each task. You will also apply formatting to make the Gantt chart look nice.
-
-1. Select the entire worksheet and change the vertical alignment to center.
-2. Adjust the column widths as needed to better fit the data.
-3. Turn off gridlines for the entire worksheet.
-4. Use horizontal alignment to center the contents of cells B3:AG16.
-5. Left-justify week headers in row 3.
-6. Adjust background colors, font colors, size, etc as needed to make the headers stand out.
-7. Select the first week header (F3:L4) and add an outside border and a light fill color of your choice.
-8. Copy-paste this formatting to the other week headers.
-9. Format the phase rows with a background color and bold text.
-10. Add horizontal borders to the task rows.
-
-(see 3:09 - 5:14 of the video)
-
-At this point, your Gantt chart should look something like this:
-
-![gantt_3_end.png](images/gantt_3_end.png)
-
-
-## Step 4 - Adding Progress Bars for Tasks on Timeline
+## Step 3 - Adding Progress Bars for Tasks on Timeline
 
 In this step, you will add progress bars to the Gantt chart to show the progress of each task. This will consist of a color bar covering the dates associated with each task. We could add this manually, but there is a way to have it automatically update using conditional formatting.
 
-1. Select all of the cells below the timeline where we want to put the progress bars (F6:AG15).
+1. Select all of the cells below the timeline where we want to put the progress bars (H7:AI15).
 2. Add a conditional formatting rule to fill the cell with a color if the date in the cell is greater than or equal to the start date of the task and less than or equal to the end date of the task. Use the "Custom formula is" option for the conditional formatting rule. Then enter a formula as if you were in the upper left cell of the range. Use the AND() function to check if the date is greater than or equal to the start date and less than or equal to the end date. Use absolute references for the row and relative references for the column. Pick a color for the fill.
 
-(see 5:15 - 6:00 of the video)
+![gantt_step3.png](images/gantt_step3.png)
 
-At this point, your Gantt chart should look something like this:
+---
 
-![gantt_4_end.png](images/gantt_4_end.png)
-
-**Purpose:** Learn how to format and display a project schedule using a Gantt chart in Google Sheets.
-
-For your homework, we will complete the Gantt chart we started in class. We will:
-
-* Make the timeline dynamic so that it always starts on a Monday and highlights the current day.
-* Add summary progress bars to the Gantt chart.
-* Add summary duration and grouping to the Gantt chart.
-
-Start with the Gantt chart you created in class. If you were not able to complete the in-class activity, you will need to complete that first before starting the homework.
-
-## Step 5 - Making the Timeline Dynamic
-
-Before beginning, make a copy of your in class assignment and rename it according to the proper HW naming convention.
+## Step 4 - Making the Timeline Dynamic
 
 In this step, you will make the timeline dynamic so that it always starts on a Monday. This will ensure that the formatting of the Gantt chart is consistent. We will also highlight the current day on the timeline.
 
@@ -153,45 +116,54 @@ Notice that the first week always starts on the project start date. But it would
 
 1. In cell F4, enter the following formula: 
 ```
-=$D$2-WEEKDAY(D2,3)
+=project_start-WEEKDAY(project_start,3)
 ```
+
 2. Experiment with the start date to verify that the formula is working correctly.
 
 Next, we will add a new control that lets us display the week we want to see. This will allow us to scroll through the weeks of the project beyond the first 4 weeks. For example, given the phases and tasks it is possible that the entire project would take more than 4 weeks. By changing the display week, we can see that week on the left and the subsequent 3 weeks after that.
-
-3. In cell C3, enter "Display Week:".
-4. In Cell D3, enter a number (1, 2, 3, etc.) to represent the week you want to display.
-5. Change the formatting of cells C3 and D3 to make them match the formatting of the project start date (cells C2 and D2). Make sure D3 is formatted as a number and not a date.
-6. In cell F4, edit the formula you edited above to add "+(D3-1)*7" to the end of the formula. This will allow you to change the display week and see the subsequent weeks of the project. 
-7. Try entering different numbers in cell D3 to see how the display week changes.
+3. In cell C4, enter "Display Week:".
+4. In Cell D4, enter a number (1, 2, 3, etc.) to represent the week you want to display.
+5. Change the formatting of cells C4 and D4 to make them match the formatting of the project start date (cells C3 and D3). Make sure D4 is formatted as a number and not a date. Name the cell D4 "display_week".
+6. In cell H5, edit the formula you edited above to add "+(display_week-1)*7" to the end of the formula. This will allow you to change the display week and see the subsequent weeks of the project. 
+7. Try entering different numbers in cell D4 to see how the display week changes.
 
 Next, we will use conditional formatting to highlight the current day on the timeline.
 
-8. Select cells F4:AG5.
+8. Select cells H5:AI15.
 9. Click on Format|Conditional formatting.
-10. In the Conditional format rules pane, select "Custom formula is" from the dropdown.
+10. In the Conditional format rules pane, select "Use a formula to determine which cell to format" from the dropdown.
 11. Enter the following formula:
 ```
-=F$4=TODAY()
+=H$5=TODAY()
 ```
-12. Change the highlight color to red (or some other color that stands out) and the font to be white and bold.
-13. Click on "Done" to apply the conditional formatting.
+
+12. Have the formatting add side boardrers to the cells in the current day row. 
+
+If you want, you can also change the fill color of the cell to make it stand out more or just highlight the date in the header rows.
 
 If necessary, change the project start date so that the current day is highlighted on the timeline.
 
-(see 6:01 - 7:55 of the video)
-
 At this point, your Gantt chart should look something like this:
 
-![gantt_5_end.png](images/gantt_5_end.png)
+![gantt_step4.png](images/gantt_step4.png)
 
-## Step 6 - Adding Summary Progress Bars
+---
 
-In this step, you will add progress bars to the Gantt chart to show the progress of each task. We will use the sparkline feature to show a progress bar for each task.
+## Step 5 - Adding Summary Progress Bars
 
-1. Insert 3 new columns between A (Task) and B (Start). These new columns will become B, C, and D.
-2. In cell B4, enter "ASSIGNED TO". This where you can enter the person responsible for each task.
-3. In cell C4, enter "PROGRESS".
+In this step, you will add progress bars to the Gantt chart to show the progress of each task. We be using a special conditonal fomating called "data bars" to show the progress of each task based on the percentage complete. We will also use conditional formatting to gray out part of the timeline based on the percent complete.
+
+1. Select C7:C15, set the number format to "Percent". For testing purposes, enter some sample percentages for the progress of each task in cells C8:C11 and C13:C15. Leave a few of them blank or 0 to indicate they have not started yet.
+2. Reselect C7:C15 and add conditional formatting using "Data Bars". Choose a color, like gray for the data bar. You can choose a different color than gray if you like.
+3. In cell C7 and C12, use the average function to calculate the average percent complete for each phase base on the tasks in that phase.
+
+Earlier, I forgot to highlight each phase in the timeline. Let's do that now. I will also bold the data in that row to make it stand out more.
+
+Your chart shold now look something like this:
+
+![gantt_step5-1.png](images/gantt_step5-1.png)
+
 4. Adjust the column widths as needed to fit the new columns.
 5. Select cells C6:C15 and change the format to "Percent".
 6. Enter in some sample percentages for the progress of each task in cells C7:C10 and C12:C15. Leave a few of them blank indicating they have not started yet.
