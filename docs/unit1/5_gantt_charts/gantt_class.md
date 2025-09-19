@@ -49,7 +49,7 @@ Next, we will enter the start and end dates for each task.
 **Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date of 
 the next task. This assumes that you cannot start the next task until the previous task is completed. This is not 
 always the case. So just enter independent start dates for each task. The start dates should be ascending order - 
-that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Add uyour own 
+that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Add your own 
 start dates to fill the column.
 
 8. In E6, enter "WORK DAYS" to indicate that the duration for each task is in work days (not calendar days).
@@ -101,7 +101,7 @@ At this point, your Gantt chart should look something like this:
 
 In this step, you will add progress bars to the Gantt chart to show the progress of each task. This will consist of a color bar covering the dates associated with each task. We could add this manually, but there is a way to have it automatically update using conditional formatting.
 
-1. Select all of the cells below the timeline where we want to put the progress bars (H7:AI15).
+1. Select all the cells below the timeline where we want to put the progress bars (H7:AI15).
 2. Add a conditional formatting rule to fill the cell with a color if the date in the cell is greater than or equal to the start date of the task and less than or equal to the end date of the task. Use the "Custom formula is" option for the conditional formatting rule. Then enter a formula as if you were in the upper left cell of the range. Use the AND() function to check if the date is greater than or equal to the start date and less than or equal to the end date. Use absolute references for the row and relative references for the column. Pick a color for the fill.
 
 ![gantt_step3.png](images/gantt_step3.png)
@@ -112,7 +112,7 @@ In this step, you will add progress bars to the Gantt chart to show the progress
 
 In this step, you will make the timeline dynamic so that it always starts on a Monday. This will ensure that the formatting of the Gantt chart is consistent. We will also highlight the current day on the timeline.
 
-Notice that the first week always starts on the project start date. But it would be more convenvient if each of the weeks started on a Monday. We will add a formula to make this happen.
+Notice that the first week always starts on the project start date. But it would be more convenient if each of the weeks started on a Monday. We will add a formula to make this happen.
 
 1. In cell F4, enter the following formula: 
 ```
@@ -138,7 +138,7 @@ Next, we will use conditional formatting to highlight the current day on the tim
 =H$5=TODAY()
 ```
 
-12. Have the formatting add side boardrers to the cells in the current day row. 
+12. Have the formatting add side boarders to the cells in the current day row. 
 
 If you want, you can also change the fill color of the cell to make it stand out more or just highlight the date in the header rows.
 
@@ -152,7 +152,9 @@ At this point, your Gantt chart should look something like this:
 
 ## Step 5 - Adding Summary Progress Bars
 
-In this step, you will add progress bars to the Gantt chart to show the progress of each task. We be using a special conditonal fomating called "data bars" to show the progress of each task based on the percentage complete. We will also use conditional formatting to gray out part of the timeline based on the percent complete.
+In this step, you will add progress bars to the Gantt chart to show the progress of each task. We be using a special 
+conditional formatting called "data bars" to show the progress of each task based on the percentage complete. We will 
+also use conditional formatting to gray out part of the timeline based on the percent complete.
 
 1. Select C7:C15, set the number format to "Percent". For testing purposes, enter some sample percentages for the progress of each task in cells C8:C11 and C13:C15. Leave a few of them blank or 0 to indicate they have not started yet.
 2. Reselect C7:C15 and add conditional formatting using "Data Bars". Choose a color, like gray for the data bar. You can choose a different color than gray if you like.
@@ -160,13 +162,14 @@ In this step, you will add progress bars to the Gantt chart to show the progress
 
 Earlier, I forgot to highlight each phase in the timeline. Let's do that now. I will also bold the data in that row to make it stand out more.
 
-Your chart shold now look something like this:
+Your chart should now look something like this:
 
 ![gantt_step5-1.png](images/gantt_step5-1.png)
 
 4. Adjust the column widths as needed to fit the new columns.
 5. Select cells C6:C15 and change the format to "Percent".
-6. Enter in some sample percentages for the progress of each task in cells C7:C10 and C12:C15. Leave a few of them blank indicating they have not started yet.
+6. Enter some random sample percentages for the progress of each task in cells C7:C10 and C12:C15. Leave a few of them 
+   blank indicating they have not started yet.
 
 Next, we will add a sparkline to show the progress of each task based on the percentage complete.
 
@@ -178,7 +181,8 @@ Note: You can choose a different color than blue if you like.
 
 8. Copy the formula in cell D7 to cells D8:D15 using Paste Special|Paste Formula Only.
 
-Note that for cells that do not have a percentage entered in the progress column, the sparkline will show an error. We can use the IFERROR() function to hide the error.
+Note that for cells that do not have a percentage entered in to the progress column, the sparkline will show an error. 
+We can use the IFERROR() function to hide the error.
 
 9. Edit the formula in cell D7 to the following:
 ```
@@ -199,7 +203,8 @@ At this point, your Gantt chart should look something like this:
 
 ## Step 7 - Summary Duration and Grouping
 
-In this step, you will add a summary duration for each phase of the project and you will group the tasks into phases so they can be hidden or expanded as needed.
+In this step, you will add a summary duration for each phase of the project, and group the tasks into 
+phases so they can be hidden or expanded as needed.
 
 First, we will add a summary progress bar for each phase.
 
