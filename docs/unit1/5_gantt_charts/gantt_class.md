@@ -54,7 +54,7 @@ start dates to fill the column.
 
 8. In E6, enter "WORK DAYS" to indicate that the duration for each task is in work days (not calendar days).
 9. Enter the duration in column F for each task in column C.
-10. In D8, enter a formula to calculate the end date for each task based on the start date and duration. Use the WORKDAY() function to calculate the end date. The WORKDAY() function takes a start date and a number of work days and returns the end date. Use absolute references for the start date and relative references for the duration.
+10. In D8, enter a formula to calculate the end date for each task based on the start date and duration. Use the WORKDAY() function to calculate the end date. The WORKDAY() function takes a start date and a number of work days and returns the end date.
 11. Modify the formula in D8 to show nothing if the start date or duration is blank. Use the IF() function to check if either the start date or duration is blank. If either is blank, return nothing. Otherwise, return the end date using the WORKDAY() function. Then copy this formula to the rest of the tasks in column D.
 12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a color, indent the task and phase names, and add some borders to the table. You can board and highlight the project start date, work days, and start dates to help indicate that it is something to be filled in. You don't have to use the same colors as shown in our pictures. 
 13. Select column B and insert a new column to the left. This will become the new column B.
