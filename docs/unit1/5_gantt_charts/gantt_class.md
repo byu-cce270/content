@@ -49,7 +49,7 @@ Next, we will enter the start and end dates for each task.
 **Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date of 
 the next task. This assumes that you cannot start the next task until the previous task is completed. This is not 
 always the case. So just enter independent start dates for each task. The start dates should be ascending order - 
-that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Add your own 
+that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Add uyour own 
 start dates to fill the column.
 
 8. In E6, enter "WORK DAYS" to indicate that the duration for each task is in work days (not calendar days).
@@ -101,7 +101,7 @@ At this point, your Gantt chart should look something like this:
 
 In this step, you will add progress bars to the Gantt chart to show the progress of each task. This will consist of a color bar covering the dates associated with each task. We could add this manually, but there is a way to have it automatically update using conditional formatting.
 
-1. Select all the cells below the timeline where we want to put the progress bars (H7:AI15).
+1. Select all of the cells below the timeline where we want to put the progress bars (H7:AI15).
 2. Add a conditional formatting rule to fill the cell with a color if the date in the cell is greater than or equal to the start date of the task and less than or equal to the end date of the task. Use the "Custom formula is" option for the conditional formatting rule. Then enter a formula as if you were in the upper left cell of the range. Use the AND() function to check if the date is greater than or equal to the start date and less than or equal to the end date. Use absolute references for the row and relative references for the column. Pick a color for the fill.
 
 ![gantt_step3.png](images/gantt_step3.png)
@@ -112,7 +112,7 @@ In this step, you will add progress bars to the Gantt chart to show the progress
 
 In this step, you will make the timeline dynamic so that it always starts on a Monday. This will ensure that the formatting of the Gantt chart is consistent. We will also highlight the current day on the timeline.
 
-Notice that the first week always starts on the project start date. But it would be more convenient if each of the weeks started on a Monday. We will add a formula to make this happen.
+Notice that the first week always starts on the project start date. But it would be more convenvient if each of the weeks started on a Monday. We will add a formula to make this happen.
 
 1. In cell F4, enter the following formula: 
 ```
@@ -138,7 +138,7 @@ Next, we will use conditional formatting to highlight the current day on the tim
 =H$5=TODAY()
 ```
 
-12. Have the formatting add side boarders to the cells in the current day row. 
+12. Have the formatting add side boardrers to the cells in the current day row. 
 
 If you want, you can also change the fill color of the cell to make it stand out more or just highlight the date in the header rows.
 
@@ -152,9 +152,7 @@ At this point, your Gantt chart should look something like this:
 
 ## Step 5 - Adding Summary Progress Bars
 
-In this step, you will add progress bars to the Gantt chart to show the progress of each task. We be using a special 
-conditional formatting called "data bars" to show the progress of each task based on the percentage complete. We will 
-also use conditional formatting to gray out part of the timeline based on the percent complete.
+In this step, you will add progress bars to the Gantt chart to show the progress of each task. We be using a special conditonal fomating called "data bars" to show the progress of each task based on the percentage complete. We will also use conditional formatting to gray out part of the timeline based on the percent complete.
 
 1. Select C7:C15, set the number format to "Percent". For testing purposes, enter some sample percentages for the progress of each task in cells C8:C11 and C13:C15. Leave a few of them blank or 0 to indicate they have not started yet.
 2. Reselect C7:C15 and add conditional formatting using "Data Bars". Choose a color, like gray for the data bar. You can choose a different color than gray if you like.
@@ -162,75 +160,74 @@ also use conditional formatting to gray out part of the timeline based on the pe
 
 Earlier, I forgot to highlight each phase in the timeline. Let's do that now. I will also bold the data in that row to make it stand out more.
 
-Your chart should now look something like this:
+Your chart shold now look something like this:
 
 ![gantt_step5-1.png](images/gantt_step5-1.png)
 
-4. Adjust the column widths as needed to fit the new columns.
-5. Select cells C6:C15 and change the format to "Percent".
-6. Enter some random sample percentages for the progress of each task in cells C7:C10 and C12:C15. Leave a few of them 
-   blank indicating they have not started yet.
+Next, we will conditionally format the timeline to gray out the dates that are past the current date based on the percent complete for each task.
 
-Next, we will add a sparkline to show the progress of each task based on the percentage complete.
-
-7. Enter the following formula in cell D7: 
+4. To help with this, we are going to add reletive name ranges. This would be like nameing an entire column or row and being able to use that name in a formula. To do this, select C7 and then click on the "Formular" tab. Then click on "Define Name". In the dialog box, enter "task_progress" for the name. Make sure the "Refers to" box contains the following formula: =Sheet1!$C7. Then click OK. This will create a relative name range that you can use in conditional formatting. Do the same thing for the start and end dates. Use the names "task_start" and "task_end" for the start and end dates.
+5. Select H7:AI15. Add a new conditional formatting rule using "Custom formula is" and enter the following formula:
 ```
-=SPARKLINE(C7,{"charttype","bar";"color1","blue";"max",1})
+=1*AND(H$5>=task_start,H$5<=task_start+(task_progress*(task_end-task_start+1))-1)
 ```
-Note: You can choose a different color than blue if you like.
+6. Set the formatting to fill the cell with a light gray color.
+7. Try entering different percentages in column C to see how the timeline changes.
 
-8. Copy the formula in cell D7 to cells D8:D15 using Paste Special|Paste Formula Only.
+Your chart should now look something like this:
 
-Note that for cells that do not have a percentage entered in to the progress column, the sparkline will show an error. 
-We can use the IFERROR() function to hide the error.
+![gantt_step5-2.png](images/gantt_step5-2.png)
 
-9. Edit the formula in cell D7 to the following:
-```
-=IFERROR(SPARKLINE(C7,{"charttype","bar";"color1","blue";"max",1}),)
-```
-10. Copy the formula in cell D7 to cells D8:D15 using Paste Special > Paste Formula Only.
+---
 
-Next, we will do a little cleanup.
+## Step 6 - Summary Duration and Grouping
 
-11. Merge cells C5:D5.
-12. Resize column C to just fit the percentage numbers and make the progress bars more visible.
-
-(see 7:55 - 9:24 of the video)
-
-At this point, your Gantt chart should look something like this:
-
-![gantt_6_end.png](images/gantt_6_end.png)
-
-## Step 7 - Summary Duration and Grouping
-
-In this step, you will add a summary duration for each phase of the project, and group the tasks into 
-phases so they can be hidden or expanded as needed.
+In this step, you will add a summary duration for each phase of the project and you will group the tasks into phases so they can be hidden or expanded as needed.
 
 First, we will add a summary progress bar for each phase.
 
-1. In cell E6, use the Min() function to find the minimum start date for all tasks in phase 1.
-2. In cell G6, use the Max() function to find the maximum end date for all tasks in phase 1.
+1. In cell D7, use the Min() function to find the minimum start date for all tasks in phase 1.
+2. In cell E7, use the Max() function to find the maximum end date for all tasks in phase 1.
 
-Note that when you finish entering these two formulas, you will see an overall time range bar for phase 1. This is because the Min() and Max() functions are finding the earliest start date and the latest end date for all tasks in phase 1.
+Note that when you finish entering these two formulas, you will see an overall time range bar for phase 1. This is because the Min() and Max() functions are finding the earliest start date and the latest end date for all tasks in phase 1. However, our conditional formatting for the calendar is now showing the progress for the entire phase, not just the individual tasks. We will fix this in a moment.
 
-3. Copy the formulas in cells E6 and G6 to cells E11 and G11 to find the start and end dates for phase 2.
+3. Write the same formulas used in phase 1 to phase 2. 
+3. Open the conditional formatting rules manager and edit the rule you created in step 3 above. Change the formula to the following:
+```
+=AND(task_start<>"",H$5>=$D7,H$5<=$E7,$F7<>"")
+```
+This formula now also look to see if a number has been entered in the "Work Days" column. If there is no number, then the conditional formatting will not be applied. This way, the summary bars will only show if there is a number in the "Work Days" column.
+4. Once again, open the conditional formatting rules manager and edit the rule you created in step 5 above. Change the formula to the following:
+```
+=1*AND(H$5>=task_start,$F7<>"",H$5<=task_start+(task_progress*(task_end-task_start+1))-1)
+```
 
-Next, we will group the tasks into phases so they can be hidden or expanded as needed.
+Now the conditional formatting will only apply if there is a number in the "Work Days" column.
 
-4. Select the rows for the tasks in phase 1 (rows 7-10).
-5. Then, right-click and select "View more row actions|Group rows 7-10". **Note**: this command is located in a different place than was shown in the video.
-6. Do the same for the tasks in phase 2 (rows 12-15).
+Your chart should now look something like this:
 
-Now you can hide or expand the tasks in each phase by clicking on the plus or minus sign just to the left to the phase title.
+![gantt_step6.png](images/gantt_step6.png)
 
-(see 9:25 - 10:30 of the video)
+Congratulations. You did it! There are many more features you could add to this Gantt chart, but this is a good start. See step 7 below for one more feature you can add and other resources for more features you can add.
 
-At this point, your Gantt chart is complete, and it should look something like this:
+---
 
-![gantt_7_end.png](images/gantt_7_end.png)
+## Step 7 - Bonus - Highlighting Weekends
 
-Congratulations. You did it!
+1. Select H5:AI15.
+2. Add a new conditional formatting rule using "Custom formula is" and enter the following formula
+```
+=NETWORKDAYS(H$5,H$5)=0
+```
+3. Set the formatting to a pattern color, not a fill patter to a light color of your choice. Also select a hatched pattern to make it stand out more.
 
+Your chart should now look something like this with the hatched pattern being on top of any previous formatting. If not, you can change the order of the conditional formatting rules in the manager or check your setting for your pattern color and fill color for your new rule.
+
+![gantt_step7-1.png](images/gantt_step7-1.png)
+
+The author of the video you watched for your pre-class reading has several more videos on adding more features to a Gantt chart. The following video shows how to hide and unhide the weekends on the timeline. [Make a Gantt Chart in Excel - Part 2: Working with Work Days by Vertex42](https://youtu.be/5or9BN3GanM?si=vqCg6j2NkW6HjevW)
+
+Have fun exploring more features you can add to your Gantt chart.
 
 ---
 			
