@@ -5,9 +5,10 @@
 ---
 
 ## Getting Started
-1. First make a copy of the starter sheet here:
 
-2. Rename it something like ""
+1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Gantt-Chart.xlsx](%28Starter-Workbook%29-HW-Gantt-Chart.xlsx)
+
+2. Rename it something like "(Your-Name)-HW-Gantt-.xlsx"
 
 3. Remember to save it in your OneDrive folder that you created in the first assignment
 
