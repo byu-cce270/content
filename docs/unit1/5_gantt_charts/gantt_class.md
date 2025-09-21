@@ -1,6 +1,8 @@
 # In-Class Exercise: Gantt Chart/Project Scheduling and Tracking
 
-The following exercise will have you create a simple Gantt chart in Excel similar to the one featured in the video on the reading page and a few other features. There are seven main steps to creating a Gantt chart in Excel.
+The following exercise will have you create a simple Gantt chart in Excel similar to the one featured in the video on the reading page and a few other features. 
+
+We will use  seven main steps to create a Gantt chart in Excel.
 
 1. Project Information, Phases, and Tasks 
 2. Creating the Timeline 
@@ -10,7 +12,8 @@ The following exercise will have you create a simple Gantt chart in Excel simila
 6. Adding Summary Progress Bars 
 7. Summary Duration and Grouping 
 
-For the in-class exercise, we will be creating a basic Gantt.
+For the in-class exercise, we will be creating a basic Gantt, later in the homework, you will be adding some 
+additional functionality. .
 
 To begin, open the in-class workbook and follow the instructions below. [(Starter-Workbook)-Class-Gantt-Chart.xlsx](%28Starter-Workbook%29-Class-Gantt-Chart.xlsx)
 
@@ -26,13 +29,16 @@ Note that some of the information has already been entered in the starter sheet 
 
 ![gantt_start.png](images/gantt_start.png)
 
+### General Project Information
 First, you will need to enter the following information:
 
 1. Enter a name for your project in cell A1.
 2. Enter your company name in cell A2.
 3. Enter your name as the project manager in cell A3.
 4. Enter a date in cell C3 for the project start date. This should be the next time you have class. Also name this cell "project_start" (We will be using this name in formulas later).
+* remember, cell or range names should not have spaces in them.
 
+### Phases and Tasks
 Now we need to enter some phases and tasks for the project. 
 
 5. Enter "Phase 1" in cell A7.
@@ -40,23 +46,49 @@ Now we need to enter some phases and tasks for the project.
 
 You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task names. In practice, you would use wider column widths and enter more descriptive phase and task names. Create at least 2 phases with 3-4 tasks each.
 
-Next, we will enter the start and end dates for each task.
+For this simple sheet, it is helpful if the Phases will be left justified and the tasks right justified. This isn't 
+required for your homework, but it does help make the chart easier to read.
 
-7. Enter the start date for each task in column C next to each task. Typically, the start date for the first task is 
-   the project 
-   start date. The start date for the first task should reference the project start date in cell C3.
+* **Note**: For  most projects the numbering for tasks is a sub-set of the phase number. For example, if Phase 1 has 3 
+  tasks, they would be numbered 1.
+1, 1.2, and 1.3. So the tasks for Phase 2 would be numbered 2.1, 2.2, etc. These nubmers are often called the WBS (Work 
+Breakdown Structure) numbers. You will learn about them in your 300 level CFM class.
 
-**Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date of 
-the next task. This assumes that you cannot start the next task until the previous task is completed. This is not 
-always the case. So just enter independent start dates for each task. The start dates should be ascending order - 
-that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Add uyour own 
-start dates to fill the column.
 
-8. In E6, enter "WORK DAYS" to indicate that the duration for each task is in work days (not calendar days).
+## Task Dates and Duration
+Next, we will enter the start and end dates for each task. (We will not add start dates fro the Phases).
+
+7. Enter the start date for each task in column C next to each task. Typically, the start date for the first task is  the project 
+   start date. For this project, the  start date for the first task should reference the project start date in 
+   cell C3 using the cell/range name "project_start" we applied above.
+
+* **Note** if the cell you enter the cell/range name is is not formated as a date, a number will appear. Change the 
+  formatting to a date format to see the date. The "Short Date" format is a good choice.
+
+
+* **Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date  of the next task. This assumes that you cannot start the next task until the previous task is completed. This is not always the case. So just enter independent start dates for each task. The start dates should be ascending order - 
+that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Most projects 
+  have tasks that are done in parallel, so the start date of one task may be before the end date of another task.
+
+ 
+Finish this step by adding your  your own start dates for all the tasks you entered.
+
+8. Add a new column named "Work Days" in In F6, we used the title  "WORK DAYS" to indicate that the duration for 
+   each task is in  work days (not calendar days).
 9. Enter the duration in column F for each task in column C.
 10. In D8, enter a formula to calculate the end date for each task based on the start date and duration. Use the WORKDAY() function to calculate the end date. The WORKDAY() function takes a start date and a number of work days and returns the end date.
 11. Modify the formula in D8 to show nothing if the start date or duration is blank. Use the IF() function to check if either the start date or duration is blank. If either is blank, return nothing. Otherwise, return the end date using the WORKDAY() function. Then copy this formula to the rest of the tasks in column D.
-12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a color, indent the task and phase names, and add some borders to the table. You can board and highlight the project start date, work days, and start dates to help indicate that it is something to be filled in. You don't have to use the same colors as shown in our pictures. 
+
+* **Note**: Use the IF() function combined with the ISBLANK with the WORKDAY function you used above. In English the 
+  statement would be IF Cell C7 is blank, the this cell is blank, if not do the workday function. To make a cell 
+  blank in Excel use "" with no space between the quotes. The format for the IF statement is IF(logical_test, 
+  value_if_true, value_if_false).. The logical test would be ISBLANK(). The value if true would be "" and the value if false would be the WORKDAY function.
+
+## Formatting
+12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a 
+    color, indent the task and phase names, and add some borders to the table. You can put boarders around  and 
+    highlight the 
+    project start date, work days, and start dates to help indicate that it is something to be filled in. You don't have to use the same colors as shown in our pictures. 
 13. Select column B and insert a new column to the left. This will become the new column B.
 14. In cell the new cell B6, enter "ASSIGNED TO". This is where you can enter the person responsible for each task.
 15. Adjust the column widths as needed to fit the new column.
@@ -69,21 +101,34 @@ At this point, your Gantt chart should look something like this:
 
 ## Step 2 - Creating the Timeline
 
-In this step, you will create the timeline for the Gantt chart. You will use  a series of date functions including TODAY(), WEEKDAY(), LEFT(), and TEXT() to create the timeline.
+In this step, you will create the timeline for the Gantt chart. You will use  a series of date functions including 
+TODAY(), WEEKDAY(), LEFT(), and TEXT() to create the timeline. We will start the timeline in column H. You may want 
+to review the video on the reading page to see an example of how this is done.
 
-1. Have cell H5 reference the project start date in cell D3.
-2. In cell I5, enter a formula to reference the date in cell H5 plus 1 day. Then drag the formula to the right to fill in the rest of row 5 for the week.
-3. Select the 7 dates, and use custom formatting to display only the day of the month. (You can quickly pull up the custom formatting dialog by pressing Ctrl+1 on Windows or Command+1 on Mac).
+In your Gantt chart, row 5 will be the dates for the timeline and row 6 will be the days of the week. 
+
+1. In  cell H5 reference the project start date in cell D3. Use the name "project_start" you applied above.
+2. In cell I5, enter a formula to reference the date in cell H5 plus 1 day. Then drag the formula to the right to 
+   fill in the rest of row 5 for a week (7 days). Make the data go through column N.
+3. Select the 7 dates, and use custom formatting to display only the day of the month. (You can quickly pull up the 
+   custom formatting dialog by pressing Ctrl+1 on Windows or Command+1 on Mac). Select the "d" format to display 
+   only the day of the month. _This may not be a choice, but pick one that starts with "d" and then modify it to 
+   just be "d"._
 4. Resize the columns to make the dates small boxes and center the dates.
-5. In cell H6, use the TEXT function to display the day of the week for the date in cell H5. (Hint: Use the "DDD" format). Then, use the LEFT function to display only the first letter of the day of the week.
+
+## Days of the week
+5. In cell H6, use the TEXT function to display the day of the week for the date in cell H5. (Hint: Use the "DDD" 
+   format). Then, use the LEFT function to display only the first letter of the day of the week. So the formula in  H6 would be something like: left(text(H5,"DDD"),1). 
 6. Drag the formula in cell H6 to fill in the rest of row 5 for the week.
 
+## Week Header
 Now we want to add a header for the week with the date of the first day of the week.
 
 7. Merge the cells H4:N4 and use a formula in the merged cell to reference the date of the first day of the week in cell H5. 
 8. Change the date formatting to display the full date in the merged cell.
 9. Add a border around the week header and fill it with a color of your choice.
 
+## Copying the Week
 Next, we will copy our completed week to the next 3 weeks to the right to create a total of 4 weeks.
 
 10. Select columns H:N and copy to the clipboard. Paste the columns to O:U. You will then need to modify O5 to reference the date in N5 plus 1 day. Now copy the columns O:U to the clipboard.
@@ -112,9 +157,9 @@ In this step, you will add progress bars to the Gantt chart to show the progress
 
 In this step, you will make the timeline dynamic so that it always starts on a Monday. This will ensure that the formatting of the Gantt chart is consistent. We will also highlight the current day on the timeline.
 
-Notice that the first week always starts on the project start date. But it would be more convenvient if each of the weeks started on a Monday. We will add a formula to make this happen.
-
-1. In cell F4, enter the following formula: 
+Notice that the first week always starts on the project start date. But it would be more convenient if each of the weeks started on a Monday. We will add a formula to make this happen.
+### Starting the Week on a Monday
+1. In cell F4, enter the following formula and format the cell as a date. This formula will calculate the date of the Monday of: the week that contains the project start date.
 ```
 =project_start-WEEKDAY(project_start,3)
 ```
@@ -122,6 +167,9 @@ Notice that the first week always starts on the project start date. But it would
 2. Experiment with the start date to verify that the formula is working correctly.
 
 Next, we will add a new control that lets us display the week we want to see. This will allow us to scroll through the weeks of the project beyond the first 4 weeks. For example, given the phases and tasks it is possible that the entire project would take more than 4 weeks. By changing the display week, we can see that week on the left and the subsequent 3 weeks after that.
+
+### Display Week Control
+
 3. In cell C4, enter "Display Week:".
 4. In Cell D4, enter a number (1, 2, 3, etc.) to represent the week you want to display.
 5. Change the formatting of cells C4 and D4 to make them match the formatting of the project start date (cells C3 and D3). Make sure D4 is formatted as a number and not a date. Name the cell D4 "display_week".
