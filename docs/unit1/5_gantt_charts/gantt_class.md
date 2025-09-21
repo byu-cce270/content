@@ -273,12 +273,14 @@ First, we will add a summary progress bar for each phase.
 Note that when you finish entering these two formulas, you will see an overall time range bar for phase 1. This is because the Min() and Max() functions are finding the earliest start date and the latest end date for all tasks in phase 1. However, our conditional formatting for the calendar is now showing the progress for the entire phase, not just the individual tasks. We will fix this in a moment.
 
 3. Write the same formulas used in phase 1 to phase 2. 
-3. Open the conditional formatting rules manager and edit the rule you created in step 3 above. Change the formula to the following:
+4. Open the conditional formatting rules manager and edit the rule you created in Step 3 above. Change the formula 
+   to the following:
 ```
 =AND(task_start<>"",H$5>=$D7,H$5<=$E7,$F7<>"")
 ```
 This formula now also look to see if a number has been entered in the "Work Days" column. If there is no number, then the conditional formatting will not be applied. This way, the summary bars will only show if there is a number in the "Work Days" column.
-4. Once again, open the conditional formatting rules manager and edit the rule you created in step 5 above. Change the formula to the following:
+5. Once again, open the conditional formatting rules manager and edit the rule you created in  Step 5 above. Change 
+   the formula to the following:
 ```
 =1*AND(H$5>=task_start,$F7<>"",H$5<=task_start+(task_progress*(task_end-task_start+1))-1)
 ```
