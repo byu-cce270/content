@@ -169,7 +169,10 @@ If written correctly, your sheet should look like this when **x** is set to **27
 |      Part 3 - Equations are written correctly      |        2        |
 |        Part 3 - VLOOKUP equation is correct        |        5        |
 |           Part 3 - Total cost is correct           |        2        |
-|   <div style="text-align: right">**Total**</div>   |       26        |
+| Part 4 - All cells named like the table instructs  |        1        |
+|      Part 4 - Equations are written correctly      |        2        |
+|    Part 4 - IF statements are written correctly    |        1        |
+|   <div style="text-align: right">**Total**</div>   |       30        |
 
 ---
 
