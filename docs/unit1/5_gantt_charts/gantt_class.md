@@ -178,7 +178,7 @@ Next, we will add a new control that lets us display the week we want to see. Th
 7. In cell H5, edit the formula you edited above to add "+(display_week-1)*7" to the end of the formula. This will  allow you to change the display week and see the subsequent weeks of the project. 
 8Try entering different numbers in cell D4 to see how the display week changes.
 
-### Add Gannt Bars using Conditional Formatting
+### Add Gantt Bars using Conditional Formatting
 Next, we will use conditional formatting to highlight the current day on the timeline.
 
 9. Select cells H5:AI15.
@@ -191,7 +191,7 @@ Next, we will use conditional formatting to highlight the current day on the tim
 ```
 =AND(H$5 >= $D7, H$5 <= $E7)
 ```
-This rule look at the date in row 5 of the current column (H$5) and checks if it is greater than or equal to the start date in column D ($D7) and less than or equal to the end date in column E ($E7). The $ before the row number makes the reference absolute, so it always refers to row 5. The $ before the column letter makes the reference absolute, so it always refers to column D or E. The lack of $ before the column letter in H$5 makes the reference relative, so it changes as you move across the columns.
+This rule look at the date in row 5 of the current column (H\$5) and checks if it is greater than or equal to the start date in column D (\$D7) and less than or equal to the end date in column E (\$E7). The \$ before the row number makes the reference absolute, so it always refers to row 5. The \$ before the column letter makes the reference absolute, so it always refers to column D or E. The lack of \$ before the column letter in H\$5 makes the reference relative, so it changes as you move across the columns.
 
 Make sure the cells in the Phase rows are blank. Highlight htme and delete if this row is getting highligted in the 
 Gannt chart.
@@ -236,7 +236,7 @@ so we can  use that name in a formula.
 
 1. To do this, select C7 (the top data cell in the progress column) and then click on the "Formulas" tab. Then click on 
    "Define Name". In the dialog box, enter 
-   "task_progress" for the name. Make sure the "Refers to" box contains the following formula: =Sheet1!$C7. Then 
+   "task_progress" for the name. Make sure the "Refers to" box contains the following formula: =Sheet1!\$C7. Then 
    click OK. This will create a relative name range that you can use in conditional formatting. _note that the 
    column is fixed and the row is relative._
 2. Do the same thing for the start and end dates. Use the names "task_start" and "task_end" for the start and end dates.
@@ -246,7 +246,7 @@ so we can  use that name in a formula.
 ```
 Make sure you set a format for these cells. 
 
-What this formula does is check if the date in row 5 of the current column (H$5) is greater than or equal to the 
+What this formula does is check if the date in row 5 of the current column (H\$5) is greater than or equal to the 
 start date of the task (task_start) and less than or equal to the start date plus the number of days that have been 
 completed based on the percentage complete (task_progress). The multiplication by 1 at the beginning of the formula 
 is used to convert the TRUE/FALSE result of the AND function into a 1/0 value that can be used for conditional 
