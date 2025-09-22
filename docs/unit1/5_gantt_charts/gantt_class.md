@@ -52,8 +52,7 @@ For this simple sheet, it is helpful if the Phases will be left justified and th
 required for your homework, but it does help make the chart easier to read.
 
 * **Note**: For  most projects the numbering for tasks is a sub-set of the phase number. For example, if Phase 1 has 3 
-  tasks, they would be numbered 1.
-1, 1.2, and 1.3. So the tasks for Phase 2 would be numbered 2.1, 2.2, etc.  You will learn more about WBS structures and naming  in your 300 level CFM classes.
+  tasks, they would be numbered 1.1, 1.2, and 1.3. So the tasks for Phase 2 would be numbered 2.1, 2.2, etc.  You will learn more about WBS structures and naming  in your 300 level CFM classes.
 
 
 ### Task Dates and Duration
@@ -103,6 +102,8 @@ In this step, you will create the timeline for the Gantt chart. You will use  a 
 TODAY(), WEEKDAY(), LEFT(), and TEXT() to create the timeline. We will start the timeline in column H. You may want 
 to review the video on the reading page to see an example of how this is done.
 
+**Note** If you had more Phases or Tasks, you would need to adjust the range of cells used in the conditional formatting later..
+
 In your Gantt chart, row 5 will be the dates for the timeline and row 6 will be the days of the week. 
 
 1. In  cell H5 reference the project start date in cell D3. Use the name "project_start" you applied above.
@@ -116,7 +117,7 @@ In your Gantt chart, row 5 will be the dates for the timeline and row 6 will be 
 
 ### Days of the week
 5. In cell H6, use the TEXT function to display the day of the week for the date in cell H5. (Hint: Use the "DDD" 
-   format). Then, use the LEFT function to display only the first letter of the day of the week. So the formula in  H6 would be something like: left(text(H5,"DDD"),1). 
+   format). Then, use the LEFT function to display only the first letter of the day of the week. So the formula in  H6 would be something like: ```left(text(H5,"DDD"),1)```. 
 6. Drag the formula in cell H6 to fill in the rest of row 5 for the week.
 
 ### Week Header
@@ -129,8 +130,9 @@ Now we want to add a header for the week with the date of the first day of the w
 ### Copying the Week
 Next, we will copy our completed week to the next 3 weeks to the right to create a total of 4 weeks.
 
-10. Select columns H:N and copy to the clipboard. Paste the columns to O:U. You will then need to modify O5 to reference the date in N5 plus 1 day. Now copy the columns O:U to the clipboard.
-11. Paste the new columns to V:AB and AC:AI. At this point you will have 4 weeks of dates.
+10. Select columns H:N and copy to the clipboard. Paste the columns to O:U. 
+11. Modify O5 to reference the date in N5 plus 1 day. Now copy the columns O:U to the clipboard.
+12. Paste the new columns to V:AB and AC:AI. At this point you will have 4 weeks of dates.
 
 Now try double-clicking on the project start date to select a new date and watch the timeline update.
 
@@ -157,7 +159,7 @@ Notice that the first week always starts on the project start date. But it would
 
 Next, we will add a new control that lets us display the week we want to see. This will allow us to scroll through the weeks of the project beyond the first 4 weeks. For example, given the phases and tasks it is possible that the entire project would take more than 4 weeks. By changing the display week, we can see that week on the left and the subsequent 3 weeks after that.
 
-### Display Week Control
+### Week Control of Timeline Display
 
 3. In cell C4, enter "Display Week:".
 4. In Cell D4, enter a number (1, 2, 3, etc.) to represent the week you want to display.
@@ -168,21 +170,23 @@ Next, we will add a new control that lets us display the week we want to see. Th
 
 ## Step 4 - Add Gantt Bars using Conditional Formatting
 
-Next, we will use conditional formatting to add Gantt bars one the timeline.
+Next, we will use conditional formatting to add Gantt bars to the timeline.
 
-1. Select cells H5:AI15.
+1. Select cells H5:AI15 (if you have more or fewer tasks, adjust the range accordingly).
+   * If you later add more tasks, you will need to adjust the range of cells used in the conditional formatting. If you use "insert row" to add more tasks, the conditional formatting will automatically adjust to include the new rows. If you add more tasks at the bottom of the list, you will need to manually adjust the range of cells used in the conditional formatting.
+   
 2. Click on Format|Conditional formatting and Select "New Rule"
 3. In the Conditional format rules pane, select "Use a formula to determine which cell to format" from the dropdown.
-4. We want to rule to format the cell if the date at the top of the column is between the start and end dates for 
+4. We want the formatting rule to format the cell if the date at the top of the column is between the start and end dates for 
     the task in that row. We will need to use a logical AND function to check if the date is greater than or equal to the start date and less than or equal to the end date. The formula will be entered as if you were in the upper left cell of the range. Use absolute references for the row and relative references for the column.
 
     Enter the following formula:
 ```
 =AND(H$5 >= $D7, H$5 <= $E7)
 ```
-This rule look at the date in row 5 of the current column (H\$5) and checks if it is greater than or equal to the start date in column D (\$D7) and less than or equal to the end date in column E (\$E7). The \$ before the row number makes the reference absolute, so it always refers to row 5. The \$ before the column letter makes the reference absolute, so it always refers to column D or E. The lack of \$ before the column letter in H\$5 makes the reference relative, so it changes as you move across the columns.
+This rule looks at the date in row 5 of the current column (H\$5) and checks if it is greater than or equal to the start date in column D (\$D7) and less than or equal to the end date in column E (\$E7). The \$ before the row number makes the reference absolute, so it always refers to row 5. The \$ before the column letter makes the reference absolute, so it always refers to column D or E. The lack of \$ before the column letter in H\$5 makes the reference relative, so it changes as you move across the columns.
 
-Make sure the cells in the Phase rows are blank. Highlight htme and delete if this row is getting highligted in the 
+Make sure the cells in the Phase rows are blank. Highlight the Phase cells and hit delete if this row is getting highligted in the 
 Gannt chart.
 
 ### Highlight the Current Day
@@ -190,14 +194,14 @@ Gannt chart.
 Next, we will add conditional formatting to highlight the current day on the timeline.
 
 5. Add another rule and have the formatting add side borders to the cells in the current day row. You should check 
-    to see if the date in row 5 of the current column is equal to today's date. Use the TODAY() function to get today's date. The formula will be entered as if you were in the upper left cell of the range. Use absolute references for the row and relative references for the column.
+    to see if the date in row 5 of the current column is equal to today's date. Use the TODAY() function to get today's date. The formula will be entered as if you were in the upper left cell of the range just like the rule we did for the Gantt bars. Use absolute references for the row and relative references for the column.
 
 If you want, you can also change the fill color of the cell to make it stand out more or just highlight the date in the header rows.
 
 If necessary, change the project start date so that the current day is highlighted on the timeline. That is "Today" 
 is somewhere in the 4 weeks of the timeline.
 
-At this point, your Gantt chart should look something like this:
+At this point, your Gantt chart should look something like this if you added borders to the current day:
 
 ![gantt_step4.png](images/gantt_step4.png)
 
@@ -207,8 +211,8 @@ At this point, your Gantt chart should look something like this:
 
 In this step, you will add progress bars to the Gantt chart to show the progress of each task. We be using a special conditional formating called "data bars" to show the progress of each task based on the percentage complete. We will also use conditional formatting to gray out part of the timeline based on the percent complete.
 
-1. Select C7:C15 (The progress column), set the number format to "Percent". For testing purposes, enter some sample percentages for the progress of each task in cells C8:C11 and C13:C15. Leave a few of them blank or 0 to indicate they have not started yet.
-2. Reselect C7:C15 and add conditional formatting using "Data Bars". Choose a color, like gray for the data bar. You can choose a different color than gray if you like.
+1. Select C7:C15 (The Progress column, adjust the range if required for more or fewer tasks), set the number format to "Percent". For testing purposes, enter some sample percentages for the progress of each Task in associated cells in the Progress column. Leave a few of them blank or 0 to indicate they have not started yet.
+2. Reselect the cells in the Progress column (C7:C15) and add conditional formatting using "Data Bars". Choose a color, like gray for the data bar. You can choose a different color than gray if you like.
 3. Make Column C wider so you can see the data bars better.
 4. In the cells that have the Phase titles (cells C7 and C12 in the figures), use the average function to calculate the  average percent complete for each phase base on the tasks in that phase.
 
@@ -234,19 +238,19 @@ First, we will add a summary progress bar for each phase.
 
 Note that when you finish entering these two formulas, you will see an overall time range bar for phase 1. This is because the Min() and Max() functions are finding the earliest start date and the latest end date for all tasks in phase 1. However, our conditional formatting for the calendar is now showing the progress for the entire phase, not just the individual tasks. We will fix this in a moment.
 
-3. Write the same formulas used in phase 1 to phase 2. 
+3. Write the same average formulas used in Phase 1 to the Phase 2 row. 
 4. Open the conditional formatting rules manager and edit the rule you created in Step 3 above. Change the formula 
    to the following:
 ```
 =AND($F7<>"",H$5>=$D7,H$5<=$E7,$F7<>"")
 ```
-This formula now also look to see if a number has been entered in the "Work Days" column. If there is no number, then the conditional formatting will not be applied. This way, the summary bars will only show if there is a number in the "Work Days" column.
+This formula will now also look to see if a number has been entered in the "Work Days" column. If there is no number, then the conditional formatting will not be applied. This way, the summary bars will only show if there is a number in the "Work Days" column. This shouldn't ever happen if there is a start date and end date there should be workdays, but it is a good check to have.
 
 Your chart should now look something like this:
 
 ![gantt_step6.png](images/gantt_step6.png)
 
-Congratulations. You did it! There are many more features you could add to this Gantt chart, but this is a good start. See step 7 below for one more feature you can add and other resources for more features you can add.
+Congratulations. You did it! There are many more features you could add to this Gantt chart, but this is a good start. See step 7 below for one more feature you can add. If you want, the  video in the pre-class and associated video's by the same author provide a lot more features you can add.
 
 ---
 
@@ -264,6 +268,8 @@ Your chart should now look something like this with the hatched pattern being on
 
 ![gantt_step7-1.png](images/gantt_step7-1.png)
 
+
+### More Features 
 The author of the video you watched for your pre-class reading has several more videos on adding more features to a Gantt chart. The following video shows how to hide and unhide the weekends on the timeline. [Make a Gantt Chart in Excel - Part 2: Working with Work Days by Vertex42](https://youtu.be/5or9BN3GanM?si=vqCg6j2NkW6HjevW)
 
 Have fun exploring more features you can add to your Gantt chart.
