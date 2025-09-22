@@ -55,7 +55,7 @@ required for your homework, but it does help make the chart easier to read.
 Breakdown Structure) numbers. You will learn about them in your 300 level CFM class.
 
 
-## Task Dates and Duration
+### Task Dates and Duration
 Next, we will enter the start and end dates for each task. (We will not add start dates fro the Phases).
 
 7. Enter the start date for each task in column C next to each task. Typically, the start date for the first task is  the project 
@@ -84,7 +84,7 @@ Finish this step by adding your  your own start dates for all the tasks you ente
   blank in Excel use "" with no space between the quotes. The format for the IF statement is IF(logical_test, 
   value_if_true, value_if_false).. The logical test would be ISBLANK(). The value if true would be "" and the value if false would be the WORKDAY function.
 
-## Formatting
+### Formatting
 12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a 
     color, indent the task and phase names, and add some borders to the table. You can put boarders around  and 
     highlight the 
@@ -116,19 +116,19 @@ In your Gantt chart, row 5 will be the dates for the timeline and row 6 will be 
    just be "d"._
 4. Resize the columns to make the dates small boxes and center the dates.
 
-## Days of the week
+### Days of the week
 5. In cell H6, use the TEXT function to display the day of the week for the date in cell H5. (Hint: Use the "DDD" 
    format). Then, use the LEFT function to display only the first letter of the day of the week. So the formula in  H6 would be something like: left(text(H5,"DDD"),1). 
 6. Drag the formula in cell H6 to fill in the rest of row 5 for the week.
 
-## Week Header
+### Week Header
 Now we want to add a header for the week with the date of the first day of the week.
 
 7. Merge the cells H4:N4 and use a formula in the merged cell to reference the date of the first day of the week in cell H5. 
 8. Change the date formatting to display the full date in the merged cell.
 9. Add a border around the week header and fill it with a color of your choice.
 
-## Copying the Week
+### Copying the Week
 Next, we will copy our completed week to the next 3 weeks to the right to create a total of 4 weeks.
 
 10. Select columns H:N and copy to the clipboard. Paste the columns to O:U. You will then need to modify O5 to reference the date in N5 plus 1 day. Now copy the columns O:U to the clipboard.
