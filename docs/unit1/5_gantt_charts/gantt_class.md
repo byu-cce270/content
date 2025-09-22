@@ -229,7 +229,7 @@ Your chart should now look something like this:
 ![gantt_step5-1.png](images/gantt_step5-1.png)
 
 ### Grey Out Past Dates
-Next, we will conditionally format the timeline to gray out the dates that are past the current date based on the percent complete for each task.
+Next, we will conditionally format the timeline to gray out the dates based on the percent complete for each task.
 
 To help with this, we are going to add relative name ranges. This would be like naming an entire column or row and 
 so we can  use that name in a formula.
