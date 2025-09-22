@@ -172,7 +172,7 @@ Next, we will add a new control that lets us display the week we want to see. Th
 
 Next, we will use conditional formatting to add Gantt bars to the timeline.
 
-1. Select cells H5:AI15 (if you have more or fewer tasks, adjust the range accordingly).
+1. Select cells H7:AI15 (if you have more or fewer tasks, adjust the range accordingly).
    * If you later add more tasks, you will need to adjust the range of cells used in the conditional formatting. If you use "insert row" to add more tasks, the conditional formatting will automatically adjust to include the new rows. If you add more tasks at the bottom of the list, you will need to manually adjust the range of cells used in the conditional formatting.
    
 2. Click on Format|Conditional formatting and Select "New Rule"
@@ -242,7 +242,7 @@ Note that when you finish entering these two formulas, you will see an overall t
 4. Open the conditional formatting rules manager and edit the rule you created in Step 3 above. Change the formula 
    to the following:
 ```
-=AND($F7<>"",H$5>=$D7,H$5<=$E7,$F7<>"")
+=AND($D7<>"",H$5>=$D7,H$5<=$E7,$F7<>"")
 ```
 This formula will now also look to see if a number has been entered in the "Work Days" column. If there is no number, then the conditional formatting will not be applied. This way, the summary bars will only show if there is a number in the "Work Days" column. This shouldn't ever happen if there is a start date and end date there should be workdays, but it is a good check to have.
 
