@@ -250,11 +250,13 @@ Your chart should now look something like this:
 
 ![gantt_step6.png](images/gantt_step6.png)
 
-Congratulations. You did it! There are many more features you could add to this Gantt chart, but this is a good start. See step 7 below for one more feature you can add. If you want, the  video in the pre-class and associated video's by the same author provide a lot more features you can add.
-
 ---
 
 ## Step 7 - Highlighting Weekends
+
+Finally, in this step you will add conditional formatting to highlight the weekends on the timeline. We will use the 
+NETWORKDAYS() 
+function to determine if a date is a weekend or not. The NETWORKDAYS() function returns the number of workdays between two dates. If the number of workdays is 0, then the date is a weekend.
 
 1. Select H5:AI15.
 2. Add a new conditional formatting rule using "Custom formula is" and enter the following formula
@@ -268,9 +270,10 @@ Your chart should now look something like this with the hatched pattern being on
 
 ![gantt_step7-1.png](images/gantt_step7-1.png)
 
-
 ### More Features 
-The author of the video you watched for your pre-class reading has several more videos on adding more features to a Gantt chart. The following video shows how to hide and unhide the weekends on the timeline. [Make a Gantt Chart in Excel - Part 2: Working with Work Days by Vertex42](https://youtu.be/5or9BN3GanM?si=vqCg6j2NkW6HjevW)
+
+Congratulations. You did it! There are many more features you could add to this Gantt chart, but this is a good 
+start. The author of the video you watched for your pre-class reading has several more videos on adding more features to a Gantt chart. The following video shows how to hide and unhide the weekends on the timeline. [Make a Gantt Chart in Excel - Part 2: Working with Work Days by Vertex42](https://youtu.be/5or9BN3GanM?si=vqCg6j2NkW6HjevW)
 
 Have fun exploring more features you can add to your Gantt chart.
 
