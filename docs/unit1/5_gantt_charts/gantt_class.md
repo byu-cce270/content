@@ -221,7 +221,7 @@ In this step, you will add progress bars to the Gantt chart to show the progress
    the  average percent complete for each phase base on the tasks in that phase.
 
 ### More Formatting
-1. Highlight each phase in the timeline and  bold the data in that row to make it stand out 
+4. Highlight each phase in the timeline and  bold the data in that row to make it stand out 
 more.
 
 Your chart should now look something like this:
@@ -234,13 +234,13 @@ Next, we will conditionally format the timeline to gray out the dates that are p
 To help with this, we are going to add relative name ranges. This would be like naming an entire column or row and 
 so we can  use that name in a formula.
 
-1. To do this, select C7 (the top data cell in the progress column) and then click on the "Formulas" tab. Then click on 
+5. To do this, select C7 (the top data cell in the progress column) and then click on the "Formulas" tab. Then click on 
    "Define Name". In the dialog box, enter 
    "task_progress" for the name. Make sure the "Refers to" box contains the following formula: =Sheet1!\$C7. Then 
    click OK. This will create a relative name range that you can use in conditional formatting. _note that the 
    column is fixed and the row is relative._
-2. Do the same thing for the start and end dates. Use the names "task_start" and "task_end" for the start and end dates.
-3. Select H7:AI15. Add a new conditional formatting rule using "Custom formula is" and enter the following formula:
+6. Do the same thing for the start and end dates. Use the names "task_start" and "task_end" for the start and end dates.
+7. Select H7:AI15. Add a new conditional formatting rule using "Custom formula is" and enter the following formula:
 ```
 =1*AND(H$5>=task_start,H$5<=task_start+(task_progress*(task_end-task_start+1))-1)
 ```
@@ -252,8 +252,8 @@ completed based on the percentage complete (task_progress). The multiplication b
 is used to convert the TRUE/FALSE result of the AND function into a 1/0 value that can be used for conditional 
 formatting. The video on the reading page explains this in more detail.
 
-4. Set the formatting to fill the cell with a light gray color.
-5. Try entering different percentages in column C to see how the timeline changes.
+8. Set the formatting to fill the cell with a light gray color.
+9. Try entering different percentages in column C to see how the timeline changes.
 
 Your chart should now look something like this:
 
