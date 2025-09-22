@@ -6,14 +6,13 @@ We will use  seven main steps to create a Gantt chart in Excel.
 
 1. Project Information, Phases, and Tasks 
 2. Creating the Timeline 
-3. Applying Formatting 
-4. Making the Timeline Dynamic 
-5. Adding Progress Bars for Tasks on Timeline
-6. Adding Summary Progress Bars 
-7. Summary Duration and Grouping 
+3. Making the Timeline Dynamic
+4. Add Gantt Bars using Conditional Formatting
+5. AAdding Summary Progress Bars
+6. Phase Summary Duration
+7. Highlighting Weekends
 
-For the in-class exercise, we will be creating a basic Gantt, later in the homework, you will be adding some 
-additional functionality. .
+For the in-class exercise, we will be creating a basic Gantt chart, later in the homework, you will be using a copy of this sheet to create a project management tool. 
 
 To begin, open the in-class workbook and follow the instructions below. [(Starter-Workbook)-Class-Gantt-Chart.xlsx](%28Starter-Workbook%29-Class-Gantt-Chart.xlsx)
 
@@ -45,25 +44,26 @@ Now we need to enter some phases and tasks for the project.
 5. Enter "Phase 1" in cell A7.
 6. Enter a series of tasks for Phase 1 starting in cells A8.
 
-You can use "Phase 1, Task 1", "Phase 1, Task 2", etc. as the phase and task names. In practice, you would use wider column widths and enter more descriptive phase and task names. Create at least 2 phases with 3-4 tasks each.
+You can use "Phase 1, Task 1.1", "Phase 1, Task 1.2", etc. as the phase and task names. This is called the WBS or Work Breakdown Structure and is how tasks are referred to by project managers. In addition to the numbers, in practice, you would use wider column widths and enter more descriptive phase and task names in addition. 
+
+Create at least 2 phases with 3-4 tasks each.
 
 For this simple sheet, it is helpful if the Phases will be left justified and the tasks right justified. This isn't 
 required for your homework, but it does help make the chart easier to read.
 
 * **Note**: For  most projects the numbering for tasks is a sub-set of the phase number. For example, if Phase 1 has 3 
   tasks, they would be numbered 1.
-1, 1.2, and 1.3. So the tasks for Phase 2 would be numbered 2.1, 2.2, etc. These nubmers are often called the WBS (Work 
-Breakdown Structure) numbers. You will learn about them in your 300 level CFM class.
+1, 1.2, and 1.3. So the tasks for Phase 2 would be numbered 2.1, 2.2, etc.  You will learn more about WBS structures and naming  in your 300 level CFM classes.
 
 
 ### Task Dates and Duration
-Next, we will enter the start and end dates for each task. (We will not add start dates fro the Phases).
+Next, we will enter the start and end dates for each task. (We will not add start dates for the Phases).
 
 7. Enter the start date for each task in column C next to each task. Typically, the start date for the first task is  the project 
    start date. For this project, the  start date for the first task should reference the project start date in 
    cell C3 using the cell/range name "project_start" we applied above.
 
-* **Note** if the cell you enter the cell/range name is is not formated as a date, a number will appear. Change the 
+* **Note** if the cell you enter the date into is is not formated as a date, a number will appear. Change the 
   formatting to a date format to see the date. The "Short Date" format is a good choice.
 
 
@@ -77,13 +77,13 @@ Finish this step by adding your  your own start dates for all the tasks you ente
 8. Add a new column named "Work Days" in In F6, we used the title  "WORK DAYS" to indicate that the duration for 
    each task is in  work days (not calendar days).
 9. Enter the duration in column F for each task in column C.
-10. In D8, enter a formula to calculate the end date for each task based on the start date and duration. Use the WORKDAY() function to calculate the end date. The WORKDAY() function takes a start date and a number of work days and returns the end date.
-11. Modify the formula in D8 to show nothing if the start date or duration is blank. Use the IF() function to check if either the start date or duration is blank. If either is blank, return nothing. Otherwise, return the end date using the WORKDAY() function. Then copy this formula to the rest of the tasks in column D.
+10. In D8, enter a formula to calculate the end date for each task based on the start date and duration. Use the WORKDAY() function to calculate the end date. The WORKDAY() function takes a start date and a number of work days and returns the end date. It ignores weekends when calculating how long it will take. 
+11. Modify the formula in D8 to show nothing if the start date or duration is blank. Use the IF() function to check if either the start date or duration is blank. If either is blank, return nothing. Otherwise, return the end date using the WORKDAY() function. Then copy this formula to the rest of the tasks in column D. 
 
 * **Note**: Use the IF() function combined with the ISBLANK with the WORKDAY function you used above. In English the 
-  statement would be IF Cell C7 is blank, the this cell is blank, if not do the workday function. To make a cell 
+  statement would be IF Cell C7 is blank, the this cell is blank, if not, execute the workday function. To make a cell 
   blank in Excel use "" with no space between the quotes. The format for the IF statement is IF(logical_test, 
-  value_if_true, value_if_false).. The logical test would be ISBLANK(). The value if true would be "" and the value if false would be the WORKDAY function.
+  value_if_true, value_if_false).. The logical test would be ISBLANK(). The value if true would be "" and the value if false would be the WORKDAY function you used above.
 
 ### Formatting
 12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a 
