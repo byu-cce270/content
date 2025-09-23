@@ -16,7 +16,7 @@
 
 ## Step 2 - Landscape Invoice Tracker Instructions and Requirements
 
-Open a new Excel file. Create a professional spreadsheet that can be used to generate bills for landscaping clients. Your spreadsheet must include:
+Imagine that you are working for a landscaping company and your boss has asked you to create a professional spreadsheet that can be used to generate bills for landscaping clients. The proposed spreadsheet must include:
 
 - At least three types of foliage, soil, and rocks, along with their cost per square foot
 
@@ -32,7 +32,7 @@ Open a new Excel file. Create a professional spreadsheet that can be used to gen
 
 ## Step 3 - Populate the Gantt Chart
 
-Imagine that you are in a team of 3. You are making a gantt chart to help organize the creation of the "Landscape Invoice Tracker" based on the landscaping project described above. The project manager is you. Your project start date is the next time you have class, and you have 2 weeks to complete the project.
+Assume that you are in a team of 3. You are making a gantt chart to help organize the creation of the "Landscape Invoice Tracker" speadsheet based on the landscaping project described above. The project manager is you. Your project start date is the next time you have class, and you have 2 weeks to complete the project.
 
 Using your Gantt chart from step 1, add the following:
 
@@ -46,8 +46,10 @@ Using your Gantt chart from step 1, add the following:
 
 - Include dependencies when applicable (e.g., Task B can’t start until Task A is done)
 
-
 ---
+
+!!! NOTE
+    You don't need to actual create the spreadsheet in step 2. You are simply supposed to populate a Gantt chart outlining how you would develop the spreadsheet.
 
 ## Turning in/Rubric
 
