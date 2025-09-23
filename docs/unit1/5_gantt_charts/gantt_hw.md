@@ -4,18 +4,19 @@
 
 ---
 
-## Getting Started
-1. First make a copy of the starter sheet here:
+## Step 1 - Getting Started
 
-2. Rename it something like ""
+1. Make a copy of the Gantt Chart Excel file you completed in class.
+
+2. Rename it something like "(Your-Name)-HW-Gantt-Chart.xlsx"
 
 3. Remember to save it in your OneDrive folder that you created in the first assignment
 
 ---
 
-## Gantt Chart Project Prompt
+## Step 2 - Landscape Invoice Tracker Instructions and Requirements
 
-Create a professional spreadsheet that can be used to generate bills for landscaping clients. Your spreadsheet must include:
+Imagine that you are working for a landscaping company and your boss has asked you to create a professional spreadsheet that can be used to generate bills for landscaping clients. The proposed spreadsheet must include:
 
 - At least three types of foliage, soil, and rocks, along with their cost per square foot
 
@@ -29,13 +30,13 @@ Create a professional spreadsheet that can be used to generate bills for landsca
 
 ---
 
-## Gantt Chart Instructions and Requirements
+## Step 3 - Populate the Gantt Chart
 
-Imagine that you are in a team of 3. You are making a gantt chart to help organize the creation of the "Landscape Invoice Tracker" based on the prompt above. The project manager is you. Your project start date is the next time you have class, and you have 2 weeks to complete the project.
+Assume that you are in a team of 3. You are making a gantt chart to help organize the creation of the "Landscape Invoice Tracker" speadsheet based on the landscaping project described above. The project manager is you. Your project start date is the next time you have class, and you have 2 weeks to complete the project.
 
-Prepare a Gantt chart that includes the following:
+Using your Gantt chart from step 1, add the following:
 
-- Break the project into 3 distinct phases (examples: Planning, Building the Spreadsheet, Final Review & Submission)
+- Break the project into three distinct phases (examples: Planning, Building the Spreadsheet, Final Review & Submission)
 
 - Each phase should contain 3–4 specific tasks
 
@@ -45,9 +46,10 @@ Prepare a Gantt chart that includes the following:
 
 - Include dependencies when applicable (e.g., Task B can’t start until Task A is done)
 
-In the end, your Gantt chart should have all the same elements as the one we made in class.
-
 ---
+
+!!! NOTE
+    You don't need to actual create the spreadsheet in step 2. You are simply supposed to populate a Gantt chart outlining how you would develop the spreadsheet.
 
 ## Turning in/Rubric
 

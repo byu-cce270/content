@@ -9,11 +9,57 @@
 Construction managers, facility managers, and civil engineers use Gantt charts to plan and schedule engineering and 
 construction projects. They are used to track the progress of the project and to ensure that the project is completed on time. Gantt charts are also used to allocate resources and to identify potential problems that may arise during the project. They are an essential tool for managers and engineers to ensure that a project is completed on time and within budget. They are used on nearly all projects. 
 
-This figure is from project management software and shows a Gantt chart for a construction project. The chart shows 
-the start and finish dates of the different tasks that comprise the project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task. You can use the information in this chart to associate resources, staff, costs, and other important information with tasks and perform critical path analysis to identify the most critical tasks in the project.
+This figure is from project management software and shows a Gantt chart for a construction project. The chart shows the start and finish dates of the different tasks that comprise the project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task. You can use the information in this chart to associate resources, staff, costs, and other important information with tasks and perform critical path analysis to identify the most critical tasks in the project.
+
 
 ![gantt_chart.png](images/gantt_chart.png)
 
+
+## Gantt Chart Basics
+
+A **Gantt chart** is a project management tool that shows tasks (or activities) along a timeline. It helps visualize **what needs to be done, when, and how tasks overlap**. Each task is represented by a horizontal bar:
+
+* The **length of the bar** = task duration
+* The **position of the bar** = start and end dates on the calendar
+* Bars can overlap (parallel tasks) or be sequential (dependent tasks)
+* Often shows **dependencies** (e.g., Task B starts only after Task A finishes)
+
+---
+
+### Input Data Needed for a Gantt Chart
+
+To build one, you typically need:
+
+1. **Task List**
+
+   * All activities or work packages that make up the project
+
+2. **Start Date for Each Task**
+
+   * When work is planned to begin
+
+3. **End Date or Duration for Each Task**
+
+   * Either a finish date or how long it will take
+
+4. **Dependencies (Optional but Useful)**
+
+   * Links showing if a task must wait for another to finish/start (e.g., “Finish-to-Start”)
+
+5. **Resources (Optional)**
+
+   * Who or what is assigned to each task (people, teams, equipment)
+
+6. **Milestones (Optional)**
+
+   * Key deadlines or deliverables with zero duration (e.g., “Prototype Complete”)
+
+---
+
+👉 With just **tasks, start dates, and durations**, you can make a basic Gantt. Adding **dependencies and resources** makes it much more powerful.
+
+
+## Gantt Charts in Excel
 While there is dedicated software for creating Gantt charts, you can also create them in Excel. This is a useful skill to have as it can be used to create simple Gantt charts for small projects. This is also a good comprehensive exercise to use some of the skills we have learned in Excel. 
 
 !!!Note
@@ -34,7 +80,12 @@ While there is dedicated software for creating Gantt charts, you can also create
 
 ## Gantt Chart Creation in Excel
 
-We will learn to create Gantt charts in Excel. This involves several distinct steps
+We will learn to create very basic Gantt charts in Excel. You will use them later in your project proposals for this 
+class.
+
+This involves several 
+distinct steps
+
 
 * Identify the start date of each task
 * Identify the duration or end of each task. One of these can be calculated from the other.
@@ -92,8 +143,7 @@ LEFT returns the first character or characters in a text string, based on the nu
 
 **Usage**
 
-We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart  
-using only single letters for the days of the week.
+We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart  using only single letters for the days of the week.
 
 ## Pre-Class Quiz Challenge
  First, make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Gantt-Chart.xlsx](%28Starter-Workbook%29-Pre-Gantt-Chart.xlsx)

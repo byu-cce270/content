@@ -28,7 +28,7 @@
       | Meniscus correction factor         | E7   | Fm   |
       | Zero correction Factor	            | E8   | Fz   |
       | Temperature correction factor      | E9   | Ft   |
-      | Stokes' law coefficient            | E10  | A    |
+      | Stokes' law coefficient            | E10  | K    |
       | Specific gravity correction factor | E11  | Gc   |
 
 **Hint**: To name a cell, click on the cell, then click on the name box in the top left corner of the screen, it should have the cell reference list. Type the name you want to give the cell. Press Enter to save the name. You can then reference the cell by its name in formulas. You can also go the Formulas tab, under the "Defined Names" group, you can manage names, create new names, or edit existing ones.
@@ -45,18 +45,16 @@
    Coefficients in the Tables sheet). 
 
 !!!Note
-      For the temperature key used in VLOOKUP, you should not expect an exact match so you will need to do a range lookup (is_sorted = TRUE). The same is true for the Gs key to the MATCH function, so you will need to again specify a range lookup (search_type = 1). If you want to do an exact match, you can use the ROUND() function to round the temperature and Gs values to the nearest whole number inside the argument list as you pass them as keys to the functions. 
+      For the temperature key used in VLOOKUP, you should not expect an exact match so you will need to do a range lookup (is_sorted = TRUE). If you want to do an exact match, you can use the ROUND() function to round the temperature to the nearest whole number inside the argument list as you pass them as keys to the functions. 
 
 5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
-
-**Hint:** You will need to use both absolute and relative cell references to fill down the table correctly </br>
-   
+ 
    | Cell | Equation                          |
    |------|-----------------------------------|
    | C15  | $R_{cp} = R + F_T - F_Z$          |
-   | D15  | $P_f = \dfrac{AR_{cp}}{W_S}(100)$ |
+   | D15  | $P_f = \dfrac{KR_{cp}}{W_S}(100)$ |
    | E15  | $R_{cl} = R + F_m$                |
-   | G15  | $D = A\sqrt{\dfrac{L}{t}}$        |
+   | G15  | $D = K\sqrt{\dfrac{L}{t}}$        |
 
 6. If you did everything right, the first row should look like this:
 
@@ -112,20 +110,18 @@
 
 2. Name the cells in the spreadsheet according to this table:
 
-**Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
-
-   | Variable          | Cell | Name  |
-   |-------------------|------|-------|
-   | Load              | B4   | P     |
-   | Modulus           | B5   | E     |
-   | Length            | B6   | L     |
-   | Load offset       | B7   | LoadA |
-   | Load offset       | B8   | LoadB |
-   | Base              | B9   | base  |
-   | Height            | B10  | ht    |
-   | Distance          | B11  | x     |
-   | Moment of Inertia | B13  | Iu    |
-   | Deflection        | B16  | v     |
+   | Variable          | Cell | Name |
+   |-------------------|------|------|
+   | Load              | B4   | P    |
+   | Modulus           | B5   | E    |
+   | Length            | B6   | L    |
+   | Load offset       | B7   | a    |
+   | Load offset       | B8   | b    |
+   | Base              | B9   | base |
+   | Height            | B10  | ht   |
+   | Distance          | B11  | x    |
+   | Moment of Inertia | B13  | Iu   |
+   | Deflection        | B16  | v    |
 
 3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the input cells.
 
@@ -158,18 +154,21 @@ If written correctly, your sheet should look like this when **x** is set to **27
 
 **Rubric:**
 
-|                        Item                        | Points Possible |
-|:--------------------------------------------------:|:---------------:|
-| Part 1 - All cells named like the table instructs  |        1        |
-|   Part 1 - VLOOKUP and MATCH equation is correct   |        5        |
-|      Part 1 - Equations are written correctly      |        2        |
-| Part 1 - All table values are calculated correctly |        2        |
-|  Part 2 - VLOOKUP and MATCH equations are correct  |        5        |
-|       Part 2 - Total price column is correct       |        2        |
-|      Part 3 - Equations are written correctly      |        2        |
-|        Part 3 - VLOOKUP equation is correct        |        5        |
-|           Part 3 - Total cost is correct           |        2        |
-|   <div style="text-align: right">**Total**</div>   |       26        |
+|                         Item                         | Points Possible |
+|:----------------------------------------------------:|:---------------:|
+|  Part 1 - All cells named like the table instructs   |        1        |
+| Part 1 - Temperature equations are written correctly |        2        |
+|    Part 1 - VLOOKUP and MATCH equation is correct    |        5        |
+|    Part 1 - Table equations are written correctly    |        2        |
+|   Part 2 - VLOOKUP and MATCH equations are correct   |        5        |
+|        Part 2 - Total price column is correct        |        2        |
+|     Part 2 - IF statements are written correctly     |        2        |
+|       Part 3 - Equations are written correctly       |        2        |
+|         Part 3 - VLOOKUP equation is correct         |        4        |
+|  Part 4 - All cells named like the table instructs   |        1        |
+|       Part 4 - Equations are written correctly       |        2        |
+|     Part 4 - IF statements are written correctly     |        2        |
+|    <div style="text-align: right">**Total**</div>    |       30        |
 
 ---
 
