@@ -1,6 +1,7 @@
 #  Homework: Gantt Chart/Project Scheduling and Tracking
 
-**Purpose:** This assignment aims to test your ability to create a gantt chart for a specific project. In this assignment, you will be given a specific project prompt and you will figure out how you and two other people will complete the project. You will then create a gantt chart that includes all the tasks and phases that you and your team will complete to finish the project.
+**Purpose:** This assignment aims to test your ability to create a gantt chart for a specific project. In this 
+assignment, you will be given a specific project prompt, and you will figure out how you and two other people will complete the project. You will then create a gantt chart that includes all the tasks and phases that you and your team will complete to finish the project.
 
 ---
 
@@ -28,11 +29,16 @@ Imagine that you are working for a landscaping company and your boss has asked y
 
 - Any other details needed for a clear and useful client invoice
 
+!!! NOTE
+    You don't need to actually create the spreadsheet, you are simply supposed to populate a Gantt chart 
+outlining how you would develop the spreadsheet.
+
 ---
 
 ## Step 3 - Populate the Gantt Chart
 
-Assume that you are in a team of 3. You are making a gantt chart to help organize the creation of the "Landscape Invoice Tracker" speadsheet based on the landscaping project described above. The project manager is you. Your project start date is the next time you have class, and you have 2 weeks to complete the project.
+Assume that you are in a team of 3. You are making a gantt chart to help organize the creation of the "Landscape 
+Invoice Tracker" spreadsheet based on the landscaping project described above. The project manager is you. Your project start date is the next time you have class, and you have 2 weeks to complete the project.
 
 Using your Gantt chart from step 1, add the following:
 
@@ -47,9 +53,6 @@ Using your Gantt chart from step 1, add the following:
 - Include dependencies when applicable (e.g., Task B can’t start until Task A is done)
 
 ---
-
-!!! NOTE
-    You don't need to actual create the spreadsheet in step 2. You are simply supposed to populate a Gantt chart outlining how you would develop the spreadsheet.
 
 ## Turning in/Rubric
 
