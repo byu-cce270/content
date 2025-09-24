@@ -178,6 +178,8 @@ This module introduces Gantt charts as a project management tool and the Excel f
 
 ## Midterm Practice Quiz
 
+Sample questions to help you prepare for the midterm exam. Answers are provided at the end of the quiz.
+
 1. According to the class rubric, what is the consequence of submitting an Excel file directly instead of a shareable link?<br>
 A. A 10% penalty.<br>
 B. A 50% penalty.<br>
