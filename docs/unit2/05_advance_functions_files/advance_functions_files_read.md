@@ -1,4 +1,4 @@
-#  Reading: Functions (Part 2) and Files
+#  Reading: Functions and Files
 
 ---
 

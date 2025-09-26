@@ -1,4 +1,4 @@
-#  HW: Functions (Part 2)
+#  HW: Functions and Files
 
 **Purpose:** Learn how to use functions to create more simplified blocks of code
 
@@ -143,23 +143,24 @@ $I$ = the moment of inertia (in inches^4)
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                            **Item**                             | **Amount** |
-|:---------------------------------------------------------------:|:----------:|
-|            1st scenario function is defined correctly           |     2      |
-|            2nd scenario function is defined correctly           |     2      |
-|            3rd scenario function is defined correctly           |     2      |
-|            4th scenario function is defined correctly           |     2      |
-|            5th scenario function is defined correctly           |     2      |
-|            6th scenario function is defined correctly           |     2      |
-|         Moment of inertia function is defined correctly         |     2      |
-|         Max bending stress function is defined correctly        |     2      |
-|   IF and input statements are defined correctly for load_type   |     2      |
-|    Input statements for L, E, b, and h are defined correctly    |     2      |
-|               Variables y and I are defined correctly           |     2      |
-| Functions and related IF statements are called/defined correctly|     4      |
-|                Variable max_stress defined correctly            |     2      |
-| Second code block prints maximum deflection and bending stress  |     2      |
-|         <div style="text-align: right">**Total**</div>          |   **30**   |
+|                             **Item**                             | **Amount** |
+|:----------------------------------------------------------------:|:----------:|
+|            1st scenario function is defined correctly            |     2      |
+|            2nd scenario function is defined correctly            |     2      |
+|            3rd scenario function is defined correctly            |     2      |
+|            4th scenario function is defined correctly            |     2      |
+|            5th scenario function is defined correctly            |     2      |
+|            6th scenario function is defined correctly            |     2      |
+|         Moment of inertia function is defined correctly          |     2      |
+|         Max bending stress function is defined correctly         |     2      |
+|   IF and input statements are defined correctly for load_type    |     2      |
+|    Input statements for L, E, b, and h are defined correctly     |     2      |
+|             Variables y and I are defined correctly              |     2      |
+| Functions and related IF statements are called/defined correctly |     4      |
+|              Variable max_stress defined correctly               |     2      |
+|  Second code block prints maximum deflection and bending stress  |     2      |
+|       Files is created correctly and appends new solutions       |     2      |
+|          <div style="text-align: right">**Total**</div>          |   **32**   |
 
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain 
 your code when using AI to help you create it or fail to share your link correctly.

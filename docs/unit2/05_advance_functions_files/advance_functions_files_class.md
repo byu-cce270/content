@@ -1,4 +1,4 @@
-# In-Class Exercise: Introduction to Functions (Part 2)
+# In-Class Exercise: Functions and Files
 
 The following exercises will have you create more functions that take multiple inputs and have multiple outputs.
  
