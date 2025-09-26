@@ -78,7 +78,7 @@ In this example, the file `output.txt` is opened in write mode. If the file alre
 with open('output.txt', 'a') as file:
     file.write('This line is appended.\n')
 ```
-In this example, the file `output.txt` is opened in append mode. If the file doesn't exist, a new file will be created. The `write()` method is used to append strings to the end of the file.
+In this example, the file `output.txt` is opened in append mode. If the file doesn't exist, a new file will be created. The `write()` method is used to append strings to the end of the file. The \n character is used to create a new line after each write. This is useful when you want to add new data to an existing file without overwriting the current contents.
 
 ---
 

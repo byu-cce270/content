@@ -1,12 +1,9 @@
 # In-Class Exercise: Introduction to Functions (Part 2)
 
-The following exercises will have you create more complex functions that take multiple inputs and have multiple outputs.
-
+The following exercises will have you create more functions that take multiple inputs and have multiple outputs.
+ 
 You can find the In Class Exercise here:
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/05_advance_functions_files/functions2_in_class.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-NEW LINK(combined functions 1 and functions 2):: 
-You can find the In Class Exercise here:
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/04_functions_intro/functions_in_class.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
