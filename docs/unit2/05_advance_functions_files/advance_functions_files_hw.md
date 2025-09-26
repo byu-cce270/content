@@ -104,13 +104,13 @@ $I$ = the moment of inertia (in inches^4)
 
 9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches)
    as well as the maximum bending stress (in psi).
-10. On a new line, create a text file called "beam_results.txt" and open the file using a context manager. (make 
-    sure this comes after all the other code.) Open your created file in "append" mode, and write the maximum 
-    deflection and 
-    maximum bending stress to the file, each on a new line. Make sure that the file is appending the results, not 
-    writing over them. If you cant remember how to do this, refer back to the preclass reading.
+10. On a new line, create a text file called **"beam_results.txt"** and open the file using a context manager. Open your 
+    created file in "append" mode, and write the maximum 
+    deflection and maximum bending stress to the file. Each solution should be appended on a new line. Make sure that 
+    the file is 
+    appending each result, not writing over them. If you can't remember how to do this, refer back to the preclass reading.
 
-10. Check if your functions work by using the following inputs:
+11. Check if your functions work by using the following inputs:
 
    | Variable Name |                            Input                            |
    |:-------------:|:-----------------------------------------------------------:|
@@ -120,7 +120,8 @@ $I$ = the moment of inertia (in inches^4)
    |       b       |                              8                              |
    |       h       |                              12                             |
 
-11. If you did everything correct, you should get the following values for each scenario (the deflection values are rounded to the thousandths place):
+12. If you did everything correct, you should get the following values for each scenario (the deflection values are 
+rounded to the thousandths place):
 
    |                     Scenario                         | Maximum Deflection | Maximum Bending Stress |
    |:----------------------------------------------------:|:------------------:|:----------------------:|
@@ -131,7 +132,7 @@ $I$ = the moment of inertia (in inches^4)
    |       Simply supported beam with a point load        |     0.003 inches   |       281.25 psi       |
    |       Simply supported beam with a distributed load  |     0.285 inches   |        22950 psi       |
    
-12. If your txt file was created correctly, you should end up with a file that has the answers to the trial runs, 
+13. If your txt file was created correctly, you should end up with a file that has the answers to the trial runs, 
     each on a new line. Try opening the file to check if it has the correct formatting and values. **Note: The txt file 
     does 
     not have to have all the trial problems, it just has to have a few of them so we can see if it 
