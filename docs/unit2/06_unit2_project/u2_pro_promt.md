@@ -1,7 +1,5 @@
 #  Unit 2 Project
 
-# **NOT WRITTEN YET!**
-
 **Purpose:** The purpose of this assignment is to showcase how much you have learned during this Python unit of the class. You will get to choose with your team between 3 different prompts listed below
 
 ## Instructions
@@ -16,25 +14,26 @@
 
 3. Complete the project using all the following requirements (this is where your grade will come from):
 
-      - An introductory text block with: 
-         - Instructions on how to use your code
-         - Link to your Google Sheet
-         - Group name
-         - Members of your group
-         - A report on how each team member contributed. (with rubric items that they did)
-         - Links to any out of class resources you used **(Please don't forget this part. If there are no links you will lose points)**
-      - At least 1 loop (for or while)
-      - At least 1 list, dictionary, or pandas dataframe
+      - An introductory text block with:
+        - instructions on how to use your code
+        - link to your external file
+        - group name
+        - members of your group
+        - a report on how each team member contributed (with rubric items that they did)
+        - Links to any out of class resources you used **(Please don't forget this part. If there are no links you will lose points)**
       - At least 1 if-elif-else statement
+      - Use file reading and or writing
+      - At least 1 loop (for or while)
+      - Use numberic and string variables 
+      - At least 1 list or dictionary
+      - Use comments throughout your code explaining what is happening
       - At least 3 functions that you write/define
-      - Use gspread to connect to a Google Sheet
-      - Use matplotlib to create a graph
-      - Your program is bug free 
-      - Use markdown to organize your code (Using text blocks to separate your code into sections or code blocks)
-      - Comments throughout your code explaining what is happening. (This is not directly apart of the rubric, but you will lose points if you don't have comments)
-      - EXTRA CREDIT OPTIONS (Must be used in some significant way):
-         - Use of GUIs (ipywidgets)
-         - Use of numpy in some way
+      - Use of forms or input statements.
+        - For a refersher on adding a form click [here](https://www.tutorialspoint.com/google_colab/google_colab_adding_forms.htm){:target="_blank"} or about the different types of forms [here](https://colab.research.google.com/notebooks/forms.ipynb){:target="_blank"}
+      - Use markdown to organize code
+        - # @title, Imports, Get Data
+        - [Markdown Guide](https://colab.research.google.com/notebooks/markdown_guide.ipynb#scrollTo=Lhfnlq1Surtk){:target="_blank"}
+      - Your program is bug free and runs without error
 
 4. After you have completed your project, create a video. You can use ScreenPal (formerly ScreenCast-O-Matic) for this [https://screenpal.com/](https://screenpal.com/){:target="_blank"}. SreenPal records your screen and your voice as you demonstrate what your project does and how it works. After you record your video, there is a "share" link in ScreenPal that lets you upload the video to YouTube and get a public link for it.  The main purpose of this video is to make grading these projects easier. When making your video:
    - Keep it short (ideally under 4 min)
@@ -65,23 +64,22 @@ Only one team member needs to turn in the following in the feedback box on the a
 
 **Rubric:**
 
-|                                                               Item                                                                | Points Possible |
-|:---------------------------------------------------------------------------------------------------------------------------------:|:---------------:|
-| Create a nice cover sheet tab with instructions on how to use your sheet, your group name, and names of the members in your group |        7        |
-|                                               Use relative and absolute references                                                |        5        |
-|                                                     Use named cell references                                                     |        5        |
-|                            Some cells should be automatically calculated using mathematical equations                             |        7        |
-|                               Use at least three built in functions such as min, max, vlookup, etc.                               |        7        |
-|                                                   Use at least one IF Statement                                                   |        7        |
-|                                   Use conditional formatting on at least one column or row data                                   |        6        |
-|                                                        Use data validation                                                        |        6        |
-|                                            Use at least one type of graph to view data                                            |        7        |
-|                                Add one new function to your Google sheet (making 4 function total)                                |        6        |
-|                         Create a sheet in your project that reports on how each group member contributed                          |        7        |
-|                                                         Prompt completed                                                          |       10        |
-|                                                          Video uploaded                                                           |       10        |
-|                                                       Participation points                                                        |       10        |
-|                                          <div style="text-align: right">**Total**</div>                                           |       100       |
+|                                      Item                                       | Points Possible |
+|:-------------------------------------------------------------------------------:|:---------------:|
+|     An introductory text block with all the relevant information asked for      |       10        |
+|                           Uses if-elif-else statement                           |        6        |
+|                        Uses file reading and or writing                         |        6        |
+|                                   Uses loops                                    |        5        |
+|                       Uses numeric and string  variables                        |        5        |
+|                           Uses a dictionary or a list                           |        5        |
+|                        Uses comment to explain the code                         |       10        |
+|                      Writes and defines 3 custom functions                      |       12        |
+|                      Uses colab forms or input statements                       |        5        |
+|                       Use markdown to organize your code                        |        6        |
+|                                Prompt completed                                 |       10        |
+|                                 Video uploaded                                  |       10        |
+|                              Participation points                               |       10        |
+|                 <div style="text-align: right">**Total**</div>                  |       100       |
 
 ---
 
