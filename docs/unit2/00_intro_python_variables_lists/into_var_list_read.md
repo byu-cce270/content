@@ -22,6 +22,8 @@ Here is a direct link to the reading:<br>
 
 Click [here](../../resources/textbooks/textbooks.md){:target="_blank"} for a refresher on how to access the O'Reilly's website. Once you have signed in, the links above will take you directly to the chapters.
 
+You will learn more if you follow along in a Colab notebook as you read the chapters. The exercises at the end of each chapter will be part of your pre-class quiz challenge. In the book, they have you write the code in the python consol or a text editor, but you will be using Colab. You can just create a cell in the Colab notebook and write your code there. Then run the cell to see the results, just like you would in the python console as described in the book.
+
 ### Things to Look Out For
 
 - In Python, square brackets **[]** indicate a list, and individual elements in the list are separated by commas. 
