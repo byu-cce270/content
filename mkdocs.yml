@@ -56,7 +56,8 @@ nav:
         - Reading: unit1/5_gantt_charts/gantt_read.md
         - In Class: unit1/5_gantt_charts/gantt_class.md
         - Homework: unit1/5_gantt_charts/gantt_hw.md
-    - Unit 1 Project Prompt: unit1/6_unit1_project/u1_pro_promt.md
+    - Unit 1 Project:
+        - Project Prompt: unit1/6_unit1_project/u1_pro_promt.md
     - Study Guide: unit1/study_guide.md
 
   - Unit 2 - Intro to Python:
@@ -85,8 +86,9 @@ nav:
         - In Class: unit2/05_advance_functions_files/advance_functions_files_class.md
         - Homework: unit2/05_advance_functions_files/advance_functions_files_hw.md
     - Unit 2 Project:
-        - Unit 2 Project Psuedo Code: unit2/06_unit2_project/u2_pro_psuedo_hw.md
-        - Unit 2 Project Prompt: unit2/06_unit2_project/u2_pro_promt.md
+        - Reading: unit2/06_unit2_project/u2_pro_read.md
+        - Proposal - Pseudo Code: unit2/06_unit2_project/u2_pro_psuedo_hw.md
+        - Project Prompt: unit2/06_unit2_project/u2_pro_promt.md
 
   - Unit 3 - Advanced Python:
     - Reading and Writing Files:
