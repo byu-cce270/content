@@ -83,10 +83,10 @@ Where:<br>
 
 4. Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel. Store the result in the variable A.
 
-5. Write an equation to calculate the wetted perimeter (P_w) based on the shape of the channel. Store the 
+5. Write an equation to calculate the wetted perimeter ($P_w$) based on the shape of the channel. Store the 
 result in the variable P.
 
-6. Write an equation to calculate the hydraulic radius (R_h), the flow rate (Q), and the flow velocity (V). 
+6. Write an equation to calculate the hydraulic radius ($R_h$), the flow rate (Q), and the flow velocity (V). 
 Use the equations as shown above. Note that V = Q/A. Store 
 the result in the 
 variables Rh, Q, and V.
