@@ -12,6 +12,8 @@ You will be doing all your coding assignments in Colab. https://colab.research.g
 
 There is a "Welcome to Colab" notebook that will give you a brief overview of how to use Colab. You can also find many tutorials on YouTube - however, we will be going over the basics in class.
 
+The text book either has you create a .py file or use the Python console to write and run your code. You will be using Colab instead. You can create a new cell in Colab and write your code there. Then run the cell to see the results, just like you would in the Python console as described in the book. You can ignore the parts of the book that talk about creating a .py file or using the Python console. If you have any questions about using Colab or how it is different from the book, please ask in class.
+
 ## Pre Class Reading Assignment
 
 On the O'Reilly's website read Chapter 2 in _Python Crash Course, 3rd Edition_  and Chapter 3.
