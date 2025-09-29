@@ -87,8 +87,8 @@ nav:
         - Homework: unit2/05_advance_functions_files/advance_functions_files_hw.md
     - Unit 2 Project:
         - Reading: unit2/06_unit2_project/u2_pro_read.md
-        - Proposal - Pseudo Code: unit2/06_unit2_project/u2_pro_psuedo_hw.md
-        - Project Prompt: unit2/06_unit2_project/u2_pro_promt.md
+        - Proposal - Pseudocode: unit2/06_unit2_project/u2_pro_pseudo_hw.md
+        - Project Prompt: unit2/06_unit2_project/u2_pro_prompt.md
 
   - Unit 3 - Advanced Python:
     - Reading and Writing Files:

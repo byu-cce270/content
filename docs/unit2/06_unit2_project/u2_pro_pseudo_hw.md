@@ -1,31 +1,31 @@
-# Homework: Unit 2 Project Proposal - Pseudo Code
+# Homework: Unit 2 Project Proposal - Pseudocode
 
-**Objective:** Practice planning a project using pseudo code.
+**Objective:** Practice planning a project using pseudocode.
 
-In this homework assignment, you will practice writting pseudo code to plan out a project before you start coding. This will help you organize your thoughts and make the coding process easier. You will get back togeher with your group to plan and write out the pseudo code for your project. You can find the prompts and requirements here: [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_promt/){:target="_blank"}. You can also double check who is in your group on that page. 
+In this homework assignment, you will practice writing pseudocode to plan out a project before you start coding. This will help you organize your thoughts and make the coding process easier. You will get back together with your group to plan and write out the pseudocode for your project. You can find the prompts and requirements here: [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_prompt/){:target="_blank"}. You can also double-check who is in your group on that page. 
 
 ---
 
 ## Instructions
 
-1. Have one member of your group make a copy of this starter document: [(Starter-Doc)-HW-Project-2-Psuedo-Code.docx](%28Starter-Doc%29-HW-Project-2-Psuedo-Code.docx)
-2. Rename it something like “(Your-Team-Name)-HW-Project-2-Psuedo-Code.docx”
+1. Have one member of your group make a copy of this starter document: [(Starter-Doc)-HW-Project-2-Pseudocode.docx](%28Starter-Doc%29-HW-Project-2-Pseudocode.docx)
+2. Rename it something like “(Your-Team-Name)-HW-Project-2-Pseudocode.docx”
 3. Remember to have the team member who created the document, save it to their OneDrive folder that they created for Unit 1 and share it with the other team members.
 
 ---
 
 ## Part 1 - Choose a Prompt
 
-1. Read through the three prompts listed on the [Unit 2 Project Prompt](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_promt/#the-prompts){:target="_blank"} page.
+1. Read through the three prompts listed on the [Unit 2 Project Prompt](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_prompt/#the-prompts){:target="_blank"} page.
 2. Pick one of the three prompts that your group will complete for the Unit 2 Project. Under the "Project Prompt chosen" section of your document, write down which prompt you chose and explain it.
 
 ---
 
-## Part 2 - Psuedo Code
+## Part 2 - Pseudocode
 
-1. If you haven't already, read through the requirements listed on step 3 under the Instruction section for the [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_promt/#instructions){:target="_blank"} page.
-2. As your group discusses how you will go about the project and complete all the requirements. You don't need to worry about who will do what, you will figure that out later.  You may want to have someone take notes to help you write the pseudo code. 
-3. Under the "How is your team going about it" section of your document, write out the pseudo code for your project. You can use the following as a guide for writing pseudo code:
+1. If you haven't already, read through the requirements listed on step 3 under the Instruction section for the [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_prompt/#instructions){:target="_blank"} page.
+2. As your group discusses how you will go about the project and complete all the requirements. You don't need to worry about who will do what, you will figure that out later.  You may want to have someone take notes to help you write the pseudocode. 
+3. Under the "How is your team going about it" section of your document, write out the pseudocode for your project. You can use the following as a guide for writing pseudocode:
      - Use plain English to describe what each part of your code will do.
      - Break down the project into smaller, manageable tasks or functions.
      - Use indentation to show the structure and hierarchy of your code.
@@ -33,7 +33,7 @@ In this homework assignment, you will practice writting pseudo code to plan out 
      - Think about the flow of your program and how different parts will interact with each other.
 4. 
 
-You can also refer to the Pre Class Reading about pseudo code. [Pre Class Reading: Project 2 Psuedo Code](){:target="_blank"}
+You can also refer to the Pre Class Reading about pseudocode. [Pre Class Reading: Project 2 Psuedo Code](){:target="_blank"}
 
 ---
 
@@ -48,7 +48,7 @@ You can also refer to the Pre Class Reading about pseudo code. [Pre Class Readin
 |                  |                  |
 |                  |                  |
 
-2. Fill in the names of each team member and what they will be responsible for doing to complete the project. You can just put down each person's name once and then list all the things they will be responsible for in the "Responsibilities" column or you can put their name down multiple times and list one responsibility for each row.
+2. Fill in the names of each team member and what they will be responsible for doing to complete the project. You can just put down each person's name once and then list all the things they will be responsible for in the "Responsibilities" column, or you can put their name down multiple times and list one responsibility for each row.
 
 ---
 
