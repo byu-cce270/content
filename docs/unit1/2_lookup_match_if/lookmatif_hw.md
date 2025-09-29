@@ -7,7 +7,7 @@
 ## Getting Started
 1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-HW-Lookups-Match-IF.xlsx)
 
-2. Rename it something like "(Your-Name-HW-Lookups-Match-IF"
+2. Rename it something like "(Your-Name)-HW-Lookups-Match-IF"
 
 3. Remember to save it in your OneDrive folder that you created in the first assignment
 
