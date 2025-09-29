@@ -16,9 +16,15 @@ The following is an example of pseudocode for a project that is done in CE 321. 
 ```plaintext
 Pseudocode for the Method of Joints function:
 
-A line beginning with a number in parentheses indicates that this is a function. The number label is unique. The information in brackets after the function indicates input for the function. On the line immediately following the function is the name of the function in our Python code, indicated using an asterisk. Processes performed in a function are indicated by indenting them under the function. Subprocesses (e.g. things to be done in a for loop or if statement) are indicated with additional indenting. Output for a function is listed at the end of the function. 
+A line beginning with a number in parentheses indicates that this is a function. The number label is unique. 
+The information in brackets after the function indicates input for the function. 
+On the line immediately following the function is the name of the function in our Python code, indicated using an asterisk. 
+Processes performed in a function are indicated by indenting them under the function. 
+Subprocesses (e.g. things to be done in a for loop or if statement) are indicated with additional indenting. 
+Output for a function is listed at the end of the function. 
 
-If a process in a function is another function, it will be indicated using a number with parentheses. Pseudocode for these functions are described later in this document in the same manner as above.  
+If a process in a function is another function, it will be indicated using a number with parentheses. 
+Pseudocode for these functions are described later in this document in the same manner as above.  
 
 (1) Method of Joints[input CSV file]:
       *MethodOfJoints
