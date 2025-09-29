@@ -78,7 +78,7 @@ nav:
         - In Class: unit2/03_dictionaries_while_loops/dict_while_class.md
         - Homework: unit2/03_dictionaries_while_loops/dict_while_hw.md
     - Intro to Functions:
-          - Reading: unit2/05_advance_functions_files/advance_functions_files_read.md
+          - Reading: unit2/04_intro_functions/functions1_read.md #unit2/05_advance_functions_files/advance_functions_files_read.md
           - In Class: unit2/05_advance_functions_files/advance_functions_files_class.md
           - Homework: unit2/05_advance_functions_files/advance_functions_files_hw.md
     - Advance Functions and Files:
