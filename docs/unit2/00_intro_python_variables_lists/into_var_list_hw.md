@@ -77,7 +77,7 @@ Where:<br>
 |      So       |                            slope                            |     float     |     0.002      |
 |       y       |                         water depth                         |     float     |       6        |
 
-2. Run the cell to store the variables in the notebook. You do not need to write any code for this step.
+2. Run the cell created in Step 1 to store the variables in the notebook. You do not need to write any new code for this step, just run the cell.
 
 3. Run the code block call "Variable Processing" to set the values of the variables based on the inputs you provided. This code block will set the values of the variables `u` and `n` based on the `units` and `material` variables. There are two options to use. You can use either "Option Block 1" or "Option Block 2". Look at the code and try to understand what it is doing. We will go over this later in this unit.
 
