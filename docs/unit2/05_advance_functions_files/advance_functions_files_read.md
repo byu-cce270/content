@@ -83,13 +83,6 @@ In this example, the file `output.txt` is opened in append mode. If the file doe
 
 ---
 
-
-
-
-
-
-
-
 # Pre-Class Quiz Challenge
 In a Colab notebook, complete Problem 8-7 found in chapter 8 of the textbook. Submit a link to the completed problem in your Pre-Class Quiz. 
 
