@@ -7,3 +7,6 @@ In this homework assignment, you will practice writting pseudo code to plan out 
 ---
 
 ## Instructions
+
+1. Have one member of your group make a copy of this starter document: [(Starter-Doc)-HW-Project-2-Psuedo-Code.docx](%28Starter-Doc%29-HW-Project-2-Psuedo-Code.docx)
+2. Rename it something like “(Your-Team-Name)-HW-Project-2-Psuedo-Code.docx”
