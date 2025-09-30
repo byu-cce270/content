@@ -4,7 +4,7 @@ To access the textbooks we will be using for the Python section of this course, 
 
 [Python Crash Course, 3rd Edition - O'Reilly](https://lib.byu.edu/remoteauth/?url=https://www.lib.byu.edu/cgi-bin/remoteauth.pl?url=https://learning.oreilly.com/library/view/~/9781098156664/?ar&orpq&email=^u){target="_blank"}
 
-[Python Data Science Handbook, 2nd Edition - O'Reilly](https://www.oreilly.com/library-access/?next=%2Flibrary%2Fview%2Fpython-data-science%2F9781098121211%2F){:target="_blank"}
+[Python Data Science Handbook, 2nd Edition - O'Reilly](https://learning.oreilly.com/library/view/python-data-science/9781098121211/){:target="_blank"}
 
 You will be redirected to a page that looks something like this:
 

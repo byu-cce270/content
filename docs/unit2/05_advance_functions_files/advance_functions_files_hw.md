@@ -3,9 +3,9 @@
 **Purpose:** Learn how to use functions to create more simplified blocks of code
 
 ##  Instructions
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/05_advance_functions_files/functions2_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/05_advance_functions_files/(Starter_Workbook)_HW_Adv_Function_File.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-2. Rename it something like "[Your Name]Functions_(Part 2)_homework"
+2. Rename it something like "(Your_Name)_HW_Adv_Function_File".
 
 In this assignment, you will be creating code that will allow a user to find the maximum deflection and maximum bending stress on a beam given these six scenarios:
 
