@@ -77,7 +77,7 @@ In the same Colab notebook, complete Exercises 3-4, 3-5, and 3-6 found in chapte
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        5        |
+| <div style="text-align: right">**Total**</div> |        3        |
 
 ---
 

@@ -278,7 +278,7 @@ Look below for a solution to see if you did it correctly and for some hints. (Cl
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        5        |
+| <div style="text-align: right">**Total**</div> |        3        |
 
 ---
 
