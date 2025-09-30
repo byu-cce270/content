@@ -8,7 +8,7 @@ Google Colab is a cloud-based coding network that allows us to code using Python
 
 We use Colab because it is free, easy to use, and you can access your notebooks from any computer with internet access. It also means that you don't have to worry about installing Python or any libraries on your computer and keeping them up to date.  Later in the course, we will provide instructions on how to install Python and Jupyter Notebooks on your own computer if you want to have that capability. All of the class assigments can be done in Colab.
 
-You will be doing all your coding assignments in Colab. https://colab.research.google.com/. You will need a Google account to use Colab. If you do not have one, you can create one for free. 
+You will be doing all your coding assignments in Colab. [https://colab.research.google.com/](https://colab.research.google.com/). You will need a Google account to use Colab. If you do not have one, you can create one for free. In most cases, we will give you a link to a Colab notebook that we have created for the assignment. You can then make a copy of the notebook and do your work in your copy.
 
 There is a "Welcome to Colab" notebook that will give you a brief overview of how to use Colab. You can also find many tutorials on YouTube - however, we will be going over the basics in class.
 
