@@ -172,7 +172,7 @@ Friendly reminder that if you can’t figure any of these steps that’s okay! T
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        5        |
+| <div style="text-align: right">**Total**</div> |        3        |
 
 ---
 

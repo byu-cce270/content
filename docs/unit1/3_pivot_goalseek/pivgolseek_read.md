@@ -239,8 +239,8 @@ You want to figure out how **far** it jumped.
 **Rubric:**
 
 |                              Item                              | Points Possible |
-|:--------------------------------------------------------------:|:--------------:|
-|         <div style="text-align: right">**Total**</div>         |        5       |
+|:--------------------------------------------------------------:|:---------------:|
+|         <div style="text-align: right">**Total**</div>         |        3        |
 
 ---
 

@@ -77,16 +77,16 @@ Where:<br>
 |      So       |                            slope                            |     float     |     0.002      |
 |       y       |                         water depth                         |     float     |       6        |
 
-2. Run the cell to store the variables in the notebook. You do not need to write any code for this step.
+2. Run the cell created in Step 1 to store the variables in the notebook. You do not need to write any new code for this step, just run the cell.
 
 3. Run the code block call "Variable Processing" to set the values of the variables based on the inputs you provided. This code block will set the values of the variables `u` and `n` based on the `units` and `material` variables. There are two options to use. You can use either "Option Block 1" or "Option Block 2". Look at the code and try to understand what it is doing. We will go over this later in this unit.
 
 4. Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel. Store the result in the variable A.
 
-5. Write an equation to calculate the wetted perimeter (P_w) based on the shape of the channel. Store the 
+5. Write an equation to calculate the wetted perimeter ($P_w$) based on the shape of the channel. Store the 
 result in the variable P.
 
-6. Write an equation to calculate the hydraulic radius (R_h), the flow rate (Q), and the flow velocity (V). 
+6. Write an equation to calculate the hydraulic radius ($R_h$), the flow rate (Q), and the flow velocity (V). 
 Use the equations as shown above. Note that V = Q/A. Store 
 the result in the 
 variables Rh, Q, and V.

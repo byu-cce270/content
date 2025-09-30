@@ -34,7 +34,7 @@ In a Colab notebook, complete Problem 4-1 found in chapter 4 of the textbook. Su
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        5        |
+| <div style="text-align: right">**Total**</div> |        3        |
 
 ---
 

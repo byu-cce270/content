@@ -285,7 +285,7 @@ shown at the flag (you could also just type the value into the x input directly 
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        5        |
+| <div style="text-align: right">**Total**</div> |        3        |
 
 ---
 

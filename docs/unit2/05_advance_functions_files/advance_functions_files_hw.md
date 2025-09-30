@@ -1,4 +1,4 @@
-#  HW: Functions (Part 2)
+#  HW: Functions and Files
 
 **Purpose:** Learn how to use functions to create more simplified blocks of code
 
@@ -102,9 +102,15 @@ $I$ = the moment of inertia (in inches^4)
    stress function you created earlier, with the variables **max_moment**, **y**, and **I** as its arguments. These 
    variables were defined earlier.
 
-9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches) as well as the maximum bending stress (in psi)
+9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches)
+   as well as the maximum bending stress (in psi).
+10. On a new line, create a text file called **"beam_results.txt"** and open the file using a context manager. Open your 
+    created file in "append" mode, and write the maximum 
+    deflection and maximum bending stress to the file. Each solution should be appended on a new line. Make sure that 
+    the file is 
+    appending each result, not writing over them. If you can't remember how to do this, refer back to the preclass reading.
 
-10. Check if your functions work by using the following inputs:
+11. Check if your functions work by using the following inputs:
 
    | Variable Name |                            Input                            |
    |:-------------:|:-----------------------------------------------------------:|
@@ -114,7 +120,8 @@ $I$ = the moment of inertia (in inches^4)
    |       b       |                              8                              |
    |       h       |                              12                             |
 
-11. If you did everything correct, you should get the following values for each scenario (the deflection values are rounded to the thousandths place):
+12. If you did everything correct, you should get the following values for each scenario (the deflection values are 
+rounded to the thousandths place):
 
    |                     Scenario                         | Maximum Deflection | Maximum Bending Stress |
    |:----------------------------------------------------:|:------------------:|:----------------------:|
@@ -125,29 +132,36 @@ $I$ = the moment of inertia (in inches^4)
    |       Simply supported beam with a point load        |     0.003 inches   |       281.25 psi       |
    |       Simply supported beam with a distributed load  |     0.285 inches   |        22950 psi       |
    
+13. If your txt file was created correctly, you should end up with a file that has the answers to the trial runs, 
+    each on a new line. Try opening the file to check if it has the correct formatting and values. **Note: The txt file 
+    does 
+    not have to have all the trial problems, it just has to have a few of them so we can see if it 
+    is working correctly and has the right formatting.**
+
 ---
 
 # Turning In/Rubric
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                            **Item**                             | **Amount** |
-|:---------------------------------------------------------------:|:----------:|
-|            1st scenario function is defined correctly           |     2      |
-|            2nd scenario function is defined correctly           |     2      |
-|            3rd scenario function is defined correctly           |     2      |
-|            4th scenario function is defined correctly           |     2      |
-|            5th scenario function is defined correctly           |     2      |
-|            6th scenario function is defined correctly           |     2      |
-|         Moment of inertia function is defined correctly         |     2      |
-|         Max bending stress function is defined correctly        |     2      |
-|   IF and input statements are defined correctly for load_type   |     2      |
-|    Input statements for L, E, b, and h are defined correctly    |     2      |
-|               Variables y and I are defined correctly           |     2      |
-| Functions and related IF statements are called/defined correctly|     4      |
-|                Variable max_stress defined correctly            |     2      |
-| Second code block prints maximum deflection and bending stress  |     2      |
-|         <div style="text-align: right">**Total**</div>          |   **30**   |
+|                             **Item**                             | **Amount** |
+|:----------------------------------------------------------------:|:----------:|
+|            1st scenario function is defined correctly            |     2      |
+|            2nd scenario function is defined correctly            |     2      |
+|            3rd scenario function is defined correctly            |     2      |
+|            4th scenario function is defined correctly            |     2      |
+|            5th scenario function is defined correctly            |     2      |
+|            6th scenario function is defined correctly            |     2      |
+|         Moment of inertia function is defined correctly          |     2      |
+|         Max bending stress function is defined correctly         |     2      |
+|   IF and input statements are defined correctly for load_type    |     2      |
+|    Input statements for L, E, b, and h are defined correctly     |     2      |
+|             Variables y and I are defined correctly              |     2      |
+| Functions and related IF statements are called/defined correctly |     4      |
+|              Variable max_stress defined correctly               |     2      |
+|  Second code block prints maximum deflection and bending stress  |     2      |
+|       Files is created correctly and appends new solutions       |     2      |
+|          <div style="text-align: right">**Total**</div>          |   **32**   |
 
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain 
 your code when using AI to help you create it or fail to share your link correctly.
