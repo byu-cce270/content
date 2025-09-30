@@ -4,7 +4,7 @@
 
 ## Instructions
 
-First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_dictionaries_while_loops/(Starter_Workbook)_HW_dict_while.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/03_dictionaries_while_loops/(Starter_Workbook)_HW_Dict_While.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Rename it something like "[Your Name]dictionaries_while_loops_input.ipynb"
 
