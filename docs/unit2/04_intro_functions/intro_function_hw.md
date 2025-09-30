@@ -1,4 +1,4 @@
-#  HW: Functions (Part 1)
+#  HW: Introduction to Functions
 
 **Purpose:** Learn how to create and use functions.
 

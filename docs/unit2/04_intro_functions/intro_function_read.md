@@ -1,4 +1,4 @@
-#  Reading: Functions (Part 1)
+#  Reading: Introduction to Functions
 
 ---
 
