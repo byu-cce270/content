@@ -21,7 +21,7 @@ $l$ = the length of the beam [$length$]<br>
 $E$ = the modulus of elasticity  [$force/length^2$]<br>
 $I$ = the moment of inertia [$length^4$]
 
-The modulus of elasticity is a measure of the stiffness of the beam. The moment of inertia of a beam depends on its dimensions and cross-sectional properties. Here are some approximate moments of inertia for common beam I-beams:
+The modulus of elasticity is a measure of the stiffness of the beam. The moment of inertia of a beam depends on its dimensions and cross-sectional properties. Here are some approximate moments of inertia for common beam, I-beams:
 
 | Beam Type | Moment of Inertia ($I$) |
 |:---------:|:-----------------------:|
@@ -51,9 +51,9 @@ Rename the notebook something like "(Your_Name)_HW_For_Loops.ipynb".
 
 ## Part 1 - Looping over beam lengths
 
-1. Run Code Block 1 to create a list of beam lengths in meters.
+1. Run Code Block 1 to create a list of beam lengths in centimeters.
 
-2. In Code Block 2, append a value of 5.7 to the beam_lengths list.
+2. In Code Block 2, append a value of 570 to the beam_lengths list.
 
 3. Create a variable to store the value of the total length of all beams. Also create a for loop to calculate the total length of all the beams using the variable. After the loop finished, print the total length you find. This should be done in Code Block 3.
 
