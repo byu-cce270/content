@@ -21,7 +21,7 @@ $l$ = the length of the beam [$length$]<br>
 $E$ = the modulus of elasticity  [$force/length^2$]<br>
 $I$ = the moment of inertia [$length^4$]
 
-The modulus of elasticity is a measure of the stiffness of the beam. The moment of inertia of a beam depends on its dimensions and cross-sectional properties. Here are some approximate moments of inertia for common beam I-beams:
+The modulus of elasticity is a measure of the stiffness of the beam. The moment of inertia of a beam depends on its dimensions and cross-sectional properties. Here are some approximate moments of inertia for common beam, I-beams:
 
 | Beam Type | Moment of Inertia ($I$) |
 |:---------:|:-----------------------:|
@@ -51,27 +51,28 @@ Rename the notebook something like "(Your_Name)_HW_For_Loops.ipynb".
 
 ## Part 1 - Looping over beam lengths
 
-1. Run Code Block 1 to create a list of beam lengths in meters.
+1. Run Code Block 1 to create a list of beam lengths in centimeters.
 
-2. In Code Block 2, append a value of 5.7 to the beam_lengths list.
+2. In Code Block 2, append a value of 570 to the beam_lengths list.
 
 3. Create a variable to store the value of the total length of all beams. Also create a for loop to calculate the total length of all the beams using the variable. After the loop finished, print the total length you find. This should be done in Code Block 3.
 
 4. Calculate the average length of the beams and print the result. This should be done in Code Block 4.
 
-5. Create a for loop to count the number of beams longer than 5 meters. Print the result. This should be done in Code Block 5.
-
 ---
 
 ## Part 2 - Calculating beam deflections
 
-1. Run Code Block 6 to create the 'beam_lengths' list.
+1. Run Code Block 5 to create the 'beam_lengths' list.
 
-2. In Code Block 7, delete the last length from the list and then display the contents of the list.
+!!! Note:
+    If you created your copy of the starter sheet before 2:30pm on 10/1/2025, code block 5 in step 1 or part 2 refers to code block 6. If you created your copy of the starter sheet after 2:30pm on 10/1/2025, code block 5 in step 1 or part 2 refers to code block 5. Follow the same logic for code blocks 6, 7, and 8 in the steps below.
 
-3. You will find in Code Block 8, are the given values for E, I, and the loads given that it's a steel beam. Run this cell to initialize the variables and the list
+2. In Code Block 6, delete the last length from the list and then display the contents of the list.
 
-4. Finally, in Code Block 9, calculate the total deflection of the beam using the set of loads in the loads list for each beam length. To do this, you will need to loop over the beam lengths and then loop over the loads in a nested loop. Create a variable for the total deflection and set it to zero at the beginning of the outer loop, then add to this variable in the inner loop to add up the total deflection for that beam length. As you complete the outer loop for each beam length, print the beam length and the total deflection.
+3. You will find in Code Block 7, are the given values for E, I, and the loads given that it's a steel beam. Run this cell to initialize the variables and the list
+
+4. Finally, in Code Block 8, calculate the total deflection of the beam using the set of loads in the loads list for each beam length. To do this, you will need to loop over the beam lengths and then loop over the loads in a nested loop. Create a variable for the total deflection and set it to zero at the beginning of the outer loop, then add to this variable in the inner loop to add up the total deflection for that beam length. As you complete the outer loop for each beam length, print the beam length and the total deflection.
 
 ---
 

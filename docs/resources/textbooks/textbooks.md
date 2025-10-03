@@ -18,6 +18,15 @@ Contents on the right side to jump directly to a given chapter. You will need
 to do this each time you access 
 the 
 book. Once you are logged in, the 
-links to the book will immediately load. After a period of time, you will be logged out and need to repeat the process.
+links to the book will immediately load. After a period of time, you may be logged out and need to repeat the process.
 
 ![pcc_oreilly_toc.png](images/pcc_oreilly_toc.png)
+
+## Off-Campus Access
+
+If you need to access the textbooks from off-campus, you can use a VPN (Virtual Private Network) to connect to the BYU network. Our college IT department (CAEDM) has a VPN you can use. Once connected to the VPN, your computer behaves as if you are on campus. Instructions for setting up and using the CAEDM VPN can be found here:
+
+[https://caedm.et.byu.edu/wiki/index.php/VPN](https://caedm.et.byu.edu/wiki/index.php/VPN)
+
+Note the instructions down the page for both Windows and MacOS. You only need to set up the VPN client once and then just connect and disconnect as needed. If you have any issues, please contact the CAEDM IT department for assistance.
+
