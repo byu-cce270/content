@@ -43,7 +43,7 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |             All print statements created correctly              |     5      |
 |         <div style="text-align: right">**Total**</div>          |   **30**   |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
 |                      **Reasons for Points Lost**                         | **Amount** |  
 |:------------------------------------------------------------------------:|:----------:|
