@@ -65,16 +65,19 @@ Efficiency: 80.0%
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                            **Item**                             | **Amount** |  
-|:---------------------------------------------------------------:|:----------:|
-|               getCuFt function is defined correctly             |     4      |
-|             cuftToCuyd function is defined correctly            |     4      |
-|              volToTon function is defined correctly             |     4      |
-|          getCostofGravel function is defined correctly          |     4      |
-|      The forms and related variables are properly created       |     2      |
-|               All functions are called correctly and used markdown               |     7      |
-|             All print statements created correctly              |     5      |
-|         <div style="text-align: right">**Total**</div>          |   **30**   |
+|                    **Item**                    | **Amount** |  
+|:----------------------------------------------:|:----------:|
+|  optimize_rebar function is defined correctly  |     4      |
+|     The function includes 2 if statements      |     4      |
+|         waste is calculated correctly          |     3      |
+|       efficiency is calculated correctly       |     3      |
+|       print_results is defined correctly       |     4      |
+|  print_results calls function optimize_rebar   |     4      |
+|        Prints the correct rebar lengths        |     2      |
+|         Prints the total stock lengths         |     2      |
+|        Prints the total wasted material        |     2      |
+|     Prints the total efficiency in percent     |     2      |
+| <div style="text-align: right">**Total**</div> |   **30**   |
 
 The following is not part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
