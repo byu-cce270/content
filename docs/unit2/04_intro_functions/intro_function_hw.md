@@ -8,42 +8,54 @@
 
 2. Rename it something like "(Your_Name)_HW_Intro_Functions".
 
-In this assignment, you will be calculating the efficiency of cutting rebar from stock lengths and the wasted material. 
-You will 
-create functions to perform the calculations and print the results.
+Rebar is often delivered in standard lengths, such as 20 ft or 60 ft. When a contractor needs to cut rebar to 
+specific lengths for a project, they want to minimize waste and maximize efficiency. Being able to model and 
+optimize this process can lead to significant cost savings, more sustainable construction practices, and improve 
+construction efficiency. In this assignment, you will create a function that calculates the waste and efficiency of 
+cutting rebar from standard lengths.
+
+
 
 ---
 
 #### Code Block 1
 
-1. In the first code block, define a function called optimize_rebar that takes two parameters, the length of the cut "cut_lengths" and the length of the stock, "stock_length".
-2. We are going to create a new variable called total cut that will be the sum of all the cut lengths.
-3. In this problem we are going to be pulling knowledge from our previous if statement lessons. Your function is going 
-   to have two if statements. The first if statement is going to check to see if the stock length is greater than or 
-   equal to the sum of the 
-   cut lengths. 
-4. If the stock length is greater than or equal to the sum of the cut lengths, then we can create a new variable 
-   called wasted_length that is the difference between the stock length and the sum of the cut lengths.
-5. If the stock length is less than the sum of the cut lengths, then we cannot cut all the lengths from the stock. 
-   In this case, we will set wasted_length to be equal to 0.
-4. The second if statement will check to see if the stock length is greater than 0.
-5. If the stock length is greater than 0, then we can create a new variable called efficiency that is the ratio of 
-   the sum of the cut lengths to the stock length (sum(cut_lengths) / stock_length).
-6. If the stock length is less than or equal to 0, then we cannot calculate efficiency. In this case, we will set 
+1. In the first code block, define a function called "optimize_rebar" that takes two parameters, the length of the 
+   cut, "cut_length" and the length of the stock, "stock_length".
+2. We need to know the total amount that is required, so we are going to create a new variable called 
+   "total_cut" that 
+   will be the sum of all the 
+   cut lengths.
+3. Your function is going 
+   to have two if statements. The first if statement is going to check to see if the stock length is greater than 
+   the total cut length.
+4. If the stock length is greater than the sum of the cut lengths, then we can create a new variable that is the 
+   difference between the stock length and the total cut. This variable will be the amount of wasted material.
+5. If the stock length is less than the total cut, then we cannot cut all the lengths from the stock. In this case, 
+   the wasted material will be 0.
+6. The second if statement will check to see if the stock length is greater than 0. 
+7. If the stock length is greater than 0, then we can create a new variable called efficiency that is the ratio of 
+   the total cut to the stock length.
+8. If the stock length is less than or equal to 0, then we cannot calculate efficiency. In this case, we will set 
    efficiency to be equal to 0.
-7. Finally, return the waste and efficiency from the function.
+9. Finally, return the variables waste and efficiency from the function.
 
 ## Code Block 2 - Defining Functions
-1. Define a function called print_results that takes two parameters: cut_lengths and stock_length.
-2. Take waste and efficiency and set them equal to the return values from optimize_rebar(cut_lengths, stock_length).
-3. make a print function that prints the Rebar Cut Lengths, the Total Stock Length, the Wasted Length, and the 
-   Efficiency as a percentage (efficiency * 100).
+In this code block you will create a function that prints the results of the optimization. It will call the function 
+and set the waste and efficiency variables equal to the return values from the optimize_rebar function. It will also 
+print the results in a readable format.
+
+1. Define a function called print_results that takes two parameters: cut_length and stock_length.
+2. Take waste and efficiency and set them equal to the return values from optimize_rebar(cut_length, stock_length). 
+   This will call the function you created in Code Block 1.
+3. Create a print function that prints the Rebar Cut Lengths, the Total Stock Length, the Wasted Length, and the 
+   Efficiency as a percentage.
 
 ## Code Block 3 - Calling Functions
 1. To test out your code try calling the print_results function with the following values:
-   - cut_lengths = [10, 15, 7, 8]
-   - stock_lengths = 50
-   - print_results(cut_lengths, stock_lengths)
+   - cut_length = [10, 15, 7, 8]
+   - stock_length = 50
+   - print_results(cut_length, stock_length)
 You should get the following output:
 ```
 Waste: 10 ft
