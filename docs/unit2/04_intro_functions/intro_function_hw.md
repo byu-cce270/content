@@ -18,7 +18,7 @@ cutting rebar from standard lengths.
 
 ---
 
-#### Code Block 1
+## Code Block 1 - Defining Functions
 
 1. In the first code block, define a function called "optimize_rebar" that takes two parameters, the length of the 
    cut, "cut_length" and the length of the stock, "stock_length".
@@ -40,7 +40,7 @@ cutting rebar from standard lengths.
    efficiency to be equal to 0.
 9. Finally, return the variables waste and efficiency from the function.
 
-## Code Block 2 - Defining Functions
+## Code Block 2 - Calling Functions
 In this code block you will create a function that prints the results of the optimization. It will call the function 
 and set the waste and efficiency variables equal to the return values from the optimize_rebar function. It will also 
 print the results in a readable format.
