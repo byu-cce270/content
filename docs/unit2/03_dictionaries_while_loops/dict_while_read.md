@@ -27,7 +27,10 @@ Remember that you will have to sign in to you free account that you created earl
 ---
 
 # Pre-Class Quiz Challenge
-In a Colab notebook, complete this practice sheet. Submit a link to the completed problem in your Pre-Class Quiz.
+In a Colab notebook, create and complete a practice sheet using the following instructions. Use our standard file naming convention 
+(Name)_Reading_Dict_While.ipynb
+
+Submit a link to the completed problem in your Pre-Class Quiz.
 
 **Rivers with user input and while loops:**
 Create a program that builds a dictionary of rivers and the countries they run through, using user input.
