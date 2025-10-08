@@ -22,7 +22,7 @@
         - a report on how each team member contributed (with rubric items that they did)
         - Links to any out of class resources you used **(Please don't forget this part. If there are no links you will lose points)**
       - At least 1 if-elif-else statement
-      - Use file reading and or writing
+      - Use file reading and or writing. Should be a file that your code creates or one that you upload to your colab session and use in your code or both.
       - At least 1 loop (for or while)
       - Use numberic and string variables 
       - At least 1 list or dictionary
@@ -59,8 +59,8 @@ Create a code that will allow a user to take a current to-do list and be able to
 
 Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:
    - A colab link with sharing turned on and editing on
-   - The link to watch the video
-   - A link to the file where you stored data
+   - The link to watch the video (not the video file)
+   - All files your code uses to run and/or generates (this will be a file you upload to Learning Suite)
 
 **Rubric:**
 
