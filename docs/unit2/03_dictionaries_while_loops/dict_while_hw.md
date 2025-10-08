@@ -53,9 +53,13 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
 ## Part 4 - While Loop
 
 6. In the function where it says "Write the while loop starting here," write a while loop that will iterate however 
-   many items the user ordered, asking 1) whate material, 2) how many tons they want,  and 3) how many miles it will be shipped. In the table below we provide some guidance for the input statements. You need to covert any numbers entered to numbers, as any input to an input statement is a string. 
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the **"amountmat"** variable in your while-loop 
-   statement to know how many items the user wants to order.</br>
+   many items the user ordered, asking 1) what material, 2) how many tons,  and 3) how many miles it will be shipped. In the table below we provide some guidance for the input statements. You need to covert any numbers entered to float varible type, as any input to an input statement assumes everything is a  string. 
+
+!!! hint
+    Use the **_amountmat_** variable in your while-loop statement to know how many items the user wants to order.
+
+
+
 7. Create an if statement that checks if the user has inputted a valid material. If the material is not in the 
    dictionary, print a message that says "Material not found. Please enter a valid material." and use the 
    continue statement to skip to the next iteration of the loop. Make sure the count does not increase if the 
@@ -69,13 +73,16 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
    |    distance   |      Asks how far the material will be shipped in miles     |     float     |
 
 !!!Hint
-      Use the ".capitalize()" function so that you don't have to worry about capitalization problems with your materials! </br>
+      Use the **_".capitalize()"_** function so that you don't have to worry about capitalization problems with your materials! </br>
 
 9. Still in the loop, add the cost of the material multiplied by its quantity to the cost of shipping the material 
    multiplied by its distance. Store this in a variable that represents the item cost.
 10. Add each item cost to the variable "total" that was already included in the function.
-   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the += operator when adding the costs to the total. </br>
-11. Make sure that the **amountmat** variable is decreased by 1 at the end of each iteration of the while loop so that the loop will 
+
+!!! hint 
+    Use the _**"+="**_ operator when adding the costs to the total. 
+
+11. Make sure that the **_amountmat_** variable is decreased by 1 at the end of each iteration of the while loop so that the loop will 
    eventually stop according to how many items the user wants to order.
 10. Run all the cells and then test the function using this table:
     
