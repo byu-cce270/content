@@ -31,7 +31,7 @@ corresponding values to populate the dictionary:
 
 2. In the second code block, you will write the code for a function called "invoice_calc" that will calculate the 
 total cost of a shipment of materials. 
-3. The function will take two parameters: a dictionary (titled MaterialsDictionary) and the number of materials that 
+3. The function will take two parameters: a dictionary (titled MaterialsDictionary that you made above) and the number of different materials that 
    the user has requested to buy (a variable titled **amountmat**). The function will return the total 
    cost of the shipment. The structure of the function is already set up for you.
 
@@ -53,7 +53,7 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
 ## Part 4 - While Loop
 
 6. In the function where it says "Write the while loop starting here," write a while loop that will iterate however 
-   many items the user ordered, asking how many tons they want and how many miles it will be shipped.
+   many items the user ordered, asking 1) whate material, 2) how many tons they want,  and 3) how many miles it will be shipped. In the table below we provide some guidance for the input statements. You need to covert any numbers entered to numbers, as any input to an input statement is a string. 
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hint**: Use the **"amountmat"** variable in your while-loop 
    statement to know how many items the user wants to order.</br>
 7. Create an if statement that checks if the user has inputted a valid material. If the material is not in the 
@@ -69,8 +69,7 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
    |    distance   |      Asks how far the material will be shipped in miles     |     float     |
 
 !!!Hint
-      Use the ".capitalize()" function so that you don't have to worry about capitalization problems with your 
-materials!
+      Use the ".capitalize()" function so that you don't have to worry about capitalization problems with your materials! </br>
 
 9. Still in the loop, add the cost of the material multiplied by its quantity to the cost of shipping the material 
    multiplied by its distance. Store this in a variable that represents the item cost.
