@@ -134,7 +134,7 @@ multiplied by -1
 
 ## Pre-Class Quiz Challenge
 
-Choose a previous homework assignment from this unit. In a Google or Microsoft Word document, write pseudocode for that homework assignment as if you were completing that assignment for the first time. Submit a link to the completed problem in your Pre-Class Quiz.
+Choose a previous homework assignment from this unit. In a Microsoft Word document, write pseudocode for that homework assignment as if you were completing that assignment for the first time. Submit a link to the completed problem in your Pre-Class Quiz.
 
 ---
 
