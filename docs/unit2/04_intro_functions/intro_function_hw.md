@@ -130,8 +130,7 @@ The "Cut Plan:" in the above printout is a list of lists. Each sublist represent
    lengths, print the stock length, waste, and efficiency for each stock length using f-strings to format the output. 
 
 !!! Hint
-    You will need to clearly tell the AI the details of both the problem and what you are trying to do -- optimize 
-the cuts to reduce the amount of waste. For example, you need to explain (or show the AI) how the cut list and the stock list are formatted, exactly what you want the function to return in both answer terms (a list of cuts for each stock piece, total waste, and efficiency) and in data types (a list of lists for the cut plan, a float for the waste, and a float for the efficiency). You also need to explain how you want the function to work. 
+    You will need to clearly tell the AI the details of both the problem and what you are trying to do -- optimize the cuts to reduce the amount of waste. For example, you need to explain (or show the AI) how the cut list and the stock list are formatted, exactly what you want the function to return in both answer terms (a list of cuts for each stock piece, total waste, and efficiency) and in data types (a list of lists for the cut plan, a float for the waste, and a float for the efficiency). You also need to explain how you want the function to work. 
 
 5. Write code to test your **optimize_rebar()** function. Use the cut_lengths list defined above and a minimum stock length of 16, 
    a maximum stock length of 30, and an increment of 2. Print the optimal stock length and the number of stock 
