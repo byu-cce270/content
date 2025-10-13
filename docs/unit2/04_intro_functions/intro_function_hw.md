@@ -171,7 +171,7 @@ printed by the optimize_cuts function. The second part of the output is printed 
 !!! hint "Using AI Tools"
     As you can see from the above, if you knew to use the "greedy" algorithm, you could code it yourself. We have discussed all the tools to do that. However, since this isn't an optimization class, we would not expect you to know that. The point of this exercise is to learn how to use AI tools to solve problems you don't know how to solve. You do need to be able to understand the code provided by the AI tool and explain what it does with comments in the code. If you don't understand how it works, you can still provide comments explaining what each line of the code does, even if you don't quite understand how it is solving the problem. 
 
-    We expect AI will give you the greed algorithm, but there a are other algorithms that could be used. The algorithm that the AI picks will be dependant on the "prompt" you give it. This just shows you can use AI and programing to solve problems, where you know what needs to be done, but not how to do it or code it up. 
+    We expect AI will give you the greed algorithm, but there are other algorithms that could be used. The algorithm that the AI picks will be dependant on the "prompt" you give it. This just shows you can use AI and programing to solve problems, where you know what needs to be done, but not how to do it or code it up. 
 
 
 # Turning In/Rubric
