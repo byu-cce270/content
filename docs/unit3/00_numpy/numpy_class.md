@@ -3,9 +3,7 @@
 The following exercises will have you create and manipulate arrays. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
 You can find the In Class Exercise here:
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_numpy
-/[your_name]_3_3_numpy_in_class.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.
-svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_numpy/(Starter_Workbook)_Class_Numpy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 1. Open the in-class workbook using the link above.
