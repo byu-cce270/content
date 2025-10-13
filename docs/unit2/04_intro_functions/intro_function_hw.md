@@ -180,15 +180,13 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 |                    **Item**                    | **Amount** |  
 |:----------------------------------------------:|:----------:|
-|  optimize_rebar function is defined correctly  |     4      |
-|     The function includes 2 if statements      |     4      |
-|         waste is calculated correctly          |     3      |
+|       text_to_morse() converts to upper        |     2      |
+|        text_to_morse() splits the words        |     2      |
+| text_to_morse() word is split into characters  |     2      |
+|   morse_to_text() error if not in dictionary   |     2      |
+|          code to test text_to_morse()          |     3      |
 |       efficiency is calculated correctly       |     3      |
-|       print_results is defined correctly       |     4      |
-|  print_results calls function optimize_rebar   |     4      |
 |        Prints the correct rebar lengths        |     2      |
-|         Prints the total stock lengths         |     2      |
-|        Prints the total wasted material        |     2      |
 |     Prints the total efficiency in percent     |     2      |
 | <div style="text-align: right">**Total**</div> |   **30**   |
 
