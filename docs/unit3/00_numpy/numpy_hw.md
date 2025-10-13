@@ -1,13 +1,10 @@
 # HW: Numpy
 
-!!! NOTE
-    This is the original version of the homework that was posted prior to the numpy lecture in class. However, on March 21 we discovered that two of the coefficients in the main force matrix had the wrong sign. If you have already completed this assignment, you do not need to redo it. If you have not yet started, please use the updated version of the homework ([LINK](numpy_hw2.md)).
-
 **Purpose:** Create and use numpy arrays to find the forces in a given truss. You will then use matplot to graph it.
 
 ### Instructions
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_numpy/hw_numpy.ipynb#scrollTo=OJvEUPyMJL4V" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_numpy/(Starter_Notebook)_HW_Numpy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 2. Rename it something like "[name] hw numpy"
 
@@ -39,7 +36,7 @@ We will use the Method of Joints to  derive the following equations:
 >>$\sum F_{A_x} = ABcos(θ_A) + AC+R_{A_x} = 0$<br>
 $\sum F_{A_y} = ABsin(θ_A) + R_{A_y} = 0$<br>
 $\sum F_{B_x} = -ABcos(θ_A) + BCcos(θ_C) = 0$<br>
-$\sum F_{B_y} = ABsin(θ_A) - BCcos(θ_C) = P$<br>
+$\sum F_{B_y} = -ABsin(θ_A) - BCcos(θ_C) = -P$<br>
 $\sum F_{C_x} = -BCcos(θ_C) - AC = 0$<br>
 $\sum F_{C_y} = BCsin(θ_C) + R_{C_y} = 0$
 
@@ -49,7 +46,7 @@ We will arrange the equations so we can create a matrix from the coefficients of
 \cos(\theta_A) & 0 & 1 & 1 & 0 & 0 \\ 
 \sin(\theta_A) & 0 & 0 & 0 & 1 & 0 \\ 
 -\cos(\theta_A) & \cos(\theta_C) & 0 & 0 & 0 & 0 \\ 
-\sin(\theta_A) & -\sin(\theta_C) & 0 & 0 & 0 & 0 \\ 
+-\sin(\theta_A) & -\sin(\theta_C) & 0 & 0 & 0 & 0 \\ 
 0 & -\cos(\theta_C) & -1 & 0 & 0 & 0 \\ 
 0 & \sin(\theta_C) & 0 & 0 & 0 & 1 
 \end{bmatrix}
@@ -65,7 +62,7 @@ R_{A_y}
 0 \\
 0 \\
 0 \\
-P \\
+-P \\
 0 \\
 0
 \end{bmatrix}$
@@ -194,9 +191,8 @@ Now that we have solved for the forces and the coordinates of each joint, we can
       - Length of AC: 10 ft
       - Expected output:
 
-![image](https://github.com/user-attachments/assets/39e54366-07d6-4d48-a41f-a35398034cc3)
+![numpyhw_solution1.png](images/numpyhw_solution1.png)
 
-    
    * Test 2:
       - Angle at joint A: 35 degrees
       - Angle at joint C: 55 degrees
@@ -204,7 +200,7 @@ Now that we have solved for the forces and the coordinates of each joint, we can
       - Length of AC: 25 ft
       - Expected output:
     
- ![image](https://github.com/user-attachments/assets/6fb25179-9485-4d67-a8cd-4f26aa297214)
+![numpyhw_solution2.png](images/numpyhw_solution2.png)
 
    * Test 3:
       - Angle at joint A: 30 degrees
@@ -213,8 +209,7 @@ Now that we have solved for the forces and the coordinates of each joint, we can
       - Length of AC: 15 ft
       - Expected output:
   
-![image](https://github.com/user-attachments/assets/15b6735f-488e-4537-8bcc-3790b4050d08)
-
+![numpyhw_solution3.png](images/numpyhw_solution3.png)
 
 ---
 

@@ -91,42 +91,33 @@ nav:
         - Project Prompt: unit2/06_unit2_project/u2_pro_prompt.md
 
   - Unit 3 - Advanced Python:
-    - Reading and Writing Files:
-        - Reading: unit3/00_files/file_read.md
-        - In Class: unit3/00_files/file_class.md
-        - Homework: unit3/00_files/file_hw.md
-    - Gspread and APIs:
-        - Reading: unit3/01_gspread/gspread_read.md
-        - In Class: unit3/01_gspread/gspread_class.md
-        - Homework: unit3/01_gspread/gspread_hw.md
-    - MatPlotLib:
-        - Reading: unit3/02_matplotlib/matplot_read.md
-        - In Class: unit3/02_matplotlib/matplot_class.md
-        - Homework: unit3/02_matplotlib/matplot_hw.md
     - Numpy:
-        - Reading: unit3/03_numpy/numpy_read.md
-        - In Class: unit3/03_numpy/numpy_class.md
-        - Homework (v1): unit3/03_numpy/numpy_hw.md
-        - Homework (v2): unit3/03_numpy/numpy_hw2.md
-    - Pandas (Part 1):
-        - Reading: unit3/04_pandas_part1/pandas1_read.md
-        - In Class: unit3/04_pandas_part1/pandas1_class.md
-        - Homework: unit3/04_pandas_part1/pandas1_hw.md
-    - Pandas (Part 2):
-        - Reading: unit3/05_pandas_part2/pandas2_read.md
-        - In Class: unit3/05_pandas_part2/pandas2_class.md
-        - Homework: unit3/05_pandas_part2/pandas2_hw.md
-#    - Python and Excel:
-#        - Reading: unit3/python_and_excel/excel_read.md
-#        - In Class: unit3/python_and_excel/excel_class.md
-#        - Homework: unit3/python_and_excel/excel_hw.md
+        - Reading: unit3/00_numpy/numpy_read.md
+        - In Class: unit3/00_numpy/numpy_class.md
+        - Homework : unit3/00_numpy/numpy_hw.md
+    - MatPlotLib:
+        - Reading: unit3/01_matplotlib/matplot_read.md
+        - In Class: unit3/01_matplotlib/matplot_class.md
+        - Homework: unit3/01_matplotlib/matplot_hw.md
+    - Intro to Pandas):
+        - Reading: unit3/02_intro_to_pandas/pandas1_read.md
+        - In Class: unit3/02_intro_to_pandas/pandas1_class.md
+        - Homework: unit3/02_intro_to_pandas/pandas1_hw.md
+    - Continuing with Pandas:
+        - Reading: unit3/04_continuing_pandas/pandas2_read.md
+        - In Class: unit3/04_continuing_pandas/pandas2_class.md
+        - Homework: unit3/04_continuing_pandas/pandas2_hw.md
+    - Python and Excel (xlsxwriter):
+        - Reading: unit3/04_python_and_excel/excel_read.md
+        - In Class: unit3/04_python_and_excel/excel_class.md
+        - Homework: unit3/04_python_and_excel/excel_hw.md
     - ipywidgets:
-        - Reading: unit3/06_ipywidgets/ipy_read.md
-        - In Class: unit3/06_ipywidgets/ipy_class.md
-        - Homework: unit3/06_ipywidgets/ipy_hw.md
+        - Reading: unit3/05_ipywidgets/ipy_read.md
+        - In Class: unit3/05_ipywidgets/ipy_class.md
+        - Homework: unit3/05_ipywidgets/ipy_hw.md
     - Final Project:
-        - Project Proposal: unit3/07_final_project/final_pro_proposal.md
-        - Project Prompt: unit3/07_final_project/final_pro_prompt.md
+        - Project Proposal: unit3/06_final_project/final_pro_proposal.md
+        - Project Prompt: unit3/06_final_project/final_pro_prompt.md
   - Bonus Content:
     - Python and Excel: bonus/python_and_excel/excel_read.md
     - Using Python Locally: bonus/python_local/local_read.md
