@@ -90,10 +90,14 @@ maximizes efficiency for a given set of required lengths.
 !!! Approach
     What you are learning here is how to instruct the AI to write your code. You need to be able to describe what you want the code to do in specific simple steps and the order the steps should occur. You don't need to know how to do the steps, but you do need to know what steps are required to solve the problem. 
 
+
+
 2. There are two code blocks below that define a list of cut lengths and a list of stock lengths. Run these code blocks to define 
    the lists in your environment. One is for generating a random set of cut lengths and the other is a fixed set of 
    cut lengths. Both sets contain 100 cuts. You can use either set for testing your function, but the fixed cut 
    lengths will be used to test your function for grading as the random lengths will generate a new list everytime it is run. 
+
+
 3. Write code to test your sort_cuts() function. Pass one of the cut_lengthts lists and use a stock length of 20. Print the 
    waste and efficiency returned by the function using f-strings to format the output. Also print the total number 
    of rebar stock required which is the length of your cut_plan list. Then display 
@@ -121,6 +125,9 @@ The "Cut Plan:" in the above printout is a list of lists. Each sublist represent
    efficiency and corresponding cut_plan list. The 
    function should return the optimal  cut plan and corresponding stock length. As you loop through the stock 
    lengths, print the stock length, waste, and efficiency for each stock length using f-strings to format the output. 
+
+!!! Hint
+    You will need to clearly tell the AI the details of both the problem and what you are trying to do -- optimze the cuts to reduce the amount of waste. For example you need to explain (or show the AI) how the cut list and the stock list are formatted, exactly what you want the function to return in both answer terms (a list of cuts for each stock piece, total waste, and efficiency) and in data types (a list of lists for the cut plan, a float for the waste, and a float for the efficiency). You also need to explain how you want the function to work. 
 
 5. Write code to test your **optimize_rebar()** function. Use the cut_lengths list defined above and a minimum stock length of 16, 
    a maximum stock length of 30, and an increment of 2. Print the optimal stock length and the number of stock 
