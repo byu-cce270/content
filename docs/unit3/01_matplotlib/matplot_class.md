@@ -7,7 +7,7 @@ You can find the In Class Exercise here:
 
 ## Instructions
 1. Open the in-class workbook using the link above.
-2. Rename the notebook with your name.
+2. Rename it something like "(Your_Name)_Class_Matplotlib.ipynb"
 3. Follow the instructions in the notebook to complete the exercise.
 4. You will be using [this Google Sheet](https://docs.google.com/spreadsheets/d/1GQ9xHN8LEWTtEJlabwKIDUw0Lb8NJf_6mt92gQfPZdg/edit?usp=sharing){:target="_blank"} as your dataset when you reach the "Graphing from Google Sheets" portion of this assignment.
 

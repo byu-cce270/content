@@ -6,7 +6,7 @@
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_matplotlib/(Starter_Notebook)_HW_Matplotlib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-2. Rename it something like "[Your Name] HW 3.1 - Matplotlib"
+2. Rename it something like "(Your_Name)_HW_Matplotlib.ipynb"
 
 3. Open the Google Sheet used for this homework here:
 
