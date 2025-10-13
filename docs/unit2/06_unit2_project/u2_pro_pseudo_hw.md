@@ -31,9 +31,7 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
      - Use indentation to show the structure and hierarchy of your code.
      - Include comments to explain the purpose of each section or function.
      - Think about the flow of your program and how different parts will interact with each other.
-4. 
-
-You can also refer to the Pre Class Reading about pseudocode. [Pre Class Reading: Project 2 Psuedo Code](){:target="_blank"}
+4. You can also refer to the Pre Class Reading about pseudocode. [Pre Class Reading: Project 2 Psuedo Code](https://builtin.com/data-science/pseudocode){:target="_blank"}
 
 ---
 

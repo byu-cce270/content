@@ -134,4 +134,24 @@ multiplied by -1
 
 ## Pre-Class Quiz Challenge
 
-The Pre-Class Quiz Challenge will be found inside the Learning Suite quiz for this topic.
+Choose a previous homework assignment from this unit. In a Microsoft Word document, write pseudocode for that homework assignment as if you were completing that assignment for the first time. Submit a link to the completed problem in your Pre-Class Quiz.
+
+---
+
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your document**. You will get a 0 for this assignment if you turn in a file or a link that is not correct, wrong assignment, or does not give editor permission.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        3        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
