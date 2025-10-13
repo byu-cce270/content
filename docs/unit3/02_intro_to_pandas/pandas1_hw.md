@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_pandas_part1/starter_sheet_pandas_part_1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/02_intro_to_pandas/(Starter_Notebook)_HW_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "[Your Name] 3_4_Pandas-Part1_HW"
 3. In the code block titled "Import Required Packages" input the correct import statements. One import statement is already provided for you. You should also import:
     - matplotlib.pylot as plt
