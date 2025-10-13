@@ -94,8 +94,7 @@ nav:
     - Numpy:
         - Reading: unit3/00_numpy/numpy_read.md
         - In Class: unit3/00_numpy/numpy_class.md
-        - Homework (v1): unit3/00_numpy/numpy_hw.md
-        - Homework (v2): unit3/00_numpy/numpy_hw2.md
+        - Homework : unit3/00_numpy/numpy_hw.md
     - MatPlotLib:
         - Reading: unit3/01_matplotlib/matplot_read.md
         - In Class: unit3/01_matplotlib/matplot_class.md
