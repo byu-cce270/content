@@ -142,6 +142,6 @@ Here is a link to the Matplotlib website that lists all the functions you can us
 # Pre-Class Quiz Challenge
 Open the following notebook and complete the instructions in the comments:
 
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_numpy/(Starter_Workbook)_Pre_Numpy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_numpy/(Starter_Notebook)_Pre_Numpy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Save changes to your Google Drive and submit the link to the notebook in your Pre-Class Quiz.
