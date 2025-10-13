@@ -121,11 +121,12 @@ The "Cut Plan:" in the above printout is a list of lists. Each sublist represent
 
 4. Write a function called **optimize_rebar()** that takes four arguments as parameters: a list of cut lengths 
    (cut_lengths), a minimum stock length (min_stock), a maximum stock length (max_stock), and a stock length 
-   increment (increment). The function should loop through all stock lengths from min_stock to max_stock, incrementing by 
-   increment each time. For each stock length, the function should call the **sort_cuts()** function to get the cut plan, waste, and 
+   increment (increment). The function should loop through all stock lengths from min_stock to max_stock, 
+   incrementing by 1 each time. For each stock length, the function should call the **sort_cuts()** function to get 
+   the cut plan, waste, and 
    efficiency. The function should keep track of the stock length that produces the minimum waste and maximum 
    efficiency and corresponding cut_plan list. The 
-   function should return the optimal  cut plan and corresponding stock length. As you loop through the stock 
+   function should return the optimal cut plan and corresponding stock length. As you loop through the stock 
    lengths, print the stock length, waste, and efficiency for each stock length using f-strings to format the output. 
 
 !!! Hint
