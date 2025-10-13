@@ -39,8 +39,10 @@ that converts Morse code back to text.
 3. Write a function called **morse_to_text()** that takes a string in morse code and then translates it to normal text and 
    returns a string containing the translated result. Use the dictionary defined above in your code. If you 
    encounter a morse character not in the dictionary insert '\<ERROR\>' in the place of the character. You can use 
-   the **.split("   ")** method (**hint** there are three spaces between the quoats) of a string to split the 'words' (sequences of morse characters separated by three 
-   spaces) into an array. You can then split each word into morse characters using **.split(" ")** (**hint** there is one space between the quoats). Then you loop 
+   the **.split("   ")** method (**hint** there are three spaces between the quotes) of a string to split the 'words' 
+   (sequences of morse characters separated by three 
+   spaces) into an array. You can then split each word into morse characters using **.split(" ")** (**hint** there 
+   is one space between the quotes). Then you loop 
    through each morse character and look it up in the dictionary. As you convert each morse character to text, you 
    can build a new string that contains the text. Separate each word with a space.
 4. Write code to test your functions. First, enter a text string and call the **text_to_morse()** function to 
@@ -98,10 +100,10 @@ maximizes efficiency for a given set of required lengths.
    lengths will be used to test your function for grading as the random lengths will generate a new list everytime it is run. 
 
 
-3. Write code to test your sort_cuts() function. Pass one of the cut_lengthts lists and use a stock length of 20. Print the 
+3. Write code to test your sort_cuts() function. Pass one of the cut_lengths lists and use a stock length of 20. Print the 
    waste and efficiency returned by the function using f-strings to format the output. Also print the total number 
    of rebar stock required which is the length of your cut_plan list. Then display 
-   the contents of the cut_plan list by simply writing the name of the list as the last line of the code block. Your oputput should look something like this:
+   the contents of the cut_plan list by simply writing the name of the list as the last line of the code block. Your output should look something like this:
 
 ```
 Waste = 16.5
@@ -127,7 +129,8 @@ The "Cut Plan:" in the above printout is a list of lists. Each sublist represent
    lengths, print the stock length, waste, and efficiency for each stock length using f-strings to format the output. 
 
 !!! Hint
-    You will need to clearly tell the AI the details of both the problem and what you are trying to do -- optimze the cuts to reduce the amount of waste. For example you need to explain (or show the AI) how the cut list and the stock list are formatted, exactly what you want the function to return in both answer terms (a list of cuts for each stock piece, total waste, and efficiency) and in data types (a list of lists for the cut plan, a float for the waste, and a float for the efficiency). You also need to explain how you want the function to work. 
+    You will need to clearly tell the AI the details of both the problem and what you are trying to do -- optimize 
+the cuts to reduce the amount of waste. For example, you need to explain (or show the AI) how the cut list and the stock list are formatted, exactly what you want the function to return in both answer terms (a list of cuts for each stock piece, total waste, and efficiency) and in data types (a list of lists for the cut plan, a float for the waste, and a float for the efficiency). You also need to explain how you want the function to work. 
 
 5. Write code to test your **optimize_rebar()** function. Use the cut_lengths list defined above and a minimum stock length of 16, 
    a maximum stock length of 30, and an increment of 2. Print the optimal stock length and the number of stock 
