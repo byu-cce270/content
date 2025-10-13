@@ -365,4 +365,6 @@ Open the following notebook and complete the instructions in the markdown:
 
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/02_intro_to_pandas/(Starter_Notebook)_Pre_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+Rename it something like "(Your_Name)_Pre_Intro_to_Pandas.ipynb"
+
 Save changes to your Google Drive and submit the link to the notebook in your Pre-Class Quiz.

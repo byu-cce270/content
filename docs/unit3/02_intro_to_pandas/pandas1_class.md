@@ -15,7 +15,7 @@ After opening the notebook, drag and drop the files into the file explorer on th
 
 ## Instructions
 1. Open the in-class workbook using the link above.
-2. Rename the notebook with your name.
+2. Rename it something like "(Your_Name)_Class_Intro_to_Pandas.ipynb"
 3. Follow the instructions in the notebook to complete the exercise.
 
 ---
