@@ -69,7 +69,7 @@ construction efficiency. In this assignment, you will create a function that cal
 cutting rebar from standard lengths and evaluates different lengths to see which is better. You will also create a function that finds the stock length that minimizes waste and 
 maximizes efficiency for a given set of required lengths.
 
-1. Write a function called **sort_cuts()#** that takes a list of rebar cut lengths (cut_lengths) and a rebar stock 
+1. Write a function called **sort_cuts()** that takes a list of rebar cut lengths (cut_lengths) and a rebar stock 
    length (stock_length) as input parameters. The function should create list called **cut_plan** where each item in the 
    list represents a set of cuts that can be made from a single stock length. The length of this list is the number of 
    stock lengths needed. The function should return the cut_plan list. For example, if the cut_lengths are [8, 6, 6, 
@@ -178,17 +178,23 @@ printed by the optimize_cuts function. The second part of the output is printed 
 
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
-|                    **Item**                    | **Amount** |  
-|:----------------------------------------------:|:----------:|
-|       text_to_morse() converts to upper        |     2      |
-|        text_to_morse() splits the words        |     2      |
-| text_to_morse() word is split into characters  |     2      |
-|   morse_to_text() error if not in dictionary   |     2      |
-|          code to test text_to_morse()          |     3      |
-|       efficiency is calculated correctly       |     3      |
-|        Prints the correct rebar lengths        |     2      |
-|     Prints the total efficiency in percent     |     2      |
-| <div style="text-align: right">**Total**</div> |   **30**   |
+|                           **Item**                           | **Amount** |  
+|:------------------------------------------------------------:|:----------:|
+|              text_to_morse() converts to upper               |     2      |
+|           text_to_morse() splits the words & char            |     2      |
+|             text_to_morse() error if not in dict             |     1      |
+| text_to_morse() character is separated by 1 space, word by 3 |     2      |
+|           morse_to_text() splits the words & char            |     2      |
+|          morse_to_text() error if not in dictionary          |     1      |
+|          morse_to_text() character 1 space, word 3           |     2      |
+|           def sort_cuts(cut_lengths, stock_length)           |     2      |
+|                cut_plan is returned correctly                |     4      |
+|              sum of cuts is < or = stock_length              |     2      |
+|          efficiency is calculated correctly (in %)           |     2      |
+|                waste is calculated correctly                 |     2      |
+|  optimize_rebar prints stock length, waste, and efficiency   |     3      |
+|   optimize_rebar returns optimal cut plan and stock_length   |     3      |
+|        <div style="text-align: right">**Total**</div>        |   **30**   |
 
 The following is not part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
