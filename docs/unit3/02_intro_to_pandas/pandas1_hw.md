@@ -94,33 +94,36 @@ And then include the normal matplotlib commands to alter the title and labels.
 
 ---
 
-# Turning In/Rubric
+## Turning in/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. 
-**
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
-|                                **Item**                                | **Amount** |
-|:----------------------------------------------------------------------:|:----------:|
-|               Import statements and file uploaded correctly            |     3      |
-|         dataframes are appropriately named and created correctly       |     2      |
-|            "Bridge Age" data frame created and displayed               |     2      |
-| "Bridge Age" dataframe described and .value_counts() used correctly    |     2      |                              
-|      Bridge bar graph created w/all requirements per instructions      |     3      |
-|         Traffic dataframe filtered by congestion level                 |     2      |
-|         Traffic pie chart displaying correctly w/all requirements      |     3      |
-|                 Concrete dataframe filtered                            |     2      |
-|             'categorize_age' function properly written                 |     3      |
-|             'Age Category' column created in concrete dataframe        |     2      |
-|  compressive strength v. cement content scatter plot is correct        |     3      |
-|             box plot for compressive strength w/age is correct         |     3      |
-|             heatmat of correlation displaying correctly                |   +5      |
-|             <div style="text-align: right">**Total**</div>             |   **30**   |
+**Rubric:**
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+|                              **Item**                               | **Amount** |
+|:-------------------------------------------------------------------:|:----------:|
+|            Import statements and file uploaded correctly            |     3      |
+|      dataframes are appropriately named and created correctly       |     2      |
+|            "Bridge Age" data frame created and displayed            |     2      |
+| "Bridge Age" dataframe described and .value_counts() used correctly |     2      |                              
+|    Bridge bar graph created w/all requirements per instructions     |     3      |
+|           Traffic dataframe filtered by congestion level            |     2      |
+|      Traffic pie chart displaying correctly w/all requirements      |     3      |
+|                     Concrete dataframe filtered                     |     2      |
+|             'categorize_age' function properly written              |     3      |
+|         'Age Category' column created in concrete dataframe         |     2      |
+|   compressive strength v. cement content scatter plot is correct    |     3      |
+|         box plot for compressive strength w/age is correct          |     3      |
+|             heatmat of correlation displaying correctly             |     +5     |
+|           <div style="text-align: right">**Total**</div>            |   **30**   |
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
 

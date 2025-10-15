@@ -74,16 +74,11 @@ For this example, a student has given you a list of trusses he needs to solve fo
 
 ---
 
-**Turn sharing and editing on. Turn in the link to Learning Suite in the feedback box**
-
----
-
 ## Turning in/Rubric
 
 **_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
-
 
 |                 If Statements                  | Points Possible |
 |:----------------------------------------------:|:---------------:|

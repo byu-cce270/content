@@ -213,32 +213,34 @@ Now that we have solved for the forces and the coordinates of each joint, we can
 
 ---
 
-# Turning In/Rubric
+## Turning in/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
-|                **Items**                       | **Amount** |  
-|:----------------------------------------------:|:----------:|
-|        Part 1: Correctly constructs the force equilibrium equations and loads in matrix form based on the given matrix.    |     4      |
-|       Part 1: solution is added to the total_forces dictionary and dictionary is returned and printed      |     3      |
-|  Part 2: Side lengths AB, BC, and AC are found and printed  |     3      |
-| Part 2: Coordinates for A, B, and C are added to the coordinates dictionary, returned, and printed  |     3      |
-| Part 3: If statements are used to create the correct labeling and coloring based on positive (tension, blue)  and negative (compression, red) force values|     3      |
-| Part 3: Graph contains: title, x/y labels, legend for tension/compression, and labels for each point  |     3      |
-|       Part 4: Values for forces, lengths, and coordinates match given test scenarios      |     4      |
-|       Part 4: Graph matches given test scenarios       |     4      |
-|       Comments are added to explain code       |     3      |
-| <div style="text-align: right">**Total**</div> |   **30**   |
+**Rubric:**
 
+|                                                                         **Items**                                                                          | **Amount** |  
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+|                      Part 1: Correctly constructs the force equilibrium equations and loads in matrix form based on the given matrix.                      |     4      |
+|                              Part 1: solution is added to the total_forces dictionary and dictionary is returned and printed                               |     3      |
+|                                                 Part 2: Side lengths AB, BC, and AC are found and printed                                                  |     3      |
+|                             Part 2: Coordinates for A, B, and C are added to the coordinates dictionary, returned, and printed                             |     3      |
+| Part 3: If statements are used to create the correct labeling and coloring based on positive (tension, blue)  and negative (compression, red) force values |     3      |
+|                            Part 3: Graph contains: title, x/y labels, legend for tension/compression, and labels for each point                            |     3      |
+|                                       Part 4: Values for forces, lengths, and coordinates match given test scenarios                                       |     4      |
+|                                                         Part 4: Graph matches given test scenarios                                                         |     4      |
+|                                                             Comments are added to explain code                                                             |     3      |
+|                                                       <div style="text-align: right">**Total**</div>                                                       |   **30**   |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+---
 
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
 
 
 
