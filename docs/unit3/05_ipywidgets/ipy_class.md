@@ -75,5 +75,23 @@ In this part, we will learn how to use the random module to generate random numb
 
 Nothing needs to be done here, but this is a good reference for the different types of widgets that are available.
 
+---
+			
 ## Turning in/Rubric
-Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
+
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |

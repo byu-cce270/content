@@ -211,3 +211,23 @@ Open a new Colab notebook and do the following:
 5. Run the code and test the widgets to make sure they work as expected.
 6. As a challenge, try adding making it so that when the button is clicked, the other widget changes its properties. For example, if you have a slider, try changing the value of the slider when the button is clicked. You could even have the Button disable the other widget when clicked or print the value of the other widget when clicked.
 7. Share the link to your Colab notebook via Learning Suite when you take the Pre Class Quiz.
+
+---
+
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        3        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        | 

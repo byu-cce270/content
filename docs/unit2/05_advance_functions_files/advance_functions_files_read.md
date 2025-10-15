@@ -118,4 +118,4 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        |
+|   Link shared incorrectly   |       -10%        | 
