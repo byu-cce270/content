@@ -201,7 +201,8 @@ For more information, you can refer to the [ipywidgets documentation](https://ip
 
 Open a new Colab notebook and do the following:
 
-1. Create two different widgets:
+1. Rename the notebook to "(Your_Name)_HW_ipywidgets.ipynb".
+2. Create two different widgets:
       - One should be a button. Try to change the description, style (color), and tooltip of the button. 
       - The other can be any widget of your choice. Try to changing some properties of the widget.
 2. Display the widgets.

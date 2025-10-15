@@ -10,8 +10,8 @@ In this homework assignment, you will practice using random numbers, making GUI�
 
 ## Instructions
 
-[//]: # (1. First make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/06_ipywidgets/Starter_Sheet_Homework_ipywidgets.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>)
-2. Rename it something like “[your name]_Homework-ipywidgets.ipynb” 
+[//]: # (1. First make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_ipywidgets/(Starter_Notebook)_HW_ipywidgets.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>)
+2. Rename it something like “(Your_Name)_HW_ipywidgets.ipynb” 
 3. Chose 2 of the following prompts:
       - Rock paper scissors
       - Number Guessing game
@@ -47,11 +47,12 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 | Write comments explaining the the give code to the games you modified (2 points per game) |     4      |
 |                      <div style="text-align: right">**Total**</div>                       |   **30**   |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+---
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
