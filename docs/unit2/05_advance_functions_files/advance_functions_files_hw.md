@@ -26,6 +26,8 @@ In this assignment, you will be creating code that will allow a user to find the
 ---
 
 #### Part 1
+!!! Hint
+    You created some of these functions during the in-class assigment. You can use those if you copy the code over. 
 
 1. In the first code block, write six appropriately named functions that calculate and return the maximum deflection and maximum moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
 
@@ -70,6 +72,8 @@ $I$ = the moment of inertia (in inches^4)
    |   beam_type   | Asks what the beam type is (cantilever or simply supported) |    string     |
    |   load_type   | Asks what the load type is (moment, point, or distributed)  |    string     |
 
+
+ 
 2. On a new line, create IF and ELIF statements that check if the **load_type** entered is a moment, a point, or a distributed load. Depending on which **load_type** is entered, your IF and ELIF statements will run one of the following input statements:
 
    | Variable Name |                            Prompt                            | Variable Type |
@@ -86,6 +90,9 @@ $I$ = the moment of inertia (in inches^4)
    |       E       |        Asks what the modulus of elasticity is (in psi)      |     float     |
    |       b       |         Asks what the base of the beam is (in inches)       |     float     |
    |       h       |        Asks what the height of the beam is (in inches)      |     float     |
+
+!!! Note
+    For testing your code you may want to comment out the input statements and just set the variables to make it easier to run. For example, you can hard code the inputs from step 11 below. Make sure you try other inputs also. If you do this,  you don't have to input all the data every time. After it is working, you can comment out these statements and remove the comments from the input statements so it will interactively ask you about a beam and assocated parameters.
 
 4. On a new line, create the variable **y** using the following equation:
 
