@@ -2,7 +2,7 @@
 
 In this class excersise, we will learn how to work with Excel files in Python. We will read Excel files into pandas dataframes, write dataframes to Excel files, and perform some basic data manipulation tasks.
 
-To begin, create a new Colab notebook and name it '**[yourname]_excel_class.ipynb'**. Then follow the instructions below. Create and organize your code in cells in the notebook as you go.
+To begin, create a new Colab notebook and name it '**(Your_Name)_Class_xlswriter.ipynb'**. Then follow the instructions below. Create and organize your code in cells in the notebook as you go.
 
 ## Part 1: Provo River Streamflow Data
 

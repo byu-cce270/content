@@ -6,7 +6,7 @@ In this homework assignment, you will import an Excel file containing monthly pr
 
 ## Instructions
 
-To begin, create a new Colab notebook and name it '**[yourname]_excel_hw.ipynb'**. Then follow the instructions below. Create and organize your code in cells in the notebook as you go.
+To begin, create a new Colab notebook and name it '**(Your_Name)_HW_xlswriter.ipynb'**. Then follow the instructions below. Create and organize your code in cells in the notebook as you go.
 
 ### Part 1: Import your data
 

@@ -2,7 +2,7 @@
 
 The following exercises will have you manipulate and combine different DataFrames from lists and external files. For this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the Colab notebook for the In Class Exercise here:
 
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/in_class_pandaspart2.ipynb#scrollTo=sN247seQdOW5" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_continuing_pandas/(Starter_Notebook)_Class_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 As part of this exercise, you will be asked to read the following Excel file into the in-class workbook and create Panda's dataframes. Download the file from this link.
 
@@ -17,7 +17,7 @@ In addition to the accident data, we will be working with datetime data. We will
 ## Instructions
 1. Download the Excel data file from the link above
 2. Open in-class notebook using the link above.
-3. Rename the notebook with your name.
+3. Rename the notebook to something like "(Your_Name)_Class_Continuing_with_Pandas.ipynb"
 4. Drag and drop the downloaded file into the file explorer on the left side of the notebook.
 5. Follow the instructions in the notebook to complete the exercise.
    
