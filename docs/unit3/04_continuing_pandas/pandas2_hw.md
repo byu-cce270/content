@@ -14,8 +14,8 @@ specifies the day of the week.  In the second dataframe, you will need to add a 
 
 ## Part 1: Setup
 
-1. Make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_pandas_part2/starter_sheet_hw_pandas_pt2.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-2. Rename it something like "[Your Name] 3_5_Pandas-Part2_HW"
+1. Make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_continuing_pandas/(Starter_Notebook)_HW_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+2. Rename it something like "(Your_Name)_HW_Continuing_with_Pandas.ipynb"
 3. In the code block titled "Import Required Packages" input the correct import statements for the libraries you will use:
     - matplotlib.pyplot as plt
     - pandas as pd
@@ -180,17 +180,17 @@ to loop through each borough and create a pie chart for each borough showing the
 Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created. 
 **
 
-|                      **Item**                       | **Amount** |
-|:---------------------------------------------------:|:----------:|
-|        Correct import statements used and file uploaded correctly        |     5      |
-|        Tabs in the Excel file are loaded in separate data frames        |     3     |
-|            Correct column names created with duplicates removed            |     3      |
-|                Equipment age calculated correctly  |     3     |
-|    Equipment and Productivity dataframes are merged into a new dataframe correctly  |     2     |
-|  Correct columns with correct calculations are added to the merged dataframe  |     8      |
-|              .groupby() is used to filter correctly  |     3      |
-|   Bar graph displays correctly with titles, labels, and colors |     3      |
-|   <div style="text-align: right">**Total**</div>    |   **30**   |
+|                                    **Item**                                     | **Amount** |
+|:-------------------------------------------------------------------------------:|:----------:|
+|           Correct import statements used and file uploaded correctly            |     5      |
+|            Tabs in the Excel file are loaded in separate data frames            |     3      |
+|              Correct column names created with duplicates removed               |     3      |
+|                       Equipment age calculated correctly                        |     3      |
+| Equipment and Productivity dataframes are merged into a new dataframe correctly |     2      |
+|   Correct columns with correct calculations are added to the merged dataframe   |     8      |
+|                     .groupby() is used to filter correctly                      |     3      |
+|          Bar graph displays correctly with titles, labels, and colors           |     3      |
+|                 <div style="text-align: right">**Total**</div>                  |   **30**   |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 

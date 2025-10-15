@@ -104,9 +104,9 @@ nav:
         - In Class: unit3/02_intro_to_pandas/pandas1_class.md
         - Homework: unit3/02_intro_to_pandas/pandas1_hw.md
     - Continuing with Pandas:
-        - Reading: unit3/04_continuing_pandas/pandas2_read.md
-        - In Class: unit3/04_continuing_pandas/pandas2_class.md
-        - Homework: unit3/04_continuing_pandas/pandas2_hw.md
+        - Reading: unit3/03_continuing_pandas/pandas2_read.md
+        - In Class: unit3/03_continuing_pandas/pandas2_class.md
+        - Homework: unit3/03_continuing_pandas/pandas2_hw.md
     - Python and Excel (xlsxwriter):
         - Reading: unit3/04_python_and_excel/excel_read.md
         - In Class: unit3/04_python_and_excel/excel_class.md
