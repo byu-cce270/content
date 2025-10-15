@@ -81,7 +81,7 @@ Finally, we will finish up and close the notebook.
 
 When finished, Your Excel file should look similar to the one below:
 
-![Streamflow Excel File](streamflow_screenshot.png)
+![Streamflow Excel File](images/streamflow_screenshot.png)
 
 ## Part 2: Accident Database Analysis
 
@@ -156,8 +156,8 @@ Now do the same thing to add a column chart to the 'Day' sheet using the data in
 
 When finished, Your Excel file should look similar to the one below:
 
-![acc_type_sheet.png](acc_type_sheet.png)
-![acc_day_sheet.png](acc_day_sheet.png)
+![acc_type_sheet.png](images/acc_type_sheet.png)
+![acc_day_sheet.png](images/acc_day_sheet.png)
 
 ---
 

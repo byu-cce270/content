@@ -78,8 +78,8 @@ Now we will create a new Excel file and write the main precip data to a sheet an
 
 In the end, it should look something like this:
 
-![data_sheet.png](data_sheet.png)
-![stats_sheet.png](stats_sheet.png)
+![data_sheet.png](images/data_sheet.png)
+![stats_sheet.png](images/stats_sheet.png)
 
 ## Turning In/Rubric
 
