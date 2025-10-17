@@ -29,7 +29,7 @@ $L$ = the length of the beam (in inches)<br>
 $E$ = the modulus of elasticity (in psi)<br>
 $I$ = the moment of inertia (in inches^4)
 
-The moment of inertia (I) is based on the cross-sectional shape of the beam. For this assignment, we will assume a rectangular cross section. The formula for the moment of inertia for a rectangular cross section is:
+The moment of inertia (I) is based on the cross-sectional shape of the beam. For this assignment, we will assume a rectangular cross-section. The formula for the moment of inertia for a rectangular cross-section is:
 
 >>$I=\dfrac{bh^3}{12}$
 
@@ -74,7 +74,7 @@ Click here to download a text file containing a set of beams and their associate
 
 The contents of the file are as follows:
 
-| beam_id | beam_type   | load_type   | load   | L   | E         | b  | h  |
+| beam_id  | beam_type   | load_type   | load   | L   | E         | b  | h  |
 |----------|-------------|-------------|--------|-----|-----------|----|----|
 | B01      | cantilever  | moment      | 180000 | 120 | 29000000  | 8  | 10 |
 | B02      | cantilever  | moment      | 250000 | 96  | 29000000  | 6  | 12 |
