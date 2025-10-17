@@ -9,19 +9,14 @@
 
 In this assignment, you will be creating code that will allow a user to find the maximum deflection and maximum bending stress on a beam given these six scenarios:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 1: Cantilever beam with a moment load
+>Scenario 1: Cantilever beam with a moment load<br>
+>Scenario 2: Cantilever beam with a point load<br>
+>Scenario 3: Cantilever beam with a distributed load<br>
+>Scenario 4: Simply supported beam with a moment load<br>
+>Scenario 5: Simply supported beam with a point load<br>
+>Scenario 6: Simply supported beam with a distributed load
 
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 2: Cantilever beam with a point load
-
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 3: Cantilever beam with a distributed load
-
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 4: Simply supported beam with a moment load
-
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 5: Simply supported beam with a point load
-
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 6: Simply supported beam with a distributed load
-
-**These scenarios are in the same exact order of the chart below. For example, scenario 1 corresponds to the very first image in the chart, scenario 2 corresponds to the second image in the chart, and so on.**
+These scenarios are in the same order of the chart below. For example, scenario 1 corresponds to the very first image in the chart, scenario 2 corresponds to the second image in the chart, and so on.
 
 ---
 
@@ -46,7 +41,7 @@ $I$ = the moment of inertia (in inches^4)
 
 2. Create a seventh function that calculates and returns the moment of inertia using this formula:
 
->>$I=\frac{bh^3}{12}$
+>>$I=\dfrac{bh^3}{12}$
 
 where:
 
@@ -55,7 +50,7 @@ $h$ = the height of the beam (in inches)
 
 3. Create an eighth function that calculates and returns maximum bending stress using this formula:
 
->>$\sigma_{max}=\frac{My}{I}$
+>>$\sigma_{max}=\dfrac{My}{I}$
 
 where:
 
@@ -96,7 +91,7 @@ $I$ = the moment of inertia (in inches^4)
 
 4. On a new line, create the variable **y** using the following equation:
 
->>$y=\frac{h}{2}$
+>>$y=\dfrac{h}{2}$
 
 5. On a new line within the code block, create a variable **I** that you set by calling the moment of inertia 
    function you created earlier, with the variables **b** and **h**  as its arguments. These variables were defined earlier.
