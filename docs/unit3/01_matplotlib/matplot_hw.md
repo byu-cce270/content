@@ -50,7 +50,7 @@ After you annotate the graph, we ask you to explain the drop in birth rates on t
 2. Plot a replica of the graph below - it should look something like this:
 
 !!! Hint
-   In your first line, enter 'plt.figure(figsize=(12, 4))' to create the correct size for your plot.
+   In your first line, enter `plt.figure(figsize=(12, 4))` to create the correct size for your plot.
 
 ![birthgraph.png](images/birthgraph.png)
 
