@@ -49,11 +49,14 @@ After you annotate the graph, we ask you to explain the drop in birth rates on t
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x' and 'y_1'.
 2. Plot a replica of the graph below - it should look something like this:
 
+!!! Hint
+   In your first line, enter 'plt.figure(figsize=(12, 4))' to create the correct size for your plot.
+
     ![birthgraph.png](images/birthgraph.png)
 
 3. Write a comment explaining why you think the birth rate drops during those days
 
-# plt.figure(figsize=(12, 4)) #changes figure size
+
 
 ---
 
