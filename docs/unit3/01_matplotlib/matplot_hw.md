@@ -53,6 +53,8 @@ After you annotate the graph, we ask you to explain the drop in birth rates on t
 
 3. Write a comment explaining why you think the birth rate drops during those days
 
+# plt.figure(figsize=(12, 4)) #changes figure size
+
 ---
 
 ## Turning in/Rubric
