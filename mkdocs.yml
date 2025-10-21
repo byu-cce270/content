@@ -58,7 +58,7 @@ nav:
         - Homework: unit1/5_gantt_charts/gantt_hw.md
     - Unit 1 Project:
         - Project Prompt: unit1/6_unit1_project/u1_pro_promt.md
-    - Study Guide: unit1/study_guide.md
+    - Unit 1 Study Guide: unit1/study_guide.md
 
   - Unit 2 - Intro to Python:
     - Introduction to Python, Variables, and Lists:
@@ -89,6 +89,7 @@ nav:
         - Reading: unit2/06_unit2_project/u2_pro_read.md
         - Proposal - Pseudocode: unit2/06_unit2_project/u2_pro_pseudo_hw.md
         - Project Prompt: unit2/06_unit2_project/u2_pro_prompt.md
+    - Unit 2 Study Guide: unit2/study_guide.md
 
   - Unit 3 - Advanced Python:
     - Numpy:
