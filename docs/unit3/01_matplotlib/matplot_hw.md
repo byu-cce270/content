@@ -52,7 +52,7 @@ After you annotate the graph, we ask you to explain the drop in birth rates on t
 !!! Hint
    In your first line, enter 'plt.figure(figsize=(12, 4))' to create the correct size for your plot.
 
-    ![birthgraph.png](images/birthgraph.png)
+![birthgraph.png](images/birthgraph.png)
 
 3. Write a comment explaining why you think the birth rate drops during those days
 
