@@ -20,14 +20,55 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 #### Part 1 - Shear and Moment Diagrams
 
-For this exercise, we will be creating shear and moment diagrams for the following beam:
+For this exercise, we will be creating shear and moment diagrams for a simply supported beam. Such diagrams are used to better visualize the internal forces acting within the beam. The shear along the beam is represented by the variable $V$, while the moment along the beam is represented by the variable $M$. The shear diagram for the beam below is represented by the green graph while the moment diagram is represented by the red graph. 
 
-    ![beam.png](images/beam.png)
+![shear_moment_example.png](images/shear_moment_example.png)
 
+(image from https://mechanicalc.com/reference/beam-analysis)
 
-1. Connect the Google Sheets workbook to the Colab notebook
-2. Create three separate variables **temp_data**, **stream_data**, and **birth_data** that connect to their related worksheets. For example, the **temp_data** variable should connect to the worksheet titled "Pasadena Precipitation Data", the **stream_data** variable should connect to the worksheet titled "Provo River Streamflow Data," etc.
-   
+We will be graphing the diagrams for the cantilevered simply supported beam shown below:
+
+![beam.png](images/beam.png)
+
+Where:
+  - $L$ is the full length of the beam
+  - $x$ is any point taken along the beam measured from its left end
+  - $A$ is the pin support of the beam located at $x=0 ft$  
+  - $B$ is the roller support of the beam located at $x=4 ft$ 
+  - $R_{A}$ is the reaction force of 170 $lb$ associated with the pin support located at $x=0 ft$
+  - $R_{B}$ is the reaction force of 410 $lb$ associated with the roller support located at $x=4 ft$
+  - $P_{1}$ is a point load of 100 $lbf$ acting at $x=2 ft$
+  - $q_{1}$ is a distributed load of 120 $lb/ft$ per foot acting from $x=0 ft$ to $x=2 ft$
+  - $q_{2}$ is a distributed load of 120 $lb/ft$ per foot acting from $x=4 ft$ to $x=6 ft$
+
+1. In the 'Part 1a - Shear Diagram' code block, define the following variables:
+
+| Variable |    Value    |
+|:--------:|:-----------:|
+|   $L$    |   6 $ft$    |
+|  $R_A$   |  170 $lb$   |
+|  $R_B$   |  410 $lb$   |
+|  $P_1$   |  100 $lb$   |
+|  $q_1$   | 120 $lb/ft$ |
+|  $q_2$   | 120 $lb/ft$ |
+
+2. Define a variable ```x``` using ```np.linspace()``` with the following arguments:
+  - start: 0
+  - stop: L
+  - num: 500
+
+3. Define a variable ```V``` using ```np.zeros_like()``` with ```x``` as the argument. This will create a list of zeros with the same length as ```x```. 
+4. Create a for loop that loops over the length of ```x``` and defines ```V``` to be the following piecewise function under the respective boundary conditions:
+
+$$
+V(x) =
+\begin{cases}
+x^2, & \text{if } x > 1 \\
+2x + 3, & \text{if } 0 \le x \le 1 \\
+-4, & \text{if } x < 0
+\end{cases}
+$$
+
 #### Part 2 - Pasadena Precipitation Data
 
 You will now graph the temperature data from Pasadena, CA from 2013-2014. The data is from 2013-2014 and includes the high and low temperatures for each day. We added the numpy code to create the data arrays for you to make plotting easier. We created an array for the x-data called ```x```, an array for the high temperature data called ```y_1```, and an array for the low temperature data called ```y_2```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will  need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
