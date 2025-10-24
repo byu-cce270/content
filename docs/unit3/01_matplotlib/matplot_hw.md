@@ -31,6 +31,7 @@ We will be graphing the diagrams for the cantilevered simply supported beam show
 ![beam.png](images/beam.png)
 
 Where:
+
   - $L$ is the full length of the beam
   - $x$ is any point taken along the beam measured from its left end
   - $A$ is the pin support of the beam located at $x=0 ft$  
@@ -53,6 +54,7 @@ Where:
 |  $q_2$   | 120 $lb/ft$ |
 
 2. Define a variable ```x``` using ```np.linspace()``` with the following arguments:
+
   - start: 0
   - stop: L
   - num: 500
@@ -64,8 +66,8 @@ $$
 V(x) =
 \begin{cases}
 R_A - (q_1 * x), & \text{if } x < 2 \\
-R_A - (q_1 * 2 ft) - P_1, & \text{if } 2 < x < 4 \\
-R_A - (q_1 * 2 ft) - P_1 + R_B - (q_2 * (x-4)), & \text{if } x < 0
+R_A - (q_1 * 2) - P_1, & \text{if } 2 < x < 4 \\
+R_A - (q_1 * 2) - P_1 + R_B - (q_2 * (x-4)), & \text{if } x > 4 
 \end{cases}
 $$
 
