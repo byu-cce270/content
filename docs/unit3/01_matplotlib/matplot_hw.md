@@ -113,32 +113,48 @@ You will now graph the temperature data from Pasadena, CA from 2013-2014.
 
 #### Part 3 - Provo River Streamflow Data
 
-In Part 3, we have provided numpy code to create the variables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+You will now graph the streamflow data of Provo River in June 2021.
 
-1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
-2. Plot a replica of the graph below - it should look something like this:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the streamflow data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+
+  - x - Date 
+  - y_1 - Site 10163000
+  - y_2 - Site 10155200
+  - y_3 - Site 10155500
+  - y_4 - Site 10154200 
+  - y_5 - Site 10155000
+
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
 
     ![streamflowgraph.png](images/streamflowgraph.png)
 
 #### Part 4 - Fremont Bridge Bicycle Count Data
 
-In Part 3, we have provided numpy code to create the variables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+You will now graph bicycle count data over a bridge in Fremont, Seattle taken from 2013 to 2022.
 
-1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', and 'y_3'
-2. Plot a replica of the graph below - it should look something like this:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the Fremont bridge count data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+
+  - x - Date 
+  - y_1 - Fremont Bridge Total
+  - y_2 - Fremont Bridge East Sidewalk
+  - y_3 - Fremont Bridge West Sidewalk
+
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
 
     ![fremontbridge.png](images/fremontbridge.png)
 
-3. Write a comment explaining why you think the bike count drops dramatically.
-
+3. Write a comment in your code explaining why you think the bike count drops so dramatically.
 
 #### Part 5 - Average U.S. Daily Birth Data
-Part 3 is similar, we give you numpy code to create the plotting variables similar to the last two plots. However, this time we want you to annotate some interesting data in the graph. We give you a list of dates to annotate with their holiday names. We used a number of different arrow styles to show you some options. The pre-class reading has a link to the documentation for the annotate function with some examples of different arrow properties you can use. You don't need to match our arrow styles, but you should use the annotate function to point to the holidays.
 
-After you annotate the graph, we ask you to explain the drop in birth rates on those days? You don't have to know the answer, but you should be able to make a guess based on the data. **These are real data** not made up for the assignment.
+You will now graph the average U.S. daily birth data taken from 2012 to 2013.
 
-1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x' and 'y_1'.
-2. Plot a replica of the graph below - it should look something like this:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the U.S. birth data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+
+  - x - Date 
+  - y_1 - Births
+
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
 
 !!! Hint
     In your first line, enter `plt.figure(figsize=(12, 4))` to create the correct size for your plot.
