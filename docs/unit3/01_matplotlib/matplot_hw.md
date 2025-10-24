@@ -171,14 +171,21 @@ You will now graph the average U.S. daily birth data taken from 2012 to 2013.
 
 **Rubric:**
 
-|                     **Item**                      | **Amount** |  
-|:-------------------------------------------------:|:----------:|
-|           CSV files are correctly read            |     3      |
-| The temperature data graph has all elements shown |     8      |
-| The streamflow data graph has all elements shown  |     8      |
-|    The birth data graph has all elements shown    |     8      |
-|       The annotations are created correctly       |     3      |
-|  <div style="text-align: right">**Total**</div>   |   **30**   |
+|                                           **Item**                                           | **Amount** |  
+|:--------------------------------------------------------------------------------------------:|:----------:|
+|                             All CSV files are correctly read in                              |     4      |
+|                             Part 1 - Variables defined correctly                             |     2      |
+|                           Part 1 - Diagrams display data correctly                           |     8      |
+| Part 1 - Diagrams have correct titles, axis titles, x-axes, filled area, and similar colors  |     10     |
+|                            Part 2 - Graph displays data correctly                            |     4      |
+|     Part 2 - Graph has correct title, axis titles, legend, gridlines and similar colors      |     5      |
+|                            Part 3 - Graph displays data correctly                            |     4      |
+| Part 3 - Graph has correct title, axis titles, rotated labels, gridlines, and similar colors |     5      |
+|                            Part 4 - Graph displays data correctly                            |     4      |
+|     Part 4 - Graph has correct title, axis titles, legend, gridlines, and similar colors     |     5      |
+|                            Part 5 - Graph displays data correctly                            |     4      |
+|  Part 5 - Graph has correct title, axis titles, gridlines, annotations, and similar colors   |     5      |
+|                        <div style="text-align: right">**Total**</div>                        |   **60**   |
 
 ---
 
