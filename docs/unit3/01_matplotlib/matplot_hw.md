@@ -19,7 +19,7 @@
 
 #### Part 1 - Shear and Moment Diagrams
 
-For this exercise, we will be creating shear and moment diagrams for a simply supported beam. Such diagrams are used to better visualize the internal forces acting within the beam. The shear along the beam is represented by the variable $V$, while the moment along the beam is represented by the variable $M$. The shear diagram for the beam below is represented by the green graph while the moment diagram is represented by the red graph. 
+For this exercise, we will be creating shear and moment diagrams for a simply supported beam. Such diagrams are used to better visualize the internal forces acting within the beam. The internal shear along the beam is represented by the variable $V$, while the internal moment along the beam is represented by the variable $M$. The shear diagram for the beam below is represented by the green graph while the moment diagram is represented by the red graph. 
 
 ![shear_moment_example.png](images/shear_moment_example.png)
 
@@ -37,9 +37,16 @@ Where:
   - $B$ is the roller support of the beam located at $x=4 ft$ 
   - $R_{A}$ is the reaction force of 170 $lb$ associated with the pin support
   - $R_{B}$ is the reaction force of 410 $lb$ associated with the roller support
-  - $P_{1}$ is a point load of 100 $lbf$ acting at $x=2 ft$
+  - $P_{1}$ is a point load of 100 $lb$ acting at $x=2 ft$
   - $q_{1}$ is a distributed load of 120 $lb/ft$ per foot acting from $x=0 ft$ to $x=2 ft$
   - $q_{2}$ is a distributed load of 120 $lb/ft$ per foot acting from $x=4 ft$ to $x=6 ft$
+
+After making a cut within the beam at a point of interest, the internal shear and moment equations can be solved by plugging in the above external forces and lengths into the following equilibrium equations:
+
+>>$\sum F_{y} = 0$<br>
+$\sum M = 0$
+
+The equations for the internal shear and moment forces have been solved for you and modeled as piecewise functions, which can then be used to create the shear and moment diagrams.
 
 1. In the 'Part 1a - Shear Diagram' code block, define the following variables:
 
