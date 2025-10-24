@@ -1,6 +1,6 @@
 # HW: Matplotlib
 
-**Purpose:** Learn how to read in data from Google Sheets and make graphs from it
+**Purpose:** Learn how to make graphs with different kinds of data.
 
 ## Instructions
 
@@ -8,85 +8,167 @@
 
 2. Rename it something like "(Your_Name)_HW_Matplotlib.ipynb"
 
-3. Open the Google Sheet used for this homework here:
+3. Download each CSV to be used in parts 2 through 5:
 
-[HW Matplotlib Data Sheet](https://docs.google.com/spreadsheets/d/1byVuW2RiFN-AOvD6cf4oMuJk2NeHpZ7eQd9x-Xven-s/edit?usp=sharing){:target="_blank"}
-
-In this assignment, you will be creating graphs of historical weather data in Pasadena, CA, Provo River flowrate data, and U.S. Birth Rates.
+    * [2013-2014-Pasadena-Temperature-Data.csv](2013-2014-Pasadena-Temperature-Data.csv)
+    * [June-2021-Provo-River-Streamflow-Rates.csv](June-2021-Provo-River-Streamflow-Rates.csv)
+    * [Fremont-Bridge-Bicycle-Count.csv](Fremont-Bridge-Bicycle-Count.csv)
+    * [2012-US-Birth-Rates.csv](2012-US-Birth-Rates.csv)
 
 ---
 
-#### Connecting to Google Sheets
+#### Part 1 - Shear and Moment Diagrams
 
-1. Connect the Google Sheets workbook to the Colab notebook
-2. Create three separate variables **temp_data**, **stream_data**, and **birth_data** that connect to their related worksheets. For example, the **temp_data** variable should connect to the worksheet titled "Pasadena Precipitation Data", the **stream_data** variable should connect to the worksheet titled "Provo River Streamflow Data," etc.
-   
-#### Part 1 - Pasadena Precipitation Data
+For this exercise, we will be creating shear and moment diagrams for a simply supported beam. Such diagrams are used to better visualize the internal forces acting within the beam. The internal shear along the beam is represented by the variable $V$, while the internal moment along the beam is represented by the variable $M$. The shear diagram for the beam below is represented by the green graph while the moment diagram is represented by the red graph. 
 
-In Part 1, you will be graphing the temperature data from Pasadena, CA. The data is from 2013-2014 and includes the high and low temperatures for each day. We added the numpy code to create the data arrays for you to make plotting easier. We created an array for the x-data called ```x```, an array for the high temperature data called ```y_1```, and an array for the low temperature data called ```y_2```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will  need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+![shear_moment_example.png](images/shear_moment_example.png)
 
-1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', and 'y_2'
-2. Plot y_1, label it "High Temperature", and color it orange or red
-3. Plot y_2, label is "Low Temperature", and color it teal or blue
-4. Title the graph "Pasadena Temperature Data 2013-2014"
-5. Label the x-axis as "Date"
-6. Label the y-axis as "Degrees (Fahrenheit)"
-7. Using the xticks function, rotate the ticks by 45 degrees
-8. Create a legend and put it in the lower left corner. Make the font size 10
-9. Give the graph grid lines
-10. Show the graph - it should look something like this:
+(image from https://mechanicalc.com/reference/beam-analysis)
+
+We will be graphing the diagrams for the cantilevered simply supported beam shown below:
+
+![beam.png](images/beam.png)
+
+Where:
+
+  - $L$ is the full length of the beam
+  - $x$ is any point taken along the beam measured from its left end
+  - $A$ is the pin support of the beam located at $x=0 ft$  
+  - $B$ is the roller support of the beam located at $x=4 ft$ 
+  - $R_{A}$ is the reaction force of 170 $lb$ associated with the pin support
+  - $R_{B}$ is the reaction force of 410 $lb$ associated with the roller support
+  - $P_{1}$ is a point load of 100 $lb$ acting at $x=2 ft$
+  - $q_{1}$ is a distributed load of 120 $lb/ft$ acting from $x=0 ft$ to $x=2 ft$
+  - $q_{2}$ is a distributed load of 120 $lb/ft$ acting from $x=4 ft$ to $x=6 ft$
+
+After making a cut within the beam at a point of interest, the internal shear and moment equations can be solved by plugging in the above external forces and lengths into the following equilibrium equations:
+
+>>$\sum F_{y} = 0$<br>
+$\sum M = 0$
+
+The equations for the internal shear and moment forces have been solved for you and modeled as piecewise functions, which can then be used to create the shear and moment diagrams.
+
+1. In the 'Part 1a - Shear Diagram' code block, define the following variables:
+
+| Variable |    Value    |
+|:--------:|:-----------:|
+|   $L$    |   6 $ft$    |
+|  $R_A$   |  170 $lb$   |
+|  $R_B$   |  410 $lb$   |
+|  $P_1$   |  100 $lb$   |
+|  $q_1$   | 120 $lb/ft$ |
+|  $q_2$   | 120 $lb/ft$ |
+
+2. Define a variable ```x``` using ```np.linspace()``` with the following arguments:
+
+  - start: 0
+  - stop: $L$
+  - num: 500
+
+3. Define a variable ```V``` using ```np.zeros_like()``` with ```x``` as the argument. This will create a list of zeros with the same length as ```x```. 
+4. Create a for loop that loops over the length of ```x``` and defines ```V``` to be the following piecewise function under the respective boundary conditions:
+
+$$
+V(x) =
+\begin{cases}
+R_A - (q_1 * x), & \text{if } x < 2 \\
+R_A - (q_1 * 2) - P_1, & \text{if } 2 < x < 4 \\
+R_A - (q_1 * 2) - P_1 + R_B - (q_2 * (x-4)), & \text{if } x > 4 
+\end{cases}
+$$
+
+5. Using matplotlib, plot x against V and then replicate **every element** included in the graph below (the colors do not have to match exactly):
+
+    ![shear_diagram.png](images/shear_diagram.png)
+
+1. In the 'Part 1b - Moment Diagram' code block, copy and paste the variables defined in Part 1a.
+2. Define a variable ```x``` using ```np.linspace()``` with the following arguments:
+
+  - start: 0
+  - stop: $L$
+  - num: 500
+
+3. Define a variable ```M``` using ```np.zeros_like()``` with ```x``` as the argument. 
+4. Create a for loop that loops over the length of ```x``` and defines ```M``` to be the following piecewise function under the respective boundary conditions:
+
+$$
+M(x) =
+\begin{cases}
+(R_A * x) - (q_1 * \frac{x^2}{2}), & \text{if } x < 2 \\
+(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)), & \text{if } 2 < x < 4 \\
+(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)) + (R_B * (x-4)) - (q_2 * (x-4) * (\frac{x-4}{2})) , & \text{if } x > 4 
+\end{cases}
+$$
+
+5. Using matplotlib, plot x against M and replicate **every element** included in the graph below (the colors do not have to match exactly):
+
+    ![moment_diagram.png](images/moment_diagram.png)
+
+#### Part 2 - Pasadena Precipitation Data
+
+You will now graph the temperature data from Pasadena, CA from 2013-2014.
+
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the temperature data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+
+  - x - Date 
+  - y_1 - High Temperature 
+  - y_2 - Low Temperature
+
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
 
     ![pasadenagraph.png](images/pasadenagraph.png)
 
-#### Part 2 - Provo River Streamflow Data
+#### Part 3 - Provo River Streamflow Data
 
-In Part 2, we have provided numpy code to create the varables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+You will now graph the streamflow data of Provo River in June 2021.
 
-1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
-2. Plot y_1, label it "10163000" and color it purple
-3. Plot y_2, label it "10155200" and color it teal or blue
-4. Plot y_3, label it "10155500" and color it green
-5. Plot y_4, label it "10154200" and color it orange
-6. Plot y_5, label it "10155000" and color it orange-red or red
-7. Title the graph "Provo River Streamflow Data (2021)"
-8. Label the x-axis as "Date/Time"
-9. Label the y-axis as "Flowrate (cfs)"
-10. Using the xticks function, rotate the ticks by 45 degrees
-11. Create a legend in the top right corner, make the font size 10, and title it "Site Numbers"
-12. Give the graph grid lines
-13. Show the graph - it should look something like this:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the streamflow data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+
+  - x - Date 
+  - y_1 - Site 10163000
+  - y_2 - Site 10155200
+  - y_3 - Site 10155500
+  - y_4 - Site 10154200 
+  - y_5 - Site 10155000
+
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
 
     ![streamflowgraph.png](images/streamflowgraph.png)
 
-#### Part 3 - Average U.S. Daily Birth Data
-Part 3 is similar, we give you numpy code to create the plotting variables similar to the last two plots. However, this time we want you to annotate some interesting data in the graph. We give you a list of dates to annotate with their holiday names. We used a number of different arrow styles to show you some options. The pre-class reading has a link to the documentation for the annotate function with some examples of different arrow properties you can use. You don't need to match our arrow styles, but you should use the annotate function to point to the holidays.
+#### Part 4 - Fremont Bridge Bicycle Count Data
 
-After you annotate the graph, we ask you to explain the drop in birth rates on those days? You don't have to know the answer, but you should be able to make a guess based on the data. **These are real data** not made up for the assignment.
+You will now graph bicycle count data over a bridge in Fremont, Seattle taken from 2013 to 2022.
 
-1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x' and 'y_1'.
-2. Plot y_1 and give it a color of your choice
-3. Title the graph "Average U.S. Daily Birth Data"
-4. Label the x-axis as "Date"
-5. Label the y-axis as "Births"
-6. Using the xticks function, rotate the ticks by 45 degrees
-7. Give the graph gridlines
-8. Annotate the chart with arrows that point to and label the following holidays:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the Fremont bridge count data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
 
-&nbsp;&nbsp;&nbsp;&nbsp;New Year’s Day (2012-01-01)
+  - x - Date 
+  - y_1 - Fremont Bridge Total
+  - y_2 - Fremont Bridge East Sidewalk
+  - y_3 - Fremont Bridge West Sidewalk
 
-&nbsp;&nbsp;&nbsp;&nbsp;Independence Day (2012-07-04)
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
 
-&nbsp;&nbsp;&nbsp;&nbsp;Halloween (2012-10-31)
+    ![fremontbridge.png](images/fremontbridge.png)
 
-&nbsp;&nbsp;&nbsp;&nbsp;Thanksgiving (2012-11-27)
+3. Write a comment in your code explaining why you think the bike count drops so dramatically.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Christmas (2012-12-25)
+#### Part 5 - Average U.S. Daily Birth Data
 
-10. Show the graph - it should look something like this:
+You will now graph the average U.S. daily birth data taken from 2012 to 2013.
 
-    ![birthgraph.png](images/birthgraph.png)
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the U.S. birth data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
 
-11. Write a comment explaining why you think the birth rate drops during those days
+  - x - Date 
+  - y_1 - Births
+
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
+
+!!! Hint
+    In your first line, enter `plt.figure(figsize=(12, 4))` to create the correct size for your plot.
+
+![birthgraph.png](images/birthgraph.png)
+
+3. Write a comment explaining why you think the birth rate drops during those days
 
 ---
 
@@ -96,14 +178,21 @@ After you annotate the graph, we ask you to explain the drop in birth rates on t
 
 **Rubric:**
 
-|                      **Item**                      | **Amount** |  
-|:--------------------------------------------------:|:----------:|
-|        Google Sheets is connected correctly        |     3      |
-| The temperature data graph has all listed elements |     8      |
-| The streamflow data graph has all listed elements  |     8      |
-|    The birth data graph has all listed elements    |     8      |
-|       The annotations are created correctly        |     3      |
-|   <div style="text-align: right">**Total**</div>   |   **30**   |
+|                                           **Item**                                           | **Amount** |  
+|:--------------------------------------------------------------------------------------------:|:----------:|
+|                             All CSV files are correctly read in                              |     4      |
+|                             Part 1 - Variables defined correctly                             |     2      |
+|                           Part 1 - Diagrams display data correctly                           |     8      |
+| Part 1 - Diagrams have correct titles, axis titles, x-axes, filled area, and similar colors  |     10     |
+|                            Part 2 - Graph displays data correctly                            |     4      |
+|     Part 2 - Graph has correct title, axis titles, legend, gridlines and similar colors      |     5      |
+|                            Part 3 - Graph displays data correctly                            |     4      |
+| Part 3 - Graph has correct title, axis titles, rotated labels, gridlines, and similar colors |     5      |
+|                            Part 4 - Graph displays data correctly                            |     4      |
+|     Part 4 - Graph has correct title, axis titles, legend, gridlines, and similar colors     |     5      |
+|                            Part 5 - Graph displays data correctly                            |     4      |
+|  Part 5 - Graph has correct title, axis titles, gridlines, annotations, and similar colors   |     5      |
+|                        <div style="text-align: right">**Total**</div>                        |   **60**   |
 
 ---
 

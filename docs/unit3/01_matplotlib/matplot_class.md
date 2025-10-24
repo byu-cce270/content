@@ -9,8 +9,11 @@ You can find the In Class Exercise here:
 1. Open the in-class workbook using the link above.
 2. Rename it something like "(Your_Name)_Class_Matplotlib.ipynb"
 3. Follow the instructions in the notebook to complete the exercise.
-4. You will be using [this Google Sheet](https://docs.google.com/spreadsheets/d/1GQ9xHN8LEWTtEJlabwKIDUw0Lb8NJf_6mt92gQfPZdg/edit?usp=sharing){:target="_blank"} as your dataset when you reach the "Graphing from Google Sheets" portion of this assignment.
+4. You will be using the following CSVs when you reach the "Graphing from CSVs" portion of this assignment:
 
+   * [2024-Construction-Spending.csv](2024-Construction-Spending.csv)
+   * [2025-Utah-Lake-DO-Concentration.csv](Utah-Lake-DO-Concentration.csv)
+   * [2022-Weekly-Traffic-Volume.csv](2022-Weekly-Traffic-Volume.csv)
 ---
 			
 ## Turning in/Rubric
