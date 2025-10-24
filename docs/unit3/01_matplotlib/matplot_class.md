@@ -12,6 +12,7 @@ You can find the In Class Exercise here:
 4. You will be using the following CSVs when you reach the "Graphing from CSVs" portion of this assignment:
 
    * [2024-Construction-Spending.csv](2024-Construction-Spending.csv)
+   * [2025-Utah-Lake-DO-Concentration.csv](Utah-Lake-DO-Concentration.csv)
    * [2022-Weekly-Traffic-Volume.csv](2022-Weekly-Traffic-Volume.csv)
 ---
 			

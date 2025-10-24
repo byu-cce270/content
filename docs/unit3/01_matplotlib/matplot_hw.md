@@ -18,14 +18,19 @@ In this assignment, you will be creating graphs of historical weather data in Pa
 
 ---
 
-#### Connecting to Google Sheets
+#### Part 1 - Shear and Moment Diagrams
+
+For this exercise, we will be creating shear and moment diagrams for the following beam:
+
+    ![beam.png](images/beam.png)
+
 
 1. Connect the Google Sheets workbook to the Colab notebook
 2. Create three separate variables **temp_data**, **stream_data**, and **birth_data** that connect to their related worksheets. For example, the **temp_data** variable should connect to the worksheet titled "Pasadena Precipitation Data", the **stream_data** variable should connect to the worksheet titled "Provo River Streamflow Data," etc.
    
-#### Part 1 - Pasadena Precipitation Data
+#### Part 2 - Pasadena Precipitation Data
 
-In Part 1, you will be graphing the temperature data from Pasadena, CA. The data is from 2013-2014 and includes the high and low temperatures for each day. We added the numpy code to create the data arrays for you to make plotting easier. We created an array for the x-data called ```x```, an array for the high temperature data called ```y_1```, and an array for the low temperature data called ```y_2```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will  need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+You will now graph the temperature data from Pasadena, CA from 2013-2014. The data is from 2013-2014 and includes the high and low temperatures for each day. We added the numpy code to create the data arrays for you to make plotting easier. We created an array for the x-data called ```x```, an array for the high temperature data called ```y_1```, and an array for the low temperature data called ```y_2```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will  need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', and 'y_2'
 2. Plot a replica of the graph below - it should look something like this:
@@ -34,7 +39,7 @@ In Part 1, you will be graphing the temperature data from Pasadena, CA. The data
 
 #### Part 2 - Provo River Streamflow Data
 
-In Part 2, we have provided numpy code to create the varables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+In Part 2, we have provided numpy code to create the variables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
 2. Plot a replica of the graph below - it should look something like this:
