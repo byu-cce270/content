@@ -70,7 +70,7 @@ R_A - (q_1 * 2) - P_1 + R_B - (q_2 * (x-4)), & \text{if } x > 4
 \end{cases}
 $$
 
-5. Using matplotlib, plot x against V and then replicate **every element** included in the graph below:
+5. Using matplotlib, plot x against V and then replicate **every element** included in the graph below (the colors do not have to match exactly):
 
     ![shear_diagram.png](images/shear_diagram.png)
 
@@ -93,7 +93,7 @@ M(x) =
 \end{cases}
 $$
 
-5. Using matplotlib, plot x against M and replicate **every element** included in the graph below:
+5. Using matplotlib, plot x against M and replicate **every element** included in the graph below (the colors do not have to match exactly):
 
     ![moment_diagram.png](images/moment_diagram.png)
 
