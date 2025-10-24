@@ -70,7 +70,7 @@ R_A - (q_1 * 2) - P_1 + R_B - (q_2 * (x-4)), & \text{if } x > 4
 \end{cases}
 $$
 
-5. Using matplotlib, plot x against V and then replicate the elements in the graph below:
+5. Using matplotlib, plot x against V and then replicate **every element** included in the graph below:
 
     ![shear_diagram.png](images/shear_diagram.png)
 
@@ -93,16 +93,21 @@ M(x) =
 \end{cases}
 $$
 
-5. Using matplotlib, plot x against M and then replicate the elements in the graph below:
+5. Using matplotlib, plot x against M and replicate **every element** included in the graph below:
 
     ![moment_diagram.png](images/moment_diagram.png)
 
 #### Part 2 - Pasadena Precipitation Data
 
-You will now graph the temperature data from Pasadena, CA from 2013-2014. The data is from 2013-2014 and includes the high and low temperatures for each day. We added the numpy code to create the data arrays for you to make plotting easier. We created an array for the x-data called ```x```, an array for the high temperature data called ```y_1```, and an array for the low temperature data called ```y_2```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will  need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+You will now graph the temperature data from Pasadena, CA from 2013-2014.
 
-1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', and 'y_2'
-2. Plot a replica of the graph below - it should look something like this:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the temperature data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+
+  - x - Date 
+  - y_1 - High Temperature 
+  - y_2 - Low Temperature
+
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
 
     ![pasadenagraph.png](images/pasadenagraph.png)
 
@@ -114,7 +119,6 @@ In Part 3, we have provided numpy code to create the variables for the Provo Riv
 2. Plot a replica of the graph below - it should look something like this:
 
     ![streamflowgraph.png](images/streamflowgraph.png)
-
 
 #### Part 4 - Fremont Bridge Bicycle Count Data
 
@@ -137,7 +141,7 @@ After you annotate the graph, we ask you to explain the drop in birth rates on t
 2. Plot a replica of the graph below - it should look something like this:
 
 !!! Hint
-   In your first line, enter `plt.figure(figsize=(12, 4))` to create the correct size for your plot.
+    In your first line, enter `plt.figure(figsize=(12, 4))` to create the correct size for your plot.
 
 ![birthgraph.png](images/birthgraph.png)
 
