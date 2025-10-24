@@ -115,7 +115,7 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
 |             The first for loop is defined correctly             |     2      |
 |        Returns "Material not found" if invalid material         |     2      |
 |               The while loop is defined correctly               |     4      |
-| The input statements and related variables are properly created |     4      |
+| The input statements and related variables are created properly |     4      |
 |     The "cost" variable is pulled from dictionary correctly     |     4      |
 |                The total is calculated correctly                |     6      |
 |    The function prints every material and its related price     |     4      |
