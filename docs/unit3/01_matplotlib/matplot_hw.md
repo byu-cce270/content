@@ -8,14 +8,12 @@
 
 2. Rename it something like "(Your_Name)_HW_Matplotlib.ipynb"
 
-3. Download each CSV to be used in problems:
+3. Download each CSV to be used in parts 2 through 5:
 
-    * [2013-2014 Pasadena Temperatures.csv](2013-2014%20Pasadena%20Temperatures.csv)
-    * [June 2021 Provo River Streamflow Rates.csv](June%202021%20Provo%20River%20Streamflow%20Rates.csv)
+    * [2013-2014-Pasadena-Temperature-Data.csv](2013-2014-Pasadena-Temperature-Data.csv)
+    * [June-2021-Provo-River-Streamflow-Rates.csv](June-2021-Provo-River-Streamflow-Rates.csv)
     * [Fremont-Bridge-Bicycle-Count.csv](Fremont-Bridge-Bicycle-Count.csv)
-    * [2012 U.S. Birth Rates.csv](2012%20U.S.%20Birth%20Rates.csv)
-
-In this assignment, you will be creating graphs of historical weather data in Pasadena, CA, Provo River flowrate data, and U.S. Birth Rates.
+    * [2012-US-Birth-Rates.csv](2012-US-Birth-Rates.csv)
 
 ---
 
@@ -37,8 +35,8 @@ Where:
   - $x$ is any point taken along the beam measured from its left end
   - $A$ is the pin support of the beam located at $x=0 ft$  
   - $B$ is the roller support of the beam located at $x=4 ft$ 
-  - $R_{A}$ is the reaction force of 170 $lb$ associated with the pin support located at $x=0 ft$
-  - $R_{B}$ is the reaction force of 410 $lb$ associated with the roller support located at $x=4 ft$
+  - $R_{A}$ is the reaction force of 170 $lb$ associated with the pin support
+  - $R_{B}$ is the reaction force of 410 $lb$ associated with the roller support
   - $P_{1}$ is a point load of 100 $lbf$ acting at $x=2 ft$
   - $q_{1}$ is a distributed load of 120 $lb/ft$ per foot acting from $x=0 ft$ to $x=2 ft$
   - $q_{2}$ is a distributed load of 120 $lb/ft$ per foot acting from $x=4 ft$ to $x=6 ft$
@@ -144,8 +142,6 @@ After you annotate the graph, we ask you to explain the drop in birth rates on t
 ![birthgraph.png](images/birthgraph.png)
 
 3. Write a comment explaining why you think the birth rate drops during those days
-
-
 
 ---
 
