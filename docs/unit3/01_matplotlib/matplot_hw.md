@@ -38,8 +38,8 @@ Where:
   - $R_{A}$ is the reaction force of 170 $lb$ associated with the pin support
   - $R_{B}$ is the reaction force of 410 $lb$ associated with the roller support
   - $P_{1}$ is a point load of 100 $lb$ acting at $x=2 ft$
-  - $q_{1}$ is a distributed load of 120 $lb/ft$ per foot acting from $x=0 ft$ to $x=2 ft$
-  - $q_{2}$ is a distributed load of 120 $lb/ft$ per foot acting from $x=4 ft$ to $x=6 ft$
+  - $q_{1}$ is a distributed load of 120 $lb/ft$ acting from $x=0 ft$ to $x=2 ft$
+  - $q_{2}$ is a distributed load of 120 $lb/ft$ acting from $x=4 ft$ to $x=6 ft$
 
 After making a cut within the beam at a point of interest, the internal shear and moment equations can be solved by plugging in the above external forces and lengths into the following equilibrium equations:
 
