@@ -112,8 +112,7 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
 |                            **Item**                             | **Amount** |  
 |:---------------------------------------------------------------:|:----------:|
 |               The dictionary is properly created                |     2      |
-|             The first for loop is defined correctly             |     2      |
-|        Returns "Material not found" if invalid material         |     2      |
+|             The first for loop is defined correctly             |     4      |
 |               The while loop is defined correctly               |     4      |
 | The input statements and related variables are created properly |     4      |
 |     The "cost" variable is pulled from dictionary correctly     |     4      |
