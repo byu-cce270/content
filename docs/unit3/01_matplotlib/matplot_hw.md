@@ -63,9 +63,9 @@ Where:
 $$
 V(x) =
 \begin{cases}
-x^2, & \text{if } x > 1 \\
-2x + 3, & \text{if } 0 \le x \le 1 \\
--4, & \text{if } x < 0
+R_A - (q_1 * x), & \text{if } x < 2 \\
+R_A - (q_1 * 2 ft) - P_1, & \text{if } 2 < x < 4 \\
+R_A - (q_1 * 2 ft) - P_1 + R_B - (q_2 * (x-4)), & \text{if } x < 0
 \end{cases}
 $$
 
