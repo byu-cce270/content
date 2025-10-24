@@ -1,6 +1,6 @@
 # HW: Matplotlib
 
-**Purpose:** Learn how to read in data from Google Sheets and make graphs from it
+**Purpose:** Learn how to make graphs with different kinds of data.
 
 ## Instructions
 
@@ -8,10 +8,11 @@
 
 2. Rename it something like "(Your_Name)_HW_Matplotlib.ipynb"
 
-3. Download each CSV. You will use one for each problem:
+3. Download each CSV to be used in problems:
 
     * [2013-2014 Pasadena Temperatures.csv](2013-2014%20Pasadena%20Temperatures.csv)
     * [June 2021 Provo River Streamflow Rates.csv](June%202021%20Provo%20River%20Streamflow%20Rates.csv)
+    * [Fremont-Bridge-Bicycle-Count.csv](Fremont-Bridge-Bicycle-Count.csv)
     * [2012 U.S. Birth Rates.csv](2012%20U.S.%20Birth%20Rates.csv)
 
 In this assignment, you will be creating graphs of historical weather data in Pasadena, CA, Provo River flowrate data, and U.S. Birth Rates.
@@ -56,7 +57,7 @@ Where:
 2. Define a variable ```x``` using ```np.linspace()``` with the following arguments:
 
   - start: 0
-  - stop: L
+  - stop: $L$
   - num: 500
 
 3. Define a variable ```V``` using ```np.zeros_like()``` with ```x``` as the argument. This will create a list of zeros with the same length as ```x```. 
@@ -71,6 +72,33 @@ R_A - (q_1 * 2) - P_1 + R_B - (q_2 * (x-4)), & \text{if } x > 4
 \end{cases}
 $$
 
+5. Using matplotlib, plot x against V and then replicate the elements in the graph below:
+
+    ![shear_diagram.png](images/shear_diagram.png)
+
+1. In the 'Part 1b - Moment Diagram' code block, copy and paste the variables defined in Part 1a.
+2. Define a variable ```x``` using ```np.linspace()``` with the following arguments:
+
+  - start: 0
+  - stop: $L$
+  - num: 500
+
+3. Define a variable ```M``` using ```np.zeros_like()``` with ```x``` as the argument. 
+4. Create a for loop that loops over the length of ```x``` and defines ```M``` to be the following piecewise function under the respective boundary conditions:
+
+$$
+M(x) =
+\begin{cases}
+(R_A * x) - (q_1 * \frac{x^2}{2}), & \text{if } x < 2 \\
+(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)), & \text{if } 2 < x < 4 \\
+(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)) + (R_B * (x-4)) - (q_2 * (x-4) * (\frac{x-4}{2})) , & \text{if } x > 4 
+\end{cases}
+$$
+
+5. Using matplotlib, plot x against M and then replicate the elements in the graph below:
+
+    ![moment_diagram.png](images/moment_diagram.png)
+
 #### Part 2 - Pasadena Precipitation Data
 
 You will now graph the temperature data from Pasadena, CA from 2013-2014. The data is from 2013-2014 and includes the high and low temperatures for each day. We added the numpy code to create the data arrays for you to make plotting easier. We created an array for the x-data called ```x```, an array for the high temperature data called ```y_1```, and an array for the low temperature data called ```y_2```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will  need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
@@ -80,16 +108,29 @@ You will now graph the temperature data from Pasadena, CA from 2013-2014. The da
 
     ![pasadenagraph.png](images/pasadenagraph.png)
 
-#### Part 2 - Provo River Streamflow Data
+#### Part 3 - Provo River Streamflow Data
 
-In Part 2, we have provided numpy code to create the variables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+In Part 3, we have provided numpy code to create the variables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
 
 1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', 'y_3', 'y_4', and 'y_5'
 2. Plot a replica of the graph below - it should look something like this:
 
     ![streamflowgraph.png](images/streamflowgraph.png)
 
-#### Part 3 - Average U.S. Daily Birth Data
+
+#### Part 4 - Fremont Bridge Bicycle Count Data
+
+In Part 3, we have provided numpy code to create the variables for the Provo River Streamflow Data. We created an array for the x-data called ```x```, and arrays for the streamflow data for five different sites called ```y_1```, ```y_2```, ```y_3```, ```y_4```, and ```y_5```. You will need to plot the data as lines, add labels, titles, and other elements to make the graph look nice. You will need to rotate the x-axis ticks so they are readable. Add a legend to the graph and grid lines and change the font size.
+
+1. In the 'Graphing the Data' code block, three lists are referenced from the 'Numpy Array Creation & Slicing' block above. These are 'x', 'y_1', 'y_2', and 'y_3'
+2. Plot a replica of the graph below - it should look something like this:
+
+    ![fremontbridge.png](images/fremontbridge.png)
+
+3. Write a comment explaining why you think the bike count drops dramatically.
+
+
+#### Part 5 - Average U.S. Daily Birth Data
 Part 3 is similar, we give you numpy code to create the plotting variables similar to the last two plots. However, this time we want you to annotate some interesting data in the graph. We give you a list of dates to annotate with their holiday names. We used a number of different arrow styles to show you some options. The pre-class reading has a link to the documentation for the annotate function with some examples of different arrow properties you can use. You don't need to match our arrow styles, but you should use the annotate function to point to the holidays.
 
 After you annotate the graph, we ask you to explain the drop in birth rates on those days? You don't have to know the answer, but you should be able to make a guess based on the data. **These are real data** not made up for the assignment.
