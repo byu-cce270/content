@@ -10,7 +10,7 @@ Python Data Science Handbook, 2nd Edition.
 
 [Chapter 5: The Basics of NumPy Arrays](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch05.html#ch_0202-the-basics-of-numpy-arrays_numpy-array-attributes){:target="_blank"}<br>
 [Chapter 6: Computation on NumPy Arrays: Universal Functions](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch06.html#ch_0203-computation-on-arrays-ufuncs_the-slowness-of-loops){:target="_blank"}<br>
-[Chapter 11: Sorting Arrays](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch11.html){:target="_blank"}
+Note: For chapter 6, read up to but not including the section _Specialized Ufuncs_. Skip the rest.<br>
 
 The chapters we skip are about indexing and broadcasting, which we will not cover in this class. We will typically use NumPy arrays like a spreadsheet, where we just want to access the entire row or column of data. We will not be using the more advanced indexing features of NumPy.
 
