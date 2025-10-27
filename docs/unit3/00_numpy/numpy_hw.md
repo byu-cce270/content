@@ -18,11 +18,15 @@ For this assignment, Dr. Doofenshmirtz is partnering with BYU to create a new ro
 
 Where:
 
-  - $L_{AC}$ is an length of segment AB, you will select
+  - $L_{AC}$ is an length of segment AC, you will select
   - $θ_A$ and $θ_C$ are  angles at points A and C, respectively that you will select
   - P is a load being applied at point B acting downward (denoted with the red arrow)
   - Joint A has a pin joint (reaction forces in the x and y direction)
   - Joint C has a roller (reaction force only in the y direction)
+
+
+We want to evaluate a number of truss designs by changing the angles at joints A and C, as well as the length of member AC. The two angles determine how tall the truss is, which is important for Dr. Doofenshmirtz's design. The length of member AC will determine how wide the building is.
+
 
 For this problem, you will: 
 
@@ -31,16 +35,26 @@ For this problem, you will:
 >3) Solve for the length of member $L_{AC}$.<br>
 >4) Use matplot to graph the truss with the forces in each segment.<br>
 
-We will use the Method of Joints to  derive the following equations:
+We will sum the forces at each joint ( Method of Joints) to  create the matrix we will solve using  the following equations:
 
->>$\sum F_{A_x} = ABcos(θ_A) + AC+R_{A_x} = 0$<br>
-$\sum F_{A_y} = ABsin(θ_A) + R_{A_y} = 0$<br>
-$\sum F_{B_x} = -ABcos(θ_A) + BCcos(θ_C) = 0$<br>
-$\sum F_{B_y} = -ABsin(θ_A) - BCcos(θ_C) = -P$<br>
-$\sum F_{C_x} = -BCcos(θ_C) - AC = 0$<br>
-$\sum F_{C_y} = BCsin(θ_C) + R_{C_y} = 0$
+>>$\sum F_{A_x} = AB*cos(θ_A) + AC+R_{A_x} = 0$<br>
+$\sum F_{A_y} = AB*sin(θ_A) + R_{A_y} = 0$<br>
+$\sum F_{B_x} = -AB*cos(θ_A) + BC*cos(θ_C) = 0$<br>
+$\sum F_{B_y} = -AB*sin(θ_A) - BC*cos(θ_C) = -P$<br>
+$\sum F_{C_x} = -BC*cos(θ_C) - AC = 0$<br>
+$\sum F_{C_y} = BC*sin(θ_C) + R_{C_y} = 0$
 
-We will arrange the equations so we can create a matrix from the coefficients of the unknowns. We can then use these equations to solve for our unknown forces: $AB, AC, BC, R_{A_x}, R_{A_y}$. Typically, this could take a long time when doing it by hand, but can be solved in seconds with some python code and numpy. The way we go about this is by setting up our forces as a system of equations. The equations shown above can be written in matrix form as:
+!!!note
+    - $AB$, $AC$, and $BC$ are the internal forces in each segment of the truss (these are unknowns we are solving for).
+    - $R_{A_x}$ and $R_{A_y}$ are the reaction forces at joint A (these are unknowns we are solving for).
+    - $R_{C_y}$ is the reaction force at joint C (this is an unknown we are solving for).
+    - $-P$ is the external load acting downward at joint B (this is a known value we will input).
+
+
+
+To solve for these varible, we will arrange the equations so we can create a matrix from the coefficients of the unknowns. 
+
+We can then use these equations to solve for our unknown forces: $AB, AC, BC, R_{A_x}, R_{A_y}$. Typically, this could take a long time when doing it by hand, but can be solved in seconds with some python code and numpy. The way we go about this is by setting up our forces as a system of equations. The equations shown above can be written in matrix form as:
 
 >>$\begin{bmatrix} 
 \cos(\theta_A) & 0 & 1 & 1 & 0 & 0 \\ 
@@ -67,9 +81,18 @@ R_{A_y}
 0
 \end{bmatrix}$
 
+
+In this matrix we know everything in the leftmost matrix and the rightmost matrix. The middle matrix is what we are solving for. For example we input angles $θ_A$ and $θ_C$ and the load P. We can solve for $θ_B$ using the fact that the sum of the angles in a triangle is 180 degrees. Then we know everytin we need to know to fill out the matrix. 
+
+The $0$ and $1$ values in the leftmost matrix come from whether a load in the joint exists for that equation. For example in the first row $[\cos(\theta_A) \quad 0 \quad 1 \quad 1 \quad 0 \quad 0]$ represents the equation for the forces in the x direction at joint A. In this equation, there is a force from member AB in the x direction (hence the $\cos(\theta_A)$ term), there is no force from member AC in the x direction (hence the $0$ term), there is a force from the reaction at A in the x direction (hence the $1$ term), and there are no other forces acting on joint A in the x direction (hence the $0$ terms). The other rows follow the same logic.
+
+The rightmost matrix just contains the load $-P$ at joint B, and 0's everywhere else since there are no other external loads acting on the truss. 
+
 Where the first matrix is our forces matrix (or a matrix of the coefficients), the second matrix is our internal forces which are unknown, this is what we are solving for, and the third matrix is our external forces.
 
 This may seem daunting! But it can be rather simple. Let's jump into it!
+
+We will help by breaking this problem down into 4 parts. This will be confusing, you will need to refer back to the equations and the matrices often to ensure you are putting the right values in the right places. We suggest you write out an outline on paper before you start coding to help organize your thoughts and what you want the code to do. If you can explain step by step what you want the code to do, it will make it much easier to write the code.
 
 ---
 
@@ -127,31 +150,61 @@ We will create a function that will accept $θ_A$,  $θ_C$ and $L_{AC}$ as input
 
 
 1. Create a new function that will take in 3 parameters: $θ_A$,  $θ_C$ and $L_{AC}$ as inputs. This function will solve for the X and y values of each joint. (We will say that A is the origin with coordinates [0,0])
-2. Since we are given angle A and angle B, solve for theta B. Hint: the sum of the angles in a triangle is 180 degrees.
+2. Since we are given angle A ($θ_A$) and angle B ($θ_b$), solve for angle C ($θ_C$). Hint: the sum of the angles in a triangle is 180 degrees.
 3. Convert angles A, B, and C from degrees to radians (since this is what Numpy does its calculations in)
 4. Time to bring back your geometry skills, now that you know all of your angles and one side length you can use the law of sines to solve for the other lengths. Save each length of the truss in their own variables.
 
-Here is the law of sines for reference:
+Here is the law of sines for reference where a, b, and c are the lengths of each side opposite their respective angles A, B, and C:
 
 <img src="https://github.com/user-attachments/assets/99d5bbfa-fc1a-4873-b687-679e7e139e52" width="70%" height="70%" alt="Centered Image">
 
 _(image from [CalcWorkshop](https://calcworkshop.com/law-sines-cosines/law-of-sines/))_
 
-Heres some code to help you get started:
+So for example to solve for length AB you would use the equation:
+
+
+
+$$
+\text{length}_{AB} = \left( \frac{\text{length}_{AC}}{\sin(B)} \right) \cdot \sin(C)
+$$
+
+If you set the following variables:
+
+
+```text
+length_AC = length of the truss member from A to C
+angle_B   = angle at joint B in radians
+angle_C   = angle at joint C in radians
+length_AB = length of the truss member from A to B```
+```
+
+Here is some example python code  to solve the equation for length AB. You will need to replace the variable names with your own variable names as needed.:
 
 ```python
 length_AB = (length_AC / np.sin(angle_B)) * np.sin(angle_C)
 
 ```
+!!! hint
+    - It may be helpful to setup a separate function to solve for the lengths using the law of sines to avoid repeating code. Your main function can then call this helper function three times to get the lengths of AB, BC, and AC.
+    - you may want to have several simpler functions your main function calls to help break down the problem into smaller pieces.
+    - It will also probably be helpful to outline this on paper before you start coding
+
+
 5. Print the length of AB, BC, and AC with the respective units. For example, my print statement would say something like "Length of AB: 3 ft", "Length of BC: 4 ft", "Length of AC: 6 ft" when displayed.
 6. Now that you have all of your lengths, you can solve for the x and y coordinates of each joint. To do this, you will use the following equations:
-7. For joint A, the x and y coordinates are both 0 (we are saying that A is the origin). Save both the x and y coordinates as a singular variable such as joint_A.
+7. For joint A, the x and y coordinates are both 0 (we are saying that A is the origin). Save both the x and y coordinates as a singular variable such as joint_A that is a list of two values.
 8. For joint B, the x coordinate is the length of AB times the cosine of angle A. The y coordinate is the length of AB times the sine of angle A. Save this as a variable such as joint_B.
 9. For joint C, the x coordinate is the length of AC. The y coordinate 0 since it is the same level as A. Save this as a variable such as joint_C.
 10. Create a dictionary to store these values. The keys will be the joint names (A, B, C) and the values will be the x and y coordinates of each joint. For example, your dictionary might look like `"A": (0, 0), "B": (3, 4), "C": (6, 0)` when displayed.
-10. Return this dictionary .
+10. Return this dictionary if you used a function to create it.
 
 
+
+!!! note
+    - It will  probably be helpful to outline this on paper before you start coding
+    - This doesn't need a lot of detail, just the steps you need to take to solve the problem.
+    - Each of the steps are relatively simple, but there are a lot of them. Breaking them down will help you avoid mistakes.
+    - If you start coding before organizing your thoughts, you may find yourself going back and redoing a lot of work.
 ---
 
 ### Part 3: Graph the Truss
