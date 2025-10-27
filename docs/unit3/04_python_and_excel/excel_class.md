@@ -81,7 +81,7 @@ Finally, we will finish up and close the notebook.
 
 When finished, Your Excel file should look similar to the one below:
 
-![Streamflow Excel File](streamflow_screenshot.png)
+![Streamflow Excel File](images/streamflow_screenshot.png)
 
 ## Part 2: Accident Database Analysis
 
@@ -156,10 +156,26 @@ Now do the same thing to add a column chart to the 'Day' sheet using the data in
 
 When finished, Your Excel file should look similar to the one below:
 
-![acc_type_sheet.png](acc_type_sheet.png)
-![acc_day_sheet.png](acc_day_sheet.png)
+![acc_type_sheet.png](images/acc_type_sheet.png)
+![acc_day_sheet.png](images/acc_day_sheet.png)
+
+---
+			
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
 
 ---
 
-## Turning in/Rubric
-Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|   Link shared incorrectly   |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |

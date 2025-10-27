@@ -1,0 +1,25 @@
+beam_id,beam_type,load_type,load,L,E,b,h
+B01,cantilever,moment,180000,120,29000000,8,10
+B02,cantilever,moment,250000,96,29000000,6,12
+B03,cantilever,point,2000,120,29000000,8,10
+B04,cantilever,point,1200,84,10000000,6,8
+B05,cantilever,distributed,1600,144,29000000,8,12
+B06,cantilever,distributed,2200,96,3600000,10,16
+B07,simply supported,moment,150000,144,29000000,8,12
+B08,simply supported,moment,210000,120,10000000,10,10
+B09,simply supported,point,1800,132,29000000,8,10
+B10,simply supported,point,2600,96,3600000,12,18
+B11,simply supported,distributed,1200,144,29000000,6,10
+B12,simply supported,distributed,2000,108,1600000,4,8
+B13,fixed-fixed,moment,130000,120,29000000,6,10
+B14,fixed-fixed,moment,300000,90,29000000,8,14
+B15,fixed-fixed,point,2200,108,10000000,10,12
+B16,fixed-fixed,point,1400,84,29000000,6,8
+B17,fixed-fixed,distributed,1800,132,29000000,8,12
+B18,fixed-fixed,distributed,2400,96,3600000,12,16
+B19,propped cantilever,moment,110000,132,29000000,6,10
+B20,propped cantilever,moment,190000,100,10000000,8,12
+B21,propped cantilever,point,1600,120,29000000,6,9
+B22,propped cantilever,point,2800,90,3600000,10,14
+B23,propped cantilever,distributed,1500,140,29000000,8,12
+B24,propped cantilever,distributed,2100,96,1600000,12,18

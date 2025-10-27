@@ -434,19 +434,21 @@ D. Creating a Pie Chart.
 
 ## Glossary of Key Terms
 
-* Conditional Formatting: A feature in Excel that allows you to format cells based on certain conditions, making data easier to read and highlight.
-* Data Validation: A feature that allows you to control the type of data entered into a cell, helping to prevent errors.
-* Filtering: A feature that allows you to show only the data that meets certain criteria, hiding rows that do not match.
-* Function: A preset formula in Excel that helps users analyze, manage, and compute data (e.g., SUM, AVERAGE).
-* Gantt Chart: A type of bar chart used in project management that illustrates a project schedule, showing the start and finish dates of tasks.
-* Goal Seek: A tool in Excel that automates a trial-and-error process to find a specific input value that results in a desired output from a formula.
-* HLOOKUP: A function used for horizontal lookups, searching for a value in the top row of a table and returning a value from a specified row below it.
-* IF Function: A logical function that returns one value if a specified condition is true and another value if it is false.
-* IFS Function: A logical function that checks whether one or more conditions are met and returns a value corresponding to the first true condition.
-* LEFT Function: A text function that returns a specified number of characters from the beginning of a text string.
-* MATCH Function: A function that returns the relative position (index number) of an item in a range of cells.
-* Pivot Table: A tool used to summarize, analyze, and explore large sets of data in more meaningful ways by rearranging rows and columns.
-* Solver: A powerful Excel add-in that finds an optimal (maximum, minimum, or specific) value for a formula by adjusting multiple input cells and adhering to a set of constraints.
-* TEXT Function: A function that converts a numeric value into text using a specified format code.
-* VLOOKUP: A function used for vertical lookups, searching for a value in the first column of a table and returning a value from a specified column in the same row.
-* WEEKDAY Function: A function that returns a number from 1 to 7 representing the day of the week for a given date.
+| Term | Definition |
+| :--- | :--- |
+| **Conditional Formatting** | A feature in Excel that allows you to format cells based on certain conditions, making data easier to read and highlight. |
+| **Data Validation** | A feature that allows you to control the type of data entered into a cell, helping to prevent errors. |
+| **Filtering** | A feature that allows you to show only the data that meets certain criteria, hiding rows that do not match. |
+| **Function** | A preset formula in Excel that helps users analyze, manage, and compute data (e.g., SUM, AVERAGE). |
+| **Gantt Chart** | A type of bar chart used in project management that illustrates a project schedule, showing the start and finish dates of tasks. |
+| **Goal Seek** | A tool in Excel that automates a trial-and-error process to find a specific input value that results in a desired output from a formula. |
+| **HLOOKUP** | A function used for horizontal lookups, searching for a value in the top row of a table and returning a value from a specified row below it. |
+| **IF Function** | A logical function that returns one value if a specified condition is true and another value if it is false. |
+| **IFS Function** | A logical function that checks whether one or more conditions are met and returns a value corresponding to the first true condition. |
+| **LEFT Function** | A text function that returns a specified number of characters from the beginning of a text string. |
+| **MATCH Function** | A function that returns the relative position (index number) of an item in a range of cells. |
+| **Pivot Table** | A tool used to summarize, analyze, and explore large sets of data in more meaningful ways by rearranging rows and columns. |
+| **Solver** | A powerful Excel add-in that finds an optimal (maximum, minimum, or specific) value for a formula by adjusting multiple input cells and adhering to a set of constraints. |
+| **TEXT Function** | A function that converts a numeric value into text using a specified format code. |
+| **VLOOKUP** | A function used for vertical lookups, searching for a value in the first column of a table and returning a value from a specified column in the same row. |
+| **WEEKDAY Function** | A function that returns a number from 1 to 7 representing the day of the week for a given date. |

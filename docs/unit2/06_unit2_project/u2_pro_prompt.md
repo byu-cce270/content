@@ -64,22 +64,22 @@ Only one team member needs to turn in the following in the feedback box on the a
 
 **Rubric:**
 
-|                                      Item                                       | Points Possible |
-|:-------------------------------------------------------------------------------:|:---------------:|
-|     An introductory text block with all the relevant information asked for      |       10        |
-|                           Uses if-elif-else statement                           |        6        |
-|                        Uses file reading and or writing                         |        6        |
-|                                   Uses loops                                    |        5        |
-|                       Uses numeric and string  variables                        |        5        |
-|                           Uses a dictionary or a list                           |        5        |
-|                        Uses comment to explain the code                         |       10        |
-|                      Writes and defines 3 custom functions                      |       12        |
-|                      Uses colab forms or input statements                       |        5        |
-|                       Use markdown to organize your code                        |        6        |
-|                                Prompt completed                                 |       10        |
-|                                 Video uploaded                                  |       10        |
-|                              Participation points                               |       10        |
-|                 <div style="text-align: right">**Total**</div>                  |       100       |
+|                                  Item                                  | Points Possible |
+|:----------------------------------------------------------------------:|:---------------:|
+| An introductory text block with all the relevant information asked for |       10        |
+|                      Uses if-elif-else statement                       |        6        |
+|                    Uses file reading and or writing                    |        6        |
+|                               Uses loops                               |        5        |
+|                   Uses numeric and string  variables                   |        5        |
+|                      Uses a dictionary or a list                       |        5        |
+|                    Uses comment to explain the code                    |       10        |
+|                 Writes and defines 3 custom functions                  |       12        |
+|                  Uses colab forms or input statements                  |        5        |
+|                   Use markdown to organize your code                   |        6        |
+|                            Prompt completed                            |       10        |
+|                Video uploaded (link to video not file)                 |       10        |
+|                          Participation points                          |       10        |
+|             <div style="text-align: right">**Total**</div>             |       100       |
 
 ---
 

@@ -9,23 +9,20 @@
 
 In this assignment, you will be creating code that will allow a user to find the maximum deflection and maximum bending stress on a beam given these six scenarios:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 1: Cantilever beam with a moment load
+>Scenario 1: Cantilever beam with a moment load<br>
+>Scenario 2: Cantilever beam with a point load<br>
+>Scenario 3: Cantilever beam with a distributed load<br>
+>Scenario 4: Simply supported beam with a moment load<br>
+>Scenario 5: Simply supported beam with a point load<br>
+>Scenario 6: Simply supported beam with a distributed load
 
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 2: Cantilever beam with a point load
-
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 3: Cantilever beam with a distributed load
-
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 4: Simply supported beam with a moment load
-
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 5: Simply supported beam with a point load
-
-&nbsp;&nbsp;&nbsp;&nbsp;Scenario 6: Simply supported beam with a distributed load
-
-**These scenarios are in the same exact order of the chart below. For example, scenario 1 corresponds to the very first image in the chart, scenario 2 corresponds to the second image in the chart, and so on.**
+These scenarios are in the same order of the chart below. For example, scenario 1 corresponds to the very first image in the chart, scenario 2 corresponds to the second image in the chart, and so on.
 
 ---
 
 #### Part 1
+!!! Hint
+    You created some of these functions during the in-class assigment. You can use those if you copy the code over. 
 
 1. In the first code block, write six appropriately named functions that calculate and return the maximum deflection and maximum moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
 
@@ -44,7 +41,7 @@ $I$ = the moment of inertia (in inches^4)
 
 2. Create a seventh function that calculates and returns the moment of inertia using this formula:
 
->>$I=\frac{bh^3}{12}$
+>>$I=\dfrac{bh^3}{12}$
 
 where:
 
@@ -53,7 +50,7 @@ $h$ = the height of the beam (in inches)
 
 3. Create an eighth function that calculates and returns maximum bending stress using this formula:
 
->>$\sigma_{max}=\frac{My}{I}$
+>>$\sigma_{max}=\dfrac{My}{I}$
 
 where:
 
@@ -70,6 +67,8 @@ $I$ = the moment of inertia (in inches^4)
    |   beam_type   | Asks what the beam type is (cantilever or simply supported) |    string     |
    |   load_type   | Asks what the load type is (moment, point, or distributed)  |    string     |
 
+
+ 
 2. On a new line, create IF and ELIF statements that check if the **load_type** entered is a moment, a point, or a distributed load. Depending on which **load_type** is entered, your IF and ELIF statements will run one of the following input statements:
 
    | Variable Name |                            Prompt                            | Variable Type |
@@ -87,9 +86,12 @@ $I$ = the moment of inertia (in inches^4)
    |       b       |         Asks what the base of the beam is (in inches)       |     float     |
    |       h       |        Asks what the height of the beam is (in inches)      |     float     |
 
+!!! Note
+    For testing your code you may want to comment out the input statements and just set the variables to make it easier to run. For example, you can hard code the inputs from step 11 below. Make sure you try other inputs also. If you do this,  you don't have to input all the data every time. After it is working, you can comment out these statements and remove the comments from the input statements so it will interactively ask you about a beam and assocated parameters.
+
 4. On a new line, create the variable **y** using the following equation:
 
->>$y=\frac{h}{2}$
+>>$y=\dfrac{h}{2}$
 
 5. On a new line within the code block, create a variable **I** that you set by calling the moment of inertia 
    function you created earlier, with the variables **b** and **h**  as its arguments. These variables were defined earlier.
@@ -140,9 +142,11 @@ rounded to the thousandths place):
 
 ---
 
-# Turning In/Rubric
+## Turning in/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+
+**Rubric:**
 
 |                             **Item**                             | **Amount** |
 |:----------------------------------------------------------------:|:----------:|
@@ -163,10 +167,12 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 |       Files is created correctly and appends new solutions       |     2      |
 |          <div style="text-align: right">**Total**</div>          |   **32**   |
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain 
-your code when using AI to help you create it or fail to share your link correctly.
+---
 
-|                      **Reasons for Points Lost**                         | **Amount** |  
-|:------------------------------------------------------------------------:|:----------:|
-|  No comments explaining why AI is used and what its provided code does   |     2-3    |
-|                       Link shared incorrectly                            |      3     |
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |

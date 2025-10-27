@@ -158,22 +158,7 @@ length_AB = (length_AC / np.sin(angle_B)) * np.sin(angle_C)
 
 Now that we have solved for the forces and the coordinates of each joint, we can graph the truss. The objective is to graph each segment of the truss in either blue or red. Blue will represent a tension (positive) force, and red will represent a compressive (negative) force. You will then label each joint with the letter of the joint (A, B, C). We will use the dictionary to loop through the different members, determine if the force is negative or positive for a color, then plot a line from the beginning coordinates to the end coordinates. For example for member $AC$ we would plot a line from coordinates of  A to the coordinates of  C.
 
-1. You are given a function that takes in 2 parameters: the dictionary of forces, and the dictionary of coordinates. 
-   *Note:* The provided code includes a dictionary where the keys are the starting and ending point of each 
-   segment 
-   and the 
-   value is its corresponding force.
-2. In the for loop, it is iterating through the keys of the members dictionary. Start represents the starting point of the segment, and end represents the ending point of the segment. The force variable is the force of the segment from the members dictionary.
-3. In the for loop, create an if statement that will check if the force is positive or negative. If the force is positive, plot the segment in "blue" and label it "tension". If the force is negative, plot the segment in red and label it "compression". Hint: It may be helpful to save the color and label as variables. AND make sure that the spelling of the color is the same of what Matplot uses.
-4. Now, create a list for the x values and a list for the y values. The x values will be the x coordinates of the starting and ending points of the segment. The y values will be the y coordinates of the starting and ending points of the segment. Hint: You will need to call the coordinates dictionary to get the x and y coordinates of each joint.
-5. Plot the segment using the x and y values you just created. Use the plt.plot() function to plot the segment. The first parameter will be the x values, the second parameter will be the y values,the third parameter will be the color of the segment, and the fourth parameter will be the label.
-6. Now, we will plot each joint. Create a for loop that will iterate through the keys and values of the coordinates dictionary. The key will be the joint and the value will be the x and y coordinates of the joint. 
-7. Save the x and y coordinates as variables.
-8. Using the plt.scatter function, plot the joint. The first parameter will be the x coordinate, the second parameter will be the y coordinate, and the third parameter will be the color of the joint (you can choose, black is a safe default).
-9. Label each joint with the key of the dictionary using plt.text(). The first parameter will be the x coordinate, the 
-   second parameter will be the y coordinate, and the third parameter will be the key of the dictionary.
-10. Add a title, x label, y label, and legend to the graph. You may wish to use `plt.margins(0.25)` to give some space around the graph.
-
+This code will be given to you as a preview for the next topic.
 ---
 
 ### Part 4: Call Functions
@@ -213,32 +198,34 @@ Now that we have solved for the forces and the coordinates of each joint, we can
 
 ---
 
-# Turning In/Rubric
+## Turning in/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
+**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
-|                **Items**                       | **Amount** |  
-|:----------------------------------------------:|:----------:|
-|        Part 1: Correctly constructs the force equilibrium equations and loads in matrix form based on the given matrix.    |     4      |
-|       Part 1: solution is added to the total_forces dictionary and dictionary is returned and printed      |     3      |
-|  Part 2: Side lengths AB, BC, and AC are found and printed  |     3      |
-| Part 2: Coordinates for A, B, and C are added to the coordinates dictionary, returned, and printed  |     3      |
-| Part 3: If statements are used to create the correct labeling and coloring based on positive (tension, blue)  and negative (compression, red) force values|     3      |
-| Part 3: Graph contains: title, x/y labels, legend for tension/compression, and labels for each point  |     3      |
-|       Part 4: Values for forces, lengths, and coordinates match given test scenarios      |     4      |
-|       Part 4: Graph matches given test scenarios       |     4      |
-|       Comments are added to explain code       |     3      |
-| <div style="text-align: right">**Total**</div> |   **30**   |
+**Rubric:**
 
+|                                                                         **Items**                                                                          | **Amount** |  
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+|                      Part 1: Correctly constructs the force equilibrium equations and loads in matrix form based on the given matrix.                      |     4      |
+|                              Part 1: solution is added to the total_forces dictionary and dictionary is returned and printed                               |     3      |
+|                                                 Part 2: Side lengths AB, BC, and AC are found and printed                                                  |     3      |
+|                             Part 2: Coordinates for A, B, and C are added to the coordinates dictionary, returned, and printed                             |     3      |
+| Part 3: If statements are used to create the correct labeling and coloring based on positive (tension, blue)  and negative (compression, red) force values |     3      |
+|                            Part 3: Graph contains: title, x/y labels, legend for tension/compression, and labels for each point                            |     3      |
+|                                       Part 4: Values for forces, lengths, and coordinates match given test scenarios                                       |     4      |
+|                                                         Part 4: Graph matches given test scenarios                                                         |     4      |
+|                                                             Comments are added to explain code                                                             |     3      |
+|                                                       <div style="text-align: right">**Total**</div>                                                       |   **30**   |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+---
 
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
-|       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |
+|                       **Reasons for Points Lost**                       |    **Amount**     |  
+|:-----------------------------------------------------------------------:|:-----------------:|
+|                         Link shared incorrectly                         |       -10%        |
+|                        Turned in late (per week)                        | -10% (up to -50%) |
+| No comments explaining where AI is used and what its provided code does |       -10%        |
 
 
 
