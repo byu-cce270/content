@@ -2,16 +2,14 @@
 
 ---
 
-# Pre-Class Reading Assignment
+# Pre-Class Reading Assignment bug
 
 On the O'Reilly's website read part II: Intro to NumPy chapters 5, 6, and 11 in
 Python Data Science Handbook, 2nd Edition. 
 </br>Here is a direct link to the readings:
 
 [Chapter 5: The Basics of NumPy Arrays](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch05.html#ch_0202-the-basics-of-numpy-arrays_numpy-array-attributes){:target="_blank"}
-
 [Chapter 6: Computation on NumPy Arrays: Universal Functions](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch06.html#ch_0203-computation-on-arrays-ufuncs_the-slowness-of-loops){:target="_blank"}
-
 Note: For chapter 6, read up to but not including the section _Specialized Ufuncs_. Skip the rest.
 
 The chapters we skip are about indexing and broadcasting, which we will not cover in this class. We will typically use NumPy arrays like a spreadsheet, where we just want to access the entire row or column of data. We will not be using the more advanced indexing features of NumPy.
