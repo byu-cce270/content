@@ -30,13 +30,13 @@ As noted in Chapter 25 of the Python Data Science book, Matplotlib provides two 
 1. A simple MATLAB-style interface that is provided by the `pyplot` module.
 2. An object-oriented interface that is provided by the `Figure` and `Axes` classes.
 
-The `pyplot` interface is a state-based interface that is designed to be familiar to users of MATLAB. It is 
-convenient for simple plots, but it is somewhat limited in its flexibility. The object-oriented interface is more 
-powerful and flexible, and it is recommended for more complex plots, especially those involving multiple subplots. In this course, we will primarily use the `pyplot` interface because it is simpler and works great for most plots. In 
+The `pyplot` interface is a state-based interface that is easy to use (looks like MATLAB) . It is 
+convenient for simple plots, but it is somewhat limited in its flexibility to make it easy. The object-oriented interface is more 
+powerful and flexible, and it is recommended for more complex plots, especially those involving multiple subplots. In this course, we will primarily use the `pyplot` interface (the easy one) because it is simpler and works great for most plots. In 
 the reading, 
-you will see examples of both interfaces. You are welcome to use the object-oriented interface if you prefer.
+you will see examples of both interfaces. You are welcome to use the object-oriented interface if you prefer. You can also mix the two interfaces, start with the easy `pyplot` interface, then add details and customizations using the object-oriented interface.
 
-Here is an example of how to use the object-oriented interface to create a simple line plot:
+Here is an example of how to use the object-oriented interface (more powerful) to create a simple line plot. You create an `Axes` object which we call `ax` in this example, then call methods on the object to create the plot and add labels, a title, and a legend.:
 
 ```python
 import matplotlib.pyplot as plt
@@ -52,7 +52,7 @@ ax.legend()
 
 ```
 
-This is how you would create the same plot with the `pyplot` interface:
+This is how you would create the same plot with the `pyplot` interface. Here we just issue a number of commands to create the plot and add labels, a title, and a legend. These commands work on the current figure and axes. With the object-oriented interface, you explicitly create the figure and axes objects and call methods on them.
 
 ```python
 import matplotlib.pyplot as plt
@@ -98,7 +98,7 @@ interface is more straightforward for creating multiple subplots.
 
 ## Bar Charts
 
-The reading above mainly describes line plots that you generated with the `plot` function. However, you can 
+The examples create line plots using  the `plot` function. However, you can 
 also create bar charts with the `bar` function. Bar charts are useful for comparing quantities across different categories. You can create a bar chart by calling the `bar` function with two arguments: a list of x-values and a list of y-values. The x-values are the categories, and the y-values are the quantities.
 
 Here is an example of how to create a bar chart:
@@ -117,7 +117,7 @@ To do a horizontal bar chart, you can use the `barh` function instead of the `ba
 
 Annotations are described in Chapter 32 of the Python Data Science book. Annotations are text or arrows that you can 
 add to a plot to provide additional information. In Chapter 32, all of the examples are based on the object-oriented 
-interface, but you can also add annotations with the `pyplot` interface as follows:
+interface. This is the best reference for your HW and in-class. However, you can also add annotations with the `pyplot` interface as follows and you may prefer this method for simple plots:
 
 ```python
 import matplotlib.pyplot as plt
@@ -129,9 +129,9 @@ plt.show()
 ```
 ![annotate.png](images/annotate.png)
 
-Note that the `annotate` function takes three arguments: the text of the annotation, the position of the annotation, 
+Note that the `annotate` function takes three arguments: the text of the annotation, the position of the annotation (where the arrow points to), 
 and the position of the text. The `arrowprops` argument is optional and specifies the properties of the arrow that 
-points to the annotation. The xy argument specifies the position of the annotation, and the xytext argument 
+points to the annotation. The xy argument specifies the position of the annotation (arrowhead location), and the xytext argument 
 specifies the position of the text. Both arguments are in data coordinates.
 
 The function parameters are:
@@ -144,9 +144,15 @@ arrowprops : The properties used to draw an arrow between the positions xy and x
 
 ## Styles (Optional)
 
+You can customize the look of your plots using different styles. Matplotlib comes with a number of built-in styles that you can use to change the appearance of your plots. One popular style is the `ggplot` style, which is inspired by the ggplot2 package in R. You can also set individal items such as line width, color, grid style, font size, plot size, etc. However, using a style is an easy way to change the overall look of your plots. Usually, once you set a style, it is "permanent" for all plots in your notebook or script.
 
 The ```with``` construction makes it a temporary style, rather than a permanent one. You can also use the `plt.
-style.use('ggplot')` command to set the style for all plots in the notebook. 
+style.use('ggplot')` command to set the style for all plots in the notebook (permanent for your session). 
+
+If you set something permanently and want to reset to the default settings use
+```python
+plt.rcdefaults()
+
 
 This command will list the styles available in your version of matplotlib:
 ```python
@@ -182,6 +188,7 @@ use the ```with``` construction to make sure that the style is temporary.
 
 ```python
 import matplotlib.pyplot as plt
+import numpy as np
 x = np.arange(1, 11)
 y = x**2 
 with plt.xkcd():
