@@ -67,9 +67,9 @@ Moment
 $$
 M(x) =
 \begin{cases}
-(R_A * x) - (q_1 * \frac{x^2}{2}), & \text{if } x < 2 \\
+(R_A * x) - \left(q_1 * \dfrac{x^2}{2}\right), & \text{if } x < 2 \\
 (R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)), & \text{if } 2 < x < 4 \\
-(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)) + (R_B * (x-4)) - (q_2 * (x-4) * (\frac{x-4}{2})) , & \text{if } x > 4 
+(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)) + (R_B * (x-4)) - \left(q_2 * (x-4) * \left(\dfrac{x-4}{2}\right)\right) , & \text{if } x > 4 
 \end{cases}
 $$
 
@@ -121,9 +121,9 @@ $$
 $$
 M(x) =
 \begin{cases}
-(R_A * x) - (q_1 * \frac{x^2}{2}), & \text{if } x < 2 \\
+(R_A * x) - \left(q_1 * \dfrac{x^2}{2}\right), & \text{if } x < 2 \\
 (R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)), & \text{if } 2 < x < 4 \\
-(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)) + (R_B * (x-4)) - (q_2 * (x-4) * (\frac{x-4}{2})) , & \text{if } x > 4 
+(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)) + (R_B * (x-4)) - \left(q_2 * (x-4) * \left(\dfrac{x-4}{2}\right)\right) , & \text{if } x > 4 
 \end{cases}
 $$
 
