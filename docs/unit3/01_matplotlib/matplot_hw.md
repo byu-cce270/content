@@ -190,8 +190,10 @@ You will now graph the average U.S. daily birth data taken from 2012 to 2013.
 
 2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly. The arrow shapes also do not need to match exactly, but we do want curved arrows):
 
-!!! Hint
+!!! hint Hint 
     In your first line, enter `plt.figure(figsize=(12, 4))` to create the correct size for your plot.
+
+
 
 ![birthgraph.png](images/birthgraph.png)
 
