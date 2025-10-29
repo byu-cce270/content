@@ -46,7 +46,33 @@ After making a cut within the beam at a point of interest, the internal shear an
 >>$\sum F_{y} = 0$<br>
 $\sum M = 0$
 
-The equations for the internal shear and moment forces have been solved for you and modeled as piecewise functions, which can then be used to create the shear and moment diagrams.
+The equations for the internal shear and moment forces have are given to you. These can be modeled as piecewise functions with the functions changing at the points on the beam where t the loads or supports change. You can  then graph the results of these functions  to create the shear and moment diagrams.
+
+Here are the shear and moment equations
+
+Shear
+
+$$
+V(x) =
+\begin{cases}
+R_A - (q_1 * x), & \text{if } x < 2 \\
+R_A - (q_1 * 2) - P_1, & \text{if } 2 < x < 4 \\
+R_A - (q_1 * 2) - P_1 + R_B - (q_2 * (x-4)), & \text{if } x > 4 
+\end{cases}
+$$
+
+Moment
+
+
+$$
+M(x) =
+\begin{cases}
+(R_A * x) - (q_1 * \frac{x^2}{2}), & \text{if } x < 2 \\
+(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)), & \text{if } 2 < x < 4 \\
+(R_A * x) - (q_1 * 2 * (x-1)) - (P_1 * (x-2)) + (R_B * (x-4)) - (q_2 * (x-4) * (\frac{x-4}{2})) , & \text{if } x > 4 
+\end{cases}
+$$
+
 
 1. In the 'Part 1a - Shear Diagram' code block, define the following variables:
 
@@ -67,6 +93,7 @@ The equations for the internal shear and moment forces have been solved for you 
 
 3. Define a variable ```V``` using ```np.zeros_like()``` with ```x``` as the argument. This will create a list of zeros with the same length as ```x```. 
 4. Create a for loop that loops over the length of ```x``` and defines ```V``` to be the following piecewise function under the respective boundary conditions:
+     - A loop is easy to think about this, but you can use other methods if you prefer such as taking advantage of numpy's vector operations.
 
 $$
 V(x) =
@@ -108,7 +135,7 @@ $$
 
 You will now graph the temperature data from Pasadena, CA from 2013-2014.
 
-1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the temperature data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the temperature data. Use the code from the in-class as an example. Slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
 
   - x - Date 
   - y_1 - High Temperature 
@@ -122,7 +149,7 @@ You will now graph the temperature data from Pasadena, CA from 2013-2014.
 
 You will now graph the streamflow data of Provo River in June 2021.
 
-1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the streamflow data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the streamflow data.  Use the example code from the in-class exercise. Slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
 
   - x - Date 
   - y_1 - Site 10163000
@@ -139,7 +166,7 @@ You will now graph the streamflow data of Provo River in June 2021.
 
 You will now graph bicycle count data over a bridge in Fremont, Seattle taken from 2013 to 2022.
 
-1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the Fremont bridge count data. Then, slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
+1. In the 'Numpy Array Creation & Slicing' code block, create a numpy array from the CSV containing the Fremont bridge count data. Slice the array to create the x and y-axis values. These will correspond to the following columns in the CSV linked on readthedocs:
 
   - x - Date 
   - y_1 - Fremont Bridge Total
@@ -150,7 +177,7 @@ You will now graph bicycle count data over a bridge in Fremont, Seattle taken fr
 
     ![fremontbridge.png](images/fremontbridge.png)
 
-3. Write a comment in your code explaining why you think the bike count drops so dramatically.
+3. Write a comment in your code explaining why you think the bike count in later years are lower.
 
 #### Part 5 - Average U.S. Daily Birth Data
 
@@ -161,14 +188,14 @@ You will now graph the average U.S. daily birth data taken from 2012 to 2013.
   - x - Date 
   - y_1 - Births
 
-2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly):
+2. In the 'Graphing the Data' code block, plot the data and replicate **every element** included in the graph below (the colors do not have to match exactly. The arrow shapes also do not need to match exactly, but we do want curved arrows):
 
 !!! Hint
     In your first line, enter `plt.figure(figsize=(12, 4))` to create the correct size for your plot.
 
 ![birthgraph.png](images/birthgraph.png)
 
-3. Write a comment explaining why you think the birth rate drops during those days
+3. Write a comment explaining why you think the birth rate drops during the days we labeled on the graph.
 
 ---
 
