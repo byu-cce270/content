@@ -17,6 +17,8 @@ DataFrames section)
 !!! Note
     Remember that you may have to sign in with your byu netid to access the reading content.
 
+### Panda's Official Documentation
+
 You should also skim through the [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#){:target="_blank"}, with particular attention to the beginner-friendly first three sections:
 
 - [10 Minutes to pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#){:target="_blank"}
@@ -26,7 +28,11 @@ You should also skim through the [Pandas Documentation](https://pandas.pydata.or
 The sections on Charting (plotting) and formatting tables are also good:
 
 - [Chart visualization](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
-- [Styling tables](https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html)
+- [Styling tables](https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html) (Advanced, but can use some styles when writing to Excel)
+
+The "Cook Book" section provides short examples of common tasks:
+
+- [Cookbook](https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html){:target="_blank"}
 
 ### Things to look out for in the Reading
 - What is a Pandas Series and a Pandas DataFrame?
