@@ -14,7 +14,8 @@ com/library/view/python-data-science/9781098121211/ch13.html){:target="_blank"} 
 com/library/view/python-data-science/9781098121211/ch14.html){:target="_blank"} (just the Data Selection in 
 DataFrames section)
 
-Remember that you may have to sign in with your byu netid to access the reading content.
+!!! Note
+    Remember that you may have to sign in with your byu netid to access the reading content.
 
 ### Things to look out for
 - What is a Pandas Series and a Pandas DataFrame?
@@ -24,7 +25,7 @@ Remember that you may have to sign in with your byu netid to access the reading 
 ## DataFrames and Series
 
 Pandas is a powerful data manipulation library in Python. It is built on top of NumPy and provides an easy-to-use 
-data structure called a DataFrame. A DataFrame is a two-dimensional labeled data structure with columns of potentially different types. You can think of it like a spreadsheet or SQL table, or a dictionary of Series objects. It is generally the most commonly used pandas object. 
+data structure called a DataFrame. A DataFrame is a two-dimensional labeled data structure with columns of potentially different types. You can think of it like a spreadsheet or SQL table, or a dictionary of Series objects. It can be more than two-dimensional just like a Excel file can have multiple sheets, a dataframe can have multiple levels. A single two-dimenionsal sheet is the most commonly used pandas object. 
 
 As noted in the reading, a DataFrame is made up of Series objects. A Series is a one-dimensional array-like object containing an array of data and an associated array of data labels, called its index. The data can be any NumPy data type, and the labels are called the index. When combinged into a dataframe, the index of the series becomes the row index of the dataframe.
 
@@ -61,9 +62,16 @@ parameter as follows:
 df = pd.read_excel('filename.xlsx', sheet_name='data')
 ```
 
-Once again, each of the columns in the Excel file will be read into a Series object in the DataFrame.
+Once again, each of the columns in the Excel file will be read into a Series object in the DataFrame. 
 
+You can use the `header` parameter to specify which row to use as the column labels. By default, the first row (0 index) is used as the column labels. So if your column names are on the second row, you can use the following code:
+
+```python   
+df = pd.read_excel('filename.xlsx', header=1)
+```
 ---
+
+There are a number of other parameters you can use, for example which columsn to read, how many rows to read, and many others. For more information on the `read_excel()` function and its parameters, you can refer to the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html){:target="_blank"}.
 
 ## Columns and Indexes in DataFrames
 
@@ -100,7 +108,8 @@ Index(['Name', 'Age', 'Education', 'Income'], dtype='object')
 RangeIndex(start=0, stop=6, step=1)
 ```
 
-Note that the index of the DataFrame is shown on the left of the image above (0, 1, 2, ..) and it is a RangeIndex starting from 0. This is the default index when you create a DataFrame without specifying an index. The column labels are shown at the top of the image above ('Name', 'Age', 'Education', 'Income').
+!!! Note
+    The index of the DataFrame is shown on the left of the image above (0, 1, 2, ..) and it is a RangeIndex starting from 0. This is the default index when you create a DataFrame without specifying an index. The column labels are shown at the top of the image above ('Name', 'Age', 'Education', 'Income').
 
 If you want to set the index of the DataFrame to a specific column, you can use the set_index() method as follows:
 
@@ -176,7 +185,7 @@ The `pd.cut()` function is used to segment and sort data values into bins. The `
 
 ![pandas1_04_newcolumn2.png](images/pandas1_04_newcolumn2.png)
 
-Another way to create a new column based on conditions is to use the `.apply()` method. For example, you can create a new column called 'Income Level' based on the 'Income' column as follows:
+Another way to create a new column based on conditions is to use the `.apply()` method to apply a `function` to create a new column. For example, you can create a new column called 'Income Level' based on the 'Income' column by 1st creating a function, then applying it as follows:
 
 ```python
 def categorize_income(income):
