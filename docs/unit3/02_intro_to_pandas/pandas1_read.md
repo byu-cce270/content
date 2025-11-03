@@ -328,7 +328,14 @@ These methods allow you to export the DataFrame to a file for further analysis o
 
 ---
 
-## Plotting DataFrames with the `plot()` Method
+# Plotting DataFrames with the `plot()` Method
+
+
+!!! Hint
+    Here is some additional reading on plotting with pandas and matplotlib:
+    [Pandas Cookbook, Chapter 6](https://learning.oreilly.com/library/view/pandas-cookbook/9781836205876/Text/Chapter_6.xhtml#_idParaDest-194) <br>
+    It provides some good examples and different types of plots you can create with pandas.
+
 
 Pandas provides a convenient way to plot data in a DataFrame using the `plot()` method. You can create various types of plots, such as line plots, bar plots, scatter plots, and histograms. For example, to create a line plot of the 'Income' column, you can use the following code:
 
@@ -354,6 +361,7 @@ This will create a bar plot of the 'Income' column with a title, x-axis label, y
 
 ## Plotting DataFrames with Matplotlib
 
+
 You can also use matplotlib to plot data in a DataFrame. For example, to create a scatter plot of the 'Age' and 'Income' columns, you can use the following code:
 
 ```python
@@ -368,6 +376,8 @@ plt.show()
 Which produces the following scatter plot:
 
 ![pandas1_13_matplotmethod.png](images/pandas1_13_matplotmethod.png)
+
+
 
 # Pre-Class Quiz Challenge
 Open the following notebook and complete the instructions in the markdown:
