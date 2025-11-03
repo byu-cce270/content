@@ -17,7 +17,18 @@ DataFrames section)
 !!! Note
     Remember that you may have to sign in with your byu netid to access the reading content.
 
-### Things to look out for
+You should also skim through the [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#){:target="_blank"}, with particular attention to the beginner-friendly first three sections:
+
+- [10 Minutes to pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#){:target="_blank"}
+- [Data Structures](https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html){:target="_blank"}
+- [Essential Basic Functionality](https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html){:target="_blank"}
+
+The sections on Charting (plotting) and formatting tables are also good:
+
+- [Chart visualization](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+- [Styling tables](https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html)
+
+### Things to look out for in the Reading
 - What is a Pandas Series and a Pandas DataFrame?
 - How do you create a Pandas Series and a Pandas DataFrame?
 - What does it mean to index in a Pandas DataFrame and how do you index?
