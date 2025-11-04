@@ -294,7 +294,7 @@ Each of the columns are then plotted against the date index.
 # Pre-Class Quiz Challenge
 Open the following notebook and complete the instructions in the markdown:
 
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_continuing_pandas/(Starter_Notebook)_Class_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_continuing_pandas/(Starter_Notebook)_Pre_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Rename it something like "(Your_Name)_Pre_Continuing_with_Pandas.ipynb".
 
