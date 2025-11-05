@@ -73,7 +73,7 @@ df.to_excel('output.xlsx', index=False)
 When saving a dataframe using the 'to_excel' method in pandas, the resulting Excel file contains a simple 
 unformatted table. However,
 in cases where you need more control over the Excel file, you can use the `xlsxwriter` library. The `xlsxwriter` 
-library is a Python module that allows you to create and save Excel files with formatting and charts. You can even 
+library is a Python module that allows you to create and save Excel files with formatting and charts. In xlsxwriter you can both read and write Excel files. You can even 
 create 
 data on the cells of the Excel document, including formulas.
 
