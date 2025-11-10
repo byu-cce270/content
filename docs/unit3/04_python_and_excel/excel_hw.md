@@ -37,10 +37,14 @@ Next, we will create a new dataframe with some summary statistics. Do the follow
 1. Create three new dataframes (**min_rain_df**, **max_rain_df**, **avg_rain_df**) that contain the minimum, maximum, and average annual precipitation for each month over the entire dataset.
 2. Combine the three dataframes into a single dataframe called **stats_df**. Change the column names to 'Min', 'Max', and 'Avg'.
 3. Display the dataframe to see the results. You should have one row for each month and three columns (Min, Max, Avg).
-4. Plot the **Avg** column of the stats_df dataframe using a bar or a line chart using `matplotlib`. **Hint**: The 'Annual' row at the bottom will mess up your plot. To display all of the rows except the last one, you can use the following code:
-```python
-stats_df.iloc[:-1].plot(kind='bar')
-```
+4. Plot the **Avg** column of the stats_df dataframe using a bar or a line chart using `matplotlib`. 
+ 
+!!! Hint
+    The 'Annual' row at the bottom will mess up your plot. To display all of the rows except the last one, you can use the following code:   
+    ```python   
+    stats_df.iloc[:-1].plot(kind='bar')
+    ```   
+    This will select all rows except the last one for plotting.
 
 
 ### Part 3: Export the Precip Data to Excel
