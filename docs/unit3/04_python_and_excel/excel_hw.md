@@ -59,19 +59,19 @@ Now we will create a new Excel file and write the main precip data to a sheet an
    should be a 
    scatter chart (smooth) with the years on the x-axis and the annual precipitation on the y-axis. Insert the chart and position it at cell **'P2'**.
 
-1. Export the **stats_df** dataframe to a new sheet called **'Stats'** in the Excel file. **Hint**: Use the same writer 
+5. Export the **stats_df** dataframe to a new sheet called **'Stats'** in the Excel file. **Hint**: Use the same writer 
    object and just call the `to_excel` method again with the new sheet name. Update the worksheet object to point to 
    the new sheet.
-2. Again, use the data_format object created above to format the table in the Stats sheet using the `set_column` 
+6. Again, use the data_format object created above to format the table in the Stats sheet using the `set_column` 
    method. Use a column width of **8**.
-3. Add an XY column chart of the monthly average precip data. Call the chart object 'chart2'. Include all of the month 
+7. Add an XY column chart of the monthly average precip data. Call the chart object 'chart2'. Include all of the month 
    rows, but 
    not 
    the 
    annual row at 
    the 
    end. 
-4. Insert the chart and position it at cell **'F2'**.
+8. Insert the chart and position it at cell **'F2'**.
 
 ### Part 4: Save the Excel File
 
