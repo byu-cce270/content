@@ -58,13 +58,15 @@ First, we need to create a new Excel file and write the data to it.
 3. Create two format objects, one for the date column and one for the data columns. Use the `worksheet.set_column` 
    method to apply the formats to the columns. For the column widths, use 12 for the date column and 10 for the data 
    columns.
+!!! Hint
+    The Reading instructions for this class has an example of how to create format objects and apply them to columns.
 
 Next, we will add a chart to the worksheet. 
 
 1. Create a new chart object using the `add_chart` method of the workbook object. Use the 'scatter' chart type, and 
    the 'smooth' subtype. Call your chart object '**chart1**'.
 2. Add each of the series to the chart using the `add_series` method. In each case, define the series name using the header in each column, use the dates as the category axis, and the data as the values. Add the first series and then copy-paste the code for the other series.
-3. Set the chart title, x-axis title, and y-axis title.
+3. Set the chart title, x-axis title, and y-axis title. The example below has suggested titles.
 4. Set the chart size to 1000 x 600 pixels.
 5. Insert the chart into the worksheet using the `insert_chart` method at cell **H2**.
 
