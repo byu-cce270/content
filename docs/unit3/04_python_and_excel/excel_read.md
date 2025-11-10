@@ -54,14 +54,6 @@ df = pd.read_excel('data.xlsx', usecols=[0, 1])
 ```
 You can read more about the pandas `read_excel()` method in the [official documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html){target='blank'}. **We suggest you look through the documentation to see all the available parameters.**
 
-!!! note
-    The `pandas` library uses the `openpyxl` library to read Excel files. If you do not have the `openpyxl` library installed, you can install it using the following command:
-
-    ```python
-    !pip install openpyxl
-    ```
-    Colab usually has this library pre-installed.
-
 ## Writing Data to Excel Files Using Pandas
 
 In addition to reading Excel files, you can also write data to Excel files using the `pandas` library. The `pandas` library provides a `to_excel()` method that allows you to write a DataFrame to an Excel file. Here is an example:
@@ -109,6 +101,12 @@ install the `xlsxwriter` library using the following command:
 ```python
 !pip install xlsxwriter
 ```
+This is **not** one of the default packages installed with Google Colab, so you need to explicitly install it before using. You also need to import it:
+
+```python
+import xlsxwriter
+```
+
 ### Creating an Excel File with Formatting
 
 Here is an example of how to use the `xlsxwriter` library to create an Excel file with formatting:
@@ -153,6 +151,8 @@ workbook.close()
 As you can see, the `xlsxwriter` library provides more control over the Excel file's formatting and content. Also 
 notice that you apply formatting by creating a format object using the `add_format()` method and then passing the 
 object each time you write data to the worksheet. You can create different format objects for different types of data.
+
+To create a format, you simply create a dictionary with the formats you want to apply. Click [here](https://xlsxwriter.readthedocs.io/format.html#format-methods-and-format-properties){target='_blank'} to see a complete list of the properties you can apply to a format object.
 
 ### Creating an Excel File with Charts
 
