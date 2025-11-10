@@ -1,10 +1,14 @@
 # Reading: Working with Excel Files in Python
 
-Spreadsheets are a fundamental tool in civil engineering and construction management. In Unit 1, we learned some advanced techniques for working with spreadsheets. We used Google Sheets, but Microsoft Excel is another popular tool for working with spreadsheets. In this unit, we will learn how to work with Excel files in Python.
+Spreadsheets are a fundamental tool in civil engineering and construction management. In Unit 1, we learned some advanced techniques for working with spreadsheets. We used  Microsoft Excel which is the main  tool used for working with spreadsheets. In this unit, we will learn how to work with Excel files in Python.
 
 ## Reading Excel Files Using Pandas
 
-In the previous section, we learned how to use the `pandas` library. Pandas is a powerful data manipulation library that provides data structures and functions to work with structured data. The `pandas` library makes it easy to work with Excel files. We can easily read data from an Excel file into a pandas dataframe and/or export a pandas dataframe to an Excel file. There is a method in Pandas called `read_excel()` that reads an Excel file and returns a dataframe. As you may recall, a DataFrame is a two-dimensional data structure that is similar to a table in a database. You can think of a DataFrame as a spreadsheet in Python.
+In the previous section, we learned how to use the `pandas` library. Pandas is a powerful data manipulation library that provides data structures and functions to work with structured data. The `pandas` library makes it easy to work with Excel files. We can easily read data from an Excel file into a pandas dataframe and/or export a pandas dataframe to an Excel file. 
+
+With Panda's we used a  method  called `read_excel()` that reads an Excel file and returns a dataframe. As you may recall, a DataFrame is a two-dimensional data structure that is similar to a table in a database. We will now look at this in more detail. 
+
+You can think of a DataFrame as a spreadsheet in Python.
 
 Here is an example of how to read an Excel file using the `read_excel()` method:
 
@@ -48,7 +52,15 @@ The `usecols` parameter accepts a string or a list of column names. In this exam
 # Read only the first two columns of the Excel file
 df = pd.read_excel('data.xlsx', usecols=[0, 1])
 ```
-You can read more about the pandas `read_excel()` method in the [official documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html){target='blank'}.
+You can read more about the pandas `read_excel()` method in the [official documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html){target='blank'}. **We suggest you look through the documentation to see all the available parameters.**
+
+!!! note
+    The `pandas` library uses the `openpyxl` library to read Excel files. If you do not have the `openpyxl` library installed, you can install it using the following command:
+
+    ```python
+    !pip install openpyxl
+    ```
+    Colab usually has this library pre-installed.
 
 ## Writing Data to Excel Files Using Pandas
 
@@ -68,7 +80,16 @@ df = pd.DataFrame(data)
 # Write the DataFrame to an Excel file
 df.to_excel('output.xlsx', index=False)
 ```
-## Using the xlsxwriter Library
+
+As you can see, the `to_excel()` method takes the path to the Excel file as a parameter. In this example, we are writing the DataFrame to an Excel file named `output.xlsx`. The `index` parameter is set to `False` to prevent pandas from writing row indices to the Excel file. You can also specify the sheet name using the `sheet_name` parameter. Here is an example:
+
+```python
+# Write the DataFrame to an Excel file with a specific sheet name
+df.to_excel('output.xlsx', sheet_name='MySheet', index=False)
+```
+
+
+## Using the xlsxwriter Library 
 
 When saving a dataframe using the 'to_excel' method in pandas, the resulting Excel file contains a simple 
 unformatted table. However,
@@ -76,6 +97,9 @@ in cases where you need more control over the Excel file, you can use the `xlsxw
 library is a Python module that allows you to create and save Excel files with formatting and charts. In xlsxwriter you can both read and write Excel files. You can even 
 create 
 data on the cells of the Excel document, including formulas.
+
+The documentation for the `xlsxwriter` library can be found [here](https://xlsxwriter.readthedocs.io/){target='blank'}. It includes many examples of how to use the library to create Excel files with formatting and charts. Look through it to see all the available features. You can use it with Pandas as well as standalone. Below we have a Panda's example and several standalone examples.
+
 
 ### Installing the xlsxwriter Library
 
