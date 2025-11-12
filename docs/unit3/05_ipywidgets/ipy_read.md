@@ -22,7 +22,7 @@ Note that ipywidgets comes pre-installed on Google Colab. If you are running in 
 
 ## Overview
 
-Widgets are a graphical way for a user to interact with your code. In general, when a user interacts with a widget, an event is triggered. For example, when a user clicks a button, a click event is triggered. You can handle these events in your code to perform actions based on the user's input. When using widgets, you need to structure your code in a way that allows you to handle these events.
+Widgets are a graphical way for a user to interact with your code. In general, when a user interacts with a widget, an event is triggered. For example, when a user clicks a button, a click event is triggered. Events can be quite detailed, for example one action when a button is pressed and another when released. These are called "events". Because of this you need to specific which event you are working with.  You can handle these events in your code to perform actions based on the user's input. When using widgets, you need to structure your code in a way that allows you to handle these events.
 
 To use ipywidgets, you need to follow these steps:
 
@@ -45,8 +45,8 @@ There are many different types of widgets that you can create using ipywidgets. 
  - SelectMultiple (for dropdowns that allow multiple selections)
  - Text and Textarea (for text inputs)
  - ToggleButton and ToggleButtons (for buttons that can be toggled on and off)
- - HBox and VBox (to arrange widgets horizontally or vertically)
- - HTML (to display HTML)
+ - HBox and VBox (to arrange widgets horizontally or vertically) this is how you can group widgets together
+ - HTML (to display HTML) usually used to place text above or below widgets with instructions or information
  - Image (to display images)
  - DatePicker (to select dates)
  - And many more
@@ -54,13 +54,13 @@ There are many different types of widgets that you can create using ipywidgets. 
 To create a widget, you can use the following command:
     
 ```python
-widget = widgets.WidgetName()
+widget = widgets.WidgetName() # create a widget object
 ```
 
 For example, to create a button widget, you can use the following command:
     
 ```python
-button = widgets.Button(description='Click me')
+button = widgets.Button(description='Click me') # this creates a button object with the name "button" and  the text 'Click me'
 ```
 
 For a full list of widgets, you can refer to the [ipywidgets documentation - Widget List](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html){target='blank'}.
@@ -77,7 +77,7 @@ widget.property = value
 For example, to set the description of a button widget, you can use the following command:
 
 ```python
-button.style = 'warning'
+button.style = 'warning' # this is the buttion object created earlier (called "button") and we are setting the style property to 'warning' (which makes the button yellow)
 ```
 
 For a full list of properties, please refer to: [ipywidgets documentation - Widget List](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html){target='blank'}<br>
@@ -90,17 +90,20 @@ You can handle events for a widget by using the following command:
 ```python
 def on_event_name(event):
     # code to handle event
+    # do something when the event is triggered
+    # this fuction will be called when the event is triggered
+    # it can be named anything you want
 
-widget.on_event_name(on_event_name)
+widget.on_event_name(on_event_name) # the name in the () is the function to be called when the event is triggered
 ```
 
 For example, to handle the click event for a button widget, you can use the following command:
 
 ```python
-def on_button_click(event):
+def on_button_click(event): # the function called when the button object we created is clicked
     print('Button clicked')
     
-button.on_click(on_button_click)
+button.on_click(on_button_click) # this associates the on_button_click function with the click event of the button widget
 ```
 
 The function controls what happens when the button is clicked. The `event` parameter is passed to the function and contains information about the event (which may be useful in some cases). The `button.on_click` method in the code above associates the `on_button_click` function with the click event of the button widget.
@@ -109,7 +112,7 @@ For more details about widget events, you can refer to the [ipywidgets documenta
 
 ## Displaying Widgets
 
-To display a widget, you can use the following command:
+To display a widget, after you created it, you can use the following command with the name of the widget you created:
 
 ```python
 display(widget)
@@ -118,10 +121,10 @@ display(widget)
 For example, to display a button widget, you can use the following command:
 
 ```python
-display(button)
+display(button)  # here "button" is the button object we created earlier
 ```
 
-You can also use the `widgets.VBox` and `widgets.HBox` widgets to arrange widgets vertically or horizontally. For example, to arrange two widgets vertically, you can use the following command:
+You can also use the `widgets.VBox` and `widgets.HBox` widgets to arrange widgets vertically or horizontally. For example, to arrange two widgets vertically. For example, if you created two widgets called "widget1" and "widget2" you can use the following command to place them in a vertical box, which means they will be arranged one on top of the other:
 
 ```python
 vbox = widgets.VBox([widget1, widget2])
@@ -137,7 +140,7 @@ Let's create a simple example to demonstrate how to use ipywidgets. In this exam
 ```python
 import ipywidgets as widgets
 
-# Create a button widget
+# Create a button widget called "button"
 button = widgets.Button(description='Click me')
 
 # Define a function to handle the click event
@@ -145,10 +148,13 @@ def on_button_click(event):
     print('Button clicked')
 
 # Handle the click event for the button widget
-button.on_click(on_button_click)
+button.on_click(on_button_click) 
+# this is the widget object we created, called "button", 
+# which event to use (button click), 
+# and the function to call when the event is triggered (on_button_click)
 
 # Display the button widget
-display(button)
+display(button)  # this is the widget object we created, called "button" and the code to make it appear in the output cell
 ```
 When you run this code, you will see a button widget displayed in the output cell. When you click the button, the message "Button clicked" will be printed in the output cell, like this:
 
@@ -159,7 +165,7 @@ Here is another example where we create a slider widget that displays the value 
 ```python
 import ipywidgets as widgets
 
-# Create a slider widget
+# Create a slider widget called "slider"
 slider = widgets.IntSlider(value=0, min=0, max=100, description='Value')
 
 # Define a function to handle the change event
@@ -177,7 +183,7 @@ Here is another example where we create a dropdown widget that displays the sele
 ```python
 import ipywidgets as widgets
 
-# Create a dropdown widget
+# Create a dropdown widget called "dropdown"
 dropdown = widgets.Dropdown(options=['Option 1', 'Option 2', 'Option 3'], value='Option 1', description='Value')
 
 # Define a function to handle the change event
