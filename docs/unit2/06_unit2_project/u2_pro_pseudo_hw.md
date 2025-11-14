@@ -52,7 +52,7 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your Word file**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+**_REMINDER_** - For this class, **you will only turn in the links to your Word file**. You will get a 0 for this assignment if you turn in a Word file or a link that is not shareable. 
 
 1. On the top right, click the share button --> share --> settings
 2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
