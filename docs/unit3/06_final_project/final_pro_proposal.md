@@ -10,7 +10,7 @@ You and the rest of your team previously formed will work together will come up 
 
 ## Instructions
 
-1. Together as a team, read through the project requirements and decide on a project idea that will meet all of the requirements. You can find the project requirements here: [Final Project](https://byu-cce270.readthedocs.io/en/latest/unit3/07_final_project/final_pro_prompt/){:target="_blank"}.
+1. Together as a team, read through the project requirements and decide on a project idea that will meet all of the requirements. You can find the project requirements here: [Final Project](https://byu-cce270.readthedocs.io/en/latest/unit3/06_final_project/final_pro_prompt/){:target="_blank"}.
 
 2. As your group discusses how you will go about the project, take notes. It would even helpful to write some pseudocode to help plan out the specifics of how the code is layed out.   
 

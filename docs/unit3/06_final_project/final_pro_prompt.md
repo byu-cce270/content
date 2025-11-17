@@ -13,18 +13,18 @@ You will also have to make and turn in a project proposal. The project proposal,
    - [Section 1 (Tue/Thur) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/12VCbgRsAJrJWk5hbK98ahBvKskItZlTTD7nFtJCSJCM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
    - [Section 2 (Mon/Wed) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1PwaCFo-o9sOVHv4-ttZSH_Glckj8CqV-4SZ03U7sJzw/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
-2. You and your team must come up with a project idea that will meet all of the requirements and create a project proposal. The instructions can be found here: [Final Project Proposal](https://byu-cce270.readthedocs.io/en/latest/unit3/07_final_project/final_pro_proposal/){:target="_blank"} ***WARNING*** - You must avoid the temptation to simply find an interesting Python program online and copy and paste it as your own. While we all use other people’s code and examples to learn from, outright copying their code and presenting it as your own is plagiarism.
+2. You and your team must come up with a project idea that will meet all of the requirements and create a project proposal. The instructions can be found here: [Final Project Proposal](https://byu-cce270.readthedocs.io/en/latest/unit3/06_final_project/final_pro_proposal/){:target="_blank"} ***WARNING*** - You must avoid the temptation to simply find an interesting Python program online and copy and paste it as your own. While we all use other people’s code and examples to learn from, outright copying their code and presenting it as your own is plagiarism.
 
 3. You also need to sign up for a time to present your project to the rest of the class. You can find the sign up sheet here:
 
-   - [Section 1 (Tue/Thur) W25 Final Project Presentation Time](){:target="_blank"}
-   - [Section 2 (Mon/Wed) W25 Final Project Presentation Time](){:target="_blank"}
+   - [Section 1 (Tue/Thur) W25 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/12VCbgRsAJrJWk5hbK98ahBvKskItZlTTD7nFtJCSJCM/edit?gid=1461820946#gid=1461820946){:target="_blank"}
+   - [Section 2 (Mon/Wed) W25 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1PwaCFo-o9sOVHv4-ttZSH_Glckj8CqV-4SZ03U7sJzw/edit?gid=1979404871#gid=1979404871){:target="_blank"}
 
 4. Complete the project using all the following requirements (this is where your grade will come from):
 
       - An introductory text block with: 
          - Instructions on how to use your code
-         - Link to your Google Sheet
+         - Link to your Excel starter sheet
          - Group name
          - Members of your group
          - A report on how each team member contributed. (with rubric items that they did)
@@ -33,7 +33,7 @@ You will also have to make and turn in a project proposal. The project proposal,
       - At least 1 list, dictionary, or pandas dataframe
       - At least 1 if-elif-else statement
       - At least 3 functions that you write/define
-      - Use gspread to connect to a Google Sheet
+      - Use xlswriter to connect to an Excel Sheet
       - Use matplotlib to create a graph
       - Your program is bug free 
       - Use markdown to organize your code (Using text blocks to separate your code into sections or code blocks)
@@ -54,24 +54,24 @@ Only one team member needs to turn in the following in the feedback box on the a
 
 **Rubric:**
 
-|                              Item                               | Points Possible |
-|:---------------------------------------------------------------:|:---------------:|
-|        An introductory text block with all requirements         |        8        |
-|                 At least 1 loop (for or while)                  |        5        |
-|        At least 1 list, dictionary, or pandas dataframe         |        5        |
-|                At least 1 if-elif-else statement                |        5        |
-|           At least 3 functions that you write/define            |       12        |
-|             Use gspread to connect to a Google Sheet            |        5        |
-|                At least 1 graph from matplotlib                 |        5        |
-|                    Your program is bug free                     |       10        |
-|               Use markdown to organize your code                |        5        |
-|       Relative contribution of each team member is given        |        5        |
-|                    Present for presentation                     |       15        |
-|                          TA wow factor                          |       10        |
-|             All links turned in before presentation             |       10        |
-|         <div style="text-align: right">**Total**</div>          |       100       |
-|                    Use of GUIs (ipywidgets)                     |       +5        |
-|                          Use of numpy                           |       +5        |
+|                        Item                        | Points Possible |
+|:--------------------------------------------------:|:---------------:|
+|  An introductory text block with all requirements  |        8        |
+|           At least 1 loop (for or while)           |        5        |
+|  At least 1 list, dictionary, or pandas dataframe  |        5        |
+|         At least 1 if-elif-else statement          |        5        |
+|     At least 3 functions that you write/define     |       12        |
+|     Use xlswriter to connect to an Excel Sheet     |        5        |
+|          At least 1 graph from matplotlib          |        5        |
+|              Your program is bug free              |       10        |
+|         Use markdown to organize your code         |        5        |
+| Relative contribution of each team member is given |        5        |
+|              Present for presentation              |       15        |
+|                   TA wow factor                    |       10        |
+|      All links turned in before presentation       |       10        |
+|   <div style="text-align: right">**Total**</div>   |       100       |
+|              Use of GUIs (ipywidgets)              |       +5        |
+|                    Use of numpy                    |       +5        |
 
 The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
