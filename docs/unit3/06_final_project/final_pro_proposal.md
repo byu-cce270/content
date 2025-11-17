@@ -38,8 +38,7 @@ You and the rest of your team previously formed will work together will come up 
 
 # Turning In/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box.
-**
+Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. It should only be a link to a Excel spreadsheet. 
 
 |                               **Item**                               | **Amount** |
 |:--------------------------------------------------------------------:|:----------:|
