@@ -18,7 +18,7 @@ You and the rest of your team previously formed will work together will come up 
 
 4. Once you have decided on a project idea and how the roles will be divide up, you will need to create a project proposal. The project proposal will help you figure out how to work together as a team and meet all the requirements. Including who will do what, how long each step will take, what resources you will need, and what order things need to be done in.
 
-5. The project proposal will need to include  a Gantt Chart made using google sheets. Your Gantt Chart should include:
+5. The project proposal will need to include  a Gantt Chart made using an Excel sheet. Your Gantt Chart should include:
       - The project name 
       - The names of the team members
       - The start and end dates of the project
