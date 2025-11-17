@@ -2,7 +2,7 @@
 
 **Purpose:** The purpose of this assignment is to showcase how much you have learned during this class. You will get to come up with a project idea and execute it. Make sure your project includes all the project requirements. 
 
-You will also have to make and turn in a project proposal. The project proposal, if done right, will really help you figure out how to work together as a team and meet all the requirements. If you haven't done the proposal yet, you can find the instructions here: [Final Project Proposal](https://byu-cce270.readthedocs.io/en/latest/unit3/07_final_project/final_pro_proposal/){:target="_blank"}
+You will also have to make and turn in a project proposal. The project proposal, if done right, will really help you figure out how to work together as a team and meet all the requirements. If you haven't done the proposal yet, you can find the instructions here: [Final Project Proposal](https://byu-cce270.readthedocs.io/en/latest/unit3/06_final_project/final_pro_proposal/){:target="_blank"}
 
 
 ## Instructions
