@@ -60,11 +60,11 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **Griffin**: HW 1.3, HW 2.6
 
-- **Tyler P.**: HW 2.3, HW 3.5
+- **Tyler P.**: HW 2.3, HW 3.2
 
 - **Mauricio**: HW 2.2, HW 3.4
 
-- **Reagan**: HW 1.6, HW 3.2
+- **Reagan**: HW 1.6, HW 3.5
 
 - **Preston**: HW 2.1, HW 3.3
 
