@@ -6,12 +6,13 @@ This semester we have been using Python in a Google Colab environment, which is 
 
 There are two common ways to locally install Python:
 
-1) Install Python from the official website, then use either pip or conda to manage packages.<br>
-2) Use Anaconda (or miniconda) to install Python and manage packages, as a single step
+1) Install Python from the official website, then use  pip to manage packages.<br>
+2) Use Anaconda (or miniconda) to install Python and manage packages, as a single step. 
+        With this method, you can use either conda or pip to install and manage packages
 
-Most people will use the first method, but if you are using Anaconda/Miniconda (generally called "conda"), the second method can be easier. With conda, you can install Python and manage packages in a single step and also create virtual environments (explained below).
+Most people will use the first method, but if you are using Anaconda/Miniconda (generally called "conda"), the second method can be easier. With conda, you can install Python and manage packages in a single step and also create virtual environments (explained below). As a bonus, conda keeps all packages in sync while with pip you can update packages that break other packages. 
 
-We generally recommend using conda, as it keeps all the package management and installations steps together. However, most web resources will use the first method, so we will cover both methods here. Even if you use the first method to install Python, you can use conda as a package manager.
+We generally recommend using conda, as it keeps all the package management and installations steps together. However, most web resources will provide instructions that use the first method, so we will cover both methods here. However, if you use the first method to install Python, you CANNOT  use conda as a package manager. You have to use pip.
 
 For both methods, you will need to interact with the installation using the command line. This is a common practice in programming, where you can use the command line to run commands and scripts. The command line is a powerful tool that allows you to interact with your computer and run commands without using a graphical interface. You can use the command line to run Python scripts, install packages, and manage your Python environment.
 
@@ -61,7 +62,15 @@ The full Anaconda distribution includes Python and many popular libraries, as we
 
 The full Anaconda installation includes a graphical manager called Anaconda Navigator, which allows you to manage packages and environments using a graphical interface. You can also use the command line interface to manage packages and environments.
 
-We recommend you DO NOT use the Anaconda Navigator, as it is not as powerful as the command line interface. The command line interface is more flexible and allows you to use all of the features of conda. However, if you prefer a graphical interface, you can use Anaconda Navigator.
+!!!Hint
+    The graphical package manager seems to break often. It is better to just use the command line (i.e., terminal)
+
+!!!Note
+    We recommend you DO NOT use the Anaconda Navigator, as it is not as powerful as the command line interface and as noted above, things break often. The command line interface is more flexible and allows you to use all of the features of conda. However, if you prefer a graphical interface, you can use Anaconda Navigator.
+
+!!!Note
+    If you install python using `conda` you can use either `conda` or `pip` to manage your packages. If you use `pip` then `conda` won't be aware of those packages. They will work, but they won't be updated when you do a `conda update --all` commane
+
 
 To install packages on a command line using conda, you can use the following command:
 
@@ -86,6 +95,9 @@ Once you have installed Python and any necessary libraries, you can run Python s
 print("Hello, World!")
 ```
 
+!!!Note
+    Windows by default hides the file extention, so your file may be called `script.py.txt` which won't work. You need to turn off the "Hide Extensions" and make sure the fine is both a text file and has a .py extension
+
 To run the script, open your terminal, navigate to the directory where the script is located, and run the following command:
 
 ```bash
@@ -106,7 +118,12 @@ To create a virtual environment, navigate to your project directory in the termi
 python -m venv myenv
 ```
 
-This will create a new directory called `myenv` that contains the virtual environment.
+Or with conda
+```bash
+conda create --name myenv
+```
+
+This will create a new directory called `myenv` that contains the virtual environment along with all the files needed to run python. This lets you have different packaged or even python verions installed at the same time.
 
 To activate the virtual environment, run the following command:
 
@@ -119,13 +136,16 @@ myenv\Scripts\activate
 ```bash
 source myenv/bin/activate
 ```
+
+
 Once activated, your terminal prompt will change to indicate that you are now working within the virtual environment.
 
-When the virtual environment is activated, you can install packages using `pip`, and they will only be available within that environment. For example:
+When the virtual environment is activated, you can install packages using `pip` or `conda` (see below), and they will only be available within that environment. For example:
 
 ```bash
 pip install numpy pandas
 ```
+
 
 To deactivate the virtual environment and return to your system's default Python environment, simply run:
 
@@ -136,6 +156,8 @@ deactivate
 This will return you to your system's default Python environment.
 
 ### Creating a Virtual Environment with Conda
+While we gave you the conda commands above, here is some more detail
+
 
 To create a new conda environment, run the following command:
 
@@ -147,6 +169,11 @@ This will create a new conda environment named `myenv` with Python 3.9 installed
 
 ```bash
 conda activate myenv
+```
+
+To deactivate a Conda environment use:
+```bash
+conda deactivate
 ```
 
 ## Common IDEs for Python Development
@@ -221,6 +248,10 @@ This will install Jupyter Notebook, which allows you to create and run notebooks
 
 ```bash
 jupyter notebook
+```
+Now jupyter has an environment that is closer to Colab and has some nice features. It is called `jupyter lab`. To start `jupyter lab` use the command:
+```bash
+jupyter lab 
 ```
 
 The interface to Jupyter Notebook will open in your web browser, and you can create new notebooks or open existing ones. You can write and run Python code in the cells, add text and images, and save your work as a notebook file.
