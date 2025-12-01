@@ -119,6 +119,7 @@ nav:
     - Final Project:
         - Project Proposal: unit3/06_final_project/final_pro_proposal.md
         - Project Prompt: unit3/06_final_project/final_pro_prompt.md
+    - Unit 3 Study Guide: unit3/study_guide.md
   - Bonus Content:
     - Gspread: bonus/gspread/gspread_read.md
     - Using Python Locally: bonus/python_local/local_read.md
