@@ -14,7 +14,7 @@ Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Da
 
 2. Your boss has given you a list of customer orders. He wants you to sort through the customer data to show the top steel buyers.
 
-3. Add filters to the table (Columns A:C)
+3. Add filters in columns A through C in row 2
 
 4. Add a filter that only shows customers who ordered more than 15 tons of material
 
