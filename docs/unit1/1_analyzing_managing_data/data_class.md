@@ -54,9 +54,9 @@ If you do these steps out of order, your formulas will look weird when the filte
 
 5. In the "Statistical Data" table, find the average, max, min, standard deviation, and median from the values of Temp(F), Temp(C), and Temp(K) in the "Daily Temperature Data" table
 
-6. In the Daily Temperature Data table, highlight all temperature values at or below freezing in the Temp(F) column (as there are regulations against working in freezing temperatures). As a reference, freezing for Fahrenheit is 32 degrees
+6. In the "Daily Temperature Data" table, highlight all temperature values at or below freezing in the Temp(F) column (as there are regulations against working in freezing temperatures). As a reference, freezing for Fahrenheit is 32 degrees
 
-7. Now, add filters to the Daily Temperature Data table. Only show dates that are before 9/22/2024
+7. Now, add filters to the "Daily Temperature Data" table. Only show dates that are before 9/22/2024
 
 ---
 			
