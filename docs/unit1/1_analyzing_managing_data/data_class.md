@@ -46,7 +46,7 @@ If you do these steps out of order, your formulas will look weird when the filte
 
 1. Navigate to the Temperature Conversions sheet
 
-2. Your boss loved your work so much that now you are the lead intern for the Google Spreadsheet division. He has now given you the task of analyzing the temperatures on one of his work sites to ensure building safety
+2. Your boss loved your work so much that now you are the lead intern for the Excel Spreadsheet division. He has now given you the task of analyzing the temperatures on one of his work sites to ensure building safety
 
 3. In cell C3 write in the equation that will convert from Fahrenheit to Celsius found in the "Conversion Equations" table. Convert the rest of the column to Celsius
 
