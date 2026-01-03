@@ -1,17 +1,20 @@
 # HW: IF Statements
 
----
-
-**Purpose:** 
-
-- Learn how to use IF, ELIF, and ELSE statements to analyze inputs and lists to determine a desired result.
-- Practice using if statements with for loops and lists.
+**Purpose:** This assignment aims to test your ability to use IF, ELIF, and ELSE statements to analyze inputs and lists to determine a desired result. It also provides practice using IF statements with for loops and lists.
 
 ---
 
-## Part 1
+## Getting Started
 
-**Objective**: Create a code that can solve the determinacy of any given truss when given the correct inputs. Determinacy is a Statics principle that helps us know whether we can solve the forces in a given system using statics equations.
+Create a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/02_if_statements/(Starter_Workbook)_HW_If_Statements.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Rename it something like "(Your_Name)_HW_If_Statements.ipynb".
+
+---
+
+## Part 1 - Truss Determinacy Solver
+
+**Objective**: Create code that can solve the determinacy of any given truss when given the correct inputs. Determinacy is a Statics principle that helps us know whether we can solve the forces in a given system using statics equations.
 
 Here is an example of a truss. The blue lines are the members, the joints are the white circles where the members meet, and the red arrows are the reaction forces.:
 
@@ -21,17 +24,13 @@ _(image from [www.engineeringskills.com](https://www.engineeringskills.com/posts
 
 For this example, a student has given you a list of trusses he needs to solve for in his statics class. Because of your charitable heart, and your superb coding skills, you have agreed to help him.
 
-### Steps
-
-1. Open this Colab notebook and title it with your name: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/02_if_statements/(Starter_Workbook)_HW_If_Statements.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-2. Go to the "Part 1 - Truss Determinacy Solver" section. In the first code block, create 3 different input statements using colab forms 
+1. Navigate to the "Part 1 - Truss Determinacy Solver" section. In the first code block, create 3 different input statements using colab forms 
    to ask the user for the following:
     - The number of joints in the truss. (Must be an integer)
     - The number of members in the truss. (Must be an integer)
     - The number of reaction forces acting on the truss. (Must be an integer)
    
-3. Write IF, ELIF, and ElSE statements on the same code block for the following 
+2. Write IF, ELIF, and ElSE statements on the same code block for the following 
    scenarios. Divide the section using a comment. 
 
   | Equation                                                | Result                   |
@@ -40,9 +39,9 @@ For this example, a student has given you a list of trusses he needs to solve fo
    | # of members + # of reaction forces > 2 * (# of joints) | Statically Indeterminate |
    | # of members + # of reaction forces < 2 * (# of joints) | Unstable                 |
 
-4. Finally write a print statement to print the result in the same code block. Divide this code using comments. For example, if my truss had more joints than reaction forces + my members, then the code would print "truss is statically unstable"
+3. Finally write a print statement to print the result in the same code block. Divide this code using comments. For example, if my truss had more joints than reaction forces + my members, then the code would print "truss is statically unstable"
 
-5. Test your code with the following scenarios:
+4. Test your code with the following scenarios:
    
    | Scenario # | Joints | Members | Reaction Forces | Result                   |
    |------------|--------|---------|-----------------|--------------------------|
@@ -52,13 +51,11 @@ For this example, a student has given you a list of trusses he needs to solve fo
 
 ---
 
-## Part 2
+## Part 2 - Material Order Counter
 
 **Objective**:  You are helping a company count the orders of materials it has. They have given you the list and want you to count it.
 
-### Steps
-
-1. Under the "Total_order" list, create a for loop that will go through each order in the given "orders " list. Divide this code using comments.
+1. Navigate to the "Part 2 - Material Order Counter" section. Below the "Total_order" list, create a for loop that will go through each order in the given "orders " list. Divide this code using comments.
 
 2. In the next line, create a for loop that will read each item in the "Total_order" list. 
 
