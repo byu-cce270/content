@@ -1,4 +1,4 @@
-# In Class Exercise: Introduction to Dictionaries, input statements, and while loops
+# In Class Exercise: Introduction to Dictionaries and While Loops
 
 The following exercises will have you create, manipulate, and loop through dictionaries. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
@@ -8,7 +8,7 @@ You can find the In Class Exercise here:
 ## Instructions
 
 1. Open the in-class workbook using the link above.
-2. Rename the notebook as `[Your_Name]dictionaries/input/while_in_class.ipynb`.
+2. Rename the notebook something like "(Your_Name)_Class_Dict_While.ipynb".
 3. Follow the instructions in the notebook to complete the exercise.
 
 ---
