@@ -27,28 +27,25 @@ Remember that you will have to sign in to you free account that you created earl
 ---
 
 # Pre-Class Quiz Challenge
-In a Colab notebook, create and complete a practice sheet using the following instructions. Use our standard file naming convention 
-(Name)_Reading_Dict_While.ipynb
-
-Submit a link to the completed problem in your Pre-Class Quiz.
-
 **Rivers with user input and while loops:**
 Create a program that builds a dictionary of rivers and the countries they run through, using user input.
 
-1. Start with an empty dictionary called rivers.
-2. Use a while loop to repeatedly ask the user for:
+1. Create a new colab notebook.
+2. Title the notebook "(Your_Name)_Pre_Dict_While.ipynb".
+3. Start with an empty dictionary called rivers. 
+4. Use a while loop to repeatedly ask the user for:
 
   - The name of a river
   - The country it runs through
   - Store these as a key-value pair in the dictionary.
 
-3. After each entry, ask the user if they want to add another river. Stop when they say **"no"**.
-4. Use a while loop to go through the dictionary and print a sentence for each river, such as:
+5. After each entry, ask the user if they want to add another river. Stop when they say **"no"**.
+6. Use a while loop to go through the dictionary and print a sentence for each river, such as:
 ```python
 The Nile runs through Egypt.
 ```
-5. Use another while loop to print only the names of the rivers.
-6. Use another while loop to print only the names of the countries.
+7. Use another while loop to print only the names of the rivers.
+8. Use another while loop to print only the names of the countries.
 
 ---
 
