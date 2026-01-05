@@ -1,10 +1,19 @@
 # HW: Working with Lists (For Loops)
 
+**Purpose:** This assignment aims to test your ability to use for loops for analyzing lists. 
+
+---
+## Getting Started
+
+Create a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/01_for_loops_into_functions/(Starter_Workbook)_HW_For_Loops.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Rename it something like "(Your_Name)_HW_For_Loops.ipynb".
+
 ---
 
-**Purpose:** Learn how to use for loops to analyze lists. You will work with a list of beams and use for loops to 
-calculate and print the deflection of the beams. Assume that the beams are cantilevered with a point load at some 
-distance **a** from the fixed side on the left as shown in the following diagram. 
+You will work with a list of beams and use for loops to 
+calculate and print the deflection of the beams. Assume that they are cantilevered with a point load at some 
+distance **a** from the fixed end on the left as shown in the following diagram. 
 
 ![image](https://www.vcalc.com/attachments/f79744e5-e005-11e3-b7aa-bc764e2038f2/CantileverBeamConcentratedloadPatanypoint-illustration.png)
 
@@ -38,14 +47,6 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 |:--------:|:-------------:|
 |   $E$    | 20e6 $N/cm^2$ |
 |   $I$    | 4,800 $cm^4$  |
-
----
-
-## Getting Started
-
-Create a copy of the starter sheet: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/01_for_loops_into_functions/(Starter_Workbook)_HW_For_Loops.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-Rename the notebook something like "(Your_Name)_HW_For_Loops.ipynb".
 
 ---
 

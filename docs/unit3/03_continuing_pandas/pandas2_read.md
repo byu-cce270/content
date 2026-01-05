@@ -71,6 +71,85 @@ print(data_filled)
 ```
 You can replace the NaN's with any value, but typically you will replace them with 0 or the mean of the column.
 
+For numeric columns you can also use the `.fillna()` method with the `method` parameter to propagate non-NaN values forward or backward.
+
+Here is an example of how to use the `method` parameter with `.fillna()` using the mean value of the column:
+```python
+df['A'].fillna(df['A'].mean(), inplace=True)  # Fill with mean
+```
+And here is using the backfill and forword fill methods:
+
+```python
+import pandas as pd
+import numpy as np
+data = pd.DataFrame(
+    np.array([[1, 2, np.nan], [np.nan, np.nan, 6], [7, 8, np.nan]]),
+    columns=['A', 'B', 'C'])       
+print(data)
+# Output:
+#      A    B    C
+# 0  1.0  2.0  NaN
+# 1  NaN  NaN  6.0
+# 2  7.0  8.0  NaN
+
+
+# Forward fill NaN values
+data_ffill = data.fillna(method='ffill')
+print(data_ffill)
+# Output:
+    
+#      A    B    C
+# 0  1.0  2.0  NaN
+# 1  1.0  2.0  6.0
+# 2  7.0  8.0  6.0
+
+
+# Backward fill NaN values
+data_bfill = data.fillna(method='bfill')
+print(data_bfill)
+# Output:
+#      A    B    C
+# 0  1.0  2.0  6.0
+# 1  7.0  8.0  6.0
+# 2  7.0  8.0  NaN
+```
+
+
+You can also drop rows or columns with NaN values using the `.dropna()` method. Here is an example:
+```python
+import pandas as pd
+import numpy as np
+
+data = pd.DataFrame(
+    np.array([[1, 2, 3], [4, np.nan, 6], [7, 8, 9]]),
+    columns=['A', 'B', 'C'])
+
+print(data)
+# Output:
+#      A    B  C
+# 0  1.0  2.0  3.0
+# 1  4.0  NaN  6.0
+# 2  7.0  8.0  9.0
+
+# Drop rows with NaN values
+data_dropped = data.dropna()
+print(data_dropped)
+# Output:
+#      A    B  C
+# 0  1.0  2.0  3.0
+# 2  7.0  8.0  9.0
+
+# Drop columns with NaN values
+data_dropped_cols = data.dropna(axis=1)
+print(data_dropped_cols)
+# Output:
+#      A  C
+# 0  1.0  3.0
+# 1  4.0  6.0
+# 2  7.0  9.0
+```
+This command drops any row (or column) that contains at least one NaN value. Be careful, you may drop more data than you intend to if you have many NaN values in your dataset.
+
 ---
 
 ## Pandas append and concat

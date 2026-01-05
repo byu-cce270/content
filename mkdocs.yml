@@ -85,10 +85,14 @@ nav:
         - Reading: unit2/05_advance_functions_files/advance_functions_files_read.md
         - In Class: unit2/05_advance_functions_files/advance_functions_files_class.md
         - Homework: unit2/05_advance_functions_files/advance_functions_files_hw.md
+    - Intro to Classes:
+        - Reading: unit2/06_classes/intro_classes_read.md
+        - In Class: unit2/06_classes/intro_classes_class.md
+        - Homework: unit2/06_classes/intro_classes_hw.md
     - Unit 2 Project:
-        - Reading: unit2/06_unit2_project/u2_pro_read.md
-        - Proposal - Pseudocode: unit2/06_unit2_project/u2_pro_pseudo_hw.md
-        - Project Prompt: unit2/06_unit2_project/u2_pro_prompt.md
+        - Reading: unit2/07_unit2_project/u2_pro_read.md
+        - Proposal - Pseudocode: unit2/07_unit2_project/u2_pro_pseudo_hw.md
+        - Project Prompt: unit2/07_unit2_project/u2_pro_prompt.md
     - Unit 2 Study Guide: unit2/study_guide.md
 
   - Unit 3 - Advanced Python:
@@ -119,6 +123,7 @@ nav:
     - Final Project:
         - Project Proposal: unit3/06_final_project/final_pro_proposal.md
         - Project Prompt: unit3/06_final_project/final_pro_prompt.md
+    - Unit 3 Study Guide: unit3/study_guide.md
   - Bonus Content:
     - Gspread: bonus/gspread/gspread_read.md
     - Using Python Locally: bonus/python_local/local_read.md

@@ -37,10 +37,14 @@ Next, we will create a new dataframe with some summary statistics. Do the follow
 1. Create three new dataframes (**min_rain_df**, **max_rain_df**, **avg_rain_df**) that contain the minimum, maximum, and average annual precipitation for each month over the entire dataset.
 2. Combine the three dataframes into a single dataframe called **stats_df**. Change the column names to 'Min', 'Max', and 'Avg'.
 3. Display the dataframe to see the results. You should have one row for each month and three columns (Min, Max, Avg).
-4. Plot the **Avg** column of the stats_df dataframe using a bar or a line chart using `matplotlib`. **Hint**: The 'Annual' row at the bottom will mess up your plot. To display all of the rows except the last one, you can use the following code:
-```python
-stats_df.iloc[:-1].plot(kind='bar')
-```
+4. Plot the **Avg** column of the stats_df dataframe using a bar or a line chart using `matplotlib`. 
+ 
+!!! Hint
+    The 'Annual' row at the bottom will mess up your plot. To display all of the rows except the last one, you can use the following code:   
+    ```python   
+    stats_df.iloc[:-1].plot(kind='bar')
+    ```   
+    This will select all rows except the last one for plotting.
 
 
 ### Part 3: Export the Precip Data to Excel
@@ -55,19 +59,19 @@ Now we will create a new Excel file and write the main precip data to a sheet an
    should be a 
    scatter chart (smooth) with the years on the x-axis and the annual precipitation on the y-axis. Insert the chart and position it at cell **'P2'**.
 
-1. Export the **stats_df** dataframe to a new sheet called **'Stats'** in the Excel file. **Hint**: Use the same writer 
+5. Export the **stats_df** dataframe to a new sheet called **'Stats'** in the Excel file. **Hint**: Use the same writer 
    object and just call the `to_excel` method again with the new sheet name. Update the worksheet object to point to 
    the new sheet.
-2. Again, use the data_format object created above to format the table in the Stats sheet using the `set_column` 
+6. Again, use the data_format object created above to format the table in the Stats sheet using the `set_column` 
    method. Use a column width of **8**.
-3. Add an XY column chart of the monthly average precip data. Call the chart object 'chart2'. Include all of the month 
+7. Add an XY column chart of the monthly average precip data. Call the chart object 'chart2'. Include all of the month 
    rows, but 
    not 
    the 
    annual row at 
    the 
    end. 
-4. Insert the chart and position it at cell **'F2'**.
+8. Insert the chart and position it at cell **'F2'**.
 
 ### Part 4: Save the Excel File
 

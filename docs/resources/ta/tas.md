@@ -18,18 +18,12 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 ![brandan_w_ta_profile.jpg](images/brandan_w_ta_profile.jpg){width=100px}
 <br>**Brandan Williamson** - I'm the head TA for the class. I'm from Ripon, California. I'm a Senior here at BYU studying Civil Engineering and Computer Science. I also got married earlier this year. This is my third year as a TA. I've helped redo some of the coursework each semester. I'll be helping answer questions and grading assignments, and writing the free response for the exams. Feel free to message me during the evenings for help too.
-
-![tyler_t_ta_profile.jpg](images/tyler_t_ta_profile.jpg){width=100px}
-<br>**Tyler Johnson (TJ)** - I'm from Rancho Santa Margarita, California, and I'm a senior in the civil engineering program. This will be my fifth semester as a TA. I like to snowboard, golf, play pickleball, and play video games.
 							
 ![paige_l_ta_profile.jpg](images/paige_l_ta_profile.jpg){width=100px}
 <br>**Paige Logan** - I am from Kaysville, Utah and am a junior studying Civil Engineering! This is my second year as a TA for this class! I like to go skiing in the winter and boating in the summer! I'm excited to get to know all of you!
 
 ![griffin_i_ta_profile.jpg](images/griffin_i_ta_profile.jpg){width=100px}
 <br>**Griffin Izu** - I'm from Irvine, California, and I am a junior in the Civil Engineering program. This will be my third semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, and playing video games. I'm very excited to meet you all!
-
-![tyler_p_ta_profile.jpg](images/tyler_p_ta_profile.jpg){width=100px}
-<br>**Tyler Piercy** - I am from Royal City, Washington and am currently a senior in Civil Engineering. I grew up farming and doing construction for work and love hiking, baseball, skiing, and board games. This is my third semester as a TA for this class and Surveying (CE 122).
 
 ![mauricio_f_ta_profile.jpg](images/mauricio_f_ta_profile.jpg){width=100px}
 <br>**Mauricio Fernandez Celestino** - I am from Provo, UT, and I am a Junior in the Civil Engineering program. This is my first semester as a TA, and I am so excited! I love playing sports especially rugby, soccer and rugby. And my favorite thing is spending time with my wife! I am excited to get to know most of you, but hopefully all!
@@ -54,17 +48,13 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **Brandan**: Exams and Projects
 
-- **Tyler J.**: HW 1.2, HW 2.5, HW 3.6
-
 - **Paige**: All Pre Class Quiz and In Class Workbooks
 
 - **Griffin**: HW 1.3, HW 2.6
 
-- **Tyler P.**: HW 2.3, HW 3.5
-
 - **Mauricio**: HW 2.2, HW 3.4
 
-- **Reagan**: HW 1.6, HW 3.2
+- **Reagan**: HW 1.6, HW 3.5
 
 - **Preston**: HW 2.1, HW 3.3
 
