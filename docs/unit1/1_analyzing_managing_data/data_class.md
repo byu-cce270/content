@@ -14,7 +14,7 @@ Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Da
 
 2. Your boss has given you a list of customer orders. He wants you to sort through the customer data to show the top steel buyers.
 
-3. Add filters to the table (Columns A:C)
+3. Add filters in columns A through C in row 2
 
 4. Add a filter that only shows customers who ordered more than 15 tons of material
 
@@ -46,7 +46,7 @@ If you do these steps out of order, your formulas will look weird when the filte
 
 1. Navigate to the Temperature Conversions sheet
 
-2. Your boss loved your work so much that now you are the lead intern for the Google Spreadsheet division. He has now given you the task of analyzing the temperatures on one of his work sites to ensure building safety
+2. Your boss loved your work so much that now you are the lead intern for the Excel Spreadsheet division. He has now given you the task of analyzing the temperatures on one of his work sites to ensure building safety
 
 3. In cell C3 write in the equation that will convert from Fahrenheit to Celsius found in the "Conversion Equations" table. Convert the rest of the column to Celsius
 
@@ -54,9 +54,9 @@ If you do these steps out of order, your formulas will look weird when the filte
 
 5. In the "Statistical Data" table, find the average, max, min, standard deviation, and median from the values of Temp(F), Temp(C), and Temp(K) in the "Daily Temperature Data" table
 
-6. In the Daily Temperature Data table, highlight all temperature values at or below freezing in the Temp(F) column (as there are regulations against working in freezing temperatures). As a reference, freezing for Fahrenheit is 32 degrees
+6. In the "Daily Temperature Data" table, highlight all temperature values at or below freezing in the Temp(F) column (as there are regulations against working in freezing temperatures). As a reference, freezing for Fahrenheit is 32 degrees
 
-7. Now, add filters to the Daily Temperature Data table. Only show dates that are before 9/22/2024
+7. Now, add filters to the "Daily Temperature Data" table. Only show dates that are before 9/22/2024
 
 ---
 			
