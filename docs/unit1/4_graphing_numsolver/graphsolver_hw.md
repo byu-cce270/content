@@ -6,7 +6,7 @@ and organize data through creating various styles of graph.
 ---
 ## Getting Started
 
-1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Graphing-and-Solver.xlsm](%28Starter-Workbook%29-HW-Graphing-and-Solver.xlsm)
+1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-HW-Graphing-and-Solver.xlsx)
 2. Rename it something like "[Your Name]-HW-Graphing-and-Solver"
 3. Remember to save it in your OneDrive folder that you created in the first assignment.
 
