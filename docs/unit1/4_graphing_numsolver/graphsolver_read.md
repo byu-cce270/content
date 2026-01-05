@@ -43,6 +43,7 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
    Row/Column** option in the **Chart Design** ribbon that is useful when you have to make a quick change to the data.
 8. One of the other useful tools in the **Chart Design** tab is the **Add Chart Elements** tool. 
    This allows you to add or remove elements from the graph such as a title, labels, and legend.
+
 ![img_2.png](graphing_images/img_2.png)
 9. A trendline can also be added to the graph by selecting **Add Chart Elements** > **Trendline**. This will add a 
    trendline to the graph that shows the overall trend of the data. It can be added to a scatter plot to help visualize the relationship between the two variables.
