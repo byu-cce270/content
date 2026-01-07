@@ -48,7 +48,7 @@ in the spaces provided.
 
 1. Take a screenshot of the Teaching Assistants page on our class website.
 2. Take a picture of your OneDrive folder with your Homework starter sheet in it. Make sure the screenshot shows the folder name you created in Part 1.
-3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for September 8th to September 12th.
+3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for January 12th to January 16th.
 4. Post a message in Microsoft Teams in the Homework Help channel. Take a screenshot.
 
 Next, sign up for a time to meet with a TA using the following link:
