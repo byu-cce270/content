@@ -51,7 +51,7 @@ in the spaces provided.
 3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for January 12th to January 16th.
 4. Post a message in Microsoft Teams in the Homework Help channel. Take a screenshot.
 
-Next, sign up for a time to meet with a TA using the following link:
+Next, sign up for a time to meet with a TA using the following link. Include your first and last name:
 
 :arrow_right: **[Winter 2026 TA Sign Up](https://docs.google.com/spreadsheets/d/1JbsmB4Mj7WCmvFXq76wXcVQ5Zv-8juTxfyIjG_cw1OQ/edit?usp=sharing){:target="_blank"}** :arrow_left:
 
