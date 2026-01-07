@@ -53,7 +53,7 @@ in the spaces provided.
 
 Next, sign up for a time to meet with a TA using the following link:
 
-:arrow_right: **[Fall 2025 TA Sign Up](https://docs.google.com/spreadsheets/d/1-Bh8VJSgd64NqzSXTpAwxWb9tHoDet4bmJpfBLBqsG8/edit?usp=sharing){:target="_blank"}** :arrow_left:
+:arrow_right: **[Winter 2026 TA Sign Up](https://docs.google.com/spreadsheets/d/1JbsmB4Mj7WCmvFXq76wXcVQ5Zv-8juTxfyIjG_cw1OQ/edit?usp=sharing){:target="_blank"}** :arrow_left:
 
 Once you meet with a TA, they will give you the appropriate amount of points in Learning Suite. 
 Meetings will be from September 8th, 2025 to September 12th, 2025. After the 12th, you will lose 3 points for not meeting with a TA until you complete this assignment. 
