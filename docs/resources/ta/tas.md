@@ -46,18 +46,18 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **HW 1.1**: The TA you signed up and met with.
 
-- **Brandan**: Exams and Projects
+- **Brandan**: 2.8, 3.8, Projects, and Exams
 
-- **Paige**: All Pre Class Quiz and In Class Workbooks
+- **Paige**: HW 2.7, HW 3.6, All Pre Class Quiz and In Class Workbooks
 
-- **Griffin**: HW 1.3, HW 2.6
+- **Griffin**: HW 1.3, HW 2.6, HW 3.3
 
-- **Mauricio**: HW 2.2, HW 3.4
+- **Mauricio**: HW 1.2, HW 2.2, HW 3.4
 
-- **Reagan**: HW 1.6, HW 3.5
+- **Reagan**: HW 1.6, HW 2.5, HW 3.5
 
-- **Preston**: HW 2.1, HW 3.3
+- **Preston**: HW 2.1, HW 3.2, HW 3.7
 
-- **Samantha**: HW 1.5, HW 2.4
+- **Samantha**: HW 1.5, HW 2.4, Projects, and Exams
 
-- **Luke**: HW 1.4, HW 3.1
+- **Luke**: HW 1.4, HW 2.3, HW 3.1
