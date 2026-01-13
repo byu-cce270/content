@@ -138,6 +138,21 @@ Throughout this unit, you will learn new and useful functions. For this topic, y
 
 You can find more functions at W3Schools. You can also find a list of all functions in Excel by going to the Formulas tab in the ribbon and selecting "Insert Function". This will open a dialog box with a list of all the functions available in Excel. You can also search for specific functions by typing in the search box at the top of the dialog box. Within this dialog box, you can also find the function arguments and a description of what the function does. This is a great way to learn about new functions and how to use them. This can also be pulled by clicking on the function name in the formula bar.
 
+## Freezing Rows/Columns
+
+When working with large data sets in Excel, it can be helpful to freeze certain rows or columns so that they remain visible while you scroll through the rest of the data. This is especially useful for keeping headers or labels in view while you work with the data.
+To freeze rows or columns in Excel, follow these steps:
+1. Select the row or column **Below** the row or column that you want to freeze. If you would like to freeze the top two rows, you are going to select the row **Below** the top two rows or the leftmost cell **Below** the top two columns. If you want to freeze both rows and columns, select the cell that is below the rows and to the right of the columns you want to freeze.
+2. Go to the View tab in the ribbon and select "Freeze Panes" from the Window group. This will open a drop-down menu with several options for freezing rows and columns.
+3. Select the option that best fits your needs:
+   - Freeze Panes: This will freeze both the rows above and the columns to the left of the selected cell.
+   - Freeze Top Row: This will freeze only the top row of the worksheet.
+   - Freeze First Column: This will freeze only the first column of the worksheet.
+4. Once you have selected the option you want, the rows or columns will be frozen in place. You can tell that they are frozen by looking for a thicker border between the frozen and unfrozen sections of the worksheet. If you scroll down or to the right, the frozen rows or columns will remain visible while the rest of the data scrolls.
+5. To unfreeze the rows or columns, go to the View tab in the ribbon and select "Unfreeze Panes" from the Window group. This will unfreeze all frozen rows and columns in the worksheet.
+
+Freezing rows and columns can be a useful tool when working with large data sets in Excel. It allows you to keep important information in view while you work with the rest of the data. This can be useful for keeping headers or labels visible, making it easier to understand and remember the data you are working with.
+This link provides more information on freezing rows and columns in Excel if you would like to learn more! [Microsoft Freeze Panes](https://support.microsoft.com/en-us/office/freeze-panes-to-lock-rows-and-columns-in-excel-9f3f8b3d-1f2c-4d5d-8e9e-6f1d3f3c3b3b){:target="_blank"}
 ---
 
 ## Pre-Class Quiz Challenge
