@@ -10,33 +10,29 @@ Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Da
 
 ## Exercise 1 - Company Inventory
 
-1. Navigate to the Company Inventory sheet
+1. Navigate to the Company Inventory sheet and review the data. Your boss has given you a list of customer orders. He wants you to sort through the customer data to show the top steel buyers.
 
-2. Your boss has given you a list of customer orders. He wants you to sort through the customer data to show the top steel buyers.
+2. At the bottom right of the table, sum the total quantity of material purchased (Cell C14).
 
-3. Add filters in columns A through C in row 2
+3. Highlight all orders where the material purchased = "Steel". HINT: Use conditional formatting
 
-4. Add a filter that only shows customers who ordered more than 15 tons of material
+4. Add filters in columns A through C in row 2
 
-5. Out of those customers, highlight all those who ordered steel. HINT: Use conditional formatting, and only highlight the cell
-
-6. At the bottom right of the table, sum the total quantity of material purchased (Cell C14). Note: Even though we have a filter, it will still sum the values of the WHOLE table (including those values not shown)
+5. Add a filter that only shows customers who ordered more than 15 tons of material
 
 ---
 				
 ## Exercise 2 - Analyze Materials Purchased
 
-1. Navigate to the Analyze Materials Purchased sheet
-
-2. Now that you have proven your boss your skills, he has given you a new task with more customer order information
+1. Navigate to the Analyze Materials Purchased sheet. Now that you have proven your boss your skills, he has given you a new task with more customer order information
 
 3. Format the table by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table
 
 4. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade
 
-5. Add filters in columns A through E in row 2
+5. Add filters to the table. 
 
-6. Create a filter that only includes the customers that ordered between 20 and 75 tons of material for Order #2 (column C)
+6. Use the filter to display the customers that ordered between 20 and 75 tons of material for Order #2 (column C)
 
 ---
 
@@ -44,19 +40,17 @@ Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Da
 
 If you do these steps out of order, your formulas will look weird when the filters are applied first. Wait until the end to add filters.
 
-1. Navigate to the Temperature Conversions sheet
+1. Navigate to the Temperature Conversions sheet. Your boss loved your work so much that now you are the lead intern for the Excel Spreadsheet division. He has now given you the task of analyzing the temperatures on one of his work sites to ensure building safety
 
-2. Your boss loved your work so much that now you are the lead intern for the Excel Spreadsheet division. He has now given you the task of analyzing the temperatures on one of his work sites to ensure building safety
+2. In cell C3 write in the equation that will convert from Fahrenheit to Celsius found in the "Conversion Equations" table. Convert the rest of the column to Celsius
 
-3. In cell C3 write in the equation that will convert from Fahrenheit to Celsius found in the "Conversion Equations" table. Convert the rest of the column to Celsius
+3. In cell D3 write in the equation that will convert from Celsius to Kelvin found in the "Conversion Equations" table. Convert the rest of the column to Kelvin
 
-4. In cell D3 write in the equation that will convert from Celsius to Kelvin found in the "Conversion Equations" table. Convert the rest of the column to Kelvin
+4. In the "Statistical Data" table, find the average, max, min, standard deviation, and median from the values of Temp(F), Temp(C), and Temp(K) in the "Daily Temperature Data" table
 
-5. In the "Statistical Data" table, find the average, max, min, standard deviation, and median from the values of Temp(F), Temp(C), and Temp(K) in the "Daily Temperature Data" table
+5. In the "Daily Temperature Data" table, highlight all temperature values at or below freezing in the Temp(F) column (as there are regulations against working in freezing temperatures). As a reference, freezing for Fahrenheit is 32 degrees
 
-6. In the "Daily Temperature Data" table, highlight all temperature values at or below freezing in the Temp(F) column (as there are regulations against working in freezing temperatures). As a reference, freezing for Fahrenheit is 32 degrees
-
-7. Now, add filters to the "Daily Temperature Data" table. Only show dates that are before 9/22/2024
+6. Now, add filters to the "Daily Temperature Data" table. Only show dates that are before 9/22/2024
 
 ---
 			

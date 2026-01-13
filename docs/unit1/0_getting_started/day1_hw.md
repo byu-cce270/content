@@ -48,15 +48,15 @@ in the spaces provided.
 
 1. Take a screenshot of the Teaching Assistants page on our class website.
 2. Take a picture of your OneDrive folder with your Homework starter sheet in it. Make sure the screenshot shows the folder name you created in Part 1.
-3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for September 8th to September 12th.
+3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for January 12th to January 16th.
 4. Post a message in Microsoft Teams in the Homework Help channel. Take a screenshot.
 
-Next, sign up for a time to meet with a TA using the following link:
+Next, sign up for a time to meet with a TA using the following link. Include your first and last name:
 
-:arrow_right: **[Fall 2025 TA Sign Up](https://docs.google.com/spreadsheets/d/1-Bh8VJSgd64NqzSXTpAwxWb9tHoDet4bmJpfBLBqsG8/edit?usp=sharing){:target="_blank"}** :arrow_left:
+:arrow_right: **[Winter 2026 TA Sign Up](https://docs.google.com/spreadsheets/d/1JbsmB4Mj7WCmvFXq76wXcVQ5Zv-8juTxfyIjG_cw1OQ/edit?usp=sharing){:target="_blank"}** :arrow_left:
 
 Once you meet with a TA, they will give you the appropriate amount of points in Learning Suite. 
-Meetings will be from September 8th, 2025 to September 12th, 2025. After the 12th, you will lose 3 points for not meeting with a TA until you complete this assignment. 
+Meetings will be from January 12th, 2026 to January 16th, 2026. After the 16th, you will lose 3 points for not meeting with a TA until you complete this assignment.
 
 ---
 
