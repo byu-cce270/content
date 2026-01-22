@@ -29,33 +29,28 @@ The goal of this exercise is to practice creating different types of graphs in E
 ---
 ## Exercise #2- Using Solver in Excel (with Goal Seek)
 
-Navigate to the second sheet in the Graphing-and-Solver workbook, "Parabola-Solver", which is designed to solve a 
-quadratic 
-equation 
-using Excel's Solver function.
+Navigate to the second sheet in the Graphing-and-Solver workbook, "Polynomial Solver" which is designed to solve a 
+polynomial equation using both Solver and Goal Seek.
 
-This sheet is designed to solve a quadratic equation of the form:
+This sheet is designed to solve a polynomial equation of the form:
 
-$y = ax^2 + bx + c$
+>>$y = ax^4 + bx^3 + cx^2 + dx + e$
 
-The user enters the coefficients a, b, & c in cells C4:C6. For the case shown above, we are solving:
+The user enters the coefficients a, b, c, d, e in cells **D11:D15**. For the coefficients in the sheet, we are 
+solving:
 
-$y = x^2 - 3x + 1$
+>>$y = x^4 - 3x^2 + 0.6$
 
-The chart at the bottom is used to graph the parabola corresponding to the equation over a specified range. The 
-solution to the equation is the two points where the parabola intercepts the y-axis. These are called the "roots" and represent the solution to:
+### Graphing the Polynomial
 
-$ax^2 + bx + c = 0$
+The table just below the coefficients shows a set of x values and the corresponding y values using the polynomial 
+equation with the specified coefficients. Make a chart of the data using the **XY Scatter - Smooth Lines** chart type.
 
-As can be seen on the chart, the roots are approximately 0.4 and 2.6. We can find the roots using cells F4 and F5. We enter a value for x in cell F4. The corresponding value of y is computed in cell F5 as:
+### Solving the Polynomial
 
-**=C4*F4$^2$+C5*F4+C6**
-
-To find a root, we can enter a guess (0.4 for starters) into F4 and iteratively tweak that number until the value 
-computed for y in F5 is roughly equal to zero. While this works, it can be time-consuming and tedious.
-
-1. Solve for one of the roots of the parabola using **Solver.**
-2. Find the x location corresponding the lowest point on the parabola.
+Note the X and Y cells in F12:F13. You can enter any X value in cell F12 and the corresponding Y value will be computed 
+in cell F13 based on the coefficients and the polynomial equation. Using these cells, follow each of the three 
+instructions on the sheet to solve for various features of the polynomial using Goal Seek and solver. Copy-paste the answers you find into the cells indicated.
 
 ---
 
