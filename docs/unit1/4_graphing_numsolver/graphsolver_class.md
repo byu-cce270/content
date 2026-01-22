@@ -14,14 +14,16 @@ associate and more. You are tasked with creating various graphs to visualize the
 sheet** and is titled appropriately. Each chart should have the x and y-axis labeled and have a legend. 
 
 1. Navigate to the first sheet in the data workbook,"Construction_Sales" which is the data that we will be graphing.
-2. Try to make a pie chart that shows the total sales by product. You can use the **Insert** tab in Excel to create 
-a chart. 
-3. Your boss wants to know the relationship between quantity sold and revenue. Make a scatter plot that shows the units 
-   sold vs total 
-   sales. Does higher quantity sales lead to higher revenue?
-4. Create a bar graph that shows the average total sales by region. With this graph, we are looking to see which 
-   regions are performing the best in terms of sales.
-5. Make a line graph that shows the total monthly sales trend over time. (Include a trendline to show the overall trend.) 
+2. Create a pivot table that aggregates total sales by product. Then make a pie chart that shows the total sales by 
+   product. 
+3. Your boss wants to know the relationship between quantity sold and revenue. Make a scatter plot (markers only) that 
+   shows the units sold vs total sales (does not require a pivot table). Does higher quantity sales lead to higher 
+   revenue?
+4. Create a pivot table that aggregates total sales by region. Then create a bar graph that shows the average total 
+   sales by region. With this graph, we are looking to see which regions are performing the best in terms of sales.
+5. Create a pivot table that aggregates sales first by year and then by month. Make a line graph that shows the total 
+   monthly sales trend over time. 
+   (Include a trendline to show the overall trend.) 
    This will help us understand how sales are changing over time.
 
 The goal of this exercise is to practice creating different types of graphs in Excel and to understand how to visualize data effectively, so feel free to experiment with different colors and styles! 
@@ -29,33 +31,28 @@ The goal of this exercise is to practice creating different types of graphs in E
 ---
 ## Exercise #2- Using Solver in Excel (with Goal Seek)
 
-Navigate to the second sheet in the Graphing-and-Solver workbook, "Parabola-Solver", which is designed to solve a 
-quadratic 
-equation 
-using Excel's Solver function.
+Navigate to the second sheet in the Graphing-and-Solver workbook, "Polynomial Solver" which is designed to solve a 
+polynomial equation using both Solver and Goal Seek.
 
-This sheet is designed to solve a quadratic equation of the form:
+This sheet is designed to solve a polynomial equation of the form:
 
-$y = ax^2 + bx + c$
+>>$y = ax^4 + bx^3 + cx^2 + dx + e$
 
-The user enters the coefficients a, b, & c in cells C4:C6. For the case shown above, we are solving:
+The user enters the coefficients a, b, c, d, e in cells **D11:D15**. For the coefficients in the sheet, we are 
+solving:
 
-$y = x^2 - 3x + 1$
+>>$y = x^4 - 3x^2 + 0.6$
 
-The chart at the bottom is used to graph the parabola corresponding to the equation over a specified range. The 
-solution to the equation is the two points where the parabola intercepts the y-axis. These are called the "roots" and represent the solution to:
+### Graphing the Polynomial
 
-$ax^2 + bx + c = 0$
+The table just below the coefficients shows a set of x values and the corresponding y values using the polynomial 
+equation with the specified coefficients. Make a chart of the data using the **XY Scatter - Smooth Lines** chart type.
 
-As can be seen on the chart, the roots are approximately 0.4 and 2.6. We can find the roots using cells F4 and F5. We enter a value for x in cell F4. The corresponding value of y is computed in cell F5 as:
+### Solving the Polynomial
 
-**=C4*F4$^2$+C5*F4+C6**
-
-To find a root, we can enter a guess (0.4 for starters) into F4 and iteratively tweak that number until the value 
-computed for y in F5 is roughly equal to zero. While this works, it can be time-consuming and tedious.
-
-1. Solve for one of the roots of the parabola using **Solver.**
-2. Find the x location corresponding the lowest point on the parabola.
+Note the X and Y cells in F12:F13. You can enter any X value in cell F12 and the corresponding Y value will be computed 
+in cell F13 based on the coefficients and the polynomial equation. Using these cells, follow each of the three 
+instructions on the sheet to solve for various features of the polynomial using Goal Seek and solver. Copy-paste the answers you find into the cells indicated.
 
 ---
 

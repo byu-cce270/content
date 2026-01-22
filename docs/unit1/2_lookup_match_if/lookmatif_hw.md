@@ -104,7 +104,7 @@
 
 ---
 
-## Part 4 - Simple Supported Beam Sheet
+## Part 4 - Simply Supported Beam Sheet
 
 1. Navigate to the **Simply Supported Beam** sheet
 
