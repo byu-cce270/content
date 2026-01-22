@@ -10,9 +10,6 @@ and organize data through creating various styles of graph.
 2. Rename it something like "[Your Name]-HW-Graphing-and-Solver"
 3. Remember to save it in your OneDrive folder that you created in the first assignment.
 
-!!!Note
-      All of our previous files in class have been **.xls** files or Excel files. This file is an **.xlm** file. That means that the file contains macros, which are small programs that can automate tasks in Excel. You will need to enable macros when you open the file to use the Solver and Goal Seek functions. The macros in this file reveal a secret message when you solve the problems correctly.
-
 ---
 
 ## Part 1 - Asteroid Defense Missile Trajectory
@@ -86,6 +83,7 @@ This data comes from [USGS Water Data for the Nation](https://waterdata.usgs.gov
 streamflow data for the 
     Provo River in Utah. You will be creating three different charts using this data. Each chart should be on its own 
     sheet and should be titled appropriately. The colors of the charts should be changed to something other than the default colors.
+
 1. Using the data in the "Streamflow" data sheet recreate this graph. Make sure to change the colors and include a 
    Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 1."
 
@@ -97,7 +95,9 @@ streamflow data for the
 
 ![summary_statistics_excel.png](graphing_images/summary_statistics_excel.png)
 
-3. Using the data in the "Load Calculations" sheet recreate this graph. Make sure to change the colors and include a 
+### Part 4 - Graphing Load Calculation Data
+
+1. Using the data in the "Load Calculations" sheet recreate this graph. Make sure to change the colors and include a 
    Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 3."
 
 ![deflectionvsapplied_excel.png](graphing_images/deflectionvsapplied_excel.png)
