@@ -14,14 +14,16 @@ associate and more. You are tasked with creating various graphs to visualize the
 sheet** and is titled appropriately. Each chart should have the x and y-axis labeled and have a legend. 
 
 1. Navigate to the first sheet in the data workbook,"Construction_Sales" which is the data that we will be graphing.
-2. Try to make a pie chart that shows the total sales by product. You can use the **Insert** tab in Excel to create 
-a chart. 
-3. Your boss wants to know the relationship between quantity sold and revenue. Make a scatter plot that shows the units 
-   sold vs total 
-   sales. Does higher quantity sales lead to higher revenue?
-4. Create a bar graph that shows the average total sales by region. With this graph, we are looking to see which 
-   regions are performing the best in terms of sales.
-5. Make a line graph that shows the total monthly sales trend over time. (Include a trendline to show the overall trend.) 
+2. Create a pivot table that aggregates total sales by product. Then make a pie chart that shows the total sales by 
+   product. 
+3. Your boss wants to know the relationship between quantity sold and revenue. Make a scatter plot (markers only) that 
+   shows the units sold vs total sales (does not require a pivot table). Does higher quantity sales lead to higher 
+   revenue?
+4. Create a pivot table that aggregates total sales by region. Then create a bar graph that shows the average total 
+   sales by region. With this graph, we are looking to see which regions are performing the best in terms of sales.
+5. Create a pivot table that aggregates sales first by year and then by month. Make a line graph that shows the total 
+   monthly sales trend over time. 
+   (Include a trendline to show the overall trend.) 
    This will help us understand how sales are changing over time.
 
 The goal of this exercise is to practice creating different types of graphs in Excel and to understand how to visualize data effectively, so feel free to experiment with different colors and styles! 
