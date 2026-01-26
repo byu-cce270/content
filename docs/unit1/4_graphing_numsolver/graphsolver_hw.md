@@ -25,7 +25,7 @@ and paste your answers into the appropriate cells. If you are right, something m
 2. In cell K21 enter the trajectory equation for the missile in terms of the horizontal distance (X) and the 
    vertical distance (Y). The trajectory equation is given as: 
 
-$y = -(x^2)+ 155 *x$
+>>$y = -(x^2)+ 155 *x$
 
 3. In cell K22 enter a value for the horizontal distance (X) of the missile. This is the value that you will change to find the 
    horizontal location of the missile when it reaches the height of the building. Try entering a very small number 
@@ -87,13 +87,13 @@ streamflow data for the
 1. Using the data in the "Streamflow" data sheet recreate this graph. Make sure to change the colors and include a 
    Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 1."
 
-![img.png](streamflowdata_excel.png)
+![streamflow_chart.png](graphing_images/streamflow_chart.png)
 
 2. Using the data in the "Summary Statistics" data sheet recreate this graph. Make sure to change the colors and 
    include a 
    Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 2."
 
-![summary_statistics_excel.png](graphing_images/summary_statistics_excel.png)
+![streamflow_chart2.png](graphing_images/streamflow_chart2.png)
 
 ### Part 4 - Graphing Load Calculation Data
 
