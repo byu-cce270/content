@@ -30,8 +30,7 @@ Imagine that you are working for a landscaping company and your boss has asked y
 - Any other details needed for a clear and useful client invoice
 
 !!! NOTE
-    You don't need to actually create the spreadsheet, you are simply supposed to populate a Gantt chart 
-outlining how you would develop the spreadsheet.
+    You don't need to actually create the spreadsheet, you are simply supposed to populate a Gantt chart outlining how you would develop the spreadsheet.
 
 ---
 
