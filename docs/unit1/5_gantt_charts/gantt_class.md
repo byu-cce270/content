@@ -8,7 +8,7 @@ We will use  seven main steps to create a Gantt chart in Excel.
 2. Creating the Timeline 
 3. Making the Timeline Dynamic
 4. Add Gantt Bars using Conditional Formatting
-5. AAdding Summary Progress Bars
+5. Adding Summary Progress Bars
 6. Phase Summary Duration
 7. Highlighting Weekends
 
