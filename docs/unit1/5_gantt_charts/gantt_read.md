@@ -108,7 +108,7 @@ This formula returns a number representing the day of the week of the day provid
 
       WEEKDAY(serial_number,[return_type])
 
-  * serial_number - A sequential number that represents the date of the day you are trying to find. Dates should be entered by using the DATE function, or as results of other formulas or functions.
+  * serial_number - A sequential number that represents the date of the day you are trying to find. Typically this will be a cell with a "date" in int. Dates should be entered by using the DATE function, or as results of other formulas or functions.
   * return_type - [OPTIONAL - 1 by default] - A number that determines the type of return value. You can look at the documentation for WEEKDAY() to see the different return types. The default is 1, which means that the week starts on Sunday and ends on Saturday. If you want the week to start on Monday, you can use 2 as the return type.
 
 **Usage** 
@@ -120,10 +120,15 @@ This formula converts a number into text according to a specified format.
 
 **Syntax**
 
-      TEXT(Value you want to format, "Format code you want to apply")
+      TEXT(number, "format")
 
-  * number - the number, date, or time that needs formatted
+  * number - the number, date, or time that needs formatted.
   * format - the pattern by which to format the number, must be enclosed in quotation marks. You can look up the different format codes in the documentation for TEXT().
+For our use we will do something like:
+ 
+    TEXT(A1, "DDD")
+
+  * This will convert the date in cell A1 into a three letter abbreviation for the day of the week. For example, if A1 is a Monday, it will return "Mon".
 
 **Usage**
 
