@@ -89,14 +89,13 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 |                 Variable created to store the value of total length of the beam                 |        2        |
 |                   For loop created to calculate the total length of the beam                    |        5        |
 |                            Average length of the beams is calculated                            |        2        |
-|               For loop created to count the number of beams longer than 5 meters                |        5        |
 |                         Print statements created to output the results                          |        2        |
 |                  In the 2nd code block, the last length in the list is deleted                  |        2        |
 |                    A variable is created to store the deflection of the beam                    |        2        |
 |                  For loop is created to calculate the deflection of each beam                   |        5        |
 |      Print statements created that specify the length of the beam and the total deflection      |        3        |
 | Comments are used to separate different sections of the code and explain what the code is doing |        4        |
-|                         <div style="text-align: right">**Total**</div>                          |       34        |
+|                         <div style="text-align: right">**Total**</div>                          |       29        |
 
 ---
 
