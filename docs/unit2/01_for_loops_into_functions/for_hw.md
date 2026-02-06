@@ -66,9 +66,6 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 1. Run Code Block 5 to create the 'beam_lengths' list.
 
-!!! Note:
-    If you created your copy of the starter sheet before 2:30pm on 10/1/2025, code block 5 in step 1 or part 2 refers to code block 6. If you created your copy of the starter sheet after 2:30pm on 10/1/2025, code block 5 in step 1 or part 2 refers to code block 5. Follow the same logic for code blocks 6, 7, and 8 in the steps below.
-
 2. In Code Block 6, delete the last length from the list and then display the contents of the list.
 
 3. You will find in Code Block 7, are the given values for E, I, and the loads given that it's a steel beam. Run this cell to initialize the variables and the list
@@ -94,8 +91,8 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 |                    A variable is created to store the deflection of the beam                    |        2        |
 |                  For loop is created to calculate the deflection of each beam                   |        5        |
 |      Print statements created that specify the length of the beam and the total deflection      |        3        |
-| Comments are used to separate different sections of the code and explain what the code is doing |        4        |
-|                         <div style="text-align: right">**Total**</div>                          |       29        |
+| Comments are used to separate different sections of the code and explain what the code is doing |        5        |
+|                         <div style="text-align: right">**Total**</div>                          |       30        |
 
 ---
 
