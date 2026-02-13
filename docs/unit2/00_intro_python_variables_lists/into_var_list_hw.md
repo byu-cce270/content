@@ -191,5 +191,5 @@ The following is not a part of the rubric, but specifies how you can lose points
 |:-----------------------------------------------------------------------:|:-----------------:|
 |                         Link shared incorrectly                         |       -10%        |
 |                        Turned in late (per week)                        | -10% (up to -50%) |
-| No comments explaining where AI is used and what its provided code does |       -10%        |
+| No comments explaining where AI is used and what its provided code does |       -50%        |
 
