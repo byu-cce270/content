@@ -167,7 +167,7 @@ It should output something like this:
 
 |                                                  Item                                                   | Points Possible |
 |:-------------------------------------------------------------------------------------------------------:|:---------------:|
-|  Part 1 - At least one input statements is made and all other variables are made with the correct type  |        6        |
+|                         Part 1 - All variables are made with their correct types                        |        6        |
 |            Part 1 - Equations are typed in correctly and are stored in the correct variable             |       10        |
 |                          Part 2 - 4 new lists are created and named correctly                           |        4        |
 |                     Part 2 - Required items are added to the 4 lists as instructed                      |        5        |
