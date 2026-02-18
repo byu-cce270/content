@@ -19,13 +19,13 @@ In this assignment, you will be creating a dictionary and using it to calculate 
 1. In the first code block, make a dictionary called MaterialsDictionary. Use the following keys and their 
 corresponding values to populate the dictionary:
 
-   | Key      | Value                                |
-   |----------|--------------------------------------|
-   | "Guide"  | ["$ per ton","$ ship ton per mile"]  |
-   | “Steel”  | [700,5]                              |
-   | “Cement” | [130,2]                              |
-   | "Lumber" | [34,4]                               |
-   | "Glass"  | [50,15]                              |
+   | Key      | Value                            |
+   |----------|----------------------------------|
+   | "Guide"  | ["$ per ton","$ ship per mile"]  |
+   | “Steel”  | [700,5]                          |
+   | “Cement” | [130,2]                          |
+   | "Lumber" | [34,4]                           |
+   | "Glass"  | [50,15]                          |
 
 ---
 
