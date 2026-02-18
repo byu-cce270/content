@@ -47,7 +47,7 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
 
 5. In the for loop, use an if statement to ensure that the key is **not** equal to "Guide." Create two variables 
    that you will reference in a print statement. One variable should reference the cost per ton value in the 
-   dictionary, and the second variable should reference the $ ship ton per mile. Create a print statement that 
+   dictionary, and the second variable should reference the $ ship per mile. Create a print statement that 
    loops through each material and states how much each material costs per ton and how much it costs to ship.
 
 ---
