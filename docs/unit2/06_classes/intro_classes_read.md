@@ -24,8 +24,7 @@ In a Colab notebook, complete Problem 9-3 and 9-5 found in chapter 9 of the text
 
 ![preclasschallenge_9-5.png](images/preclasschallenge_9-5.png)
 
-If you have time, and want to practice more, you can also complete Problem 9-7 and 9-8
-
+If you have time and want to practice more, you can also complete Problem 9-7 and 9-8
 
 ---
 
