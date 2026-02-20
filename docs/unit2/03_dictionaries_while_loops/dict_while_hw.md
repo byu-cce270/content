@@ -68,11 +68,11 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
 
 
 
-7. Create an if statement that checks if the user has inputted a valid material. If the material is not in the 
-   dictionary, print a message that says "Material not found. Please enter a valid material." and use the 
-   continue statement to skip to the next iteration of the loop. Make sure the count does not increase if the 
+7. Create an if statement that checks if the user has inputted a valid material. If the material is not in the
+   dictionary, print a message that says "Material not found. Please enter a valid material." and use the
+   continue statement to skip to the next iteration of the loop. Make sure the count does not increase if the
    material is not found.
-7. In the while loop, create the following input statements:
+8. In the while loop, create the following input statements:
 
    | Variable Name |                            Prompt                           | Variable Type |
    |:-------------:|:-----------------------------------------------------------:|:-------------:|
@@ -80,7 +80,7 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
    |    quantity   | Asks how much of that material the user wants to buy in tons|     float     |
    |    distance   |      Asks how far the material will be shipped in miles     |     float     |
 
-!!!Hint
+!!! hint
       Use the `.capitalize()` function so that you don't have to worry about capitalization problems with your materials! </br>
 
 9. Still in the loop, add the cost of the material multiplied by its quantity to the cost of shipping the material 
@@ -88,11 +88,11 @@ materials in the MaterialsDictionary. Make sure that you start writing your code
 10. Add each item cost to the variable "total" that was already included in the function.
 
 !!! hint 
-    Use the `+="` operator when adding the costs to the total. 
+    Use the `+=` operator when adding the costs to the total. 
 
-11. Make sure that the `amountmat` variable is decreased by 1 at the end of each iteration of the while loop so that the loop will 
+11. Make sure that the `amountmat` variable is decreased by 1 at the end of each iteration of the while loop so that the loop will
    eventually stop according to how many items the user wants to order.
-10. Run all the cells and then test the function using this table:
+12. Run all the cells and then test the function using this table:
     
    | Material | Amount | Distance |
    |----------|--------|----------|
