@@ -12,7 +12,7 @@ Be sure to rename the workbook something like "(Your_Name)_Class_Introduction_to
 
 After opening the workbook, follow the instructions in the workbook to complete the exercises. There are two parts to this exercise. Part 1 will go over the basics of Python and variables. Part 2 will give you practice with the basics of Lists in Python.
 
-For Part 2, here is a list of common list methods. Here is a list of some the methods you will be using:
+For Part 2, here is a list of common list methods you will be using:
 
 |  Method   | Description                                                      |
 |:---------:|------------------------------------------------------------------|

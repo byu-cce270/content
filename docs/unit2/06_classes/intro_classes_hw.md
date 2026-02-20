@@ -176,11 +176,7 @@ Status: UNDER BUDGET
 ```
 
 !!! Note
-    While this problem can be solved using AI, we strongly encourage you to first attempt to write it without
-    AI. If you get stuck, you may use AI tools like ChatGPT or Gemini (the AI inside Colab notebooks) to help you debug or complete these
-    classes. If you do use AI tools, be
-    sure to examine the code provided by the AI tool and try to understand how it works. Add comments to the code to
-    explain what each part of the code does.
+    While this problem can be solved using AI, we strongly encourage you to first attempt to write it without AI. If you get stuck, you may use AI tools like ChatGPT or Gemini (the AI inside Colab notebooks) to help you debug or complete these classes. If you do use AI tools, be sure to examine the code provided by the AI tool and try to understand how it works. Add comments to the code to explain what each part of the code does.
 
 ---
 

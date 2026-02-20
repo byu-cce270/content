@@ -1,6 +1,6 @@
 #  HW: Functions and Files
 
-**Purpose:** Learn how to use functions to create more simplified blocks of code
+**Purpose:** Learn how to use functions to create more simplified blocks of code.
 
 ##  Instructions
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/05_advance_functions_files/(Starter_Workbook)_HW_Adv_Function_File.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -22,7 +22,7 @@ These scenarios are in the same order of the chart below. For example, scenario 
 
 #### Part 1
 !!! Hint
-    You created some of these functions during the in-class assigment. You can use those if you copy the code over. 
+    You created some of these functions during the in-class assignment. You can use those if you copy the code over. 
 
 1. In the first code block, write six appropriately named functions that calculate and return the maximum deflection and maximum moment for each beam scenario shown in the chart below. Your parameters will be the variables corresponding to each scenario's max deflection and max bending moment.
 
@@ -87,30 +87,22 @@ $I$ = the moment of inertia (in inches^4)
    |       h       |        Asks what the height of the beam is (in inches)      |     float     |
 
 !!! Note
-    For testing your code you may want to comment out the input statements and just set the variables to make it easier to run. For example, you can hard code the inputs from step 11 below. Make sure you try other inputs also. If you do this,  you don't have to input all the data every time. After it is working, you can comment out these statements and remove the comments from the input statements so it will interactively ask you about a beam and assocated parameters.
+    For testing your code you may want to comment out the input statements and just set the variables to make it easier to run. For example, you can hard code the inputs from step 11 below. Make sure you try other inputs also. If you do this, you don't have to input all the data every time. After it is working, you can comment out these statements and remove the comments from the input statements so it will interactively ask you about a beam and associated parameters.
 
 4. On a new line, create the variable **y** using the following equation:
 
 >>$y=\dfrac{h}{2}$
 
-5. On a new line within the code block, create a variable **I** that you set by calling the moment of inertia 
-   function you created earlier, with the variables **b** and **h**  as its arguments. These variables were defined earlier.
+5. On a new line within the code block, create a variable **I** that you set by calling the moment of inertia function you created earlier, with the variables **b** and **h** as its arguments. These variables were defined earlier.
 
 6. On a new line, create IF and ELIF statements that check if the **beam_type** is a cantilever or a simply supported beam. Within those IF and ELIF statements, nest more IF and ELIF statements that check if the **load_type** is a moment, a point, or a distributed load. 
 
 7. Depending on your **beam_type** and **load_type**, use the appropriate function to assign values to the variables **max_deflection** and **max_moment**  within the nested IF and ELIF statements. For example, if your **beam_type** is a cantilever and your **load_type** is a moment load, your variables **max_deflection** and **max_moment** should be set using the function you created for a cantilever and moment load.
 
-8. On a new unindented line, create the variable **max_stress** and set the value by calling the maximum bending 
-   stress function you created earlier, with the variables **max_moment**, **y**, and **I** as its arguments. These 
-   variables were defined earlier.
+8. On a new unindented line, create the variable **max_stress** and set the value by calling the maximum bending stress function you created earlier, with the variables **max_moment**, **y**, and **I** as its arguments. These variables were defined earlier.
 
-9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches)
-   as well as the maximum bending stress (in psi).
-10. On a new line, create a text file called **"beam_results.txt"** and open the file using a context manager. Open your 
-    created file in "append" mode, and write the maximum 
-    deflection and maximum bending stress to the file. Each solution should be appended on a new line. Make sure that 
-    the file is 
-    appending each result, not writing over them. If you can't remember how to do this, refer back to the preclass reading.
+9. On a new line, create a print statement that tells the user what the maximum deflection of the beam is (in inches) as well as the maximum bending stress (in psi).
+10. On a new line, create a text file called **"beam_results.txt"** and open the file using a context manager. Open your created file in "append" mode, and write the maximum deflection and maximum bending stress to the file. Each solution should be appended on a new line. Make sure that the file is appending each result, not writing over them. If you can't remember how to do this, refer back to the preclass reading.
 
 11. Check if your functions work by using the following inputs:
 
@@ -122,8 +114,7 @@ $I$ = the moment of inertia (in inches^4)
    |       b       |                              8                              |
    |       h       |                              12                             |
 
-12. If you did everything correct, you should get the following values for each scenario (the deflection values are 
-rounded to the thousandths place):
+12. If you did everything correct, you should get the following values for each scenario (the deflection values are rounded to the thousandths place):
 
    |                     Scenario                         | Maximum Deflection | Maximum Bending Stress |
    |:----------------------------------------------------:|:------------------:|:----------------------:|
@@ -134,11 +125,7 @@ rounded to the thousandths place):
    |       Simply supported beam with a point load        |     0.003 inches   |       281.25 psi       |
    |       Simply supported beam with a distributed load  |     0.285 inches   |        22950 psi       |
    
-13. If your txt file was created correctly, you should end up with a file that has the answers to the trial runs, 
-    each on a new line. Try opening the file to check if it has the correct formatting and values. **Note: The txt file 
-    does 
-    not have to have all the trial problems, it just has to have a few of them so we can see if it 
-    is working correctly and has the right formatting.**
+13. If your txt file was created correctly, you should end up with a file that has the answers to the trial runs, each on a new line. Try opening the file to check if it has the correct formatting and values. **Note: The txt file does not have to have all the trial problems, it just has to have a few of them so we can see if it is working correctly and has the right formatting.**
 
 ---
 
@@ -164,7 +151,7 @@ rounded to the thousandths place):
 | Functions and related IF statements are called/defined correctly |     4      |
 |              Variable max_stress defined correctly               |     2      |
 |  Second code block prints maximum deflection and bending stress  |     2      |
-|       Files is created correctly and appends new solutions       |     2      |
+|       File is created correctly and appends new solutions        |     2      |
 |          <div style="text-align: right">**Total**</div>          |   **32**   |
 
 ---

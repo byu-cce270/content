@@ -82,7 +82,7 @@ This chapter explores advanced list operations including iteration, numerical li
     * Copying a List: Use a slice with no indices (**[:]**) to create a copy. Assigning a list without a slice (**friend_foods = my_foods**) makes both variables point to the same list.
 * **Tuples**: Immutable sequences that cannot be modified after creation.
     * An immutable (unchangeable) list.
-    * Defined with parentheses **()**) instead of square brackets.
+    * Defined with parentheses **()** instead of square brackets.
     * Values cannot be changed after definition, but the variable holding the tuple can be reassigned to a new tuple.
 * **Code Styling (PEP 8)**: Python's style guide for writing clean, readable code.
     * Indentation: Use four spaces per level.
@@ -194,8 +194,30 @@ This chapter teaches how to write functions, which are named blocks of code desi
     * **Aliases**: Using **as** to give a function or module a shorter nickname (e.g., **import pizza as p** or **from pizza import make_pizza as mp**).
     * **from module_name import \***: Imports all functions from a module. Not generally recommended as it can cause name conflicts.
 
+### Chapter 9: Classes
 
+This chapter introduces object-oriented programming (OOP) in Python, where you create classes that represent real-world things and situations, and then create objects based on those classes.
 
+* **Creating and Using a Class**: Defining a blueprint for creating objects.
+    * **class** keyword: Used to define a class. Class names use CamelCase by convention (e.g., **Dog**, **ElectricCar**).
+    * **\_\_init\_\_()** method: A special method that Python runs automatically whenever you create a new instance. It initializes the object's attributes.
+    * **self** parameter: Required as the first parameter in every method. It gives each instance access to its own attributes and methods.
+    * **Attributes**: Variables that belong to an instance, set using **self.attribute_name** in **\_\_init\_\_()**.
+    * **Methods**: Functions that belong to a class. They describe the behaviors of an object.
+    * **Instance**: An object created from a class (e.g., **my_dog = Dog('Willie', 6)**).
+* **Working with Classes and Instances**: Modifying and interacting with objects.
+    * Accessing Attributes: Use dot notation (e.g., **my_dog.name**).
+    * Calling Methods: Use dot notation (e.g., **my_dog.sit()**).
+    * Modifying Attributes Directly: Assign a new value using dot notation (e.g., **my_car.odometer_reading = 23**).
+    * Modifying Attributes Through Methods: Define a method that updates the attribute internally.
+    * **\_\_str\_\_()** method: A special method that returns a human-readable string representation of the object when **print()** is called on it.
+* **Inheritance**: Building new classes based on existing ones.
+    * **Child Class**: A class that inherits all attributes and methods from a **Parent Class**.
+    * The child class **\_\_init\_\_()** method must call the parent's **\_\_init\_\_()** using **super().\_\_init\_\_()**.
+    * **Overriding Methods**: A child class can define a method with the same name as a parent method to replace its behavior.
+    * Adding New Attributes and Methods: A child class can have attributes and methods that the parent class does not have.
+* **Input Validation**: Checking that values assigned to attributes are valid.
+    * Validation is typically done in **\_\_init\_\_()** or in setter methods to ensure attributes have acceptable values (e.g., checking that a quantity is not negative).
 
 ---
 
@@ -221,6 +243,11 @@ Sample questions to help you prepare for the midterm exam. Answers are provided 
 13. A **while True:** loop will run forever unless it encounters a **break** statement.
 14. An argument is a piece of information that is passed from a function call to a function.
 15. The **import module_name as mn** syntax imports only one function from the module.
+16. A class is a blueprint for creating objects, while an instance is an actual object created from that class.
+17. The **self** parameter in a class method refers to the class itself, not to an individual instance.
+18. A child class automatically has access to all the attributes and methods of its parent class.
+19. You can override a parent class method by defining a method with the same name in the child class.
+20. The **\_\_init\_\_()** method must be explicitly called every time you want to use an object's attributes.
 
 **Multiple Choice Questions**
 
@@ -374,6 +401,31 @@ a) import pizza as mp<br>
 b) import pizza.make_pizza as mp<br>
 c) from pizza import make_pizza as mp<br>
 d) from pizza import \* as mp
+31. What is the purpose of the **\_\_init\_\_()** method in a Python class?<br>
+a) It imports the class from a module.<br>
+b) It automatically initializes an object's attributes when a new instance is created.<br>
+c) It prints a description of the class.<br>
+d) It deletes an instance of the class.
+32. What does the **self** parameter represent in a class method?<br>
+a) The class definition itself.<br>
+b) The parent class.<br>
+c) The specific instance that called the method.<br>
+d) A global variable accessible by all classes.
+33. Which of the following correctly creates an instance of a class called **Dog** that takes **name** and **age** as parameters?<br>
+a) Dog.create('Buddy', 3)<br>
+b) my_dog = Dog('Buddy', 3)<br>
+c) my_dog = new Dog('Buddy', 3)<br>
+d) my_dog = Dog.init('Buddy', 3)
+34. In inheritance, which function is used to call the parent class's **\_\_init\_\_()** method from a child class?<br>
+a) parent()<br>
+b) base()<br>
+c) super()<br>
+d) init()
+35. What does it mean to "override" a method in a child class?<br>
+a) To delete the method from the parent class.<br>
+b) To define a method in the child class with the same name, replacing the parent's version.<br>
+c) To call the parent method twice.<br>
+d) To make the method private.
 
 **Short Answer Questions**
 
@@ -397,9 +449,11 @@ d) from pizza import \* as mp
 18. What does it mean to provide a "default value" for a parameter in a function?
 19. What is the purpose of a **docstring** in a function?
 20. What is the syntax for importing an entire module named **printing_functions** and giving it the alias **pf**?
-
-
-
+21. What is a **class** in Python and how does it relate to an **instance**?
+22. What is the purpose of the **self** parameter in a class?
+23. Explain what **inheritance** is and why it is useful.
+24. What does **super().\_\_init\_\_()** do in a child class, and why is it necessary?
+25. What is the difference between an **attribute** and a **method** in a class?
 
 ---
 
@@ -423,6 +477,11 @@ d) from pizza import \* as mp
 13. True.
 14. True.
 15. False. This syntax imports the entire module and gives the module an alias, not just one function.
+16. True.
+17. False. **self** refers to the specific instance of the class, not the class itself.
+18. True.
+19. True.
+20. False. **\_\_init\_\_()** is called automatically when you create a new instance. You do not call it explicitly.
 
 **Multiple Choice Answers**
 
@@ -456,6 +515,11 @@ d) from pizza import \* as mp
 28. a) **\*\*kwargs**
 29. c) **Module**
 30. c) **from pizza import make_pizza as mp**
+31. b) It automatically initializes an object's attributes when a new instance is created.
+32. c) The specific instance that called the method.
+33. b) **my_dog = Dog('Buddy', 3)**
+34. c) **super()**
+35. b) To define a method in the child class with the same name, replacing the parent's version.
 
 **Short Answer Answers**
 
@@ -479,9 +543,11 @@ d) from pizza import \* as mp
 18. It means you assign a value to a parameter in the function's definition, which will be used if no argument is provided for that parameter during the function call.
 19. A **docstring** is a multi-line string immediately following a function's definition that explains what the function does. It helps with documentation.
 20. **import printing_functions as pf**
-
-
-
+21. A **class** is a blueprint or template that defines the attributes (data) and methods (behaviors) that objects of that type will have. An **instance** is a specific object created from a class. For example, **Dog** is a class and **my_dog = Dog('Buddy', 3)** creates an instance.
+22. **self** is a reference to the current instance of the class. It allows each instance to access its own attributes and methods. It must be the first parameter of every method in a class, but you do not pass it explicitly when calling the method.
+23. **Inheritance** is the ability to create a new class (child class) that takes on the attributes and methods of an existing class (parent class). It is useful because it allows you to reuse code and extend or customize behavior without rewriting everything from scratch.
+24. **super().\_\_init\_\_()** calls the parent class's **\_\_init\_\_()** method from inside the child class. It is necessary because it initializes the attributes defined in the parent class, so the child class inherits them properly.
+25. An **attribute** is a variable that belongs to an instance, storing data about the object (e.g., **self.name**). A **method** is a function that belongs to a class, defining an action the object can perform (e.g., **def sit(self):**).
 
 ---
 
@@ -491,7 +557,10 @@ d) from pizza import \* as mp
 | Term | Definition |
 | :--- | :--- |
 | **Argument** | A piece of information that is passed from a function call to a function. |
+| **Attribute** | A variable that belongs to a class instance, storing data about the object (e.g., self.name). Set in the \_\_init\_\_() method. |
 | **Boolean Expression** | Another name for a conditional test. A Boolean value is either True or False. |
+| **Child Class** | A class that inherits attributes and methods from another class (the parent class). Also called a subclass. |
+| **Class** | A blueprint or template for creating objects. It defines a set of attributes and methods that the objects will have. |
 | **Comment** | Notes in your spoken language, within your programs. In Python, a comment begins with a hash mark (#). |
 | **Conditional Test** | An expression at the heart of every if statement that can be evaluated as True or False. |
 | **Constant** | A variable whose value stays the same throughout the life of a program. Indicated in Python with all capital letters. |
@@ -502,6 +571,8 @@ d) from pizza import \* as mp
 | **Float** | Any number with a decimal point. |
 | **Function** | A named block of code designed to do one specific job. Defined with the def keyword. |
 | **Index** | The position of an item in a list. In Python, indexing starts at 0. |
+| **Inheritance** | A mechanism where a child class takes on the attributes and methods of a parent class, allowing code reuse and specialization. |
+| **Instance** | A specific object created from a class. Each instance has its own set of attributes. |
 | **Integer** | A whole number, without a decimal point. |
 | **Key-Value Pair** | A set of values associated with each other in a dictionary. |
 | **Keyword Argument** | A name-value pair that you pass to a function. Order does not matter. |
@@ -511,10 +582,14 @@ d) from pizza import \* as mp
 | **Method** | An action that Python can perform on a piece of data. It is called using dot notation (e.g., name.title()). |
 | **Module** | A file ending in .py that contains code (like functions) you want to import into your program. |
 | **Nesting** | Storing a collection of items (like a list or dictionary) inside another collection. |
+| **Override** | Defining a method in a child class with the same name as a method in the parent class, replacing the parent's version for instances of the child class. |
 | **Parameter** | A piece of information the function needs to do its job, specified in the function's definition. |
+| **Parent Class** | The class that a child class inherits from. Also called a superclass. |
 | **Positional Argument** | An argument passed to a function that is matched with a parameter based on its order. |
 | **Return Value** | The value a function returns to the line that called it, using the return statement. |
+| **self** | A reference to the current instance of a class. It must be the first parameter of every method in a class. |
 | **Set** | A collection in which each item must be unique. Defined with braces ({}). |
+| **super()** | A function used in a child class to call a method from the parent class, most commonly used as super().\_\_init\_\_() to initialize inherited attributes. |
 | **Slice** | A specific group of items in a list. |
 | **String** | A series of characters. Anything inside quotes is considered a string. |
 | **Syntax Highlighting** | A text editor feature that displays different parts of a program in different colors to help distinguish code elements. |

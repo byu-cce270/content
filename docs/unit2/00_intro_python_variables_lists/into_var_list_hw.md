@@ -79,17 +79,13 @@ Where:<br>
 
 2. Run the cell created in Step 1 to store the variables in the notebook. You do not need to write any new code for this step, just run the cell.
 
-3. Run the code block call "Variable Processing" to set the values of the variables based on the inputs you provided. This code block will set the values of the variables `u` and `n` based on the `units` and `material` variables. There are two options to use. You can use either "Option Block 1" or "Option Block 2". Look at the code and try to understand what it is doing. We will go over this later in this unit.
+3. Run the code block called "Variable Processing" to set the values of the variables based on the inputs you provided. This code block will set the values of the variables `u` and `n` based on the `units` and `material` variables. There are two options to use. You can use either "Option Block 1" or "Option Block 2". Look at the code and try to understand what it is doing. We will go over this later in this unit.
 
 4. Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel. Store the result in the variable A.
 
-5. Write an equation to calculate the wetted perimeter ($P_w$) based on the shape of the channel. Store the 
-result in the variable P.
+5. Write an equation to calculate the wetted perimeter ($P_w$) based on the shape of the channel. Store the result in the variable P.
 
-6. Write an equation to calculate the hydraulic radius ($R_h$), the flow rate (Q), and the flow velocity (V). 
-Use the equations as shown above. Note that V = Q/A. Store 
-the result in the 
-variables Rh, Q, and V.
+6. Write an equation to calculate the hydraulic radius ($R_h$), the flow rate (Q), and the flow velocity (V). Use the equations as shown above. Note that V = Q/A. Store the result in the variables Rh, Q, and V.
 
 7. Print the results using the code provided.
 
@@ -102,7 +98,7 @@ Try out your code to make sure it is working correctly. When running your code, 
 | Variable name |   Input   |
 |:-------------:|:---------:|
 |     units     |  english  |
-|   materials   | concrete  |
+|   material    | concrete  |
 |       b       |    20     |
 |       T       |    20     |
 |      So       |   0.002   |
@@ -125,7 +121,7 @@ It should output something like this:
 
 2. In the new code block, create four new lists with names: task_names, task_durations, material_names, and material_quantities.
 
-3. In the task_names list, add at least 7 activities that would take place during the construction of building. (Ex. Foundation, Framing, Landscaping, etc.)
+3. In the task_names list, add at least 7 activities that would take place during the construction of a building. (Ex. Foundation, Framing, Landscaping, etc.)
 
 4. In the task_durations list, add the associated durations of each activity in days. 
 

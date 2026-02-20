@@ -7,7 +7,7 @@
 On the W3Schools website, read the Python Tutorial chapter on Python Functions. 
 </br>Here is a direct link to the reading: [W3Schools: Python Functions](https://www.w3schools.com/python/python_functions.asp){:target="_blank"}.
 
-Make sure you click through all the function subtopics on the W3Chools website (there are 8 of them)
+Make sure you click through all the function subtopics on the W3Schools website (there are 8 of them).
 
 We suggest you re-read the chapter on Python Functions in the _Python Crash Course, 3rd Edition_ textbook. It will help understand the W3School discussion.
 </br>Here is a direct link to the previous reading: [PCC Chapter 8: Functions](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c08.xhtml){:target="_blank"}.
@@ -62,7 +62,7 @@ with open('example.txt', 'r') as file:
 In this example, the file `example.txt` is opened in read mode. The `with` statement ensures that the file is properly closed after its suite finishes, even if an exception is raised. This method is preferred for file handling in Python because it is cleaner and less error-prone (you're less likely to forget to close the file).
 
 ### Reading a file 
-Reading a python file means that you are accessing the contents of the file and loading it into your program so that you can manipulate or analyze the data. Note: When you read a file (the -r option), you are not modifying the file itself, you are simply accessing its contents. This is especially useful when working with large datasets or text files, as it allows you to process the data without having to load the entire file into memory at once. You can read in the entire file (like the examples in the Context manager section), or you can read in things line by line.
+Reading a Python file means that you are accessing the contents of the file and loading it into your program so that you can manipulate or analyze the data. Note: When you read a file (the -r option), you are not modifying the file itself, you are simply accessing its contents. This is especially useful when working with large datasets or text files, as it allows you to process the data without having to load the entire file into memory at once. You can read in the entire file (like the examples in the Context manager section), or you can read in things line by line.
 
 ```python
 with open('example.txt', 'r') as file:

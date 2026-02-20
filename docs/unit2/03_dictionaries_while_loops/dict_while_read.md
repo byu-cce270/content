@@ -4,8 +4,7 @@
 
 # Pre Class Reading Assignment
 
-On the O'Reilly website read Chapter 6 in _Python Crash Course, 3rd Edition_  and Chapter 7, the section on "How 
-the input() Function Works" and "Introducing while Loops." Don't bother with the other sections in Chapter 7.
+On the O'Reilly website read Chapter 6 in _Python Crash Course, 3rd Edition_ and Chapter 7, the section on "How the input() Function Works" and "Introducing while Loops." Don't bother with the other sections in Chapter 7.
 
 Here is a direct link to the readings:</br>
 [PCC Chapter 6: Dictionaries](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c06.xhtml){:target="_blank"}</br>
@@ -30,7 +29,7 @@ Remember that you will have to sign in to your free account that you created ear
 **Rivers with user input and while loops:**
 Create a program that builds a dictionary of rivers and the countries they run through, using user input.
 
-1. Create a new colab notebook.
+1. Create a new Colab notebook.
 2. Title the notebook "(Your_Name)_Pre_Dict_While.ipynb".
 3. Start with an empty dictionary called rivers. 
 4. Use a while loop to repeatedly ask the user for:
