@@ -1,6 +1,6 @@
 #  HW: Pandas DataFrame
 
-**Purpose:** In this assignment you are given an Excel file with three data sets. You will import the sheets in the Excel workbook into your python code to create pandas dataframes. You will then analyze and graph information from the different dataframes. You can download the Exel file from the following link:
+**Purpose:** In this assignment you are given an Excel file with three data sets. You will import the sheets in the Excel workbook into your python code to create pandas dataframes. You will then analyze and graph information from the different dataframes. You can download the Excel file from the following link:
 
 [highway_data.xlsx](highway_data.xlsx)
 
@@ -9,7 +9,7 @@
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/02_intro_to_pandas/(Starter_Notebook)_HW_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. Rename it something like "(Your_Name)_HW_Intro_to_Pandas.ipynb"
 3. In the code block titled "Import Required Packages" input the correct import statements. One import statement is already provided for you. You should also import:
-    - matplotlib.pylot as plt
+    - matplotlib.pyplot as plt
     - numpy as np
     - pandas as pd
     - seaborn as sns
@@ -18,7 +18,7 @@
 
 ## Creating and Formatting the DataFrames
 
-1. Under the code block titled "Create DataFrames", write the appropriate code to import each of the three sheets of the Excel file into dataframes. When you are done you should have three dataframes: **bridge_df**, **traffic_df**, and **concrete_df**. You will need to open the Excel file and note the names of the sheets to formulate your code correctly. Refer  to the pre-class reading to see how to import a sheet from an Excel file.
+1. Under the code block titled "Create DataFrames", write the appropriate code to import each of the three sheets of the Excel file into dataframes. When you are done you should have three dataframes: **bridge_df**, **traffic_df**, and **concrete_df**. You will need to open the Excel file and note the names of the sheets to formulate your code correctly. Refer to the pre-class reading to see how to import a sheet from an Excel file.
 
 ## Bridge DataFrame
 
@@ -57,11 +57,11 @@
 1. Under the text block titled "CONCRETE DATAFRAME", display the first few lines of the concrete_df dataframe.
 2. Use describe to display the statistics of the the entire dataframe.
 3. Write code to sort the dataframe by the 'Age (day)' column.
-9. Display the sorted dataframe.
-10. In a new code block, write a function called 'categorize_age' that takes one integer parameter called 'days' that returns "Early Strength" if it has been less than 7 days, "Medium Strength" if it has been less than or equal to 28 days, and "Long-Term Strength" if it has been longer than 28 days.
-11. Using the `.apply()` method on the 'Age (day)' column and pass it the function you just created to create a new column to your dataframe called "Age Category" that includes whether the concrete measurement is early, medium, or long-term strength.
-12. Display the first few rows of the dataframe to see your new column.
-14. In a new codeblock, write code to display a scatter plot that compares the compressive strength of the concrete with its cement content. Include:
+4. Display the sorted dataframe.
+5. In a new code block, write a function called 'categorize_age' that takes one integer parameter called 'days' that returns "Early Strength" if it has been less than 7 days, "Medium Strength" if it has been less than or equal to 28 days, and "Long-Term Strength" if it has been longer than 28 days.
+6. Using the `.apply()` method on the 'Age (day)' column and pass it the function you just created to create a new column to your dataframe called "Age Category" that includes whether the concrete measurement is early, medium, or long-term strength.
+7. Display the first few rows of the dataframe to see your new column.
+8. In a new codeblock, write code to display a scatter plot that compares the compressive strength of the concrete with its cement content. Include:
      - a title
      - x and y labels
      - change the default color
@@ -71,7 +71,7 @@
 
 ![pandas1_hw_03_scatter.png](images/pandas1_hw_03_scatter.png)
 
-15. In a new codeblock, write code to display a boxplot that compares the compressive strength for each age category. Include:
+9. In a new codeblock, write code to display a boxplot that compares the compressive strength for each age category. Include:
      - a title
      - x and y labels
 
@@ -82,21 +82,21 @@
 To do this, you will need to use the seaborn library that you imported earlier. You can find more information on how to create a boxplot using seaborn [here](https://seaborn.pydata.org/generated/seaborn.boxplot.html). For this assignment, you will need to use the 'Age Category' column as the x-axis and the 'Compressive Strength' column as the y-axis. Include this line:
 
 ```python
-sns.boxplot(x='Strength Category', y='Concrete compressive strength(MPa, megapascals)', data=concrete_df)
+sns.boxplot(x='Age Category', y='Concrete compressive strength(MPa, megapascals)', data=concrete_df)
 ```
 And then include the normal matplotlib commands to alter the title and labels.
 
-16. For extra credit, create a heatmap that looks like the following:
+10. For extra credit, create a heatmap that looks like the following:
 
     ![heatmap](https://github.com/user-attachments/assets/b937857d-eca3-4be5-9298-9f80d3200d65)
 
-17. Turn sharing, and editing on. Then turn in your link to Learning Suite.
+11. Turn sharing, and editing on. Then turn in your link to Learning Suite.
 
 ---
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will only turn in the links to your Colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
 
@@ -114,7 +114,7 @@ And then include the normal matplotlib commands to alter the title and labels.
 |         'Age Category' column created in concrete dataframe         |     2      |
 |   compressive strength v. cement content scatter plot is correct    |     3      |
 |         box plot for compressive strength w/age is correct          |     3      |
-|             heatmat of correlation displaying correctly             |     +5     |
+|             heatmap of correlation displaying correctly             |     +5     |
 |           <div style="text-align: right">**Total**</div>            |   **30**   |
 
 ---

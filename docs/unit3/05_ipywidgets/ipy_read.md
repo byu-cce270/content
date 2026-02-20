@@ -8,9 +8,9 @@ A graphical user interface , or GUI (pronounced “GOOEY”) is the buttons, tex
 
 One of the ways we can make our Python code more user-friendly is by adding a GUI to it. Early in the semester, you learned how to use the Python `input()` statement to prompt the user to enter a text string or number. That is a simple type of GUI. Another popular GUI that is designed especially for use in notebooks is **Jupyter Widgets**. Jupyter widgets are implemented through a Python library called **ipywidgets**. These widgets allow the user to interact with your code in a more intuitive way, rather than just typing in commands and reading the output. 
 
-You can access the full documentation for ipywidgets [here](https://ipywidgets.readthedocs.io/en/latest/index.html){target='blank'}. In the following sections, we will learn how to use ipywidgets to create interactive widgets in Colab notebooks.
+You can access the full documentation for ipywidgets [here](https://ipywidgets.readthedocs.io/en/latest/index.html){target='_blank'}. In the following sections, we will learn how to use ipywidgets to create interactive widgets in Colab notebooks.
 
-You can also add formated text to your notebook and widgets using html. 
+You can also add formatted text to your notebook and widgets using html. 
 
 ## Importing
 
@@ -65,7 +65,7 @@ For example, to create a button widget, you can use the following command:
 button = widgets.Button(description='Click me') # this creates a button object with the name "button" and  the text 'Click me'
 ```
 
-For a full list of widgets, you can refer to the [ipywidgets documentation - Widget List](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html){target='blank'}.
+For a full list of widgets, you can refer to the [ipywidgets documentation - Widget List](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html){target='_blank'}.
 
 
 ## Setting Widget Properties
@@ -79,11 +79,11 @@ widget.property = value
 For example, to set the description of a button widget, you can use the following command:
 
 ```python
-button.style = 'warning' # this is the buttion object created earlier (called "button") and we are setting the style property to 'warning' (which makes the button yellow)
+button.style = 'warning' # this is the button object created earlier (called "button") and we are setting the style property to 'warning' (which makes the button yellow)
 ```
 
-For a full list of properties, please refer to: [ipywidgets documentation - Widget List](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html){target='blank'}<br>
-To learn more about styling widgets, see: [ipywidgets documentation - Styling of Jupyter widgets](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Styling.html){target='blank'}
+For a full list of properties, please refer to: [ipywidgets documentation - Widget List](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html){target='_blank'}<br>
+To learn more about styling widgets, see: [ipywidgets documentation - Styling of Jupyter widgets](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Styling.html){target='_blank'}
 
 ## Handling Widget Events
 
@@ -93,7 +93,7 @@ You can handle events for a widget by using the following command:
 def on_event_name(event):
     # code to handle event
     # do something when the event is triggered
-    # this fuction will be called when the event is triggered
+    # this function will be called when the event is triggered
     # it can be named anything you want
 
 widget.on_event_name(on_event_name) # the name in the () is the function to be called when the event is triggered
@@ -110,7 +110,7 @@ button.on_click(on_button_click) # this associates the on_button_click function 
 
 The function controls what happens when the button is clicked. The `event` parameter is passed to the function and contains information about the event (which may be useful in some cases). The `button.on_click` method in the code above associates the `on_button_click` function with the click event of the button widget.
 
-For more details about widget events, you can refer to the [ipywidgets documentation - Widget Events](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Events.html){target='blank'}.
+For more details about widget events, you can refer to the [ipywidgets documentation - Widget Events](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Events.html){target='_blank'}.
 
 ## Displaying Widgets
 
@@ -133,7 +133,7 @@ vbox = widgets.VBox([widget1, widget2])
 display(vbox)
 ```
 
-For more details about widget layout, you can refer to the [ipywidgets documentation - Widget Layout](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Layout.html){target='blank'}.
+For more details about widget layout, you can refer to the [ipywidgets documentation - Widget Layout](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Layout.html){target='_blank'}.
 
 ## Sample Use Cases
 
@@ -311,7 +311,7 @@ print("The value you selected is:", my_value)
 
 Widgets are a fun way to make your code more interactive and user-friendly. It can also make your code more visually appealing and engaging. You may find some ways to add widgets to your final project in this class.
 
-For more information, you can refer to the [ipywidgets documentation](https://ipywidgets.readthedocs.io/en/latest/index.html){target='blank'}.
+For more information, you can refer to the [ipywidgets documentation](https://ipywidgets.readthedocs.io/en/latest/index.html){target='_blank'}.
 
 # Pre-Class Quiz Challenge
 
@@ -332,7 +332,7 @@ Open a new Colab notebook and do the following:
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will only turn in the links to your Colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
 

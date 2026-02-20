@@ -28,26 +28,18 @@ specifies the day of the week.  In the second dataframe, you will need to add a 
 
 ## Part 2: Pavement Resurfacing Jobs
 
-Now that we have our data loaded and updated the dataframes, we can start to manipulate and analyze the data. We 
-will first explore the data in the **resurface_df** dataframe. We are going to use the `.groupby()` method to group our 
-data by 
-different columns 
-and put those data 
-into new 
-dataframes. 
+Now that we have our data loaded and updated the dataframes, we can start to manipulate and analyze the data. We will first explore the data in the **resurface_df** dataframe. We are going to use the `.groupby()` method to group our data by different columns and put those data into new dataframes.
 
 1. Display the first few rows of the resurface_df dataframe to review its contents.
 2. Note that the 'Community Board' column has a numeric code for each board, but it was converted from an integer to 
-   a float. Convert the 'Community Board' column back to an integer by running the code provided. Note that the 
-   columns contains some NaN values, so you will need to fill those are skipped by using the `errors='coerce'` 
-   argument.
+   a float. Convert the 'Community Board' column back to an integer by running the code provided. Note that the
+   column contains some NaN values, so those are skipped by using the `errors='coerce'` argument.
 2. In a new code block, convert the "Date" column in resurface_df to a date/time format.
 3. Use the `.dt.day_name()` method in pandas to add a new column to the resurface_df that specifies what day of the 
    week the resurfacing took place on.
 4. Display the dataframe with the new column added.
-5. In a new code block, count the number of jobs under each borough for each work type (milling and paving). Put 
-   your results in a 
-   variable called `borough_work_counts` and display the results.<br>
+5. In a new code block, count the number of jobs under each borough for each work type (milling and paving). Put
+   your results in a variable called `borough_work_counts` and display the results.<br>
 
     **Hint:** 
     You can do this using either the `.groupby()` method or the `.value_counts()` method. 
@@ -123,17 +115,14 @@ full names and add a new column with the full names.
      - Q : Queens
      - S : Staten Island
    
-16. Map the BoroughCod column of the pavement_df to insert a new column titled "Borough" that includes the full name 
+16. Map the BoroughCode column of the pavement_df to insert a new column titled "Borough" that includes the full name 
     of the boroughs. Use the `.map()` method to do this and pass it the dictionary you created in the previous step 
     as an argument. Display the first few rows of the dataframe to verify the new column was added correctly.
 
 ### Average Ratings
 
-17. In the next code block, use the `.groupby()` method to calculate the average value of the manual rating 
-    ('ManualRati')
-    in each 
-    rating 
-    category ('RatingLaye') by borough.
+17. In the next code block, use the `.groupby()` method to calculate the average value of the manual rating
+    ('ManualRati') in each rating category ('RatingLaye') by borough.
 
     When you are done, the data frame that displays should look like this:
 
@@ -177,7 +166,7 @@ to loop through each borough and create a pie chart for each borough showing the
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will only turn in the links to your Colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
 

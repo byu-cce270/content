@@ -16,9 +16,9 @@ There is also a chapter in the Python Crash Course book that you should read:
 
 [Chapter 15: Generating Data](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c15.xhtml){:target="_blank"}
 
-Remember that you will have to sign in to you free account that you created earlier.
+Remember that you will have to sign in to your free account that you created earlier.
 
-## Thing to Look Out For
+## Things to Look Out For
  - How to create line, scatter, and histogram plots.
  - How to add titles and axes.
  - How to style plots.
@@ -42,7 +42,6 @@ Here is an example of how to use the object-oriented interface (more powerful) t
 import matplotlib.pyplot as plt
 
 ax = plt.axes()
-ax.size = (6, 4)
 ax.plot([1, 2, 3, 4], label='Line 1')   
 ax.set_xlabel('x axis')
 ax.set_ylabel('y axis')
@@ -144,15 +143,14 @@ arrowprops : The properties used to draw an arrow between the positions xy and x
 
 ## Styles (Optional)
 
-You can customize the look of your plots using different styles. Matplotlib comes with a number of built-in styles that you can use to change the appearance of your plots. One popular style is the `ggplot` style, which is inspired by the ggplot2 package in R. You can also set individal items such as line width, color, grid style, font size, plot size, etc. However, using a style is an easy way to change the overall look of your plots. Usually, once you set a style, it is "permanent" for all plots in your notebook or script.
+You can customize the look of your plots using different styles. Matplotlib comes with a number of built-in styles that you can use to change the appearance of your plots. One popular style is the `ggplot` style, which is inspired by the ggplot2 package in R. You can also set individual items such as line width, color, grid style, font size, plot size, etc. However, using a style is an easy way to change the overall look of your plots. Usually, once you set a style, it is "permanent" for all plots in your notebook or script.
 
-The ```with``` construction makes it a temporary style, rather than a permanent one. You can also use the `plt.
-style.use('ggplot')` command to set the style for all plots in the notebook (permanent for your session). 
+The ```with``` construction makes it a temporary style, rather than a permanent one. You can also use the `plt.style.use('ggplot')` command to set the style for all plots in the notebook (permanent for your session). 
 
 If you set something permanently and want to reset to the default settings use
 ```python
 plt.rcdefaults()
-
+```
 
 This command will list the styles available in your version of matplotlib:
 ```python
@@ -198,7 +196,7 @@ with plt.xkcd():
     plt.xlabel('x axis')
     plt.ylabel('y axis')
     # Define the arrow properties, this is a curved arrow
-    # we make the dictionary first, the provide it in the annotate command
+    # we make the dictionary first, then provide it in the annotate command
     arrow_prop = dict(arrowstyle="->", connectionstyle="arc3,rad=.5",     color="black")
 
     plt.annotate('There is a point', xy=(4, 16), xytext=(1, 80), 

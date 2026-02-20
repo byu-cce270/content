@@ -6,7 +6,7 @@ Spreadsheets are a fundamental tool in civil engineering and construction manage
 
 In the previous section, we learned how to use the `pandas` library. Pandas is a powerful data manipulation library that provides data structures and functions to work with structured data. The `pandas` library makes it easy to work with Excel files. We can easily read data from an Excel file into a pandas dataframe and/or export a pandas dataframe to an Excel file. 
 
-With Panda's we used a  method  called `read_excel()` that reads an Excel file and returns a dataframe. As you may recall, a DataFrame is a two-dimensional data structure that is similar to a table in a database. We will now look at this in more detail. 
+With Pandas we used a  method  called `read_excel()` that reads an Excel file and returns a dataframe. As you may recall, a DataFrame is a two-dimensional data structure that is similar to a table in a database. We will now look at this in more detail. 
 
 You can think of a DataFrame as a spreadsheet in Python.
 
@@ -52,7 +52,7 @@ The `usecols` parameter accepts a string or a list of column names. In this exam
 # Read only the first two columns of the Excel file
 df = pd.read_excel('data.xlsx', usecols=[0, 1])
 ```
-You can read more about the pandas `read_excel()` method in the [official documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html){target='blank'}. **We suggest you look through the documentation to see all the available parameters.**
+You can read more about the pandas `read_excel()` method in the [official documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html){target='_blank'}. **We suggest you look through the documentation to see all the available parameters.**
 
 ## Writing Data to Excel Files Using Pandas
 
@@ -86,11 +86,9 @@ df.to_excel('output.xlsx', sheet_name='MySheet', index=False)
 When saving a dataframe using the 'to_excel' method in pandas, the resulting Excel file contains a simple 
 unformatted table. However,
 in cases where you need more control over the Excel file, you can use the `xlsxwriter` library. The `xlsxwriter` 
-library is a Python module that allows you to create and save Excel files with formatting and charts. In xlsxwriter you can both read and write Excel files. You can even 
-create 
-data on the cells of the Excel document, including formulas.
+library is a Python module that allows you to create and save Excel files with formatting and charts. Note that xlsxwriter is a write-only library -- it can only create new Excel files, not read existing ones. You can write data to the cells of the Excel document, including formulas.
 
-The documentation for the `xlsxwriter` library can be found [here](https://xlsxwriter.readthedocs.io/){target='blank'}. It includes many examples of how to use the library to create Excel files with formatting and charts. Look through it to see all the available features. You can use it with Pandas as well as standalone. Below we have a Panda's example and several standalone examples.
+The documentation for the `xlsxwriter` library can be found [here](https://xlsxwriter.readthedocs.io/){target='_blank'}. It includes many examples of how to use the library to create Excel files with formatting and charts. Look through it to see all the available features. You can use it with Pandas as well as standalone. Below we have a Pandas example and several standalone examples.
 
 
 ### Installing the xlsxwriter Library
@@ -332,15 +330,15 @@ workbook.close()
 ```
 
 
-This is just the tip of the iceberg! You can read more about the `xlsxwriter` library in the [official documentation](https://xlsxwriter.readthedocs.io/){target='blank'}. 
+This is just the tip of the iceberg! You can read more about the `xlsxwriter` library in the [official documentation](https://xlsxwriter.readthedocs.io/){target='_blank'}. 
 
 # Pre-Class Quiz Challenge
 
 Open a new Colab notebook and do the following:
 
-1. Remane the notebook something like '**(Your_Name)_Pre_xlswriter.ipynb'**
+1. Rename the notebook something like '**(Your_Name)_Pre_xlswriter.ipynb'**
 2. Click here to download the [data.xlsx](data.xlsx) file.
-2. Upload the file to your colab notebook by clicking on the folder icon on the left side of the screen and then 
+2. Upload the file to your Colab notebook by clicking on the folder icon on the left side of the screen and then 
    clicking on the upload icon. Or you can drag and drop the file into the notebook.
 1. Import the file to a dataframe using the `pandas` library and display the contents of the dataframe.
 3. Add a new column to the dataframe called **Sum** that is the sum of columns 2-4. Display the updated dataframe.
@@ -353,7 +351,7 @@ Save changes to your Google Drive and submit the link to the notebook in your Pr
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will only turn in the links to your Colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
 

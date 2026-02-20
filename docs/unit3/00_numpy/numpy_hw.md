@@ -1,6 +1,6 @@
 # HW: Numpy
 
-**Purpose:** Create and use numpy arrays to find the forces in a given truss. You will then use matplot to graph it.
+**Purpose:** Create and use numpy arrays to find the forces in a given truss. You will then use Matplotlib to graph it.
 
 ### Instructions
 
@@ -18,7 +18,7 @@ For this assignment, Dr. Doofenshmirtz is partnering with BYU to create a new ro
 
 Where:
 
-  - $L_{AC}$ is an length of segment AC, you will select
+  - $L_{AC}$ is the length of segment AC, you will select
   - $θ_A$ and $θ_C$ are  angles at points A and C, respectively that you will select
   - P is a load being applied at point B acting downward (denoted with the red arrow)
   - Joint A has a pin joint (reaction forces in the x and y direction)
@@ -32,19 +32,19 @@ For this problem, you will:
 
 >1) Select two angles for $θ_A$ and $θ_C$ and the length of member $L_{AC}$.<br>
 >2) Use numpy to solve for the forces in each segment of the truss.<br>
->3) Solve for the length of member $L_{AC}$.<br>
->4) Use matplot to graph the truss with the forces in each segment.<br>
+>3) Solve for the lengths of members AB, BC, and AC.<br>
+>4) Use Matplotlib to graph the truss with the forces in each segment.<br>
 
 We will sum the forces at each joint ( Method of Joints) to  create the matrix we will solve using  the following equations:
 
->>$\sum F_{A_x} = AB*cos(θ_A) + AC+R_{A_x} = 0$<br>
+>>$\sum F_{A_x} = AB*cos(θ_A) + AC + R_{A_x} = 0$<br>
 $\sum F_{A_y} = AB*sin(θ_A) + R_{A_y} = 0$<br>
 $\sum F_{B_x} = -AB*cos(θ_A) + BC*cos(θ_C) = 0$<br>
-$\sum F_{B_y} = -AB*sin(θ_A) - BC*cos(θ_C) = -P$<br>
+$\sum F_{B_y} = -AB*sin(θ_A) - BC*sin(θ_C) = -P$<br>
 $\sum F_{C_x} = -BC*cos(θ_C) - AC = 0$<br>
 $\sum F_{C_y} = BC*sin(θ_C) + R_{C_y} = 0$
 
-!!!note
+!!! note
     - $AB$, $AC$, and $BC$ are the internal forces in each segment of the truss (these are unknowns we are solving for).
     - $R_{A_x}$ and $R_{A_y}$ are the reaction forces at joint A (these are unknowns we are solving for).
     - $R_{C_y}$ is the reaction force at joint C (this is an unknown we are solving for).
@@ -52,7 +52,7 @@ $\sum F_{C_y} = BC*sin(θ_C) + R_{C_y} = 0$
 
 
 
-To solve for these varible, we will arrange the equations so we can create a matrix from the coefficients of the unknowns. 
+To solve for these variables, we will arrange the equations so we can create a matrix from the coefficients of the unknowns. 
 
 We can then use these equations to solve for our unknown forces: $AB, AC, BC, R_{A_x}, R_{A_y}$. Typically, this could take a long time when doing it by hand, but can be solved in seconds with some python code and numpy. The way we go about this is by setting up our forces as a system of equations. The equations shown above can be written in matrix form as:
 
@@ -66,11 +66,11 @@ We can then use these equations to solve for our unknown forces: $AB, AC, BC, R_
 \end{bmatrix}
 \begin{bmatrix}
 AB \\
-AC \\
 BC \\
-R_{C_y} \\
+AC \\
 R_{A_x} \\
-R_{A_y}
+R_{A_y} \\
+R_{C_y}
 \end{bmatrix} =
 \begin{bmatrix}
 0 \\
@@ -82,9 +82,9 @@ R_{A_y}
 \end{bmatrix}$
 
 
-In this matrix we know everything in the leftmost matrix and the rightmost matrix. The middle matrix is what we are solving for. For example we input angles $θ_A$ and $θ_C$ and the load P. We can solve for $θ_B$ using the fact that the sum of the angles in a triangle is 180 degrees. Then we know everytin we need to know to fill out the matrix. 
+In this matrix we know everything in the leftmost matrix and the rightmost matrix. The middle matrix is what we are solving for. For example we input angles $θ_A$ and $θ_C$ and the load P. We can solve for $θ_B$ using the fact that the sum of the angles in a triangle is 180 degrees. Then we know everything we need to know to fill out the matrix. 
 
-The $0$ and $1$ values in the leftmost matrix come from whether a load in the joint exists for that equation. For example in the first row $[\cos(\theta_A) \quad 0 \quad 1 \quad 1 \quad 0 \quad 0]$ represents the equation for the forces in the x direction at joint A. In this equation, there is a force from member AB in the x direction (hence the $\cos(\theta_A)$ term), there is no force from member AC in the x direction (hence the $0$ term), there is a force from the reaction at A in the x direction (hence the $1$ term), and there are no other forces acting on joint A in the x direction (hence the $0$ terms). The other rows follow the same logic.
+The $0$ and $1$ values in the leftmost matrix come from whether a load in the joint exists for that equation. For example in the first row $[\cos(\theta_A) \quad 0 \quad 1 \quad 1 \quad 0 \quad 0]$ represents the equation for the forces in the x direction at joint A. In this equation, there is a force from member AB in the x direction (hence the $\cos(\theta_A)$ term), there is no force from member BC in the x direction at joint A (hence the $0$ term), there is a force from member AC in the x direction (hence the $1$ term), there is a reaction force at A in the x direction (hence the $1$ term), and there are no other forces acting on joint A in the x direction (hence the $0$ terms). The other rows follow the same logic.
 
 The rightmost matrix just contains the load $-P$ at joint B, and 0's everywhere else since there are no other external loads acting on the truss. 
 
@@ -100,11 +100,11 @@ We will help by breaking this problem down into 4 parts. This will be confusing,
 
 We just have to provide the force matrix and the external force matrix to numpy and it will solve for the unknowns in the internal force matrix.
 
-We will write the equations in terms of the angles at A and B, so that we can change the angles and solve the problem again. 
+We will write the equations in terms of the angles at A and C, so that we can change the angles and solve the problem again. 
 
 We will use functions to solve this problem. This will allow us to call the function multiple times with different inputs. We will create a function that will take in the angles at A and C, and the load at B. This function will return the forces in each segment of the truss. The function will build the force and external load matrices. For this problem, we will hard code the size of these matrices. This is because we know the size of the matrices will not change. The only things that we will allow to change are the angles and the load.
  
-1. Import the numpy and matplot library into your notebook.
+1. Import the numpy and Matplotlib library into your notebook.
 2. In the next code block, create a function that will take in 3 parameters: the angle at joint A (θ_A), the angle at joint C (θ_C), and the load at joint B (P) to find the forces of each member.
 
 Inside the function we now need to do the following:
@@ -134,11 +134,11 @@ The order of both the unknowns and the external forces is important. They can be
 The  array should be in the  same order as the other arrays, if you follow the examples,   $A_x$ should be the first row, $A_y$ should be the second row, etc. Save this array as a variable such as combined_forces.
 
 5. Now, create a new array for the external forces acting on the truss using the given solution matrix in the introduction. Save this as a variable such as loads. Make sure it is in the same order. 
-7. We can now solve this! Using your force coefficient and external loads arrays, solve the system of equations. Have your force coefficient array be the first input and your external forces the second. Refer back to your in-class work back with what numpy function to use with solving systems of equations. Save this as a variable such as solutions. This will give you the values for $AB$, $AC$, $BC$, $R_{AY}$, $R_{AX}$, and $R_{CY}$. 
-8. You are given a dictionary to store these values for each member/location. It looks like `total_forces = {"AB":0, "BC":0, "AC":0, "R_AX":0, "R_AY":0, "R_CY":0}`, with the 0's replaced by the actual forces. This dictionary has already been created for you.
-9. With your solved values, you will now update the dictionary total_forces. You will update the values of the dictionary with the values you got from your system of equations. For example, my dictionary would say something like "AB": 3000, "R_AY": -200 when updated. The dictionary will be used later.
-10. Write a loop that will print the values of the dictionary with the solutions you got from your system of equations. For example, my print statement would say somthing like "AB = 3000 lbs", "R_AY = -200 lbs, etc." when displayed.
-11. Return this dictionary from your function.
+6. We can now solve this! Using your force coefficient and external loads arrays, solve the system of equations. Have your force coefficient array be the first input and your external forces the second. Refer back to your in-class work back with what numpy function to use with solving systems of equations. Save this as a variable such as solutions. This will give you the values for $AB$, $AC$, $BC$, $R_{AY}$, $R_{AX}$, and $R_{CY}$. 
+7. You are given a dictionary to store these values for each member/location. It looks like `total_forces = {"AB":0, "BC":0, "AC":0, "R_AX":0, "R_AY":0, "R_CY":0}`, with the 0's replaced by the actual forces. This dictionary has already been created for you.
+8. With your solved values, you will now update the dictionary total_forces. You will update the values of the dictionary with the values you got from your system of equations. For example, my dictionary would say something like "AB": 3000, "R_AY": -200 when updated. The dictionary will be used later.
+9. Write a loop that will print the values of the dictionary with the solutions you got from your system of equations. For example, my print statement would say something like "AB = 3000 lbs", "R_AY = -200 lbs, etc." when displayed.
+10. Return this dictionary from your function.
 
 ---
 
@@ -146,11 +146,11 @@ The  array should be in the  same order as the other arrays, if you follow the e
 
 Now that you have all the forces, Dr. Doofenshmirtz needs to know how high his roof is going to be. This will involve solving for the x and y coordinates of joints A, B, and C. We are going to use trigonometry to solve for the coordinates of each joint and the trig functions in numpy to do the calculations. 
 
-We will create a function that will accept $θ_A$,  $θ_C$ and $L_{AC}$ as inputs, then calculate the coordinates of each of the corners. We will use the sum of the angles to get $θ_B$. We will divide the truss into two right triangles and use the law of sins to get the base and hypotenuse. Using that information, we can solve for the x and y coordinates of each joint.
+We will create a function that will accept $θ_A$,  $θ_C$ and $L_{AC}$ as inputs, then calculate the coordinates of each of the corners. We will use the sum of the angles to get $θ_B$. We will divide the truss into two right triangles and use the law of sines to get the base and hypotenuse. Using that information, we can solve for the x and y coordinates of each joint.
 
 
 1. Create a new function that will take in 3 parameters: $θ_A$,  $θ_C$ and $L_{AC}$ as inputs. This function will solve for the X and y values of each joint. (We will say that A is the origin with coordinates [0,0])
-2. Since we are given angle A ($θ_A$) and angle B ($θ_b$), solve for angle C ($θ_C$). Hint: the sum of the angles in a triangle is 180 degrees.
+2. Since we are given angle A ($θ_A$) and angle C ($θ_C$), solve for angle B ($θ_B$). Hint: the sum of the angles in a triangle is 180 degrees.
 3. Convert angles A, B, and C from degrees to radians (since this is what Numpy does its calculations in)
 4. Time to bring back your geometry skills, now that you know all of your angles and one side length you can use the law of sines to solve for the other lengths. Save each length of the truss in their own variables.
 
@@ -175,7 +175,7 @@ If you set the following variables:
 length_AC = length of the truss member from A to C
 angle_B   = angle at joint B in radians
 angle_C   = angle at joint C in radians
-length_AB = length of the truss member from A to B```
+length_AB = length of the truss member from A to B
 ```
 
 Here is some example python code  to solve the equation for length AB. You will need to replace the variable names with your own variable names as needed.:
@@ -196,7 +196,7 @@ length_AB = (length_AC / np.sin(angle_B)) * np.sin(angle_C)
 8. For joint B, the x coordinate is the length of AB times the cosine of angle A. The y coordinate is the length of AB times the sine of angle A. Save this as a variable such as joint_B.
 9. For joint C, the x coordinate is the length of AC. The y coordinate 0 since it is the same level as A. Save this as a variable such as joint_C.
 10. Create a dictionary to store these values. The keys will be the joint names (A, B, C) and the values will be the x and y coordinates of each joint. For example, your dictionary might look like `"A": (0, 0), "B": (3, 4), "C": (6, 0)` when displayed.
-10. Return this dictionary if you used a function to create it.
+11. Return this dictionary if you used a function to create it.
 
 
 

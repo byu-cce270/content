@@ -12,7 +12,7 @@ To begin, create a new Colab notebook and name it '**(Your_Name)_HW_xlswriter.ip
 
 Do the following to import the data:
 
-1. Install the **xlsxwriter** package and import the required packages (**xslxwriter**, **pandas**, and **matplotlib.pyplot**).
+1. Install the **xlsxwriter** package and import the required packages (**xlsxwriter**, **pandas**, and **matplotlib.pyplot**).
 2. Download the Excel file with the precip data from [precip_data.xlsx](precip_data.xlsx). Open the file in Excel to 
    see what the data looks like. You will see that there are three sheets, one for Salt Lake City, one for Utah 
    State, and one for BYU. Each sheet contains monthly precipitation data going back several years. For this 
@@ -54,23 +54,14 @@ Now we will create a new Excel file and write the main precip data to a sheet an
 1. Create a new Excel file called 'precip_summary.xlsx' using the **xlsxwriter** package.
 2. Export the precip_df dataframe to a sheet called **'Data'** in the Excel file. Make a workbook and worksheet object.
 3. Create a format called '**data_format**' that center aligns content. Apply it to the entire table in the Excel sheet using the `set_column` method. Use a column width of **8**.
-4. Create a chart of the annual precipitation data and insert it into the Excel file. Call the chart object '**chart1**'. 
-   The chart 
-   should be a 
-   scatter chart (smooth) with the years on the x-axis and the annual precipitation on the y-axis. Insert the chart and position it at cell **'P2'**.
+4. Create a chart of the annual precipitation data and insert it into the Excel file. Call the chart object '**chart1**'. The chart should be a scatter chart (smooth) with the years on the x-axis and the annual precipitation on the y-axis. Insert the chart and position it at cell **'P2'**.
 
 5. Export the **stats_df** dataframe to a new sheet called **'Stats'** in the Excel file. **Hint**: Use the same writer 
    object and just call the `to_excel` method again with the new sheet name. Update the worksheet object to point to 
    the new sheet.
 6. Again, use the data_format object created above to format the table in the Stats sheet using the `set_column` 
    method. Use a column width of **8**.
-7. Add an XY column chart of the monthly average precip data. Call the chart object 'chart2'. Include all of the month 
-   rows, but 
-   not 
-   the 
-   annual row at 
-   the 
-   end. 
+7. Add an XY column chart of the monthly average precip data. Call the chart object 'chart2'. Include all of the month rows, but not the annual row at the end.
 8. Insert the chart and position it at cell **'F2'**.
 
 ### Part 4: Save the Excel File
@@ -89,7 +80,7 @@ In the end, it should look something like this:
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will only turn in the links to your Colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
 

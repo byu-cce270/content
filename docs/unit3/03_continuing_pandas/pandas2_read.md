@@ -8,8 +8,7 @@ On the O'Reilly's website read the following chapters in the Python Data Science
 
 [Chapter 18: Combining Datasets: Concat and Append](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch18.html){:target="_blank"} (Section titled: Simple Concatenation with pd.concat)<br>
 [Chapter 19: Combining Datasets: Merge and Join](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch19.html){:target="_blank"} (from 'Categories of Joins' to the end of the chapter)<br>
-[Chapter 20: Aggregation and Grouping](https://learning.oreilly.
-com/library/view/python-data-science/9781098121211/ch20.html#ch_0308-aggregation-and-grouping_planets-data){:target="_blank"} (everything up to the "Iteration over Groups" heading)
+[Chapter 20: Aggregation and Grouping](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch20.html#ch_0308-aggregation-and-grouping_planets-data){:target="_blank"} (everything up to the "Iteration over Groups" heading)
 
 Remember that you may have to sign in with your byu netid to access the reading content.
 
@@ -19,9 +18,7 @@ Here are some additional chapters in other O'Reilly books that may be helpful fo
 - Plotting with Pandas directly (Learning pandas)
     - [Chapter 11: Visualizaton](https://learning.oreilly.com/library/view/learning-pandas/9781783985128/ch11s02.html){:target="_blank"} (Read through the end of Chapter 11) 
 - Groupby (Pandas for Everyone: Python Data Analysis, First Edition)
-    - [Chapter 10:Data Aggregation and Group Operations](https://learning.oreilly.
-    com/library/view/python-for-data/9781491957653/ch10.html#groupby_mech_iteration){:target="_blank"}. (Read 10.1 
-    to 10.4)
+    - [Chapter 10: Data Aggregation and Group Operations](https://learning.oreilly.com/library/view/python-for-data/9781491957653/ch10.html#groupby_mech_iteration){:target="_blank"}. (Read 10.1 to 10.4)
 
 Both books are available on the O'Reilly website and provide good overviews and examples of using pandas for data 
 analysis.. 
@@ -71,13 +68,13 @@ print(data_filled)
 ```
 You can replace the NaN's with any value, but typically you will replace them with 0 or the mean of the column.
 
-For numeric columns you can also use the `.fillna()` method with the `method` parameter to propagate non-NaN values forward or backward.
+For numeric columns you can also use the `.fillna()` method to replace NaN values with a calculated value, or the `.ffill()` and `.bfill()` methods to propagate non-NaN values forward or backward.
 
-Here is an example of how to use the `method` parameter with `.fillna()` using the mean value of the column:
+Here is an example of how to use `.fillna()` with the mean value of the column:
 ```python
 df['A'].fillna(df['A'].mean(), inplace=True)  # Fill with mean
 ```
-And here is using the backfill and forword fill methods:
+And here is using the backfill and forward fill methods:
 
 ```python
 import pandas as pd
@@ -94,7 +91,7 @@ print(data)
 
 
 # Forward fill NaN values
-data_ffill = data.fillna(method='ffill')
+data_ffill = data.ffill()
 print(data_ffill)
 # Output:
     
@@ -105,7 +102,7 @@ print(data_ffill)
 
 
 # Backward fill NaN values
-data_bfill = data.fillna(method='bfill')
+data_bfill = data.bfill()
 print(data_bfill)
 # Output:
 #      A    B    C
@@ -152,28 +149,9 @@ This command drops any row (or column) that contains at least one NaN value. Be 
 
 ---
 
-## Pandas append and concat
+## Pandas concat
 
-Pandas has a method called `.append()` that allows you to add rows to a DataFrame.  This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame.  Here is an example of how to use the `.append()` method:
-
-```python
-import pandas as pd
-
-data1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
-data2 = pd.DataFrame({'A': [5, 6], 'B': [7, 8]})
-combined_data = data1.append(data2, ignore_index=True)
-print(combined_data)
-
-# Output:
-   A  B 
-0  1  3
-1  2  4
-2  5  7
-3  6  8
-```
-The `ignore_index=True` parameter is used to reset the index of the combined DataFrame. If you don't use this parameter, the index of the original DataFrames will be preserved. But in this case you want the new index to be continuous to add the additional rows. 
-
-Pandas also has a method called `.concat()` that allows you to concatenate two or more DataFrames along a particular axis. This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame. Here is an example of how to use the `.concat()` method:
+Pandas has a method called `pd.concat()` that allows you to concatenate two or more DataFrames along a particular axis. This is useful when you want to combine data from multiple sources or add new data to an existing DataFrame. Here is an example of how to use the `pd.concat()` method:
 
 ```python
 import pandas as pd
@@ -190,9 +168,7 @@ print(combined_data)
 2  5  7
 3  6  8
 ```
-In this case the ignore_index=True parameter is used to reset the index of the combined DataFrame. If you don't use this parameter, the index of the original DataFrames will be preserved. You want to create a continuous index for the new DataFrame.
-
-As you can see, `.append()` and `.concat()` are similar, and can often be used interchangeably.
+The `ignore_index=True` parameter is used to reset the index of the combined DataFrame. If you don't use this parameter, the index of the original DataFrames will be preserved. You want to create a continuous index for the new DataFrame.
 
 ## Pandas groupby
 
@@ -383,7 +359,7 @@ Save changes to your Google Drive and submit the link to the notebook in your Pr
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will only turn in the links to your Colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
 
