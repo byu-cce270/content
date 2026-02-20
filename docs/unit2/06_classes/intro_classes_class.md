@@ -1,4 +1,4 @@
-# In-Class Exercise: Introduction to Functions
+# In-Class Exercise: Introduction to Classes
 
 The following exercises will have you create and understand what a function does and when it is used.
 
