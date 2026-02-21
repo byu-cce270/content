@@ -3,6 +3,7 @@
 **Purpose:** This assignment tests your ability to use the programs available to you in Excel to solve complex 
 problems. In this assignment, you will proceed to test your knowledge on how to use Goal Seek, the Solver add-in, 
 and organize data through creating various styles of graph.
+
 ---
 ## Getting Started
 
@@ -55,7 +56,7 @@ asteroid on impact, but you need to ensure that the missile has enough force to 
 1. Navigate to the Missile & Asteroid Table. This table contains the data for the Missile and the Asteroid. Each 
    table contains the mass and acceleration of the object.
 2. In cell N31 use the data provided to solve for the force of the missile using the equation: $F=m*a$
-3. In cell Q31  solve for the force of the asteroid using the same equation.
+3. In cell Q31 solve for the force of the asteroid using the same equation.
 
 ### Setting up the Solver
 
@@ -95,7 +96,7 @@ streamflow data for the
 
 ![streamflow_chart2.png](graphing_images/streamflow_chart2.png)
 
-### Part 4 - Graphing Load Calculation Data
+## Part 4 - Graphing Load Calculation Data
 
 1. Using the data in the "Load Calculations" sheet recreate this graph. Make sure to change the colors and include a 
    Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 3."
@@ -121,17 +122,17 @@ streamflow data for the
 |   Part 1: Solved for Horizontal Location (X)   |        2        |
 |        Part 1: Found the first location        |        2        |
 |       Part 1: Found the second location        |        2        |
-|     Part 1: Used Force formula for missile     |        2        |
-|    Part 1: Used Force formula for asteroid     |        2        |
-|            Part 1: Added constraint            |        1        |
-|   Part 1: Found equal force by using Solver    |        2        |
-|        Part 2: Chart 1 resembles image         |        2        |
-|     Part 2: Chart 1 is on a separate sheet     |        1        |
-|        Part 2: Chart 2 resembles image         |        2        |
-|     Part 2: Chart 2 is on a separate sheet     |        1        |
-|        Part 2: Chart 3 resembles image         |        2        |
-|     Part 2: Chart 3 is on a separate sheet     |        1        |
-|   Part 2: Charts are all labeled and titled    |        6        |
+|     Part 2: Used Force formula for missile     |        2        |
+|    Part 2: Used Force formula for asteroid     |        2        |
+|            Part 2: Added constraint            |        1        |
+|   Part 2: Found equal force by using Solver    |        2        |
+|        Part 3: Chart 1 resembles image         |        2        |
+|     Part 3: Chart 1 is on a separate sheet     |        1        |
+|        Part 3: Chart 2 resembles image         |        2        |
+|     Part 3: Chart 2 is on a separate sheet     |        1        |
+|        Part 4: Chart 3 resembles image         |        2        |
+|     Part 4: Chart 3 is on a separate sheet     |        1        |
+|   Parts 3-4: Charts are all labeled and titled |        6        |
 | <div style="text-align: right">**Total**</div> |       30        |
 
 ---

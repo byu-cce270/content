@@ -62,7 +62,7 @@ To build one, you typically need:
 ## Gantt Charts in Excel
 While there is dedicated software for creating Gantt charts, you can also create them in Excel. This is a useful skill to have as it can be used to create simple Gantt charts for small projects. This is also a good comprehensive exercise to use some of the skills we have learned in Excel. 
 
-!!!Note
+!!! Note
       CFM students will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful head-start on the concepts talked about in scheduling.
 
 ---
@@ -122,7 +122,7 @@ This formula converts a number into text according to a specified format.
 
       TEXT(number, "format")
 
-  * number - the number, date, or time that needs formatted.
+  * number - the number, date, or time that needs to be formatted.
   * format - the pattern by which to format the number, must be enclosed in quotation marks. You can look up the different format codes in the documentation for TEXT().
 For our use we will do something like:
  
@@ -148,7 +148,7 @@ LEFT returns the first character or characters in a text string, based on the nu
 
 **Usage**
 
-We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart  using only single letters for the days of the week.
+We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart using only single letters for the days of the week.
 
 ## Pre-Class Quiz Challenge
  First, make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Gantt-Chart.xlsx](%28Starter-Workbook%29-Pre-Gantt-Chart.xlsx)

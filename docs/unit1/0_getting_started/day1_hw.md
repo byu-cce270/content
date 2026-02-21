@@ -20,15 +20,15 @@ assignments in this folder for the class.
 Let's go over how to take a given file and download it to the CCE 270 folder in your OneDrive.
 
 1. Here is the starter sheet for the assignment today: [(Starter-Workbook)-HW-A-Tour-of-Class-Resources.xlsx](%28Starter-Workbook%29-HW-A-Tour-of-Class-Resources.xlsx)
-2. Right-click on the file link and select "Save 
-   Link As..." and save the file to your OneDrive folder (IMPORTANT!). If you save it to your Downloads folder or 
+2. Right-click on the file link and select "Save
+   Link As..." and save the file to your OneDrive folder (IMPORTANT!). If you save it to your Downloads folder or
    somewhere else, be sure to move it to your OneDrive folder.
-2. Open the file and then at the top of the window is the workbook name. Click on this, and a drop-down like this 
+3. Open the file and then at the top of the window is the workbook name. Click on this, and a drop-down like this
    will appear:
-   
+
     >>![workbook_rename.png](images/workbook_rename.png)
 
-4. Rename it something like “(Your-Name)-HW-A-Tour-of-Class-Resources”
+4. Rename it something like "(Your-Name)-HW-A-Tour-of-Class-Resources"
 
 ---
 
@@ -72,26 +72,26 @@ For this class, **you will only turn in the links to your Excel files**. We will
 
     >>![share_settings.png](images/share_settings.png)
 
-2. From here, we want your Excel sheet so that ANYONE with this link can edit. This will allow us to access the link 
+4. From here, we want your Excel sheet so that ANYONE with this link can edit. This will allow us to access the link
    you turn in. To do this, click "anyone" at the top:
 
     >>![share_anyone.png](images/share_anyone.png)
 
-4. Then underneath "More settings", change "Can view" to "Can edit":
+5. Then underneath "More settings", change "Can view" to "Can edit":
 
     >>![share_edit.png](images/share_edit.png)
 
-4. Then click Apply: 
+6. Then click Apply:
 
     >>![share_apply.png](images/share_apply.png)
 
-5. Finally, copy the link by clicking the "Copy Link" button.
+7. Finally, copy the link by clicking the "Copy Link" button.
 
     >>![share_copy.png](images/share_copy.png)
 
-3. Then paste the link into Learning Suite in the feedback box for the assignment.
+8. Then paste the link into Learning Suite in the feedback box for the assignment.
 
-!!!IMPORTANT
+!!! IMPORTANT
     Make sure that your Excel file is turned in properly. You WILL be docked points if not shared so anyone with a link can edit, OR if you turn in an Excel file instead of a link to the file.
 
 

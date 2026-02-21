@@ -60,8 +60,8 @@ At this point, you should have 6 sheets in your workbook.
 
 1. Make sure your file is saved to your OneDrive folder.
 2. On the top right, click the share button --> share --> settings
-2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+3. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply.
+4. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
 
 **Rubric:**
 

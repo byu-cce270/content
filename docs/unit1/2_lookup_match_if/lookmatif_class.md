@@ -2,7 +2,7 @@
 
 ---
 
-We will practice using Lookups, Match, and IF functions is several real-world scenarios. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
+We will practice using Lookups, Match, and IF functions in several real-world scenarios. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 You can find the in-class workbook here: [(Starter-Workbook)-Class-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Class-Lookups-Match-IF.xlsx)
 
 Be sure to rename it something like “(Your-Name)-Class-Lookups-Match-IF”.
@@ -23,15 +23,15 @@ This sheet contains two tables: one with material costs and one with material av
 
 1. Navigate to the **Project Budget** sheet
 
-5. In column **D**, use the VLOOKUP function to find the correct unit cost for each row from the table in the **Materials** sheet
+2. In column **D**, use the VLOOKUP function to find the correct unit cost for each row from the table in the **Materials** sheet
 
-6. In column **E**, multiply the material quantities and unit costs to get the total price for each row
+3. In column **E**, multiply the material quantities and unit costs to get the total price for each row
 
-7. Look at the SUMIF() formula in the cells in column **H**. This finds the total materials used in column **C** for each material type (This formula is already done for you).
+4. Look at the SUMIF() formula in the cells in column **H**. This finds the total materials used in column **C** for each material type (This formula is already done for you).
 
-8. In column **I**, use the VLOOKUP function to find the available quantities for material from the table in the **Materials** sheet
+5. In column **I**, use the VLOOKUP function to find the available quantities for material from the table in the **Materials** sheet
 
-9. In column **J**, use the difference in columns **H** and **I** to find the remaining material quantities. Note that we have conditional formatting on to highlight items that are out of stock
+6. In column **J**, use the difference in columns **H** and **I** to find the remaining material quantities. Note that we have conditional formatting on to highlight items that are out of stock
 
 ---
 

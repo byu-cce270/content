@@ -55,7 +55,7 @@ To set up conditional formatting to your data in Excel, follow these steps:
 
 You can also add multiple conditional formatting rules to the same range of cells. To do this, simply repeat the steps above for each rule you want to add. The rules will be applied in the order they are listed in the Conditional Formatting Rules Manager. Conditional formatting rules can be edited or deleted at any time by selecting the rule in the Conditional Formatting Rules Manager and clicking "Edit Rule" or "Delete Rule". It is important to note that the order of the rules can affect how they are applied. For example, if you have two rules that apply to the same cells, the first rule will take precedence over the second rule. This means that if the first rule is true, the second rule will not be applied. Conditional formatting rules can also be copied and pasted to other cells. To do this, simply select the cells with the conditional formatting you want to copy, right-click, and select "Copy". Then, right-click on the cells where you want to paste the formatting and select "Paste Special". In the Paste Special dialog box, select "Formats" and click "OK". This will apply the conditional formatting to the selected cells.
 
-To see more examples of conditional formating and the different options available, check out this link from 
+To see more examples of conditional formatting and the different options available, check out this link from 
 W3Schools: [Conditional Formatting](https://www.w3schools.com/excel/excel_conditional_formatting.php){:target="_blank"}
 
 ---
@@ -70,7 +70,7 @@ To set up filtering in Excel, follow these steps:
 
 ![FilData1.png](../2_lookup_match_if/images/FilData1.png)
 
-2. Then go to the Data tab in the ribbon and select the Filter button. This will add a filter icon to each of the headers in the selected columns. Also on the Home tab in, select "Sort & Filter" and then the Filter button. You can also use the shortcut Ctrl + Shift + L (Cmd + Shift + L for Mac users) to add filters to the selected columns.
+2. Then go to the Data tab in the ribbon and select the Filter button. This will add a filter icon to each of the headers in the selected columns. Also on the Home tab, select "Sort & Filter" and then the Filter button. You can also use the shortcut Ctrl + Shift + L (Cmd + Shift + L for Mac users) to add filters to the selected columns.
 
 ![FilData2.png](../2_lookup_match_if/images/FilData2.png)
 ![FilData0.png](../2_lookup_match_if/images/FilData0.png)
@@ -123,14 +123,14 @@ Throughout this unit, you will learn new and useful functions. For this topic, y
 
 
 |      Function       | Syntax              | Purpose                                                                                                                                                |                             Help Link (W3Schools)                              |
-   |:-------------------:|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------:|
-   |         Sum         | =SUM(arguments)     | Adds all of the arguments together                                                                                                                     |     [SUM](https://www.w3schools.com/excel/excel_sum.php){:target="_blank"}     |
-   |       Average       | =AVERAGE(arguments) | Averages arguments together                                                                                                                            | [AVERAGE](https://www.w3schools.com/excel/excel_average.php){:target="_blank"} |
-   |         Max         | =MAX(arguments)     | Returns the highest number out of the arguments                                                                                                        |     [MAX](https://www.w3schools.com/excel/excel_max.php){:target="_blank"}     |
-   |         Min         | =MIN(arguments)     | Returns the lowest number out if the arguments                                                                                                         |     [MIN](https://www.w3schools.com/excel/excel_min.php){:target="_blank"}     |
-   | Standard Deviation  | =STDEV.P(arguments) | Returns the standard deviation for the entire population.  <br>Use this if the range you pass to the function is the entire <br> dataset.**            | [STDEV.P](https://www.w3schools.com/excel/excel_stdevp.php){:target="_blank"}  |
-   | Standard Deviation  | =STDEV.S(arguments) | Returns the standard deviation for a sample of the entire  <br> population. Use this if the range you pass is a subset of the  <br>overall population. | [STDEV.S](https://www.w3schools.com/excel/excel_stdevs.php){:target="_blank"}  |
-   |       Median        | =Median(arguments)  | Returns the median of the arguments                                                                                                                    |  [MEDIAN](https://www.w3schools.com/excel/excel_median.php){:target="_blank"}  |
+|:-------------------:|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------:|
+|         Sum         | =SUM(arguments)     | Adds all of the arguments together                                                                                                                     |     [SUM](https://www.w3schools.com/excel/excel_sum.php){:target="_blank"}     |
+|       Average       | =AVERAGE(arguments) | Averages arguments together                                                                                                                            | [AVERAGE](https://www.w3schools.com/excel/excel_average.php){:target="_blank"} |
+|         Max         | =MAX(arguments)     | Returns the highest number out of the arguments                                                                                                        |     [MAX](https://www.w3schools.com/excel/excel_max.php){:target="_blank"}     |
+|         Min         | =MIN(arguments)     | Returns the lowest number out of the arguments                                                                                                         |     [MIN](https://www.w3schools.com/excel/excel_min.php){:target="_blank"}     |
+| Standard Deviation  | =STDEV.P(arguments) | Returns the standard deviation for the entire population.  <br>Use this if the range you pass to the function is the entire <br> dataset.**            | [STDEV.P](https://www.w3schools.com/excel/excel_stdevp.php){:target="_blank"}  |
+| Standard Deviation  | =STDEV.S(arguments) | Returns the standard deviation for a sample of the entire  <br> population. Use this if the range you pass is a subset of the  <br>overall population. | [STDEV.S](https://www.w3schools.com/excel/excel_stdevs.php){:target="_blank"}  |
+|       Median        | =Median(arguments)  | Returns the median of the arguments                                                                                                                    |  [MEDIAN](https://www.w3schools.com/excel/excel_median.php){:target="_blank"}  |
 
  
 ** This function replaced the older STDEV function, which is still available for compatibility with earlier versions of Excel.
@@ -142,7 +142,7 @@ You can find more functions at W3Schools. You can also find a list of all functi
 
 When working with large data sets in Excel, it can be helpful to freeze certain rows or columns so that they remain visible while you scroll through the rest of the data. This is especially useful for keeping headers or labels in view while you work with the data.
 To freeze rows or columns in Excel, follow these steps:
-1. Select the row or column **Below** the row or column that you want to freeze. If you would like to freeze the top two rows, you are going to select the row **Below** the top two rows or the leftmost cell **Below** the top two columns. If you want to freeze both rows and columns, select the cell that is below the rows and to the right of the columns you want to freeze.
+1. Select the row or column **Below** the row or column that you want to freeze. If you would like to freeze the top two rows, you are going to select the row **Below** the top two rows or the leftmost cell **Below** the top two rows. If you want to freeze both rows and columns, select the cell that is below the rows and to the right of the columns you want to freeze.
 2. Go to the View tab in the ribbon and select "Freeze Panes" from the Window group. This will open a drop-down menu with several options for freezing rows and columns.
 3. Select the option that best fits your needs:
    - Freeze Panes: This will freeze both the rows above and the columns to the left of the selected cell.
@@ -153,6 +153,7 @@ To freeze rows or columns in Excel, follow these steps:
 
 Freezing rows and columns can be a useful tool when working with large data sets in Excel. It allows you to keep important information in view while you work with the rest of the data. This can be useful for keeping headers or labels visible, making it easier to understand and remember the data you are working with.
 This link provides more information on freezing rows and columns in Excel if you would like to learn more! [Microsoft Freeze Panes](https://support.microsoft.com/en-us/office/freeze-panes-to-lock-rows-and-columns-in-excel-9f3f8b3d-1f2c-4d5d-8e9e-6f1d3f3c3b3b){:target="_blank"}
+
 ---
 
 ## Pre-Class Quiz Challenge
@@ -179,8 +180,8 @@ This link provides more information on freezing rows and columns in Excel if you
 
 1. Make sure your file is saved to your OneDrive folder.
 2. On the top right, click the share button --> share --> settings
-2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+3. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply.
+4. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
 
 **Rubric:**
 

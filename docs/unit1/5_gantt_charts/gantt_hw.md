@@ -1,7 +1,7 @@
 #  Homework: Gantt Chart/Project Scheduling and Tracking
 
-**Purpose:** This assignment aims to test your ability to create a gantt chart for a specific project. In this 
-assignment, you will be given a specific project prompt, and you will figure out how you and two other people will complete the project. You will then create a gantt chart that includes all the tasks and phases that you and your team will complete to finish the project.
+**Purpose:** This assignment aims to test your ability to create a Gantt chart for a specific project. In this 
+assignment, you will be given a specific project prompt, and you will figure out how you and two other people will complete the project. You will then create a Gantt chart that includes all the tasks and phases that you and your team will complete to finish the project.
 
 ---
 
@@ -36,7 +36,7 @@ Imagine that you are working for a landscaping company and your boss has asked y
 
 ## Step 3 - Populate the Gantt Chart
 
-Assume that you are in a team of 3. You are making a gantt chart to help organize the creation of the "Landscape 
+Assume that you are in a team of 3. You are making a Gantt chart to help organize the creation of the "Landscape 
 Invoice Tracker" spreadsheet based on the landscaping project described above. The project manager is you. Your project start date is the next time you have class, and you have 2 weeks to complete the project.
 
 Using your Gantt chart from step 1, add the following:

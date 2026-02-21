@@ -30,9 +30,9 @@ Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet conta
 
 ## Exercise 2 - Brickmaking Business
 
-  1. Navigate to the "Brickmaking Business" sheet.
-  2. Write equations to solve for the total expense, total revenue, and profit in cells B8:B10.
-  3. Use Goal Seek to compute the number of Bricks you need to sell to make a profit of $100K.
+1. Navigate to the "Brickmaking Business" sheet.
+2. Write equations to solve for the total expense, total revenue, and profit in cells B8:B10.
+3. Use Goal Seek to compute the number of Bricks you need to sell to make a profit of $100K.
 
 ---
 

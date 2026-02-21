@@ -107,7 +107,7 @@ To solve the problem, do the following:
    each pipe. 
 
    * Use **Pipe** and **Flow Direction** as the rows.
-   * Use **Flow Rate** and **Velocity** and  as the values.
+   * Use **Flow Rate** and **Velocity** as the values.
    * Make sure that the Value settings are set to find the _Average_ **Flow Rate** and **Velocity**.
 
 Pipe 1 and 3 are usually **Outflow** pipes, while Pipe 2 is usually an **Inflow** pipe. What does this tell you about 
@@ -139,13 +139,13 @@ For example, how does the average flow rate change with different pipe diameters
 |                    Part 1: Cells named correctly                    |        3        |
 | Part 1: Velocity equations are written correctly and use cell names |        4        |
 |          Part 1: Flow rate equations are written correctly          |        4        |
-|  Part1: Correct flow rate values are found with goal seek (±0.005)  |        5        |
+|  Part 1: Correct flow rate values are found with goal seek (±0.005)  |        5        |
 |      Part 1: Data validation applied to Pipe inputs (D and L)       |        2        |
 |          Part 2: Pivot Table is created on existing sheet           |        2        |
 |        Part 2: Table created using data from Reservoir Flow         |        2        |
 |         Part 2: Table includes Pipe and Flow Direction Rows         |        3        |
 |        Part 2: Values are **Average** Flow Rate and Velocity        |        3        |
-|                Part 2: Pivot Table in new worksheet                 |        2        |
+|                Part 3: Pivot Table in new worksheet                 |        2        |
 |           <div style="text-align: right">**Total**</div>            |       30        |
 
 ---
