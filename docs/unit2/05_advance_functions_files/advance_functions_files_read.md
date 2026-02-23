@@ -28,6 +28,8 @@ Also read the Files section below.
 
 This section will introduce you to file handling in Python. You will learn how to read from and write to files, which is essential for data persistence and manipulation.
 
+Chapter 10 of the _Python Crash Course, 3rd Edition_ textbook covers file handling in Python. You can read the chapter here: [PCC Chapter 10: Files and Exceptions](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c10.xhtml){:target="_blank"}.
+
 ### Opening a File
 
 To read or open a file in Python, you can use the built-in `open()` function. The `open()` function takes two arguments: the name of the file and the mode in which you want to open the file. The most common modes are:
