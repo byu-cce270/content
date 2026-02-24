@@ -73,9 +73,9 @@ Only one team member needs to turn in the following in the feedback box on the a
 |                               Uses loops                               |        5        |
 |                   Uses numeric and string  variables                   |        2        |
 |                      Uses a dictionary or a list                       |        5        |
-|                    Uses comment to explain the code                    |       10        |
+|                    Uses comment to explain the code                    |       15        |
 |                 Writes and defines 3 custom functions                  |       15        |
-|         Writes and defines 1 class with attributes and methods         |       10        |
+|         Writes and defines 1 class with attributes and methods         |        5        |
 |                  Uses colab forms or input statements                  |        5        |
 |                   Use markdown to organize your code                   |        5        |
 |                            Prompt completed                            |       10        |
@@ -91,4 +91,4 @@ The following is not a part of the rubric, but specifies how you can lose points
 |:-----------------------------------------------------------------------:|:-----------------:|
 |                         Link shared incorrectly                         |       -10%        |
 |                        Turned in late (per week)                        | -10% (up to -50%) |
-| No comments explaining where AI is used and what its provided code does |       -10%        |
+| No comments explaining where AI is used and what its provided code does |       -50%        |
