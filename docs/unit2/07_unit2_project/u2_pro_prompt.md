@@ -67,17 +67,17 @@ Only one team member needs to turn in the following in the feedback box on the a
 
 |                                  Item                                  | Points Possible |
 |:----------------------------------------------------------------------:|:---------------:|
-| An introductory text block with all the relevant information asked for |       10        |
+| An introductory text block with all the relevant information asked for |        3        |
 |                      Uses if-elif-else statement                       |        5        |
 |                    Uses file reading and or writing                    |        5        |
-|                               Uses loops                               |        4        |
-|                   Uses numeric and string  variables                   |        4        |
-|                      Uses a dictionary or a list                       |        4        |
-|                    Uses comment to explain the code                    |       12        |
-|                 Writes and defines 3 custom functions                  |       12        |
-|         Writes and defines 1 class with attributes and methods         |        4        |
-|                  Uses colab forms or input statements                  |        4        |
-|                   Use markdown to organize your code                   |        6        |
+|                               Uses loops                               |        5        |
+|                   Uses numeric and string  variables                   |        2        |
+|                      Uses a dictionary or a list                       |        5        |
+|                    Uses comment to explain the code                    |       10        |
+|                 Writes and defines 3 custom functions                  |       15        |
+|         Writes and defines 1 class with attributes and methods         |       10        |
+|                  Uses colab forms or input statements                  |        5        |
+|                   Use markdown to organize your code                   |        5        |
 |                            Prompt completed                            |       10        |
 |                Video uploaded (link to video not file)                 |       10        |
 |                          Participation points                          |       10        |
