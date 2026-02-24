@@ -33,6 +33,7 @@ You will also have to make and turn in a project proposal. The project proposal,
       - At least 1 list, dictionary, or pandas dataframe
       - At least 1 if-elif-else statement
       - At least 3 functions that you write/define
+      - At least 1 class that has attributes and methods that you write/define
       - Use xlsxwriter to connect to an Excel Sheet
       - Use matplotlib to create a graph
       - Your program is bug free 
@@ -61,7 +62,7 @@ Only one team member needs to turn in the following in the feedback box on the a
 |  At least 1 list, dictionary, or pandas dataframe  |        5        |
 |         At least 1 if-elif-else statement          |        5        |
 |     At least 3 functions that you write/define     |       12        |
-|     Use xlsxwriter to connect to an Excel Sheet     |        5        |
+|    Use xlsxwriter to connect to an Excel Sheet     |        5        |
 |          At least 1 graph from matplotlib          |        5        |
 |              Your program is bug free              |       10        |
 |         Use markdown to organize your code         |        5        |
@@ -76,10 +77,10 @@ Only one team member needs to turn in the following in the feedback box on the a
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining your code and how AI helped and what it does   |     10     |
-|                        Link shared incorrectly                        |     10     |
+|                     **Reasons for Points Lost**                      | **Amount** |  
+|:--------------------------------------------------------------------:|:----------:|
+| No comments explaining your code and how AI helped and what it does  |     10     |
+|                       Link shared incorrectly                        |     10     |
 
 ---
 
