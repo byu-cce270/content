@@ -30,7 +30,7 @@ In this assignment, you will be creating a dictionary and using it to calculate 
 
 ## Part 2 - Function Definition
 
-2. In the second code block, there is a function called "invoice_calc" that calculates the total cost of a shipment of materials.
+2. In the second code block, there is a function called "invoice_calc" that will calculate the total cost of a shipment of materials.
 3. The function takes two parameters: a dictionary (titled MaterialsDictionary) and the number of different materials that the user has requested to buy (a variable titled `amountmat`). The function will return the total cost of the shipment. **The structure of the function is already set up for you.**
 
 ---
