@@ -7,8 +7,8 @@
 1. Assemble your team. Here is the google sheet where you declared this in case you forget:
 </br>(If you need to change teams for any reason, please contact the head TA or the professor)
 
-   - [Section 1 (Tue/Thur) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/12VCbgRsAJrJWk5hbK98ahBvKskItZlTTD7nFtJCSJCM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-   - [Section 2 (Mon/Wed) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1PwaCFo-o9sOVHv4-ttZSH_Glckj8CqV-4SZ03U7sJzw/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 1 (Tue/Thur) W26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1nDVYvtjEuYaGbyBVqcca9jvJ2Bi295bQr9OErrtKDKI/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) W26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1VF3Kz6_FpXtXYWbdA36d2gVFDtvJPrkBni9LlTZ56Tg/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 2. You will then choose one of the three prompts listed below.
 
@@ -28,6 +28,7 @@
       - At least 1 list or dictionary
       - Use comments throughout your code explaining what is happening
       - At least 3 functions that you write/define
+      - At least 1 class that has attributes and methods that you write/define
       - Use of forms or input statements.
         - For a refresher on adding a form click [here](https://www.tutorialspoint.com/google_colab/google_colab_adding_forms.htm){:target="_blank"} or about the different types of forms [here](https://colab.research.google.com/notebooks/forms.ipynb){:target="_blank"}
       - Use markdown to organize code
@@ -67,14 +68,15 @@ Only one team member needs to turn in the following in the feedback box on the a
 |                                  Item                                  | Points Possible |
 |:----------------------------------------------------------------------:|:---------------:|
 | An introductory text block with all the relevant information asked for |       10        |
-|                      Uses if-elif-else statement                       |        6        |
-|                    Uses file reading and or writing                    |        6        |
-|                               Uses loops                               |        5        |
-|                   Uses numeric and string  variables                   |        5        |
-|                      Uses a dictionary or a list                       |        5        |
-|                    Uses comment to explain the code                    |       10        |
+|                      Uses if-elif-else statement                       |        5        |
+|                    Uses file reading and or writing                    |        5        |
+|                               Uses loops                               |        4        |
+|                   Uses numeric and string  variables                   |        4        |
+|                      Uses a dictionary or a list                       |        4        |
+|                    Uses comment to explain the code                    |       12        |
 |                 Writes and defines 3 custom functions                  |       12        |
-|                  Uses colab forms or input statements                  |        5        |
+|         Writes and defines 1 class with attributes and methods         |        4        |
+|                  Uses colab forms or input statements                  |        4        |
 |                   Use markdown to organize your code                   |        6        |
 |                            Prompt completed                            |       10        |
 |                Video uploaded (link to video not file)                 |       10        |
