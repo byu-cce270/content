@@ -1,4 +1,3 @@
-
 # Reading: Graphing and Numerical Solver
 
 ---
@@ -63,7 +62,7 @@ This can be hard to do by hand, and Excel makes it much easier! Let's walk throu
 12. If you would like to change the font, size, and color of the text in the graph, you can do so by 
    clicking on the text you would like to change.
 
-These are just a few ways we can organize and format our graph to helps us better see patterns and trends in data. 
+These are just a few ways we can organize and format our graph to help us better see patterns and trends in data. 
 Other 
 types of 
 graphs 
@@ -149,7 +148,7 @@ These steps only need to be completed once. If you do not see the **Solver** opt
 
 
 
-!!!Note
+!!! Note
     You may notice that there is a **Solver** option in the **Home** tab. This is a different solver that is used for solving equations, not for optimization problems. The **Solver** in the **Data** tab is the one we will be using in this class.
 
 ---

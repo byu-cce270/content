@@ -46,7 +46,7 @@ After making a cut within the beam at a point of interest, the internal shear an
 >>$\sum F_{y} = 0$<br>
 $\sum M = 0$
 
-The equations for the internal shear and moment forces have are given to you. These can be modeled as piecewise functions with the functions changing at the points on the beam where t the loads or supports change. You can  then graph the results of these functions  to create the shear and moment diagrams.
+The equations for the internal shear and moment forces are given to you. These can be modeled as piecewise functions with the functions changing at the points on the beam where the loads or supports change. You can  then graph the results of these functions  to create the shear and moment diagrams.
 
 Here are the shear and moment equations
 
@@ -131,7 +131,7 @@ $$
 
     ![moment_diagram.png](images/moment_diagram.png)
 
-#### Part 2 - Pasadena Precipitation Data
+#### Part 2 - Pasadena Temperature Data
 
 You will now graph the temperature data from Pasadena, CA from 2013-2014.
 

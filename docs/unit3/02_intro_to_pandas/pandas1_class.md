@@ -1,11 +1,11 @@
 # In Class Exercise: Pandas Series and DataFrames
 
-The following exercises will have you create pandas serires and data frames from lists and external files. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
+The following exercises will have you create pandas series and DataFrames from lists and external files. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
 You can find the In Class Exercise here:
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/02_intro_to_pandas/(Starter_Notebook)_Class_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-As part of this exercise, you will be asked to import some excel file into a pandas DataFrame. You can download the 
+As part of this exercise, you will be asked to import some Excel file into a pandas DataFrame. You can download the 
 files from the following links:
 
 [signs.xlsx](signs.xlsx)<br>
@@ -22,7 +22,7 @@ After opening the notebook, drag and drop the files into the file explorer on th
 			
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will only turn in the links to your Colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
 

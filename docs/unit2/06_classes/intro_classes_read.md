@@ -7,7 +7,7 @@
 On the O'Reilly's website read chapter 9 in _Python Crash Course, 3rd Edition_. 
 </br>Here is a direct link to the readings: [PCC Chapter 9: Classes](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c09.xhtml){:target="_blank"}.
 
-Remember that you will have to sign in to you free account that you created earlier.
+Remember that you will have to sign in to your free account that you created earlier.
 
 ### Things to Look Out For
 - A class is like a template or plan that defines how objects should be created 
@@ -24,8 +24,7 @@ In a Colab notebook, complete Problem 9-3 and 9-5 found in chapter 9 of the text
 
 ![preclasschallenge_9-5.png](images/preclasschallenge_9-5.png)
 
-If you have time, and want to practice more, you can also complete Problem 9-7 and 9-8
-
+If you have time and want to practice more, you can also complete Problem 9-7 and 9-8.
 
 ---
 

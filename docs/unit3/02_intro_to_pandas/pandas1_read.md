@@ -17,7 +17,7 @@ DataFrames section)
 !!! Note
     Remember that you may have to sign in with your byu netid to access the reading content.
 
-### Panda's Official Documentation
+### Pandas Official Documentation
 
 You should also skim through the [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#){:target="_blank"}, with particular attention to the beginner-friendly first three sections:
 
@@ -42,9 +42,9 @@ The "Cook Book" section provides short examples of common tasks:
 ## DataFrames and Series
 
 Pandas is a powerful data manipulation library in Python. It is built on top of NumPy and provides an easy-to-use 
-data structure called a DataFrame. A DataFrame is a two-dimensional labeled data structure with columns of potentially different types. You can think of it like a spreadsheet or SQL table, or a dictionary of Series objects. It can be more than two-dimensional just like a Excel file can have multiple sheets, a dataframe can have multiple levels. A single two-dimenionsal sheet is the most commonly used pandas object. 
+data structure called a DataFrame. A DataFrame is a two-dimensional labeled data structure with columns of potentially different types. You can think of it like a spreadsheet or SQL table, or a dictionary of Series objects. It can be more than two-dimensional just like a Excel file can have multiple sheets, a dataframe can have multiple levels. A single two-dimensional sheet is the most commonly used pandas object. 
 
-As noted in the reading, a DataFrame is made up of Series objects. A Series is a one-dimensional array-like object containing an array of data and an associated array of data labels, called its index. The data can be any NumPy data type, and the labels are called the index. When combinged into a dataframe, the index of the series becomes the row index of the dataframe.
+As noted in the reading, a DataFrame is made up of Series objects. A Series is a one-dimensional array-like object containing an array of data and an associated array of data labels, called its index. The data can be any NumPy data type, and the labels are called the index. When combined into a dataframe, the index of the series becomes the row index of the dataframe.
 
 While you can create a DataFrame from scratch, it is more common to read data from a CSV or Excel file directly into a DataFrame.
 
@@ -88,13 +88,13 @@ df = pd.read_excel('filename.xlsx', header=1)
 ```
 ---
 
-There are a number of other parameters you can use, for example which columsn to read, how many rows to read, and many others. For more information on the `read_excel()` function and its parameters, you can refer to the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html){:target="_blank"}.
+There are a number of other parameters you can use, for example which columns to read, how many rows to read, and many others. For more information on the `read_excel()` function and its parameters, you can refer to the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html){:target="_blank"}.
 
 ## Columns and Indexes in DataFrames
 
 In a DataFrame, the columns are the variables or features, and the rows are the observations or samples. Each column in a DataFrame is a Series object, and each row is a collection of values corresponding to the columns. You can access the columns of a DataFrame using the column labels, and you can access the rows using the row index.
 
-You can use the columns() method to get the column labels of a DataFrame and the index() method to get the row labels. You can also set the index of a DataFrame using the set_index() method. Here are some examples. First, we create a DataFrame:
+You can use the `columns` attribute to get the column labels of a DataFrame and the `index` attribute to get the row labels. You can also set the index of a DataFrame using the set_index() method. Here are some examples. First, we create a DataFrame:
 
 ```python
 import pandas as pd
@@ -237,7 +237,7 @@ The output will be:
 
 ## Adding and Removing Rows and Columns
 
-You can add new rows to a DataFrame using the `loc[]` method. For example, to add a new row for 'Frank' and 'Janes', you can use the following code:
+You can add new rows to a DataFrame using the `loc[]` method. For example, to add a new row for 'Frank' and 'Jane', you can use the following code:
 
 ```python
 df.loc['Frank'] = [35, 'MS', 60000, 66000, 'Medium']
@@ -372,7 +372,7 @@ This will create a bar plot of the 'Income' column. You can customize the plot b
 df['Income'].plot(kind='bar', title='Income Distribution', xlabel='Name', ylabel='Income', color='green', legend=False)
 ```
 
-This will create a bar plot of the 'Income' column with a title, x-axis label, y-axis label, and custom colors. You can also create other types of plots, such as scatter plots and histograms, by specifying the `kind` parameter. It will loook like this:
+This will create a bar plot of the 'Income' column with a title, x-axis label, y-axis label, and custom colors. You can also create other types of plots, such as scatter plots and histograms, by specifying the `kind` parameter. It will look like this:
 
 ![pandas1_12_plotmethod.png](images/pandas1_12_plotmethod.png)
 
@@ -409,7 +409,7 @@ Save changes to your Google Drive and submit the link to the notebook in your Pr
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will only turn in the links to your Colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
 
 **Rubric:**
 

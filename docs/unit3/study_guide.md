@@ -1,6 +1,6 @@
 # Unit 3 Midterm Exam Study Guide
 
-The final exam will be comprensive, but will feature a significan amount of content from Unit 3. This study guide is designed to help you review and prepare for the Unit 3 content on the exam. It includes a summary of core concepts, a practice quiz with answers, and a glossary of key terms.
+The final exam will be comprehensive, but will feature a significant amount of content from Unit 3. This study guide is designed to help you review and prepare for the Unit 3 content on the exam. It includes a summary of core concepts, a practice quiz with answers, and a glossary of key terms.
 
 !!! Note
     This study guide is not exhaustive. Be sure to review the course reading content, in-class exercises, homework assignments, and any additional materials provided by your instructor.

@@ -26,7 +26,7 @@ c = a + b
 print(c)  # Output: [5 7 9]
 ```
 # Speed of vectorized operations
-Numpy vectorization is much faster than using a for loop to iterate over the elements of an array. This is because NumPy uses optimized C code to perform the operations, whereas a for loop in Python is interpreted and slower. Here is an example of how much faster NumPy vectorization is compared to a for loop. We create two numpy arrays with 1 million members each and add them together using both a for loop and NumPy vectorization. We then use the `%timeit` command to measure the time it takes to run each operation. :
+NumPy vectorization is much faster than using a for loop to iterate over the elements of an array. This is because NumPy uses optimized C code to perform the operations, whereas a for loop in Python is interpreted and slower. Here is an example of how much faster NumPy vectorization is compared to a for loop. We create two numpy arrays with 1 million members each and add them together using both a for loop and NumPy vectorization. We then use the `%timeit` command to measure the time it takes to run each operation. :
 
 ```python
 import numpy as np
@@ -58,7 +58,7 @@ Function using loops
 590 ms ± 151 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 ```
 
-the `%timeit` command is a magic command in  notebooks that measures the time it takes to run a piece of code. The output shows that the NumPy vectorization is about 400 times faster than the function using loops. This is because NumPy uses optimized C code to perform the operations, whereas a for loop in Python is interpreted and slower.'
+The `%timeit` command is a magic command in Colab notebooks that measures the time it takes to run a piece of code. The output shows that the NumPy vectorization is about 400 times faster than the function using loops. This is because NumPy uses optimized C code to perform the operations, whereas a for loop in Python is interpreted and slower.
 
 ---
 # Last part in In-Class Exercise Explanation
@@ -150,7 +150,7 @@ R_{C_y}
 \end{pmatrix}
 $$
 
-For reference, here are our coefficients and loads in table format. **Note**: If you compare this table to the the equations above, you will notice that we have changed the order of the equations so that the two A equations are first, followed by the two B equations, and finally the two C equations. Also, we switched the order of 2nd and 3rd columns.
+For reference, here are our coefficients and loads in table format. **Note**: If you compare this table to the equations above, you will notice that we have changed the order of the equations so that the two A equations are first, followed by the two B equations, and finally the two C equations. Also, we switched the order of 2nd and 3rd columns.
 
 |                           |             AB            |             BC            | AC | R<sub>A<sub>x</sub></sub> | R<sub>A<sub>y</sub></sub> | R<sub>C<sub>y</sub></sub> |
 |:-------------------------:|:-------------------------:|:-------------------------:|:--:|:-------------------------:|:-------------------------:|:-------------------------:|
@@ -180,7 +180,7 @@ x = np.linalg.solve(A, b)
 
 ```
 
-For the in-class, and homework exercises, you will be given the equations and the knowns. you will need to use NumPy to solve for the unknowns.
+For the in-class, and homework exercises, you will be given the equations and the knowns. You will need to use NumPy to solve for the unknowns.
 
 ---
 			

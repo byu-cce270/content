@@ -26,13 +26,13 @@ Be sure to rename it something like “(Your-Name)-Class-Analyzing-&-Managing-Da
 
 1. Navigate to the Analyze Materials Purchased sheet. Now that you have proven your boss your skills, he has given you a new task with more customer order information
 
-3. Format the table by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table
+2. Format the table by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table
 
-4. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade
+3. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade
 
-5. Add filters to the table. 
+4. Add filters to the table.
 
-6. Use the filter to display the customers that ordered between 20 and 75 tons of material for Order #2 (column C)
+5. Use the filter to display the customers that ordered between 20 and 75 tons of material for Order #2 (column C)
 
 ---
 
@@ -60,8 +60,8 @@ If you do these steps out of order, your formulas will look weird when the filte
 
 1. Make sure your file is saved to your OneDrive folder.
 2. On the top right, click the share button --> share --> settings
-2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+3. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply.
+4. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
 
 **Rubric:**
 

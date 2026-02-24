@@ -16,7 +16,7 @@ Rename it something like "(Your_Name)_HW_If_Statements.ipynb".
 
 **Objective**: Create code that can solve the determinacy of any given truss when given the correct inputs. Determinacy is a Statics principle that helps us know whether we can solve the forces in a given system using statics equations.
 
-Here is an example of a truss. The blue lines are the members, the joints are the white circles where the members meet, and the red arrows are the reaction forces.:
+Here is an example of a truss. The blue lines are the members, the joints are the white circles where the members meet, and the red arrows are the reaction forces:
 
 ![Warren-Truss2.png](images/Warren-Truss2.png)
 
@@ -30,7 +30,7 @@ For this example, a student has given you a list of trusses he needs to solve fo
     - The number of members in the truss. (Must be an integer)
     - The number of reaction forces acting on the truss. (Must be an integer)
    
-2. Write IF, ELIF, and ElSE statements on the same code block for the following 
+2. Write IF, ELIF, and ELSE statements on the same code block for the following 
    scenarios. Divide the section using a comment. 
 
   | Equation                                                | Result                   |
@@ -55,7 +55,7 @@ For this example, a student has given you a list of trusses he needs to solve fo
 
 **Objective**:  You are helping a company count the orders of materials it has. They have given you the list and want you to count it.
 
-1. Navigate to the "Part 2 - Material Order Counter" section. Below the "Total_order" list, create a for loop that will go through each order in the given "orders " list. Divide this code using comments.
+1. Navigate to the "Part 2 - Material Order Counter" section. Below the "Total_order" list, create a for loop that will go through each order in the given "orders" list. Divide this code using comments.
 
 2. In the next line, create a for loop that will read each item in the "Total_order" list. 
 
@@ -85,9 +85,9 @@ For this example, a student has given you a list of trusses he needs to solve fo
 |      Comments explaining code for Part 1       |        3        |
 |        Part 2 - Correct value for wood         |        3        |
 |        Part 2 - Correct value for steel        |        3        |
-|        Part 2- Correct value for brick         |        3        |
+|       Part 2 - Correct value for brick         |        3        |
 |        Part 2 - Correct value for glass        |        3        |
-|       Part 2- Correct value for concrete       |        3        |
+|      Part 2 - Correct value for concrete       |        3        |
 |      Comments explaining code for Part 2       |        3        |
 | <div style="text-align: right">**Total**</div> |       36        |
 

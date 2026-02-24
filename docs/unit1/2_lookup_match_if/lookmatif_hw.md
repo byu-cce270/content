@@ -44,7 +44,7 @@
    temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law 
    Coefficients in the Tables sheet). 
 
-!!!Note
+!!! Note
       For the temperature key used in VLOOKUP, you should not expect an exact match so you will need to do a range lookup (is_sorted = TRUE). If you want to do an exact match, you can use the ROUND() function to round the temperature to the nearest whole number inside the argument list as you pass them as keys to the functions. 
 
 5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:

@@ -2,7 +2,7 @@
 
 The following exercise will have you create a simple Gantt chart in Excel similar to the one featured in the video on the reading page and a few other features. 
 
-We will use  seven main steps to create a Gantt chart in Excel.
+We will use seven main steps to create a Gantt chart in Excel.
 
 1. Project Information, Phases, and Tasks 
 2. Creating the Timeline 
@@ -51,17 +51,17 @@ Create at least 2 phases with 3-4 tasks each.
 For this simple sheet, it is helpful if the Phases will be left justified and the tasks right justified. This isn't 
 required for your homework, but it does help make the chart easier to read.
 
-* **Note**: For  most projects the numbering for tasks is a sub-set of the phase number. For example, if Phase 1 has 3 
-  tasks, they would be numbered 1.1, 1.2, and 1.3. So the tasks for Phase 2 would be numbered 2.1, 2.2, etc.  You will learn more about WBS structures and naming  in your 300 level CFM classes.
+* **Note**: For most projects the numbering for tasks is a sub-set of the phase number. For example, if Phase 1 has 3
+  tasks, they would be numbered 1.1, 1.2, and 1.3. So the tasks for Phase 2 would be numbered 2.1, 2.2, etc. You will learn more about WBS structures and naming in your 300 level CFM classes.
 
 
 ### Task Dates and Duration
 Next, we will enter the start and end dates for each task. (We will not add start dates for the Phases).
 
-7. Enter the start date for each task in column D next to each task. Typically, the start date for the first task is  the project start date. For this project, the start date for the first task should reference the project start date in 
+7. Enter the start date for each task in column D next to each task. Typically, the start date for the first task is the project start date. For this project, the start date for the first task should reference the project start date in 
    cell D3 using the cell/range name "project_start" we applied above.
 
-* **Note** if the cell you enter the date into is not formated as a date, a number will appear. Change the 
+* **Note** if the cell you enter the date into is not formatted as a date, a number will appear. Change the 
   formatting to a date format to see the date. The "Short Date" format is a good choice.
 
 * **Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date of the next task. This assumes that you cannot start the next task until the previous task is completed. This is not always the case. So just enter independent start dates for each task. The start dates should be ascending order - that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Most projects have tasks that are done in parallel, so the start date of one task may be before the end date of another task.
@@ -80,7 +80,7 @@ Finish this step by adding your own start dates for all the tasks you entered.
 ### Formatting
 
 12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a 
-    color, indent the task and phase names, and add some borders to the table. You can put boarders around  and 
+    color, indent the task and phase names, and add some borders to the table. You can put borders around and 
     highlight the project start date, work days, and start dates to help indicate that it is something to be filled in. You don't have to use the same colors as shown in our pictures.
 
 At this point, your Gantt chart should look something like this:
@@ -110,8 +110,8 @@ In your Gantt chart, row 5 will be the dates for the timeline and row 6 will be 
 
 ### Days of the week
 5. In cell H6, use the TEXT function to display the day of the week for the date in cell H5. (Hint: Use the "DDD" 
-   format). Then, use the LEFT function to display only the first letter of the day of the week. So the formula in  H6 would be something like: ```left(text(H5,"DDD"),1)```. 
-6. Drag the formula in cell H6 to fill in the rest of row 5 for the week.
+   format). Then, use the LEFT function to display only the first letter of the day of the week. So the formula in H6 would be something like: ```left(text(H5,"DDD"),1)```. 
+6. Drag the formula in cell H6 to fill in the rest of row 6 for the week.
 
 ### Week Header
 Now we want to add a header for the week with the date of the first day of the week.
@@ -160,7 +160,7 @@ Next, we will add a new control that lets us display the week we want to see. Th
 4. In Cell D4, enter a number (1, 2, 3, etc.) to represent the week you want to display.
 5. Change the formatting of cells C4 and D4 to make them match the formatting of the project start date (cells C3 and D3). Make sure D4 is formatted as a number and not a date. 
 6. Name the cell D4 "display_week".
-7. In cell H5, edit the formula you edited above to add "+(display_week-1)*7" to the end of the formula. This will  allow you to change the display week and see the subsequent weeks of the project. 
+7. In cell H5, edit the formula you edited above to add "+(display_week-1)*7" to the end of the formula. This will allow you to change the display week and see the subsequent weeks of the project. 
 8. Try entering different numbers in cell D4 to see how the display week changes.
 
 ## Step 4 - Add Gantt Bars using Conditional Formatting
@@ -204,15 +204,15 @@ At this point, your Gantt chart should look something like this if you added bor
 
 ## Step 5 - Adding Summary Progress Bars
 
-In this step, you will add progress bars to the Gantt chart to show the progress of each task. We be using a special conditional formating called "data bars" to show the progress of each task based on the percentage complete. We will also use conditional formatting to gray out part of the timeline based on the percent complete.
+In this step, you will add progress bars to the Gantt chart to show the progress of each task. We will be using a special conditional formatting called "data bars" to show the progress of each task based on the percentage complete. We will also use conditional formatting to gray out part of the timeline based on the percent complete.
 
 1. Select C7:C15 (The Progress column, adjust the range if required for more or fewer tasks), set the number format to "Percent". For testing purposes, enter some sample percentages for the progress of each Task in associated cells in the Progress column. Leave a few of them blank or 0 to indicate they have not started yet.
 2. Reselect the cells in the Progress column (C7:C15) and add conditional formatting using "Data Bars". Choose a color, like gray for the data bar. You can choose a different color than gray if you like.
 3. Make Column C wider so you can see the data bars better.
-4. In the cells that have the Phase titles (cells C7 and C12 in the figures), use the average function to calculate the  average percent complete for each phase base on the tasks in that phase.
+4. In the cells that have the Phase titles (cells C7 and C12 in the figures), use the average function to calculate the average percent complete for each phase based on the tasks in that phase.
 
 ### More Formatting
-4. Highlight each phase in the timeline and  bold the data in that row to make it stand out 
+4. Highlight each phase in the timeline and bold the data in that row to make it stand out 
 more.
 
 Your chart should now look something like this:

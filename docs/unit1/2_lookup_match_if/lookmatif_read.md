@@ -2,7 +2,7 @@
 
 ---
 
-Excel has  many powerful functions that can be used to automate calculations and data analysis. In this reading, we will focus on three important functions: VLOOKUP/HLOOKUP, MATCH, and IF/IFS. These functions are essential for working with large datasets and can help you quickly find and manipulate data in Excel.
+Excel has many powerful functions that can be used to automate calculations and data analysis. In this reading, we will focus on three important functions: VLOOKUP/HLOOKUP, MATCH, and IF/IFS. These functions are essential for working with large datasets and can help you quickly find and manipulate data in Excel.
 
 Before class, you will learn about a few types of IF Statements: IF and IFS. You will also learn about Goal Seek.
 
@@ -46,7 +46,7 @@ argument (2) tells the VLOOKUP function from which column of the table the retur
 
 ![Vlookup_Image_3.png](images/Vlookup_Image_3.png)
 
-If the  values in the lookup table are edited, all the weights would be automatically updated.
+If the values in the lookup table are edited, all the weights would be automatically updated.
 
 ### The [range_lookup] Parameter
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
@@ -101,7 +101,7 @@ The search_type has three different options for an input as shown in the table b
 |      0      |        Exact Match        |
 |     -1      |     Descending Order      |
 
-The MATCH function when pair with the VLOOKUP function allows you to do a two-dimensional lookup where a value is found from a table containing both rows and columns. For example, consider the following sheet containing a table of temperatures in degree F illustrating a relationship between average monthly temp and elevation in ft for a particular location.
+The MATCH function when paired with the VLOOKUP function allows you to do a two-dimensional lookup where a value is found from a table containing both rows and columns. For example, consider the following sheet containing a table of temperatures in degree F illustrating a relationship between average monthly temp and elevation in ft for a particular location.
 
 ![match_fig1.png](images/match_fig1.png)
 
@@ -198,13 +198,13 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 1. First download the starter sheet: [(Starter-Workbook)-Pre-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Pre-Lookups-Match-IF.xlsx)
     <br>Be sure to make a copy of the sheet and rename it something like “(Your-Name)-Pre-Lookups-Match-IF”.
 
-2. The workbook contains two sections: the first sheet is for practicing VLOOKUP and MATCH functions, and the second sheet is for practicing IF and IFS functions.. Take a minute to review the contents of the LOOKUP-MATCH sheet. 
+2. The workbook contains two sections: the first sheet is for practicing VLOOKUP and MATCH functions, and the second sheet is for practicing IF and IFS functions. Take a minute to review the contents of the LOOKUP-MATCH sheet. 
 
 Often times, the VLOOKUP and MATCH functions are hard to understand and use right away. Especially when combining and writing a function inside other functions. To help with this, we will first practice by using each function separately, then combine them together.
 
 3. In column E, you will use the MATCH function to find the position or index of the type of service listed in column D based on the small table in cells K1:N8. If written correctly, the function will return a number between 2-4, depending on the type of service, listed in column D. We will use this number in the next step. Hint: The entire table in cells K1:N8 is not used for this step.
 
-4. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of you VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
+4. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of your VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
 
 5. In column G, you will multiply the values in columns C and F to get the total cost for each service
 
@@ -215,7 +215,7 @@ Look below for a solution to see if you did it correctly and for some hints. (Cl
 <details>
 <summary><b>Solution</b></summary>
 
-For any customer with the Service: "Sidewalk Replacement", Quantity: "10", and Type: "Full", the cost should be $1,890. You can test this by overwriting the formula that are randomly generated in the "Service" and "Type" columns with these values.
+For any customer with the Service: "Sidewalk Replacement", Quantity: "10", and Type: "Full", the cost should be $1,890. You can test this by overwriting the formulas that are randomly generated in the "Service" and "Type" columns with these values.
 </details>
 
 <details>

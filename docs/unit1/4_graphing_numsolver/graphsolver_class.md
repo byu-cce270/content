@@ -13,7 +13,7 @@ This data contains information about specific sales, including the date, region,
 associate and more. You are tasked with creating various graphs to visualize the data. Make sure that each chart is created on **its own 
 sheet** and is titled appropriately. Each chart should have the x and y-axis labeled and have a legend. 
 
-1. Navigate to the first sheet in the data workbook,"Construction_Sales" which is the data that we will be graphing.
+1. Navigate to the first sheet in the data workbook, "Construction_Sales" which is the data that we will be graphing.
 2. Create a pivot table that aggregates total sales by product. Then make a pie chart that shows the total sales by 
    product. 
 3. Your boss wants to know the relationship between quantity sold and revenue. Make a scatter plot (markers only) that 

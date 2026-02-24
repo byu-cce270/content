@@ -7,18 +7,18 @@ You will also have to make and turn in a project proposal. The project proposal,
 
 ## Instructions
 
-1. You and the rest of your team previously formed will work together will come up with a project idea that will showcase what you have learned in this class. You will need to complete the project requirements listed below. You can find your team here:
+1. You and the rest of your team previously formed will work together to come up with a project idea that will showcase what you have learned in this class. You will need to complete the project requirements listed below. You can find your team here:
 </br>(If you need to change teams for any reason, please contact the head TA or the professor)
 
-   - [Section 1 (Tue/Thur) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/12VCbgRsAJrJWk5hbK98ahBvKskItZlTTD7nFtJCSJCM/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-   - [Section 2 (Mon/Wed) F25 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1PwaCFo-o9sOVHv4-ttZSH_Glckj8CqV-4SZ03U7sJzw/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 1 (Tue/Thur) W26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1nDVYvtjEuYaGbyBVqcca9jvJ2Bi295bQr9OErrtKDKI/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) W26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1VF3Kz6_FpXtXYWbdA36d2gVFDtvJPrkBni9LlTZ56Tg/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 2. You and your team must come up with a project idea that will meet all of the requirements and create a project proposal. The instructions can be found here: [Final Project Proposal](https://byu-cce270.readthedocs.io/en/latest/unit3/06_final_project/final_pro_proposal/){:target="_blank"} ***WARNING*** - You must avoid the temptation to simply find an interesting Python program online and copy and paste it as your own. While we all use other people’s code and examples to learn from, outright copying their code and presenting it as your own is plagiarism.
 
 3. You also need to sign up for a time to present your project to the rest of the class. You can find the sign up sheet here:
 
-   - [Section 1 (Tue/Thur) W25 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/12VCbgRsAJrJWk5hbK98ahBvKskItZlTTD7nFtJCSJCM/edit?gid=1461820946#gid=1461820946){:target="_blank"}
-   - [Section 2 (Mon/Wed) W25 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1PwaCFo-o9sOVHv4-ttZSH_Glckj8CqV-4SZ03U7sJzw/edit?gid=1979404871#gid=1979404871){:target="_blank"}
+   - [Section 1 (Tue/Thur) W26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1nDVYvtjEuYaGbyBVqcca9jvJ2Bi295bQr9OErrtKDKI/edit?gid=161779235#gid=161779235){:target="_blank"}
+   - [Section 2 (Mon/Wed) W26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1VF3Kz6_FpXtXYWbdA36d2gVFDtvJPrkBni9LlTZ56Tg/edit?gid=1979404871#gid=1979404871){:target="_blank"}
 
 4. Complete the project using all the following requirements (this is where your grade will come from):
 
@@ -33,11 +33,12 @@ You will also have to make and turn in a project proposal. The project proposal,
       - At least 1 list, dictionary, or pandas dataframe
       - At least 1 if-elif-else statement
       - At least 3 functions that you write/define
-      - Use xlswriter to connect to an Excel Sheet
+      - At least 1 class that has attributes and methods that you write/define
+      - Use xlsxwriter to connect to an Excel Sheet
       - Use matplotlib to create a graph
       - Your program is bug free 
       - Use markdown to organize your code (Using text blocks to separate your code into sections or code blocks)
-      - Comments throughout your code explaining what is happening. (This is not directly apart of the rubric, but you will lose points if you don't have comments)
+      - Comments throughout your code explaining what is happening. (This is not directly a part of the rubric, but you will lose points if you don't have comments)
       - EXTRA CREDIT OPTIONS (Must be used in some significant way):
          - Use of GUIs (ipywidgets)
          - Use of numpy in some way
@@ -61,7 +62,7 @@ Only one team member needs to turn in the following in the feedback box on the a
 |  At least 1 list, dictionary, or pandas dataframe  |        5        |
 |         At least 1 if-elif-else statement          |        5        |
 |     At least 3 functions that you write/define     |       12        |
-|     Use xlswriter to connect to an Excel Sheet     |        5        |
+|    Use xlsxwriter to connect to an Excel Sheet     |        5        |
 |          At least 1 graph from matplotlib          |        5        |
 |              Your program is bug free              |       10        |
 |         Use markdown to organize your code         |        5        |
@@ -73,13 +74,13 @@ Only one team member needs to turn in the following in the feedback box on the a
 |              Use of GUIs (ipywidgets)              |       +5        |
 |                    Use of numpy                    |       +5        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
 
-|                      **Reasons for Points Lost**                      | **Amount** |  
-|:---------------------------------------------------------------------:|:----------:|
-| No comments explaining your code and how AI helped and what it does   |     10     |
-|                        Link shared incorrectly                        |     10     |
+|                     **Reasons for Points Lost**                      | **Amount** |  
+|:--------------------------------------------------------------------:|:----------:|
+| No comments explaining your code and how AI helped and what it does  |     10     |
+|                       Link shared incorrectly                        |     10     |
 
 ---
 
@@ -102,4 +103,4 @@ Python is probably the most popular tool for machine learning, and there are ton
 As it turns out there are modules to allow you to connect to Google Sheets and read data directly into your Python program. This opens all kinds of opportunities, so you’ll just have to brainstorm on what the project would be…   [Click Here](https://bit.ly/3IuM2zh){:target="_blank"}
 
 ### Expand upon one of the homework problems, for example: 
-Improve one of the homework problems we did this semester. When choosing this option, you will need to make sure you make significant improvements to the code. You will also need to make sure you have a good project proposal that explains what you are going to do and how you are going to do it. Please talk to a TA a head of time to make sure your project idea is different enough from the homework we did.
+Improve one of the homework problems we did this semester. When choosing this option, you will need to make sure you make significant improvements to the code. You will also need to make sure you have a good project proposal that explains what you are going to do and how you are going to do it. Please talk to a TA ahead of time to make sure your project idea is different enough from the homework we did.

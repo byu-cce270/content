@@ -6,12 +6,12 @@
 
 Read through the following article on pseudocode. [Pseudocode: What It Is and How to Write It](https://builtin.com/data-science/pseudocode){:target="_blank"}
 
-!!!Note
+!!! Note
     Every programmer writes pseudocode differently. The main purpose of pseudocode is to help you plan out your code before you start writing it. It can be as simple or as detailed as you want it to be. The important thing is that it helps you understand what you need to do and how to do it.
 
 ### Another example of pseudocode
 
-The following is an example of pseudocode for a project that is done in CE 321. Skim through it to get an idea of how pseudocode can be written and a real world example of how it can be used. In this particular example, some of the function have already been completed and the student is expected to write the code for the other functions.
+The following is an example of pseudocode for a project that is done in CE 321. Skim through it to get an idea of how pseudocode can be written and a real world example of how it can be used. In this particular example, some of the functions have already been completed and the student is expected to write the code for the other functions.
 
 ```plaintext
 Pseudocode for the Method of Joints function:

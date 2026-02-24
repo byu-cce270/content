@@ -24,14 +24,14 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 ## Part 2 - Pseudocode
 
 1. If you haven't already, read through the requirements listed on step 3 under the Instruction section for the [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_prompt/#instructions){:target="_blank"} page.
-2. As your group discusses how you will go about the project and complete all the requirements. You don't need to worry about who will do what, you will figure that out later.  You may want to have someone take notes to help you write the pseudocode. 
+2. As a group, discuss how you will go about the project and complete all the requirements. You don't need to worry about who will do what, you will figure that out later.  You may want to have someone take notes to help you write the pseudocode. 
 3. Under the "How is your team going about it" section of your document, write out the pseudocode for your project. You can use the following as a guide for writing pseudocode:
      - Use plain English to describe what each part of your code will do.
      - Break down the project into smaller, manageable tasks or functions.
      - Use indentation to show the structure and hierarchy of your code.
      - Include comments to explain the purpose of each section or function.
      - Think about the flow of your program and how different parts will interact with each other.
-4. You can also refer to the Pre Class Reading about pseudocode. [Pre Class Reading: Project 2 Psuedo Code](https://builtin.com/data-science/pseudocode){:target="_blank"}
+4. You can also refer to the Pre Class Reading about pseudocode. [Pre Class Reading: Project 2 Pseudocode](https://builtin.com/data-science/pseudocode){:target="_blank"}
 
 ---
 

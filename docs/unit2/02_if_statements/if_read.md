@@ -7,9 +7,9 @@
 On the O'Reilly's website read chapter 5 in _Python Crash Course, 3rd Edition_. 
 </br>Here is a direct link to the readings: [PCC Chapter 5: if Statements](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c05.xhtml){:target="_blank"}.
 
-Remember that you will have to sign in to you free account that you created earlier.
+Remember that you will have to sign in to your free account that you created earlier.
 
-_Optional:_ In class we will be going over how to create different forms colab. [Introduction to forms and different inputs](https://www.tutorialspoint.com/google_colab/google_colab_adding_forms.htm){:target="_blank"}.
+_Optional:_ In class we will be going over how to create different forms in Colab. [Introduction to forms and different inputs](https://www.tutorialspoint.com/google_colab/google_colab_adding_forms.htm){:target="_blank"}.
 
 ### Things to look out for
 - The structure of an if statement, including the use of colons and indentation.
@@ -24,13 +24,13 @@ _Optional:_ In class we will be going over how to create different forms colab. 
 
 ## Pre-Class Quiz Challenge
 
-1. Create a new colab notebook.
+1. Create a new Colab notebook.
 
 2. Title the notebook "(Your_Name)_Pre_If_Statements.ipynb".
 
-3. In the colab notebook, create a variable called 'exam_score' and set it equal to an integer between 0 and 100.
+3. In the Colab notebook, create a variable called 'exam_score' and set it equal to an integer between 0 and 100.
 
-4. In a new code block, use an if statment to check that the user's grade is greater than or equal to 60. Print a message telling the user whether they pass or fail
+4. In a new code block, use an if statement to check that the user's grade is greater than or equal to 60. Print a message telling the user whether they pass or fail.
 
 5. In a new code block, use if, elif, and else statements to assign a letter grade based on the value of 'exam_score' using the following scale:
 
