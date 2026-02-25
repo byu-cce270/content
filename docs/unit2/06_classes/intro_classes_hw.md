@@ -35,7 +35,7 @@ In this part, you will create a class called **Material** that represents a cons
 
 5. Add a method called **use_quantity(amount)** that subtracts the given amount from the current quantity. If the amount is greater than the current quantity, print an error message that includes the material name and current quantity, and do not change the quantity. If the amount is less than or equal to 0, print an error message.
 
-6. Add a **\_\_str\_\_** method that returns a formatted string like:
+6. Add a **print_description** method that returns a formatted string like:
 
 ```
 Concrete: 50 cubic yards @ $125.00/cubic yards = $6,250.00
@@ -206,24 +206,24 @@ Status: UNDER BUDGET
 
 **Rubric:**
 
-|                              **Item**                                  | **Amount** |
-|:----------------------------------------------------------------------:|:----------:|
-|             Material **\_\_init\_\_** with validation is correct         |     2      |
-|             **total_cost()** method works correctly                     |     2      |
-|             **add_quantity()** method works correctly                   |     2      |
-|             **use_quantity()** with validation works correctly          |     2      |
-|             **\_\_str\_\_** method returns formatted string              |     2      |
-|             ConstructionProject **\_\_init\_\_** is correct              |     2      |
-|             **add_material()** and **log_hours()** work correctly       |     2      |
-|             **total_material_cost()** loops and sums correctly          |     2      |
-|             **total_labor_cost()** and **total_project_cost()** correct |     2      |
-|             **is_under_budget()** returns correct boolean               |     1      |
-|             **summary()** prints formatted output                       |     3      |
-|             RoadProject inherits from ConstructionProject               |     2      |
-|             **super().\_\_init\_\_()** used correctly                     |     2      |
-|             **cost_per_mile()** and **cost_per_lane_mile()** correct    |     2      |
-|             **summary()** override includes road-specific info          |     3      |
-|        <div style="text-align: right">**Total**</div>                  |   **31**   |
+|                          **Item**                           | **Amount** |
+|:-----------------------------------------------------------:|:----------:|
+|    Material **\_\_init\_\_** with validation is correct     |     2      |
+|           **total_cost()** method works correctly           |     2      |
+|          **add_quantity()** method works correctly          |     2      |
+|     **use_quantity()** with validation works correctly      |     2      |
+|    **project_description** method returns formatted string    |     2      |
+|       ConstructionProject **\_\_init\_\_** is correct       |     2      |
+|    **add_material()** and **log_hours()** work correctly    |     2      |
+|     **total_material_cost()** loops and sums correctly      |     2      |
+| **total_labor_cost()** and **total_project_cost()** correct |     2      |
+|        **is_under_budget()** returns correct boolean        |     1      |
+|            **summary()** prints formatted output            |     3      |
+|        RoadProject inherits from ConstructionProject        |     2      |
+|          **super().\_\_init\_\_()** used correctly          |     2      |
+|  **cost_per_mile()** and **cost_per_lane_mile()** correct   |     2      |
+|     **summary()** override includes road-specific info      |     3      |
+|       <div style="text-align: right">**Total**</div>        |   **31**   |
 
 ---
 
