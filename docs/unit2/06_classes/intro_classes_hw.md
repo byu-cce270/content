@@ -88,7 +88,7 @@ In this part, you will create a class called **ConstructionProject** that manage
 
 9. Add a method called **summary()** that prints a formatted project summary. The summary should include:
     - Project name and budget
-    - A list of all materials (use each material's **\_\_str\_\_** method)
+    - A list of all materials (use each material's **print_description** method)
     - Total material cost
     - Labor hours, rate, and total labor cost
     - Total project cost
