@@ -1,6 +1,8 @@
-# Bonus Content: Using Python Locally
+# Reading: Using Python Locally
 
-This semester we have been using Python in a Google Colab environment, which is a cloud-based platform. However, you can also run Python locally on your own machine. This can be useful for various reasons, such as working offline, using specific libraries, referencing your files directly without uploading them, or running larger projects. This document provides a brief overview of how to use Python locally, including installation, running scripts, and using virtual environments. We will also discuss some common IDEs (Integrated Development Environments) that can help you write and run Python code more efficiently.
+---
+
+Last unit we have been using Python in a Google Colab environment, which is a cloud-based platform. However, you can also run Python locally on your own machine. This can be useful for various reasons, such as working offline, using specific libraries, referencing your files directly without uploading them, or running larger projects. This document provides a brief overview of how to use Python locally, including installation, running scripts, and using virtual environments. We will also discuss some common IDEs (Integrated Development Environments) that can help you write and run Python code more efficiently. In class, we will give a live demonstration of how to install Python and run a simple script locally. We will also show you how to use Jupyter Notebook, which is a popular tool for writing and running Python code in an interactive environment.
 
 ## Overview of Installation Methods
 
@@ -404,25 +406,8 @@ your favorite IDE and run it. You may need to install any packages you use in th
 changes to the code to make it compatible with your local environment. For example, some of the code we used to 
 create forms and form elements in the previous exercises will not work in a Python script.
 
-Here is a link to the key to some of in the in-class exercises from earlier this semester. These links only work for 
-the instructor:
+---
 
-(a) Matplotlib Exercise
+# Pre-Class Quiz Challenge
 
-Notebook : <a href="https://colab.research.google.com/github/byu-cce270/instructor/blob/main/keys/unit3/01_matplot/(KEY)_Class_Matplotlib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-CSV files:
-
-* [2024-Construction-Spending.csv](../../unit3/01_matplotlib/2024-Construction-Spending.csv)<br>
-* [2025-Utah-Lake-DO-Concentration.csv](../../unit3/01_matplotlib/Utah-Lake-DO-Concentration.csv)<br>
-* [2022-Weekly-Traffic-Volume.csv](../../unit3/01_matplotlib/2022-Weekly-Traffic-Volume.csv)
-
-(b) Intro to Pandas Exercise
-
-Notebook : <a href="https://colab.research.google.com/github/byu-cce270/instructor/blob/main/(KEY)_Class_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-Excel files
-
-* [signs.xlsx](../../unit3/02_intro_to_pandas/signs.xlsx)<br>
-* [stream_data.xlsx](../../unit3/02_intro_to_pandas/stream_data.xlsx)
-
+For this topic, there is no challenge to complete before class and turn in on the Learning Suite Pre-Class Quiz. As mentioned above, we will give a live demonstration of how to install Python and run a simple script locally. We will have TAs available to help you with any issues you may have with installing Python or running a script locally. If you want to get a head start, you can try installing Python and Jupyter Lab on your local machine before class. If you have any issues or questions, feel free to ask during class or reach out to the TAs for help.

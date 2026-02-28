@@ -96,6 +96,10 @@ nav:
     - Unit 2 Study Guide: unit2/study_guide.md
 
   - Unit 3 - Advanced Python:
+    - Using Python Locally:
+        - Reading: unit3/00_local_python/local_py_read.md
+#        - In Class: unit3/00_local_python/local_py_class.md
+#        - Homework: unit3/00_local_python/local_py_hw.md
     - Numpy:
         - Reading: unit3/00_numpy/numpy_read.md
         - In Class: unit3/00_numpy/numpy_class.md
@@ -126,4 +130,3 @@ nav:
     - Unit 3 Study Guide: unit3/study_guide.md
   - Bonus Content:
     - Gspread: bonus/gspread/gspread_read.md
-    - Using Python Locally: bonus/python_local/local_read.md
