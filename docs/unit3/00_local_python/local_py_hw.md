@@ -1,4 +1,4 @@
-# Reading: Using Python Locally
+# HW: Using Python Locally
 
 ---
 
