@@ -1,5 +1,7 @@
 # Reading: ipywidgets
 
+---
+
 A graphical user interface , or GUI (pronounced “GOOEY”) is the buttons, text boxes, pictures, and stuff that a user of a computer program interacts with. For example, when you start Instagram on your phone, or print a document from Word, or even when you open Learning Suite, you are looking at and interacting with a graphical user interface. Look at this image and consider the various types of interactive components in each of these GUI’s. Here are a couple of examples of GUI’s:
 
 ![Window's GUI](images/windows_gui.png){width=500}
