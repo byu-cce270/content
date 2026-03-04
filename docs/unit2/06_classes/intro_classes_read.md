@@ -17,11 +17,11 @@ Remember that you will have to sign in to your free account that you created ear
 
 ---
 
-### Dunder methods (magic methods) 
+### Dunder methods (magic methods)
 
-Dunder methods (short for "double-underscore" methods, also called magic methods) let you customize how your objects behave with Python's built-in operations.  
+Dunder methods (short for "double-underscore" methods, also called magic methods) let you customize how your objects behave with Python's built-in operations.
 
-The most common dunder method is the \_\_init__ (constructor).  
+The most common dunder method is the \_\_init__ (constructor).
 
 Every class can define an \_\_init__ method (the initializer) which Python calls automatically when you create a new instance. Use \_\_init__(self, ...) to accept parameters and assign attributes on self so each object starts with the right state. If you don't define \_\_init__, Python provides a default initializer that takes no extra arguments.
 
@@ -29,7 +29,7 @@ Every class can define an \_\_init__ method (the initializer) which Python calls
 Two  other common methods are \_\_repr__ (developer-friendly representation), and \_\_str__ (user-friendly string representation).
 
 - \_\_str__ controls what is returned when you call str(obj) or print(obj). It's meant to be readable for end users.
-- \_\_repr__ should return an unambiguous string that, if possible, could be used to recreate the object and is intended for developers/debugging.  
+- \_\_repr__ should return an unambiguous string that, if possible, could be used to recreate the object and is intended for developers/debugging.
 
 For the in-class and the HW, the \_\_str__ method is useful for printing objects in a nice format. We ask you to print out a representation of your objects in the HW, and \_\_str__ is a good way to do that.
 

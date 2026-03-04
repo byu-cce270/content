@@ -8,9 +8,9 @@ Last unit we have been using Python in a Google Colab environment, which is a cl
 
 There are two common ways to locally install Python:
 
-1) Install Python from the official website, then use  pip to manage packages.<br>
-2) Use Anaconda (or miniconda) to install Python and manage packages, as a single step. 
+1) Use Anaconda (or miniconda) to install Python and manage packages, as a single step. 
         With this method, you can use either conda or pip to install and manage packages
+2) Install Python from the official website, then use  pip to manage packages.<br>
 
 Most people will use the first method, but if you are using Anaconda/Miniconda (generally called "conda"), the second method can be easier. With conda, you can install Python and manage packages in a single step and also create virtual environments (explained below). As a bonus, conda keeps all packages in sync while with pip you can update packages that break other packages. 
 
@@ -18,36 +18,8 @@ We generally recommend using conda, as it keeps all the package management and i
 
 For both methods, you will need to interact with the installation using the command line. This is a common practice in programming, where you can use the command line to run commands and scripts. The command line is a powerful tool that allows you to interact with your computer and run commands without using a graphical interface. You can use the command line to run Python scripts, install packages, and manage your Python environment.
 
-## Method 1: Installing Python from the Official Website
 
-When you run Python in Google Colab, you are using a version of Python that is hosted on Google's servers. To run Python locally, you need to install it on your own machine. Here are the steps to do that:
-
-To install Python locally, you need to download the Python installer for your operating system. Follow these steps:
-
-1. Go to the official Python website: [python.org](https://www.python.org/downloads/).<br>
-2. Download the latest version of Python for your operating system (Windows, macOS, or Linux).<br>
-3. Run the installer and follow the instructions. Make sure to check the box that says "Add Python to PATH" during installation.
-
-After installation, you can verify that Python is installed correctly by opening a terminal (Command Prompt on Windows, Terminal on macOS/Linux) and typing the following command:
-
-```bash
-python --version
-```
-This should display the version of Python you installed. If you see an error message, it means Python is not installed correctly or not added to your PATH.
-
-After installing Python, you can use `pin` to easily download and install additional packages. `pip` is a package manager for Python that allows you to install additional libraries and packages. To install a package using `pip`, open your terminal and run the following command:
-
-```bash
-pip install package_name
-```
-
-For example, to install NumPy and Pandas, you can run:
-
-```bash
-pip install numpy pandas
-```
-
-# Method 2: Installing Python with Conda
+# Method 1: Installing Python with Conda
 
 To install Python using conda, you can follow these steps:
 
@@ -88,6 +60,35 @@ conda install numpy pandas
 
 As you can see, it works the same way as `pip`.
 
+## Method 2: Installing Python from the Official Website
+
+When you run Python in Google Colab, you are using a version of Python that is hosted on Google's servers. To run Python locally, you need to install it on your own machine. Here are the steps to do that:
+
+To install Python locally, you need to download the Python installer for your operating system. Follow these steps:
+
+1. Go to the official Python website: [python.org](https://www.python.org/downloads/).<br>
+2. Download the latest version of Python for your operating system (Windows, macOS, or Linux).<br>
+3. Run the installer and follow the instructions. Make sure to check the box that says "Add Python to PATH" during installation.
+
+After installation, you can verify that Python is installed correctly by opening a terminal (Command Prompt on Windows, Terminal on macOS/Linux) and typing the following command:
+
+```bash
+python --version
+```
+This should display the version of Python you installed. If you see an error message, it means Python is not installed correctly or not added to your PATH.
+
+After installing Python, you can use `pin` to easily download and install additional packages. `pip` is a package manager for Python that allows you to install additional libraries and packages. To install a package using `pip`, open your terminal and run the following command:
+
+```bash
+pip install package_name
+```
+
+For example, to install NumPy and Pandas, you can run:
+
+```bash
+pip install numpy pandas
+```
+
 ## Running Python Code Locally
 
 Once you have installed Python and any necessary libraries, you can run Python scripts locally. You can create a Python script using any text editor (e.g., Notepad, Visual Studio Code, PyCharm). Just create a new file with a `.py` extension (e.g., `script.py`) and write your Python code in it. For example:
@@ -108,75 +109,12 @@ python script.py
 
 This will execute the script and display the output in the terminal. In this case, it should print "Hello, World!" to the console.
 
-## Using Virtual Environments
+## Virtual Environments
 
 When working on Python projects, it's a good practice to use virtual environments. A virtual environment is an isolated environment that allows you to manage dependencies for different projects separately. This way, you can avoid conflicts between different versions of libraries. For example, if you have two projects that require different versions of the same library, using virtual environments allows you to keep them separate.
 
-### Creating a Virtual Environment using pip/python
+Many developers create one environment per project so setup changes in one project do not accidentally affect another. This also makes collaboration easier because you can share a clear dependency list and teammates can recreate the same environment. Python makes it easy to share these setups using a special file that lists package names and versions. We will not go into that process in detail because it is beyond the scope of this class. But you can read more about virtual environments in the [Python Virtual Environments Documentation](https://docs.python.org/3/tutorial/venv.html).
 
-To create a virtual environment, navigate to your project directory in the terminal and run the following command:
-
-```bash
-python -m venv myenv
-```
-
-Or with conda
-```bash
-conda create --name myenv
-```
-
-This will create a new directory called `myenv` that contains the virtual environment along with all the files needed to run python. This lets you have different packaged or even python verions installed at the same time.
-
-To activate the virtual environment, run the following command:
-
-- On Windows:
-```bash
-myenv\Scripts\activate
-```
-
-- On macOS/Linux:
-```bash
-source myenv/bin/activate
-```
-
-
-Once activated, your terminal prompt will change to indicate that you are now working within the virtual environment.
-
-When the virtual environment is activated, you can install packages using `pip` or `conda` (see below), and they will only be available within that environment. For example:
-
-```bash
-pip install numpy pandas
-```
-
-
-To deactivate the virtual environment and return to your system's default Python environment, simply run:
-
-```bash
-deactivate
-```
-
-This will return you to your system's default Python environment.
-
-### Creating a Virtual Environment with Conda
-While we gave you the conda commands above, here is some more detail
-
-
-To create a new conda environment, run the following command:
-
-```bash
-conda create --name myenv python=3.9
-```
-
-This will create a new conda environment named `myenv` with Python 3.9 installed. To activate the conda environment, run the following command:
-
-```bash
-conda activate myenv
-```
-
-To deactivate a Conda environment use:
-```bash
-conda deactivate
-```
 
 ## Common IDEs for Python Development
 
@@ -261,6 +199,75 @@ The interface to Jupyter Notebook will open in your web browser, and you can cre
 The interface to Jupyter Notebook looks like this:
 
 ![Jupyter Notebook Interface](https://jupyter-notebook.readthedocs.io/en/latest/_images/notebook-running-code.png)
+
+### Creating a Virtual Environment using pip/python
+
+Python is very flexible and has a large ecosystem of packages, so it is often important to control exactly which package versions a project uses. This is useful for two main reasons: (1) reproducibility, where you may need to rerun an analysis later with the same package versions (for example, for a journal paper), and (2) compatibility, where some package versions can conflict with others. A virtual environment solves this by giving each project its own isolated Python setup, with its own package versions, separate from your other projects. Many developers create one environment per project so setup changes in one project do not accidentally affect another. This also makes collaboration easier because you can share a clear dependency list and teammates can recreate the same environment.
+
+To create a virtual environment, navigate to your project directory in the terminal and run the following command:
+
+```bash
+python -m venv myenv
+```
+
+Or with conda
+```bash
+conda create --name myenv
+```
+
+This will create a new directory called `myenv` that contains the virtual environment along with all the files needed to run python. This lets you have different packaged or even python verions installed at the same time.
+
+To activate the virtual environment, run the following command:
+
+- On Windows:
+```bash
+myenv\Scripts\activate
+```
+
+- On macOS/Linux:
+```bash
+source myenv/bin/activate
+```
+
+
+Once activated, your terminal prompt will change to indicate that you are now working within the virtual environment.
+
+When the virtual environment is activated, you can install packages using `pip` or `conda` (see below), and they will only be available within that environment. For example:
+
+```bash
+pip install numpy pandas
+```
+
+
+To deactivate the virtual environment and return to your system's default Python environment, simply run:
+
+```bash
+deactivate
+```
+
+This will return you to your system's default Python environment.
+
+### Creating a Virtual Environment with Conda
+While we gave you the conda commands above, here is some more detail
+
+
+To create a new conda environment, run the following command:
+
+```bash
+conda create --name myenv python=3.9
+```
+
+This will create a new conda environment named `myenv` with Python 3.9 installed. To activate the conda environment, run the following command:
+
+```bash
+conda activate myenv
+```
+
+To deactivate a Conda environment use:
+```bash
+conda deactivate
+```
+
 
 ## Conclusion
 
