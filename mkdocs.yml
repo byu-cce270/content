@@ -97,7 +97,7 @@ nav:
 
   - Unit 3 - Advanced Python:
     - Using Python Locally:
-        - In Class: unit3/00_local_python/local_py_class.md
+        - Reading And In Class: unit3/00_local_python/local_py_class.md
 #        - Homework: unit3/00_local_python/local_py_hw.md
     - Numpy:
         - Reading: unit3/00_numpy/numpy_read.md
