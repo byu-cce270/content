@@ -202,7 +202,9 @@ The interface to Jupyter Notebook looks like this:
 
 ### Creating a Virtual Environment using pip/python
 
-Python is very flexible and has a large ecosystem of packages, so it is often important to control exactly which package versions a project uses. This is useful for two main reasons: (1) reproducibility, where you may need to rerun an analysis later with the same package versions (for example, for a journal paper), and (2) compatibility, where some package versions can conflict with others. A virtual environment solves this by giving each project its own isolated Python setup, with its own package versions, separate from your other projects. Many developers create one environment per project so setup changes in one project do not accidentally affect another. This also makes collaboration easier because you can share a clear dependency list and teammates can recreate the same environment.
+Python is very flexible and has a large ecosystem of packages, so it is often important to control exactly which package versions a project uses. This is useful for two main reasons: (1) reproducibility, where you may need to rerun an analysis later with the same package versions (for example, for a journal paper), and (2) compatibility, where some package versions can conflict with others. A virtual environment solves this by giving each project its own isolated Python setup, with its own package versions, separate from your other projects. 
+
+Many developers create one environment per project so setup changes in one project do not accidentally affect another. This practice makes collaboration easier because you can share a clear dependency list and teammates can recreate the same environment. In fact, Python makes it easy to share environment setups with other developers by creating a special file (like `requirements.txt` or `environment.yml`) that lists all the packages and their versions needed for a project. However, we won't go into that detail because it is beyond the scope of this class.
 
 To create a virtual environment, navigate to your project directory in the terminal and run the following command:
 
