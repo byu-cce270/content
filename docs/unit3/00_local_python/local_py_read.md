@@ -1,4 +1,4 @@
-# In-Class Exercise: Using Python Locally
+# Reading: Using Python Locally
 
 ---
 
