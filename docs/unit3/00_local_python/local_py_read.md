@@ -2,7 +2,7 @@
 
 ---
 
-Last unit we have been using Python in a Google Colab environment, which is a cloud-based platform. However, you can also run Python locally on your own machine. This can be useful for various reasons, such as working offline, using specific libraries, referencing your files directly without uploading them, or running larger projects. This document provides a brief overview of how to use Python locally, including installation, running scripts, and using virtual environments. We will also discuss some common IDEs (Integrated Development Environments) that can help you write and run Python code more efficiently. In class, we will give a live demonstration of how to install Python and run a simple script locally. We will also show you how to use Jupyter Notebook, which is a popular tool for writing and running Python code in an interactive environment.
+Last unit we have been using Python in a Google Colab environment, which is a cloud-based platform. However, you can also run Python locally on your own machine. This can be useful for various reasons, such as working offline, using specific libraries, referencing your files directly without uploading them, or running larger projects. This document provides a brief overview of how to use Python locally, including installation, running scripts, and managing packages. We will also discuss some common IDEs (Integrated Development Environments) that can help you write and run Python code more efficiently. In class, we will give a live demonstration of how to install Python and run a simple script locally. We will also show you how to use Jupyter Notebook, which is a popular tool for writing and running Python code in an interactive environment.
 
 ## Basic Concepts
 
@@ -12,7 +12,7 @@ Before we get into the details, here is an overview of some basic concepts that 
 
 In Colab, Python is already installed and you can run Python scripts directly from the notebook. Colab also provides most of the packages that you need. When running locally, you need to install Python and the packages you need. 
 
-Once you have installed python, you can run it directly from the terminal. For example, you could use a text editor to write a Python script and save it to a file:
+Once you have installed Python, you can run it directly from the terminal. For example, you could use a text editor to write a Python script and save it to a file:
 
 ![mycode.png](images/mycode.png)
 
@@ -40,13 +40,13 @@ There is another package manager called **conda** that is also used to install p
 
 **Using an IDE**
 
-While you can edit a python script in a text editor, the best and most efficient way to write and run Python code is to use an Integrated Development Environment (IDE). There are a variety of IDEs available, including [Visual Studio Code (VS Code)](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), and [Spyder](https://www.spyder-ide.org/). We recommend that you start with VS Code. It is free and open-source.
+While you can edit a Python script in a text editor, the best and most efficient way to write and run Python code is to use an Integrated Development Environment (IDE). There are a variety of IDEs available, including [Visual Studio Code (VS Code)](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), and [Spyder](https://www.spyder-ide.org/). We recommend that you start with VS Code. It is free and open-source.
 
 When you use an IDE, you can write and run Python code directly from the IDE, and the IDE provides features like code completion, code formatting, etc.
 
-**Using git**
+**Using Git**
 
-There is a website called [GitHub](https://github.com/) that provides a platform for hosting and collaborating on code. You can use GitHub to store your code, share it with others, and collaborate on projects. It is also a great place to explore other python developers' code. You can easily "clone" a repository (a copy of a project) from GitHub to your local machine and start working on it.
+There is a website called [GitHub](https://github.com/) that provides a platform for hosting and collaborating on code. You can use GitHub to store your code, share it with others, and collaborate on projects. It is also a great place to explore other Python developers' code. You can easily "clone" a repository (a copy of a project) from GitHub to your local machine and start working on it.
 
 ## Python Local Development Setup Guide
 
@@ -174,7 +174,7 @@ python hello.py
 
 ## Jupyter Notebook
 
-In addition to VS Code and other IDE's mentioned above, Jupyter Notebook is a popular tool for writing and running Python code in an interactive environment. It allows you to create notebooks that can contain code, text, images, and more. You can use Jupyter Notebook to run Python code locally, similar to how you do it in Google Colab. In most things, Colab and Jupyter Notebook are very similar. In fact you can save your Colab notebooks and use them in Jupyter Notebook. These files have a **.ipynb** extension rather than **.py**. as they have the information for the text cells in addition to the code cells. 
+In addition to VS Code and other IDEs mentioned above, Jupyter Notebook is a popular tool for writing and running Python code in an interactive environment. It allows you to create notebooks that can contain code, text, images, and more. You can use Jupyter Notebook to run Python code locally, similar to how you do it in Google Colab. In most ways, Colab and Jupyter Notebook are very similar. In fact, you can save your Colab notebooks and use them in Jupyter Notebook. These files have a **.ipynb** extension rather than **.py**, as they have the information for the text cells in addition to the code cells.
 
 If you want to use Jupyter locally, you can install it using pip. Open your terminal and run the following command:
 
@@ -199,7 +199,7 @@ This will open Jupyter Lab in your web browser, where you can create new noteboo
 If you want to use (and we encourage you to do so) AI in your Python projects, an IDE makes this much easier. The newer AI coding agents, directly integrated into the IDE or terminal, can do far more than simple code completion — they can help you plan, write, debug, and refactor entire projects. Below are the most popular AI coding tools available today.
 
 **[Claude Code](https://claude.com/product/claude-code)** — Claude Code is a command-line coding agent from 
-Anthropic that runs in your terminal. It is currently the most powerful AI coding tool available. It can understand your entire codebase, create and edit files across your project, run terminal commands, and help you architect solutions from scratch. It works with any IDE since it runs in the terminal. Claude Code is included with the Claude Pro plan ($20/month) and the Claude Max plans (\$100/month or $200/month for higher usage). There is also a free tier with limited usage.
+Anthropic that runs in your terminal. It is currently the most powerful AI coding tool available. It can understand your entire codebase, create and edit files across your project, run terminal commands, and help you architect solutions from scratch. It works with any IDE since it runs in the terminal. Claude Code is included with the Claude Pro plan (\$20/month) and the Claude Max plans (\$100/month or \$200/month for higher usage). There is also a free tier with limited usage.
 
 **[ChatGPT Codex](https://openai.com/codex/)** — Codex is OpenAI's cloud-based coding agent, available through 
 ChatGPT. It can write code, fix bugs, and work through multi-file tasks. Codex is included with ChatGPT Plus 
@@ -237,7 +237,7 @@ We are going to use a solution that someone has already written and posted on Gi
 
 ![vscode_clone2.png](images/vscode_clone2.png)
 
-5. and choose a folder to save the project. VS Code will clone the repo and offer to open 
+5. Choose a folder to save the project. VS Code will clone the repo and offer to open 
    it automatically.
 
 ### Install Dependencies
