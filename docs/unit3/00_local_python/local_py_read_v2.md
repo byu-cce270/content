@@ -16,7 +16,7 @@ Once you have installed python, you can run it directly from the terminal. For e
 
 _mycode.py_
 ```python
-print('Hello World!)
+print('Hello World!')
 ```
 and then run it using the following command:
 
@@ -52,7 +52,7 @@ There is a website called [GitHub](https://github.com/) that provides a platform
 
 ## Python Local Development Setup Guide
 
-Now that we have covered the basics, let's get started. This guide will walk you through installing Python, VS Code, and Git on your laptop. Follow the approprite section for your operating system.
+Now that we have covered the basics, let's get started. This guide will walk you through installing Python, VS Code, and Git on your laptop. Follow the appropriate section for your operating system.
 
 ---
 
@@ -103,7 +103,7 @@ Open **Command Prompt** and use `pip` to install packages:
 ```
 pip install numpy
 pip install pandas matplotlib
-pip install numpy pandas matplotlib scipy  ← install multiple at once
+pip install numpy pandas matplotlib scipy  # install multiple at once
 ```
 
 ---
@@ -118,12 +118,12 @@ pip install numpy pandas matplotlib scipy  ← install multiple at once
 4. Verify it worked — open **Terminal** (search "Terminal" in Spotlight with `Cmd+Space`) and type:
 
 ```
-python3 --version
+python --version
 ```
-   
+
    You should see something like `Python 3.12.0`
 
-> **Why `python3`?** Macs come with an old Python 2 installed. Always use `python3` and `pip3` on Mac.
+> **Note:** On older Macs (pre-2022, before macOS Monterey 12.3), you may need to use `python3` and `pip3` instead of `python` and `pip`. If `python --version` shows an error or Python 2.x, use `python3` instead.
 
 #### 2. Install VS Code
 
@@ -148,12 +148,12 @@ If it's not installed, you'll be prompted to install **Xcode Command Line Tools*
 
 #### 4. Install Packages with pip
 
-Open **Terminal** and use `pip3` to install packages:
+Open **Terminal** and use `pip` to install packages:
 
 ```
-pip3 install numpy
-pip3 install pandas matplotlib
-pip3 install numpy pandas matplotlib scipy  ← install multiple at once
+pip install numpy
+pip install pandas matplotlib
+pip install numpy pandas matplotlib scipy  # install multiple at once
 ```
 ---
 
@@ -170,35 +170,30 @@ print("Hello, world!")
    
 5. Run it by clicking the **▷ Play button** in the top-right corner, or open the Terminal inside VS Code (**Terminal → New Terminal**) and type:
 
-   - Windows: `python hello.py`
-   - Mac: `python3 hello.py`
+   ```
+   python hello.py
+   ```
 
 
 ## Jupyter Notebook
 
 In addition to VS Code and other IDE's mentioned above, Jupyter Notebook is a popular tool for writing and running Python code in an interactive environment. It allows you to create notebooks that can contain code, text, images, and more. You can use Jupyter Notebook to run Python code locally, similar to how you do it in Google Colab. In most things, Colab and Jupyter Notebook are very similar. In fact you can save your Colab notebooks and use them in Jupyter Notebook. These files have a `.ipynb` extension rather than `.py`. as they have the information for the text cells in addition to the code cells. 
 
-If you want to use Jupyter Notebook locally, you can install it using conda or pip. Open your terminal and run the following command:
+If you want to use Jupyter locally, you can install it using pip. Open your terminal and run the following command:
 
 ```bash
 pip install jupyter
 ```
 
-This will install Jupyter Notebook, which allows you to create and run notebooks similar to those in Google Colab. To launch Jupyter Notebook, run the following command in your terminal:
+This installs both Jupyter Notebook and Jupyter Lab. **We recommend using Jupyter Lab**, which has a more modern interface with support for multiple tabs and a file browser — similar to Google Colab. To launch Jupyter Lab, run:
 
 ```bash
-jupyter notebook
+jupyter lab
 ```
-Now jupyter has an environment that is closer to Colab and has some nice features. It is called `jupyter lab`. To start `jupyter lab` use the command:
-```bash
-jupyter lab 
-```
-'jupyter lab' has a more modern interface and additional features, such as support for multiple tabs and file management. It is a more advanced version of Jupyter Notebook, but it is still very beginner-friendly and easy to use. FOr exmample, it includes the file browser tab, just like Colab.
 
+This will open Jupyter Lab in your web browser, where you can create new notebooks or open existing ones. You can write and run Python code in the cells, add text and images, and save your work as a notebook file.
 
-The interface to Jupyter Notebook will open in your web browser, and you can create new notebooks or open existing ones. You can write and run Python code in the cells, add text and images, and save your work as a notebook file.
-
-The interface to Jupyter Notebook looks like this:
+> **Note:** You can also launch the classic Jupyter Notebook interface with `jupyter notebook`, but Jupyter Lab is more feature-rich and beginner-friendly.
 
 ![Jupyter Notebook Interface](https://jupyter-notebook.readthedocs.io/en/latest/_images/notebook-running-code.png)
 
@@ -207,11 +202,11 @@ The interface to Jupyter Notebook looks like this:
 ## AI and Python Development
 If you want to use (and we encourage you to do so) AI in your Python projects, and IDE makes this much easier. The newer AI agents, directly integrated into the IDE, can provide code suggestions and autocompletion as you type. This can help you write code faster and more efficiently. For example, both VS Code and PyCharm have built-in support for GitHub Co-pilot, an AI-powered code completion tool that can provide suggestions and code snippets as you type. You can install the Co-pilot extension from the respective marketplaces in each IDE. This works similarly to the AI feature in Google Colab, providing suggestions and code snippets as you type. Using AI tools in your IDE can enhance your coding experience and help you write better code more quickly. 
 
-These can do more than code completion, you can work with an AI agent to plan or architexture your code, then have it start to create functions, classes, and other elements of your code. You need to clearly understand the problem you are trying tos sovle and the steps to solve it. If you can work with the AI agent to layout the problems, the steps to solve, the things you want to get back, etc. then this is a very powerful tool.
+These can do more than code completion, you can work with an AI agent to plan or architect your code, then have it start to create functions, classes, and other elements of your code. You need to clearly understand the problem you are trying to solve and the steps to solve it. If you can work with the AI agent to layout the problems, the steps to solve, the things you want to get back, etc. then this is a very powerful tool.
 
 ## Conclusion
 
-Using Python locally can provide you with more flexibility and control over your projects. By following the steps outlined in this document, you can install Python, run scripts, and manage dependencies using virtual environments. Additionally, using an IDE can enhance your development experience and make it easier to write and run Python code. Whether you're working on small scripts or larger projects, having Python set up locally can be a valuable skill.
+Using Python locally can provide you with more flexibility and control over your projects. By following the steps outlined in this document, you can install Python, run scripts, and manage packages with pip. Additionally, using an IDE can enhance your development experience and make it easier to write and run Python code. Whether you're working on small scripts or larger projects, having Python set up locally can be a valuable skill.
 
 ## Additional Resources
 
@@ -230,7 +225,7 @@ Using Python locally can provide you with more flexibility and control over your
 
 For a fun hands-on exercise, try the following. The textbook we have used for this class (Python Crash Course), has a number of exercises related to building a game called "Alien Invasion". You can find the exercises in Chapter 12. Try to implement the game locally on your machine using Python and any of the IDEs mentioned above. This will give you a chance to practice your Python skills and get familiar with running Python locally.
 
-Here is how you would do it with PyCharm.
+Here is how you would do it with PyCharm. We recommend VS Code as your primary IDE, but this example uses PyCharm to show that the process is similar across IDEs. You can follow the same general steps in VS Code or any other IDE.
 
 ### Clone the Repository
 
@@ -253,6 +248,14 @@ Follow these steps to clone the repository. This will download the code to your 
 5. and paste the URL you copied earlier.
 
 ![aliens_clone_paste.png](images/aliens_clone_paste.png)
+
+### Install Dependencies
+
+The Alien Invasion game requires the `pygame` package. Install it before running the game:
+
+```bash
+pip install pygame
+```
 
 ### Viewing the Code
 
@@ -290,7 +293,7 @@ Notebook to run Python code locally, similar to how you do it in Google Colab. T
 Notebook called Jupyter Lab, which is a more advanced version of Jupyter Notebook. It has a more modern interface 
 and additional features, such as support for multiple tabs and file management. The examples below are from Jupyter Lab.
 
-Juptyper Lab is similar to Google Colab and in fact they both use the same underlying technology. Both notebooks are 
+Jupyter Lab is similar to Google Colab and in fact they both use the same underlying technology. Both notebooks are 
 saved in the same format, called "notebook format". This means that you can open a Google Colab notebook in Jupyter 
 Lab and vice versa. Notebooks are saved as *.ipynb files, which are JSON files that contain the code, text, and 
 other components of the notebook. So for example, if you have a notebook called "my_notebook.ipynb", you can open it 
@@ -332,7 +335,7 @@ Colab.
 
 One important difference between Jupyter Lab and Google Colab is that you need to install any packages you want to 
 use in Jupyter Lab. In Colab, most of the popular packages are already installed, but in Jupyter Lab, you need to 
-install it them yourself. You can do this using pip or conda, just like you would in a regular Python environment. 
+install them yourself. You can do this using pip or conda, just like you would in a regular Python environment. 
 
 ## Sample Problem 3 - Converting Colab Notebooks to Python Scripts
 
