@@ -4,441 +4,292 @@
 
 Last unit we have been using Python in a Google Colab environment, which is a cloud-based platform. However, you can also run Python locally on your own machine. This can be useful for various reasons, such as working offline, using specific libraries, referencing your files directly without uploading them, or running larger projects. This document provides a brief overview of how to use Python locally, including installation, running scripts, and using virtual environments. We will also discuss some common IDEs (Integrated Development Environments) that can help you write and run Python code more efficiently. In class, we will give a live demonstration of how to install Python and run a simple script locally. We will also show you how to use Jupyter Notebook, which is a popular tool for writing and running Python code in an interactive environment.
 
-## Overview of Installation Methods
+## Basic Concepts
 
-There are two common ways to locally install Python:
+Before we get into the details, here is an overview of some basic concepts that will be useful in this unit.
 
-1) Use Anaconda (or miniconda) to install Python and manage packages, as a single step. 
-        With this method, you can use either conda or pip to install and manage packages
-2) Install Python from the official website, then use  pip to manage packages.<br>
+**Installing and running Python locally**
 
-Most people will use the first method, but if you are using Anaconda/Miniconda (generally called "conda"), the second method can be easier. With conda, you can install Python and manage packages in a single step and also create virtual environments (explained below). As a bonus, conda keeps all packages in sync while with pip you can update packages that break other packages. 
+In Colab, Python is already installed and you can run Python scripts directly from the notebook. Colab also provides most of the packages that you need. When running locally, you need to install Python and the packages you need. 
 
-We generally recommend using conda, as it keeps all the package management and installations steps together. However, most web resources will provide instructions that use the first method, so we will cover both methods here. However, if you use the first method to install Python, you CANNOT  use conda as a package manager. You have to use pip.
+Once you have installed python, you can run it directly from the terminal. For example, you could use a text editor to write a Python script and save it to a file:
 
-For both methods, you will need to interact with the installation using the command line. This is a common practice in programming, where you can use the command line to run commands and scripts. The command line is a powerful tool that allows you to interact with your computer and run commands without using a graphical interface. You can use the command line to run Python scripts, install packages, and manage your Python environment.
+![mycode.png](images/mycode.png)
 
-
-## Method 1: Installing Python with Conda
-
-To install Python using conda, you can follow these steps:
-
-1) Go to the Anaconda download page: [Anaconda](https://www.anaconda.com/products/distribution). <br>
-2) Download the installer for your operating system (Windows, macOS, or Linux). <br>
-3) Run the installer and follow the instructions. <br>
-4) Open a terminal and verify the installation by running: <br>
-
-```bash 
-conda --version
-``` 
-
-The full Anaconda distribution includes Python and many popular libraries, as well as the conda package manager. You can also use Miniconda, which is a lightweight version of Anaconda that includes only the conda package manager and Python. You can install Miniconda by following the same steps as above, but downloading the Miniconda installer instead of the Anaconda installer.
-
-The full Anaconda installation includes a graphical manager called Anaconda Navigator, which allows you to manage packages and environments using a graphical interface. You can also use the command line interface to manage packages and environments.
-
-!!!Hint
-    The graphical package manager seems to break often. It is better to just use the command line (i.e., terminal). DO NOT use the Anaconda Navigator - it will just cause problems
-
-!!!Note
-    Again -- We recommend you DO NOT use the Anaconda Navigator, as it is not as powerful as the command line interface and as noted above, things break often. The command line interface is more flexible and allows you to use all of the features of conda. However, if you prefer a graphical interface, you can use Anaconda Navigator.
-
-!!!Note
-    If you install python using `conda` you can use either `conda` or `pip` to manage your packages. If you use `pip` then `conda` won't be aware of those packages. They will work, but they won't be updated when you do a `conda update --all` command. This means you loose the value of having conda look for conflicts among packages. However, sometimes you have to use `pip` to install packages that are not available in the conda repositories. In that case, you can use `pip` to install those packages, but you should be aware that they won't be managed by conda. Below we talk about vitrual environments, these are the best way to manage packages that might have conflicts.
-
-
-To install packages on a command line using conda, you can use the following command:
+and then run it using the following command:
 
 ```bash
-conda install package_name
+python mycode.py
 ```
+and the output would be:
+
+```bash
+Hello World!
+```
+
+**Installing packages**
+
+After you have installed Python, you can install additional packages using **pip**. **pip** is a package manager for Python that allows you to install additional libraries and packages.
 
 For example, to install NumPy and Pandas, you can run:
 
 ```bash
-conda install numpy pandas
+pip install numpy pandas
 ```
+There is another package manager called **conda** that is also used to install packages. It works similarly to **pip**, but it is more powerful and can install packages from multiple sources. To get started and to keep things simple for now, we will use **pip** for installing packages.
 
-To update conda packages, you can run:
-```bash
-conda update --all
+**Using an IDE**
+
+While you can edit a python script in a text editor, the best and most efficient way to write and run Python code is to use an Integrated Development Environment (IDE). There are a variety of IDEs available, including [Visual Studio Code (VS Code)](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), and [Spyder](https://www.spyder-ide.org/). We recommend that you start with VS Code. It is free and open-source.
+
+When you use an IDE, you can write and run Python code directly from the IDE, and the IDE provides features like code completion, code formatting, etc.
+
+**Using git**
+
+There is a website called [GitHub](https://github.com/) that provides a platform for hosting and collaborating on code. You can use GitHub to store your code, share it with others, and collaborate on projects. It is also a great place to explore other python developers' code. You can easily "clone" a repository (a copy of a project) from GitHub to your local machine and start working on it.
+
+## Python Local Development Setup Guide
+
+Now that we have covered the basics, let's get started. This guide will walk you through installing Python, VS Code, and Git on your laptop. Follow the appropriate section for your operating system.
+
+---
+
+### 🪟 Windows
+
+#### 1. Install Python
+
+1. Go to [python.org/downloads](https://www.python.org/downloads/)
+2. Click **Download Python 3.x.x** (the big yellow button)
+3. Run the installer
+4. ⚠️ **Important:** Check the box that says **"Add Python to PATH"** before clicking Install
+5. Click **Install Now**
+6. Verify it worked — open **Command Prompt** (search "cmd" in the Start menu) and type:
+
 ```
-or for specific packages such as numpy
-```bash
-conda update numpy
-```
-
-The commans for  `pip` are similar.
-
-## Method 2: Installing Python from the Official Website
-
-To install Python locally from the "official website", you need to download the Python installer for your operating system. Follow these steps:
-
-1. Go to the official Python website: [python.org](https://www.python.org/downloads/).<br>
-2. Download the latest version of Python for your operating system (Windows, macOS, or Linux).<br>
-3. Run the installer and follow the instructions. Make sure to check the box that says "Add Python to PATH" during installation.
-
-After installation, you can verify that Python is installed correctly by opening a terminal (Command Prompt on Windows, Terminal on macOS/Linux) and typing the following command:
-
-```bash
 python --version
 ```
-This should display the version of Python you installed. If you see an error message, it means Python is not installed correctly or not added to your PATH.
 
-After installing Python, you can use `pin` to easily download and install additional packages. `pip` is a package manager for Python that allows you to install additional libraries and packages. To install a package using `pip`, open your terminal and run the following command:
+You should see something like **Python 3.12.0**
 
-```bash
-pip install package_name
+#### 2. Install VS Code
+
+1. Go to [code.visualstudio.com](https://code.visualstudio.com/)
+2. Click **Download for Windows**
+3. Run the installer — the defaults are fine
+4. When prompted, check **"Add to PATH"** and **"Open with Code"** options
+5. Open VS Code and install the **Python extension**:
+
+   - Click the Extensions icon on the left sidebar (or press **Ctrl+Shift+X**)
+   - Search for **Python** (by Microsoft)
+   - Click **Install**
+
+#### 3. Install Git
+
+1. Go to [git-scm.com/download/win](https://git-scm.com/download/win)
+2. Download and run the installer
+3. All default options are fine — just keep clicking **Next**
+4. Verify it worked — open Command Prompt and type:
+
+```
+git --version
 ```
 
-For example, to install NumPy and Pandas, you can run:
+#### 4. Install Packages with pip
 
-```bash
-pip install numpy pandas
+Open **Command Prompt** and use **pip** to install packages:
+
+```
+pip install numpy
+pip install pandas matplotlib
+pip install numpy pandas matplotlib scipy  # install multiple at once
 ```
 
-## Running Python Code Locally
+---
 
-Once you have installed Python and any necessary libraries using either Conda or the Python website, you can run Python scripts locally and use Integrated Development Environmetns (IDE) which are like word processors for coding. 
+### 🍎 Mac
 
-You can create a Python script using any text editor (e.g., Notepad or Notepad++ which is better) or an IDE (e.g., Visual Studio Code, PyCharm, or Spyder). With notepad (or other editor), you  create a new text file and change the extension from .txt to  `.py` extension (e.g., `script.py`) and write your Python code in it. For Windows useers, you need to turn on "view extensions" in the file explorer.
+#### 1. Install Python
 
-For example you can create a new text file called `script.py` and write the following code (you don't need the line with the comment - that is just bookmarks for you:
+1. Go to [python.org/downloads](https://www.python.org/downloads/)
+2. Click **Download Python 3.x.x** (the big yellow button)
+3. Open the downloaded **.pkg** file and follow the installer steps
+4. Verify it worked — open **Terminal** (search "Terminal" in Spotlight with **Cmd+Space**) and type:
+
+```
+python --version
+```
+
+   You should see something like **Python 3.12.0**
+
+> **Note:** On older Macs (pre-2022, before macOS Monterey 12.3), you may need to use **python3** and **pip3** instead of **python** and **pip**. If **python --version** shows an error or Python 2.x, use **python3** instead.
+
+#### 2. Install VS Code
+
+1. Go to [code.visualstudio.com](https://code.visualstudio.com/)
+2. Click **Download for Mac**
+3. Open the downloaded **.zip**, then drag **Visual Studio Code** to your **Applications** folder
+4. Open VS Code, then install the **Python extension**:
+
+   - Click the Extensions icon on the left sidebar (or press **Cmd+Shift+X**)
+   - Search for **Python** (by Microsoft)
+   - Click **Install**
+
+#### 3. Install Git
+
+Git may already be installed on your Mac. Check by opening Terminal and typing:
+
+```
+git --version
+```
+
+If it's not installed, you'll be prompted to install **Xcode Command Line Tools** — just click **Install** and follow the steps. That will install Git automatically.
+
+#### 4. Install Packages with pip
+
+Open **Terminal** and use **pip** to install packages:
+
+```
+pip install numpy
+pip install pandas matplotlib
+pip install numpy pandas matplotlib scipy  # install multiple at once
+```
+---
+
+### 🚀 Running Your First Script in VS Code
+
+1. Open VS Code
+2. Go to **File → Open Folder** and open a folder for your project
+3. Create a new file: **File → New File**, name it **hello.py**
+4. Type some code:
 
 ```python
-# script.py
-print("Hello, World!")
+print("Hello, world!")
 ```
-The first line of the script is a comment, which is ignored by Python.
-The second line of the script is a Python statement that prints the string "Hello, World!" to the console when it is executed.
+   
+5. Run it by clicking the **▷ Play button** in the top-right corner, or open the Terminal inside VS Code (**Terminal → New Terminal**) and type:
 
-!!!Note
-    Windows by default hides the file extention, so your file may be called `script.py.txt` which won't work. You need to turn off the "Hide Extensions" and make sure the fine is both a text file and has a .py extension
-
-To run the script, open your terminal, navigate to the directory where the script is located, and run the following command:
-
-```bash
-python script.py
+```
+python hello.py
 ```
 
-The script is executed line by line from the top to the bottom. When you type `python script.y` it looks inside the `.py` file and executes the commands (or script). Since this script contains a `print` command, it displays the output in the terminal. 
+## Jupyter Notebook
 
-In this case, it will print "Hello, World!" to the console if you have installed everything correctly.
+In addition to VS Code and other IDE's mentioned above, Jupyter Notebook is a popular tool for writing and running Python code in an interactive environment. It allows you to create notebooks that can contain code, text, images, and more. You can use Jupyter Notebook to run Python code locally, similar to how you do it in Google Colab. In most things, Colab and Jupyter Notebook are very similar. In fact you can save your Colab notebooks and use them in Jupyter Notebook. These files have a **.ipynb** extension rather than **.py**. as they have the information for the text cells in addition to the code cells. 
 
-
-A text file can contain hundreds (or thousands) of lines of code.
-
-
-## Virtual Environments
-
-When working on Python projects, it's a good practice to use virtual environments. A virtual environment is an isolated environment that allows you to manage dependencies for different projects separately. This way, you can avoid conflicts between different versions of libraries. For example, if you have two projects that require different versions of the same library, using virtual environments allows you to keep them separate.
-
-Many developers create one environment per project so setup changes in one project do not accidentally affect another. This also makes collaboration easier because you can share a clear dependency list and teammates can recreate the same environment. Python makes it easy to share these setups using a special file that lists package names and versions. We will not go into that process in detail because it is beyond the scope of this class. But you can read more about virtual environments in the [Python Virtual Environments Documentation](https://docs.python.org/3/tutorial/venv.html).
-
-## Creating a Virtual Environment using pip/python
-
-Python is very flexible and has a large ecosystem of packages, so it is often important to control exactly which package versions a project uses. This is useful for two main reasons: (1) reproducibility, where you may need to rerun an analysis later with the same package versions (for example, for a journal paper), and (2) compatibility, where some package versions can conflict with others. A virtual environment solves this by giving each project its own isolated Python setup, with its own package versions, separate from your other projects. 
-
-Many developers create one environment per project so setup changes in one project do not accidentally affect another. This practice makes collaboration easier because you can share a clear dependency list and teammates can recreate the same environment. In fact, Python makes it easy to share environment setups with other developers by creating a special file (like `requirements.txt` or `environment.yml`) that lists all the packages and their versions needed for a project. However, we won't go into that detail because it is beyond the scope of this class.
-
-To create a virtual environment, navigate to your project directory in the terminal and run the following command:
-
-```bash
-python -m venv myenv
-```
-
-Or with conda
-```bash
-conda create --name myenv
-```
-
-This will create a new directory called `myenv` that contains the virtual environment along with all the files needed to run python. This lets you have different packaged or even python verions installed at the same time.
-
-To activate the virtual environment, run the following command:
-
-- On Windows:
-```bash
-myenv\Scripts\activate
-```
-
-- On macOS/Linux:
-```bash
-source myenv/bin/activate
-```
-
-
-Once activated, your terminal prompt will change to indicate that you are now working within the virtual environment.
-
-When the virtual environment is activated, you can install packages using `pip` or `conda` (see below), and they will only be available within that environment. For example:
-
-```bash
-pip install numpy pandas
-```
-
-
-To deactivate the virtual environment and return to your system's default Python environment, simply run:
-
-```bash
-deactivate
-```
-
-This will return you to your system's default Python environment.
-
-### Creating a Virtual Environment with Conda
-While we gave you the conda commands above, here is some more detail
-
-
-To create a new conda environment, run the following command:
-
-```bash
-conda create --name myenv python=3.9
-```
-
-This will create a new conda environment named `myenv` with Python 3.9 installed. To activate the conda environment, run the following command:
-
-```bash
-conda activate myenv
-```
-
-To deactivate a Conda environment use:
-```bash
-conda deactivate  
-```
-
-
-## Common IDEs for Python Development
-
-There are several IDEs (Integrated Development Environments) that can help you write and run Python code more efficiently. An IDE provides features like code completion, debugging, and project management, making it easier to develop Python applications. The highlight code (like in Colab but better), provide tools to help you write and run Python code, tools to debug your code, and toosles to help organize and manage large projects. For example, your project might include several files, some containing functions you wrote and others containing data. The IDE can help you manage all these files and keep track of how they are related.
-
-Depending on your needs and preferences, you can choose from a variety of IDEs. Below are some popular options. We will go throught each of these in-class and talk about the strenths and weaknesses of each one. :
-
-### Visual Studio Code (VS Code)
-
-Visual Studio Code is a lightweight and powerful code editor that supports Python development. It has a rich ecosystem of extensions, including support for Jupyter Notebooks, debugging, and version control. You can install the Python extension for VS Code to enhance your Python development experience.
-
-Link: [Visual Studio Code](https://code.visualstudio.com/){target="_blank"}
-
-To install the Python extension, open VS Code, go to the Extensions view (Ctrl+Shift+X), and search for "Python". Install the extension provided by Microsoft. Once installed, you can create and run Python scripts directly within VS Code. It also has a built-in terminal, allowing you to run Python scripts and commands without leaving the editor.
-
-VS Code also natively supports Co-pilot, an AI-powered code completion tool that can help you write code faster and more efficiently. You can install the Co-pilot extension from the Extensions view in VS Code. This works similarly to the AI feature in Google Colab, providing suggestions and code snippets as you type.
-
-VS Code is free and open-source and it is available for Windows, macOS, and Linux. 
-
-The VS Code user interface looks like this:
-
-![VS Code Interface](https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png)
-
-### PyCharm
-
-PyCharm is a popular IDE specifically designed for Python development. It offers a wide range of features, including code completion, debugging, and version control integration. PyCharm has both a free Community edition and a paid Professional edition with additional features.
-
-Link: [PyCharm](https://www.jetbrains.com/pycharm/){target="_blank"}
-
-Unlike VS Code, PyCharm is not free. However, students can get a free license by showing their ID card for validation.
-
-To install PyCharm, go to the official website and download the version that suits your operating system. Once installed, you can create a new project and start writing Python code. PyCharm also supports virtual environments, allowing you to manage dependencies for different projects easily. PyCharm has a built-in terminal, so you can run Python scripts and commands without leaving the IDE. It also includes a powerful debugger that allows you to step through your code and inspect variables.PyCharm is available for Windows, macOS, and Linux.
-
-PyCharm also has a built-in feature called "Code Intelligence," which provides code suggestions and autocompletion as you type. It also supports the use of GitHub Co-pilot, an AI-powered code completion tool that can help you write code faster and more efficiently. You can install the Co-pilot extension from the PyCharm marketplace. This works similarly to the AI feature in Google Colab, providing suggestions and code snippets as you type.
-
-The PyCharm user interface looks like this:
-
-![PyCharm Interface](https://resources.jetbrains.com/help/img/idea/2024.3/py_new_ui_light_theme.png){target="_blank"}
-
-### Spyder
-
-Spyder is an open-source IDE specifically designed for scientific programming in Python. It includes features like an interactive console, variable explorer, and integrated debugging tools. Spyder is part of the Anaconda distribution but can also be installed separately.
-
-Link: [Spyder](https://docs.spyder-ide.org/current/){target="_blank"}
-
-You can install Spyder using `conda` as follows:
-
-```bash 
-conda install spyder
-```
-
-Once installed, you can launch Spyder by running `spyder` in the terminal. Spyder is particularly useful for data analysis and scientific computing, as it provides a MATLAB-like interface with support for inline plotting and data visualization.
-
-The Spyder user interface looks like this:
-
-![Spyder Interface](https://raw.githubusercontent.com/spyder-ide/spyder/5.x/img_src/screenshot.png)
-
-### Jupyter Notebook
-
-Jupyter Notebook is a popular tool for writing and running Python code in an interactive environment. It allows you to create notebooks that can contain code, text, images, and more. You can use Jupyter Notebook to run Python code locally, similar to how you do it in Google Colab. In most things, COlab and Jupyter Notebook are very similar. In fact you can save your Colab notebooks and use them in Jupyter Notebook. These files have a `.ipynb` extension rather than `.py`. as they have the information for the text cells in addition to the code cells. 
-
-If you want to use Jupyter Notebook locally, you can install it using conda or pip. Open your terminal and run the following command:
+If you want to use Jupyter locally, you can install it using pip. Open your terminal and run the following command:
 
 ```bash
 pip install jupyter
 ```
 
-Or you can install it using conda:
-
-```bash
-conda install jupyter
-```
-
-This will install Jupyter Notebook, which allows you to create and run notebooks similar to those in Google Colab. To launch Jupyter Notebook, run the following command in your terminal:
-
-```bash
-jupyter notebook
-```
-Now jupyter has an environment that is closer to Colab and has some nice features. It is called `jupyter lab`. To start `jupyter lab` use the command:
-```bash
-jupyter lab 
-```
-'jupyter lab' has a more modern interface and additional features, such as support for multiple tabs and file management. It is a more advanced version of Jupyter Notebook, but it is still very beginner-friendly and easy to use. FOr exmample, it includes the file browser tab, just like Colab.
-
-
-The interface to Jupyter Notebook will open in your web browser, and you can create new notebooks or open existing ones. You can write and run Python code in the cells, add text and images, and save your work as a notebook file.
-
-The interface to Jupyter Notebook looks like this:
-
-![Jupyter Notebook Interface](https://jupyter-notebook.readthedocs.io/en/latest/_images/notebook-running-code.png)
-
-
-
-## IDE Comparison
-
-If you are brand new to programming, any of these tools can work for simple assignments. The best choice depends on what you are doing most often: writing `.py` scripts, working in notebooks, or wanting extra help from the editor. For most beginners, VS Code is a good starting point because it is free, flexible, and works well for many class tasks. If you mostly work in notebook-style workflows, Jupyter is often the easiest place to start.
-
-| IDE | Best for beginners | Ease of setup | Main strengths | Possible drawbacks |
-| --- | --- | --- | --- | --- |
-| VS Code | General Python work (`.py` files, small projects) | Easy | Free, popular, lots of extensions, good balance of power and simplicity | Needs a few extensions to feel complete |
-| PyCharm | Students who want strong coding help and debugging | Medium | Excellent autocomplete, project tools, and debugger | Can feel heavy/complex for first-time users |
-| Spyder | Scientific/data-focused scripting | Easy (especially with Anaconda) | Simple layout, variable explorer, MATLAB-like workflow | Less flexible for large software projects |
-| Jupyter Notebook/Lab | Notebook-style work, quick experiments, class demos | Easy | Very beginner-friendly for step-by-step code + notes + plots | Not ideal for organizing larger multi-file programs |
-
-For this class, a simple rule is: use Jupyter for notebook activities and use VS Code (or PyCharm) for regular Python scripts.
-
-## AI and Python Development
-If you want to use (and we encourage you to do so) AI in your Python projects, and IDE makes this much easier. The newer AI agents, directly integrated into the IDE, can provide code suggestions and autocompletion as you type. This can help you write code faster and more efficiently. For example, both VS Code and PyCharm have built-in support for GitHub Co-pilot, an AI-powered code completion tool that can provide suggestions and code snippets as you type. You can install the Co-pilot extension from the respective marketplaces in each IDE. This works similarly to the AI feature in Google Colab, providing suggestions and code snippets as you type. Using AI tools in your IDE can enhance your coding experience and help you write better code more quickly. 
-
-These can do more than code completion, you can work with an AI agent to plan or architexture your code, then have it start to create functions, classes, and other elements of your code. You need to clearly understand the problem you are trying tos sovle and the steps to solve it. If you can work with the AI agent to layout the problems, the steps to solve, the things you want to get back, etc. then this is a very powerful tool.
-
-## Conclusion
-
-Using Python locally can provide you with more flexibility and control over your projects. By following the steps outlined in this document, you can install Python, run scripts, and manage dependencies using virtual environments. Additionally, using an IDE can enhance your development experience and make it easier to write and run Python code. Whether you're working on small scripts or larger projects, having Python set up locally can be a valuable skill.
-
-## Additional Resources
-
-- [Python Official Documentation](https://docs.python.org/3/)
-- [Python Package Index (PyPI)](https://pypi.org/)
-- [Jupyter Notebook Documentation](https://jupyter-notebook.readthedocs.io/en/stable/)
-- [Anaconda Documentation](https://docs.anaconda.com/)
-- [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
-- [PyCharm Documentation](https://www.jetbrains.com/pycharm/documentation/)
-- [Spyder Documentation](https://docs.spyder-ide.org/current/)
-- [Python Virtual Environments Documentation](https://docs.python.org/3/tutorial/venv.html)
-- [Python pip Documentation](https://pip.pypa.io/en/stable/)
-- [Python Installation Guide](https://realpython.com/installing-python/)
-
-## Sample Problem 1 - Alien Invasion
-
-For a fun hands-on exercise, try the following. The textbook we have used for this class (Python Crash Course), has a number of exercises related to building a game called "Alien Invasion". You can find the exercises in Chapter 12. Try to implement the game locally on your machine using Python and any of the IDEs mentioned above. This will give you a chance to practice your Python skills and get familiar with running Python locally.
-
-Here is how you would do it with PyCharm.
-
-### Clone the Repository
-
-We are going to cheat and use a solution that someone has already written. This is a common practice in programming, where you can use existing code as a reference or starting point for your own projects. You can find the solution to the Alien Invasion game on GitHub. GitHub is a public code repository hosting service that allows developers to share and collaborate on code. The solution is available in a public repository, which means you can access it for free. You can use this code as a reference or starting point for your own projects.
-
-Follow these steps to clone the repository. This will download the code to your local machine, allowing you to run and modify it as needed. You will need to have Git installed on your machine. This method only works if you have a utility called Git installed. If you don't have Git installed, you can download it from [git-scm.com](https://git-scm.com/).
-
-1. Browse to the repo here: [https://github.com/bryanmacgo/Alien-Invasion](https://github.com/bryanmacgo/Alien-Invasion)
-
-2. Click on the green "Code" button and copy the URL.
-
-![aliens_clone_repo.png](images/aliens_clone_repo.png)
-
-3. Launch PyCharm and create a new project.
-
-4. In the "New Project" dialog, select "Clone Repository":
-
-![aliens_clone_project.png](images/aliens_clone_project.png)
-
-5. and paste the URL you copied earlier.
-
-![aliens_clone_paste.png](images/aliens_clone_paste.png)
-
-### Viewing the Code
-
-Once the repository is cloned, you can view the code in PyCharm. The project structure will look like this:
-
-![aliens_pycharm.png](images/aliens_pycharm.png)
-
-The files you just cloned are in the "alien_invasion" folder. You can open any of the Python files to view the code. 
-For example, you can open "alien_invasion.py" file to see the main code that is launched. The other files contain the game logic, settings, and other components of the game. 
-
-### Running the Game
-
-To run the gamescript, you can right-click on "alien_invasion.py" and select "Run 'alien_invasion'". This will execute the script and launch the game in a new window.
-
-You can also open the console window and run the script from there. To do this, click on the "Terminal" icon at the 
-bottom left of PyCharm and type:
-
-```bash
-python alien_invasion.py
-```
-
-In the terminal bash line as follows:
-
-![aliens_console.png](images/aliens_console.png)
-
-You will then see the game launch in a new window:
-
-![aliens_game.png](images/aliens_game.png){width=800}
-
-## Sample Problem 2 - Jupyter Notebook
-
-As mentioned above, Jupyter Notebook is a popular tool for writing and running Python code in an interactive 
-environment. It allows you to create notebooks that can contain code, text, images, and more. You can use Jupyter 
-Notebook to run Python code locally, similar to how you do it in Google Colab. There is a version of Jupyter 
-Notebook called Jupyter Lab, which is a more advanced version of Jupyter Notebook. It has a more modern interface 
-and additional features, such as support for multiple tabs and file management. The examples below are from Jupyter Lab.
-
-Juptyper Lab is similar to Google Colab and in fact they both use the same underlying technology. Both notebooks are 
-saved in the same format, called "notebook format". This means that you can open a Google Colab notebook in Jupyter 
-Lab and vice versa. Notebooks are saved as *.ipynb files, which are JSON files that contain the code, text, and 
-other components of the notebook. So for example, if you have a notebook called "my_notebook.ipynb", you can open it 
-in Jupyter Lab and run the code cells just like you would in Google Colab. Imagine that you have a notebook that 
-reads and writes a lot of files. With Colab, you have to upload the files to the Colab file space and then download 
-any files you create. If you are running the notebook locally, you can read and write files directly to your local file system.
-
-### Python Crash Course Notebooks
-
-If you want to experiment with Jupyter, here is a public repo that has a copy of all of the notebooks from the 
-Python Crash Course book. You can clone the repo and run the notebooks locally. The repo is available here:
-
-[https://github.com/khiner/notebooks/tree/master/python_crash_course](https://github.com/khiner/notebooks/tree/master/python_crash_course)
-
-To download one of the files, click on the notebook name and it will open in a Preview tab. Then click on the 
-Download icon in the upper right corner of the page. This will download the notebook to your local machine. You can then open it in Jupyter Lab
-
-You may also want to try downloading some of your own notebooks from this class and running them locally with 
-Jupyter Lab. The examples below in Sample Problem 3 can also be downloaded and run locally.
-
-### Running Jupyter Lab
-
-Then, after installing Jupyter Lab, you can run the following command in your terminal to launch Jupyter Lab:
+This installs both Jupyter Notebook and Jupyter Lab. **We recommend using Jupyter Lab**, which has a more modern interface with support for multiple tabs and a file browser — similar to Google Colab. To launch Jupyter Lab, run:
 
 ```bash
 jupyter lab
 ```
 
-This will open Jupyter Lab in your web browser. You can create a new notebook by clicking on the "Python 3" icon in 
-the "Launcher" tab. This will create a new notebook with a code cell where you can write and run Python code. You 
-can also path to where you downloaded the notebook and open it from there. Here is one of the notebooks from the repo:
+This will open Jupyter Lab in your web browser, where you can create new notebooks or open existing ones. You can write and run Python code in the cells, add text and images, and save your work as a notebook file.
 
-![jupyter2.png](images/jupyter2.png)
+> **Note:** You can also launch the classic Jupyter Notebook interface with **jupyter notebook**, but Jupyter Lab is more feature-rich and beginner-friendly.
 
-You can run the code cells by clicking on the "Run" button in the toolbar or by pressing Shift + Enter, just like in 
-Colab. 
+![jupyter3.png](images/jupyter3.png){width=1200}
 
-### Installing Packages
+## AI and Python Development
 
-One important difference between Jupyter Lab and Google Colab is that you need to install any packages you want to 
-use in Jupyter Lab. In Colab, most of the popular packages are already installed, but in Jupyter Lab, you need to 
-install it them yourself. You can do this using pip or conda, just like you would in a regular Python environment. 
+If you want to use (and we encourage you to do so) AI in your Python projects, an IDE makes this much easier. The newer AI coding agents, directly integrated into the IDE or terminal, can do far more than simple code completion — they can help you plan, write, debug, and refactor entire projects. Below are the most popular AI coding tools available today.
+
+**[Claude Code](https://claude.com/product/claude-code)** — Claude Code is a command-line coding agent from 
+Anthropic that runs in your terminal. It is currently the most powerful AI coding tool available. It can understand your entire codebase, create and edit files across your project, run terminal commands, and help you architect solutions from scratch. It works with any IDE since it runs in the terminal. Claude Code is included with the Claude Pro plan ($20/month) and the Claude Max plans (\$100/month or $200/month for higher usage). There is also a free tier with limited usage.
+
+**[ChatGPT Codex](https://openai.com/codex/)** — Codex is OpenAI's cloud-based coding agent, available through 
+ChatGPT. It can write code, fix bugs, and work through multi-file tasks. Codex is included with ChatGPT Plus 
+(\$20/month) and ChatGPT Pro (\$200/month). There is also a free tier with limited access.
+
+**[GitHub Copilot](https://github.com/features/copilot)** — Copilot is an AI coding assistant that integrates 
+directly into VS Code, PyCharm, and other IDEs. It provides inline code suggestions and autocompletion as you type, 
+similar to the AI feature in Google Colab. Copilot has a free tier with limited completions, a Pro plan (\$10/month), and a Pro+ plan (\$39/month).
+
+All of these tools can do more than code completion. You can work with an AI agent to plan and architect your code, then have it create functions, classes, and other elements of your project. To get the most out of these tools, you need to clearly understand the problem you are trying to solve and the steps to solve it. If you can describe the problem, the steps, and the expected output clearly, AI coding agents become extremely powerful.
+
+## Conclusion
+
+Using Python locally can provide you with more flexibility and control over your projects. By following the steps outlined in this document, you can install Python, run scripts, and manage packages with pip. Additionally, using an IDE can enhance your development experience and make it easier to write and run Python code. Whether you're working on small scripts or larger projects, having Python set up locally can be a valuable skill.
+
+## Sample Problem 1 - Alien Invasion
+
+For a fun hands-on exercise, try the following. The textbook we have used for this class (Python Crash Course) has a number of exercises related to building a game called "Alien Invasion". You can find the exercises in Chapter 12. Try to implement the game locally on your machine using Python and VS Code. This will give you a chance to practice your Python skills and get familiar with running Python locally.
+
+### Clone the Repository
+
+We are going to use a solution that someone has already written and posted on GitHub. This is a common practice in programming — you can use existing code as a reference or starting point for your own projects. Since we already installed Git above, we can use it to clone (download) the repository to our local machine. Follow these steps:
+
+1. Browse to the repo here: [https://github.com/bryanmacgo/Alien-Invasion](https://github.com/bryanmacgo/Alien-Invasion)
+
+2. Click on the green **Code** button and copy the URL.
+
+    ![aliens_clone_repo.png](images/aliens_clone_repo.png)
+
+3. Open VS Code. On the Welcome tab, click **Clone Git Repository**. 
+
+![vscode_clone.png](images/vscode_clone.png)
+
+4. Paste the URL you copied here:
+
+![vscode_clone2.png](images/vscode_clone2.png)
+
+5. and choose a folder to save the project. VS Code will clone the repo and offer to open 
+   it automatically.
+
+### Install Dependencies
+
+The Alien Invasion game requires the **pygame** package. Open the terminal in VS Code (**Terminal → New Terminal**) and install it:
+
+```bash
+pip install pygame
+```
+
+### Viewing the Code
+
+Once the repository is cloned and opened in VS Code, you will see the project files in the Explorer panel on the left side. The project structure will look something like this:
+
+![vscode_main.png](images/vscode_main.png)
+
+The files you just cloned are in the "alien_invasion" folder. You can click on any of the Python files to view the code. For example, click on "alien_invasion.py" to see the main code that launches the game. The other files contain the game logic, settings, and other components.
+
+### Running the Game
+
+To run the game, open the terminal in VS Code (**Terminal → New Terminal** or click on the icon as shown above) and 
+type:
+
+```bash
+python alien_invasion.py
+```
+
+You will then see the game launch in a new window:
+
+![aliens_game.png](images/aliens_game.png){width=800}
+
+## Sample Problem 2 - Running Notebooks in Jupyter Lab
+
+Now let's try running an existing notebook in Jupyter Lab. Here is a public repo with notebooks from the Python Crash Course book:
+
+[https://github.com/khiner/notebooks/tree/master/python_crash_course](https://github.com/khiner/notebooks/tree/master/python_crash_course)
+
+1. To download a notebook, click on its name to open a Preview tab, then click the **Download** icon in the upper right corner.
+
+2. Launch Jupyter Lab from your terminal:
+
+```bash
+jupyter lab
+```
+
+3. In Jupyter Lab, navigate to where you downloaded the notebook and open it. Here is one of the notebooks from the repo:
+
+    ![jupyter2.png](images/jupyter2.png)
+
+4. Run the code cells by clicking the **Run** button in the toolbar or by pressing **Shift + Enter**, just like in Colab.
+
+You may also want to try downloading some of your own notebooks from this class and running them locally. Remember that unlike Colab, you need to install any packages yourself using **pip** before they can be used in Jupyter Lab.
 
 ## Sample Problem 3 - Converting Colab Notebooks to Python Scripts
 
