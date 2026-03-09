@@ -100,9 +100,14 @@ Open **Command Prompt** and use **pip** to install packages:
 
 ```
 pip install numpy
-pip install pandas matplotlib
-pip install numpy pandas matplotlib scipy  # install multiple at once
+
 ```
+
+```
+pip install pandas matplotlib # you can install multiple at once
+```
+
+
 
 ---
 
@@ -121,7 +126,13 @@ python --version
 
    You should see something like **Python 3.12.0**
 
-> **Note:** On older Macs (pre-2022, before macOS Monterey 12.3), you may need to use **python3** and **pip3** instead of **python** and **pip**. If **python --version** shows an error or Python 2.x, use **python3** instead.
+**Note:** On older Macs (pre-2022, before macOS Monterey 12.3), you may need to use **python3** and **pip3** instead of **python** and **pip**. If **python --version** shows an error or Python 2.x, use **python3** instead.
+
+**Note:** Some Macs may prompt you to install **Xcode Command Line Tools** during Python installation or when you first run `python` in Terminal. If you see this prompt, click **Install** and wait for it to finish. You can also install them manually by running the following in Terminal:
+
+```
+xcode-select --install
+```
 
 #### 2. Install VS Code
 
@@ -150,9 +161,29 @@ Open **Terminal** and use **pip** to install packages:
 
 ```
 pip install numpy
-pip install pandas matplotlib
-pip install numpy pandas matplotlib scipy  # install multiple at once
 ```
+
+```
+pip install pandas matplotlib # you can install multiple at once
+```
+
+**Note:** If you get an error like `pip: command not found`, pip may not be in your PATH. Try the following fixes:
+
+1. **Use `pip3` instead of `pip`:**
+
+```
+pip3 install numpy
+```
+
+2. **If `pip3` also doesn't work**, you may need to add Python to your PATH. Run this command in Terminal (replacing `3.12` with your installed Python version):
+
+```
+echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Then try `pip install numpy` again.
+
 ---
 
 ### 🚀 Running Your First Script in VS Code
@@ -186,6 +217,12 @@ This installs both Jupyter Notebook and Jupyter Lab. **We recommend using Jupyte
 
 ```bash
 jupyter lab
+```
+
+**Note (Windows):** If you get an error like `'jupyter' is not recognized as an internal or external command`, use the following command instead:
+
+```bash
+python -m jupyter lab
 ```
 
 This will open Jupyter Lab in your web browser, where you can create new notebooks or open existing ones. You can write and run Python code in the cells, add text and images, and save your work as a notebook file.

@@ -33,8 +33,10 @@ We are going to use a solution that someone has already written and posted on Gi
 The Alien Invasion game requires the **pygame** package. Open the terminal in VS Code (**Terminal → New Terminal**) and install it:
 
 ```bash
-pip install pygame
+pip install pygame-ce
 ```
+
+**Note:** We are installing `pygame-ce` (the community edition) instead of `pygame` because the original `pygame` package does not yet support Python 3.14+. `pygame-ce` is a drop-in replacement — it uses the same `import pygame` syntax and the code works without any changes.
 
 ### Viewing the Code
 
@@ -70,6 +72,8 @@ Now let's try running an existing notebook in Jupyter Lab. Here is a public repo
 ```bash
 jupyter lab
 ```
+
+    **Note (Windows):** If you get an error like `'jupyter' is not recognized`, use `python -m jupyter lab` instead.
 
 3. In Jupyter Lab, navigate to where you downloaded the notebook and open it. Here is one of the notebooks from the repo:
 
