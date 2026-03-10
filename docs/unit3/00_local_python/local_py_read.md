@@ -60,8 +60,6 @@ Now that we have covered the basics, let's get started. This guide will walk you
 
 1. Go to [python.org/downloads](https://www.python.org/downloads/)
 2. Click **Download Python 3.x.x** (the big yellow button). **If the yellow button says "Download Python Install Manager", click the hyperlink below that says "get the standalone installer for Python 3.x.x"**
-
-"** 
 3. Run the installer
 4. ⚠️ **Important:** Check the box that says **"Add Python to PATH"** before clicking Install
 5. Click **Install Now**
