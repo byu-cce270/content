@@ -242,9 +242,9 @@ Anthropic that runs in your terminal. It is currently the most powerful AI codin
 ChatGPT. It can write code, fix bugs, and work through multi-file tasks. Codex is included with ChatGPT Plus 
 (\$20/month) and ChatGPT Pro (\$200/month). There is also a free tier with limited access.
 
-**[GitHub Copilot](https://github.com/features/copilot)** — Copilot is an AI coding assistant that integrates 
-directly into VS Code, PyCharm, and other IDEs. It provides inline code suggestions and autocompletion as you type, 
-similar to the AI feature in Google Colab. Copilot has a free tier with limited completions, a Pro plan (\$10/month), and a Pro+ plan (\$39/month).
+**[GitHub Copilot](https://github.com/features/copilot)** — Copilot is an AI coding assistant that integrates
+directly into VS Code, PyCharm, and other IDEs. It provides inline code suggestions and autocompletion as you type,
+similar to the AI feature in Google Colab. Copilot has a free tier with limited completions, a Pro plan (\$10/month), and a Pro+ plan (\$39/month). **Students can get Copilot Pro for free** through the [GitHub Student Developer Pack](https://education.github.com/pack) — just verify your student status with your university email to get access.
 
 All of these tools can do more than code completion. You can work with an AI agent to plan and architect your code, then have it create functions, classes, and other elements of your project. To get the most out of these tools, you need to clearly understand the problem you are trying to solve and the steps to solve it. If you can describe the problem, the steps, and the expected output clearly, AI coding agents become extremely powerful.
 
