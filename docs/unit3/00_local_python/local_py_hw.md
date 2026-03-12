@@ -27,59 +27,58 @@ For this part you will download an old Unit 2 assignment from Google Colab and r
 
 ### Step 1: Download an Old Unit 2 Homework from Google Colab
 
-1. Open the Unit 2 assignment in Google Colab.
-2. Click File → Download → Download .ipynb.
+1. Open the Unit 2 assignment in Google Colab. If you don't remember where they are saved, you can find them in your Google Drive under "Colab Notebooks" or search for the assignment name in Google Drive.
+2. Click File → Download → **Download .ipynb** or File → Download → **Download .py**. If you intend to run the notebook as a Jupyter notebook, download it as a .ipynb. If you want to run it as a Python script in an IDE, download it as a .py file.
 3. Save the file somewhere on your computer (for example, a folder for this class).
 
 This will download the notebook file to your local machine.
 
 ### Step 2: Open the Notebook Locally
 
-Open the downloaded notebook on your computer using a local Python environment or IDE.
-
-Examples include:
-
-- Jupyter Notebook or Jupyter Lab
-- VS Code
-- PyCharm
-- Spyder
-- Any other editor that supports Jupyter notebooks (.ipynb)
+Open the downloaded notebook on your computer using either Jupyter Lab or VS Code that we installed.
 
 General steps:
 
 1. Locate the downloaded .ipynb notebook file on your computer.
-2. Open your preferred Python environment or IDE.
+2. Open Jupyter Lab or VS Code.
 3. Open the notebook file within that environment.
 
-Most modern Python tools can open and run .ipynb notebooks directly. These notebooks use the same format as Google Colab, which means they can usually be run locally without modification.
+You can also run the *.ipynb* file in VS Code, but it works better in Jupyter Lab.
 
 ### Step 3: Run the Notebook
 
-Once the notebook is open in your environment:
+Once the notebook is open in your environment, run the notebook. 
 
-1. Run the code cells in the notebook.
-2. Continue executing cells until the entire notebook runs successfully.
+#### Jupyter Lab
 
-Most notebook environments run cells using: 
+If you are using Jupyter Lab, you can run cells by clicking the "Run" button in the toolbar or by using the keyboard shortcut:
 
 ```
 Shift + Enter
 ```
-If your environment uses buttons or menus instead, you can use the Run Cell or Run All Cells options.
 
-If your code requires additional Python packages that are not installed, you may need to install them using a package manager such as:
+1. Run the code cells in the notebook.
+2. Continue executing cells until the entire notebook runs successfully.
+
+#### VS Code
+
+If you are using VS Code, open the *.py file and run it using the Run option in the top right corner of the editor or by using the terminal.
+
+```
+python filename.py
+```
+
+This will run the entire script. If you downloaded the notebook as a .ipynb file, you can also open it in VS Code and run cells similarly to Jupyter Lab.
+
+#### Packages
+
+If you encounter errors about missing packages, you will need to install those packages locally. You can do this using pip in your terminal or command prompt.
 
 ```
 pip install package_name
 ```
 
-or (if you are using Conda):
-
-```
-conda install package_name
-```
-
-After installing any required packages, run the notebook again until it executes without errors.
+After installing any required packages, run the notebook or python code again until it executes without errors.
 
 ### Step 4: Take a Screenshot
 
@@ -107,14 +106,7 @@ On the homework assignment you are working locally, open up the starter sheet (i
 
 ### Step 3: Open the Assignment in Your Local Environment
 
-Open the downloaded notebook or create your file in the local Python environment or IDE of your choice.
-
-Examples include:
-
-- Jupyter Notebook or Jupyter Lab
-- VS Code
-- PyCharm
-- Spyder
+Open the downloaded notebook or create your file in VS Code or Jupyter Lab.
 
 You may complete the assignment in either of these formats unless your instructor says otherwise:
 
