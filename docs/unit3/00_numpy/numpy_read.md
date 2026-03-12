@@ -18,7 +18,9 @@ Python Data Science Handbook, 2nd Edition.
 
 The chapters we skip are about indexing and broadcasting, which we will not cover in this class. We will typically use NumPy arrays like a spreadsheet, where we just want to access the entire row or column of data. We will not be using the more advanced indexing features of NumPy.
 
-You may want to skim through Chapter 7 on Min, Max, and similar functions, and Chap 9 on Boolen logic, while they aren't required for this class - they are useful. We do use some of the methods from Chap 7 such as .min(), .max(), .sum() and a few other methods in this class, but not in-depth. 
+You may want to skim through **Chapter 7 Aggregations: min, max, and Everything in Between**, and **Chapter 9. Comparisons, Masks, and Boolean Logic**, while they aren't required for this class - they are useful. 
+
+We do use some of the methods from Chap 7 such as .min(), .max(), .sum(), etc. in this class, but not some of the other information in the Chapter. 
 
 <br>
 <a href="https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch07.html" target="_blank">Chapter 7: Aggregations — min, max, and everything in between</a><br>
