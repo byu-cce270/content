@@ -6,13 +6,15 @@
 
 In the Python Data Science Handbook, read the following chapters:
 
+[Visualization with Matplotlib (Part 4)](https://learning.oreilly.com/library/view/python-data-science/9781098121211/part04.html){:target="_blank"}<br>
+
 [Chapter 25: General Matplot Tips](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch25.html){:target="_blank"}<br>
 [Chapter 26: Simple Line Plots](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch26.html){:target="_blank"}<br>
 [Chapter 27: Simple Scatter Plots](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch27.html){:target="_blank"}<br>
 [Chapter 29: Customizing Plot Legends](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch29.html){:target="_blank"}<br>
 [Chapter 32: Text and Annotation](https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch32.html){:target="_blank"}
 
-There is also a chapter in the Python Crash Course book that you should read:
+There is also a chapter in the Python Crash Course book, that book we used for the introduction to python part of the course, that you should read:
 
 [Chapter 15: Generating Data](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c15.xhtml){:target="_blank"}
 
@@ -31,8 +33,12 @@ As noted in Chapter 25 of the Python Data Science book, Matplotlib provides two 
 2. An object-oriented interface that is provided by the `Figure` and `Axes` classes.
 
 The `pyplot` interface is a state-based interface that is easy to use (looks like MATLAB) . It is 
-convenient for simple plots, but it is somewhat limited in its flexibility to make it easy. The object-oriented interface is more 
-powerful and flexible, and it is recommended for more complex plots, especially those involving multiple subplots. In this course, we will primarily use the `pyplot` interface (the easy one) because it is simpler and works great for most plots. In 
+convenient for simple plots, but it is somewhat limited in its flexibility to make it more easy to use. 
+
+The object-oriented interface is more 
+powerful and flexible, and it is recommended for more complex plots, especially those involving multiple subplots. 
+
+In this course, we will primarily use the `pyplot` interface (the easy one) because it is simpler and works great for most plots. In 
 the reading, 
 you will see examples of both interfaces. You are welcome to use the object-oriented interface if you prefer. You can also mix the two interfaces, start with the easy `pyplot` interface, then add details and customizations using the object-oriented interface.
 
@@ -149,11 +155,13 @@ The ```with``` construction makes it a temporary style, rather than a permanent 
 
 If you set something permanently and want to reset to the default settings use
 ```python
+import matplotlib.pyplot as plt
 plt.rcdefaults()
 ```
 
 This command will list the styles available in your version of matplotlib:
 ```python
+import matplotlib.pyplot as plt
 print(plt.style.available)
 ``` 
 
@@ -217,6 +225,7 @@ However, if you run ```plt.xkcd()``` without the ```with``` to make it temporary
 afterwards.
 To reset to the default settings use
 ```python
+import matplotlib.pyplot as plt
 plt.rcdefaults()
 ```
 
