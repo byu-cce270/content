@@ -20,6 +20,8 @@ There is also a chapter in the Python Crash Course book, that book we used for t
 
 Remember that you will have to sign in to your free account that you created earlier.
 
+You may want to read Chapters 35 (3D ploting), and Chapt 36 (Using Seaborn) for interesting and pretty plots. Seaborn is a library that is built on top of Matplotlib, that provides a number of useful functions for creating plots.
+
 ## Things to Look Out For
  - How to create line, scatter, and histogram plots.
  - How to add titles and axes.
