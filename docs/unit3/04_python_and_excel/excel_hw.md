@@ -1,5 +1,7 @@
 # Homework: Working with Excel Files in Python
 
+---
+
 **Objective:** Learn how to export data and charts to an Excel file.
 
 In this homework assignment, you will import an Excel file containing monthly precipitation data for a set of weather stations in Utah. You will read the data into a pandas dataframe, perform some data analysis, and write the results back to a new Excel file. You will also create a chart of the data and include it in the Excel file.

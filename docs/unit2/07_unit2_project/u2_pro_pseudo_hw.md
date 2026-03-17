@@ -2,7 +2,7 @@
 
 **Objective:** Practice planning a project using pseudocode.
 
-In this homework assignment, you will practice writing pseudocode to plan out a project before you start coding. This will help you organize your thoughts and make the coding process easier. You will get back together with your group to plan and write out the pseudocode for your project. You can find the prompts and requirements here: [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_prompt/){:target="_blank"}. You can also double-check who is in your group on that page. 
+In this homework assignment, you will practice writing pseudocode to plan out a project before you start coding. This will help you organize your thoughts and make the coding process easier. You will get back together with your group to plan and write out the pseudocode for your project. You can find the prompts and requirements here: [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/07_unit2_project/u2_pro_prompt/){:target="_blank"}. You can also double-check who is in your group on that page. 
 
 ---
 
@@ -16,15 +16,15 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 
 ## Part 1 - Choose a Prompt
 
-1. Read through the three prompts listed on the [Unit 2 Project Prompt](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_prompt/#the-prompts){:target="_blank"} page.
+1. Read through the three prompts listed on the [Unit 2 Project Prompt](https://byu-cce270.readthedocs.io/en/latest/unit2/07_unit2_project/u2_pro_prompt/#the-prompts){:target="_blank"} page.
 2. Pick one of the three prompts that your group will complete for the Unit 2 Project. Under the "Project Prompt chosen" section of your document, write down which prompt you chose and explain it.
 
 ---
 
 ## Part 2 - Pseudocode
 
-1. If you haven't already, read through the requirements listed on step 3 under the Instruction section for the [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/06_unit2_project/u2_pro_prompt/#instructions){:target="_blank"} page.
-2. As a group, discuss how you will go about the project and complete all the requirements. You don't need to worry about who will do what, you will figure that out later.  You may want to have someone take notes to help you write the pseudocode. 
+1. If you haven't already, read through the requirements listed on step 3 under the Instruction section for the [Unit 2 Project](https://byu-cce270.readthedocs.io/en/latest/unit2/07_unit2_project/u2_pro_prompt/#instructions){:target="_blank"} page.
+2. As a group, discuss how you will go about the project and complete all the requirements. You don't need to worry about who will do what, you will figure that out later. You may want to have someone take notes to help you write the pseudocode.
 3. Under the "How is your team going about it" section of your document, write out the pseudocode for your project. You can use the following as a guide for writing pseudocode:
      - Use plain English to describe what each part of your code will do.
      - Break down the project into smaller, manageable tasks or functions.

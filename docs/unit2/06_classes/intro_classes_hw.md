@@ -35,13 +35,19 @@ In this part, you will create a class called **Material** that represents a cons
 
 5. Add a method called **use_quantity(amount)** that subtracts the given amount from the current quantity. If the amount is greater than the current quantity, print an error message that includes the material name and current quantity, and do not change the quantity. If the amount is less than or equal to 0, print an error message.
 
-6. Add a **\_\_str\_\_** method that returns a formatted string like:
+6. Add a **print_description** method that returns a formatted string like:
 
 ```
 Concrete: 50 cubic yards @ $125.00/cubic yards = $6,250.00
 ```
 
-7. Test your **Material** class in the Code Block 1 Test cell. Create a material, print it, add quantity, use quantity, and try to use more than available. Your output should look similar to this:
+7. Test your **Material** class in the Code Block 1 Test cell by doing the following:
+   - Create a material and print it.
+   - Add quantity using the **add_quantity()** method and print it. 
+   - Use quantity using the **use_quantity()** method and print it.
+   - Try to use more quantity than available with the **use_quantity()** method.
+   
+   Your output should look similar to this:
 
 ```
 Concrete: 50 cubic yards @ $125.00/cubic yards = $6,250.00
@@ -64,42 +70,49 @@ In this part, you will create a class called **ConstructionProject** that manage
     | **budget**         | Total project budget in dollars     | None    |
     | **labor_rate**     | Labor cost per hour in dollars      | None    |
 
-    In **\_\_init\_\_**, also initialize:
+2. In **\_\_init\_\_**, also initialize the following attributes:
     - **materials** as an empty list (this will hold Material objects)
-    - **hours_worked** to 0
+    - **hours_worked** as 0
 
-2. Add a method called **add_material(material)** that appends a **Material** object to the **materials** list.
+3. Add a method called **add_material(material)** that appends a **Material** object to the **materials** list.
 
-3. Add a method called **log_hours(hours)** that adds hours to **hours_worked**. If hours is less than or equal to 0, print an error message.
+4. Add a method called **log_hours(hours)** that adds hours to **hours_worked**. If hours is less than or equal to 0, print an error message.
 
-4. Add a method called **total_material_cost()** that loops through all materials in the **materials** list and returns the sum of each material's **total_cost()**.
+5. Add a method called **total_material_cost()** that loops through all materials in the **materials** list and returns the sum of each material's **total_cost()**.
 
-5. Add a method called **total_labor_cost()** that returns **labor_rate \* hours_worked**.
+6. Add a method called **total_labor_cost()** that returns **labor_rate \* hours_worked**.
 
-6. Add a method called **total_project_cost()** that returns the sum of **total_material_cost()** and **total_labor_cost()**.
+7. Add a method called **total_project_cost()** that returns the sum of **total_material_cost()** and **total_labor_cost()**.
 
-7. Add a method called **is_under_budget()** that returns **True** if **total_project_cost()** is less than or equal to **budget**, and **False** otherwise.
+8. Add a method called **is_under_budget()** that returns **True** if **total_project_cost()** is less than or equal to **budget**, and **False** otherwise.
 
-8. Add a method called **summary()** that prints a formatted project summary. The summary should include:
+9. Add a method called **summary()** that prints a formatted project summary. The summary should include:
     - Project name and budget
-    - A list of all materials (use each material's **\_\_str\_\_** method)
+    - A list of all materials (use each material's **print_description** method)
     - Total material cost
     - Labor hours, rate, and total labor cost
     - Total project cost
     - Remaining budget (budget minus total project cost)
     - Whether the project is under or over budget
 
-9. Test your **ConstructionProject** class in the Code Block 2 Test cell. Create three materials (concrete, rebar, and lumber), create a project, add the materials, log some hours, and print the summary. Use the following test data:
+10. Test your **ConstructionProject** class in the Code Block 2 Test cell by doing the following:
+    - Create three materials (concrete, rebar, and lumber) using the **Material** class.
+    - Create a project using the **ConstructionProject** class you just created.
+    - Add the three materials to the project using the **add_material()** method.
+    - Log hours using the **log_hours()** method.
+    - Print the summary using the **summary()** method.
+    
+    Use the following test data:
 
-    | Material   | Unit Cost | Unit         | Quantity |
-    |:----------:|:---------:|:------------:|:--------:|
-    | Concrete   | 125.00    | cubic yards  | 50       |
-    | Rebar      | 0.85      | lbs          | 5000     |
-    | Lumber     | 6.50      | board feet   | 2000     |
+     | Material   | Unit Cost | Unit         | Quantity |
+     |:----------:|:---------:|:------------:|:--------:|
+     | Concrete   | 125.00    | cubic yards  | 50       |
+     | Rebar      | 0.85      | lbs          | 5000     |
+     | Lumber     | 6.50      | board feet   | 2000     |
 
-    | Project               | Budget      | Labor Rate | Hours  |
-    |:---------------------:|:-----------:|:----------:|:------:|
-    | Campus Parking Garage | 500,000.00  | 45.00      | 1200   |
+     | Project               | Budget      | Labor Rate | Hours  |
+     |:---------------------:|:-----------:|:----------:|:------:|
+     | Campus Parking Garage | 500,000.00  | 45.00      | 1200   |
 
 Your output should look similar to this:
 
@@ -144,7 +157,14 @@ In this part, you will create a class called **RoadProject** that **inherits** f
     - Cost per mile
     - Cost per lane-mile
 
-5. Test your **RoadProject** class in the Code Block 3 Test cell. Create three materials, create a road project, add the materials, log hours, and print the summary. Use the following test data:
+5. Test your **RoadProject** class in the Code Block 3 Test cell by doing the following: 
+    - Create three materials (asphalt, gravel, and rebar) using the **Material** class.
+    - Create a road project using the inherited **RoadProject** class.
+    - Add the three materials to the project using the **add_material()** method.
+    - Log hours using the **log_hours()** method.
+    - Print the summary using the **summary()** method.
+    
+    Use the following test data:
 
     | Material   | Unit Cost | Unit  | Quantity |
     |:----------:|:---------:|:-----:|:--------:|
@@ -186,24 +206,24 @@ Status: UNDER BUDGET
 
 **Rubric:**
 
-|                              **Item**                                  | **Amount** |
-|:----------------------------------------------------------------------:|:----------:|
-|             Material **\_\_init\_\_** with validation is correct         |     2      |
-|             **total_cost()** method works correctly                     |     2      |
-|             **add_quantity()** method works correctly                   |     2      |
-|             **use_quantity()** with validation works correctly          |     2      |
-|             **\_\_str\_\_** method returns formatted string              |     2      |
-|             ConstructionProject **\_\_init\_\_** is correct              |     2      |
-|             **add_material()** and **log_hours()** work correctly       |     2      |
-|             **total_material_cost()** loops and sums correctly          |     2      |
-|             **total_labor_cost()** and **total_project_cost()** correct |     2      |
-|             **is_under_budget()** returns correct boolean               |     1      |
-|             **summary()** prints formatted output                       |     3      |
-|             RoadProject inherits from ConstructionProject               |     2      |
-|             **super().\_\_init\_\_()** used correctly                     |     2      |
-|             **cost_per_mile()** and **cost_per_lane_mile()** correct    |     2      |
-|             **summary()** override includes road-specific info          |     3      |
-|        <div style="text-align: right">**Total**</div>                  |   **31**   |
+|                          **Item**                           | **Amount** |
+|:-----------------------------------------------------------:|:----------:|
+|    Material **\_\_init\_\_** with validation is correct     |     2      |
+|           **total_cost()** method works correctly           |     2      |
+|          **add_quantity()** method works correctly          |     2      |
+|     **use_quantity()** with validation works correctly      |     2      |
+|    **project_description** method returns formatted string    |     2      |
+|       ConstructionProject **\_\_init\_\_** is correct       |     2      |
+|    **add_material()** and **log_hours()** work correctly    |     2      |
+|     **total_material_cost()** loops and sums correctly      |     2      |
+| **total_labor_cost()** and **total_project_cost()** correct |     2      |
+|        **is_under_budget()** returns correct boolean        |     1      |
+|            **summary()** prints formatted output            |     3      |
+|        RoadProject inherits from ConstructionProject        |     2      |
+|          **super().\_\_init\_\_()** used correctly          |     2      |
+|  **cost_per_mile()** and **cost_per_lane_mile()** correct   |     2      |
+|     **summary()** override includes road-specific info      |     3      |
+|       <div style="text-align: right">**Total**</div>        |   **31**   |
 
 ---
 
