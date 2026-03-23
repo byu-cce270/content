@@ -7,6 +7,8 @@
 Read the following chapters and sections in the
 Python Data Science Handbook, 2nd Edition:
 
+[Pandas — Chapter Overview (Part 3)](https://learning.oreilly.com/library/view/python-data-science/9781098121211/part03.html){:target="_blank"}<br>
+
 [Chapter 13: Introducing Pandas Objects](https://learning.oreilly.
 com/library/view/python-data-science/9781098121211/ch13.html){:target="_blank"} (up to the Pandas Index Object subheading)
 </br>

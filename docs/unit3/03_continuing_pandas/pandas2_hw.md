@@ -51,7 +51,7 @@ common street names for paving jobs. The current column names are a little long,
 rename the column. You will need to sort the data to get the most common street names at the top of the dataframe.
 
 1. In the next block, create a new dataframe using the `.groupby()` method that finds that most common street names 
-    for paving jobs. Reset the index to be 'Job Count'.
+    for paving jobs. Should you reset the index to be 'Job Count' (think about it - don't need to answer).
 2. With resulting dataframe, sort the data to get the most common street names at the top of the dataframe.
 3. Rename the 'On Street Name' columns in your new dataframe to be 'Street Name'.
 4. Reset the index to preserve the order of "Job Count" and "Street Name" columns.
