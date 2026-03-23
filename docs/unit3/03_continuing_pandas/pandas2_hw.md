@@ -54,7 +54,7 @@ rename the column. You will need to sort the data to get the most common street 
     for paving jobs. Reset the index to be 'Job Count'.
 2. With resulting dataframe, sort the data to get the most common street names at the top of the dataframe.
 3. Rename the 'On Street Name' columns in your new dataframe to be 'Street Name'.
-4. Reset the index to preserve the order of "Job Count" and "Street Name" columns. Use `reset_index(drop=True)` method.'
+4. Reset the index to preserve the order of "Job Count" and "Street Name" columns.
 4. Display the first 10 rows of the resulting dataframe.
 
     When you are done, the dataframe that displays should look like this:
