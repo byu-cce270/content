@@ -90,7 +90,7 @@ number of work jobs by borough.
 15. Create a horizontal bar graph that displays the number of work jobs by borough. Include:
      - a title
      - x and y labels
-     - horizontal gridlines
+     - horizontal & vertical gridlines
      - change the default colors
 
     When you are done, the graph should look something like this:
