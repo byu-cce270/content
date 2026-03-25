@@ -23,7 +23,7 @@ df = pd.read_excel('data.xlsx')
 # Display the DataFrame
 print(df)
 ```
-The read_excel() method has one essential parameter, which is the path to the Excel file. In this example, we are reading an Excel file named `data.xlsx`. The `read_excel()` method reads the Excel file and returns a DataFrame. We store the DataFrame in a variable called `df` (which is a really bad varible name - you should use something more descriptive - by conventation, we name variables that contain Panda's data structures as _df with the descriptive name before the _df part). 
+The read_excel() method has one essential parameter, which is the path to the Excel file. In this example, we are reading an Excel file named `data.xlsx`. The `read_excel()` method reads the Excel file and returns a DataFrame. We store the DataFrame in a variable called `df` (which is a really bad variable name - you should use something more descriptive - by convention, we name variables that contain Panda's data structures as _df with the descriptive name before the _df part). 
 
 The read_excel() method has a number of optional arguments. For example, if the Excel file has multiple sheets, you can specify which sheet to read using the `sheet_name` parameter. Here is an example:
 
@@ -127,7 +127,7 @@ workbook = xlsxwriter.Workbook('output.xlsx')
 # Add a worksheet to the workbook object
 worksheet = workbook.add_worksheet()
 
-# Define a formats for different workbook areas such as the header and data sections
+# Define formats for different workbook areas such as the header and data sections
 # We haven't applied these formats yet, but we will apply them when we write data to the worksheet
 # You can create a number of formats, and then apply them to different areas of the worksheet as needed.
 header_format = workbook.add_format({'bold': True, 'bg_color': '#F0F8FF', 'border': 1})
@@ -239,7 +239,7 @@ workbook.close()
 This same example could be used to create a **line** chart simply by changing the chart type to 'line'. 
 
 Here is an example of how to create an **xy scatter** plot in an Excel file using the `xlsxwriter` library.
-In this case we need numbers for the x-axis.:
+In this case we need numbers for the x-axis:
 
 ```python
 import xlsxwriter
@@ -295,7 +295,7 @@ You can also save a pandas DataFrame to an Excel file with formatting using the 
 import pandas as pd
 import xlsxwriter
 
-# Create a some data for a DataFrame
+# Create some data for a DataFrame
 data = {
     'Name': ['John', 'Jane', 'Alice', 'Bob'],
     'Age': [25, 30, 35, 40],
@@ -305,23 +305,24 @@ data = {
 # Create a DataFrame from the dictionary
 df = pd.DataFrame(data)
 
-# Create a Pandas Excel writer object using XlsxWriter as the engine
-writer = pd.ExcelWriter('output.xlsx', engine='xlsxwriter')
+# Create a Pandas Excel writer object using XlsxWriter as the engine.
+# Using a "with" block ensures the file is properly saved when the block ends.
+with pd.ExcelWriter('output.xlsx', engine='xlsxwriter') as writer:
 
-# Add the dataframe to an XlsxWriter Excel object. Name the sheet "Sheet1"
-df.to_excel(writer, sheet_name='Sheet1')
+    # Write the dataframe to an XlsxWriter Excel object. Name the sheet "Sheet1"
+    df.to_excel(writer, sheet_name='Sheet1')
 
-workbook = writer.book
-worksheet = writer.sheets["Sheet1"]
+    # Get the xlsxwriter workbook and worksheet objects so we can add formatting
+    workbook = writer.book
+    worksheet = writer.sheets["Sheet1"]
 
-# Crate a format the header row
-header_format = workbook.add_format({'bold': True, 'bg_color': '#F0F8FF', 'border': 1})
+    # Create a format for the header row
+    header_format = workbook.add_format({'bold': True, 'bg_color': '#F0F8FF', 'border': 1})
 
-# Apply the format to the header row
-worksheet.set_row(0, None, header_format)
+    # Apply the format to the header row
+    worksheet.set_row(0, None, header_format)
 
-# Close the workbook and save the file
-workbook.close()
+# The file is automatically saved when the "with" block ends
 ```
 
 ### Saving Data to an Excel File with xlsxwriter Using Write Methods
