@@ -51,10 +51,10 @@ common street names for paving jobs. The current column names are a little long,
 rename the column. You will need to sort the data to get the most common street names at the top of the dataframe.
 
 1. In the next block, create a new dataframe using the `.groupby()` method that finds that most common street names 
-    for paving jobs. Reset the index to be 'Job Count'.
+    for paving jobs. Should you reset the index to be 'Job Count' (think about it - don't need to answer).
 2. With resulting dataframe, sort the data to get the most common street names at the top of the dataframe.
 3. Rename the 'On Street Name' columns in your new dataframe to be 'Street Name'.
-4. Reset the index to preserve the order of "Job Count" and "Street Name" columns. Use `reset_index(drop=True)` method.'
+4. Reset the index to preserve the order of "Job Count" and "Street Name" columns.
 4. Display the first 10 rows of the resulting dataframe.
 
     When you are done, the dataframe that displays should look like this:
@@ -90,7 +90,7 @@ number of work jobs by borough.
 15. Create a horizontal bar graph that displays the number of work jobs by borough. Include:
      - a title
      - x and y labels
-     - horizontal gridlines
+     - horizontal & vertical gridlines
      - change the default colors
 
     When you are done, the graph should look something like this:

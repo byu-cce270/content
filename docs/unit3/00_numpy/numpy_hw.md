@@ -2,6 +2,8 @@
 
 **Purpose:** Create and use numpy arrays to find the forces in a given truss. You will then use Matplotlib to graph it.
 
+---
+
 ### Instructions
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_numpy/(Starter_Notebook)_HW_Numpy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -278,7 +280,7 @@ The following is not a part of the rubric, but specifies how you can lose points
 |:-----------------------------------------------------------------------:|:-----------------:|
 |                         Link shared incorrectly                         |       -10%        |
 |                        Turned in late (per week)                        | -10% (up to -50%) |
-| No comments explaining where AI is used and what its provided code does |       -10%        |
+| No comments explaining where AI is used and what its provided code does |       -50%        |
 
 
 

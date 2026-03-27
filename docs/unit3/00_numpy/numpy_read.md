@@ -4,15 +4,26 @@
 
 # Pre-Class Reading Assignment
 
-On the O'Reilly's website read part II: Intro to NumPy chapters 5, 6, and 11 in
+On the O'Reilly's website read part II: Intro to NumPy and chapters 4, 5, 6, 7, and 11 in
 Python Data Science Handbook, 2nd Edition. 
 </br>Here is a direct link to the readings:
 
+<a href="https://learning.oreilly.com/library/view/python-data-science/9781098121211/part02.html" target="_blank">Part II: Introduction to NumPy</a><br>
+<a href="https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch04.html" target="_blank">Chapter 4: Understanding Data Types in Python</a><br>
 <a href="https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch05.html#ch_0202-the-basics-of-numpy-arrays_numpy-array-attributes" target="_blank">Chapter 5: The Basics of NumPy Arrays</a><br>
 <a href="https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch06.html#ch_0203-computation-on-arrays-ufuncs_the-slowness-of-loops" target="_blank">Chapter 6: Computation on NumPy Arrays: Universal Functions</a>
 <br>Note: For chapter 6, read up to but not including the section _Specialized Ufuncs_. Skip the rest.
+<br>
+<a href="https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch07.html" target="_blank">Chapter 7: Aggregations — min, max, and everything in between</a><br>
+<a href="https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch11.html" target="_blank">Chapter 11: Sorting Arrays</a><br>
 
 The chapters we skip are about indexing and broadcasting, which we will not cover in this class. We will typically use NumPy arrays like a spreadsheet, where we just want to access the entire row or column of data. We will not be using the more advanced indexing features of NumPy.
+
+You may want to skim through  **Chapter 9. Comparisons, Masks, and Boolean Logic**, while the topics  aren't required for this class - they are useful. 
+
+<br>
+<a href="https://learning.oreilly.com/library/view/python-data-science/9781098121211/ch09.html" target="_blank">Chapter 9: Comparisons, Masks, and Boolean Logic</a><br>
+
 
 Remember that you will have to sign in to your free account that you created earlier.
 
