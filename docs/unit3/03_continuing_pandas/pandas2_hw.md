@@ -170,17 +170,20 @@ to loop through each borough and create a pie chart for each borough showing the
 
 **Rubric:**
 
-|                                    **Item**                                     | **Amount** |
-|:-------------------------------------------------------------------------------:|:----------:|
-|           Correct import statements used and file uploaded correctly            |     5      |
-|            Tabs in the Excel file are loaded in separate data frames            |     3      |
-|              Correct column names created with duplicates removed               |     3      |
-|                       Equipment age calculated correctly                        |     3      |
-| Equipment and Productivity dataframes are merged into a new dataframe correctly |     2      |
-|   Correct columns with correct calculations are added to the merged dataframe   |     8      |
-|                     .groupby() is used to filter correctly                      |     3      |
-|          Bar graph displays correctly with titles, labels, and colors           |     3      |
-|                 <div style="text-align: right">**Total**</div>                  |   **30**   |
+|                          **Item**                          | **Amount** |
+|:----------------------------------------------------------:|:----------:|
+| Correct import statements used and file uploaded correctly |     3      |
+| Tabs in the Excel file are loaded in separate data frames  |     2      |
+|        Date columns converted to datetime and index        |     2      |
+|             Day of week column added correctly             |     2      |
+|               Borough names mapped correctly               |     3      |
+|           Borough work counts counted correctly            |     3      |
+|         Most common street names sorted correctly          |     3      |
+|   Work duration column added and hours grouped correctly   |     3      |
+|               Bar graph displayed correctly                |     3      |
+|             Pavement rating grouped correctly              |     3      |
+|                Pie charts created correctly                |     3      |
+|       <div style="text-align: right">**Total**</div>       |   **30**   |
 
 ---
 
