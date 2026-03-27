@@ -55,24 +55,25 @@ Only one team member needs to turn in the following in the feedback box on the a
 
 **Rubric:**
 
-|                        Item                        | Points Possible |
-|:--------------------------------------------------:|:---------------:|
-|  An introductory text block with all requirements  |        8        |
-|           At least 1 loop (for or while)           |        5        |
-|  At least 1 list, dictionary, or pandas dataframe  |        5        |
-|         At least 1 if-elif-else statement          |        5        |
-|     At least 3 functions that you write/define     |       12        |
-|    Use xlsxwriter to connect to an Excel Sheet     |        5        |
-|          At least 1 graph from matplotlib          |        5        |
-|              Your program is bug free              |       10        |
-|         Use markdown to organize your code         |        5        |
-| Relative contribution of each team member is given |        5        |
-|              Present for presentation              |       15        |
-|                   TA wow factor                    |       10        |
-|      All links turned in before presentation       |       10        |
-|   <div style="text-align: right">**Total**</div>   |       100       |
-|              Use of GUIs (ipywidgets)              |       +5        |
-|                    Use of numpy                    |       +5        |
+|                              Item                              | Points Possible |
+|:--------------------------------------------------------------:|:---------------:|
+|        An introductory text block with all requirements        |        3        |
+|                 At least 1 loop (for or while)                 |        5        |
+|        At least 1 list, dictionary, or pandas dataframe        |        5        |
+|               At least 1 if-elif-else statement                |        5        |
+|           At least 3 functions that you write/define           |       12        |
+|     Writes and defines 1 class with attributes and methods     |        5        |
+|          Use xlsxwriter to connect to an Excel Sheet           |        5        |
+|                At least 1 graph from matplotlib                |        5        |
+|                    Your program is bug free                    |       10        |
+|               Use markdown to organize your code               |        5        |
+|       Relative contribution of each team member is given       |        5        |
+|                    Present for presentation                    |       15        |
+|                         TA wow factor                          |       10        |
+|            All links turned in before presentation             |       10        |
+|         <div style="text-align: right">**Total**</div>         |       100       |
+|                    Use of GUIs (ipywidgets)                    |       +5        |
+|                          Use of numpy                          |       +5        |
 
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
 
