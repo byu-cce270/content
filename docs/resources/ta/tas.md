@@ -48,7 +48,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **Brandan**: 2.8, 3.8, Projects, and Exams
 
-- **Paige**: HW 2.7, HW 3.6, All Pre Class Quiz and In Class Workbooks
+- **Paige**: HW 2.7, HW 3.1, All Pre Class Quiz and In Class Workbooks
 
 - **Griffin**: HW 1.3, HW 2.6, HW 3.3
 
@@ -60,4 +60,4 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 - **Samantha**: HW 1.5, HW 2.4, Projects, and Exams
 
-- **Luke**: HW 1.4, HW 2.3, HW 3.1
+- **Luke**: HW 1.4, HW 2.3, HW 3.6
