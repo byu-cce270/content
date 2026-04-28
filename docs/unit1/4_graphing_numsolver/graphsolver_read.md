@@ -262,15 +262,11 @@ Finally, to visualize any trends in the data, your boss wants you to create a **
 
 ### Exercise #2 - Topographic Map
 
-Navigate to the "Topo-Solver" sheet in the starter workbook.
-You need to create a topographic map of a hillside for a project. Your team has set up some GPS points with known 
-horizontal distances from the base of the hill. Since the GPS device isn't accurate at giving elevations, use the 
-calculator in the workbook to find the correct elevations. 
+Navigate to the "Topo_Solver" sheet in the starter workbook.
+You need to create a topographic map of a hill range for a project. Your team successfully created a function that accurately returns accurate elevations given horizontal distances, and now wants you to find the exact coordinates for certain points of interest (Depression 1, Peak 1, etc.). The local minimums of the function represent the depressions of the hill range, and the local maximums of the function represent the peaks of the hill range. 
 
-1. Set up a goal seek on D18 dependent upon D19 changing to the values 
-shown at the flag (you could also just type the value into the x input directly but practice using goal seek).
-2. To find the minimum and maximum elevations set up a solver for D18 dependent upon D19 that has the conditions 
-   $x>=1$ and $x<=1000$.
+1. Use Solver to find the locations of each depression. Set objective cell $B$4 to **Min** by changing variable cell $A$4. Then, add the constraints specified for each depression in cells B7:B10 (For example, to find Depression 1, add the constraints $A$4>=200 and $A$4<=350). Once solved, copy the solutions and paste them under the "Horizontal Distance (ft)" and "Elevation (ft)" columns. **Make sure that you paste as values only to avoid pasting the formula by mistake.**
+2. This time, use Solver to find the locations of each peak. Set objective cell $B$4 to **Max** by changing variable cell $A$4. Then, add the constraints specified for each peak in cells B11:B13 (For example, to find Peak 1, add the constraints $A$4>=400 and $A$4<=450). Once solved, copy the solutions and paste them under the "Horizontal Distance (ft)" and "Elevation (ft)" columns. **Again, make sure that you paste as values only to avoid pasting the formula by mistake.**
 
 ---
 
