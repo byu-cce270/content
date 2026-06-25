@@ -8,7 +8,8 @@ You can find the In Class Exercise here: <a href="https://colab.research.google.
 
 1. Open the in-class workbook using the link above.
 2. Rename the notebook something like "(Your_Name)_Class_Intro_Classes.ipynb".
-3. Follow the instructions in the notebook to complete the exercises. Exercise 1 is a guided walkthrough. Exercises 2 and 3 are independent practice.
+3. Part of the exercise has you upload two Python module files to Colab and import them. Download them here: [car.py](car.py) and [electric_car.py](electric_car.py).
+4. Follow the instructions in the notebook to complete the exercises. Exercise 1 is a guided walkthrough. Exercises 2 and 3 are independent practice.
 
 ---
 
