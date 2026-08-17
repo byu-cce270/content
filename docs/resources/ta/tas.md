@@ -18,15 +18,9 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 ![brandan_w_ta_profile.jpg](images/brandan_w_ta_profile.jpg){width=100px}
 <br>**Brandan Williamson** - I'm the head TA for the class. I'm from Ripon, California. I'm a Senior here at BYU studying Civil Engineering and Computer Science. I also got married earlier this year. This is my third year as a TA. I've helped redo some of the coursework each semester. I'll be helping answer questions and grading assignments, and writing the free response for the exams. Feel free to message me during the evenings for help too.
-							
-![paige_l_ta_profile.jpg](images/paige_l_ta_profile.jpg){width=100px}
-<br>**Paige Logan** - I am from Kaysville, Utah and am a junior studying Civil Engineering! This is my second year as a TA for this class! I like to go skiing in the winter and boating in the summer! I'm excited to get to know all of you!
 
 ![griffin_i_ta_profile.jpg](images/griffin_i_ta_profile.jpg){width=100px}
 <br>**Griffin Izu** - I'm from Irvine, California, and I am a junior in the Civil Engineering program. This will be my third semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, and playing video games. I'm very excited to meet you all!
-
-![mauricio_f_ta_profile.jpg](images/mauricio_f_ta_profile.jpg){width=100px}
-<br>**Mauricio Fernandez Celestino** - I am from Provo, UT, and I am a Junior in the Civil Engineering program. This is my first semester as a TA, and I am so excited! I love playing sports especially rugby, soccer and rugby. And my favorite thing is spending time with my wife! I am excited to get to know most of you, but hopefully all!
 
 ![reagan_b_ta_profile.jpg](images/reagan_b_ta_profile.jpg){width=100px}
 <br>**Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my fourth year at BYU. I'm studying construction management and this will be my first semester as a TA for this class!!! I am so excited! I love playing volleyball and reading :) I can't wait to meet you all!
@@ -39,6 +33,15 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 ![luke_g_ta_profile](images/luke_g_ta_profile.jpg){width=100px}
 <br>**Luke Gonzalez** - Hello! I'm in my sophomore/junior year of Civil Engineering. First time as a TA, so I ask for your patience, but I’m more than willing to help as much as I can! I love music! And sports! And all sorts of stuff I guess idk. Excited to be here!
+
+![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px})
+<br>**Tyler Carruth** - 
+
+![carsen_l_ta_profile.jpg](images/carsen_l_ta_profile.jpg){width=100px}
+<br>**Carsen Lee** - I’m from Reno, Nevada and am a junior in the construction management program. This will be my first semester as a TA! In my free time I play a lot of sports (especially basketball), hike, and do anything with friends and family. I look forward to meeting you all!
+
+![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px})
+<br>**McKay Cumming** - 
 
 ---
 
