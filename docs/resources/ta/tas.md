@@ -34,13 +34,13 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 ![luke_g_ta_profile](images/luke_g_ta_profile.jpg){width=100px}
 <br>**Luke Gonzalez** - Hello! I'm in my sophomore/junior year of Civil Engineering. First time as a TA, so I ask for your patience, but I’m more than willing to help as much as I can! I love music! And sports! And all sorts of stuff I guess idk. Excited to be here!
 
-![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px})
+![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
 <br>**Tyler Carruth** - 
 
 ![carsen_l_ta_profile.jpg](images/carsen_l_ta_profile.jpg){width=100px}
 <br>**Carsen Lee** - I’m from Reno, Nevada and am a junior in the construction management program. This will be my first semester as a TA! In my free time I play a lot of sports (especially basketball), hike, and do anything with friends and family. I look forward to meeting you all!
 
-![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px})
+![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
 <br>**McKay Cumming** - 
 
 ---
