@@ -34,14 +34,14 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 ![luke_g_ta_profile](images/luke_g_ta_profile.jpg){width=100px}
 <br>**Luke Gonzalez** - Hello! I'm in my sophomore/junior year of Civil Engineering. First time as a TA, so I ask for your patience, but I’m more than willing to help as much as I can! I love music! And sports! And all sorts of stuff I guess idk. Excited to be here!
 
-![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
-<br>**Tyler Carruth** - 
+![tyler_c_ta_profile.jpg](images/tyler_c_ta_profile.jpg){width=100px}
+<br>**Tyler Carruth** - This is my third year at BYU studying Civil Engineering and my first time as a TA. If you let me, I WILL get on a soap box and talk your ear off about zoning laws and public transit. I enjoy weight lifting, Minecraft, and adding random songs to my wife's curated playlists.
 
 ![carsen_l_ta_profile.jpg](images/carsen_l_ta_profile.jpg){width=100px}
 <br>**Carsen Lee** - I’m from Reno, Nevada and am a junior in the construction management program. This will be my first semester as a TA! In my free time I play a lot of sports (especially basketball), hike, and do anything with friends and family. I look forward to meeting you all!
 
-![image_coming_soon.jpg](images/image_coming_soon.jpg){width=100px}
-<br>**McKay Cumming** - 
+![mckay_c_ta_profile.jpg](images/mckay_c_ta_profile.jpg){width=100px}
+<br>**McKay Cumming** - Hi! I am a sophomore in Civil Engineering. I am from Herriman, Utah. In my free time I like being with friends, catching a movie, and being outside! I particularly love pickleball and soccer. This is my first semester as a TA for this class, but I’m excited to get to know yall!
 
 ---
 
