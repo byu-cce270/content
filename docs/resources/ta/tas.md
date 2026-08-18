@@ -40,9 +40,11 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 ![carsen_l_ta_profile.jpg](images/carsen_l_ta_profile.jpg){width=100px}
 <br>**Carsen Lee** - I’m from Reno, Nevada and am a junior in the construction management program. This will be my first semester as a TA! In my free time I play a lot of sports (especially basketball), hike, and do anything with friends and family. I look forward to meeting you all!
 
-test{width=100px}
+test
 <br>**McKay Cumming** - Hi! I am a sophomore in Civil Engineering. I am from Herriman, Utah. In my free time I like being with friends, catching a movie, and being outside! I particularly love pickleball and soccer. This is my first semester as a TA for this class, but I’m excited to get to know yall!
 
+
+work please
 ---
 
 ## Grading Responsibilities
