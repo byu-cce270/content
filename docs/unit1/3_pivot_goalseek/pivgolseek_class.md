@@ -50,11 +50,11 @@ Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet conta
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**.
 
-1. On the top right, click the "share" button --> share --> settings
-2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Submit the link to Learning Suite in the feedback box.
+1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
+2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
+3. Double-check that the file you uploaded is the one that contains your completed work.
 
 In-class assignment scores are based on valid effort and 
    completion.
@@ -67,9 +67,9 @@ In-class assignment scores are based on valid effort and
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        |
+|  File uploaded incorrectly  |       -10%        |
 |  Turned in late (per week)  | -10% (up to -50%) |

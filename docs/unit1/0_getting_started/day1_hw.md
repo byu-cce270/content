@@ -4,25 +4,25 @@
 
 ---
 
-### Part 1 - Mounting your OneDrive
-Mounting your OneDrive to your computer will allow you to store all of the assignments for the class in one place. You will need to download many files for this class, and having them organized in one place will make life much easier.
+### Part 1 - Set Up a Folder for the Class
 
-- Follow these instructions if you are a Mac User: [OneDrive for Mac](https://support.microsoft.com/en-us/office/sync-files-with-onedrive-on-macos-d11b9f29-00bb-4172-be39-997da46f913f){:target="_blank"}
-- Follow these instructions if you are a Windows User: [OneDrive for Windows](https://support.microsoft.com/en-us/office/sync-files-with-onedrive-in-windows-615391c4-2bd3-4aae-a42a-858262e42a49){:target="_blank"}
+You will download a lot of files for this class, so start by creating one place to keep them all. Somewhere
+convenient on your computer (your Documents folder works well), create a new folder and name it something like
+"CCE 270". You will save all of your Excel assignments for this class in this folder.
 
-Once mounted, create a new folder for the class. Call it something like "CCE 270". You will store all of your Excel 
-assignments in this folder for the class.
+Keeping everything in one folder will save you a lot of time hunting for files later, and it makes it much easier
+to find the right file when it is time to turn something in.
 
 ---
 
-### Part 2 - Download and Upload to OneDrive
+### Part 2 - Download the Starter Workbook
 
-Let's go over how to take a given file and download it to the CCE 270 folder in your OneDrive.
+Let's go over how to take a given file and download it to your CCE 270 folder.
 
 1. Here is the starter sheet for the assignment today: [(Starter-Workbook)-HW-A-Tour-of-Class-Resources.xlsx](%28Starter-Workbook%29-HW-A-Tour-of-Class-Resources.xlsx)
 2. Right-click on the file link and select "Save
-   Link As..." and save the file to your OneDrive folder (IMPORTANT!). If you save it to your Downloads folder or
-   somewhere else, be sure to move it to your OneDrive folder.
+   Link As..." and save the file to your CCE 270 folder. If you save it to your Downloads folder or
+   somewhere else, be sure to move it to your CCE 270 folder.
 3. Open the file and then at the top of the window is the workbook name. Click on this, and a drop-down like this
    will appear:
 
@@ -47,7 +47,7 @@ Then click on the "Screenshots" tab at the bottom. You will see a list of screen
 in the spaces provided.
 
 1. Take a screenshot of the Teaching Assistants page on our class website.
-2. Take a picture of your OneDrive folder with your Homework starter sheet in it. Make sure the screenshot shows the folder name you created in Part 1.
+2. Take a picture of your class folder with your Homework starter sheet in it. Make sure the screenshot shows the folder name you created in Part 1.
 3. On our class website, navigate to the "Office Hours" tab and take a screenshot of the office hours for January 12th to January 16th.
 4. Post a message in Microsoft Teams in the Homework Help channel. Take a screenshot.
 
@@ -61,45 +61,23 @@ Meetings will be from January 12th, 2026 to January 16th, 2026. After the 16th, 
 ---
 
 ### Part 4: Turning in your Excel Workbook
-For this class, **you will only turn in the links to your Excel files**. We will go over how to make any Excel sheet shareable so anyone can access it.
 
-1. Make sure your Excel file is saved in your OneDrive folder for this class.
-2. On the top right, click the share button --> share as shown below:
+For this class, **you will upload your Excel file directly to Learning Suite**. You attach the workbook itself to
+the assignment, the same way you would attach a file to an email.
 
-    >>![share_share.png](images/share_share.png)
-
-3. Then click the settings button next to the Copy Link button: 
-
-    >>![share_settings.png](images/share_settings.png)
-
-4. From here, we want your Excel sheet so that ANYONE with this link can edit. This will allow us to access the link
-   you turn in. To do this, click "anyone" at the top:
-
-    >>![share_anyone.png](images/share_anyone.png)
-
-5. Then underneath "More settings", change "Can view" to "Can edit":
-
-    >>![share_edit.png](images/share_edit.png)
-
-6. Then click Apply:
-
-    >>![share_apply.png](images/share_apply.png)
-
-7. Finally, copy the link by clicking the "Copy Link" button.
-
-    >>![share_copy.png](images/share_copy.png)
-
-8. Then paste the link into Learning Suite in the feedback box for the assignment.
+1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
+2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
+3. Double-check that the file you uploaded is the one that contains your completed work. It is easy to grab the
+   blank starter workbook by mistake, which is why renaming your file in Part 2 matters.
 
 !!! IMPORTANT
-    Make sure that your Excel file is turned in properly. You WILL be docked points if not shared so anyone with a link can edit, OR if you turn in an Excel file instead of a link to the file.
-
+    Make sure that your Excel file is turned in properly. You WILL be docked points if you upload the wrong file or upload something that is not an Excel workbook.
 
 ---
 
 ## Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable.
+**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**.
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
@@ -114,9 +92,9 @@ For this class, **you will only turn in the links to your Excel files**. We will
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        |
+|  File uploaded incorrectly  |       -10%        |
 |  Turned in late (per week)  | -10% (up to -50%) |

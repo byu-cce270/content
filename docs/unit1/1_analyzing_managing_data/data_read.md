@@ -158,7 +158,7 @@ This link provides more information on freezing rows and columns in Excel if you
 
 ## Pre-Class Quiz Challenge
 
-1. First download the starter sheet: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the OneDrive folder you created for this class.
+1. First download the starter sheet: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the CCE 270 folder you created for this class.
    <br>Before you start, make sure to make a copy of the file and rename it something like “(Your-Name)-Pre-Analyzing-&-Managing-Data”.
    <br>The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
@@ -176,12 +176,11 @@ This link provides more information on freezing rows and columns in Excel if you
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your Excel files**. You will get a 0 for this assignment if you turn in an Excel file or a link that is not shareable. 
+**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**.
 
-1. Make sure your file is saved to your OneDrive folder.
-2. On the top right, click the share button --> share --> settings
-3. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply.
-4. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
+2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
+3. Double-check that the file you uploaded is the one that contains your completed work.
 
 **Rubric:**
 
@@ -191,8 +190,8 @@ This link provides more information on freezing rows and columns in Excel if you
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        |
+|  File uploaded incorrectly  |       -10%        |

@@ -13,21 +13,18 @@ This section provides a detailed summary of the key concepts, procedures, and fu
 
 This module focuses on the foundational procedures for managing and submitting coursework for the CCE 270 class.
 
-* File Management with OneDrive: Students are required to mount their OneDrive to their local computer to create a centralized, organized folder (e.g., "CCE 270") for all class assignments. This practice is crucial for managing the numerous files that will be downloaded and worked on throughout the course.
+* File Management: Students create a single folder on their computer (e.g., "CCE 270") and keep every class file in it. This practice is crucial for managing the numerous files that will be downloaded and worked on throughout the course.
 * File Naming Convention: When working with starter workbooks, students must rename the file to include their name, such as (Your-Name)-HW-A-Tour-of-Class-Resources. Correctly renaming the workbook is a graded item.
 * Assignment Submission Process:
-    * Assignments are submitted not as Excel files, but as shareable links to the Excel files stored in OneDrive.
-    * Submitting an Excel file directly or a link that is not properly shared will result in a score of 0 for the assignment.
-* Generating a Correct Shareable Link:<br>
-    1. Ensure the file is saved in the class OneDrive folder.<br>
-    2. Click the "Share" button in the top right corner of Excel.<br>
-    3. Access the settings next to the "Copy Link" button.<br>
-    4. Set permissions so that "Anyone" with the link can access it.<br>
-    5. Change the "More settings" permission from "Can view" to "Can edit".<br>
-    6. Apply the settings and copy the generated link.<br>
-    7. Paste this link into the feedback box for the assignment in Learning Suite.
+    * Excel assignments are submitted by uploading the Excel (.xlsx) file itself to Learning Suite.
+    * Uploading the wrong file, or a file that is not an Excel workbook, will cost points.
+* Uploading an Assignment Correctly:<br>
+    1. Save your work and close the workbook so all changes are written to the file.<br>
+    2. Go to the assignment in Learning Suite.<br>
+    3. Upload the `.xlsx` file as an attachment.<br>
+    4. Verify that the uploaded file is the renamed file containing your completed work, not the blank starter workbook.
 * Grading and Penalties:
-    * Incorrect Link Sharing: A penalty of -10% is applied if the link is not shared correctly (i.e., not set to "anyone" with "can edit" permissions).
+    * Incorrect Upload: A penalty of -10% is applied if the file is not uploaded correctly (e.g., the wrong file, or a file that is not an Excel workbook).
     * Late Submissions: A penalty of -10% per week is applied for late submissions, with a maximum penalty of -50%.
 * Class Resources and Communication: Students are expected to know how to find information on the class website, such as TA office hours, and how to use communication tools like Microsoft Teams for homework help.
 
@@ -180,16 +177,16 @@ This module introduces Gantt charts as a project management tool and the Excel f
 
 Sample questions to help you prepare for the midterm exam. Answers are provided at the end of the quiz.
 
-1. According to the class rubric, what is the consequence of submitting an Excel file directly instead of a shareable link?<br>
-A. A 10% penalty.<br>
-B. A 50% penalty.<br>
-C. A score of 0 for the assignment.<br>
-D. A warning on the first offense.
-2. Which setting is required to ensure a TA can grade an Excel assignment submitted via a link from OneDrive?<br>
-A. "Anyone" with the link can "view".<br>
-B. "People in your organization" can "edit".<br>
-C. "Anyone" with the link can "edit".<br>
-D. "Specific people" can "view".
+1. How are Excel assignments turned in for this class?<br>
+A. By emailing the workbook to a TA.<br>
+B. By uploading the Excel (.xlsx) file to Learning Suite.<br>
+C. By printing the workbook and handing it in.<br>
+D. By typing your answers into the feedback box.
+2. What is the penalty for uploading your assignment incorrectly, such as uploading the blank starter workbook instead of your completed one?<br>
+A. -10%.<br>
+B. -25%.<br>
+C. -50%.<br>
+D. There is no penalty.
 3. What is the primary purpose of Conditional Formatting in Excel?<br>
 A. To perform complex calculations on a range of data.<br>
 B. To automatically format cells based on specified rules or conditions.<br>
@@ -387,8 +384,8 @@ D. Creating a Pie Chart.
 
 **Answer Key**
 
-1. C
-2. C
+1. B
+2. A
 3. B
 4. B
 5. D

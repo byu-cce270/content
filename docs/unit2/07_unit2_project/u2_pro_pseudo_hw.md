@@ -10,7 +10,7 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 
 1. Have one member of your group make a copy of this starter document: [(Starter-Doc)-HW-Project-2-Pseudocode.docx](%28Starter-Doc%29-HW-Project-2-Pseudocode.docx)
 2. Rename it something like “(Your-Team-Name)-HW-Project-2-Pseudocode.docx”
-3. Remember to have the team member who created the document, save it to their OneDrive folder that they created for Unit 1 and share it with the other team members.
+3. Have the team member who created the document save it to the CCE 270 folder they created in Unit 1, and share a copy with the other team members so everyone can contribute.
 
 ---
 
@@ -52,14 +52,13 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your Word file**. You will get a 0 for this assignment if you turn in a Word file or a link that is not shareable. 
+**_REMINDER_** - For this class, **you will upload your Word file directly to Learning Suite**.
 
-1. On the top right, click the share button --> share --> settings
-2. Click "anyone" at the top, then underneath "More settings", change "can view" to "can edit". Then click apply. 
-3. Copy the link, then turn it into Learning Suite in the feedback box for that assignment.
+1. Make sure your work is saved, then close the document so that all of your changes are written to the file.
+2. Go to the assignment in Learning Suite and upload your `.docx` file as an attachment.
+3. Double-check that the file you uploaded is the one that contains your completed work.
 
-Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:
-   - A Word link with sharing turned on and editing on
+Only one team member needs to turn in the assignment for the group.
 
 **Rubric:**
 
@@ -74,9 +73,9 @@ Only one team member needs to turn in the following in the feedback box on the a
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        |
+|  File uploaded incorrectly  |       -10%        |
 |  Turned in late (per week)  | -10% (up to -50%) |
