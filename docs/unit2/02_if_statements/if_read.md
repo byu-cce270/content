@@ -48,7 +48,7 @@ _Optional:_ In class we will be going over how to create different forms in Cola
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work.
 
 **Rubric:**
 
@@ -58,8 +58,8 @@ _Optional:_ In class we will be going over how to create different forms in Cola
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        | 
+|  File uploaded incorrectly  |       -10%        | 

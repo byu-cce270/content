@@ -81,7 +81,7 @@ Use IF statements and user inputs/selections to determine how many years that th
 			
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**.
+**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
 1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
 2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.

@@ -183,7 +183,10 @@ Next is easly, we call the function for the 1st client and then for the second c
          
 ---
 
-**Turn sharing and editing on. Turn in the link to BOTH YOUR COLAB NOTEBOOK AND YOUR GOOGLE SHEET on Learning Suite in the feedback box**
+**Turn in BOTH of the following on Learning Suite:**
+
+- Your completed notebook, downloaded from Colab with **File | Download | Download .ipynb** and uploaded as an attachment
+- The link to your Google Sheet, with sharing and editing turned on, pasted into the feedback box
 
 
 ---
@@ -209,10 +212,10 @@ Next is easly, we call the function for the 1st client and then for the second c
 |                               Part 2- Correct values updated into Google Sheet                          |       + 7       |
 |                             <div style="text-align: right">**Total**</div>                              |      + 30        |
 
-The following is not apart of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to turn in your work correctly.
 
 |                      **Reasons for Points Lost**                      | **Amount** |  
 |:---------------------------------------------------------------------:|:----------:|
 | No comments explaining why AI is used and what its provided code does |    2-3     |
-|                        Link shared incorrectly                        |     3      |
+|                     Work turned in incorrectly                        |     3      |
 |       Turned in late. 10% or 3 points for every week it's late.       |    3-15    |

@@ -38,7 +38,7 @@ You and the rest of your team previously formed will work together to come up wi
 
 # Turning In/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. It should only be a link to a Excel spreadsheet. 
+Upload your Excel (.xlsx) spreadsheet to the assignment in Learning Suite as an attachment. 
 
 |                               **Item**                               | **Amount** |
 |:--------------------------------------------------------------------:|:----------:|
@@ -50,11 +50,11 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to upload your file correctly.
 
 |                       **Reasons for Points Lost**                       |    **Amount**     |  
 |:-----------------------------------------------------------------------:|:-----------------:|
-|                         Link shared incorrectly                         |       -10%        |
+|                        File uploaded incorrectly                        |       -10%        |
 |                        Turned in late (per week)                        | -10% (up to -50%) |
 | No comments explaining where AI is used and what its provided code does |       -10%        |
 

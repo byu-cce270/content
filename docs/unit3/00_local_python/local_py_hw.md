@@ -140,7 +140,7 @@ Make sure the file you submit is the actual file you used locally and that it op
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **only for this assignment** will you turn in a screenshot and later a .ipynb/.py file. You will not get a 0 for the future assignment that you chose when your turn in a python file.
+**_REMINDER_** - For this assignment you will turn in a screenshot along with your file. Because you worked locally rather than in Colab, a `.py` file is accepted here in addition to a `.ipynb` file.
 
 **Rubric:**
 
@@ -152,11 +152,11 @@ Make sure the file you submit is the actual file you used locally and that it op
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to upload your file correctly.
 
 |                       **Reasons for Points Lost**                       |    **Amount**     |  
 |:-----------------------------------------------------------------------:|:-----------------:|
-|                         Link shared incorrectly                         |       -10%        |
+|                        File uploaded incorrectly                        |       -10%        |
 |                        Turned in late (per week)                        | -10% (up to -50%) |
 | No comments explaining where AI is used and what its provided code does |       -50%        |
 

@@ -68,7 +68,7 @@
 
 <ul>
 	<li>Late work will have a 10% penalty for each week it is late, up to 50% being taken off. This mean your assignment will be scored, then the penalty will be taken off.&nbsp;</li>
-	<li>Excel assignments are turned in by uploading the Excel (.xlsx) file itself to Learning Suite. Colab notebooks and other online documents are turned in by a sharable link, unless otherwise stated. Any assignment not turned in correctly or in the correct format, will receive a 0 until turned in correctly. There will still be a penalty for turning in the assignment incorrectly.</li>
+	<li>Assignments are turned in by uploading the file itself to Learning Suite: Excel assignments as an .xlsx file, and Python assignments as an .ipynb file downloaded from Colab. Any assignment not turned in correctly or in the correct format, will receive a 0 until turned in correctly. There will still be a penalty for turning in the assignment incorrectly.</li>
 	<li>All late work in each Unit&nbsp;is due at the end of that Unit&#39;s&nbsp;exam period. It will not be accepted after that day (unless you have lower than a 70% in the class). <strong>ONLY</strong> Homework and In Class Workbooks can be turned in late. Pre Class Quizzes can not be made up or redone.</li>
 	<li>If an assignment is turned in late, it is your responsibility to reach out to the TA in charge of grading that assignment to have it be rescored. You can find out which TA is in charge grading which assignment through our class website.&nbsp;</li>
 </ul>

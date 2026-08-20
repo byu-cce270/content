@@ -14,4 +14,4 @@ You can find the In Class Exercise here:
 ---
 
 ## Turning in/Rubric
-Turn sharing and editing on, then submit the link to Learning Suite in the feedback box. In-class assignment scores are based on valid effort and completion.
+Download your completed notebook from Colab with **File | Download | Download .ipynb** and upload the file to Learning Suite. In-class assignment scores are based on valid effort and completion.

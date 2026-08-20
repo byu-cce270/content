@@ -46,11 +46,13 @@ You will also have to make and turn in a project proposal. The project proposal,
 ---
 
 ## Turning in/Rubric
-Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:
+Only one team member needs to turn in the project. That team member should submit all of the following on the
+assignment in Learning Suite:
 
-- Learning Suite submission of your project links are due at the start of the scheduled presentations.
-- A colab notebook link with sharing turned on and editing on so that the data validation is visible.
-- Any files used and created in the project.
+- Your completed notebook, downloaded from Colab with **File | Download | Download .ipynb** and uploaded as an attachment. Run all of your cells before downloading so that your output is visible to the graders.
+- Any files used and created in the project, uploaded as attachments.
+
+Your Learning Suite submission is due at the start of the scheduled presentations.
       
 
 **Rubric:**
@@ -70,18 +72,18 @@ Only one team member needs to turn in the following in the feedback box on the a
 |       Relative contribution of each team member is given       |        5        |
 |                    Present for presentation                    |       15        |
 |                         TA wow factor                          |       10        |
-|            All links turned in before presentation             |       10        |
+|         All files turned in before presentation                |       10        |
 |         <div style="text-align: right">**Total**</div>         |       100       |
 |                    Use of GUIs (ipywidgets)                    |       +5        |
 |                          Use of numpy                          |       +5        |
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to upload your file correctly.
 
 
 |                     **Reasons for Points Lost**                      | **Amount** |  
 |:--------------------------------------------------------------------:|:----------:|
 | No comments explaining your code and how AI helped and what it does  |     10     |
-|                       Link shared incorrectly                        |     10     |
+|                      File uploaded incorrectly                       |     10     |
 
 ---
 

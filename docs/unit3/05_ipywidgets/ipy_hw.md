@@ -23,7 +23,7 @@ In this homework assignment, you will practice using random numbers, making GUIâ
       - Add at least 3 GUIs for user interaction 
       - Show the results in an HTML GUI
 5. Check the rubric to make sure you have completed all the requirements.
-6. Turn sharing, editing on. Then turn in the link to learning suite in the feedback box.
+6. Run all of your cells, then download the notebook with **File | Download | Download .ipynb** and upload the file to Learning Suite.
 
 ### Ideas for GUIs
 
@@ -38,8 +38,7 @@ In this homework assignment, you will practice using random numbers, making GUIâ
 
 # Turning In/Rubric
 
-Turn on sharing and editing. Turn in the link to the Learning Suite feedback box. ONLY turn in the workbook. **You don't need to turn in the file you created. 
-**
+Run all of your cells so your output is saved, then download the notebook with **File | Download | Download .ipynb** and upload the file to Learning Suite. ONLY turn in the notebook. **You don't need to turn in the file you created.**
 
 |                                         **Item**                                          | **Amount** |
 |:-----------------------------------------------------------------------------------------:|:----------:|
@@ -51,10 +50,10 @@ Turn on sharing and editing. Turn in the link to the Learning Suite feedback box
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to upload your file correctly.
 
 |                       **Reasons for Points Lost**                       |    **Amount**     |  
 |:-----------------------------------------------------------------------:|:-----------------:|
-|                         Link shared incorrectly                         |       -10%        |
+|                        File uploaded incorrectly                        |       -10%        |
 |                        Turned in late (per week)                        | -10% (up to -50%) |
 | No comments explaining where AI is used and what its provided code does |       -10%        |

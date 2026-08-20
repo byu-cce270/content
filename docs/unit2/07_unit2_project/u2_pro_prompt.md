@@ -58,10 +58,12 @@ Create a code that will allow a user to take a current to-do list and be able to
 
 ## Turning in/Rubric
 
-Only one team member needs to turn in the following in the feedback box on the assignment in Learning Suite:
-   - A colab link with sharing turned on and editing on
-   - The link to watch the video (not the video file)
-   - All files your code uses to run and/or generates (this will be a file you upload to Learning Suite)
+Only one team member needs to turn in the project. That team member should submit all of the following on the
+assignment in Learning Suite:
+
+   - Your completed notebook, downloaded from Colab with **File | Download | Download .ipynb** and uploaded as an attachment
+   - All files your code uses to run and/or generates, uploaded as attachments
+   - The link to watch the video (not the video file), pasted into the feedback box
 
 **Rubric:**
 
@@ -79,16 +81,16 @@ Only one team member needs to turn in the following in the feedback box on the a
 |                  Uses colab forms or input statements                  |        5        |
 |                   Use markdown to organize your code                   |        5        |
 |                            Prompt completed                            |       10        |
-|                Video uploaded (link to video not file)                 |       10        |
+|                Video uploaded (link to video, not the file)            |       10        |
 |                          Participation points                          |       10        |
 |             <div style="text-align: right">**Total**</div>             |       100       |
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you do not explain your code when using AI to help you create it or fail to upload your file correctly.
 
 |                       **Reasons for Points Lost**                       |    **Amount**     |  
 |:-----------------------------------------------------------------------:|:-----------------:|
-|                         Link shared incorrectly                         |       -10%        |
+|                        File uploaded incorrectly                        |       -10%        |
 |                        Turned in late (per week)                        | -10% (up to -50%) |
 | No comments explaining where AI is used and what its provided code does |       -50%        |

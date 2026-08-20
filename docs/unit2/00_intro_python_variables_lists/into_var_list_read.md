@@ -14,10 +14,20 @@ There is a "Welcome to Colab" notebook that will give you a brief overview of ho
 
 The text book either has you create a .py file or use the Python console to write and run your code. You will be using Colab instead. You can create a new cell in Colab and write your code there. Then run the cell to see the results, just like you would in the Python console as described in the book. You can ignore the parts of the book that talk about creating a .py file or using the Python console. If you have any questions about using Colab or how it is different from the book, please ask in class.
 
-## Storing and Sharing Your Colab Notebooks
+## Storing and Turning In Your Colab Notebooks
 Google Colab automatically saves your notebooks to your Google Drive. You can create a folder in your Google Drive to store all your class notebooks. 
 
-When you are ready to turn in an assignment, you will need to share the notebook with us. To do this, click the "Share" button in the top right corner of the Colab notebook. In the "Share with people and groups" window, click "Copy link" at the bottom. Make sure that the link is set so that "Anyone on the internet with the link can edit". If it is not, click on the dropdown that says "Restricted" and select "Anyone with the link". Then click on the dropdown that says "Viewer" and select "Editor". Now click "Copy link" again. You can then paste this link into the assignment submission form.
+When you are ready to turn in an assignment, you will download the notebook from Colab and upload that file to Learning Suite:
+
+1. Run all of your cells one last time so that the output you want the TAs to see is stored in the notebook. In Colab you can do this with **Runtime | Run all**.
+2. Save the notebook with **File | Save** (or Ctrl+S / Cmd+S) so your latest changes are written to Google Drive.
+3. Go to **File | Download | Download .ipynb**. Your browser will download a file ending in `.ipynb`.
+4. Go to the assignment in Learning Suite and upload that `.ipynb` file as an attachment.
+
+!!! Note
+    Download the **.ipynb** version, not the **.py** version. A `.py` file contains only your code — it loses your markdown text blocks and all of your cell output, which the TAs need in order to grade your work.
+
+Your downloaded notebook will land in your Downloads folder by default. Just like the Excel part of the class, it helps to move it into your CCE 270 folder so you can find it again.
 
 For organizational purposes, please rename your notebook to include the assignment name and your name just like in the Excel part of the class. You can rename the notebook by clicking on the title at the top of the page. We encourage you to create folders on your Google Drive to keep your notebooks organized. By default, Colab saves your notebooks in the main directory of your Google Drive. You can move them to a different folder by dragging and dropping them in your Google Drive, or doing a "save as" and putting them in the correct folder. Be careful with saving as, as it will create a copy of the notebook and you can end up with multiple versions of the same notebook.
 
@@ -70,7 +80,7 @@ In the same Colab notebook, complete Exercises 3-4, 3-5, and 3-6 found in chapte
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work.
 
 **Rubric:**
 
@@ -80,8 +90,8 @@ In the same Colab notebook, complete Exercises 3-4, 3-5, and 3-6 found in chapte
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        | 
+|  File uploaded incorrectly  |       -10%        | 

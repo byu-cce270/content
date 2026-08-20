@@ -77,7 +77,7 @@ the assignment, the same way you would attach a file to an email.
 
 ## Rubric
 
-**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**.
+**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|

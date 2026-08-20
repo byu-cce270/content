@@ -52,7 +52,7 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will upload your Word file directly to Learning Suite**.
+**_REMINDER_** - For this class, **you will upload your Word file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
 1. Make sure your work is saved, then close the document so that all of your changes are written to the file.
 2. Go to the assignment in Learning Suite and upload your `.docx` file as an attachment.

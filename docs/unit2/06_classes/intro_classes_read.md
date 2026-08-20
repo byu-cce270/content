@@ -66,7 +66,7 @@ repr(p)         # Uses __repr__: "Person(name='Aisha', age=21)"
 ---
 
 ## Pre-Class Quiz Challenge
-In a Colab notebook, complete Problem 9-3 and 9-5 found in chapter 9 of the textbook. Be sure to create and run several instances to test your class. Submit a link to the completed problem in your Pre-Class Quiz.
+In a Colab notebook, complete Problem 9-3 and 9-5 found in chapter 9 of the textbook. Be sure to create and run several instances to test your class. Download the completed notebook with **File | Download | Download .ipynb** and upload it with your Pre-Class Quiz.
 
 ![preclasschallenge_9-3.png](images/preclasschallenge_9-3.png)
 
@@ -78,7 +78,7 @@ If you have time and want to practice more, you can also complete Problem 9-7 an
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your colab notebooks**. You will get a 0 for this assignment if you turn in a python file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work.
 
 **Rubric:**
 
@@ -88,8 +88,8 @@ If you have time and want to practice more, you can also complete Problem 9-7 an
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        | 
+|  File uploaded incorrectly  |       -10%        | 

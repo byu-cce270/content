@@ -134,13 +134,13 @@ multiplied by -1
 
 ## Pre-Class Quiz Challenge
 
-Choose a previous homework assignment from this unit. In a Microsoft Word document, write pseudocode for that homework assignment as if you were completing that assignment for the first time. Submit a link to the completed problem in your Pre-Class Quiz.
+Choose a previous homework assignment from this unit. In a Microsoft Word document, write pseudocode for that homework assignment as if you were completing that assignment for the first time. Upload the completed document with your Pre-Class Quiz.
 
 ---
 
 ## Turning in/Rubric
 
-**_REMINDER_** - For this class, **you will only turn in the links to your document**. You will get a 0 for this assignment if you turn in a file or a link that is not correct, wrong assignment, or does not give editor permission.
+**_REMINDER_** - For this class, **you will upload your Word file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
 **Rubric:**
 
@@ -150,8 +150,8 @@ Choose a previous homework assignment from this unit. In a Microsoft Word docume
 
 ---
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to share your link correctly.
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|   Link shared incorrectly   |       -10%        |
+|  File uploaded incorrectly  |       -10%        |
