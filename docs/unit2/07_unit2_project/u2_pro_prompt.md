@@ -58,12 +58,20 @@ Create a code that will allow a user to take a current to-do list and be able to
 
 ## Turning in/Rubric
 
-Only one team member needs to turn in the project. That team member should submit all of the following on the
+Only one team member needs to turn in the project. That team member should submit both of the following on the
 assignment in Learning Suite:
 
-   - Your completed notebook, downloaded from Colab with **File | Download | Download .ipynb** and uploaded as an attachment
-   - All files your code uses to run and/or generates, uploaded as attachments
+   - **A single `.zip` archive** containing your completed notebook and every file your code uses to run and/or generates
    - The link to watch the video (not the video file), pasted into the feedback box
+
+To build the zip archive:
+
+1. Run all of your cells so that your output is saved in the notebook, then download it from Colab with **File | Download | Download .ipynb**.
+2. Put the downloaded `.ipynb` file and all of your data files together in one folder. Name the folder something like "(Your-Team-Name)-Unit-2-Project".
+3. Compress the folder into a single `.zip` file:
+    - **Windows:** right-click the folder and choose **Send to | Compressed (zipped) folder**
+    - **Mac:** right-click the folder and choose **Compress "(Your-Team-Name)-Unit-2-Project"**
+4. Upload the resulting `.zip` file to the assignment in Learning Suite.
 
 **Rubric:**
 
