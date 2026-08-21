@@ -47,20 +47,29 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 ## Grading Responsibilities
 
+All homework assignments will be automatically graded but the following TAs will be responsible reviewing the automatic grades. If you have a question about your grade, or turn in an assignment late, please contact the TA responsible for grading that assignment.
+
 - **HW 1.1**: The TA you signed up and met with.
 
-- **Brandan**: 2.8, 3.8, Projects, and Exams
+[//]: # (- **Brandan**: Projects, and Exams)
 
-- **Paige**: HW 2.7, HW 3.1, All Pre Class Quiz and In Class Workbooks
+[//]: # ()
+[//]: # (- **Griffin**: HW 1.5, HW 2.4, HW 3.3)
 
-- **Griffin**: HW 1.3, HW 2.6, HW 3.3
+[//]: # ()
+[//]: # (- **Reagan**: HW 1.6, HW 2.5, HW 3.4)
 
-- **Mauricio**: HW 1.2, HW 2.2, HW 3.4
+[//]: # ()
+[//]: # (- **Preston**: HW 2.8, HW 3.1, HW 3.8, All Pre Class Quiz and In Class Workbooks)
 
-- **Reagan**: HW 1.6, HW 2.5, HW 3.5
+[//]: # ()
+[//]: # (- **Luke**: HW 1.2, HW 2.6, HW 3.5)
 
-- **Preston**: HW 2.1, HW 3.2, HW 3.7
+[//]: # ()
+[//]: # (- **Tyler**: HW 1.3, HW 2.2, HW 3.7)
 
-- **Samantha**: HW 1.5, HW 2.4, Projects, and Exams
+[//]: # ()
+[//]: # (- **Carsen**: HW 1.4, HW 2.3, HW 3.2)
 
-- **Luke**: HW 1.4, HW 2.3, HW 3.6
+[//]: # ()
+[//]: # (- **McKay**: HW 2.1, HW 2.7, HW 3.6)
