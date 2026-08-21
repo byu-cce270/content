@@ -56,6 +56,13 @@ At this point, you should have 6 sheets in your workbook.
 
 ## Turning in/Rubric
 
+
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 **_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
 1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
@@ -86,4 +93,3 @@ The following is not a part of the rubric, but specifies how you can lose points
 |:---------------------------:|:-----------------:|
 |  File uploaded incorrectly  |       -10%        |
 |  Turned in late (per week)  | -10% (up to -50%) |
-

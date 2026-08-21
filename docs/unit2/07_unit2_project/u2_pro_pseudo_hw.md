@@ -52,6 +52,13 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 
 ## Turning in/Rubric
 
+
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 **_REMINDER_** - For this class, **you will upload your Word file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
 1. Make sure your work is saved, then close the document so that all of your changes are written to the file.

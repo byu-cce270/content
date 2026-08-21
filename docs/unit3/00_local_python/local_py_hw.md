@@ -140,6 +140,13 @@ Make sure the file you submit is the actual file you used locally and that it op
 
 ## Turning in/Rubric
 
+
+!!! note "Do not put your name or NetID in the file"
+    Learning Suite records who submitted each file, so your name is not needed
+    inside the file itself. Leaving it out means your work can be graded
+    anonymously, which keeps grading fair. This applies to scans and photos
+    too — please don't write your name on the page.
+
 **_REMINDER_** - For this assignment you will turn in a screenshot along with your file. Because you worked locally rather than in Colab, a `.py` file is accepted here in addition to a `.ipynb` file.
 
 **Rubric:**
@@ -159,7 +166,3 @@ The following is not a part of the rubric, but specifies how you can lose points
 |                        File uploaded incorrectly                        |       -10%        |
 |                        Turned in late (per week)                        | -10% (up to -50%) |
 | No comments explaining where AI is used and what its provided code does |       -50%        |
-
-
-
-
