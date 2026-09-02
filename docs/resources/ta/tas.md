@@ -20,7 +20,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 <br>**Brandan Williamson** - I'm the head TA for the class. I'm from Ripon, California. I'm a Senior here at BYU studying Civil Engineering and Computer Science. This is my third year as a TA. I've helped redo some of the coursework each semester. I'll be helping answer questions and grading assignments, and writing the free response for the exams. Feel free to message me during the evenings for help too.
 
 ![griffin_i_ta_profile.jpg](images/griffin_i_ta_profile.jpg){width=100px}
-<br>**Griffin Izu** - I'm from Irvine, California, and I am a junior in the Civil Engineering program. This will be my third semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, and playing video games. I'm very excited to meet you all!
+<br>**Griffin Izu** - I'm from Irvine, California, and I am a senior in Civil Engineering. This will be my sixth semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, collecting records, and playing video games. I'm very excited to meet you all, and I'm always happy to help/chat!
 
 ![reagan_b_ta_profile.jpg](images/reagan_b_ta_profile.jpg){width=100px}
 <br>**Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my fourth year at BYU. I'm studying construction management and this will be my first semester as a TA for this class!!! I am so excited! I love playing volleyball and reading :) I can't wait to meet you all!
