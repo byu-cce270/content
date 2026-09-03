@@ -23,7 +23,7 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 <br>**Griffin Izu** - I'm from Irvine, California, and I am a senior in Civil Engineering. This will be my sixth semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, collecting records, and playing video games. I'm very excited to meet you all, and I'm always happy to help/chat!
 
 ![reagan_b_ta_profile.jpg](images/reagan_b_ta_profile.jpg){width=100px}
-<br>**Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my fourth year at BYU. I'm studying construction management and this will be my first semester as a TA for this class!!! I am so excited! I love playing volleyball and reading :) I can't wait to meet you all!
+<br>**Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my last year at BYU. I'm studying construction management and this will be my third semester as a TA for this class!!! I love volleyball and reading :) I can't wait to meet you all!
 
 ![preston_c_ta_profile.jpg](images/preston_c_ta_profile.jpg){width=100px}
 <br>**Preston Cobabe** - Hi, I’m Preston. I love lifting weights, cooking especially smoking meat on my Traeger, and shooting film photography. I’ve been married for a year now to my wife Kate, and when I’m not working or studying, I enjoy traveling, exploring new food spots, and spending time outdoors.
