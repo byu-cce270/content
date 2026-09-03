@@ -101,32 +101,32 @@ nav:
         - In Class: unit3/00_local_python/local_py_class.md
         - Homework: unit3/00_local_python/local_py_hw.md
     - Numpy:
-        - Reading: unit3/00_numpy/numpy_read.md
-        - In Class: unit3/00_numpy/numpy_class.md
-        - Homework : unit3/00_numpy/numpy_hw.md
+        - Reading: unit3/01_numpy/numpy_read.md
+        - In Class: unit3/01_numpy/numpy_class.md
+        - Homework : unit3/01_numpy/numpy_hw.md
     - MatPlotLib:
-        - Reading: unit3/01_matplotlib/matplot_read.md
-        - In Class: unit3/01_matplotlib/matplot_class.md
-        - Homework: unit3/01_matplotlib/matplot_hw.md
+        - Reading: unit3/02_matplotlib/matplot_read.md
+        - In Class: unit3/02_matplotlib/matplot_class.md
+        - Homework: unit3/02_matplotlib/matplot_hw.md
     - Intro to Pandas:
-        - Reading: unit3/02_intro_to_pandas/pandas1_read.md
-        - In Class: unit3/02_intro_to_pandas/pandas1_class.md
-        - Homework: unit3/02_intro_to_pandas/pandas1_hw.md
+        - Reading: unit3/03_intro_to_pandas/pandas1_read.md
+        - In Class: unit3/03_intro_to_pandas/pandas1_class.md
+        - Homework: unit3/03_intro_to_pandas/pandas1_hw.md
     - Continuing with Pandas:
-        - Reading: unit3/03_continuing_pandas/pandas2_read.md
-        - In Class: unit3/03_continuing_pandas/pandas2_class.md
-        - Homework: unit3/03_continuing_pandas/pandas2_hw.md
+        - Reading: unit3/04_continuing_pandas/pandas2_read.md
+        - In Class: unit3/04_continuing_pandas/pandas2_class.md
+        - Homework: unit3/04_continuing_pandas/pandas2_hw.md
     - Python and Excel (xlsxwriter):
-        - Reading: unit3/04_python_and_excel/excel_read.md
-        - In Class: unit3/04_python_and_excel/excel_class.md
-        - Homework: unit3/04_python_and_excel/excel_hw.md
+        - Reading: unit3/05_python_and_excel/excel_read.md
+        - In Class: unit3/05_python_and_excel/excel_class.md
+        - Homework: unit3/05_python_and_excel/excel_hw.md
     - ipywidgets:
-        - Reading: unit3/05_ipywidgets/ipy_read.md
-        - In Class: unit3/05_ipywidgets/ipy_class.md
-        - Homework: unit3/05_ipywidgets/ipy_hw.md
+        - Reading: unit3/06_ipywidgets/ipy_read.md
+        - In Class: unit3/06_ipywidgets/ipy_class.md
+        - Homework: unit3/06_ipywidgets/ipy_hw.md
     - Final Project:
-        - Project Proposal: unit3/06_final_project/final_pro_proposal.md
-        - Project Prompt: unit3/06_final_project/final_pro_prompt.md
+        - Project Proposal: unit3/07_final_project/final_pro_proposal.md
+        - Project Prompt: unit3/07_final_project/final_pro_prompt.md
     - Unit 3 Study Guide: unit3/study_guide.md
   - Bonus Content:
     - Gspread: bonus/gspread/gspread_read.md

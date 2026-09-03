@@ -1,0 +1,40 @@
+# In Class Exercise: Pandas Series and DataFrames
+
+The following exercises will have you create pandas series and DataFrames from lists and external files. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
+
+You can find the In Class Exercise here:
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_intro_to_pandas/(Starter_Notebook)_Class_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+As part of this exercise, you will be asked to import some Excel file into a pandas DataFrame. You can download the 
+files from the following links:
+
+[signs.xlsx](signs.xlsx)<br>
+[stream_data.xlsx](stream_data.xlsx)
+
+After opening the notebook, drag and drop the files into the file explorer on the left side of the notebook.
+
+## Instructions
+1. Open the in-class workbook using the link above.
+2. Rename it something like "(Your_Name)_Class_Intro_to_Pandas.ipynb"
+3. Follow the instructions in the notebook to complete the exercise.
+
+---
+			
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|  File uploaded incorrectly  |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |
