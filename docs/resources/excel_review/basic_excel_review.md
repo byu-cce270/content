@@ -4,15 +4,56 @@
 
 The most basic feature of Excel is the ability to enter data and then write formulas based on the data. As the data are edited, the formulas are automatically updated. In this chapter, we review some of the procedures for entering and using formulas.
 
+## Excel Terminology
+
+The following terms will be used throughout the Excel portion of this course:
+
+| Term | Meaning |
+|:-----|:--------|
+| **Workbook** | An Excel file, such as `assignment.xlsx`. A workbook can contain multiple worksheets. |
+| **Worksheet** | One tab within a workbook. A worksheet is also commonly called a **sheet**. |
+| **Row** | A horizontal group of cells identified by a number. |
+| **Column** | A vertical group of cells identified by a letter. |
+| **Cell** | The box where a row and column intersect. A cell can contain text, a number, a date, or a formula. |
+| **Cell address** | The column letter and row number that identify a cell, such as `B4`. |
+| **Range** | A group of cells. A colon separates the first and last cell addresses, as in `B3:F10`. |
+| **Data range** | A range containing related data, usually organized into rows and columns with headers. |
+| **Excel Table** | A data range formally converted using **Format as Table**. An Excel Table has built-in filtering, formatting, and other data-management features. |
+| **Formula** | An expression beginning with `=` that calculates a result, such as `=A1+B1`. |
+| **Function** | A predefined calculation used in a formula, such as `=SUM(A1:A10)`. |
+
+## Essential Excel Shortcuts
+
+The following shortcuts are immediately useful when working in Excel:
+
+| Action | Windows | Mac |
+|:-------|:--------|:----|
+| Save | `Ctrl + S` | `Command + S` |
+| Undo | `Ctrl + Z` | `Command + Z` |
+| Cut, copy, and paste | `Ctrl + X`, `Ctrl + C`, `Ctrl + V` | `Command + X`, `Command + C`, `Command + V` |
+| Find | `Ctrl + F` | `Command + F` |
+| Move right or down | `Tab` or `Enter` | `Tab` or `Return` |
+| Jump to the edge of a data range | `Ctrl + Arrow` | `Command + Arrow` |
+| Select to the edge of a data range | `Ctrl + Shift + Arrow` | `Command + Shift + Arrow` |
+| Fill a formula down | `Ctrl + D` | `Command + D` |
+| Open Format Cells | `Ctrl + 1` | `Command + 1` |
+| Add or remove filters | `Ctrl + Shift + L` | `Command + Shift + F` or `Ctrl + Shift + L` |
+
+You do not need to memorize every Excel shortcut at once. Each Excel lecture will introduce a short table containing only a few shortcuts that are useful for that lecture. Practice using those shortcuts as you complete the exercises.
+
+For a comprehensive list, see [Keyboard shortcuts in Excel](https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel){:target="_blank"}.
+
+---
+
 ## Cell Addresses
-An Excel workbook contains a collection of sheets. Each sheet contains a collection of cells organized into rows and columns. The rows are indexed with numbers (1,2,3...) and the columns are indexed with letters (A,B,C...). Each cell can be uniquely identified by a cells address defined by the column-row combination.
+An Excel workbook contains a collection of worksheets. Each worksheet contains cells organized into rows and columns. Rows are identified with numbers (1, 2, 3...) and columns are identified with letters (A, B, C...). Each cell can be uniquely identified by its cell address, which combines the column letter and row number.
 
 - A5	<- Row 5, Column 1
 - D3	<- Row 3, Column 4
 - AJ234	<- Row 234, Column 36
 
 !!!Note
-    After column Z (26), the column numbers are indexed as AA,AB,AC... To reference a group of cells with single address we combine the upper left corner of the region with the lower right corner separated by a semicolon. For example, to reference the following range:
+    After column Z, the column labels continue as AA, AB, AC... To reference a group of cells with a single range address, combine the upper-left and lower-right cell addresses with a colon. For example, consider the following range:
 
     ![range.png](images/range.png)
 
@@ -30,7 +71,7 @@ There are four primary types of information that can be entered in cells:
 
 For the first three types (text, numbers, dates), Excel determines the type of data based on the content as you enter it, and formats it appropriately. You can also customize the formatting if you wish. Entering a formula is described in the next section.
 
-Sometimes it is useful to enter a sequence of data in a cell. Excel provides a simple trick for doing this. For example, suppose you want to create a list of numbers 1, 2, 3, ... to fill in a column in a table. Rather than typing the entire list, you can enter the first three numbers and then select the three numbers. Once you do so, a green rectangle will appear at the lower right corner of the selection as follows:
+Sometimes it is useful to enter a sequence of data in a cell. Excel provides a simple trick for doing this. For example, suppose you want to create a list of numbers 1, 2, 3, ... to fill in a column in a data range. Rather than typing the entire list, you can enter the first three numbers and then select the three numbers. Once you do so, a green rectangle will appear at the lower right corner of the selection as follows:
 
 ![autofill-1.png](images/autofill-1.png)
 
