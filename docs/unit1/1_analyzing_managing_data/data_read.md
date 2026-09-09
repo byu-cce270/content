@@ -2,7 +2,7 @@
 
 ---
 
-In Excel, there are many ways to analyze and display data. For this topic, you will focus on Conditional Formatting, Filtering Data, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, you will go over what each of these tools are and how to use them.
+In Excel, there are many ways to analyze and display data. For this topic, you will focus on Conditional Formatting, Filtering Data, Excel Tables, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, you will go over what each of these tools are and how to use them.
 
 ---
 
@@ -110,6 +110,82 @@ Filters can also be applied to multiple columns at the same time. To do this, si
 For more help on creating custom filters, check out: [Filter by using advanced criteria](https://support.microsoft.com/en-us/office/filter-by-using-advanced-criteria-4c9222fe-8529-4cd7-a898-3f16abdff32b){:target="_blank"}
 
 For more general help on filtering data in Excel, check out the following websites: [Filter data in a range or table](https://support.microsoft.com/en-us/office/filter-data-in-a-range-or-table-01832226-31b5-4568-8806-38c37dcc180e){:target="_blank"} and [Excel Filters by W3Schools](https://www.w3schools.com/excel/excel_filter.php){:target="_blank"}
+
+### Filters versus Tables
+
+A Table does not replace filtering. It organizes the data and adds filter controls automatically.
+
+- Use **filters on a normal range** for a quick, temporary review.
+- Use an **Excel Table** for a spreadsheet that will continue to be updated or reused. Tables automatically extend formatting and formulas to new rows and support named columns and a Total Row.
+- Always include every related column in the filtered range or Table. If a column is left outside, sorting can rearrange the included columns without moving the excluded column. This can cause values from different records to become incorrectly matched.
+- Both methods temporarily hide rows that do not meet the selected criteria; neither deletes the data.
+
+**Rule of thumb:** Use a filtered range for a quick check. For an ongoing spreadsheet, an Excel Table is usually the better option.
+
+---
+
+## Using Excel Tables
+
+An Excel **Table** is a range of related data that Excel manages as a single object. Although any organized group of cells may look like a table, an Excel Table includes additional tools for sorting, filtering, formatting, adding data, and working with formulas.
+
+Tables are especially useful when a data set will change over time. When you add new rows or columns next to a Table, Excel can automatically expand the Table to include the new data.
+
+Some benefits of using an Excel Table include:
+
+- Filter and sort buttons are automatically added to each column header.
+- Alternating row colors, called **banded rows**, make large data sets easier to read.
+- Table formatting automatically extends to new rows and columns.
+- A formula entered in one cell of a Table column can automatically fill the entire column.
+- Columns can be referenced by name instead of only by cell addresses.
+- An optional **Total Row** can calculate sums, averages, counts, minimums, and maximums.
+- Filters, formulas, and totals automatically adjust as the Table grows.
+
+### Creating a Table
+
+To convert a range of data into an Excel Table, follow these steps:
+
+1. Select a cell within the data. You can also select the entire data range. For the pre-class workbook, select cells **A1:F30**.
+
+![Select the data for an Excel Table](images/TableData1.png)
+
+2. On the **Home** tab, select **Format as Table**, and then choose a Table style. In Excel for Windows, you can also use the shortcut **Ctrl + T**.
+
+![Choose a style from the Format as Table gallery](images/TableData2.png)
+
+3. Excel will display the **Create Table** dialog box. Confirm that the correct cell range is shown and select **My table has headers**. This prevents Excel from replacing the existing headings with names such as Column1 and Column2.
+
+![Confirm the range and headers in the Create Table dialog box](images/TableData3.png)
+
+4. Select **OK**. Excel will format the data and add filter buttons to the header row.
+
+![A completed Excel Table](images/TableData4.png)
+
+The filter buttons in a Table work the same way as the filters described in the previous section. You can filter by values, numbers, dates, colors, or multiple criteria. Filtering hides rows that do not meet the selected criteria; it does not delete those rows.
+
+### The Table Design Tab
+
+When you select a cell inside a Table, Excel displays the **Table Design** tab. On a Mac, this tab may be labeled **Table**. From this tab, you can:
+
+- Change the Table style
+- Turn banded rows or columns on or off
+- Show or hide the filter buttons
+- Add a Total Row
+- Resize the Table
+- Give the Table a descriptive name
+
+Excel initially gives Tables names such as `Table1`. Giving a Table a meaningful name, such as `EquipmentCheckout`, makes it easier to identify and use later.
+
+### Using the Total Row
+
+To add a Total Row, select a cell in the Table and then select **Table Design > Total Row**. A new row will appear at the bottom of the Table. Select a cell in that row to choose a calculation such as **Sum**, **Average**, **Count**, **Minimum**, or **Maximum**.
+
+For example, the Total Row can display the average of the **Days Checked Out** column. The result updates when the Table is filtered, allowing you to summarize only the visible records.
+
+![A Table Total Row calculating the average Days Checked Out](images/TableData5.png)
+
+Tables become even more useful when working with formulas. Instead of referring to a range such as `F2:F30`, a formula can refer to a named Table column, such as `EquipmentCheckout[Days Checked Out]`. These are called **structured references**. You will work with formulas in the next section.
+
+For additional information, see [Create and format tables](https://support.microsoft.com/en-us/excel/get-started/create-and-format-tables){:target="_blank"}, [Overview of Excel tables](https://support.microsoft.com/en-us/excel/overview-of-excel-tables){:target="_blank"}, and [Using structured references with Excel tables](https://support.microsoft.com/en-us/excel/using-structured-references-with-excel-tables){:target="_blank"}.
 
 ---
 
