@@ -2,33 +2,33 @@
 
 ---
 
-The following exercises are based on conditional formatting, basic equations, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here: [(Starter-Workbook)-Class-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Class-Analyzing-%26-Managing-Data.xlsx)
+The following exercises are based on conditional formatting, basic formulas, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here: [(Starter-Workbook)-Class-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Class-Analyzing-%26-Managing-Data.xlsx)
 
 ---
 
 ## Exercise 1 - Company Inventory
 
-1. Navigate to the Company Inventory sheet and review the data. Your boss has given you a list of customer orders. He wants you to sort through the customer data to show the top steel buyers.
+1. Navigate to the Company Inventory worksheet and review the data. Your boss has given you a list of orders and wants you to identify the largest steel orders.
 
-2. At the bottom right of the table, sum the total quantity of material purchased (Cell C14).
+2. At the bottom right of the data range, calculate the total quantity of material purchased in cell C16 by summing cells C3:C14.
 
 3. Highlight all orders where the material purchased = "Steel". HINT: Use conditional formatting
 
-4. Add filters in columns A through C in row 2
+4. Add filters to the complete data range in columns A through C, using row 2 as the header row.
 
-5. Add a filter that only shows customers who ordered more than 15 tons of material
+5. Add a filter that shows only orders for more than 15 tons of material.
 
 ---
 				
 ## Exercise 2 - Analyze Materials Purchased
 
-1. Navigate to the Analyze Materials Purchased sheet. Now that you have proven your boss your skills, he has given you a new task with more customer order information
+1. Navigate to the Analyze Materials Purchased worksheet. Now that you have demonstrated your skills to your boss, he has given you a new task with more customer order information.
 
-2. Format the table by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal with this is to clearly and neatly display the data in the table
+2. Format the data range by adding borders, bolding the title, merging cells A1:E1, and adding colors to distinguish between the title, labels, and data. The goal is to display the data clearly and neatly.
 
-3. Add a color scale to the values in the table using conditional formatting (Cells B3:E26). Have the lower numbers be a lighter shade and the higher numbers be a darker shade
+3. Add a color scale to cells B3:E26 using conditional formatting. Have the lower numbers be a lighter shade and the higher numbers be a darker shade.
 
-4. Add filters to the table.
+4. Add filters to the complete data range.
 
 5. Use the filter to display the customers that ordered between 20 and 75 tons of material for Order #2 (column C)
 
@@ -36,19 +36,19 @@ The following exercises are based on conditional formatting, basic equations, an
 
 ## Exercise 3 - Temperature Conversions
 
-If you do these steps out of order, your formulas will look weird when the filters are applied first. Wait until the end to add filters.
+Complete the formulas before applying filters so that every data row receives the appropriate formulas.
 
-1. Navigate to the Temperature Conversions sheet. Your boss loved your work so much that now you are the lead intern for the Excel Spreadsheet division. He has now given you the task of analyzing the temperatures on one of his work sites to ensure building safety
+1. Navigate to the Temperature Conversions worksheet. Your boss loved your work so much that now you are the lead intern for the Excel Spreadsheet division. He has given you the task of analyzing the temperatures at one of his work sites to ensure building safety.
 
-2. In cell C3 write in the equation that will convert from Fahrenheit to Celsius found in the "Conversion Equations" table. Convert the rest of the column to Celsius
+2. In cell C3, enter the formula that converts Fahrenheit to Celsius, as shown in the "Conversion Equations" area. Convert the rest of the column to Celsius.
 
-3. In cell D3 write in the equation that will convert from Celsius to Kelvin found in the "Conversion Equations" table. Convert the rest of the column to Kelvin
+3. In cell D3, enter the formula that converts Celsius to Kelvin, as shown in the "Conversion Equations" area. Convert the rest of the column to Kelvin.
 
-4. In the "Statistical Data" table, find the average, max, min, standard deviation, and median from the values of Temp(F), Temp(C), and Temp(K) in the "Daily Temperature Data" table
+4. In the "Statistical Data" area, find the average, maximum, minimum, standard deviation, and median of the Temp(F), Temp(C), and Temp(K) values in the "Daily Temperature Data" range.
 
-5. In the "Daily Temperature Data" table, highlight all temperature values at or below freezing in the Temp(F) column (as there are regulations against working in freezing temperatures). As a reference, freezing for Fahrenheit is 32 degrees
+5. In the "Daily Temperature Data" range, highlight all values at or below freezing in the Temp(F) column because there are regulations against working in freezing temperatures. For reference, water freezes at 32 degrees Fahrenheit.
 
-6. Now, add filters to the "Daily Temperature Data" table. Only show dates that are before 9/22/2024
+6. Add filters to the complete "Daily Temperature Data" range. Show only dates before 9/22/2024.
 
 ---
 			

@@ -2,7 +2,7 @@
 
 ---
 
-In Excel, there are many ways to analyze and display data. For this topic, you will focus on Conditional Formatting, Filtering Data, Excel Tables, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, you will go over what each of these tools are and how to use them.
+In Excel, there are many ways to analyze and display data. For this topic, you will focus on Conditional Formatting, Filtering Data, Excel Tables, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, you will learn what these tools are and how to use them.
 
 ---
 
@@ -19,7 +19,7 @@ There are many different ways to use conditional formatting in Excel. Some commo
 - Data bars to show the relative size of values in a range
 - Color scales to show the relative size of values in a range
 
-To set up conditional formatting to your data in Excel, follow these steps:
+To apply conditional formatting to your data in Excel, follow these steps:
 
 1. Select the range of cells you want to format. This can be a single cell, a row, a column, or a range of cells. 
 
@@ -33,19 +33,19 @@ To set up conditional formatting to your data in Excel, follow these steps:
 
 ![CondFormat3.png](../2_lookup_match_if/images/CondFormat3.png)
 
-4. Once you have selected the type of conditional formatting you want to apply, a dialog box will appear. This dialog box will allow you to set the conditions for the formatting and choose the formatting options. Say for example, you want to highlight any cells that contains a "5" in the data set. You would select "Text that contains" from the drop-down menu.
+4. Once you select a conditional formatting rule, a dialog box will allow you to set the condition and choose the formatting. For example, to highlight text entries that contain the character "5," select **Highlight Cells Rules > Text that Contains**.
 
 ![CondFormat4.png](../2_lookup_match_if/images/CondFormat4.png)
 
-5. This will open a dialog box where you can enter the value you want to format. In this case, you would enter "5" in the box. You can also choose the condition to be based on a formula. For example, if you want to highlight cells that are greater than 5, you would enter the formula ">=5" in the box. The condition could also be based off another cell. For example, if you want to highlight cells that are greater than the value in cell A1, you would enter the formula ">=A1" in the box.
+5. Enter `5` in the **Text that Contains** box to highlight text containing that character. Numeric comparisons use a different rule. To highlight numbers greater than 5, select **Highlight Cells Rules > Greater Than** and enter `5`. To include 5 as well, create a formula-based rule and enter a formula such as `=A2>=5`, where A2 is the first cell in the selected range. A comparison can also refer to another cell; for example, `=A2>=$D$1` compares each selected value with the fixed value in D1.
 
 ![CondFormat5.png](../2_lookup_match_if/images/CondFormat5.png)
 
-6. After you have entered the value or formula, you can choose the formatting options. This includes the font color, fill color, and border style. You can also choose to apply the formatting to the entire row or column. There are some preset options to choose from, or you can create your own custom formatting by selecting "Custom Format" from the drop-down menu.
+6. After entering the value or formula, choose the formatting options, such as font color, fill color, and border style. You can use a preset format or select **Custom Format**. To format an entire row based on one cell's value, apply a formula-based rule to the complete row range; the Custom Format dialog controls the appearance, not which cells receive the rule.
 
 ![CondFormat6.png](../2_lookup_match_if/images/CondFormat6.png)
 
-7. Inside the custom format dialog box, you can choose the font, border, and fill options. You can also choose to apply the formatting to the entire row or column. Once you have selected the formatting options, click "OK" to apply the formatting.
+7. In the Custom Format dialog box, choose the font, border, and fill options. Once you have selected the formatting, click **OK**.
 
 ![CondFormat7.png](../2_lookup_match_if/images/CondFormat7.png)
 
@@ -53,7 +53,9 @@ To set up conditional formatting to your data in Excel, follow these steps:
 
 ![CondFormat8.png](../2_lookup_match_if/images/CondFormat8.png)
 
-You can also add multiple conditional formatting rules to the same range of cells. To do this, simply repeat the steps above for each rule you want to add. The rules will be applied in the order they are listed in the Conditional Formatting Rules Manager. Conditional formatting rules can be edited or deleted at any time by selecting the rule in the Conditional Formatting Rules Manager and clicking "Edit Rule" or "Delete Rule". It is important to note that the order of the rules can affect how they are applied. For example, if you have two rules that apply to the same cells, the first rule will take precedence over the second rule. This means that if the first rule is true, the second rule will not be applied. Conditional formatting rules can also be copied and pasted to other cells. To do this, simply select the cells with the conditional formatting you want to copy, right-click, and select "Copy". Then, right-click on the cells where you want to paste the formatting and select "Paste Special". In the Paste Special dialog box, select "Formats" and click "OK". This will apply the conditional formatting to the selected cells.
+You can add multiple conditional formatting rules to the same range. The Conditional Formatting Rules Manager lists the rules in priority order, with higher rules taking precedence when formats conflict. Lower rules may still add nonconflicting formatting unless **Stop If True** is selected for a higher rule. You can edit, delete, or reorder rules in the Rules Manager.
+
+Conditional formatting rules can also be copied to other cells. Select the cells with the conditional formatting, copy them, and then use **Paste Special > Formats** on the destination cells.
 
 To see more examples of conditional formatting and the different options available, check out this link from 
 W3Schools: [Conditional Formatting](https://www.w3schools.com/excel/excel_conditional_formatting.php){:target="_blank"}
@@ -66,16 +68,16 @@ Filtering data is a feature in Excel that allows you to show only the data that 
 
 To set up filtering in Excel, follow these steps:
 
-1. Select the columns of data you want to add filters to. You can select the entire table or just the headers.
+1. Select the complete data range, including its header row and every related column. If you select one cell within a contiguous data range, Excel can usually detect the surrounding range, but you should confirm that every related column is included.
 
 ![FilData1.png](../2_lookup_match_if/images/FilData1.png)
 
-2. Then go to the Data tab in the ribbon and select the Filter button. This will add a filter icon to each of the headers in the selected columns. Also on the Home tab, select "Sort & Filter" and then the Filter button. You can also use the shortcut Ctrl + Shift + L (Cmd + Shift + L for Mac users) to add filters to the selected columns.
+2. Go to the **Data** tab and select **Filter**. Alternatively, on the **Home** tab, select **Sort & Filter > Filter**. You can also use **Ctrl + Shift + L** in Windows. On a Mac, use **Command + Shift + F** or **Ctrl + Shift + L**.
 
 ![FilData2.png](../2_lookup_match_if/images/FilData2.png)
 ![FilData0.png](../2_lookup_match_if/images/FilData0.png)
 
-3. This will add filters to the top of the table on the header column.
+3. Excel will add a filter button to each cell in the header row.
 
 ![FilData3.png](../2_lookup_match_if/images/FilData3.png)
 
@@ -101,11 +103,11 @@ To set up filtering in Excel, follow these steps:
 
 ![FilData8.png](../2_lookup_match_if/images/FilData8.png)
 
-9. To remove a filter, click on the filter icon in the header of the column and select "Clear Filter From [Column Name]". This will remove the filter and show all the data in the table again. You can also remove all filters by going to the Data tab in the ribbon and selecting "Clear" from the Sort & Filter group.
+9. To remove a filter from one column, click its filter button and select **Clear Filter From [Column Name]**. This will show all values for that column while retaining filters on other columns. To clear all active filters, go to the **Data** tab and select **Clear** from the Sort & Filter group.
 
 ![FilData9.png](../2_lookup_match_if/images/FilData9.png)
 
-Filters can also be applied to multiple columns at the same time. To do this, simply repeat the steps above for each column you want to filter. The filters will be applied in the order they are listed in the Filter drop-down menu. You can also use the "Custom Filter" option to create more complex filters that combine multiple criteria. This allows you to filter the data based on multiple conditions, such as showing only rows that meet both criteria.
+Filters can be applied to multiple columns at the same time. These filters are **additive**: each additional filter further reduces the visible records. For example, filtering the Type column for Camera and the Days Checked Out column for values of 5 or greater displays only rows that meet both conditions. You can also use **Custom Filter** to combine multiple criteria within a column.
 
 For more help on creating custom filters, check out: [Filter by using advanced criteria](https://support.microsoft.com/en-us/office/filter-by-using-advanced-criteria-4c9222fe-8529-4cd7-a898-3f16abdff32b){:target="_blank"}
 
@@ -200,43 +202,55 @@ In Excel, functions help users to analyze, manage, and compute data. A function 
 Throughout this unit, you will learn new and useful functions. For this topic, you will focus on the most common functions for analyzing data:
 
 
-|      Function       | Syntax              | Purpose                                                                                                                                                |                             Help Link (W3Schools)                              |
+|      Function       | Syntax              | Purpose                                                                                                                                                |                                  Help Link                                     |
 |:-------------------:|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------:|
 |         Sum         | =SUM(arguments)     | Adds all of the arguments together                                                                                                                     |     [SUM](https://www.w3schools.com/excel/excel_sum.php){:target="_blank"}     |
 |       Average       | =AVERAGE(arguments) | Averages arguments together                                                                                                                            | [AVERAGE](https://www.w3schools.com/excel/excel_average.php){:target="_blank"} |
 |         Max         | =MAX(arguments)     | Returns the highest number out of the arguments                                                                                                        |     [MAX](https://www.w3schools.com/excel/excel_max.php){:target="_blank"}     |
 |         Min         | =MIN(arguments)     | Returns the lowest number out of the arguments                                                                                                         |     [MIN](https://www.w3schools.com/excel/excel_min.php){:target="_blank"}     |
-| Standard Deviation  | =STDEV.P(arguments) | Returns the standard deviation for the entire population.  <br>Use this if the range you pass to the function is the entire <br> dataset.**            | [STDEV.P](https://www.w3schools.com/excel/excel_stdevp.php){:target="_blank"}  |
-| Standard Deviation  | =STDEV.S(arguments) | Returns the standard deviation for a sample of the entire  <br> population. Use this if the range you pass is a subset of the  <br>overall population. | [STDEV.S](https://www.w3schools.com/excel/excel_stdevs.php){:target="_blank"}  |
-|       Median        | =Median(arguments)  | Returns the median of the arguments                                                                                                                    |  [MEDIAN](https://www.w3schools.com/excel/excel_median.php){:target="_blank"}  |
+| Standard Deviation  | =STDEV(arguments)   | Returns the sample standard deviation of the arguments. Use `STDEV` for the activities and homework in this topic.                                    | [STDEV](https://support.microsoft.com/en-us/excel/functions/stdev-function){:target="_blank"} |
+|        Mode         | =MODE(arguments)    | Returns the most frequently occurring number in the arguments                                                                                         |    [MODE](https://www.w3schools.com/excel/excel_mode.php){:target="_blank"}  |
+|       Median        | =MEDIAN(arguments)  | Returns the median of the arguments                                                                                                                    |  [MEDIAN](https://www.w3schools.com/excel/excel_median.php){:target="_blank"}  |
 
  
-** This function replaced the older STDEV function, which is still available for compatibility with earlier versions of Excel.
+For example, `=MODE(B2:B30)` returns the most common value in cells B2:B30, and `=STDEV(B2:B30)` returns the sample standard deviation of those values.
+
+!!! note "Optional: STDEV.S and STDEV.P"
+    When you search for a standard deviation function in Excel, `STDEV.S` and `STDEV.P` may appear before `STDEV`. `STDEV.S` is the current function for a sample and produces the same type of result as `STDEV`. `STDEV.P` is used when the supplied data represent the entire population. For the activities and homework in this topic, use `STDEV`.
 
 
-You can find more functions at W3Schools. You can also find a list of all functions in Excel by going to the Formulas tab in the ribbon and selecting "Insert Function". This will open a dialog box with a list of all the functions available in Excel. You can also search for specific functions by typing in the search box at the top of the dialog box. Within this dialog box, you can also find the function arguments and a description of what the function does. This is a great way to learn about new functions and how to use them. This can also be pulled by clicking on the function name in the formula bar.
+You can find more functions at W3Schools. You can also find a list of functions in Excel by going to the **Formulas** tab and selecting **Insert Function**, or by selecting the **Insert Function (fx)** button next to the formula bar. The dialog box lets you search for functions and review their arguments and descriptions.
+
+### Naming a Cell
+
+A named cell gives a cell reference a meaningful name that can be used in formulas. Named cells make formulas easier to read and act as fixed references by default.
+
+To name a cell:
+
+1. Select the cell you want to name.
+2. Click the **Name Box** to the left of the formula bar.
+3. Type a name without spaces, such as `con_fac`, and press **Enter**.
+4. Use the name in a formula. For example, `=C4*con_fac` multiplies the value in C4 by the value stored in the named cell.
 
 ## Freezing Rows/Columns
 
 When working with large data sets in Excel, it can be helpful to freeze certain rows or columns so that they remain visible while you scroll through the rest of the data. This is especially useful for keeping headers or labels in view while you work with the data.
-To freeze rows or columns in Excel, follow these steps:
-1. Select the row or column **Below** the row or column that you want to freeze. If you would like to freeze the top two rows, you are going to select the row **Below** the top two rows or the leftmost cell **Below** the top two rows. If you want to freeze both rows and columns, select the cell that is below the rows and to the right of the columns you want to freeze.
-2. Go to the View tab in the ribbon and select "Freeze Panes" from the Window group. This will open a drop-down menu with several options for freezing rows and columns.
-3. Select the option that best fits your needs:
-   - Freeze Panes: This will freeze both the rows above and the columns to the left of the selected cell.
-   - Freeze Top Row: This will freeze only the top row of the worksheet.
-   - Freeze First Column: This will freeze only the first column of the worksheet.
-4. Once you have selected the option you want, the rows or columns will be frozen in place. You can tell that they are frozen by looking for a thicker border between the frozen and unfrozen sections of the worksheet. If you scroll down or to the right, the frozen rows or columns will remain visible while the rest of the data scrolls.
-5. To unfreeze the rows or columns, go to the View tab in the ribbon and select "Unfreeze Panes" from the Window group. This will unfreeze all frozen rows and columns in the worksheet.
+Use the option that matches what you want to keep visible:
+
+- To freeze the top row, select **View > Freeze Panes > Freeze Top Row**.
+- To freeze the first column, select **View > Freeze Panes > Freeze First Column**.
+- To freeze custom rows and columns, select the cell immediately below the rows and immediately to the right of the columns you want to keep visible. Then select **View > Freeze Panes > Freeze Panes**. For example, select C3 to freeze rows 1–2 and columns A–B.
+
+Excel displays a thicker boundary between the frozen and scrolling areas. To remove the frozen panes, select **View > Freeze Panes > Unfreeze Panes**.
 
 Freezing rows and columns can be a useful tool when working with large data sets in Excel. It allows you to keep important information in view while you work with the rest of the data. This can be useful for keeping headers or labels visible, making it easier to understand and remember the data you are working with.
-This link provides more information on freezing rows and columns in Excel if you would like to learn more! [Microsoft Freeze Panes](https://support.microsoft.com/en-us/office/freeze-panes-to-lock-rows-and-columns-in-excel-9f3f8b3d-1f2c-4d5d-8e9e-6f1d3f3c3b3b){:target="_blank"}
+For more information, see [Freeze panes to lock rows and columns](https://support.microsoft.com/en-us/excel/get-started/freeze-panes-to-lock-rows-and-columns){:target="_blank"}.
 
 ---
 
 ## Pre-Class Quiz Challenge
 
-1. First download the starter sheet: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the CCE 270 folder you created for this class.
+1. First download the starter workbook: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the CCE 270 folder you created for this class.
    <br>Before you start, make sure to make a copy of the file.
    <br>The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
@@ -244,8 +258,8 @@ This link provides more information on freezing rows and columns in Excel if you
 3. **Highlight** those in **column A** that have an ID number between 1000 and 2500.
 4. Select cells **A1:F30** and add a **Filter**. 
 5. **Sort** the spreadsheet by the **Checked Out** date from most recent to the oldest.
-6. **Sort** the spreadsheet by **Days Checked Out** to only show those who have a value of 5 and higher.
-7. Fill in the **Days Checked out Statistics** chart using the **Days checked out** info in the main table.
+6. **Filter** the **Days Checked Out** column to show only values of 5 or greater.
+7. Fill in the **Days Checked Out Statistics** area using the **Days Checked Out** values in the main data range. Use `STDEV` for standard deviation.
 8. When you're finished, your spreadsheet should look something like this:
 
 ![Pre-Analyzing-&-Managing-Data-Challenge-Solution.png](images/Pre-Analyzing-%26-Managing-Data-Challenge-Solution.png)
