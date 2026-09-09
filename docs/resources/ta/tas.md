@@ -52,25 +52,18 @@ All homework assignments will be automatically graded but the following TAs will
 
 - **HW 1.1**: The TA you signed up and met with.
 
-[//]: # (- **Brandan**: Projects, and Exams)
+- **Brandan**: Projects, and Exams
 
-[//]: # ()
-[//]: # (- **Griffin**: HW 1.5, HW 2.4, HW 3.3)
+- **Griffin**: HW 1.5, HW 2.4, HW 3.3
 
-[//]: # ()
-[//]: # (- **Reagan**: HW 1.6, HW 2.5, HW 3.4)
+- **Reagan**: HW 1.6, HW 2.5, HW 3.4
 
-[//]: # ()
-[//]: # (- **Preston**: HW 2.8, HW 3.1, HW 3.8, All Pre Class Quiz and In Class Workbooks)
+- **Preston**: HW 2.8, HW 3.1, HW 3.8, All Pre Class Quiz and In Class Workbooks
 
-[//]: # ()
-[//]: # (- **Luke**: HW 1.2, HW 2.6, HW 3.5)
+- **Luke**: HW 1.2, HW 2.6, HW 3.5
 
-[//]: # ()
-[//]: # (- **Tyler**: HW 1.3, HW 2.2, HW 3.7)
+- **Tyler**: HW 1.3, HW 2.2, HW 3.7
 
-[//]: # ()
-[//]: # (- **Carsen**: HW 1.4, HW 2.3, HW 3.2)
+- **Carsen**: HW 1.4, HW 2.3, HW 3.2
 
-[//]: # ()
-[//]: # (- **McKay**: HW 2.1, HW 2.7, HW 3.6)
+- **McKay**: HW 2.1, HW 2.7, HW 3.6
