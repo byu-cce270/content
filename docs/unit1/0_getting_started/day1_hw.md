@@ -23,12 +23,6 @@ Let's go over how to take a given file and download it to your CCE 270 folder.
 2. Right-click on the file link and select "Save
    Link As..." and save the file to your CCE 270 folder. If you save it to your Downloads folder or
    somewhere else, be sure to move it to your CCE 270 folder.
-3. Open the file and then at the top of the window is the workbook name. Click on this, and a drop-down like this
-   will appear:
-
-    >>![workbook_rename.png](images/workbook_rename.png)
-
-4. Rename it something like "(Your-Name)-HW-A-Tour-of-Class-Resources"
 
 ---
 
@@ -68,7 +62,7 @@ the assignment, the same way you would attach a file to an email.
 1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
 2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
 3. Double-check that the file you uploaded is the one that contains your completed work. It is easy to grab the
-   blank starter workbook by mistake, which is why renaming your file in Part 2 matters.
+   blank starter workbook by mistake.
 
 !!! IMPORTANT
     Make sure that your Excel file is turned in properly. You WILL be docked points if you upload the wrong file or upload something that is not an Excel workbook.
@@ -81,8 +75,7 @@ the assignment, the same way you would attach a file to an email.
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-|       The worksheet is renamed correctly       |        1        |
-|             Question 1 is correct              |        1        |
+|             Question 1 is correct              |        2        |
 |  At least 4 times are included in question 2   |        4        |
 |      Question 3-5 are answered correctly       |        3        |
 |   All screenshots include proper information   |        8        |

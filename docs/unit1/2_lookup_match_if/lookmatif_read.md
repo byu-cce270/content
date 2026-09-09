@@ -196,7 +196,7 @@ Dragging them down, we can see the final result. Now each driveway is nicely cat
 ## Pre-Class Quiz Challenge
 
 1. First download the starter sheet: [(Starter-Workbook)-Pre-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Pre-Lookups-Match-IF.xlsx)
-    <br>Be sure to make a copy of the sheet and rename it something like “(Your-Name)-Pre-Lookups-Match-IF”.
+    <br>Be sure to make a copy of the sheet.
 
 2. The workbook contains two sections: the first sheet is for practicing VLOOKUP and MATCH functions, and the second sheet is for practicing IF and IFS functions. Take a minute to review the contents of the LOOKUP-MATCH sheet. 
 

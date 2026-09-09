@@ -351,8 +351,6 @@ Open the following notebook and complete the instructions in the markdown:
 
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_continuing_pandas/(Starter_Notebook)_Pre_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Rename it something like "(Your_Name)_Pre_Continuing_with_Pandas.ipynb".
-
 Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it with your Pre-Class Quiz.
 
 ---

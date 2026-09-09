@@ -17,9 +17,8 @@ In addition to the accident data, we will be working with datetime data. We will
 ## Instructions
 1. Download the Excel data file from the link above
 2. Open in-class notebook using the link above.
-3. Rename the notebook to something like "(Your_Name)_Class_Continuing_with_Pandas.ipynb"
-4. Drag and drop the downloaded file into the file explorer on the left side of the notebook.
-5. Follow the instructions in the notebook to complete the exercise.
+3. Drag and drop the downloaded file into the file explorer on the left side of the notebook.
+4. Follow the instructions in the notebook to complete the exercise.
    
 ---
 			

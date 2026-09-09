@@ -15,15 +15,14 @@ specifies the day of the week.  In the second dataframe, you will need to add a 
 ## Part 1: Setup
 
 1. Make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_continuing_pandas/(Starter_Notebook)_HW_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-2. Rename it something like "(Your_Name)_HW_Continuing_with_Pandas.ipynb"
-3. In the code block titled "Import Required Packages" input the correct import statements for the libraries you will use:
+2. In the code block titled "Import Required Packages" input the correct import statements for the libraries you will use:
     - matplotlib.pyplot as plt
     - pandas as pd
     - seaborn as sns
-4. Download this Excel spreadsheet:
+3. Download this Excel spreadsheet:
 [pavingdata.xlsx](data/pavingdata.xlsx)
-5. Upload the file to your Colab notebook by dragging and dropping it into the file explorer on the left side of the notebook.
-6. In a new code block, write code to open the two different sheets and read the data into two separate pandas dataframes.
+4. Upload the file to your Colab notebook by dragging and dropping it into the file explorer on the left side of the notebook.
+5. In a new code block, write code to open the two different sheets and read the data into two separate pandas dataframes.
     * Note: You can name the dataframes whatever you would like. For the purposes of these instructions the first sheet will be referred to as the **resurface_df** and the second sheet will be referred to as the **pavement_df**.
 
 ## Part 2: Pavement Resurfacing Jobs

@@ -13,17 +13,16 @@ In this homework assignment, you will practice using random numbers, making GUI�
 ## Instructions
 
 1. First make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/06_ipywidgets/(Starter_Notebook)_HW_ipywidgets.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-2. Rename it something like “(Your_Name)_HW_ipywidgets.ipynb” 
-3. Chose 2 of the following prompts:
+2. Chose 2 of the following prompts:
       - Rock paper scissors
       - Number Guessing game
       - Password generator
-4. Add the following elements to each prompt (include which ones you choose in your code and when you submit it):
+3. Add the following elements to each prompt (include which ones you choose in your code and when you submit it):
       - Add markdown/HTML with the instructions. 
       - Add at least 3 GUIs for user interaction 
       - Show the results in an HTML GUI
-5. Check the rubric to make sure you have completed all the requirements.
-6. Run all of your cells, then download the notebook with **File | Download | Download .ipynb** and upload the file to Learning Suite.
+4. Check the rubric to make sure you have completed all the requirements.
+5. Run all of your cells, then download the notebook with **File | Download | Download .ipynb** and upload the file to Learning Suite.
 
 ### Ideas for GUIs
 

@@ -6,7 +6,7 @@ In this class exercise, we will learn how to use ipywidgets to create interactiv
 
 To begin, create a copy of the "Starter_Sheet_In_Class_Workbook-ipywidgets": <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/06_ipywidgets/(Starter_Notebook)_Class_ipywidgets.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Then rename it something like, '**yourname_In_Class_Workbook_ipywidgets.ipynb'** and follow the follow instructions in the notebook.
+Then follow the instructions in the notebook.
 
 ---
 			

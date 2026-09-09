@@ -51,12 +51,13 @@ assignment in Learning Suite containing your completed notebook and every file u
 
 To build the zip archive:
 
-1. Run all of your cells so that your output is saved in the notebook, then download it from Colab with **File | Download | Download .ipynb**.
-2. Put the downloaded `.ipynb` file and all of your data files together in one folder. Name the folder something like "(Your-Team-Name)-Final-Project".
-3. Compress the folder into a single `.zip` file:
+1. Rename your notebook in Colab something like "(Your-Team-Name)-Final-Project.ipynb".
+2. Run all of your cells so that your output is saved in the notebook, then download it from Colab with **File | Download | Download .ipynb**.
+3. Put the downloaded `.ipynb` file and all of your data files together in one folder. Name the folder something like "(Your-Team-Name)-Final-Project".
+4. Compress the folder into a single `.zip` file:
     - **Windows:** right-click the folder and choose **Send to | Compressed (zipped) folder**
     - **Mac:** right-click the folder and choose **Compress "(Your-Team-Name)-Final-Project"**
-4. Upload the resulting `.zip` file to the assignment in Learning Suite.
+5. Upload the resulting `.zip` file to the assignment in Learning Suite.
 
 Your Learning Suite submission is due at the start of the scheduled presentations.
       

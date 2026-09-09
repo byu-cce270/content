@@ -5,8 +5,6 @@
 We will practice using Lookups, Match, and IF functions in several real-world scenarios. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 You can find the in-class workbook here: [(Starter-Workbook)-Class-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Class-Lookups-Match-IF.xlsx)
 
-Be sure to rename it something like “(Your-Name)-Class-Lookups-Match-IF”.
-
 In this workbook, there are 5 sheets.
 
 - **Project Budget** - Used for Exercise 1. 

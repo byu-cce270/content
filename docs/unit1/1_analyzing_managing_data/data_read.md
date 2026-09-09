@@ -159,7 +159,7 @@ This link provides more information on freezing rows and columns in Excel if you
 ## Pre-Class Quiz Challenge
 
 1. First download the starter sheet: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the CCE 270 folder you created for this class.
-   <br>Before you start, make sure to make a copy of the file and rename it something like “(Your-Name)-Pre-Analyzing-&-Managing-Data”.
+   <br>Before you start, make sure to make a copy of the file.
    <br>The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** those in the **Type** column that checked out Cameras.
    <br> Hint: Use conditional formatting

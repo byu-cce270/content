@@ -226,8 +226,7 @@ This is just a sample of the many things you can do with a solver. It is easy to
 
 ### Exercise #1 - Graphing Sales Data 
 
-The starter workbook can be found here: [(Starter-Workbook)-Pre-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Pre-Graphing-and-Solver.xlsx){:target="_blank"} <br>
-Make sure to rename the starter sheet something like “(Your Name)-Pre-Graphing-and-Solver.”
+The starter workbook can be found here: [(Starter-Workbook)-Pre-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Pre-Graphing-and-Solver.xlsx){:target="_blank"}
 
 In this workbook, we are going to be focusing on three main sheets: "Sales_Data", "Graphing", and "Topo-Solver." 
 

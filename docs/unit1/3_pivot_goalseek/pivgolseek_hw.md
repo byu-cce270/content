@@ -3,8 +3,7 @@
 **Purpose:** Learn how to use Goal Seek to solve complex equations and how to create Pivot Tables to summarize data.
 
 ## Instructions
-1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-HW-Pivot-GoalSeek-DataV.xlsx)
-2. Rename it something like "(Your-Name)-HW-Pivot-GoalSeek-DataV.xlsx"
+First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-HW-Pivot-GoalSeek-DataV.xlsx)
 
 ---
 

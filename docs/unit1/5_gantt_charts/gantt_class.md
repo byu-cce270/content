@@ -16,7 +16,7 @@ For the in-class exercise, we will be creating a basic Gantt chart, later in the
 
 To begin, open the in-class workbook and follow the instructions below. [(Starter-Workbook)-Class-Gantt-Chart.xlsx](%28Starter-Workbook%29-Class-Gantt-Chart.xlsx)
 
-Be sure to rename the file to something like "(Your-Name)-Gantt-Chart-Class.xlsx" and save it in your CCE 270 folder.
+Be sure to save it in your CCE 270 folder.
 
 ---
 

@@ -29,7 +29,7 @@ When you are ready to turn in an assignment, you will download the notebook from
 
 Your downloaded notebook will land in your Downloads folder by default. Just like the Excel part of the class, it helps to move it into your CCE 270 folder so you can find it again.
 
-For organizational purposes, please rename your notebook to include the assignment name and your name just like in the Excel part of the class. You can rename the notebook by clicking on the title at the top of the page. We encourage you to create folders on your Google Drive to keep your notebooks organized. By default, Colab saves your notebooks in the main directory of your Google Drive. You can move them to a different folder by dragging and dropping them in your Google Drive, or doing a "save as" and putting them in the correct folder. Be careful with saving as, as it will create a copy of the notebook and you can end up with multiple versions of the same notebook.
+We encourage you to create folders on your Google Drive to keep your notebooks organized. By default, Colab saves your notebooks in the main directory of your Google Drive. You can move them to a different folder by dragging and dropping them in your Google Drive, or doing a "save as" and putting them in the correct folder. Be careful with saving as, as it will create a copy of the notebook and you can end up with multiple versions of the same notebook.
 
 
 ## Pre Class Reading Assignment

@@ -4,8 +4,6 @@ We will practice graphing and using the Solver function in Excel. The data we wi
 preclass construction surplus store. You can 
 access the data here: [(Starter-Workbook)-Class-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Class-Graphing-and-Solver.xlsx)
 
-Make sure to rename the starter sheet something like “[Your Name]-Class-Graphing-and-Solver.”
-
 ---
 ## Exercise #1- Graphing Sales Data 
 

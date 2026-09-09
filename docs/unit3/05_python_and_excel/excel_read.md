@@ -379,8 +379,7 @@ This is just the tip of the iceberg! You can read more about the `xlsxwriter` li
 
 Open a new Colab notebook and do the following:
 
-1. Rename the notebook something like '**(Your_Name)_Pre_xlswriter.ipynb'**
-2. Click here to download the [data.xlsx](data.xlsx) file.
+1. Click here to download the [data.xlsx](data.xlsx) file.
 2. Upload the file to your Colab notebook by clicking on the folder icon on the left side of the screen and then 
    clicking on the upload icon. Or you can drag and drop the file into the notebook.
 1. Import the file to a dataframe using the `pandas` library and display the contents of the dataframe.

@@ -6,9 +6,7 @@ In this assignment, you will complete a two-part exercise. In the first part, yo
 
 ## Getting Started
 
-1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/04_intro_functions/(Starter_Notebook)_functions_intro_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-2. Rename it something like "(Your_Name)_HW_Intro_Functions.ipynb".
+First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/04_intro_functions/(Starter_Notebook)_functions_intro_hw.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Part 1 - Morse Code
 

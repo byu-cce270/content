@@ -9,9 +9,7 @@ assignment, you will be given a specific project prompt, and you will figure out
 
 1. Make a copy of the Gantt Chart Excel file you completed in class.
 
-2. Rename it something like "(Your-Name)-HW-Gantt-Chart.xlsx"
-
-3. Remember to save it in the CCE 270 folder that you created in the first assignment.
+2. Remember to save it in the CCE 270 folder that you created in the first assignment.
 
 ---
 

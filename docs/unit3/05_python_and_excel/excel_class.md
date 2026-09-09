@@ -6,7 +6,7 @@ In this class exercise, we will learn how to work with Excel files in Python. We
 
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/05_python_and_excel/(Starter_Notebook)_Class_Python_and_Excel.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Rename it '**(Your_Name)_Class_Python_and_Excel.ipynb'**. Then follow the instructions below. Create and organize your code in cells in the notebook as you go.
+Then follow the instructions below. Create and organize your code in cells in the notebook as you go.
 
 ## Part 1: Provo River Streamflow Data
 

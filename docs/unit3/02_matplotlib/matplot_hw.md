@@ -6,9 +6,7 @@
 
 1. First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/02_matplotlib/(Starter_Notebook)_HW_Matplotlib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-2. Rename it something like "(Your_Name)_HW_Matplotlib.ipynb"
-
-3. Download each CSV to be used in parts 2 through 5:
+2. Download each CSV to be used in parts 2 through 5:
 
     * [2013-2014-Pasadena-Temperature-Data.csv](2013-2014-Pasadena-Temperature-Data.csv)
     * [June-2021-Provo-River-Streamflow-Rates.csv](June-2021-Provo-River-Streamflow-Rates.csv)

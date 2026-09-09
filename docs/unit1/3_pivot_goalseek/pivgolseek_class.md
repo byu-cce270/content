@@ -6,8 +6,6 @@ The following exercises are based on learning how **Data Validation, Goal Seek,*
 find key 
 data. You can find the in-class workbook here: [(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Class-Pivot-GoalSeek-DataV.xlsx)
 
-Be sure to rename it something like “(Your-Name)-Class-Pivot-&-Goal-Seek.”
-
 In this workbook there are four sheets: "Data Validation"- used for Exercise 1, "Brickmaking Business" used for 
 Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet contains a table with employee data.
 

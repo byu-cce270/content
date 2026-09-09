@@ -38,7 +38,7 @@ You and the rest of your team previously formed will work together to come up wi
 
 # Turning In/Rubric
 
-Upload your Excel (.xlsx) spreadsheet to the assignment in Learning Suite as an attachment. 
+Name your workbook something like "(Your-Team-Name)-Final-Project-Proposal.xlsx", then upload the Excel (.xlsx) spreadsheet to the assignment in Learning Suite as an attachment. 
 
 |                               **Item**                               | **Amount** |
 |:--------------------------------------------------------------------:|:----------:|

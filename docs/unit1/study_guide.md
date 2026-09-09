@@ -14,7 +14,6 @@ This section provides a detailed summary of the key concepts, procedures, and fu
 This module focuses on the foundational procedures for managing and submitting coursework for the CCE 270 class.
 
 * File Management: Students create a single folder on their computer (e.g., "CCE 270") and keep every class file in it. This practice is crucial for managing the numerous files that will be downloaded and worked on throughout the course.
-* File Naming Convention: When working with starter workbooks, students must rename the file to include their name, such as (Your-Name)-HW-A-Tour-of-Class-Resources. Correctly renaming the workbook is a graded item.
 * Assignment Submission Process:
     * Excel assignments are submitted by uploading the Excel (.xlsx) file itself to Learning Suite.
     * Uploading the wrong file, or a file that is not an Excel workbook, will cost points.
@@ -22,7 +21,7 @@ This module focuses on the foundational procedures for managing and submitting c
     1. Save your work and close the workbook so all changes are written to the file.<br>
     2. Go to the assignment in Learning Suite.<br>
     3. Upload the `.xlsx` file as an attachment.<br>
-    4. Verify that the uploaded file is the renamed file containing your completed work, not the blank starter workbook.
+    4. Verify that the uploaded file is the one containing your completed work, not the blank starter workbook.
 * Grading and Penalties:
     * Incorrect Upload: A penalty of -10% is applied if the file is not uploaded correctly (e.g., the wrong file, or a file that is not an Excel workbook).
     * Late Submissions: A penalty of -10% per week is applied for late submissions, with a maximum penalty of -50%.
@@ -357,22 +356,17 @@ A. It defines the formula cell to be optimized.<br>
 B. It specifies which cells the Solver can change.<br>
 C. It sets a rule or limit that the solution must adhere to.<br>
 D. It selects the algorithm used for solving.
-37. A workbook is named (Starter-Workbook)-HW-A-Tour-of-Class-Resources.xlsx. What is the correct way to rename it for submission?<br>
-A. HW-A-Tour-of-Class-Resources.xlsx<br>
-B. (My-Name)-HW-A-Tour-of-Class-Resources.xlsx<br>
-C. (My-Name)-HW.xlsx<br>
-D. CCE 270 Assignment 1.xlsx
-38. The MEDIAN function returns what value from a set of numbers?<br>
+37. The MEDIAN function returns what value from a set of numbers?<br>
 A. The average value.<br>
 B. The most frequently occurring value.<br>
 C. The middle value when the numbers are sorted.<br>
 D. The sum of all values.
-39. The range_lookup parameter in VLOOKUP is optional. If it is omitted, what value does Excel assume?<br>
+38. The range_lookup parameter in VLOOKUP is optional. If it is omitted, what value does Excel assume?<br>
 A. FALSE<br>
 B. TRUE<br>
 C. 0<br>
 D. An error is returned.
-40. To find the "top 10" values in a dataset, which Excel feature would be most direct?<br>
+39. To find the "top 10" values in a dataset, which Excel feature would be most direct?<br>
 A. A VLOOKUP function.<br>
 B. The "Top/Bottom Rules" option within Conditional Formatting or Filtering.<br>
 C. The Solver add-in.<br>
@@ -420,10 +414,9 @@ D. Creating a Pie Chart.
 34. C
 35. C
 36. C
-37. B
-38. C
+37. C
+38. B
 39. B
-40. B
 
 
 ---

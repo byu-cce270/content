@@ -189,7 +189,7 @@ Each attempt by the computer tries to get closer and closer by guessing a number
 
 Here is a link for the pre-class starter sheet: [(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx) 
 
-Make sure to rename it something like “(Your-Name)-Pre-Pivot-GoalSeek-DataV.” Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
+Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
 
 ### Part 1: Data Validation
 
