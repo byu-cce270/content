@@ -111,17 +111,6 @@ For more help on creating custom filters, check out: [Filter by using advanced c
 
 For more general help on filtering data in Excel, check out the following websites: [Filter data in a range or table](https://support.microsoft.com/en-us/office/filter-data-in-a-range-or-table-01832226-31b5-4568-8806-38c37dcc180e){:target="_blank"} and [Excel Filters by W3Schools](https://www.w3schools.com/excel/excel_filter.php){:target="_blank"}
 
-### Filters versus Tables
-
-A Table does not replace filtering. It organizes the data and adds filter controls automatically.
-
-- Use **filters on a normal range** for a quick, temporary review.
-- Use an **Excel Table** for a spreadsheet that will continue to be updated or reused. Tables automatically extend formatting and formulas to new rows and support named columns and a Total Row.
-- Always include every related column in the filtered range or Table. If a column is left outside, sorting can rearrange the included columns without moving the excluded column. This can cause values from different records to become incorrectly matched.
-- Both methods temporarily hide rows that do not meet the selected criteria; neither deletes the data.
-
-**Rule of thumb:** Use a filtered range for a quick check. For an ongoing spreadsheet, an Excel Table is usually the better option.
-
 ---
 
 ## Using Excel Tables
@@ -186,6 +175,19 @@ For example, the Total Row can display the average of the **Days Checked Out** c
 Tables become even more useful when working with formulas. Instead of referring to a range such as `F2:F30`, a formula can refer to a named Table column, such as `EquipmentCheckout[Days Checked Out]`. These are called **structured references**. You will work with formulas in the next section.
 
 For additional information, see [Create and format tables](https://support.microsoft.com/en-us/excel/get-started/create-and-format-tables){:target="_blank"}, [Overview of Excel tables](https://support.microsoft.com/en-us/excel/overview-of-excel-tables){:target="_blank"}, and [Using structured references with Excel tables](https://support.microsoft.com/en-us/excel/using-structured-references-with-excel-tables){:target="_blank"}.
+
+---
+
+## Filters versus Tables
+
+A Table does not replace filtering. It organizes the data and adds filter controls automatically.
+
+- Use **filters on a normal range** for a quick, temporary review.
+- Use an **Excel Table** for a spreadsheet that will continue to be updated or reused. Tables automatically extend formatting and formulas to new rows and support named columns and a Total Row.
+- Always include every related column in the filtered range or Table. If a column is left outside, sorting can rearrange the included columns without moving the excluded column. This can cause values from different records to become incorrectly matched.
+- Both methods temporarily hide rows that do not meet the selected criteria; neither deletes the data.
+
+**Rule of thumb:** Use a filtered range for a quick check. For an ongoing spreadsheet, an Excel Table is usually the better option.
 
 ---
 
