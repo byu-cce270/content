@@ -48,7 +48,7 @@ At this point, you should have six worksheets in your workbook.
 
 1. Navigate to the Summary Statistics worksheet.
 2. Use the data from the “Streamflow Data Part 2” worksheet to complete the CFS calculations in the top half of the summary area. Use the appropriate functions, including `MODE` for mode and `STDEV` for standard deviation. For this assignment, use `STDEV`, not `STDEV.S` or `STDEV.P`.
-3. Engineers commonly express flow rates in cubic meters per second (CMS). Select cell C20 and name it `con_fac` to create a fixed reference to the conversion factor.
+3. Engineers commonly express flow rates in cubic meters per second (CMS). Select cell C20 and name it `con_fac` to create a fixed reference to the conversion factor. You will need to determine the value (you can use AI) to convert cubic feet (ft3) to cubic meters (m3)
 4. Use the named conversion-factor reference to convert the CFS results in the top half of the summary area to CMS.
 
 ---

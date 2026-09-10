@@ -1,21 +1,28 @@
-#  HW: Lookups, Match, and IF Functions
+# HW: Lookups, Match, and IF Functions
 
-**Purpose:** This assignment aims to test your ability to use more complex functions. In this assignment, you will continue to test your knowledge on how to use the Lookups, Match, and IF functions on different engineering problems. 
+**Purpose:** This assignment gives you practice using VLOOKUP, MATCH, IF, and IFS in several engineering examples.
 
 ---
 
 ## Getting Started
-1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-HW-Lookups-Match-IF.xlsx)
+1. First make a copy of the starter workbook: [(Starter-Workbook)-HW-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-HW-Lookups-Match-IF.xlsx)
 
 2. Remember to save it in the CCE 270 folder that you created in the first assignment.
 
+!!! note "Skills used in this assignment"
+    - **Named cells:** Select a cell, enter a name in the Name Box, and press Enter. A name can then be used in a formula instead of the cell reference.
+    - **Absolute references:** Use `$` to keep a lookup range fixed when filling a formula. While editing a reference, press `F4` on Windows or `Command+T` on Mac to cycle through reference types.
+    - **Unit conversions:** Write the conversion as a formula so the result updates when the input changes.
+    - **Fill formulas:** After filling a formula, check that relative references moved and absolute references stayed fixed.
+    - **Summary functions:** `AVERAGE(range)` returns the arithmetic mean and `MEDIAN(range)` returns the middle value.
+
 ---
 
-##  Part 1 - Hydrometer Analysis Sheet
+## Part 1 - Hydrometer Analysis Worksheet
 
-1. Navigate to the Hydrometer Analysis sheet
+1. Navigate to the **Hydrometer Analysis** worksheet.
 
-2. Name the cells in the spreadsheet according to this table:
+2. Name the cells in the workbook according to this table:
     
       | Variable                           | Cell | Name |
       |------------------------------------|------|------|
@@ -38,34 +45,33 @@
    | E6   | $\,^oC = \left(\,^oF - 32\right) \dfrac{5}{9}$ |
    | E9   | $F_t = -4.85 + \dfrac{\,^oC}{4}$               |
 
-4. In cell E10, use the VLOOKUP and MATCH functions to find the correct Stokes’ law coefficient by pulling the 
-   temperature (°C) in cell E6 and the specific gravity (Gs) in cell E4 (Use the purple Table of Stokes Law 
-   Coefficients in the Tables sheet). 
+4. In cell `E10`, use VLOOKUP and MATCH to find the Stokes' law coefficient from `Tables!$A$4:$H$17`. Use the temperature in `E6` as the VLOOKUP `lookup_value`. Use MATCH on the specific-gravity headings in `Tables!$B$3:$H$3` to help determine `col_index_num`. Add 1 to the MATCH result because the VLOOKUP range also includes the temperature column.
 
-!!! Note
-      For the temperature key used in VLOOKUP, you should not expect an exact match so you will need to do a range lookup (is_sorted = TRUE). If you want to do an exact match, you can use the ROUND() function to round the temperature to the nearest whole number inside the argument list as you pass them as keys to the functions. 
+!!! note
+    The temperature will not usually appear exactly in the coefficient range. Use an approximate VLOOKUP (`range_lookup = TRUE`) so Excel selects the largest listed temperature less than or equal to the calculated temperature. The temperature values must remain sorted in ascending order. Use an exact MATCH (`match_type = 0`) for the specific-gravity heading. Do not round the temperature: rounding selects the nearest whole number, which is a different rule from selecting the lower breakpoint.
 
-5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the relevant table:
+5. Use the equations below to calculate the following cell values, then fill down the remaining rows in the calculation range:
  
    | Cell | Equation                          |
    |------|-----------------------------------|
    | C15  | $R_{cp} = R + F_T - F_Z$          |
-   | D15  | $P_f = \dfrac{KR_{cp}}{W_S}(100)$ |
+   | D15  | $P_f = \dfrac{G_cR_{cp}}{W_S}$       |
    | E15  | $R_{cl} = R + F_m$                |
    | G15  | $D = K\sqrt{\dfrac{L}{t}}$        |
 
+   Column **D** is already formatted as a percentage. Enter `=Gc*Rcp/Ws`; do not multiply by 100 in the Excel formula.
+
 6. If you did everything right, the first row should look like this:
 
- ![checkwork.png](images/checkwork.png){width=750px}
+ ![Completed first row of the hydrometer calculations](images/checkwork.png){width=750px}
 
 ---
 
-## Part 2 - Soil Services Sheet
+## Part 2 - Soil Services Worksheet
 
-1. Navigate to the Soil Services sheet
+1. Navigate to the **Soil Services** worksheet.
 
-2. In column D, use the VLOOKUP and MATCH functions to find the correct price per test for each row (Use the blue 
-   table in the Tables sheet)
+2. In column **D**, use VLOOKUP and MATCH to find the correct price per test from `Tables!$J$3:$T$9`. Use an exact VLOOKUP (`range_lookup = FALSE`) for the service name. Use an approximate MATCH (`match_type = 1`) on the quantity headings in `Tables!$K$2:$T$2`, which are sorted in ascending order. Add 1 to the MATCH result because the VLOOKUP range begins with the service-name column. Quantities of 10 or more use the ten-test price.
 
 3. In column E, multiply the test quantities and prices per test to get the total price for each row
 
@@ -80,11 +86,11 @@
 
 ---
 
-## Part 3 - Material Estimator Sheet
+## Part 3 - Material Estimator Worksheet
 
-1. Navigate to the Material Estimator sheet
+1. Navigate to the **Material Estimator** worksheet.
 
-2. When you click on cell B2, you will see a little arrow on the right side of the cell. Click on it to see a dropdown menu that allows you to choose between the different types of gravel found on the table in the Tables sheet. This is from a data validation. You will learn how to make these next class.
+2. When you select cell `B2`, an arrow appears on the right side of the cell. Use the preconfigured Data Validation dropdown to choose a gravel type from the lookup range in the **Tables** worksheet. You will learn how to create dropdown lists in a later lesson.
 
 ![data_validation_example.png](images/data_validation_example.png)
 
@@ -92,7 +98,7 @@
 
 4. In cell B6, convert the volume to tons by multiplying B5 by 1.4
 
-5. In cell B7, use the VLOOKUP function to find the correct price based on the gravel type that is chosen using the dropdown menu
+5. In cell `B7`, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the price for the gravel type selected from the dropdown menu.
 
 6. In cell B8, multiply cells B6 and B7 to get your total
 
@@ -102,11 +108,11 @@
 
 ---
 
-## Part 4 - Simply Supported Beam Sheet
+## Part 4 - Simply Supported Beam Worksheet
 
-1. Navigate to the **Simply Supported Beam** sheet
+1. Navigate to the **Simply Supported Beam** worksheet.
 
-2. Name the cells in the spreadsheet according to this table:
+2. Name the cells in the workbook according to this table:
 
    | Variable          | Cell | Name |
    |-------------------|------|------|
@@ -132,13 +138,19 @@
    | B14 (x≤a) | $v=\dfrac{Pbx}{6EI_uL}\left(b^2+x^2-L^2\right)$                                   |
    | B15 (x>a) | $v=\dfrac{-Pb}{6EI_uL}\left[\dfrac{L}{b}(x-a)^3+\left(L^2-b^2\right)x-x^3\right]$ |
 
-4. Next, write an **IF** statement in cell **B16** that will return the value in cell **B14** if ***x≤a*** (B7) or cell **B15** if ***x>a*** (B7).
+4. Write an **IF** formula in cell **B16** that returns the value in cell **B14** if ***x≤a*** (`B7`) or the value in cell **B15** if ***x>a***. Use only distance values in the physical beam domain, `0 ≤ x ≤ L`.
 
-If written correctly, your sheet should look like this when **x** is set to **278** and **15**:
+If written correctly, the two branches of your formula should look like the examples below.
 
-![Deflection1.png](images/Deflection1.png)![Deflection2.png](images/Deflection2.png)
+**For `x = 38.18 in` (`x ≤ a`):**
 
-5. The force of the load on the beam causes the deflection to take the shape of a parabola as shown in the diagram. If you change the value of **x** in cell **B11**, the deflection will change accordingly. If you correctly wrote the equations, when **x** is set to **38.18**, the deflection should be **-2** and when **x** is set to **96.53**, the deflection should be **-2**.
+![Beam calculation with x equal to 38.18 inches](images/Deflection1.png)
+
+**For `x = 96.53 in` (`x > a`):**
+
+![Beam calculation with x equal to 96.53 inches](images/Deflection2.png)
+
+5. These equations describe a simplified, piecewise cubic deflection curve. Change **x** in cell **B11** to evaluate the beam at different positions. When **x** is **38.18 in**, the deflection should be approximately **-2.00 in**. When **x** is **96.53 in**, the deflection should also be approximately **-2.00 in**. This engineering example is used to practice named cells, formulas, and conditional logic.
 
 ---
 
