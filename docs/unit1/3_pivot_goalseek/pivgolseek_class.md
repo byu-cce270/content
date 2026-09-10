@@ -1,48 +1,51 @@
-# In-Class Exercise: Pivot Tables and Goal Seek
+# In-Class Exercise: PivotTables and Goal Seek
 
 ---
 
-The following exercises are based on learning how **Data Validation, Goal Seek,** and **Pivot Tables** can help us 
-find key 
-data. You can find the in-class workbook here: [(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Class-Pivot-GoalSeek-DataV.xlsx)
+These exercises introduce **Data Validation**, **Goal Seek**, and **PivotTables**. Download the in-class workbook here: [(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Class-Pivot-GoalSeek-DataV.xlsx)
 
-In this workbook there are four sheets: "Data Validation"- used for Exercise 1, "Brickmaking Business" used for 
-Exercise 2, "Data" and "Pivot Table" used for Exercise 3. The "Data" sheet contains a table with employee data.
+The workbook contains four worksheets: **Data Validation** for Exercise 1, **Brickmaking Business** for Exercise 2, and **Data** and **Pivot Table** for Exercise 3. The **Data** worksheet contains the employee source data.
 
 ---
 
 ## Exercise 1 - Data Validation
-1. Navigate to the "Data Validation" sheet.
-2. Select a column from the table. Go to the **Data** tab in the ribbon above and click on **Data Validation** under the 
-   **Data Tools** section.
-3. In column 1, validate that the data entered into the cell is a number greater than 0.
-4. In column 2, Create a dropdown list from the list of items in the range I25:I31 (You can either select the range 
-   or type in each option separated by commas).
-5. In column 3, validate that the data entered is a date in the past.
-6. In column 4, validate that the number entered is a decimal number between 0 and 1.
-7. Create an input message for each column that will appear when the user selects a cell in that column.
-8. Create a warning message for each column that will appear if the data entered does not meet the validation criteria. 
-   The warning message should be descriptive and helpful, guiding the user to enter valid data.
+
+1. Navigate to the **Data Validation** worksheet.
+2. Apply the following validation rules from **Data > Data Validation**:
+   - **Quantity (`A11:A23`):** allow whole numbers greater than 0.
+   - **Item (`B11:B23`):** create a list using `B25:B31` as the source.
+   - **Date (`C11:C23`):** allow dates earlier than today.
+   - **Discount Rate (`D11:D23`):** allow decimals from 0 to 1.
+3. For each entry range, add an **Input Message** that briefly describes the required value.
+4. For each entry range, add a descriptive **Error Alert** that helps the user correct an invalid value.
+5. Test every rule by entering at least one valid value and one invalid value. Confirm that valid values are accepted and invalid values display the intended alert. Leave valid values in the cells when finished.
 
 --- 
 
 ## Exercise 2 - Brickmaking Business
 
-1. Navigate to the "Brickmaking Business" sheet.
-2. Write equations to solve for the total expense, total revenue, and profit in cells B8:B10.
-3. Use Goal Seek to compute the number of Bricks you need to sell to make a profit of $100K.
+1. Navigate to the **Brickmaking Business** worksheet.
+2. Enter formulas for:
+   - **Total Expense (`B8`):** fixed expense plus the variable expense for the number of bricks sold.
+   - **Total Revenue (`B9`):** selling price per brick multiplied by the number of bricks sold.
+   - **Profit (`B10`):** total revenue minus total expense.
+3. Use Goal Seek to determine how many bricks must be sold to earn a profit of $100,000:
+   - **Set Cell:** `B10`
+   - **To Value:** `100000`
+   - **By Changing Cell:** `B7`
+4. Accept the Goal Seek result and leave the calculated number of bricks in `B7`.
 
 ---
 
 ## Exercise 3 - Employee Data
 
-1. Navigate to the sheet titled "Pivot Table" and create a pivot table that includes the Job Title and Department 
-   rows from the "Data" sheet.
-2. Using the pivot table just created, provide a count of the number of people with each job title and calculate the average salary for each job title.
-3. Play around with the pivot table to see how you can change the data displayed. For example, try adding the 
-   Department as a column and see how that changes the data.
-4. What does the data tell you about the distribution of job titles and salaries in the company? Are there any trends or 
-   patterns that stand out?
+1. Navigate to the **Pivot Table** worksheet and create a PivotTable starting at `A8` using the employee records on the **Data** worksheet.
+2. Place **Job Title** in **Rows**.
+3. Place **EEID** in **Values** and summarize it by **Count**.
+4. Place **Annual Salary** in **Values**, summarize it by **Average**, and format the results as currency.
+5. Place **Department** below **Job Title** in **Rows** and examine the nested summary.
+6. Move **Department** from **Rows** to **Columns** and compare the new layout with the nested summary.
+7. In the labeled response box on the **Pivot Table** worksheet, type one concise observation about the distribution of employees or average salaries. Base the observation on your PivotTable results.
 
 ---
 

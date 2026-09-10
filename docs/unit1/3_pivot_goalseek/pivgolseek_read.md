@@ -1,230 +1,187 @@
-#  Reading: Pivot Tables, Goal Seek, and Data Validation
+# Reading: PivotTables, Goal Seek, and Data Validation
 
 ---
 
 ## Data Validation
-Data validation is a feature in Excel that allows you to control the type of data entered into a cell. This 
-can be useful to ensure that the data entered into a cell is appropriate for the context of how it will be used. For 
-example, you may have a formula that only works with positive values. You can use data validation to ensure that 
-the cell(s) used as input to the formula only accepts positive values. 
-This is different from 
-filtering 
-data as data 
-validation controls the data that can be entered into a cell while filtering data changes the range of data you see.
-Data validation can help prevent errors in your data and make it easier to work with.  
 
-Let's go over how to add data validation to your data in Excel:
+Data Validation controls what users may enter in a cell. For example, it can require a positive number, a date within a specified range, or an item from a list. Validation helps prevent entry errors; filtering only changes which existing rows are visible.
 
-1. Select the range of cells you want to add data validation to.<br>
-2. Click on **Data | Data Validation**.<br>
-3. In the data validation criteria box, you can set up the criteria for the data that can be entered into the cells. For example, you can choose to allow only numbers, text, dates, or a list of items.<br>
-4. You can also choose the output of the data validation you want to apply to the cells. For example, you can choose to show a warning message if the data entered does not meet the criteria or to reject the data altogether.<br>
-5. Once you have set up the criteria and output options, click on Save to apply the data validation to the selected range of cells.
+To add Data Validation:
+
+1. Select the cells to validate.
+2. Select **Data > Data Validation**.
+3. On the **Settings** tab, choose the allowed data type and enter the criteria.
+4. Optional: use **Input Message** to explain what should be entered.
+5. Optional: use **Error Alert** to stop an invalid entry or warn the user about it.
+6. Select **OK**.
 
 !!! Note
-      You can also add multiple data validation rules to the same range of cells. For example, you can set up a rule that allows only numbers and another rule that allows only dates.
+      A cell normally has one Data Validation rule. When an input must satisfy several conditions, a **Custom** validation formula can combine them. For example, a custom formula could require a value to be both numeric and positive.
 
 ---
 
-### Dropdown  
+### Dropdown
 
-This is useful when you want to limit the data that can be entered into a cell to a specific list of items. For 
-example, you can create a drop-down list of options for a cell that allows the user to select from a list of items. 
-To do this, follow the same steps as above and select **List**. You can then enter the items you want to include in 
-the drop-down list.
-In the example below, the data validation is set up to allow only the values in the drop-down list to be entered 
-into the cells.
+Use a list when entries must come from a set of allowed choices. In **Data Validation**, select **List** and identify the source. The source can be typed choices or, preferably, a range of cells containing the allowed values. The example below accepts values from a drop-down list.
 
 ![datavdropdown.png](datav_images/datavdropdown.png)
 
-If you're wanting to create a drop-down list from a range of cells, you can select the range of cells that contain the items you want to include in the drop-down list. This is useful when you have a long list of items that you want to include in the drop-down list.
+### Dates
 
-### Dates 
-
-This is useful when you want to limit the data that can be entered into a cell to a specific date range. For example, you can create a data validation that only allows dates between 6/1/2021 and 6/30/2021 to be entered into the cells. To do this, follow the same steps as above and select the criteria that best fit the date range you want your data to have. In the example below, the data validation is set up to allow only dates between 6/1/2021 and 6/30/2021 to be entered into the cells.
+Date validation can limit entries to dates before, after, or between specified dates. The example below allows only dates from June 1 through June 30, 2021.
 
 ![datavdates.png](datav_images/datavdates.png)
 
-There are many other options for data validation. Here is an extra resource for further examples of Data Validation: [Data Validation](https://www.geeksforgeeks.org/excel/what-is-data-validation-in-excel/){:target="_blank"}
+For additional examples, see Microsoft's [Apply data validation to cells](https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249){:target="_blank"}.
 
 ---
 
-## Pivot Tables
+## PivotTables
 
-**Pivot Tables** are used to summarize and analyze large sets of data in more meaningful ways. They can be used to narrow down data sets and see relationships between data points among other things. Pivot tables allow us to summarize multiple columns and rows of data at a time.
+A **PivotTable** is an interactive summary of source data. It can group records, calculate totals or averages, and quickly rearrange a summary without changing the original data.
 
-For example, here is a data set showing sales data. If you would like to follow 
-along, you can use this data set:
+Before creating a PivotTable, make sure the source data has:
+
+* One header row with a unique, nonblank name for every column
+* Consistent data types within each column
+* No blank rows or columns inside the source range
+* One record per row
+
+The **PivotTable Fields** pane has four areas:
+
+* **Rows:** categories listed vertically
+* **Columns:** categories compared horizontally
+* **Values:** calculated summaries such as Sum, Count, or Average
+* **Filters:** fields used to limit the records included in the summary
+
+The following example uses a regional sales dataset. To follow along, download:
 [reg_sales_data.xlsx](reg_sales_data.xlsx)
 
-The data set shows the sales data for a set of regional sales managers. The data set includes region, the product, 
-the name of the sales rep, the number of units sold, and the total sales. Now suppose we want to create a summary of 
-the units sold and the total sales in each region, organized by sales rep. We could manually extract that 
-information from the table, or we could use some combination of COUNTIF and SUMIF to accomplish this. Or we could 
-find that information in a few clicks using a pivot table. The following steps show how to create a pivot table in 
-Excel. 
+The dataset contains region, product, sales representative, units sold, and total sales. We will summarize units sold and total sales by region and sales representative.
 
-### Creating the Pivot Table
+### Creating the PivotTable
 
-1. First, we select the data set. In this case, we select the cells in the range A1:F31.
-2. Next, we select the **Insert|Pivot Table** option from the menu. This will bring up the following dialog box:
+1. Select the source range `A1:F31`.
+2. Select **Insert > PivotTable**. Excel displays the following dialog box:
 
 ![creatingpivottableexcel.png](pivottable_images/creatingpivottableexcel.png)
 
-We can either choose to put the pivot table in a new sheet or in the existing sheet. In this case, we will put the 
-pivot table in an existing sheet named "summary." We will click the "Ok" button. This will create a pivot table in the 
-existing "summary" sheet.  The empty pivot table will look like this:
+3. Choose **Existing Worksheet**, select a location on the `summary` worksheet, and select **OK**. The empty PivotTable will look like this:
 
 ![emptypivottableexcel.png](pivottable_images/emptypivottableexcel.png)
 
-### Editing the Pivot Table
+### Editing the PivotTable
 
-Now we need to decide what data we want to summarize in the pivot table. We can do this using the Pivot table editor 
-on the right. The editor will look like this:
+Use the **PivotTable Fields** pane to arrange the summary:
 
 ![editingthepivottable.png](pivottable_images/editingthepivottable.png)
 
-Now we can start adding data to the pivot table. Adding data to the pivot table is done by dragging and dropping the 
-desired data into the appropriate sections in the editor. The sections are **Filters**, **Rows**, **Columns**, and 
-**Values**.
+4. Drag **Region** to **Rows**.
+5. Drag **Sales Rep** below Region in **Rows**.
+6. Drag **Units Sold** to **Values**. Open **Value Field Settings** and confirm that it is summarized by **Sum**.
+7. Drag **Total Sales** to **Values** and confirm that it is also summarized by **Sum**.
 
-3. Go to the editor and click and drag the **Region** category into the **Rows** section. 
-4. Click on the **Sales Rep** option and drag it to the **Rows** section. 
-
-At this point you should see a list of regions and the sales reps for each region in the pivot table. This data set 
-is a little odd in that the same sales rep is listed in multiple regions, so apparently the sales reps are not 
-limited to work in a single region. Now we need to add the data that we want to summarize. 
-
-5. Click and drag the **Units Sold** option to the **Values** section. If you click on **Sum of Units Sold | Value 
-   Field Settings** you'll notice 
-   that 
-   the "Summarize Values By" option is set to "Sum." This means that the pivot table will show the sum of the units 
-   sold for each sales rep in each region. You can also summarize by min, max, average, count, and other options. 
-   Let's keep the default of "Sum" for now.
-6. Click and drag the **Total Sales** option to the **Values** section. Once again, 
-   the default 
-   is to summarize by sum. 
-
-At this point, the pivot table should look like this:
+The PivotTable should look like this:
 
 ![finishedpivottable.png](pivottable_images/finishedpivottable.png)
 
-Now we can see the total units sold and total sales for each sales rep in each region. As you can see, it only takes a few clicks to create a pivot table that summarizes a large data set in a meaningful 
-way. Pivot tables are fun!
+The PivotTable now shows total units sold and total sales for each sales representative within each region.
+
+!!! Note "Refresh and changing source data"
+      After changing source data, use **Refresh** if the PivotTable does not update automatically. If new records are added outside an ordinary source range, update the PivotTable's data source before refreshing.
+
+!!! Tip "Optional: use an Excel Table"
+      This activity uses an ordinary range. You may instead convert the source to an Excel Table with **Ctrl+T**. A Table expands as rows are added, keeps headers and formatting consistent, and makes the PivotTable source easier to maintain. You must still refresh the PivotTable to update its results.
 
 ### Additional Readings
 
-Below are some links to additional readings on pivot tables.
+Below are some links to additional readings on PivotTables.
 
 * [Introduction Excel PivotTable](https://www.w3schools.com/excel/excel_table_pivot_intro.php){:target="_blank"}
 * [Create a PivotTable to Analyze Worksheet Data](https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576){:target="_blank"}
-* [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html){:target="_blank"} (bonus 
-  functions of pivot tables)
+* [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html){:target="_blank"} (bonus functions of PivotTables)
 
 ---
 
 ## Goal Seek
 
-In many Excel computations, we encounter equations that are too complex or impractical to solve directly. Instead, 
-we often rely on an iterative, trial-and-error approach—adjusting input values until the formula produces the desired result. **Goal Seek** is a function in Excel that automates this process. It is a 
-powerful tool 
-that utilizes an algorithm that plugs in different calculations to find a solution for an unknown variable using a known end-goal value. One example of this is often found in sales when determining how many units need to be sold to break even or meet a certain quota.
+**Goal Seek** changes one input cell until a formula cell reaches a specified value. It is useful when you know the required result but need to determine the input that produces it, such as the number of units needed to break even.
 
 ### Using Goal Seek
 
-To use Goal Seek, head to **Data | What-If Analysis | Goal Seek.** This will open the Goal Seek dialog box, 
-where you can enter your desired values and the cells you want to change.
+Select **Data > What-If Analysis > Goal Seek**. The dialog box requires three entries:
 
-Goal Seek has three basic components:
+* **Set Cell:** the cell containing the formula whose result you want to control
+* **To Value:** the desired numerical result of that formula
+* **By Changing Cell:** one input cell referenced, directly or indirectly, by the formula
 
-* **Set Cell**
-* **To Value**
-* **By Changing Cell**
+Goal Seek changes only one input and returns one solution per run. For equations with more than one valid solution, a different starting value may lead to a different solution.
 
-### Example Problem 
-Let's use the example of a contractor wanting to find what he would have to charge to make a profit of **\$1250** by 
-building his friend a 12' x 12' deck. Given the cost of materials (**\$6000**) and the **$22**/hr of pay for each employee,
-we 
-can calculate the project cost. Using Goal Seek, we can allow the computer to do the rest of the work for us.
+### Example Problem
 
-First, click the **Set Cell** grid icon on the **Goal Seek** tab, then select the cell you want to set. 
+A contractor wants to determine the price to charge for a deck so that the project earns a profit of **\$1,250**. The worksheet calculates project cost from materials and labor, then calculates profit from the price charged.
 
-**Hint**: This cell should **almost always** be the cell that contains your formula.
+Open Goal Seek and select the profit formula as the **Set Cell**.
 
 ![GoalSeekExcel1.png](goalseek_images/GoalSeekExcel1.png)
 
-Then, set the **To Value** to whatever value you are trying to find. In our case, this number would be 1250.
-
-Finally, select the cell that would need to change to evaluate the final part of the question. In this instance, this would be cell B9.
+Enter `1250` as the **To Value**. Select the price cell, `B9`, as the **By Changing Cell**.
 
 ![goalseekexredo.png](goalseek_images/goalseekexredo.png)
 
-When all three inputs are filled on the Goal Seek tab, the Solve button will light up blue. If you press the button, the computer should start jumping between values trying to find the solution to what gets a profit of $1250.
+Select **OK** to run Goal Seek. Excel changes the price until the profit formula is approximately \$1,250.
 
-In this example, our solution is \$8240.000057, or **\$8240!**
+In this example, Excel returns approximately **\$8,240**. Goal Seek uses numerical approximation, so Excel may display extra decimal places or a very small difference from the target. Round the result to a precision appropriate for the problem.
 
 ### How does this work?
 
-Each attempt by the computer tries to get closer and closer by guessing a number.
-
-**Attempt 1**
-
-![guess1.jpg](goalseek_images/guess1.jpg)
-
-**Attempt 2**
-
-![guess2.jpg](goalseek_images/guess2.jpg)
-
-**Attempt 3**
-
-![guess3.jpg](goalseek_images/guess3.jpg)
-
-**Attempt 4 and onwards**
-
-![guessTo6.jpg](goalseek_images/guessTo6.jpg)
+Goal Seek repeatedly tests input values until the formula result is sufficiently close to the target. It does not prove that the solution is unique. If an equation has multiple roots, run Goal Seek again with a different starting value and check each result in the original formula.
 
 ---
 
 ## Pre-Class Quiz Challenge
 
-Here is a link for the pre-class starter sheet: [(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx) 
+Here is a link for the pre-class starter sheet: [(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx)
 
-Note that this is an expanded version of the regional sales data set that we used in the pivot table example above. 
+Note that this is an expanded version of the regional sales dataset used in the PivotTable example above.
 
 ### Part 1: Data Validation
 
-Navigate to the "Dogshow" sheet, and use the Data Validation tool (found under the Data tab) to limit:
+Navigate to the `Dogshow` worksheet and use Data Validation, found on the **Data** tab, to limit:
 
-1. The breed of dogs (C6:C23) to the list provided.
-2. The judges' scores (D6:F23) to whole numbers 0 - 10.
-3. The winners (C28:C30) to the names of entered dogs.
+1. The breed of dogs (`C6:C23`) to the list provided.
+2. The judges' scores (`D6:F23`) to whole numbers from 0 through 10.
+3. The winners (`C28:C30`) to the names of entered dogs.
 
-Fill in the red chart to check your data validation (randomly select breeds and individual judge scores).  Enter a Sum function for the total scores. Then enter the names and scores of the 1st, 2nd, and 3rd place winners. 
+Fill in the red entry area using allowed breeds and judge scores. Test your validation by trying at least one valid entry and one invalid entry for both a list and a numerical rule. Enter a `SUM` formula for each total score, then enter the names and scores of the first-, second-, and third-place dogs.
 
-### Part 2: Pivot Table
+### Part 2: PivotTable
 
-1. Select the entire table on the "Reg_sales_data" sheet and create a pivot table in the existing "PivotTable" sheet.
-2. Drag and drop **Sales Rep** and **Product**  into the rows section in that order. Then add the **Units Sold** 
-   (Sum) 
-   and 
-   **Total 
-   Sales** (Sum) into the value category. This will summarize the total units sold and total sales for each sales rep 
-   for each 
-   product.
+1. Select the entire source range on the `Reg_sales_data` worksheet and create a PivotTable on the existing `PivotTable` worksheet, starting at `A6`.
+2. Place **Sales Rep** and then **Product** in **Rows**.
+3. Place **Units Sold** and **Total Sales** in **Values**. Confirm that both fields are summarized by **Sum**.
+4. In the labeled response box above the PivotTable, answer this question: Which sales representative and product combination has the greatest total sales?
 
 ### Part 3: Goal Seek
 
-Navigate to the "Fishing" sheet. 
+Navigate to the `Fishing` worksheet.
 
-You are out fly-fishing, when a huge fish jumps high out of the water to eat your fly. You just happen to know the parabolic equation that all trout jumps follow which is:
+While fly-fishing, you model the path of a jumping fish with the equation:
 
 $y = -(x-2)^2 + 5$
 
-You want to figure out how **far** it jumped.
+The two roots are the horizontal positions where the fish crosses the water surface. Their difference is the horizontal distance traveled above the water. The parabola's maximum gives the greatest height above the water.
 
-1. Use goal seek to determine the two $x$ values that make $y = 0.$ 
-2. Copy your answers into C28 and C29.
-3. As an extra curiosity, you want to figure out how high the fish jumped. Input the average of the two $x$ values in cell E28 to find the max $y$ value.
+1. Use Goal Seek to find both $x$ values that make $y=0$. Run Goal Seek twice, changing the starting value in the $x$ input cell before each run.
+2. Copy the two roots into `C28` and `C29`.
+3. Calculate the horizontal distance traveled above the water as the absolute difference between the two roots.
+4. Enter the average of the two roots in `E28`. This is the $x$ coordinate of the parabola's axis of symmetry. Use the worksheet formula to determine the maximum $y$ value.
+
+<details>
+<summary><b>Hint: starting values for Goal Seek</b></summary>
+
+Try an initial $x$ value of `-1` for one run and `5` for the other. Each result should make the original equation approximately zero.
+</details>
 
 ---
 

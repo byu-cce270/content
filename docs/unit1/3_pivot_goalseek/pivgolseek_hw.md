@@ -1,134 +1,136 @@
-#  HW: Pivot Tables, Goal Seek, and Data Validation
+# HW: PivotTables, Goal Seek, and Data Validation
 
-**Purpose:** Learn how to use Goal Seek to solve complex equations and how to create Pivot Tables to summarize data.
+**Purpose:** Build an engineering calculation, use Goal Seek to solve for an unknown input, apply Data Validation, and use PivotTables to summarize and interpret data.
 
 ## Instructions
-First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-HW-Pivot-GoalSeek-DataV.xlsx)
+
+First make a copy of the starter workbook: [(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-HW-Pivot-GoalSeek-DataV.xlsx)
 
 ---
 
 ## Part 1: Three Reservoir Problem
 
-For this exercise we will be solving the classic three reservoir problem. Consider the following diagram:
+In this exercise, three reservoirs are connected to a common junction by three pipes.
 
-![three_res.png](goalseek_images/three_res.png)
+![Three reservoirs connected to a common junction](goalseek_images/three_res.png)
 
-The diagram shows three reservoirs connected by pipes. The flow rate through each pipe is determined by the 
-difference in water levels between the two reservoirs connected by the pipe. The flow rate is also affected by the pipe diameter, length, and friction factor. The flow rate through each pipe is given by the following equation:
+The flow in each pipe depends on the difference between its reservoir head and the junction head, as well as the pipe diameter, length, and Darcy friction factor. In this exercise, $H_j$ is the **piezometric head** at the junction: elevation head plus pressure head, but not velocity head. Treat the supplied friction factors as constants. This simplified model neglects pumps, turbines, minor losses, and reservoir-surface velocity.
 
-$$Q = \dfrac{\pi}{4} * D^2 * V$$
+The flow rate in each pipe is:
 
-where: 
+$$Q = \dfrac{\pi D^2}{4}V$$
 
-- $Q$ is the flow rate in m^3/s
-- $D$ is the diameter of the pipe in meters
-- $V$ is the velocity of the water in the pipe in m/s
+where $Q$ is the flow rate in m³/s, $D$ is the pipe diameter in meters, and $V$ is the water velocity in m/s.
 
-The velocity of the water in the pipe is given by the following equation:
+For flow from a reservoir **into** the junction:
 
-$$V = \sqrt{\dfrac{2 * g * (H_1 - H_2)}{\left[\dfrac{f * L}{D}\right] \pm 1}}$$
+$$V = \sqrt{\dfrac{2g(H_i-H_j)}{\dfrac{fL}{D}+1}}$$
 
-where:
+For flow **out of** the junction toward a reservoir:
 
-- $g$ is the acceleration due to gravity (9.81 m/s^2)
-- $H_1$ is the water level in the reservoir (or junction) at the start of the pipe in meters
-- $H_2$ is the water level in the reservoir (or junction) at the end of the pipe in meters
-- $f$ is the friction factor
-- $L$ is the length of the pipe in meters
-- $D$ is the diameter of the pipe in meters
-- $\pm$ is a positive sign for the pipe inflow and a negative sign for outflow
+$$V = \sqrt{\dfrac{2g(H_j-H_i)}{\dfrac{fL}{D}-1}}$$
 
-The flow rate for the junction is equal to the sum of the flow rates into the junction, minus the flowrates out of the 
-junction.
+Here, $H_i$ is the reservoir head for pipe $i$, $g=9.81$ m/s², $f$ is the Darcy friction factor, and $L$ and $D$ are the pipe length and diameter. The starter values produce inflow through Pipe 2 and outflow through Pipes 1 and 3.
 
-$$Q_{j} = \pm Q_{1} \pm Q_{2} \pm Q_{3}$$
+At steady state, total inflow must equal total outflow. Define net flow into the junction as:
 
-The sign depends on the direction of the flow. If the flow is into the junction, the sign is positive. If the flow is out of the junction, the sign is negative.
+$$Q_j=Q_2-Q_1-Q_3$$
 
-To solve this problem, we will guess at the hydraulic head at the junction and use the **Goal Seek** tool to find a head 
-value
-in the 
-junction that results in a 
-net 
-flow 
-rate at the junction ($Q_j$) of zero. This will give us the water levels that will balance the flow rates through the 
-system.
+We will use Goal Seek to change $H_j$ until $Q_j=0$.
 
-To solve the problem, do the following:
+1. Navigate to the **Three Reservoir Problem** worksheet.
+2. Name the following cells. These names make the formulas easier to read.
 
-1. Navigate to the **Three Reservoir Problem** sheet
-2. Name the cells in the spreadsheet according to this table:
+    **Hint:** Select the cell, enter the name in the Name Box to the left of the formula bar, and press Enter.
 
-**Hint:** You can edit cell names by navigating to the name box in the top left corner of the spreadsheet
+    | Variable | Cell | Name |
+    |----------|------|------|
+    | Gravity | C4 | g |
+    | Junction head, $H_j$ | C5 | H_j |
 
-   | Variable                | Cell | Name |
-   |-------------------------|------|------|
-   | Gravity                 | C4   | g    |
-   | Head at junction, $H_j$ | C5   | H_j  |
+3. Enter the following velocity equations. Use the defined names `g` and `H_j`, and use relative references for the pipe inputs.
 
-3. Use the following table to write the equations shown below in the cells indicated. As you write the formulas, use the names you have defined for the two variables listed above. Use relative addressing for the other variables.
+    **Hint:** Enter each numerator and denominator inside parentheses before applying `SQRT`.
 
-**Hint:** The most common mistake on these equations is the parentheses, so be careful when writing your equations.
+    | Variable | Cell | Equation |
+    |:--------:|:----:|----------|
+    | $V_1$ | C13 | $\sqrt{\dfrac{2g(H_j-H_1)}{\dfrac{f_1L_1}{D_1}-1}}$ |
+    | $V_2$ | D13 | $\sqrt{\dfrac{2g(H_2-H_j)}{\dfrac{f_2L_2}{D_2}+1}}$ |
+    | $V_3$ | E13 | $\sqrt{\dfrac{2g(H_j-H_3)}{\dfrac{f_3L_3}{D_3}-1}}$ |
 
-   | Variable | Cell | Equation                                                                     |
-   |:--------:|:----:|------------------------------------------------------------------------------|
-   |  $V_1$   | C13  | $\sqrt{\dfrac{2 * g * (H_j - H_1)}{\left[\dfrac{F_1 * L_1}{D_1}\right] -1}}$ |
-   |  $V_2$   | D13  | $\sqrt{\dfrac{2 * g * (H_2 - H_j)}{\left[\dfrac{F_2 * L_2}{D_2}\right] +1}}$ |
-   |  $V_3$   | E13  | $\sqrt{\dfrac{2 * g * (H_j - H_3)}{\left[\dfrac{F_3 * L_3}{D_3}\right] -1}}$ |
+4. Calculate each pipe flow rate and the net flow at the junction.
 
+    | Variable | Cell | Equation |
+    |:--------:|:----:|----------|
+    | $Q_1$ | C14 | $V_1\dfrac{\pi}{4}(D_1)^2$ |
+    | $Q_2$ | D14 | $V_2\dfrac{\pi}{4}(D_2)^2$ |
+    | $Q_3$ | E14 | $V_3\dfrac{\pi}{4}(D_3)^2$ |
+    | $Q_j$ | C16 | $Q_2-Q_1-Q_3$ |
 
-4. Now that we have the velocity in each pipe, we will multiply by the cross-sectional area of the pipe to get the 
-   flow rate in the pipe. Use the 
-   following table to write the equations shown below in the cells indicated. 
+5. Before using Goal Seek, check your formulas with the starting value $H_j=50$ m. Small rounding differences are acceptable.
 
-   | Variable |   Cell   | Equation                         |
-   |:--------:|:--------:|----------------------------------|
-   |  $Q_1$   |   C14    | $V_1$ * $\dfrac{\pi}{4}*(D_1)^2$ |
-   |  $Q_2$   |   D14    | $V_2$ * $\dfrac{\pi}{4}*(D_2)^2$ |
-   |  $Q_3$   |   E14    | $V_3$ * $\dfrac{\pi}{4}*(D_3)^2$ |
-   |  $Q_j$   |   C16    | $Q_2$ - $Q_1$ - $Q_3$            |
+    | Value | Expected result |
+    |:------|----------------:|
+    | $V_1$ | 2.001 m/s |
+    | $V_2$ | 5.032 m/s |
+    | $V_3$ | 3.148 m/s |
+    | $Q_1$ | 0.01006 m³/s |
+    | $Q_2$ | 0.03952 m³/s |
+    | $Q_3$ | 0.01582 m³/s |
+    | $Q_j$ | 0.01364 m³/s |
 
-5. Using a starting value of $H_j$, use **Goal seek** to a value for $H_j$ that results in $Q_j$ = zero. At this point,
-   the flow rates in and out of the junction will be balanced, and we will solve for the correct values of $Q_1$, 
-   $Q_2$, and $Q_3$.
+6. In the **Goal Seek record** at the bottom of the worksheet, enter the settings below before running Goal Seek:
 
-6. Apply Data Validation to the **Diameter (D)** and **Length (L)** inputs to only allow positive numbers. This will 
-   ensure that the Diameter and Length values are valid inputs for the equations. Apply data validation to **all 
-   three pipe inputs** (C8:E9).
+    - **Set Cell:** `C16`
+    - **To Value:** `0`
+    - **By Changing Cell:** `C5`
+
+7. Run **Data > What-If Analysis > Goal Seek** using the starting value already in `C5`. After Goal Seek finishes, record the solved $H_j$ and final $Q_j$ in the labeled cells. Confirm that the final net flow is approximately zero.
+
+8. Apply Data Validation to `C8:E9` so the diameter and length inputs accept only numbers greater than 0. This checks that those inputs are positive; it does not test every physical constraint in the model.
 
 ---
 
-## Part 2: Flow Rate & Velocity Pivot Table
-1. Create a pivot table on the existing "PivotTable" sheet using the data from the Reservoir Flow sheet. Notice how 
-   there are multiple scenarios. In this dataset, each scenario is one complete system of water flowing through 
-   **Pipe 1, Pipe 2,** and **Pipe 3** with a shared **junction head** (Hj) but potentially different lengths and 
-   diameters for 
-   each pipe. 
+## Part 2: Flow Rate and Velocity PivotTable
 
-   * Use **Pipe** and **Flow Direction** as the rows.
-   * Use **Flow Rate** and **Velocity** as the values.
-   * Make sure that the Value settings are set to find the _Average_ **Flow Rate** and **Velocity**.
+The **Reservoir Flow** worksheet contains ten balanced scenarios. Each scenario has three pipes that share one solved junction head. Pipe dimensions, reservoir heads, and flow directions vary.
 
-Pipe 1 and 3 are usually **Outflow** pipes, while Pipe 2 is usually an **Inflow** pipe. What does this tell you about 
-the system? Do outflow pipes have a higher or lower average flow rate than inflow pipes? What about average velocity?
+1. Select the ordinary source range `A1:J31` on the **Reservoir Flow** worksheet.
+2. Create a PivotTable on the existing **PivotTable** worksheet, starting at `A9`.
+3. Arrange the fields as follows:
+
+    - **Rows:** Flow Direction
+    - **Columns:** Pipe
+    - **Values:** Average of Flow Rate and Average of Velocity
+    - **Filters:** Scenario
+
+4. In the **Part 2 observation** box above the PivotTable, describe what this dataset shows about average flow rate or velocity for inflow and outflow. Describe the dataset rather than claiming a universal hydraulic rule.
+
+!!! tip "Optional: use an Excel Table"
+    You may convert `A1:J31` to an Excel Table before creating the PivotTable. A Table makes the source easier to identify and automatically includes added rows when the PivotTable is refreshed.
+
+---
+
+## Part 3: Personal PivotTable
+
+Create a second PivotTable in a **new worksheet** to explore a relationship or pattern that interests you. Include:
+
+- At least one categorical field in **Rows**
+- A second categorical field in **Rows**, **Columns**, or **Filters**
+- At least two numeric fields in **Values**
+- An appropriate summary calculation for each value
+
+For example, you could place Scenario in Rows, Pipe in Columns, and average Flow Rate and Velocity in Values. Record a one- or two-sentence interpretation in the **Part 3 observation** box on the original **PivotTable** worksheet.
 
 ---
 
-## Part 3: Personal Pivot Table 
-
-In this part, we want you to create another pivot table in a **New Worksheet**, but in this case we want you to examine the data and create a pivot table that explores data correlations that **YOU** find interesting. Make sure to use at least two combinations of fields in the **Rows** section and at least two combinations of fields in the **Values** section.
-
-For example, how does the average flow rate change with different pipe diameters? Or how does the average velocity change with different pipe lengths?
-
----
 ## Turning in/Rubric
-
 
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
     anonymously, which keeps grading fair. This applies to scans and photos
-    too — please don't write your name on the page.
+    too—please don't write your name on the page.
 
 **_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
@@ -140,25 +142,23 @@ For example, how does the average flow rate change with different pipe diameters
 
 **Rubric:**
 
-|                                Item                                 | Points Possible |
-|:-------------------------------------------------------------------:|:---------------:|
-|                    Part 1: Cells named correctly                    |        3        |
-| Part 1: Velocity equations are written correctly and use cell names |        4        |
-|          Part 1: Flow rate equations are written correctly          |        4        |
-|  Part 1: Correct flow rate values are found with goal seek (±0.005)  |        5        |
-|      Part 1: Data validation applied to Pipe inputs (D and L)       |        2        |
-|          Part 2: Pivot Table is created on existing sheet           |        2        |
-|        Part 2: Table created using data from Reservoir Flow         |        2        |
-|         Part 2: Table includes Pipe and Flow Direction Rows         |        3        |
-|        Part 2: Values are **Average** Flow Rate and Velocity        |        3        |
-|                Part 3: Pivot Table in new worksheet                 |        2        |
-|           <div style="text-align: right">**Total**</div>            |       30        |
+| Item | Points Possible |
+|:-----|:---------------:|
+| Part 1: Named cells, formulas, and checkpoint values are correct | 7 |
+| Part 1: Goal Seek settings are recorded and solved $H_j$ is within ±0.01 m | 5 |
+| Part 1: Final continuity check is recorded and $|Q_j| \leq 0.0001$ m³/s | 2 |
+| Part 1: Data Validation is applied to all diameter and length inputs | 2 |
+| Part 2: Prescribed PivotTable uses the correct source, location, fields, and summaries | 6 |
+| Part 2: Observation is complete and supported by the PivotTable | 2 |
+| Part 3: Personal PivotTable meets the field and summary requirements | 4 |
+| Part 3: Interpretation is complete and supported by the PivotTable | 2 |
+| <div style="text-align: right">**Total**</div> | **30** |
 
 ---
 
 The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
 
-| **Reasons for Points Lost** |    **Amount**     |  
-|:---------------------------:|:-----------------:|
-|  File uploaded incorrectly  |       -10%        |
-|  Turned in late (per week)  | -10% (up to -50%) |
+| **Reasons for Points Lost** | **Amount** |
+|:---------------------------:|:----------:|
+| File uploaded incorrectly | -10% |
+| Turned in late (per week) | -10% (up to -50%) |
