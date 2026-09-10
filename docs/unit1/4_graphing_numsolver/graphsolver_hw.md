@@ -1,104 +1,110 @@
 # HW: Graphing and Numerical Solver
 
-**Purpose:** This assignment tests your ability to use the programs available to you in Excel to solve complex 
-problems. In this assignment, you will proceed to test your knowledge on how to use Goal Seek, the Solver add-in, 
-and organize data through creating various styles of graph.
+**Purpose:** Use Goal Seek to reach a target, use Solver to maximize an objective subject to constraints, and create charts that match the type of data being displayed.
+
+Review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) if you need a reminder about worksheets, ranges, formulas, or cell references.
 
 ---
 ## Getting Started
 
-1. First make a copy of the starter sheet here: [(Starter-Workbook)-HW-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-HW-Graphing-and-Solver.xlsx)
+1. First make a copy of the starter workbook here: [(Starter-Workbook)-HW-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-HW-Graphing-and-Solver.xlsx)
 2. Remember to save it in the CCE 270 folder that you created in the first assignment.
 
 ---
 
-## Part 1 - Asteroid Defense Missile Trajectory
+## Part 1 - Simplified Missile Trajectory
 
-You have just discovered that an asteroid is headed for Earth! You need to determine if the trajectory of an 
-"asteroid-stopping" defense missile will clear the nearby buildings and destroy the asteroid before it impacts with earth.
-Unfortunately a building is in the way, and you need to know if you can clear it with the current trajectory and 
-land the remains in a safe zone. Your task is to use goal seek to determine the horizontal location of the missile when it reaches the height of the 
-building. Copy 
-and paste your answers into the appropriate cells. If you are right, something magical will happen!
+This is a simplified mathematical trajectory exercise. It does not model interception, impact damage, building clearance, or safe landing. Use **Goal Seek** to find the two horizontal positions, $x$, where the modeled height is $y=50$.
 
-1. Navigate to the "Missile Launch" Sheet.
-2. In cell K21 enter the trajectory equation for the missile in terms of the horizontal distance (X) and the 
-   vertical distance (Y). The trajectory equation is given as: 
+1. Navigate to the `Missile Launch` worksheet.
+2. In `K21`, enter the trajectory formula using the value of $x$ stored in `K22`:
 
->>$y = -(x^2)+ 155 *x$
+   ```excel
+   =-(K22^2)+155*K22
+   ```
 
-3. In cell K22 enter a value for the horizontal distance (X) of the missile. This is the value that you will change to find the 
-   horizontal location of the missile when it reaches the height of the building. Try entering a very small number 
-   first. 
-4. Head to **Data > What-If Analysis > Goal Seek**. The Goal Seek window will open.
-5. Set the **"Set cell"** to K21 (the trajectory equation) and set the **"To value"** to 50 (the height of the building).
-6. In the **"By changing cell"** box, enter K22 (the horizontal distance of the missile).
-7. Click **"OK"** to run the Goal Seek. Excel will change the value in K22 to find the horizontal location of the missile when it reaches the height of the building.
-8. Copy and paste the value of K22 into cell K28 or **"1st Location."** This is the first horizontal location of the 
-   missile when it reaches the height of the building.
-9. Now, you need to find the second horizontal location of the missile when it reaches the height of the building. 
-   To do this, you will need to change the value in K22 to a larger number and run Goal Seek again.
-10. Copy and paste the value of K22 into cell K29 or **"2nd Location."** This is the second horizontal location of 
-    the missile when it reaches the height of the building.
+3. Enter a small positive starting value, such as `1`, in `K22`.
+4. Open **Data > What-If Analysis > Goal Seek** and use:
 
-Congratulations! You have found the horizontal locations of the missile when it reaches the height of the building!
+   - **Set cell:** `K21`
+   - **To value:** `50`
+   - **By changing cell:** `K22`
+
+5. Run Goal Seek, then copy and paste the resulting value of `K22` into `K28` (**1st Location**).
+6. Enter a starting value near the far end of the plotted trajectory, such as `150`, in `K22` and run Goal Seek again with the same settings.
+7. Copy and paste the second value of `K22` into `K29` (**2nd Location**).
+
+Goal Seek normally returns the solution nearest the starting value. Use starting values on opposite sides of the trajectory to find both positions.
 
 ---
 
-## Part 2 - Missile Force Calculation 
+## Part 2 - Construction Materials Testing Allocation
 
-Now that you've determined the horizontal location of the missile when it reaches the height of the building, 
-    you need to find how much 
-force it will take to hit the asteroid and destroy it. The missile is loaded with a payload that will destroy the 
-asteroid on impact, but you need to ensure that the missile has enough force to reach the asteroid.
+A materials laboratory performs concrete cylinder tests and soil density tests. Use **Solver** to determine the number of each test that maximizes weekly contribution without exceeding available technician or equipment hours.
 
-1. Navigate to the Missile & Asteroid Table. This table contains the data for the Missile and the Asteroid. Each 
-   table contains the mass and acceleration of the object.
-2. In cell N31 use the data provided to solve for the force of the missile using the equation: $F=m*a$
-3. In cell Q31 solve for the force of the asteroid using the same equation.
+Navigate to the `Testing Allocation` worksheet. The model uses these data:
 
-### Setting up the Solver
+| Test | Contribution per test | Technician hours per test | Equipment hours per test |
+|---|---:|---:|---:|
+| Concrete cylinder | \$220 | 3 | 2 |
+| Soil density | \$150 | 2 | 3 |
+| Weekly capacity |  | 120 | 120 |
 
-Now that we have all of our data filled out, we are going to find the point where the force of the missile and 
-   the asteroid are **equal** to each other. We are going to do this by changing the acceleration of the missile using 
-**Solver**. The solver has three basic functions. The "Set Objective" parameter should always be the cell that 
-contains the 
-equation that you want to optimize. You can find a Max, Min, or a specific value. "By Changing Variable Cells" are 
-the cells that you want to change to optimize the objective. "Subject to the Constraints" are the constraints that you want to apply to the optimization.
+1. The yellow cells `E5:E6` hold the numbers of concrete cylinder and soil density tests. These are the **changing cells**.
+2. Enter formulas in the blue cells: contribution by test in `F5:F6`, resource totals in `B10:B11`, and total weekly contribution in `B14`. Each total should use both test quantities and the corresponding values in the table.
 
-4. Go to **Data > Analyze > 
-Solver**. The Solver Parameters window will open. Set the objective to cell N31 (the force of the missile) and set the 
-    "Value of" to the value in cell Q31 (the force of the asteroid).
-5. In the "By Changing Variable Cells" box, enter the cell that contains the acceleration of the missile (cell N30).
-6. Click on "Add" to add a constraint. Set the constraint to be that the acceleration of the missile (cell N30) must 
-   be greater than 0. This ensures that the missile has a positive acceleration.
-7. Click "OK" to close the Add Constraint window.
-8. Click "Solve" to run the Solver. The Solver will find the optimal acceleration for the missile that will make the 
-   force of the missile equal to the force of the asteroid.
+<details>
+<summary><b>Formula-planning hint</b></summary>
+
+- Each value in `F5:F6` is the contribution per test multiplied by the number of tests.
+- Each resource total is a `SUMPRODUCT` of the two per-test requirements and the two test quantities.
+- `B14` is the sum of the two contributions in `F5:F6`.
+
+</details>
+
+3. Open **Data > Solver** and configure the model to:
+
+   - **Maximize** the total weekly contribution.
+   - Change both test-quantity cells.
+   - Keep total technician hours at or below 120.
+   - Keep total equipment hours at or below 120.
+   - Require both test quantities to be nonnegative integers.
+   - Use the **Simplex LP** solving method.
+
+4. Solve the model and keep the Solver solution.
+5. Verify the result: recalculate both resource totals and confirm that neither exceeds 120 hours. Also confirm that both test quantities are nonnegative whole numbers.
 
 ---
 ## Part 3 - Graphing Streamflow Data
 
-This data comes from [USGS Water Data for the Nation](https://waterdata.usgs.gov/nwis){:target="_blank"} and contains 
-streamflow data for the 
-    Provo River in Utah. You will be creating three different charts using this data. Each chart should be on its own 
-    sheet and should be titled appropriately. The colors of the charts should be changed to something other than the default colors.
+This data comes from [USGS Water Data for the Nation](https://waterdata.usgs.gov/nwis){:target="_blank"} and contains streamflow data for the Provo River in Utah.
 
-1. Using the data in the "Streamflow" data sheet recreate this graph. Make sure to change the colors and include a 
-   Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 1."
+1. Create a **line chart** from `Streamflow Data!A3:F2883` and move it to a chart sheet named `Chart 1`.
+
+   - Horizontal axis: date/time
+   - Vertical axis: flow rate (ft³/s)
+   - Series: the five streamflow stations
+   - Include a descriptive title, axis titles with units, and a legend.
 
 ![streamflow_chart.png](graphing_images/streamflow_chart.png)
 
-2. Using the data in the "Summary Statistics" data sheet recreate this graph. Make sure to change the colors and 
-   include a 
-   Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 2."
+2. Create a **clustered column chart** from `Summary Statistics!A10:F16` and move it to a chart sheet named `Chart 2`.
+
+   - Horizontal axis: summary statistic
+   - Vertical axis: flow rate (m³/s)
+   - Series: the five streamflow stations
+   - Include a descriptive title, axis titles with units, and a legend.
 
 ![streamflow_chart2.png](graphing_images/streamflow_chart2.png)
 
 ## Part 4 - Graphing Load Calculation Data
 
-1. Using the data in the "Load Calculations" sheet recreate this graph. Make sure to change the colors and include a 
-   Title, Axis Labels, and a Legend. Put the chart on its own sheet called "Chart 3."
+1. Create an **XY scatter chart with markers** from `Load Calculations!D20:E31` and move it to a chart sheet named `Chart 3`.
+
+   - Horizontal axis: applied load, $P$ (lb)
+   - Vertical axis: deflection, $d$ (in)
+   - Add a linear trendline.
+   - Include a descriptive title and axis titles with units. Include a legend only if it helps identify the data.
 
 ![deflectionvsapplied_excel.png](graphing_images/deflectionvsapplied_excel.png)
 
@@ -122,24 +128,21 @@ streamflow data for the
 
 **Rubric**
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-|    Part 1: Solved for Vertical Location (Y)    |        2        |
-|   Part 1: Solved for Horizontal Location (X)   |        2        |
-|        Part 1: Found the first location        |        2        |
-|       Part 1: Found the second location        |        2        |
-|     Part 2: Used Force formula for missile     |        2        |
-|    Part 2: Used Force formula for asteroid     |        2        |
-|            Part 2: Added constraint            |        1        |
-|   Part 2: Found equal force by using Solver    |        2        |
-|        Part 3: Chart 1 resembles image         |        2        |
-|     Part 3: Chart 1 is on a separate sheet     |        1        |
-|        Part 3: Chart 2 resembles image         |        2        |
-|     Part 3: Chart 2 is on a separate sheet     |        1        |
-|        Part 4: Chart 3 resembles image         |        2        |
-|     Part 4: Chart 3 is on a separate sheet     |        1        |
-|   Parts 3-4: Charts are all labeled and titled |        6        |
-| <div style="text-align: right">**Total**</div> |       30        |
+| Item | Points Possible |
+|:---|:---:|
+| Part 1: Correct trajectory formula | 2 |
+| Part 1: Correct Goal Seek setup | 2 |
+| Part 1: Found and recorded both roots | 3 |
+| Part 2: Correct contribution and resource formulas | 3 |
+| Part 2: Correct objective and changing cells | 2 |
+| Part 2: Correct capacity, nonnegative, and integer constraints | 3 |
+| Part 2: Used the Simplex LP solving method | 1 |
+| Part 2: Retained a valid Solver result | 1 |
+| Part 2: Verified the returned solution against both capacities | 1 |
+| Parts 3-4: Correct source range and chart type for all three charts | 6 |
+| Parts 3-4: Correct axes, series, and trendline where required | 3 |
+| Parts 3-4: Appropriate titles, units, legends, and chart-sheet names | 3 |
+| <div style="text-align: right">**Total**</div> | **30** |
 
 ---
 

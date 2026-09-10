@@ -2,291 +2,218 @@
 
 ---
 
-## Graphing Data
-One of the most helpful tools in Excel is the chart feature. This allows us to see trends in data, compare variables, 
-and 
-visualize the values in our data set.
-This can be hard to do by hand, and Excel makes it much easier! Let's walk through how to graph a given data set. 
+## Before You Begin
 
-1. Highlight the data that you want to graph. Sometimes you don't need all the data, so only highlight what you need.
-   In the example below, there is too much information for the desired graph so only the needed columns were 
-   highlighted.
+Review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) if you need a reminder about worksheets, ranges, formulas, or cell references.
 
-![Graphex_1.png](graphing_images/Graphex_1.png)
+In this topic, you will choose appropriate charts, use **Goal Seek** to reach a target, and use **Solver** to optimize a model with constraints.
 
-2. Select **Insert** > **Chart**
+## Choosing a Chart
 
-![Graphex_2.png](graphing_images/Graphex_2.png)
+A chart should match the question you are asking. **Recommended Charts** can suggest options, but you must decide whether a suggestion represents the data correctly.
 
-3. From here, Excel offers a large variety of options for a graph that suits your data. There is even an option for 
-   **Recommended Charts**, which will automatically select the best graph for your data set. This is a great option if 
-   you are unsure which type of graph to use. For this class, we will primarily use line, bar, column, and pie 
-   charts. A **Bar chart** is shown below:
+| Question | Recommended chart |
+|---|---|
+| How do values compare across categories? | Bar or column |
+| How does a value change over ordered time periods? | Line |
+| How are two numerical variables related? | XY scatter |
+| How is one total divided among a few categories? | Pie, used sparingly |
 
-![graphex_3.png](graphing_images/graphex_3.png)
+Bar and column charts perform the same basic comparison. Bars are horizontal and work especially well with long category names; columns are vertical. A pie chart is appropriate only when the slices are genuine parts of one meaningful whole.
 
-4. After selecting the type of graph you want, Excel will create a graph based on the data you highlighted. You can 
-   then move the graph to a new sheet by right-clicking on the graph and selecting **Move Chart**. This will allow you 
-   to have a clearer view of your data and graph.
-5. If you would like to edit the graph, you can do so by clicking on the graph and selecting the **Chart Design** tab. This will allow you to change the chart type, add chart elements, and change the chart style.
-6. If you would like to switch the x and y-axis, you can 
-   do so by selecting **Select 
-   Data** (or right-clicking the chart and choosing **Select Data**). This will open a new window where you can change 
-   the 
-   data for 
-   the x and y-axis.
+### Line Chart versus XY Scatter
 
-![graphex_selectdata.png](graphing_images/graphex_selectdata.png)
+Line and XY scatter charts can look nearly identical, especially when both connect their points. The important difference is how Excel interprets the horizontal axis.
 
-7. From here you can change the data for the x and y axes and switch rows and columns. There is also a **Switch 
-   Row/Column** option in the **Chart Design** ribbon that is useful when you have to make a quick change to the data.
-8. One of the other useful tools in the **Chart Design** tab is the **Add Chart Elements** tool. 
-   This allows you to add or remove elements from the graph such as a title, labels, and legend. 
+| Feature | Line chart | XY scatter chart |
+|---|---|---|
+| Horizontal axis | Category or date/time axis | Numerical value axis |
+| Point spacing | Based on categories or time units | Based on the actual x-values |
+| Typical purpose | Show a trend over ordered periods | Examine a relationship between two numerical variables |
+| Example | Monthly streamflow | Applied load versus beam deflection |
 
-![img_2.png](graphing_images/img_2.png)
+The following charts contain the same unevenly spaced x-values. The line chart treats the displayed x-values as categories; the scatter chart places each point at its numerical x-coordinate.
 
-9. A trendline can also be added to the graph by selecting **Add Chart Elements** > **Trendline**. This will add a 
-   trendline to the graph that shows the overall trend of the data. It can be added to a scatter plot to help visualize the relationship between the two variables.
-10. Similarly, if you click on the chart, there are 
-   icons 
-   next to the 
-   chart 
-   that have 
-   the same 
-   functions, **Chart 
-   Elements**, **Chart Styles**, 
-   and **Chart Filters**. These icons have the same tools as the Chart Design tab, but which can sometimes be more 
-    convenient.
-11. **Chart Styles** allows the user to change the style of the chart and the colors of the chart. **Chart 
-   Filters** allows the user to filter the data that is displayed in the chart. This can be useful if you want to focus on a specific subset of your data.
-12. If you would like to change the font, size, and color of the text in the graph, you can do so by 
-   clicking on the text you would like to change.
+![Comparison of a line chart and XY scatter chart using the same unevenly spaced data](graphing_images/line_vs_scatter.png)
 
-These are just a few ways we can organize and format our graph to help us better see patterns and trends in data. 
-Other 
-types of 
-graphs 
-have 
-more unique features 
-to them, but these are the general few! 
+For most scientific and engineering data with numerical x- and y-values, use an **XY scatter chart**. Use a line chart for an ordered series such as monthly totals. See Microsoft's [comparison of line and scatter charts](https://support.microsoft.com/en-us/excel/present-your-data-in-a-scatter-chart-or-a-line-chart) for more examples.
 
-### Specific Examples
+## Creating and Editing a Chart
 
-When organizing data, we are often looking for the most effective way to visualize it. Below are a few examples of 
-specific graph types and how they're commonly used. 
+1. Select only the data needed for the chart, including useful headings.
+2. Select **Insert**, then choose the chart type that matches the question.
+3. Check that Excel used the intended categories, series, and values.
+4. Add a descriptive title and axis titles with units where applicable. Use a legend only when it helps identify categories or multiple series. Pie charts have no axes; use a legend or data labels to identify their slices.
+5. Adjust the scale, labels, and formatting so the chart is readable and does not mislead.
 
-**Line Graph**
+Use **Chart Design > Select Data** to add or edit series. For an XY scatter chart, edit a series to specify its **Series X values** and **Series Y values**.
 
-Line graphs are used to show trends over time. They are useful for showing how a variable changes over a period of time, such as sales or temperature.
+**Switch Row/Column** does not exchange the x- and y-axes. It changes whether Excel interprets rows or columns as data series and categories.
 
-![img_3.png](graphing_images/img_3.png)
+**Chart Filters** hide or show plotted series or categories. They do not filter, change, or delete the underlying worksheet data. A trendline can summarize an association between two variables, but an association alone does not establish that one variable causes the other.
 
-**Bar/Column chart**
+### Useful Chart Shortcuts
 
-Bar and column charts are used to compare values across different categories of data. They are useful for showing the 
-differences between groups, such as sales by region or product.
+| Action | Windows | Mac |
+|---|---|---|
+| Create an embedded chart from selected data | `Alt+F1` | Use **Insert > Recommended Charts** |
+| Create a chart sheet | `F11` | `F11` or `Fn+F11` |
+| Format the selected chart element | `Ctrl+1` | `Command+1` |
 
-![img_4.png](graphing_images/columnchartsoil.png)
+Keyboard mappings can vary with laptop function-key settings. The ribbon commands always provide the same tools.
 
-Bar charts are horizontally oriented and typically used for categorical data, while column charts are vertically 
-oriented and used 
-for numerical data.
+For descriptions of other chart types, see [Available chart types in Office](https://support.microsoft.com/en-us/excel/available-chart-types-in-office).
 
-**Pie Chart**
+---
 
-Pie charts are used to show the proportion of different categories in a whole. They are useful for showing how a variable is divided into different parts, such as market share or budget allocation.
+## Goal Seek versus Solver
 
-![img_4.png](graphing_images/alsopiechart.png)
+[Goal Seek](../3_pivot_goalseek/pivgolseek_read.md#goal-seek) and Solver both change inputs and recalculate formulas, but they answer different kinds of questions.
 
-This pie chart shows the amount of moisture content in different types of sand. Each slice represents a different 
-type of sand, and the size of each slice represents the proportion of moisture content in that type of sand.
+| Feature | Goal Seek | Solver |
+|---|---|---|
+| Purpose | Make one formula reach one target value | Reach a target, maximize, or minimize an objective |
+| Changing cells | One | One or more |
+| Constraints | No | Yes |
+| Typical question | What input makes the result equal 50? | What feasible design produces the best result? |
 
-**Scatter Plot**
+Use **Goal Seek** when one changing cell must produce one target and no constraints are needed. Use **Solver** when you need a maximum or minimum, multiple changing cells, or constraints. Solver can also reach a specified value, but Goal Seek is simpler for a one-input target problem.
 
-Scatter plots are used to show the relationship between two variables. They are useful for showing how one variable affects another, such as the relationship between temperature and sales.
+## Goal Seek Example: 12-Month Payback
 
-![img_5.png](graphing_images/scatterplot.png)
+Suppose a soil-testing business purchases equipment for $25,000 and expects to perform 40 tests per month. What fee per test will repay the equipment in exactly 12 months?
 
-This scatter plot shows the relationship between temperature and ice cream sales. Each point represents a different 
-day, and the position of each point shows the temperature and sales for that day.
+![Soil-testing payback worksheet model](solver_images/Solver_example.png)
 
+Open **Data > What-If Analysis > Goal Seek** and enter:
 
-There are many other types of graphs that can be used to visualize data, such as area plots (the area under the line is 
-filled), 
-funnel charts, and 
-radar charts. 
-Each type of graph has its own strengths and weaknesses, and the best type of graph to use depends on the data you are working with and the message you want to convey.
+| Goal Seek box | Entry |
+|---|---|
+| Set cell | `B7` — months to repay |
+| To value | `12` |
+| By changing cell | `B5` — fee per test (labeled **Cost per test** in the figure) |
 
-Here is an extra resource for further examples of graphing: [Available chart types in Office](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90)
+Goal Seek returns approximately `$52.08` per test. Check the result by confirming that the updated value in `B5` makes `B7` equal 12.
 
 ---
 
 ## Solver in Excel
 
-The Solver is a powerful tool in Excel that allows you to find an optimal value for a formula in one cell, by 
-adjusting other cells and adhering to constraints. The Solver can be used to find the maximum or minimum value of a 
-formula by changing the values in the cells that are referenced by the formula. 
+Solver adjusts one or more decision cells to maximize, minimize, or reach a specified objective while satisfying constraints. Common applications include allocating resources, minimizing project cost, and maximizing profit.
 
-It can be used for various purposes, such as optimization problems, 
-resource allocation, and financial modeling. The solver can handle linear and nonlinear problems, making it a 
-versatile tool for data analysis. You can use the solver to find the maximum profit for a business within constraints, 
-choose an optimal budget allocation, or minimize costs in a project. Solver is pretty cool!
+!!! warning "Desktop Excel is required"
+    Complete Solver work in the Windows or Mac desktop version of Excel. The standard Solver add-in cannot be used in Excel for the web or on mobile versions, including Android. If you normally use a mobile device, plan to use a desktop computer for these exercises.
 
-### How to add Solver in Excel
+### Enable the Solver Add-in
 
-To enable the **Solver Add-in** in Excel (it is not enabled by default), follow these steps:
+**Windows desktop**
 
-1. Go to **File** > **Options** (found near the bottom of the left-hand menu).  
-2. In the **Excel Options** window, select **Add-ins** from the sidebar.  
-3. At the bottom, in the **Manage** dropdown, select **Excel Add-ins**, then click **Go**  
-4. In the **Add-Ins available** box, check the box next to **Solver Add-in**.  
-5. Click **OK** to enable it.
+1. Select **File > Options > Add-ins**.
+2. Beside **Manage**, select **Excel Add-ins**, then **Go**.
+3. Select **Solver Add-in**, then **OK**.
 
+**Mac desktop**
 
-After you load the Solver Add-in, the **Solver** command is available in the **Analyze** group on the **Data** tab. 
-These steps only need to be completed once. If you do not see the **Solver** option in the **Data** tab, you may need to restart Excel after enabling the add-in.
+1. Select **Tools > Excel Add-ins**.
+2. Select **Solver Add-in**, then **OK**.
 
+Solver will appear on the **Data** tab. These steps usually need to be completed only once. See Microsoft's [Solver installation instructions](https://support.microsoft.com/en-us/excel/load-the-solver-add-in-in-excel) if the add-in does not appear.
 
+### Solver Setup
 
-!!! Note
-    You may notice that there is a **Solver** option in the **Home** tab. This is a different solver that is used for solving equations, not for optimization problems. The **Solver** in the **Data** tab is the one we will be using in this class.
+A Solver model has five parts:
 
----
-### Example Problem
+1. **Objective cell:** a formula to maximize, minimize, or set to a value.
+2. **Changing variable cells:** the decisions Solver may change.
+3. **Constraints:** limits that define feasible solutions.
+4. **Solving method:** the algorithm suited to the model.
+5. **Validation:** a check that the result satisfies the formulas and constraints.
 
-The following workbook demonstrates how to use the Solver. You are the owner of a soil testing business, and you 
-are trying to calculate the cost per test that will allow your company to pay off a $25,000 piece of soil 
-testing equipment in exactly 12 months, given they expect to perform 40 tests per month.
+Choose the solving method based on the model:
 
-![Solver_example.png](solver_images/Solver_example.png)
+- **Simplex LP:** linear models.
+- **GRG Nonlinear:** smooth nonlinear models.
+- **Evolutionary:** non-smooth or discontinuous models, including some models whose decision-dependent formulas use step functions.
 
-To open up the solver we go to **Data** > **Analysis** > **Solver** 
+### Solver Example: Maximize Profit
 
-In general, the Solver is like [Goal Seek](https://byu-cce270.readthedocs.io/en/latest/unit1/3_pivot_goalseek/pivgolseek_read/#goal-seek){:target="_blank"} in that it 
-iteratively changes one 
-(or 
-more) input cell(s) until some condition is met. However, Solver allows for three possible objectives—maximising, 
-minimizing, or setting a specific value—and lets you define a 
-set of 
-constraints. When we use the **Value Of** option, it is essentially the same 
-as Goal Seek. We are going to change **Set Objective** to the cell that contains the number of months it will take 
-to pay off the equipment, which, in this case, is cell B7.
+Using the same soil-testing model, suppose the business wants to maximize 12-month profit but can perform no more than 60 tests per month. First, enter **12-month profit** in `A8` and the formula `=B4*B5*12-B3` in `B8`. This simplified model treats the equipment purchase as the only cost.
 
-![Solving_newWindow.png](solver_images/Solving_newWindow.png)
+Open **Data > Solver** and configure:
 
-The **Set Objective** cell is the cell containing the formula that represents the objective of the problem, or the 
-result that you're trying to optimize. In this case, it is the cell that contains the cost per test.
+| Solver setting | Entry |
+|---|---|
+| Set Objective | `B8` — 12-month profit |
+| To | **Max** |
+| By Changing Variable Cell | `B4` — tests per month |
+| Constraints | `B4>=0`, `B4<=60`, and `B4` is an integer |
+| Solving Method | **Simplex LP** |
 
-The **By Changing Variable Cells** are the cells that the solver will change to find the optimal solution. In this 
-case, it is the cells that contains the number of projected site tests per month and cost per service.
+The constraints describe feasible operations; they are part of the problem, not merely settings that help Solver run. After selecting **Solve**, keep the solution and verify that the test count is an integer within the permitted range.
 
-The **Subject to the Constraints** section allows you to add constraints to the problem.
-
-The **Select a Solver Method** dropdown lets you choose how Solver will find a solution. The default option, **GRG 
-Nonlinear**, is used for nonlinear problems. The **Simplex LP** method is used for linear problems, and the 
-**Evolutionary** method works best for problems that are hard to define or have sudden changes in the data. In this class, we will primarily use the _**GRG Nonlinear**_ method, as it is the most versatile and works well for most problems.
-
-Using the options shown above, we can solve for by clicking the **Solve** button. Doing so brings up the following message:
-
-![Solver Results.png](solver_images/Solver%20Results.png)
-
-Generally you want to select the OK option to keep the solver solution. The solution found by the solver is: **$52.08**
-
-![Solver_Answer.png](solver_images/Solver_Answer.png)
-
-The real power of the solver is performing optimization using the **Max** and **Min** options. This is something 
-that cannot be done with Goal Seek. 
-
-For example, suppose we wanted to find the maximum number of months it takes to 
-pay off equipment without changing the price. We might as well input our Total revenue and Profit to see how it affects 
-our data.
-We can do this by changing the **Set 
-Objective** to **Max**, and adding the constraint that the site tests per month is not greater than 60. To add a 
-constraint, click **Add** > input your **Cell Reference** and the **Constraint**. As the Solver iterates, a variety of input values are tested. Such constraints can ensure that the Solver algorithm stays stable and will be more likely to converge on a solution.
-
-![solver_max1.png](solver_images/solver_max1.png)
-
-We then click the **Solve** button again. The result is shown below:
-
-![solver_max2.png](solver_images/solver_max2.png)
-
----
-
-## Additional Readings
-
-This is just a sample of the many things you can do with a solver. It is easy to use and can be extremely powerful and convenient. Here are some additional resources that you may find helpful:
-
-* [Define and solve a problem by using Solver](https://support.microsoft.com/en-us/office/define-and-solve-a-problem-by-using-solver-5d1a388f-079d-43ac-a7eb-f63e45925040){:target="_blank"}
-* [How to use Solver in Excel with examples](https://www.ablebits.com/office-addins-blog/excel-solver-examples/){:target="_blank"}
-* [Solver in Excel](https://www.excel-easy.com/data-analysis/solver.html){:target="_blank"}
+For more detail, see Microsoft's [Solver documentation](https://support.microsoft.com/en-us/excel/define-and-solve-a-problem-by-using-solver).
 
 ---
 
 ## Pre-Class Quiz Challenge
 
-### Exercise #1 - Graphing Sales Data 
+### Exercise 1 — Graphing Sales Data
 
-The starter workbook can be found here: [(Starter-Workbook)-Pre-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Pre-Graphing-and-Solver.xlsx){:target="_blank"}
+Download the [(Starter-Workbook)-Pre-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Pre-Graphing-and-Solver.xlsx){:target="_blank"} workbook. It contains the worksheets `Monthly_Sales`, `Graphing`, and `Topo_Solver`.
 
-In this workbook, we are going to be focusing on three main sheets: "Sales_Data", "Graphing", and "Topo-Solver." 
+Use the data in `Monthly_Sales!A1:F31`. Create any supporting PivotTables on a new worksheet or in unused cells, but place all three finished charts as embedded charts on the `Graphing` worksheet.
 
-Navigate to the "Sales_Data" sheet in the starter workbook. This data contains sales information for an engineering 
-surplus store. The data includes the month, region, product, units sold, unit price, and total sales. You are the 
-employee tasked with creating graphs to visualize this data. 
-
-First, your boss wants you to create a **pie chart** that shows **Total Sales by Product.** Your end result should look 
-similar to this: 
-
-![img_5.png](graphing_images/piechartexcel.png)
+1. Create a **pie chart** of total sales by product.
+2. Create a horizontal **bar chart** of monthly Concrete Mix sales.
+3. Create a **line chart** of total sales by month.
 
 <details>
-<summary><b>Hint!</b></summary>
-it may be helpful to use a Pivot Table to summarize the data first...
+<summary><b>PivotTable field hints</b></summary>
+
+- Pie: **Product** in Rows; **Total Sales** in Values, summarized by Sum.
+- Bar: **Month** in Rows; **Total Sales** in Values, summarized by Sum; filter **Product** to Concrete Mix.
+- Line: **Month** in Rows; **Total Sales** in Values, summarized by Sum.
+- Check that months appear in chronological order.
+
 </details>
-<br>
 
-Your boss would also like to see a **bar graph** that shows the **Monthly Sales of Concrete Mix** You should end up 
-with a 
-graph that looks similar to this: 
+Give every chart a descriptive title. Add axis titles with units to the bar and line charts. For the pie chart, identify slices with a legend or data labels. Include a legend only when it adds useful information.
 
-![img_7.png](graphing_images/img_7.png)
+### Exercise 2 — Topographic Profile
 
-Finally, to visualize any trends in the data, your boss wants you to create a **line graph** that shows the **Total Sales by Month.** Your end result should look similar to this:
+On `Topo_Solver`, the formula in `B4` calculates elevation from the horizontal distance in `A4`. Local minima represent depressions, and local maxima represent peaks. Use Solver to obtain numerical estimates of their locations.
 
-![img_6.png](graphing_images/img_6.png)
+1. For each depression, enter a starting value in `A4` that lies inside the interval listed in `B7:B10`.
+2. Set objective `B4` to **Min** by changing `A4`.
+3. Translate the listed interval into two constraints. For example, \(200 \le x \le 350\) becomes `A4>=200` and `A4<=350`.
+4. Select **GRG Nonlinear**, solve, and paste the resulting values from `A4:B4` into the corresponding answer row as **values only**.
+5. Repeat for each peak listed in `B11:B13`, using **Max** instead of **Min** and a starting value inside that peak's interval.
 
-**Make sure that all graphs have appropriate titles, axis labels, and legends.**
+<details>
+<summary><b>Why do the interval and starting value matter?</b></summary>
 
----
+The profile contains several local minima and maxima. GRG Nonlinear searches from the current starting value, while the two interval constraints isolate the feature you intend to find. Solver therefore returns a numerical estimate of that local feature, not a proof that it is the only or global optimum.
 
-### Exercise #2 - Topographic Map
+</details>
 
-Navigate to the "Topo_Solver" sheet in the starter workbook.
-You need to create a topographic map of a hill range for a project. Your team successfully created a function that accurately returns accurate elevations given horizontal distances, and now wants you to find the exact coordinates for certain points of interest (Depression 1, Peak 1, etc.). The local minimums of the function represent the depressions of the hill range, and the local maximums of the function represent the peaks of the hill range. 
-
-1. Use Solver to find the locations of each depression. Set objective cell B4 to **Min** by changing variable cell A4. Then, add the constraints specified for each depression in cells B7:B10 (For example, to find Depression 1, add the constraints A4>=200 and A4<=350). Once solved, copy the solutions and paste them under the "Horizontal Distance (ft)" and "Elevation (ft)" columns. **Make sure that you paste as values only to avoid pasting the formula by mistake.**
-2. This time, use Solver to find the locations of each peak. Set objective cell B4 to **Max** by changing variable cell A4. Then, add the constraints specified for each peak in cells B11:B13 (For example, to find Peak 1, add the constraints A4>=400 and A4<=450). Once solved, copy the solutions and paste them under the "Horizontal Distance (ft)" and "Elevation (ft)" columns. **Again, make sure that you paste as values only to avoid pasting the formula by mistake.**
+Check that each returned horizontal distance lies inside its required interval and that substituting it into the formula produces the recorded elevation.
 
 ---
 
-## Turning in/Rubric
+## Turning In and Rubric
 
-**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
+Upload the completed Excel workbook directly to Learning Suite.
 
-1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
-2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
-3. Double-check that the file you uploaded is the one that contains your completed work.
+1. Save and close the workbook so all changes are written to the file.
+2. Upload the `.xlsx` file to the correct assignment.
+3. Confirm that the uploaded file contains your completed work.
 
-**Rubric:**
+| Item | Points Possible |
+|---|---:|
+| Three appropriate and correctly labeled sales charts | 1.5 |
+| Solver setup and numerical estimates for the topographic features | 1.5 |
+| **Total** | **3** |
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
-
----
-
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
-
-| **Reasons for Points Lost** |    **Amount**     |  
-|:---------------------------:|:-----------------:|
-|  File uploaded incorrectly  |       -10%        |
+| Reasons for Points Lost | Amount |
+|---|---:|
+| File uploaded incorrectly | -10% |

@@ -1,56 +1,74 @@
 # In-Class Exercise: Graphing and Solver
 
-We will practice graphing and using the Solver function in Excel. The data we will use is an expanded edition of the 
-preclass construction surplus store. You can 
-access the data here: [(Starter-Workbook)-Class-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Class-Graphing-and-Solver.xlsx)
+We will practice selecting charts and using Goal Seek and Solver in Excel. The data are an expanded version of the pre-class construction surplus store. Before starting, review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) if you need a reminder about worksheets, ranges, or cell references.
+
+Download the [(Starter-Workbook)-Class-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Class-Graphing-and-Solver.xlsx) workbook.
 
 ---
-## Exercise #1- Graphing Sales Data 
+## Exercise #1—Graphing Sales Data
 
-This data contains information about specific sales, including the date, region, product, sales 
-associate and more. You are tasked with creating various graphs to visualize the data. Make sure that each chart is created on **its own 
-sheet** and is titled appropriately. Each chart should have the x and y-axis labeled and have a legend. 
+The `Construction_Sales` worksheet contains individual sales records. Use the Excel table `Table1` as the source for the PivotTables. The equivalent worksheet range is `Construction_Sales!A1:M1001`.
 
-1. Navigate to the first sheet in the data workbook, "Construction_Sales" which is the data that we will be graphing.
-2. Create a pivot table that aggregates total sales by product. Then make a pie chart that shows the total sales by 
-   product. 
-3. Your boss wants to know the relationship between quantity sold and revenue. Make a scatter plot (markers only) that 
-   shows the units sold vs total sales (does not require a pivot table). Does higher quantity sales lead to higher 
-   revenue?
-4. Create a pivot table that aggregates total sales by region. Then create a bar graph that shows the average total 
-   sales by region. With this graph, we are looking to see which regions are performing the best in terms of sales.
-5. Create a pivot table that aggregates sales first by year and then by month. Make a line graph that shows the total 
-   monthly sales trend over time. 
-   (Include a trendline to show the overall trend.) 
-   This will help us understand how sales are changing over time.
+Create each chart on its own **chart sheet** and give it a descriptive title. Charts with axes should have axis titles and units where applicable. Use a legend only when it helps identify multiple series; for the pie chart, identify categories with a legend or data labels.
 
-The goal of this exercise is to practice creating different types of graphs in Excel and to understand how to visualize data effectively, so feel free to experiment with different colors and styles! 
+1. **Sales by product:** Create a PivotTable with `Product` in **Rows** and `Total Sales` in **Values**, summarized by **Sum**. Create a pie chart showing each product's share of total sales.
+2. **Units sold and revenue:** Create an **XY Scatter—Markers Only** chart directly from `Table1`. Use `Units Sold` for the horizontal (x) axis and `Total Sales` for the vertical (y) axis. Are higher quantities associated with higher total sales? The chart shows association, not necessarily causation.
+3. **Sales by region:** Create a PivotTable with `Region` in **Rows** and `Total Sales` in **Values**, summarized by **Sum**. Create a bar chart comparing total sales among regions.
+4. **Monthly sales:** Create a PivotTable with `Date` in **Rows** and `Total Sales` in **Values**, summarized by **Sum**. In the PivotTable, group the Date field by **Years** and **Months**. Do not use the separate `Month Start` column for this exercise. Filter out September 2026 because it is an incomplete month, then create a line chart of monthly total sales and add a trendline.
+
+The purpose is to practice matching a chart to a question. You may experiment with colors and styles, but prioritize accurate data, readable labels, and an appropriate chart type.
 
 ---
-## Exercise #2- Using Solver in Excel (with Goal Seek)
+## Exercise #2—Using Goal Seek and Solver
 
-Navigate to the second sheet in the Graphing-and-Solver workbook, "Polynomial Solver" which is designed to solve a 
-polynomial equation using both Solver and Goal Seek.
+Navigate to the `Polynomial_Solver` worksheet. This worksheet evaluates a polynomial of the form
 
-This sheet is designed to solve a polynomial equation of the form:
+> $y=ax^4+bx^3+cx^2+dx+e$
 
->>$y = ax^4 + bx^3 + cx^2 + dx + e$
+The coefficients $a$ through $e$ are in `C11:C15`. With the supplied coefficients, the equation is
 
-The user enters the coefficients a, b, c, d, e in cells **D11:D15**. For the coefficients in the sheet, we are 
-solving:
-
->>$y = x^4 - 3x^2 + 0.6$
+> $y=x^4-3x^2+0.6$
 
 ### Graphing the Polynomial
 
-The table just below the coefficients shows a set of x values and the corresponding y values using the polynomial 
-equation with the specified coefficients. Make a chart of the data using the **XY Scatter - Smooth Lines** chart type.
+Create an **XY Scatter—Smooth Lines** chart from `B17:C38`, using column B for x-values and column C for y-values. Add a descriptive title and axis titles. Use the chart to estimate the locations of the four x-axis crossings before using a numerical tool.
 
-### Solving the Polynomial
+### Finding Four Roots with Goal Seek
 
-Note the X and Y cells in F12:F13. You can enter any X value in cell F12 and the corresponding Y value will be computed 
-in cell F13 based on the coefficients and the polynomial equation. Using these cells, follow each of the three 
-instructions on the sheet to solve for various features of the polynomial using Goal Seek and solver. Copy-paste the answers you find into the cells indicated.
+The trial x-value is in `F12`, and the corresponding y-value is calculated in `F13`. Use Goal Seek four times:
+
+- **Set cell:** `F13`
+- **To value:** `0`
+- **By changing cell:** `F12`
+
+Before each run, enter a different starting estimate in `F12` near one of the four crossings visible on your chart. Record each root in the labeled answer area.
+
+<details>
+<summary><b>Hint: Why are different starting estimates needed?</b></summary>
+
+The equation has several valid roots. Goal Seek normally returns a solution near the starting estimate, so use the graph to choose one starting value near each crossing.
+
+</details>
+
+### Finding Two Minima with Solver
+
+Use Solver to find the minimum on each side of the y-axis. For both runs:
+
+- **Set Objective:** `F13`
+- Select **Min**.
+- **By Changing Variable Cell:** `F12`
+- Use the **GRG Nonlinear** solving method.
+
+For the negative-side minimum, constrain `F12` to the interval $-2\leq x\leq0$ and start with a negative estimate. For the positive-side minimum, constrain `F12` to $0\leq x\leq2$ and start with a positive estimate. Record both x- and y-values in the labeled answer area.
+
+The bounds tell Solver which local minimum to find. After each run, confirm that the returned x-value satisfies the constraints and that substituting it into the polynomial produces the reported y-value.
+
+<details>
+<summary><b>Optional extension: Find the central maximum</b></summary>
+
+Use Solver to **maximize** `F13` by changing `F12`, with $-1\leq x\leq1$ and a starting estimate near zero. Record the result in the labeled answer area.
+
+</details>
 
 ---
 
@@ -66,9 +84,13 @@ instructions on the sheet to solve for various features of the polynomial using 
 
 **Rubric:**
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        5        |
+| Item | Points Possible |
+|:---|:---:|
+| Four sales charts use the correct data, chart types, field arrangements, and labels | 2 |
+| Polynomial XY scatter chart uses the correct x- and y-values | 1 |
+| Four roots are found and recorded using Goal Seek | 1 |
+| Two constrained minima are found and recorded using Solver | 1 |
+| **Total** | **5** |
 
 ---
 
@@ -78,4 +100,3 @@ The following is not a part of the rubric, but specifies how you can lose points
 |:---------------------------:|:-----------------:|
 |  File uploaded incorrectly  |       -10%        |
 |  Turned in late (per week)  | -10% (up to -50%) |
-
