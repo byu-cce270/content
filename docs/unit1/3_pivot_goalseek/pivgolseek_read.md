@@ -2,6 +2,9 @@
 
 ---
 
+!!! note "Excel reference refresher"
+      Review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) if you need a reminder about worksheets, ranges, relative and absolute references, or named references. For example, `Data!A1:P1001` means cells `A1` through `P1001` on the **Data** worksheet. Excel may display this as `Data!$A$1:$P$1001`; the dollar signs make the range absolute but do not identify different cells.
+
 ## Data Validation
 
 Data Validation controls what users may enter in a cell. For example, it can require a positive number, a date within a specified range, or an item from a list. Validation helps prevent entry errors; filtering only changes which existing rows are visible.
@@ -66,7 +69,8 @@ The dataset contains region, product, sales representative, units sold, and tota
 
 ![creatingpivottableexcel.png](pivottable_images/creatingpivottableexcel.png)
 
-3. Choose **Existing Worksheet**, select a location on the `summary` worksheet, and select **OK**. The empty PivotTable will look like this:
+3. In this dialog, **Table/Range** identifies the source data. **Location** identifies the upper-left cell where Excel will place the PivotTable; it is not part of the source data.
+4. Verify the source range, choose **Existing Worksheet**, select a location on the `summary` worksheet, and select **OK**. The empty PivotTable will look like this:
 
 ![emptypivottableexcel.png](pivottable_images/emptypivottableexcel.png)
 
@@ -76,10 +80,10 @@ Use the **PivotTable Fields** pane to arrange the summary:
 
 ![editingthepivottable.png](pivottable_images/editingthepivottable.png)
 
-4. Drag **Region** to **Rows**.
-5. Drag **Sales Rep** below Region in **Rows**.
-6. Drag **Units Sold** to **Values**. Open **Value Field Settings** and confirm that it is summarized by **Sum**.
-7. Drag **Total Sales** to **Values** and confirm that it is also summarized by **Sum**.
+5. Drag **Region** to **Rows**.
+6. Drag **Sales Rep** below Region in **Rows**.
+7. Drag **Units Sold** to **Values**. In the **Values** area, open the field menu and select **Value Field Settings**. Choose the requested calculation, such as Sum, Count, or Average. The same dialog includes **Number Format** when a value should display as currency or with a specified number of decimal places. For this example, choose **Sum**.
+8. Drag **Total Sales** to **Values** and use **Value Field Settings** to confirm that it is also summarized by **Sum**.
 
 The PivotTable should look like this:
 
@@ -149,17 +153,17 @@ The `Reg_sales_data` worksheet contains the regional sales dataset used in the P
 
 Navigate to the `Dogshow` worksheet and use Data Validation, found on the **Data** tab, to limit:
 
-1. The breed of dogs (`C6:C23`) to the list provided.
+1. The breed of dogs (`C6:C23`) to the breed list using Source `=$J$5:$J$16`.
 2. The judges' scores (`D6:F23`) to whole numbers from 0 through 10.
-3. The winners (`C28:C30`) to the names of entered dogs.
+3. The winners (`C28:C30`) to the participant names using Source `=$B$6:$B$23`.
 
-Fill in the red entry area using allowed breeds and judge scores. Test your validation by trying at least one valid entry and one invalid entry for both a list and a numerical rule. Enter a `SUM` formula for each total score, then enter the names and scores of the first-, second-, and third-place dogs.
+Fill in the red entry area using allowed breeds and judge scores. Test your validation by trying at least one valid entry and one invalid entry for both a list and a numerical rule. Enter the first total-score formula in `G6`, fill it through `G23`, and then enter the names and scores of the first-, second-, and third-place dogs.
 
 ### Part 2: PivotTable
 
-1. Select the entire source range on the `Reg_sales_data` worksheet and create a PivotTable on the existing `PivotTable` worksheet, starting at `A6`.
+1. Use `Reg_sales_data!A1:F31` as the source. In the **Create PivotTable** dialog, choose **Existing Worksheet** and set the location to `PivotTable!A6`. The source identifies the data to summarize; the location is the upper-left cell of the PivotTable.
 2. Place **Sales Rep** and then **Product** in **Rows**.
-3. Place **Units Sold** and **Total Sales** in **Values**. Confirm that both fields are summarized by **Sum**.
+3. Place **Units Sold** and **Total Sales** in **Values**. Use **Value Field Settings**, as described above, to confirm that both fields are summarized by **Sum**.
 4. In the labeled response box above the PivotTable, answer this question: Which sales representative and product combination has the greatest total sales?
 
 ### Part 3: Goal Seek
@@ -172,8 +176,8 @@ $y = -(x-2)^2 + 5$
 
 The two roots are the horizontal positions where the fish crosses the water surface. Their difference is the horizontal distance traveled above the water. The parabola's maximum gives the greatest height above the water.
 
-1. Use Goal Seek to find both $x$ values that make $y=0$. Run Goal Seek twice, changing the starting value in the $x$ input cell before each run.
-2. Copy the two roots into `C28` and `C29`.
+1. Run Goal Seek twice to find both $x$ values that make $y=0$. For each run, use **Set Cell:** `E24` (the $y$ formula), **To Value:** `0`, and **By Changing Cell:** `E25` (the $x$ input).
+2. After each run, copy the resulting root into `C28` or `C29` before changing the starting value for the next run.
 3. Confirm that the horizontal distance shown in `F32` is the absolute difference between the two roots.
 4. Enter the average of the two roots in `E28`. This is the $x$ coordinate of the parabola's axis of symmetry. The worksheet formula in `F33` will calculate the maximum $y$ value.
 

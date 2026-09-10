@@ -11,6 +11,8 @@
    [(Starter-Workbook)-HW-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-HW-Analyzing-%26-Managing-Data.xlsx)
 2. Remember to save it in the CCE 270 folder that you created in the first assignment.
 
+Need a reminder about references such as `A1:F2883`? See [Cells and Formulas](../../resources/excel_review/basic_excel_review.md).
+
 ---
 
 ## Part 1 - Filtering Data
@@ -35,21 +37,21 @@ At this point, you should have six worksheets in your workbook.
 ## Part 2 - Formatting Data
 
 1. Navigate to the worksheet named “Streamflow Data Part 2.”
-2. Format the data range using colors, bold headers, and a clear, professional layout.
-3. Give the data in column B a scaled color scheme that will have the low numbers be green the high numbers be red and the middle numbers be yellow
-4. Give the data in column C a color if it is greater than 180
-5. Give the data in column D a color if it is equal to 230
-6. Give the data in column E a scaled color where the lower numbers are the darker version of the color and the higher numbers are the lighter version of that color
-7. Give the data in column F a color if the text does not contain a 5
+2. Format **A1:F2883** using colors, bold headers, and a clear, professional layout.
+3. Apply a green-yellow-red color scale to **B4:B2883**: low values are green, middle values are yellow, and high values are red.
+4. Apply conditional formatting to **C4:C2883** for values greater than 180.
+5. Apply conditional formatting to **D4:D2883** for values equal to 230.
+6. Apply a color scale to **E4:E2883**, with darker shading for lower values and lighter shading for higher values.
+7. Apply conditional formatting to **F4:F2883** for entries that do not contain the digit 5.
 
 ---
 
 ## Part 3 - Summary Statistics
 
 1. Navigate to the Summary Statistics worksheet.
-2. Use the data from the “Streamflow Data Part 2” worksheet to complete the CFS calculations in the top half of the summary area. Use the appropriate functions, including `MODE` for mode and `STDEV` for standard deviation. For this assignment, use `STDEV`, not `STDEV.S` or `STDEV.P`.
-3. Engineers commonly express flow rates in cubic meters per second (CMS). Select cell C20 and name it `con_fac` to create a fixed reference to the conversion factor. You will need to determine the value (you can use AI) to convert cubic feet (ft3) to cubic meters (m3)
-4. Use the named conversion-factor reference to convert the CFS results in the top half of the summary area to CMS.
+2. Complete the CFS results in **C4:G9** using the measurements in cells **B4:F2883** on the **Streamflow Data Part 2** worksheet. In an Excel formula, that source range is written as `'Streamflow Data Part 2'!B4:F2883`; the exclamation point separates the worksheet name from the range. Match each data column to the station number shown in row 3. Use the appropriate functions, including `MODE` and `STDEV`. For this assignment, use `STDEV`, not `STDEV.S` or `STDEV.P`.
+3. Engineers commonly express flow rates in cubic meters per second (CMS). Determine or confirm the factor for converting cubic feet (ft³) to cubic meters (m³); you may use AI. Select **C20** and name it `con_fac`. The name acts as a fixed reference, like `$C$20`, but makes a formula's purpose easier to read and debug.
+4. Use `con_fac` to convert the CFS results in **C4:G9** to the corresponding CMS results in **C12:G17**.
 
 ---
 

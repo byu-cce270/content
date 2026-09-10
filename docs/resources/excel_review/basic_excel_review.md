@@ -21,6 +21,21 @@ The following terms will be used throughout the Excel portion of this course:
 | **Excel Table** | A data range formally converted using **Format as Table**. An Excel Table has built-in filtering, formatting, and other data-management features. |
 | **Formula** | An expression beginning with `=` that calculates a result, such as `=A1+B1`. |
 | **Function** | A predefined calculation used in a formula, such as `=SUM(A1:A10)`. |
+| **Named reference** | A descriptive name assigned to a cell or range, such as `con_fac`. The name can be used in formulas instead of its cell address. |
+
+## Reading Excel References and Instructions
+
+| Example | Meaning |
+|:--------|:--------|
+| `B4` | The cell in column B and row 4 on the current worksheet. |
+| `B4:D10` | Every cell from the upper-left cell B4 through the lower-right cell D10. The colon means **through**. |
+| `Data!A1:P1001` | Cells A1 through P1001 on the **Data** worksheet. The exclamation point separates the worksheet name from the range. |
+| `'Reservoir Flow'!A1:J31` | A range on a worksheet whose name contains spaces. Excel adds apostrophes around the worksheet name. |
+| `$A$1:$P$1001` | An absolute range. The dollar signs keep its rows and columns fixed when a formula is copied. |
+| `con_fac` | A named reference. Its descriptive name can make a formula easier to read and troubleshoot. |
+| **Data > Filter** | Select the **Data** tab on the ribbon, and then select **Filter**. |
+
+You usually do not need to type a worksheet-and-range reference. While entering a formula or completing a dialog box, select the worksheet and cells. Excel will construct the reference and may add dollar signs automatically.
 
 ## Essential Excel Shortcuts
 
@@ -52,7 +67,7 @@ An Excel workbook contains a collection of worksheets. Each worksheet contains c
 - D3	<- Row 3, Column 4
 - AJ234	<- Row 234, Column 36
 
-!!!Note
+!!! note
     After column Z, the column labels continue as AA, AB, AC... To reference a group of cells with a single range address, combine the upper-left and lower-right cell addresses with a colon. For example, consider the following range:
 
     ![range.png](images/range.png)
@@ -141,7 +156,7 @@ and then drag the green square in the lower right corner of the cell down to the
 ---
 
 ## Relative vs. Absolute References
-When copying formulas, we need to be careful how were reference other cells in our formulas. For example, to calculate the weight of our cylinders, we take the volume of the cylinder and multiply by the unit wt of the cylinder material as follows:
+When copying formulas, we need to be careful how we reference other cells in our formulas. For example, to calculate the weight of our cylinders, we take the volume of the cylinder and multiply by the unit wt of the cylinder material as follows:
 
 ![abs-rel-1.png](images/abs-rel-1.png)
 
@@ -159,7 +174,7 @@ The reason for this error can be seen by revealing the formulas. This is accompl
 ![abs-rel-4.png](images/abs-rel-4.png)
 
 !!!Note
-    The "\$" symbols. You make an absolute reference by directly typing the values or by typing B4 and then pressing the **F4** key (This maybe different depending on what system you use). Now after copying the formula down, we get correct answers:
+    The `\$` symbols make a reference absolute. You can type them directly or select the reference while editing the formula and press **F4** on Windows. On a Mac, use **Command+T** or **F4**, depending on the keyboard settings. After copying the corrected formula down, the results are correct:
 
 ![abs-rel-5.png](images/abs-rel-5.png)
 
@@ -175,3 +190,9 @@ Sometimes it is useful to use a mixed reference. Here is a summary of the ways i
 - \$D\$4	Row and column are both absolute
 
 For the example shown above, we could have gotten away with a mixed reference ("B\$4") because we copied the formulas within a single column, but it works fine with a complete absolute reference ("\$B\$4"). To do a mixed reference, you can either directly type the "\$" symbols or you can repeatedly press the F4 key to get the combination you are seeking.
+
+## Named References
+
+A named reference replaces a cell or range address with a descriptive name. Select the cell or range, click the **Name Box** to the left of the formula bar, type a name without spaces, and press **Enter**.
+
+For example, if cell `C20` contains a conversion factor and is named `con_fac`, the formula `=C4*con_fac` is easier to interpret than `=C4*$C$20`. Both formulas can calculate the same result, but the named version makes the purpose of the fixed value visible. This can make formulas easier to check and errors easier to locate. Named references remain fixed when a formula is copied unless the name itself refers to a changing formula.

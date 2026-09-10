@@ -6,6 +6,17 @@ Excel has many powerful functions that can automate calculations and data analys
 
 Later in the course, you will use Goal Seek to determine the input required to produce a specified result. For now, concentrate on lookup and logical functions.
 
+If cell references are unfamiliar, review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) before continuing. That overview explains relative, absolute, mixed, and named references.
+
+!!! note "Reading worksheet and range references"
+    - `E6` means the cell at column E and row 6 on the current worksheet.
+    - `A4:H17` means the rectangular range from `A4` through `H17`.
+    - `Tables!A4:H17` means that range is on the **Tables** worksheet. The `!` separates the worksheet name from the cell or range.
+    - If a worksheet name contains spaces, Excel uses apostrophes: `'Project Budget'!B5`.
+    - Dollar signs lock a reference when a formula is filled or copied. For example, `$A$4:$H$17` remains fixed, while `A4:H17` can move.
+
+    You can type a cross-sheet reference, or select the cells on the other worksheet while building the formula and let Excel insert the reference.
+
 ### Useful Shortcuts
 
 | Task | Windows | Mac |
@@ -23,7 +34,9 @@ The VLOOKUP and HLOOKUP functions are used to find values in a lookup range. VLO
 
 The syntax for the VLOOKUP function is as follows:
 
-    VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+    =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+
+Square brackets in function syntax identify an optional argument. They explain the function; do not type the brackets in an Excel formula.
 
 where:
 
@@ -34,9 +47,11 @@ where:
 | col_index_num  | The column number within `table_array` from which the matching value must be returned.                                     |
 | [range_lookup] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |  
 
+Excel calls this argument `table_array` even when the source is an ordinary range of cells rather than a formatted Excel Table.
+
 The HLOOKUP syntax is similar:
 
-    HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])
+    =HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])
 
 HLOOKUP searches for the lookup value in the first row and returns a value from the specified row. We will not practice HLOOKUP in this lesson, but you should recognize what it does and how it differs from VLOOKUP.
 
@@ -92,7 +107,7 @@ The MATCH function returns the position of an item in a range of cells. It is of
 
 Let's first look at the syntax of the function.
 
-    MATCH(lookup_value, lookup_array, [match_type])
+    =MATCH(lookup_value, lookup_array, [match_type])
 
 where:
 
@@ -118,11 +133,11 @@ Starting at row 24, another range is listed and the objective is to fill in the 
 looks up the temperature corresponding to the elevation from column **C** and the month associated with the date
 provided in column **B**. This requires a double lookup. We use VLOOKUP to find the row we need based on a range lookup of elevation using the VLOOKUP function. Then, for the third argument to VLOOKUP, we need to determine which column to use based on the month desired. To find the right column based on the month, we first need to find the month label ("Jan", "Feb", etc.) from a date value. This can be accomplished using the **[TEXT](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c){:target="_blank"}** function which takes a date as an argument and returns the month or day value depending on the format specified by the second argument as follows:
 
-    TEXT(B28,"MMM")
+    =TEXT(B28,"MMM")
 
 For the values shown, the function would return "**Mar**". Then we need to use this text string to automatically find the index of the column corresponding to this month. This can be done with the MATCH function as follows:
 
-    MATCH(TEXT(B28,"MMM"),$B$7:$N$7,0)
+    =MATCH(TEXT(B28,"MMM"),$B$7:$N$7,0)
 
 The first argument is the lookup value, the second is the row or column to search, and the third specifies the match type. A value of **0** requires an exact match. For the arguments shown, MATCH returns **4** because the selected range begins in column B and the March heading is its fourth item. That result is the correct VLOOKUP column index. We can now complete the VLOOKUP formula:
 
@@ -223,13 +238,13 @@ The nested IF formula works, but IFS is often easier to read and revise when the
 
 VLOOKUP and MATCH can be difficult at first, especially when one function is nested inside another. We will first practice each function separately and then combine them.
 
-3. In column E, use MATCH with an exact match (`match_type = 0`) to find the position of the service type listed in column D within the header row of the lookup range in cells K1:N8. If written correctly, MATCH will return 2, 3, or 4. We will use this number in the next step. Hint: The entire lookup range is not used for this step.
+3. In `E2`, use MATCH with an exact match (`match_type = 0`) to find the position of the service type in `D2` within the header range `$K$1:$N$1`. Fill the formula through `E25`. MATCH should return 2, 3, or 4. The dollar signs keep the header range fixed as the formula is filled; while editing the reference, you can press `F4` on Windows or `Command+T` on Mac to add them.
 
-4. In column F, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the cost of the service listed in column B from the lookup range in cells K1:N8. For `col_index_num`, use the value returned by MATCH in column E.
+4. In `F2`, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the cost of the service in `B2`. Use `$K$1:$N$8` as the complete lookup range and use the MATCH result in `E2` for `col_index_num`. Fill the formula through `F25`.
 
-5. In column G, you will multiply the values in columns C and F to get the total cost for each service
+5. In `G2`, multiply the quantity in `C2` by the cost in `F2`, then fill the formula through `G25`.
 
-6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should return the total cost for each service based on the service type, quantity, and cost per service
+6. In `I2`, try combining everything you wrote in columns E, F, and G into one formula. Fill it through `I25`. The formula should return the total cost for each service based on the service type, quantity, and cost per service.
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
@@ -262,11 +277,11 @@ Use `FALSE` for `range_lookup` and `0` for `match_type`.
 
 Next, look at the **IF-IFS** worksheet. It is a simple grade book for a class. You will use IF and IFS to assign points, pass/fail status, and letter grades to students.
 
-7. Go to column D ("Points") and use RANDBETWEEN to give points to students randomly. Points should be between 0 and 100. RANDBETWEEN generates new values whenever the workbook recalculates. To make the values static, select the generated cells, copy them, and use Paste Special > Values. This replaces the formulas with their current values. If you need help, look at the solution below.
+7. In `D2`, use RANDBETWEEN to give points to students randomly. Points should be between 0 and 100. Fill the formula through `D201`. RANDBETWEEN generates new values whenever the workbook recalculates. To make the values static, select the generated cells, copy them, and use Paste Special > Values. This replaces the formulas with their current values. If you need help, look at the solution below.
 
-8. In column E, write a simple IF formula in the Pass/Fail column. Return "Pass" for a score greater than or equal to 60 and "Fail" for a score below 60.
+8. In `E2`, write a simple IF formula in the Pass/Fail column. Return "Pass" for a score greater than or equal to 60 and "Fail" for a score below 60. Fill the formula through `E201`.
 
-9. In column F, use either a nested IF formula or an IFS formula to assign a letter grade based on the following thresholds. The IFS version is usually easier to read.
+9. In `F2`, use either a nested IF formula or an IFS formula to assign a letter grade based on the following thresholds. Fill the formula through `F201`. The IFS version is usually easier to read.
 
 | Grading Scale | Letter Grade |
 |:-------------:|:------------:|
@@ -275,6 +290,12 @@ Next, look at the **IF-IFS** worksheet. It is a simple grade book for a class. Y
 |    70 - 79    |      C       |
 |    60 - 69    |      D       |
 |     < 60      |      F       |
+
+<details>
+<summary><b>IF and IFS hint</b></summary>
+
+For a nested IF, place the next IF in the `value_if_false` argument. For IFS, test the grade thresholds from highest to lowest and use `TRUE` as the final default condition.
+</details>
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 

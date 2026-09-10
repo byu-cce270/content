@@ -4,6 +4,9 @@
 
 In Excel, there are many ways to analyze and display data. For this topic, you will focus on Conditional Formatting, Filtering Data, Excel Tables, and working with Functions. These are all important tools to know when working with data in Excel. They will help you to better understand your data and make it easier to read and analyze. In this reading, you will learn what these tools are and how to use them.
 
+!!! note "Reading Excel instructions"
+    A reference such as `A2:F30` means every cell from A2 through F30. A ribbon path such as **Data > Filter** means select the **Data** tab, then select **Filter**. Review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) for worksheet and workbook terms, relative and absolute references, and named cells.
+
 ---
 
 ## Conditional Formatting
@@ -253,13 +256,13 @@ For more information, see [Freeze panes to lock rows and columns](https://suppor
 1. First download the starter workbook: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the CCE 270 folder you created for this class.
    <br>Before you start, make sure to make a copy of the file.
    <br>The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
-2. **Highlight** those in the **Type** column that checked out Cameras.
+2. **Highlight** the cells in **B2:B30** that contain Camera.
    <br> Hint: Use conditional formatting
-3. **Highlight** those in **column A** that have an ID number between 1000 and 2500.
+3. **Highlight** the cells in **A2:A30** that have an ID number between 1000 and 2500.
 4. Select cells **A1:F30** and add a **Filter**. 
 5. **Sort** the spreadsheet by the **Checked Out** date from most recent to the oldest.
 6. **Filter** the **Days Checked Out** column to show only values of 5 or greater.
-7. Fill in the **Days Checked Out Statistics** area using the **Days Checked Out** values in the main data range. Use `STDEV` for standard deviation.
+7. Fill in the **Days Checked Out Statistics** area in rows 34-38 using the **Days Checked Out** values in **F2:F30**. Use `STDEV` for standard deviation.
 8. When you're finished, your spreadsheet should look something like this:
 
 ![Pre-Analyzing-&-Managing-Data-Challenge-Solution.png](images/Pre-Analyzing-%26-Managing-Data-Challenge-Solution.png)

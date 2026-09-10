@@ -6,6 +6,8 @@
 
 First make a copy of the starter workbook: [(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-HW-Pivot-GoalSeek-DataV.xlsx)
 
+If you need a reminder about worksheet, range, relative, absolute, or named references, review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md).
+
 ---
 
 ## Part 1: Three Reservoir Problem
@@ -47,6 +49,21 @@ We will use Goal Seek to change $H_j$ until $Q_j=0$.
     |----------|------|------|
     | Gravity | C4 | g |
     | Junction head, $H_j$ | C5 | H_j |
+
+    A named reference identifies a shared value by purpose, while cell references identify the pipe-specific inputs. Using both keeps formulas concise and makes it easier to locate an incorrect input or reference.
+
+!!! note "Translating the equations into Excel"
+    Begin a formula with `=`. Use `*` for multiplication, `/` for division, `^2` to square a value, `SQRT(...)` for a square root, and `PI()` for $\pi$. Use parentheses to preserve the order of operations. Refer to the named cells `g` and `H_j` and to the appropriate pipe-input cells rather than typing the supplied numerical values into formulas.
+
+<details>
+<summary><b>Formula hint for $V_1$</b></summary>
+
+For Pipe 1, one correct translation of the velocity equation is:
+
+`=SQRT((2*g*(H_j-C11))/((C10*C9/C8)-1))`
+
+Identify how `C8:C11` correspond to $D_1$, $L_1$, $f_1$, and $H_1$ before using the formula.
+</details>
 
 3. Enter the following velocity equations. Use the defined names `g` and `H_j`, and use relative references for the pipe inputs.
 
@@ -95,13 +112,13 @@ We will use Goal Seek to change $H_j$ until $Q_j=0$.
 
 The **Reservoir Flow** worksheet contains ten balanced scenarios. Each scenario has three pipes that share one solved junction head. Pipe dimensions, reservoir heads, and flow directions vary.
 
-1. Select the ordinary source range `A1:J31` on the **Reservoir Flow** worksheet.
-2. Create a PivotTable on the existing **PivotTable** worksheet, starting at `A9`.
+1. Select the ordinary source range `'Reservoir Flow'!A1:J31`. An ordinary range is a group of cells that has not been converted to an Excel Table.
+2. In the **Create PivotTable** dialog, verify the source in **Table/Range**, choose **Existing Worksheet**, and set **Location** to `PivotTable!A9`. The location is the upper-left cell where Excel will place the PivotTable.
 3. Arrange the fields as follows:
 
     - **Rows:** Flow Direction
     - **Columns:** Pipe
-    - **Values:** Average of Flow Rate and Average of Velocity
+    - **Values:** Average of Flow Rate and Average of Velocity. Use **Value Field Settings**, as introduced in the reading, to change each summary to **Average**.
     - **Filters:** Scenario
 
 4. In the **Part 2 observation** box above the PivotTable, describe what this dataset shows about average flow rate or velocity for inflow and outflow. Describe the dataset rather than claiming a universal hydraulic rule.
@@ -113,7 +130,7 @@ The **Reservoir Flow** worksheet contains ten balanced scenarios. Each scenario 
 
 ## Part 3: Personal PivotTable
 
-Create a second PivotTable in a **new worksheet** to explore a relationship or pattern that interests you. Include:
+Using the same source, `'Reservoir Flow'!A1:J31`, create a second PivotTable in a **new worksheet** to explore a relationship or pattern that interests you. Include:
 
 - At least one categorical field in **Rows**
 - A second categorical field in **Rows**, **Columns**, or **Filters**

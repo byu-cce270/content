@@ -5,6 +5,8 @@
 We will practice using VLOOKUP, MATCH, IF, and IFS in several real-world scenarios. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 You can find the in-class workbook here: [(Starter-Workbook)-Class-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Class-Lookups-Match-IF.xlsx)
 
+Need a reminder about cell, range, cross-sheet, or absolute references? See [Cells and Formulas](../../resources/excel_review/basic_excel_review.md).
+
 This workbook contains six worksheets.
 
 - **Project Budget** - Used for Exercise 1. 
@@ -22,15 +24,15 @@ The **Materials** worksheet contains lookup ranges for material costs and availa
 
 1. Navigate to the **Project Budget** worksheet.
 
-2. In column **D**, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the correct unit cost for each material from the lookup range in the **Materials** worksheet.
+2. In `D2`, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the correct unit cost for the material in `B2`. Use `Materials!$A$4:$D$12` as the lookup range and return its third column. Fill the formula through `D30`.
 
-3. In column **E**, multiply the material quantities and unit costs to get the total price for each row
+3. In `E2`, multiply the material quantity in `C2` by the unit cost in `D2`, then fill the formula through `E30`.
 
 4. Look at the `SUMIF` formulas in column **H**. These formulas find the total quantity used in column **C** for each material type. The formulas are already provided.
 
-5. In column **I**, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the available quantity for each material from the lookup range in the **Materials** worksheet.
+5. In `I2`, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the available quantity for the material in `G2`. Use the same `Materials!$A$4:$D$12` lookup range, but return its fourth column. Fill the formula through `I10`.
 
-6. In column **J**, use the difference in columns **H** and **I** to find the remaining material quantities. Note that we have conditional formatting on to highlight items that are out of stock
+6. In `J2`, subtract the total used in `H2` from the available quantity in `I2`, then fill the formula through `J10`. Conditional formatting highlights items that are out of stock.
 
 7. One material name intentionally contains a data-quality problem that causes an exact lookup to return `#N/A`. Find and correct the inconsistent entry, then confirm that the lookup and material totals update correctly.
 
@@ -40,7 +42,7 @@ The **Materials** worksheet contains lookup ranges for material costs and availa
 Excel treats spaces as characters. The entry `Clay ` contains a trailing space and does not exactly match `Clay` in the Materials worksheet. Remove the trailing space from the Project Budget entry. Do not hide the mismatch with an approximate lookup or `IFERROR`.
 </details>
 
-<!-- Instructor note: The trailing space in Project Budget!B5 is intentional. Use it to discuss data cleaning and why exact text lookups can return #N/A. Students should remove the trailing space. -->
+<!-- Instructor note: The trailing space in 'Project Budget'!B5 is intentional. Use it to discuss data cleaning and why exact text lookups can return #N/A. Students should remove the trailing space. -->
 
 ---
 
@@ -48,9 +50,9 @@ Excel treats spaces as characters. The entry `Clay ` contains a trailing space a
 
 This worksheet contains hours worked each month for a set of employees. Our objective is to combine VLOOKUP and MATCH to find values in a two-dimensional lookup range.
 
-1. Note the layout of the lookup range at the top. Each row represents a month and each column represents an employee. The values are the hours worked each month by that employee.
+1. Note the layout of the lookup range in `$A$4:$H$16`. Each row represents a month and each employee has a column. The values are the hours worked each month by that employee.
 
-2. In the range below, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the hours worked in the month specified in column **B**. Nest MATCH with an exact match (`match_type = 0`) inside VLOOKUP to determine the return column from the employee name in column **C**. Enter your formula in **D20:D33**.
+2. In `D20`, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the hours worked in the month listed in `B20`. Use `$A$4:$H$16` as the VLOOKUP range. Nest MATCH with an exact match (`match_type = 0`) to locate the employee in `C20` within the header range `$A$4:$H$4`. Because both ranges begin in column A, the MATCH position is also the correct VLOOKUP column index. Fill the formula through `D33`.
 
 3. Add a function in D35 to compute the total hours worked on this project
 
@@ -62,7 +64,7 @@ The following exercise is based on the IF and IFS functions we have just covered
 
 1. Navigate to the **Concrete Price Estimator** worksheet.
 
-2. Solve for the total cubic volume (cell E16)
+2. Calculate the volume of each item in `E11:E13`, then calculate the total cubic volume in `E16`.
 
 3. Write an IFS formula in E18 to return the price per cubic foot based on the total volume:
 
@@ -70,7 +72,7 @@ The following exercise is based on the IF and IFS functions we have just covered
    - At least 400 ft³ but less than 5,000 ft³: $4.30 per ft³
    - At least 5,000 ft³: $3.00 per ft³
 
-4. Solve for the total price (cell E19)
+4. Multiply the total volume by the price per cubic foot to calculate the total price in `E19`.
 
 5. Try adjusting the lengths of the concrete to see if it changes the price per cubic foot and total price correctly
 
@@ -86,7 +88,7 @@ Use IF or IFS formulas and user selections to create an illustrative estimate of
 
 2. Fill in the criteria in the yellow cells (`C9`, `C11`, `C13`, `C15`, `F17`, and `C19`). These cells have dropdown menus that were created with Data Validation. You will learn how to create them in a later lesson.
 
-3. Write an IF or IFS formula under **Years** in column **I** based on the criteria and conditions in column **J**.
+3. Write an IF or IFS formula in each applicable **Years** cell (`I9`, `I11`, `I13`, `I15`, `I17`, and `I19`) based on the student selections and the conditions in column **J**.
 
 4. Add up the total in I23 to determine how many years of school you have left.
 
