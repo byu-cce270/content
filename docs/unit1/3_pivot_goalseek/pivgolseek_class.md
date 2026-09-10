@@ -4,7 +4,7 @@
 
 These exercises introduce **Data Validation**, **Goal Seek**, and **PivotTables**. Download the in-class workbook here: [(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Class-Pivot-GoalSeek-DataV.xlsx)
 
-The workbook contains four worksheets: **Data Validation** for Exercise 1, **Brickmaking Business** for Exercise 2, and **Data** and **Pivot Table** for Exercise 3. The **Data** worksheet contains the employee source data.
+The workbook contains five worksheets: **Data Validation** for Exercise 1, **Brickmaking Business** for Exercise 2, **Data** and **Pivot Table** for Exercise 3, and **credits** for the data source. The **Data** worksheet contains the employee source data.
 
 ---
 
@@ -39,7 +39,7 @@ The workbook contains four worksheets: **Data Validation** for Exercise 1, **Bri
 
 ## Exercise 3 - Employee Data
 
-1. Navigate to the **Pivot Table** worksheet and create a PivotTable starting at `A8` using the employee records on the **Data** worksheet.
+1. Navigate to the **Pivot Table** worksheet and create a PivotTable starting at `A8` using the employee records in `Data!A1:P1001`.
 2. Place **Job Title** in **Rows**.
 3. Place **EEID** in **Values** and summarize it by **Count**.
 4. Place **Annual Salary** in **Values**, summarize it by **Average**, and format the results as currency.

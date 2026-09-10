@@ -88,7 +88,7 @@ The PivotTable should look like this:
 The PivotTable now shows total units sold and total sales for each sales representative within each region.
 
 !!! Note "Refresh and changing source data"
-      After changing source data, use **Refresh** if the PivotTable does not update automatically. If new records are added outside an ordinary source range, update the PivotTable's data source before refreshing.
+      After changing source data, use **Refresh** to update the PivotTable. If new records are added outside an ordinary source range, update the PivotTable's data source before refreshing.
 
 !!! Tip "Optional: use an Excel Table"
       This activity uses an ordinary range. You may instead convert the source to an Excel Table with **Ctrl+T**. A Table expands as rows are added, keeps headers and formatting consistent, and makes the PivotTable source easier to maintain. You must still refresh the PivotTable to update its results.
@@ -141,9 +141,9 @@ Goal Seek repeatedly tests input values until the formula result is sufficiently
 
 ## Pre-Class Quiz Challenge
 
-Here is a link for the pre-class starter sheet: [(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx)
+Here is a link for the pre-class starter workbook: [(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx)
 
-Note that this is an expanded version of the regional sales dataset used in the PivotTable example above.
+The `Reg_sales_data` worksheet contains the regional sales dataset used in the PivotTable example above. The workbook also includes the Data Validation and Goal Seek exercises below.
 
 ### Part 1: Data Validation
 
@@ -174,8 +174,8 @@ The two roots are the horizontal positions where the fish crosses the water surf
 
 1. Use Goal Seek to find both $x$ values that make $y=0$. Run Goal Seek twice, changing the starting value in the $x$ input cell before each run.
 2. Copy the two roots into `C28` and `C29`.
-3. Calculate the horizontal distance traveled above the water as the absolute difference between the two roots.
-4. Enter the average of the two roots in `E28`. This is the $x$ coordinate of the parabola's axis of symmetry. Use the worksheet formula to determine the maximum $y$ value.
+3. Confirm that the horizontal distance shown in `F32` is the absolute difference between the two roots.
+4. Enter the average of the two roots in `E28`. This is the $x$ coordinate of the parabola's axis of symmetry. The worksheet formula in `F33` will calculate the maximum $y$ value.
 
 <details>
 <summary><b>Hint: starting values for Goal Seek</b></summary>
