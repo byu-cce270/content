@@ -36,7 +36,12 @@ The following charts contain the same unevenly spaced x-values. The line chart t
 
 ![Comparison of a line chart and XY scatter chart using the same unevenly spaced data](graphing_images/line_vs_scatter.png)
 
-For most scientific and engineering data with numerical x- and y-values, use an **XY scatter chart**. Use a line chart for an ordered series such as monthly totals. See Microsoft's [comparison of line and scatter charts](https://support.microsoft.com/en-us/excel/present-your-data-in-a-scatter-chart-or-a-line-chart) for more examples.
+!!! note "Practical default"
+    - When both x and y are measured quantitative values, an **XY scatter chart is nearly always a correct choice**. This is the usual default for engineering data.
+    - When the horizontal values are ordered categories, use a **line chart** if connecting the categories represents a meaningful sequence. Category labels can be numbers and still be categories, such as Test 1, Test 2, and Test 3.
+    - For unordered categories or numeric identifiers, use a bar or column chart rather than connecting them with a line.
+
+See Microsoft's [comparison of line and scatter charts](https://support.microsoft.com/en-us/excel/present-your-data-in-a-scatter-chart-or-a-line-chart) for more examples.
 
 ## Creating and Editing a Chart
 
