@@ -224,20 +224,24 @@ Check that each returned horizontal distance lies inside its required interval a
 
 ---
 
-## Turning In and Rubric
+## Turning in/Rubric
 
-Upload the completed Excel workbook directly to Learning Suite.
+**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
-1. Save and close the workbook so all changes are written to the file.
-2. Upload the `.xlsx` file to the correct assignment.
-3. Confirm that the uploaded file contains your completed work.
+1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
+2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
+3. Double-check that the file you uploaded is the one that contains your completed work.
 
-| Item | Points Possible |
-|---|---:|
-| Three appropriate and correctly labeled sales charts | 1.5 |
-| Solver setup and numerical estimates for the topographic features | 1.5 |
-| **Total** | **3** |
+**Rubric:**
 
-| Reasons for Points Lost | Amount |
-|---|---:|
-| File uploaded incorrectly | -10% |
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        3        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|  File uploaded incorrectly  |       -10%        |
