@@ -1,298 +1,277 @@
-# In-Class Exercise: Gantt Chart/Project Scheduling and Tracking
+# In-Class Exercise: Gantt Chart and Project Scheduling
 
-The following exercise will have you create a simple Gantt chart in Excel similar to the one featured in the video on the reading page and a few other features. 
+In this exercise, you will build a formula-driven Gantt chart. You will continue using the same workbook for homework, so complete each step and preserve the workbook structure.
 
-We will use seven main steps to create a Gantt chart in Excel.
+Download [(Starter-Workbook)-Class-Gantt-Chart.xlsx](%28Starter-Workbook%29-Class-Gantt-Chart.xlsx) and save it in your CCE 270 folder. Do not enter your name or NetID. Use role labels when a person must be identified.
 
-1. Project Information, Phases, and Tasks 
-2. Creating the Timeline 
-3. Making the Timeline Dynamic
-4. Add Gantt Bars using Conditional Formatting
-5. Adding Summary Progress Bars
-6. Phase Summary Duration
-7. Highlighting Weekends
+The exercise has seven parts:
 
-For the in-class exercise, we will be creating a basic Gantt chart, later in the homework, you will be using a copy of this sheet to create a project management tool. 
+1. Enter project information, phases, tasks, dates, and durations.
+2. Create a four-week timeline.
+3. Make the timeline respond to a display-week control.
+4. Create task bars and a current-day marker.
+5. Display task and phase progress.
+6. Calculate and display phase-summary dates.
+7. Identify weekends and manage rule order.
 
-To begin, open the in-class workbook and follow the instructions below. [(Starter-Workbook)-Class-Gantt-Chart.xlsx](%28Starter-Workbook%29-Class-Gantt-Chart.xlsx)
+## Step 1: Build the Task Model
 
-Be sure to save it in your CCE 270 folder.
+**Purpose:** Create the data that drives the schedule. Keeping task inputs in consistent columns allows one formula or formatting rule to work for every task.
 
----
+The starter workbook contains headings in row 6. You will use the following structure:
 
-## Step 1 - Project Information, Phases, and Tasks
+| Row type | Task or phase | Assigned to | Progress | Start | End | Work days |
+|:---------|:--------------|:------------|:---------|:------|:----|:----------|
+| Phase 1 | `A7` | — | `C7` | `D7` | `E7` | blank |
+| Phase 1 tasks | `A8:A10` | `B8:B10` | `C8:C10` | `D8:D10` | `E8:E10` | `F8:F10` |
+| Phase 2 | `A12` | — | `C12` | `D12` | `E12` | blank |
+| Phase 2 tasks | `A13:A15` | `B13:B15` | `C13:C15` | `D13:D15` | `E13:E15` | `F13:F15` |
 
-In this step, you will add the project title, company name, project manager's name, and project start date to the Gantt chart. We will also enter some phases and tasks for the project.
+### Student Task
 
-Note that some of the information has already been entered in the starter sheet for you. You should see the following:
+1. Replace `PROJECT TITLE` in `A1` with a short project title.
+2. Replace `Company Name` in `A2` with a company or organization name.
+3. Replace `Project Lead` in `A3` with the role label `Project Manager`.
+4. In `D3`, enter the date of your next class meeting.
+5. Select `D3`, enter `project_start` in the Name Box to the left of the formula bar, and press Enter.
+6. Enter `Phase 1` in `A7` and `Phase 2` in `A12`.
+7. Enter three specific tasks under each phase in `A8:A10` and `A13:A15`. Use WBS numbers such as `1.1`, `1.2`, and `2.1` as part of each task name.
+8. Assign every task to `Project Manager`, `Team Member 2`, or `Team Member 3` in column B.
+9. Enter realistic Monday-through-Friday task start dates in the task rows of column D. The first task should use `=project_start`; if that date is on a weekend, use the next Monday instead. Tasks may overlap.
+10. Enter `WORK DAYS` in `F6`, then enter a positive whole-number duration in each task row of column F.
+11. In `E8`, calculate the task end date. Leave the cell blank when the start date or duration is blank. Copy the formula only to the other task rows.
 
-![gantt_start.png](images/gantt_start.png)
+The start date and work-day duration are inputs. The end date is a calculated result. Separating inputs from results makes the schedule easier to update and audit.
 
-### General Project Information
-First, you will need to enter the following information:
+<details>
+<summary><b>Formula hint for the task end date</b></summary>
 
-1. Enter a name for your project in cell A1.
-2. Enter your company name in cell A2.
-3. Enter your name as the project manager in cell A3.
-4. Enter a date in cell D3 for the project start date. This should be the next time you have class. Also name this 
-   cell "project_start" (We will be using this name in formulas later).
-* remember, cell or range names should not have spaces in them.
+Use `IF` and `OR` to test the two inputs, then use `WORKDAY`:
 
-### Phases and Tasks
-Now we need to enter some phases and tasks for the project. 
-
-5. Enter "Phase 1" in cell A7.
-6. Enter a series of tasks for Phase 1 starting in cells A8.
-
-You can use "Phase 1, Task 1.1", "Phase 1, Task 1.2", etc. as the phase and task names. This is called the WBS or Work Breakdown Structure and is how tasks are referred to by project managers. In addition to the numbers, in practice, you would use wider column widths and enter more descriptive phase and task names in addition. 
-
-Create at least 2 phases with 3-4 tasks each.
-
-For this simple sheet, it is helpful if the Phases will be left justified and the tasks right justified. This isn't 
-required for your homework, but it does help make the chart easier to read.
-
-* **Note**: For most projects the numbering for tasks is a sub-set of the phase number. For example, if Phase 1 has 3
-  tasks, they would be numbered 1.1, 1.2, and 1.3. So the tasks for Phase 2 would be numbered 2.1, 2.2, etc. You will learn more about WBS structures and naming in your 300 level CFM classes.
-
-
-### Task Dates and Duration
-Next, we will enter the start and end dates for each task. (We will not add start dates for the Phases).
-
-7. Enter the start date for each task in column D next to each task. Typically, the start date for the first task is the project start date. For this project, the start date for the first task should reference the project start date in 
-   cell D3 using the cell/range name "project_start" we applied above.
-
-* **Note** if the cell you enter the date into is not formatted as a date, a number will appear. Change the 
-  formatting to a date format to see the date. The "Short Date" format is a good choice.
-
-* **Note**: The instructions in the pre-class video say to add 1 to the end date of one task to get the start date of the next task. This assumes that you cannot start the next task until the previous task is completed. This is not always the case. So just enter independent start dates for each task. The start dates should be ascending order - that is, the start date of task 2 should be on the same day or after the start date of task 1, etc. Most projects have tasks that are done in parallel, so the start date of one task may be before the end date of another task.
- 
-Finish this step by adding your own start dates for all the tasks you entered.
-
-8. Add a new column named "WORK DAYS" in F6, to indicate that the duration for each task. Note that we intend this to be work days (MTWTF), not calendar days. More on that later. 
-9. Enter the duration in column F for each task.
-10. In E8, enter a formula to calculate the end date for each task based on the start date and duration. Use the WORKDAY() function to calculate the end date. The WORKDAY() function takes a start date and a number of work days and returns the end date. It ignores weekends when calculating how long it will take. 
-11. Modify the formula in E8 to show nothing if the start date or duration is blank. Use the IF() function to check if either the start date or duration is blank. If either is blank, return nothing. Otherwise, return the end date using the WORKDAY() function. Then copy this formula to the rest of the tasks in column E. 
-
-* **Note**: Use the IF() function combined with the ISBLANK with the WORKDAY function you used above. In English the 
-  statement would be IF Cell D8 or Cell F8 is blank, the this cell is blank, if not, execute the workday function. To make a cell blank in Excel use "" with no space between the quotes. The format for the IF statement is IF(logical_test, 
-  value_if_true, value_if_false). The logical test would be ISBLANK(). The value if true would be "" and the value if false would be the WORKDAY function you used above. To test both cells, the OR() function can be used.
-
-### Formatting
-
-12. Change the formatting of the chart to make it look more professional. You can fill the header row (row 6) with a 
-    color, indent the task and phase names, and add some borders to the table. You can put borders around and 
-    highlight the project start date, work days, and start dates to help indicate that it is something to be filled in. You don't have to use the same colors as shown in our pictures.
-
-At this point, your Gantt chart should look something like this:
-
-![gantt_step1.png](images/gantt_step1.png)
-
----
-
-## Step 2 - Creating the Timeline
-
-In this step, you will create the timeline for the Gantt chart. You will use a series of date functions including 
-TODAY(), WEEKDAY(), LEFT(), and TEXT() to create the timeline. We will start the timeline in column H. You may want 
-to review the video on the reading page to see an example of how this is done.
-
-**Note** If you had more Phases or Tasks, you would need to adjust the range of cells used in the conditional formatting later.
-
-In your Gantt chart, row 5 will be the dates for the timeline and row 6 will be the days of the week. 
-
-1. In cell H5 reference the project start date in cell D3. Use the name "project_start" you applied above.
-2. In cell I5, enter a formula to reference the date in cell H5 plus 1 day. Then drag the formula to the right to 
-   fill in the rest of row 5 for a week (7 days). Make the data go through column N.
-3. Select the 7 dates, and use custom formatting to display only the day of the month. (You can quickly pull up the 
-   custom formatting dialog by pressing Ctrl+1 on Windows or Command+1 on Mac). Select the "d" format to display 
-   only the day of the month. _This may not be a choice, but pick one that starts with "d" and then modify it to 
-   just be "d"._
-4. Resize the columns to make the dates small boxes and center the dates.
-
-### Days of the week
-5. In cell H6, use the TEXT function to display the day of the week for the date in cell H5. (Hint: Use the "DDD" 
-   format). Then, use the LEFT function to display only the first letter of the day of the week. So the formula in H6 would be something like: ```left(text(H5,"DDD"),1)```. 
-6. Drag the formula in cell H6 to fill in the rest of row 6 for the week.
-
-### Week Header
-Now we want to add a header for the week with the date of the first day of the week.
-
-7. Merge the cells H4:N4 and use a formula in the merged cell to reference the date of the first day of the week in cell H5. 
-8. Change the date formatting to display the full date in the merged cell.
-9. Add a border around the week header and fill it with a color of your choice.
-
-### Copying the Week
-Next, we will copy our completed week to the next 3 weeks to the right to create a total of 4 weeks.
-
-10. Select columns H:N and copy to the clipboard. Paste the columns to O:U. 
-11. Modify O5 to reference the date in N5 plus 1 day. Now copy the columns O:U to the clipboard.
-12. Paste the new columns to V:AB and AC:AI. At this point you will have 4 weeks of dates.
-
-Now try double-clicking on the project start date to select a new date and watch the timeline update.
-
-At this point, your Gantt chart should look something like this:
-
-![gantt_step2.png](images/gantt_step2.png)
-
-## Step 3 - Making the Timeline Dynamic
-
-In this step, you will make the timeline dynamic so that it always starts on a Monday. This will ensure that the 
-formatting of the Gantt chart is consistent. We will also highlight the current day on the timeline. We will use 
-conditional formatting to highlight the current day on the timeline. 
-
-Notice that the first week always starts on the project start date. But it would be more convenient if each of the weeks started on a Monday. We will add a formula to make this happen.
-
-### Starting the Week on a Monday
-
-1. In cell H5 (the first cell in the calendar row), enter the following formula and format the cell as a date. This 
-   formula will calculate the date of the Monday of: the week that contains the project start date.
-
-```
-=project_start-WEEKDAY(project_start,3)
+```excel
+=IF(OR(D8="",F8=""),"",WORKDAY(D8,F8-1))
 ```
 
-2. Experiment with the start date to verify that the formula is working correctly.
+When the start date is Monday through Friday, `F8-1` counts it as the first workday. A one-workday task that starts Monday therefore ends Monday. Do not enter weekend task start dates in this exercise.
 
-Next, we will add a new control that lets us display the week we want to see. This will allow us to scroll through the weeks of the project beyond the first 4 weeks. For example, given the phases and tasks it is possible that the entire project would take more than 4 weeks. By changing the display week, we can see that week on the left and the subsequent 3 weeks after that.
+</details>
 
-### Week Control of Timeline Display
+<details>
+<summary><b>Optional: add a fourth task to a phase</b></summary>
 
-3. In cell C4, enter "Display Week:".
-4. In Cell D4, enter a number (1, 2, 3, etc.) to represent the week you want to display.
-5. Change the formatting of cells C4 and D4 to make them match the formatting of the project start date (cells C3 and D3). Make sure D4 is formatted as a number and not a date. 
-6. Name the cell D4 "display_week".
-7. In cell H5, edit the formula you edited above to add "+(display_week-1)*7" to the end of the formula. This will allow you to change the display week and see the subsequent weeks of the project. 
-8. Try entering different numbers in cell D4 to see how the display week changes.
+Insert a worksheet row directly above the next phase row before you create formulas or conditional formatting. Copy the format of an existing task row into the inserted row. You must update the phase formulas and formatting ranges to include the new row.
 
-## Step 4 - Add Gantt Bars using Conditional Formatting
+</details>
 
-Next, we will use conditional formatting to add Gantt bars to the timeline.
+### Format and Check
 
-1. Select cells H7:AI15 (if you have more or fewer tasks, adjust the range accordingly).
-   * If you later add more tasks, you will need to adjust the range of cells used in the conditional formatting. If you use "insert row" to add more tasks, the conditional formatting will automatically adjust to include the new rows. If you add more tasks at the bottom of the list, you will need to manually adjust the range of cells used in the conditional formatting.
-   
-2. Click on Format|Conditional formatting and Select "New Rule"
-3. In the Conditional format rules pane, select the Classic option and then select "Use a formula to determine which cell to format" from the dropdown.
-4. We want the formatting rule to format the cell if the date at the top of the column is between the start and end dates for 
-    the task in that row. We will need to use a logical AND function to check if the date is greater than or equal to the start date and less than or equal to the end date. The formula will be entered as if you were in the upper left cell of the range. Use absolute references for the row and relative references for the column.
+- Format `D3`, task start dates, and task end dates as dates.
+- Format input cells, phase rows, and the row-6 headings consistently.
+- Use indentation to distinguish tasks from phases.
+- Change one duration and confirm that its end date changes.
+- Confirm that a one-workday task has the same start and end date.
+- Confirm that a task spanning a weekend excludes Saturday and Sunday from its work-day count.
 
-    Enter the following formula:
+![Task model after Step 1](images/gantt_step1.png)
+
+## Step 2: Create the Timeline
+
+**Purpose:** Create actual Excel dates across the chart. Conditional formatting will compare each task's dates with these timeline dates.
+
+### Student Task
+
+1. In `H5`, enter `=project_start`.
+2. In `I5`, enter `=H5+1`, then fill the formula right through `AI5`.
+3. Apply the custom number format `d` to `H5:AI5` so each cell displays only the day of the month.
+4. In `H6`, enter `=LEFT(TEXT(H5,"ddd"),1)`, then fill the formula right through `AI6`.
+5. Center `H5:AI6` and make columns `H:AI` narrow enough to resemble a calendar grid.
+6. Merge `H4:N4`. In the merged cell, enter `=H5` and apply a readable date format.
+7. Copy the completed week header to `O4:U4`, `V4:AB4`, and `AC4:AI4`. Each merged header should refer to the first date below it.
+
+The cells in row 5 remain dates even though the `d` format displays only day numbers. This is important because calculations and conditional formatting require date values, not text labels.
+
+### Check Your Work
+
+- `H5:AI5` contains 28 consecutive dates.
+- Each weekly header displays the first date of its seven-day block.
+- Changing `project_start` changes every timeline date.
+
+![Four-week timeline after Step 2](images/gantt_step2.png)
+
+## Step 3: Make the Timeline Dynamic
+
+**Purpose:** Let the user choose which four-week period is displayed without changing any task data.
+
+### Student Task
+
+1. Enter `Display Week:` in `C4`.
+2. Enter `1` in `D4` and format it as a whole number.
+3. Select `D4`, enter `display_week` in the Name Box, and press Enter.
+4. Replace the formula in `H5` with a formula that finds Monday of the project-start week and advances seven days for each additional display week.
+5. Enter different positive whole numbers in `D4` and observe the timeline.
+
+<details>
+<summary><b>Formula hint for H5</b></summary>
+
+```excel
+=project_start-WEEKDAY(project_start,3)+(display_week-1)*7
 ```
-=AND(H$5 >= $D7, H$5 <= $E7)
+
+With return type 3, `WEEKDAY` returns 0 for Monday through 6 for Sunday. Subtracting that value finds Monday. The final term moves the display by whole weeks.
+
+</details>
+
+### Check Your Work
+
+- When `display_week` is 1, `H5` is Monday of the week containing `project_start`.
+- Increasing `display_week` by 1 moves every displayed date forward seven days.
+- Task start and end dates do not change when the display changes.
+
+## Step 4: Create Task Bars and Mark Today
+
+**Purpose:** Convert task dates into bars without manually coloring cells. The bars will update when task dates change.
+
+### Task-Bar Rule
+
+1. Select `H7:AI15`.
+2. Create a conditional-formatting rule using **Use a formula to determine which cells to format**.
+3. Write a formula that colors a cell when the timeline date is between the task start and end dates and the row contains a work-day duration.
+4. Choose a solid fill for task bars.
+
+<details>
+<summary><b>Task-bar formula and reference explanation</b></summary>
+
+Use this formula for the upper-left cell of the selected range:
+
+```excel
+=AND($D7<>"",$E7<>"",$F7<>"",H$5>=$D7,H$5<=$E7)
 ```
 
-This rule looks at the date in row 5 of the current column (H\$5) and checks if it is greater than or equal to the start date in column D (\$D7) and less than or equal to the end date in column E (\$E7). The \$ before the row number makes the reference absolute, so it always refers to row 5. The \$ before the column letter makes the reference absolute, so it always refers to column D or E. The lack of \$ before the column letter in H\$5 makes the reference relative, so it changes as you move across the columns.
+`H$5` changes columns but always reads the timeline date in row 5. `$D7`, `$E7`, and `$F7` remain in their assigned columns but change rows. These mixed references let Excel evaluate every task against every displayed date.
 
-For the formatting, select "Custom Format" and then pick a solid fill color for the background.
+</details>
 
-### Highlight the Current Day
+### Current-Day Rule
 
-Next, we will add conditional formatting to highlight the current day on the timeline.
+5. Select `H5:AI15` and create another formula-based rule.
+6. Use `=H$5=TODAY()` and apply a visible left and right border.
 
-5. Add another rule and have the formatting add side borders to the cells in the current day row. You should check 
-    to see if the date in row 5 of the current column is equal to today's date. Use the TODAY() function to get today's date. The formula will be entered as if you were in the upper left cell of the range just like the rule we did for the Gantt bars. Use absolute references for the row and relative references for the column.
+The current-day rule compares every timeline column with today's date. If today is outside the displayed four weeks, change `display_week` temporarily to test the rule.
 
-Change the custom formatting to show a red border on the left and right sides of the cell. If you want, you could add another rule to highlight the date in the header row.
+### Check Your Work
 
-If necessary, change the project start date so that the current day is highlighted on the timeline. That is "Today" 
-is somewhere in the 4 weeks of the timeline.
+- Change one task start date or duration. Its bar should move or change length.
+- Phase rows should not yet display bars because their Work Days cells are blank.
+- The current-day border should extend through one timeline column when today is displayed.
 
-At this point, your Gantt chart should look something like this if you added borders to the current day:
+![Task bars and current-day marker after Step 4](images/gantt_step4.png)
 
-![gantt_step4.png](images/gantt_step4.png)
+## Step 5: Display Progress
 
----
+**Purpose:** Store progress as numeric percentages and display it without replacing the underlying values.
 
-## Step 5 - Adding Summary Progress Bars
+### Student Task
 
-In this step, you will add progress bars to the Gantt chart to show the progress of each task. We will be using a special conditional formatting called "data bars" to show the progress of each task based on the percentage complete. We will also use conditional formatting to gray out part of the timeline based on the percent complete.
+1. Format `C7:C15` as Percentage.
+2. Enter a progress value in each of the six task rows. Use values from 0% through 100%.
+3. Apply conditional-formatting Data Bars to `C7:C15`.
+4. In `C7`, enter `=AVERAGE(C8:C10)`.
+5. In `C12`, enter `=AVERAGE(C13:C15)`.
+6. Bold or otherwise distinguish each phase row.
 
-1. Select C7:C15 (The Progress column, adjust the range if required for more or fewer tasks), set the number format to "Percent". For testing purposes, enter some sample percentages for the progress of each Task in associated cells in the Progress column. Leave a few of them blank or 0 to indicate they have not started yet.
-2. Reselect the cells in the Progress column (C7:C15) and add conditional formatting using "Data Bars". Choose a color, like gray for the data bar. You can choose a different color than gray if you like.
-3. Make Column C wider so you can see the data bars better.
-4. In the cells that have the Phase titles (cells C7 and C12 in the figures), use the average function to calculate the average percent complete for each phase based on the tasks in that phase.
+A blank progress cell means information is missing. A value of 0% means the task is defined but has not started. Enter a value for every defined task before calculating a phase average.
 
-### More Formatting
-4. Highlight each phase in the timeline and bold the data in that row to make it stand out 
-more.
+For this exercise, `AVERAGE` gives each task equal weight. A later project-control model could weight progress by work days, cost, or another measure of task size.
 
-Your chart should now look something like this:
+### Check Your Work
 
-![gantt_step5-1.png](images/gantt_step5-1.png)
+- Changing a task percentage changes its data bar.
+- Each phase percentage changes when one of its task percentages changes.
+- The percentage remains visible and numeric.
 
+![Progress data bars after Step 5](images/gantt_step5-1.png)
 
----
+## Step 6: Add Phase and Project Summaries
 
-## Step 6 - Phase Summary Duration 
+**Purpose:** Summarize detailed task dates at the phase and project levels. These formulas are examples of rolling detailed data into management-level information.
 
-In this step, you will add a summary duration for each phase of the project and you will group the tasks into phases so they can be hidden or expanded as needed.
+### Student Task
 
-First, we will add a summary progress bar for each phase.
+1. In `D7`, enter `=MIN(D8:D10)`.
+2. In `E7`, enter `=MAX(E8:E10)`.
+3. In `D12`, enter `=MIN(D13:D15)`.
+4. In `E12`, enter `=MAX(E13:E15)`.
+5. Enter `Project End:` in `E3`.
+6. In `F3`, enter `=MAX(E7:E15)` and format it as a date.
+7. Create a second conditional-formatting rule for phase rows over `H7:AI15`. Use a darker fill than the task bars.
 
-1. In cell D7, use the Min() function to find the minimum start date for all tasks in phase 1.
-2. In cell E7, use the Max() function to find the maximum end date for all tasks in phase 1.
+<details>
+<summary><b>Phase-bar formula</b></summary>
 
-Note that when you finish entering these two formulas, you will see an overall time range bar for phase 1. This is because the Min() and Max() functions are finding the earliest start date and the latest end date for all tasks in phase 1. However, our conditional formatting for the calendar is now showing the progress for the entire phase, not just the individual tasks. We will fix this in a moment.
-
-3. Write the same average formulas used in Phase 1 to the Phase 2 row. 
-4. Open the conditional formatting rules manager and edit the rule you created in Step 3 above. Change the formula 
-   to the following:
+```excel
+=AND($D7<>"",$E7<>"",$F7="",H$5>=$D7,H$5<=$E7)
 ```
-=AND($D7<>"",H$5>=$D7,H$5<=$E7,$F7<>"")
-```
-This formula will now also look to see if a number has been entered in the "Work Days" column. If there is no number, then the conditional formatting will not be applied. This way, the summary bars will only show if there is a number in the "Work Days" column. This shouldn't ever happen if there is a start date and end date there should be workdays, but it is a good check to have.
 
-Your chart should now look something like this:
+The blank Work Days test identifies phase-summary rows. The task-bar rule uses the opposite test, so the two rules serve different row types.
 
-![gantt_step6.png](images/gantt_step6.png)
+</details>
 
----
+### Check Your Work
 
-## Step 7 - Highlighting Weekends
+- Each phase starts on its earliest task start date.
+- Each phase ends on its latest task end date.
+- `F3` shows the latest end date in the project.
+- Phase bars use different formatting from task bars.
 
-Finally, in this step you will add conditional formatting to highlight the weekends on the timeline. We will use the 
-NETWORKDAYS() 
-function to determine if a date is a weekend or not. The NETWORKDAYS() function returns the number of workdays between two dates. If the number of workdays is 0, then the date is a weekend.
+![Phase and project summaries after Step 6](images/gantt_step6.png)
 
-1. Select H5:AI15.
-2. Add a new conditional formatting rule using "Custom formula is" and enter the following formula
-```
-=NETWORKDAYS(H$5,H$5)=0
-```
-3. Set the formatting to a pattern color (not a fill pattern) to a light color of your choice. Also select a hatched 
-   pattern to make it stand out more.
+## Step 7: Identify Weekends and Manage Rule Order
 
-Your chart should now look something like this with the hatched pattern being on top of any previous formatting. If not, you can change the order of the conditional formatting rules in the manager or check your setting for your pattern color and fill color for your new rule.
+**Purpose:** Add calendar context while preserving the task and phase bars.
 
-![gantt_step7-1.png](images/gantt_step7-1.png)
+### Student Task
 
-### More Features 
+1. Select `H5:AI15`.
+2. Create a formula-based conditional-formatting rule using `=WEEKDAY(H$5,2)>5`.
+3. Apply a light gray fill or light pattern.
+4. In the conditional-formatting rules manager, place the weekend rule below the task, phase, and current-day rules so it does not hide them.
 
-Congratulations. You did it! There are many more features you could add to this Gantt chart, but this is a good 
-start. The author of the video you watched for your pre-class reading has several more videos on adding more features to a Gantt chart. The following video shows how to hide and unhide the weekends on the timeline. [Make a Gantt Chart in Excel - Part 2: Working with Work Days by Vertex42](https://youtu.be/5or9BN3GanM?si=vqCg6j2NkW6HjevW)
+The formula returns TRUE for Saturday or Sunday because `WEEKDAY(date,2)` numbers Monday through Sunday as 1 through 7. This direct test is easier to interpret than calculating the number of workdays between the same date.
 
-Have fun exploring more features you can add to your Gantt chart.
+### Final Check
 
----
-			
-## Turning in/Rubric
+- Change `display_week` and verify that weekend formatting remains aligned.
+- Change a task input and confirm that its end date, task bar, phase summary, and project end update.
+- Confirm that task bars, phase bars, weekend formatting, and the current-day marker remain distinguishable where their rules overlap.
+- Save the workbook. You will continue from this file for homework.
 
-**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
+![Completed in-class Gantt chart](images/gantt_step7-1.png)
 
-1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
-2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
-3. Double-check that the file you uploaded is the one that contains your completed work.
+## Additional Features
+
+The optional video [Working with Work Days](https://youtu.be/5or9BN3GanM?si=vqCg6j2NkW6HjevW){:target="_blank"} demonstrates additional timeline controls. Features such as holiday calendars, automatic dependencies, resources, and critical path are outside this exercise.
+
+## Turning In
+
+Upload the completed `.xlsx` file directly to Learning Suite.
+
+1. Save and close the workbook.
+2. Upload it to the correct in-class assignment.
+3. Confirm that the uploaded file contains the completed seven-step chart.
+4. Keep your local copy because the homework continues from it.
 
 **Rubric:**
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        5        |
+| Item | Points Possible |
+|:-----|:---------------:|
+| Task model, formulas, and named inputs are functional | 2 |
+| Timeline and conditional-formatting rules are functional | 2 |
+| Workbook is saved and retained for the homework continuation | 1 |
+| **Total** | **5** |
 
----
+The following deductions are separate from the rubric.
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
-
-| **Reasons for Points Lost** |    **Amount**     |  
-|:---------------------------:|:-----------------:|
-|  File uploaded incorrectly  |       -10%        |
-|  Turned in late (per week)  | -10% (up to -50%) |
+| Reason for Points Lost | Amount |
+|:-----------------------|:------:|
+| File uploaded incorrectly | -10% |
+| Turned in late, per week | -10% up to -50% |

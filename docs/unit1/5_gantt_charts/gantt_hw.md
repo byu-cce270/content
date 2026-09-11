@@ -1,94 +1,130 @@
-#  Homework: Gantt Chart/Project Scheduling and Tracking
+# Homework: Gantt Chart and Project Scheduling
 
-**Purpose:** This assignment aims to test your ability to create a Gantt chart for a specific project. In this 
-assignment, you will be given a specific project prompt, and you will figure out how you and two other people will complete the project. You will then create a Gantt chart that includes all the tasks and phases that you and your team will complete to finish the project.
+## Purpose
 
----
+Extend the Gantt chart started in class into a schedule for developing a landscape-invoice workbook. The assignment tests whether you can maintain an existing spreadsheet model by adding rows, extending formulas and formatting, and checking the resulting schedule.
 
-## Step 1 - Getting Started
+Do not start over and do not use a separate homework starter. Open the workbook you completed in class and save a homework copy.
 
-1. Make a copy of the Gantt Chart Excel file you completed in class.
+## Project Scenario
 
-2. Remember to save it in the CCE 270 folder that you created in the first assignment.
+A landscaping company needs a spreadsheet that can generate client invoices. The proposed spreadsheet would include:
 
----
+- at least three foliage, soil, and rock materials with unit costs,
+- client quantity or area inputs,
+- formulas for material costs and invoice totals,
+- an input for required person-hours, and
+- the labels and checks needed for a clear client invoice.
 
-## Step 2 - Landscape Invoice Tracker Instructions and Requirements
+You are not building the invoice workbook. You are planning the work required to build and verify it.
 
-Imagine that you are working for a landscaping company and your boss has asked you to create a professional spreadsheet that can be used to generate bills for landscaping clients. The proposed spreadsheet must include:
+Assume a three-person team and a two-week project. Use these anonymous role labels:
 
-- At least three types of foliage, soil, and rocks, along with their cost per square foot
+- `Project Manager`
+- `Team Member 2`
+- `Team Member 3`
 
-- A section where the client’s square footage purchase for each material is entered
+The project starts on the date stored in `project_start`.
 
-- A way to calculate total costs based on quantity and unit prices
+## Required Work
 
-- An entry field for person-hours required to complete the landscaping
+### 1. Expand the Class Workbook
 
-- Any other details needed for a clear and useful client invoice
+Insert enough formatted rows to create three phase rows with three or four task rows under each phase. Insert rows before entering the new formulas and conditional-formatting ranges. Copy the format of an existing phase or task row into each new row.
 
-!!! NOTE
-    You don't need to actually create the spreadsheet, you are simply supposed to populate a Gantt chart outlining how you would develop the spreadsheet.
+Possible phases include planning, workbook development, and verification and delivery. You may use different phases if they represent a logical workflow.
 
----
+<details>
+<summary><b>Hint: Why add all rows first?</b></summary>
 
-## Step 3 - Populate the Gantt Chart
+Adding the final row structure first lets you define formulas and conditional-formatting ranges once. If rows are added later, some formulas or rules may omit them and the displayed chart can become inconsistent with the task data.
 
-Assume that you are in a team of 3. You are making a Gantt chart to help organize the creation of the "Landscape 
-Invoice Tracker" spreadsheet based on the landscaping project described above. The project manager is you. Your project start date is the next time you have class, and you have 2 weeks to complete the project.
+</details>
 
-Using your Gantt chart from step 1, add the following:
+### 2. Define the Work
 
-- Break the project into three distinct phases (examples: Planning, Building the Spreadsheet, Final Review & Submission)
+- Enter three clearly labeled phases.
+- Enter three or four specific tasks under each phase, for a total of 9–12 tasks.
+- Use WBS numbers and descriptive task names, such as `2.1 Build material-cost formulas`.
+- Assign every task in column B to one of the three role labels.
+- Assign at least three tasks to each role.
+- Record important dependencies in the task name, for example `2.2 Build invoice summary (after 2.1)`. Include dependencies where they affect sequence; do not add one to every task.
 
-- Each phase should contain 3–4 specific tasks
+The task list should describe how the team would plan, build, test, and deliver the invoice workbook. It should not describe landscaping construction work.
 
-- Assign tasks among the 3 team members
+### 3. Schedule the Tasks
 
-- Estimate start and end dates for each task
+- Enter a Monday-through-Friday start date and positive whole-number work-day duration for every task.
+- Calculate every task end date with the same `IF`, `OR`, and `WORKDAY` structure used in class.
+- Allow tasks to overlap when different team members can work in parallel.
+- Calculate phase start dates with `MIN` and phase end dates with `MAX`.
+- Calculate each phase's unweighted average task progress with `AVERAGE`.
+- Update `F3` so the project-end formula includes every phase and task row.
+- Keep the project end no later than 14 calendar days after `project_start`.
 
-- Include dependencies when applicable (e.g., Task B can’t start until Task A is done)
+<details>
+<summary><b>Check the formulas after inserting rows</b></summary>
 
----
+Select representative task, phase, and project-summary cells and inspect their formulas in the formula bar. Confirm that each range includes all intended rows and does not include tasks from an adjacent phase.
 
-## Turning in/Rubric
+</details>
 
+### 4. Extend the Visual Model
+
+- Extend every conditional-formatting **Applies to** range through the final phase or task row.
+- Preserve separate rules for task bars and phase bars.
+- Preserve the current-day marker.
+- Extend the weekend rule through the final row.
+- Enter a progress value for every task. Use 0% for a defined task that has not started; do not use a blank as a substitute for 0%.
+- Preserve task progress data bars and phase-average progress values.
+- Confirm that the dynamic four-week timeline still responds to `display_week`.
+
+!!! note "Ranges must include the complete model"
+    Formulas and formatting can become out of sync when newly inserted rows are outside their source or Applies to ranges. After adding rows, check every phase-summary formula, the project-end formula, and all conditional-formatting ranges.
+
+### 5. Verify the Schedule
+
+Before submitting, make the following tests:
+
+1. Change one task duration and confirm that the task end date, task bar, phase end, phase bar, and project end update.
+2. Change `display_week` and confirm that the timeline moves while task dates remain unchanged.
+3. Confirm that each Saturday and Sunday is identified correctly.
+4. Confirm that the current day is marked when it falls within the displayed four weeks.
+5. Check that all 9–12 task rows appear in the chart and in their phase calculations.
+6. Confirm that the three team roles have reasonable workloads. A task marked as occurring after a predecessor must start no earlier than the next workday after the predecessor's calculated end date.
+
+## Turning In
 
 !!! note "Do not put your name or NetID in the file"
-    Learning Suite records who submitted each file, so your name is not needed
-    inside the file itself. Leaving it out means your work can be graded
-    anonymously, which keeps grading fair. This applies to scans and photos
-    too — please don't write your name on the page.
+    Learning Suite records the student who submitted each file. Use the three role labels instead of personal names so the workbook can be graded anonymously.
 
-**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
+Upload the completed `.xlsx` file directly to Learning Suite.
 
-1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
-2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
-3. Double-check that the file you uploaded is the one that contains your completed work.
+1. Save and close the workbook.
+2. Upload it to the correct homework assignment.
+3. Reopen or preview the uploaded file and confirm that it contains your completed work.
 
 **Rubric:**
 
-|                                                    Item                                                     | Points Possible |
-|:-----------------------------------------------------------------------------------------------------------:|:---------------:|
-|               Project title, team member names, and project manager name are clearly labeled                |        2        |
-|                              Project start and end dates are clearly indicated                              |        2        |
-|                              Project is divided into 3 clearly labeled phases                               |        3        |
-|                                 Each phase includes 3–4 well-defined tasks                                  |        4        |
-|                     Tasks are logically ordered and match realistic project progression                     |        3        |
-|                    Tasks are assigned to 3 different team members (workload is balanced)                    |        3        |
-|                           Each task includes clearly defined start and end dates                            |        3        |
-|                 Phase start and end dates are correctly calculated based on task timelines                  |        2        |
-|                          Dependencies are indicated between tasks when appropriate                          |        3        |
-|                Gantt chart includes color-coded bars or highlights to indicate task duration                |        3        |
-|                      Chart includes headers, labels, and clean layout for readability                       |        3        |
-|             Today’s date is clearly marked using a formatting element (e.g., color, line, etc.)             |        2        |
-|                               <div style="text-align: right">**Total**</div>                                |       33        |
+| Item | Points Possible |
+|:-----|:---------------:|
+| Project title, organization, and three role labels are clear | 2 |
+| Three phases and 9–12 specific tasks form a complete workflow | 5 |
+| Tasks are assigned across the three roles as required | 3 |
+| Important dependencies are identified and scheduled logically | 2 |
+| Task start, duration, and calculated end dates are correct | 5 |
+| Phase dates and the calculated project end are correct | 4 |
+| Project fits within the two-week limit | 1 |
+| Dynamic timeline and `display_week` control are functional | 3 |
+| Task and phase bars are correct and visually distinct | 3 |
+| Task progress, data bars, and phase averages are correct | 3 |
+| Current-day and weekend formatting are functional | 1 |
+| Headers and layout are readable | 1 |
+| **Total** | **33** |
 
----
+The following deductions are separate from the rubric.
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
-
-| **Reasons for Points Lost** |    **Amount**     |  
-|:---------------------------:|:-----------------:|
-|  File uploaded incorrectly  |       -10%        |
-|  Turned in late (per week)  | -10% (up to -50%) |
+| Reason for Points Lost | Amount |
+|:-----------------------|:------:|
+| File uploaded incorrectly | -10% |
+| Turned in late, per week | -10% up to -50% |

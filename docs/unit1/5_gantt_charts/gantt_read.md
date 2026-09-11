@@ -1,188 +1,164 @@
-# Reading: Gantt Chart/Project Scheduling and Tracking
+# Reading: Gantt Charts and Project Scheduling
 
-**Gantt Charts** are bar charts showing the start and finish dates of the different tasks that comprise a project. These charts can help in scheduling, managing, and monitoring specific tasks and resources in a project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task and is widely used in project management.
+A **Gantt chart** displays project tasks along a timeline. Each horizontal bar shows when a task is planned to start, when it is planned to finish, and how tasks overlap.
 
----
+Gantt charts help engineers and managers communicate scheduled dates and reported progress and identify sequencing problems. The chart does not guarantee that a project will finish on time. Its usefulness depends on accurate task, duration, dependency, and progress data.
 
-## Use of Gantt Charts
+![Example construction-project Gantt chart](images/gantt_chart.png)
 
-Construction managers, facility managers, and civil engineers use Gantt charts to plan and schedule engineering and 
-construction projects. They are used to track the progress of the project and to ensure that the project is completed on time. Gantt charts are also used to allocate resources and to identify potential problems that may arise during the project. They are an essential tool for managers and engineers to ensure that a project is completed on time and within budget. They are used on nearly all projects. 
+## What a Basic Gantt Chart Contains
 
-This figure is from project management software and shows a Gantt chart for a construction project. The chart shows the start and finish dates of the different tasks that comprise the project. The horizontal bars of different lengths represent the project timeline, which can include task sequences, duration, and the start and end dates for each task. You can use the information in this chart to associate resources, staff, costs, and other important information with tasks and perform critical path analysis to identify the most critical tasks in the project.
+A basic Gantt chart uses:
 
+- **Tasks:** the activities required to complete the project.
+- **Phases:** groups of related tasks.
+- **Start dates:** when each task is planned to begin.
+- **Durations or end dates:** how long each task lasts or when it finishes.
+- **Dependencies:** relationships in which one task depends on another.
+- **Assignments:** the person or role responsible for each task.
+- **Progress:** the portion of each task that has been completed.
 
-![gantt_chart.png](images/gantt_chart.png)
+Tasks may occur sequentially or in parallel. A milestone is a zero-duration event that marks an important deadline or decision.
 
+## Why Build the Chart in Excel?
 
-## Gantt Chart Basics
+Dedicated scheduling software is appropriate for projects that require resource leveling, automatic dependency calculations, critical-path analysis, or frequent schedule updates. Excel is useful for smaller schedules and for learning the spreadsheet model behind a Gantt chart.
 
-A **Gantt chart** is a project management tool that shows tasks (or activities) along a timeline. It helps visualize **what needs to be done, when, and how tasks overlap**. Each task is represented by a horizontal bar:
+In this topic, you will separate the workbook into three connected parts:
 
-* The **length of the bar** = task duration
-* The **position of the bar** = start and end dates on the calendar
-* Bars can overlap (parallel tasks) or be sequential (dependent tasks)
-* Often shows **dependencies** (e.g., Task B starts only after Task A finishes)
+1. **Inputs:** task names, assignments, start dates, work-day durations, and progress.
+2. **Calculations:** task end dates, phase summaries, and displayed timeline dates.
+3. **Outputs:** task bars, phase bars, progress bars, weekends, and the current-day marker.
 
----
+Changing an input should update the related calculations and output. This input-calculation-output structure will also be used in later engineering spreadsheet models.
 
-### Input Data Needed for a Gantt Chart
+!!! note "Scope of this exercise"
+    The workbook will record dependencies as text, but it will not calculate a dependency network, resource capacity, costs, or critical path. Those functions normally require a more complete scheduling model or project-management software.
 
-To build one, you typically need:
+!!! note "For CFM students"
+    Later courses address scheduling methods in more detail. This exercise introduces the spreadsheet structure and date calculations used in simple schedules.
 
-1. **Task List**
+## Tutorial Video
 
-   * All activities or work packages that make up the project
+Watch [Make a Gantt Chart in Excel](https://www.youtube.com/watch?v=un8j6QqpYa0){:target="_blank"}. The video is an example, not the specification for the assignments. The instructions below use some different formulas and formatting choices.
 
-2. **Start Date for Each Task**
+As you watch, identify the task table, timeline dates, formulas, and conditional-formatting rules. You do not need to reproduce every feature shown in the video.
 
-   * When work is planned to begin
+## Excel Dates and Display Formats
 
-3. **End Date or Duration for Each Task**
+Excel stores a date as a serial number. A date format changes how that number is displayed; it does not convert the date into text.
 
-   * Either a finish date or how long it will take
+For example, if `B2` contains a date:
 
-4. **Dependencies (Optional but Useful)**
+- `=WEEKDAY(B2,2)` returns a number from 1 for Monday through 7 for Sunday.
+- `=TEXT(B2,"ddd")` returns a text abbreviation such as `Mon`.
+- `=LEFT(TEXT(B2,"ddd"),1)` returns the first letter of that abbreviation.
 
-   * Links showing if a task must wait for another to finish/start (e.g., “Finish-to-Start”)
+Use the original date for calculations. Use `TEXT` only when text is needed for a label.
 
-5. **Resources (Optional)**
+## Functions Used in This Topic
 
-   * Who or what is assigned to each task (people, teams, equipment)
+| Function | What it does | Use in the Gantt chart |
+|:---------|:-------------|:-----------------------|
+| `TODAY()` | Returns the current date | Marks the current day |
+| `WEEKDAY(date,return_type)` | Converts a date to a weekday number | Aligns the timeline to Monday and identifies weekends |
+| `TEXT(value,"format")` | Converts a value to formatted text | Creates weekday labels |
+| `LEFT(text,num_chars)` | Returns characters from the left side of text | Shortens weekday labels |
+| `WORKDAY(start,days)` | Moves by workdays and excludes weekends | Calculates task end dates |
+| `IF`, `OR`, and `AND` | Test one or more conditions | Leaves unused rows blank and controls formatting |
+| `AVERAGE`, `MIN`, and `MAX` | Summarize a range | Calculate unweighted phase progress and phase dates |
 
-6. **Milestones (Optional)**
+Excel function names are not case-sensitive.
 
-   * Key deadlines or deliverables with zero duration (e.g., “Prototype Complete”)
+### Work-day End Dates
 
----
+When the task start date is Monday through Friday, it counts as the first workday. Therefore, a one-workday task that starts Monday also ends Monday. A typical task formula is:
 
-👉 With just **tasks, start dates, and durations**, you can make a basic Gantt. Adding **dependencies and resources** makes it much more powerful.
+```excel
+=IF(OR(D8="",F8=""),"",WORKDAY(D8,F8-1))
+```
 
+In plain language: if the start date or duration is blank, display a blank. Otherwise, calculate the end date after counting the start date as day 1.
 
-## Gantt Charts in Excel
-While there is dedicated software for creating Gantt charts, you can also create them in Excel. This is a useful skill to have as it can be used to create simple Gantt charts for small projects. This is also a good comprehensive exercise to use some of the skills we have learned in Excel. 
+Enter task start dates on workdays. `WORKDAY` excludes Saturdays and Sundays, but it does not correct a weekend date already entered as the start. A future scheduling model could also provide a holiday range as its optional third argument.
 
-!!! Note
-      CFM students will later take a semester long class that teaches you the specifics of scheduling and go more in-depth so this will be a helpful head-start on the concepts talked about in scheduling.
+### Named Cells and a Dynamic Timeline
 
----
+During class, you will name the project-start cell `project_start` and the display-week cell `display_week`. The names make this formula easier to interpret:
 
-## Gantt Chart Tutorial Video
+```excel
+=project_start-WEEKDAY(project_start,3)+(display_week-1)*7
+```
 
-<p>Please watch the following video as part of your assignment. This video is for educational use and to help you create Gantt charts for your own projects. The video will give you a good overview of what we will be doing in class. Please watch the entire video before continuing. Don't worry about remembering all the details - we will go over them in class. The objective of this video is to give you a general idea of how we will be creating our Gantt chart and how they work.</p>
-<p>
-  <a href="https://www.youtube.com/watch?v=un8j6QqpYa0" target="_blank">
-    📺 Watch on YouTube
-  </a>
-</p>
+The formula moves from the project start date back to Monday of that week, then moves forward seven days for each additional display week. A named reference describes the purpose of an input; a cell reference still identifies its physical location.
 
----
+## Conditional Formatting and Mixed References
 
-## Gantt Chart Creation in Excel
+Conditional formatting evaluates a formula for each cell in its **Applies to** range. The formula is written as though it applies to the upper-left cell of that range.
 
-We will learn to create very basic Gantt charts in Excel. You will use them later in your project proposals for this 
-class.
+For a timeline beginning in column H with dates in row 5:
 
-This involves several 
-distinct steps
+- `H$5` changes columns as Excel evaluates the timeline but always reads row 5.
+- `$D7`, `$E7`, and `$F7` remain in their assigned columns but change rows.
 
+These mixed references allow one rule to evaluate every task against every displayed date.
 
-* Identify the start date of each task
-* Identify the duration or end of each task. One of these can be calculated from the other.
-* Create a "calendar" sheet to draw the task lines
-* Use conditional formatting to color the Gantt chart
-* Use the SPARKLINE function to draw the "percent complete" on Gantt chart
+The class exercise will build separate rules for:
 
----
+- task bars,
+- phase-summary bars,
+- the current day, and
+- weekends.
 
-## Formulas Used in Gantt Chart Creation
-
-Our in-class exercise will involve creating a Gantt chart in Excel. To prepare for that exercise, we will introduce 
-some of the functions that will be used in the exercise. If you want more information or are confused on any of the 
-functions, click on the title of the function, and it will take you to a website with a more in-depth explanation.
-
-### [WEEKDAY()](https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a){:target="_blank"}
-This formula returns a number representing the day of the week of the day provided. 
-
-**Syntax**
-
-      WEEKDAY(serial_number,[return_type])
-
-  * serial_number - A sequential number that represents the date of the day you are trying to find. Typically this will be a cell with a "date" in int. Dates should be entered by using the DATE function, or as results of other formulas or functions.
-  * return_type - [OPTIONAL - 1 by default] - A number that determines the type of return value. You can look at the documentation for WEEKDAY() to see the different return types. The default is 1, which means that the week starts on Sunday and ends on Saturday. If you want the week to start on Monday, you can use 2 as the return type.
-
-**Usage** 
-
-We will use this to convert a date into a number representing the day of the week. We will do some math so that the week always starts on a Monday.
-
-### [TEXT()](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c){:target="_blank"}
-This formula converts a number into text according to a specified format.
-
-**Syntax**
-
-      TEXT(number, "format")
-
-  * number - the number, date, or time that needs to be formatted.
-  * format - the pattern by which to format the number, must be enclosed in quotation marks. You can look up the different format codes in the documentation for TEXT().
-For our use we will do something like:
- 
-    TEXT(A1, "DDD")
-
-  * This will convert the date in cell A1 into a three letter abbreviation for the day of the week. For example, if A1 is a Monday, it will return "Mon".
-
-**Usage**
-
-We will use TEXT() to convert the number returned by WEEKDAY() into a text representation of the day of the week. So 
-a "3" becomes "Mon" for a week that starts on Saturday which is the default in Excel.
-
-### [LEFT()](https://support.microsoft.com/en-us/office/left-function-9203d2d2-7960-479b-84c6-1ea52b99640c){:target="_blank"}
-LEFT returns the first character or characters in a text string, based on the number of characters you specify.
-
-**Syntax**
-
-      LEFT(text, [num_chars])
-
-  * text -  The text string that contains the characters you want to extract.
-  * num_chars - [OPTIONAL - 1 by default] - Specifies the number of characters you want LEFT to extract. Num_chars 
-    must be greater than or equal to zero. If num_chars is greater than the length of text, LEFT returns all the text.
-
-**Usage**
-
-We will use Left() to extract the first letter of the day of the week. This will be used to format the Gantt chart using only single letters for the days of the week.
+Separate rules are easier to inspect and debug. Rule order matters when several rules format the same cell.
 
 ## Pre-Class Quiz Challenge
- First, make a copy of the starter sheet here: [(Starter-Workbook)-Pre-Gantt-Chart.xlsx](%28Starter-Workbook%29-Pre-Gantt-Chart.xlsx)
 
-This exercise will help you practice the functions we will use in class to create a Gantt chart in Excel.
+Download [(Starter-Workbook)-Pre-Gantt-Chart.xlsx](%28Starter-Workbook%29-Pre-Gantt-Chart.xlsx), save a copy in your CCE 270 folder, and complete the following work.
 
-1. Use the =TODAY() formula in cell B2 to input today’s date.
-2. Use the =WEEKDAY() formula in cell B3 to return the weekday today’s date falls on. Use the value in B2 as your argument.
-3. Use the =TEXT() formula in cell B4 to return the weekday today’s date falls in the “DDD” format. Use the value in B3 as your argument.
-4. Use the =LEFT() formula in cell B5 to return the first letter of the weekday today’s date falls on. Use the value in B4 as your argument.
-5. Explain what each of these functions is doing in the C column under formula explanation.
-   
-Friendly reminder that if you can’t figure any of these steps that’s okay! This assignment is so you have some exposure to these formulas, and we will clarify confusion in class. You are also more than welcome to come to TA office hours or message a TA for help!
+1. Replace the heading in `B1` with `FORMULA RESULT`.
+2. In `B2`, enter `=TODAY()`.
+3. In `B3`, enter `=WEEKDAY(B2,2)`.
+4. In `B4`, enter `=TEXT(B2,"ddd")`.
+5. In `B5`, enter `=LEFT(B4,1)`.
+6. In `C2:C5`, explain in plain language what each formula does and what value or text it returns.
 
----
+!!! note "Why B4 refers to B2"
+    `B2` contains the date. `B3` contains only a weekday number, so it is useful for tests and date arithmetic but should not be formatted as though it were the original date.
 
-## Turning in/Rubric
+### Check Your Work
 
-**_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
+- `B2` displays today's date.
+- `B3` is an integer from 1 through 7, with Monday represented by 1.
+- `B4` is a three-letter weekday abbreviation.
+- `B5` is one letter.
 
-1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
-2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
-3. Double-check that the file you uploaded is the one that contains your completed work.
+## Shortcuts Used in This Topic
+
+| Action | Windows | Mac |
+|:-------|:--------|:----|
+| Save | `Ctrl+S` | `Command+S` |
+| Copy and paste | `Ctrl+C`, `Ctrl+V` | `Command+C`, `Command+V` |
+| Open Format Cells | `Ctrl+1` | `Command+1` |
+
+## Turning In
+
+Upload the completed `.xlsx` file directly to Learning Suite.
+
+1. Save and close the workbook.
+2. Upload the file to the correct assignment.
+3. Reopen or preview the uploaded file and confirm that it contains your completed work.
 
 **Rubric:**
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
+| Item | Points Possible |
+|:-----|:---------------:|
+| Four formulas return the requested results | 2 |
+| Formula explanations are accurate and complete | 1 |
+| **Total** | **3** |
 
----
+The following deductions are separate from the rubric.
 
-The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
-
-| **Reasons for Points Lost** |    **Amount**     |  
-|:---------------------------:|:-----------------:|
-|  File uploaded incorrectly  |       -10%        | 
+| Reason for Points Lost | Amount |
+|:-----------------------|:------:|
+| File uploaded incorrectly | -10% |
