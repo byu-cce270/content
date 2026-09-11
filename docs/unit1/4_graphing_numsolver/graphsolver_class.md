@@ -84,13 +84,9 @@ Use Solver to **maximize** `F13` by changing `F12`, with $-1\leq x\leq1$ and a s
 
 **Rubric:**
 
-| Item | Points Possible |
-|:---|:---:|
-| Four sales charts use the correct data, chart types, field arrangements, and labels | 2 |
-| Polynomial XY scatter chart uses the correct x- and y-values | 1 |
-| Four roots are found and recorded using Goal Seek | 1 |
-| Two constrained minima are found and recorded using Solver | 1 |
-| **Total** | **5** |
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
 
 ---
 
