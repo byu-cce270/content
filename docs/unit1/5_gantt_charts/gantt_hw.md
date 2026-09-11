@@ -4,7 +4,7 @@
 
 Extend the Gantt chart started in class into a schedule for developing a landscape-invoice workbook. The assignment tests whether you can maintain an existing spreadsheet model by adding rows, extending formulas and formatting, and checking the resulting schedule.
 
-Do not start over and do not use a separate homework starter. Open the workbook you completed in class and save a homework copy.
+Do not start over and do not use a separate homework starter. Open the workbook you completed in class and save a copy as the homework file you will turn in. Save the file before you start making changes, use a new name (follow the standard naming convention). If you start making changes, you might overwrite the in-class file.
 
 ## Project Scenario
 
@@ -16,7 +16,7 @@ A landscaping company needs a spreadsheet that can generate client invoices. The
 - an input for required person-hours, and
 - the labels and checks needed for a clear client invoice.
 
-You are not building the invoice workbook. You are planning the work required to build and verify it.
+You are **not** building an invoice workbook. You are planning the work required to build and verify it. You are identifying the tasks required to build the workbook, assigning tasks to your staff, and visualizing the project. You are creating a Gantt chart that represents the project. You can then use the Gantt chart to manage the work (if you did create the workbook)
 
 Assume a three-person team and a two-week project. Use these anonymous role labels:
 

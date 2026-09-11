@@ -80,6 +80,19 @@ When the task start date is Monday through Friday, it counts as the first workda
 
 In plain language: if the start date or duration is blank, display a blank. Otherwise, calculate the end date after counting the start date as day 1.
 
+<details>
+<summary><b>Hint: Walk through each part of the formula</b></summary>
+
+- `D8=""` tests whether the task start-date cell is blank.
+- `F8=""` tests whether the work-day duration cell is blank.
+- `OR(D8="",F8="")` returns TRUE when either required input is blank.
+- The `""` after the `OR` test is the result Excel returns when the test is TRUE. It makes the formula cell appear blank.
+- `F8-1` subtracts one because the start date counts as the first workday. For a one-day task, the number of additional workdays is zero.
+- `WORKDAY(D8,F8-1)` starts with the date in `D8` and advances by the remaining workdays, excluding Saturdays and Sundays.
+- `IF(test,value_if_true,value_if_false)` returns the blank result when an input is missing; otherwise, it returns the date calculated by `WORKDAY`.
+
+</details>
+
 Enter task start dates on workdays. `WORKDAY` excludes Saturdays and Sundays, but it does not correct a weekend date already entered as the start. A future scheduling model could also provide a holiday range as its optional third argument.
 
 ### Named Cells and a Dynamic Timeline
@@ -91,6 +104,19 @@ During class, you will name the project-start cell `project_start` and the displ
 ```
 
 The formula moves from the project start date back to Monday of that week, then moves forward seven days for each additional display week. A named reference describes the purpose of an input; a cell reference still identifies its physical location.
+
+<details>
+<summary><b>Hint: Walk through each part of the formula</b></summary>
+
+- `project_start` is the named cell containing the project's start date.
+- `WEEKDAY(project_start,3)` returns the number of days from Monday to the project start date: Monday is 0, Tuesday is 1, and Sunday is 6.
+- `project_start-WEEKDAY(project_start,3)` subtracts that offset from the project start date to find Monday of the same week.
+- `display_week` is the named cell containing the week number the user wants to display.
+- `display_week-1` converts the selected week number into the number of weeks to move. Week 1 moves zero weeks, week 2 moves one week, and so forth.
+- `(display_week-1)*7` converts the number of weeks into calendar days.
+- Adding the two parts returns the Monday that begins the selected display week.
+
+</details>
 
 ## Conditional Formatting and Mixed References
 
