@@ -79,14 +79,16 @@ Navigate to the `Testing Allocation` worksheet. The model uses these data:
 
 This data comes from [USGS Water Data for the Nation](https://waterdata.usgs.gov/nwis){:target="_blank"} and contains streamflow data for the Provo River in Utah.
 
-1. Create a **line chart** from `Streamflow Data!A3:F2883` and move it to a chart sheet named `Chart 1`.
+1. Create an **XY Scatter with Straight Lines** chart from `Streamflow Data!A3:F2883` and move it to a chart sheet named `Chart 1`. Do not display markers because the chart contains 2,880 observations per station.
 
    - Horizontal axis: date/time
    - Vertical axis: flow rate (ft³/s)
    - Series: the five streamflow stations
    - Include a descriptive title, axis titles with units, and a legend.
 
-![streamflow_chart.png](graphing_images/streamflow_chart.png)
+An XY scatter chart treats each date/time as a numerical x-value, so it preserves the actual spacing between observations. It may still draw a line across a period with no observations. If a missing period must be visible, include blank values and set the chart to display empty cells as gaps.
+
+![XY scatter chart of streamflow at five Provo River stations](graphing_images/streamflow_chart.png)
 
 2. Create a **clustered column chart** from `Summary Statistics!A10:F16` and move it to a chart sheet named `Chart 2`.
 

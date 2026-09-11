@@ -135,21 +135,40 @@ Choose the solving method based on the model:
 - **GRG Nonlinear:** smooth nonlinear models.
 - **Evolutionary:** non-smooth or discontinuous models, including some models whose decision-dependent formulas use step functions.
 
-### Solver Example: Maximize Profit
+### Solver Example: Allocate Limited Resources
 
-Using the same soil-testing model, suppose the business wants to maximize 12-month profit but can perform no more than 60 tests per month. First, enter **12-month profit** in `A8` and the formula `=B4*B5*12-B3` in `B8`. This simplified model treats the equipment purchase as the only cost.
+An engineering firm performs site inspections and plan reviews. Each service provides a different contribution and uses different amounts of engineer and technician time. The firm wants to choose the weekly mix that maximizes total contribution without exceeding 48 hours of either resource.
+
+Enter the following model in an empty worksheet, placing the five headings in `A3:E3` and the service data in rows 4 and 5. Use `E4:E5` for the numbers of services to perform.
+
+| Row | Service | Contribution per service | Engineer hours per service | Technician hours per service | Number of services |
+|---:|---|---:|---:|---:|---:|
+| 4 | Site inspection | \$500 | 4 | 2 | Enter in `E4` |
+| 5 | Plan review | \$400 | 2 | 4 | Enter in `E5` |
+
+Enter these formulas and capacities:
+
+| Cell | Meaning | Entry |
+|---|---|---|
+| `B8` | Total contribution | `=SUMPRODUCT(B4:B5,E4:E5)` |
+| `B9` | Engineer hours used | `=SUMPRODUCT(C4:C5,E4:E5)` |
+| `C9` | Engineer hours available | `48` |
+| `B10` | Technician hours used | `=SUMPRODUCT(D4:D5,E4:E5)` |
+| `C10` | Technician hours available | `48` |
+
+`SUMPRODUCT` multiplies corresponding values and then adds the products. For example, the formula in `B9` calculates the engineer hours used by both services.
 
 Open **Data > Solver** and configure:
 
 | Solver setting | Entry |
 |---|---|
-| Set Objective | `B8` — 12-month profit |
+| Set Objective | `B8` — total contribution |
 | To | **Max** |
-| By Changing Variable Cell | `B4` — tests per month |
-| Constraints | `B4>=0`, `B4<=60`, and `B4` is an integer |
+| By Changing Variable Cells | `E4:E5` — numbers of services |
+| Constraints | `B9<=C9`, `B10<=C10`, `E4:E5>=0`, and `E4:E5` are integers |
 | Solving Method | **Simplex LP** |
 
-The constraints describe feasible operations; they are part of the problem, not merely settings that help Solver run. After selecting **Solve**, keep the solution and verify that the test count is an integer within the permitted range.
+Solver returns 8 site inspections and 8 plan reviews, for a total contribution of \$7,200. Verify the solution: each resource uses exactly 48 hours. This is a meaningful optimization because increasing either service uses limited resources needed by the other service; the best answer is a mix rather than simply the largest permitted value of one input.
 
 For more detail, see Microsoft's [Solver documentation](https://support.microsoft.com/en-us/excel/define-and-solve-a-problem-by-using-solver).
 
