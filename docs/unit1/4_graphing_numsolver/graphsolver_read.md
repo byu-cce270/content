@@ -183,7 +183,7 @@ For more detail, see Microsoft's [Solver documentation](https://support.microsof
 
 ### Exercise 1 — Graphing Sales Data
 
-Download the [(Starter-Workbook)-Pre-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Pre-Graphing-and-Solver.xlsx){:target="_blank"} workbook. It contains the worksheets `Monthly_Sales`, `Graphing`, and `Topo_Solver`.
+Download the [(Starter-Workbook)-Pre-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Pre-Graphing-and-Solver.xlsx){:target="_blank"} workbook. It contains the worksheets `Monthly_Sales`, `Graphing`, and `3D_Solver`.
 
 Use the data in `Monthly_Sales!A1:F31`. Create any supporting PivotTables on a new worksheet or in unused cells, but place all three finished charts as embedded charts on the `Graphing` worksheet.
 
@@ -203,26 +203,30 @@ Use the data in `Monthly_Sales!A1:F31`. Create any supporting PivotTables on a n
 
 Give every chart a descriptive title. Add axis titles with units to the bar and line charts. For the pie chart, identify slices with a legend or data labels. Include a legend only when it adds useful information.
 
-### Exercise 2 — Topographic Profile
+##### Exercise 2 — 3D Surface
 
-On `Topo_Solver`, the formula in `B4` calculates elevation from the horizontal distance in `A4`. Local minima represent depressions, and local maxima represent peaks. Use Solver to obtain numerical estimates of their locations.
+On `3D_Solver`, the formula in `B3` calculates the elevation, $z$, of a 3D surface from the coordinates $x$ and $y$ in `B4` and `B5`:
 
-1. For each depression, enter a starting value in `A4` that lies inside the interval listed in `B7:B10`.
-2. Set objective `B4` to **Min** by changing `A4`.
-3. Translate the listed interval into two constraints. For example, \(200 \le x \le 350\) becomes `A4>=200` and `A4<=350`.
-4. Select **GRG Nonlinear**, solve, and paste the resulting values from `A4:B4` into the corresponding answer row as **values only**.
-5. Repeat for each peak listed in `B11:B13`, using **Max** instead of **Min** and a starting value inside that peak's interval.
+$$z = x^3 - 22.6875x + y^3 - 42.1875y$$
+
+`B4` and `B5` are named `x` and `y`. For visual aid, the worksheet includes a 3D view and a plan view of the surface. Red dots mark the local maximum and the local minimum. Use Solver to obtain the $x$, $y$, and $z$ coordinates of both.
+
+1. Enter starting values inside the local-maximum boundary conditions, such as `-4` in `B4` and `-4` in `B5`.
+2. Open **Data > Solver**. Set objective `B3` to **Max** by changing `B4:B5`.
+3. Translate the boundary conditions in `B10:B11` into four constraints. For example, \(-6 \le x \le -2\) becomes `B4>=-6` and `B4<=-2`, and \(-6 \le y \le -2\) becomes `B5>=-6` and `B5<=-2`.
+4. Select **GRG Nonlinear**, solve, and paste the resulting values from `B3:B5` into `C9:C11` as **values only**.
+5. Repeat steps 1–4 for the local minimum. Use starting values inside the boundary conditions in `D10:D11`, such as `4` and `4`, select **Min** instead of **Max**, replace the four constraints with those from `D10:D11`, and paste the resulting values from `B3:B5` into `E9:E11` as **values only**.
 
 <details>
-<summary><b>Why do the interval and starting value matter?</b></summary>
+<summary><b>Why do the boundary conditions and starting values matter?</b></summary>
 
-The profile contains several local minima and maxima. GRG Nonlinear searches from the current starting value, while the two interval constraints isolate the feature you intend to find. Solver therefore returns a numerical estimate of that local feature, not a proof that it is the only or global optimum.
+GRG Nonlinear searches from the current values of `B4:B5` and stops at the nearest point where the objective can no longer improve. Without constraints, this surface has no overall maximum or minimum: $z$ increases without limit as $x$ and $y$ increase and decreases without limit as they decrease. The boundary conditions isolate one local feature, so Solver returns a numerical estimate of that feature, not the highest or lowest point on the entire surface.
 
 </details>
 
-Check that each returned horizontal distance lies inside its required interval and that substituting it into the formula produces the recorded elevation.
+Check that each returned $x$ and $y$ lies inside its boundary conditions and that the recorded $z$ is larger than nearby points for the maximum and smaller than nearby points for the minimum.
 
----
+-
 
 ## Turning in/Rubric
 
