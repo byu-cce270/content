@@ -203,7 +203,7 @@ Use the data in `Monthly_Sales!A1:F31`. Create any supporting PivotTables on a n
 
 Give every chart a descriptive title. Add axis titles with units to the bar and line charts. For the pie chart, identify slices with a legend or data labels. Include a legend only when it adds useful information.
 
-##### Exercise 2 — 3D Surface
+### Exercise 2 — 3D Surface
 
 On `3D_Solver`, the formula in `B3` calculates the elevation, $z$, of a 3D surface from the coordinates $x$ and $y$ in `B4` and `B5`:
 
