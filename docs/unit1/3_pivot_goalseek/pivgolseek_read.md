@@ -82,7 +82,7 @@ Use the **PivotTable Fields** pane to arrange the summary:
 
 5. Drag **Region** to **Rows**.
 6. Drag **Sales Rep** below Region in **Rows**.
-7. Drag **Units Sold** to **Values**. In the **Values** area, open the field menu and select **Value Field Settings**. Choose the requested calculation, such as Sum, Count, or Average. The same dialog includes **Number Format** when a value should display as currency or with a specified number of decimal places. For this example, choose **Sum**.
+7. Drag **Units Sold** to **Values**. In the **Values** area, open the field menu and select **Value Field Settings** (if you are on a Mac, click on the small "v" icon). Choose the requested calculation, such as Sum, Count, or Average. For this example, choose **Sum**.
 8. Drag **Total Sales** to **Values** and use **Value Field Settings** to confirm that it is also summarized by **Sum**.
 
 The PivotTable should look like this:
