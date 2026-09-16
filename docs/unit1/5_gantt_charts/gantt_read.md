@@ -80,7 +80,7 @@ When the task start date is Monday through Friday, it counts as the first workda
 
 In plain language: if the start date or duration is blank, display a blank. Otherwise, calculate the end date after counting the start date as day 1.
 
-<details>
+<details markdown="1">
 <summary><b>Hint: Walk through each part of the formula</b></summary>
 
 - `D8=""` tests whether the task start-date cell is blank.
@@ -105,7 +105,7 @@ During class, you will name the project-start cell `project_start` and the displ
 
 The formula moves from the project start date back to Monday of that week, then moves forward seven days for each additional display week. A named reference describes the purpose of an input; a cell reference still identifies its physical location.
 
-<details>
+<details markdown="1">
 <summary><b>Hint: Walk through each part of the formula</b></summary>
 
 - `project_start` is the named cell containing the project's start date.

@@ -181,7 +181,7 @@ The two roots are the horizontal positions where the fish crosses the water surf
 3. Confirm that the horizontal distance shown in `F32` is the absolute difference between the two roots.
 4. Enter the average of the two roots in `E28`. This is the $x$ coordinate of the parabola's axis of symmetry. The worksheet formula in `F33` will calculate the maximum $y$ value.
 
-<details>
+<details markdown="1">
 <summary><b>Hint: starting values for Goal Seek</b></summary>
 
 Try an initial $x$ value of `-1` for one run and `5` for the other. Each result should make the original equation approximately zero.

@@ -43,7 +43,7 @@ The starter workbook contains headings in row 6. You will use the following stru
 
 The start date and work-day duration are inputs. The end date is a calculated result. Separating inputs from results makes the schedule easier to update and audit.
 
-<details>
+<details markdown="1">
 <summary><b>Formula hint for the task end date</b></summary>
 
 Use `IF` and `OR` to test the two inputs, then use `WORKDAY`:
@@ -56,7 +56,7 @@ When the start date is Monday through Friday, `F8-1` counts it as the first work
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>Optional: add a fourth task to a phase</b></summary>
 
 Insert a worksheet row directly above the next phase row before you create formulas or conditional formatting. Copy the format of an existing task row into the inserted row. You must update the phase formulas and formatting ranges to include the new row.
@@ -110,7 +110,7 @@ The cells in row 5 remain dates even though the `d` format displays only day num
 4. Replace the formula in `H5` with a formula that finds Monday of the project-start week and advances seven days for each additional display week.
 5. Enter different positive whole numbers in `D4` and observe the timeline.
 
-<details>
+<details markdown="1">
 <summary><b>Formula hint for H5</b></summary>
 
 ```excel
@@ -138,7 +138,7 @@ With return type 3, `WEEKDAY` returns 0 for Monday through 6 for Sunday. Subtrac
 3. Write a formula that colors a cell when the timeline date is between the task start and end dates and the row contains a work-day duration.
 4. Choose a solid fill for task bars.
 
-<details>
+<details markdown="1">
 <summary><b>Task-bar formula and reference explanation</b></summary>
 
 Use this formula for the upper-left cell of the selected range:
@@ -205,7 +205,7 @@ For this exercise, `AVERAGE` gives each task equal weight. A later project-contr
 6. In `F3`, enter `=MAX(E7:E15)` and format it as a date.
 7. Create a second conditional-formatting rule for phase rows over `H7:AI15`. Use a darker fill than the task bars.
 
-<details>
+<details markdown="1">
 <summary><b>Phase-bar formula</b></summary>
 
 ```excel

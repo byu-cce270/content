@@ -102,7 +102,7 @@ For a refresher on relative, absolute, mixed, and named references, see [Cells a
 
 3. Calculate the gravel volume in `B5` from the area in `B4` and depth in `B3`. Convert the depth from inches to feet, calculate cubic feet, and then convert cubic feet to cubic yards.
 
-<details>
+<details markdown="1">
 <summary><b>Unit-conversion hint</b></summary>
 
 Divide the depth by 12 to convert inches to feet. Multiply by the area to obtain cubic feet, then divide by 27 to convert cubic feet to cubic yards.

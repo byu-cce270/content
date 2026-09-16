@@ -55,7 +55,7 @@ We will use Goal Seek to change $H_j$ until $Q_j=0$.
 !!! note "Translating the equations into Excel"
     Begin a formula with `=`. Use `*` for multiplication, `/` for division, `^2` to square a value, `SQRT(...)` for a square root, and `PI()` for $\pi$. Use parentheses to preserve the order of operations. Refer to the named cells `g` and `H_j` and to the appropriate pipe-input cells rather than typing the supplied numerical values into formulas.
 
-<details>
+<details markdown="1">
 <summary><b>Formula hint for $V_1$</b></summary>
 
 For Pipe 1, one correct translation of the velocity equation is:

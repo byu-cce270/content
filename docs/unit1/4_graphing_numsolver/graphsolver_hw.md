@@ -53,7 +53,7 @@ Navigate to the `Testing Allocation` worksheet. The model uses these data:
 1. The yellow cells `E5:E6` hold the numbers of concrete cylinder and soil density tests. These are the **changing cells**.
 2. Enter formulas in the blue cells: contribution by test in `F5:F6`, resource totals in `B10:B11`, and total weekly contribution in `B14`. Each total should use both test quantities and the corresponding values in the table.
 
-<details>
+<details markdown="1">
 <summary><b>Formula-planning hint</b></summary>
 
 - Each value in `F5:F6` is the contribution per test multiplied by the number of tests.
@@ -94,7 +94,7 @@ The model selects a shape by row number. `B6` holds a row number on the `Wide Fl
 
 3. In `B7`, `B9`, `B10`, `B11`, and `B15`, use `VLOOKUP` and/or `MATCH` to return the weight ($W$), plastic section modulus ($Z_x$), depth ($d$), web thickness ($t_w$), and moment of inertia ($I_x$) of the shape in `B5`. The properties of every W-shape are in `Wide Flange Properties!A1:F290`. Each formula must update when `B5` changes.
 
-<details>
+<details markdown="1">
 <summary><b>Formula-planning hint</b></summary>
 
 - Use `B5` as the `lookup_value` and lock the table range with absolute references.

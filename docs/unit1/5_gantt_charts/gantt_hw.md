@@ -34,7 +34,7 @@ Insert enough formatted rows to create three phase rows with three or four task 
 
 Possible phases include planning, workbook development, and verification and delivery. You may use different phases if they represent a logical workflow.
 
-<details>
+<details markdown="1">
 <summary><b>Hint: Why add all rows first?</b></summary>
 
 Adding the final row structure first lets you define formulas and conditional-formatting ranges once. If rows are added later, some formulas or rules may omit them and the displayed chart can become inconsistent with the task data.
@@ -62,7 +62,7 @@ The task list should describe how the team would plan, build, test, and deliver 
 - Update `F3` so the project-end formula includes every phase and task row.
 - Keep the project end no later than 14 calendar days after `project_start`.
 
-<details>
+<details markdown="1">
 <summary><b>Check the formulas after inserting rows</b></summary>
 
 Select representative task, phase, and project-summary cells and inspect their formulas in the formula bar. Confirm that each range includes all intended rows and does not include tasks from an adjacent phase.

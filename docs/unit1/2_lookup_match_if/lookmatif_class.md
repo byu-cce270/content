@@ -36,7 +36,7 @@ The **Materials** worksheet contains lookup ranges for material costs and availa
 
 7. One material name intentionally contains a data-quality problem that causes an exact lookup to return `#N/A`. Find and correct the inconsistent entry, then confirm that the lookup and material totals update correctly.
 
-<details>
+<details markdown="1">
 <summary><b>Hint: Exact text does not match</b></summary>
 
 Excel treats spaces as characters. The entry `Clay ` contains a trailing space and does not exactly match `Clay` in the Materials worksheet. Remove the trailing space from the Project Budget entry. Do not hide the mismatch with an approximate lookup or `IFERROR`.

@@ -248,13 +248,13 @@ VLOOKUP and MATCH can be difficult at first, especially when one function is nes
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
-<details>
+<details markdown="1">
 <summary><b>Solution</b></summary>
 
 For any customer with the Service: "Sidewalk Replacement", Quantity: "10", and Type: "Full", the cost should be $1,890. You can test this by overwriting the formulas that are randomly generated in the "Service" and "Type" columns with these values.
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>Hint 1: Function Syntax</b></summary>
 
 Column B - `lookup_value` for VLOOKUP
@@ -262,13 +262,13 @@ Column C - Quantity used to calculate the total
 Column D - `lookup_value` for MATCH
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>Hint 2: N/A Errors</b></summary>
 
 If you are getting several `#N/A` errors, check the `range_lookup` argument in VLOOKUP and the `match_type` argument in MATCH. Review the reading if needed.
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>Hint 3: N/A Errors Part 2</b></summary>
   
 Use `FALSE` for `range_lookup` and `0` for `match_type`.
@@ -291,7 +291,7 @@ Next, look at the **IF-IFS** worksheet. It is a simple grade book for a class. Y
 |    60 - 69    |      D       |
 |     < 60      |      F       |
 
-<details>
+<details markdown="1">
 <summary><b>IF and IFS hint</b></summary>
 
 For a nested IF, place the next IF in the `value_if_false` argument. For IFS, test the grade thresholds from highest to lowest and use `TRUE` as the final default condition.
@@ -300,7 +300,7 @@ For a nested IF, place the next IF in the `value_if_false` argument. For IFS, te
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
 
-<details>
+<details markdown="1">
 <summary><b>RANDBETWEEN Function</b></summary>
   
 =RANDBETWEEN(0,100)

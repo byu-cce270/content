@@ -191,7 +191,7 @@ Use the data in `Monthly_Sales!A1:F31`. Create any supporting PivotTables on a n
 2. Create a horizontal **bar chart** of monthly Concrete Mix sales.
 3. Create a **line chart** of total sales by month.
 
-<details>
+<details markdown="1">
 <summary><b>PivotTable field hints</b></summary>
 
 - Pie: **Product** in Rows; **Total Sales** in Values, summarized by Sum.
@@ -217,7 +217,7 @@ $$z = x^3 - 22.6875x + y^3 - 42.1875y$$
 4. Select **GRG Nonlinear**, solve, and paste the resulting values from `B3:B5` into `C9:C11` as **values only**.
 5. Repeat steps 1–4 for the local minimum. Use starting values inside the boundary conditions in `D10:D11`, such as `4` and `4`, select **Min** instead of **Max**, replace the four constraints with those from `D10:D11`, and paste the resulting values from `B3:B5` into `E9:E11` as **values only**.
 
-<details>
+<details markdown="1">
 <summary><b>Why do the boundary conditions and starting values matter?</b></summary>
 
 GRG Nonlinear searches from the current values of `B4:B5` and stops at the nearest point where the objective can no longer improve. Without constraints, this surface has no overall maximum or minimum: $z$ increases without limit as $x$ and $y$ increase and decreases without limit as they decrease. The boundary conditions isolate one local feature, so Solver returns a numerical estimate of that feature, not the highest or lowest point on the entire surface.

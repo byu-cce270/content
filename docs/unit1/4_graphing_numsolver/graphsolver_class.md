@@ -43,7 +43,7 @@ The trial x-value is in `F12`, and the corresponding y-value is calculated in `F
 
 Before each run, enter a different starting estimate in `F12` near one of the four crossings visible on your chart. Record each root in the labeled answer area.
 
-<details>
+<details markdown="1">
 <summary><b>Hint: Why are different starting estimates needed?</b></summary>
 
 The equation has several valid roots. Goal Seek normally returns a solution near the starting estimate, so use the graph to choose one starting value near each crossing.
@@ -63,7 +63,7 @@ For the negative-side minimum, constrain `F12` to the interval $-2\leq x\leq0$ a
 
 The bounds tell Solver which local minimum to find. After each run, confirm that the returned x-value satisfies the constraints and that substituting it into the polynomial produces the reported y-value.
 
-<details>
+<details markdown="1">
 <summary><b>Optional extension: Find the central maximum</b></summary>
 
 Use Solver to **maximize** `F13` by changing `F12`, with $-1\leq x\leq1$ and a starting estimate near zero. Record the result in the labeled answer area.
