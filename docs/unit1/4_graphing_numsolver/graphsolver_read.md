@@ -226,7 +226,7 @@ GRG Nonlinear searches from the current values of `B4:B5` and stops at the neare
 
 Check that each returned $x$ and $y$ lies inside its boundary conditions and that the recorded $z$ is larger than nearby points for the maximum and smaller than nearby points for the minimum.
 
--
+---
 
 ## Turning in/Rubric
 
