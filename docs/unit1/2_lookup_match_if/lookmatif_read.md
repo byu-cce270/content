@@ -1,77 +1,101 @@
-#  Reading: Lookups, Match, and IF Functions
+# Reading: Lookups, Match, and IF Functions
 
 ---
 
-Excel has many powerful functions that can be used to automate calculations and data analysis. In this reading, we will focus on three important functions: VLOOKUP/HLOOKUP, MATCH, and IF/IFS. These functions are essential for working with large datasets and can help you quickly find and manipulate data in Excel.
+Excel has many powerful functions that can automate calculations and data analysis. In this reading, we will focus on VLOOKUP, MATCH, IF, and IFS. We will also introduce HLOOKUP for awareness.
 
-Before class, you will learn about a few types of IF Statements: IF and IFS. You will also learn about Goal Seek.
+Later in the course, you will use Goal Seek to determine the input required to produce a specified result. For now, concentrate on lookup and logical functions.
+
+If cell references are unfamiliar, review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) before continuing. That overview explains relative, absolute, mixed, and named references.
+
+!!! note "Reading worksheet and range references"
+    - `E6` means the cell at column E and row 6 on the current worksheet.
+    - `A4:H17` means the rectangular range from `A4` through `H17`.
+    - `Tables!A4:H17` means that range is on the **Tables** worksheet. The `!` separates the worksheet name from the cell or range.
+    - If a worksheet name contains spaces, Excel uses apostrophes: `'Project Budget'!B5`.
+    - Dollar signs lock a reference when a formula is filled or copied. For example, `$A$4:$H$17` remains fixed, while `A4:H17` can move.
+
+    You can type a cross-sheet reference, or select the cells on the other worksheet while building the formula and let Excel insert the reference.
+
+### Useful Shortcuts
+
+| Task | Windows | Mac |
+|---|---|---|
+| Cycle through relative, absolute, and mixed references while editing a formula | `F4` | `Command+T` or `F4` |
+| Jump to the edge of the current data region | `Ctrl+Arrow` | `Command+Arrow` |
+
+The `F4` shortcut is especially useful for locking lookup ranges before filling a formula down a column.
 
 ---
 
 ## VLOOKUP/HLOOKUP Functions
 
-The VLOOKUP and HLOOKUP functions are used to look up values in a table based on a search key. VLOOKUP is used for vertical lookups, while HLOOKUP is used for horizontal lookups. These functions are particularly useful when you have a large dataset and need to find specific information quickly.
+The VLOOKUP and HLOOKUP functions are used to find values in a lookup range. VLOOKUP searches down the first column, while HLOOKUP searches across the first row. These functions are particularly useful when you have a large dataset and need to find specific information quickly.
 
 The syntax for the VLOOKUP function is as follows:
 
-    VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+    =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+
+Square brackets in function syntax identify an optional argument. They explain the function; do not type the brackets in an Excel formula.
 
 where:
 
 | Parameter      | Explanation                                                                                                                 |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------|
-| lookup_value   | The value to be found in the first column of the array.                                                                     |
-| table_array    | The table of information in which data is looked up. Use a reference to a range or a range name.                            |
-| col_index_num  | The column number in the table defined by `range` from which the matching value must be returned.                           |
+| lookup_value   | The value to be found in the first column of the lookup range.                                                              |
+| table_array    | The range containing the lookup information. Use a cell reference or a defined name.                                       |
+| col_index_num  | The column number within `table_array` from which the matching value must be returned.                                     |
 | [range_lookup] | A logical value (`TRUE` or `FALSE`) that specifies whether you want VLOOKUP to find an exact match or an approximate match. |  
 
-The syntax for the HLOOKUP function is similar, but it searches horizontally across rows instead of vertically across columns. For this reading, we will focus on VLOOKUP, but the concepts are similar for HLOOKUP. 
+Excel calls this argument `table_array` even when the source is an ordinary range of cells rather than a formatted Excel Table.
+
+The HLOOKUP syntax is similar:
+
+    =HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])
+
+HLOOKUP searches for the lookup value in the first row and returns a value from the specified row. We will not practice HLOOKUP in this lesson, but you should recognize what it does and how it differs from VLOOKUP.
 
 ### Example of VLOOKUP
-The following workbook computes the volume and weight of a set of cylinders. The weight is computed from the volume and the unit weight. However, the unit weight depends on the material being used. Unit weights for a set of common materials are shown in a table at the top:
+The following workbook computes the volume and weight of a set of cylinders. The weight is computed from the volume and the unit weight. However, the unit weight depends on the material being used. Unit weights for a set of common materials are shown in a lookup range at the top:
 
 ![Vlookup_Image_1.png](images/Vlookup_Image_1.png)
 
 The objective of this example is to determine the appropriate unit weight for each cylinder and calculate the correct weight by multiplying the selected unit weight by the computed volume. We will do this by automatically selecting the correct unit weight from the list using the VLOOKUP function.
 
-For our case, we will use VLOOKUP to select a unit weight value from the table using the user-specified material. The unit weight returned by the function is then multiplied by the volume to compute the cylinder weight as follows:
+For our case, we will use VLOOKUP to select a unit weight value from the lookup range using the user-specified material. The unit weight returned by the function is then multiplied by the volume to compute the cylinder weight as follows:
 
 ![Vlookup_Image_2.png](images/Vlookup_Image_2.png)
 
-The first argument (E13) to the VLOOKUP function refers to the Material value on the same row and is a relative 
-reference. The second argument (\$B\$5:\$C\$10) is an absolute reference to the table use for the lookup. The 
-search_key ("Concrete" in this case) is used to search through the first column in the table to find the row 
-matching the search_key. In this case, the match is found on the third row of the table (cell B7). The third 
-argument (2) tells the VLOOKUP function from which column of the table the return value should be selected. Since the value is 2, we go to the second column of the lookup table on the selected row and find our value (150). This is the value that is returned by the function and multiplied by the volume (1.6) to compute the weight. After copying this formula to the rest of the column, the weight values are all correctly computed as follows:
+The first argument (`E13`) refers to the Material value on the same row and is a relative reference. The second argument (`$B$5:$C$10`) is an absolute reference to the lookup range. The `lookup_value` ("Concrete" in this case) is used to search the first column of that range. The match is found on its third row, worksheet cell `B7`. The third argument (`2`) tells VLOOKUP to return a value from the second column of the lookup range. The returned value, 150, is multiplied by the volume, 1.6, to compute the weight. The final argument should be `FALSE` because the material name requires an exact match. After filling this formula down the column, the weight values are computed as follows:
 
 ![Vlookup_Image_3.png](images/Vlookup_Image_3.png)
 
-If the values in the lookup table are edited, all the weights would be automatically updated.
+If values in the lookup range are edited, all the weights update automatically.
 
-### The [range_lookup] Parameter
+### The `range_lookup` Argument
 In the example shown in the previous section, we are doing an exact match on the lookup value in the first column. In some cases we are not looking for an exact match, but we need to find a match from a set of numerical ranges. For example, suppose that we wanted to categorize the cylinder weights using the following guidelines:
 
 |         Range         |  Category   |
 |:---------------------:|:-----------:|
-|       wt ≤ 1000       | Ultra Light |
-|   1000 ≤ wt ≤ 2000    |    Light    |
-|  2000 ≤ wt ≤ 10,000   |   Medium    |
-| 10,000 ≤ wt ≤ 100,000 |    Heavy    |
-|     100,000 ≤ wt      | Extra Heavy |
+|    0 ≤ wt < 1,000     | Ultra Light |
+| 1,000 ≤ wt < 2,000    |    Light    |
+| 2,000 ≤ wt < 10,000   |   Medium    |
+| 10,000 ≤ wt < 100,000 |    Heavy    |
+|     wt ≥ 100,000      | Extra Heavy |
 
-We will then add a new table and an extra column as follows:
+We will then add a new lookup range and an extra column as follows:
 
 ![Vlookup_Image_4.png](images/Vlookup_Image_4.png)
 
-Note that the weight values in the first column of the weight-category table at the top right has been sorted in ascending order. This is critical in order for the lookup to work. Next, we enter a formula using the VLOOKUP function as follows:
+Note that the lower-bound values in the first column of the weight-category lookup range are sorted in ascending order. This is required for an approximate lookup. Next, we enter a formula using VLOOKUP as follows:
 
 ![Vlookup_Image_5.png](images/Vlookup_Image_5.png)
 
-Notice that the last argument (is_sorted) has a value of TRUE. This means that we take the search_key (235.6 in this case) and we look through the first column of the table until we find a row where the value on the row is less than or equal to the search_key and the value on the next row is greater than the search_key. In this case, the match occurs on the first row and so the resulting value from column 2 is "Ultra Light". After copying the formula to the rest of the Category column, the resulting values are as follows:
+Notice that the last argument, `range_lookup`, is `TRUE`. Excel takes the `lookup_value` (235.6 in this case) and searches the first column of the lookup range for the largest lower-bound value that is less than or equal to it. In this case, the match occurs on the first row, so the value returned from column 2 is "Ultra Light." After filling the formula down the Category column, the resulting values are as follows:
 
 ![Vlookup_Image_6.png](images/Vlookup_Image_6.png)
 
-It is important to note that the is_sorted argument to the VLOOKUP function is optional. If it is omitted, it is assumed to be TRUE by default. A common error with the VLOOKUP function is to omit this argument when the VLOOKUP function is intended to be used as an exact match. This can lead to unintended errors, depending on how the values in the first column are ordered. Therefore, it is strongly recommended to always enter a TRUE or FALSE value for the is_sorted argument every time the VLOOKUP function is used.
+The `range_lookup` argument is optional. If it is omitted, Excel assumes `TRUE`. Omitting it when an exact match is intended can return an incorrect value. Always enter `TRUE` for an approximate lookup or `FALSE` for an exact lookup.
 
 Here is an extra resource for further information on VLOOKUP: [VLOOKUP](https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1){:target="_blank"}
 
@@ -79,43 +103,43 @@ Here is an extra resource for further information on VLOOKUP: [VLOOKUP](https://
 
 ## MATCH Function
 
-The MATCH function returns the position of an item in a range of cells. It is often used in conjunction with the VLOOKUP function to find the index of a value in a row or column. The MATCH function can be used to perform exact matches or range lookups, depending on the search type specified.
+The MATCH function returns the position of an item in a range of cells. It is often used with VLOOKUP to find the index of a value in a row or column. MATCH can perform exact or approximate matches, depending on the `match_type` specified.
 
 Let's first look at the syntax of the function.
 
-    MATCH(lookup_value, lookup_array, [match_type])
+    =MATCH(lookup_value, lookup_array, [match_type])
 
 where:
 
 | Parameter    | Explanation                                                                                      |
 |--------------|--------------------------------------------------------------------------------------------------|
 | lookup_value | The value to be found in the range of cells.                                                     |
-| lookup_array | The table of information in which data is looked up. Use a reference to a range or a range name. |
-| [match_type] | An optional parameter that directs the function on how to find the `search_key` in the `range`.  |
+| lookup_array | The row or column containing the values to search. Use a cell reference or a defined name.       |
+| [match_type] | An optional parameter that specifies how Excel matches `lookup_value` in `lookup_array`.         |
 
-The search_type has three different options for an input as shown in the table below. If nothing is input for this parameter, the default value will be **1** which indicates that the values are sorted in ascending order. It will perform a range lookup and return the largest value less than or equal to the search_key. The second value is **-1** and works opposite to 1. It indicates that the values are sorted in descending order and perform a range lookup and return the smallest value greater than or equal to the search_key. The last acceptable input is **0**. This option directs the function to search for an exact match to the search_key.  
+The `match_type` has three options, as shown below. If it is omitted, Excel uses **1**. This performs an approximate match on values sorted in ascending order and returns the position of the largest value less than or equal to `lookup_value`. A value of **-1** requires descending order and returns the position of the smallest value greater than or equal to `lookup_value`. A value of **0** requires an exact match.
 
-| Search Type |        Explanation        |
+| Match Type |        Explanation        |
 |:-----------:|:-------------------------:|
 |      1      | Ascending Order (default) |
 |      0      |        Exact Match        |
 |     -1      |     Descending Order      |
 
-The MATCH function when paired with the VLOOKUP function allows you to do a two-dimensional lookup where a value is found from a table containing both rows and columns. For example, consider the following sheet containing a table of temperatures in degree F illustrating a relationship between average monthly temp and elevation in ft for a particular location.
+When paired with VLOOKUP, MATCH allows you to perform a two-dimensional lookup in a range containing both rows and columns. For example, consider the following worksheet containing average monthly temperatures in degrees Fahrenheit by elevation.
 
 ![match_fig1.png](images/match_fig1.png)
 
-Starting at row 24, another table is listed and the objective is to fill in the **Temp** column with a formula that 
-looks up the temperature corresponding to the elevation from column **C** and the month associated with the date 
+Starting at row 24, another range is listed and the objective is to fill in the **Temp** column with a formula that
+looks up the temperature corresponding to the elevation from column **C** and the month associated with the date
 provided in column **B**. This requires a double lookup. We use VLOOKUP to find the row we need based on a range lookup of elevation using the VLOOKUP function. Then, for the third argument to VLOOKUP, we need to determine which column to use based on the month desired. To find the right column based on the month, we first need to find the month label ("Jan", "Feb", etc.) from a date value. This can be accomplished using the **[TEXT](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c){:target="_blank"}** function which takes a date as an argument and returns the month or day value depending on the format specified by the second argument as follows:
 
-    TEXT(B28,"MMM")
+    =TEXT(B28,"MMM")
 
 For the values shown, the function would return "**Mar**". Then we need to use this text string to automatically find the index of the column corresponding to this month. This can be done with the MATCH function as follows:
 
-    MATCH(TEXT(B28,"MMM"),$B$7:$N$7,0)
+    =MATCH(TEXT(B28,"MMM"),$B$7:$N$7,0)
 
-The first argument to the MATCH function is the lookup value, the second argument is an array (row or column of values) and the third argument indicates the type of match to perform (a value of **0** tells it to find an exact match). The function looks through the array to find the lookup value and returns the index of the item if found. For the arguments shown, the function would return a value of **3**. At this point, we are ready to use the VLOOKUP function. We would formulate the function call as follows:
+The first argument is the lookup value, the second is the row or column to search, and the third specifies the match type. A value of **0** requires an exact match. For the arguments shown, MATCH returns **4** because the selected range begins in column B and the March heading is its fourth item. That result is the correct VLOOKUP column index. We can now complete the VLOOKUP formula:
 
 ![match_fig2.png](images/match_fig2.png)
 
@@ -129,8 +153,7 @@ Here is an extra resource for further information on Match: [MATCH](https://supp
 
 ### IF Statements
 
-**IF Statements** are a function within Excel that can compare two values and determine if they are true or false. This 
-type of two-outcome expression in programming is known as a boolean.
+The **IF function** evaluates a logical condition and returns one value when the condition is `TRUE` and another value when it is `FALSE`. A logical condition evaluates to a Boolean value: `TRUE` or `FALSE`.
 
 #### Syntax
 
@@ -158,7 +181,7 @@ One more example is using a number. Using the length of a driveway, we can find 
 
 ![readingex3.png](images/readingex3.png)
 
-Again, we can see that we can quickly populate the rest of the table by dragging the corner of the cell down.
+Again, we can quickly populate the rest of the range by dragging the fill handle down.
 
 ![readingex4.png](images/readingex4.png)
 
@@ -166,86 +189,99 @@ Again, we can see that we can quickly populate the rest of the table by dragging
 
 ### IFS Statements
 
-**IFS Statements** are an even more powerful version of an IF statement that can allow for multiple conditional 
-statements to take place within one function. This type of function allows for easy categorization by testing a given number or string against one found in a table.
+The **IFS function** tests multiple logical conditions in order. It is useful for assigning categories when more than two outcomes are possible.
 
 #### Syntax
 
 The syntax for an IFS statement is as follows:
 
-    =IFS(logical_expression1, value_if_true1, [logical_expression2, value_if_true2], [logical_expression3, ...)
+    =IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], ...)
 
-An IFS statement only technically requires two arguments, both of which are nearly the same as the IF statement. However, there can be any number of logical expressions within one IFS statement.
+IFS requires at least one logical-test/value pair. Additional pairs can be added as needed.
 
-**Note**: More than one condition can be true so the function will always return the value for the first condition that is found true.
+**Note:** More than one condition can be true, so IFS returns the value associated with the first condition that evaluates to `TRUE`. Order the conditions carefully. A final condition of `TRUE` can provide a default result.
 
 #### Example Problem - IFS Statement
 
-Using the same premise as the IF statement, we can utilize the table we used before. This time around, we will categorize the different lengths of driveways into three tiers: short, medium, and long.
+Using the same data as the IF example, we will categorize the driveway lengths into three tiers: short, medium, and long.
 
-![readingex5fixed.png](images/readingex5fixed.png)
+![An IFS formula classifying driveway lengths as long, medium, or short](images/readingex5fixed.png)
 
-**Note**: The third condition ```<=50``` includes ```=``` so that 50 is included in "less than or **equal** to 50"
+**Note:** The final condition is `TRUE`, which acts as the default. Any length that is not greater than 90 or greater than 50 is categorized as "Short," including a length of exactly 50 ft.
 
 Dragging them down, we can see the final result. Now each driveway is nicely categorized by its length.
 
-![readingex6.png](images/readingex6.png)
+![Completed driveway-length categories produced by the IFS formula](images/readingex6.png)
+
+#### Nested IF Compared with IFS
+
+Several outcomes can also be handled by placing one IF function inside another. For example, both formulas below assign the same letter grade.
+
+Nested IF:
+
+    =IF(E2>=90,"A",IF(E2>=80,"B",IF(E2>=70,"C",IF(E2>=60,"D","F"))))
+
+IFS:
+
+    =IFS(E2>=90,"A",E2>=80,"B",E2>=70,"C",E2>=60,"D",TRUE,"F")
+
+The nested IF formula works, but IFS is often easier to read and revise when there are many outcomes. In both formulas, the conditions are ordered from the highest grade threshold to the lowest.
 
 ---
 
 ## Pre-Class Quiz Challenge
 
-1. First download the starter sheet: [(Starter-Workbook)-Pre-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Pre-Lookups-Match-IF.xlsx)
-    <br>Be sure to make a copy of the sheet and rename it something like “(Your-Name)-Pre-Lookups-Match-IF”.
+1. First download the starter workbook: [(Starter-Workbook)-Pre-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Pre-Lookups-Match-IF.xlsx)
+    <br>Be sure to make a copy of the workbook.
 
-2. The workbook contains two sections: the first sheet is for practicing VLOOKUP and MATCH functions, and the second sheet is for practicing IF and IFS functions. Take a minute to review the contents of the LOOKUP-MATCH sheet. 
+2. The workbook contains two worksheets: **LOOKUP-MATCH** for practicing VLOOKUP and MATCH, and **IF-IFS** for practicing IF and IFS. Take a minute to review the contents of the LOOKUP-MATCH worksheet.
 
-Often times, the VLOOKUP and MATCH functions are hard to understand and use right away. Especially when combining and writing a function inside other functions. To help with this, we will first practice by using each function separately, then combine them together.
+VLOOKUP and MATCH can be difficult at first, especially when one function is nested inside another. We will first practice each function separately and then combine them.
 
-3. In column E, you will use the MATCH function to find the position or index of the type of service listed in column D based on the small table in cells K1:N8. If written correctly, the function will return a number between 2-4, depending on the type of service, listed in column D. We will use this number in the next step. Hint: The entire table in cells K1:N8 is not used for this step.
+3. In `E2`, use MATCH with an exact match (`match_type = 0`) to find the position of the service type in `D2` within the header range `$K$1:$N$1`. Fill the formula through `E25`. MATCH should return 2, 3, or 4. The dollar signs keep the header range fixed as the formula is filled; while editing the reference, you can press `F4` on Windows or `Command+T` on Mac to add them.
 
-4. In column F, you will use the VLOOKUP function to find the cost of the service listed in column B in the table in cells K1:N8. For the index parameter of your VLOOKUP function, you will use the value returned by the MATCH function in column E. If written correctly, the function will return a number, depending on the type of service
+4. In `F2`, use VLOOKUP with an exact match (`range_lookup = FALSE`) to find the cost of the service in `B2`. Use `$K$1:$N$8` as the complete lookup range and use the MATCH result in `E2` for `col_index_num`. Fill the formula through `F25`.
 
-5. In column G, you will multiply the values in columns C and F to get the total cost for each service
+5. In `G2`, multiply the quantity in `C2` by the cost in `F2`, then fill the formula through `G25`.
 
-6. In column I, try combining everything you wrote in columns E, F, and G into one formula. The formula should return the total cost for each service based on the service type, quantity, and cost per service
+6. In `I2`, try combining everything you wrote in columns E, F, and G into one formula. Fill it through `I25`. The formula should return the total cost for each service based on the service type, quantity, and cost per service.
 
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
-<details>
+<details markdown="1">
 <summary><b>Solution</b></summary>
 
 For any customer with the Service: "Sidewalk Replacement", Quantity: "10", and Type: "Full", the cost should be $1,890. You can test this by overwriting the formulas that are randomly generated in the "Service" and "Type" columns with these values.
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>Hint 1: Function Syntax</b></summary>
 
-Column B - Search Key
-Column C - Multiply the total of your VLOOKUP and Match Function at the end
-Column D - Search Key for the Index or MATCH Function
+Column B - `lookup_value` for VLOOKUP
+Column C - Quantity used to calculate the total
+Column D - `lookup_value` for MATCH
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>Hint 2: N/A Errors</b></summary>
 
-If you are getting a lot of N/As maybe your is_sorted on your Vlookup is not correct or your search type for match is incorrect. Look over the pre-class readings for help
+If you are getting several `#N/A` errors, check the `range_lookup` argument in VLOOKUP and the `match_type` argument in MATCH. Review the reading if needed.
 </details>
 
-<details>
+<details markdown="1">
 <summary><b>Hint 3: N/A Errors Part 2</b></summary>
   
-Make the is_sorted false and the search type 0
+Use `FALSE` for `range_lookup` and `0` for `match_type`.
 </details>
 <br>
 
-Next, look at the IF-IFS sheet. This sheet is a simple grade book for a class. You will use IF and IFS statements to assign points, pass/fail status, and letter grades to students.
+Next, look at the **IF-IFS** worksheet. It is a simple grade book for a class. You will use IF and IFS to assign points, pass/fail status, and letter grades to students.
 
-7. Go to column D ("Points") and use RANDBETWEEN to give points to students randomly. Points should be between 0 and 100. Note that the RANDBETWEEN function will be updated and generate new values each time the sheet is updated. To make the values static, select the entire column, and then copy and paste-special (as values) the results to lock in the values. This overwrites the formula with the values it generated. If you need help, look at the solution below.
+7. In `D2`, use RANDBETWEEN to give points to students randomly. Points should be between 0 and 100. Fill the formula through `D201`. RANDBETWEEN generates new values whenever the workbook recalculates. To make the values static, select the generated cells, copy them, and use Paste Special > Values. This replaces the formulas with their current values. If you need help, look at the solution below.
 
-8. In column E, write a simple IF statement in the Pass/Fail column to indicate "Pass" or "Fail" depending on whether they scored over 60/100
+8. In `E2`, write a simple IF formula in the Pass/Fail column. Return "Pass" for a score greater than or equal to 60 and "Fail" for a score below 60. Fill the formula through `E201`.
 
-9. In column F, write a complex IF statement in the "Grade" column to assign a letter grade to each student based on their points as follows:
+9. In `F2`, use either a nested IF formula or an IFS formula to assign a letter grade based on the following thresholds. Fill the formula through `F201`. The IFS version is usually easier to read.
 
 | Grading Scale | Letter Grade |
 |:-------------:|:------------:|
@@ -255,10 +291,16 @@ Next, look at the IF-IFS sheet. This sheet is a simple grade book for a class. Y
 |    60 - 69    |      D       |
 |     < 60      |      F       |
 
+<details markdown="1">
+<summary><b>IF and IFS hint</b></summary>
+
+For a nested IF, place the next IF in the `value_if_false` argument. For IFS, test the grade thresholds from highest to lowest and use `TRUE` as the final default condition.
+</details>
+
 Look below for a solution to see if you did it correctly and for some hints. (Click on the **bold** words to see the hints)
 
 
-<details>
+<details markdown="1">
 <summary><b>RANDBETWEEN Function</b></summary>
   
 =RANDBETWEEN(0,100)

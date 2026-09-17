@@ -4,15 +4,71 @@
 
 The most basic feature of Excel is the ability to enter data and then write formulas based on the data. As the data are edited, the formulas are automatically updated. In this chapter, we review some of the procedures for entering and using formulas.
 
+## Excel Terminology
+
+The following terms will be used throughout the Excel portion of this course:
+
+| Term | Meaning |
+|:-----|:--------|
+| **Workbook** | An Excel file, such as `assignment.xlsx`. A workbook can contain multiple worksheets. |
+| **Worksheet** | One tab within a workbook. A worksheet is also commonly called a **sheet**. |
+| **Row** | A horizontal group of cells identified by a number. |
+| **Column** | A vertical group of cells identified by a letter. |
+| **Cell** | The box where a row and column intersect. A cell can contain text, a number, a date, or a formula. |
+| **Cell address** | The column letter and row number that identify a cell, such as `B4`. |
+| **Range** | A group of cells. A colon separates the first and last cell addresses, as in `B3:F10`. |
+| **Data range** | A range containing related data, usually organized into rows and columns with headers. |
+| **Excel Table** | A data range formally converted using **Format as Table**. An Excel Table has built-in filtering, formatting, and other data-management features. |
+| **Formula** | An expression beginning with `=` that calculates a result, such as `=A1+B1`. |
+| **Function** | A predefined calculation used in a formula, such as `=SUM(A1:A10)`. |
+| **Named reference** | A descriptive name assigned to a cell or range, such as `con_fac`. The name can be used in formulas instead of its cell address. |
+
+## Reading Excel References and Instructions
+
+| Example | Meaning |
+|:--------|:--------|
+| `B4` | The cell in column B and row 4 on the current worksheet. |
+| `B4:D10` | Every cell from the upper-left cell B4 through the lower-right cell D10. The colon means **through**. |
+| `Data!A1:P1001` | Cells A1 through P1001 on the **Data** worksheet. The exclamation point separates the worksheet name from the range. |
+| `'Reservoir Flow'!A1:J31` | A range on a worksheet whose name contains spaces. Excel adds apostrophes around the worksheet name. |
+| `$A$1:$P$1001` | An absolute range. The dollar signs keep its rows and columns fixed when a formula is copied. |
+| `con_fac` | A named reference. Its descriptive name can make a formula easier to read and troubleshoot. |
+| **Data > Filter** | Select the **Data** tab on the ribbon, and then select **Filter**. |
+
+You usually do not need to type a worksheet-and-range reference. While entering a formula or completing a dialog box, select the worksheet and cells. Excel will construct the reference and may add dollar signs automatically.
+
+## Essential Excel Shortcuts
+
+The following shortcuts are immediately useful when working in Excel:
+
+| Action | Windows | Mac |
+|:-------|:--------|:----|
+| Save | `Ctrl + S` | `Command + S` |
+| Undo | `Ctrl + Z` | `Command + Z` |
+| Cut, copy, and paste | `Ctrl + X`, `Ctrl + C`, `Ctrl + V` | `Command + X`, `Command + C`, `Command + V` |
+| Find | `Ctrl + F` | `Command + F` |
+| Move right or down | `Tab` or `Enter` | `Tab` or `Return` |
+| Jump to the edge of a data range | `Ctrl + Arrow` | `Command + Arrow` |
+| Select to the edge of a data range | `Ctrl + Shift + Arrow` | `Command + Shift + Arrow` |
+| Fill a formula down | `Ctrl + D` | `Command + D` |
+| Open Format Cells | `Ctrl + 1` | `Command + 1` |
+| Add or remove filters | `Ctrl + Shift + L` | `Command + Shift + F` or `Ctrl + Shift + L` |
+
+You do not need to memorize every Excel shortcut at once. Each Excel lecture will introduce a short table containing only a few shortcuts that are useful for that lecture. Practice using those shortcuts as you complete the exercises.
+
+For a comprehensive list, see [Keyboard shortcuts in Excel](https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel){:target="_blank"}.
+
+---
+
 ## Cell Addresses
-An Excel workbook contains a collection of sheets. Each sheet contains a collection of cells organized into rows and columns. The rows are indexed with numbers (1,2,3...) and the columns are indexed with letters (A,B,C...). Each cell can be uniquely identified by a cells address defined by the column-row combination.
+An Excel workbook contains a collection of worksheets. Each worksheet contains cells organized into rows and columns. Rows are identified with numbers (1, 2, 3...) and columns are identified with letters (A, B, C...). Each cell can be uniquely identified by its cell address, which combines the column letter and row number.
 
 - A5	<- Row 5, Column 1
 - D3	<- Row 3, Column 4
 - AJ234	<- Row 234, Column 36
 
-!!!Note
-    After column Z (26), the column numbers are indexed as AA,AB,AC... To reference a group of cells with single address we combine the upper left corner of the region with the lower right corner separated by a semicolon. For example, to reference the following range:
+!!! note
+    After column Z, the column labels continue as AA, AB, AC... To reference a group of cells with a single range address, combine the upper-left and lower-right cell addresses with a colon. For example, consider the following range:
 
     ![range.png](images/range.png)
 
@@ -30,7 +86,7 @@ There are four primary types of information that can be entered in cells:
 
 For the first three types (text, numbers, dates), Excel determines the type of data based on the content as you enter it, and formats it appropriately. You can also customize the formatting if you wish. Entering a formula is described in the next section.
 
-Sometimes it is useful to enter a sequence of data in a cell. Excel provides a simple trick for doing this. For example, suppose you want to create a list of numbers 1, 2, 3, ... to fill in a column in a table. Rather than typing the entire list, you can enter the first three numbers and then select the three numbers. Once you do so, a green rectangle will appear at the lower right corner of the selection as follows:
+Sometimes it is useful to enter a sequence of data in a cell. Excel provides a simple trick for doing this. For example, suppose you want to create a list of numbers 1, 2, 3, ... to fill in a column in a data range. Rather than typing the entire list, you can enter the first three numbers and then select the three numbers. Once you do so, a green rectangle will appear at the lower right corner of the selection as follows:
 
 ![autofill-1.png](images/autofill-1.png)
 
@@ -100,7 +156,7 @@ and then drag the green square in the lower right corner of the cell down to the
 ---
 
 ## Relative vs. Absolute References
-When copying formulas, we need to be careful how were reference other cells in our formulas. For example, to calculate the weight of our cylinders, we take the volume of the cylinder and multiply by the unit wt of the cylinder material as follows:
+When copying formulas, we need to be careful how we reference other cells in our formulas. For example, to calculate the weight of our cylinders, we take the volume of the cylinder and multiply by the unit wt of the cylinder material as follows:
 
 ![abs-rel-1.png](images/abs-rel-1.png)
 
@@ -118,7 +174,7 @@ The reason for this error can be seen by revealing the formulas. This is accompl
 ![abs-rel-4.png](images/abs-rel-4.png)
 
 !!!Note
-    The "\$" symbols. You make an absolute reference by directly typing the values or by typing B4 and then pressing the **F4** key (This maybe different depending on what system you use). Now after copying the formula down, we get correct answers:
+    The `\$` symbols make a reference absolute. You can type them directly or select the reference while editing the formula and press **F4** on Windows. On a Mac, use **Command+T** or **F4**, depending on the keyboard settings. After copying the corrected formula down, the results are correct:
 
 ![abs-rel-5.png](images/abs-rel-5.png)
 
@@ -134,3 +190,9 @@ Sometimes it is useful to use a mixed reference. Here is a summary of the ways i
 - \$D\$4	Row and column are both absolute
 
 For the example shown above, we could have gotten away with a mixed reference ("B\$4") because we copied the formulas within a single column, but it works fine with a complete absolute reference ("\$B\$4"). To do a mixed reference, you can either directly type the "\$" symbols or you can repeatedly press the F4 key to get the combination you are seeking.
+
+## Named References
+
+A named reference replaces a cell or range address with a descriptive name. Select the cell or range, click the **Name Box** to the left of the formula bar, type a name without spaces, and press **Enter**.
+
+For example, if cell `C20` contains a conversion factor and is named `con_fac`, the formula `=C4*con_fac` is easier to interpret than `=C4*$C$20`. Both formulas can calculate the same result, but the named version makes the purpose of the fixed value visible. This can make formulas easier to check and errors easier to locate. Named references remain fixed when a formula is copied unless the name itself refers to a changing formula.

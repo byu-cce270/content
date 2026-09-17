@@ -1,56 +1,57 @@
 #  HW: Analyzing & Managing Data
 
-**Purpose:** This assignment aims to test your ability to manage and format data. In this assignment, you will filter out certain types of data in different sheets. You will use the different ways of managing data that we went over in class: Conditional formatting, filters, and functions. The data we will be using is measurements taken from the Provo River. If you are interested in looking at more data from the Provo River you can access it at this link:
+**Purpose:** This assignment tests your ability to manage and format data. You will filter data on different worksheets and use the data-management methods covered in class: conditional formatting, filters, and functions. The data are measurements taken from the Provo River. If you are interested in exploring more Provo River data, you can access them at this link:
 [Provo River Data](https://waterdata.usgs.gov/monitoring-location/10163000/#parameterCode=00065&period=P7D){:target="_blank"}
 
 ---
 
 ## Getting Started
 
-1. First, make a copy of the starter sheet here: 
+1. First, make a copy of the starter workbook here:
    [(Starter-Workbook)-HW-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-HW-Analyzing-%26-Managing-Data.xlsx)
-2. Rename it something like “(Your-Name)-HW-Analyzing-&-Managing Data”
-3. Remember to save it in the CCE 270 folder that you created in the first assignment.
+2. Remember to save it in the CCE 270 folder that you created in the first assignment.
+
+Need a reminder about references such as `A1:F2883`? See [Cells and Formulas](../../resources/excel_review/basic_excel_review.md).
 
 ---
 
 ## Part 1 - Filtering Data
 
-1. Navigate to the sheet that says “Streamflow data Part 1”
-2. Select the entire table and create a filter, the filter icon should be in each of the headers. Be sure to reformat the headers so that they can still be read.
-3. Filter by Approved status so it only shows rows with the approved status as pending, "P"
-4. Duplicate that sheet and rename it: “Part 1 Approved Status”
-5. Go back to the sheet called "Streamflow data Part 1"
-6. Reset the filter
-7. Next, filter the data by date. Only show rows of data that were taken before 6/21/21
-8. Duplicate that sheet and rename it “Part 1 Date”
-9. Go back to the sheet called "Streamflow data Part 1"
-10. Reset the filter
-11. Next, filter the data by Flowrate (CFS). Only show the rows whose flow is between 45 - 50
-12. Duplicate that sheet and rename it “Part 1 Flow Rate”
+1. Navigate to the worksheet named “Streamflow Data Part 1.”
+2. Select cells **A1:F2881** and add filters. A filter button should appear in each header cell from A1 through F1. Reformat the headers if needed so that they remain readable.
+3. Filter the Approval Status column to show only rows with provisional status, `P`.
+4. Duplicate that worksheet and rename it “Part 1 Approved Status.”
+5. Return to the worksheet named “Streamflow Data Part 1.”
+6. Reset the filter.
+7. Filter the data by date. Show only rows with dates earlier than June 21, 2021; do not include June 21.
+8. Duplicate that worksheet and rename it “Part 1 Date.”
+9. Return to the worksheet named “Streamflow Data Part 1.”
+10. Reset the filter.
+11. Filter the data by Flowrate (CFS). Show rows with flow rates from 45 through 50, including both 45 and 50.
+12. Duplicate that worksheet and rename it “Part 1 Flow Rate.”
 
-At this point, you should have 6 sheets in your workbook.
+At this point, you should have six worksheets in your workbook.
 
 ---
 
 ## Part 2 - Formatting Data
 
-1. Navigate to the sheet that says “Streamflow Data Part 2”
-2. Format the table using colors, bold the headers, and make it look nice.
-3. Give the data in column B a scaled color scheme that will have the low numbers be green the high numbers be red and the middle numbers be yellow
-4. Give the data in column C a color if it is greater than 180
-5. Give the data in column D a color if it is equal to 230
-6. Give the data in column E a scaled color where the lower numbers are the darker version of the color and the higher numbers are the lighter version of that color
-7. Give the data in column F a color if the text does not contain a 5
+1. Navigate to the worksheet named “Streamflow Data Part 2.”
+2. Format **A1:F2883** using colors, bold headers, and a clear, professional layout.
+3. Apply a green-yellow-red color scale to **B4:B2883**: low values are green, middle values are yellow, and high values are red.
+4. Apply conditional formatting to **C4:C2883** for values greater than 180.
+5. Apply conditional formatting to **D4:D2883** for values equal to 230.
+6. Apply a color scale to **E4:E2883**, with darker shading for lower values and lighter shading for higher values.
+7. Apply conditional formatting to **F4:F2883** for entries that do not contain the digit 5.
 
 ---
 
 ## Part 3 - Summary Statistics
 
-1. Navigate to the Summary Statistics sheet.
-2. On this page, you will see spots to use formulas to summarize the data taken at different places on the river (or stations). Use the appropriate formula and data from your “Streamflow data Part 2” sheet to make those calculations in the top half of the table.
-3. Most engineers when making calculations use cubic meters per second (CMS). Under the main table, name the cell C20 to "con_fac" to create an absolute cell reference for the conversion factor.
-4. Use the conversion factor reference we just made to convert all the values in the top half of the table from cfs to cms.
+1. Navigate to the Summary Statistics worksheet.
+2. Complete the CFS results in **C4:G9** using the measurements in cells **B4:F2883** on the **Streamflow Data Part 2** worksheet. In an Excel formula, that source range is written as `'Streamflow Data Part 2'!B4:F2883`; the exclamation point separates the worksheet name from the range. Match each data column to the station number shown in row 3. Use the appropriate functions, including `MODE` and `STDEV`. For this assignment, use `STDEV`, not `STDEV.S` or `STDEV.P`.
+3. Engineers commonly express flow rates in cubic meters per second (CMS). Determine or confirm the factor for converting cubic feet (ft³) to cubic meters (m³); you may use AI. Select **C20** and name it `con_fac`. The name acts as a fixed reference, like `$C$20`, but makes a formula's purpose easier to read and debug.
+4. Use `con_fac` to convert the CFS results in **C4:G9** to the corresponding CMS results in **C12:G17**.
 
 ---
 

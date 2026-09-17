@@ -7,8 +7,7 @@ You can find the In Class Exercise here:
 
 ## Instructions
 1. Open the in-class workbook using the link above.
-2. Rename the notebook as `gspread_in_class_(lastname, firstname).ipynb`.
-3. Follow the instructions in the notebook to complete the exercise.
+2. Follow the instructions in the notebook to complete the exercise.
 
 
 ---

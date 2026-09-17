@@ -30,8 +30,7 @@ Remember that you will have to sign in to your free account that you created ear
 Create a program that builds a dictionary of rivers and the countries they run through, using user input.
 
 1. Create a new Colab notebook.
-2. Title the notebook "(Your_Name)_Pre_Dict_While.ipynb".
-3. Start with an empty dictionary called rivers. 
+2. Start with an empty dictionary called rivers. 
 4. Use a while loop to repeatedly ask the user for:
 
   - The name of a river

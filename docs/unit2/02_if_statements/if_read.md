@@ -26,9 +26,7 @@ _Optional:_ In class we will be going over how to create different forms in Cola
 
 1. Create a new Colab notebook.
 
-2. Title the notebook "(Your_Name)_Pre_If_Statements.ipynb".
-
-3. In the Colab notebook, create a variable called 'exam_score' and set it equal to an integer between 0 and 100.
+2. In the Colab notebook, create a variable called 'exam_score' and set it equal to an integer between 0 and 100.
 
 4. In a new code block, use an if statement to check that the user's grade is greater than or equal to 60. Print a message telling the user whether they pass or fail.
 

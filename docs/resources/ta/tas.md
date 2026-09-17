@@ -20,10 +20,10 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 <br>**Brandan Williamson** - I'm the head TA for the class. I'm from Ripon, California. I'm a Senior here at BYU studying Civil Engineering and Computer Science. This is my third year as a TA. I've helped redo some of the coursework each semester. I'll be helping answer questions and grading assignments, and writing the free response for the exams. Feel free to message me during the evenings for help too.
 
 ![griffin_i_ta_profile.jpg](images/griffin_i_ta_profile.jpg){width=100px}
-<br>**Griffin Izu** - I'm from Irvine, California, and I am a junior in the Civil Engineering program. This will be my third semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, and playing video games. I'm very excited to meet you all!
+<br>**Griffin Izu** - I'm from Irvine, California, and I am a senior in Civil Engineering. This will be my sixth semester as a TA in this class! I love playing the trombone and bass guitar, listening to music, collecting records, and playing video games. I'm very excited to meet you all, and I'm always happy to help/chat!
 
 ![reagan_b_ta_profile.jpg](images/reagan_b_ta_profile.jpg){width=100px}
-<br>**Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my fourth year at BYU. I'm studying construction management and this will be my first semester as a TA for this class!!! I am so excited! I love playing volleyball and reading :) I can't wait to meet you all!
+<br>**Reagan Bodnar** - I'm from Las Vegas, Nevada and this is my last year at BYU. I'm studying construction management and this will be my third semester as a TA for this class!!! I love volleyball and reading :) I can't wait to meet you all!
 
 ![preston_c_ta_profile.jpg](images/preston_c_ta_profile.jpg){width=100px}
 <br>**Preston Cobabe** - Hi, I’m Preston. I love lifting weights, cooking especially smoking meat on my Traeger, and shooting film photography. I’ve been married for a year now to my wife Kate, and when I’m not working or studying, I enjoy traveling, exploring new food spots, and spending time outdoors.
@@ -52,25 +52,18 @@ All homework assignments will be automatically graded but the following TAs will
 
 - **HW 1.1**: The TA you signed up and met with.
 
-[//]: # (- **Brandan**: Projects, and Exams)
+- **Brandan**: Projects, and Exams
 
-[//]: # ()
-[//]: # (- **Griffin**: HW 1.5, HW 2.4, HW 3.3)
+- **Griffin**: HW 1.5, HW 2.4, HW 3.3
 
-[//]: # ()
-[//]: # (- **Reagan**: HW 1.6, HW 2.5, HW 3.4)
+- **Reagan**: HW 1.6, HW 2.5, HW 3.4
 
-[//]: # ()
-[//]: # (- **Preston**: HW 2.8, HW 3.1, HW 3.8, All Pre Class Quiz and In Class Workbooks)
+- **Preston**: HW 2.8, HW 3.1, HW 3.8, All Pre Class Quiz and In Class Workbooks
 
-[//]: # ()
-[//]: # (- **Luke**: HW 1.2, HW 2.6, HW 3.5)
+- **Luke**: HW 1.2, HW 2.6, HW 3.5
 
-[//]: # ()
-[//]: # (- **Tyler**: HW 1.3, HW 2.2, HW 3.7)
+- **Tyler**: HW 1.3, HW 2.2, HW 3.7
 
-[//]: # ()
-[//]: # (- **Carsen**: HW 1.4, HW 2.3, HW 3.2)
+- **Carsen**: HW 1.4, HW 2.3, HW 3.2
 
-[//]: # ()
-[//]: # (- **McKay**: HW 2.1, HW 2.7, HW 3.6)
+- **McKay**: HW 2.1, HW 2.7, HW 3.6

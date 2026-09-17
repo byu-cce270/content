@@ -7,8 +7,6 @@
 
 Create a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/01_for_loops_into_functions/(Starter_Workbook)_HW_For_Loops.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Rename it something like "(Your_Name)_HW_For_Loops.ipynb".
-
 ---
 
 You will work with a list of beams and use for loops to calculate and print the deflection of the beams. Assume that they are cantilevered with a point load at some distance **a** from the fixed end on the left as shown in the following diagram. 

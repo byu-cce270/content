@@ -61,9 +61,10 @@ Create a professional spreadsheet that can be used to generate bills for landsca
 
 **_REMINDER_** - For this class, **you will upload your Excel file directly to Learning Suite**. Make sure the file you upload is for the correct assignment and contains your finished work.
 
-1. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
-2. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
-3. Double-check that the file you uploaded is the one that contains your completed work.
+1. Name your workbook something like "(Your-Team-Name)-Unit-1-Project.xlsx".
+2. Make sure your work is saved, then close the workbook so that all of your changes are written to the file.
+3. Go to the assignment in Learning Suite and upload your `.xlsx` file as an attachment.
+4. Double-check that the file you uploaded is the one that contains your completed work.
 
 Only one team member needs to turn in the project. That team member should submit both of the following on the
 assignment in Learning Suite:
