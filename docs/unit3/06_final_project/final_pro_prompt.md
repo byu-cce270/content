@@ -10,8 +10,8 @@ You will also have to make and turn in a project proposal. The project proposal,
 1. You and the rest of your team previously formed will work together to come up with a project idea that will showcase what you have learned in this class. You will need to complete the project requirements listed below. You can find your team here:
 </br>(If you need to change teams for any reason, please contact the head TA or the professor)
 
-   - [Section 1 (Tue/Thur) W26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1nDVYvtjEuYaGbyBVqcca9jvJ2Bi295bQr9OErrtKDKI/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-   - [Section 2 (Mon/Wed) W26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1VF3Kz6_FpXtXYWbdA36d2gVFDtvJPrkBni9LlTZ56Tg/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 1 (Tue/Thur) F26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1wuC_wtIl35VIJQPS_9wqFshkSZB9AH3bdgrOphxBbao/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) F26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1BbOlW3br0eThzIEGwqug39G6jgy3ZJRTF82djzRp0IA/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 2. You and your team must come up with a project idea that will meet all of the requirements and create a project proposal. The instructions can be found here: [Final Project Proposal](https://byu-cce270.readthedocs.io/en/latest/unit3/06_final_project/final_pro_proposal/){:target="_blank"} ***WARNING*** - You must avoid the temptation to simply find an interesting Python program online and copy and paste it as your own. While we all use other people’s code and examples to learn from, outright copying their code and presenting it as your own is plagiarism.
 

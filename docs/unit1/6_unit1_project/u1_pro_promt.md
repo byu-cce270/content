@@ -7,8 +7,8 @@
 1. Form a team of 3 members and choose a group name. Record your team name and members of your team here:
 </br>(Please note that you will be with this team for all other projects and will use this name the whole semester. So choose wisely)
 
-   - [Section 1 (Tue/Thur) W26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1nDVYvtjEuYaGbyBVqcca9jvJ2Bi295bQr9OErrtKDKI/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-   - [Section 2 (Mon/Wed) W26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1VF3Kz6_FpXtXYWbdA36d2gVFDtvJPrkBni9LlTZ56Tg/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 1 (Tue/Thur) F26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1wuC_wtIl35VIJQPS_9wqFshkSZB9AH3bdgrOphxBbao/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+   - [Section 2 (Mon/Wed) F26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1BbOlW3br0eThzIEGwqug39G6jgy3ZJRTF82djzRp0IA/edit?gid=2018473579#gid=2018473579){:target="_blank"}
 
 2. You will then choose one of the three prompts listed below.
 
