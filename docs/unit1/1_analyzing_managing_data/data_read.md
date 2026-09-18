@@ -253,7 +253,7 @@ For more information, see [Freeze panes to lock rows and columns](https://suppor
 
 ## Pre-Class Quiz Challenge
 
-1. First download the starter workbook: [(Starter-Workbook)-Pre-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the CCE 270 folder you created for this class.
+1. First download the starter workbook: [Pre-Analyzing-&-Managing-Data.xlsx](Pre-Analyzing-%26-Managing-Data.xlsx) and save it to the CCE 270 folder you created for this class.
    <br>Before you start, make sure to make a copy of the file.
    <br>The challenge is a modified version of one from this website [Filtering and Sorting Data](https://edu.gcfglobal.org/en/googlespreadsheets/sorting-and-filtering-data/1/){:target="_blank"}. 
 2. **Highlight** the cells in **B2:B30** that contain Camera.

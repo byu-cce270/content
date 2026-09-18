@@ -15,7 +15,7 @@ XL_XY_SCATTER_LINES_NO_MARKERS = 75
 
 def main() -> None:
     topic_dir = Path(__file__).resolve().parents[1]
-    source = topic_dir / "(Starter-Workbook)-HW-Graphing-and-Solver.xlsx"
+    source = topic_dir / "HW-Graphing-and-Solver.xlsx"
     output = topic_dir / "graphing_images" / "streamflow_chart.png"
 
     with tempfile.TemporaryDirectory(prefix="cce270_streamflow_") as temp_dir:

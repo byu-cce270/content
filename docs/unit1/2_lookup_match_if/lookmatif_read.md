@@ -231,7 +231,7 @@ The nested IF formula works, but IFS is often easier to read and revise when the
 
 ## Pre-Class Quiz Challenge
 
-1. First download the starter workbook: [(Starter-Workbook)-Pre-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Pre-Lookups-Match-IF.xlsx)
+1. First download the starter workbook: [Pre-Lookups-Match-IF.xlsx](Pre-Lookups-Match-IF.xlsx)
     <br>Be sure to make a copy of the workbook.
 
 2. The workbook contains two worksheets: **LOOKUP-MATCH** for practicing VLOOKUP and MATCH, and **IF-IFS** for practicing IF and IFS. Take a minute to review the contents of the LOOKUP-MATCH worksheet.

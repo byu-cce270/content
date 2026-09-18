@@ -3,7 +3,7 @@
 ---
 
 We will practice using VLOOKUP, MATCH, IF, and IFS in several real-world scenarios. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
-You can find the in-class workbook here: [(Starter-Workbook)-Class-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-Class-Lookups-Match-IF.xlsx)
+You can find the in-class workbook here: [Class-Lookups-Match-IF.xlsx](Class-Lookups-Match-IF.xlsx)
 
 Need a reminder about cell, range, cross-sheet, or absolute references? See [Cells and Formulas](../../resources/excel_review/basic_excel_review.md).
 

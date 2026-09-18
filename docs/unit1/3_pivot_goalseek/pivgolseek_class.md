@@ -2,7 +2,7 @@
 
 ---
 
-These exercises introduce **Data Validation**, **Goal Seek**, and **PivotTables**. Download the in-class workbook here: [(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Class-Pivot-GoalSeek-DataV.xlsx)
+These exercises introduce **Data Validation**, **Goal Seek**, and **PivotTables**. Download the in-class workbook here: [Class-Pivot-GoalSeek-DataV.xlsx](Class-Pivot-GoalSeek-DataV.xlsx)
 
 The workbook contains five worksheets: **Data Validation** for Exercise 1, **Brickmaking Business** for Exercise 2, **Data** and **Pivot Table** for Exercise 3, and **credits** for the data source. The **Data** worksheet contains the employee source data.
 

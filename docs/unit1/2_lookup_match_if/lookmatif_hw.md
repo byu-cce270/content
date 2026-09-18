@@ -5,7 +5,7 @@
 ---
 
 ## Getting Started
-1. First make a copy of the starter workbook: [(Starter-Workbook)-HW-Lookups-Match-IF.xlsx](%28Starter-Workbook%29-HW-Lookups-Match-IF.xlsx)
+1. First make a copy of the starter workbook: [HW-Lookups-Match-IF.xlsx](HW-Lookups-Match-IF.xlsx)
 
 2. Remember to save it in the CCE 270 folder that you created in the first assignment.
 

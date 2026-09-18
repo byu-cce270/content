@@ -2,7 +2,7 @@
 
 We will practice selecting charts and using Goal Seek and Solver in Excel. The data are an expanded version of the pre-class construction surplus store. Before starting, review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) if you need a reminder about worksheets, ranges, or cell references.
 
-Download the [(Starter-Workbook)-Class-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Class-Graphing-and-Solver.xlsx) workbook.
+Download the [Class-Graphing-and-Solver.xlsx](Class-Graphing-and-Solver.xlsx) workbook.
 
 ---
 ## Exercise #1—Graphing Sales Data

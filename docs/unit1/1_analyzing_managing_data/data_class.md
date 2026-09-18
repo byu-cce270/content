@@ -2,7 +2,7 @@
 
 ---
 
-The following exercises are based on conditional formatting, basic formulas, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here: [(Starter-Workbook)-Class-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-Class-Analyzing-%26-Managing-Data.xlsx)
+The following exercises are based on conditional formatting, basic formulas, and filters. For this exercise, open the in-class workbook, make a copy, and follow the instructions. You can find the in-class workbook here: [Class-Analyzing-&-Managing-Data.xlsx](Class-Analyzing-%26-Managing-Data.xlsx)
 
 Need a reminder about references such as `A2:C14`? See [Cells and Formulas](../../resources/excel_review/basic_excel_review.md).
 

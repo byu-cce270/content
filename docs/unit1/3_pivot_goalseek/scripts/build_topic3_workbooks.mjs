@@ -91,7 +91,7 @@ async function save(wb,name) {
 
 // Pre-class workbook: remove the pre-solved positive root.
 {
-  const name="(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx";
+  const name="Pre-Pivot-GoalSeek-DataV.xlsx";
   const wb=await open(name);
   const fishing=wb.worksheets.getItem("Fishing");
   fishing.getRange("E25").values=[[0]];
@@ -103,7 +103,7 @@ async function save(wb,name) {
 
 // Class workbook: clarify the fourth validation field and add an observation box.
 {
-  const name="(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx";
+  const name="Class-Pivot-GoalSeek-DataV.xlsx";
   const wb=await open(name);
   const validation=wb.worksheets.getItem("Data Validation");
   validation.getRange("D10").values=[["Discount Rate"]];
@@ -116,7 +116,7 @@ async function save(wb,name) {
 
 // Homework workbook: corrected source data and labeled response areas.
 {
-  const name="(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx";
+  const name="HW-Pivot-GoalSeek-DataV.xlsx";
   const wb=await open(name);
   const problem=wb.worksheets.getItem("Three Reservoir Problem");
   problem.getRange("B4").values=[["Gravity, g (m/s²)"]];
@@ -162,21 +162,21 @@ async function save(wb,name) {
 
 console.log(JSON.stringify({
   outputs:[
-    "(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx",
-    "(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx",
-    "(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx",
+    "Pre-Pivot-GoalSeek-DataV.xlsx",
+    "Class-Pivot-GoalSeek-DataV.xlsx",
+    "HW-Pivot-GoalSeek-DataV.xlsx",
   ],
   scenarios: solved.map((s,i)=>({set:i+1,hj:Number(s.hj.toFixed(6)),net:s.net,directions:s.branches.map(b=>b.direction)})),
 },null,2));
 
 const renderJobs = [
-  ["(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx", "Fishing"],
-  ["(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx", "PivotTable"],
-  ["(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx", "Data Validation"],
-  ["(Starter-Workbook)-Class-Pivot-GoalSeek-DataV.xlsx", "Pivot Table"],
-  ["(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx", "Three Reservoir Problem"],
-  ["(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx", "Reservoir Flow"],
-  ["(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx", "PivotTable"],
+  ["Pre-Pivot-GoalSeek-DataV.xlsx", "Fishing"],
+  ["Pre-Pivot-GoalSeek-DataV.xlsx", "PivotTable"],
+  ["Class-Pivot-GoalSeek-DataV.xlsx", "Data Validation"],
+  ["Class-Pivot-GoalSeek-DataV.xlsx", "Pivot Table"],
+  ["HW-Pivot-GoalSeek-DataV.xlsx", "Three Reservoir Problem"],
+  ["HW-Pivot-GoalSeek-DataV.xlsx", "Reservoir Flow"],
+  ["HW-Pivot-GoalSeek-DataV.xlsx", "PivotTable"],
 ];
 const renderDir=path.join(outDir,"renders");
 await fs.mkdir(renderDir,{recursive:true});

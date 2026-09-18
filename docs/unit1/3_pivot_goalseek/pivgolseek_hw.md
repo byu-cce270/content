@@ -4,7 +4,7 @@
 
 ## Instructions
 
-First make a copy of the starter workbook: [(Starter-Workbook)-HW-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-HW-Pivot-GoalSeek-DataV.xlsx)
+First make a copy of the starter workbook: [HW-Pivot-GoalSeek-DataV.xlsx](HW-Pivot-GoalSeek-DataV.xlsx)
 
 If you need a reminder about worksheet, range, relative, absolute, or named references, review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md).
 

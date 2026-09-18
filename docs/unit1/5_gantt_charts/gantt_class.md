@@ -2,7 +2,7 @@
 
 In this exercise, you will build a formula-driven Gantt chart. You will continue using the same workbook for homework, so complete each step and preserve the workbook structure.
 
-Download [(Starter-Workbook)-Class-Gantt-Chart.xlsx](%28Starter-Workbook%29-Class-Gantt-Chart.xlsx) and save it in your CCE 270 folder. Do not enter your name or NetID. Use role labels when a person must be identified.
+Download [Class-Gantt-Chart.xlsx](Class-Gantt-Chart.xlsx) and save it in your CCE 270 folder. Do not enter your name or NetID. Use role labels when a person must be identified.
 
 The exercise has seven parts:
 

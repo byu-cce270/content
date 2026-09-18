@@ -140,7 +140,7 @@ Separate rules are easier to inspect and debug. Rule order matters when several 
 
 ## Pre-Class Quiz Challenge
 
-Download [(Starter-Workbook)-Pre-Gantt-Chart.xlsx](%28Starter-Workbook%29-Pre-Gantt-Chart.xlsx), save a copy in your CCE 270 folder, and complete the following work.
+Download [Pre-Gantt-Chart.xlsx](Pre-Gantt-Chart.xlsx), save a copy in your CCE 270 folder, and complete the following work.
 
 1. Replace the heading in `B1` with `FORMULA RESULT`.
 2. In `B2`, enter `=TODAY()`.

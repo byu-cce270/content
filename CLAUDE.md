@@ -71,7 +71,7 @@ Supporting materials include:
 ## Important Notes for Content Editing
 
 1. **Navigation structure**: All course content must be registered in the `nav` section of `mkdocs.yml` to appear in the documentation
-2. **File naming convention**: Starter workbooks follow the pattern `(Starter-Workbook)-[Type]-[Topic].xlsx` or `.ipynb`
+2. **File naming convention**: Starter workbooks follow the pattern `[Type]-[Topic].xlsx` or `.ipynb`
 3. **Markdown files**: May contain embedded MathJax (LaTeX) expressions for mathematical notation
 4. **Links**: Many internal links use relative paths like `../../resources/textbooks/textbooks.md`
 5. **Old content**: The `old_unit2_copy/` and `old_unit3_copy/` directories contain archived material from previous semesters—avoid modifying these unless explicitly requested

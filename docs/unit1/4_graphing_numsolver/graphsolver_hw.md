@@ -7,7 +7,7 @@ Review [Cells and Formulas](../../resources/excel_review/basic_excel_review.md) 
 ---
 ## Getting Started
 
-1. First make a copy of the starter workbook here: [(Starter-Workbook)-HW-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-HW-Graphing-and-Solver.xlsx)
+1. First make a copy of the starter workbook here: [HW-Graphing-and-Solver.xlsx](HW-Graphing-and-Solver.xlsx)
 2. Remember to save it in the CCE 270 folder that you created in the first assignment.
 
 ---

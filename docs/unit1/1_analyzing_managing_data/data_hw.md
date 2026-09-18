@@ -8,7 +8,7 @@
 ## Getting Started
 
 1. First, make a copy of the starter workbook here:
-   [(Starter-Workbook)-HW-Analyzing-&-Managing-Data.xlsx](%28Starter-Workbook%29-HW-Analyzing-%26-Managing-Data.xlsx)
+   [HW-Analyzing-&-Managing-Data.xlsx](HW-Analyzing-%26-Managing-Data.xlsx)
 2. Remember to save it in the CCE 270 folder that you created in the first assignment.
 
 Need a reminder about references such as `A1:F2883`? See [Cells and Formulas](../../resources/excel_review/basic_excel_review.md).

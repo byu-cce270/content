@@ -27,7 +27,7 @@ from PIL import ImageGrab
 
 REPO_ROOT = Path(__file__).resolve().parents[4]
 TOPIC_DIR = REPO_ROOT / "docs" / "unit1" / "5_gantt_charts"
-STARTER = TOPIC_DIR / "(Starter-Workbook)-Class-Gantt-Chart.xlsx"
+STARTER = TOPIC_DIR / "Class-Gantt-Chart.xlsx"
 IMAGE_DIR = TOPIC_DIR / "images"
 
 HEADER_FILL = PatternFill("solid", fgColor="8DB4E2")

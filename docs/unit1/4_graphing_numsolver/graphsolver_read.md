@@ -183,7 +183,7 @@ For more detail, see Microsoft's [Solver documentation](https://support.microsof
 
 ### Exercise 1 — Graphing Sales Data
 
-Download the [(Starter-Workbook)-Pre-Graphing-and-Solver.xlsx](%28Starter-Workbook%29-Pre-Graphing-and-Solver.xlsx){:target="_blank"} workbook. It contains the worksheets `Monthly_Sales`, `Graphing`, and `3D_Solver`.
+Download the [Pre-Graphing-and-Solver.xlsx](Pre-Graphing-and-Solver.xlsx){:target="_blank"} workbook. It contains the worksheets `Monthly_Sales`, `Graphing`, and `3D_Solver`.
 
 Use the data in `Monthly_Sales!A1:F31`. Create any supporting PivotTables on a new worksheet or in unused cells, but place all three finished charts as embedded charts on the `Graphing` worksheet.
 

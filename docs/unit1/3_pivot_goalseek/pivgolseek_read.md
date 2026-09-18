@@ -145,7 +145,7 @@ Goal Seek repeatedly tests input values until the formula result is sufficiently
 
 ## Pre-Class Quiz Challenge
 
-Here is a link for the pre-class starter workbook: [(Starter-Workbook)-Pre-Pivot-GoalSeek-DataV.xlsx](%28Starter-Workbook%29-Pre-Pivot-GoalSeek-DataV.xlsx)
+Here is a link for the pre-class starter workbook: [Pre-Pivot-GoalSeek-DataV.xlsx](Pre-Pivot-GoalSeek-DataV.xlsx)
 
 The `Reg_sales_data` worksheet contains the regional sales dataset used in the PivotTable example above. The workbook also includes the Data Validation and Goal Seek exercises below.
 

@@ -19,7 +19,7 @@ to find the right file when it is time to turn something in.
 
 Let's go over how to take a given file and download it to your CCE 270 folder.
 
-1. Here is the starter sheet for the assignment today: [(Starter-Workbook)-HW-A-Tour-of-Class-Resources.xlsx](%28Starter-Workbook%29-HW-A-Tour-of-Class-Resources.xlsx)
+1. Here is the starter sheet for the assignment today: [HW-A-Tour-of-Class-Resources.xlsx](HW-A-Tour-of-Class-Resources.xlsx)
 2. Right-click on the file link and select "Save
    Link As..." and save the file to your CCE 270 folder. If you save it to your Downloads folder or
    somewhere else, be sure to move it to your CCE 270 folder.
