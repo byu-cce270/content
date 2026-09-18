@@ -3,7 +3,7 @@
 The following exercises will have you create pandas series and DataFrames from lists and external files. For this exercise, open the in-class workbook, make a copy, and follow the instructions.
 
 You can find the In Class Exercise here:
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_intro_to_pandas/(Starter_Notebook)_Class_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_intro_to_pandas/Class_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 As part of this exercise, you will be asked to import some Excel file into a pandas DataFrame. You can download the 
 files from the following links:

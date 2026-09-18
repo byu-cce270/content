@@ -6,7 +6,7 @@ In this assignment, you will complete a three-part exercise. In Part 1, you will
 
 ## Getting Started
 
-First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/06_classes/(Starter_Workbook)_HW_Intro_Classes.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+First, make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/06_classes/HW_Intro_Classes.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ---
 

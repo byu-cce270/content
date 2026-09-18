@@ -2,7 +2,7 @@
 
 The following exercises will have you edit and analyze lists using for loops. 
 
-You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/01_for_loops_into_functions/(Starter_Workbook)_Class_For_Loops.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/01_for_loops_into_functions/Class_For_Loops.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 

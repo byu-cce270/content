@@ -2,7 +2,7 @@
 
 The following exercises will have you create more functions that take multiple inputs and have multiple outputs.
  
-You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/05_advance_functions_files/(Starter_Workbook)_Class_Adv_Function_File.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/05_advance_functions_files/Class_Adv_Function_File.ipynb" target="_"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 

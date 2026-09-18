@@ -2,7 +2,7 @@
 
 The following exercises will have you create and use Python classes. You will define classes with attributes and methods, validate input, and practice inheritance. The examples use civil engineering contexts including students, construction vehicles, and concrete mix design.
 
-You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/06_classes/(Starter_Workbook)_Class_Intro_Classes.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+You can find the In Class Exercise here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/06_classes/Class_Intro_Classes.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Instructions
 

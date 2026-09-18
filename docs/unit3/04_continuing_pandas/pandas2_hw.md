@@ -14,7 +14,7 @@ specifies the day of the week.  In the second dataframe, you will need to add a 
 
 ## Part 1: Setup
 
-1. Make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_continuing_pandas/(Starter_Notebook)_HW_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+1. Make a copy of the starter sheet here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/04_continuing_pandas/HW_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 2. In the code block titled "Import Required Packages" input the correct import statements for the libraries you will use:
     - matplotlib.pyplot as plt
     - pandas as pd

@@ -401,7 +401,7 @@ Which produces the following scatter plot:
 # Pre-Class Quiz Challenge
 Open the following notebook and complete the instructions in the markdown:
 
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_intro_to_pandas/(Starter_Notebook)_Pre_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_intro_to_pandas/Pre_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it with your Pre-Class Quiz.
 

@@ -8,7 +8,7 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 
 ## Instructions
 
-1. Have one member of your group make a copy of this starter document: [(Starter-Doc)-HW-Project-2-Pseudocode.docx](%28Starter-Doc%29-HW-Project-2-Pseudocode.docx)
+1. Have one member of your group make a copy of this starter document: [HW-Project-2-Pseudocode.docx](HW-Project-2-Pseudocode.docx)
 2. Rename it something like “(Your-Team-Name)-HW-Project-2-Pseudocode.docx”
 3. Have the team member who created the document save it to the CCE 270 folder they created in Unit 1, and share a copy with the other team members so everyone can contribute.
 
