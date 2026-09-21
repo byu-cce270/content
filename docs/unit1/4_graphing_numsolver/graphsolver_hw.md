@@ -59,8 +59,8 @@ Navigate to the `Testing Allocation` worksheet. The model uses these data:
 - Each value in `F5:F6` is the contribution per test multiplied by the number of tests.
 - Each value in `B10:B11` is calculated by multiplying the hours per test by the number of tests for each test type, then adding those two results together. Be sure not to mix up the technician hours and the equipment hours. 
 - `B14` is the sum of the two contributions in `F5:F6`.
-</details>
 
+</details>
 
 3. Open **Data > Solver** and configure the model to:
 
@@ -100,6 +100,7 @@ The model selects a shape by row number. `B6` holds a row number on the `Wide Fl
 - Use `B5` as the `lookup_value` and lock the table range with absolute references.
 - `MATCH` can find the column number from a column heading in `Wide Flange Properties!A1:F1`, such as `"Zx"`. This lets one formula pattern work for all five cells.
 - Use `FALSE` as the last `VLOOKUP` argument so that it returns an exact match.
+
 </details>
 
 
