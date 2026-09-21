@@ -49,11 +49,11 @@ When the start date is Monday through Friday, `F8-1` counts it as the first work
 
 The start date and work-day duration are inputs you type; the end date is a result the sheet calculates. Keeping inputs and results apart makes the schedule easier to update and audit.
 
-Then format the sheet so the structure is readable:
+With the formula in place, format the sheet so its structure is readable:
 
-- Format `D3`, task start dates, and task end dates as dates.
-- Format input cells, phase rows, and the row-6 headings consistently.
-- Use indentation to distinguish tasks from phases.
+12. Format `D3`, task start dates, and task end dates as dates.
+13. Format input cells, phase rows, and the row-6 headings consistently.
+14. Use indentation to distinguish tasks from phases.
 
 ### Check Your Work
 
