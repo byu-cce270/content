@@ -16,7 +16,7 @@ The exercise has seven parts:
 
 ## Step 1: Build the Task Model
 
-**Purpose:** Create the data that drives the schedule. Keeping task inputs in consistent columns allows one formula or formatting rule to work for every task.
+We will start by building the data that drives the schedule. Keeping the task inputs in consistent columns lets a single formula or formatting rule work for every task later on.
 
 The starter workbook contains headings in row 6. You will use the following structure:
 
@@ -65,7 +65,7 @@ Then format the sheet so the structure is readable:
 
 ## Step 2: Create the Timeline
 
-**Purpose:** Create actual Excel dates across the chart. Conditional formatting will compare each task's dates with these timeline dates.
+Next, we will lay a row of real Excel dates across the top of the chart. Conditional formatting will later compare each task's dates against these timeline dates to decide which cells to color.
 
 1. In `H5`, enter `=project_start`.
 2. In `I5`, enter `=H5+1`, then fill the formula right through `AI5`.
@@ -87,7 +87,7 @@ The cells in row 5 remain dates even though the `d` format displays only day num
 
 ## Step 3: Make the Timeline Dynamic
 
-**Purpose:** Let the user choose which four-week period is displayed without changing any task data.
+Now we will make the timeline movable, so the user can choose which four-week period the chart shows without touching any of the task data.
 
 1. Enter `Display Week:` in `C4`.
 2. Enter `1` in `D4` and format it as a whole number.
@@ -111,7 +111,7 @@ With return type 3, `WEEKDAY` returns 0 for Monday through 6 for Sunday. Subtrac
 
 ## Step 4: Create Task Bars and Mark Today
 
-**Purpose:** Convert task dates into bars without manually coloring cells. The bars will update when task dates change.
+With the timeline in place, we will turn the task dates into bars without coloring a single cell by hand. Because the bars come from conditional formatting, they redraw themselves whenever a task date changes.
 
 ### Task-Bar Rule
 
@@ -145,7 +145,7 @@ The current-day rule compares every timeline column with today's date. If today 
 
 ## Step 5: Display Progress
 
-**Purpose:** Store progress as numeric percentages and display it without replacing the underlying values.
+Next, we will add a progress column that stores progress as a real percentage and displays it visually, rather than replacing the underlying number with a picture of it.
 
 1. Format `C7:C15` as Percentage.
 2. Enter a progress value in each of the six task rows. Use values from 0% through 100%.
@@ -168,7 +168,7 @@ For this exercise, `AVERAGE` gives each task equal weight. A later project-contr
 
 ## Step 6: Add Phase and Project Summaries
 
-**Purpose:** Summarize detailed task dates at the phase and project levels. These formulas are examples of rolling detailed data into management-level information.
+Now we will summarize the task dates at the phase and project levels. These formulas are a small example of rolling detailed data up into the kind of summary a manager reads.
 
 1. In `D7`, enter `=MIN(D8:D10)`.
 2. In `E7`, enter `=MAX(E8:E10)`.
@@ -197,7 +197,7 @@ The blank Work Days test identifies phase-summary rows. The task-bar rule uses t
 
 ## Step 7: Identify Weekends and Manage Rule Order
 
-**Purpose:** Add calendar context while preserving the task and phase bars.
+Finally, we will shade the weekends to give the chart some calendar context. Because this rule overlaps the ones we have already written, we will also need to put the rules in the right order so the new shading does not hide the bars.
 
 1. Select `H5:AI15`.
 2. Create a formula-based conditional-formatting rule using `=WEEKDAY(H$5,2)>5`.
