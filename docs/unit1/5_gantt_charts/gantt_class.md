@@ -41,15 +41,15 @@ The starter workbook contains headings in row 6. You will use the following stru
 10. Enter `WORK DAYS` in `F6`, then enter a positive whole-number duration in each task row of column F.
 11. In `E8`, calculate the task end date. Leave the cell blank when the start date or duration is blank. Copy the formula only to the other task rows.
 
-The start date and work-day duration are inputs. The end date is a calculated result. Separating inputs from results makes the schedule easier to update and audit.
-
-Use `IF` and `OR` to test the two inputs, then use `WORKDAY`:
+To write that formula, use `IF` and `OR` to test the two inputs, then use `WORKDAY` to count the duration:
 
 ```excel
 =IF(OR(D8="",F8=""),"",WORKDAY(D8,F8-1))
 ```
 
 When the start date is Monday through Friday, `F8-1` counts it as the first workday. A one-workday task that starts Monday therefore ends Monday. Do not enter weekend task start dates in this exercise.
+
+The start date and work-day duration are inputs you type; the end date is a result the sheet calculates. Keeping inputs and results apart makes the schedule easier to update and audit.
 
 ### Format and Check
 
