@@ -43,9 +43,6 @@ The starter workbook contains headings in row 6. You will use the following stru
 
 The start date and work-day duration are inputs. The end date is a calculated result. Separating inputs from results makes the schedule easier to update and audit.
 
-<details markdown="1">
-<summary><b>Formula hint for the task end date</b></summary>
-
 Use `IF` and `OR` to test the two inputs, then use `WORKDAY`:
 
 ```excel
@@ -53,8 +50,6 @@ Use `IF` and `OR` to test the two inputs, then use `WORKDAY`:
 ```
 
 When the start date is Monday through Friday, `F8-1` counts it as the first workday. A one-workday task that starts Monday therefore ends Monday. Do not enter weekend task start dates in this exercise.
-
-</details>
 
 ### Format and Check
 
@@ -103,16 +98,13 @@ The cells in row 5 remain dates even though the `d` format displays only day num
 4. Replace the formula in `H5` with a formula that finds Monday of the project-start week and advances seven days for each additional display week.
 5. Enter different positive whole numbers in `D4` and observe the timeline.
 
-<details markdown="1">
-<summary><b>Formula hint for H5</b></summary>
+Use this formula in `H5`:
 
 ```excel
 =project_start-WEEKDAY(project_start,3)+(display_week-1)*7
 ```
 
 With return type 3, `WEEKDAY` returns 0 for Monday through 6 for Sunday. Subtracting that value finds Monday. The final term moves the display by whole weeks.
-
-</details>
 
 ### Check Your Work
 
@@ -131,9 +123,6 @@ With return type 3, `WEEKDAY` returns 0 for Monday through 6 for Sunday. Subtrac
 3. Write a formula that colors a cell when the timeline date is between the task start and end dates and the row contains a work-day duration.
 4. Choose a solid fill for task bars.
 
-<details markdown="1">
-<summary><b>Task-bar formula and reference explanation</b></summary>
-
 Use this formula for the upper-left cell of the selected range:
 
 ```excel
@@ -141,8 +130,6 @@ Use this formula for the upper-left cell of the selected range:
 ```
 
 `H$5` changes columns but always reads the timeline date in row 5. `$D7`, `$E7`, and `$F7` remain in their assigned columns but change rows. These mixed references let Excel evaluate every task against every displayed date.
-
-</details>
 
 ### Current-Day Rule
 
@@ -198,16 +185,13 @@ For this exercise, `AVERAGE` gives each task equal weight. A later project-contr
 6. In `F3`, enter `=MAX(E7:E15)` and format it as a date.
 7. Create a second conditional-formatting rule for phase rows over `H7:AI15`. Use a darker fill than the task bars.
 
-<details markdown="1">
-<summary><b>Phase-bar formula</b></summary>
+Use this formula for the upper-left cell of the selected range:
 
 ```excel
 =AND($D7<>"",$E7<>"",$F7="",H$5>=$D7,H$5<=$E7)
 ```
 
 The blank Work Days test identifies phase-summary rows. The task-bar rule uses the opposite test, so the two rules serve different row types.
-
-</details>
 
 ### Check Your Work
 
