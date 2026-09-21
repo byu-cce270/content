@@ -56,13 +56,6 @@ When the start date is Monday through Friday, `F8-1` counts it as the first work
 
 </details>
 
-<details markdown="1">
-<summary><b>Optional: add a fourth task to a phase</b></summary>
-
-Insert a worksheet row directly above the next phase row before you create formulas or conditional formatting. Copy the format of an existing task row into the inserted row. You must update the phase formulas and formatting ranges to include the new row.
-
-</details>
-
 ### Format and Check
 
 - Format `D3`, task start dates, and task end dates as dates.
