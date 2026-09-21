@@ -61,6 +61,7 @@ Navigate to the `Testing Allocation` worksheet. The model uses these data:
 - `B14` is the sum of the two contributions in `F5:F6`.
 
 </details>
+<br>
 
 3. Open **Data > Solver** and configure the model to:
 
@@ -102,7 +103,7 @@ The model selects a shape by row number. `B6` holds a row number on the `Wide Fl
 - Use `FALSE` as the last `VLOOKUP` argument so that it returns an exact match.
 
 </details>
-
+<br>
 
 4. In `B19:B21`, enter formulas for the structural demands. Unit conversions are already included in the equations.
 
