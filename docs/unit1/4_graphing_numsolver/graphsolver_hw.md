@@ -57,10 +57,10 @@ Navigate to the `Testing Allocation` worksheet. The model uses these data:
 <summary><b>Formula-planning hint</b></summary>
 
 - Each value in `F5:F6` is the contribution per test multiplied by the number of tests.
-- Each resource total is a `SUMPRODUCT` of the two per-test requirements and the two test quantities.
+- Each value in `B10:B11` is calculated by multiplying the hours per test by the number of tests for each test type, then adding those two results together. Be sure not to mix up the technician hours and the equipment hours. 
 - `B14` is the sum of the two contributions in `F5:F6`.
-
 </details>
+
 
 3. Open **Data > Solver** and configure the model to:
 
@@ -100,8 +100,8 @@ The model selects a shape by row number. `B6` holds a row number on the `Wide Fl
 - Use `B5` as the `lookup_value` and lock the table range with absolute references.
 - `MATCH` can find the column number from a column heading in `Wide Flange Properties!A1:F1`, such as `"Zx"`. This lets one formula pattern work for all five cells.
 - Use `FALSE` as the last `VLOOKUP` argument so that it returns an exact match.
-
 </details>
+
 
 4. In `B19:B21`, enter formulas for the structural demands. Unit conversions are already included in the equations.
 
@@ -134,35 +134,42 @@ The model selects a shape by row number. `B6` holds a row number on the `Wide Fl
 
 This data comes from [USGS Water Data for the Nation](https://waterdata.usgs.gov/nwis){:target="_blank"} and contains streamflow data for the Provo River in Utah.
 
-1. Create an **XY Scatter with Straight Lines** chart from `Streamflow Data!A3:F2883` and move it to a chart sheet named `Chart 1`. Do not display markers because the chart contains 2,880 observations per station.
+1. Create an **XY Scatter with Straight Lines** chart from `Streamflow Data!A3:F2883` and move it to a chart sheet named `Chart 1`. Do not display markers because the chart contains 2,880 observations per station. Include the following on the chart:
 
-   - Horizontal axis: date/time
-   - Vertical axis: flow rate (ft³/s)
-   - Series: the five streamflow stations
-   - Include a descriptive title, axis titles with units, and a legend.
+   - Horizontal (X) values: Date/Time
+   - Vertical (Y) values: Flow rate (ft³/s) for each station
+   - Chart title: "Provo River Streamflow"
+   - X axis title: "Date and time"
+   - Y axis title: "Flow rate (ft³/s)"
+   - Legend
 
-An XY scatter chart treats each date/time as a numerical x-value, so it preserves the actual spacing between observations. It may still draw a line across a period with no observations. If a missing period must be visible, include blank values and set the chart to display empty cells as gaps.
+When done correctly, the chart should look similar to the image below. An XY scatter chart treats each date/time as a numerical x-value, so it preserves the actual spacing between observations. It may still draw a line across a period with no observations. If a missing period must be visible, include blank values and set the chart to display empty cells as gaps.
 
 ![XY scatter chart of streamflow at five Provo River stations](graphing_images/streamflow_chart.png)
 
-2. Create a **clustered column chart** from `Summary Statistics!A10:F16` and move it to a chart sheet named `Chart 2`.
+2. Create a **clustered column chart** from `Summary Statistics!A11:F16` and move it to a chart sheet named `Chart 2`. Include the following on the chart:
 
-   - Horizontal axis: summary statistic
-   - Vertical axis: flow rate (m³/s)
-   - Series: the five streamflow stations
-   - Include a descriptive title, axis titles with units, and a legend.
+   - Horizontal (X) values: Summary statistics (Maximum Flow, Minimum Flow, etc.)
+   - Vertical (Y) values: Flow rate (m³/s) for each station
+   - Chart title: "Provo River Summary Statistics"
+   - X axis title: "Summary statistic"
+   - Y axis title: "Flow rate (m³/s)"
+   - Legend
 
+When done correctly, the chart should look similar to the image below.
 ![streamflow_chart2.png](graphing_images/streamflow_chart2.png)
 
 ## Part 5 - Graphing Load Calculation Data
 
-1. Create an **XY scatter chart with markers** from `Load Calculations!D20:E31` and move it to a chart sheet named `Chart 3`.
+1. Create an **XY scatter chart with markers** from `Load Calculations!D20:E31` and move it to a chart sheet named `Chart 3`. Include the following on the chart:
 
-   - Horizontal axis: applied load, $P$ (lb)
-   - Vertical axis: deflection, $d$ (in)
-   - Add a linear trendline.
-   - Include a descriptive title and axis titles with units. Include a legend only if it helps identify the data.
+   - Horizontal (X) values: Applied Load (P)
+   - Vertical (Y) values: Deflection (d)
+   - Chart title: "Deflection vs. Applied Load"
+   - X axis title: "Applied load, P (lb)"
+   - Y axis title: "Deflection, d (in)"
 
+When done correctly, the chart should look similar to the image below.
 ![deflectionvsapplied_excel.png](graphing_images/deflectionvsapplied_excel.png)
 
 ---
