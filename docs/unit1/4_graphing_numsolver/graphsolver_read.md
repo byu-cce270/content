@@ -175,6 +175,8 @@ Open **Data > Solver** and configure:
 
 Solver returns 8 site inspections and 8 plan reviews, for a total contribution of \$7,200. Verify the solution: each resource uses exactly 48 hours. This is a meaningful optimization because increasing either service uses limited resources needed by the other service; the best answer is a mix rather than simply the largest permitted value of one input.
 
+![Solved service allocation model showing 8 site inspections, 8 plan reviews, and a total contribution of \$7,200](solver_images/solver_allocation_solution.png)
+
 For more detail, see Microsoft's [Solver documentation](https://support.microsoft.com/en-us/excel/define-and-solve-a-problem-by-using-solver).
 
 ---
