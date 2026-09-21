@@ -27,8 +27,6 @@ The starter workbook contains headings in row 6. You will use the following stru
 | Phase 2 | `A12` | — | `C12` | `D12` | `E12` | blank |
 | Phase 2 tasks | `A13:A15` | `B13:B15` | `C13:C15` | `D13:D15` | `E13:E15` | `F13:F15` |
 
-### Student Task
-
 1. Replace `PROJECT TITLE` in `A1` with a short project title.
 2. Replace `Company Name` in `A2` with a company or organization name.
 3. Replace `Project Lead` in `A3` with the role label `Project Manager`.
@@ -51,11 +49,14 @@ When the start date is Monday through Friday, `F8-1` counts it as the first work
 
 The start date and work-day duration are inputs you type; the end date is a result the sheet calculates. Keeping inputs and results apart makes the schedule easier to update and audit.
 
-### Format and Check
+Then format the sheet so the structure is readable:
 
 - Format `D3`, task start dates, and task end dates as dates.
 - Format input cells, phase rows, and the row-6 headings consistently.
 - Use indentation to distinguish tasks from phases.
+
+### Check Your Work
+
 - Change one duration and confirm that its end date changes.
 - Confirm that a one-workday task has the same start and end date.
 - Confirm that a task spanning a weekend excludes Saturday and Sunday from its work-day count.
@@ -65,8 +66,6 @@ The start date and work-day duration are inputs you type; the end date is a resu
 ## Step 2: Create the Timeline
 
 **Purpose:** Create actual Excel dates across the chart. Conditional formatting will compare each task's dates with these timeline dates.
-
-### Student Task
 
 1. In `H5`, enter `=project_start`.
 2. In `I5`, enter `=H5+1`, then fill the formula right through `AI5`.
@@ -89,8 +88,6 @@ The cells in row 5 remain dates even though the `d` format displays only day num
 ## Step 3: Make the Timeline Dynamic
 
 **Purpose:** Let the user choose which four-week period is displayed without changing any task data.
-
-### Student Task
 
 1. Enter `Display Week:` in `C4`.
 2. Enter `1` in `D4` and format it as a whole number.
@@ -150,8 +147,6 @@ The current-day rule compares every timeline column with today's date. If today 
 
 **Purpose:** Store progress as numeric percentages and display it without replacing the underlying values.
 
-### Student Task
-
 1. Format `C7:C15` as Percentage.
 2. Enter a progress value in each of the six task rows. Use values from 0% through 100%.
 3. Apply conditional-formatting Data Bars to `C7:C15`.
@@ -174,8 +169,6 @@ For this exercise, `AVERAGE` gives each task equal weight. A later project-contr
 ## Step 6: Add Phase and Project Summaries
 
 **Purpose:** Summarize detailed task dates at the phase and project levels. These formulas are examples of rolling detailed data into management-level information.
-
-### Student Task
 
 1. In `D7`, enter `=MIN(D8:D10)`.
 2. In `E7`, enter `=MAX(E8:E10)`.
@@ -206,8 +199,6 @@ The blank Work Days test identifies phase-summary rows. The task-bar rule uses t
 
 **Purpose:** Add calendar context while preserving the task and phase bars.
 
-### Student Task
-
 1. Select `H5:AI15`.
 2. Create a formula-based conditional-formatting rule using `=WEEKDAY(H$5,2)>5`.
 3. Apply a light gray fill or light pattern.
@@ -215,7 +206,7 @@ The blank Work Days test identifies phase-summary rows. The task-bar rule uses t
 
 The formula returns TRUE for Saturday or Sunday because `WEEKDAY(date,2)` numbers Monday through Sunday as 1 through 7. This direct test is easier to interpret than calculating the number of workdays between the same date.
 
-### Final Check
+### Check Your Work
 
 - Change `display_week` and verify that weekend formatting remains aligned.
 - Change a task input and confirm that its end date, task bar, phase summary, and project end update.
