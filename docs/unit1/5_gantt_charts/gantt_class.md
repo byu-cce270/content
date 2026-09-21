@@ -47,9 +47,7 @@ To write that formula, use `IF` and `OR` to test the two inputs, then use `WORKD
 
 When the start date is Monday through Friday, `F8-1` counts it as the first workday. A one-workday task that starts Monday therefore ends Monday. Do not enter weekend task start dates in this exercise.
 
-The start date and work-day duration are inputs you type; the end date is a result the sheet calculates. Keeping inputs and results apart makes the schedule easier to update and audit.
-
-With the formula in place, format the sheet so its structure is readable:
+The start date and work-day duration are inputs you type; the end date is a result the sheet calculates. Keeping inputs and results apart makes the schedule easier to update and audit. With the formula in place, format the sheet so its structure is readable:
 
 12. Format `D3`, task start dates, and task end dates as dates.
 13. Format input cells, phase rows, and the row-6 headings consistently.
