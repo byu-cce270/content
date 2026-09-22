@@ -8,7 +8,7 @@ Please make sure you're set up on the class Team, as TAs will occasionally share
 
 Most TAs are available to meet in the evenings. You can message them via Teams to schedule an appointment.
 
-If you have a question about a grade, please contact the TA responsible for grading that assignment. You can find this information at the bottom of the page.
+If you have a question about a grade, please contact the TA responsible for grading that assignment. You can find who that is under [Grading Responsibilities](#grading-responsibilities) at the bottom of this page.
 
 If you submit an assignment late, be sure to let the grading TA know so they’re aware they need to grade it.
 
@@ -48,22 +48,71 @@ If you submit an assignment late, be sure to let the grading TA know so they’r
 
 ## Grading Responsibilities
 
-All homework assignments will be automatically graded but the following TAs will be responsible reviewing the automatic grades. If you have a question about your grade, or turn in an assignment late, please contact the TA responsible for grading that assignment.
+Homework is graded automatically, then a TA reviews those grades. Each assignment has one TA responsible for it. **Message that TA on Teams** if you:
 
-- **HW 1.1**: The TA you signed up and met with.
+- have a question about your grade, or
+- turned the assignment in late, so they know to grade it.
 
-- **Brandan**: Projects, and Exams
+### Unit 1 - Excel
 
-- **Griffin**: HW 1.5, HW 2.4, HW 3.3
+| Assignment | Grading TA |
+|---|---|
+| Pre-class quizzes | Preston Cobabe |
+| In-class workbooks | Preston Cobabe |
+| Unit 1 Project | Brandan Williamson |
+| Exam | Brandan Williamson |
 
-- **Reagan**: HW 1.6, HW 2.5, HW 3.4
+#### Homework
 
-- **Preston**: HW 2.8, HW 3.1, HW 3.8, All Pre Class Quiz and In Class Workbooks
+| Topic | Grading TA |
+|---|---|
+| [A Tour of Class Resources](../../unit1/0_getting_started/day1_hw.md) | The TA you signed up and met with |
+| [Analyzing & Managing Data](../../unit1/1_analyzing_managing_data/data_hw.md) | Luke Gonzalez |
+| [Lookups, Match, and IF Functions](../../unit1/2_lookup_match_if/lookmatif_hw.md) | Tyler Carruth |
+| [PivotTables, Goal Seek, and Data Validation](../../unit1/3_pivot_goalseek/pivgolseek_hw.md) | Carsen Lee |
+| [Graphing and Numerical Solver](../../unit1/4_graphing_numsolver/graphsolver_hw.md) | Griffin Izu |
+| [Gantt Chart and Project Scheduling](../../unit1/5_gantt_charts/gantt_hw.md) | Reagan Bodnar |
 
-- **Luke**: HW 1.2, HW 2.6, HW 3.5
+### Unit 2 - Intro to Python
 
-- **Tyler**: HW 1.3, HW 2.2, HW 3.7
+| Assignment | Grading TA |
+|---|---|
+| Pre-class quizzes | Preston Cobabe |
+| In-class workbooks | Preston Cobabe |
+| Unit 2 Project | Brandan Williamson |
+| Exam | Brandan Williamson |
 
-- **Carsen**: HW 1.4, HW 2.3, HW 3.2
+#### Homework
 
-- **McKay**: HW 2.1, HW 2.7, HW 3.6
+| Topic | Grading TA |
+|---|---|
+| [Introduction to Python, Variables, and Lists](../../unit2/00_intro_python_variables_lists/into_var_list_hw.md) | McKay Cumming |
+| [Working with Lists (For Loops)](../../unit2/01_for_loops_into_functions/for_hw.md) | Tyler Carruth |
+| [IF Statements](../../unit2/02_if_statements/if_hw.md) | Carsen Lee |
+| [Dictionaries and While Loops](../../unit2/03_dictionaries_while_loops/dict_while_hw.md) | Griffin Izu |
+| [Introduction to Functions](../../unit2/04_intro_functions/intro_function_hw.md) | Reagan Bodnar |
+| [Functions and Files](../../unit2/05_advance_functions_files/advance_functions_files_hw.md) | Luke Gonzalez |
+| [Introduction to Classes](../../unit2/06_classes/intro_classes_hw.md) | McKay Cumming |
+| [Unit 2 Project Proposal - Pseudocode](../../unit2/07_unit2_project/u2_pro_pseudo_hw.md) | Preston Cobabe |
+
+### Unit 3 - Advanced Python
+
+| Assignment | Grading TA |
+|---|---|
+| Pre-class quizzes | Preston Cobabe |
+| In-class workbooks | Preston Cobabe |
+| Final Project | Brandan Williamson |
+| Exam | Brandan Williamson |
+
+#### Homework
+
+| Topic | Grading TA |
+|---|---|
+| [Using Python Locally](../../unit3/00_local_python/local_py_hw.md) | Preston Cobabe |
+| [Numpy](../../unit3/01_numpy/numpy_hw.md) | Carsen Lee |
+| [Matplotlib](../../unit3/02_matplotlib/matplot_hw.md) | Griffin Izu |
+| [Pandas DataFrame](../../unit3/03_intro_to_pandas/pandas1_hw.md) | Reagan Bodnar |
+| [Manipulating and Grouping Pandas DataFrames](../../unit3/04_continuing_pandas/pandas2_hw.md) | Luke Gonzalez |
+| [Working with Excel Files in Python](../../unit3/05_python_and_excel/excel_hw.md) | McKay Cumming |
+| [ipywidgets](../../unit3/06_ipywidgets/ipy_hw.md) | Tyler Carruth |
+| [Final Project Proposal](../../unit3/07_final_project/final_pro_proposal.md) | Preston Cobabe |
