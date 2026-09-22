@@ -19,9 +19,9 @@ This is a simplified mathematical trajectory exercise. It does not model interce
 1. Navigate to the `Missile Launch` worksheet.
 2. In `K21`, enter the trajectory formula using the value of $x$ stored in `K22`:
 
-   ```excel
-   =-(K22^2)+155*K22
-   ```
+```excel
+=-(K22^2)+155*K22
+```
 
 3. Enter a small positive starting value, such as `1`, in `K22`.
 4. Open **Data > What-If Analysis > Goal Seek** and use:

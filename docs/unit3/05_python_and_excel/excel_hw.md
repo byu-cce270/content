@@ -42,10 +42,9 @@ Next, we will create a new dataframe with some summary statistics. Do the follow
 4. Plot the **Avg** column of the stats_df dataframe using a bar or a line chart using `matplotlib`. 
  
 !!! Hint
-    The 'Annual' row at the bottom will mess up your plot. To display all of the rows except the last one, you can use the following code:   
-    ```python   
-    stats_df.iloc[:-1].plot(kind='bar')
-    ```   
+    The 'Annual' row at the bottom will mess up your plot. To display all of the rows except the last one, you can use the following code:
+
+        stats_df.iloc[:-1].plot(kind='bar')
     This will select all rows except the last one for plotting.
 
 
