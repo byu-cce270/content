@@ -26,9 +26,9 @@ This is a simplified mathematical trajectory exercise. It does not model interce
 3. Enter a small positive starting value, such as `1`, in `K22`.
 4. Open **Data > What-If Analysis > Goal Seek** and use:
 
-   - **Set cell:** `K21`
-   - **To value:** `50`
-   - **By changing cell:** `K22`
+    - **Set cell:** `K21`
+    - **To value:** `50`
+    - **By changing cell:** `K22`
 
 5. Run Goal Seek, then copy and paste the resulting value of `K22` into `K28` (**1st Location**).
 6. Enter a starting value near the far end of the plotted trajectory, such as `150`, in `K22` and run Goal Seek again with the same settings.
@@ -53,24 +53,18 @@ Navigate to the `Testing Allocation` worksheet. The model uses these data:
 1. The yellow cells `E5:E6` hold the numbers of concrete cylinder and soil density tests. These are the **changing cells**.
 2. Enter formulas in the blue cells: contribution by test in `F5:F6`, resource totals in `B10:B11`, and total weekly contribution in `B14`. Each total should use both test quantities and the corresponding values in the table.
 
-<details markdown="1">
-<summary><b>Formula-planning hint</b></summary>
-
-- Each value in `F5:F6` is the contribution per test multiplied by the number of tests.
-- Each value in `B10:B11` is calculated by multiplying the hours per test by the number of tests for each test type, then adding those two results together. Be sure not to mix up the technician hours and the equipment hours. 
-- `B14` is the sum of the two contributions in `F5:F6`.
-
-</details>
-<br>
+    - Each value in `F5:F6` is the contribution per test multiplied by the number of tests.
+    - Each value in `B10:B11` is calculated by multiplying the hours per test by the number of tests for each test type, then adding those two results together. Be sure not to mix up the technician hours and the equipment hours.
+    - `B14` is the sum of the two contributions in `F5:F6`.
 
 3. Open **Data > Solver** and configure the model to:
 
-   - **Maximize** the total weekly contribution.
-   - Change both test-quantity cells.
-   - Keep total technician hours at or below 120.
-   - Keep total equipment hours at or below 120.
-   - Require both test quantities to be nonnegative integers.
-   - Use the **Simplex LP** solving method.
+    - **Maximize** the total weekly contribution.
+    - Change both test-quantity cells.
+    - Keep total technician hours at or below 120.
+    - Keep total equipment hours at or below 120.
+    - Require both test quantities to be nonnegative integers.
+    - Use the **Simplex LP** solving method.
 
 4. Solve the model and keep the Solver solution.
 5. Verify the result: recalculate both resource totals and confirm that neither exceeds 120 hours. Also confirm that both test quantities are nonnegative whole numbers.
@@ -95,15 +89,9 @@ The model selects a shape by row number. `B6` holds a row number on the `Wide Fl
 
 3. In `B7`, `B9`, `B10`, `B11`, and `B15`, use `VLOOKUP` and/or `MATCH` to return the weight ($W$), plastic section modulus ($Z_x$), depth ($d$), web thickness ($t_w$), and moment of inertia ($I_x$) of the shape in `B5`. The properties of every W-shape are in `Wide Flange Properties!A1:F290`. Each formula must update when `B5` changes.
 
-<details markdown="1">
-<summary><b>Formula-planning hint</b></summary>
-
-- Use `B5` as the `lookup_value` and lock the table range with absolute references.
-- `MATCH` can find the column number from a column heading in `Wide Flange Properties!A1:F1`, such as `"Zx"`. This lets one formula pattern work for all five cells.
-- Use `FALSE` as the last `VLOOKUP` argument so that it returns an exact match.
-
-</details>
-<br>
+    - Use `B5` as the `lookup_value` and lock the table range with absolute references.
+    - `MATCH` can find the column number from a column heading in `Wide Flange Properties!A1:F1`, such as `"Zx"`. This lets one formula pattern work for all five cells.
+    - Use `FALSE` as the last `VLOOKUP` argument so that it returns an exact match.
 
 4. In `B19:B21`, enter formulas for the structural demands. Unit conversions are already included in the equations.
 
@@ -138,12 +126,12 @@ This data comes from [USGS Water Data for the Nation](https://waterdata.usgs.gov
 
 1. Create an **XY Scatter with Straight Lines** chart from `Streamflow Data!A3:F2883` and move it to a chart sheet named `Chart 1`. Do not display markers because the chart contains 2,880 observations per station. Include the following on the chart:
 
-   - Horizontal (X) values: Date/Time
-   - Vertical (Y) values: Flow rate (ft³/s) for each station
-   - Chart title: "Provo River Streamflow"
-   - X axis title: "Date and time"
-   - Y axis title: "Flow rate (ft³/s)"
-   - Legend
+    - Horizontal (X) values: Date/Time
+    - Vertical (Y) values: Flow rate (ft³/s) for each station
+    - Chart title: "Provo River Streamflow"
+    - X axis title: "Date and time"
+    - Y axis title: "Flow rate (ft³/s)"
+    - Legend
 
 When done correctly, the chart should look similar to the image below. An XY scatter chart treats each date/time as a numerical x-value, so it preserves the actual spacing between observations. It may still draw a line across a period with no observations. If a missing period must be visible, include blank values and set the chart to display empty cells as gaps.
 
@@ -151,12 +139,12 @@ When done correctly, the chart should look similar to the image below. An XY sca
 
 2. Create a **clustered column chart** from `Summary Statistics!A11:F16` and move it to a chart sheet named `Chart 2`. Include the following on the chart:
 
-   - Horizontal (X) values: Summary statistics (Maximum Flow, Minimum Flow, etc.)
-   - Vertical (Y) values: Flow rate (m³/s) for each station
-   - Chart title: "Provo River Summary Statistics"
-   - X axis title: "Summary statistic"
-   - Y axis title: "Flow rate (m³/s)"
-   - Legend
+    - Horizontal (X) values: Summary statistics (Maximum Flow, Minimum Flow, etc.)
+    - Vertical (Y) values: Flow rate (m³/s) for each station
+    - Chart title: "Provo River Summary Statistics"
+    - X axis title: "Summary statistic"
+    - Y axis title: "Flow rate (m³/s)"
+    - Legend
 
 When done correctly, the chart should look similar to the image below.
 ![streamflow_chart2.png](graphing_images/streamflow_chart2.png)
@@ -165,11 +153,11 @@ When done correctly, the chart should look similar to the image below.
 
 1. Create an **XY scatter chart with markers** from `Load Calculations!D20:E31` and move it to a chart sheet named `Chart 3`. Include the following on the chart:
 
-   - Horizontal (X) values: Applied Load (P)
-   - Vertical (Y) values: Deflection (d)
-   - Chart title: "Deflection vs. Applied Load"
-   - X axis title: "Applied load, P (lb)"
-   - Y axis title: "Deflection, d (in)"
+    - Horizontal (X) values: Applied Load (P)
+    - Vertical (Y) values: Deflection (d)
+    - Chart title: "Deflection vs. Applied Load"
+    - X axis title: "Applied load, P (lb)"
+    - Y axis title: "Deflection, d (in)"
 
 When done correctly, the chart should look similar to the image below.
 ![deflectionvsapplied_excel.png](graphing_images/deflectionvsapplied_excel.png)
