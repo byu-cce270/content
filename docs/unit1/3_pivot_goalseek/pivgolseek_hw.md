@@ -104,6 +104,20 @@ Identify how `C8:C11` correspond to $D_1$, $L_1$, $f_1$, and $H_1$ before using 
 
 7. Run **Data > What-If Analysis > Goal Seek** using the starting value already in `C5`. After Goal Seek finishes, record the solved $H_j$ and final $Q_j$ in the labeled cells. Confirm that the final net flow is approximately zero.
 
+    !!! note "Goal Seek stops when it is close enough, not when it is exact"
+        Goal Seek stops as soon as the set cell is within Excel's **Maximum Change**
+        setting of the value you asked for, which is `0.001` by default
+        (**File > Options > Formulas**). Here $Q_j$ changes by only about 0.001 m³/s
+        per metre of head, so that default lets Goal Seek halt almost a metre from
+        the true junction head and still report that it found a solution. From the
+        starting value of 50 m it stops at roughly $H_j = 62.26$ m with
+        $Q_j \approx 0.00025$ m³/s, which is what the rubric expects.
+
+        Tighten **Maximum Change** to `0.0000001` and run Goal Seek again if you
+        want to see the answer converge on 62.489 m. Knowing that a numerical
+        solver returns *close enough* rather than *exact*, and that you control how
+        close, is the point of this step.
+
 8. Apply Data Validation to `C8:E9` so the diameter and length inputs accept only numbers greater than 0. This checks that those inputs are positive; it does not test every physical constraint in the model.
 
 ---
@@ -162,8 +176,8 @@ For example, you could place Scenario in Rows, Pipe in Columns, and average Flow
 | Item | Points Possible |
 |:-----|:---------------:|
 | Part 1: Named cells, formulas, and checkpoint values are correct | 7 |
-| Part 1: Goal Seek settings are recorded and solved $H_j$ is within ±0.01 m | 5 |
-| Part 1: Final continuity check is recorded and $|Q_j| \leq 0.0001$ m³/s | 2 |
+| Part 1: Goal Seek settings are recorded and solved $H_j$ is within ±0.25 m | 5 |
+| Part 1: Final continuity check is recorded and $|Q_j| \leq 0.001$ m³/s | 2 |
 | Part 1: Data Validation is applied to all diameter and length inputs | 2 |
 | Part 2: Prescribed PivotTable uses the correct source, location, fields, and summaries | 6 |
 | Part 2: Observation is complete and supported by the PivotTable | 2 |
