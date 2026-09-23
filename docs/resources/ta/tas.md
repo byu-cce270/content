@@ -53,6 +53,8 @@ Homework is graded automatically, then a TA reviews those grades. Each assignmen
 - have a question about your grade, or
 - turned the assignment in late, so they know to grade it.
 
+---
+
 ### Unit 1 - Excel
 
 | Assignment | Grading TA |
@@ -72,6 +74,8 @@ Homework is graded automatically, then a TA reviews those grades. Each assignmen
 | [PivotTables, Goal Seek, and Data Validation](../../unit1/3_pivot_goalseek/pivgolseek_hw.md) | Carsen Lee |
 | [Graphing and Numerical Solver](../../unit1/4_graphing_numsolver/graphsolver_hw.md) | Griffin Izu |
 | [Gantt Chart and Project Scheduling](../../unit1/5_gantt_charts/gantt_hw.md) | Reagan Bodnar |
+
+---
 
 ### Unit 2 - Intro to Python
 
@@ -94,6 +98,8 @@ Homework is graded automatically, then a TA reviews those grades. Each assignmen
 | [Functions and Files](../../unit2/05_advance_functions_files/advance_functions_files_hw.md) | Luke Gonzalez |
 | [Introduction to Classes](../../unit2/06_classes/intro_classes_hw.md) | McKay Cumming |
 | [Unit 2 Project Proposal - Pseudocode](../../unit2/07_unit2_project/u2_pro_pseudo_hw.md) | Preston Cobabe |
+
+---
 
 ### Unit 3 - Advanced Python
 
