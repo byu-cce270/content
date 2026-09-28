@@ -288,276 +288,222 @@ A. =STDEV.P()<br>
 B. =STDEV()<br>
 C. =VAR()<br>
 D. =MEDIAN()
-6. When is =STDEV.P() the appropriate choice instead of =STDEV()?<br>
-A. When the data are a sample drawn from a larger group.<br>
-B. When the supplied data represent the entire population.<br>
-C. When the data contain text values.<br>
-D. When the data are sorted.
-7. Which function returns the most frequently occurring number in a range?<br>
-A. =MEDIAN()<br>
-B. =AVERAGE()<br>
-C. =MODE()<br>
-D. =COUNT()
-8. When you convert a range into an Excel Table, why should you check "My table has headers"?<br>
+6. When you convert a range into an Excel Table, why should you check "My table has headers"?<br>
 A. It sorts the first row alphabetically.<br>
 B. It keeps your existing headings instead of replacing them with Column1, Column2, and so on.<br>
 C. It freezes the top row automatically.<br>
 D. It prevents the Table from expanding when rows are added.
-9. A Table's Total Row is set to Average and the Table is then filtered. What does the Total Row show?<br>
+7. A Table's Total Row is set to Average and the Table is then filtered. What does the Total Row show?<br>
 A. The average of every row, filtered or not.<br>
 B. An error, because filtering breaks the Total Row.<br>
 C. The average of only the visible rows.<br>
 D. Zero until the filter is cleared.
-10. What is `EquipmentCheckout[Days Checked Out]` an example of?<br>
+8. What is `EquipmentCheckout[Days Checked Out]` an example of?<br>
 A. An absolute cell reference.<br>
-B. A structured reference to a named Table column.<br>
+B. A structured reference to the `Days Checked Out` column of the `EquipmentCheckout` Table.<br>
 C. A conditional-formatting rule.<br>
-D. A named cell created in the Name Box.
-11. You want rows 1-2 and columns A-B to stay visible while you scroll. Which cell do you select before choosing View > Freeze Panes > Freeze Panes?<br>
+D. A formula.
+9. You want rows 1-2 and columns A-B to stay visible while you scroll. Which cell do you select before choosing View > Freeze Panes > Freeze Panes?<br>
 A. A1<br>
 B. B2<br>
 C. C3<br>
 D. C1
-12. What is the effect of naming a cell `con_fac` in the Name Box and then writing `=C4*con_fac`?<br>
+10. What is the effect of naming a cell `con_fac` in the Name Box and then writing `=C4*con_fac`?<br>
 A. The formula breaks when copied, because named cells are relative.<br>
 B. The name acts as a fixed reference to that cell, and the formula is easier to read.<br>
 C. Excel converts C4 into text.<br>
 D. The named cell is locked against editing.
-13. In the VLOOKUP function, what does the col_index_num argument represent?<br>
+11. In the VLOOKUP function, what does the col_index_num argument represent?<br>
 A. The number of columns in the lookup table.<br>
 B. The column number in the worksheet where the return value is located.<br>
 C. The column number within the specified table_array from which to return a value.<br>
 D. The number of rows to look down before finding a match.
-14. What is the required condition for using VLOOKUP with the range_lookup argument set to TRUE (or omitted)?<br>
+12. What is the required condition for using VLOOKUP with the range_lookup argument set to TRUE (or omitted)?<br>
 A. The entire lookup table must be sorted in ascending order.<br>
 B. The first column of the lookup table must be sorted in ascending order.<br>
 C. The first column of the lookup table must contain only numbers.<br>
 D. The lookup value must be an exact match to a value in the table.
-15. What does the MATCH function return?<br>
+13. What does the MATCH function return?<br>
 A. The value from a cell that matches the lookup value.<br>
 B. The cell address of the matching value.<br>
 C. The relative position (index) of an item in a range.<br>
 D. A TRUE or FALSE value indicating if a match was found.
-16. Which match_type argument in the MATCH function is used to find an exact match?<br>
+14. Which match_type argument in the MATCH function is used to find an exact match?<br>
 A. 1<br>
 B. -1<br>
 C. TRUE<br>
 D. 0
-17. What is the primary difference between an IF statement and an IFS statement?<br>
+15. What is the primary difference between an IF statement and an IFS statement?<br>
 A. IF can handle text, while IFS only handles numbers.<br>
 B. IF returns a value, while IFS returns TRUE/FALSE.<br>
 C. IF handles one condition, while IFS can handle multiple ordered conditions in a single function.<br>
-D. IF is for simple logic, while IFS is used for lookup operations.
-18. While editing a formula, which shortcut cycles a reference through relative, absolute, and mixed forms?<br>
+D. IF is for simple numbers, while IFS is used for lookup operations.
+16. While editing a formula, which shortcut cycles a reference through relative, absolute, and mixed forms?<br>
 A. Ctrl+Shift+L<br>
 B. F4 on Windows, or Command+T on Mac<br>
 C. Ctrl+1<br>
 D. Alt+F1
-19. In the formula =IFS(E2>=90,"A",E2>=80,"B",E2>=70,"C",E2>=60,"D",TRUE,"F"), what is the purpose of the final TRUE?<br>
+17. In the formula =IFS(E2>=90,"A",E2>=80,"B",E2>=70,"C",E2>=60,"D",TRUE,"F"), what is the purpose of the final TRUE?<br>
 A. It verifies that the earlier conditions are valid.<br>
 B. It acts as a catch-all that returns "F" when no earlier condition is met.<br>
 C. It forces Excel to recalculate the formula.<br>
 D. It sorts the conditions from highest to lowest.
-20. What feature in Excel is used to control the type of data entered into a cell, for example, by creating a drop-down list?<br>
+18. What feature in Excel is used to control the type of data entered into a cell, for example, by creating a drop-down list?<br>
 A. Conditional Formatting<br>
 B. Filtering<br>
 C. Data Validation<br>
 D. Pivot Table
-21. In the Pivot Table editor, where would you drag the "Region" field if you want to create a row label for each unique region?<br>
+19. In the Pivot Table editor, where would you drag the "Region" field if you want to create a row label for each unique region?<br>
 A. The Filters section.<br>
 B. The Rows section.<br>
 C. The Columns section.<br>
 D. The Values section.
-22. In the Pivot Table editor, where would you drag the "Total Sales" field to calculate the sum of sales for each category?<br>
+20. In the Pivot Table editor, where would you drag the "Total Sales" field to calculate the sum of sales for each category?<br>
 A. The Filters section.<br>
 B. The Rows section.<br>
 C. The Values section.<br>
 D. The Columns section.
-23. Which tool automates a trial-and-error process by changing a single input cell to make a formula cell reach a specific target value?<br>
+21. Which tool automates a trial-and-error process by changing a single input cell to make a formula cell reach a specific target value?<br>
 A. Solver<br>
 B. Data Validation<br>
 C. Pivot Table<br>
 D. Goal Seek
-24. What are the three inputs required for Goal Seek?<br>
+22. What are the three inputs required for Goal Seek?<br>
 A. Set Objective, By Changing Cells, Constraints<br>
 B. Set Cell, To Value, By Changing Cell<br>
 C. Logical Expression, Value if True, Value if False<br>
 D. Lookup Value, Table Array, Column Index
-25. Which type of chart is best suited for showing trends over a period of time?<br>
+23. Which type of chart is best suited for showing trends over a period of time?<br>
 A. Pie Chart<br>
 B. Bar Chart<br>
-C. Scatter Plot<br>
-D. Line Graph
-26. Which chart type is most appropriate for showing the proportion of different categories that make up a whole, such as market share?<br>
+C. Bubble Plot<br>
+D. Scatter Plot
+24. Which chart type is most appropriate for showing the proportion of different categories that make up a whole, such as market share?<br>
 A. Line Graph<br>
 B. Pie Chart<br>
 C. Scatter Plot<br>
 D. Column Chart
-27. What is the key difference between Solver and Goal Seek?<br>
-A. Goal Seek is an add-in, while Solver is a built-in function.<br>
-B. Goal Seek can only find a minimum value, while Solver can find a maximum or minimum.<br>
-C. Solver can change multiple cells and handle constraints, while Goal Seek changes one cell for one target.<br>
-D. Solver is used for linear problems, while Goal Seek is for nonlinear problems.
-28. On Windows desktop Excel, how is the Solver Add-in enabled?<br>
-A. It is enabled by default on the Data tab.<br>
-B. Through Insert > Add-ins.<br>
-C. Through File > Options > Add-ins, then Manage: Excel Add-ins > Go.<br>
-D. By downloading it from the Microsoft Office website.
-29. In the Solver parameters, what does the "Set Objective" cell represent?<br>
+25. In the Solver parameters, what does the "Set Objective" cell represent?<br>
 A. The cell that Solver is allowed to change.<br>
 B. The cell containing the formula that you want to optimize (max, min, or set to a value).<br>
 C. A cell that contains a constraint for the problem.<br>
 D. The cell where the final answer will be displayed.
-30. You are plotting measured load against measured beam deflection, and the load values are unevenly spaced. Which chart represents the data correctly?<br>
+26. You are plotting measured load against measured beam deflection, and the load values are unevenly spaced. Which chart represents the data correctly?<br>
 A. A line chart, because it connects the points.<br>
 B. An XY scatter chart, because it places each point at its numerical x-value.<br>
 C. A pie chart.<br>
 D. A stacked column chart.
-31. What is the key difference between a line chart and an XY scatter chart?<br>
+27. What is the key difference between a line chart and an XY scatter chart?<br>
 A. A line chart cannot display more than one series.<br>
 B. A scatter chart cannot connect its points with a line.<br>
 C. A line chart treats the horizontal axis as categories or time units, while a scatter chart treats it as numerical values.<br>
 D. A scatter chart requires the data to be sorted.
-32. Which Solver method should be selected for a linear model?<br>
-A. GRG Nonlinear<br>
-B. Evolutionary<br>
-C. Simplex LP<br>
-D. Newton-Raphson
-33. Which Solver method is intended for non-smooth or discontinuous models, such as those using step functions?<br>
-A. Simplex LP<br>
-B. GRG Nonlinear<br>
-C. Evolutionary<br>
-D. Conjugate Gradient
-34. Where must Solver work be completed?<br>
-A. In Excel for the web.<br>
-B. In the Windows or Mac desktop version of Excel.<br>
-C. On any mobile version of Excel.<br>
-D. In Google Sheets.
-35. What does SUMPRODUCT do in a Solver model?<br>
+28. What does SUMPRODUCT do in a Solver model?<br>
 A. It sorts the products by value.<br>
 B. It multiplies corresponding values in two ranges and adds the products.<br>
 C. It returns the largest product in a range.<br>
 D. It counts how many products exceed a limit.
-36. What is a Gantt Chart primarily used for?<br>
+29. What is a Gantt Chart primarily used for?<br>
 A. Analyzing financial data and calculating profit.<br>
 B. Visualizing a project schedule, including task durations and timelines.<br>
 C. Creating a database of project resources.<br>
 D. Performing complex statistical analysis on survey data.
-37. In a Gantt chart, what does the length of a horizontal bar typically represent?<br>
+30. In a Gantt chart, what does the length of a horizontal bar typically represent?<br>
 A. The budget for the task.<br>
 B. The number of people assigned to the task.<br>
 C. The duration of the task.<br>
 D. The priority level of the task.
-38. Which piece of information is essential for creating a basic Gantt chart?<br>
+31. Which piece of information is essential for creating a basic Gantt chart?<br>
 A. A list of tasks, start dates, and durations.<br>
 B. The total project budget.<br>
 C. The email addresses of all team members.<br>
 D. The risk assessment report.
-39. Which Excel function is used to return a number representing the day of the week for a specific date?<br>
+32. Which Excel function is used to return a number representing the day of the week for a specific date?<br>
 A. =DAY()<br>
 B. =TODAY()<br>
 C. =WEEKDAY()<br>
 D. =TEXT()
-40. What is the purpose of using the TEXT function when creating a Gantt chart in Excel?<br>
+33. What is the purpose of using the TEXT function when creating a Gantt chart in Excel?<br>
 A. To extract the first letter of the day of the week.<br>
 B. To convert a date into a number.<br>
 C. To apply conditional formatting to the chart.<br>
 D. To convert the number returned by WEEKDAY() into a text representation like "Mon".
-41. In the formula =IF(OR(D8="",F8=""),"",WORKDAY(D8,F8-1)), why is 1 subtracted from the duration in F8?<br>
+34. In the formula =IF(OR(D8="",F8=""),"",WORKDAY(D8,F8-1)), why is 1 subtracted from the duration in F8?<br>
 A. To leave a buffer day at the end of each task.<br>
 B. Because the start date already counts as the first workday.<br>
 C. Because WORKDAY counts weekends and the subtraction removes one.<br>
 D. To convert the duration from calendar days to workdays.
-42. What does the WORKDAY function do that a simple date addition does not?<br>
+35. What does the WORKDAY function do that a simple date addition does not?<br>
 A. It formats the result as a date.<br>
 B. It excludes Saturdays and Sundays from the count.<br>
 C. It prevents the start date from being edited.<br>
 D. It converts the date into text.
-43. In a conditional-formatting rule written as =AND($D7<>"",H$5>=$D7), what does the mixed reference H$5 accomplish?<br>
+36. In a conditional-formatting rule written as =AND($D7<>"",H$5>=$D7), what does the mixed reference H$5 accomplish?<br>
 A. It always reads cell H5 no matter which cell is evaluated.<br>
 B. It changes columns as Excel moves across the timeline but always reads row 5.<br>
 C. It changes rows but always reads column H.<br>
 D. It makes the rule apply only to the upper-left cell.
-44. How does Excel store a date?<br>
+37. How does Excel store a date?<br>
 A. As text formatted by the user.<br>
 B. As a serial number that a date format displays in a readable way.<br>
 C. As a WEEKDAY value from 1 to 7.<br>
 D. As a formula that recalculates daily.
-45. What is a milestone in a project schedule?<br>
-A. The longest task in the project.<br>
-B. A zero-duration event that marks an important deadline or decision.<br>
-C. A group of related tasks.<br>
-D. A task that depends on two or more other tasks.
-46. To apply a filter to a data table, what is the first step?<br>
+38. To apply a filter to a data table, what is the first step?<br>
 A. Create a Pivot Table.<br>
 B. Select the columns of data you want to add filters to.<br>
 C. Use the VLOOKUP function.<br>
 D. Enable the Solver Add-in.
-47. In the VLOOKUP formula =VLOOKUP(E13, $B$5:$C$10, 2, FALSE), what does the value 2 signify?<br>
+39. In the VLOOKUP formula =VLOOKUP(E13, $B$5:$C$10, 2, FALSE), what does the value 2 signify?<br>
 A. Return the value from the second worksheet.<br>
 B. The lookup table has two rows.<br>
 C. An exact match is required.<br>
 D. Return the value from the second column of the range $B$5:$C$10.
-48. The keyboard shortcut to add filters to selected columns is:<br>
-A. Ctrl + F<br>
-B. Ctrl + P<br>
-C. Ctrl + Shift + L<br>
-D. Ctrl + Alt + Delete
-49. A user wants to create a drop-down list in cell A1 containing the options "Yes", "No", and "Maybe". Which feature should be used?<br>
+40. A user wants to create a drop-down list in cell A1 containing the options "Yes", "No", and "Maybe". Which feature should be used?<br>
 A. Conditional Formatting with a custom rule.<br>
 B. Data Validation set to allow a "List".<br>
 C. A Pivot Table with a slicer.<br>
 D. An IFS function in cell A1.
-50. What is the purpose of using absolute references (e.g., $B$5:$C$10) for the table_array in a VLOOKUP function?<br>
+41. What is the purpose of using absolute references (e.g., $B$5:$C$10) for the table_array in a VLOOKUP function?<br>
 A. To ensure the reference is updated when the formula is copied to other cells.<br>
 B. To lock the table reference so it does not change when the formula is copied to other cells.<br>
 C. To make the lookup faster.<br>
 D. To allow for an approximate match.
-51. A scatter plot is the most effective chart type for what purpose?<br>
+42. A scatter plot is the most effective chart type for what purpose?<br>
 A. Comparing parts of a whole.<br>
 B. Showing the relationship between two numerical variables.<br>
 C. Displaying categorical data horizontally.<br>
-D. Tracking a single variable over time.
-52. If an IFS statement has multiple conditions that are true for a given cell, which value will it return?<br>
+D. Visualizing the percentages of a set of data.
+43. If an IFS statement has multiple conditions that are true for a given cell, which value will it return?<br>
 A. The value corresponding to the last true condition.<br>
 B. An error message.<br>
 C. A combination of all true values.<br>
 D. The value corresponding to the first true condition in the sequence.
-53. Which function would be used to extract the letter "S" from the text "Sun"?<br>
+44. Which function would be used to extract the letter "S" from the text "Sun"?<br>
 A. =TEXT("Sun", "d")<br>
 B. =LEFT("Sun", 1)<br>
 C. =WEEKDAY("Sun")<br>
 D. =MATCH("S", "Sun", 0)
-54. A user sets up a Pivot Table and drags "Product" to Rows and "Units Sold" to Values. By default, what calculation will the Pivot Table show for "Units Sold"?<br>
+45. A user sets up a Pivot Table and drags "Product" to Rows and "Units Sold" to Values. By default, what calculation will the Pivot Table show for "Units Sold"?<br>
 A. Count of Units Sold<br>
 B. Average of Units Sold<br>
 C. Sum of Units Sold<br>
 D. Max of Units Sold
-55. What does the term "dependencies" mean in the context of Gantt charts?<br>
-A. The budget allocated to each task.<br>
-B. The resources assigned to the project.<br>
-C. Links showing that one task must wait for another to start or finish.<br>
-D. The key project deadlines or milestones.
-56. In Solver, what is the role of a "constraint"?<br>
+46. In Solver, what is the role of a "constraint"?<br>
 A. It defines the formula cell to be optimized.<br>
 B. It specifies which cells the Solver can change.<br>
 C. It sets a rule or limit that the solution must adhere to.<br>
 D. It selects the algorithm used for solving.
-57. The MEDIAN function returns what value from a set of numbers?<br>
-A. The average value.<br>
-B. The most frequently occurring value.<br>
-C. The middle value when the numbers are sorted.<br>
-D. The sum of all values.
-58. The range_lookup parameter in VLOOKUP is optional. If it is omitted, what value does Excel assume?<br>
+47. The range_lookup parameter in VLOOKUP is optional. If it is omitted, what value does Excel assume?<br>
 A. FALSE<br>
 B. TRUE<br>
 C. 0<br>
 D. An error is returned.
-59. To find the "top 10" values in a dataset, which Excel feature would be most direct?<br>
+48. To find the "top 10" values in a dataset, which Excel feature would be most direct?<br>
 A. A VLOOKUP function.<br>
 B. The "Top/Bottom Rules" option within Conditional Formatting or Filtering.<br>
 C. The Solver add-in.<br>
 D. Creating a Pie Chart.
+
 
 
 ---
@@ -581,52 +527,41 @@ D. Creating a Pie Chart.
 11. C
 12. B
 13. C
-14. B
+14. D
 15. C
-16. D
-17. C
-18. B
+16. B
+17. B
+18. C
 19. B
 20. C
-21. B
-22. C
+21. D
+22. B
 23. D
 24. B
-25. D
+25. B
 26. B
 27. C
-28. C
+28. B
 29. B
-30. B
-31. C
+30. C
+31. A
 32. C
-33. C
+33. D
 34. B
 35. B
 36. B
-37. C
-38. A
-39. C
-40. D
+37. B
+38. B
+39. D
+40. B
 41. B
 42. B
-43. B
+43. D
 44. B
-45. B
-46. B
-47. D
-48. C
-49. B
-50. B
-51. B
-52. D
-53. B
-54. C
-55. C
-56. C
-57. C
-58. B
-59. B
+45. C
+46. C
+47. B
+48. B
 
 
 ---
