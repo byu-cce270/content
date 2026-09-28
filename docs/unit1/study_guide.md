@@ -5,22 +5,19 @@ This study guide is designed to help you review and prepare for the Unit 1 Midte
 !!! Note
     This study guide is not exhaustive. Be sure to review the course reading content, in-class exercises, homework assignments, and any additional materials provided by your instructor.
 
-## Late Work Policy
+## Late Work Policy Reminder
 
 * **−10% per week late, up to −50%.** Your work is scored first, then the penalty comes off.
     * The 10% is off the points possible, not the points you earned.
 * **All Unit 1 late work is due at the end of the Unit 1 exam period.** After that it isn't accepted (unless you have below a 70% in the class).
-* **Only Homework and In-Class workbooks can be turned in late.** Pre-class quizzes
-can't be made up or redone.
+* **Only Homework and In-Class workbooks can be turned in late.** Pre-class quizzes can't be made up or redone.
 * **After you upload late work, message the TA** who grades that assignment. If you don't, it may never get rescored.
 
 ## The Exam
 
 * Two parts in Learning Suite:
-    * **Unit 1 Exam — Part 1 (Multiple Choice): 1 hour,** and it **auto-submits** when time
-runs out
-    * **Unit 1 Exam — Part 2 (Free Response): 3 hours.** It does **not** close on its own, so
-**watch the clock**
+    * **Unit 1 Exam — Part 1 (Multiple Choice): 1 hour,** and it **auto-submits** when time runs out
+    * **Unit 1 Exam — Part 2 (Free Response): 3 hours.** It does **not** close on its own, so **watch the clock**
 * Part 2: **every 15 minutes** over 3 hours costs **10%**, up to 50%
 * Once you open an exam **you can't close it and come back later**
 * **Proctorio** records your screen and limits you to **one monitor**
@@ -28,8 +25,7 @@ runs out
 
 ### Part 1 — Multiple choice
 
-* **54 questions:** matching, multiple choice, true/false, multiple response, fill-in-the-blank,
-ordering
+* **54 questions:** matching, multiple choice, true/false, multiple response, fill-in-the-blank, ordering
 * **All Unit 1 topics** are covered
 *** No resources** besides your brain: no notes, no help files, no internet, no classmates
 * Take it by yourself, and don't share what's on it with anyone, this semester or later
