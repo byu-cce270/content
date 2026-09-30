@@ -42,6 +42,29 @@ Here is a direct link to the reading:<br>
 
 Click [here](../../resources/textbooks/textbooks.md){:target="_blank"} for a refresher on how to access the O'Reilly's website. Once you have signed in, the links above will take you directly to the chapters.
 
+### What to Focus On
+
+These sections line up directly with the [in-class exercise](into_var_list_class.md) and the [homework](into_var_list_hw.md):
+
+| Chapter 2 section | Page | Used for |
+|:---|:---:|:---|
+| What Really Happens When You Run hello_world.py | 15 | Your first `print()` statement |
+| Naming and Using Variables | 17 | Legal and illegal variable names |
+| Avoiding Name Errors When Using Variables | 17 | Why a misspelled name fails |
+| Strings | 19 | Single and double quotes |
+| Numbers (Integers, Floats, Integers and Floats) | 26-27 | Variable types in the homework |
+
+| Chapter 3 section | Page | Used for |
+|:---|:---:|:---|
+| Index Positions Start at 0, Not 1 | 34 | Finding the 6th item in a list |
+| Adding Elements to a List | 37 | `append()` and `insert()` |
+| Removing Elements from a List | 38 | `pop()` and `remove()` |
+| Organizing a List | 42-44 | `sort()`, `reverse()`, and `len()` |
+| Avoiding Index Errors When Working with Lists | 46 | Reading the error when an index is too large |
+
+!!! Note "Beyond the textbook"
+    A few things you will use are not in these chapters. `sum()`, `max()`, and `min()` appear in Chapter 4, which is next topic's reading, and `extend()`, `count()`, `index()`, `clear()`, and lists inside lists are not in the textbook at all. All of them are explained on the [in-class exercise page](into_var_list_class.md).
+
 You will learn more if you follow along in a Colab notebook as you read the chapters. The exercises at the end of each chapter will be part of your pre-class quiz challenge. In the book, they have you write the code in the python consol or a text editor, but you will be using Colab. You can just create a cell in the Colab notebook and write your code there. Then run the cell to see the results, just like you would in the Python console as described in the book.
 
 ### Things to Look Out For

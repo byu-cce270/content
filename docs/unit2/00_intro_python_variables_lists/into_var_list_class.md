@@ -10,6 +10,32 @@ You can find the In Class Exercise here: <a href="https://colab.research.google.
 
 After opening the workbook, follow the instructions in the workbook to complete the exercises. There are two parts to this exercise. Part 1 will go over the basics of Python and variables. Part 2 will give you practice with the basics of Lists in Python.
 
+Reading for this exercise: [Introduction to Python, Variables, and Lists](into_var_list_read.md) — PCC Chapter 2, *Variables and Simple Data Types*, and Chapter 3, *Introducing Lists*.
+
+Before the list methods, there is one command you will use in nearly every exercise: `print()`. It displays a value in the output area below the code cell. Without it, your code still runs, but you see nothing.
+
+```python
+print("Hello")        # displays: Hello
+
+items = ["a", "b", "c"]
+print(items)          # displays: ['a', 'b', 'c']
+print(items[0])       # displays: a
+```
+
+`print()` is also the simplest way to understand code that is not doing what you expect. List methods change a list silently, so printing the list after each step shows you what actually happened instead of what you assumed:
+
+```python
+items = ["a", "b", "c"]
+
+items.pop(1)
+print(items)          # displays: ['a', 'c']  - confirms "b" was removed
+
+items.append("d")
+print(items)          # displays: ['a', 'c', 'd']  - confirms "d" was added
+```
+
+When a result surprises you, add a `print()` after each line and work down until the displayed value stops matching what you intended. That line is where the problem is.
+
 For Part 2, here is a list of common list methods you will be using:
 
 |         Method         | Description                                                                                           |
@@ -27,7 +53,21 @@ For Part 2, here is a list of common list methods you will be using:
 
 Square brackets mark an optional argument, so both `pop()` and `pop(1)` are valid.
 
-`len()` is a built-in function rather than a list method, so it is called as `len(items)`, not `items.len()`. It returns the number of items in a sequence or collection.
+**Where to read more.** In PCC Chapter 3, `append()` and `insert()` are covered in *Adding Elements to a List* (p. 37), `pop()` and `remove()` in *Removing Elements from a List* (p. 38), and `sort()` and `reverse()` in *Organizing a List* (pp. 42-44).
+
+!!! Note "Not in the textbook"
+    `extend()`, `count()`, `index()`, and `clear()` are not covered in *Python Crash Course*, so the tables and examples on this page are your reference for them.
+
+You will also use these built-in functions. They are not list methods, so they are called with the list inside the parentheses, as in `len(items)` rather than `items.len()`:
+
+|  Function  | Description                                           |
+|:----------:|-------------------------------------------------------|
+| len(list)  | Returns the number of items in the list.              |
+| sum(list)  | Adds the numbers in the list and returns the total.   |
+| max(list)  | Returns the largest item in the list.                 |
+| min(list)  | Returns the smallest item in the list.                |
+
+`len()` is covered in PCC Chapter 3, *Finding the Length of a List* (p. 44). `sum()`, `max()`, and `min()` are covered in Chapter 4, *Simple Statistics with a List of Numbers* (p. 59), which is next topic's reading.
 
 Here is how several of these work together:
 
@@ -53,10 +93,34 @@ letters = ["c", "a", "b"]
 letters.sort()            # letters is now ["a", "b", "c"]; sort() itself returns None
 letters.reverse()         # letters is now ["c", "b", "a"]
 letters.clear()           # letters is now []
+
+durations = [5, 12, 3]
+
+total = sum(durations)      # 20
+longest = max(durations)    # 12
+shortest = min(durations)   # 3
+how_many = len(durations)   # 3
+
+print(total, longest, shortest, how_many)   # displays: 20 12 3 3
 ```
 
 !!! Note 
     The len() function and the count() method are similar, but they are not the same. len() returns the number of items in a list, while count() returns the number of times a specific item appears in a list.
+
+### Lists Within Lists
+
+*Python Crash Course* does not cover lists inside lists, so read this section carefully.
+
+An item in a list can itself be a list. Reaching an item inside the inner list takes two index numbers in a row: the first finds the inner list, and the second finds the item inside it.
+
+```python
+project = [['concrete', 'steel', 'lumber'], 'Site A', ['Ann', 'Ben']]
+
+print(project[0])       # displays: ['concrete', 'steel', 'lumber']  - the whole inner list
+print(project[0][1])    # displays: steel  - item 1 of the inner list at position 0
+print(project[1])       # displays: Site A  - a plain string, so no second index is needed
+print(project[2][0])    # displays: Ann
+```
 
 ---
 			

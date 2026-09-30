@@ -2,6 +2,8 @@
 
 **Purpose:** This assignment aims to introduce you to Python, variables, and lists. You will create a simple open channel flow calculator using Python and learn how to use variables effectively. 
 
+Reading for this assignment: [Introduction to Python, Variables, and Lists](into_var_list_read.md) — PCC Chapter 2, *Variables and Simple Data Types*, and Chapter 3, *Introducing Lists*. The list methods and functions used in Part 2 are summarized in the tables on the [in-class exercise page](into_var_list_class.md).
+
 ---
 
 ## Getting Started
@@ -28,6 +30,7 @@ Where:<br>
 >>$Q$ = the flow rate in cubic feet per second (or cubic meters per second) <br>
   $u$ = units coefficient (1.49 for English units and 1 for metric units)<br>
   $n$ = the Manning's roughness coefficient based on the material of the channel<br>
+  $A$ = the cross-sectional area of the flow<br>
   $R_h$ = the hydraulic radius of the channel<br>
   $S_o$ = the slope of the channel
 
@@ -37,7 +40,7 @@ The hydraulic radius is calculated as follows:
 
 Where:<br>
 >>$A$ = the cross-sectional area of the flow <br>
-$P_w$ = the wetted perimeter in feet
+$P_w$ = the wetted perimeter in feet (or meters)
 
 The wetted perimeter is the length of the channel in the channel cross-section that is in contact with the water.
 
@@ -53,9 +56,9 @@ Based on this information, the area ($A$) and wetted perimeter ($P_w$) can be ca
 |  Trapezoidal | $\left(\dfrac{b+T}{2}\right)y$ | $b+2\sqrt{\left(\dfrac{T-b}{2}\right)^2+y^2}$ |
 
 Where:<br>
->>$b$ = the bottom width of the channel in feet<br>
-  $T$ = the top width of the channel in feet<br>
-  $y$ = the water depth in feet
+>>$b$ = the bottom width of the channel in feet (or meters)<br>
+  $T$ = the top width of the channel in feet (or meters)<br>
+  $y$ = the water depth in feet (or meters)
 
 ---
 
@@ -70,18 +73,20 @@ Where:<br>
 |:-------------:|:-----------------------------------------------------------:|:-------------:|:--------------:|
 |     units     |                      english or metric                      |    string     |    english     |
 |   material    | asphalt, concrete, clean earth, weedy earth, natural stream |    string     |    concrete    |
-|       b       |                        bottom width                         |     float     |       20       |
-|       T       |                          top width                          |     float     |       20       |
+|       b       |                        bottom width                         |     float     |      20.0      |
+|       T       |                          top width                          |     float     |      20.0      |
 |      So       |                            slope                            |     float     |     0.002      |
-|       y       |                         water depth                         |     float     |       6        |
+|       y       |                         water depth                         |     float     |      6.0       |
+
+A whole number needs a decimal point to be stored as a float. Typing `b = 20` creates an integer, while `b = 20.0` creates a float. The difference between the two types is covered in PCC Chapter 2, *Numbers* (pp. 26-27).
 
 2. Run the cell created in Step 1 to store the variables in the notebook. You do not need to write any new code for this step, just run the cell.
 
-3. Run the code block called "Variable Processing" to set the values of the variables based on the inputs you provided. This code block will set the values of the variables `u` and `n` based on the `units` and `material` variables. There are two options to use. You can use either "Option Block 1" or "Option Block 2". Look at the code and try to understand what it is doing. We will go over this later in this unit.
+3. Run the code block called "Variable Processing" to set the values of the variables based on the inputs you provided. Run "Option Block 1". It sets three variables: `u` from `units`, `n` from `material`, and `shape`, which it determines by comparing the top width `T` to the bottom width `b` — when the two are equal, the channel is rectangular. "Option Block 2" is a second way to calculate `n` only, using a dictionary instead of an if statement. It does not set `u` or `shape`, so it cannot replace Option Block 1. Look at the code and try to understand what it is doing. We will go over this later in this unit.
 
-4. Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel. Store the result in the variable A.
+4. Write an equation to calculate the cross-sectional area of the flow (A) based on the shape of the channel, stored in the `shape` variable from Step 3. Store the result in the variable A.
 
-5. Write an equation to calculate the wetted perimeter ($P_w$) based on the shape of the channel. Store the result in the variable P.
+5. Write an equation to calculate the wetted perimeter ($P_w$) based on the shape of the channel, again using the `shape` variable. Store the result in the variable P.
 
 6. Write an equation to calculate the hydraulic radius ($R_h$), the flow rate (Q), and the flow velocity (V). Use the equations as shown above. Note that V = Q/A. Store the result in the variables Rh, Q, and V.
 
@@ -97,10 +102,10 @@ Try out your code to make sure it is working correctly. When running your code, 
 |:-------------:|:---------:|
 |     units     |  english  |
 |   material    | concrete  |
-|       b       |    20     |
-|       T       |    20     |
+|       b       |   20.0    |
+|       T       |   20.0    |
 |      So       |   0.002   |
-|       y       |     6     |
+|       y       |    6.0    |
 
 It should output something like this:
 
@@ -114,6 +119,8 @@ It should output something like this:
 ## Part 2 - Creating and manipulating lists
 
 **Purpose:** Learn how to create and manipulate lists to call certain information from them.
+
+Building and changing lists is covered in PCC Chapter 3, *Adding Elements to a List* (p. 37) and *Removing Elements from a List* (p. 38). Steps 8 and 15 through 17 use `sum()`, `max()`, `min()`, and `index()`; the first three are covered in Chapter 4, *Simple Statistics with a List of Numbers* (p. 59), and `index()` is not in the textbook at all. Both are shown in the tables and examples on the [in-class exercise page](into_var_list_class.md).
 
 1. Go to the part of the notebook that says "Part 2 - Creating and manipulating lists" and create a new code block.
 
@@ -129,7 +136,7 @@ It should output something like this:
 
 7. Print out each list with a description of what the list represents.
 
-8. Using the project duration list, sum and print the total duration of the project.
+8. Using the `task_durations` list, sum and print the total duration of the project.
 
 9. Add a new task titled "Final Inspection" to the task_names list with an associated duration of 1 day in the task_durations list.
 
@@ -173,7 +180,7 @@ It should output something like this:
 |                          Part 2 - 4 new lists are created and named correctly                           |        4        |
 |                     Part 2 - Required items are added to the 4 lists as instructed                      |        5        |
 |                          Part 2 - Total project duration is summed and printed                          |        2        |
-|               Part 2 - Lists are all printed with list descriptions included in comments                |        3        |
+|                 Part 2 - Each list is printed with a description of what it represents                  |        3        |
 |     Part 2 - New task titled "Final Inspection" with associated duration is added to correct lists      |        2        |
 | Part 2 - A task is removed from the task_names list and its duration is removed from the durations list |        2        |
 |                   Part 2 - New updated lists with total project duration are printed                    |        2        |
