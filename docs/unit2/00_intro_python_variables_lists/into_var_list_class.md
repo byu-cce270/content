@@ -12,22 +12,51 @@ After opening the workbook, follow the instructions in the workbook to complete 
 
 For Part 2, here is a list of common list methods you will be using:
 
-|  Method   | Description                                                      |
-|:---------:|------------------------------------------------------------------|
-| append()  | Adds an element to the end of the list.                          |
-| extend()  | Adds all elements of a list to the end of the list.              |
-| insert()  | Inserts an element at the specified position.                    |
-| remove()  | Removes the first item with the specified value.                 |
-|   pop()   | Removes the element at the specified position.                   |
-|  clear()  | Removes all items from the list.                                 |
-|  index()  | Returns the index of the first element with the specified value. |
-|  count()  | Returns the number of elements with the specified value.         |
-|  sort()   | Sorts the list.                                                  |
-| reverse() | Reverses the order of the list.                                  |
-|   len()   | Returns the length of items in a sequence or collection.         |
+|         Method         | Description                                                                                           |
+|:----------------------:|-------------------------------------------------------------------------------------------------------|
+|    append(element)     | Adds a single element to the end of the list.                                                         |
+|      extend(list)      | Adds all elements of another list to the end of the list.                                             |
+| insert(index, element) | Inserts an element at the specified position.                                                         |
+|     remove(value)      | Removes the first item with the specified value. Raises a ValueError if the value is not in the list.  |
+|      pop([index])      | Removes and returns the element at index. If no index is given, removes and returns the last element. |
+|        clear()         | Removes all items from the list.                                                                      |
+|      index(value)      | Returns the index of the first element with the specified value. Raises a ValueError if the value is not in the list. |
+|      count(value)      | Returns the number of elements with the specified value.                                              |
+|         sort()         | Sorts the list in place and returns None.                                                             |
+|       reverse()        | Reverses the order of the list in place and returns None.                                             |
+
+Square brackets mark an optional argument, so both `pop()` and `pop(1)` are valid.
+
+`len()` is a built-in function rather than a list method, so it is called as `len(items)`, not `items.len()`. It returns the number of items in a sequence or collection.
+
+Here is how several of these work together:
+
+```python
+items = ["a", "b", "c"]
+
+x = items.pop(1)          # removes and returns "b"; items is now ["a", "c"]
+y = items.pop()           # removes and returns "c"; items is now ["a"]
+
+items = ["a", "b", "c"]   # start over with the full list
+
+items.append("d")         # items is now ["a", "b", "c", "d"]
+items.extend(["e", "f"])  # items is now ["a", "b", "c", "d", "e", "f"]
+items.insert(1, "z")      # items is now ["a", "z", "b", "c", "d", "e", "f"]
+items.remove("z")         # items is now ["a", "b", "c", "d", "e", "f"]
+
+position = items.index("d")     # 3
+appearances = items.count("a")  # 1
+size = len(items)               # 6
+
+letters = ["c", "a", "b"]
+
+letters.sort()            # letters is now ["a", "b", "c"]; sort() itself returns None
+letters.reverse()         # letters is now ["c", "b", "a"]
+letters.clear()           # letters is now []
+```
 
 !!! Note 
-    The len() method and count() method are both similar, but they are not the same. The len() method returns the number of items in a list, while the count() method returns the number of times a specific item appears in a list.
+    The len() function and the count() method are similar, but they are not the same. len() returns the number of items in a list, while count() returns the number of times a specific item appears in a list.
 
 ---
 			
