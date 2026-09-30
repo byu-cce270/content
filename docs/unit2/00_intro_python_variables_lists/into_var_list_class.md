@@ -66,6 +66,7 @@ You will also use these built-in functions. They are not list methods, so they a
 | sum(list)  | Adds the numbers in the list and returns the total.   |
 | max(list)  | Returns the largest item in the list.                 |
 | min(list)  | Returns the smallest item in the list.                |
+| sorted(list) | Returns a new sorted list and leaves the original list unchanged. |
 
 `len()` is covered in PCC Chapter 3, *Finding the Length of a List* (p. 44). `sum()`, `max()`, and `min()` are covered in Chapter 4, *Simple Statistics with a List of Numbers* (p. 59), which is next topic's reading.
 
@@ -106,6 +107,33 @@ print(total, longest, shortest, how_many)   # displays: 20 12 3 3
 
 !!! Note 
     The len() function and the count() method are similar, but they are not the same. len() returns the number of items in a list, while count() returns the number of times a specific item appears in a list.
+
+### Permanent and Temporary Changes
+
+Every list method in the table above changes the list itself and hands back `None`. The change is permanent: once you call `sort()`, the original order is gone.
+
+`sorted()` is the temporary alternative. It is a function rather than a method, and instead of rearranging your list it builds a new one and leaves the original untouched.
+
+```python
+numbers = [3, 1, 2]
+
+new_numbers = sorted(numbers)   # builds a new sorted list
+print(new_numbers)              # displays: [1, 2, 3]
+print(numbers)                  # displays: [3, 1, 2]  - the original is unchanged
+
+numbers.sort()                  # changes the list itself
+print(numbers)                  # displays: [1, 2, 3]  - the original order is gone
+
+oops = numbers.sort()           # sort() returns None, so nothing useful is stored
+print(oops)                     # displays: None
+```
+
+The last two lines show the most common mistake with these methods. Writing `new_list = my_list.sort()` looks reasonable, but `sort()` returns `None`, so `new_list` ends up holding nothing. Call `my_list.sort()` on its own line when you want the list changed, and use `sorted(my_list)` when you want a sorted copy.
+
+PCC Chapter 3 covers both on page 43: *Sorting a List Permanently with the sort() Method* and *Sorting a List Temporarily with the sorted() Function*.
+
+!!! Note "Looking ahead"
+    Later in the course you will work with pandas DataFrames, which behave the opposite way. Their methods return a changed copy by default and leave the original alone, and you add `inplace=True` when you want the change to stick. List methods are permanent unless you use `sorted()`; DataFrame methods are temporary unless you use `inplace=True`.
 
 ### Lists Within Lists
 
