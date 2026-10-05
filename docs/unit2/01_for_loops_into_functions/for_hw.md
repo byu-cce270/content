@@ -52,9 +52,9 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 2. In Code Block 2, append a value of 570 to the beam_lengths list.
 
-3. Create a variable to store the value of the total length of all beams. Also create a for loop to calculate the total length of all the beams using the variable. After the loop finishes, print the total length you find. This should be done in Code Block 3.
+3. In code block 3, create a variable to store the value of the total length of all beams. Also create a for loop to calculate the total length of all the beams using the variable. After the loop finishes, print the total length you find.
 
-4. Calculate the average length of the beams and print the result. This should be done in Code Block 4.
+4. In code block 4, calculate the average length of the beams and print the result.
 
 ---
 
