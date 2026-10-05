@@ -90,9 +90,9 @@ Homework is graded automatically, then a TA reviews those grades. Each assignmen
 
 | Topic | Grading TA |
 |---|---|
-| [Introduction to Python, Variables, and Lists](../../unit2/00_intro_python_variables_lists/into_var_list_hw.md) | McKay Cumming |
+| [Introduction to Python, Variables, and Lists](../../unit2/00_intro_python_variables_lists/into_var_list_hw.md) | Carsen Lee |
 | [Working with Lists (For Loops)](../../unit2/01_for_loops_into_functions/for_hw.md) | Tyler Carruth |
-| [IF Statements](../../unit2/02_if_statements/if_hw.md) | Carsen Lee |
+| [IF Statements](../../unit2/02_if_statements/if_hw.md) | McKay Cumming |
 | [Dictionaries and While Loops](../../unit2/03_dictionaries_while_loops/dict_while_hw.md) | Griffin Izu |
 | [Introduction to Functions](../../unit2/04_intro_functions/intro_function_hw.md) | Reagan Bodnar |
 | [Functions and Files](../../unit2/05_advance_functions_files/advance_functions_files_hw.md) | Luke Gonzalez |
