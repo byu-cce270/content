@@ -85,7 +85,7 @@ For multiple loads, the total deflection is the sum of the deflections due to ea
 
 |                                              Lists                                              | Points Possible |
 |:-----------------------------------------------------------------------------------------------:|:---------------:|
-|           In the 1st code block, a value of 570 is appended to the beam_lengths list            |        2        |
+|           In the 2nd code block, a value of 570 is appended to the beam_lengths list            |        2        |
 |                 Variable created to store the value of total length of the beam                 |        2        |
 |                   For loop created to calculate the total length of the beam                    |        5        |
 |                            Average length of the beams is calculated                            |        2        |
