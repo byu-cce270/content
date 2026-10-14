@@ -4,14 +4,10 @@
 
 # Pre Class Reading Assignment
 
-On the O'Reilly website read Chapter 6 in _Python Crash Course, 3rd Edition_ and Chapter 7, the section on "How the input() Function Works" and "Introducing while Loops." Don't bother with the other sections in Chapter 7.
+On the O'Reilly website read the following chapters in _Python Crash Course, 3rd Edition_ :
 
-Here is a direct link to the readings:</br>
 [PCC Chapter 6: Dictionaries](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c06.xhtml){:target="_blank"}</br>
-[PCC Chapter 7: User Input and While Loops](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c07.xhtml){:target="_blank"}
-
-Remember that you will have to sign in to your free account that you created earlier.
-
+[PCC Chapter 7: User Input and While Loops](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c07.xhtml){:target="_blank"} (Read the section on "How the input() Function Works" and "Introducing while Loops." Don't bother with the other sections)
 
 ## Things to Look Out For
 - Dictionaries use braces {} as opposed to lists which use square brackets [].

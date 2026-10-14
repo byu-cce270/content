@@ -4,12 +4,7 @@
 
 ## Pre Class Reading Assignment
 
-On the W3Schools website, read the Python Tutorial chapter on Python Functions. 
-</br>Here is a direct link to the reading: [W3Schools: Python Functions](https://www.w3schools.com/python/python_functions.asp){:target="_blank"}.
-
-Make sure you click through all the function subtopics on the W3Schools website (there are 8 of them).
-
-We suggest you re-read the chapter on Python Functions in the _Python Crash Course, 3rd Edition_ textbook. It will help understand the W3School discussion.
+Re-read the chapter on Python Functions in the _Python Crash Course, 3rd Edition_ textbook, paying particular attention to passing lists to functions, passing an arbitrary number of arguments, and storing functions in modules.
 </br>Here is a direct link to the previous reading: [PCC Chapter 8: Functions](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c08.xhtml){:target="_blank"}.
 
 Also read the Files section below.
@@ -20,7 +15,7 @@ Also read the Files section below.
 - Parameters are placeholders in function definitions; arguments are actual values passed during function calls.
 - Functions can take many arguments; if the number is uncertain, use flexible syntax (*args, **kwargs).
 - You can pass arguments by position or with key = value, and even pass lists to functions.
-- Recursion occurs when a function calls itself; modules let you import and reuse python code across programs.
+- Modules let you import and reuse Python code across programs.
 
 ---
 
