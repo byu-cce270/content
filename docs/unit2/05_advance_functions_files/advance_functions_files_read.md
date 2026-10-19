@@ -28,9 +28,14 @@ Chapter 10 of the _Python Crash Course, 3rd Edition_ textbook covers file handli
 ### Opening a File
 
 To read or open a file in Python, you can use the built-in `open()` function. The `open()` function takes two arguments: the name of the file and the mode in which you want to open the file. The most common modes are:
+
+
 - `'r'`: Read mode (default). Opens the file for reading.
-- `'w'`: Write mode. Opens the file for writing (creates a new file or truncates an existing file).
+
+- `'w'`: Write mode. Opens the file for writing (creates a new file or overwrites (truncates) an existing file).
+
 - `'a'`: Append mode. Opens the file for appending (creates a new file if it doesn't exist).
+
 
 There are two main ways that you can open and close a file in Python:
 
