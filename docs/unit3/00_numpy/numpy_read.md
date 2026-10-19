@@ -196,7 +196,10 @@ print(ary[1])
 **Question 4.** What will be the output of the following code?
 
 ```python
-# TODO: code for this question is missing from the Learning Suite export
+import numpy as np
+nums = [2,3,4,5]
+updatednums = np.array(nums)
+print(updatednums)
 ```
 
 - A) `['2' '3' '4' '5']`
@@ -204,7 +207,7 @@ print(ary[1])
 - C) `[2 3 4 5]`
 - D) `[5 4 3 2]`
 
-*Where to look: TODO*
+*Where to look: Chapter 4, section "Creating Arrays from Python Lists".*
 
 **Question 5.** What is the syntax for changing a list called `mylist` into an array using NumPy?
 
@@ -263,7 +266,9 @@ Complete Code Blocks 1-3 in the notebook. The instructions are in the text block
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
+|    Part 1 - Quiz Questions 1-8 (1 point each)  |        8        |
+|        Part 2 - Code Blocks 1-3 (1 point each) |        3        |
+| <div style="text-align: right">**Total**</div> |       11        |
 
 ---
 
