@@ -25,6 +25,55 @@ This section will introduce you to file handling in Python. You will learn how t
 
 Chapter 10 of the _Python Crash Course, 3rd Edition_ textbook covers file handling in Python. You can read the chapter here: [PCC Chapter 10: Files and Exceptions](https://learning.oreilly.com/library/view/python-crash-course/9781098156664/c10.xhtml){:target="_blank"}.
 
+### Getting Files In and Out of Colab
+
+Colab does not run on your computer. It runs on a temporary machine in the cloud, and your notebook talks to that machine through your browser. This matters as soon as you start working with files: when your code calls `open('example.txt')`, Python looks for that file on the cloud machine, not in your Downloads folder.
+
+So there are two extra steps around any file work you do in this class:
+
+- A file your program needs to **read** must first be **uploaded** to the session.
+- A file your program **creates** exists only on the cloud machine, so you must **download** it if you want a copy.
+
+#### Uploading a File
+
+1. Click the folder icon on the left edge of the Colab window to open the **Files** panel.
+2. Click the **Upload to session storage** button at the top of the panel, or drag the file from your computer directly into the panel.
+3. The file appears in the list, in a folder called `content`. That is the folder your code starts in, so `open('example.txt')` will find it without you typing any folder path.
+
+You can also upload with code. Running this cell gives you a **Choose Files** button that opens a file picker on your own computer:
+
+```python
+from google.colab import files
+uploaded = files.upload()
+```
+
+The file you pick is placed in the same `content` folder as a drag-and-drop upload, so your code still opens it by name alone.
+
+#### Downloading a File
+
+When your code writes a file, that file is created on the cloud machine alongside your uploads.
+
+1. Open the **Files** panel.
+2. Click the refresh icon if your new file is not listed yet. Files your code creates do not always appear right away.
+3. Click the three dots to the right of the file name and choose **Download**.
+
+Colab hands the file to your browser, exactly as if you had clicked a download link on a web page, so it lands wherever your browser saves downloads. On most computers that is the **Downloads** folder. If your browser is set to ask where to save each file, you will get a dialog instead. The file keeps the name it had in Colab.
+
+Just like your notebooks, move the downloaded file into your CCE 270 folder afterward so you can find it again.
+
+You can also download with code, which saves the file to that same place:
+
+```python
+from google.colab import files
+files.download('output.txt')
+```
+
+!!! tip "If nothing seems to happen"
+    Browsers sometimes block a download that a script starts rather than a person clicking. If you run `files.download()` and no file arrives, look for a blocked-popup icon in your address bar and allow popups for `colab.research.google.com`, or use the **Files** panel method above instead.
+
+!!! warning "Session storage is temporary"
+    Files you upload and files your code creates are erased when your Colab session ends or the runtime restarts, and they are **not** saved inside your notebook. If you close Colab and come back later, or use **Runtime | Restart session**, you will need to upload your input files again and re-run your code to recreate your output files. Download anything you want to keep.
+
 ### Opening a File
 
 To read or open a file in Python, you can use the built-in `open()` function. The `open()` function takes two arguments: the name of the file and the mode in which you want to open the file. The most common modes are:

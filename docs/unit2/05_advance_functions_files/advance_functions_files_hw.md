@@ -69,6 +69,9 @@ First, make a copy of the starter sheet here: <a href="https://colab.research.go
 
 Click here to download a text file containing a set of beams and their associated parameters: [beam_inputs.csv](beam_inputs.csv).
 
+!!! note "This assignment requires uploading and downloading files"
+    Downloading `beam_inputs.csv` to your computer is not enough. Colab runs in the cloud, so you must also **upload** the file into your Colab session before your code can open it, and **download** the `beam_results.txt` file your code creates if you want a copy of it. The steps are in [Getting Files In and Out of Colab](advance_functions_files_read.md#getting-files-in-and-out-of-colab) in the pre-class reading. Remember that both files are erased when your session restarts, so you will need to upload `beam_inputs.csv` again if you come back to this assignment later.
+
 The file contains 24 beams (12 cantilever and 12 simply supported). The first few rows look like this:
 
 | beam_id  | beam_type        | load_type   | load   | L   | E         | b  | h  |
@@ -95,6 +98,8 @@ Write code in the indicated code block to do the following:
 
    where XXXX is the beam id, Y.YYY is the maximum deflection rounded to three decimal places and ZZZ.ZZ is the maximum 
    bending stress rounded to two decimal places. Be sure to append each result on a new line in the text file and to close the file when you are done.
+
+4. Open `beam_results.txt` and print its contents so that your results are visible in the notebook you turn in. The text file itself is not saved inside your `.ipynb` file, so printing it is how the TA sees what your code produced.
 
 ---
 
