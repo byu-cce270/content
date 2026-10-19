@@ -232,7 +232,112 @@ plt.rcdefaults()
 ```
 
 # Pre-Class Quiz Challenge
+The challenge has two parts, and both are done in the same notebook:
 
-Open this starter sheet and follow the instructions on the notebook to complete the challenge. Download the completed notebook with **File | Download | Download .ipynb** and upload it with your Pre-Class Quiz.
+- **Part 1 - Quiz Questions:** Answer the questions below in the **Quiz Answers** text block at the top of the notebook. Double-click the text block to edit it, and type your answer after each **Answer:**.
+- **Part 2 - Code Blocks:** Complete Code Blocks 1-3 by following the instructions in the notebook.
 
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/01_matplotlib/Pre_Matplotlib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it to Learning Suite.
+
+## Part 1 - Quiz Questions
+Each question lists where in the reading to find the answer. Chapter numbers refer to *Python Data Science Handbook, 2nd Edition*. Section names are the headings inside each chapter.
+
+**Question 1.** Did you do the reading?
+
+- T) Yes, I did
+- F) No
+
+**Question 2.** Which line of code is **not** a way to change the color of a line to red?
+
+- A) `plt.plot(ypoints, c = red)`
+- B) `plt.plot(ypoints, color = 'r')`
+- C) `plt.plot(ypoints, c = '#ff0000')`
+- D) `plt.plot(ypoints, c = 'red')`
+
+*Where to look: Chapter 26, section "Adjusting the Plot: Line Colors and Styles".*
+
+**Question 3.** Which line of code changes the marker of a graph to a star?
+
+- A) `marker = *`
+- B) `plt.plot(ypoints, marks = '*')`
+- C) `plt.plot(ypoints, marker = '*')`
+- D) `marker = 'star'`
+
+*Where to look: Chapter 27, section "Scatter Plots with plt.plot".*
+
+**Question 4.** What type of figure(s) can Matplotlib create?
+
+- A) Scatter plot
+- B) Line graph
+- C) Histogram
+- D) All of the above
+
+*Where to look: Chapter 26 (line plots) and Chapter 27 (scatter plots). Code Block 3 of this challenge makes a histogram.*
+
+**Question 5.** Which Matplotlib interface does this course primarily use?
+
+- A) The MATLAB-style `pyplot` interface (`plt.plot`, `plt.title`, ...)
+- B) The object-oriented interface (`ax.plot`, `ax.set_title`, ...)
+- C) Seaborn
+- D) Excel charts
+
+*Where to look: the "Two Interfaces to Matplotlib" section of this page, and Chapter 25, section "Two Interfaces for the Price of One".*
+
+**Question 6.** Which function makes a horizontal bar chart?
+
+- A) `plt.bar()`
+- B) `plt.hbar()`
+- C) `plt.barh()`
+- D) `plt.bar(horizontal=True)`
+
+*Where to look: the "Bar Charts" section of this page.*
+
+**Question 7.** In the code below, what does `xy=(1.5, 2.5)` set?
+
+```python
+plt.annotate('This is the middle', xy=(1.5, 2.5), xytext=(0.5, 3),
+             arrowprops=dict(facecolor='black', shrink=0.05))
+```
+
+- A) Where the text is placed
+- B) The point the arrow points to
+- C) The size of the text
+- D) The size of the arrow
+
+*Where to look: the "Annotations" section of this page, and Chapter 32, section "Arrows and Annotation".*
+
+**Question 8.** For `plt.legend()` to show a name for each line, what do you add to each `plt.plot()` call?
+
+- A) `name='Line 1'`
+- B) `legend='Line 1'`
+- C) `title='Line 1'`
+- D) `label='Line 1'`
+
+*Where to look: Chapter 26, section "Labeling Plots", and Chapter 29. The examples in the "Two Interfaces to Matplotlib" section of this page also do this.*
+
+## Part 2 - Code Blocks
+Complete Code Blocks 1-3 in the notebook. The instructions are in the text block above each code block.
+
+---
+
+## Turning in/Rubric
+
+**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+|    Part 1 - Quiz Questions 1-8 (1 point each)  |        8        |
+|        Part 2 - Code Blocks 1-3 (1 point each) |        3        |
+| <div style="text-align: right">**Total**</div> |       11        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|  File uploaded incorrectly  |       -10%        |
