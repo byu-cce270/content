@@ -102,7 +102,14 @@ Identify how `C8:C11` correspond to $D_1$, $L_1$, $f_1$, and $H_1$ before using 
     - **To Value:** `0`
     - **By Changing Cell:** `C5`
 
-7. Run **Data > What-If Analysis > Goal Seek** using the starting value already in `C5`. After Goal Seek finishes, record the solved $H_j$ and final $Q_j$ in the labeled cells. Confirm that the final net flow is approximately zero.
+7. Run **Data > What-If Analysis > Goal Seek** using the starting value already in `C5`. After Goal Seek finishes, record the solved $H_j$ in `D22` and the final $Q_j$ in `B23`. Leave the solved head in `C5` — that is the cell Goal Seek changed, and the rest of the sheet reads from it. Confirm that the final net flow is approximately zero.
+
+    !!! warning "Write the two cell references as text, not as formulas"
+        In the **Set Cell** and **By Changing Cell** boxes, type `C16` and `C5`
+        with no equals sign. Typing `=C16` makes the cell a live reference, so
+        Excel displays whatever is *in* C16 — a number — instead of the reference
+        you meant to write down, and your record is no longer readable as a
+        record.
 
     !!! note "Goal Seek stops when it is close enough, not when it is exact"
         Goal Seek stops as soon as the set cell is within Excel's **Maximum Change**
@@ -135,7 +142,11 @@ The **Reservoir Flow** worksheet contains ten balanced scenarios. Each scenario 
     - **Values:** Average of Flow Rate and Average of Velocity. Use **Value Field Settings**, as introduced in the reading, to change each summary to **Average**.
     - **Filters:** Scenario
 
-4. In the **Part 2 observation** box above the PivotTable, describe what this dataset shows about average flow rate or velocity for inflow and outflow. Describe the dataset rather than claiming a universal hydraulic rule.
+4. Click cell `A4` on the **PivotTable** worksheet — the empty **Part 2 observation** box directly below the question — and type your answer there. Describe what this dataset shows about average flow rate or velocity for inflow and outflow, and describe the dataset rather than claiming a universal hydraulic rule.
+
+    !!! note "Answer below the question, not inside it"
+        The question sits in its own merged cell (`A2`). Click the empty box
+        underneath it and type there. A one- or two-sentence answer is enough.
 
 !!! tip "Optional: use an Excel Table"
     You may convert `A1:J31` to an Excel Table before creating the PivotTable. A Table makes the source easier to identify and automatically includes added rows when the PivotTable is refreshed.
@@ -151,7 +162,7 @@ Using the same source, `'Reservoir Flow'!A1:J31`, create a second PivotTable in 
 - At least two numeric fields in **Values**
 - An appropriate summary calculation for each value
 
-For example, you could place Scenario in Rows, Pipe in Columns, and average Flow Rate and Velocity in Values. Record a one- or two-sentence interpretation in the **Part 3 observation** box on the original **PivotTable** worksheet.
+For example, you could place Scenario in Rows, Pipe in Columns, and average Flow Rate and Velocity in Values. Record a one- or two-sentence interpretation in cell `G4` on the original **PivotTable** worksheet — the empty **Part 3 observation** box below the question, not inside the question itself.
 
 ---
 
@@ -176,8 +187,8 @@ For example, you could place Scenario in Rows, Pipe in Columns, and average Flow
 | Item | Points Possible |
 |:-----|:---------------:|
 | Part 1: Named cells, formulas, and checkpoint values are correct | 7 |
-| Part 1: Goal Seek settings are recorded and solved $H_j$ is within ±0.25 m | 5 |
-| Part 1: Final continuity check is recorded and $|Q_j| \leq 0.001$ m³/s | 2 |
+| Part 1: Goal Seek settings are recorded and the solved $H_j$ is left in `C5` | 5 |
+| Part 1: Final continuity check is recorded and $|Q_j| \leq 0.005$ m³/s | 2 |
 | Part 1: Data Validation is applied to all diameter and length inputs | 2 |
 | Part 2: Prescribed PivotTable uses the correct source, location, fields, and summaries | 6 |
 | Part 2: Observation is complete and supported by the PivotTable | 2 |
