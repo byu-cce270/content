@@ -151,11 +151,107 @@ Here is a link to the Matplotlib website that lists all the functions you can us
 
  
 # Pre-Class Quiz Challenge
-Open the following notebook and complete the instructions in the comments:
+The challenge has two parts, and both are done in the same notebook:
+
+- **Part 1 - Quiz Questions:** Answer the questions below in the **Quiz Answers** text block at the top of the notebook. Double-click the text block to edit it, and type your answer after each **Answer:**.
+- **Part 2 - Code Blocks:** Complete Code Blocks 1-3 by following the instructions in the notebook.
 
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/00_numpy/Pre_Numpy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it with your Pre-Class Quiz.
+Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it to Learning Suite.
+
+## Part 1 - Quiz Questions
+Each question lists where in the reading to find the answer. Chapter numbers refer to *Python Data Science Handbook, 2nd Edition*. Section names are the headings inside each chapter.
+
+**Question 1.** Did you do the reading?
+
+- T) Yes, I did
+- F) No
+
+**Question 2.** What is the first thing you should always do if you intend to use NumPy in your code?
+
+- A) `import np as numpy`
+- B) `import numpy as np`
+- C) `upload numpy as np`
+- D) `import np`
+
+*Where to look: Part II: Introduction to NumPy (the last paragraphs, where NumPy is imported).*
+
+**Question 3.** What is the output of the following code?
+
+```python
+import numpy as np
+ary = np.array([1, 2, 3, 5, 8])
+ary = ary + 1
+print(ary[1])
+```
+
+- A) 0
+- B) 1
+- C) 2
+- D) 3
+
+*Where to look: Chapter 6, section "Exploring NumPy's Ufuncs" - "Array Arithmetic", and Chapter 5, section "Array Indexing: Accessing Single Elements". The NumPy Vectorization section of this page also covers this.*
+
+**Question 4.** What will be the output of the following code?
+
+```python
+# TODO: code for this question is missing from the Learning Suite export
+```
+
+- A) `['2' '3' '4' '5']`
+- B) `[2,3,4,5]`
+- C) `[2 3 4 5]`
+- D) `[5 4 3 2]`
+
+*Where to look: TODO*
+
+**Question 5.** What is the syntax for changing a list called `mylist` into an array using NumPy?
+
+- A) `array(mylist)`
+- B) `mylist.np_array()`
+- C) `np.array(mylist)`
+- D) `array(mylist).np`
+
+*Where to look: Chapter 4, section "Creating Arrays from Python Lists".*
+
+**Question 6.** True or False: given the array below, the syntax `my_array[1]` returns `[1 2 3]`.
+
+```python
+my_array = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+```
+
+- T) True
+- F) False
+
+*Where to look: Chapter 5, section "Array Slicing: Accessing Subarrays" - "Accessing array rows and columns".*
+
+**Question 7.** What is the output of the following code?
+
+```python
+import numpy as np
+a = np.arange(10)
+print(a[2:5])
+```
+
+- A) `[2 3 4]`
+- B) `[0 1 2]`
+- C) `[5 6 7]`
+- D) `[2 4 6]`
+
+*Where to look: Chapter 4, section "Creating Arrays from Scratch" (for `np.arange`), and Chapter 5, section "Array Slicing: Accessing Subarrays" - "One-Dimensional Subarrays".*
+
+**Question 8.** What syntax would you use to solve the system of linear equations containing arrays `A` and `B`?
+
+- A) `np.linalg.solve(A, B)`
+- B) `linalg.solve.np(A, B)`
+- C) `np.solve(A, B)`
+- D) `linalg.solve(A, B)`
+
+*Where to look: This is not in the textbook. See the NumPy Functions section of this page and its NumPy Linear Algebra Functions link.*
+
+## Part 2 - Code Blocks
+Complete Code Blocks 1-3 in the notebook. The instructions are in the text block above each code block.
 
 ---
 
