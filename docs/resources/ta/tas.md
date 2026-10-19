@@ -114,11 +114,11 @@ Homework is graded automatically, then a TA reviews those grades. Each assignmen
 
 | Topic | Grading TA |
 |---|---|
-| [Using Python Locally](../../unit3/00_local_python/local_py_hw.md) | Preston Cobabe |
-| [Numpy](../../unit3/01_numpy/numpy_hw.md) | Carsen Lee |
-| [Matplotlib](../../unit3/02_matplotlib/matplot_hw.md) | Griffin Izu |
-| [Pandas DataFrame](../../unit3/03_intro_to_pandas/pandas1_hw.md) | Reagan Bodnar |
-| [Manipulating and Grouping Pandas DataFrames](../../unit3/04_continuing_pandas/pandas2_hw.md) | Luke Gonzalez |
-| [Working with Excel Files in Python](../../unit3/05_python_and_excel/excel_hw.md) | McKay Cumming |
+| [Numpy](../../unit3/00_numpy/numpy_hw.md) | Carsen Lee |
+| [Matplotlib](../../unit3/01_matplotlib/matplot_hw.md) | Griffin Izu |
+| [Pandas DataFrame](../../unit3/02_intro_to_pandas/pandas1_hw.md) | Reagan Bodnar |
+| [Manipulating and Grouping Pandas DataFrames](../../unit3/03_continuing_pandas/pandas2_hw.md) | Luke Gonzalez |
+| [Using Python Locally](../../unit3/04_local_python/local_py_hw.md) | Preston Cobabe |
+| [Working with Excel Files in Python](../../bonus/python_and_excel/excel_hw.md) | McKay Cumming |
 | [ipywidgets](../../unit3/06_ipywidgets/ipy_hw.md) | Tyler Carruth |
 | [Final Project Proposal](../../unit3/07_final_project/final_pro_proposal.md) | Preston Cobabe |
