@@ -193,8 +193,39 @@ Remaining Budget: $1,605,000.00
 Status: UNDER BUDGET
 ```
 
-!!! Note
-    While this problem can be solved using AI, we strongly encourage you to first attempt to write it without AI. If you get stuck, you may use AI tools like ChatGPT or Gemini (the AI inside Colab notebooks) to help you debug or complete these classes. If you do use AI tools, be sure to examine the code provided by the AI tool and try to understand how it works. Add comments to the code to explain what each part of the code does.
+!!! Note "Using AI on this assignment"
+    Write as much of this as you can on your own first. Working through the
+    confusion is where the learning happens.
+
+    If you get stuck, you may use an AI tool, including the AI assistant built
+    into Colab. Use it like a tutor, not an answer key:
+
+    - **Ask for one piece at a time.** Do not paste the whole assignment into a
+      single prompt. Ask about one method, such as `use_quantity()`, get it
+      working, then move on to the next one.
+    - **Read every line before you run it.** If you cannot say what a line does,
+      ask the AI to explain that line before you go any further.
+    - **Test each piece as you add it.** A method does not run by itself. You
+      need an object to run it on, so write a line that creates one, such as
+      `concrete = Material("Concrete", 125.00, "cubic yards", 50)`, then call
+      the method you just added and print the result. The numbered steps do not
+      ask for test code until the end of each part, but write it as you go
+      anyway and keep adding to it as the class grows. That test code is what
+      lets you catch a mistake while you still remember what you were doing.
+    - **Comment the code in your own words.** This is required. Assignments with
+      AI-written code and no explanatory comments lose 50%.
+
+    Build each class one piece at a time. Add a single attribute or a single
+    method, run it, and confirm it does what you expect before you add the next
+    one. A class with six methods is really six small problems, and each one is
+    easy to check on its own.
+
+    This matters even more here, because the three parts depend on each other.
+    `ConstructionProject` uses `Material` objects, and `RoadProject` inherits
+    from `ConstructionProject`. If `total_cost()` in Part 1 is wrong, every
+    total in Parts 2 and 3 will be wrong too. If you accept 100 lines of code at
+    once and something does not work, you will not know where to look. If you
+    add one method at a time, a bug is almost always in the piece you just added.
 
 ---
 
