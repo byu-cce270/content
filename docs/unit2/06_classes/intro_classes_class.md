@@ -7,7 +7,7 @@ You can find the In Class Exercise here: <a href="https://colab.research.google.
 ## Instructions
 
 1. Open the in-class workbook using the link above.
-2. Part of the exercise has you upload two Python module files to Colab and import them. Download them here: [car.py](car.py) and [electric_car.py](electric_car.py).
+2. Part of the exercise has you upload two Python module files to Colab and import them. Download them here: [car.py](car.py){: download="car.py" } and [electric_car.py](electric_car.py){: download="electric_car.py" }.
 3. Follow the instructions in the notebook to complete the exercises. Exercise 1 is a guided walkthrough. Exercises 2 and 3 are independent practice.
 
 ---
