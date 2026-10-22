@@ -180,13 +180,13 @@ Paste your GitHub Pages address (for example, `https://your-username.github.io/y
 
 |                                         **Items**                                          | **Amount** |  
 |:------------------------------------------------------------------------------------------:|:----------:|
-|      Spec has all six sections, with equations and a hand-worked validation case           |     5      |
+|      Spec has all six sections, with equations and a hand-worked validation case           |     4      |
 |                         All must-have features work                                        |     8      |
 |   At least two features of your own design work and are described in the spec (one must be your own idea)   |     6      |
 |              Validation check passes and is documented in the spec                         |     5      |
 |                    App is published and works at the GitHub Pages address                  |     3      |
 |        App is easy to use: clear labels, units on every number, looks finished            |     2      |
-|   Prompt log is complete, and at least 5 commits match the workflow steps (spec, review, first version, validation, features)   |     3      |
+|   Prompt log is complete, and at least 5 commits match the workflow steps (spec, review, first version, validation, features)   |     2      |
 |                         <div style="text-align: right">**Total**</div>                    |   **30**   |
 
 ---
