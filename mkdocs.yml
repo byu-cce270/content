@@ -120,16 +120,20 @@ nav:
         - Reading: unit3/05_ai_web_apps/web_read.md
         - In Class: unit3/05_ai_web_apps/web_class.md
         - Homework: unit3/05_ai_web_apps/web_hw.md
-    - ipywidgets:
-        - Reading: unit3/06_ipywidgets/ipy_read.md
-        - In Class: unit3/06_ipywidgets/ipy_class.md
-        - Homework: unit3/06_ipywidgets/ipy_hw.md
+    - AI Coding - Desktop Apps:
+        - Reading: unit3/06_ai_desktop_apps/desktop_read.md
+        - In Class: unit3/06_ai_desktop_apps/desktop_class.md
+        - Homework: unit3/06_ai_desktop_apps/desktop_hw.md
     - Final Project:
         - Project Proposal: unit3/07_final_project/final_pro_proposal.md
         - Project Prompt: unit3/07_final_project/final_pro_prompt.md
     - Unit 3 Study Guide: unit3/study_guide.md
   - Bonus Content:
     - Gspread: bonus/gspread/gspread_read.md
+    - ipywidgets:
+        - Reading: bonus/ipywidgets/ipy_read.md
+        - In Class: bonus/ipywidgets/ipy_class.md
+        - Homework: bonus/ipywidgets/ipy_hw.md
     - Python and Excel (xlsxwriter):
         - Reading: bonus/python_and_excel/excel_read.md
         - In Class: bonus/python_and_excel/excel_class.md

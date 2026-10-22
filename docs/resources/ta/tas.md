@@ -120,5 +120,5 @@ Homework is graded automatically, then a TA reviews those grades. Each assignmen
 | [Manipulating and Grouping Pandas DataFrames](../../unit3/03_continuing_pandas/pandas2_hw.md) | Luke Gonzalez |
 | [Using Python Locally](../../unit3/04_local_python/local_py_hw.md) | Preston Cobabe |
 | [AI Coding - Web Apps](../../unit3/05_ai_web_apps/web_hw.md) | McKay Cumming |
-| [ipywidgets](../../unit3/06_ipywidgets/ipy_hw.md) | Tyler Carruth |
+| [AI Coding - Desktop Apps](../../unit3/06_ai_desktop_apps/desktop_hw.md) | Tyler Carruth |
 | [Final Project Proposal](../../unit3/07_final_project/final_pro_proposal.md) | Preston Cobabe |
