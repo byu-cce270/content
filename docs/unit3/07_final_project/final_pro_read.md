@@ -44,50 +44,51 @@ Now have the agent build the app, the way you did in the homework. Get a plan fr
 
 ## Working as a Team
 
-### Two ways to split the work
+Your whole team works in one GitHub repository. You set it up once on GitHub, and after that the agent handles almost all of the Git work.
 
-Your team can choose either approach, or switch between them.
-
-- **One driver.** One person runs the agent and commits code, while the others write the spec, work the validation cases by hand, test the app, and write the documentation. Rotate the driver each work session so that everyone takes a turn. This is the simplest approach, because only one person changes the code at a time.
-- **Everyone codes.** Each person works on a different feature at the same time on their own computer, and Git combines the work. This is faster once it works, but you will have to handle **merge conflicts**, described below.
-
-Either way, everyone on the team should be able to clone the repository and run the app.
-
-### Sharing a repository
+### Set up the shared repository
 
 1. One team member creates the repository and publishes it to GitHub, with at least `spec.md` in it.
 2. On GitHub, that person goes to **Settings → Collaborators** and adds each teammate by GitHub username. Each teammate accepts the email invitation.
 3. Each teammate clones the repository (**Clone Git Repository** on the VS Code Welcome tab).
 
-Now everyone has a copy, and everyone can push to GitHub.
+### Every work session
 
-### The team workflow
-
-Every time you sit down to work:
-
-1. **Pull** first, to get your teammates' latest commits. In the Source Control panel, click **…** and then **Pull**, or click **Sync Changes**.
-2. Make one change, test it, and have the agent commit it.
-3. **Push** (click **Sync Changes**) soon after you commit, so your teammates get your work.
-
-Small, frequent commits make merging much easier than one big commit at the end of the day.
-
-### Merge conflicts
-
-If you and a teammate both change the same lines of the same file, Git can't tell which version to keep. When you pull, the file appears in the Source Control panel under **Merge Changes**. Open it, and above each conflict click **Accept Current Change** (your version), **Accept Incoming Change** (your teammate's), or **Accept Both Changes**, or edit the result by hand. For a bigger conflict, click **Resolve in Merge Editor** to see both versions side by side. When every conflict is resolved, click **Complete Merge**, commit, and push.
-
-If you don't understand why the two versions differ, talk to your teammate before choosing. You can also ask the agent:
+Start by getting your teammates' latest work:
 
 !!! prompt "Prompt"
-    There is a merge conflict in index.html. Explain what each version does and recommend how to combine them.
+    Pull the latest changes from GitHub and summarize what my teammates changed since my last session.
 
-### Branches
+Work the way you have all along: one change at a time, validated before you move on. When a change works, share it:
 
-To avoid stepping on each other, each person can work on a **branch**, which is a separate line of commits that doesn't affect anyone else until it is merged.
+!!! prompt "Prompt"
+    Commit these changes and push them to GitHub.
 
-1. Click the branch name at the bottom left of VS Code and choose **Create new branch**. Name it after the feature, such as `cost-report`.
-2. Work and commit as usual. Click **Publish Branch** to push it to GitHub.
-3. When the feature works, open the repository on GitHub. It will offer to create a **pull request** for your branch. Create it, and have a teammate look over the changes and merge it.
-4. Switch back to the `main` branch (click the branch name again) and pull to get the merged work.
+Push soon after each change instead of at the end of the day. The longer you wait, the more likely you and a teammate have changed the same code.
+
+### When two people change the same code
+
+If you and a teammate change the same lines, Git can't tell which version to keep. This is called a **merge conflict**, and it shows up when you pull or push. Don't try to untangle it by hand. Ask the agent:
+
+!!! prompt "Prompt"
+    There is a merge conflict. Explain what my version and my teammate's version each do, and recommend how to combine them. Don't change anything until I approve.
+
+Read its explanation. If the two versions do different things that both matter, check with your teammate before you approve. Then have the agent resolve the conflict, rerun the validation cases, commit, and push.
+
+### Splitting the work
+
+Your team can split the work either of these ways, or switch between them:
+
+- **One driver.** One person runs the agent while the others write the spec, work the validation cases by hand, test the app, and write the documentation. Rotate the driver each work session so everyone takes a turn. Merge conflicts can't happen, because only one person changes the code.
+- **Everyone codes.** Each person works on a different feature at the same time. To keep from stepping on each other, each person can work on their own **branch**, a separate copy of the code that is merged back when the feature is done:
+
+    !!! prompt "Prompt"
+        Create a branch named cost-report for the cost report feature, and switch to it.
+
+    When the feature works and passes validation:
+
+    !!! prompt "Prompt"
+        Merge the cost-report branch into main, resolve any conflicts with my approval, rerun the validation cases, and push.
 
 ### Give the agent the team's rules
 
@@ -95,7 +96,7 @@ Copilot, Codex, and Claude Code all read a file named `AGENTS.md` at the top of 
 
 ```markdown
 - Read spec.md before making any change.
-- Keep the calculations separate from the interface code.
+- Pull before starting work, and push after every change that passes validation.
 - Units are US customary; label every number shown to the user.
 - Rerun the validation cases in spec.md after every change. Never change an expected value.
 ```
