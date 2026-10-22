@@ -20,6 +20,9 @@ markdown_extensions:
         custom_checkbox: false
         clickable_checkbox: true
     - pymdownx.emoji:
+    - pymdownx.highlight:
+        use_pygments: false
+    - pymdownx.superfences
 
 theme: readthedocs
 
