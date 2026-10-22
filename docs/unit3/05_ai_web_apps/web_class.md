@@ -149,6 +149,8 @@ Add these features **one at a time**. For each one, add it to the spec first (In
 
 Then compete with the people around you: **who can build the cheapest bridge that carries all four vehicles?** A taller truss carries more load but costs more. Try trusses above and below the deck, and different shapes.
 
+The game leaves out buckling, which is why it treats every compression member the same no matter how long it is. In a real bridge, long compression members buckle at much lower loads than short ones. That is why real truss bridges usually favor designs like the Pratt, whose long diagonals are in tension, and why your best design in the game might not be the best real bridge.
+
 ## Step 7 - Publish
 
 1. In the Source Control panel, click **Publish Branch** and choose a **public** repository.
