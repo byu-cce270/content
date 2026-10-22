@@ -14,6 +14,8 @@ In this exercise, you will have the agent rebuild your Bridge Builder web app as
     pip install numpy matplotlib pytest
     ```
 
+6. Check that Tkinter works by running `python -m tkinter`. A small window should open. If it doesn't, see the note in the [reading](desktop_read.md#desktop-apps-with-tkinter).
+
 ## Step 2 - Update the Spec
 
 Edit `spec.md` to describe the desktop version. Add a section near the top:
@@ -27,9 +29,19 @@ Edit `spec.md` to describe the desktop version. Add a section near the top:
 - app.py: the Tkinter interface. It draws on a tk.Canvas and calls
   solve_truss to get the results.
 - test_truss.py: pytest tests for solve_truss.
+- When solve_truss can't solve a truss, it raises an error that says
+  whether the truss is unstable or indeterminate. app.py catches the
+  error and shows the message.
 ```
 
-Then change the **Calculations** section to say that the system is solved with `np.linalg.solve` instead of Gaussian elimination in JavaScript. This is the same method you used in the Numpy homework.
+Then change the **Calculations** section to say that the system is solved with `np.linalg.solve` instead of Gaussian elimination in JavaScript, which is the same method you used in the Numpy homework. Add one more line to that section:
+
+```markdown
+- Treat a nearly singular matrix (condition number above 1e12) as
+  unstable, as well as an exactly singular one.
+```
+
+This line matters more than it looks. When joints are almost in a straight line, `np.linalg.solve` doesn't report an error. It returns forces in the billions of pounds, and the app would display them as if they were real.
 
 Commit with the message `Update spec for desktop version`.
 
@@ -43,6 +55,7 @@ Read the plan carefully. Check that:
 
 - `truss.py` doesn't use tkinter
 - `solve_truss` takes plain data (lists or dictionaries of joints, members, supports, and loads) and returns plain data
+- The plan says how `solve_truss` reports a truss it can't solve
 - Nothing in the plan contradicts the spec
 
 If something is off, say so and ask for a revised plan. Add the plan to your prompt log.
@@ -56,8 +69,9 @@ Switch to **Agent** mode and enter:
 > Create test_truss.py with pytest tests for solve_truss as described in your plan. Use these cases, with exactly these expected values:
 >
 > 1. Numpy HW Test 1: joints A (0, 0) pin, C (10, 0) roller, B (2.5, 4.330). Members AB, BC, AC. Load -2000 lb at B. Expected AB = -1732 lb, BC = -1000 lb, AC = +866 lb (tension positive), vertical reactions 1500 lb at A and 500 lb at C, horizontal reaction 0 at A. Use a tolerance of 1 lb.
-> 2. A symmetric truss with a symmetric load: the two vertical reactions are equal and add up to the total load.
-> 3. A truss with too few members (a four-sided frame with no diagonal) is reported as unstable instead of returning forces.
+> 2. A symmetric truss: joints (0, 0) pin, (10, 0) roller, (5, 5). Three members connecting them. Load -1000 lb at (5, 5). Expected: both vertical reactions are +500 lb (upward positive), so they are equal and add up to the 1000 lb load.
+> 3. Too few members: a square frame with joints (0, 0) pin, (10, 0) roller, (10, 10), and (0, 10), and the four sides as members, with -1000 lb at (10, 10). Expected: solve_truss reports the truss as unstable instead of returning forces.
+> 4. A mechanism: joints (0, 0) pin, (5, 0), and (10, 0) roller, with members between each pair, and -1000 lb at (5, 0). The member count is right, but the joints are in a straight line. Expected: solve_truss reports the truss as unstable.
 >
 > Do not write truss.py yet.
 
@@ -85,11 +99,11 @@ Undo the change by discarding it in the Source Control panel, and run `pytest` a
 
 Add these one at a time. Update the spec first, then ask the agent, then test and commit:
 
-1. **Save and Open:** A File menu with **Save** and **Open** that writes the truss (joints, members, supports, loads) to a `.json` file and reads it back, using the standard file dialogs.
+1. **Save and Open:** A File menu with **Save** and **Open** that writes the truss (joints, members, supports, loads) to a `.json` file and reads it back, using the standard file dialogs. First remove "Saving or loading designs" from the **Out of scope** section of the spec, and add a line to **Platform and structure** saying that the code that writes and reads the files goes in its own file without tkinter, such as `design_file.py`, so it can be tested.
 2. **Export results:** A button that writes a table of member forces (member, length, force, T or C) to a CSV file that opens in Excel.
 3. **Force plot:** A matplotlib bar chart of the member forces in the window next to the truss, with tension in blue and compression in red.
 
-After each feature, run `pytest` to confirm the solver still passes. The tests don't check the new features themselves. Ask the agent to add a test for Save and Open: save a truss, open it, and check that you get the same truss back.
+After each feature, run `pytest` to confirm the solver still passes. The tests don't check the new features themselves. Ask the agent to add a test for Save and Open: save a truss, open it, and check that you get the same truss back. If this test fails at first, look at why. JSON has no tuples, so a joint saved as `(2.5, 4.33)` comes back as the list `[2.5, 4.33]`, and Python doesn't consider those equal.
 
 ## Step 8 - Push to GitHub
 
