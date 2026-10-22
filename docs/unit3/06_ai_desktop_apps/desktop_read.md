@@ -59,7 +59,7 @@ You know almost everything here from Unit 2:
 
 The calculation, `cfs_to_gpm`, is a plain function that knows nothing about windows or buttons. That separation is the most important design decision in this section, for the reason explained in [Automated Tests](#automated-tests) below.
 
-These are the widgets you will use most. The agent knows how to use all of them, so what matters is that you know they exist and can ask for them by name:
+These are the widgets you will use most. The agent knows how to use all of them, so you only need to know they exist and ask for them by name:
 
 | Widget              | What it does                                                    |
 |:--------------------|:----------------------------------------------------------------|

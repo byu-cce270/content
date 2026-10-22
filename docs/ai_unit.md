@@ -87,3 +87,18 @@ These APIs are free, need no key, and work from the browser.
 2. **Anonymous grading:** GitHub usernames will be visible in this section's homework and in Agent Parts 1 and 2. Each of those pages says so in its anonymity note.
 3. **Verification before class:** A TA follows the reading and In-Class Exercise 4 on a fresh GitHub account a week before class, fixes any steps that don't match the current GitHub and VS Code screens, and replaces each "Screenshot needed" placeholder with a real screenshot.
 4. **AI comment penalty:** Keep the −50% penalty for the Using Python Locally homework. In the agent sections, replace it with a required spec file plus a short log of the prompts the student used.
+
+## Draft Status (2026-10-22)
+
+| Section | Pages | Replaces |
+|:--|:--|:--|
+| Using Python Locally | `unit3/04_local_python/` read, class, hw | Same section, rewritten |
+| AI Coding - Web Apps | `unit3/05_ai_web_apps/` read, class, hw | Special Topic |
+| AI Coding - Desktop Apps | `unit3/06_ai_desktop_apps/` read, class, hw | ipywidgets (moved to Bonus Content) |
+| Final Project | `unit3/07_final_project/` read, class, proposal, prompt | Same section, reworked |
+
+Threads that run through all four sections:
+
+- **Bridge Builder** is the in-class app for both agent sections: a web version validated against Numpy HW Test 1, then a Tkinter port with pytest tests written before the solver.
+- **Spec, validate, commit.** Every assignment requires `spec.md` with a hand-worked validation case. The final project adds the agent design review and a validation plan.
+- **Prompt log.** `prompts.md` replaces the AI comment rule in the agent sections and the final project, with the same −50% penalty if it's missing.

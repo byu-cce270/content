@@ -80,7 +80,7 @@ and the outputs the app must produce.
 Things the app will NOT do, so the agent doesn't add them.
 ```
 
-The **Calculations** and **Validation** sections are what separate an engineering app from a toy. If you leave the equations to the agent, it will pick some, and they may be wrong in ways that are hard to see. If you write them down, you can check its work.
+The **Calculations** and **Validation** sections make the difference between an engineering app and a toy. If you leave the equations to the agent, it will pick some, and they may be wrong in ways that are hard to see. If you write them down, you can check its work.
 
 ### 2. Ask the agent to build it
 
@@ -88,7 +88,7 @@ Open your project folder in VS Code, open the Copilot chat panel, switch to **Ag
 
 > Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put all calculations in clearly named functions.
 
-The last sentence matters. When the calculations live in their own functions, you and the agent can find and check them.
+The last sentence keeps the calculations in their own functions, where you and the agent can find and check them.
 
 ### 3. Run it and look for errors
 
@@ -100,7 +100,7 @@ If the page is blank or a button does nothing, there is an error. Open the brows
 
 Enter the inputs from your validation test case and compare the app's answers to your hand calculation. If they don't match, don't simply tell the agent "the answer is wrong." Tell it what you entered, what you expected, what it showed, and how you got your answer. Often the agent will find a units error or a sign convention problem. Sometimes the mistake will be in your hand calculation.
 
-Validation is the most important step. An app that looks polished and gives wrong answers is worse than no app at all, because people will believe it.
+Don't skip this step. An app that looks polished and gives wrong answers is worse than no app at all, because people will believe it.
 
 ### 5. Commit
 
