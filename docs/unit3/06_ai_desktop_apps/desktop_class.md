@@ -1,6 +1,6 @@
-# In-Class Exercise: Bridge Builder on the Desktop
+# In-Class Exercise: Will It Break? on the Desktop
 
-In this exercise, you will have the agent turn your Bridge Builder web app into a Python desktop app, then add features that a desktop app does well, such as saving designs as files. Along the way, you will practice the three habits from the reading: getting a plan before any code, having the agent check its own work, and changing an existing program.
+In this exercise, you will have the agent turn your Will It Break? web app into a Python desktop app, then add features that a desktop app does well, such as saving designs as files. Along the way, you will practice the three habits from the reading: getting a plan before any code, having the agent check its own work, and changing an existing program.
 
 ## Step 1 - Set Up the Project
 
@@ -29,12 +29,11 @@ Edit `spec.md` to describe the desktop version.
       used in the Numpy homework.
     ```
 
-2. In the **Calculations** section, replace the line about Gaussian elimination with:
+2. Add these lines to the **Calculations** section:
 
     ```markdown
     - Solve the system with np.linalg.solve.
-    - Treat a nearly singular matrix (condition number above 1e12) as
-      unstable, as well as an exactly singular one.
+    - "Nearly singular" means a condition number above 1e12.
     ```
 
     The second line matters more than it looks. When joints are almost in a straight line, numpy doesn't report an error. It returns forces in the billions of pounds, and the app would show them as if they were real.
@@ -95,11 +94,11 @@ Draw a truss and check that it behaves like your web version. If something doesn
 Enter:
 
 !!! prompt "Prompt"
-    Run the four validation cases in spec.md against the app's truss calculations and report a table of expected versus actual values.
+    Run all of the validation cases in spec.md against the app's truss calculations and report a table of expected versus actual values.
 
 Read the table. Every case should match within 1 lb, and the two unstable trusses should be reported as unstable. If a case fails, tell the agent to fix the app. Never let it change an expected value. If you think an expected value is wrong, check it by hand yourself.
 
-Then build the Numpy homework truss in the app yourself and confirm that you see the same forces the agent reported.
+Then build the Numpy homework truss in the app yourself and confirm that you see the same forces the agent reported. Finally, build your 10 ft Pratt bridge and drive the semi across it. It should fail, just as it did in the web version.
 
 When everything matches, ask the agent to commit.
 

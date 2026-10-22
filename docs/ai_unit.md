@@ -99,6 +99,6 @@ These APIs are free, need no key, and work from the browser.
 
 Threads that run through all four sections:
 
-- **Bridge Builder** is the in-class app for both agent sections: a web version validated against Numpy HW Test 1, then a Tkinter port that the agent checks against the same validation cases.
+- **Will It Break?** is the in-class app for both agent sections: a web truss bridge game validated against Numpy HW Test 1 and a hand-solved Pratt truss, with vehicles driven across, then a Tkinter port that the agent checks against the same validation cases.
 - **Spec, validate, commit.** Every assignment requires `spec.md` with a hand-worked validation case. The final project adds the agent design review and a validation plan.
 - **Prompt log.** `prompts.md` replaces the AI comment rule in the agent sections and the final project, with the same −50% penalty if it's missing.

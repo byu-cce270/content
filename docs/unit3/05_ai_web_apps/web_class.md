@@ -1,6 +1,8 @@
-# In-Class Exercise: Bridge Builder
+# In-Class Exercise: Will It Break?
 
-In this exercise, the class will build a truss analysis app together. You click to place joints, connect them with members, put a load on the bridge, and the app solves for the force in every member and colors each one by tension or compression. You will check it against the truss you solved with numpy in the [Numpy homework](../00_numpy/numpy_hw.md), then publish it on GitHub Pages.
+In this exercise, you will build a bridge game. You design a truss bridge across a 60 ft gap, then drive vehicles across it, from a small car up to a fire engine. As each vehicle rolls across, every member lights up with its force, and if any member is overloaded, the bridge fails. The challenge is to build the cheapest bridge that carries every vehicle.
+
+You will build it in stages: first a truss solver that you check against the truss from the [Numpy homework](../00_numpy/numpy_hw.md) and a hand calculation, then the bridge, the vehicles, failure, and cost. At the end, you will publish it on GitHub Pages and compete with your classmates.
 
 Your app will not look exactly like your neighbor's, even with the same prompts. Agents don't give the same answer twice. That is fine as long as yours passes validation.
 
@@ -18,14 +20,16 @@ In Using Python Locally you made commits yourself. From here on, the agent makes
 
 ## Step 2 - Write the Spec
 
+The first version of the app is a truss solver: draw any truss, load it, and see the force in every member. The bridge and vehicles come later, once the solver is proven right.
+
 Create a file named `spec.md` and paste in this spec. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
 
 ```markdown
-# Bridge Builder
+# Will It Break?
 
 ## Purpose
-An interactive 2D truss analysis app for a statics or structures student.
-The user draws a truss, loads it, and sees the force in every member.
+A truss bridge design game for civil engineering students. The user
+draws a truss, loads it, and sees the force in every member.
 
 ## Inputs
 - A toolbar of modes: Joint, Member, Pin, Roller, Load, and Delete.
@@ -33,7 +37,7 @@ The user draws a truss, loads it, and sees the force in every member.
   typing x and y coordinates (ft) into a joint table. Coordinates in the
   table can be any decimal value. Joints are named A, B, C, ... in the
   order they are created, and the user can rename them in the table.
-- The grid shows x from -5 to 45 ft and y from -15 to 25 ft.
+- The grid shows x from -5 to 65 ft and y from -20 to 20 ft.
 - Members: created by clicking one joint, then another.
 - Supports: the user marks one joint as a pin (resists x and y) and one
   joint as a roller (resists y only).
@@ -53,9 +57,8 @@ Method of joints, solved as one linear system.
 - The truss is solvable only if (members + 3) = 2 x (joints). If not,
   show a message saying whether the truss is unstable or indeterminate
   and do not solve.
-- If the system is singular (a mechanism), show "Truss is unstable"
-  instead of numbers.
-- Solve the system with Gaussian elimination written in plain JavaScript.
+- If the system is singular or nearly singular (a mechanism), show
+  "Truss is unstable" instead of numbers.
 
 ## Outputs
 - Members colored by force: tension blue, compression red, zero-force
@@ -75,7 +78,7 @@ Numpy homework, Test 1:
   horizontal reaction at A = 0.
 
 ## Out of scope
-- Moving loads, self-weight, and 3D trusses
+- Self-weight, buckling, and 3D trusses
 - Saving or loading designs
 ```
 
@@ -88,11 +91,11 @@ Even a spec someone else wrote can be improved. In the Copilot chat panel, switc
 !!! prompt "Prompt"
     Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
 
-Discuss the suggestions with the people around you. Take any that make the spec clearer (for example, what happens when the user deletes a support), and skip any that add features you don't need yet. Update `spec.md`, and ask the agent to commit.
+Discuss the suggestions with the people around you. Take any that make the spec clearer, and skip any that add features you don't need yet. Update `spec.md` and ask the agent to commit.
 
-## Step 4 - Build It
+## Step 4 - Build the Solver
 
-Open the Copilot chat panel, switch to **Agent** mode, and enter:
+Switch to **Agent** mode and enter:
 
 !!! prompt "Prompt"
     Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. Put the truss solver in its own clearly named functions, separate from the drawing code.
@@ -103,37 +106,48 @@ Try drawing a truss. If something doesn't work, describe exactly what you did an
 
 When you can draw a truss and see forces, ask the agent to commit.
 
-## Step 5 - Validate
+## Step 5 - Validate the Solver
 
-Use the joint table to build the Numpy homework truss from the **Validation** section of the spec, and add the -2000 lb load at B. Compare the app's results to the expected values.
+**Numpy homework truss.** Use the joint table to build the truss from the **Validation** section of the spec, add the -2000 lb load at B, and compare the app's results to the expected values. Then check the expected values yourself: sketch a free body diagram of joint B and confirm that AB = 1732 lb (compression) and BC = 1000 lb (compression) satisfy both equilibrium equations. With tension positive, the app should show them as -1732 and -1000.
 
-Then check the expected values yourself. Sketch a free body diagram of joint B and confirm that AB = 1732 lb (compression) and BC = 1000 lb (compression) satisfy both equilibrium equations. With tension positive, the app should show them as -1732 and -1000. The angles at A and C are 60° and 30°.
+**A bridge truss, by the method of sections.** Build a 60 ft Pratt truss, 10 ft tall, with six 10 ft panels:
 
-If anything doesn't match, look at three things before asking the agent:
+- Bottom joints at (0, 0) through (60, 0), every 10 ft, with a pin at (0, 0) and a roller at (60, 0)
+- Top joints at (10, 10) through (50, 10)
+- Bottom chord, top chord, vertical members at x = 10 through 50, end posts from (0, 0) to (10, 10) and (60, 0) to (50, 10), and diagonals sloping down toward the center: (10, 10)–(20, 0), (20, 10)–(30, 0), (40, 10)–(30, 0), (50, 10)–(40, 0)
 
-- **Sign convention:** Is tension positive?
-- **Units:** Are the forces in lb?
-- **Geometry:** Is joint B where you think it is?
+Apply these loads to the bottom joints: -12,800 lb at x = 10, -19,200 lb at x = 20, -32,000 lb at x = 30, -4,800 lb at x = 40, and -3,200 lb at x = 50. (These are the axle loads of a semi truck parked on the bridge, which you will drive across later.)
 
-Then give the agent the inputs, the expected values, and what the app showed.
+Before you look at the app, work these by hand: the two reactions, and, with a section cut through the panel from x = 20 to 30, the forces in the top chord, the bottom chord, and the diagonal in that panel. Then compare to the app. Look at the vertical member at x = 30, too. What does the app show, and why?
 
-Next, check a truss you can't compare against the homework. Draw a symmetric truss with a symmetric load. The two vertical reactions must be equal, and they must add up to the total load. This kind of check, where you know a property the answer must have even without the exact answer, catches a surprising number of errors.
+**An unstable truss.** Draw a square with no diagonal, put a pin and a roller at the bottom corners and a load at a top corner. The app should say the truss is unstable instead of showing forces.
 
-Finally, check that the app refuses to solve a truss that can't stand. Draw a square with no diagonal, put a pin and a roller at the bottom corners and a load at a top corner. The app should say the truss is unstable instead of showing forces.
+If anything doesn't match, look at the sign convention, the units, and the geometry before asking the agent. Then give the agent the inputs, the expected values, and what the app showed.
 
-When the app passes all three checks, ask the agent to commit.
+Add the Pratt truss case to the **Validation** section of the spec with your hand-calculated values, and ask the agent to commit.
 
-## Step 6 - Make It a Game
+## Step 6 - Make It a Bridge Game
 
-Now make it fun. Add each of these features **one at a time**, testing and committing after each:
+Add these features **one at a time**. For each one, add it to the spec first (Inputs, Calculations, and Outputs, as needed), then ask the agent to build it, test it, rerun your validation cases, and ask the agent to commit.
 
-1. **Member failure:** Each member can carry 10,000 lb in tension and 6,000 lb in compression. A force exactly at capacity holds (allow 0.5 lb for round-off). Members that exceed their capacity turn black and dashed, and a banner says "Bridge failed!"
-2. **Cost:** Members cost $5 per foot and joints cost $50 each. Show the total cost of the bridge.
-3. **Challenge mode:** A button sets up a 40 ft gap with a pin at (0, 0), a roller at (40, 0), and a -6000 lb (downward) load at a joint at (20, 0). These three joints are locked, and they count toward the cost. The user can build above or below the deck, and builds the cheapest bridge that holds the load.
+1. **The bridge site:** A **New Bridge** button that clears the screen and sets up a 60 ft gap: deck joints at (0, 0), (10, 0), ... (60, 0), with a pin at (0, 0) and a roller at (60, 0). The deck joints can't be moved or deleted. The user builds the rest of the truss above or below the deck.
 
-Before you ask for each feature, add it to the spec. Failure adds capacities to **Inputs** and the capacity check to **Calculations** and **Outputs**. Cost adds unit prices to **Inputs** and the total to **Outputs**. Challenge mode adds the setup and its rules to **Inputs**. Use the exact rules above, so that everyone's costs can be compared.
+2. **Vehicles:** A menu of four vehicles and a **Drive** button. The vehicle drives across the deck from left to right in 1 ft steps, from fully off the left end to fully off the right end, and the member forces update at every step. Each axle load is split between the two deck joints on either side of it in proportion to its distance from each one (as if short beams span between the deck joints). Axle loads are in lb, measured back from the front axle:
 
-Compete with the people around you: who can build the cheapest bridge that holds 6000 lb?
+    | Vehicle                         | Axles                                      |
+    |:--------------------------------|:-------------------------------------------|
+    | Car                             | 2,000 at 0 ft; 2,000 at 10 ft              |
+    | Loaded dump truck               | 12,000 at 0 ft; 17,000 at 14 ft; 17,000 at 18.5 ft |
+    | Semi (AASHTO HS20 design truck) | 8,000 at 0 ft; 32,000 at 14 ft; 32,000 at 28 ft |
+    | Fire engine                     | 20,000 at 0 ft; 27,000 at 17 ft; 27,000 at 21.5 ft |
+
+    Also add a slider to park the vehicle at any position. To check the load splitting, park the semi with its middle axle at x = 30 on your Pratt truss. The joint loads should match the ones you entered by hand in Step 5, and so should the member forces.
+
+3. **Failure:** Every member can carry 90,000 lb in tension and 75,000 lb in compression. A force exactly at capacity holds (allow 0.5 lb for round-off). If any member goes over capacity while a vehicle is crossing, the vehicle stops, the member turns black and dashed, and a banner says which vehicle broke the bridge and where it was. Test it with your 10 ft Pratt truss, which should carry the car and the dump truck but fail under the semi.
+
+4. **Cost:** Members cost $100 per foot and joints cost $500 each, including the deck joints. Show the total cost, and a scoreboard of which vehicles the current design has carried.
+
+Then compete with the people around you: **who can build the cheapest bridge that carries all four vehicles?** A taller truss carries more load but costs more. Try trusses above and below the deck, and different shapes.
 
 ## Step 7 - Publish
 
