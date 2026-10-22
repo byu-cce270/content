@@ -19,7 +19,7 @@ Each problem lists the features the app must have and a validation check. Buildi
 
 Describe your features in a **Features** section of the spec before you build them, and build them only after the must-haves pass validation.
 
-Set up a new folder and repository for this assignment, with `spec.md`, `prompts.md`, and `index.html` at the top level. Have the agent commit at each step: the spec, the revised spec after review, the first working version, the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
+Set up a new folder and repository for this assignment, with `AGENTS.md`, `spec.md`, and `index.html` at the top level. Use the `AGENTS.md` line from the [reading](web_read.md#standing-instructions-and-the-prompt-log) so the agent keeps `prompts.md` as you work. Have the agent commit at each step: the spec, the revised spec after review, the first working version, the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
 
 ---
 
@@ -172,7 +172,7 @@ Upload these three files to Learning Suite:
 
 1. `index.html` - your app
 2. `spec.md` - your final spec, including your validation case, your hand calculation, and the app's results
-3. `prompts.md` - your prompt log
+3. `prompts.md` - the prompt log the agent kept, which you have read and corrected
 
 Paste your GitHub Pages address (for example, `https://your-username.github.io/your-repo-name/`) in the Learning Suite submission comments.
 

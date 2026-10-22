@@ -92,10 +92,11 @@ Your team can split the work either of these ways, or switch between them:
 
 ### Give the agent the team's rules
 
-Copilot, Codex, and Claude Code all read a file named `AGENTS.md` at the top of your repository when a conversation starts. Put your team's rules there so that everyone's agent follows them, whichever agent they use. (Codex reads it only when it starts, so restart it after you change the file.) For example:
+You have used `AGENTS.md` since the web apps section to have the agent keep your prompt log. In a team, it does more: everyone's agent reads the same file, so put your team's rules there and every agent follows them, whichever agent each person uses. (Codex reads it only when it starts, so restart it after you change the file.) For example:
 
 ```markdown
 - Read spec.md before making any change.
+- After each request, add an entry to prompts.md: who asked, what they asked, what you changed, and whether it worked.
 - Pull before starting work, and push after every change that passes validation.
 - Units are US customary; label every number shown to the user.
 - Rerun the validation cases in spec.md after every change. Never change an expected value.

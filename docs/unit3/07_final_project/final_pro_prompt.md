@@ -31,7 +31,7 @@ If you haven't done the proposal yet, you can find the instructions here: [Final
         - How to run it: the GitHub Pages address, or the packages to install and the command to start it
         - A report of how each team member contributed
         - Links to any outside resources and data sources you used
-    - **A prompt log** (`prompts.md`) kept by the team throughout the project
+    - **A prompt log** (`prompts.md`) kept by the agent throughout the project, and read and corrected by the team
     - **A GitHub repository** containing all of the above, with every team member added as a collaborator
 
 5. Present your project to the class. Your presentation should include a live demonstration of the app and a walkthrough of how you validated it. Be prepared to explain how any part of your code works.

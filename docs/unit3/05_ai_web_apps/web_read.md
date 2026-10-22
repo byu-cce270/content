@@ -133,17 +133,25 @@ Ask for one change per request: "Add a slider for the load," then "Color the mem
 - **Update the spec.** When you change your mind about how something should work, change the spec first, then ask the agent to update the app to match. The spec stays the single description of what the app is supposed to do.
 - **Start over when it's stuck.** If several attempts at a fix have made things worse, discard the changes and try again with a clearer request.
 
-## Keep a Prompt Log
+## Standing Instructions and the Prompt Log
 
-For every assignment in the agent sections, keep a file named `prompts.md` in your project folder. Each time you give the agent a significant request, add an entry: what you asked, and one sentence on what happened. For example:
+Copilot, Codex, and Claude Code all read a file named `AGENTS.md` at the top of your project folder at the start of every conversation. Anything you put there works like an instruction you give the agent every time, without retyping it. Start every project in this class with an `AGENTS.md` containing at least this line:
 
 ```markdown
-1. Asked it to build the app from spec.md. It worked, but forces were shown in kips instead of lb.
-2. Asked it to use lb everywhere. Fixed.
-3. Validation test: AB matched, BC had the wrong sign. Told it compression should be negative. Fixed.
+- After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked.
 ```
 
-The log replaces the rule from earlier homework about commenting AI-written code. Graders use it to see how you directed the agent, and you will find it useful when you write up your final project.
+The agent will then keep a **prompt log** in `prompts.md`, a running record of how the app was built:
+
+```markdown
+1. Asked to build the app from spec.md. Built index.html; forces were shown in kips instead of lb.
+2. Asked to use lb everywhere. Changed the units in the solver and labels. Fixed.
+3. Validation: AB matched, BC had the wrong sign. Asked to make tension positive. Fixed.
+```
+
+Read the log before you submit an assignment, and correct anything the agent glossed over, such as a fix that didn't actually work. The log replaces the rule from earlier homework about commenting AI-written code. Graders use it to see how you directed the agent, and it will help your team write up your final project.
+
+You can add your own rules to `AGENTS.md` as you go, such as "Units are US customary" or "Rerun the validation cases after every change."
 
 ## Publishing with GitHub Pages
 

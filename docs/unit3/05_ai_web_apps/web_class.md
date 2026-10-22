@@ -8,7 +8,11 @@ Your app will not look exactly like your neighbor's, even with the same prompts.
 
 1. Make a folder named `bridge_builder` in your class folder and open it in VS Code.
 2. In the **Source Control** panel, click **Initialize Repository**.
-3. Create a file named `prompts.md` for your prompt log. Add an entry to it after each request you make to the agent today.
+3. Create a file named `AGENTS.md` containing this line, so the agent keeps your prompt log (see the [reading](web_read.md#standing-instructions-and-the-prompt-log)):
+
+    ```markdown
+    - After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked.
+    ```
 
 In Using Python Locally you made commits yourself. From here on, the agent makes them. Whenever this page says to ask the agent to commit, enter "Commit these changes" in **Agent** mode, allow the `git` command it asks to run, and read the commit message it writes.
 
@@ -84,7 +88,7 @@ Even a spec someone else wrote can be improved. In the Copilot chat panel, switc
 !!! prompt "Prompt"
     Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
 
-Discuss the suggestions with the people around you. Take any that make the spec clearer (for example, what happens when the user deletes a support), and skip any that add features you don't need yet. Update `spec.md`, add the review to your prompt log, and ask the agent to commit.
+Discuss the suggestions with the people around you. Take any that make the spec clearer (for example, what happens when the user deletes a support), and skip any that add features you don't need yet. Update `spec.md`, and ask the agent to commit.
 
 ## Step 4 - Build It
 

@@ -7,7 +7,7 @@ In this exercise, you will have the agent turn your Bridge Builder web app into 
 1. Make a folder named `bridge_desktop` in your class folder.
 2. Copy `spec.md` and `index.html` from your `bridge_builder` folder into `bridge_desktop`. The agent will use `index.html` as a reference for how the app should behave.
 3. Open `bridge_desktop` in VS Code, initialize a repository, and ask the agent to commit.
-4. Create `prompts.md` for your prompt log.
+4. Copy `AGENTS.md` from your `bridge_builder` folder, so the agent keeps a prompt log for this project too.
 5. In the terminal, install the packages you'll need:
 
     ```
@@ -73,7 +73,7 @@ Read the plan and check that:
 - It says what the app will show for a truss it can't solve
 - The truss calculations are kept apart from the window code, so the agent can check them without opening the app
 
-If something is off, say so and ask for a revised plan. Add the plan to your prompt log.
+If something is off, say so and ask for a revised plan.
 
 ## Step 4 - Build It
 
