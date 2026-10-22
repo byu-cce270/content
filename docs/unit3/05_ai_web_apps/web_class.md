@@ -86,7 +86,7 @@ Open the Copilot chat panel, switch to **Agent** mode, and enter:
 
 Watch what the agent does. It will probably write the file in pieces, and it may ask permission to run commands. When it finishes, double-click `index.html` to open it in your browser.
 
-Try drawing a truss. If something doesn't work, describe exactly what you did and what happened, and ask the agent to fix it. Check the browser's developer console for red error messages (**F12**, or **Cmd+Option+J** in Chrome on a Mac) and paste any you find into the chat.
+Try drawing a truss. If something doesn't work, describe exactly what you did and what happened, and ask the agent to fix it. Check the browser's developer console for red error messages (**Ctrl+Shift+J** on Windows, or **Cmd+Option+J** in Chrome on a Mac) and paste any you find into the chat.
 
 When you can draw a truss and see forces, ask the agent to commit.
 
@@ -124,5 +124,5 @@ Compete with the people around you: who can build the cheapest bridge that holds
 
 1. In the Source Control panel, click **Publish Branch** and choose a **public** repository.
 2. On your repository's page on GitHub, go to **Settings → Pages**. Set **Source** to **Deploy from a branch**, choose **main** and **/ (root)**, and click **Save**.
-3. After a minute or two, refresh the page to see your site's address. Open it on your phone.
+3. After a few minutes, refresh the page to see your site's address. Open it on your phone.
 4. Send the link to someone sitting near you and have them try to beat your bridge.

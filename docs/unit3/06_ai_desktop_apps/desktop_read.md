@@ -14,7 +14,7 @@ A desktop app opens in its own window, with buttons, input boxes, sliders, and p
 python -m tkinter
 ```
 
-A small window should open. Close it. (If you get `No module named '_tkinter'` on a Mac, you probably installed Python with Homebrew rather than from python.org. Run `brew install python-tk`, or ask a TA for help.)
+A small window should open. Close it. (If you get `No module named '_tkinter'` on a Mac, you probably installed Python with Homebrew rather than from python.org. Run `brew install python-tk@3.x`, using your Python version (for example, `python-tk@3.14`), or ask a TA for help.)
 
 Here is the flow converter from the last reading, written in Python with Tkinter:
 
@@ -124,7 +124,7 @@ You can only test a calculation this way if it is a plain function like `max_mom
 
 Most real programming work is changing code that already exists, and agents are good at it, but they need more direction than when they start from scratch. A few habits help:
 
-- **Ask for a plan first.** In the Copilot chat panel, switch to **Ask** mode and ask: "Read index.html and spec.md. I want to rebuild this app as a Python Tkinter desktop app. Before writing any code, describe how you would structure it: which files, which classes and functions, and what each one does." Read the plan, push back on anything you don't like, and only then switch to **Agent** mode and ask it to build.
+- **Ask for a plan first.** In the Copilot chat panel, choose **Plan** from the picker and ask: "Read index.html and spec.md. I want to rebuild this app as a Python Tkinter desktop app. Before writing any code, describe how you would structure it: which files, which classes and functions, and what each one does." Read the plan, push back on anything you don't like, and only then switch to **Agent** mode and ask it to build.
 - **Point it at the files that matter.** Name the files it should read and the files it is allowed to change.
 - **Keep the tests passing.** After each change, run `pytest`. If a test that used to pass now fails, the agent broke something. Tell it which test failed and ask it to fix the code, not the test.
 - **Update the spec first.** As in the last section, change the spec before asking for a change to the app.

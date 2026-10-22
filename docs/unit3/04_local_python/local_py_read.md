@@ -70,7 +70,7 @@ Follow the section for your operating system. If you get stuck, bring your lapto
 python --version
 ```
 
-You should see something like **Python 3.13.0**
+You should see something like **Python 3.15.1**
 
 #### 2. Install VS Code
 
@@ -118,7 +118,7 @@ pip install numpy pandas matplotlib
 python3 --version
 ```
 
-You should see something like **Python 3.13.0**
+You should see something like **Python 3.15.1**
 
 **Note:** On a Mac, the commands are usually `python3` and `pip3` rather than `python` and `pip`. Wherever this class says `python` or `pip`, use `python3` or `pip3` if the shorter version gives an error.
 
@@ -157,10 +157,10 @@ In Terminal, install the packages we have used this semester:
 pip3 install numpy pandas matplotlib
 ```
 
-**Note:** If you get `pip3: command not found`, Python is not on your PATH. Run this in Terminal, replacing `3.13` with your installed Python version:
+**Note:** If you get `pip3: command not found`, Python is not on your PATH. Run this in Terminal, replacing `3.15` with your installed Python version:
 
 ```
-echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.13/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.15/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -224,12 +224,13 @@ Choose your username with some care. It appears in the address of every web page
 
 The Student Developer Pack gives verified students free access to GitHub Copilot and other developer tools.
 
-1. Go to [education.github.com/pack](https://education.github.com/pack) and click the button to sign up as a student
-2. Select your BYU email and enter **Brigham Young University** as your school
-3. Upload proof of enrollment when asked. A photo of your BYU ID card works.
-4. Submit the application
+1. Before you start, set the **billing name** on your GitHub account (**Settings → Billing and licensing → Payment information**) to your name exactly as it appears on your BYU ID. You don't need to enter a payment method.
+2. Go to [education.github.com/pack](https://education.github.com/pack) and click the button to sign up as a student
+3. Select your BYU email and enter **Brigham Young University** as your school. When the browser asks to share your location, allow it, and turn off any VPN.
+4. When asked for proof of enrollment, take a photo of your BYU ID card with your laptop or phone camera. GitHub rejects uploaded images.
+5. Submit the application
 
-GitHub will email you when you are approved. If your application is rejected, read the reason in the email, fix it, and apply again. The most common problems are an unverified school email or a blurry photo. If you are still waiting when we start using Copilot, you can use Copilot's free plan, which has a monthly usage limit.
+GitHub will email you when you are approved, usually within a few days. Approval doesn't turn Copilot on by itself. Within about three days of approval, go to [github.com/settings/education/benefits](https://github.com/settings/education/benefits) and claim **Copilot Student**. If your application is rejected, read the reason in the email, fix it, and apply again. The most common problems are an unverified school email, a billing name that doesn't match your ID, location sharing turned off, or a blurry photo. If you are still waiting when we start using Copilot, you can use Copilot's free plan, which has a monthly usage limit.
 
 ### 3. Tell Git who you are
 
@@ -253,9 +254,9 @@ Colab's AI features suggest a line or a block of code at a time. An **AI coding 
 
 These are the three agents we support in this class:
 
-**[GitHub Copilot](https://github.com/features/copilot)** is built into VS Code. Open the chat panel, switch it to **Agent** mode, and describe what you want. It is free with the Student Developer Pack, and **it is all you need for this class.**
+**[GitHub Copilot](https://github.com/features/copilot)** is built into VS Code. Open the chat panel (the chat icon in the title bar, or **Ctrl+Alt+I** on Windows and **Ctrl+Cmd+I** on a Mac), choose **Agent** from the picker at the bottom of the panel, and describe what you want. The picker also has **Ask**, which answers questions without changing your files, and **Plan**, which writes a plan before any code. It is free with the Student Developer Pack, and **it is all you need for this class.**
 
-**[Claude Code](https://claude.com/product/claude-code)** from Anthropic and **[Codex](https://openai.com/codex/)** from OpenAI are agents that you can run in the VS Code terminal or in their own VS Code extensions. Each comes with a paid plan of about \$20 per month. They are optional, but they are generally more capable than Copilot on larger projects. If you plan to use AI for programming after this class, one month of either is worth considering for the final project.
+**[Claude Code](https://claude.com/product/claude-code)** from Anthropic and **[Codex](https://openai.com/codex/)** from OpenAI are agents that you can run in the VS Code terminal or in their own VS Code extensions. Claude Code requires a paid plan of about \$20 per month. Codex has a limited free tier, and its full plan is also about \$20 per month. They are optional, but they are generally more capable than Copilot on larger projects. If you plan to use AI for programming after this class, one month of either is worth considering for the final project.
 
 Whichever agent you use, the results depend on how well you understand the problem. If you can describe the inputs, the steps, and the expected output clearly, an agent can build a surprising amount. If you can't, it will confidently build the wrong thing. That is why the first half of this course taught you to program by hand: you need to be able to read what the agent writes and tell whether it is correct.
 

@@ -47,7 +47,7 @@ Ask the agent to commit.
 
 ## Step 3 - Get a Plan
 
-In the Copilot chat panel, switch to **Ask** mode and enter:
+In the Copilot chat panel, choose **Plan** from the picker and enter:
 
 > Read spec.md and index.html. I want to rebuild this app as the Python Tkinter desktop app described in spec.md. Before writing any code, describe your plan: what goes in each file, which classes and functions you will write, and what the arguments and return values of solve_truss will be.
 

@@ -4,7 +4,7 @@
 
 In this section, you will use an AI coding agent to build an interactive web application for an engineering problem, test it against a hand calculation, and publish it on the internet where anyone with the link can use it. You will not learn to write the code for a web page yourself. The agent writes it. Your job is the part that requires an engineer: deciding exactly what the app should do, describing it clearly, and proving that its answers are right.
 
-You will need everything from [Using Python Locally](../04_local_python/local_py_read.md): VS Code, Git, a GitHub account, and Copilot (or Claude Code or Codex, if you have a paid plan).
+You will need everything from [Using Python Locally](../04_local_python/local_py_read.md): VS Code, Git, a GitHub account, and Copilot (or Claude Code or Codex, if you use one of them).
 
 ## What a Web App Is
 
@@ -102,7 +102,7 @@ The last sentence keeps the calculations in their own functions, where you and t
 
 Double-click `index.html` to open it in your browser. After each change the agent makes, refresh the page (**Ctrl+R** or **Cmd+R**) to load the new version.
 
-If the page is blank or a button does nothing, there is an error. Open the browser's **developer console** to see it: press **F12** on Windows, or **Cmd+Option+J** in Chrome on a Mac. (In Safari, first turn on **Settings → Advanced → Show features for web developers**, then press **Cmd+Option+C**.) Errors appear in red. Copy the error into the chat and ask the agent to fix it.
+If the page is blank or a button does nothing, there is an error. Open the browser's **developer console** to see it: press **Ctrl+Shift+J** on Windows, or **Cmd+Option+J** in Chrome on a Mac. (In Safari, first turn on **Settings → Advanced → Show features for web developers**, then press **Cmd+Option+C**.) Errors appear in red. Copy the error into the chat and ask the agent to fix it.
 
 ### 5. Validate
 
@@ -149,9 +149,9 @@ GitHub can host any HTML file in a public repository as a web page, for free. On
 1. Make sure the file is named `index.html` and is in the top level of the repository.
 2. On your repository's page on GitHub, go to **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to **Deploy from a branch**, choose the **main** branch and the **/ (root)** folder, and click **Save**.
-4. Wait a minute or two, then refresh the Pages settings page. It will show your site's address, which looks like `https://your-username.github.io/your-repo-name/`.
+4. Wait a few minutes, then refresh the Pages settings page. It will show your site's address, which looks like `https://your-username.github.io/your-repo-name/`.
 
-Every time you push a new commit, GitHub updates the page within a minute or two.
+Every time you push a new commit, GitHub updates the page within a few minutes (it can take up to 10).
 
 ---
 

@@ -139,7 +139,7 @@ If your Copilot student license hasn't been approved yet, use the free plan for 
 2. Open the Copilot chat panel (the chat icon at the top of VS Code) and make sure the mode is set to **Ask**.
 
     !!! warning "Screenshot needed"
-        The Copilot chat panel with the mode picker open, showing the **Ask** and **Agent** options.
+        The Copilot chat panel with the mode picker open, showing the **Agent**, **Ask**, and **Plan** options.
 
     Ask it:
 

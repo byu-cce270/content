@@ -19,7 +19,7 @@ Sit with your final project team for this exercise. You will practice sharing a 
 2. **At the same time**, everyone changes the first line of `team.md` to a different team name of their own invention, then commits. Don't push yet.
 3. One person pushes. That push works.
 4. The next person tries to push. Git refuses, because GitHub has a commit their copy doesn't have. They pull, and VS Code reports a merge conflict.
-5. Resolve it in the merge editor: pick a team name, click **Complete Merge**, commit, and push.
+5. Resolve it: open `team.md` from **Merge Changes** in the Source Control panel, pick a team name using the **Accept** buttons above the conflict (or edit it by hand), click **Complete Merge**, commit, and push.
 6. Repeat until everyone has pushed. Then everyone pulls and checks that all copies match.
 
 ## Part 4 - Use a Branch

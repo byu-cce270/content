@@ -43,6 +43,8 @@ It will fail. Fix the errors one at a time until the plot appears. These are the
 |:------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
 | `FileNotFoundError` for `/content/June-2021-...csv`         | `/content/` is Colab's file area and doesn't exist on your computer. Use just the file name: `'June-2021-Provo-River-Streamflow-Rates.csv'` |
 | Still `FileNotFoundError` after that                        | The terminal must be in the `streamflow` folder. Check with `pwd` (Mac) or `cd` (Windows)               |
+| `SyntaxError` on a line starting with `!` or `%`, such as `!pip install numpy` | Delete the line. Install packages in the terminal instead |
+| Errors on `from google.colab import ...` or `drive.mount(...)` | Delete those lines. They only work in Colab |
 | `ModuleNotFoundError: No module named 'numpy'`              | Run `pip install numpy matplotlib` in the terminal                                                    |
 | The program finishes, but no plot appears                   | Add `plt.show()` after your plotting code. The program pauses until you close the plot window          |
 

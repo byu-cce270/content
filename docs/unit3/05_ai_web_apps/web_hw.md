@@ -116,7 +116,7 @@ A dashboard that downloads live streamflow data from a USGS gauge on the Provo R
 - A clear statement on the page that the rating is not a safety guarantee
 - The time of the most recent reading
 
-USGS data services change from time to time. Have the agent find the current way to download instantaneous discharge (USGS parameter code 00060) for your gauge, and record what it used in your spec.
+Use the [USGS Water Data API](https://api.waterdata.usgs.gov/docs/ogcapi/), which needs no key. The older `waterservices.usgs.gov` service is being shut down during the 2026–27 school year, so tell the agent not to use it. The flow is USGS parameter code 00060. Record the address the app downloads from in your spec.
 
 **Validation:** Compare the current flow in your app to the value on the gauge's USGS web page at the same time. Then download the past 7 days of data from the USGS site as a CSV file, compute the 7-day average in Excel, and compare it to an average shown by your app.
 

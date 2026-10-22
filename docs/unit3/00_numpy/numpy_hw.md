@@ -254,10 +254,11 @@ This code will be given to you as a preview for the next topic.
 Later in Unit 3 you will use an AI coding agent called GitHub Copilot, which is free for students. GitHub has to verify that you are a student, and that can take up to two weeks, so apply now.
 
 1. Go to [github.com](https://github.com/) and create an account using your **BYU email address**. If you already have a GitHub account, add your BYU email under **Settings → Emails** and verify it.
-2. Go to [education.github.com/pack](https://education.github.com/pack) and apply for the **Student Developer Pack**. Enter **Brigham Young University** as your school and upload a photo of your BYU ID card when asked.
-3. Take a screenshot of the page or email confirming that your application was submitted.
+2. Set the **billing name** on your GitHub account (**Settings → Billing and licensing → Payment information**) to your name exactly as it appears on your BYU ID. You don't need to enter a payment method.
+3. Go to [education.github.com/pack](https://education.github.com/pack) and apply for the **Student Developer Pack**. Enter **Brigham Young University** as your school, allow the browser to share your location (and turn off any VPN), and take a photo of your BYU ID card with your camera when asked. GitHub rejects uploaded images.
+4. Take a screenshot of the page or email confirming that your application was submitted.
 
-If your application is rejected, read the reason in the email, fix it, and apply again.
+When you are approved, go to [github.com/settings/education/benefits](https://github.com/settings/education/benefits) within a few days and claim **Copilot Student**. Approval alone doesn't turn it on. If your application is rejected, read the reason in the email, fix it, and apply again.
 
 ---
 

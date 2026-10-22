@@ -72,7 +72,7 @@ Small, frequent commits make merging much easier than one big commit at the end 
 
 ### Merge conflicts
 
-If you and a teammate both change the same lines of the same file, Git can't tell which version to keep. When you pull, VS Code will mark the file with a **!** and open it in the **merge editor**, which shows both versions side by side. For each conflict, choose **Accept Current** (your version), **Accept Incoming** (your teammate's), or **Accept Both**, or edit the result by hand. Then click **Complete Merge**, commit, and push.
+If you and a teammate both change the same lines of the same file, Git can't tell which version to keep. When you pull, the file appears in the Source Control panel under **Merge Changes**. Open it, and above each conflict click **Accept Current Change** (your version), **Accept Incoming Change** (your teammate's), or **Accept Both Changes**, or edit the result by hand. For a bigger conflict, click **Resolve in Merge Editor** to see both versions side by side. When every conflict is resolved, click **Complete Merge**, commit, and push.
 
 If you don't understand why the two versions differ, talk to your teammate before choosing. You can also ask the agent: "There is a merge conflict in index.html. Explain what each version does and recommend how to combine them."
 
@@ -87,7 +87,7 @@ To avoid stepping on each other, each person can work on a **branch**, which is 
 
 ### Give the agent the team's rules
 
-Each agent reads a standing instructions file from the top of your repository at the start of every conversation: Copilot reads `.github/copilot-instructions.md` or `AGENTS.md`, Codex reads `AGENTS.md`, and Claude Code reads `CLAUDE.md`. Put your team's rules there so that everyone's agent follows them. For example:
+Copilot, Codex, and Claude Code all read a file named `AGENTS.md` at the top of your repository when a conversation starts. Put your team's rules there so that everyone's agent follows them, whichever agent they use. (Codex reads it only when it starts, so restart it after you change the file.) For example:
 
 ```markdown
 - Read spec.md before making any change.
