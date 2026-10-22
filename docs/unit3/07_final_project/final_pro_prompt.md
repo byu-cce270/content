@@ -80,24 +80,22 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 ---
 
-## Project Ideas
+## Choosing a Problem
 
-You may propose any project with real engineering substance. Here are some ideas to start from. Each is bigger than a homework problem, so plan your features carefully.
+Your team chooses the problem. The best final projects solve a problem someone actually has, and the hardest part of the project is finding one. Spend real time on it before you commit.
 
-### Roof Solar Planner
-Draw a roof, place solar panels, and set the date and time. The app computes the sun's path for Provo, shows which panels are shaded and when, and estimates annual energy production and the payback period.
+**Where to look:**
 
-### Wasatch Earthquake Explorer
-Plot earthquakes from the USGS real-time feed on a map with the Wasatch Fault drawn in, filtered by magnitude and date. Click a quake to estimate the shaking intensity at a chosen site, such as the BYU campus, using a published attenuation relationship.
+- **Work you've done by hand.** Think about internships, summer jobs, and other classes. What did you calculate over and over, look up in tables, or track in a messy spreadsheet?
+- **People you know.** Ask a professor, a TA, an engineer or contractor you've worked for, or a classmate in another major what they wish they had a tool for.
+- **Your surroundings.** Campus, your apartment complex, a construction site you walk past, Utah's water, roads, snow, and earthquakes. What would be useful to measure, predict, or explain?
+- **Things you're curious about.** A good app can also make an engineering idea visible: how a structure carries load, how water moves through a basin, how a schedule slips.
 
-### Tiny House Configurator
-Lay out the walls, doors, and windows of a tiny house on a grid and see it in 3D. The app produces a live material takeoff (studs, sheathing, drywall, roofing) and a cost estimate that updates as the design changes.
+**What makes a problem a good one:**
 
-### Block Stacking Challenge
-Stack blocks to reach as far as possible past the edge of a table. The app tracks the center of mass of each sub-stack and topples the stack when it becomes unstable. Compare the best stack to the theoretical answer from the harmonic series.
+- **A real user.** You can name who would use the app and what decision it helps them make.
+- **Engineering substance.** The app calculates, analyzes, or simulates something from civil engineering or construction. Displaying or organizing information isn't enough.
+- **Checkable answers.** You can work at least three cases by hand or find them in a reference, so you can prove the app is right.
+- **The right size.** Your team can build a working first version in a week and spend the rest of the time improving and validating it. If you can't describe the first version in two sentences, narrow the problem.
 
-### Expand a Homework App
-Take your web or desktop app from Unit 3 and make it a substantially bigger tool, for example by adding new analyses, real data, or a second type of user. Talk to a TA before choosing this option to make sure the expansion is big enough.
-
-### Your Own Idea
-Many of the best projects come from problems a team member has seen at an internship or a summer job. If something you did by hand in Excel took hours, it may make a great app.
+Before you write your proposal, describe your problem to a TA or the instructor in a few sentences and get their approval. They will help you scale it up or down.

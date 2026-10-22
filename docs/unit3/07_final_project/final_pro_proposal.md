@@ -10,7 +10,7 @@ You will work with the team you formed earlier. You can find your team here:
 
 ## Instructions
 
-1. Read the [final project requirements](final_pro_prompt.md) and the [final project reading](final_pro_read.md) as a team, and choose a project. Ideas are listed at the end of the [project requirements](final_pro_prompt.md#project-ideas).
+1. Read the [final project requirements](final_pro_prompt.md) and the [final project reading](final_pro_read.md) as a team. Then find a problem worth solving, using the guidance in [Choosing a Problem](final_pro_prompt.md#choosing-a-problem), and get a TA's or the instructor's approval for it.
 
 2. Following Steps 1–3 of the design process in the reading, write `spec.md` in your team repository. It must include:
       - Purpose, Users, Inputs, Calculations, Outputs, Screens, and Out of scope
