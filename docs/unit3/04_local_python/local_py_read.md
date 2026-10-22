@@ -234,12 +234,15 @@ GitHub will email you when you are approved, usually within a few days. Approval
 
 ### 3. Tell Git who you are
 
-Git attaches a name and email to every commit you make. Set them once on each computer by running these two commands in the terminal, using your own name and the email from your GitHub account:
+Git attaches a name and email to every commit you make. Set them once on each computer by running these commands in the terminal, using your own name and the email from your GitHub account:
 
 ```
 git config --global user.name "Your Name"
 git config --global user.email "you@byu.edu"
+git config --global init.defaultBranch main
 ```
+
+The third command makes new repositories start on a branch named `main`, which is the name GitHub uses. Without it, some computers name the first branch `master`.
 
 ### 4. Sign in to GitHub from VS Code
 

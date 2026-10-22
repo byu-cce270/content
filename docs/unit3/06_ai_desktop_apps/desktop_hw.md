@@ -27,7 +27,7 @@ Whichever option you choose, your app must:
 3. **Have at least 3 automated tests** in a file named `test_*.py`, and all of them must pass when you run `pytest`. At least two of the tests must use expected values that you worked by hand or took from a reference. Write a comment in each of those tests saying where the expected value came from. The third can check a property the answer must have, such as a symmetry or a proportionality.
 4. **Have a spec** (`spec.md`) with all six sections from the [web apps reading](../05_ai_web_apps/web_read.md#1-write-a-spec), plus a **Platform and structure** section that lists your files and what each one does. For Option A, also list the features you added.
 5. **Have a prompt log** (`prompts.md`) and a `README.md` that says how to install and run the app.
-6. **Be in a GitHub repository** with at least 5 commits.
+6. **Be in a GitHub repository** with at least 5 commits that follow the workflow steps: the spec, the plan, the tests, the first working version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
 
 Follow the workflow from class: get a plan before the agent writes code, write the test expected values yourself, add one feature at a time, and run `pytest` after every change.
 
@@ -57,7 +57,7 @@ The TA will grade your app by unzipping it, installing the packages in your READ
 |               Calculations are in plain functions, separate from the interface             |     3      |
 |        App is easy to use: clear labels, units on every number, looks finished            |     3      |
 |                  Prompt log is complete                                                    |     3      |
-|            README works, and the GitHub repository has at least 5 commits                  |     2      |
+|        README works, and at least 5 commits match the workflow steps                       |     2      |
 |                         <div style="text-align: right">**Total**</div>                    |   **30**   |
 
 ---

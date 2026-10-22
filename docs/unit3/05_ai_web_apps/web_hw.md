@@ -17,7 +17,7 @@ Choose one of the five problems below and build it as a single-file web app, fol
 
 Each problem lists features the app must have, a validation check, and ideas for going further. The must-have features are the minimum. The best apps will go well past them, and the "Going further" ideas are a place to start.
 
-Set up a new folder and repository for this assignment, with `spec.md`, `prompts.md`, and `index.html` at the top level.
+Set up a new folder and repository for this assignment, with `spec.md`, `prompts.md`, and `index.html` at the top level. Have the agent commit at each step: the spec, the revised spec after review, the first working version, the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
 
 ---
 
@@ -149,7 +149,7 @@ Paste your GitHub Pages address (for example, `https://your-username.github.io/y
 |              Validation check passes and is documented in the spec                         |     5      |
 |                    App is published and works at the GitHub Pages address                  |     4      |
 |        App is easy to use: clear labels, units on every number, looks finished            |     3      |
-|              Prompt log is complete, and the repository has at least 5 commits            |     3      |
+|   Prompt log is complete, and at least 5 commits match the workflow steps (spec, review, first version, validation, features)   |     3      |
 |                         <div style="text-align: right">**Total**</div>                    |   **30**   |
 
 ---

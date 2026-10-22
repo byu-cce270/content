@@ -27,35 +27,36 @@ def cfs_to_gpm(cfs):
     return cfs * 448.83
 
 
-class FlowConverter:
-    def __init__(self, root):
-        root.title("Flow Converter")
-
-        tk.Label(root, text="Flow (cfs):").grid(row=0, column=0, padx=10, pady=10)
-        self.cfs_entry = tk.Entry(root, width=10)
-        self.cfs_entry.grid(row=0, column=1)
-
-        tk.Button(root, text="Convert", command=self.convert).grid(row=0, column=2, padx=10)
-
-        self.result = tk.Label(root, text="")
-        self.result.grid(row=1, column=0, columnspan=3, pady=10)
-
-    def convert(self):
-        cfs = float(self.cfs_entry.get())
-        self.result.config(text=f"{cfs_to_gpm(cfs):.1f} gpm")
+def convert():
+    """Read the input box, convert, and show the result."""
+    cfs = float(cfs_entry.get())
+    result.config(text=f"{cfs_to_gpm(cfs):.1f} gpm")
 
 
 root = tk.Tk()
-FlowConverter(root)
+root.title("Flow Converter")
+
+tk.Label(root, text="Flow (cfs):").grid(row=0, column=0, padx=10, pady=10)
+cfs_entry = tk.Entry(root, width=10)
+cfs_entry.grid(row=0, column=1)
+
+tk.Button(root, text="Convert", command=convert).grid(row=0, column=2, padx=10)
+
+result = tk.Label(root, text="")
+result.grid(row=1, column=0, columnspan=3, pady=10)
+
 root.mainloop()
 ```
 
-You know almost everything here from Unit 2:
+Most of this is Python you already know:
 
-- `FlowConverter` is a **class**. Its `__init__` method builds the window, and `self.cfs_entry` and `self.result` are attributes that hold the widgets the class needs to use again later.
+- `root = tk.Tk()` creates the window.
 - Each widget (`Label`, `Entry`, `Button`) is created and then placed with `.grid(row=..., column=...)`, which arranges widgets in rows and columns like cells in a spreadsheet.
-- `command=self.convert` tells the button which method to call when it is clicked. Note there are no parentheses, because you are handing Tkinter the method to call later, not calling it now.
+- `command=convert` tells the button which function to call when it is clicked. Note there are no parentheses, because you are handing Tkinter the function to call later, not calling it now.
+- `cfs_entry.get()` reads what the user typed, and `result.config(text=...)` changes what a label shows.
 - `root.mainloop()` opens the window and waits for the user. Your program stays on this line until the window is closed.
+
+When you look at the code an agent writes for a larger app, you will usually find all of this wrapped in a **class**, like the ones you wrote in Unit 2: the `__init__` method builds the window, the widgets are stored as attributes such as `self.cfs_entry`, and the button calls a method such as `self.convert`. A class keeps dozens of widgets and functions organized, but the pieces are the same as in this example.
 
 The calculation, `cfs_to_gpm`, is a plain function that knows nothing about windows or buttons. That separation is the most important design decision in this section, for the reason explained in [Automated Tests](#automated-tests) below.
 
@@ -71,6 +72,15 @@ These are the widgets you will use most. The agent knows how to use all of them,
 | `tk.Canvas`         | A drawing area for lines, shapes, and text, including animation |
 | `FigureCanvasTkAgg` | Puts a matplotlib plot inside a Tkinter window                  |
 | `filedialog`        | The standard Open and Save As windows                           |
+
+### Other options
+
+Tkinter isn't the only way to build a desktop app in Python. We use it in this class because it comes with Python, so the app runs on any computer with no installation, and a TA can run your homework without setting anything up. Its widgets look a little dated, but it handles everything the assignments need. The most common alternatives are:
+
+- **PySide6** (Qt): the toolkit behind many professional engineering programs. It looks modern and has far more widgets, including tables, tabs, and docking panels, but it is a large install and takes more code to set up.
+- **CustomTkinter**: a package that gives Tkinter a modern look with almost the same code.
+
+Because the agent writes the interface code, switching toolkits is mostly a matter of saying which one you want in your spec. For the homework in this section, use Tkinter.
 
 ## Automated Tests
 

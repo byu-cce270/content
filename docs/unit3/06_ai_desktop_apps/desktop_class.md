@@ -68,7 +68,7 @@ Switch to **Agent** mode and enter:
 
 > Create test_truss.py with pytest tests for solve_truss as described in your plan. Use these cases, with exactly these expected values:
 >
-> 1. Numpy HW Test 1: joints A (0, 0) pin, C (10, 0) roller, B (2.5, 4.330). Members AB, BC, AC. Load -2000 lb at B. Expected AB = -1732 lb, BC = -1000 lb, AC = +866 lb (tension positive), vertical reactions 1500 lb at A and 500 lb at C, horizontal reaction 0 at A. Use a tolerance of 1 lb.
+> 1. Numpy HW Test 1: joints A (0, 0) pin, B (2.5, 4.330), C (10, 0) roller. Members AB, BC, AC. Load -2000 lb at B. Expected AB = -1732 lb, BC = -1000 lb, AC = +866 lb (tension positive), vertical reactions 1500 lb at A and 500 lb at C, horizontal reaction 0 at A. Use a tolerance of 1 lb.
 > 2. A symmetric truss: joints (0, 0) pin, (10, 0) roller, (5, 5). Three members connecting them. Load -1000 lb at (5, 5). Expected: both vertical reactions are +500 lb (upward positive), so they are equal and add up to the 1000 lb load.
 > 3. Too few members: a square frame with joints (0, 0) pin, (10, 0) roller, (10, 10), and (0, 10), and the four sides as members, with -1000 lb at (10, 10). Expected: solve_truss reports the truss as unstable instead of returning forces.
 > 4. A mechanism: joints (0, 0) pin, (5, 0), and (10, 0) roller, with members between each pair, and -1000 lb at (5, 0). The member count is right, but the joints are in a straight line. Expected: solve_truss reports the truss as unstable.

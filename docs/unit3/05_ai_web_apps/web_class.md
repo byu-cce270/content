@@ -24,15 +24,19 @@ An interactive 2D truss analysis app for a statics or structures student.
 The user draws a truss, loads it, and sees the force in every member.
 
 ## Inputs
+- A toolbar of modes: Joint, Member, Pin, Roller, Load, and Delete.
 - Joints: placed by clicking on a grid (1 ft spacing, snap to grid), or by
   typing x and y coordinates (ft) into a joint table. Coordinates in the
-  table can be any decimal value.
+  table can be any decimal value. Joints are named A, B, C, ... in the
+  order they are created, and the user can rename them in the table.
+- The grid shows x from -5 to 45 ft and y from -15 to 25 ft.
 - Members: created by clicking one joint, then another.
 - Supports: the user marks one joint as a pin (resists x and y) and one
   joint as a roller (resists y only).
 - Loads: the user selects a joint and enters a vertical load in lb
   (downward is negative).
-- A "Delete" mode that removes a joint (and its members) or a member.
+- Delete mode removes a joint (and its members, support, and load) or a
+  member.
 
 ## Calculations
 Method of joints, solved as one linear system.
@@ -40,6 +44,8 @@ Method of joints, solved as one linear system.
 - Unknowns: one axial force per member, plus 2 reactions at the pin and
   1 at the roller.
 - Member force sign convention: tension positive, compression negative.
+- Until one pin and one roller are placed, show "Add a pin and a roller"
+  instead of solving. A joint can't be both.
 - The truss is solvable only if (members + 3) = 2 x (joints). If not,
   show a message saying whether the truss is unstable or indeterminate
   and do not solve.
@@ -48,15 +54,16 @@ Method of joints, solved as one linear system.
 - Solve the system with Gaussian elimination written in plain JavaScript.
 
 ## Outputs
-- Members colored by force: tension blue, compression red, zero-force gray.
-  Line thickness proportional to force magnitude.
+- Members colored by force: tension blue, compression red, zero-force
+  (under 0.5 lb) gray. Line thickness from 2 px to 8 px, proportional to
+  force magnitude.
 - Each member labeled with its force in lb, with T or C.
 - Reactions shown as arrows at the supports, labeled in lb.
 - The solution updates automatically whenever the truss or loads change.
 
 ## Validation
 Numpy homework, Test 1:
-- Joints: A (0, 0) pin, C (10, 0) roller, B (2.5, 4.330)
+- Joints: A (0, 0) pin, B (2.5, 4.330), C (10, 0) roller
 - Members: AB, BC, AC
 - Load at B: -2000 lb
 - Expected: AB = 1732 lb C, BC = 1000 lb C, AC = 866 lb T,
@@ -94,7 +101,7 @@ When you can draw a truss and see forces, ask the agent to commit.
 
 Use the joint table to build the Numpy homework truss from the **Validation** section of the spec, and add the -2000 lb load at B. Compare the app's results to the expected values.
 
-Then check the expected values yourself. Sketch a free body diagram of joint B and confirm that AB = 1732 lb and BC = 1000 lb satisfy both equilibrium equations. The angles at A and C are 60° and 30°.
+Then check the expected values yourself. Sketch a free body diagram of joint B and confirm that AB = 1732 lb (compression) and BC = 1000 lb (compression) satisfy both equilibrium equations. With tension positive, the app should show them as -1732 and -1000. The angles at A and C are 60° and 30°.
 
 If anything doesn't match, look at three things before asking the agent:
 
@@ -106,23 +113,25 @@ Then give the agent the inputs, the expected values, and what the app showed.
 
 Next, check a truss you can't compare against the homework. Draw a symmetric truss with a symmetric load. The two vertical reactions must be equal, and they must add up to the total load. This kind of check, where you know a property the answer must have even without the exact answer, catches a surprising number of errors.
 
-When the app passes both checks, ask the agent to commit.
+Finally, check that the app refuses to solve a truss that can't stand. Draw a square with no diagonal, put a pin and a roller at the bottom corners and a load at a top corner. The app should say the truss is unstable instead of showing forces.
+
+When the app passes all three checks, ask the agent to commit.
 
 ## Step 6 - Make It a Game
 
 Now make it fun. Add each of these features **one at a time**, testing and committing after each:
 
-1. **Member failure:** Each member can carry 10,000 lb in tension and 6,000 lb in compression. Members that exceed their capacity turn black and dashed, and a banner says "Bridge failed!"
+1. **Member failure:** Each member can carry 10,000 lb in tension and 6,000 lb in compression. A force exactly at capacity holds (allow 0.5 lb for round-off). Members that exceed their capacity turn black and dashed, and a banner says "Bridge failed!"
 2. **Cost:** Members cost $5 per foot and joints cost $50 each. Show the total cost of the bridge.
-3. **Challenge mode:** A button sets up a 40 ft gap with a pin at (0, 0), a roller at (40, 0), and a -6000 lb (downward) load at (20, 0). The user builds the cheapest bridge that holds the load.
+3. **Challenge mode:** A button sets up a 40 ft gap with a pin at (0, 0), a roller at (40, 0), and a -6000 lb (downward) load at a joint at (20, 0). These three joints are locked, and they count toward the cost. The user can build above or below the deck, and builds the cheapest bridge that holds the load.
 
-Before you ask for each feature, add it to the spec. For example, add the capacities to the **Inputs** and **Calculations** sections before asking for member failure.
+Before you ask for each feature, add it to the spec. Failure adds capacities to **Inputs** and the capacity check to **Calculations** and **Outputs**. Cost adds unit prices to **Inputs** and the total to **Outputs**. Challenge mode adds the setup and its rules to **Inputs**. Use the exact rules above, so that everyone's costs can be compared.
 
 Compete with the people around you: who can build the cheapest bridge that holds 6000 lb?
 
 ## Step 7 - Publish
 
 1. In the Source Control panel, click **Publish Branch** and choose a **public** repository.
-2. On your repository's page on GitHub, go to **Settings → Pages**. Set **Source** to **Deploy from a branch**, choose **main** and **/ (root)**, and click **Save**.
+2. On your repository's page on GitHub, go to **Settings → Pages**. Set **Source** to **Deploy from a branch**, choose your branch (**main**, or **master** on some computers) and **/ (root)**, and click **Save**.
 3. After a few minutes, refresh the page to see your site's address. Open it on your phone.
 4. Send the link to someone sitting near you and have them try to beat your bridge.

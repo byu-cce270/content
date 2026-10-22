@@ -322,7 +322,7 @@ This section covers running Python on your own computer, tracking code with Git 
 * **Desktop Apps with Tkinter**:
     * Create the window with **root = tk.Tk()** and start it with **root.mainloop()**.
     * Create widgets (**tk.Label**, **tk.Entry**, **tk.Button**, **tk.Scale**, **tk.Canvas**) and place them with **.grid(row=..., column=...)**.
-    * Connect a button to a method with **command=self.solve** (no parentheses).
+    * Connect a button to a function with **command=solve** (no parentheses), or to a method in a class with **command=self.solve**.
     * Read an entry box with **entry.get()**, and change a label with **label.config(text=...)**.
 * **Automated Tests with pytest**:
     * Tests go in files named **test_*.py**, in functions named **test_...**, and use **assert**. Run them all by typing **pytest**.
