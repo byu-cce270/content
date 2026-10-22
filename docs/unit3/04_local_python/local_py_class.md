@@ -1,103 +1,141 @@
 # In-Class Exercise: Running Python Locally
 
-After installing Python, VS Code, and git as described in the reading, do the following exercises.
+Before class, you should have installed Python, VS Code, and Git and applied for the GitHub Student Developer Pack, as described in the [reading](local_py_read.md). If any of that didn't work, get a TA's help before starting Exercise 2.
 
+## Exercise 1 - Find Your Way Around the Terminal
 
-## Sample Problem 1 - Alien Invasion
+1. In VS Code, choose **File → Open Folder** and open your class folder (for example, `Documents/cce270`). If you don't have one yet, make it first.
+2. Open the terminal with **Terminal → New Terminal**.
+3. Check where you are with `pwd` (Mac) or `cd` (Windows). It should be your class folder.
+4. Make a folder for today and move into it:
 
-For a fun hands-on exercise, try the following. The textbook we have used for this class (Python Crash Course) has a number of exercises related to building a game called "Alien Invasion". You can find the exercises in Chapter 12. Try to implement the game locally on your machine using Python and VS Code. This will give you a chance to practice your Python skills and get familiar with running Python locally.
+    ```
+    mkdir local_python
+    cd local_python
+    ```
+
+5. Create a file named `beam.py` in that folder and paste in this code, which computes the maximum moment and deflection of a simply supported beam with a uniform load:
+
+    ```python
+    # Simply supported beam with a uniform load
+    w = float(input("Uniform load w (kip/ft): "))
+    L = float(input("Span L (ft): "))
+    E = 29000      # ksi, steel
+    I = 510        # in^4, W18x35
+
+    M_max = w * L**2 / 8                                  # kip-ft
+    delta = 5 * (w / 12) * (L * 12)**4 / (384 * E * I)    # in
+
+    print(f"Maximum moment: {M_max:.1f} kip-ft")
+    print(f"Maximum deflection: {delta:.2f} in")
+    print(f"L/360 limit: {L * 12 / 360:.2f} in")
+    ```
+
+6. Run it from the terminal with `python beam.py` (or `python3 beam.py` on a Mac). Try a 1.0 kip/ft load on a 25 ft span, then 1.5 kip/ft on a 30 ft span. Check the first answer by hand: $M = wL^2/8 = 78.1$ kip-ft.
+7. Run `ls` (Mac) or `dir` (Windows) to see your file, then `cd ..` to move back up to your class folder.
+
+## Exercise 2 - Clone and Run a Game
+
+Python Crash Course, the textbook we've used this semester, builds a game called "Alien Invasion" in Chapters 12–14. Someone has posted a complete version on GitHub, and you will download it with Git, run it, and change it.
 
 ### Clone the Repository
 
-We are going to use a solution that someone has already written and posted on GitHub. This is a common practice in programming — you can use existing code as a reference or starting point for your own projects. Since we already installed Git above, we can use it to clone (download) the repository to our local machine. Follow these steps:
+1. Browse to the repo: [https://github.com/bryanmacgo/Alien-Invasion](https://github.com/bryanmacgo/Alien-Invasion)
 
-1. Browse to the repo here: [https://github.com/bryanmacgo/Alien-Invasion](https://github.com/bryanmacgo/Alien-Invasion)
-
-2. Click on the green **Code** button and copy the URL.
+2. Click the green **Code** button and copy the URL.
 
     ![aliens_clone_repo.png](images/aliens_clone_repo.png)
 
-3. Open VS Code. On the Welcome tab, click **Clone Git Repository**. 
+3. In VS Code, choose **File → New Window**. On the Welcome tab, click **Clone Git Repository**.
 
-![vscode_clone.png](images/vscode_clone.png)
+    ![vscode_clone.png](images/vscode_clone.png)
 
-4. Paste the URL you copied here:
+4. Paste the URL:
 
-![vscode_clone2.png](images/vscode_clone2.png)
+    ![vscode_clone2.png](images/vscode_clone2.png)
 
-5. Choose a folder to save the project. VS Code will clone the repo and offer to open 
-   it automatically.
+5. Choose your class folder as the location. VS Code will clone the repo and offer to open it. Click **Open**.
 
-### Install Dependencies
+### Install pygame and Run the Game
 
-The Alien Invasion game requires the **pygame** package. Open the terminal in VS Code (**Terminal → New Terminal**) and install it:
+Open the terminal (**Terminal → New Terminal**) and install pygame:
 
 ```bash
 pip install pygame-ce
 ```
 
-**Note:** We are installing `pygame-ce` (the community edition) instead of `pygame` because the original `pygame` package does not yet support Python 3.14+. `pygame-ce` is a drop-in replacement — it uses the same `import pygame` syntax and the code works without any changes.
+`pygame-ce` is the community edition of pygame. It uses the same `import pygame` statement, and unlike the original package it supports the newest versions of Python.
 
-### Viewing the Code
-
-Once the repository is cloned and opened in VS Code, you will see the project files in the Explorer panel on the left side. The project structure will look something like this:
+The project files appear in the Explorer panel on the left. `alien_invasion.py` starts the game, and the other files hold the ship, the aliens, the scoreboard, and the settings.
 
 ![vscode_main.png](images/vscode_main.png)
 
-The files you just cloned are in the "alien_invasion" folder. You can click on any of the Python files to view the code. For example, click on "alien_invasion.py" to see the main code that launches the game. The other files contain the game logic, settings, and other components.
-
-### Running the Game
-
-To run the game, open the terminal in VS Code (**Terminal → New Terminal** or click on the icon as shown above) and 
-type:
+Run the game:
 
 ```bash
 python alien_invasion.py
 ```
 
-You will then see the game launch in a new window:
-
 ![aliens_game.png](images/aliens_game.png){width=800}
 
-## Sample Problem 2 - Running Notebooks in Jupyter Lab
+Use the arrow keys to move, the space bar to fire, and **Q** to quit.
 
-Now let's try running an existing notebook in Jupyter Lab. Here is a public repo with notebooks from the Python Crash Course book:
+### Change the Game
 
-[https://github.com/khiner/notebooks/tree/master/python_crash_course](https://github.com/khiner/notebooks/tree/master/python_crash_course)
+Open `settings.py`. Every number that controls how the game plays is defined here. Make these changes, saving and rerunning the game after each one:
 
-1. To download a notebook, click on its name to open a Preview tab, then click the **Download** icon in the upper right corner.
+- Set `bullet_width` to `300` so your bullets clear a whole section of aliens at once
+- Change `bullets_allowed` from `3` to `10`
+- Change `bullet_color` to something bright, such as `255, 0, 0`
+- Speed up the aliens by changing `alien_speed_factor`
 
-2. Launch Jupyter Lab from your terminal:
+Now open the **Source Control** panel (the branching icon on the left sidebar, or **Ctrl+Shift+G** / **Cmd+Shift+G**). It lists `settings.py` as changed. Click the file name to see a side-by-side comparison: red lines are what you removed and green lines are what you added. This view will matter a great deal once an AI agent is making the changes.
 
-```bash
-jupyter lab
-```
+## Exercise 3 - Your First GitHub Repository
 
-    **Note (Windows):** If you get an error like `'jupyter' is not recognized`, use `python -m jupyter lab` instead.
+Now you will put your own code on GitHub.
 
-3. In Jupyter Lab, navigate to where you downloaded the notebook and open it. Here is one of the notebooks from the repo:
+1. In VS Code, open your `local_python` folder from Exercise 1 (**File → Open Folder**).
+2. Open the **Source Control** panel and click **Initialize Repository**. Git now tracks this folder.
+3. Your `beam.py` file is listed under **Changes**. Type a message in the box at the top, such as `Add beam calculator`, and click **Commit**. If VS Code asks whether to stage all your changes, click **Yes**.
+4. Click **Publish Branch**. Choose **public repository** and accept the suggested name. If VS Code asks you to sign in to GitHub, do so.
+5. Click the link VS Code shows (or go to your GitHub profile) and find your repository. Your code is now on GitHub.
 
-    ![jupyter2.png](images/jupyter2.png)
+Now make a second commit:
 
-4. Run the code cells by clicking the **Run** button in the toolbar or by pressing **Shift + Enter**, just like in Colab.
+1. Change `beam.py` to also print whether the beam passes the L/360 deflection check. For example:
 
-You may also want to try downloading some of your own notebooks from this class and running them locally. Remember that unlike Colab, you need to install any packages yourself using **pip** before they can be used in Jupyter Lab.
+    ```python
+    if delta <= L * 12 / 360:
+        print("Deflection OK")
+    else:
+        print("Deflection too large - choose a stiffer beam")
+    ```
 
-## Sample Problem 3 - Converting Colab Notebooks to Python Scripts
+2. Run it to make sure it works.
+3. Commit with the message `Add deflection check`.
+4. Click **Sync Changes** to push the commit to GitHub.
+5. Refresh your repository page on GitHub and click the commit count (the clock icon) to see both commits.
 
-One of the drawbacks of Google Colab is that you have to upload your input files to the Colab file space and then 
-download any output files you create. This can be time-consuming and error-prone. If you want to run a notebook 
-locally, you can convert it to a Python script. This will allow you to run the notebook locally and save the output 
-files directly to your local file system. Python also runs much faster than Colab, so this can be a useful option 
-for running large notebooks.
+That is the whole Git workflow you will use for the rest of the semester: **change, test, commit, push**.
 
-To convert a Colab notebook to a Python script, you can use the "Download as" option in the "File" menu. This will 
-create a new Python script with the same name as the notebook. You can then run the script locally and save the output 
-files to your local file system.
+## Exercise 4 - Meet Your Coding Agent
 
-![download_py.png](images/download_py.png)
+If your Copilot student license hasn't been approved yet, use the free plan for this exercise.
 
-Then copy the file and any associated files you will be using to a folder on your local machine. Open the script in 
-your favorite IDE and run it. You may need to install any packages you use in the script and you may need to make some 
-changes to the code to make it compatible with your local environment. For example, some of the code we used to 
-create forms and form elements in the previous exercises will not work in a Python script.
+1. Open the Alien Invasion folder from Exercise 2. In the Source Control panel, discard your changes to `settings.py` (right-click the file and choose **Discard Changes**) so the game is back to its original state.
+2. Open the Copilot chat panel (the chat icon at the top of VS Code) and make sure the mode is set to **Ask**. Ask it:
+
+    > Explain how this game is organized. Which file handles keyboard input, and how does the main loop work?
+
+    Compare its answer to what you see in the files.
+
+3. Switch the mode to **Agent** and ask:
+
+    > Add a pause feature. Pressing P should pause the game and show the word "PAUSED" in the middle of the screen. Pressing P again should resume.
+
+4. When the agent finishes, go to the **Source Control** panel and look at what it changed. Which files did it edit? Can you find the new code that checks for the P key?
+5. Run the game and test the feature. Does it work? Does anything else break?
+6. If it works, commit it. If it doesn't, describe the problem to the agent and let it try again. If it makes things worse, discard all the changes in the Source Control panel and start over.
+
+Steps 4–6 are the habit to build: **ask the agent, review what it changed, test it, then commit or throw it away.**

@@ -1,160 +1,114 @@
 # HW: Using Python Locally
 
-**Purpose:** Gain experience coding and running your code in a local environment.
+**Purpose:** Move one of your Colab notebooks onto your own computer, make it work with local files, and track your changes with Git and GitHub.
 
 ---
 
-## Getting Started
+## Overview
 
-In Unit 2 we primarily used Google Colab, which runs Python in the cloud. In this assignment you will practice running Python locally on your own computer.
+You will take a homework notebook you already finished this semester, convert it to a Python script, and turn it into a small program that runs from the terminal. Along the way you will commit each step with Git and push the result to GitHub. You will use this same workflow (change, test, commit, push) for every assignment from here to the end of the semester.
 
-Running Python locally allows you to:
-
-- Work offline
-- Use your own files directly
-- Run larger programs more efficiently
-- Begin working like real software developers
-
-You should already have installed Python locally during class or shortly after class. If not, go back to the reading or get help from a TA. 
-
-This assignment has two parts. **Part 1** will be due like normal (the night after your next class). **Part 2** will complete later in Unit 3.
+A Unit 3 notebook that reads a CSV file (numpy, matplotlib, or pandas) works best, because Step 4 asks you to read and write files. A Unit 2 notebook works too.
 
 ---
 
-## Part 1 - Run a Previous Assignment Locally
+## Step 1: Set Up the Project
 
-For this part you will download an old Unit 2 assignment from Google Colab and run it on your own computer. The goal is simply to confirm that your local Python environment works correctly.
+1. In your class folder, make a new folder named `local_hw`.
+2. Open the notebook in Colab and choose **File → Download → Download .py**. Save the `.py` file into `local_hw`. If the notebook used a data file, download that into `local_hw` as well.
+3. Open `local_hw` in VS Code (**File → Open Folder**).
+4. In the **Source Control** panel, click **Initialize Repository**, then commit everything with the message `Original notebook from Colab`.
 
-### Step 1: Download an Old Unit 2 Homework from Google Colab
+Committing the untouched original first means you can always see, in the Source Control panel or on GitHub, exactly what you changed to make it run locally.
 
-1. Open the Unit 2 assignment in Google Colab. If you don't remember where they are saved, you can find them in your Google Drive under "Colab Notebooks" or search for the assignment name in Google Drive.
-2. Click File → Download → **Download .ipynb** or File → Download → **Download .py**. If you intend to run the notebook as a Jupyter notebook, download it as a .ipynb. If you want to run it as a Python script in an IDE, download it as a .py file.
-3. Save the file somewhere on your computer (for example, a folder for this class).
+## Step 2: Make It Run
 
-This will download the notebook file to your local machine.
-
-### Step 2: Open the Notebook Locally
-
-Open the downloaded notebook on your computer using either Jupyter Lab or VS Code that we installed.
-
-General steps:
-
-1. Locate the downloaded .ipynb notebook file on your computer.
-2. Open Jupyter Lab or VS Code.
-3. Open the notebook file within that environment.
-
-You can also run the *.ipynb* file in VS Code, but it works better in Jupyter Lab.
-
-### Step 3: Run the Notebook
-
-Once the notebook is open in your environment, run the notebook. 
-
-#### Jupyter Lab
-
-If you are using Jupyter Lab, you can run cells by clicking the "Run" button in the toolbar or by using the keyboard shortcut:
+Run the script from the terminal:
 
 ```
-Shift + Enter
+python your_file.py
 ```
 
-1. Run the code cells in the notebook.
-2. Continue executing cells until the entire notebook runs successfully.
+It will probably fail. A script downloaded from Colab often contains things that only work in Colab:
 
-#### VS Code
+| You might see                                   | What to do                                                                                    |
+|:------------------------------------------------|:----------------------------------------------------------------------------------------------|
+| Shell commands such as `!pip install` (Colab may have already commented them out) | Delete them, and run the `pip install` command in the terminal instead |
+| `from google.colab import files` and `files.upload()` | Delete them. You will read the file directly from your folder in Step 4                  |
+| `# @param` or `# @title` form fields            | These become plain variables. Leave them, or replace them with `input()` (see Step 5)          |
+| `display(df)`                                   | Replace with `print(df)`                                                                       |
+| `ModuleNotFoundError: No module named 'x'`      | Run `pip install x` in the terminal                                                            |
+| Plots don't appear                              | Add `plt.show()` after each plot. The program pauses until you close the plot window            |
 
-If you are using VS Code, open the *.py file and run it using the Run option in the top right corner of the editor or by using the terminal.
+Fix errors one at a time until the whole script runs from top to bottom. When it does, commit with the message `Runs locally`.
+
+## Step 3: Clean It Up
+
+A script converted from a notebook is full of leftovers: the "Automatically generated by Colab" header, your markdown cells turned into blocks of text in triple quotes, and lines that only displayed a value so you could see it in Colab. Make the file read like a program:
+
+- Remove the Colab header and the markdown text blocks
+- Keep short comments explaining what each section does
+- Put any functions you defined near the top of the file
+
+Run it again to make sure it still works, then commit with the message `Clean up notebook leftovers`.
+
+## Step 4: Work with Local Files
+
+Now use the feature Colab makes awkward: your program can read and write files in its own folder directly, with no uploading or downloading.
+
+- **Input:** If your notebook uploaded a data file, read it straight from the folder instead, for example `pd.read_csv("data.csv")`. If your notebook didn't use a data file, have the program read at least one value from a small text or CSV file that you create.
+- **Output:** Save at least one result into the folder. Save a plot with `plt.savefig("results.png")`, or write a table with `df.to_csv("results.csv")` or a text summary with `open("results.txt", "w")`.
+
+Run the program and confirm that the output file appears in the Explorer panel. Commit with a message that describes what you did, such as `Read data from file and save plot`.
+
+## Step 5: Add a Feature
+
+Add one feature that makes the program more useful when someone runs it from the terminal. Some ideas:
+
+- Ask the user for an input with `input()` instead of hard-coding it, such as a file name, a threshold, or a design value
+- Print a formatted summary table of the results
+- Let the user choose which of several plots or calculations to run from a menu that repeats until they choose to quit
+- Check the input data for missing or impossible values and report them
+
+You may write the feature yourself or use Copilot to help. If you use Copilot, follow the class AI rule: add comments explaining what the AI-written code does. Commit with a message describing the feature.
+
+## Step 6: Push to GitHub
+
+In the Source Control panel, click **Publish Branch** and choose a **public** repository. Open the repository on GitHub and confirm that all of your commits are there.
+
+Then, in the VS Code terminal, run:
 
 ```
-python filename.py
+git log --oneline
 ```
 
-This will run the entire script. If you downloaded the notebook as a .ipynb file, you can also open it in VS Code and run cells similarly to Jupyter Lab.
-
-#### Packages
-
-If you encounter errors about missing packages, you will need to install those packages locally. You can do this using pip in your terminal or command prompt.
-
-```
-pip install package_name
-```
-
-After installing any required packages, run the notebook or python code again until it executes without errors.
-
-### Step 4: Take a Screenshot
-
-Take a screenshot showing:
-
-- The notebook running on your local machine
-- Code cells executed successfully
-- Output visible
-
-The screenshot should clearly show that the notebook is not running in Colab. You will turn this in on Learning Suite and finish part 2 later. 
-
----
-
-## Part 2 - Complete a Future Unit 3 Assignment Locally
-
-For this part, you will complete a future Unit 3 homework assignment, but instead of using Colab you will complete it entirely in your local Python environment. You can pick from homework 3.2-3.7.
-
-### Step 1: Choose a Unit 3 Assignment
-
-Select any future homework assignment from Unit 3. You don't have to complete that assignment until we have covered it in class. 
-
-### Step 2: Download the Starter Notebook (if applicable)
-
-On the homework assignment you are working locally, open up the starter sheet (if there is one) and instead of makeing a copy like you normally would, download the .ipynb file. 
-
-### Step 3: Open the Assignment in Your Local Environment
-
-Open the downloaded notebook or create your file in VS Code or Jupyter Lab.
-
-You may complete the assignment in either of these formats unless your instructor says otherwise:
-
-- A Jupyter notebook (.ipynb)
-- A Python script (.py)
-
-### Step 4: Complete the Assignment Locally
-
-Write and run your code locally instead of in Google Colab.
-
-Your file should:
-
-- Include all code required for the assignment
-- Run successfully in your local environment
-- Show the same work you would normally complete in Colab
-
-If needed, install any required packages using pip or conda.
-
-### Step 5: Save and Submit Your File
-
-When you complete the Unit 3 assignment, submit your work as a local file on Learning Suite.
-
-Acceptable file types are:
-
-- .ipynb
-- .py
-
-Make sure the file you submit is the actual file you used locally and that it opens correctly.
+This lists your commits, newest first, one per line. You should have at least five.
 
 ---
 
 ## Turning in/Rubric
 
-
 !!! note "Do not put your name or NetID in the file"
     Learning Suite records who submitted each file, so your name is not needed
     inside the file itself. Leaving it out means your work can be graded
-    anonymously, which keeps grading fair. This applies to scans and photos
-    too — please don't write your name on the page.
+    anonymously, which keeps grading fair. Your GitHub screenshot will show
+    your GitHub username, which is fine for this assignment.
 
-**_REMINDER_** - For this assignment you will turn in a screenshot along with your file. Because you worked locally rather than in Colab, a `.py` file is accepted here in addition to a `.ipynb` file.
+Upload the following to Learning Suite:
+
+1. **A `.zip` of your `local_hw` folder**, containing your `.py` file, your input file, and your output file. On Windows, right-click the folder and choose **Send to → Compressed (zipped) folder**. On a Mac, right-click the folder and choose **Compress "local_hw"**.
+2. **A screenshot of the VS Code terminal** showing your program running and the output of `git log --oneline`.
+3. **A screenshot of your repository on GitHub.**
 
 **Rubric:**
 
 |                                   **Items**                                    | **Amount** |  
 |:------------------------------------------------------------------------------:|:----------:|
-| Part 1: Screenshot of old unit 2 assignment and shows IDE and the code results |     5      |
-|  Part 2: A unit 3 assignment was completed in an IDE and file turned in works  |     25     |
+|          Program runs from the terminal without errors (Steps 2 and 3)          |     8      |
+|          Program reads an input file and writes an output file (Step 4)         |     6      |
+|                         New feature works (Step 5)                              |     6      |
+|           At least 5 commits with messages that describe each change            |     5      |
+|                         Repository published on GitHub                          |     5      |
 |                 <div style="text-align: right">**Total**</div>                 |   **30**   |
 
 ---

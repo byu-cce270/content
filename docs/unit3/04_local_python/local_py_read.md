@@ -2,26 +2,26 @@
 
 ---
 
-Last unit we have been using Python in a Google Colab environment, which is a cloud-based platform. However, you can also run Python locally on your own machine. This can be useful for various reasons, such as working offline, using specific libraries, referencing your files directly without uploading them, or running larger projects. This document provides a brief overview of how to use Python locally, including installation, running scripts, and managing packages. We will also discuss some common IDEs (Integrated Development Environments) that can help you write and run Python code more efficiently. In class, we will give a live demonstration of how to install Python and run a simple script locally. We will also show you how to use Jupyter Notebook, which is a popular tool for writing and running Python code in an interactive environment.
+So far in this class, you have written all of your Python in Google Colab, which runs Python in the cloud and comes with most packages already installed. For the rest of the semester, you will work on your own computer. In the next two sections, you will use AI coding agents to build a web application and a desktop application, and you will do your final project the same way. Those tools run on your own machine, so this section gets you set up:
+
+- Python, VS Code, and Git installed on your laptop
+- Enough of the command line to move around and run a program
+- A GitHub account, which you will use to store your code and publish your web apps
+- An application for a free GitHub Copilot student license
+
+**Apply for the student license before class.** GitHub verifies student status by hand, and approval can take anywhere from a few hours to a couple of weeks. You will need Copilot in two sections, so apply now. Instructions are in [Your GitHub Account and Copilot](#your-github-account-and-copilot) below.
 
 ## Basic Concepts
 
-Before we get into the details, here is an overview of some basic concepts that will be useful in this unit.
+**Running Python locally**
 
-**Installing and running Python locally**
-
-In Colab, Python is already installed and you can run Python scripts directly from the notebook. Colab also provides most of the packages that you need. When running locally, you need to install Python and the packages you need. 
-
-Once you have installed Python, you can run it directly from the terminal. For example, you could use a text editor to write a Python script and save it to a file:
+In Colab, Python is already installed and you run code one cell at a time. On your own computer, you install Python yourself, write your code in a file that ends in `.py`, and run the whole file at once from a terminal:
 
 ![mycode.png](images/mycode.png)
-
-and then run it using the following command:
 
 ```bash
 python mycode.py
 ```
-and the output would be:
 
 ```bash
 Hello World!
@@ -29,28 +29,29 @@ Hello World!
 
 **Installing packages**
 
-After you have installed Python, you can install additional packages using **pip**. **pip** is a package manager for Python that allows you to install additional libraries and packages.
-
-For example, to install NumPy and Pandas, you can run:
+Colab comes with numpy, pandas, matplotlib, and most other packages you have used. Locally, you install each package yourself with **pip**, Python's package manager:
 
 ```bash
-pip install numpy pandas
+pip install numpy pandas matplotlib
 ```
-There is another package manager called **conda** that is also used to install packages. It works similarly to **pip**, but it is more powerful and can install packages from multiple sources. To get started and to keep things simple for now, we will use **pip** for installing packages.
+
+You only need to install a package once per computer.
 
 **Using an IDE**
 
-While you can edit a Python script in a text editor, the best and most efficient way to write and run Python code is to use an Integrated Development Environment (IDE). There are a variety of IDEs available, including [Visual Studio Code (VS Code)](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), and [Spyder](https://www.spyder-ide.org/). We recommend that you start with VS Code. It is free and open-source.
+You could write Python in any text editor, but an Integrated Development Environment (IDE) makes it much easier. An IDE has a file browser, a code editor with syntax highlighting and error checking, a built-in terminal, and AI tools. We will use [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which is free and is the most widely used IDE for Python. VS Code can also open `.ipynb` notebooks, so you can still run your Colab notebooks locally.
 
-When you use an IDE, you can write and run Python code directly from the IDE, and the IDE provides features like code completion, code formatting, etc.
+**Git and GitHub**
 
-**Using Git**
+**Git** is a program that keeps a history of the changes in a project folder. Each time you reach a good stopping point, you make a **commit**, which is a saved snapshot of every file in the folder along with a short message describing what changed. If you break something later, you can see exactly what changed and go back to any earlier commit. A project folder tracked by Git is called a **repository** (or **repo**).
 
-There is a website called [GitHub](https://github.com/) that provides a platform for hosting and collaborating on code. You can use GitHub to store your code, share it with others, and collaborate on projects. It is also a great place to explore other Python developers' code. You can easily "clone" a repository (a copy of a project) from GitHub to your local machine and start working on it.
+**GitHub** is a website that stores copies of Git repositories online. You **push** your commits from your laptop to GitHub to back them up and share them, and you **clone** someone else's repository to download a copy. GitHub can also host a web page straight from a repository, which you will use in the next section to put your web app online.
 
-## Python Local Development Setup Guide
+Git matters even more when you work with an AI agent. An agent can change a dozen files in a few seconds. Git shows you exactly what it changed, and if the change broke something, you can throw it away and go back to your last commit.
 
-Now that we have covered the basics, let's get started. This guide will walk you through installing Python, VS Code, and Git on your laptop. Follow the appropriate section for your operating system.
+## Setup Guide
+
+Follow the section for your operating system. If you get stuck, bring your laptop to class or to TA office hours.
 
 ---
 
@@ -59,24 +60,24 @@ Now that we have covered the basics, let's get started. This guide will walk you
 #### 1. Install Python
 
 1. Go to [python.org/downloads](https://www.python.org/downloads/)
-2. Click **Download Python 3.x.x** (the big yellow button). **If the yellow button says "Download Python Install Manager", click the hyperlink below that says "get the standalone installer for Python 3.x.x"**
+2. Click **Download Python 3.x.x** (the big yellow button). **If the yellow button says "Download Python Install Manager", click the hyperlink below it that says "get the standalone installer for Python 3.x.x"**
 3. Run the installer
 4. ⚠️ **Important:** Check the box that says **"Add Python to PATH"** before clicking Install
 5. Click **Install Now**
-6. Verify it worked — open **Command Prompt** (search "cmd" in the Start menu) and type:
+6. Verify it worked. Open **Command Prompt** (search "cmd" in the Start menu) and type:
 
 ```
 python --version
 ```
 
-You should see something like **Python 3.12.0**
+You should see something like **Python 3.13.0**
 
 #### 2. Install VS Code
 
 1. Go to [code.visualstudio.com](https://code.visualstudio.com/)
 2. Click **Download for Windows**
-3. Run the installer — the defaults are fine
-4. When prompted, check **"Add to PATH"** and **"Open with Code"** options
+3. Run the installer. The defaults are fine.
+4. When prompted, check the **"Add to PATH"** and **"Open with Code"** options
 5. Open VS Code and install the **Python extension**:
 
    - Click the Extensions icon on the left sidebar (or press **Ctrl+Shift+X**)
@@ -87,8 +88,8 @@ You should see something like **Python 3.12.0**
 
 1. Go to [git-scm.com/download/win](https://git-scm.com/download/win)
 2. Download and run the installer
-3. All default options are fine — just keep clicking **Next**
-4. Verify it worked — open Command Prompt and type:
+3. All default options are fine. Keep clicking **Next**.
+4. Verify it worked. Open a new Command Prompt and type:
 
 ```
 git --version
@@ -96,18 +97,11 @@ git --version
 
 #### 4. Install Packages with pip
 
-Open **Command Prompt** and use **pip** to install packages:
+In Command Prompt, install the packages we have used this semester:
 
 ```
-pip install numpy
-
+pip install numpy pandas matplotlib
 ```
-
-```
-pip install pandas matplotlib # you can install multiple at once
-```
-
-
 
 ---
 
@@ -118,17 +112,17 @@ pip install pandas matplotlib # you can install multiple at once
 1. Go to [python.org/downloads](https://www.python.org/downloads/)
 2. Click **Download Python 3.x.x** (the big yellow button)
 3. Open the downloaded **.pkg** file and follow the installer steps
-4. Verify it worked — open **Terminal** (search "Terminal" in Spotlight with **Cmd+Space**) and type:
+4. Verify it worked. Open **Terminal** (press **Cmd+Space** and search "Terminal") and type:
 
 ```
-python --version
+python3 --version
 ```
 
-   You should see something like **Python 3.12.0**
+You should see something like **Python 3.13.0**
 
-**Note:** On older Macs (pre-2022, before macOS Monterey 12.3), you may need to use **python3** and **pip3** instead of **python** and **pip**. If **python --version** shows an error or Python 2.x, use **python3** instead.
+**Note:** On a Mac, the commands are usually `python3` and `pip3` rather than `python` and `pip`. Wherever this class says `python` or `pip`, use `python3` or `pip3` if the shorter version gives an error.
 
-**Note:** Some Macs may prompt you to install **Xcode Command Line Tools** during Python installation or when you first run `python` in Terminal. If you see this prompt, click **Install** and wait for it to finish. You can also install them manually by running the following in Terminal:
+**Note:** Your Mac may prompt you to install **Xcode Command Line Tools** the first time you run `python3` or `git`. Click **Install** and wait for it to finish. You can also install them yourself with:
 
 ```
 xcode-select --install
@@ -147,113 +141,147 @@ xcode-select --install
 
 #### 3. Install Git
 
-Git may already be installed on your Mac. Check by opening Terminal and typing:
+Git may already be installed on your Mac. Check by typing this in Terminal:
 
 ```
 git --version
 ```
 
-If it's not installed, you'll be prompted to install **Xcode Command Line Tools** — just click **Install** and follow the steps. That will install Git automatically.
+If it is not installed, you will be prompted to install **Xcode Command Line Tools**. Click **Install** and Git comes with them.
 
 #### 4. Install Packages with pip
 
-Open **Terminal** and use **pip** to install packages:
+In Terminal, install the packages we have used this semester:
 
 ```
-pip install numpy
+pip3 install numpy pandas matplotlib
 ```
 
-```
-pip install pandas matplotlib # you can install multiple at once
-```
-
-**Note:** If you get an error like `pip: command not found`, pip may not be in your PATH. Try the following fixes:
-
-1. **Use `pip3` instead of `pip`:**
+**Note:** If you get `pip3: command not found`, Python is not on your PATH. Run this in Terminal, replacing `3.13` with your installed Python version:
 
 ```
-pip3 install numpy
-```
-
-2. **If `pip3` also doesn't work**, you may need to add Python to your PATH. Run this command in Terminal (replacing `3.12` with your installed Python version):
-
-```
-echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.13/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-Then try `pip install numpy` again.
+Then try `pip3 install numpy pandas matplotlib` again.
 
 ---
 
-### 🚀 Running Your First Script in VS Code
+## The Command Line
 
-1. Open VS Code
-2. Go to **File → Open Folder** and open a folder for your project
-3. Create a new file: **File → New File**, name it **hello.py**
-4. Type some code:
+The **terminal** (called **Command Prompt** or **PowerShell** on Windows) lets you control your computer by typing commands. You will use it to run Python programs, install packages, and run AI coding agents. VS Code has a terminal built in: choose **Terminal → New Terminal** and it opens at the bottom of the window, already inside your project folder.
 
-```python
-print("Hello, world!")
+At any moment, the terminal is "in" one folder, called the **working directory**. Commands act on that folder unless you tell them otherwise. These are the commands you will use most:
+
+| What it does                           | Mac                  | Windows              |
+|:---------------------------------------|:---------------------|:---------------------|
+| Show which folder you are in           | `pwd`                | `cd`                 |
+| List the files in this folder          | `ls`                 | `dir`                |
+| Move into a folder                     | `cd foldername`      | `cd foldername`      |
+| Move up one folder                     | `cd ..`              | `cd ..`              |
+| Make a new folder                      | `mkdir foldername`   | `mkdir foldername`   |
+| Run a Python program                   | `python3 myfile.py`  | `python myfile.py`   |
+| Install a package                      | `pip3 install name`  | `pip install name`   |
+| Stop a program that is running         | **Ctrl+C**           | **Ctrl+C**           |
+
+Two habits will save you a lot of trouble:
+
+- **Press Tab to finish a file or folder name.** Type `cd Doc` and press Tab, and the terminal fills in `Documents`. This also avoids typos.
+- **Read the error message.** If Python says `No such file or directory`, you are usually in the wrong folder. Run `pwd` (or `cd` on Windows) to check where you are.
+
+### Running Your First Script in VS Code
+
+1. Make a folder for this class somewhere easy to find, such as `Documents/cce270`
+2. In VS Code, choose **File → Open Folder** and open that folder
+3. Choose **File → New File** and name it **hello.py**
+4. Type:
+
+    ```python
+    name = input("What is your name? ")
+    print(f"Hello, {name}!")
+    ```
+
+5. Open the terminal (**Terminal → New Terminal**) and run:
+
+    ```
+    python hello.py
+    ```
+
+You can also click the **▷ Run** button in the top-right corner of the editor, which runs the same command for you.
+
+## Your GitHub Account and Copilot
+
+### 1. Create a GitHub account
+
+Go to [github.com](https://github.com/) and sign up. Use your **BYU email address**, because GitHub uses it to verify that you are a student. If you already have a GitHub account with a personal email, keep it and add your BYU email under **Settings → Emails**, then verify it.
+
+Choose your username with some care. It appears in the address of every web page you publish from GitHub, and many engineers use their GitHub profile as part of their résumé.
+
+### 2. Apply for the GitHub Student Developer Pack
+
+The Student Developer Pack gives verified students free access to GitHub Copilot and other developer tools.
+
+1. Go to [education.github.com/pack](https://education.github.com/pack) and click the button to sign up as a student
+2. Select your BYU email and enter **Brigham Young University** as your school
+3. Upload proof of enrollment when asked. A photo of your BYU ID card works.
+4. Submit the application
+
+GitHub will email you when you are approved. If your application is rejected, read the reason in the email, fix it, and apply again. The most common problems are an unverified school email or a blurry photo. If you are still waiting when we start using Copilot, you can use Copilot's free plan, which has a monthly usage limit.
+
+### 3. Tell Git who you are
+
+Git attaches a name and email to every commit you make. Set them once on each computer by running these two commands in the terminal, using your own name and the email from your GitHub account:
+
 ```
-   
-5. Run it by clicking the **▷ Play button** in the top-right corner, or open the Terminal inside VS Code (**Terminal → New Terminal**) and type:
-
-```
-python hello.py
+git config --global user.name "Your Name"
+git config --global user.email "you@byu.edu"
 ```
 
-## Jupyter Notebook
+### 4. Sign in to GitHub from VS Code
 
-In addition to VS Code and other IDEs mentioned above, Jupyter Notebook is a popular tool for writing and running Python code in an interactive environment. It allows you to create notebooks that can contain code, text, images, and more. You can use Jupyter Notebook to run Python code locally, similar to how you do it in Google Colab. In most ways, Colab and Jupyter Notebook are very similar. In fact, you can save your Colab notebooks and use them in Jupyter Notebook. These files have a **.ipynb** extension rather than **.py**, as they have the information for the text cells in addition to the code cells.
+Click the **Accounts** icon (the person at the bottom of the left sidebar) and choose **Sign in with GitHub**. This lets VS Code push your code to GitHub and turns on Copilot.
 
-If you want to use Jupyter locally, you can install it using pip. Open your terminal and run the following command:
+## AI Coding Agents
 
-```bash
-pip install jupyter
-```
+Colab's AI features suggest a line or a block of code at a time. An **AI coding agent** works on a whole project. You describe what you want in plain English, and the agent reads your files, writes and edits code across several files, runs your program, reads the errors, and fixes them. Your job shifts from typing every line to describing the problem clearly, reviewing what the agent wrote, and testing whether the result is right.
 
-This installs both Jupyter Notebook and Jupyter Lab. **We recommend using Jupyter Lab**, which has a more modern interface with support for multiple tabs and a file browser — similar to Google Colab. To launch Jupyter Lab, run:
+These are the three agents we support in this class:
 
-```bash
-jupyter lab
-```
+**[GitHub Copilot](https://github.com/features/copilot)** is built into VS Code. Open the chat panel, switch it to **Agent** mode, and describe what you want. It is free with the Student Developer Pack, and **it is all you need for this class.**
 
-**Note (Windows):** If you get an error like `'jupyter' is not recognized as an internal or external command`, use the following command instead:
+**[Claude Code](https://claude.com/product/claude-code)** from Anthropic and **[Codex](https://openai.com/codex/)** from OpenAI are agents that you can run in the VS Code terminal or in their own VS Code extensions. Each comes with a paid plan of about \$20 per month. They are optional, but they are generally more capable than Copilot on larger projects. If you plan to use AI for programming after this class, one month of either is worth considering for the final project.
 
-```bash
-python -m jupyter lab
-```
-
-This will open Jupyter Lab in your web browser, where you can create new notebooks or open existing ones. You can write and run Python code in the cells, add text and images, and save your work as a notebook file.
-
-> **Note:** You can also launch the classic Jupyter Notebook interface with **jupyter notebook**, but Jupyter Lab is more feature-rich and beginner-friendly.
-
-![jupyter3.png](images/jupyter3.png){width=1200}
-
-## AI and Python Development
-
-If you want to use (and we encourage you to do so) AI in your Python projects, an IDE makes this much easier. The newer AI coding agents, directly integrated into the IDE or terminal, can do far more than simple code completion — they can help you plan, write, debug, and refactor entire projects. Below are the most popular AI coding tools available today.
-
-**[Claude Code](https://claude.com/product/claude-code)** — Claude Code is a command-line coding agent from 
-Anthropic that runs in your terminal. It is currently the most powerful AI coding tool available. It can understand your entire codebase, create and edit files across your project, run terminal commands, and help you architect solutions from scratch. It works with any IDE since it runs in the terminal. Claude Code is included with the Claude Pro plan (\$20/month) and the Claude Max plans (\$100/month or \$200/month for higher usage). There is also a free tier with limited usage.
-
-**[ChatGPT Codex](https://openai.com/codex/)** — Codex is OpenAI's cloud-based coding agent, available through 
-ChatGPT. It can write code, fix bugs, and work through multi-file tasks. Codex is included with ChatGPT Plus 
-(\$20/month) and ChatGPT Pro (\$200/month). There is also a free tier with limited access.
-
-**[GitHub Copilot](https://github.com/features/copilot)** — Copilot is an AI coding assistant that integrates
-directly into VS Code, PyCharm, and other IDEs. It provides inline code suggestions and autocompletion as you type,
-similar to the AI feature in Google Colab. Copilot has a free tier with limited completions, a Pro plan (\$10/month), and a Pro+ plan (\$39/month). **Students can get Copilot Pro for free** through the [GitHub Student Developer Pack](https://education.github.com/pack) — just verify your student status with your university email to get access.
-
-All of these tools can do more than code completion. You can work with an AI agent to plan and architect your code, then have it create functions, classes, and other elements of your project. To get the most out of these tools, you need to clearly understand the problem you are trying to solve and the steps to solve it. If you can describe the problem, the steps, and the expected output clearly, AI coding agents become extremely powerful.
-
-## Conclusion
-
-Using Python locally can provide you with more flexibility and control over your projects. By following the steps outlined in this document, you can install Python, run scripts, and manage packages with pip. Additionally, using an IDE can enhance your development experience and make it easier to write and run Python code. Whether you're working on small scripts or larger projects, having Python set up locally can be a valuable skill.
+Whichever agent you use, the results depend on how well you understand the problem. If you can describe the inputs, the steps, and the expected output clearly, an agent can build a surprising amount. If you can't, it will confidently build the wrong thing. That is why the first half of this course taught you to program by hand: you need to be able to read what the agent writes and tell whether it is correct.
 
 ---
 
 # Pre-Class Quiz Challenge
 
-For this topic, there is no challenge to complete before class and turn in on the Learning Suite Pre-Class Quiz. As mentioned above, we will give a live demonstration of how to install Python and run a simple script locally. We will have TAs available to help you with any issues you may have with installing Python or running a script locally. If you want to get a head start, you can try installing Python and Jupyter Lab on your local machine before class. If you have any issues or questions, feel free to ask during class or reach out to the TAs for help.
+Before class, do the following:
+
+1. Install Python, VS Code, and Git using the [Setup Guide](#setup-guide)
+2. Create your GitHub account and **apply for the Student Developer Pack**
+3. In the VS Code terminal, run `python --version` and `git --version` (use `python3` on a Mac)
+
+Take **two screenshots**: one of the VS Code terminal showing the output of both commands, and one of the page or email confirming that your Student Developer Pack application was submitted. Upload both with your Pre-Class Quiz.
+
+If something won't install, upload a screenshot of the error instead and come to class early. TAs will be available to help.
+
+---
+
+## Turning in/Rubric
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        3        |
+
+---
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|  File uploaded incorrectly  |       -10%        | 
