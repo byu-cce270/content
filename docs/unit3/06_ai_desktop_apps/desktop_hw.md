@@ -16,7 +16,7 @@ Choose **one** of these two options.
 - matplotlib plots that the user can zoom and save
 - Running many cases at once, such as a parameter sweep that plots how an output changes with an input
 
-**Option B - Build a new problem.** Choose a problem from the [web app homework](../05_ai_web_apps/web_hw.md) that you did not build, and build it as a Tkinter desktop app. Any of them can be built as a desktop app. Name the problem in your spec and let the agent choose any extra packages it needs, such as a map package for the map problems. Use the problem's must-have features and its validation check.
+**Option B - Build a new problem.** Choose a problem from the [web app homework](../05_ai_web_apps/web_hw.md) that you did not build, and build it as a Tkinter desktop app. Any of them can be built as a desktop app. Name the problem in your spec and let the agent choose any extra packages it needs, such as a map package for the map problems. Use the problem's must-have features and its validation check, and add at least two features of your own design, at least one of them your own idea rather than one from the problem's list.
 
 ## Requirements
 
@@ -51,7 +51,7 @@ The TA will grade your app by unzipping it, installing the packages in your READ
 |                                         **Items**                                          | **Amount** |  
 |:------------------------------------------------------------------------------------------:|:----------:|
 |           Spec has all required sections, including Platform (and added features)          |     4      |
-|      App works: all must-have features (Option B) or the port plus 2 new features (Option A) |     10     |
+|      App works: the port plus 2 new features (Option A), or the must-haves plus 2 of your own features (Option B) |     10     |
 |    3+ validation cases pass, with results in the spec and sources for expected values      |     8      |
 |        App is easy to use: clear labels, units on every number, looks finished            |     3      |
 |                  Prompt log is complete                                                    |     3      |

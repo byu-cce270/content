@@ -12,10 +12,12 @@ Choose one of the seven problems below and build it as a single-file web app, fo
 2. Have the agent review the spec, and revise it
 3. Have the agent build the app
 4. Validate it against your hand calculation
-5. Add features one at a time, committing after each one
+5. Add your own features one at a time, committing after each one
 6. Publish it on GitHub Pages
 
-Each problem lists features the app must have, a validation check, and ideas for going further. The must-have features are the minimum. The best apps will go well past them, and the "Going further" ideas are a place to start.
+Each problem lists the features the app must have and a validation check. Building the must-haves is only the start: you must also **design and add at least two features of your own**. Each problem lists a few ideas to get you thinking, but they are examples, not a menu. At least one of your features must be your own idea, not one from the list. Good features come from asking who would use the app and what else they would want it to do.
+
+Describe your features in a **Features** section of the spec before you build them, and build them only after the must-haves pass validation.
 
 Set up a new folder and repository for this assignment, with `spec.md`, `prompts.md`, and `index.html` at the top level. Have the agent commit at each step: the spec, the revised spec after review, the first working version, the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
 
@@ -38,7 +40,7 @@ The older `waterservices.usgs.gov` service is being shut down during the 2026–
 
 **Validation:** For three gages, compare the most recent flow and the drainage area in your app to the gage's page on [USGS Water Data](https://waterdata.usgs.gov/). Then download a year of daily flow for one gage from the USGS site, compute the mean annual flow in Excel, and compare it to a mean flow shown by your app.
 
-**Going further:** Color each marker by how today's flow compares to the median for this date (well below normal, normal, well above). Add a slider that replays a spring runoff season. Click two gages on the same river to compare their hydrographs and see the flood wave travel downstream.
+**Ideas to get you started:** Color each marker by how today's flow compares to the median for this date (well below normal, normal, well above). Add a slider that replays a spring runoff season. Click two gages on the same river to compare their hydrographs and see the flood wave travel downstream.
 
 ---
 
@@ -55,7 +57,7 @@ Draw a roller coaster track and ride it. A car starts at the top of the first hi
 
 **Validation:** With no friction, the speed at any point is $v = \sqrt{2g(h_0 - h)}$, where $h_0$ is the height of the starting crest. Compute the speed by hand at the bottom of the first drop and compare it to the app. Then, for a valley with radius of curvature $R$, check the app's g-force against $n = 1 + v^2/(gR)$.
 
-**Going further:** Add rolling friction and air drag, and a lift hill that pulls the car to the top. Add loops. Score designs by thrill (time spent above 3 g) while keeping every ride safe.
+**Ideas to get you started:** Add rolling friction and air drag, and a lift hill that pulls the car to the top. Add loops. Score designs by thrill (time spent above 3 g) while keeping every ride safe.
 
 ---
 
@@ -72,7 +74,7 @@ Build a tower from columns, beams, and braces, set it on a shake table, and turn
 
 **Validation:** Physics engines use their own units, so check that yours behaves like the real world. Drop a single block from a known height and compare its fall time to $t = \sqrt{2h/g}$. Then measure the table's motion from the animation (the time for 10 cycles and the distance between the extremes) and compare it to the frequency and amplitude you set.
 
-**Going further:** Add base isolation (a layer that lets the building slide) or a tuned mass damper on the roof, and show how much more shaking the building survives. Play a real earthquake record, such as the 1940 El Centro ground motion (the OpenSees project publishes it as a small text file that the agent can paste into your app). Add a challenge mode: the most floors that survive a given earthquake for a given budget.
+**Ideas to get you started:** Add base isolation (a layer that lets the building slide) or a tuned mass damper on the roof, and show how much more shaking the building survives. Play a real earthquake record, such as the 1940 El Centro ground motion (the OpenSees project publishes it as a small text file that the agent can paste into your app). Add a challenge mode: the most floors that survive a given earthquake for a given budget.
 
 ---
 
@@ -89,7 +91,7 @@ Lay out a floor plan, fill it with a crowd, and time how long it takes everyone 
 
 **Validation:** For a crowded room with one door, the time to empty is controlled by how fast people can pass through the door. A commonly used maximum flow through a door is about 24 people per minute per foot of door width (from the *SFPE Handbook of Fire Protection Engineering*). Compute by hand how long 500 people need to get through a 6 ft door and compare it to your app. The app should take longer, because people first have to walk to the door, but it should be close.
 
-**Going further:** Model the Marriott Center or another real venue. Add stairs, which are slower than level floors. Find the exit layout that minimizes evacuation time for a fixed total exit width.
+**Ideas to get you started:** Model the Marriott Center or another real venue. Add stairs, which are slower than level floors. Find the exit layout that minimizes evacuation time for a fixed total exit width.
 
 ---
 
@@ -116,7 +118,7 @@ Run a tower crane with the keyboard. Pick up loads from the staging area and set
 
 **Validation:** Decide in your spec how the app reads the load chart between table values. Using the next larger radius in the table is conservative, and interpolating is less so. Then compute the allowed load by hand at three radii, including one just inside a table radius and one just outside, and check that the app warns and tips at the right points.
 
-**Going further:** Add wind, which makes the load swing. Add a second crane and avoid collisions. Make levels, each with a different site layout.
+**Ideas to get you started:** Add wind, which makes the load swing. Add a second crane and avoid collisions. Make levels, each with a different site layout.
 
 ---
 
@@ -134,7 +136,7 @@ Most of Utah's water supply falls as snow. Build a map of the SNOTEL snow-monito
 
 **Validation:** Compare today's SWE and percent of median for three sites to the NRCS [Utah Snow Survey](https://www.nrcs.usda.gov/conservation-basics/conservation-by-state/utah/utah-snow-survey) reports. Then compute the percent of median by hand for one site from the two numbers the app downloaded.
 
-**Going further:** Group the sites by river basin and show each basin's percent of median. Add a date slider to replay past water years, such as the record snow of 2023. Estimate how much water is stored in the snowpack above a reservoir.
+**Ideas to get you started:** Group the sites by river basin and show each basin's percent of median. Add a date slider to replay past water years, such as the record snow of 2023. Estimate how much water is stored in the snowpack above a reservoir.
 
 ---
 
@@ -154,7 +156,7 @@ Click a jobsite on a map and get a 7-day forecast showing which days are safe fo
 
 **Validation:** For one location and one day, read the raw hourly forecast numbers the app downloaded, apply your thresholds by hand, and confirm the app gave the same rating. Also compare the app's forecast to the National Weather Service forecast for the same place.
 
-**Going further:** Let the user enter the crew's working hours, so overnight conditions don't count. Add activities such as asphalt paving or excavation in frozen ground. Show the best three-day window for a large pour.
+**Ideas to get you started:** Let the user enter the crew's working hours, so overnight conditions don't count. Add activities such as asphalt paving or excavation in frozen ground. Show the best three-day window for a large pour.
 
 ---
 
@@ -179,10 +181,11 @@ Paste your GitHub Pages address (for example, `https://your-username.github.io/y
 |                                         **Items**                                          | **Amount** |  
 |:------------------------------------------------------------------------------------------:|:----------:|
 |      Spec has all six sections, with equations and a hand-worked validation case           |     5      |
-|                         All must-have features work                                        |     10     |
+|                         All must-have features work                                        |     8      |
+|   At least two features of your own design work and are described in the spec (one must be your own idea)   |     6      |
 |              Validation check passes and is documented in the spec                         |     5      |
-|                    App is published and works at the GitHub Pages address                  |     4      |
-|        App is easy to use: clear labels, units on every number, looks finished            |     3      |
+|                    App is published and works at the GitHub Pages address                  |     3      |
+|        App is easy to use: clear labels, units on every number, looks finished            |     2      |
 |   Prompt log is complete, and at least 5 commits match the workflow steps (spec, review, first version, validation, features)   |     3      |
 |                         <div style="text-align: right">**Total**</div>                    |   **30**   |
 
