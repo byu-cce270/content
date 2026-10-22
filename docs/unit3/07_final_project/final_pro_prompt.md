@@ -19,12 +19,12 @@ If you haven't done the proposal yet, you can find the instructions here: [Final
 
 3. Build the app described in your spec, following Step 4 of the design process in the reading. You may build either:
     - **A web app:** a single `index.html` file, published on GitHub Pages, or
-    - **A desktop app:** a Python Tkinter app, started with `python app.py`, with its calculations in plain functions separate from the interface
+    - **A desktop app:** a Python app with a graphical interface (Tkinter, CustomTkinter, or PySide6), started with `python app.py`
 
 4. Your project must include:
     - **Engineering substance:** The app must perform real calculations, analysis, or modeling from civil engineering or construction. An app that only displays or organizes information is not enough.
     - **A final spec** (`spec.md`) updated to match what you actually built, including the Design review and Validation plan sections from your proposal.
-    - **Validation results:** A **Validation results** section in the spec showing each hand-worked case, the app's output, and whether they match, plus your property checks and edge cases. A desktop app must also have at least 5 pytest tests that pass, at least 3 of them using hand-worked or referenced expected values.
+    - **Validation results:** A **Validation results** section in the spec showing each hand-worked case, the app's output, and whether they match, plus your property checks and edge cases.
     - **Documentation:** A `README.md` at the top of the repository with:
         - What the app does and who it is for
         - How to use it, with at least two screenshots
@@ -60,7 +60,7 @@ Your Learning Suite submission is due at the start of the scheduled presentation
 |        App works as described in the final spec, without bugs           |       20        |
 |               Engineering substance of the calculations                 |       10        |
 |      Final spec, with design review and validation plan                 |       10        |
-|  Validation results (and, for a desktop app, at least 5 passing tests)  |       15        |
+|                       Validation results                          |       15        |
 |          README: description, usage, screenshots, how to run            |        8        |
 |           Report of each team member's contribution                     |        5        |
 |             Prompt log and commit history                               |        7        |

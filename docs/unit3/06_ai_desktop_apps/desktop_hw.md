@@ -1,6 +1,6 @@
 # HW: Build a Desktop App
 
-**Purpose:** Use an AI coding agent to build a Python desktop app with a graphical interface, and check its calculations with automated tests.
+**Purpose:** Use an AI coding agent to build and validate a Python desktop app, managing the development process the way you did in class.
 
 ---
 
@@ -23,13 +23,12 @@ Choose **one** of these two options.
 Whichever option you choose, your app must:
 
 1. **Use Tkinter** for its interface and start with `python app.py`.
-2. **Keep calculations separate from the interface.** Put the engineering calculations in plain functions that don't use tkinter, preferably in their own file. The interface code calls those functions.
-3. **Have at least 3 automated tests** in a file named `test_*.py`, and all of them must pass when you run `pytest`. At least two of the tests must use expected values that you worked by hand or took from a reference. Write a comment in each of those tests saying where the expected value came from. The third can check a property the answer must have, such as a symmetry or a proportionality.
-4. **Have a spec** (`spec.md`) with all six sections from the [web apps reading](../05_ai_web_apps/web_read.md#1-write-a-spec), plus a **Platform and structure** section that lists your files and what each one does. For Option A, also list the features you added.
-5. **Have a prompt log** (`prompts.md`) and a `README.md` that says how to install and run the app.
-6. **Be in a GitHub repository** with at least 5 commits that follow the workflow steps: the spec, the plan, the tests, the first working version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
+2. **Have a spec** (`spec.md`) with all six sections from the [web apps reading](../05_ai_web_apps/web_read.md#1-write-a-spec), plus a **Platform** section. For Option A, also list the features you added.
+3. **Pass at least three validation cases** listed in the spec: at least two with expected values you worked by hand or took from a reference (say which), and one property check, such as a symmetry or a proportionality. Add a **Validation results** section to the spec with the table of expected versus actual values from the agent's check, and confirm at least one case yourself in the app.
+4. **Have a prompt log** (`prompts.md`) and a `README.md` that says how to install and run the app.
+5. **Be in a GitHub repository** with at least 5 commits that follow the workflow steps: the spec, the plan, the first working version, the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
 
-Follow the workflow from class: get a plan before the agent writes code, write the test expected values yourself, add one feature at a time, and run `pytest` after every change.
+Follow the workflow from class: get a plan before the agent writes code, have the agent rerun your validation cases after every change, and add one feature at a time.
 
 ---
 
@@ -41,20 +40,19 @@ Follow the workflow from class: get a plan before the agent writes code, write t
     anonymously, which keeps grading fair. Your GitHub repository address will
     show your GitHub username, which is fine for this assignment.
 
-Upload a **`.zip` of your project folder** to Learning Suite. It should contain `app.py`, your calculation file (if separate), your test file, `spec.md`, `prompts.md`, `README.md`, and any data files your app needs. On Windows, right-click the folder and choose **Send to → Compressed (zipped) folder**. On a Mac, right-click the folder and choose **Compress**.
+Upload a **`.zip` of your project folder** to Learning Suite. It should contain all of your app's Python files, `spec.md`, `prompts.md`, `README.md`, and any data files your app needs. On Windows, right-click the folder and choose **Send to → Compressed (zipped) folder**. On a Mac, right-click the folder and choose **Compress**.
 
 Paste your GitHub repository address in the Learning Suite submission comments.
 
-The TA will grade your app by unzipping it, installing the packages in your README, running `pytest`, and running `python app.py`. Before you submit, unzip your own file into a new folder and do the same thing to make sure it works.
+The TA will grade your app by unzipping it, installing the packages in your README, and running `python app.py`. Before you submit, unzip your own file into a new folder and do the same thing to make sure it works.
 
 **Rubric:**
 
 |                                         **Items**                                          | **Amount** |  
 |:------------------------------------------------------------------------------------------:|:----------:|
-|     Spec has all required sections, including Platform and structure (and added features)  |     4      |
-|      App works: all must-have features (Option B) or the port plus 2 new features (Option A) |     9      |
-|   At least 3 tests pass, with at least 2 using hand-worked or referenced expected values   |     6      |
-|               Calculations are in plain functions, separate from the interface             |     3      |
+|           Spec has all required sections, including Platform (and added features)          |     4      |
+|      App works: all must-have features (Option B) or the port plus 2 new features (Option A) |     10     |
+|    3+ validation cases pass, with results in the spec and sources for expected values      |     8      |
 |        App is easy to use: clear labels, units on every number, looks finished            |     3      |
 |                  Prompt log is complete                                                    |     3      |
 |        README works, and at least 5 commits match the workflow steps                       |     2      |

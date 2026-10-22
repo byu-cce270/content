@@ -22,7 +22,8 @@ Be as specific as you can. Every decision you leave out, the agent will make for
 
 Before any code is written, ask the agent to critique your spec:
 
-> Read spec.md. Don't write any code. Review this design as an experienced software engineer and civil engineer would. List anything that is ambiguous, missing, or inconsistent, any calculations that look wrong or incomplete, and any features that will be much harder to build than they look. Suggest improvements.
+!!! prompt "Prompt"
+    Read spec.md. Don't write any code. Review this design as an experienced software engineer and civil engineer would. List anything that is ambiguous, missing, or inconsistent, any calculations that look wrong or incomplete, and any features that will be much harder to build than they look. Suggest improvements.
 
 Read the review as a team and decide which suggestions to take. You don't have to take any of them, but you need a reason for each one you reject. Update the spec, and add a section at the end called **Design review** that lists each suggestion and what you decided.
 
@@ -33,7 +34,7 @@ Decide how you will prove the app's answers are right before you build it, so th
 - **Hand-worked cases:** At least three test cases with exact inputs and expected outputs, worked by hand or taken from a textbook, a design manual, or a previous homework. Write down where each expected value came from.
 - **Property checks:** Things that must be true even without an exact answer, such as symmetric inputs giving symmetric results, totals adding up, or outputs that should increase when an input increases.
 - **Edge cases:** Inputs at the limits, such as zero, very large values, or missing data. Decide what the app should do with each.
-- **Automated tests:** For a desktop app, which of the cases above become pytest tests (at least 5). For a web app, you will check the cases by hand and record the results in a table.
+- **How you will check them:** Plan to have the agent run every case and report a table of expected versus actual values, and to rerun that check after every change. Also plan to confirm some cases yourself in the app.
 
 You can ask the agent to suggest additional test cases, but the expected values must come from your team.
 
@@ -74,7 +75,10 @@ Small, frequent commits make merging much easier than one big commit at the end 
 
 If you and a teammate both change the same lines of the same file, Git can't tell which version to keep. When you pull, the file appears in the Source Control panel under **Merge Changes**. Open it, and above each conflict click **Accept Current Change** (your version), **Accept Incoming Change** (your teammate's), or **Accept Both Changes**, or edit the result by hand. For a bigger conflict, click **Resolve in Merge Editor** to see both versions side by side. When every conflict is resolved, click **Complete Merge**, commit, and push.
 
-If you don't understand why the two versions differ, talk to your teammate before choosing. You can also ask the agent: "There is a merge conflict in index.html. Explain what each version does and recommend how to combine them."
+If you don't understand why the two versions differ, talk to your teammate before choosing. You can also ask the agent:
+
+!!! prompt "Prompt"
+    There is a merge conflict in index.html. Explain what each version does and recommend how to combine them.
 
 ### Branches
 
@@ -91,7 +95,7 @@ Copilot, Codex, and Claude Code all read a file named `AGENTS.md` at the top of 
 
 ```markdown
 - Read spec.md before making any change.
-- Calculations go in calcs.py, never in the interface code.
+- Keep the calculations separate from the interface code.
 - Units are US customary; label every number shown to the user.
-- Run pytest after every change. Never change an expected value in a test.
+- Rerun the validation cases in spec.md after every change. Never change an expected value.
 ```

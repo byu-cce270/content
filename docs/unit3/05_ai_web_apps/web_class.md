@@ -81,7 +81,8 @@ Ask the agent to commit.
 
 Even a spec someone else wrote can be improved. In the Copilot chat panel, switch to **Ask** mode and enter:
 
-> Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
+!!! prompt "Prompt"
+    Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
 
 Discuss the suggestions with the people around you. Take any that make the spec clearer (for example, what happens when the user deletes a support), and skip any that add features you don't need yet. Update `spec.md`, add the review to your prompt log, and ask the agent to commit.
 
@@ -89,7 +90,8 @@ Discuss the suggestions with the people around you. Take any that make the spec 
 
 Open the Copilot chat panel, switch to **Agent** mode, and enter:
 
-> Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. Put the truss solver in its own clearly named functions, separate from the drawing code.
+!!! prompt "Prompt"
+    Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. Put the truss solver in its own clearly named functions, separate from the drawing code.
 
 Watch what the agent does. It will probably write the file in pieces, and it may ask permission to run commands. When it finishes, double-click `index.html` to open it in your browser.
 

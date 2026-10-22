@@ -86,7 +86,8 @@ The **Calculations** and **Validation** sections make the difference between an 
 
 Before any code is written, ask the agent to critique your spec. Open the Copilot chat panel, switch to **Ask** mode so it can't change any files, and enter:
 
-> Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
+!!! prompt "Prompt"
+    Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
 
 Read its suggestions and decide which ones to take. The agent is good at spotting a missing input, an undefined variable, or a unit that doesn't match, and it will often ask questions you hadn't thought of, such as what the app should do with a negative span. It is less reliable about engineering judgment, so check any change it suggests to your equations against your textbook or notes. Update the spec, and commit it before moving on.
 
@@ -94,7 +95,8 @@ Read its suggestions and decide which ones to take. The agent is good at spottin
 
 Switch the chat panel to **Agent** mode and point it at your spec:
 
-> Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put all calculations in clearly named functions.
+!!! prompt "Prompt"
+    Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put all calculations in clearly named functions.
 
 The last sentence keeps the calculations in their own functions, where you and the agent can find and check them.
 
@@ -114,7 +116,8 @@ Don't skip this step. An app that looks polished and gives wrong answers is wors
 
 Each time the app works and passes validation, commit. Have the agent do it:
 
-> Commit these changes.
+!!! prompt "Prompt"
+    Commit these changes.
 
 Agents write clear, specific commit messages, because they know exactly what they changed. Before you ask, look over the changes in the Source Control panel so you know what is being saved, and read the message the agent writes. Then, if the next request goes badly, you can discard the agent's changes in the Source Control panel and you are back to a working app.
 

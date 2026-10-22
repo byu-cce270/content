@@ -143,13 +143,15 @@ If your Copilot student license hasn't been approved yet, use the free plan for 
 
     Ask it:
 
-    > Explain how this game is organized. Which file handles keyboard input, and how does the main loop work?
+    !!! prompt "Prompt"
+        Explain how this game is organized. Which file handles keyboard input, and how does the main loop work?
 
     Compare its answer to what you see in the files.
 
 3. Switch the mode to **Agent** and ask:
 
-    > Add a pause feature. Pressing P should pause the game and show the word "PAUSED" in the middle of the screen. Pressing P again should resume.
+    !!! prompt "Prompt"
+        Add a pause feature. Pressing P should pause the game and show the word "PAUSED" in the middle of the screen. Pressing P again should resume.
 
 4. When the agent finishes, go to the **Source Control** panel and look at what it changed. Which files did it edit? Can you find the new code that checks for the P key?
 5. Run the game and test the feature. Does it work? Does anything else break?

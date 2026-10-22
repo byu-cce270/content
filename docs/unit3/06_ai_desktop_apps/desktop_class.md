@@ -1,6 +1,6 @@
 # In-Class Exercise: Bridge Builder on the Desktop
 
-In this exercise, you will have the agent rebuild your Bridge Builder web app as a Python desktop app. Along the way, you will separate the truss solver from the interface, write automated tests for it using the Numpy homework truss, and add a feature that a desktop app does better than a web page: saving and opening designs as files.
+In this exercise, you will have the agent turn your Bridge Builder web app into a Python desktop app, then add features that a desktop app does well, such as saving designs as files. Along the way, you will practice the three habits from the reading: getting a plan before any code, having the agent check its own work, and changing an existing program.
 
 ## Step 1 - Set Up the Project
 
@@ -8,40 +8,55 @@ In this exercise, you will have the agent rebuild your Bridge Builder web app as
 2. Copy `spec.md` and `index.html` from your `bridge_builder` folder into `bridge_desktop`. The agent will use `index.html` as a reference for how the app should behave.
 3. Open `bridge_desktop` in VS Code, initialize a repository, and ask the agent to commit.
 4. Create `prompts.md` for your prompt log.
-5. Install the packages you'll need:
+5. In the terminal, install the packages you'll need:
 
     ```
-    pip install numpy matplotlib pytest
+    pip install numpy matplotlib
     ```
 
-6. Check that Tkinter works by running `python -m tkinter`. A small window should open. If it doesn't, see the note in the [reading](desktop_read.md#desktop-apps-with-tkinter).
+6. Check that Tkinter works by running `python -m tkinter`. A small window should open. If you get `No module named '_tkinter'` on a Mac, your Python came from Homebrew; run `brew install python-tk@3.x` with your Python version (for example, `python-tk@3.14`), or ask a TA for help.
 
 ## Step 2 - Update the Spec
 
-Edit `spec.md` to describe the desktop version. Add a section near the top:
+Edit `spec.md` to describe the desktop version.
 
-```markdown
-## Platform and structure
-- Python desktop app using Tkinter, started with `python app.py`
-- truss.py: the solver only. A function solve_truss(joints, members,
-  supports, loads) that returns member forces and reactions. It uses
-  numpy (np.linalg.solve) and does not import tkinter.
-- app.py: the Tkinter interface. It draws on a tk.Canvas and calls
-  solve_truss to get the results.
-- test_truss.py: pytest tests for solve_truss.
-- When solve_truss can't solve a truss, it raises an error that says
-  whether the truss is unstable or indeterminate. app.py catches the
-  error and shows the message.
-```
+1. Add this section near the top:
 
-Then change the **Calculations** section to say that the system is solved with `np.linalg.solve` instead of Gaussian elimination in JavaScript, which is the same method you used in the Numpy homework. Add one more line to that section:
+    ```markdown
+    ## Platform
+    - Python desktop app using Tkinter, started with `python app.py`
+    - The truss is solved with numpy (np.linalg.solve), the same method
+      used in the Numpy homework.
+    ```
 
-```markdown
-- Treat a nearly singular matrix (condition number above 1e12) as
-  unstable, as well as an exactly singular one.
-```
+2. In the **Calculations** section, replace the line about Gaussian elimination with:
 
-This line matters more than it looks. When joints are almost in a straight line, `np.linalg.solve` doesn't report an error. It returns forces in the billions of pounds, and the app would display them as if they were real.
+    ```markdown
+    - Solve the system with np.linalg.solve.
+    - Treat a nearly singular matrix (condition number above 1e12) as
+      unstable, as well as an exactly singular one.
+    ```
+
+    The second line matters more than it looks. When joints are almost in a straight line, numpy doesn't report an error. It returns forces in the billions of pounds, and the app would show them as if they were real.
+
+3. Add these cases to the **Validation** section, below the Numpy homework case:
+
+    ```markdown
+    Symmetric truss:
+    - Joints: (0, 0) pin, (5, 5), (10, 0) roller, with three members
+      connecting them. Load -1000 lb at (5, 5).
+    - Expected: both vertical reactions are +500 lb.
+
+    Square with no diagonal:
+    - Joints: (0, 0) pin, (10, 0) roller, (10, 10), (0, 10), with the four
+      sides as members. Load -1000 lb at (10, 10).
+    - Expected: reported as unstable, with no forces shown.
+
+    Joints in a straight line:
+    - Joints: (0, 0) pin, (5, 0), (10, 0) roller, with a member between
+      each pair. Load -1000 lb at (5, 0).
+    - Expected: reported as unstable, with no forces shown.
+    ```
 
 Ask the agent to commit.
 
@@ -49,64 +64,71 @@ Ask the agent to commit.
 
 In the Copilot chat panel, choose **Plan** from the picker and enter:
 
-> Read spec.md and index.html. I want to rebuild this app as the Python Tkinter desktop app described in spec.md. Before writing any code, describe your plan: what goes in each file, which classes and functions you will write, and what the arguments and return values of solve_truss will be.
+!!! prompt "Prompt"
+    Read spec.md and index.html. I want to rebuild this app as the Python Tkinter desktop app described in spec.md. Before writing any code, describe your plan: which files you will create, what each one does, and how the truss calculations are organized.
 
-Read the plan carefully. Check that:
+Read the plan and check that:
 
-- `truss.py` doesn't use tkinter
-- `solve_truss` takes plain data (lists or dictionaries of joints, members, supports, and loads) and returns plain data
-- The plan says how `solve_truss` reports a truss it can't solve
-- Nothing in the plan contradicts the spec
+- Nothing in it contradicts the spec
+- It says what the app will show for a truss it can't solve
+- The truss calculations are kept apart from the window code, so the agent can check them without opening the app
 
 If something is off, say so and ask for a revised plan. Add the plan to your prompt log.
 
-## Step 4 - Write the Tests First
+## Step 4 - Build It
 
-You will write the expected values for the tests before the solver exists. Then the tests check the solver against your answers rather than against whatever the solver happens to return.
+Switch the picker to **Agent** and enter:
 
-Switch to **Agent** mode and enter:
+!!! prompt "Prompt"
+    Build the app following your plan and spec.md.
 
-> Create test_truss.py with pytest tests for solve_truss as described in your plan. Use these cases, with exactly these expected values:
->
-> 1. Numpy HW Test 1: joints A (0, 0) pin, B (2.5, 4.330), C (10, 0) roller. Members AB, BC, AC. Load -2000 lb at B. Expected AB = -1732 lb, BC = -1000 lb, AC = +866 lb (tension positive), vertical reactions 1500 lb at A and 500 lb at C, horizontal reaction 0 at A. Use a tolerance of 1 lb.
-> 2. A symmetric truss: joints (0, 0) pin, (10, 0) roller, (5, 5). Three members connecting them. Load -1000 lb at (5, 5). Expected: both vertical reactions are +500 lb (upward positive), so they are equal and add up to the 1000 lb load.
-> 3. Too few members: a square frame with joints (0, 0) pin, (10, 0) roller, (10, 10), and (0, 10), and the four sides as members, with -1000 lb at (10, 10). Expected: solve_truss reports the truss as unstable instead of returning forces.
-> 4. A mechanism: joints (0, 0) pin, (5, 0), and (10, 0) roller, with members between each pair, and -1000 lb at (5, 0). The member count is right, but the joints are in a straight line. Expected: solve_truss reports the truss as unstable.
->
-> Do not write truss.py yet.
-
-Read `test_truss.py` and check that the expected values are the ones you gave. Run `pytest`. It should report an error, because `truss.py` doesn't exist yet. Ask the agent to commit.
-
-## Step 5 - Build It
-
-> Now write truss.py and app.py following your plan and spec.md. Run pytest until all tests pass. Do not change the expected values in test_truss.py.
-
-When the agent finishes, run `pytest` yourself and confirm that all the tests pass. Then run the app:
+When the agent finishes, run the app:
 
 ```
 python app.py
 ```
 
-Build a truss and check that it behaves like your web version. When it works, ask the agent to commit.
+Draw a truss and check that it behaves like your web version. If something doesn't work, describe what you did and what happened, and ask the agent to fix it.
 
-## Step 6 - See a Test Catch a Bug
+## Step 5 - Have the Agent Check Its Work
 
-Open `truss.py` and find the line where the load is placed in the right-hand-side vector. Flip its sign on purpose (change `-` to `+` or the reverse) and run `pytest`. Look at how the failure report shows the value it got and the value you expected.
+Enter:
 
-Undo the change by discarding it in the Source Control panel, and run `pytest` again to confirm everything passes.
+!!! prompt "Prompt"
+    Run the four validation cases in spec.md against the app's truss calculations and report a table of expected versus actual values.
 
-## Step 7 - Add Desktop Features
+Read the table. Every case should match within 1 lb, and the two unstable trusses should be reported as unstable. If a case fails, tell the agent to fix the app. Never let it change an expected value. If you think an expected value is wrong, check it by hand yourself.
 
-Add these one at a time. Update the spec first, then ask the agent, then test and commit:
+Then build the Numpy homework truss in the app yourself and confirm that you see the same forces the agent reported.
 
-1. **Save and Open:** A File menu with **Save** and **Open** that writes the truss (joints, members, supports, loads) to a `.json` file and reads it back, using the standard file dialogs. First remove "Saving or loading designs" from the **Out of scope** section of the spec, and add a line to **Platform and structure** saying that the code that writes and reads the files goes in its own file without tkinter, such as `design_file.py`, so it can be tested.
-2. **Export results:** A button that writes a table of member forces (member, length, force, T or C) to a CSV file that opens in Excel.
-3. **Force plot:** A matplotlib bar chart of the member forces in the window next to the truss, with tension in blue and compression in red.
+When everything matches, ask the agent to commit.
 
-After each feature, run `pytest` to confirm the solver still passes. The tests don't check the new features themselves. Ask the agent to add a test for Save and Open: save a truss, open it, and check that you get the same truss back. If this test fails at first, look at why. JSON has no tuples, so a joint saved as `(2.5, 4.33)` comes back as the list `[2.5, 4.33]`, and Python doesn't consider those equal.
+## Step 6 - Add Desktop Features
 
-## Step 8 - Push to GitHub
+Add these features **one at a time**:
 
-1. Ask the agent to write a short `README.md` that says what the app does, which packages to install, and how to start it.
+1. **Save and Open:** A File menu with **Save** and **Open** that saves the truss (joints, members, supports, and loads) to a file and opens it again. Remove "Saving or loading designs" from the **Out of scope** section of the spec first.
+2. **Export results:** A button that saves a table of member forces (member, length, force, T or C) to a CSV file that opens in Excel.
+3. **Force plot:** A matplotlib bar chart of the member forces next to the truss, with tension in blue and compression in red.
+
+For each feature:
+
+1. Add it to the spec.
+2. Ask the agent to build it.
+3. Try it in the app.
+4. Have the agent rerun the validation cases:
+
+    !!! prompt "Prompt"
+        Rerun the validation cases in spec.md and confirm they still pass.
+
+5. Ask the agent to commit.
+
+## Step 7 - Push to GitHub
+
+1. Ask the agent for a README:
+
+    !!! prompt "Prompt"
+        Write a short README.md that says what this app does, which packages to install, and the command that starts it.
+
 2. Ask the agent to commit, then click **Publish Branch** and publish a public repository.
-3. Trade repository addresses with a neighbor. Clone their repository (**File → New Window**, then **Clone Git Repository**), install the packages their README lists, and run their app. If their README left anything out, tell them.
+3. Trade repository addresses with a neighbor. Clone their repository (**File → New Window**, then **Clone Git Repository**), follow their README, and run their app. If the README left anything out, tell them.

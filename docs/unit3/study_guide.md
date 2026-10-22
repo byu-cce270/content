@@ -319,16 +319,13 @@ This section covers running Python on your own computer, tracking code with Git 
     6. Commit.
     7. Add one feature at a time, updating the spec first.
 * **Web Apps**: A single **index.html** file holds the HTML (content), CSS (appearance), and JavaScript (behavior). Publish it from a public repository with **GitHub Pages**.
-* **Desktop Apps with Tkinter**:
-    * Create the window with **root = tk.Tk()** and start it with **root.mainloop()**.
-    * Create widgets (**tk.Label**, **tk.Entry**, **tk.Button**, **tk.Scale**, **tk.Canvas**) and place them with **.grid(row=..., column=...)**.
-    * Connect a button to a function with **command=solve** (no parentheses), or to a method in a class with **command=self.solve**.
-    * Read an entry box with **entry.get()**, and change a label with **label.config(text=...)**.
-* **Automated Tests with pytest**:
-    * Tests go in files named **test_*.py**, in functions named **test_...**, and use **assert**. Run them all by typing **pytest**.
-    * Use **pytest.approx** to compare floating-point results.
-    * Expected values must come from hand calculations or references. Tests whose expected values were computed by the code itself will pass even when the code is wrong.
-    * Calculations must be plain functions, separate from the interface code, so that tests can call them.
+* **Desktop Apps**: Python apps with a graphical interface, built with **Tkinter** (which comes with Python) or alternatives such as CustomTkinter and PySide6. The agent writes the interface code; you manage the spec, the plan, and the validation.
+* **Managing a Larger Project**:
+    * Ask for a **plan** (Plan mode) before any code is written, and check it against the spec.
+    * Have the agent **check its own work**: run the validation cases and report expected versus actual values, and rerun the check after every change.
+    * The expected values must come from you (hand calculations or references). If the agent computes them from its own code, the check passes even when the code is wrong.
+    * When a check fails, have the agent fix the app, never the expected value.
+    * When changing existing code, name the files that matter, update the spec first, and review the changes in Source Control before committing.
 
 
 ## Midterm Practice Quiz
@@ -351,7 +348,7 @@ Sample questions to help you prepare for the midterm exam. Answers are provided 
 
 7. The Pandas .append() method modifies the original DataFrame in place.
 
-8. When an agent writes pytest tests for your calculations, it is fine to let the agent compute the expected values from the code.
+8. When an agent checks its own work, it is fine to let the agent compute the expected values from its own code.
 
 9. The xlsxwriter library can be used to write Excel formulas into cells.
 
@@ -483,11 +480,11 @@ b) numpy<br>
 c) xlsxwriter<br>
 d) openpyxl
 
-20. In a Tkinter class, which line makes a button call the method solve when it is clicked?<br>
-a) tk.Button(root, text="Solve", command=self.solve())<br>
-b) tk.Button(root, text="Solve", command=self.solve)<br>
-c) tk.Button(root, text="Solve", onclick="solve")<br>
-d) tk.Button(root, text="Solve").click(self.solve)
+20. The agent reruns your validation cases after a change, and one case that used to pass now fails. What should you do?<br>
+a) Ask the agent to update the expected value to match the new result<br>
+b) Delete the case from the spec<br>
+c) Tell the agent which case failed and ask it to fix the app<br>
+d) Commit the change and fix it later
 
 21. What is the fundamental difference between a Pandas Series and a 1D NumPy array?<br>
 a) A Series can only hold strings.<br>
@@ -583,7 +580,7 @@ d) apply
 
 16. What is the purpose of plt.colorbar() when used with plt.scatter()?
 
-17. Why should an app's engineering calculations be kept in plain functions, separate from the interface code?
+17. Why should you ask an agent for a plan before it writes code for a larger change?
 
 18. What do the fig and ax variables represent after the call fig, ax = plt.subplots()?
 
@@ -613,7 +610,7 @@ d) apply
 
 7. False. The .append() method creates and returns a new DataFrame; it does not modify the original.
 
-8. False. Expected values computed from the code will match the code even when it is wrong, so the tests would always pass. Expected values must come from hand calculations or references.
+8. False. Expected values computed from the code will match the code even when it is wrong, so the check would always pass. Expected values must come from hand calculations or references.
 
 9. True. xlsxwriter provides methods like write_formula() to insert Excel formulas.
 
@@ -669,7 +666,7 @@ d) apply
 
 19. c) xlsxwriter
 
-20. b) command=self.solve (with parentheses, the method would run once when the button is created instead of when it is clicked)
+20. c) Tell the agent which case failed and ask it to fix the app. The change broke a calculation that used to work; the expected value came from your hand calculation and should not change.
 
 21. b) A Series has an explicit index.
 
@@ -725,7 +722,7 @@ d) apply
 
 16. plt.colorbar() displays a color scale bar that shows the mapping between the values passed to the c argument of plt.scatter() and the colors rendered on the plot.
 
-17. Plain functions can be called directly by automated tests with known inputs, so the calculations can be checked every time the code changes. They are also easier for you and the agent to find, read, and check against the spec.
+17. The plan shows how the agent intends to do the work (which files, what each one does, how the calculations are organized) before any code exists. You can check it against the spec and correct misunderstandings when they are cheap to fix, instead of after the agent has written hundreds of lines.
 
 18. fig is an instance of plt.Figure, which is the top-level container for all plot elements. ax is an instance of plt.Axes, which is the actual plot area (the box with ticks, labels, etc.) where data is plotted.
 
@@ -766,7 +763,6 @@ d) apply
 | **pd.merge()** | A Pandas function for combining DataFrame objects using a database-style join operation based on common columns or indices. |
 | **plt.scatter()** | A Matplotlib function that creates a scatter plot, which is highly flexible as the properties (size, color, etc.) of each individual point can be controlled. |
 | **plt.show()** | A Matplotlib command that starts an event loop and opens interactive windows to display all active figure objects. |
-| **pytest** | A Python library for writing and running automated tests. |
 | **Relational Algebra** | A formal set of rules for manipulating relational data, forming the conceptual foundation for database operations like joins, which are implemented in Pandas' pd.merge. |
 | **Repository** | A project folder whose history is tracked by Git. |
 | **reshape()** | A NumPy method to change the shape of an array without changing its data. |
