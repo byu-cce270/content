@@ -249,6 +249,16 @@ This code will be given to you as a preview for the next topic.
   
 ![numpyhw_solution3.png](images/numpyhw_solution3.png)
 
+### Part 5: Apply for GitHub Copilot
+
+Later in Unit 3 you will use an AI coding agent called GitHub Copilot, which is free for students. GitHub has to verify that you are a student, and that can take up to two weeks, so apply now.
+
+1. Go to [github.com](https://github.com/) and create an account using your **BYU email address**. If you already have a GitHub account, add your BYU email under **Settings → Emails** and verify it.
+2. Go to [education.github.com/pack](https://education.github.com/pack) and apply for the **Student Developer Pack**. Enter **Brigham Young University** as your school and upload a photo of your BYU ID card when asked.
+3. Take a screenshot of the page or email confirming that your application was submitted.
+
+If your application is rejected, read the reason in the email, fix it, and apply again.
+
 ---
 
 ## Turning in/Rubric
@@ -260,7 +270,7 @@ This code will be given to you as a preview for the next topic.
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.
 
-**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work.
+**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work. Upload your Part 5 screenshot along with the notebook.
 
 **Rubric:**
 
@@ -275,7 +285,8 @@ This code will be given to you as a preview for the next topic.
 |                                       Part 4: Values for forces, lengths, and coordinates match given test scenarios                                       |     4      |
 |                                                         Part 4: Graph matches given test scenarios                                                         |     4      |
 |                                                             Comments are added to explain code                                                             |     3      |
-|                                                       <div style="text-align: right">**Total**</div>                                                       |   **30**   |
+|                                         Part 5: Screenshot shows Student Developer Pack application submitted                                          |     2      |
+|                                                       <div style="text-align: right">**Total**</div>                                                       |   **32**   |
 
 ---
 

@@ -7,9 +7,9 @@ So far in this class, you have written all of your Python in Google Colab, which
 - Python, VS Code, and Git installed on your laptop
 - Enough of the command line to move around and run a program
 - A GitHub account, which you will use to store your code and publish your web apps
-- An application for a free GitHub Copilot student license
+- GitHub Copilot, the AI coding agent you will use for the rest of the semester
 
-**Apply for the student license before class.** GitHub verifies student status by hand, and approval can take anywhere from a few hours to a couple of weeks. You will need Copilot in two sections, so apply now. Instructions are in [Your GitHub Account and Copilot](#your-github-account-and-copilot) below.
+You should have created your GitHub account and applied for the free Copilot student license in the Numpy homework. If you haven't, do it now using the steps in [Your GitHub Account and Copilot](#your-github-account-and-copilot) below, because approval can take up to two weeks.
 
 ## Basic Concepts
 
@@ -214,6 +214,8 @@ You can also click the **▷ Run** button in the top-right corner of the editor,
 
 ### 1. Create a GitHub account
 
+You did this step and the next one in the Numpy homework. They are repeated here for reference.
+
 Go to [github.com](https://github.com/) and sign up. Use your **BYU email address**, because GitHub uses it to verify that you are a student. If you already have a GitHub account with a personal email, keep it and add your BYU email under **Settings → Emails**, then verify it.
 
 Choose your username with some care. It appears in the address of every web page you publish from GitHub, and many engineers use their GitHub profile as part of their résumé.
@@ -242,6 +244,9 @@ git config --global user.email "you@byu.edu"
 
 Click the **Accounts** icon (the person at the bottom of the left sidebar) and choose **Sign in with GitHub**. This lets VS Code push your code to GitHub and turns on Copilot.
 
+!!! warning "Screenshot needed"
+    The VS Code Accounts menu with **Sign in with GitHub** highlighted.
+
 ## AI Coding Agents
 
 Colab's AI features suggest a line or a block of code at a time. An **AI coding agent** works on a whole project. You describe what you want in plain English, and the agent reads your files, writes and edits code across several files, runs your program, reads the errors, and fixes them. Your job shifts from typing every line to describing the problem clearly, reviewing what the agent wrote, and testing whether the result is right.
@@ -261,10 +266,10 @@ Whichever agent you use, the results depend on how well you understand the probl
 Before class, do the following:
 
 1. Install Python, VS Code, and Git using the [Setup Guide](#setup-guide)
-2. Create your GitHub account and **apply for the Student Developer Pack**
+2. Check the status of your Student Developer Pack application at [education.github.com](https://education.github.com/). If you never applied, apply now.
 3. In the VS Code terminal, run `python --version` and `git --version` (use `python3` on a Mac)
 
-Take **two screenshots**: one of the VS Code terminal showing the output of both commands, and one of the page or email confirming that your Student Developer Pack application was submitted. Upload both with your Pre-Class Quiz.
+Take **two screenshots**: one of the VS Code terminal showing the output of both commands, and one showing your Student Developer Pack status (approved or pending). Upload both with your Pre-Class Quiz.
 
 If something won't install, upload a screenshot of the error instead and come to class early. TAs will be available to help.
 

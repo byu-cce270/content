@@ -6,6 +6,10 @@ Before class, you should have installed Python, VS Code, and Git and applied for
 
 1. In VS Code, choose **File → Open Folder** and open your class folder (for example, `Documents/cce270`). If you don't have one yet, make it first.
 2. Open the terminal with **Terminal → New Terminal**.
+
+    !!! warning "Screenshot needed"
+        VS Code with a class folder open and the terminal panel at the bottom.
+
 3. Check where you are with `pwd` (Mac) or `cd` (Windows). It should be your class folder.
 4. Make a folder for today and move into it:
 
@@ -91,6 +95,10 @@ Open `settings.py`. Every number that controls how the game plays is defined her
 
 Now open the **Source Control** panel (the branching icon on the left sidebar, or **Ctrl+Shift+G** / **Cmd+Shift+G**). It lists `settings.py` as changed. Click the file name to see a side-by-side comparison: red lines are what you removed and green lines are what you added. This view will matter a great deal once an AI agent is making the changes.
 
+!!! warning "Screenshot needed"
+    Source Control panel listing `settings.py`, with the side-by-side diff of the `bullet_width` change open.
+
+
 ## Exercise 3 - Your First GitHub Repository
 
 Now you will put your own code on GitHub.
@@ -99,6 +107,10 @@ Now you will put your own code on GitHub.
 2. Open the **Source Control** panel and click **Initialize Repository**. Git now tracks this folder.
 3. Your `beam.py` file is listed under **Changes**. Type a message in the box at the top, such as `Add beam calculator`, and click **Commit**. If VS Code asks whether to stage all your changes, click **Yes**.
 4. Click **Publish Branch**. Choose **public repository** and accept the suggested name. If VS Code asks you to sign in to GitHub, do so.
+
+    !!! warning "Screenshot needed"
+        Source Control panel after the first commit, showing the **Publish Branch** button, and the public/private repository prompt.
+
 5. Click the link VS Code shows (or go to your GitHub profile) and find your repository. Your code is now on GitHub.
 
 Now make a second commit:
@@ -124,7 +136,12 @@ That is the whole Git workflow you will use for the rest of the semester: **chan
 If your Copilot student license hasn't been approved yet, use the free plan for this exercise.
 
 1. Open the Alien Invasion folder from Exercise 2. In the Source Control panel, discard your changes to `settings.py` (right-click the file and choose **Discard Changes**) so the game is back to its original state.
-2. Open the Copilot chat panel (the chat icon at the top of VS Code) and make sure the mode is set to **Ask**. Ask it:
+2. Open the Copilot chat panel (the chat icon at the top of VS Code) and make sure the mode is set to **Ask**.
+
+    !!! warning "Screenshot needed"
+        The Copilot chat panel with the mode picker open, showing the **Ask** and **Agent** options.
+
+    Ask it:
 
     > Explain how this game is organized. Which file handles keyboard input, and how does the main loop work?
 

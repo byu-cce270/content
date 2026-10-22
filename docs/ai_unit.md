@@ -80,3 +80,10 @@ These APIs are free, need no key, and work from the browser.
 
 - **In-class demo (Part 1):** Bridge builder or shake table. Both look impressive when they run, and both give the agent chances to get the physics wrong that the class can catch together.
 - **Part 2 (Tkinter):** The games, the traffic simulation, the crane planner, and both live-data apps translate well to Tkinter. The 3D configurator and the map do not, so leave them off the Part 2 list.
+
+## Decisions: Using Python Locally
+
+1. **Student Pack timing:** Students create a GitHub account and apply for the Student Developer Pack in the Numpy homework (Part 5, 2 points). The Using Python Locally pre-class quiz checks their application status.
+2. **Anonymous grading:** GitHub usernames will be visible in this section's homework and in Agent Parts 1 and 2. Each of those pages says so in its anonymity note.
+3. **Verification before class:** A TA follows the reading and In-Class Exercise 4 on a fresh GitHub account a week before class, fixes any steps that don't match the current GitHub and VS Code screens, and replaces each "Screenshot needed" placeholder with a real screenshot.
+4. **AI comment penalty:** Keep the −50% penalty for the Using Python Locally homework. In the agent sections, replace it with a required spec file plus a short log of the prompts the student used.
