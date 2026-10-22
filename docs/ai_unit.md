@@ -93,8 +93,8 @@ These APIs are free, need no key, and work from the browser.
 | Section | Pages | Replaces |
 |:--|:--|:--|
 | Using Python Locally | `unit3/04_local_python/` read, class, hw | Same section, rewritten |
-| AI Coding - Web Apps | `unit3/05_ai_web_apps/` read, class, hw | Special Topic |
-| AI Coding - Desktop Apps | `unit3/06_ai_desktop_apps/` read, class, hw | ipywidgets (moved to Bonus Content) |
+| Agentic Coding - Web Apps | `unit3/05_ai_web_apps/` read, class, hw | Special Topic |
+| Agentic Coding - Desktop Apps | `unit3/06_ai_desktop_apps/` read, class, hw | ipywidgets (moved to Bonus Content) |
 | Final Project | `unit3/07_final_project/` read, class, proposal, prompt | Same section, reworked |
 
 Threads that run through all four sections:

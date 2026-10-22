@@ -247,7 +247,7 @@ Click the **Accounts** icon (the person at the bottom of the left sidebar) and c
 !!! warning "Screenshot needed"
     The VS Code Accounts menu with **Sign in with GitHub** highlighted.
 
-## AI Coding Agents
+## Agentic Coding
 
 Colab's AI features suggest a line or a block of code at a time. An **AI coding agent** works on a whole project. You describe what you want in plain English, and the agent reads your files, writes and edits code across several files, runs your program, reads the errors, and fixes them. Your job shifts from typing every line to describing the problem clearly, reviewing what the agent wrote, and testing whether the result is right.
 
