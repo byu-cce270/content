@@ -29,8 +29,8 @@ An interactive map of every USGS stream gage in the Bear River basin, which drai
 
 **Must have:**
 
-- A map (Leaflet works well) showing the Bear River basin boundary
-- Every active USGS stream gage in the basin, downloaded from the [USGS Water Data API](https://api.waterdata.usgs.gov/docs/ogcapi/) when the page loads, shown as a marker
+- A map (Leaflet works well) showing the Bear River basin boundary, which is hydrologic unit 1601 in the USGS Watershed Boundary Dataset
+- Every active USGS stream gage in the basin, downloaded from the [USGS Water Data API](https://api.waterdata.usgs.gov/docs/ogcapi/) when the page loads, shown as a marker. The basin has more than 300 stream sites, but most stopped recording years ago. Show only the gages that have reported flow recently (about two dozen), and let the user turn on the historical ones.
 - Clicking a gage shows its name, site number, drainage area, the most recent flow (cfs), and a hydrograph of daily flow for the past year
 - The date and time of the most recent reading, and a link to the gage's USGS page
 
@@ -72,7 +72,7 @@ Build a tower from columns, beams, and braces, set it on a shake table, and turn
 
 **Validation:** Physics engines use their own units, so check that yours behaves like the real world. Drop a single block from a known height and compare its fall time to $t = \sqrt{2h/g}$. Then measure the table's motion from the animation (the time for 10 cycles and the distance between the extremes) and compare it to the frequency and amplitude you set.
 
-**Going further:** Add base isolation (a layer that lets the building slide) or a tuned mass damper on the roof, and show how much more shaking the building survives. Play a real earthquake record. Add a challenge mode: the most floors that survive a given earthquake for a given budget.
+**Going further:** Add base isolation (a layer that lets the building slide) or a tuned mass damper on the roof, and show how much more shaking the building survives. Play a real earthquake record, such as the 1940 El Centro ground motion (the OpenSees project publishes it as a small text file that the agent can paste into your app). Add a challenge mode: the most floors that survive a given earthquake for a given budget.
 
 ---
 
@@ -126,7 +126,8 @@ Most of Utah's water supply falls as snow. Build a map of the SNOTEL snow-monito
 
 **Must have:**
 
-- A map of all Utah SNOTEL sites, downloaded from the NRCS snow survey data service when the page loads
+- A map of all Utah SNOTEL sites (about 140), downloaded from the [NRCS Air and Water Database REST API](https://wcc.sc.egov.usda.gov/awdbRestApi/swagger-ui/index.html) when the page loads
+- A date picker, defaulting to today. In the fall there is no snow yet, so make sure the app also works for a past date, such as April 1 of last year
 - Each site colored by its snow water equivalent (SWE) as a percent of the median for today's date
 - Clicking a site shows its name and elevation, today's SWE and median SWE, and a plot of this water year's SWE with the median for comparison
 - A statewide summary: the average percent of median across all sites
