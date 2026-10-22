@@ -82,31 +82,39 @@ Things the app will NOT do, so the agent doesn't add them.
 
 The **Calculations** and **Validation** sections make the difference between an engineering app and a toy. If you leave the equations to the agent, it will pick some, and they may be wrong in ways that are hard to see. If you write them down, you can check its work.
 
-### 2. Ask the agent to build it
+### 2. Have the agent review the spec
 
-Open your project folder in VS Code, open the Copilot chat panel, switch to **Agent** mode, and point it at your spec:
+Before any code is written, ask the agent to critique your spec. Open the Copilot chat panel, switch to **Ask** mode so it can't change any files, and enter:
+
+> Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
+
+Read its suggestions and decide which ones to take. The agent is good at spotting a missing input, an undefined variable, or a unit that doesn't match, and it will often ask questions you hadn't thought of, such as what the app should do with a negative span. It is less reliable about engineering judgment, so check any change it suggests to your equations against your textbook or notes. Update the spec, and commit it before moving on.
+
+### 3. Ask the agent to build it
+
+Switch the chat panel to **Agent** mode and point it at your spec:
 
 > Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put all calculations in clearly named functions.
 
 The last sentence keeps the calculations in their own functions, where you and the agent can find and check them.
 
-### 3. Run it and look for errors
+### 4. Run it and look for errors
 
 Double-click `index.html` to open it in your browser. After each change the agent makes, refresh the page (**Ctrl+R** or **Cmd+R**) to load the new version.
 
 If the page is blank or a button does nothing, there is an error. Open the browser's **developer console** to see it: press **F12** on Windows, or **Cmd+Option+J** in Chrome on a Mac. (In Safari, first turn on **Settings → Advanced → Show features for web developers**, then press **Cmd+Option+C**.) Errors appear in red. Copy the error into the chat and ask the agent to fix it.
 
-### 4. Validate
+### 5. Validate
 
 Enter the inputs from your validation test case and compare the app's answers to your hand calculation. If they don't match, don't simply tell the agent "the answer is wrong." Tell it what you entered, what you expected, what it showed, and how you got your answer. Often the agent will find a units error or a sign convention problem. Sometimes the mistake will be in your hand calculation.
 
 Don't skip this step. An app that looks polished and gives wrong answers is worse than no app at all, because people will believe it.
 
-### 5. Commit
+### 6. Commit
 
 Each time the app works and passes validation, commit. Then, if the next request goes badly, you can discard the agent's changes in the Source Control panel and you are back to a working app.
 
-### 6. Add one feature at a time
+### 7. Add one feature at a time
 
 Ask for one change per request: "Add a slider for the load," then "Color the members by force," then "Add a cost total." Test and commit after each. A long list of changes in one request is much harder to check, and when something breaks you won't know which change caused it.
 

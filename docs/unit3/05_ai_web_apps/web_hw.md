@@ -9,10 +9,11 @@
 Choose one of the five problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
 
 1. Write the spec, including a validation case you have worked by hand
-2. Have the agent build the app
-3. Validate it against your hand calculation
-4. Add features one at a time, committing after each one
-5. Publish it on GitHub Pages
+2. Have the agent review the spec, and revise it
+3. Have the agent build the app
+4. Validate it against your hand calculation
+5. Add features one at a time, committing after each one
+6. Publish it on GitHub Pages
 
 Each problem lists features the app must have, a validation check, and ideas for going further. The must-have features are the minimum. The best apps will go well past them, and the "Going further" ideas are a place to start.
 

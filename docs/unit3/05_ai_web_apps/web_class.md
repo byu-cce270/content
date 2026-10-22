@@ -68,7 +68,15 @@ Numpy homework, Test 1:
 
 Commit with the message `Add spec`.
 
-## Step 3 - Build It
+## Step 3 - Review the Spec
+
+Even a spec someone else wrote can be improved. In the Copilot chat panel, switch to **Ask** mode and enter:
+
+> Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
+
+Discuss the suggestions with the people around you. Take any that make the spec clearer (for example, what happens when the user deletes a support), and skip any that add features you don't need yet. Update `spec.md`, add the review to your prompt log, and commit with the message `Revise spec after review`.
+
+## Step 4 - Build It
 
 Open the Copilot chat panel, switch to **Agent** mode, and enter:
 
@@ -80,7 +88,7 @@ Try drawing a truss. If something doesn't work, describe exactly what you did an
 
 When you can draw a truss and see forces, commit with the message `First working version`.
 
-## Step 4 - Validate
+## Step 5 - Validate
 
 Use the joint table to build the Numpy homework truss from the **Validation** section of the spec, and add the -2000 lb load at B. Compare the app's results to the expected values.
 
@@ -98,19 +106,19 @@ Next, check a truss you can't compare against the homework. Draw a symmetric tru
 
 When the app passes both checks, commit with the message `Validated against Numpy HW Test 1`.
 
-## Step 5 - Make It a Game
+## Step 6 - Make It a Game
 
 Now make it fun. Add each of these features **one at a time**, testing and committing after each:
 
 1. **Member failure:** Each member can carry 10,000 lb in tension and 6,000 lb in compression. Members that exceed their capacity turn black and dashed, and a banner says "Bridge failed!"
 2. **Cost:** Members cost $5 per foot and joints cost $50 each. Show the total cost of the bridge.
-3. **Challenge mode:** A button sets up a 40 ft gap with a pin at (0, 0), a roller at (40, 0), and a 6000 lb load at (20, 0). The user builds the cheapest bridge that holds the load.
+3. **Challenge mode:** A button sets up a 40 ft gap with a pin at (0, 0), a roller at (40, 0), and a -6000 lb (downward) load at (20, 0). The user builds the cheapest bridge that holds the load.
 
 Before you ask for each feature, add it to the spec. For example, add the capacities to the **Inputs** and **Calculations** sections before asking for member failure.
 
 Compete with the people around you: who can build the cheapest bridge that holds 6000 lb?
 
-## Step 6 - Publish
+## Step 7 - Publish
 
 1. In the Source Control panel, click **Publish Branch** and choose a **public** repository.
 2. On your repository's page on GitHub, go to **Settings → Pages**. Set **Source** to **Deploy from a branch**, choose **main** and **/ (root)**, and click **Save**.

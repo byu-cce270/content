@@ -6,7 +6,7 @@ For your final project, your team will design and build an app using an AI codin
 
 ## The Design Process
 
-In the homework, you wrote a short spec and had the agent build from it. For a project several times larger, a few extra steps before any code is written will save your team days of rework. Follow these four steps, in order.
+In the homework, you wrote a short spec, had the agent review it, and had the agent build from it. For a project several times larger, the same process needs more care at each step, and a validation plan written before any code. Follow these four steps, in order.
 
 ### Step 1: Write a detailed spec
 

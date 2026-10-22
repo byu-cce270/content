@@ -312,11 +312,12 @@ This section covers running Python on your own computer, tracking code with Git 
     * A **branch** is a separate line of commits that is merged back into **main** through a **pull request**.
 * **The Agentic Coding Workflow**:
     1. Write a **spec** (**spec.md**) with Purpose, Inputs, Calculations, Outputs, Validation, and Out of scope.
-    2. Ask the agent to build from the spec.
-    3. Run the app and check for errors (the browser's developer console, or the terminal for Python).
-    4. **Validate** against a hand-worked case.
-    5. Commit.
-    6. Add one feature at a time, updating the spec first.
+    2. Have the agent **review the spec** (in Ask mode, with no code written), and revise it.
+    3. Ask the agent to build from the spec.
+    4. Run the app and check for errors (the browser's developer console, or the terminal for Python).
+    5. **Validate** against a hand-worked case.
+    6. Commit.
+    7. Add one feature at a time, updating the spec first.
 * **Web Apps**: A single **index.html** file holds the HTML (content), CSS (appearance), and JavaScript (behavior). Publish it from a public repository with **GitHub Pages**.
 * **Desktop Apps with Tkinter**:
     * Create the window with **root = tk.Tk()** and start it with **root.mainloop()**.
@@ -710,7 +711,7 @@ d) apply
 
 9. You should use xlsxwriter when you need more control over the Excel output than pandas provides, such as applying custom cell formatting (colors, borders), writing formulas, creating charts, or inserting images.
 
-10. (1) Write a spec describing the purpose, inputs, calculations, outputs, a hand-worked validation case, and what is out of scope. (2) Ask the agent to build from the spec. (3) Run the app and check for errors. (4) Validate the app against the hand-worked case. (5) Commit. (6) Add features one at a time, updating the spec first and testing and committing after each one.
+10. (1) Write a spec describing the purpose, inputs, calculations, outputs, a hand-worked validation case, and what is out of scope. (2) Have the agent review the spec, and revise it. (3) Ask the agent to build from the spec. (4) Run the app and check for errors. (5) Validate the app against the hand-worked case. (6) Commit. (7) Add features one at a time, updating the spec first and testing and committing after each one.
 
 11. Method 1: Reshaping with .reshape(): x.reshape((5, 1)). Method 2: Slicing with np.newaxis: x[:, np.newaxis].
 
