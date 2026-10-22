@@ -6,7 +6,7 @@ In this exercise, you will have the agent rebuild your Bridge Builder web app as
 
 1. Make a folder named `bridge_desktop` in your class folder.
 2. Copy `spec.md` and `index.html` from your `bridge_builder` folder into `bridge_desktop`. The agent will use `index.html` as a reference for how the app should behave.
-3. Open `bridge_desktop` in VS Code, initialize a repository, and commit with the message `Start from web version`.
+3. Open `bridge_desktop` in VS Code, initialize a repository, and ask the agent to commit.
 4. Create `prompts.md` for your prompt log.
 5. Install the packages you'll need:
 
@@ -43,7 +43,7 @@ Then change the **Calculations** section to say that the system is solved with `
 
 This line matters more than it looks. When joints are almost in a straight line, `np.linalg.solve` doesn't report an error. It returns forces in the billions of pounds, and the app would display them as if they were real.
 
-Commit with the message `Update spec for desktop version`.
+Ask the agent to commit.
 
 ## Step 3 - Get a Plan
 
@@ -75,7 +75,7 @@ Switch to **Agent** mode and enter:
 >
 > Do not write truss.py yet.
 
-Read `test_truss.py` and check that the expected values are the ones you gave. Run `pytest`. It should report an error, because `truss.py` doesn't exist yet. Commit with the message `Add solver tests`.
+Read `test_truss.py` and check that the expected values are the ones you gave. Run `pytest`. It should report an error, because `truss.py` doesn't exist yet. Ask the agent to commit.
 
 ## Step 5 - Build It
 
@@ -87,7 +87,7 @@ When the agent finishes, run `pytest` yourself and confirm that all the tests pa
 python app.py
 ```
 
-Build a truss and check that it behaves like your web version. When it works, commit with the message `Desktop version working`.
+Build a truss and check that it behaves like your web version. When it works, ask the agent to commit.
 
 ## Step 6 - See a Test Catch a Bug
 
@@ -108,5 +108,5 @@ After each feature, run `pytest` to confirm the solver still passes. The tests d
 ## Step 8 - Push to GitHub
 
 1. Ask the agent to write a short `README.md` that says what the app does, which packages to install, and how to start it.
-2. Commit, then click **Publish Branch** and publish a public repository.
+2. Ask the agent to commit, then click **Publish Branch** and publish a public repository.
 3. Trade repository addresses with a neighbor. Clone their repository (**File → New Window**, then **Clone Git Repository**), install the packages their README lists, and run their app. If their README left anything out, tell them.

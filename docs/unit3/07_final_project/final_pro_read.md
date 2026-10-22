@@ -65,7 +65,7 @@ Now everyone has a copy, and everyone can push to GitHub.
 Every time you sit down to work:
 
 1. **Pull** first, to get your teammates' latest commits. In the Source Control panel, click **…** and then **Pull**, or click **Sync Changes**.
-2. Make one change, test it, and commit.
+2. Make one change, test it, and have the agent commit it.
 3. **Push** (click **Sync Changes**) soon after you commit, so your teammates get your work.
 
 Small, frequent commits make merging much easier than one big commit at the end of the day.

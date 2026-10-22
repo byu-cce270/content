@@ -112,7 +112,11 @@ Don't skip this step. An app that looks polished and gives wrong answers is wors
 
 ### 6. Commit
 
-Each time the app works and passes validation, commit. Then, if the next request goes badly, you can discard the agent's changes in the Source Control panel and you are back to a working app.
+Each time the app works and passes validation, commit. Have the agent do it:
+
+> Commit these changes.
+
+Agents write clear, specific commit messages, because they know exactly what they changed. Before you ask, look over the changes in the Source Control panel so you know what is being saved, and read the message the agent writes. Then, if the next request goes badly, you can discard the agent's changes in the Source Control panel and you are back to a working app.
 
 ### 7. Add one feature at a time
 

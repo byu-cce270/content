@@ -10,6 +10,8 @@ Your app will not look exactly like your neighbor's, even with the same prompts.
 2. In the **Source Control** panel, click **Initialize Repository**.
 3. Create a file named `prompts.md` for your prompt log. Add an entry to it after each request you make to the agent today.
 
+In Using Python Locally you made commits yourself. From here on, the agent makes them. Whenever this page says to ask the agent to commit, enter "Commit these changes" in **Agent** mode, allow the `git` command it asks to run, and read the commit message it writes.
+
 ## Step 2 - Write the Spec
 
 Create a file named `spec.md` and paste in this spec. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
@@ -66,7 +68,7 @@ Numpy homework, Test 1:
 - Saving or loading designs
 ```
 
-Commit with the message `Add spec`.
+Ask the agent to commit.
 
 ## Step 3 - Review the Spec
 
@@ -74,7 +76,7 @@ Even a spec someone else wrote can be improved. In the Copilot chat panel, switc
 
 > Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
 
-Discuss the suggestions with the people around you. Take any that make the spec clearer (for example, what happens when the user deletes a support), and skip any that add features you don't need yet. Update `spec.md`, add the review to your prompt log, and commit with the message `Revise spec after review`.
+Discuss the suggestions with the people around you. Take any that make the spec clearer (for example, what happens when the user deletes a support), and skip any that add features you don't need yet. Update `spec.md`, add the review to your prompt log, and ask the agent to commit.
 
 ## Step 4 - Build It
 
@@ -86,7 +88,7 @@ Watch what the agent does. It will probably write the file in pieces, and it may
 
 Try drawing a truss. If something doesn't work, describe exactly what you did and what happened, and ask the agent to fix it. Check the browser's developer console for red error messages (**F12**, or **Cmd+Option+J** in Chrome on a Mac) and paste any you find into the chat.
 
-When you can draw a truss and see forces, commit with the message `First working version`.
+When you can draw a truss and see forces, ask the agent to commit.
 
 ## Step 5 - Validate
 
@@ -104,7 +106,7 @@ Then give the agent the inputs, the expected values, and what the app showed.
 
 Next, check a truss you can't compare against the homework. Draw a symmetric truss with a symmetric load. The two vertical reactions must be equal, and they must add up to the total load. This kind of check, where you know a property the answer must have even without the exact answer, catches a surprising number of errors.
 
-When the app passes both checks, commit with the message `Validated against Numpy HW Test 1`.
+When the app passes both checks, ask the agent to commit.
 
 ## Step 6 - Make It a Game
 
