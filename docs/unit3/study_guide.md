@@ -296,24 +296,38 @@ This section covers how to read and write Excel files using Pandas and the xlsxw
     * Charts: Can create charts (**workbook.add_chart(...)**), configure them (**chart.add_series(...)**), and insert them into a worksheet (**worksheet.insert_chart(...)**).
     * Usage with Pandas:
         * Use xlsxwriter as the engine for Pandas' ExcelWriter to format a DataFrame written to Excel: **writer = pd.ExcelWriter('output.xlsx', engine='xlsxwriter')**.
-### ipywidgets
+### Local Python, Git, and Agentic Coding
 
-This section introduces ipywidgets, a library for creating interactive GUI components in Jupyter notebooks.
+This section covers running Python on your own computer, tracking code with Git and GitHub, and building apps with an AI coding agent.
 
-* **Core Idea**: ipywidgets is a Python library for creating interactive graphical user interface (GUI) components directly within Jupyter/Colab notebooks.
-* **Import**: **import ipywidgets as widgets**.
-* **Four-Step Process**:
-    1. Create a widget: **button = widgets.Button(description='Click me')**.
-    2. Set properties: **button.style = 'warning'**.
-    3. Handle events: Define a function to execute on an event and link it, e.g., **button.on_click(on_button_click)**.
-    4. Display the widget: **display(button)**.
-* **Common Widgets**: Button, Checkbox, Dropdown, IntSlider, FloatSlider, RadioButtons, Text.
-* **Handling Events**:
-    * For a button click, use the **.on_click(handler_function)** method.
-    * For value changes in sliders, dropdowns, etc., use the **.observe(handler_function, names='value')** method.
-    * The event handler function receives an event object containing information about the interaction.
-* **Getting Values**: Access the current value of a widget using its **.value** property (e.g., **current_value = slider.value**). This is often done inside an event handler for a button.
-* **Layout and Arrangement**: Use **widgets.HBox([...])** to arrange widgets horizontally and **widgets.VBox([...])** to arrange them vertically.
+* **Running Python Locally**:
+    * Write code in a **.py** file and run it from the terminal: **python myfile.py** (**python3** on most Macs).
+    * Install packages once per computer with **pip install numpy pandas matplotlib**.
+    * Terminal basics: **cd folder** moves into a folder, **cd ..** moves up one, **ls** (Mac) or **dir** (Windows) lists files, and **Ctrl+C** stops a running program.
+* **Git and GitHub**:
+    * A **repository** is a project folder tracked by Git. A **commit** is a saved snapshot of the folder with a message describing the change.
+    * **Push** sends your commits to GitHub, **pull** downloads your teammates' commits, and **clone** downloads a copy of a repository for the first time.
+    * The basic workflow is **change, test, commit, push**. When an agent's change breaks something, discard it and you are back at your last commit.
+    * A **merge conflict** happens when two people change the same lines. Resolve it by choosing which version to keep (or combining them), then commit.
+    * A **branch** is a separate line of commits that is merged back into **main** through a **pull request**.
+* **The Agentic Coding Workflow**:
+    1. Write a **spec** (**spec.md**) with Purpose, Inputs, Calculations, Outputs, Validation, and Out of scope.
+    2. Ask the agent to build from the spec.
+    3. Run the app and check for errors (the browser's developer console, or the terminal for Python).
+    4. **Validate** against a hand-worked case.
+    5. Commit.
+    6. Add one feature at a time, updating the spec first.
+* **Web Apps**: A single **index.html** file holds the HTML (content), CSS (appearance), and JavaScript (behavior). Publish it from a public repository with **GitHub Pages**.
+* **Desktop Apps with Tkinter**:
+    * Create the window with **root = tk.Tk()** and start it with **root.mainloop()**.
+    * Create widgets (**tk.Label**, **tk.Entry**, **tk.Button**, **tk.Scale**, **tk.Canvas**) and place them with **.grid(row=..., column=...)**.
+    * Connect a button to a method with **command=self.solve** (no parentheses).
+    * Read an entry box with **entry.get()**, and change a label with **label.config(text=...)**.
+* **Automated Tests with pytest**:
+    * Tests go in files named **test_*.py**, in functions named **test_...**, and use **assert**. Run them all by typing **pytest**.
+    * Use **pytest.approx** to compare floating-point results.
+    * Expected values must come from hand calculations or references. Tests whose expected values were computed by the code itself will pass even when the code is wrong.
+    * Calculations must be plain functions, separate from the interface code, so that tests can call them.
 
 
 ## Midterm Practice Quiz
@@ -336,7 +350,7 @@ Sample questions to help you prepare for the midterm exam. Answers are provided 
 
 7. The Pandas .append() method modifies the original DataFrame in place.
 
-8. In an ipywidget, the display() function must be called before an event handler is defined for the widget.
+8. When an agent writes pytest tests for your calculations, it is fine to let the agent compute the expected values from the code.
 
 9. The xlsxwriter library can be used to write Excel formulas into cells.
 
@@ -426,11 +440,11 @@ b) pd.read_excel('file.xlsx', columns='A,C')<br>
 c) pd.read_excel('file.xlsx', usecols=['A', 'C'])<br>
 d) pd.read_excel('file.xlsx', header=['A', 'C'])
 
-13. How do you correctly link a function my_func to a button click event for an ipywidget named btn?<br>
-a) btn.click(my_func)<br>
-b) btn.on_click = my_func<br>
-c) btn.on_click(my_func)<br>
-d) btn.event('click', my_func)
+13. Which Git operation downloads your teammates' latest commits from GitHub into your existing copy of the repository?<br>
+a) commit<br>
+b) push<br>
+c) pull<br>
+d) clone
 
 14. What does the s parameter control in ax.scatter()?<br>
 a) The style of the marker.<br>
@@ -468,11 +482,11 @@ b) numpy<br>
 c) xlsxwriter<br>
 d) openpyxl
 
-20. To arrange two ipywidgets, w1 and w2, side-by-side, you should use:<br>
-a) widgets.SideBySide([w1, w2])<br>
-b) widgets.Arrange([w1, w2], direction='horizontal')<br>
-c) widgets.VBox([w1, w2])<br>
-d) widgets.HBox([w1, w2])
+20. In a Tkinter class, which line makes a button call the method solve when it is clicked?<br>
+a) tk.Button(root, text="Solve", command=self.solve())<br>
+b) tk.Button(root, text="Solve", command=self.solve)<br>
+c) tk.Button(root, text="Solve", onclick="solve")<br>
+d) tk.Button(root, text="Solve").click(self.solve)
 
 21. What is the fundamental difference between a Pandas Series and a 1D NumPy array?<br>
 a) A Series can only hold strings.<br>
@@ -516,11 +530,11 @@ b) Use the second row (index 1) as the column headers.<br>
 c) Skip the first row.<br>
 d) Read the file as if it has no header.
 
-28. To access the current value of an ipywidget slider named s, you would use:<br>
-a) s.get_value()<br>
-b) s.value<br>
-c) s.current<br>
-d) s.observe('value')
+28. To publish a single-file web app with GitHub Pages from the root of a repository, the file should be named:<br>
+a) app.html<br>
+b) main.js<br>
+c) index.html<br>
+d) README.md
 
 29. To reverse the y-axis in a Matplotlib plot, you can use:<br>
 a) plt.ylim(1.2, -1.2)<br>
@@ -554,7 +568,7 @@ d) apply
 
 9. When would you use the xlsxwriter library instead of Pandas' built-in to_excel() method?
 
-10. Describe the four main steps to create and use an interactive ipywidget.
+10. Describe the steps of the workflow for building an app with an AI coding agent.
 
 11. How do you convert a 1D NumPy array x into a 2D column vector? Provide two different methods.
 
@@ -568,7 +582,7 @@ d) apply
 
 16. What is the purpose of plt.colorbar() when used with plt.scatter()?
 
-17. In ipywidgets, what is the difference between the event handling for a Button (on_click) and a Slider (observe)?
+17. Why should an app's engineering calculations be kept in plain functions, separate from the interface code?
 
 18. What do the fig and ax variables represent after the call fig, ax = plt.subplots()?
 
@@ -598,7 +612,7 @@ d) apply
 
 7. False. The .append() method creates and returns a new DataFrame; it does not modify the original.
 
-8. False. The display function can be called before or after; however, the widget must be created before it is displayed or has an event handler assigned. The handler must be defined before it is assigned.
+8. False. Expected values computed from the code will match the code even when it is wrong, so the tests would always pass. Expected values must come from hand calculations or references.
 
 9. True. xlsxwriter provides methods like write_formula() to insert Excel formulas.
 
@@ -640,7 +654,7 @@ d) apply
 
 12. c) pd.read_excel('file.xlsx', usecols=['A', 'C'])
 
-13. c) btn.on_click(my_func)
+13. c) pull (clone makes the first copy of a repository; pull updates an existing copy)
 
 14. b) The size of the marker.
 
@@ -654,7 +668,7 @@ d) apply
 
 19. c) xlsxwriter
 
-20. d) widgets.HBox([w1, w2])
+20. b) command=self.solve (with parentheses, the method would run once when the button is created instead of when it is clicked)
 
 21. b) A Series has an explicit index.
 
@@ -670,7 +684,7 @@ d) apply
 
 27. b) Use the second row (index 1) as the column headers.
 
-28. b) s.value
+28. c) index.html
 
 29. a) plt.ylim(1.2, -1.2) (Reversing the order of the arguments reverses the axis).
 
@@ -696,7 +710,7 @@ d) apply
 
 9. You should use xlsxwriter when you need more control over the Excel output than pandas provides, such as applying custom cell formatting (colors, borders), writing formulas, creating charts, or inserting images.
 
-10. (1) Create the widget (w = widgets.Button(...)). (2) Set its properties (w.description = 'New Text'). (3) Handle its events by defining a function and linking it (w.on_click(my_func)). (4) Display the widget (display(w)).
+10. (1) Write a spec describing the purpose, inputs, calculations, outputs, a hand-worked validation case, and what is out of scope. (2) Ask the agent to build from the spec. (3) Run the app and check for errors. (4) Validate the app against the hand-worked case. (5) Commit. (6) Add features one at a time, updating the spec first and testing and committing after each one.
 
 11. Method 1: Reshaping with .reshape(): x.reshape((5, 1)). Method 2: Slicing with np.newaxis: x[:, np.newaxis].
 
@@ -710,7 +724,7 @@ d) apply
 
 16. plt.colorbar() displays a color scale bar that shows the mapping between the values passed to the c argument of plt.scatter() and the colors rendered on the plot.
 
-17. A Button's on_click event fires only when the button is explicitly clicked. A Slider's observe event (with names='value') fires every time the slider's value changes, providing continuous updates.
+17. Plain functions can be called directly by automated tests with known inputs, so the calculations can be checked every time the code changes. They are also easier for you and the agent to find, read, and check against the spec.
 
 18. fig is an instance of plt.Figure, which is the top-level container for all plot elements. ax is an instance of plt.Axes, which is the actual plot area (the box with ticks, labels, etc.) where data is plotted.
 
@@ -726,32 +740,42 @@ d) apply
 
 | Term | Definition |
 | :--- | :--- |
-| **Axes** | In Matplotlib, the object representing the plot area: a bounding box with ticks, grids, and labels that contains the plot elements. |
+| **Agentic coding** | Building software by directing an AI coding agent, which reads, writes, and runs code across a project, while the programmer writes the spec and reviews and validates the results. |
 | **ax.annotate()** | A Matplotlib function for creating annotations, which consist of some text and an arrow, with flexible specification options. |
+| **Axes** | In Matplotlib, the object representing the plot area: a bounding box with ticks, grids, and labels that contains the plot elements. |
 | **ax.text()** | A Matplotlib function to place text at a particular x/y value on the axes. |
+| **Branch** | A separate line of commits in a Git repository that can be developed without affecting other work and later merged into the main branch. |
+| **Commit** | A saved snapshot of every file in a Git repository, with a message describing what changed. |
 | **DataFrame** | The primary two-dimensional, size-mutable, and potentially heterogeneous tabular data structure in Pandas, with labeled axes (rows and columns). |
 | **DataFrameGroupBy** | The object returned by a .groupby() operation in Pandas. It is a special view of the DataFrame poised to perform operations on groups but does no actual computation until an aggregation is applied. |
 | **dtype** | A NumPy attribute that describes the data type of the elements in an array (e.g., int64, float64). |
 | **Figure** | In Matplotlib, the top-level object or container that holds all plot elements like axes, graphics, text, and labels. |
-| **GUI** | Graphical User Interface. The visual elements of a program (buttons, text boxes, etc.) that a user interacts with. |
+| **Git** | A program that records the history of changes to the files in a project folder. |
+| **GitHub Pages** | A free GitHub service that publishes the HTML files in a repository as a web site. |
 | **groupby** | A Pandas operation that involves splitting data into groups based on some criteria, applying a function to each group independently, and combining the results into a data structure. |
+| **GUI** | Graphical User Interface. The visual elements of a program (buttons, text boxes, etc.) that a user interacts with. |
 | **iloc** | An indexer in Pandas for purely integer-location based indexing for selection by position (implicit index). |
 | **Index** | A fundamental Pandas object that can be thought of as an immutable array or an ordered set, holding the axis labels for Series and DataFrame objects. |
-| **ipywidgets** | A Python library that provides interactive HTML widgets (like sliders, buttons, text boxes) for Jupyter notebooks and Colab. |
 | **loc** | An indexer in Pandas for label-based indexing, using the explicit index labels of the Series or DataFrame. |
 | **Matplotlib** | A popular and comprehensive mathematical plotting library in Python used for creating static, animated, and interactive visualizations. |
+| **Merge conflict** | A situation where two people changed the same lines of a file, so Git cannot combine the changes automatically. |
 | **np.concatenate()** | A NumPy function for joining a sequence of arrays along an existing axis. |
 | **np.newaxis** | A NumPy utility used to increase the dimension of an existing array by one dimension when used in slicing. |
 | **pd.concat()** | A Pandas function for combining Series or DataFrame objects along a particular axis with optional set logic (union or intersection) of the other axes. |
 | **pd.merge()** | A Pandas function for combining DataFrame objects using a database-style join operation based on common columns or indices. |
 | **plt.scatter()** | A Matplotlib function that creates a scatter plot, which is highly flexible as the properties (size, color, etc.) of each individual point can be controlled. |
 | **plt.show()** | A Matplotlib command that starts an event loop and opens interactive windows to display all active figure objects. |
+| **pytest** | A Python library for writing and running automated tests. |
 | **Relational Algebra** | A formal set of rules for manipulating relational data, forming the conceptual foundation for database operations like joins, which are implemented in Pandas' pd.merge. |
+| **Repository** | A project folder whose history is tracked by Git. |
 | **reshape()** | A NumPy method to change the shape of an array without changing its data. |
 | **Series** | The primary one-dimensional labeled array data structure in Pandas, capable of holding any data type. |
 | **Slicing** | A syntax for accessing subarrays or sub-series/dataframes. In NumPy, slices are views; in Pandas, slicing with explicit indices is inclusive of the endpoint. |
+| **Spec** | A written description of what an app should do, including its inputs, calculations, outputs, and validation cases. |
 | **Split-Apply-Combine** | A pattern for data analysis where data is split into groups, a function is applied to each group, and the results are combined. It is the core concept of Pandas' groupby operation. |
+| **Tkinter** | Python's built-in library for building desktop apps with windows, buttons, and other widgets. |
 | **Ufunc** | Universal Function. A function that operates on NumPy arrays in an element-by-element fashion, supporting features like broadcasting and type casting. They are the key to fast, vectorized computation. |
+| **Validation** | Checking that a program's results are correct by comparing them to hand calculations, references, or known properties of the answer. |
 | **Vectorization** | The process of replacing explicit for-loops with array expressions. In NumPy, this is achieved via ufuncs and leads to much faster execution. |
 | **View** | In NumPy, a slice of an array that does not have its own data. It is a "view" into the memory of the original array, so modifications to the view will affect the original. |
 | **xlsxwriter** | A Python library that allows you to write files in the Excel 2007+ XLSX file format, providing detailed control over formatting, charts, and other features. |
