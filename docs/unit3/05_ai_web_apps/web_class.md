@@ -130,9 +130,9 @@ Add the Pratt truss case to the **Validation** section of the spec with your han
 
 Add these features **one at a time**. For each one, add it to the spec first (Inputs, Calculations, and Outputs, as needed), then ask the agent to build it, test it, rerun your validation cases, and ask the agent to commit.
 
-1. **The bridge site:** A **New Bridge** button that clears the screen and sets up a 60 ft gap: deck joints at (0, 0), (10, 0), ... (60, 0), with a pin at (0, 0) and a roller at (60, 0). The deck joints can't be moved or deleted. The user builds the rest of the truss above or below the deck.
+1. **The bridge site:** A **New Bridge** button that clears the screen and sets up a 60 ft gap: deck joints at (0, 0), (10, 0), ... (60, 0), with a pin at (0, 0) and a roller at (60, 0). The deck joints, pin, and roller can't be moved or deleted. The button doesn't create any members; the user builds the whole truss, including the deck chord, above or below the deck.
 
-2. **Vehicles:** A menu of four vehicles and a **Drive** button. The vehicle drives across the deck from left to right in 1 ft steps, from fully off the left end to fully off the right end, and the member forces update at every step. Each axle load is split between the two deck joints on either side of it in proportion to its distance from each one (as if short beams span between the deck joints). Axle loads are in lb, measured back from the front axle:
+2. **Vehicles:** A menu of four vehicles and a **Drive** button. The vehicle drives across the deck from left to right in 1 ft steps, from fully off the left end to fully off the right end, and the member forces update at every step. The vehicle's position is the location of its front axle. Each axle load is split between the two deck joints on either side of it, with the nearer joint taking more: each joint's share is proportional to the axle's distance from the *other* joint (as if short beams span between the deck joints). An axle that is off the deck adds no load. Axle loads are in lb, measured back from the front axle:
 
     | Vehicle                         | Axles                                      |
     |:--------------------------------|:-------------------------------------------|
@@ -141,9 +141,9 @@ Add these features **one at a time**. For each one, add it to the spec first (In
     | Semi (AASHTO HS20 design truck) | 8,000 at 0 ft; 32,000 at 14 ft; 32,000 at 28 ft |
     | Fire engine                     | 20,000 at 0 ft; 27,000 at 17 ft; 27,000 at 21.5 ft |
 
-    Also add a slider to park the vehicle at any position. To check the load splitting, park the semi with its middle axle at x = 30 on your Pratt truss. The joint loads should match the ones you entered by hand in Step 5, and so should the member forces.
+    Also add a slider to park the vehicle at any position. To check the load splitting, click **New Bridge**, rebuild your Pratt truss from Step 5 on the bridge site, and park the semi with its front axle at x = 44, which puts its middle axle at x = 30. The joint loads should match the ones you entered by hand in Step 5, and so should the member forces.
 
-3. **Failure:** Every member can carry 90,000 lb in tension and 75,000 lb in compression. A force exactly at capacity holds (allow 0.5 lb for round-off). If any member goes over capacity while a vehicle is crossing, the vehicle stops, the member turns black and dashed, and a banner says which vehicle broke the bridge and where it was. Test it with your 10 ft Pratt truss, which should carry the car and the dump truck but fail under the semi.
+3. **Failure:** Every member can carry 90,000 lb in tension and 75,000 lb in compression. A force exactly at capacity holds (allow 0.5 lb for round-off). If any member goes over capacity while a vehicle is crossing, the vehicle stops, the member turns black and dashed, and a banner says which vehicle broke the bridge, where its front axle was, and which members failed. Test it with your 10 ft Pratt truss, which should carry the car and the dump truck but fail under the semi.
 
 4. **Cost:** Members cost $100 per foot and joints cost $500 each, including the deck joints. Show the total cost, and a scoreboard of which vehicles the current design has carried.
 
