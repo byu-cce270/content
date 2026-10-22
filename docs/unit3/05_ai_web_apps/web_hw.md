@@ -6,7 +6,7 @@
 
 ## Overview
 
-Choose one of the seven problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
+Choose one of the eight problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
 
 1. Write the spec, including a validation case you have worked by hand
 2. Have the agent review the spec, and revise it
@@ -157,6 +157,34 @@ Click a jobsite on a map and get a 7-day forecast showing which days are safe fo
 **Validation:** For one location and one day, read the raw hourly forecast numbers the app downloaded, apply your thresholds by hand, and confirm the app gave the same rating. Also compare the app's forecast to the National Weather Service forecast for the same place.
 
 **Ideas to get you started:** Let the user enter the crew's working hours, so overnight conditions don't count. Add activities such as asphalt paving or excavation in frozen ground. Show the best three-day window for a large pour.
+
+---
+
+### 8. Will It Break?
+
+A bridge design game. Design a truss bridge across a 60 ft gap, then drive vehicles across it, from a small car up to a fire engine, and watch the members light up as they approach their capacity. The goal is the cheapest bridge that carries every vehicle. This is the most demanding problem on the list, because the app needs both a truss solver and a drawing tool that is easy to use.
+
+**Must have:**
+
+- Two modes. In **Build** mode, the user places joints on a 1 ft grid and connects them with members, and a hint on screen says what the next click will do. In **Test** mode, the drawing tools are hidden and the user picks a vehicle and drives it across.
+- A bridge site with deck joints every 10 ft from x = 0 to x = 60, a pin at x = 0, and a roller at x = 60, which can't be moved or deleted
+- A truss solver using the method of joints as one linear system, with a message instead of numbers when the truss is unstable (it needs members + 3 = 2 × joints, and a system that isn't nearly singular)
+- These vehicles, with axle loads in lb measured back from the front axle. Each axle load is split between the two deck joints on either side of it, with the nearer joint taking more.
+
+    | Vehicle                         | Axles                                      |
+    |:--------------------------------|:-------------------------------------------|
+    | Car                             | 2,000 at 0 ft; 2,000 at 10 ft              |
+    | Loaded dump truck               | 12,000 at 0 ft; 17,000 at 14 ft; 17,000 at 18.5 ft |
+    | Semi (AASHTO HS20 design truck) | 8,000 at 0 ft; 32,000 at 14 ft; 32,000 at 28 ft |
+    | Fire engine                     | 20,000 at 0 ft; 27,000 at 17 ft; 27,000 at 21.5 ft |
+
+- Member capacities of 90,000 lb in tension and 75,000 lb in compression. In Test mode, members are colored by how close they are to capacity (for example, green, yellow, red), and a member that goes over turns black and stops the vehicle.
+- A cost of $100 per foot of member and $500 per joint, and a scoreboard of which vehicles the current design has carried
+- A details panel, closed by default, with the joint and member force tables you need for validation
+
+**Validation:** Build a 60 ft Pratt truss, 10 ft tall, with six 10 ft panels and diagonals sloping down toward the center. Park the semi with its front axle at x = 44 ft, compute the reactions by hand, and use the method of sections to compute the forces in the top chord, bottom chord, and diagonal in the panel from x = 20 to 30. Compare them to the app. Then drive all four vehicles across: this truss should carry the car and the dump truck and fail under the semi.
+
+**Ideas to get you started:** Animate the vehicle as a side view with wheels. Add a deflected shape. Add buckling, so long compression members are weaker than short ones. Post a leaderboard of the cheapest bridges in your class.
 
 ---
 
