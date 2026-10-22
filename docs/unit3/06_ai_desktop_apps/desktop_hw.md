@@ -16,7 +16,7 @@ Choose **one** of these two options.
 - matplotlib plots that the user can zoom and save
 - Running many cases at once, such as a parameter sweep that plots how an output changes with an input
 
-**Option B - Build a new problem.** Choose a problem from the [web app homework](../05_ai_web_apps/web_hw.md) that you did not build, and build it as a Tkinter desktop app. Shake Table, Traffic Signal Tuner, Bid War, Crane Placement, and Provo River Float Check all work as desktop apps. Use the problem's must-have features and its validation check.
+**Option B - Build a new problem.** Choose a problem from the [web app homework](../05_ai_web_apps/web_hw.md) that you did not build, and build it as a Tkinter desktop app. Any of them can be built as a desktop app. Name the problem in your spec and let the agent choose any extra packages it needs, such as a map package for the map problems. Use the problem's must-have features and its validation check.
 
 ## Requirements
 

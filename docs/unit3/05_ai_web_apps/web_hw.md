@@ -6,7 +6,7 @@
 
 ## Overview
 
-Choose one of the five problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
+Choose one of the seven problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
 
 1. Write the spec, including a validation case you have worked by hand
 2. Have the agent review the spec, and revise it
@@ -23,70 +23,85 @@ Set up a new folder and repository for this assignment, with `spec.md`, `prompts
 
 ## The Problems
 
-### 1. Shake Table
+### 1. Bear River Gage Explorer
 
-Draw a building and shake it. The app models a building of 1 to 5 stories, where each floor is a mass connected to the floor below by a spring that represents the columns. The ground moves back and forth, and the app animates the building swaying.
+An interactive map of every USGS stream gage in the Bear River basin, which drains parts of Utah, Idaho, and Wyoming into the Great Salt Lake. The app downloads the gage locations and the basin boundary live, and clicking a gage shows its hydrograph and information about the stream.
 
 **Must have:**
 
-- Number of stories (1–5), and the mass and stiffness of each story, set by the user
-- Ground motion as a sine wave with an adjustable amplitude and frequency
-- An animation of the building moving, with the displacements exaggerated enough to see
-- A plot of roof displacement over time
-- The building's natural period (for a 1-story building) displayed in seconds
-- A "pluck" button that displaces the roof and lets the building vibrate freely with no ground motion
+- A map (Leaflet works well) showing the Bear River basin boundary
+- Every active USGS stream gage in the basin, downloaded from the [USGS Water Data API](https://api.waterdata.usgs.gov/docs/ogcapi/) when the page loads, shown as a marker
+- Clicking a gage shows its name, site number, drainage area, the most recent flow (cfs), and a hydrograph of daily flow for the past year
+- The date and time of the most recent reading, and a link to the gage's USGS page
 
-**Validation:** For a 1-story building, the natural period is $T = 2\pi\sqrt{m/k}$. Pick a mass and stiffness, compute $T$ by hand, then set the ground motion frequency to $1/T$ and confirm that the building resonates: the roof displacement keeps growing. Set the frequency to half of that and confirm that it doesn't. Finally, pluck the building and measure the period of free vibration from your plot (the time between peaks), and compare it to your hand value.
+The older `waterservices.usgs.gov` service is being shut down during the 2026–27 school year, so tell the agent not to use it.
 
-**Going further:** Add damping and show how it limits resonance. Add a tuned mass damper on the roof. Use a real earthquake record, such as the 1940 El Centro ground motion, instead of a sine wave.
+**Validation:** For three gages, compare the most recent flow and the drainage area in your app to the gage's page on [USGS Water Data](https://waterdata.usgs.gov/). Then download a year of daily flow for one gage from the USGS site, compute the mean annual flow in Excel, and compare it to a mean flow shown by your app.
+
+**Going further:** Color each marker by how today's flow compares to the median for this date (well below normal, normal, well above). Add a slider that replays a spring runoff season. Click two gages on the same river to compare their hydrographs and see the flood wave travel downstream.
 
 ---
 
-### 2. Traffic Signal Tuner
+### 2. Roller Coaster Designer
 
-Animate cars moving through a four-way intersection with a traffic signal. The user sets the arrival rate on each approach and the green time for each direction, and watches queues build or clear.
+Draw a roller coaster track and ride it. A car starts at the top of the first hill and rolls along the track under gravity, and the app shows its speed and the g-forces on the riders as it goes.
 
 **Must have:**
 
-- Arrival rates (vehicles per hour) for the north-south and east-west approaches
-- Cycle length and green time for each direction
-- Cars that arrive at random, stop at red lights, and leave at a steady rate during green
-- The current queue length on each approach, and the average delay per vehicle
+- A track the user draws or shapes by dragging control points, with a smooth curve through them
+- An animated car that follows the track, with its speed computed from conservation of energy
+- Live readouts of speed (mph) and vertical g-force, and a plot of both along the track
+- Failure when the car doesn't have enough energy to reach the next crest (it rolls back) or when the g-force goes above 4 g or below -1 g, with the failure point marked on the track
 
-**Validation:** The capacity of an approach is $c = s \cdot g / C$, where $s$ is the saturation flow rate (use 1800 vehicles per hour per lane), $g$ is the green time, and $C$ is the cycle length. Compute the capacity by hand for one set of inputs. Then run the app with an arrival rate 20% below that capacity and confirm that the queue clears every cycle. Run it with an arrival rate 20% above capacity and confirm that the queue keeps growing.
+**Validation:** With no friction, the speed at any point is $v = \sqrt{2g(h_0 - h)}$, where $h_0$ is the height of the starting crest. Compute the speed by hand at the bottom of the first drop and compare it to the app. Then, for a valley with radius of curvature $R$, check the app's g-force against $n = 1 + v^2/(gR)$.
 
-**Going further:** Add left-turn lanes or a protected left-turn phase. Add a button that finds the green split that minimizes total delay. Compare the app's average delay to Webster's delay formula.
+**Going further:** Add rolling friction and air drag, and a lift hill that pulls the car to the top. Add loops. Score designs by thrill (time spent above 3 g) while keeping every ride safe.
 
 ---
 
-### 3. Bid War
+### 3. Earthquake Shake-Down
 
-A construction bidding game. For each project, the player and four computer contractors estimate the cost and submit bids. The lowest bid wins the job, and then the true cost is revealed. After 20 projects, the player sees whether they made money.
+Build a tower from columns, beams, and braces, set it on a shake table, and turn up the shaking until it falls. Use a 2D physics engine such as Matter.js, which handles the collisions and collapse.
 
 **Must have:**
 
-- A true project cost that is hidden until the job is awarded
-- Each bidder's cost estimate equals the true cost plus a random error (for example, ±15%)
-- The player sees their own estimate and enters a markup percentage, which sets their bid
-- The computer contractors bid using their own estimates and a fixed markup
-- A table showing every round: the bids, the winner, the true cost, and the winner's profit or loss
-- The player's total profit at the end of the game
+- Building pieces (columns, beams, braces, and floor masses) that the user places on the shake table, with joints that break when overloaded
+- A shake table that moves back and forth with an amplitude and frequency the user sets, or a button that plays an earthquake ground motion
+- A cost for each piece and a total cost
+- A score: the strongest shaking the building survived for 10 seconds without any floor touching the ground
 
-**Validation:** Set the estimate error to 0%. Every bid should equal the true cost times (1 + markup), the bidder with the lowest markup should win every round, and the winner's profit should equal the markup times the true cost. Check one round by hand. Then turn the error back on, run the game, and look at the winners' profits. You should find that the winner usually underestimated the cost, which is called the **winner's curse**. Explain in your spec why that happens.
+**Validation:** Physics engines use their own units, so check that yours behaves like the real world. Drop a single block from a known height and compare its fall time to $t = \sqrt{2h/g}$. Then measure the table's motion from the animation (the time for 10 cycles and the distance between the extremes) and compare it to the frequency and amplitude you set.
 
-**Going further:** Give the computer contractors different strategies. Add bid bonds or a limit on how much work a contractor can carry at once. Let several players compete on one screen.
+**Going further:** Add base isolation (a layer that lets the building slide) or a tuned mass damper on the roof, and show how much more shaking the building survives. Play a real earthquake record. Add a challenge mode: the most floors that survive a given earthquake for a given budget.
 
 ---
 
-### 4. Crane Placement
+### 4. Stadium Evacuation
 
-Plan a tower crane on a construction site. The user drags a crane onto a site plan that shows pick points, such as where steel, rebar, and HVAC units have to be lifted, and the app checks whether the crane can reach and lift each one.
+Lay out a floor plan, fill it with a crowd, and time how long it takes everyone to get out. Each person walks toward the nearest exit, and people slow down and queue when it gets crowded.
 
 **Must have:**
 
-- A site plan with at least 6 pick points, each with a load weight. The user can add, move, and delete pick points.
-- A crane the user can drag to any position, with its reach drawn as a circle
-- A load chart (capacity vs. radius) for the crane. Use this one, which is an example and not from a real crane:
+- A floor plan editor with walls, exits, and obstacles such as rows of seats
+- A crowd of 100 to 2,000 people placed randomly or in a region the user draws
+- An animation of the evacuation, with people moving toward exits and queuing at doors
+- The total evacuation time and the time when 50% and 90% of people are out, and a plot of people remaining over time
+
+**Validation:** For a crowded room with one door, the time to empty is controlled by how fast people can pass through the door. A commonly used maximum flow through a door is about 24 people per minute per foot of door width (from the *SFPE Handbook of Fire Protection Engineering*). Compute by hand how long 500 people need to get through a 6 ft door and compare it to your app. The app should take longer, because people first have to walk to the door, but it should be close.
+
+**Going further:** Model the Marriott Center or another real venue. Add stairs, which are slower than level floors. Find the exit layout that minimizes evacuation time for a fixed total exit width.
+
+---
+
+### 5. Crane Operator
+
+Run a tower crane with the keyboard. Pick up loads from the staging area and set them on a building under construction before time runs out, without tipping the crane.
+
+**Must have:**
+
+- A side view of a tower crane, with keys to swing the jib (or move the trolley in and out) and to raise and lower the hook
+- Loads of different weights to pick up and target locations on the building to set them
+- The crane's load chart (allowed load vs. radius) shown on screen, with the current load and radius marked on it. Use this one, which is an example and not from a real crane:
 
     | Radius (ft) | Capacity (lb) |
     |:-----------:|:-------------:|
@@ -96,31 +111,49 @@ Plan a tower crane on a construction site. The user drags a crane onto a site pl
     |     125     |     7,000     |
     |     150     |     5,500     |
 
-- Each pick point colored green if the crane can lift it and red if it can't, with the radius and the capacity at that radius shown
+- A warning when the load reaches 90% of capacity at the current radius, and a dramatic tip-over when it passes 100%
+- A timer and a score
 
-**Validation:** Decide in your spec how the app reads the load chart between table values. Using the next larger radius in the table is conservative, and interpolating is less so. Then compute the radius and capacity by hand for three pick points and compare them to the app. Include one pick that is just inside a radius in the table and one that is just outside it.
+**Validation:** Decide in your spec how the app reads the load chart between table values. Using the next larger radius in the table is conservative, and interpolating is less so. Then compute the allowed load by hand at three radii, including one just inside a table radius and one just outside, and check that the app warns and tips at the right points.
 
-**Going further:** Offer several crane models with different load charts and costs, and find the cheapest one that covers every pick. Allow two cranes. Add obstructions, such as an existing building, that the boom can't swing through.
+**Going further:** Add wind, which makes the load swing. Add a second crane and avoid collisions. Make levels, each with a different site layout.
 
 ---
 
-### 5. Provo River Float Check
+### 6. Utah Snowpack Map
 
-A dashboard that downloads live streamflow data from a USGS gauge on the Provo River and tells the user whether conditions look good for floating the river.
+Most of Utah's water supply falls as snow. Build a map of the SNOTEL snow-monitoring sites in Utah that shows how this year's snowpack compares to normal.
 
 **Must have:**
 
-- The current flow (cubic feet per second) at a USGS gauge on the Provo River, downloaded when the page loads. Gauge 10163000, Provo River at Provo, is a good choice, and the [USGS Water Data](https://waterdata.usgs.gov/) site lists the others.
-- A chart of the flow over the past 7 days
-- A green, yellow, or red rating based on flow thresholds that you choose. Research and cite your thresholds in your spec.
-- A clear statement on the page that the rating is not a safety guarantee
-- The time of the most recent reading
+- A map of all Utah SNOTEL sites, downloaded from the NRCS snow survey data service when the page loads
+- Each site colored by its snow water equivalent (SWE) as a percent of the median for today's date
+- Clicking a site shows its name and elevation, today's SWE and median SWE, and a plot of this water year's SWE with the median for comparison
+- A statewide summary: the average percent of median across all sites
 
-Use the [USGS Water Data API](https://api.waterdata.usgs.gov/docs/ogcapi/), which needs no key. The older `waterservices.usgs.gov` service is being shut down during the 2026–27 school year, so tell the agent not to use it. The flow is USGS parameter code 00060. Record the address the app downloads from in your spec.
+**Validation:** Compare today's SWE and percent of median for three sites to the NRCS [Utah Snow Survey](https://www.nrcs.usda.gov/conservation-basics/conservation-by-state/utah/utah-snow-survey) reports. Then compute the percent of median by hand for one site from the two numbers the app downloaded.
 
-**Validation:** Compare the current flow in your app to the value on the gauge's USGS web page at the same time. Then download the past 7 days of data from the USGS site as a CSV file, compute the 7-day average in Excel, and compare it to an average shown by your app.
+**Going further:** Group the sites by river basin and show each basin's percent of median. Add a date slider to replay past water years, such as the record snow of 2023. Estimate how much water is stored in the snowpack above a reservoir.
 
-**Going further:** Add other gauges, such as the Weber River or Hobble Creek. Show how today's flow compares to the historical average for this date. Add a snowmelt season outlook.
+---
+
+### 7. Jobsite Weather Planner
+
+Click a jobsite on a map and get a 7-day forecast showing which days are safe for the work that weather can stop: crane lifts, concrete pours, and roofing.
+
+**Must have:**
+
+- A map where the user clicks to choose a jobsite
+- A 7-day hourly forecast for that location from the free [Open-Meteo](https://open-meteo.com/) API, which needs no key
+- A calendar view with a go, caution, or no-go rating for each day and each activity:
+    - **Crane lifts:** sustained wind and gusts compared to a crane wind limit
+    - **Concrete pours:** low temperatures compared to cold-weather concreting limits
+    - **Roofing:** chance of rain
+- Your thresholds in the spec, with a source for each, and the reason for each day's rating shown when the user clicks it
+
+**Validation:** For one location and one day, read the raw hourly forecast numbers the app downloaded, apply your thresholds by hand, and confirm the app gave the same rating. Also compare the app's forecast to the National Weather Service forecast for the same place.
+
+**Going further:** Let the user enter the crew's working hours, so overnight conditions don't count. Add activities such as asphalt paving or excavation in frozen ground. Show the best three-day window for a large pour.
 
 ---
 
