@@ -208,7 +208,7 @@ Paste your GitHub Pages address (for example, `https://your-username.github.io/y
 
 |                                         **Items**                                          | **Amount** |  
 |:------------------------------------------------------------------------------------------:|:----------:|
-|      Spec has all six sections, with equations and a hand-worked validation case           |     4      |
+|      Spec has all seven sections, with equations and a hand-worked validation case           |     4      |
 |                         All must-have features work                                        |     8      |
 |   At least two features of your own design work and are described in the spec (one must be your own idea)   |     6      |
 |              Validation check passes and is documented in the spec                         |     5      |

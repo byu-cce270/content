@@ -1,13 +1,13 @@
-# In-Class Exercise: Will It Break? on the Desktop
+# In-Class Exercise: Beam Designer on the Desktop
 
-In this exercise, you will have the agent turn your Will It Break? web app into a Python desktop app, then add features that a desktop app does well, such as saving designs as files. Along the way, you will practice the three habits from the reading: getting a plan before any code, having the agent check its own work, and changing an existing program.
+In this exercise, you will have the agent build the [Beam Designer](../05_ai_web_apps/web_class.md#beam-designer) as a Python desktop app, with numpy for the calculations and matplotlib for the diagrams, then add features that a desktop app does well, such as saving designs as files. Along the way, you will practice the three habits from the reading: getting a plan before any code, having the agent check its own work, and changing an existing program.
 
 ## Step 1 - Set Up the Project
 
-1. Make a folder named `bridge_desktop` in your class folder.
-2. Copy `spec.md` and `index.html` from your `bridge_builder` folder into `bridge_desktop`. The agent will use `index.html` as a reference for how the app should behave.
-3. Open `bridge_desktop` in VS Code, initialize a repository, and ask the agent to commit.
-4. Copy `AGENTS.md` from your `bridge_builder` folder, so the agent keeps a prompt log for this project too.
+1. Make a folder named `beam_desktop` in your class folder.
+2. Copy the Beam Designer spec from the [web apps in-class exercise](../05_ai_web_apps/web_class.md#beam-designer) into a file named `spec.md` in `beam_desktop`. If your class built Beam Designer as its web app, copy your own `spec.md` and `index.html` from your `first_app` folder instead. The agent will use `index.html` as a reference for how the app should behave.
+3. Copy `AGENTS.md` from your `first_app` folder, so the agent keeps a prompt log for this project too.
+4. Open `beam_desktop` in VS Code, initialize a repository, and ask the agent to commit.
 5. In the terminal, install the packages you'll need:
 
     ```
@@ -25,37 +25,22 @@ Edit `spec.md` to describe the desktop version.
     ```markdown
     ## Platform
     - Python desktop app using Tkinter, started with `python app.py`
-    - The truss is solved with numpy (np.linalg.solve), the same method
-      used in the Numpy homework.
+    - Calculations with numpy, kept in their own module, separate from
+      the window code
+    - Diagrams drawn with matplotlib, embedded in the window
     ```
 
-2. Add these lines to the **Calculations** section:
+2. Change the **Look and feel** section for a desktop window: inputs in a panel on the left, the beam and diagrams on the right, and a window that can be resized. Remove the lines about phones.
+
+3. Add this case to the **Validation** section:
 
     ```markdown
-    - Solve the system with np.linalg.solve.
-    - "Nearly singular" means a condition number above 1e12.
+    5. Simply supported, 30 ft, W18x35, uniform 2 kips/ft from 0 to 15 ft
+       only: reactions 22.5 k (left) and 7.5 k (right); max moment
+       126.6 kip-ft at 11.25 ft.
     ```
 
-    The second line matters more than it looks. When joints are almost in a straight line, numpy doesn't report an error. It returns forces in the billions of pounds, and the app would show them as if they were real.
-
-3. Add these cases to the **Validation** section, below the Numpy homework case:
-
-    ```markdown
-    Symmetric truss:
-    - Joints: (0, 0) pin, (5, 5), (10, 0) roller, with three members
-      connecting them. Load -1000 lb at (5, 5).
-    - Expected: both vertical reactions are +500 lb.
-
-    Square with no diagonal:
-    - Joints: (0, 0) pin, (10, 0) roller, (10, 10), (0, 10), with the four
-      sides as members. Load -1000 lb at (10, 10).
-    - Expected: reported as unstable, with no forces shown.
-
-    Joints in a straight line:
-    - Joints: (0, 0) pin, (5, 0), (10, 0) roller, with a member between
-      each pair. Load -1000 lb at (5, 0).
-    - Expected: reported as unstable, with no forces shown.
-    ```
+    Check it by hand before you commit it. Find the reactions with statics, then find where the shear is zero.
 
 Ask the agent to commit.
 
@@ -64,13 +49,13 @@ Ask the agent to commit.
 In the Copilot chat panel, choose **Plan** from the picker and enter:
 
 !!! prompt "Prompt"
-    Read spec.md and index.html. I want to rebuild this app as the Python Tkinter desktop app described in spec.md. Before writing any code, describe your plan: which files you will create, what each one does, and how the truss calculations are organized.
+    Read spec.md. I want to build this app as the Python Tkinter desktop app described in spec.md. Before writing any code, describe your plan: which files you will create, what each one does, and how the beam calculations are organized.
 
 Read the plan and check that:
 
 - Nothing in it contradicts the spec
-- It says what the app will show for a truss it can't solve
-- The truss calculations are kept apart from the window code, so the agent can check them without opening the app
+- The beam calculations are kept apart from the window code, so the agent can check them without opening the app
+- It isn't more complicated than it needs to be
 
 If something is off, say so and ask for a revised plan.
 
@@ -87,18 +72,18 @@ When the agent finishes, run the app:
 python app.py
 ```
 
-Draw a truss and check that it behaves like your web version. If something doesn't work, describe what you did and what happened, and ask the agent to fix it.
+Try every input. If something doesn't work, describe what you did and what happened, and ask the agent to fix it.
 
 ## Step 5 - Have the Agent Check Its Work
 
 Enter:
 
 !!! prompt "Prompt"
-    Run all of the validation cases in spec.md against the app's truss calculations and report a table of expected versus actual values.
+    Run all of the validation cases in spec.md against the app's beam calculations and report a table of expected versus actual values.
 
-Read the table. Every case should match within 1 lb, and the two unstable trusses should be reported as unstable. If a case fails, tell the agent to fix the app. Never let it change an expected value. If you think an expected value is wrong, check it by hand yourself.
+Read the table. Every value should match to the number of digits given in the spec. If a case fails, tell the agent to fix the app. Never let it change an expected value. If you think an expected value is wrong, check it by hand yourself.
 
-Then build the Numpy homework truss in the app yourself and confirm that you see the same forces the agent reported. Finally, build your 10 ft Pratt bridge and drive the semi across it. It should fail, just as it did in the web version.
+Then enter case 1 in the app yourself and confirm that you see the same values the agent reported.
 
 When everything matches, ask the agent to commit.
 
@@ -106,9 +91,9 @@ When everything matches, ask the agent to commit.
 
 Add these features **one at a time**:
 
-1. **Save and Open:** A File menu with **Save** and **Open** that saves the truss (joints, members, supports, and loads) to a file and opens it again. Remove "Saving or loading designs" from the **Out of scope** section of the spec first.
-2. **Export results:** A button that saves a table of member forces (member, length, force, T or C) to a CSV file that opens in Excel.
-3. **Force plot:** A matplotlib bar chart of the member forces next to the truss, with tension in blue and compression in red.
+1. **Save and Open:** A File menu with **Save** and **Open** that saves the beam (support type, span, section, deflection limit, and loads) to a file and opens it again. Remove "Saving designs" from the **Out of scope** section of the spec first.
+2. **Export results:** A button that saves a table of x, V, M, and deflection along the beam to a CSV file that opens in Excel.
+3. **Calculation sheet:** A button that saves the diagrams and checks as a PDF, with the inputs listed at the top, ready to hand in with a design.
 
 For each feature:
 

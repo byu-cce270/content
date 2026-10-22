@@ -58,7 +58,7 @@ Working with an agent goes much better if you follow the same steps every time.
 A **spec** (short for specification) is a short document that describes what you want built. You write it in a Markdown file named `spec.md` in your project folder, using the same Markdown you have used for text cells in Colab. A good spec has these sections:
 
 ```markdown
-# Bridge Builder
+# Your App's Name
 
 ## Purpose
 One or two sentences: what the app does and who it is for.
@@ -72,6 +72,10 @@ The equations the app uses, written out. Define every variable and its units.
 ## Outputs
 What the app shows: numbers (with units), plots, colors, animations.
 
+## Look and feel
+How the app looks and is laid out, what it shows when it first opens,
+and how it works on a phone.
+
 ## Validation
 At least one test case you have worked by hand: the exact inputs,
 and the outputs the app must produce.
@@ -79,6 +83,8 @@ and the outputs the app must produce.
 ## Out of scope
 Things the app will NOT do, so the agent doesn't add them.
 ```
+
+The **Look and feel** section decides whether the app looks like a homework assignment or a professional tool. An agent builds as plain an app as you ask for, so describe the one you want, for example: "Clean and professional, like a commercial engineering web app, with white cards, one accent color, and an example already loaded when it opens."
 
 The **Calculations** and **Validation** sections make the difference between an engineering app and a toy. If you leave the equations to the agent, it will pick some, and they may be wrong in ways that are hard to see. If you write them down, you can check its work.
 
@@ -168,12 +174,12 @@ Every time you push a new commit, GitHub updates the page within a few minutes (
 
 # Pre-Class Quiz Challenge
 
-In class, you will build a bridge truss app, and you will write the specs for your own apps from now on. For practice, write a spec for a small app that computes the concrete needed for a rectangular slab:
+In class, you will build an app from a spec your instructor gives you, and you will write the specs for your own apps from now on. For practice, write a spec for a small app that computes the concrete needed for a rectangular slab:
 
 - The user enters the slab length and width (ft), thickness (in), a waste factor (%), and the price of concrete per cubic yard
 - The app shows the volume in cubic yards (rounded up to the nearest quarter yard, which is how concrete is ordered) and the total cost
 
-Use the six sections from [Write a spec](#1-write-a-spec). In the Validation section, work one example by hand and give its exact inputs and outputs. You do not need to build the app.
+Use the seven sections from [Write a spec](#1-write-a-spec). In the Validation section, work one example by hand and give its exact inputs and outputs. You do not need to build the app.
 
 Save it as `spec.md` and upload it with your Pre-Class Quiz.
 
