@@ -116,8 +116,10 @@ nav:
         - Reading: unit3/04_local_python/local_py_read.md
         - In Class: unit3/04_local_python/local_py_class.md
         - Homework: unit3/04_local_python/local_py_hw.md
-    - Special Topic:
-        - Overview: unit3/05_special_topic/special_topic.md
+    - AI Coding - Web Apps:
+        - Reading: unit3/05_ai_web_apps/web_read.md
+        - In Class: unit3/05_ai_web_apps/web_class.md
+        - Homework: unit3/05_ai_web_apps/web_hw.md
     - ipywidgets:
         - Reading: unit3/06_ipywidgets/ipy_read.md
         - In Class: unit3/06_ipywidgets/ipy_class.md
