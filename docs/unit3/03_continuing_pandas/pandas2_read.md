@@ -347,11 +347,84 @@ Each of the columns are then plotted against the date index.
 
 
 # Pre-Class Quiz Challenge
-Open the following notebook and complete the instructions in the markdown:
+The challenge has two parts, and both are done in the same notebook:
+
+- **Part 1 - Quiz Questions:** Answer the questions below in the **Quiz Answers** text block at the top of the notebook. Double-click the text block to edit it, and type your answer after each **Answer:**.
+- **Part 2 - Code Block:** Complete the four steps in the notebook: concatenate, merge, group, and display.
 
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/03_continuing_pandas/Pre_Continuing_with_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it with your Pre-Class Quiz.
+Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it to Learning Suite.
+
+## Part 1 - Quiz Questions
+Each question lists where in the reading to find the answer. Chapter numbers refer to *Python Data Science Handbook, 2nd Edition*. Section names are the headings inside each chapter or on this page.
+
+**Question 1.** Did you do the reading?
+
+- T) Yes, I did
+- F) No
+
+**Question 2.** When you use `.groupby()` in pandas, what is the output of the method?
+
+- A) A new DataFrame with the rows rearranged
+- B) A DataFrame grouped by the unique values of one or more columns, ready for aggregation
+- C) A list of column names sorted in alphabetical order
+- D) A single row summarizing all values in the DataFrame
+
+*Where to look: Chapter 20, section "GroupBy: Split, Apply, Combine", and the "Pandas groupby" section of this page.*
+
+**Question 3.** True or False: pandas lets you create summary statistics like a pivot table.
+
+- T) True
+- F) False
+
+*Where to look: the first paragraph of the "Pandas groupby" section of this page, and Chapter 20.*
+
+**Question 4.** True or False: pandas can plot graphs like Matplotlib.
+
+- T) True
+- F) False
+
+*Where to look: the end of the "Pandas datetime" section of this page, where `data.plot()` is used.*
+
+**Question 5.** Which method replaces `NaN` values with a value you choose, such as 0?
+
+- A) `.isna()`
+- B) `.dropna()`
+- C) `.fillna()`
+- D) `.ffill()`
+
+*Where to look: the "NaNs and Missing Values in Pandas" section of this page.*
+
+**Question 6.** By default, what does `data.dropna()` remove?
+
+- A) Only the rows where every value is `NaN`
+- B) Every row that contains at least one `NaN`
+- C) Every column that contains at least one `NaN`
+- D) Only the `NaN` values, leaving the rest of each row
+
+*Where to look: the "NaNs and Missing Values in Pandas" section of this page.*
+
+**Question 7.** What does `ignore_index=True` do in `pd.concat([data1, data2], ignore_index=True)`?
+
+- A) Resets the index so the combined DataFrame is numbered 0, 1, 2, ...
+- B) Removes duplicate rows
+- C) Sorts the rows by their index
+- D) Joins the DataFrames on their index values
+
+*Where to look: the "Pandas concat" section of this page, and Chapter 18, section "Simple Concatenation with pd.concat".*
+
+**Question 8.** In `pd.merge(employees, departments, on='DepartmentID')`, what does `on='DepartmentID'` do?
+
+- A) Names the column whose values are matched to join the two DataFrames
+- B) Sorts the result by `DepartmentID`
+- C) Drops the `DepartmentID` column from the result
+- D) Renames the index to `DepartmentID`
+
+*Where to look: Chapter 19, section "Specification of the Merge Key" - "The on Keyword".*
+
+## Part 2 - Code Block
+Complete the four steps in the notebook. The instructions are in the text block above the code block.
 
 ---
 
@@ -361,9 +434,12 @@ Save your changes, then download the completed notebook with **File | Download |
 
 **Rubric:**
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
+|                             Item                             | Points Possible |
+|:------------------------------------------------------------:|:---------------:|
+|        Part 1 - Question 1 (Did you do the reading?)        |        2        |
+| Part 1 - Questions 2-8 (10 points split evenly, correct answers) |       10        |
+|        Part 2 - Code Block (concat, merge, group, display)       |        3        |
+|        <div style="text-align: right">**Total**</div>         |       15        |
 
 ---
 
@@ -371,4 +447,4 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|  File uploaded incorrectly  |       -10%        | 
+|  File uploaded incorrectly  |       -10%        |
