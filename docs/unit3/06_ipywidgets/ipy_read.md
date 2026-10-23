@@ -330,18 +330,92 @@ Widgets are a great way to make your code more interactive, user-friendly, and v
 For more information, you can refer to the [ipywidgets documentation](https://ipywidgets.readthedocs.io/en/latest/index.html){target='_blank'}.
 
 # Pre-Class Quiz Challenge
+The challenge has two parts, and both are done in the same notebook:
 
-Open a new Colab notebook and do the following:
+- **Part 1 - Quiz Questions:** Answer the questions below in the **Quiz Answers** text block at the top of the notebook. Double-click the text block to edit it, and type your answer after each **Answer:**.
+- **Part 2 - Code Block:** Build the widgets described below in the code cell of the notebook.
+
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/06_ipywidgets/Pre_ipywidgets.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it to Learning Suite.
+
+## Part 1 - Quiz Questions
+Each question lists where on this page to find the answer.
+
+**Question 1.** Did you do the reading?
+
+- T) Yes, I did
+- F) No
+
+**Question 2.** In Google Colab, how do you import widgets so you can start using them in your code?
+
+- A) `!pip install ipywidgets`
+- B) `import ipywidgets as widgets`
+- C) `widget = widgets.WidgetName()`
+- D) `display(widget)`
+
+*Where to look: the "Importing" section.*
+
+**Question 3.** True or False: to use the value of a widget in your code, you access its `value` attribute, like `widget.value`.
+
+- T) True
+- F) False
+
+*Where to look: the "Getting values from widgets" section.*
+
+**Question 4.** Which function is commonly used to make a widget appear?
+
+- A) `display()`
+- B) `show_widget()`
+- C) `show()`
+- D) `render_widget()`
+
+*Where to look: the "Displaying Widgets" section.*
+
+**Question 5.** True or False: widgets can only take numeric values from users, not strings or text.
+
+- T) True
+- F) False
+
+*Where to look: the widget list in the "Creating Widgets" section, and the text box example in "Getting values from widgets".*
+
+**Question 6.** Which line connects the function `on_button_click` to a button's click event?
+
+- A) `button.observe(on_button_click)`
+- B) `button.on_click(on_button_click)`
+- C) `button.click = on_button_click`
+- D) `on_button_click(button)`
+
+*Where to look: the "Handling Widget Events" section.*
+
+**Question 7.** Which widget arranges other widgets vertically, one on top of the other?
+
+- A) `widgets.HBox`
+- B) `widgets.VBox`
+- C) `widgets.Stack`
+- D) `widgets.Column`
+
+*Where to look: the "Displaying Widgets" section.*
+
+**Question 8.** In a function connected with `slider.observe(on_slider_change, names='value')`, how do you get the slider's new value from the `event` parameter?
+
+- A) `event['old']`
+- B) `event['new']`
+- C) `event.new_value`
+- D) `event['slider']`
+
+*Where to look: the slider example in the "Sample Use Cases" section.*
+
+## Part 2 - Code Block
+In the code cell of the notebook:
 
 1. Create two different widgets:
       - One should be a button. Customize its description, style (color), and tooltip.
       - The other can be any widget of your choice. Try changing some of its properties.
-3. Display the widgets.
-4. Add an event handler to one of the widgets. For example, make the button print a message when clicked.
-5. Arrange the widgets vertically using `widgets.VBox` and display them.
-6. Test the widgets to ensure they work as expected.
-7. **Challenge:** When the button is clicked, have it modify the other widget's properties (e.g., change a slider's value, disable the widget, or print its current value).
-8. Share the link to your Colab notebook via Learning Suite when you take the Pre-Class Quiz.
+2. Add an event handler to one of the widgets. For example, make the button print a message when clicked.
+3. Arrange the widgets vertically using `widgets.VBox` and display them.
+4. Test the widgets to make sure they work as expected.
+5. **Challenge (optional):** When the button is clicked, have it change the other widget (for example, change a slider's value, disable the widget, or print its current value).
 
 ---
 
@@ -351,9 +425,12 @@ Open a new Colab notebook and do the following:
 
 **Rubric:**
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
+|                             Item                             | Points Possible |
+|:------------------------------------------------------------:|:---------------:|
+|        Part 1 - Question 1 (Did you do the reading?)        |        2        |
+| Part 1 - Questions 2-8 (10 points split evenly, correct answers) |       10        |
+|   Part 2 - Code Block (widgets, event handler, VBox display)   |        3        |
+|        <div style="text-align: right">**Total**</div>         |       15        |
 
 ---
 
@@ -361,4 +438,4 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|  File uploaded incorrectly  |       -10%        | 
+|  File uploaded incorrectly  |       -10%        |
