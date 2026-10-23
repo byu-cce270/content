@@ -328,11 +328,12 @@ Complete Code Blocks 1-3 in the notebook. The instructions are in the text block
 
 **Rubric:**
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-|    Part 1 - Quiz Questions 1-8 (1 point each)  |        8        |
-|        Part 2 - Code Blocks 1-3 (1 point each) |        3        |
-| <div style="text-align: right">**Total**</div> |       11        |
+|                             Item                             | Points Possible |
+|:------------------------------------------------------------:|:---------------:|
+|        Part 1 - Question 1 (Did you do the reading?)        |        2        |
+| Part 1 - Questions 2-8 (10 points split evenly, correct answers) |       10        |
+|            Part 2 - Code Blocks 1-3 (1 point each)            |        3        |
+|        <div style="text-align: right">**Total**</div>         |       15        |
 
 ---
 
