@@ -399,11 +399,86 @@ Which produces the following scatter plot:
 
 
 # Pre-Class Quiz Challenge
-Open the following notebook and complete the instructions in the markdown:
+The challenge has two parts, and both are done in the same notebook:
+
+- **Part 1 - Quiz Questions:** Answer the questions below in the **Quiz Answers** text block at the top of the notebook. Double-click the text block to edit it, and type your answer after each **Answer:**.
+- **Part 2 - Code Block:** Build the DataFrame by following the instructions in the notebook.
 
 <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/02_intro_to_pandas/Pre_Intro_to_Pandas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it with your Pre-Class Quiz.
+Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it to Learning Suite.
+
+## Part 1 - Quiz Questions
+Each question lists where in the reading to find the answer. Chapter numbers refer to *Python Data Science Handbook, 2nd Edition*. Section names are the headings inside each chapter or on this page.
+
+**Question 1.** Did you do the reading?
+
+- T) Yes, I did
+- F) No
+
+**Question 2.** True or False: an external file is required to create a pandas DataFrame.
+
+- T) True
+- F) False
+
+*Where to look: Chapter 13, section "The Pandas DataFrame Object" - "Constructing DataFrame Objects", and the "DataFrames and Series" section of this page.*
+
+**Question 3.** How do you access a column named `"Age"` in a pandas DataFrame `df`?
+
+- A) `df[Age]`
+- B) `df.column('Age')`
+- C) `df['Age']`
+- D) `df.column.Age`
+
+*Where to look: Chapter 14, section "Data Selection in DataFrames", and the end of the "Columns and Indexes in DataFrames" section of this page.*
+
+**Question 4.** Each column of a DataFrame is a:
+
+- A) Python list
+- B) Series
+- C) Python dictionary
+- D) Excel sheet
+
+*Where to look: Chapter 13, section "The Pandas DataFrame Object", and the "DataFrames and Series" section of this page.*
+
+**Question 5.** Which parameter of `pd.read_excel()` picks which sheet of the workbook to read?
+
+- A) `sheet`
+- B) `tab`
+- C) `sheet_name`
+- D) `header`
+
+*Where to look: the "Reading Excel files into Pandas DataFrames" section of this page.*
+
+**Question 6.** After `df.set_index('Name', inplace=True)`, which line returns the row for Bob by its label?
+
+- A) `df.loc['Bob']`
+- B) `df.iloc['Bob']`
+- C) `df['Bob']`
+- D) `df.row('Bob')`
+
+*Where to look: the "Columns and Indexes in DataFrames" section of this page, and Chapter 14, section "Data Selection in DataFrames".*
+
+**Question 7.** Which line keeps only the rows where `Age` is greater than 30?
+
+- A) `df['Age' > 30]`
+- B) `df[df['Age'] > 30]`
+- C) `df.filter(Age > 30)`
+- D) `df[Age > 30]`
+
+*Where to look: the "Filtering DataFrames" section of this page.*
+
+**Question 8.** How many rows does `df.head()` return when you do not give it a number?
+
+- A) 1
+- B) 3
+- C) 5
+- D) 10
+
+*Where to look: the "Head, Tail, Info, and Describe Methods" section of this page.*
+
+## Part 2 - Code Block
+Build the DataFrame described in the notebook and show it. The instructions are in the text block above the code block.
 
 ---
 
@@ -413,9 +488,12 @@ Save your changes, then download the completed notebook with **File | Download |
 
 **Rubric:**
 
-|                      Item                      | Points Possible |
-|:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
+|                             Item                             | Points Possible |
+|:------------------------------------------------------------:|:---------------:|
+|        Part 1 - Question 1 (Did you do the reading?)        |        2        |
+| Part 1 - Questions 2-8 (10 points split evenly, correct answers) |       10        |
+|                 Part 2 - Code Block (DataFrame)                 |        3        |
+|        <div style="text-align: right">**Total**</div>         |       15        |
 
 ---
 
@@ -423,4 +501,4 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 | **Reasons for Points Lost** |    **Amount**     |  
 |:---------------------------:|:-----------------:|
-|  File uploaded incorrectly  |       -10%        | 
+|  File uploaded incorrectly  |       -10%        |
