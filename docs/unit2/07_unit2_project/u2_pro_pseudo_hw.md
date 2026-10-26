@@ -8,9 +8,11 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
 
 ## Instructions
 
-1. Have one member of your group make a copy of this starter document: [HW-Project-2-Pseudocode.docx](HW-Project-2-Pseudocode.docx)
+1. Download the starter document: [HW-Project-2-Pseudocode.docx](HW-Project-2-Pseudocode.docx)
 2. Rename it something like “(Your-Team-Name)-HW-Project-2-Pseudocode.docx”
-3. Have the team member who created the document save it to the CCE 270 folder they created in Unit 1, and share a copy with the other team members so everyone can contribute.
+
+!!! note "Work on it together, turn in one copy"
+    Fill out this document together as a team. Only one team member needs to turn it in for the whole group.
 
 ---
 
@@ -31,7 +33,14 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
      - Use indentation to show the structure and hierarchy of your code.
      - Include comments to explain the purpose of each section or function.
      - Think about the flow of your program and how different parts will interact with each other.
-4. You can also refer to the Pre Class Reading about pseudocode. [Pre Class Reading: Project 2 Pseudocode](https://builtin.com/data-science/pseudocode){:target="_blank"}
+4. Under the "Program Plan" section of your document, fill in the four tables:
+     - **Functions** (at least 3): the name, inputs, what it does, and what it returns
+     - **Class** (at least 1): the class name, its attributes, and its methods
+     - **Variables and data**: the name, type (number, string, list, dictionary, ...), and what it stores
+     - **Files**: the file name, whether your code reads it, writes it, or both, and what is in it
+
+     Everything you list in these tables should show up somewhere in your pseudocode. The grey row in each table is an example; replace it with your own. This is a plan, so your final project can be different.
+5. You can also refer to the Pre Class Reading about pseudocode. [Pre Class Reading: Project 2 Pseudocode](https://builtin.com/data-science/pseudocode){:target="_blank"}
 
 ---
 
@@ -73,8 +82,8 @@ Only one team member needs to turn in the assignment for the group.
 |:----------------------------------------------------:|:---------------:|
 |           Chosen Project Prompt indicated            |        5        |
 |    A plan is recorded and somewhat easy to follow    |        5        |
-|              Functions are thought out               |       10        |
-|          Variables are named and described           |        5        |
+|   Functions are thought out (name, inputs, output, at least 3)   |       10        |
+| Class, variables, and files are planned (names, types, what they store) |        5        |
 |  Roles are assigned and responsibilities indicated   |        5        |
 |    <div style="text-align: right">**Total**</div>    |       30        |
 
