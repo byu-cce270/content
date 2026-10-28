@@ -2,6 +2,12 @@
 
 This study guide is designed to help you review and prepare for the Unit 2 Midterm Exam in CCE 270. It includes a summary of core concepts, a practice quiz with answers, and a glossary of key terms.
 
+## Review Practice Notebook
+
+Open the Unit 2 review practice here: <a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit2/Unit2_Review_Practice.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Each exercise is a short program with a bug that showed up a lot in the homework. Run it, find the mistake, fix it, and add a comment saying what you changed. Save a copy to your Drive before you start.
+
 !!! Note
     This study guide is not exhaustive. Be sure to review the course reading content, in-class exercises, homework assignments, and any additional materials provided by your instructor.
 
