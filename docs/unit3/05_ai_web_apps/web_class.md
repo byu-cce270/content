@@ -30,7 +30,7 @@ Ask the agent to commit.
 
 ## Step 3 - Review the Spec
 
-Even a spec someone else wrote can be improved. In the Copilot chat panel, switch to **Ask** mode and enter:
+Even a spec someone else wrote can be improved. In the Copilot chat panel, switch to **Plan** mode and enter:
 
 !!! prompt "Prompt"
     Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
