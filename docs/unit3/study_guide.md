@@ -312,7 +312,7 @@ This section covers running Python on your own computer, tracking code with Git 
     * A **branch** is a separate line of commits that is merged back into **main** through a **pull request**.
 * **The Agentic Coding Workflow**:
     1. Write a **spec** (**spec.md**) with Purpose, Inputs, Calculations, Outputs, Validation, and Out of scope.
-    2. Have the agent **review the spec** (in Ask mode, with no code written), and revise it.
+    2. Have the agent **review the spec** (in Plan mode, with no code written), and revise it.
     3. Ask the agent to build from the spec.
     4. Run the app and check for errors (the browser's developer console, or the terminal for Python).
     5. **Validate** against a hand-worked case.

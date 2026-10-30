@@ -23,7 +23,7 @@ For anything larger than a small change, ask the agent how it intends to do the 
 !!! prompt "Prompt"
     Read spec.md. Before writing any code, describe your plan: which files you will create, what each one does, and how the calculations are organized.
 
-Read the plan the way you would read a proposal from a consultant. Does it match the spec? Is anything missing? Is it more complicated than it needs to be? Push back on anything you don't like, and when you are satisfied, switch to **Agent** and tell it to build the plan.
+Read the plan the way you would read a proposal from a consultant. Does it match the spec? Is anything missing? Is it more complicated than it needs to be? Push back on anything you don't like, and when you are satisfied, switch to **Interactive** and tell it to build the plan.
 
 ### Make the agent check its own work
 

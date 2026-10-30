@@ -61,7 +61,7 @@ If something is off, say so and ask for a revised plan.
 
 ## Step 4 - Build It
 
-Switch the picker to **Agent** and enter:
+Switch the picker to **Interactive** and enter:
 
 !!! prompt "Prompt"
     Build the app following your plan and spec.md.

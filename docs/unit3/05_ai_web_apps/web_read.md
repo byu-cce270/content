@@ -90,7 +90,7 @@ The **Calculations** and **Validation** sections make the difference between an 
 
 ### 2. Have the agent review the spec
 
-Before any code is written, ask the agent to critique your spec. Open the Copilot chat panel, switch to **Ask** mode so it can't change any files, and enter:
+Before any code is written, ask the agent to critique your spec. Open the Copilot chat panel, switch to **Plan** mode so it can't change any files, and enter:
 
 !!! prompt "Prompt"
     Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
@@ -99,7 +99,7 @@ Read its suggestions and decide which ones to take. The agent is good at spottin
 
 ### 3. Ask the agent to build it
 
-Switch the chat panel to **Agent** mode and point it at your spec:
+Switch the chat panel to **Interactive** mode and point it at your spec:
 
 !!! prompt "Prompt"
     Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put all calculations in clearly named functions.
