@@ -335,7 +335,7 @@ The challenge has two parts, and both are done in the same notebook:
 - **Part 1 - Quiz Questions:** Answer the questions below in the **Quiz Answers** text block at the top of the notebook. Double-click the text block to edit it, and type your answer after each **Answer:**.
 - **Part 2 - Code Block:** Build the widgets described below in the code cell of the notebook.
 
-<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/unit3/06_ipywidgets/Pre_ipywidgets.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/byu-cce270/content/blob/main/docs/bonus/ipywidgets/Pre_ipywidgets.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Save your changes, then download the completed notebook with **File | Download | Download .ipynb** and upload it to Learning Suite.
 
