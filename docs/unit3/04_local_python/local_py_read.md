@@ -232,10 +232,9 @@ The third command makes new repositories start on a branch named `main`, which i
 
 ### 3. Sign in to GitHub from VS Code
 
-Click the **Accounts** icon (the person at the bottom of the left sidebar) and choose **Sign in with GitHub**. This lets VS Code push your code to GitHub and turns on Copilot.
+Click the **Accounts** icon (the person at the bottom of the left sidebar) and choose **Sign in to use GitHub Copilot**. This lets VS Code push your code to GitHub and turns on Copilot.
 
-!!! warning "Screenshot needed"
-    The VS Code Accounts menu with **Sign in with GitHub** highlighted.
+![The VS Code Accounts menu with Sign in to use GitHub Copilot highlighted](images/vscode_accounts.png){:width="500px"}
 
 ## Agentic Coding
 

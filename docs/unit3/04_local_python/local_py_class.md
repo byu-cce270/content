@@ -7,8 +7,7 @@ Before class, you should have installed Python, VS Code, and Git and applied for
 1. In VS Code, choose **File → Open Folder** and open your class folder (for example, `Documents/cce270`). If you don't have one yet, make it first.
 2. Open the terminal with **Terminal → New Terminal**.
 
-    !!! warning "Screenshot needed"
-        VS Code with a class folder open and the terminal panel at the bottom.
+    ![VS Code with a class folder open and the terminal panel at the bottom](images/vscode_terminal.png){:width="800px"}
 
 3. Check where you are with `pwd` (Mac) or `cd` (Windows). It should be your class folder.
 4. Make a folder for today and move into it:
@@ -95,8 +94,7 @@ Open `settings.py`. Every number that controls how the game plays is defined her
 
 Now open the **Source Control** panel (the branching icon on the left sidebar, or **Ctrl+Shift+G** / **Cmd+Shift+G**). It lists `settings.py` as changed. Click the file name to see a side-by-side comparison: red lines are what you removed and green lines are what you added. This view will matter a great deal once an AI agent is making the changes.
 
-!!! warning "Screenshot needed"
-    Source Control panel listing `settings.py`, with the side-by-side diff of the `bullet_width` change open.
+![Source Control panel listing settings.py, with the side-by-side comparison of the bullet_width change](images/vscode_scm_diff.png){:width="800px"}
 
 
 ## Exercise 3 - Your First GitHub Repository
@@ -108,8 +106,7 @@ Now you will put your own code on GitHub.
 3. Your `beam.py` file is listed under **Changes**. Type a message in the box at the top, such as `Add beam calculator`, and click **Commit**. If VS Code asks whether to stage all your changes, click **Yes**.
 4. Click **Publish Branch**. Choose **public repository** and accept the suggested name. If VS Code asks you to sign in to GitHub, do so.
 
-    !!! warning "Screenshot needed"
-        Source Control panel after the first commit, showing the **Publish Branch** button, and the public/private repository prompt.
+    ![Source Control panel after the first commit, showing the Publish Branch button](images/vscode_publish_branch.png){:width="600px"}
 
 5. Click the link VS Code shows (or go to your GitHub profile) and find your repository. Your code is now on GitHub.
 
