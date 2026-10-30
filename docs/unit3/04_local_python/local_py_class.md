@@ -135,8 +135,7 @@ If your Copilot student license hasn't been approved yet, use the free plan for 
 1. Open the Alien Invasion folder from Exercise 2. In the Source Control panel, discard your changes to `settings.py` (right-click the file and choose **Discard Changes**) so the game is back to its original state.
 2. Open the Copilot chat panel (the chat icon at the top of VS Code) and make sure the mode is set to **Ask**.
 
-    !!! warning "Screenshot needed"
-        The Copilot chat panel with the mode picker open, showing the **Agent**, **Ask**, and **Plan** options.
+     ![The Copilot chat panel with the mode picker open](images/vscode_mode_picker.png){:width="500px"}
 
     Ask it:
 
