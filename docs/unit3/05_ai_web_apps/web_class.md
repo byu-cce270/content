@@ -30,7 +30,7 @@ Ask the agent to commit.
 
 ## Step 3 - Review the Spec
 
-Even a spec someone else wrote can be improved. In the Copilot chat panel, switch to **Plan** mode and enter:
+Even a spec someone else wrote can be improved. In the Copilot chat panel, switch to **Ask** mode and enter:
 
 !!! prompt "Prompt"
     Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
@@ -39,7 +39,7 @@ Discuss the suggestions with the people around you. Take any that make the spec 
 
 ## Step 4 - Build It
 
-Switch to **Interactive** mode and enter:
+Switch to **Agent** mode and enter:
 
 !!! prompt "Prompt"
     Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put the calculations in their own clearly named functions, separate from the drawing code.
