@@ -39,7 +39,7 @@ Discuss the suggestions with the people around you. Take any that make the spec 
 
 ## Step 4 - Build It
 
-Switch to **Agent** mode and enter:
+Switch to **Interactive** mode and enter:
 
 !!! prompt "Prompt"
     Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put the calculations in their own clearly named functions, separate from the drawing code.
