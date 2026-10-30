@@ -212,27 +212,13 @@ You can also click the **▷ Run** button in the top-right corner of the editor,
 
 ## Your GitHub Account and Copilot
 
-### 1. Create a GitHub account
+### 1. Create a GitHub account and apply for Copilot
 
-You did this step and the next one in the Numpy homework. They are repeated here for reference.
+You did this in [Part 5 of the Numpy homework](../00_numpy/numpy_hw.md#part-5-set-up-github-and-apply-for-copilot). If you haven't finished it, follow those steps now: create your account with your @byu.edu email, turn on two-factor authentication, add your name and billing information, apply for student benefits, and activate **Copilot Student** after you are approved.
 
-Go to [github.com](https://github.com/) and sign up. Use your **BYU email address**, because GitHub uses it to verify that you are a student. If you already have a GitHub account with a personal email, keep it and add your BYU email under **Settings → Emails**, then verify it.
+If you are still waiting for approval when we start using Copilot, you can use Copilot's free plan, which has a monthly usage limit.
 
-Choose your username with some care. It appears in the address of every web page you publish from GitHub, and many engineers use their GitHub profile as part of their résumé.
-
-### 2. Apply for the GitHub Student Developer Pack
-
-The Student Developer Pack gives verified students free access to GitHub Copilot and other developer tools.
-
-1. Before you start, set the **billing name** on your GitHub account (**Settings → Billing and licensing → Payment information**) to your name exactly as it appears on your BYU ID. You don't need to enter a payment method.
-2. Go to [education.github.com/pack](https://education.github.com/pack) and click the button to sign up as a student
-3. Select your BYU email and enter **Brigham Young University** as your school. When the browser asks to share your location, allow it, and turn off any VPN.
-4. When asked for proof of enrollment, take a photo of your BYU ID card with your laptop or phone camera. GitHub rejects uploaded images.
-5. Submit the application
-
-GitHub will email you when you are approved, usually within a few days. Approval doesn't turn Copilot on by itself. Within about three days of approval, go to [github.com/settings/education/benefits](https://github.com/settings/education/benefits) and claim **Copilot Student**. If your application is rejected, read the reason in the email, fix it, and apply again. The most common problems are an unverified school email, a billing name that doesn't match your ID, location sharing turned off, or a blurry photo. If you are still waiting when we start using Copilot, you can use Copilot's free plan, which has a monthly usage limit.
-
-### 3. Tell Git who you are
+### 2. Tell Git who you are
 
 Git attaches a name and email to every commit you make. Set them once on each computer by running these commands in the terminal, using your own name and the email from your GitHub account:
 
@@ -244,7 +230,7 @@ git config --global init.defaultBranch main
 
 The third command makes new repositories start on a branch named `main`, which is the name GitHub uses. Without it, some computers name the first branch `master`.
 
-### 4. Sign in to GitHub from VS Code
+### 3. Sign in to GitHub from VS Code
 
 Click the **Accounts** icon (the person at the bottom of the left sidebar) and choose **Sign in with GitHub**. This lets VS Code push your code to GitHub and turns on Copilot.
 
@@ -270,7 +256,7 @@ Whichever agent you use, the results depend on how well you understand the probl
 Before class, do the following:
 
 1. Install Python, VS Code, and Git using the [Setup Guide](#setup-guide)
-2. Check the status of your Student Developer Pack application at [education.github.com](https://education.github.com/). If you never applied, apply now.
+2. Check the status of your Student Developer Pack application at [github.com/settings/education/benefits](https://github.com/settings/education/benefits). If you never applied, follow [Part 5 of the Numpy homework](../00_numpy/numpy_hw.md#part-5-set-up-github-and-apply-for-copilot) now.
 3. In the VS Code terminal, run `python --version` and `git --version` (use `python3` on a Mac)
 
 Take **two screenshots**: one of the VS Code terminal showing the output of both commands, and one showing your Student Developer Pack status (approved or pending). Upload both with your Pre-Class Quiz.
