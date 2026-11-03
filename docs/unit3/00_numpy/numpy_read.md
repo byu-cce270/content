@@ -122,6 +122,10 @@ print(random_integers)  # Output: [5 0 3 3 7]
 And there are other functions you can use to create NumPy arrays with random numbers. Here is a link to the NumPy website that lists all the functions you can use to create NumPy arrays: [NumPy Random Functions](https://numpy.org/doc/stable/reference/random/index.html)
 
 # NumPy with Matplotlib
+
+!!! note "A sneak peek at Matplotlib"
+    NumPy is often paired with Matplotlib: NumPy builds the data and Matplotlib plots it. This example is just a sneak peek at Matplotlib, our next topic, where we will cover these plotting commands in detail.
+
 We can use NumPy with Matplotlib to create plots. For example, we can use NumPy to create a list of numbers and then use Matplotlib to plot those numbers. We can use the numpy routines to easily create the data we want to plot. For example if we want to plot the sin, cos, and tan of a list of numbers, we can use NumPy to create the list of numbers and then use Matplotlib to plot the data. Say we want a list of number from 0 to 3*360 degrees every 0.5 degrees. We can use the `np.linspace()`  function to create the list of numbers. Then we can use the `np.sin()` and `np.cos()` functions to create the data we want to plot. Finally, we can use Matplotlib to plot the data. 
 ```python
 import numpy as np
