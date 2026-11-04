@@ -48,3 +48,26 @@ table th {
 .rst-content .admonition.prompt .admonition-title::before {
     content: "\f075";
 }
+
+/* "Try It Yourself" exercises in the reading chapters: !!! try-it "Try It Yourself"
+   Like .prompt above, this styles a custom admonition type. If a MkDocs or theme
+   update ever changes the admonition markup, these boxes fall back to the theme's
+   default blue box; see the note in docs/requirements.txt. */
+.rst-content .admonition.try-it {
+    background: #f4f1fa;
+    border-left: 4px solid #5e4b8b;
+}
+
+.rst-content .admonition.try-it .admonition-title {
+    background: #5e4b8b;
+    color: #ffffff;
+}
+
+.rst-content .admonition.try-it .admonition-title::before {
+    content: "\f044";
+}
+
+/* Space between a try-it box's collapsed sample solutions and the next heading. */
+.rst-content .admonition.try-it + details {
+    margin-bottom: 24px;
+}

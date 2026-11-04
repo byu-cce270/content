@@ -101,6 +101,7 @@ nav:
   - Unit 3 - Advanced Python:
     - Numpy:
         - Reading: unit3/00_numpy/numpy_read.md
+        - Chapter: unit3/00_numpy/numpy_chapter.md
         - In Class: unit3/00_numpy/numpy_class.md
         - Homework : unit3/00_numpy/numpy_hw.md
     - MatPlotLib:

@@ -1,3 +1,9 @@
+# MkDocs itself is not pinned in this file, so a docs build can pick up a new
+# MkDocs release. We decided in November 2026 not to pin it and to deal with a
+# change if one happens. If a new release breaks the build or changes how the
+# readthedocs theme draws admonitions (the custom prompt and try-it boxes in
+# docs/css/custom.css), pin it here, e.g. mkdocs==1.6.1, the release current
+# when this note was written.
 python-markdown-math
 mkdocs-cinder
 pymdown-extensions
