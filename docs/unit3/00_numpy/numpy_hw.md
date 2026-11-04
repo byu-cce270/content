@@ -253,7 +253,11 @@ This code will be given to you as a preview for the next topic.
 
 ### Part 5: Set Up GitHub and Apply for Copilot
 
+<!-- Keep in sync with the "Setting Up GitHub and Copilot" section of numpy_read.md, which repeats these steps. -->
+
 Later in Unit 3 you will use an AI coding agent called GitHub Copilot, which is free for verified students. GitHub reviews each application, which usually takes a few days and can take longer at the start of a semester, so do this now. Follow the steps in order, because an application can be rejected if Steps 1 to 3 are incomplete.
+
+These are the same steps given in [the pre-class reading](numpy_read.md#setting-up-github-and-copilot).
 
 **Step 1: Create a GitHub account**
 
@@ -262,6 +266,14 @@ Later in Unit 3 you will use an AI coding agent called GitHub Copilot, which is 
 3. Open the email from GitHub and verify your address.
 
 If you already have a GitHub account, keep it. Add your @byu.edu address under **Settings → Emails** and verify it.
+
+!!! warning "Four things to check before you apply"
+    GitHub's own application page does not mention these, but we have tested it: applications without them are rejected, and applications with them are accepted. Before you click **Start an application**, make sure all four are true:
+
+    1. Your **@byu.edu email** is on your account and verified (Step 1).
+    2. **Two-factor authentication** is turned on (Step 2).
+    3. Your **name** on GitHub matches the name BYU has for you (Step 3).
+    4. Your **billing information** is filled in — name and address, no credit card (Step 3).
 
 **Step 2: Turn on two-factor authentication**
 
@@ -274,11 +286,18 @@ If you already have a GitHub account, keep it. Add your @byu.edu address under *
 
 **Step 3: Add your name and billing information**
 
-Your name on GitHub must match your BYU ID exactly, including any middle name shown on the ID.
+Your name on GitHub has to match the name BYU has on record for you — the same name that appears on your BYU ID and on whatever document you upload in Step 4. This is the step that catches people out:
+
+- Use your full legal name, not a nickname. If BYU has you as "David," don't put "Dave."
+- Include your middle name or initial if it appears on your ID.
+- Look at your BYU ID while you type it rather than going from memory.
 
 1. Go to **Settings → Public profile**, enter your name in the **Name** box, and click **Update profile**.
 2. Go to **Settings → Billing & Licensing → Payment information**.
-3. Add your first name, last name, and address. You don't need a credit card, so leave the payment method empty.
+3. Add your first name, last name, and address.
+
+!!! danger "Do not enter a credit card"
+    GitHub asks for billing information, but everything you are applying for is free. Enter your first name, last name, and address only. Leave the payment method empty — you do not need a credit card, and you should not add one.
 
 **Step 4: Apply for student benefits**
 
@@ -287,19 +306,21 @@ Before you start, have your BYU ID with you and turn off any VPN. Apply from cam
 1. Go to [github.com/settings/education/benefits](https://github.com/settings/education/benefits) and click **Start an application**.
 2. Select your @byu.edu email and **Brigham Young University**.
 3. Allow your browser to share your location and use your camera when it asks.
-4. When asked for proof, choose your student ID and take a photo of your BYU ID with your camera. Don't upload a saved image. Your full name, Brigham Young University, and the expiration date must all be easy to read, because GitHub needs to see a date.
+4. When asked for proof, upload a picture of your BYU ID. Your full name, Brigham Young University, and the expiration date must all be easy to read, because GitHub needs to see a date. A class schedule, transcript, or enrollment verification letter also works.
 5. Click **Submit application**.
 6. Take a screenshot showing that your application was submitted.
 
 **Step 5: Turn on Copilot after you are approved**
 
-Approval alone doesn't turn Copilot on. GitHub will email you when you are approved, and your benefits can take up to 72 hours after that to become available. Then:
+Approval alone doesn't turn Copilot on. GitHub will email you when you are approved, and the benefit can take several more days to finish applying to your account. Then:
 
 1. Go to [github.com/settings/education/benefits](https://github.com/settings/education/benefits).
 2. Under **Free GitHub developer resources for students and teachers**, click **Learn more**.
 3. Follow the prompts to activate **Copilot Student**.
 
-If your application is rejected, read the reason in the email, fix it, and apply again. The most common problems are a name that doesn't match your ID, missing billing information, two-factor authentication turned off, an unverified BYU email, location sharing turned off, a VPN, or a blurry photo. If you are still waiting when we start using Copilot, you can use Copilot's free plan, which has a monthly usage limit.
+If your account still shows the free plan after a few days, try [github.com/settings/copilot](https://github.com/settings/copilot) and follow the prompts. **If you are only offered paid plans, do not buy anything.** Wait a few days and try again, and contact GitHub Support if it still doesn't work.
+
+If your application is rejected, read the reason in the email, fix it, and apply again. The most common problems are a name that doesn't match the name BYU has for you, missing billing information, two-factor authentication turned off, an unverified BYU email, location sharing turned off, a VPN, or a blurry photo. If you are still waiting when we start using Copilot, you can use Copilot's free plan, which is limited to 2,000 code completions per month.
 
 ---
 

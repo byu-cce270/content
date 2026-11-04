@@ -9,6 +9,9 @@ You can find the In Class Exercise here:
 1. Open the in-class workbook using the link above.
 2. Follow the instructions in the notebook to complete the exercise.
 
+!!! note "Before you leave today"
+    This topic's homework also has you create a GitHub account and apply for a free student Copilot license, which you will use later in Unit 3. The steps are in [Setting Up GitHub and Copilot](numpy_read.md#setting-up-github-and-copilot) in the pre-class reading. GitHub takes a few days to review each application, so start tonight. If anything in those steps was unclear or didn't work, ask your TA now rather than the night the homework is due.
+
 ---
 
 ## Vectorized Operations in NumPy

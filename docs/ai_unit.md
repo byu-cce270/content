@@ -83,7 +83,7 @@ These APIs are free, need no key, and work from the browser.
 
 ## Decisions: Using Python Locally
 
-1. **Student Pack timing:** Students create a GitHub account and apply for the Student Developer Pack in the Numpy homework (Part 5, 2 points). The Using Python Locally pre-class quiz checks their application status.
+1. **Student Pack timing:** Students create a GitHub account and apply for the Student Developer Pack in the Numpy homework (Part 5, 2 points). The steps also appear in the Numpy pre-class reading, so students can read them and raise questions in class before the homework is due, and the Numpy in-class page points at them; the two copies must be kept in sync. The Using Python Locally pre-class quiz checks their application status.
 2. **Anonymous grading:** GitHub usernames will be visible in this section's homework and in Agent Parts 1 and 2. Each of those pages says so in its anonymity note.
 3. **Verification before class:** A TA follows the reading and In-Class Exercise 4 on a fresh GitHub account a week before class, fixes any steps that don't match the current GitHub and VS Code screens, and replaces each "Screenshot needed" placeholder with a real screenshot.
 4. **AI comment penalty:** Keep the −50% penalty for the Using Python Locally homework. In the agent sections, replace it with a required spec file plus a short log of the prompts the student used.
