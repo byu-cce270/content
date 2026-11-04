@@ -1123,10 +1123,10 @@ Average: 4386 psi
 A supplier blends sand from two pits to deliver 1,000 tons with 6% fines. Sand from Pit 1 has 4% fines and sand from Pit 2 has 9%. With $x_1$ and $x_2$ as the tons taken from each pit:
 
 $$
-\begin{aligned}
-{1}\,x_1 + {1}\,x_2 &= {1000} \\
-{0.04}\,x_1 + {0.09}\,x_2 &= {60}
-\end{aligned}
+\begin{alignedat}{3}
+1\,x_1 &{}+{}& 1\,x_2 &{}={}& 1000 \\
+0.04\,x_1 &{}+{}& 0.09\,x_2 &{}={}& 60
+\end{alignedat}
 $$
 
 The first equation says the two amounts add up to 1,000 tons. The second says the fines from both pits add up to 6% of 1,000 tons, which is 60 tons. To solve the system with NumPy, write it in matrix form, $A\mathbf{x} = \mathbf{b}$. A *matrix* is a table of numbers, stored as a two-dimensional array, and a *vector* is a single list of numbers, stored as a one-dimensional array. The coefficients go in a two-dimensional array `A`, with one row per equation and one column per unknown. The right-hand sides go in a one-dimensional array `b`:
