@@ -105,7 +105,8 @@ We will write the equations in terms of the angles at A and C, so that we can ch
 We will use functions to solve this problem. This will allow us to call the function multiple times with different inputs. We will create a function that will take in the angles at A and C, and the load at B. This function will return the forces in each segment of the truss. The function will build the force and external load matrices. For this problem, we will hard code the size of these matrices. This is because we know the size of the matrices will not change. The only things that we will allow to change are the angles and the load.
  
 1. Import the numpy and Matplotlib library into your notebook.
-2. In the next code block, create a function that will take in 3 parameters: the angle at joint A (θ_A), the angle at joint C (θ_C), and the load at joint B (P) to find the forces of each member.
+2. In the next code block, create a function called 'truss'.
+3. It will take in 3 parameters: the angle at joint A (θ_A), the angle at joint C (θ_C), and the load at joint B (P) to find the forces of each member.
 
 Inside the function we now need to do the following:
 
@@ -149,7 +150,8 @@ Now that you have all the forces, Dr. Doofenshmirtz needs to know how high his r
 We will create a function that will accept $θ_A$,  $θ_C$ and $L_{AC}$ as inputs, then calculate the coordinates of each of the corners. We will use the sum of the angles to get $θ_B$. We will divide the truss into two right triangles and use the law of sines to get the base and hypotenuse. Using that information, we can solve for the x and y coordinates of each joint.
 
 
-1. Create a new function that will take in 3 parameters: $θ_A$,  $θ_C$ and $L_{AC}$ as inputs. This function will solve for the X and y values of each joint. (We will say that A is the origin with coordinates [0,0])
+1. Create a new function called 'calculate_triangle_coordinates'.
+2. It will take in 3 parameters: $θ_A$,  $θ_C$ and $L_{AC}$ as inputs. This function will solve for the X and y values of each joint. (We will say that A is the origin with coordinates [0,0])
 2. Since we are given angle A ($θ_A$) and angle C ($θ_C$), solve for angle B ($θ_B$). Hint: the sum of the angles in a triangle is 180 degrees.
 3. Convert angles A, B, and C from degrees to radians (since this is what Numpy does its calculations in)
 4. Time to bring back your geometry skills, now that you know all of your angles and one side length you can use the law of sines to solve for the other lengths. Save each length of the truss in their own variables.
