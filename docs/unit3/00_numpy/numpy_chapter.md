@@ -1464,6 +1464,76 @@ plt.show()
 The stop value is 720.5 so that 720 is included.
 </details>
 
+## Quick Drills
+
+These drills check the basics before the pre-class quiz. Each answer is one line of NumPy. Run this cell first to create the arrays the drills use. Most of them come from earlier in the chapter:
+
+```python
+import numpy as np
+
+traffic = np.array([8420, 8915, 9102, 8876, 9540, 6210, 5180])
+concrete = np.array([
+    [120,  95, 140, 110],
+    [ 80,  85,  90, 100],
+    [150, 160, 130, 145],
+])
+breaks = np.array([4210, 3980, 4450, 4120, 3890, 4300])
+flow = np.array([310, 450, 1220, 980, 640, 1510, 870, 400])
+durations = np.array([3, 5, 12, 8, 20])
+loads_lb = np.array([1200, 3400, 560, 2750])
+line_totals = np.array([1740.0, 2790.0, 975.0, 3280.0])
+elevations = np.array([4521.3, 4523.8, 4527.1, 4526.4, 4530.0])
+```
+
+!!! try-it "Quick Drills"
+    1. Use `np.arange()` to make stations every 50 ft from 0 to 500 ft, including 500.
+    2. Use `np.linspace()` to make points every 2 ft along a 40-ft beam, including both ends.
+    3. Convert `loads_lb` from pounds to kips.
+    4. Take 5% off every value in `line_totals`.
+    5. Print the last three values in `traffic`.
+    6. Print every site's week 4 deliveries from `concrete`.
+    7. Print the shape of `concrete` with its rows and columns swapped.
+    8. Print only the values in `breaks` of at least 4,000 psi.
+    9. Count the days in `flow` above 800 cfs.
+    10. Find the total concrete delivered to each site.
+    11. Find the change in elevation from each station to the next in `elevations`.
+    12. Find the index of the longest activity in `durations`.
+
+<details markdown="1">
+<summary><b>Answers</b></summary>
+
+```python
+print(np.arange(0, 501, 50))          # 1
+print(np.linspace(0, 40, 21))         # 2: 20 segments need 21 points
+print(loads_lb / 1000)                # 3
+print(line_totals * 0.95)             # 4
+print(traffic[-3:])                   # 5
+print(concrete[:, 3])                 # 6
+print(concrete.T.shape)               # 7
+print(breaks[breaks >= 4000])         # 8
+print(np.sum(flow > 800))             # 9
+print(concrete.sum(axis=1))           # 10
+print(np.diff(elevations))            # 11
+print(np.argmax(durations))           # 12
+```
+
+```text
+[  0  50 100 150 200 250 300 350 400 450 500]
+[ 0.  2.  4.  6.  8. 10. 12. 14. 16. 18. 20. 22. 24. 26. 28. 30. 32. 34.
+ 36. 38. 40.]
+[1.2  3.4  0.56 2.75]
+[1653.   2650.5   926.25 3116.  ]
+[9540 6210 5180]
+[110 100 145]
+(4, 3)
+[4210 4450 4120 4300]
+4
+[465 355 585]
+[ 2.5  3.3 -0.7  3.6]
+4
+```
+</details>
+
 ## Quick Reference
 
 | Task | Code |
