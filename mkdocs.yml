@@ -20,6 +20,9 @@ markdown_extensions:
         custom_checkbox: false
         clickable_checkbox: true
     - pymdownx.emoji:
+    - pymdownx.highlight:
+        use_pygments: false
+    - pymdownx.superfences
 
 theme: readthedocs
 
@@ -116,18 +119,26 @@ nav:
         - Reading: unit3/04_local_python/local_py_read.md
         - In Class: unit3/04_local_python/local_py_class.md
         - Homework: unit3/04_local_python/local_py_hw.md
-    - Special Topic:
-        - Overview: unit3/05_special_topic/special_topic.md
-    - ipywidgets:
-        - Reading: unit3/06_ipywidgets/ipy_read.md
-        - In Class: unit3/06_ipywidgets/ipy_class.md
-        - Homework: unit3/06_ipywidgets/ipy_hw.md
+    - Agentic Coding - Web Apps:
+        - Reading: unit3/05_ai_web_apps/web_read.md
+        - In Class: unit3/05_ai_web_apps/web_class.md
+        - Homework: unit3/05_ai_web_apps/web_hw.md
+    - Agentic Coding - Desktop Apps:
+        - Reading: unit3/06_ai_desktop_apps/desktop_read.md
+        - In Class: unit3/06_ai_desktop_apps/desktop_class.md
+        - Homework: unit3/06_ai_desktop_apps/desktop_hw.md
     - Final Project:
+        - Reading: unit3/07_final_project/final_pro_read.md
+        - In Class: unit3/07_final_project/final_pro_class.md
         - Project Proposal: unit3/07_final_project/final_pro_proposal.md
         - Project Prompt: unit3/07_final_project/final_pro_prompt.md
     - Unit 3 Study Guide: unit3/study_guide.md
   - Bonus Content:
     - Gspread: bonus/gspread/gspread_read.md
+    - ipywidgets:
+        - Reading: bonus/ipywidgets/ipy_read.md
+        - In Class: bonus/ipywidgets/ipy_class.md
+        - Homework: bonus/ipywidgets/ipy_hw.md
     - Python and Excel (xlsxwriter):
         - Reading: bonus/python_and_excel/excel_read.md
         - In Class: bonus/python_and_excel/excel_class.md

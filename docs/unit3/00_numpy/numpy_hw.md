@@ -105,7 +105,8 @@ We will write the equations in terms of the angles at A and C, so that we can ch
 We will use functions to solve this problem. This will allow us to call the function multiple times with different inputs. We will create a function that will take in the angles at A and C, and the load at B. This function will return the forces in each segment of the truss. The function will build the force and external load matrices. For this problem, we will hard code the size of these matrices. This is because we know the size of the matrices will not change. The only things that we will allow to change are the angles and the load.
  
 1. Import the numpy and Matplotlib library into your notebook.
-2. In the next code block, create a function that will take in 3 parameters: the angle at joint A (θ_A), the angle at joint C (θ_C), and the load at joint B (P) to find the forces of each member.
+2. In the next code block, create a function called 'truss'.
+3. It will take in 3 parameters: the angle at joint A (θ_A), the angle at joint C (θ_C), and the load at joint B (P) to find the forces of each member.
 
 Inside the function we now need to do the following:
 
@@ -149,7 +150,8 @@ Now that you have all the forces, Dr. Doofenshmirtz needs to know how high his r
 We will create a function that will accept $θ_A$,  $θ_C$ and $L_{AC}$ as inputs, then calculate the coordinates of each of the corners. We will use the sum of the angles to get $θ_B$. We will divide the truss into two right triangles and use the law of sines to get the base and hypotenuse. Using that information, we can solve for the x and y coordinates of each joint.
 
 
-1. Create a new function that will take in 3 parameters: $θ_A$,  $θ_C$ and $L_{AC}$ as inputs. This function will solve for the X and y values of each joint. (We will say that A is the origin with coordinates [0,0])
+1. Create a new function called 'calculate_triangle_coordinates'.
+2. It will take in 3 parameters: $θ_A$,  $θ_C$ and $L_{AC}$ as inputs. This function will solve for the X and y values of each joint. (We will say that A is the origin with coordinates [0,0])
 2. Since we are given angle A ($θ_A$) and angle C ($θ_C$), solve for angle B ($θ_B$). Hint: the sum of the angles in a triangle is 180 degrees.
 3. Convert angles A, B, and C from degrees to radians (since this is what Numpy does its calculations in)
 4. Time to bring back your geometry skills, now that you know all of your angles and one side length you can use the law of sines to solve for the other lengths. Save each length of the truss in their own variables.
@@ -249,6 +251,77 @@ This code will be given to you as a preview for the next topic.
   
 ![numpyhw_solution3.png](images/numpyhw_solution3.png)
 
+### Part 5: Set Up GitHub and Apply for Copilot
+
+<!-- Keep in sync with the "Setting Up GitHub and Copilot" section of numpy_read.md, which repeats these steps. -->
+
+Later in Unit 3 you will use an AI coding agent called GitHub Copilot, which is free for verified students. GitHub reviews each application, which usually takes a few days and can take longer at the start of a semester, so do this now. Follow the steps in order, because an application can be rejected if Steps 1 to 3 are incomplete.
+
+These are the same steps given in [the pre-class reading](numpy_read.md#setting-up-github-and-copilot).
+
+**Step 1: Create a GitHub account**
+
+1. Go to [github.com](https://github.com/) and click **Sign up**. Use your **@byu.edu** email address.
+2. Choose your username with care. It appears in the address of every web page you publish from GitHub, and many engineers use their GitHub profile as part of their résumé.
+3. Open the email from GitHub and verify your address.
+
+If you already have a GitHub account, keep it. Add your @byu.edu address under **Settings → Emails** and verify it.
+
+!!! warning "Four things to check before you apply"
+    GitHub's own application page does not mention these, but we have tested it: applications without them are rejected, and applications with them are accepted. Before you click **Start an application**, make sure all four are true:
+
+    1. Your **@byu.edu email** is on your account and verified (Step 1).
+    2. **Two-factor authentication** is turned on (Step 2).
+    3. Your **name** on GitHub matches the name BYU has for you (Step 3).
+    4. Your **billing information** is filled in — name and address, no credit card (Step 3).
+
+**Step 2: Turn on two-factor authentication**
+
+1. Install an authenticator app on your phone, such as Google Authenticator or Microsoft Authenticator.
+2. On GitHub, click your profile picture, then go to **Settings → Password and authentication**.
+3. Click **Enable two-factor authentication**.
+4. Scan the QR code with the app, and enter the six-digit code it shows.
+5. Click **Download** to save your recovery codes, and keep the file somewhere safe. If you lose your phone, these codes are how you get back into your account.
+6. Click **I have saved my recovery codes**.
+
+**Step 3: Add your name and billing information**
+
+Your name on GitHub has to match the name BYU has on record for you — the same name that appears on your BYU ID and on whatever document you upload in Step 4. This is the step that catches people out:
+
+- Use your full legal name, not a nickname. If BYU has you as "David," don't put "Dave."
+- Include your middle name or initial if it appears on your ID.
+- Look at your BYU ID while you type it rather than going from memory.
+
+1. Go to **Settings → Public profile**, enter your name in the **Name** box, and click **Update profile**.
+2. Go to **Settings → Billing & Licensing → Payment information**.
+3. Add your first name, last name, and address.
+
+!!! danger "Do not enter a credit card"
+    GitHub asks for billing information, but everything you are applying for is free. Enter your first name, last name, and address only. Leave the payment method empty — you do not need a credit card, and you should not add one.
+
+**Step 4: Apply for student benefits**
+
+Before you start, have your BYU ID with you and turn off any VPN. Apply from campus if you can, because GitHub checks your location.
+
+1. Go to [github.com/settings/education/benefits](https://github.com/settings/education/benefits) and click **Start an application**.
+2. Select your @byu.edu email and **Brigham Young University**.
+3. Allow your browser to share your location and use your camera when it asks.
+4. When asked for proof, upload a picture of your BYU ID. Your full name, Brigham Young University, and the expiration date must all be easy to read, because GitHub needs to see a date. A class schedule, transcript, or enrollment verification letter also works.
+5. Click **Submit application**.
+6. Take a screenshot showing that your application was submitted.
+
+**Step 5: Turn on Copilot after you are approved**
+
+Approval alone doesn't turn Copilot on. GitHub will email you when you are approved, and the benefit can take several more days to finish applying to your account. Then:
+
+1. Go to [github.com/settings/education/benefits](https://github.com/settings/education/benefits).
+2. Under **Free GitHub developer resources for students and teachers**, click **Learn more**.
+3. Follow the prompts to activate **Copilot Student**.
+
+If your account still shows the free plan after a few days, try [github.com/settings/copilot](https://github.com/settings/copilot) and follow the prompts. **If you are only offered paid plans, do not buy anything.** Wait a few days and try again, and contact GitHub Support if it still doesn't work.
+
+If your application is rejected, read the reason in the email, fix it, and apply again. The most common problems are a name that doesn't match the name BYU has for you, missing billing information, two-factor authentication turned off, an unverified BYU email, location sharing turned off, a VPN, or a blurry photo. If you are still waiting when we start using Copilot, you can use Copilot's free plan, which is limited to 2,000 code completions per month.
+
 ---
 
 ## Turning in/Rubric
@@ -260,7 +333,7 @@ This code will be given to you as a preview for the next topic.
     anonymously, which keeps grading fair. This applies to scans and photos
     too — please don't write your name on the page.
 
-**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work.
+**_REMINDER_** - For this class, **you will download your completed Colab notebook and upload the `.ipynb` file to Learning Suite**. Make sure the notebook you upload is for the correct assignment and contains your finished work. Upload your Part 5 screenshot along with the notebook.
 
 **Rubric:**
 
@@ -275,7 +348,8 @@ This code will be given to you as a preview for the next topic.
 |                                       Part 4: Values for forces, lengths, and coordinates match given test scenarios                                       |     4      |
 |                                                         Part 4: Graph matches given test scenarios                                                         |     4      |
 |                                                             Comments are added to explain code                                                             |     3      |
-|                                                       <div style="text-align: right">**Total**</div>                                                       |   **30**   |
+|                                         Part 5: Screenshot shows Student Developer Pack application submitted                                          |     2      |
+|                                                       <div style="text-align: right">**Total**</div>                                                       |   **32**   |
 
 ---
 

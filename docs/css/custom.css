@@ -33,3 +33,18 @@ table th {
     word-wrap: break-word !important;
 }
 
+
+/* Prompts to give an AI coding agent: !!! prompt "Prompt" */
+.rst-content .admonition.prompt {
+    background: #eef4fb;
+    border-left: 4px solid #2c6fbb;
+}
+
+.rst-content .admonition.prompt .admonition-title {
+    background: #2c6fbb;
+    color: #ffffff;
+}
+
+.rst-content .admonition.prompt .admonition-title::before {
+    content: "\f075";
+}

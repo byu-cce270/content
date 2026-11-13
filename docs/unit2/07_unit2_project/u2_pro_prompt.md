@@ -20,13 +20,15 @@
 
       - An introductory text block with:
         - instructions on how to use your code
-        - link to your external file
+        - the names of your starter file and your example output file, and what is in each
         - group name
         - members of your group
         - a report on how each team member contributed (with rubric items that they did)
         - Links to any out of class resources you used **(Please don't forget this part. If there are no links you will lose points)**
       - At least 1 if-elif-else statement
-      - Use file reading and or writing. Should be a file that your code creates or one that you upload to your Colab session and use in your code or both.
+      - Use files for both reading **and** writing:
+        - **A starter file** that your code reads when it starts (for example, the inventory you begin with)
+        - **An output file** that your code creates or changes (for example, the updated inventory after the user makes changes)
       - At least 1 loop (for or while)
       - Use numeric and string variables 
       - At least 1 list or dictionary
@@ -44,7 +46,7 @@
 4. After you have completed your project, create a video that demonstrates what your project does and how it works. You can use ScreenPal (formerly ScreenCast-O-Matic) [https://screenpal.com/](https://screenpal.com/){:target="_blank"} or any other screen recorder that records your screen and your voice. The main purpose of this video is to make grading these projects easier.
    - **Turn in a link to your video, not the video file.** Use ScreenPal's "share" link, or upload the video to YouTube, Google Drive, Box, or OneDrive and copy its link.
    - Make sure the link can be viewed by anyone who has it. A private link can't be graded.
-   - Keep it short (ideally under 4 min)
+   - Keep it short (about 5 minutes)
    - Show how your group completed every element in the rubric
    - Have each group member share one thing they learned. 
 
@@ -52,7 +54,7 @@
 
 ## The Prompts
 
-Whichever prompt you choose, your program should **load its saved file when it starts and save to it before it ends**, so the data is still there the next time you run it. If the file isn't there yet (the first run, or a new Colab session), your program should start with empty data instead of crashing.
+Whichever prompt you choose, your program should **read a starter file when it starts** and **write an output file** (a new file, or the starter file updated) before it ends. Make your own starter file with a few rows of example data. You will turn in both files with your notebook.
 
 ### Prompt 1 - Rock, Paper, Scissors
 Create the game “Rock, Paper, Scissors” using python. The user will be playing against the computer who will choose a result randomly and it will be compared to the user's input. Incorporate the use of storing and accessing data from a file in this project. The user should be able to play as many times as desired until they ask to stop. Create a file that stores the results of each game played (who won, what the user chose, what the computer chose, etc). At the end of the session, display to the user how many games they won, how many games the computer won, and how many ties there were. Be sure to include the items in the grading rubric below.
@@ -61,7 +63,7 @@ Your program should:
 
 - Ask the user again if they type something that isn't rock, paper, or scissors
 - Let the user keep playing until they choose to stop
-- Add each game's result to the results file
+- Start from a starter results file that already has a few games in it, and add each new game's result
 - At the end, show this session's wins, losses, and ties, **and** the all-time record read from the results file
 
 ### Prompt 2 - Inventory Management
@@ -73,7 +75,7 @@ Your program should:
 - Give each item a name, a quantity, and a unit price
 - Warn the user when an item's quantity drops below a low-stock amount that you choose
 - Show the total value of the inventory (quantity × unit price for every item)
-- Save the inventory to a file, and load it again the next time the program runs
+- Read the starting inventory from your starter file, and save the updated inventory to an output file
 
 ### Prompt 3 - To Do List
 Create a code that will allow a user to take a current to-do list and be able to create, update, and delete tasks. Also include code that will allow the user to store tasks on a file.
@@ -83,7 +85,7 @@ Your program should:
 - Use a menu that repeats until the user quits, with options to add a task, update a task's status, delete a task, view all tasks, and view the tasks in one category
 - Give each task a name, a category, a due date, and a status
 - Show how many tasks are overdue and how many are due in the next 3 days
-- Save the tasks to a file, and load them again the next time the program runs
+- Read the starting tasks from your starter file, and save the updated tasks to an output file
 
 ---
 
@@ -92,14 +94,17 @@ Your program should:
 Only one team member needs to turn in the project. That team member should submit both of the following on the
 assignment in Learning Suite:
 
-   - **A single `.zip` archive** containing your completed notebook and every file your code uses to run and/or generates
-   - The link to watch the video (not the video file), pasted into the feedback box
+   - **A single `.zip` archive** containing:
+     - **Your code:** the completed notebook, named `(Your-Team-Name)-Unit-2-Project.ipynb`
+     - **Your starter file:** the file your code reads when it starts, with the **exact file name your code opens** (for example `inventory.csv`)
+     - **An example output file:** the file your code wrote or changed during one run. If your code writes to the same file it started from, save a copy after a run and name it `(file name)-example-output` (for example `inventory-example-output.csv`) so it doesn't replace the starter file
+   - **The link to your video** (not the video file), pasted into the feedback box
 
 To build the zip archive:
 
 1. Rename your notebook in Colab something like "(Your-Team-Name)-Unit-2-Project.ipynb".
 2. Run all of your cells so that your output is saved in the notebook, then download it from Colab with **File | Download | Download .ipynb**.
-3. Put the downloaded `.ipynb` file and all of your data files together in one folder. Name the folder something like "(Your-Team-Name)-Unit-2-Project".
+3. Put the downloaded `.ipynb` file, your starter file, and your example output file together in one folder. Name the folder something like "(Your-Team-Name)-Unit-2-Project".
 4. Compress the folder into a single `.zip` file:
     - **Windows:** right-click the folder and choose **Send to | Compressed (zipped) folder**
     - **Mac:** right-click the folder and choose **Compress "(Your-Team-Name)-Unit-2-Project"**
@@ -111,7 +116,7 @@ To build the zip archive:
 |:----------------------------------------------------------------------:|:---------------:|
 | An introductory text block with all the relevant information asked for |        3        |
 |                      Uses if-elif-else statement                       |        5        |
-|                    Uses file reading and or writing                    |        5        |
+|   Reads a starter file and writes an output file (both included)     |        5        |
 |                               Uses loops                               |        5        |
 |                   Uses numeric and string  variables                   |        2        |
 |                      Uses a dictionary or a list                       |        5        |
