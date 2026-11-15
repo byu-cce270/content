@@ -2,22 +2,41 @@
 
 Before class, you should have installed Python, VS Code, and Git and applied for the GitHub Student Developer Pack, as described in the [reading](local_py_read.md). If any of that didn't work, get a TA's help before starting Exercise 2.
 
+## Sign In to GitHub
+
+Open VS Code and click the **Sign In** button. Choose GitHub and follow the prompts in your browser. Signing in lets VS Code push your code to GitHub and turns on Copilot. If you already signed in as part of the reading, your account name appears there instead and you can skip this step.
+
 ## Exercise 1 - Find Your Way Around the Terminal
 
 1. In VS Code, choose **File → Open Folder** and open your class folder (for example, `Documents/cce270`). If you don't have one yet, make it first.
-2. Open the terminal with **Terminal → New Terminal**.
+2. A blue banner may appear at the top of the window saying VS Code is in **Restricted Mode**. In Restricted Mode, VS Code turns off features such as running code and Copilot, so you need to trust the folder. Click **Manage** on the banner:
+
+    ![The Restricted Mode banner with the Manage link](images/vscode_restricted_banner.png){:width="700px"}
+
+    Then click **Trust**:
+
+    ![The Trust button in the In a Trusted Folder panel](images/vscode_trust_folder.png){:width="400px"}
+
+    Only trust folders whose contents you know, such as your own class folder or code from your course.
+
+3. Open the terminal with **Terminal → New Terminal**.
 
     ![VS Code with a class folder open and the terminal panel at the bottom](images/vscode_terminal.png){:width="800px"}
 
-3. Check where you are with `pwd` (Mac) or `cd` (Windows). It should be your class folder.
-4. Make a folder for today and move into it:
+4. Check where you are with `pwd` (Mac) or `cd` (Windows). It should be your class folder.
+5. Make a folder for today and move into it:
 
     ```
     mkdir local_python
     cd local_python
     ```
 
-5. Create a file named `beam.py` in that folder and paste in this code, which computes the maximum moment and deflection of a simply supported beam with a uniform load:
+6. Create the Python file:
+
+    - Choose **File → New File** and select **Python File** from the list.
+    - Choose **File → Save As**, browse to the `local_python` folder you just created, name the file `beam.py`, and click **Save**.
+
+    Paste this code into `beam.py` and save it. The code computes the maximum moment and deflection of a simply supported beam with a uniform load:
 
     ```python
     # Simply supported beam with a uniform load
@@ -34,8 +53,10 @@ Before class, you should have installed Python, VS Code, and Git and applied for
     print(f"L/360 limit: {L * 12 / 360:.2f} in")
     ```
 
-6. Run it from the terminal with `python beam.py` (or `python3 beam.py` on a Mac). Try a 1.0 kip/ft load on a 25 ft span, then 1.5 kip/ft on a 30 ft span. Check the first answer by hand: $M = wL^2/8 = 78.1$ kip-ft.
-7. Run `ls` (Mac) or `dir` (Windows) to see your file, then `cd ..` to move back up to your class folder.
+    The pasted code may come in indented, and Python will report an error if it is. To fix it, select all the lines (**Ctrl+A** on Windows, **Cmd+A** on Mac) and press **Shift+Tab** until every line starts at the left edge. Then save the file.
+
+7. Run it from the terminal with `python beam.py` (or `python3 beam.py` on a Mac). Try a 1.0 kip/ft load on a 25 ft span, then 1.5 kip/ft on a 30 ft span. Check the first answer by hand: $M = wL^2/8 = 78.1$ kip-ft.
+8. Run `ls` (Mac) or `dir` (Windows) to see your file, then `cd ..` to move back up to your class folder.
 
 ## Exercise 2 - Clone and Run a Game
 
@@ -58,6 +79,10 @@ Python Crash Course, the textbook we've used this semester, builds a game called
     ![vscode_clone2.png](images/vscode_clone2.png)
 
 5. Choose your class folder as the location. VS Code will clone the repo and offer to open it. Click **Open**.
+
+6. Trust the new folder the same way you did in Exercise 1: click **Manage** on the Restricted Mode banner, then click **Trust**.
+
+7. You now have two VS Code windows open: the one from Exercise 1 and the new one with the Alien Invasion project. You can close the Exercise 1 window, but you will use the `local_python` folder again in Exercise 3, so you will need to reopen it then with **File → Open Folder**.
 
 ### Install pygame and Run the Game
 
@@ -100,6 +125,8 @@ Now open the **Source Control** panel (the branching icon on the left sidebar, o
 ## Exercise 3 - Your First GitHub Repository
 
 Now you will put your own code on GitHub.
+
+When you initialize a repository, Git tracks your folder on your own computer. That is a **local repository**. Publishing it copies the repository to GitHub, where it is a **remote repository**. Once your code is on GitHub, you can get to it from any other computer, share it with others by sending them the link, and keep a backup in case something happens to your laptop. Each time you push, GitHub's copy is updated to match your local one.
 
 1. In VS Code, open your `local_python` folder from Exercise 1 (**File → Open Folder**).
 2. Open the **Source Control** panel and click **Initialize Repository**. Git now tracks this folder.
@@ -151,6 +178,23 @@ If your Copilot student license hasn't been approved yet, use the free plan for 
 
 4. When the agent finishes, go to the **Source Control** panel and look at what it changed. Which files did it edit? Can you find the new code that checks for the P key?
 5. Run the game and test the feature. Does it work? Does anything else break?
-6. If it works, commit it. If it doesn't, describe the problem to the agent and let it try again. If it makes things worse, discard all the changes in the Source Control panel and start over.
+6. If it works, commit it. This commit goes into your **local** copy of the repository only. The Alien Invasion repository on GitHub belongs to someone else, so you can't push to it, and you should not click **Sync Changes** here. If it doesn't work, describe the problem to the agent and let it try again. If it makes things worse, discard all the changes in the Source Control panel and start over.
 
 Steps 4–6 are the habit to build: **ask the agent, review what it changed, test it, then commit or throw it away.**
+
+!!! note "Optional: Put Your Version of the Game on GitHub"
+    This is not required. If you want your modified game in your own GitHub account:
+
+    1. In the Alien Invasion window, open the terminal and run:
+
+        ```
+        git remote remove origin
+        ```
+
+        When you cloned the game, Git remembered where it came from and named that location `origin`. This command disconnects your local copy from the original repository. Your files and commits stay on your computer.
+
+    2. Open the Source Control panel. Because your copy is no longer connected to any GitHub repository, it now shows a **Publish Branch** button, just like in Exercise 3.
+
+    3. Click **Publish Branch** and choose **public repository**. You may want to give it a new name, such as `my-alien-invasion`. This creates a new repository in your GitHub account and makes it the new `origin`.
+
+    4. Go to your GitHub profile and open the new repository. Your version of the game, including all of your commits, is there. From now on, **Sync Changes** pushes your commits to your own repository.
