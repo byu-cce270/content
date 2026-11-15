@@ -122,7 +122,7 @@ Check that its summary matches what you have in mind. If it doesn't, your spec i
     Let's work on just the Inputs section of spec.md. Don't build anything. Ask me about anything that is unclear, tell me if any inputs are missing, and suggest a range, a default, and a control (slider, number box, or dropdown) for each one.
 
 !!! prompt "Prompt"
-    Now the Calculations section. Don't build anything. Check each equation and its units, suggest any missing equations,  list any variable that isn't defined, and tell me if any calculation the outputs need is missing.
+    Now the Calculations section. Don't build anything. Check each equation and its units, suggest any missing equations, list any variable that isn't defined, and tell me if any calculation the outputs need is missing.
 
 Answer its questions and decide which suggestions to take. The agent is good at spotting a missing input, an undefined variable, or a unit that doesn't match, and it will often ask questions you hadn't thought of, such as what the slab app should do if the thickness is set to zero. It is less reliable about engineering judgment, so check any change it suggests to your equations against your textbook or notes.
 
@@ -164,6 +164,8 @@ When you're happy with the spec, commit it before moving on.
 
 Don't ask the agent to build the whole app in one step. If it builds everything at once and something is wrong, it's hard to tell where the problem is. Build it in stages instead, and check and commit each stage before starting the next. A problem is much easier to fix when you know it came from the last small change.
 
+Some parts of an app, such as the layout, a diagram, or how a plot looks, are hard to get right on paper. For those, go back and forth between the spec and the app: build a rough version, look at it, update the spec, and rebuild until it looks the way you want. Only then move on to the next stage. You still need a spec of the whole app before you start, though. The agent can only plan sensible stages if it knows what the finished app is supposed to do.
+
 **3a. Plan the stages.** In **Plan** mode, ask the agent to help you break the work into stages:
 
 !!! prompt "Prompt"
@@ -176,9 +178,8 @@ Adjust the stages until they make sense to you. Then switch to **Interactive** m
 !!! prompt "Prompt"
     Build stage 1 from the Build stages section of spec.md: a mockup of the app as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Show every input, output, and plot from the spec, filled with realistic placeholder values. Don't write any calculations yet.
 
-Double-click `index.html` to open it in your browser. This is the time to fix the look and layout, before any calculations depend on it. Ask for changes until you like it, for example:
+Double-click `index.html` to open it in your browser. This is the time to fix the look and layout, before any calculations depend on it. Ask for changes until you like it. Here is one example; your prompt will depend on what you see:
 
-Here is an example of changing the layout after you look at it. You may have a different prompt or plan. 
 !!! prompt "Prompt"
     Put the sliders in a card on the left and the slab diagram on the right. Make the cubic yards to order larger, and label every dimension on the diagram with units.
 
@@ -189,12 +190,17 @@ When the mockup looks right, commit it.
 !!! prompt "Prompt"
     Build stage 2 from the Build stages section of spec.md. Only build this stage. Put all calculations in clearly named functions.
 
-Refresh the page in your browser and test the stage the way the plan says to (Steps 4 and 5 below explain how to find errors and check your answers). You can change the layout here also.  If something is wrong, describe the problem and let the agent fix it for example (this may not happen in your code):
+Refresh the page in your browser and test the stage the way the plan says to (Steps 4 and 5 below explain how to find errors and check your answers). You can still change the layout at this point. If something is wrong, describe the problem and let the agent fix it. For example (your app may not have this problem):
 
 !!! prompt "Prompt"
     The volume shows 133.3 cubic yards for a 20 ft x 30 ft x 6 in slab with no waste, but it should be 11.1 cubic yards. Check whether the thickness is converted from inches to feet.
 
 When the stage works, look over the changes in the **Source Control** panel so you understand what the agent did, then commit and move on to the next stage. Asking for calculations in clearly named functions keeps them where you and the agent can find and check them.
+
+Every change you make while building is also a change to the spec. If you ask for a new slider or a different layout and only the app changes, the spec no longer describes your app, and the agent will work from an outdated plan in the next stage. Ask the agent to update both, explicitly:
+
+!!! prompt "Prompt"
+    Change the waste factor from a number box to a slider from 0 to 15%. Update spec.md first, then change the app to match.
 
 ### 4. Run it and look for errors
 

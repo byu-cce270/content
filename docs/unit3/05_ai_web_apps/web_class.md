@@ -6,7 +6,7 @@ In this exercise, you will have an agent build a professional engineering web ap
 - **[Site Runoff](#site-runoff):** outline the roofs, pavement, and lawns of a site on satellite imagery, then compute the storm runoff and size the drain pipe
 - **[Concrete Pour Planner](#concrete-pour-planner):** outline a slab on satellite imagery, then compute the concrete to order, the number of trucks, and an arrival schedule for the batch plant
 
-Each app was built by an agent from the spec on this page, with no other instructions. The screenshots show what that first build looked like. Yours will look different, because agents don't give the same answer twice, and that is fine as long as it passes validation.
+Each app was built by an agent from the spec on this page, with no other instructions. The screenshots show what that first build looked like. Yours will look different, because agents don't give the same answer twice and because you will refine the spec and build the app in stages. That is fine as long as it passes validation.
 
 ## Step 1 - Set Up the Project
 
@@ -49,7 +49,7 @@ The spec you pasted in is a starting point, not a finished plan. Work through it
 
     The answers are your decisions, not the agent's. Discuss them with the people around you. If you'd rather have a slider than a number box, or want a result shown in a table instead of a sentence, change it. Skip suggestions that add features you don't need yet.
 
-3. **Update the spec after each section** before moving on to the next. Edit `spec.md` yourself, add `[NOTE` lines, or ask the agent in **Interactive** mode to "only edit spec.md," as described in the reading. Save the file. When every section is done, ask the agent to commit.
+3. **Update the spec after each section** before moving on to the next. Edit `spec.md` yourself, add `[NOTE` lines, or ask the agent in **Interactive** mode to "only edit spec.md," as described in the reading. Save the file. When every section is done, have the agent read the whole spec once more and list anything that is still missing or inconsistent between sections. Then ask the agent to commit.
 
 The spec isn't frozen after this step. As you build the app stage by stage in Step 4, you will find things you missed and change your mind about others. When that happens, update the spec first, then have the agent build from it, so the spec always describes the app.
 
@@ -62,7 +62,7 @@ Some parts of an app, such as the layout, a diagram, or how a plot looks, are ha
 1. **Plan the stages.** In **Plan** mode, enter:
 
     !!! prompt "Prompt"
-        Read spec.md. Don't write any code. Suggest how to build this app in 4 to 6 stages, starting with a mockup of the page layout with no real calculations. For each stage, tell me what I should check when it's done.
+        Read spec.md. Don't write any code. Suggest how to build this app in 4 to 6 stages, starting with a mockup of the page layout with no real calculations. Each stage should be small enough that I can test it before moving on. For each stage, tell me what I should check when it's done.
 
     Adjust the stages until they make sense to you. Then switch to **Interactive** mode and ask the agent to add them to the end of `spec.md` under `## Build stages`.
 
