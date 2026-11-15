@@ -68,7 +68,7 @@ Every value the user can enter or change, with units, reasonable ranges,
 and the control used to enter it (number box, slider, dropdown, button).
 
 ## Calculations
-The equations the app uses, written out. Define every variable and its units.
+The equations, rules, or logic the app uses, written out. Define every variable and its units.
 
 ## Outputs
 What the app shows: numbers (with units), tables, plots, diagrams,

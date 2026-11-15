@@ -32,7 +32,7 @@ Your spec must have these seven sections, described in [Write a spec](web_read.m
 
 1. **Purpose** - what the app does and who it is for
 2. **Inputs** - every value the user enters, with units, ranges, defaults, and the control used to enter it
-3. **Calculations** - the equations, with every variable and its units defined
+3. **Calculations** - the equations, rules, or logic the app uses (formulas, thresholds, lookup tables, how downloaded data is processed), with every variable and its units defined
 4. **Outputs** - what the app shows: numbers with units, tables, plots, and diagrams
 5. **Look and feel** - the layout, what the app shows when it first opens, and how it works on a phone
 6. **Validation** - at least one case worked by hand, with exact inputs and expected outputs
@@ -231,7 +231,7 @@ Paste your GitHub Pages address (for example, `https://your-username.github.io/y
 
 |                                         **Items**                                          | **Amount** |  
 |:------------------------------------------------------------------------------------------:|:----------:|
-|      Spec has all seven sections, with equations and a hand-worked validation case           |     4      |
+|      Spec has all seven sections, with the calculations or rules written out and a hand-worked validation case           |     4      |
 |                         All must-have features work                                        |     8      |
 |   At least two features of your own design work and are described in the spec (one must be your own idea)   |     6      |
 |              Validation check passes and is documented in the spec                         |     5      |
