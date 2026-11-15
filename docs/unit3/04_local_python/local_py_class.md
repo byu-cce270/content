@@ -183,7 +183,7 @@ If your Copilot student license hasn't been approved yet, use the free plan for 
 Steps 4–6 are the habit to build: **ask the agent, review what it changed, test it, then commit or throw it away.**
 
 !!! note "Optional: Put Your Version of the Game on GitHub"
-    This is not required. If you want your modified game in your own GitHub account:
+    This is not required. If you want your modified game in your own GitHub account do the following:
 
     1. In the Alien Invasion window, open the terminal and run:
 
