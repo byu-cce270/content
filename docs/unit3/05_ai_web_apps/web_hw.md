@@ -4,6 +4,19 @@
 
 ---
 
+## Before You Start
+
+**Plan and build in stages.** Each of these apps is too big to build all at once. If you try, you will probably get a mess that is hard to understand and hard to fix. Start with an overview spec of the whole app, so the agent knows where you are headed. Then work one piece at a time, planning and building together:
+
+1. Work out one part of the spec with the agent.
+2. Have the agent build a prototype of just that part.
+3. Check whether it does what you think it should. If it doesn't, update the spec, rebuild, and check again until it works.
+4. Commit, then move on to the next part.
+
+**Keep a prompt log from the start.** Before your first request, create `AGENTS.md` with the line from the [reading](web_read.md#standing-instructions-and-the-prompt-log), so the agent records every request in `prompts.md`. You will turn in `prompts.md`, so read it as you go and correct anything the agent got wrong.
+
+**How you work counts.** Graders will use your prompt log and commit history to see whether you planned and built step by step. We are looking for evidence that you refined the agent's suggestions instead of taking the first thing it offered: asking it questions, having it help you fill out the spec, testing each stage, and changing things until they were right.
+
 ## Overview
 
 Choose one of the eight problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
@@ -15,13 +28,21 @@ Choose one of the eight problems below and build it as a single-file web app, fo
 5. Plan your own features with the agent, then add them one at a time, committing after each one
 6. Publish it on GitHub Pages
 
-Work in small steps the whole way through. When you ask the agent to do too much at once, it's hard to understand what it did, and when something breaks you won't know which change caused it.
+Your spec must have these seven sections, described in [Write a spec](web_read.md#1-write-a-spec) in the reading:
+
+1. **Purpose** - what the app does and who it is for
+2. **Inputs** - every value the user enters, with units, ranges, defaults, and the control used to enter it
+3. **Calculations** - the equations, with every variable and its units defined
+4. **Outputs** - what the app shows: numbers with units, tables, plots, and diagrams
+5. **Look and feel** - the layout, what the app shows when it first opens, and how it works on a phone
+6. **Validation** - at least one case worked by hand, with exact inputs and expected outputs
+7. **Out of scope** - what the app will not do
 
 Each problem lists the features the app must have and a validation check. Building the must-haves is only the start: you must also **design and add at least two features of your own**. Each problem lists a few ideas to get you thinking, but they are examples, not a menu. At least one of your features must be your own idea, not one from the list. Good features come from asking who would use the app and what else they would want it to do.
 
 Describe your features in a **Features** section of the spec before you build them, and build them only after the must-haves pass validation.
 
-Set up a new folder and repository for this assignment, with `AGENTS.md`, `spec.md`, and `index.html` at the top level. Use the `AGENTS.md` line from the [reading](web_read.md#standing-instructions-and-the-prompt-log) so the agent keeps `prompts.md` as you work. Have the agent commit at each step: the first draft of the spec, the revised spec, each build stage (starting with the mockup), the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
+Set up a new folder and repository for this assignment, with `AGENTS.md`, `spec.md`, `prompts.md`, and `index.html` at the top level. Have the agent commit at each step: the first draft of the spec, the revised spec, each build stage (starting with the mockup), the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
 
 ---
 
@@ -216,7 +237,7 @@ Paste your GitHub Pages address (for example, `https://your-username.github.io/y
 |              Validation check passes and is documented in the spec                         |     5      |
 |                    App is published and works at the GitHub Pages address                  |     3      |
 |        App is easy to use: clear labels, units on every number, looks finished            |     2      |
-|   Prompt log is complete, and at least 5 commits match the workflow steps (spec, review, first version, validation, features)   |     2      |
+|   Prompt log is complete, and at least 5 commits match the workflow steps (spec, spec revisions, build stages, validation, features)   |     2      |
 |                         <div style="text-align: right">**Total**</div>                    |   **30**   |
 
 ---
