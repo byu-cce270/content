@@ -8,18 +8,20 @@
 
 Choose one of the eight problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
 
-1. Write the spec, including a validation case you have worked by hand
-2. Have the agent review the spec, and revise it
-3. Have the agent build the app
+1. Write a first draft of the spec, including a validation case you have worked by hand
+2. Work through the spec with the agent in Plan mode, first the whole spec and then one section at a time
+3. Have the agent build the app in stages, starting with a mockup, and test and commit each stage
 4. Validate it against your hand calculation
-5. Add your own features one at a time, committing after each one
+5. Plan your own features with the agent, then add them one at a time, committing after each one
 6. Publish it on GitHub Pages
+
+Work in small steps the whole way through. When you ask the agent to do too much at once, it's hard to understand what it did, and when something breaks you won't know which change caused it.
 
 Each problem lists the features the app must have and a validation check. Building the must-haves is only the start: you must also **design and add at least two features of your own**. Each problem lists a few ideas to get you thinking, but they are examples, not a menu. At least one of your features must be your own idea, not one from the list. Good features come from asking who would use the app and what else they would want it to do.
 
 Describe your features in a **Features** section of the spec before you build them, and build them only after the must-haves pass validation.
 
-Set up a new folder and repository for this assignment, with `AGENTS.md`, `spec.md`, and `index.html` at the top level. Use the `AGENTS.md` line from the [reading](web_read.md#standing-instructions-and-the-prompt-log) so the agent keeps `prompts.md` as you work. Have the agent commit at each step: the spec, the revised spec after review, the first working version, the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
+Set up a new folder and repository for this assignment, with `AGENTS.md`, `spec.md`, and `index.html` at the top level. Use the `AGENTS.md` line from the [reading](web_read.md#standing-instructions-and-the-prompt-log) so the agent keeps `prompts.md` as you work. Have the agent commit at each step: the first draft of the spec, the revised spec, each build stage (starting with the mockup), the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
 
 ---
 

@@ -64,13 +64,15 @@ A **spec** (short for specification) is a short document that describes what you
 One or two sentences: what the app does and who it is for.
 
 ## Inputs
-Every value the user can enter or change, with units and reasonable ranges.
+Every value the user can enter or change, with units, reasonable ranges,
+and the control used to enter it (number box, slider, dropdown, button).
 
 ## Calculations
 The equations the app uses, written out. Define every variable and its units.
 
 ## Outputs
-What the app shows: numbers (with units), plots, colors, animations.
+What the app shows: numbers (with units), tables, plots, diagrams,
+colors, animations.
 
 ## Look and feel
 How the app looks and is laid out, what it shows when it first opens,
@@ -84,27 +86,115 @@ and the outputs the app must produce.
 Things the app will NOT do, so the agent doesn't add them.
 ```
 
+The **Inputs** and **Outputs** sections describe the app's interface as well as its numbers. Say how the user enters each value and how each result is shown, or the agent will decide for you. For example, in an app that computes the concrete for a slab:
+
+```markdown
+## Inputs
+- Slab length (ft): slider from 5 to 100 in steps of 1, default 20
+- Slab thickness (in): slider from 4 to 12 in steps of 0.5, default 6
+
+## Outputs
+- Concrete to order (cubic yards), shown large and bold
+- A plan-view diagram of the slab drawn to scale, with the length and
+  width labeled, that redraws as the sliders move
+```
+
 The **Look and feel** section decides whether the app looks like a homework assignment or a professional tool. An agent builds as plain an app as you ask for, so describe the one you want, for example: "Clean and professional, like a commercial engineering web app, with white cards, one accent color, and an example already loaded when it opens."
 
 The **Calculations** and **Validation** sections make the difference between an engineering app and a toy. If you leave the equations to the agent, it will pick some, and they may be wrong in ways that are hard to see. If you write them down, you can check its work.
 
-### 2. Have the agent review the spec
+Your first draft doesn't have to be complete. Each section can start as a rough list, such as the inputs you can think of or the equations you know you need, and you will fill in the details with the agent in Step 2. The agent is especially helpful for the **Inputs** and **Calculations** sections, where it is easy to miss something.
 
-Before any code is written, ask the agent to critique your spec. Open the Copilot chat panel, switch to **Plan** mode so it can't change any files, and enter:
+### 2. Write and review the spec with the agent
 
-!!! prompt "Prompt"
-    Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
+Now you and the agent work through the spec together until it is complete and correct. Do all of this in **Plan** mode, and start each request by telling the agent not to build anything. You are only working on the spec, and an agent that starts writing code too early will build something you haven't finished deciding on.
 
-Read its suggestions and decide which ones to take. The agent is good at spotting a missing input, an undefined variable, or a unit that doesn't match, and it will often ask questions you hadn't thought of, such as what the app should do with a negative span. It is less reliable about engineering judgment, so check any change it suggests to your equations against your textbook or notes. Update the spec, and commit it before moving on.
-
-### 3. Ask the agent to build it
-
-Switch the chat panel to **Interactive** mode and point it at your spec:
+**2a. Review the whole spec.** Open the Copilot chat panel, switch to **Plan** mode, and have the agent read your draft. Some questions can only be answered by looking at the whole spec at once: Is anything missing? Are these the right sections? Are they in a sensible order?
 
 !!! prompt "Prompt"
-    Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put all calculations in clearly named functions.
+    Read spec.md. Don't write any code or build anything. We are only working on the spec. First, tell me in a few sentences what you think the app will do. Then look at the spec as a whole: is anything missing, are these the right sections, and are they in a sensible order? Don't go into the details of each section yet.
 
-The last sentence keeps the calculations in their own functions, where you and the agent can find and check them.
+Check that its summary matches what you have in mind. If it doesn't, your spec isn't clear yet. Fix the big-picture problems before moving on.
+
+**2b. Work through one section at a time.** Go through the spec one section at a time, usually in order: Inputs, Calculations, Outputs, Look and feel, Validation, and Out of scope. Finish each section before starting the next. For example:
+
+!!! prompt "Prompt"
+    Let's work on just the Inputs section of spec.md. Don't build anything. Ask me about anything that is unclear, tell me if any inputs are missing, and suggest a range, a default, and a control (slider, number box, or dropdown) for each one.
+
+!!! prompt "Prompt"
+    Now the Calculations section. Don't build anything. Check each equation and its units, suggest any missing equations,  list any variable that isn't defined, and tell me if any calculation the outputs need is missing.
+
+Answer its questions and decide which suggestions to take. The agent is good at spotting a missing input, an undefined variable, or a unit that doesn't match, and it will often ask questions you hadn't thought of, such as what the slab app should do if the thickness is set to zero. It is less reliable about engineering judgment, so check any change it suggests to your equations against your textbook or notes.
+
+**2c. Check the whole spec again.** When every section is done, have the agent read the whole spec one more time:
+
+!!! prompt "Prompt"
+    Read spec.md again. Don't build anything. List anything that is still ambiguous, missing, or inconsistent between sections, and point out anything that will be hard to build.
+
+**Making the changes.** Because `spec.md` is a plain text file, you can change it in any of these ways, and you can mix them:
+
+- **Edit the file yourself.** Open `spec.md`, type your changes directly, and save the file (**Ctrl+S** on Windows, **Cmd+S** on Mac).
+- **Ask the agent to change it.** For example, "Update spec.md with the input ranges we agreed on. Only edit spec.md. Don't build anything." Switch to **Interactive** mode first, because Plan mode can't edit files, then switch back to **Plan** mode for the next section.
+- **Leave notes and questions in the file.** This is often the easiest. Add lines anywhere in the spec, then save the file (**Ctrl+S** or **Cmd+S**) so the agent reads your latest version. For example:
+
+    ```
+    [NOTE: Should the diagram also show the thickness in a side view?]
+    [NOTE: Show the volume in cubic feet as well as cubic yards.]
+    ```
+
+    The format doesn't matter, as long as you tell the agent what you did. In **Interactive** mode, enter:
+
+    !!! prompt "Prompt"
+        I added notes to spec.md in lines that start with [NOTE. Answer each question, make the changes they ask for in spec.md, and remove the notes when you're done. Don't build anything.
+
+**Editing a `.md` file in VS Code.** When you click `spec.md` in the Explorer panel, it opens as plain text, with the `#` marks and other Markdown symbols showing. You can edit it that way. To see a formatted version, click **Text Editor** at the top right of the file and choose a different view:
+
+![The view menu for a Markdown file, with Text Editor, Markdown Preview, and Markdown Editor](images/vscode_md_view_menu.png){:width="700px"}
+
+- **Markdown Preview** shows the formatted file, but you can't edit it there.
+- **Markdown Editor** shows the formatted file and lets you edit it. Click the pencil icon at the top right to start editing.
+
+![The Markdown Editor view, with the pencil icon at the top right](images/vscode_md_editor.png){:width="700px"}
+
+Switch back to **Text Editor** any time from the same menu.
+
+When you're happy with the spec, commit it before moving on.
+
+### 3. Ask the agent to build it, in stages
+
+Don't ask the agent to build the whole app in one step. If it builds everything at once and something is wrong, it's hard to tell where the problem is. Build it in stages instead, and check and commit each stage before starting the next. A problem is much easier to fix when you know it came from the last small change.
+
+**3a. Plan the stages.** In **Plan** mode, ask the agent to help you break the work into stages:
+
+!!! prompt "Prompt"
+    Read spec.md. Don't write any code. Suggest how to build this app in 4 to 6 stages, starting with a mockup of the page layout with no real calculations. Each stage should be small enough that I can test it before moving on. For each stage, tell me what I should check when it's done.
+
+Adjust the stages until they make sense to you. Then switch to **Interactive** mode and ask the agent to add them to the end of `spec.md` under a heading such as `## Build stages`, so you and the agent can refer to them later.
+
+**3b. Build a mockup.** The first stage is a mockup: a page that shows what the finished app will look like, with the inputs, the output numbers, and the plots in place, but with made-up values instead of real calculations. In **Interactive** mode, enter:
+
+!!! prompt "Prompt"
+    Build stage 1 from the Build stages section of spec.md: a mockup of the app as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Show every input, output, and plot from the spec, filled with realistic placeholder values. Don't write any calculations yet.
+
+Double-click `index.html` to open it in your browser. This is the time to fix the look and layout, before any calculations depend on it. Ask for changes until you like it, for example:
+
+Here is an example of changing the layout after you look at it. You may have a different prompt or plan. 
+!!! prompt "Prompt"
+    Put the sliders in a card on the left and the slab diagram on the right. Make the cubic yards to order larger, and label every dimension on the diagram with units.
+
+When the mockup looks right, commit it.
+
+**3c. Build the rest one stage at a time.** For each remaining stage, ask the agent to build just that stage:
+
+!!! prompt "Prompt"
+    Build stage 2 from the Build stages section of spec.md. Only build this stage. Put all calculations in clearly named functions.
+
+Refresh the page in your browser and test the stage the way the plan says to (Steps 4 and 5 below explain how to find errors and check your answers). You can change the layout here also.  If something is wrong, describe the problem and let the agent fix it for example (this may not happen in your code):
+
+!!! prompt "Prompt"
+    The volume shows 133.3 cubic yards for a 20 ft x 30 ft x 6 in slab with no waste, but it should be 11.1 cubic yards. Check whether the thickness is converted from inches to feet.
+
+When the stage works, look over the changes in the **Source Control** panel so you understand what the agent did, then commit and move on to the next stage. Asking for calculations in clearly named functions keeps them where you and the agent can find and check them.
 
 ### 4. Run it and look for errors
 
@@ -129,11 +219,34 @@ Agents write clear, specific commit messages, because they know exactly what the
 
 ### 7. Add one feature at a time
 
-Ask for one change per request: "Add a slider for the load," then "Color the members by force," then "Add a cost total." Test and commit after each. A long list of changes in one request is much harder to check, and when something breaks you won't know which change caused it.
+Now you have a basic working app that gives correct answers. This is where you make it more useful and more polished by adding capabilities and better outputs. For the slab app, you might add:
+
+- A selector for the slab shape: rectangle, L-shape, or circle, with the diagram changing to match
+- A 3D view of the slab that you can rotate by dragging it
+- The number of 10-cubic-yard trucks needed, shown as truck icons
+- A cost breakdown table for the concrete, delivery, and pump truck
+- A warning, shown in red, when the slab is thinner than 4 in
+
+Come up with your own ideas, or work with the agent to decide what to add. In **Plan** mode, enter:
+
+!!! prompt "Prompt"
+    Read spec.md and index.html. Don't write any code. I want to make this app more useful to a practicing engineer and more polished to look at. Suggest 5 to 8 features I could add, such as new inputs, better plots, or drawings. For each one, explain what it adds, how hard it will be to build, and whether it would change any of the calculations.
+
+Iterate on the plan before anything is built. Ask follow-up questions, drop ideas you don't want, add your own, and ask the agent to describe exactly how a feature will look and work, for example:
+
+!!! prompt "Prompt"
+    For the truck icons, describe what they will look like. Where will they go on the page, how will a partly full last truck be shown, and what happens when I move the thickness slider?
+
+When you've settled on the features, add them to `spec.md` so the spec still describes the whole app. Then switch to **Interactive** mode and build them **one at a time**:
+
+!!! prompt "Prompt"
+    Add the slab shape selector described in spec.md. Only add this one feature.
+
+After each feature, refresh the page, check that it works and looks the way you want, and make sure the validation case still gives the right answers. Ask for changes until it's right, then commit before starting the next feature. A long list of changes in one request is much harder to check, and when something breaks you won't know which change caused it.
 
 ## Tips for Working with the Agent
 
-- **Be specific about what you see.** "The deflection is 12 times too large" is much more useful than "it's broken."
+- **Be specific about what you see.** "The volume is 12 times too large" is much more useful than "it's broken."
 - **Ask it to explain.** "Explain how the solve function works, step by step" is a good way to check that the calculation matches your spec.
 - **Ask it to check its own work.** "Compare the formulas in index.html to the Calculations section of spec.md and list any differences."
 - **Update the spec.** When you change your mind about how something should work, change the spec first, then ask the agent to update the app to match. The spec stays the single description of what the app is supposed to do.
@@ -150,9 +263,9 @@ Copilot, Codex, and Claude Code all read a file named `AGENTS.md` at the top of 
 The agent will then keep a **prompt log** in `prompts.md`, a running record of how the app was built:
 
 ```markdown
-1. Asked to build the app from spec.md. Built index.html; forces were shown in kips instead of lb.
-2. Asked to use lb everywhere. Changed the units in the solver and labels. Fixed.
-3. Validation: AB matched, BC had the wrong sign. Asked to make tension positive. Fixed.
+1. Asked to build stage 1 (mockup) from spec.md. Built index.html; the slab diagram wasn't drawn to scale.
+2. Asked to draw the diagram to scale. Changed the drawing function. Fixed.
+3. Validation: volume was 12 times too large because thickness wasn't converted from inches to feet. Asked to convert it. Fixed.
 ```
 
 Read the log before you submit an assignment, and correct anything the agent glossed over, such as a fix that didn't actually work. The log replaces the rule from earlier homework about commenting AI-written code. Graders use it to see how you directed the agent, and it will help your team write up your final project.
@@ -178,8 +291,15 @@ In class, you will build an app from a spec your instructor gives you, and you w
 
 - The user enters the slab length and width (ft), thickness (in), a waste factor (%), and the price of concrete per cubic yard
 - The app shows the volume in cubic yards (rounded up to the nearest quarter yard, which is how concrete is ordered) and the total cost
+- The app shows a diagram of the slab with its dimensions labeled
 
-Use the seven sections from [Write a spec](#1-write-a-spec). In the Validation section, work one example by hand and give its exact inputs and outputs. You do not need to build the app.
+Use the seven sections from [Write a spec](#1-write-a-spec). Describe the interface as well as the calculations:
+
+- In **Inputs**, give each value's units, range, and default, and say what control the user enters it with: a slider, a number box, or a dropdown. Choose the control that fits each value. A slider is good for a dimension you want to try many values of, and a number box is better for an exact value like a price.
+- In **Outputs**, say how each result is shown (a large number, a table, a diagram) and what the diagram looks like: plan view or 3D, what is labeled, and whether it redraws as the inputs change.
+- In **Look and feel**, describe the layout: where the controls, results, and diagram go on the page.
+
+In the Validation section, work one example by hand and give its exact inputs and outputs. You do not need to build the app.
 
 Save it as `spec.md` and upload it with your Pre-Class Quiz.
 

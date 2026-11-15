@@ -28,27 +28,70 @@ Notice the **Look and feel** section. It is the reason these apps look professio
 
 Ask the agent to commit.
 
-## Step 3 - Review the Spec
+## Step 3 - Work Through the Spec with the Agent
 
-Even a spec someone else wrote can be improved. In the Copilot chat panel, switch to **Plan** mode and enter:
+The spec you pasted in is a starting point, not a finished plan. Work through it with the agent until it describes the app you want, the way the [reading](web_read.md#2-write-and-review-the-spec-with-the-agent) describes. Stay in **Plan** mode for all of this, and tell the agent not to build anything.
 
-!!! prompt "Prompt"
-    Read spec.md. Don't write any code. List anything in this spec that is ambiguous, missing, or inconsistent, check the equations in the Calculations section, and point out anything that will be hard to build. Suggest improvements.
+1. **Make sure the spec has everything.** Before working on any details, check that the spec covers everything the app needs. In the Copilot chat panel, switch to **Plan** mode and enter:
 
-Discuss the suggestions with the people around you. Take any that make the spec clearer, and skip any that add features you don't need yet. Update `spec.md` and ask the agent to commit.
+    !!! prompt "Prompt"
+        Read spec.md. Don't write any code or build anything. We are only working on the spec. First, tell me in a few sentences what you think the app will do. Then look at the spec as a whole: is anything the app needs missing, and are the sections in a sensible order? Don't go into the details of each section yet.
 
-## Step 4 - Build It
+    Check that its summary matches what you want the app to do. Add any missing pieces to the spec before going on.
 
-Switch to **Interactive** mode and enter:
+2. **Make each section complete, and the way you want it.** Go through the sections one at a time, in order: Inputs, Calculations, Outputs, Look and feel, Validation, and Out of scope. For each one, ask the agent to help you fill in what's missing, then decide what you want. For example:
 
-!!! prompt "Prompt"
-    Read spec.md and build the app it describes as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Put the calculations in their own clearly named functions, separate from the drawing code.
+    !!! prompt "Prompt"
+        Let's work on just the Inputs section of spec.md. Don't build anything. Ask me about anything that is unclear, tell me if any inputs are missing, and check that each one has units, a range, a default, and a control.
 
-Watch what the agent does. It will probably write the file in pieces, and it may ask permission to run commands. When it finishes, double-click `index.html` to open it in your browser.
+    !!! prompt "Prompt"
+        Now the Calculations section. Don't build anything. Check each equation and its units, list any variable that isn't defined, and tell me if any calculation the outputs need is missing.
 
-Try every input. If something doesn't work, describe exactly what you did and what happened, and ask the agent to fix it. Check the browser's developer console for red error messages (**Ctrl+Shift+J** on Windows, or **Cmd+Option+J** in Chrome on a Mac) and paste any you find into the chat.
+    The answers are your decisions, not the agent's. Discuss them with the people around you. If you'd rather have a slider than a number box, or want a result shown in a table instead of a sentence, change it. Skip suggestions that add features you don't need yet.
 
-When the app works, ask the agent to commit.
+3. **Update the spec after each section** before moving on to the next. Edit `spec.md` yourself, add `[NOTE` lines, or ask the agent in **Interactive** mode to "only edit spec.md," as described in the reading. Save the file. When every section is done, ask the agent to commit.
+
+The spec isn't frozen after this step. As you build the app stage by stage in Step 4, you will find things you missed and change your mind about others. When that happens, update the spec first, then have the agent build from it, so the spec always describes the app.
+
+## Step 4 - Build It in Stages
+
+Don't ask for the whole app at once. Build it in stages, and look at what the agent changed after each one. If you understand each small change, you'll know where to look when something breaks.
+
+Some parts of an app, such as the layout, a diagram, or how a plot looks, are hard to get right on paper. For those, go back and forth between the spec and a prototype: build a rough version, look at it, update the spec, and rebuild until it looks the way you want. Only then move on to the next stage. You still need an overview spec of the whole app before you start, though. The agent can only plan sensible stages if it knows what the finished app is supposed to do.
+
+1. **Plan the stages.** In **Plan** mode, enter:
+
+    !!! prompt "Prompt"
+        Read spec.md. Don't write any code. Suggest how to build this app in 4 to 6 stages, starting with a mockup of the page layout with no real calculations. For each stage, tell me what I should check when it's done.
+
+    Adjust the stages until they make sense to you. Then switch to **Interactive** mode and ask the agent to add them to the end of `spec.md` under `## Build stages`.
+
+2. **Build the mockup.** In **Interactive** mode, enter:
+
+    !!! prompt "Prompt"
+        Build stage 1 from the Build stages section of spec.md: a mockup of the app as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Show every input, output, and plot from the spec, filled with realistic placeholder values. Don't write any calculations yet.
+
+    Watch what the agent does. It may ask permission to run commands. When it finishes, double-click `index.html` to open it in your browser and compare it to the **Look and feel** section of the spec. Ask for changes until the layout is right, then ask the agent to commit.
+
+3. **Build the rest one stage at a time.** For each remaining stage, enter:
+
+    !!! prompt "Prompt"
+        Build stage 2 from the Build stages section of spec.md. Only build this stage. Put the calculations in their own clearly named functions, separate from the drawing code.
+
+    After each stage:
+
+    - Look at the changes in the **Source Control** panel so you know what the agent did.
+    - Refresh the page and check the stage the way your plan says to. Try every input the stage added.
+    - If something doesn't work, describe exactly what you did and what happened, and ask the agent to fix it. Check the browser's developer console for red error messages (**Ctrl+Shift+J** on Windows, or **Cmd+Option+J** in Chrome on a Mac) and paste any you find into the chat.
+    - If the stage shows you something missing or something you want done differently, update `spec.md` first, then ask the agent to change the app to match.
+    - When the stage works, ask the agent to commit, then move on to the next stage.
+
+    Every change you make while building is also a change to the spec. If you ask for a new slider or a different layout and only the app changes, the spec no longer describes your app, and the agent will work from an outdated plan in the next stage. The easiest way to keep them together is to ask the agent to update both, explicitly. For example, in the Concrete Pour Planner:
+
+    !!! prompt "Prompt"
+        Change the waste factor from a number box to a slider from 0 to 15%. Update spec.md first, then change the app to match.
+
+    Check the spec changes in the Source Control panel along with the app changes before you commit.
 
 ## Step 5 - Validate
 
@@ -62,10 +105,11 @@ When every case matches, ask the agent to commit.
 
 Add **two features**, one at a time. Your app's section lists a few ideas, but your own ideas are better. For each feature:
 
-1. Add it to the spec (Inputs, Calculations, and Outputs, as needed), and add a validation case if it computes something new.
-2. Ask the agent to build it.
-3. Try it, and rerun your validation cases to make sure nothing that used to work is broken.
-4. Ask the agent to commit.
+1. Plan it with the agent in **Plan** mode before anything is built. Ask it how the feature will look and work and what it will change, and don't build anything yet.
+2. Add it to the spec (Inputs, Calculations, and Outputs, as needed), and add a validation case if it computes something new.
+3. In **Interactive** mode, ask the agent to build only this feature.
+4. Look at the changes in the Source Control panel, try the feature, and rerun your validation cases to make sure nothing that used to work is broken.
+5. Ask the agent to commit.
 
 ## Step 7 - Publish
 
@@ -75,6 +119,9 @@ Add **two features**, one at a time. Your app's section lists a few ideas, but y
 4. Send the link to someone sitting near you and try each other's features.
 
 ---
+
+!!! note "About these specs"
+    The specs below are much more detailed than we would expect you to write on your own at first. They are what a spec looks like after several rounds of working through it with an agent, as in Step 3. Even so, they aren't perfect, and you can still refine them.
 
 ## Beam Designer
 

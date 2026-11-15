@@ -310,14 +310,14 @@ This section covers running Python on your own computer, tracking code with Git 
     * The basic workflow is **change, test, commit, push**. When an agent's change breaks something, discard it and you are back at your last commit.
     * A **merge conflict** happens when two people change the same lines. Resolve it by choosing which version to keep (or combining them), then commit.
     * A **branch** is a separate line of commits that is merged back into **main** through a **pull request**.
-* **The Agentic Coding Workflow**:
-    1. Write a **spec** (**spec.md**) with Purpose, Inputs, Calculations, Outputs, Validation, and Out of scope.
-    2. Have the agent **review the spec** (in Plan mode, with no code written), and revise it.
-    3. Ask the agent to build from the spec.
+* **The Agentic Coding Workflow**: Work in small steps. Asking the agent to do too much at once makes it hard to understand what it did and to find what broke.
+    1. Write a first draft of the **spec** (**spec.md**) with Purpose, Inputs, Calculations, Outputs, Look and feel, Validation, and Out of scope.
+    2. **Write and review the spec with the agent** in Plan mode, with nothing built: check the whole spec first, then work through it one section at a time.
+    3. **Build in stages**: plan the stages with the agent, build a mockup first, then build and test one stage at a time.
     4. Run the app and check for errors (the browser's developer console, or the terminal for Python).
     5. **Validate** against a hand-worked case.
-    6. Commit.
-    7. Add one feature at a time, updating the spec first.
+    6. Commit after each stage that works, after reviewing the changes in Source Control.
+    7. Add one feature at a time: plan it with the agent, update the spec, then build, test, and commit.
 * **Web Apps**: A single **index.html** file holds the HTML (content), CSS (appearance), and JavaScript (behavior). Publish it from a public repository with **GitHub Pages**.
 * **Desktop Apps**: Python apps with a graphical interface, built with **Tkinter** (which comes with Python) or alternatives such as CustomTkinter and PySide6. The agent writes the interface code; you manage the spec, the plan, and the validation.
 * **Managing a Larger Project**:
@@ -708,7 +708,7 @@ d) apply
 
 9. You should use xlsxwriter when you need more control over the Excel output than pandas provides, such as applying custom cell formatting (colors, borders), writing formulas, creating charts, or inserting images.
 
-10. (1) Write a spec describing the purpose, inputs, calculations, outputs, a hand-worked validation case, and what is out of scope. (2) Have the agent review the spec, and revise it. (3) Ask the agent to build from the spec. (4) Run the app and check for errors. (5) Validate the app against the hand-worked case. (6) Commit. (7) Add features one at a time, updating the spec first and testing and committing after each one.
+10. (1) Write a first draft of the spec describing the purpose, inputs, calculations, outputs, look and feel, a hand-worked validation case, and what is out of scope. (2) Work through the spec with the agent in Plan mode, with nothing built: first the whole spec, then one section at a time. (3) Have the agent build the app in stages, starting with a mockup, one stage at a time. (4) Run the app and check for errors. (5) Validate the app against the hand-worked case. (6) Review the changes and commit after each stage that works. (7) Add features one at a time, planning each with the agent and updating the spec first, then testing and committing after each one. Working in small steps makes it possible to understand what the agent did and to find what broke.
 
 11. Method 1: Reshaping with .reshape(): x.reshape((5, 1)). Method 2: Slicing with np.newaxis: x[:, np.newaxis].
 
