@@ -27,6 +27,20 @@ python mycode.py
 Hello World!
 ```
 
+A `.py` file is a plain text file (sometimes called an ASCII file). It holds only characters, with none of the fonts or formatting a Word document stores, so it is the same kind of file Notepad makes. What makes it a Python file is the `.py` at the end of its name. Windows gives plain text files a `.txt` ending by default.
+
+!!! warning "Turn on file name extensions"
+    Windows and macOS hide the ending of file names by default. If you create a text file and rename it `mycode.py`, you may actually get `mycode.py.txt`, which shows up as `mycode.py`. It looks right, but it is a text file, and `python mycode.py` will say it can't find the file. Turn on file name extensions so you always see the full name:
+
+    - **Windows 11:** In File Explorer, click **View → Show → File name extensions**. On Windows 10, check **File name extensions** on the **View** tab.
+    - **Mac:** In Finder, choose **Finder → Settings** (**Preferences** on older versions), click **Advanced**, and check **Show all filename extensions**.
+
+    ![The File Explorer View menu with Show, File name extensions highlighted](images/windows_file_extensions.png)
+
+**Installing Python**
+
+Colab runs Python on Google's computers, so you never had to install it. On your own computer, Python is a program you download and install, just like VS Code or Excel. You only do this once per computer. The step-by-step instructions for Windows and Mac are in the [Setup Guide](#setup-guide) below.
+
 **Installing packages**
 
 Colab comes with numpy, pandas, matplotlib, and most other packages you have used. Locally, you install each package yourself with **pip**, Python's package manager:
@@ -202,7 +216,8 @@ Two habits will save you a lot of trouble:
     print(f"Hello, {name}!")
     ```
 
-5. Open the terminal (**Terminal → New Terminal**) and run:
+5. Save the file with **Ctrl+S** (**Cmd+S** on a Mac) or **File → Save**. A dot on the file's tab means it has unsaved changes. Python runs the saved file, so if you forget to save, it runs an old or empty version.
+6. Open the terminal (**Terminal → New Terminal**) and run:
 
     ```
     python hello.py

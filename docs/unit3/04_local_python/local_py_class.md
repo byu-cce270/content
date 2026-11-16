@@ -155,6 +155,8 @@ Now make a second commit:
 
 That is the whole Git workflow you will use for the rest of the semester: **change, test, commit, push**.
 
+Pushing only sends your commits up to GitHub. If you or a teammate pushed commits from another computer, your local repository is now behind GitHub's copy. Before you start working, **pull** to catch up: click the **...** menu at the top of the Source Control panel and choose **Pull**. This downloads the new commits and updates your files. **Sync Changes** also pulls before it pushes.
+
 ## Exercise 4 - Meet Your Coding Agent
 
 If your Copilot student license hasn't been approved yet, use the free plan for this exercise.
