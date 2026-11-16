@@ -23,7 +23,7 @@ Open VS Code and click the **Sign In** button. Choose GitHub and follow the prom
 
     ![VS Code with a class folder open and the terminal panel at the bottom](images/vscode_terminal.png){:width="800px"}
 
-4. Check where you are with `pwd` (Mac) or `cd` (Windows). It should be your class folder.
+4. Check where you are with `pwd`. It should be your class folder.
 5. Make a folder for today and move into it:
 
     ```

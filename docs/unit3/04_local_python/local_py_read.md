@@ -190,7 +190,7 @@ At any moment, the terminal is "in" one folder, called the **working directory**
 
 | What it does                           | Mac                  | Windows              |
 |:---------------------------------------|:---------------------|:---------------------|
-| Show which folder you are in           | `pwd`                | `cd`                 |
+| Show which folder you are in           | `pwd`                | `pwd`                |
 | List the files in this folder          | `ls`                 | `dir`                |
 | Move into a folder                     | `cd foldername`      | `cd foldername`      |
 | Move up one folder                     | `cd ..`              | `cd ..`              |
@@ -199,10 +199,15 @@ At any moment, the terminal is "in" one folder, called the **working directory**
 | Install a package                      | `pip3 install name`  | `pip install name`   |
 | Stop a program that is running         | **Ctrl+C**           | **Ctrl+C**           |
 
+!!! note "Command Prompt vs. PowerShell on Windows"
+    Windows has two terminals, **PowerShell** and **Command Prompt**. The VS Code terminal uses PowerShell by default, and every command in the table works there. If the prompt starts with `PS`, such as `PS C:\Users\you\Documents\cce270>`, you are in PowerShell.
+
+    In Command Prompt, `pwd` doesn't work. Type `cd` by itself instead, with nothing after it, and Command Prompt prints the folder you are in. The other commands in the table work the same in both.
+
 Two habits will save you a lot of trouble:
 
 - **Press Tab to finish a file or folder name.** Type `cd Doc` and press Tab, and the terminal fills in `Documents`. This also avoids typos.
-- **Read the error message.** If Python says `No such file or directory`, you are usually in the wrong folder. Run `pwd` (or `cd` on Windows) to check where you are.
+- **Read the error message.** If Python says `No such file or directory`, you are usually in the wrong folder. Run `pwd` to check where you are.
 
 ### Running Your First Script in VS Code
 
