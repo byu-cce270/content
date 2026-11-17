@@ -58,7 +58,42 @@ Open VS Code and click the **Sign In** button. Choose GitHub and follow the prom
 7. Run it from the terminal with `python beam.py` (or `python3 beam.py` on a Mac). Try a 1.0 kip/ft load on a 25 ft span, then 1.5 kip/ft on a 30 ft span. Check the first answer by hand: $M = wL^2/8 = 78.1$ kip-ft.
 8. Run `ls` (Mac) or `dir` (Windows) to see your file, then `cd ..` to move back up to your class folder.
 
-## Exercise 2 - Clone and Run a Game
+## Exercise 2 - Your First GitHub Repository
+
+Now you will put your own code on GitHub.
+
+When you initialize a repository, Git tracks your folder on your own computer. That is a **local repository**. Publishing it copies the repository to GitHub, where it is a **remote repository**. Once your code is on GitHub, you can get to it from any other computer, share it with others by sending them the link, and keep a backup in case something happens to your laptop. Each time you push, GitHub's copy is updated to match your local one.
+
+1. In VS Code, open your `local_python` folder from Exercise 1 (**File → Open Folder**).
+2. Open the **Source Control** panel (the branching icon on the left sidebar, or **Ctrl+Shift+G** / **Cmd+Shift+G**) and click **Initialize Repository**. Git now tracks this folder.
+3. Your `beam.py` file is listed under **Changes**. Type a message in the box at the top, such as `Add beam calculator`, and click **Commit**. If VS Code asks whether to stage all your changes, click **Yes**.
+4. Click **Publish Branch**. Choose **public repository** and accept the suggested name. If VS Code asks you to sign in to GitHub, do so.
+
+    ![Source Control panel after the first commit, showing the Publish Branch button](images/vscode_publish_branch.png){:width="600px"}
+
+5. Click the link VS Code shows (or go to your GitHub profile) and find your repository. Your code is now on GitHub.
+
+Now make a second commit:
+
+1. Change `beam.py` to also print whether the beam passes the L/360 deflection check. For example:
+
+    ```python
+    if delta <= L * 12 / 360:
+        print("Deflection OK")
+    else:
+        print("Deflection too large - choose a stiffer beam")
+    ```
+
+2. Run it to make sure it works.
+3. Commit with the message `Add deflection check`.
+4. Click **Sync Changes** to push the commit to GitHub.
+5. Refresh your repository page on GitHub and click the commit count (the clock icon) to see both commits.
+
+That is the whole Git workflow you will use for the rest of the semester: **change, test, commit, push**.
+
+Pushing only sends your commits up to GitHub. If you or a teammate pushed commits from another computer, your local repository is now behind GitHub's copy. Before you start working, **pull** to catch up: click the **...** menu at the top of the Source Control panel and choose **Pull**. This downloads the new commits and updates your files. **Sync Changes** also pulls before it pushes.
+
+## Exercise 3 - Clone and Run a Game
 
 Python Crash Course, the textbook we've used this semester, builds a game called "Alien Invasion" in Chapters 12–14. Someone has posted a complete version on GitHub, and you will download it with Git, run it, and change it.
 
@@ -82,7 +117,7 @@ Python Crash Course, the textbook we've used this semester, builds a game called
 
 6. Trust the new folder the same way you did in Exercise 1: click **Manage** on the Restricted Mode banner, then click **Trust**.
 
-7. You now have two VS Code windows open: the one from Exercise 1 and the new one with the Alien Invasion project. You can close the Exercise 1 window, but you will use the `local_python` folder again in Exercise 3, so you will need to reopen it then with **File → Open Folder**.
+7. You now have two VS Code windows open: the `local_python` window from Exercise 2 and the new one with the Alien Invasion project. You can close the `local_python` window.
 
 ### Install pygame and Run the Game
 
@@ -117,51 +152,16 @@ Open `settings.py`. Every number that controls how the game plays is defined her
 - Change `bullet_color` to something bright, such as `255, 0, 0`
 - Speed up the aliens by changing `alien_speed_factor`
 
-Now open the **Source Control** panel (the branching icon on the left sidebar, or **Ctrl+Shift+G** / **Cmd+Shift+G**). It lists `settings.py` as changed. Click the file name to see a side-by-side comparison: red lines are what you removed and green lines are what you added. This view will matter a great deal once an AI agent is making the changes.
+Now open the **Source Control** panel. It lists `settings.py` as changed. Click the file name to see a side-by-side comparison: red lines are what you removed and green lines are what you added. This view will matter a great deal once an AI agent is making the changes.
 
 ![Source Control panel listing settings.py, with the side-by-side comparison of the bullet_width change](images/vscode_scm_diff.png){:width="800px"}
 
-
-## Exercise 3 - Your First GitHub Repository
-
-Now you will put your own code on GitHub.
-
-When you initialize a repository, Git tracks your folder on your own computer. That is a **local repository**. Publishing it copies the repository to GitHub, where it is a **remote repository**. Once your code is on GitHub, you can get to it from any other computer, share it with others by sending them the link, and keep a backup in case something happens to your laptop. Each time you push, GitHub's copy is updated to match your local one.
-
-1. In VS Code, open your `local_python` folder from Exercise 1 (**File → Open Folder**).
-2. Open the **Source Control** panel and click **Initialize Repository**. Git now tracks this folder.
-3. Your `beam.py` file is listed under **Changes**. Type a message in the box at the top, such as `Add beam calculator`, and click **Commit**. If VS Code asks whether to stage all your changes, click **Yes**.
-4. Click **Publish Branch**. Choose **public repository** and accept the suggested name. If VS Code asks you to sign in to GitHub, do so.
-
-    ![Source Control panel after the first commit, showing the Publish Branch button](images/vscode_publish_branch.png){:width="600px"}
-
-5. Click the link VS Code shows (or go to your GitHub profile) and find your repository. Your code is now on GitHub.
-
-Now make a second commit:
-
-1. Change `beam.py` to also print whether the beam passes the L/360 deflection check. For example:
-
-    ```python
-    if delta <= L * 12 / 360:
-        print("Deflection OK")
-    else:
-        print("Deflection too large - choose a stiffer beam")
-    ```
-
-2. Run it to make sure it works.
-3. Commit with the message `Add deflection check`.
-4. Click **Sync Changes** to push the commit to GitHub.
-5. Refresh your repository page on GitHub and click the commit count (the clock icon) to see both commits.
-
-That is the whole Git workflow you will use for the rest of the semester: **change, test, commit, push**.
-
-Pushing only sends your commits up to GitHub. If you or a teammate pushed commits from another computer, your local repository is now behind GitHub's copy. Before you start working, **pull** to catch up: click the **...** menu at the top of the Source Control panel and choose **Pull**. This downloads the new commits and updates your files. **Sync Changes** also pulls before it pushes.
 
 ## Exercise 4 - Meet Your Coding Agent
 
 If your Copilot student license hasn't been approved yet, use the free plan for this exercise.
 
-1. Open the Alien Invasion folder from Exercise 2. In the Source Control panel, discard your changes to `settings.py` (right-click the file and choose **Discard Changes**) so the game is back to its original state.
+1. In the Alien Invasion window from Exercise 3, open the Source Control panel and discard your changes to `settings.py` (right-click the file and choose **Discard Changes**) so the game is back to its original state.
 2. Open the Copilot chat panel (the chat icon at the top of VS Code) and make sure the mode is set to **Plan**.
 
      ![The Copilot chat panel with the mode picker open](images/vscode_mode_picker.png){:width="500px"}
@@ -195,7 +195,7 @@ Steps 4–6 are the habit to build: **ask the agent, review what it changed, tes
 
         When you cloned the game, Git remembered where it came from and named that location `origin`. This command disconnects your local copy from the original repository. Your files and commits stay on your computer.
 
-    2. Open the Source Control panel. Because your copy is no longer connected to any GitHub repository, it now shows a **Publish Branch** button, just like in Exercise 3.
+    2. Open the Source Control panel. Because your copy is no longer connected to any GitHub repository, it now shows a **Publish Branch** button, just like in Exercise 2.
 
     3. Click **Publish Branch** and choose **public repository**. You may want to give it a new name, such as `my-alien-invasion`. This creates a new repository in your GitHub account and makes it the new `origin`.
 
