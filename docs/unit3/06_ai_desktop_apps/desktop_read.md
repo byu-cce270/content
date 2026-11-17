@@ -80,7 +80,7 @@ Upload your screenshot and your two hand-worked cases with your Pre-Class Quiz.
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
+| <div style="text-align: right">**Total**</div> |       15        |
 
 ---
 

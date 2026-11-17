@@ -118,6 +118,23 @@ Add **two features**, one at a time. Your app's section lists a few ideas, but y
 3. After a few minutes, refresh the page to see your site's address. Open it on your phone.
 4. Send the link to someone sitting near you and try each other's features.
 
+## Turning in/Rubric
+
+Upload `index.html` to Learning Suite, and paste your GitHub Pages address (for example, `https://your-username.github.io/your-repo-name/`) in the submission comments.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|  File uploaded incorrectly  |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |
+
 ---
 
 !!! note "About these specs"

@@ -290,7 +290,7 @@ If something won't install, upload a screenshot of the error instead and come to
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
+| <div style="text-align: right">**Total**</div> |       10        |
 
 ---
 

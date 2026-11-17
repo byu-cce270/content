@@ -116,3 +116,20 @@ For each feature:
 
 2. Ask the agent to commit, then click **Publish Branch** and publish a public repository.
 3. Trade repository addresses with a neighbor. Clone their repository (**File → New Window**, then **Clone Git Repository**), follow their README, and run their app. If the README left anything out, tell them.
+
+## Turning in/Rubric
+
+Upload a **`.zip` of your `beam_desktop` folder** to Learning Suite. On Windows, right-click the folder and choose **Send to → Compressed (zipped) folder**. On a Mac, right-click the folder and choose **Compress "beam_desktop"**. Paste your GitHub repository address in the submission comments.
+
+**Rubric:**
+
+|                      Item                      | Points Possible |
+|:----------------------------------------------:|:---------------:|
+| <div style="text-align: right">**Total**</div> |        5        |
+
+The following is not a part of the rubric, but specifies how you can lose points. For example: if you fail to upload your file correctly.
+
+| **Reasons for Points Lost** |    **Amount**     |  
+|:---------------------------:|:-----------------:|
+|  File uploaded incorrectly  |       -10%        |
+|  Turned in late (per week)  | -10% (up to -50%) |

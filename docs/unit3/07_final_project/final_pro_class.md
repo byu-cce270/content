@@ -1,6 +1,6 @@
 # In-Class Exercise: Team Git and Project Kickoff
 
-Sit with your final project team for this exercise. You will set up a shared repository, cause a merge conflict on purpose and have the agent resolve it, and then start your project's spec.
+Sit with your final project team for this exercise. You will set up a shared repository, cause a merge conflict on purpose and have the agent resolve it, and then start your project's spec. You don't turn anything in for this exercise.
 
 ## Part 1 - Share a Repository
 

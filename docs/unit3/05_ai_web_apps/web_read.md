@@ -317,7 +317,7 @@ Save it as `spec.md` and upload it with your Pre-Class Quiz.
 
 |                      Item                      | Points Possible |
 |:----------------------------------------------:|:---------------:|
-| <div style="text-align: right">**Total**</div> |        3        |
+| <div style="text-align: right">**Total**</div> |       15        |
 
 ---
 

@@ -2,6 +2,8 @@
 
 Before class, you should have installed Python, VS Code, and Git and applied for the GitHub Student Developer Pack, as described in the [reading](local_py_read.md). If any of that didn't work, get a TA's help before starting Exercise 2.
 
+You don't turn anything in for this exercise.
+
 On a Mac, type `python3` and `pip3` wherever this page says `python` and `pip`. If a command gives an error, find the message under [Troubleshooting](#troubleshooting) at the end of this page.
 
 ## Sign In to GitHub
