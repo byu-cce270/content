@@ -12,7 +12,7 @@ Each app was built by an agent from the spec on this page, with no other instruc
 
 1. Make a folder named `first_app` in your class folder and open it in VS Code.
 2. In the **Source Control** panel, click **Initialize Repository**.
-3. Create a file named `AGENTS.md` containing this line, so the agent keeps your prompt log (see the [reading](web_read.md#standing-instructions-and-the-prompt-log)):
+3. In the Explorer panel, click the **New File** icon next to the folder name and create a file named `AGENTS.md` containing this line, so the agent keeps your prompt log (see the [reading](web_read.md#standing-instructions-and-the-prompt-log)):
 
     ```markdown
     - After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked.
@@ -22,7 +22,7 @@ In Using Python Locally you made commits yourself. From here on, the agent makes
 
 ## Step 2 - Write the Spec
 
-Create a file named `spec.md` and paste in the spec for your app from the sections below. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
+Create a file named `spec.md` the same way and paste in the spec for your app from the sections below. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
 
 Notice the **Look and feel** section. It is the reason these apps look professional on the first try. An agent will build exactly as plain an app as you ask for, so describe the app you want: who it looks like, how it is laid out, and what the user sees when it first opens.
 

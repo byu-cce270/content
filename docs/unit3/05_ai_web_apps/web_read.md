@@ -45,7 +45,14 @@ Here is a complete web app in one file. It converts a flow rate from cubic feet 
 
 The HTML tags in the `<body>` put a box, a button, and an empty paragraph on the page. The `<style>` section sets the font and margins. The JavaScript inside `<script>` defines a function, much like a Python `def`, that reads the input box, multiplies, and writes the answer into the paragraph. You can read most of it with the Python you already know: `const` creates a variable, `function` defines a function, and `toFixed(1)` rounds to one decimal place like `round(gpm, 1)`.
 
-To run it, save it as `index.html` and double-click the file. It opens in your web browser. No installation and no server are required, which is why we will build every web app in this class as a **single HTML file**: it runs on any computer, and you can email it, upload it, or publish it as a web page.
+To run it:
+
+1. Make a folder named `flow_converter` in your class folder and open it in VS Code (**File → Open Folder**).
+2. In the Explorer panel, hover over the folder name and click the **New File** icon. Type `index.html` and press Enter. The empty file opens in the editor.
+3. Copy the code above into `index.html` and save it with **Ctrl+S** (**Cmd+S** on a Mac).
+4. Right-click `index.html` in the Explorer panel and choose **Reveal in File Explorer** (Windows) or **Reveal in Finder** (Mac). Double-click the file there, and it opens in your web browser.
+
+No installation and no server are required, which is why we will build every web app in this class as a **single HTML file**: it runs on any computer, and you can email it, upload it, or publish it as a web page.
 
 A single file can still do a lot. JavaScript can draw on a canvas, animate, make charts, show maps, and download live data from public sources such as the USGS. For charts and maps, the agent can load free libraries like Chart.js or Leaflet with one line that links to a public copy online.
 
@@ -307,7 +314,7 @@ Use the seven sections from [Write a spec](#1-write-a-spec). Describe the interf
 
 In the Validation section, work one example by hand and give its exact inputs and outputs. You do not need to build the app.
 
-Save it as `spec.md` and upload it with your Pre-Class Quiz.
+Write it in VS Code in a file named `spec.md`, created the same way as `index.html` in [What a Web App Is](#what-a-web-app-is), and upload it with your Pre-Class Quiz.
 
 ---
 
