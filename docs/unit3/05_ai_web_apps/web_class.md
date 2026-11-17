@@ -24,13 +24,51 @@ In Using Python Locally you made commits yourself. From here on, the agent makes
 
 Create a file named `spec.md` the same way and paste in the spec for your app from the sections below. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
 
+!!! note "These are finished specs, not first drafts"
+    The specs on this page are polished, complete examples. Each one reached this level of detail only after several rounds of working through it with an agent. When you write a spec of your own, your first draft will be much shorter, with a rough list under each heading. A first draft of the Beam Designer spec might have looked like this:
+
+    ```markdown
+    # Beam Designer
+
+    ## Purpose
+    Shear, moment, and deflection diagrams for a beam, with a check of
+    whether the beam is strong and stiff enough.
+
+    ## Inputs
+    - Simply supported or cantilever, and the span (ft)
+    - Point loads and uniform loads
+    - A steel W-shape or a lumber size
+
+    ## Calculations
+    - Reactions, shear, and moment from statics
+    - Deflection
+    - Bending stress fb = M/S, compared to the allowable stress
+    - Deflection compared to L/360
+
+    ## Outputs
+    - The beam with its loads, and the three diagrams
+    - Pass or fail for bending and deflection
+
+    ## Look and feel
+    Clean and professional, with an example beam loaded when it opens.
+
+    ## Validation
+    20 ft simply supported W12x26 with 1 kip/ft: M = 50.0 kip-ft,
+    deflection 0.609 in.
+
+    ## Out of scope
+    Continuous beams and buckling.
+    ```
+
+    Working through a draft like this with the agent, as in Step 3, turns it into a spec like the ones below. The agent asks things you might not have decided yet, such as which steel sections to include, what range of spans to allow, and what to do with a load that extends past the end of the beam. In the homework, you will start from a short draft of your own.
+
 Notice the **Look and feel** section. It is the reason these apps look professional on the first try. An agent will build exactly as plain an app as you ask for, so describe the app you want: who it looks like, how it is laid out, and what the user sees when it first opens.
 
 Ask the agent to commit.
 
 ## Step 3 - Work Through the Spec with the Agent
 
-The spec you pasted in is a starting point, not a finished plan. Work through it with the agent until it describes the app you want, the way the [reading](web_read.md#2-write-and-review-the-spec-with-the-agent) describes. Stay in **Plan** mode for all of this, and tell the agent not to build anything.
+On your own projects, this is the step where a short first draft grows into a complete spec. The spec you pasted in is already complete, so the agent will have less to add, but go through the same steps so you learn them, and change anything you want the app to do differently. Work through it the way the [reading](web_read.md#2-write-and-review-the-spec-with-the-agent) describes. Stay in **Plan** mode for all of this, and tell the agent not to build anything.
 
 1. **Make sure the spec has everything.** Before working on any details, check that the spec covers everything the app needs. In the Copilot chat panel, switch to **Plan** mode and enter:
 
@@ -138,7 +176,7 @@ The following is not a part of the rubric, but specifies how you can lose points
 ---
 
 !!! note "About these specs"
-    The specs below are much more detailed than we would expect you to write on your own at first. They are what a spec looks like after several rounds of working through it with an agent, as in Step 3. Even so, they aren't perfect, and you can still refine them.
+    The specs below are finished examples. A first draft of your own will be much shorter, like the one in [Step 2](#step-2-write-the-spec), and it gets this detailed only after several rounds of working through it with an agent. Even these aren't perfect, and you can still refine them.
 
 ## Beam Designer
 

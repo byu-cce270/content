@@ -21,7 +21,7 @@
 
 Choose one of the eight problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
 
-1. Write a first draft of the spec, including a validation case you have worked by hand
+1. Write a first draft of the spec, including a validation case you have worked by hand. It can be short and rough, like the [first-draft example](web_class.md#step-2-write-the-spec) in the in-class exercise.
 2. Work through the spec with the agent in Plan mode, first the whole spec and then one section at a time
 3. Have the agent build the app in stages, starting with a mockup, and test and commit each stage
 4. Validate it against your hand calculation
