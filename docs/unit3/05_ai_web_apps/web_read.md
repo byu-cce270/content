@@ -114,7 +114,19 @@ Your first draft doesn't have to be complete. Each section can start as a rough 
 
 ### 2. Write and review the spec with the agent
 
-Now you and the agent work through the spec together until it is complete and correct. Do all of this in **Plan** mode, and start each request by telling the agent not to build anything. You are only working on the spec, and an agent that starts writing code too early will build something you haven't finished deciding on.
+Now you and the agent work through the spec together until it is complete and correct.
+
+The Copilot chat panel (the chat icon at the top of VS Code) has a mode picker that sets how much the agent is allowed to do:
+
+![The Copilot chat panel with the mode picker open](../04_local_python/images/vscode_mode_picker.png){:width="400px"}
+
+- **Plan** reads your files, answers questions, and writes a plan. It doesn't change your files.
+- **Interactive** edits files and runs commands, asking your permission as it goes.
+- **Autopilot** works through a whole task without stopping to ask. You won't use it in this section.
+
+If your picker shows **Ask** and **Agent** instead, use **Ask** wherever these pages say **Plan**, and **Agent** wherever they say **Interactive**.
+
+Do all of the spec work in **Plan** mode, and start each request by telling the agent not to build anything. You are only working on the spec, and an agent that starts writing code too early will build something you haven't finished deciding on.
 
 **2a. Review the whole spec.** Open the Copilot chat panel, switch to **Plan** mode, and have the agent read your draft. Some questions can only be answered by looking at the whole spec at once: Is anything missing? Are these the right sections? Are they in a sensible order?
 
