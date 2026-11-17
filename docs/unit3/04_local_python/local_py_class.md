@@ -2,6 +2,8 @@
 
 Before class, you should have installed Python, VS Code, and Git and applied for the GitHub Student Developer Pack, as described in the [reading](local_py_read.md). If any of that didn't work, get a TA's help before starting Exercise 2.
 
+On a Mac, type `python3` and `pip3` wherever this page says `python` and `pip`. If a command gives an error, find the message under [Troubleshooting](#troubleshooting) at the end of this page.
+
 ## Sign In to GitHub
 
 Open VS Code and click the **Sign In** button. Choose GitHub and follow the prompts in your browser. Signing in lets VS Code push your code to GitHub and turns on Copilot. If you already signed in as part of the reading, your account name appears there instead and you can skip this step.
@@ -121,27 +123,27 @@ Python Crash Course, the textbook we've used this semester, builds a game called
 
 ### Install pygame and Run the Game
 
-Open the terminal (**Terminal → New Terminal**) and install pygame:
+1. Open the terminal (**Terminal → New Terminal**) and install pygame (`pip3` on a Mac):
 
-```bash
-pip install pygame-ce
-```
+    ```bash
+    pip install pygame-ce
+    ```
 
-`pygame-ce` is the community edition of pygame. It uses the same `import pygame` statement, and unlike the original package it supports the newest versions of Python.
+    The game is built on pygame, so if you skip this step it stops with `ModuleNotFoundError: No module named 'pygame'`. `pygame-ce` is the community edition of pygame. It uses the same `import pygame` statement, and unlike the original package it supports the newest versions of Python.
 
-The project files appear in the Explorer panel on the left. `alien_invasion.py` starts the game, and the other files hold the ship, the aliens, the scoreboard, and the settings.
+2. The project files appear in the Explorer panel on the left. `alien_invasion.py` starts the game, and the other files hold the ship, the aliens, the scoreboard, and the settings.
 
-![vscode_main.png](images/vscode_main.png)
+    ![vscode_main.png](images/vscode_main.png)
 
-Run the game:
+3. Run the game (`python3` on a Mac):
 
-```bash
-python alien_invasion.py
-```
+    ```bash
+    python alien_invasion.py
+    ```
 
-![aliens_game.png](images/aliens_game.png){width=800}
+    ![aliens_game.png](images/aliens_game.png){width=800}
 
-Use the arrow keys to move, the space bar to fire, and **Q** to quit.
+    Use the arrow keys to move, the space bar to fire, and **Q** to quit.
 
 ### Change the Game
 
@@ -200,3 +202,101 @@ Steps 4–6 are the habit to build: **ask the agent, review what it changed, tes
     3. Click **Publish Branch** and choose **public repository**. You may want to give it a new name, such as `my-alien-invasion`. This creates a new repository in your GitHub account and makes it the new `origin`.
 
     4. Go to your GitHub profile and open the new repository. Your version of the game, including all of your commits, is there. From now on, **Sync Changes** pushes your commits to your own repository.
+
+## Troubleshooting
+
+Find the message you see below. Most problems come from a skipped step, from typing `python` where a Mac expects `python3`, or from running a command in the wrong folder. If none of these fixes the problem, ask a TA.
+
+### `python` or `pip` Isn't Found
+
+**Mac:** `zsh: command not found: python` or `zsh: command not found: pip`
+
+Use `python3` and `pip3`:
+
+```
+python3 beam.py
+pip3 install pygame-ce
+```
+
+**Windows:** `Python was not found` or `The term 'python' is not recognized`
+
+Quit VS Code completely and reopen it. The terminal only finds programs that were installed before VS Code started, so this clears the error if you installed Python while VS Code was open.
+
+If the error is still there, Python was installed without the **Add Python to PATH** box checked. Use `py` in place of `python` for today:
+
+```
+py beam.py
+py -m pip install pygame-ce
+```
+
+To fix it for good, uninstall Python and reinstall it using the [Setup Guide](local_py_read.md#setup-guide), checking the box this time.
+
+### Python Can't Find Your File
+
+```
+python: can't open file '/Users/you/Documents/cce270/beam.py': [Errno 2] No such file or directory
+```
+
+Python looks for the file in the terminal's working directory, and your file is in a different folder. The path in the message shows where Python looked. To fix it:
+
+1. Run `pwd` to see which folder the terminal is in.
+2. Run `ls` (Mac) or `dir` (Windows) to list the files in that folder.
+3. If your file isn't listed, use `cd` to move to the folder that holds it. Step 8 of Exercise 1 moves you up to your class folder, so `python beam.py` fails there until you run `cd local_python`. For the game, use the terminal in the Alien Invasion window, which opens in the game's folder.
+4. Run `ls` or `dir` again. Once the file is listed, run it.
+
+You can also right-click the file in the Explorer panel and choose **Open in Integrated Terminal**, which opens a new terminal in the folder that holds the file. If the file isn't in any folder you expect, hover over its tab in the editor to see its full path. You may have saved it somewhere else.
+
+The game has a second version of this error:
+
+```
+FileNotFoundError: No file 'images/ship.bmp' found in working directory '...'
+```
+
+Python found `alien_invasion.py`, but the game loads its pictures from the `images` folder inside the working directory. This happens when you run the game from another folder with a path, such as `python Alien-Invasion/alien_invasion.py`. Use `cd` to move into the game folder and run `python alien_invasion.py` from there.
+
+### `ModuleNotFoundError: No module named 'pygame'`
+
+You skipped step 1 of [Install pygame and Run the Game](#install-pygame-and-run-the-game). Run the install command there, then run the game again.
+
+If pip says it installed `pygame-ce` and you still get this error, pip installed it for a different copy of Python than the one running the game. This happens most often on Macs that have more than one Python. Run pip through the same command you use to run the game:
+
+```
+python3 -m pip install pygame-ce
+```
+
+On Windows, use `python -m pip install pygame-ce`, or `py -m pip install pygame-ce` if `python` isn't found.
+
+If the error appears only when you click the ▷ Run button, VS Code is using a different Python than your terminal. Run the game from the terminal.
+
+### `pip install pygame` Ends with `Failed to build`
+
+You installed `pygame` instead of `pygame-ce`. The original pygame package doesn't support the newest versions of Python, so it fails to install. Run `pip install pygame-ce`.
+
+### `IndentationError: unexpected indent`
+
+The pasted code came in indented. Select all the lines (**Ctrl+A** on Windows, **Cmd+A** on Mac), press **Shift+Tab** until every line starts at the left edge, and save.
+
+### Your Changes Don't Show Up
+
+Save the file with **Ctrl+S** (**Cmd+S** on a Mac). Python runs the saved version, and a dot on the file's tab means it has unsaved changes. The game reads `settings.py` only when it starts, so quit with **Q** and run it again after each change.
+
+### Committing Fails with `Make sure you configure your "user.name" and "user.email" in git`
+
+Git needs your name and email before it can commit ([Tell Git who you are](local_py_read.md#2-tell-git-who-you-are) in the reading). Run these in the terminal, using your own name and the email on your GitHub account, then commit again:
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "you@byu.edu"
+```
+
+### Source Control Offers to Install Git
+
+If the Source Control panel shows a button to download Git where **Initialize Repository** should be, VS Code can't find Git. If you installed Git while VS Code was open, quit VS Code and reopen it. Otherwise, install Git using the [Setup Guide](local_py_read.md#setup-guide). On a Mac, run `git --version` in the terminal and click **Install** when it offers the Command Line Tools.
+
+### Changes Lists Files Other Than `beam.py`
+
+You initialized the repository in your class folder instead of `local_python`, so Git is tracking everything in your class folder. Don't commit or publish. Ask a TA to help you remove the repository, then open `local_python` with **File → Open Folder** and start Exercise 2 again.
+
+### Copilot or the ▷ Run Button Doesn't Work
+
+Look at the left end of the status bar at the bottom of the window. If it says **Restricted Mode**, you haven't trusted the folder. Click **Restricted Mode**, then click **Trust**. Each folder you open needs this once, including the Alien Invasion folder.
