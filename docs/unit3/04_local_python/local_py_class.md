@@ -237,22 +237,23 @@ To fix it for good, uninstall Python and reinstall it using the [Setup Guide](lo
 python: can't open file '/Users/you/Documents/cce270/beam.py': [Errno 2] No such file or directory
 ```
 
-Python looks for the file in the terminal's working directory, and your file is in a different folder. The path in the message shows where Python looked. To fix it:
+Python looks for the file in the folder the terminal is in, and your file is in a different folder. In this example, the terminal is in `cce270`, but `beam.py` is in `cce270/local_python`. The terminal prompt also shows the folder: the whole path on Windows, such as `PS C:\Users\you\Documents\cce270>`, and only the last folder on a Mac, such as `cce270 %`.
 
-1. Run `pwd` to see which folder the terminal is in.
-2. Run `ls` (Mac) or `dir` (Windows) to list the files in that folder.
-3. If your file isn't listed, use `cd` to move to the folder that holds it. Step 8 of Exercise 1 moves you up to your class folder, so `python beam.py` fails there until you run `cd local_python`. For the game, use the terminal in the Alien Invasion window, which opens in the game's folder.
-4. Run `ls` or `dir` again. Once the file is listed, run it.
+To open a terminal in the folder that holds your file:
 
-You can also right-click the file in the Explorer panel and choose **Open in Integrated Terminal**, which opens a new terminal in the folder that holds the file. If the file isn't in any folder you expect, hover over its tab in the editor to see its full path. You may have saved it somewhere else.
+1. Find the file in the Explorer panel on the left side of VS Code. If it's inside a folder, click the folder name to show the files in it.
+2. Right-click the file and choose **Open in Integrated Terminal**. A new terminal opens in the folder that holds the file.
+3. Type the command again in the new terminal.
 
-The game has a second version of this error:
+If the file isn't in the Explorer panel, VS Code has a different folder open. Hover over the file's tab at the top of the editor to see where you saved it. Then choose **File → Open Folder**, open that folder, and open a new terminal with **Terminal → New Terminal**.
+
+The game shows the same problem with a different message:
 
 ```
 FileNotFoundError: No file 'images/ship.bmp' found in working directory '...'
 ```
 
-Python found `alien_invasion.py`, but the game loads its pictures from the `images` folder inside the working directory. This happens when you run the game from another folder with a path, such as `python Alien-Invasion/alien_invasion.py`. Use `cd` to move into the game folder and run `python alien_invasion.py` from there.
+The game loads its pictures from the `images` folder, and it finds them only when the terminal is in the game's folder. Right-click `alien_invasion.py` in the Explorer panel, choose **Open in Integrated Terminal**, and run the game from the new terminal.
 
 ### `ModuleNotFoundError: No module named 'pygame'`
 
