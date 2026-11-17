@@ -245,6 +245,8 @@ To open a terminal in the folder that holds your file:
 2. Right-click the file and choose **Open in Integrated Terminal**. A new terminal opens in the folder that holds the file.
 3. Type the command again in the new terminal.
 
+You can also check the folder with `pwd` and move with `cd`, such as `cd local_python` from your class folder.
+
 If the file isn't in the Explorer panel, VS Code has a different folder open. Hover over the file's tab at the top of the editor to see where you saved it. Then choose **File → Open Folder**, open that folder, and open a new terminal with **Terminal → New Terminal**.
 
 The game shows the same problem with a different message:
