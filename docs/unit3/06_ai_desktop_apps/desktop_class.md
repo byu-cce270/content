@@ -5,7 +5,7 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 ## Step 1 - Set Up the Project
 
 1. Make a folder named `beam_desktop` in your class folder.
-2. Copy the Beam Designer spec from the [web apps in-class exercise](../05_ai_web_apps/web_class.md#beam-designer) into a file named `spec.md` in `beam_desktop`. If your class built Beam Designer as its web app, copy your own `spec.md` and `index.html` from your `first_app` folder instead. The agent will use `index.html` as a reference for how the app should behave.
+2. Copy the polished Beam Designer spec from the [web apps in-class exercise](../05_ai_web_apps/web_class.md#beam-designer) into a file named `spec.md` in `beam_desktop`. If your class built Beam Designer as its web app, copy your own `spec.md` and `index.html` from your `first_app` folder instead. The agent will use `index.html` as a reference for how the app should behave.
 3. Copy `AGENTS.md` from your `first_app` folder, so the agent keeps a prompt log for this project too.
 4. Open `beam_desktop` in VS Code, initialize a repository, and ask the agent to commit.
 5. In the terminal, install the packages you'll need:

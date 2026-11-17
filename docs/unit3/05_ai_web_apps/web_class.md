@@ -6,7 +6,7 @@ In this exercise, you will have an agent build a professional engineering web ap
 - **[Site Runoff](#site-runoff):** outline the roofs, pavement, and lawns of a site on satellite imagery, then compute the storm runoff and size the drain pipe
 - **[Concrete Pour Planner](#concrete-pour-planner):** outline a slab on satellite imagery, then compute the concrete to order, the number of trucks, and an arrival schedule for the batch plant
 
-Each app was built by an agent from the spec on this page, with no other instructions. The screenshots show what that first build looked like. Yours will look different, because agents don't give the same answer twice and because you will refine the spec and build the app in stages. That is fine as long as it passes validation.
+Each app was built by an agent from the polished spec on this page, with no other instructions. The screenshots show what that first build looked like. Yours will look different, because agents don't give the same answer twice and because you will refine the spec and build the app in stages. That is fine as long as it passes validation.
 
 ## Step 1 - Set Up the Project
 
@@ -22,45 +22,10 @@ In Using Python Locally you made commits yourself. From here on, the agent makes
 
 ## Step 2 - Write the Spec
 
-Create a file named `spec.md` the same way and paste in the spec for your app from the sections below. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
+Create a file named `spec.md` the same way and paste in the **polished spec** for your app from the sections below. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
 
-!!! note "These are finished specs, not first drafts"
-    The specs on this page are polished, complete examples. Each one reached this level of detail only after several rounds of working through it with an agent. When you write a spec of your own, your first draft will be much shorter, with a rough list under each heading. A first draft of the Beam Designer spec might have looked like this:
-
-    ```markdown
-    # Beam Designer
-
-    ## Purpose
-    Shear, moment, and deflection diagrams for a beam, with a check of
-    whether the beam is strong and stiff enough.
-
-    ## Inputs
-    - Simply supported or cantilever, and the span (ft)
-    - Point loads and uniform loads
-    - A steel W-shape or a lumber size
-
-    ## Calculations
-    - Reactions, shear, and moment from statics
-    - Deflection
-    - Bending stress fb = M/S, compared to the allowable stress
-    - Deflection compared to L/360
-
-    ## Outputs
-    - The beam with its loads, and the three diagrams
-    - Pass or fail for bending and deflection
-
-    ## Look and feel
-    Clean and professional, with an example beam loaded when it opens.
-
-    ## Validation
-    20 ft simply supported W12x26 with 1 kip/ft: M = 50.0 kip-ft,
-    deflection 0.609 in.
-
-    ## Out of scope
-    Continuous beams and buckling.
-    ```
-
-    Working through a draft like this with the agent, as in Step 3, turns it into a spec like the ones below. The agent asks things you might not have decided yet, such as which steel sections to include, what range of spans to allow, and what to do with a load that extends past the end of the beam. In the homework, you will start from a short draft of your own.
+!!! note "Starting specs and polished specs"
+    Each app below has two specs. The **starting spec** is the kind of first draft you would write yourself, with a short, rough list under each heading. The **polished spec** is what that draft became after several rounds of working through it with an agent. Nobody writes a polished spec on the first try. Compare the two for your app to see what the agent's questions added: ranges and defaults for every input, the exact equations and data tables, what to do with unusual inputs, and more validation cases. In the homework, you will start from a short draft of your own.
 
 Notice the **Look and feel** section. It is the reason these apps look professional on the first try. An agent will build exactly as plain an app as you ask for, so describe the app you want: who it looks like, how it is laid out, and what the user sees when it first opens.
 
@@ -68,7 +33,7 @@ Ask the agent to commit.
 
 ## Step 3 - Work Through the Spec with the Agent
 
-On your own projects, this is the step where a short first draft grows into a complete spec. The spec you pasted in is already complete, so the agent will have less to add, but go through the same steps so you learn them, and change anything you want the app to do differently. Work through it the way the [reading](web_read.md#2-write-and-review-the-spec-with-the-agent) describes. Stay in **Plan** mode for all of this, and tell the agent not to build anything.
+On your own projects, this is the step where a starting spec grows into a polished one. The spec you pasted in is already polished, so the agent will have less to add, but go through the same steps so you learn them, and change anything you want the app to do differently. Work through it the way the [reading](web_read.md#2-write-and-review-the-spec-with-the-agent) describes. Stay in **Plan** mode for all of this, and tell the agent not to build anything.
 
 1. **Make sure the spec has everything.** Before working on any details, check that the spec covers everything the app needs. In the Copilot chat panel, switch to **Plan** mode and enter:
 
@@ -176,11 +141,48 @@ The following is not a part of the rubric, but specifies how you can lose points
 ---
 
 !!! note "About these specs"
-    The specs below are finished examples. A first draft of your own will be much shorter, like the one in [Step 2](#step-2-write-the-spec), and it gets this detailed only after several rounds of working through it with an agent. Even these aren't perfect, and you can still refine them.
+    Each app has a starting spec, the kind of first draft you would write yourself, and the polished spec it became after several rounds of working through it with an agent. Even the polished specs aren't perfect, and you can still refine them.
 
 ## Beam Designer
 
 ![Beam Designer](images/beam_designer.jpg){:width="700px"}
+
+### Starting spec
+
+```markdown
+# Beam Designer
+
+## Purpose
+Shear, moment, and deflection diagrams for a beam, with a check of
+whether the beam is strong and stiff enough.
+
+## Inputs
+- Simply supported or cantilever, and the span (ft)
+- Point loads and uniform loads
+- A steel W-shape or a lumber size
+
+## Calculations
+- Reactions, shear, and moment from statics
+- Deflection
+- Bending stress fb = M/S, compared to the allowable stress
+- Deflection compared to L/360
+
+## Outputs
+- The beam with its loads, and the three diagrams
+- Pass or fail for bending and deflection
+
+## Look and feel
+Clean and professional, with an example beam loaded when it opens.
+
+## Validation
+20 ft simply supported W12x26 with 1 kip/ft: M = 50.0 kip-ft,
+deflection 0.609 in.
+
+## Out of scope
+Continuous beams and buckling.
+```
+
+### Polished spec
 
 ```markdown
 # Beam Designer
@@ -304,6 +306,44 @@ sizing a floor beam or deck joist.
 
 ![Site Runoff](images/site_runoff.jpg){:width="700px"}
 
+### Starting spec
+
+```markdown
+# Site Runoff
+
+## Purpose
+Peak storm runoff from a small site with the rational method, and the
+size of the storm drain pipe that carries it.
+
+## Inputs
+- Areas outlined on a satellite map: roofs, pavement, lawn, and so on
+- A surface type for each area, with its runoff coefficient C
+- Design storm (2, 10, 25, or 100 year)
+- Pipe slope
+
+## Calculations
+- Area of each outline
+- Weighted C
+- Q = CiA, with i from a Provo rainfall table for the design storm
+- Full-pipe capacity from Manning's equation, to pick the pipe size
+
+## Outputs
+- The areas on the map, colored by surface type
+- A list of the areas, the peak flow, and the pipe size
+
+## Look and feel
+Clean and professional, with the map filling most of the screen.
+
+## Validation
+1.00 acre of asphalt (C = 0.90), 10-year storm (i = 3.0 in/hr), 1% slope:
+Q = 2.70 cfs, 12 in pipe.
+
+## Out of scope
+Detention ponds and inlet spacing.
+```
+
+### Polished spec
+
 ```markdown
 # Site Runoff
 
@@ -417,6 +457,45 @@ drainage for a parking lot, building, or small development.
 ## Concrete Pour Planner
 
 ![Concrete Pour Planner](images/pour_planner.jpg){:width="700px"}
+
+### Starting spec
+
+```markdown
+# Concrete Pour Planner
+
+## Purpose
+Plan a slab pour: how much concrete to order, how many trucks, and when
+each one should arrive.
+
+## Inputs
+- Slab outline drawn on a satellite map, or length and width typed in
+- Thickness and waste allowance
+- Truck size, travel time from the plant, and how fast the crew places
+- Time the first truck arrives
+
+## Calculations
+- Slab area and volume plus waste, rounded up for ordering
+- Number of truckloads
+- Truck spacing so the crew never waits
+- Trucks needed in rotation
+
+## Outputs
+- The slab on the map
+- Concrete to order, truckloads, trucks, and finish time
+- A schedule of truck arrivals
+
+## Look and feel
+Clean and professional, with large, readable numbers.
+
+## Validation
+40 ft x 60 ft x 6 in slab, 5% waste, 10 cy trucks: order 47.0 cy,
+5 truckloads.
+
+## Out of scope
+Pump trucks and costs.
+```
+
+### Polished spec
 
 ```markdown
 # Concrete Pour Planner
