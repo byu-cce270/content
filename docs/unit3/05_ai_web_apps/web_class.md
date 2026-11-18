@@ -10,7 +10,7 @@ Each app was built by an agent from the polished spec on this page, with no othe
 
 ## Step 1 - Set Up the Project
 
-1. Make a folder named `first_app` in your class folder and open it in VS Code.
+1. Make a folder named `first_app` in your class folder and open it in VS Code. Don't use spaces in folder names. Use underscores instead, as in `first_app`.
 2. In the **Source Control** panel, click **Initialize Repository**.
 3. In the Explorer panel, click the **New File** icon next to the folder name and create a file named `AGENTS.md` containing this line, so the agent keeps your prompt log (see the [reading](web_read.md#standing-instructions-and-the-prompt-log)):
 
@@ -18,11 +18,23 @@ Each app was built by an agent from the polished spec on this page, with no othe
     - After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked.
     ```
 
+4. Save `AGENTS.md` (**Ctrl+S** or **Cmd+S**). Then make the numbered folders described in the [reading](web_read.md#0-set-up-the-project-folder). You might not need all of them. None of the apps on this page uses a data file, for example, so you can leave out `01_data`. Make the folders either way:
+
+    - **Yourself:** hover over the project folder's name in the Explorer panel, click the **New Folder** icon, type the name, and press Enter. Click an empty spot in the Explorer panel before you make the next one, or VS Code puts it inside the folder you just made. Then add a line for each folder to `AGENTS.md` saying what belongs in it, and save the file.
+    - **With the agent:** in the Copilot chat panel, switch to **Interactive** mode. Edit the folder list in this prompt to match the folders you want, then enter it:
+
+        !!! prompt "Prompt"
+            Set up the folders for this project, a single-file web app. AGENTS.md, spec.md, prompts.md, and index.html go at the top level, because GitHub Pages needs index.html there. Create numbered folders for everything else: 00_planning for notes and sketches, 01_data for data files, 02_validation for hand calculations and test cases, and 03_output for screenshots and exported results. Put a short README.md in each folder that says what belongs there. Then describe this layout in AGENTS.md, with a rule to save new files in the right folder. Don't build anything else.
+
+5. Check the Explorer panel. You should see your numbered folders, and `AGENTS.md` should list them below your prompt log line. If the agent made the folders, each one has a `README.md`.
+
 In Using Python Locally you made commits yourself. From here on, the agent makes them. Whenever this page says to ask the agent to commit, enter "Commit these changes" in **Interactive** mode, allow the `git` command it asks to run, and read the commit message it writes.
+
+Ask the agent to commit.
 
 ## Step 2 - Write the Spec
 
-Create a file named `spec.md` the same way and paste in the **polished spec** for your app from the sections below. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
+Create a file named `spec.md` at the top level of the project, the same way you made `AGENTS.md`. If one of the numbered folders is selected in the Explorer panel, VS Code creates the new file inside it, so click an empty spot in the Explorer panel first. Paste in the **polished spec** for your app from the sections below. Read it all the way through before you go on. Every sentence in it is a decision someone had to make.
 
 !!! note "Starting specs and polished specs"
     Each app below has two specs. The **starting spec** is the kind of first draft you would write yourself, with a short, rough list under each heading. The **polished spec** is what that draft became after several rounds of working through it with an agent. Nobody writes a polished spec on the first try. Compare the two for your app to see what the agent's questions added: ranges and defaults for every input, the exact equations and data tables, what to do with unusual inputs, and more validation cases. In the homework, you will start from a short draft of your own.

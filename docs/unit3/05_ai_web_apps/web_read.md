@@ -60,6 +60,41 @@ A single file can still do a lot. JavaScript can draw on a canvas, animate, make
 
 Working with an agent goes much better if you follow the same steps every time.
 
+### 0. Set up the project folder
+
+A project collects files quickly: the spec, the prompt log, data files, hand calculations, and screenshots. The agent creates files too, and unless you tell it where they go, it will put them wherever it likes. Before you write the spec, set up a folder structure and write it down in `AGENTS.md`, so you and the agent both know where everything goes.
+
+**0a. Make the project folder.** Make the top-level folder yourself, inside your class folder, for example `cce270/first_app`. Don't use spaces in folder names. Use underscores instead, as in `first_app`, because spaces cause trouble in the terminal and in GitHub repository names. Open the folder in VS Code (**File → Open Folder**) and click **Initialize Repository** in the **Source Control** panel. The agent can only work inside the folder you have open.
+
+**0b. Plan the layout.** Use numbered folders for the supporting files, and keep the main files at the top level:
+
+```
+cce270/
+└── first_app/
+    ├── 00_planning/      notes, sketches, feature ideas
+    ├── 01_data/          data files, such as a USGS download
+    ├── 02_validation/    hand calculations and test cases
+    ├── 03_output/        screenshots and exported results
+    ├── AGENTS.md         instructions the agent reads every time
+    ├── spec.md           what the app should do (Step 1)
+    ├── prompts.md        the prompt log
+    └── index.html        the app (Step 3)
+```
+
+The numbers keep the folders in order, because VS Code sorts names alphabetically. Depending on the project, you might not need all of these folders. An app with no data files doesn't need `01_data`, for example. Leave out any you don't need, and add others if your project calls for them. Always keep `AGENTS.md`, `spec.md`, `prompts.md`, and `index.html` at the top level. The agent looks for `AGENTS.md` there, GitHub Pages needs `index.html` there, and the assignments expect all four there.
+
+**0c. Make the folders.** You can make them yourself or have the agent make them:
+
+- **Make them yourself.** In the Explorer panel, hover over the project folder's name, click the **New Folder** icon, type a name such as `00_planning`, and press Enter. Click an empty spot in the Explorer panel before you make the next one, or VS Code puts it inside the folder you just made. Then add a line for each folder to `AGENTS.md` (create it at the top level if you don't have one yet) saying what belongs in it, so the agent knows where to save files. Git doesn't save empty folders, so a folder won't show up in your commits until it has a file in it.
+- **Have the agent make them.** In the Copilot chat panel, switch to **Interactive** mode ([Step 2](#2-write-and-review-the-spec-with-the-agent) explains the modes). Edit the folder list in this prompt to match your project, then enter it:
+
+    !!! prompt "Prompt"
+        Set up the folders for this project, a single-file web app. AGENTS.md, spec.md, prompts.md, and index.html go at the top level, because GitHub Pages needs index.html there. Create numbered folders for everything else: 00_planning for notes and sketches, 01_data for data files, 02_validation for hand calculations and test cases, and 03_output for screenshots and exported results. Put a short README.md in each folder that says what belongs there. Then describe this layout in AGENTS.md, with a rule to save new files in the right folder. Don't build anything else.
+
+    The `README.md` files tell the agent what belongs in each folder, and they keep the folders from being empty, so Git saves them.
+
+Either way, because the layout is in `AGENTS.md`, the agent follows it in every conversation (see [Standing Instructions and the Prompt Log](#standing-instructions-and-the-prompt-log)).
+
 ### 1. Write a spec
 
 A **spec** (short for specification) is a short document that describes what you want built. You write it in a Markdown file named `spec.md` in your project folder, using the same Markdown you have used for text cells in Colab. A good spec has these sections:
