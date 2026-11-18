@@ -6,12 +6,26 @@
 
 ## Before You Start
 
-**Plan and build in stages.** Each of these apps is too big to build all at once. If you try, you will probably get a mess that is hard to understand and hard to fix. Start with an overview spec of the whole app, so the agent knows where you are headed. Then work one piece at a time, planning and building together:
+**Start with a basic spec, then fill it in with the agent.** Your first draft can be very basic: the seven headings with a line or two under each, the equations you already know, and one validation case you have worked by hand. Then work through it with the agent, one section at a time, until every section is complete. Don't just give the agent commands. Ask it questions in **Plan** mode, so it tells you what you haven't thought of yet. For example:
 
-1. Work out one part of the spec with the agent.
-2. Have the agent build a prototype of just that part.
-3. Check whether it does what you think it should. If it doesn't, update the spec, rebuild, and check again until it works.
-4. Commit, then move on to the next part.
+- "What additional information should I include in the Inputs section?"
+- "Did I miss anything in the Calculations section?"
+- "What questions would you need answered before you could build this section?"
+- "What would an engineer or construction manager using this app expect to see that isn't in the spec?"
+- "What could a user enter that would break these calculations, and what should the app do then?"
+
+Answer its questions, decide which suggestions to take, and update the spec. The decisions are yours, so check any change it suggests to your equations against your textbook or notes.
+
+**Plan and build in stages, but tell the agent where you are headed.** Each of these apps is too big to build all at once. If you try, you will probably get a mess that is hard to understand and hard to fix. But the agent also does a better job when it knows what is coming. If it lays out the page without knowing that a map or a second plot comes later, it may have to tear the layout apart to fit them in. So when the spec is complete, give the agent an overview of the whole app, then have it build one stage at a time. You don't have to write the overview or the stages yourself. In **Plan** mode, ask the agent to write them from your spec:
+
+!!! prompt "Prompt"
+    Read spec.md. Don't write any code. Write a short overview of the whole app, then suggest how to build it in 4 to 6 stages, starting with a mockup of the page layout. For each stage, tell me what will be built and what I should check when it's done.
+
+Adjust the overview and the stages until they match what you have in mind. Then switch to **Interactive** mode and have the agent add the overview to the top of `spec.md` and the stages to the end, under `## Build stages`. Every build request reads the spec, so the agent sees the whole plan each time, even though it builds only one piece. Then build one stage at a time:
+
+1. Ask the agent to build only the next stage, for example: "Build stage 2 from the Build stages section of spec.md. Only build this stage."
+2. Check whether it does what you think it should. If it doesn't, update the spec, rebuild, and check again until it works.
+3. Commit, then move on to the next stage.
 
 **Keep a prompt log from the start.** Before your first request, create `AGENTS.md` with the line from the [reading](web_read.md#standing-instructions-and-the-prompt-log), so the agent records every request in `prompts.md`. You will turn in `prompts.md`, so read it as you go and correct anything the agent got wrong.
 
@@ -22,8 +36,8 @@
 Choose one of the eight problems below and build it as a single-file web app, following the workflow from the [reading](web_read.md) and the [in-class exercise](web_class.md):
 
 1. Write a first draft of the spec, including a validation case you have worked by hand. It can be short and rough, like the starting specs in the [in-class exercise](web_class.md#beam-designer).
-2. Work through the spec with the agent in Plan mode, first the whole spec and then one section at a time
-3. Have the agent build the app in stages, starting with a mockup, and test and commit each stage
+2. Work through the spec with the agent in Plan mode, first the whole spec and then one section at a time, asking it questions as well as giving it instructions (see [Before You Start](#before-you-start))
+3. Have the agent write an overview of the app and suggest the build stages, then build one stage at a time, starting with a mockup, and test and commit each stage
 4. Validate it against your hand calculation
 5. Plan your own features with the agent, then add them one at a time, committing after each one
 6. Publish it on GitHub Pages

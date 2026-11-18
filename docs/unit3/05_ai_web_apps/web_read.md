@@ -199,7 +199,9 @@ Answer its questions and decide which suggestions to take. The agent is good at 
     The format doesn't matter, as long as you tell the agent what you did. In **Interactive** mode, enter:
 
     !!! prompt "Prompt"
-        I added notes to spec.md in lines that start with [NOTE. Answer each question, make the changes they ask for in spec.md, and remove the notes when you're done. Don't build anything.
+        I added notes to spec.md in lines that start with [NOTE. Answer each question and make the changes they ask for in spec.md. Then move each note you've addressed, with a one-line summary of what you changed, to a Resolved notes section at the bottom of spec.md. Don't build anything.
+
+    Addressed notes shouldn't stay in the body of the spec. If you'd rather keep them out of `spec.md` entirely, ask the agent to move them to a notes file in `00_planning` instead.
 
 **Editing a `.md` file in VS Code.** When you click `spec.md` in the Explorer panel, it opens as plain text, with the `#` marks and other Markdown symbols showing. You can edit it that way. To see a formatted version, click **Text Editor** at the top right of the file and choose a different view:
 
