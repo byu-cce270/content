@@ -5,14 +5,15 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 ## Step 1 - Set Up the Project
 
 1. Make a folder named `beam_desktop` in your class folder.
-2. Copy the polished Beam Designer spec from the [web apps in-class exercise](../05_ai_web_apps/web_class.md#beam-designer) into a file named `spec.md` in `beam_desktop`. If your class built Beam Designer as its web app, copy your own `spec.md` and `index.html` from your `first_app` folder instead. The agent will use `index.html` as a reference for how the app should behave.
-3. Copy `AGENTS.md` from your `first_app` folder, so the agent keeps a prompt log for this project too. Or have the agent create one for you, in **Interactive** mode:
+2. Open `beam_desktop` in VS Code, then click **Initialize Repository** in the **Source Control** panel.
+3. Copy the polished Beam Designer spec from the [web apps in-class exercise](../05_ai_web_apps/web_class.md#beam-designer) into a file named `spec.md` in `beam_desktop`. If your class built Beam Designer as its web app, copy your own `spec.md` and `index.html` from your `first_app` folder instead. The agent will use `index.html` as a reference for how the app should behave.
+4. Make an `AGENTS.md` so the agent keeps a prompt log for this project too. In the Copilot chat panel, switch to **Interactive** mode and enter:
 
     !!! prompt "Prompt"
         Create an AGENTS.md at the top level of this project containing this line: "After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked." Don't build anything else.
 
-    !!! note "Check what you copied over"
-        The `AGENTS.md` from `first_app` describes a web app. It may name folders that don't exist here, or tell the agent that `index.html` goes at the top level, and the agent follows those rules in every conversation. If you copy the file, open the Copilot chat panel and ask the agent what is in it:
+    !!! note "If you copy AGENTS.md from first_app instead"
+        You can reuse the file from your web app if you added your own rules to it and want them back. Be careful, though: that file describes a web app. It may name folders that don't exist here, or tell the agent that `index.html` goes at the top level, and the agent follows those rules in every conversation. Ask the agent what is in it:
 
         !!! prompt "Prompt"
             Read AGENTS.md and list the rules it contains. Tell me which ones apply to a Python desktop app and which ones only make sense for a web app.
@@ -23,14 +24,15 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
             Update AGENTS.md for this project, a Python desktop app built with Tkinter, numpy, and matplotlib, started with `python app.py`. Remove the rules that only apply to a web app. Keep the prompt log rule. Don't build anything else.
 
         Read the result yourself before you move on. You are responsible for what the agent is told to do.
-4. Open `beam_desktop` in VS Code, initialize a repository, and ask the agent to commit.
-5. In the terminal, install the packages you'll need:
+
+5. Ask the agent to commit.
+6. In the terminal, install the packages you'll need:
 
     ```
     pip install numpy matplotlib
     ```
 
-6. Check that Tkinter works by running `python -m tkinter`. A small window should open. On many Macs the command is `python3` rather than `python`, so use `python3 -m tkinter` if `python` isn't found or starts the wrong version. The same applies to every `python` command on this page, and to `pip` above, which is `pip3` on those machines. If you get `No module named '_tkinter'` on a Mac, your Python came from Homebrew; run `brew install python-tk@3.x` with your Python version (for example, `python-tk@3.14`), or ask a TA for help.
+7. Check that Tkinter works by running `python -m tkinter`. A small window should open. On many Macs the command is `python3` rather than `python`, so use `python3 -m tkinter` if `python` isn't found or starts the wrong version. The same applies to every `python` command on this page, and to `pip` above, which is `pip3` on those machines. If you get `No module named '_tkinter'` on a Mac, your Python came from Homebrew; run `brew install python-tk@3.x` with your Python version (for example, `python-tk@3.14`), or ask a TA for help.
 
 ## Step 2 - Update the Spec
 

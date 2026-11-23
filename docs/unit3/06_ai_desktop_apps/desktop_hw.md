@@ -31,6 +31,11 @@ Whichever option you choose, your app must:
 
 Follow the workflow from class: get a plan before the agent writes code, have the agent rerun your validation cases after every change, and add one feature at a time.
 
+!!! note "Check your prompt log early"
+    After your first prompt or two, once `AGENTS.md` is in place, open `prompts.md` and read it. There should be an entry for each request you made. If the file is missing, empty, or recording the wrong things, tell the agent and work with it to fix the instruction in `AGENTS.md` before you go any further. It is much easier to fix this on day one than to reconstruct a log at the end.
+
+    We read the prompt log to see **how** you built the app: that you planned it, built it in steps, checked the results, and worked with the agent along the way. A log showing one prompt that produced the whole app will lose points even if the app runs.
+
 ---
 
 ## Turning in/Rubric
@@ -51,11 +56,11 @@ The TA will grade your app by unzipping it, installing the packages in your READ
 
 |                                         **Items**                                          | **Amount** |  
 |:------------------------------------------------------------------------------------------:|:----------:|
-|           Spec has all required sections, including Platform (and added features)          |     4      |
-|      App works: the port plus 2 new features (Option A), or the must-haves plus 2 of your own features (Option B) |     10     |
+|           Spec has all required sections, including Platform (and added features)          |     2      |
+|      App works: the port plus 2 new features (Option A), or the must-haves plus 2 of your own features (Option B) |     8      |
 |    3+ validation cases pass, with results in the spec and sources for expected values      |     8      |
 |        App is easy to use: clear labels, units on every number, looks finished            |     3      |
-|                  Prompt log is complete                                                    |     3      |
+|   Prompt log shows step-by-step planning, building, and checking with the agent            |     7      |
 |        README works, and at least 5 commits match the workflow steps                       |     2      |
 |                         <div style="text-align: right">**Total**</div>                    |   **30**   |
 
