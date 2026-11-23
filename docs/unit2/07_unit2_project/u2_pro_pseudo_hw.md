@@ -33,6 +33,7 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
      - Use indentation to show the structure and hierarchy of your code.
      - Include comments to explain the purpose of each section or function.
      - Think about the flow of your program and how different parts will interact with each other.
+
 4. Under the "Program Plan" section of your document, fill in the four tables:
      - **Functions** (at least 3): the name, inputs, what it does, and what it returns
      - **Class** (at least 1): the class name, its attributes, and its methods
@@ -40,6 +41,7 @@ In this homework assignment, you will practice writing pseudocode to plan out a 
      - **Files**: the file name, whether your code reads it, writes it, or both, and what is in it
 
      Everything you list in these tables should show up somewhere in your pseudocode. The grey row in each table is an example; replace it with your own. This is a plan, so your final project can be different.
+
 5. You can also refer to the Pre Class Reading about pseudocode. [Pre Class Reading: Project 2 Pseudocode](https://builtin.com/data-science/pseudocode){:target="_blank"}
 
 ---

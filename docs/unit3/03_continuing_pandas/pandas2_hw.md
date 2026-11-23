@@ -33,11 +33,11 @@ Now that we have our data loaded and updated the dataframes, we can start to man
 2. Note that the 'Community Board' column has a numeric code for each board, but it was converted from an integer to 
    a float. Convert the 'Community Board' column back to an integer by running the code provided. Note that the
    column contains some NaN values, so those are skipped by using the `errors='coerce'` argument.
-2. In a new code block, convert the "Date" column in resurface_df to a date/time format.
-3. Use the `.dt.day_name()` method in pandas to add a new column to the resurface_df that specifies what day of the 
+3. In a new code block, convert the "Date" column in resurface_df to a date/time format.
+4. Use the `.dt.day_name()` method in pandas to add a new column to the resurface_df that specifies what day of the 
    week the resurfacing took place on.
-4. Display the dataframe with the new column added.
-5. In a new code block, count the number of jobs under each borough for each work type (milling and paving). Put
+5. Display the dataframe with the new column added.
+6. In a new code block, count the number of jobs under each borough for each work type (milling and paving). Put
    your results in a variable called `borough_work_counts` and display the results.<br>
 
     **Hint:** 
@@ -54,13 +54,13 @@ rename the column. You will need to sort the data to get the most common street 
 2. With resulting dataframe, sort the data to get the most common street names at the top of the dataframe.
 3. Rename the 'On Street Name' columns in your new dataframe to be 'Street Name'.
 4. Reset the index to preserve the order of "Job Count" and "Street Name" columns.
-4. Display the first 10 rows of the resulting dataframe.
+5. Display the first 10 rows of the resulting dataframe.
 
     When you are done, the dataframe that displays should look like this:
 
-![hw_image01_namesdf.png](images/hw_image01_namesdf.png)
+    ![hw_image01_namesdf.png](images/hw_image01_namesdf.png)
 
-5. In the next code block, do the same thing, but this time use the `.value_counts()` method to find the most common 
+6. In the next code block, do the same thing, but this time use the `.value_counts()` method to find the most common 
     street names for paving jobs. Reset the index and rename the columns as you did in the previous step.
 
 Which of these methods do you prefer? Why?
@@ -72,8 +72,8 @@ some math to add a new column to the dataframe that shows how long each job took
 duration of each job, we can start to group the data by each community board and put that data 
 into a new dataframe. 
     
-12. Starting in a new codeblock, assume that each shift for resurfacing last 8 hours. Add a work duration column to the resurface_df that has the value of 8 for each row.
-13. Use the .groupby() method to determine the number of work hours completed by each community board.
+1. Starting in a new codeblock, assume that each shift for resurfacing last 8 hours. Add a work duration column to the resurface_df that has the value of 8 for each row.
+2. Use the .groupby() method to determine the number of work hours completed by each community board.
 
     When you are done, the dataframe that displays should look like this:
 
@@ -84,9 +84,9 @@ into a new dataframe.
 Now we want to visualize the data we have been working with. We will create a bar graph that displays the 
 number of work jobs by borough. 
 
-14. Use either the `.value_counts()` or `.groupby()` method to count the number of work jobs by borough. Remember 
+1. Use either the `.value_counts()` or `.groupby()` method to count the number of work jobs by borough. Remember 
     that each row represents a job, so you just need to count the number of rows for each borough.
-15. Create a horizontal bar graph that displays the number of work jobs by borough. Include:
+2. Create a horizontal bar graph that displays the number of work jobs by borough. Include:
      - a title
      - x and y labels
      - horizontal & vertical gridlines
@@ -107,20 +107,20 @@ full names and add a new column with the full names.
 
 ### Borough Name Mapping
 
-15. In 'Borough Mapping' cell create a dictionary to map the pavement_df boroughs.
+1. In 'Borough Mapping' cell create a dictionary to map the pavement_df boroughs.
      - X : Bronx
      - B : Brooklyn
      - M : Manhattan
      - Q : Queens
      - S : Staten Island
    
-16. Map the BoroughCode column of the pavement_df to insert a new column titled "Borough" that includes the full name 
+2. Map the BoroughCode column of the pavement_df to insert a new column titled "Borough" that includes the full name 
     of the boroughs. Use the `.map()` method to do this and pass it the dictionary you created in the previous step 
     as an argument. Display the first few rows of the dataframe to verify the new column was added correctly.
 
 ### Average Ratings
 
-17. In the next code block, use the `.groupby()` method to calculate the average value of the manual rating
+1. In the next code block, use the `.groupby()` method to calculate the average value of the manual rating
     ('ManualRati') in each rating category ('RatingLaye') by borough.
 
     When you are done, the data frame that displays should look like this:
@@ -129,7 +129,7 @@ full names and add a new column with the full names.
 
 ### Multiple Grouping and Aggregation
 
-18. In the next code block, use the `.groupby()` method to display the average of the manual rating and count of the 
+1. In the next code block, use the `.groupby()` method to display the average of the manual rating and count of the 
     borough measurements by their inspection date, rating, and borough name. To do this, you will need to pass a 
     list of columns to the `.groupby()` method and you will need to use the `.agg()` method to apply multiple 
     aggreations to the data. The aggregation functions you will use are 'mean' and 'count' and you will need to pass 
