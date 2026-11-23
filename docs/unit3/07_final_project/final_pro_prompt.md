@@ -32,9 +32,19 @@ If you haven't done the proposal yet, you can find the instructions here: [Final
         - A report of how each team member contributed
         - Links to any outside resources and data sources you used
     - **A prompt log** (`prompts.md`) kept by the agent throughout the project, and read and corrected by the team
+    - **Each team member's agent chats:** a `chats/` folder with every team member's exported conversations with the AI agent, in a file or subfolder named for that person (for example, `chats/jane-smith.md`). In VS Code, you can save a Copilot chat by opening the Command Palette and running **Chat: Export Chat...**.
     - **A GitHub repository** containing all of the above, with every team member added as a collaborator
 
-5. Present your project to the class. Your presentation should include a live demonstration of the app and a walkthrough of how you validated it. Be prepared to explain how any part of your code works.
+5. Work as a team. This is a team project, and we grade it that way:
+    - **Every team member commits.** Graders will look at the commit history to see that each team member made their own commits throughout the project, from their own GitHub account. A repository where one person made all of the commits will lose points, even if the whole team met together.
+    - **Every team member turns in their chats.** The chats in `chats/` show how each person worked with the agent. A team member with no chats loses points for the team.
+
+    !!! warning "Work with your group"
+        If you do not work with your group, **50% will be taken off your final project grade**. If you are having trouble working with a group member, tell your professor and the Head TA **as soon as possible**, not at the end of the project. We can help while there is still time to fix it.
+
+6. Present your project to the class. Your presentation should include a live demonstration of the app and a walkthrough of how you validated it. Be prepared to explain how any part of your code works.
+
+    Every team member must be present for the presentation. Being present is worth 5 points (5%) of the Presentation and demo score, and a team member who is not there loses those 5 points.
 
 ---
 
@@ -51,20 +61,24 @@ To build the zip archive:
     - **Mac:** right-click the folder and choose **Compress "(Your-Team-Name)-Final-Project"**
 4. Upload the resulting `.zip` file to the assignment in Learning Suite.
 
-Your Learning Suite submission is due at the start of the scheduled presentations.
+!!! warning "Everything is due before presentations start"
+    The whole project is due **before the first presentation in your section starts**, even if your team presents later. That includes the `.zip` upload in Learning Suite, every team member's chats in `chats/`, and your final commits pushed to GitHub. Commits pushed after presentations start will not be graded.
 
 **Rubric:**
 
 |                                  Item                                   | Points Possible |
 |:-----------------------------------------------------------------------:|:---------------:|
-|        App works as described in the final spec, without bugs           |       20        |
+|        App works as described in the final spec, without bugs           |       16        |
 |               Engineering substance of the calculations                 |       10        |
 |      Final spec, with design review and validation plan                 |       10        |
-|                       Validation results                          |       15        |
-|          README: description, usage, screenshots, how to run            |        8        |
+|                       Validation results                                |       13        |
+|          README: description, usage, screenshots, how to run            |        6        |
+|                             Prompt log                                  |        5        |
+|                     **Teamwork:**                                       |                 |
+|   Commit history shows every team member committing throughout the project |    10        |
+|              Every team member's agent chats turned in                  |        5        |
 |           Report of each team member's contribution                     |        5        |
-|             Prompt log and commit history                               |        7        |
-|                       Presentation and demo                             |       15        |
+|   Presentation and demo (5 of these points are for being present)      |       10        |
 |                             TA wow factor                               |       10        |
 |             <div style="text-align: right">**Total**</div>              |       100       |
 
@@ -74,9 +88,10 @@ The following is not a part of the rubric, but specifies how you can lose points
 
 |                     **Reasons for Points Lost**                      | **Amount** |  
 |:--------------------------------------------------------------------:|:----------:|
-|          Files not turned in before the presentation                  |     10     |
+|          Files not turned in before presentations start               |     10     |
 |                      File uploaded incorrectly                       |     10     |
 |                       No prompt log submitted                         |     50     |
+|     Not working with your group (taken off that team member's grade)  |     50     |
 
 ---
 

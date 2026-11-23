@@ -79,7 +79,7 @@ Read its explanation. If the two versions do different things that both matter, 
 
 Your team can split the work either of these ways, or switch between them:
 
-- **One driver.** One person runs the agent while the others write the spec, work the validation cases by hand, test the app, and write the documentation. Rotate the driver each work session so everyone takes a turn. Merge conflicts can't happen, because only one person changes the code.
+- **One driver.** One person runs the agent while the others write the spec, work the validation cases by hand, test the app, and write the documentation. Rotate the driver each work session so everyone takes a turn, and have each driver commit and push from their own computer and GitHub account. Graders look for commits from every team member, so one person committing everyone's work will lose points. Merge conflicts can't happen, because only one person changes the code at a time.
 - **Everyone codes.** Each person works on a different feature at the same time. To keep from stepping on each other, each person can work on their own **branch**, a separate copy of the code that is merged back when the feature is done:
 
     !!! prompt "Prompt"
