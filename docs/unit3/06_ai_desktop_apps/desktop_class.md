@@ -2,6 +2,27 @@
 
 In this exercise, you will have the agent build the [Beam Designer](../05_ai_web_apps/web_class.md#beam-designer) as a Python desktop app, with numpy for the calculations and matplotlib for the diagrams, then add features that a desktop app does well, such as saving designs as files. Along the way, you will practice the three habits from the reading: getting a plan before any code, having the agent check its own work, and changing an existing program.
 
+<!-- TEMPORARY: added mid-semester because BYU's ChatGPT Edu access was new.
+     Remove next semester and fold it into the Using Python Locally reading,
+     once we know which students actually get Codex. -->
+
+!!! note "New: Codex with your BYU ChatGPT account"
+    BYU now gives students **CES ChatGPT Edu**, the university's managed ChatGPT environment, at no cost. Details, including how to activate your account, are on BYU's [CES ChatGPT Edu page](https://ai.byu.edu/ces_chatgpt_edu){:target="_blank"}. If your account includes **Codex**, OpenAI's coding agent, you can use it for this exercise instead of Copilot.
+
+    **Check first.** Sign in at [chatgpt.com](https://chatgpt.com){:target="_blank"} with your BYU account, make sure the CES ChatGPT workspace is selected, and look for Codex. Base student access covers chat, and BYU is still arranging Codex college by college, so not everyone has it yet. If you don't see it, use Copilot. Everything in this class works with Copilot, and you will not lose points for using it.
+
+    If you already have a personal ChatGPT account on your `netID@byu.edu` address, move that account to a personal email first, as described on BYU's page, so the two don't collide. Your CES ChatGPT Edu account is for academic purposes.
+
+    **If you have it:**
+
+    1. In VS Code, open the Extensions panel, search for **Codex**, and install **Codex – OpenAI's coding agent**, published by **OpenAI**.
+    2. Click the **Codex** icon in the sidebar. If it isn't there, open the Command Palette (**Ctrl+Shift+P**, or **Cmd+Shift+P** on a Mac) and run **Codex: Open Codex Sidebar**.
+    3. Click **Sign in with ChatGPT** and finish in the browser. If you are asked which workspace to use, choose the **CES ChatGPT** one.
+
+    You don't need the Codex CLI or the ChatGPT desktop app. The extension works on its own.
+
+    Codex has its own modes and its own way of showing proposed changes, so the prompts below may not match it word for word. The workflow is the same either way: get a plan, build in stages, and check the result yourself.
+
 ## Step 1 - Set Up the Project
 
 1. Make a folder named `beam_desktop` in your class folder.
