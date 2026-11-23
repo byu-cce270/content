@@ -32,7 +32,26 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
     pip install numpy matplotlib
     ```
 
-7. Check that Tkinter works by running `python -m tkinter`. A small window should open. On many Macs the command is `python3` rather than `python`, so use `python3 -m tkinter` if `python` isn't found or starts the wrong version. The same applies to every `python` command on this page, and to `pip` above, which is `pip3` on those machines. If you get `No module named '_tkinter'` on a Mac, your Python came from Homebrew; run `brew install python-tk@3.x` with your Python version (for example, `python-tk@3.14`), or ask a TA for help.
+7. Check that Tkinter works. Tkinter draws the app's window:
+
+    ```
+    python -m tkinter
+    ```
+
+    A small window should open. Close it and carry on.
+
+    On many Macs the command is `python3` rather than `python`, so use `python3 -m tkinter` if `python` isn't found or starts the wrong version. The same is true of every `python` command on this page, and of `pip` above, which is `pip3` on those machines.
+
+    !!! note "You probably don't need to install anything"
+        Tkinter is part of Python itself, not a package you add with `pip`. The Python you installed from [python.org](https://www.python.org/downloads/) in Using Python Locally includes it, on both Windows and Mac, so for most of you the window just opens and there is nothing more to do.
+
+    If you get `No module named '_tkinter'` on a Mac, your Python came from Homebrew rather than python.org, and Homebrew keeps Tkinter in a separate package. Install it, matching your Python version:
+
+    ```
+    brew install python-tk@3.14
+    ```
+
+    If that doesn't work, ask a TA for help.
 
 ## Step 2 - Update the Spec
 
