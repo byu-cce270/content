@@ -15,7 +15,7 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 
     **If you have it:**
 
-    1. In VS Code, open the Extensions panel, search for **Codex**, and install **Codex – OpenAI's coding agent**, published by **OpenAI**.
+    1. In VS Code, open the Extensions panel and search for **Codex**. Install **Codex – OpenAI's coding agent**, published by **OpenAI**. Check the publisher before you install it. Several extensions use the Codex name and a similar icon, but only one is OpenAI's: the publisher reads **OpenAI** with a blue verified check mark, and the identifier is `openai.chatgpt`. If you installed the wrong one, uninstall it and try again.
     2. Click the **Codex** icon in the sidebar. If it isn't there, open the Command Palette (**Ctrl+Shift+P**, or **Cmd+Shift+P** on a Mac) and run **Codex: Open Codex Sidebar**.
     3. Click **Sign in with ChatGPT** and finish in the browser. If you are asked which workspace to use, choose the **CES ChatGPT** one.
 
