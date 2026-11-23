@@ -6,7 +6,23 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 
 1. Make a folder named `beam_desktop` in your class folder.
 2. Copy the polished Beam Designer spec from the [web apps in-class exercise](../05_ai_web_apps/web_class.md#beam-designer) into a file named `spec.md` in `beam_desktop`. If your class built Beam Designer as its web app, copy your own `spec.md` and `index.html` from your `first_app` folder instead. The agent will use `index.html` as a reference for how the app should behave.
-3. Copy `AGENTS.md` from your `first_app` folder, so the agent keeps a prompt log for this project too.
+3. Copy `AGENTS.md` from your `first_app` folder, so the agent keeps a prompt log for this project too. Or have the agent create one for you, in **Interactive** mode:
+
+    !!! prompt "Prompt"
+        Create an AGENTS.md at the top level of this project containing this line: "After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked." Don't build anything else.
+
+    !!! note "Check what you copied over"
+        The `AGENTS.md` from `first_app` describes a web app. It may name folders that don't exist here, or tell the agent that `index.html` goes at the top level, and the agent follows those rules in every conversation. If you copy the file, open the Copilot chat panel and ask the agent what is in it:
+
+        !!! prompt "Prompt"
+            Read AGENTS.md and list the rules it contains. Tell me which ones apply to a Python desktop app and which ones only make sense for a web app.
+
+        Then have it update the file for this project:
+
+        !!! prompt "Prompt"
+            Update AGENTS.md for this project, a Python desktop app built with Tkinter, numpy, and matplotlib, started with `python app.py`. Remove the rules that only apply to a web app. Keep the prompt log rule. Don't build anything else.
+
+        Read the result yourself before you move on. You are responsible for what the agent is told to do.
 4. Open `beam_desktop` in VS Code, initialize a repository, and ask the agent to commit.
 5. In the terminal, install the packages you'll need:
 
@@ -14,7 +30,7 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
     pip install numpy matplotlib
     ```
 
-6. Check that Tkinter works by running `python -m tkinter`. A small window should open. If you get `No module named '_tkinter'` on a Mac, your Python came from Homebrew; run `brew install python-tk@3.x` with your Python version (for example, `python-tk@3.14`), or ask a TA for help.
+6. Check that Tkinter works by running `python -m tkinter`. A small window should open. On many Macs the command is `python3` rather than `python`, so use `python3 -m tkinter` if `python` isn't found or starts the wrong version. The same applies to every `python` command on this page, and to `pip` above, which is `pip3` on those machines. If you get `No module named '_tkinter'` on a Mac, your Python came from Homebrew; run `brew install python-tk@3.x` with your Python version (for example, `python-tk@3.14`), or ask a TA for help.
 
 ## Step 2 - Update the Spec
 
@@ -40,7 +56,7 @@ Edit `spec.md` to describe the desktop version.
        126.6 kip-ft at 11.25 ft.
     ```
 
-    Check it by hand before you commit it. Find the reactions with statics, then find where the shear is zero.
+    Read the spec all the way through before you commit it. Normally you would also check a validation case like this by hand: find the reactions with statics, then find where the shear is zero.
 
 Ask the agent to commit.
 
@@ -49,7 +65,7 @@ Ask the agent to commit.
 In the Copilot chat panel, choose **Plan** from the picker and enter:
 
 !!! prompt "Prompt"
-    Read spec.md. I want to build this app as the Python Tkinter desktop app described in spec.md. Before writing any code, describe your plan: which files you will create, what each one does, and how the beam calculations are organized.
+    Read spec.md. I want to build this app as the Python Tkinter desktop app described in spec.md. Before writing any code, describe your plan: which files you will create, what each one does, and how the beam calculations are organized. Describe any potential issues and suggest refinements or fixes.
 
 Read the plan and check that:
 
@@ -71,6 +87,8 @@ When the agent finishes, run the app:
 ```
 python app.py
 ```
+
+You can run this in a VS Code terminal or in a command terminal. If you use a command terminal, you have to be in the directory that contains your Python file, or Python won't find it.
 
 Try every input. If something doesn't work, describe what you did and what happened, and ask the agent to fix it.
 
@@ -95,6 +113,8 @@ Add these features **one at a time**:
 2. **Export results:** A button that saves a table of x, V, M, and deflection along the beam to a CSV file that opens in Excel.
 3. **Calculation sheet:** A button that saves the diagrams and checks as a PDF, with the inputs listed at the top, ready to hand in with a design.
 
+    Expect to iterate on the layout. Open the PDF, decide what would make it easier to read, and tell the agent what to change, or talk through the options with it if you aren't sure. Keep going until the sheet looks like something you would be willing to hand to an engineer.
+
 For each feature:
 
 1. Add it to the spec.
@@ -116,6 +136,24 @@ For each feature:
 
 2. Ask the agent to commit, then click **Publish Branch** and publish a public repository.
 3. Trade repository addresses with a neighbor. Clone their repository (**File → New Window**, then **Clone Git Repository**), follow their README, and run their app. If the README left anything out, tell them.
+
+## Optional Step - Just for Fun
+
+!!! note "Not required, not graded"
+    Nothing in this section is worth points. It is here because it is a good way to practice everything above on something you actually want to build.
+
+In [Using Python Locally](../04_local_python/local_py_class.md#exercise-3-clone-and-run-a-game) you cloned Alien Invasion, the Pygame game from *Python Crash Course*, and ran it as a Python app on your own machine. You have now built a desktop app from a spec. The same workflow turns that game into a web app that runs in a browser.
+
+1. Make a new folder in your CCE 270 folder, such as `alien_invasion_web`, and open it in VS Code. Don't copy the game's files into it. You are building a new version, not editing the old one.
+2. Ask the agent to initialize it as a Git repository, and to create an `AGENTS.md` with the prompt log line, as you did in Step 1.
+3. Work out a plan with the agent before any code. You can name the technology yourself, or ask the agent to recommend one and explain the trade-offs. Ask whether a single file is realistic, because that shapes everything else:
+
+    !!! prompt "Prompt"
+        I want to rebuild the Alien Invasion game from Python Crash Course as a web app that runs in a browser. I want the whole game contained in a single .html file. Is that possible? If so, what would it take, and what are the trade-offs? Then help me write a spec.md for it, and don't write any game code yet.
+
+4. Once you have a spec you believe in, build it the same way you built the beam app: get a plan, build it, try it, and have the agent fix what doesn't work. Commit as you go.
+
+When it runs, keep going if you want to. Add levels, a scoreboard, better graphics, or sound. Or throw it out and build a different game of your own from scratch. Everything you need is in the workflow you just practiced: write the spec, get a plan, build in stages, and check the result yourself.
 
 ## Turning in/Rubric
 
