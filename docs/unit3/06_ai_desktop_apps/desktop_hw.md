@@ -13,8 +13,9 @@ Choose **one** of these two options.
 - Saving and opening work as files
 - Reading input data from a CSV or Excel file with pandas
 - Exporting results to CSV or Excel
-- matplotlib plots that the user can zoom and save
+- An embedded matplotlib plot with the navigation toolbar, so the user can pan, zoom, and save the figure as an image
 - Running many cases at once, such as a parameter sweep that plots how an output changes with an input
+- A plot that updates in real time: animate the results, or add a slider that redraws the plot as the user drags it, such as moving a point load along the beam and watching the moment diagram change
 
 **Option B - Build a new problem.** Choose a problem from the [web app homework](../05_ai_web_apps/web_hw.md) that you did not build, and build it as a Tkinter desktop app. Any of them can be built as a desktop app. Name the problem in your spec and let the agent choose any extra packages it needs, such as a map package for the map problems. Use the problem's must-have features and its validation check, and add at least two features of your own design, at least one of them your own idea rather than one from the problem's list.
 
