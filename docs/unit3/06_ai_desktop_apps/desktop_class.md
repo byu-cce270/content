@@ -26,19 +26,18 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 1. Make a folder named `beam_desktop` in your class folder.
 2. Open `beam_desktop` in VS Code, then click **Initialize Repository** in the **Source Control** panel.
 3. Copy `spec.md` and `index.html` from your `first_app` folder into `beam_desktop`. The agent will use `index.html` as a reference for how the app should behave.
-4. Make an `AGENTS.md` so the agent keeps a prompt log for this project too. In the Copilot chat panel, enter:
+4. Make an `AGENTS.md` so the agent keeps a prompt log and commits its work after every request. In the Copilot chat panel, enter:
 
     !!! prompt "Prompt"
-        Create an AGENTS.md at the top level of this project containing this line: "After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked." Don't build anything else.
+        Create an AGENTS.md at the top level of this project containing these two lines: "After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked." and "After each request, commit all changes with a clear message." Then commit. Don't build anything else.
 
-5. Ask the agent to commit.
-6. In the terminal, install the packages you'll need:
+5. In the terminal, install the packages you'll need:
 
     ```
     pip install numpy matplotlib
     ```
 
-7. Check that Tkinter works. Tkinter draws the app's window:
+6. Check that Tkinter works. Tkinter draws the app's window:
 
     ```
     python -m tkinter
@@ -83,9 +82,7 @@ Edit `spec.md` to describe the desktop version.
        126.6 kip-ft at 11.25 ft.
     ```
 
-    Read the spec all the way through before you commit it.
-
-Ask the agent to commit.
+    Read the spec all the way through before you build.
 
 ## Step 3 - Build It
 
@@ -122,8 +119,6 @@ Ask the agent for more cases:
 
 Read what it suggests, keep the cases you agree with, and have it rerun the full set.
 
-When everything matches, ask the agent to commit.
-
 ## Step 5 - Add Desktop Features
 
 Add these features **one at a time**:
@@ -144,8 +139,6 @@ For each feature:
     !!! prompt "Prompt"
         Rerun the validation cases in spec.md and confirm they still pass.
 
-5. Ask the agent to commit.
-
 ## Step 6 - Push to GitHub
 
 1. Ask the agent for a README:
@@ -153,7 +146,7 @@ For each feature:
     !!! prompt "Prompt"
         Write a short README.md that says what this app does, which packages to install, and the command that starts it.
 
-2. Ask the agent to commit, then click **Publish Branch** and publish a public repository.
+2. Click **Publish Branch** in the Source Control panel and publish a public repository.
 3. Trade repository addresses with a neighbor. Clone their repository (**File → New Window**, then **Clone Git Repository**), follow their README, and run their app. If the README left anything out, tell them.
 
 ## Optional Step - Just for Fun
@@ -164,13 +157,13 @@ For each feature:
 In [Using Python Locally](../04_local_python/local_py_class.md#exercise-3-clone-and-run-a-game) you cloned Alien Invasion, the Pygame game from *Python Crash Course*, and ran it as a Python app on your own machine. You have now built a desktop app from a spec. The same workflow turns that game into a web app that runs in a browser.
 
 1. Make a new folder in your CCE 270 folder, such as `alien_invasion_web`, and open it in VS Code. Don't copy the game's files into it. You are building a new version, not editing the old one.
-2. Ask the agent to initialize it as a Git repository, and to create an `AGENTS.md` with the prompt log line, as you did in Step 1.
+2. Ask the agent to initialize it as a Git repository, and to create an `AGENTS.md` with the same two lines as in Step 1.
 3. Work out the spec with the agent before any code. You can name the technology yourself, or ask the agent to recommend one and explain the trade-offs. Ask whether a single file is realistic, because that shapes everything else:
 
     !!! prompt "Prompt"
         I want to rebuild the Alien Invasion game from Python Crash Course as a web app that runs in a browser. I want the whole game contained in a single .html file. Is that possible? If so, what would it take, and what are the trade-offs? Then help me write a spec.md for it, and don't write any game code yet.
 
-4. Once you have a spec you believe in, build it the same way you built the beam app: build it, try it, and have the agent fix what doesn't work. Commit as you go.
+4. Once you have a spec you believe in, build it the same way you built the beam app: build it, try it, and have the agent fix what doesn't work.
 
 When it runs, keep going if you want to. Add levels, a scoreboard, better graphics, or sound. Or throw it out and build a different game of your own from scratch. Everything you need is in the workflow you just practiced: write the spec, build in stages, and check the result.
 
