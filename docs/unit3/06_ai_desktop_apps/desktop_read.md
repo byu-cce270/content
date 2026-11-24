@@ -2,7 +2,7 @@
 
 ---
 
-In the last section, you had an agent build a web app. In this section, the agent builds a desktop app in Python, and you will use it to practice the part of agentic programming that matters most as projects get bigger: managing the development process. You will not need to learn a new library. The agent handles the details. You decide what gets built, in what order, and whether it is right.
+In the last section, you had an agent build a web app. In this section, the agent builds a desktop app in Python, using the same process. You will not need to learn a new library. The agent handles the details. You decide what gets built, in what order, and whether it is right.
 
 ## Desktop Apps
 
@@ -14,40 +14,19 @@ Tkinter windows look a little dated. For your final project, you may prefer **Cu
 
 ## Managing the Process
 
-You already know the basic workflow from the web app section: write a spec, have the agent review it, have it build, validate, commit, and add one feature at a time. This section adds three habits.
+Use the same process as the web app: write the spec, work through it with the agent, build in stages, validate, commit, and add one feature at a time. In the spec, add a **Platform** section saying the app is a Python desktop app built with Tkinter, and describe a desktop window instead of a web page in **Look and feel**.
 
-### Ask for a plan before any code
-
-For anything larger than a small change, ask the agent how it intends to do the work before it starts. In the Copilot chat panel, choose **Plan** from the picker:
-
-!!! prompt "Prompt"
-    Read spec.md. Before writing any code, describe your plan: which files you will create, what each one does, and how the calculations are organized.
-
-Read the plan the way you would read a proposal from a consultant. Does it match the spec? Is anything missing? Is it more complicated than it needs to be? Push back on anything you don't like, and when you are satisfied, switch to **Interactive** and tell it to build the plan.
-
-### Make the agent check its own work
-
-In the web app section, you validated by typing your test case into the app and comparing the result to your hand calculation. An agent can do that checking for you. Once your validation cases are in the spec, ask:
+Validation gets easier, because the agent can run the cases in Python instead of you typing them into the app:
 
 !!! prompt "Prompt"
     Run the validation cases in spec.md against the app's calculations and report a table of expected versus actual values.
 
-The agent will write whatever code it needs to run the cases, run it, and show you the results. Keep that check, and ask the agent to rerun it after every change:
+Ask it to rerun them after every change. A change that breaks a calculation that used to work is one of the most common problems in agent-built code, and this catches it right away.
+
+The agent is also good at finding cases worth testing, including edge cases and property checks you might not think of. Ask it for more:
 
 !!! prompt "Prompt"
-    Rerun the validation cases and confirm they still pass.
-
-A change that breaks a calculation that used to work is one of the most common problems in agent-built code, and this catches it right away.
-
-Two rules keep this honest. First, **the expected values must come from you**, worked by hand or taken from a textbook or a previous homework. If the agent computes the expected values from its own code, the check will pass even when the code is wrong. Second, if a check fails, ask the agent to fix the app, never to change the expected value. If you think your expected value is wrong, rework it by hand yourself.
-
-### Change existing code instead of starting over
-
-Most programming work is changing a program that already exists. In this section, you will have an agent turn your web app into a desktop app, then add features to it. When you ask for a change to existing code:
-
-- **Name the files that matter.** Tell the agent which files to read, such as your old `index.html` and `spec.md`, and which it may change.
-- **Update the spec first.** Change the spec, then ask the agent to make the app match it.
-- **Review the change.** Look at what the agent changed in the Source Control panel before you test and commit. If a small request changed a lot of code, ask why.
+    Suggest validation cases that test every calculation in spec.md, including edge cases and property checks such as symmetry. Work out the expected values from the equations in the spec, show your work, and add the cases to the Validation section. Don't change the app.
 
 ## Sharing a Desktop App
 

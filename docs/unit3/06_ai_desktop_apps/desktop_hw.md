@@ -27,9 +27,9 @@ Whichever option you choose, your app must:
 2. **Have a spec** (`spec.md`) with all seven sections from the [web apps reading](../05_ai_web_apps/web_read.md#1-write-a-spec), plus a **Platform** section. For Option A, also list the features you added.
 3. **Pass at least three validation cases** listed in the spec: at least two with expected values you worked by hand or took from a reference (say which), and one property check, such as a symmetry or a proportionality. Add a **Validation results** section to the spec with the table of expected versus actual values from the agent's check, and confirm at least one case yourself in the app.
 4. **Have a prompt log** (`prompts.md`): a record of each request you gave the agent, what it changed, and whether it worked, kept by the agent using the `AGENTS.md` line described in the [web apps reading](../05_ai_web_apps/web_read.md#standing-instructions-and-the-prompt-log). Read and correct it before you submit. Also have a `README.md` that says how to install and run the app.
-5. **Be in a GitHub repository** with at least 5 commits that follow the workflow steps: the spec, the plan, the first working version, the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
+5. **Be in a GitHub repository** with at least 5 commits that follow the workflow steps: the spec, the first working version, the validated version, and each feature. Graders will look at the commit history to see that you worked in steps, so committing everything at the end will lose points.
 
-Follow the workflow from class: get a plan before the agent writes code, have the agent rerun your validation cases after every change, and add one feature at a time.
+Follow the workflow from class: build from the spec, have the agent rerun your validation cases after every change, and add one feature at a time.
 
 !!! note "Check your prompt log early"
     After your first prompt or two, once `AGENTS.md` is in place, open `prompts.md` and read it. There should be an entry for each request you made. If the file is missing, empty, or recording the wrong things, tell the agent and work with it to fix the instruction in `AGENTS.md` before you go any further. It is much easier to fix this on day one than to reconstruct a log at the end.

@@ -21,14 +21,14 @@ Each app was built by an agent from the polished spec on this page, with no othe
 4. Save `AGENTS.md` (**Ctrl+S** or **Cmd+S**). Then make the numbered folders described in the [reading](web_read.md#0-set-up-the-project-folder). You might not need all of them. None of the apps on this page uses a data file, for example, so you can leave out `01_data`. Make the folders either way:
 
     - **Yourself:** hover over the project folder's name in the Explorer panel, click the **New Folder** icon, type the name, and press Enter. Click an empty spot in the Explorer panel before you make the next one, or VS Code puts it inside the folder you just made. Then add a line for each folder to `AGENTS.md` saying what belongs in it, and save the file.
-    - **With the agent:** in the Copilot chat panel, switch to **Interactive** mode. Edit the folder list in this prompt to match the folders you want, then enter it:
+    - **With the agent:** in the Copilot chat panel, edit the folder list in this prompt to match the folders you want, then enter it:
 
         !!! prompt "Prompt"
             Set up the folders for this project, a single-file web app. AGENTS.md, spec.md, prompts.md, and index.html go at the top level, because GitHub Pages needs index.html there. Create numbered folders for everything else: 00_planning for notes and sketches, 01_data for data files, 02_validation for hand calculations and test cases, and 03_output for screenshots and exported results. Put a short README.md in each folder that says what belongs there. Then describe this layout in AGENTS.md, with a rule to save new files in the right folder. Don't build anything else.
 
 5. Check the Explorer panel. You should see your numbered folders, and `AGENTS.md` should list them below your prompt log line. If the agent made the folders, each one has a `README.md`.
 
-In Using Python Locally you made commits yourself. From here on, the agent makes them. Whenever this page says to ask the agent to commit, enter "Commit these changes" in **Interactive** mode, allow the `git` command it asks to run, and read the commit message it writes.
+In Using Python Locally you made commits yourself. From here on, the agent makes them. Whenever this page says to ask the agent to commit, enter "Commit these changes", allow the `git` command it asks to run, and read the commit message it writes.
 
 Ask the agent to commit.
 
@@ -45,9 +45,9 @@ Ask the agent to commit.
 
 ## Step 3 - Work Through the Spec with the Agent
 
-On your own projects, this is the step where a starting spec grows into a polished one. The spec you pasted in is already polished, so the agent will have less to add, but go through the same steps so you learn them, and change anything you want the app to do differently. Work through it the way the [reading](web_read.md#2-write-and-review-the-spec-with-the-agent) describes. Stay in **Plan** mode for all of this, and tell the agent not to build anything.
+On your own projects, this is the step where a starting spec grows into a polished one. The spec you pasted in is already polished, so the agent will have less to add, but go through the same steps so you learn them, and change anything you want the app to do differently. Work through it the way the [reading](web_read.md#2-write-and-review-the-spec-with-the-agent) describes. Tell the agent not to build anything while you work on the spec.
 
-1. **Make sure the spec has everything.** Before working on any details, check that the spec covers everything the app needs. In the Copilot chat panel, switch to **Plan** mode and enter:
+1. **Make sure the spec has everything.** Before working on any details, check that the spec covers everything the app needs. In the Copilot chat panel, enter:
 
     !!! prompt "Prompt"
         Read spec.md. Don't write any code or build anything. We are only working on the spec. First, tell me in a few sentences what you think the app will do. Then look at the spec as a whole: is anything the app needs missing, and are the sections in a sensible order? Don't go into the details of each section yet.
@@ -64,7 +64,7 @@ On your own projects, this is the step where a starting spec grows into a polish
 
     The answers are your decisions, not the agent's. Discuss them with the people around you. If you'd rather have a slider than a number box, or want a result shown in a table instead of a sentence, change it. Skip suggestions that add features you don't need yet.
 
-3. **Update the spec after each section** before moving on to the next. You can edit `spec.md` yourself, but you don't have to write the new details: in **Interactive** mode, ask the agent to add what you agreed on and to "only edit spec.md." On a long spec, it's often easier to respond in the file itself. Add your comments, questions, and suggestions as `[NOTE` lines next to the text they're about, save the file, and ask the agent to work through them. Once a note has been addressed, it doesn't belong in the body of the spec anymore. Have the agent move it to a `## Resolved notes` section at the bottom of `spec.md`, or to a notes file in `00_planning`. When every section is done, have the agent read the whole spec once more and list anything that is still missing or inconsistent between sections. Then ask the agent to commit.
+3. **Update the spec after each section** before moving on to the next. You can edit `spec.md` yourself, but you don't have to write the new details: ask the agent to add what you agreed on and to "only edit spec.md." On a long spec, it's often easier to respond in the file itself. Add your comments, questions, and suggestions as `[NOTE` lines next to the text they're about, save the file, and ask the agent to work through them. Once a note has been addressed, it doesn't belong in the body of the spec anymore. Have the agent move it to a `## Resolved notes` section at the bottom of `spec.md`, or to a notes file in `00_planning`. When every section is done, have the agent read the whole spec once more and list anything that is still missing or inconsistent between sections. Then ask the agent to commit.
 
 The spec isn't frozen after this step. As you build the app stage by stage in Step 4, you will find things you missed and change your mind about others. When that happens, update the spec first, then have the agent build from it, so the spec always describes the app.
 
@@ -74,14 +74,14 @@ Don't ask for the whole app at once. Build it in stages, and look at what the ag
 
 Some parts of an app, such as the layout, a diagram, or how a plot looks, are hard to get right on paper. For those, go back and forth between the spec and a prototype: build a rough version, look at it, update the spec, and rebuild until it looks the way you want. Only then move on to the next stage. You still need an overview spec of the whole app before you start, though. The agent can only plan sensible stages if it knows what the finished app is supposed to do.
 
-1. **Plan the stages.** In **Plan** mode, enter:
+1. **Plan the stages.** Enter:
 
     !!! prompt "Prompt"
         Read spec.md. Don't write any code. Suggest how to build this app in 4 to 6 stages, starting with a mockup of the page layout with no real calculations. Each stage should be small enough that I can test it before moving on. For each stage, tell me what I should check when it's done.
 
-    Adjust the stages until they make sense to you. Then switch to **Interactive** mode and ask the agent to add them to the end of `spec.md` under `## Build stages`.
+    Adjust the stages until they make sense to you. Then ask the agent to add them to the end of `spec.md` under `## Build stages`.
 
-2. **Build the mockup.** In **Interactive** mode, enter:
+2. **Build the mockup.** Enter:
 
     !!! prompt "Prompt"
         Build stage 1 from the Build stages section of spec.md: a mockup of the app as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Show every input, output, and plot from the spec, filled with realistic placeholder values. Don't write any calculations yet.
@@ -120,9 +120,9 @@ When every case matches, ask the agent to commit.
 
 Add **two features**, one at a time. Your app's section lists a few ideas, but your own ideas are better. For each feature:
 
-1. Plan it with the agent in **Plan** mode before anything is built. Ask it how the feature will look and work and what it will change, and don't build anything yet.
+1. Talk it through with the agent before anything is built. Ask it how the feature will look and work and what it will change, and tell it not to build anything yet.
 2. Add it to the spec (Inputs, Calculations, and Outputs, as needed), and add a validation case if it computes something new.
-3. In **Interactive** mode, ask the agent to build only this feature.
+3. Ask the agent to build only this feature.
 4. Look at the changes in the Source Control panel, try the feature, and rerun your validation cases to make sure nothing that used to work is broken.
 5. Ask the agent to commit.
 

@@ -166,7 +166,7 @@ Now open the **Source Control** panel. It lists `settings.py` as changed. Click 
 If your Copilot student license hasn't been approved yet, use the free plan for this exercise.
 
 1. In the Alien Invasion window from Exercise 3, open the Source Control panel and discard your changes to `settings.py` (right-click the file and choose **Discard Changes**) so the game is back to its original state.
-2. Open the Copilot chat panel (the chat icon at the top of VS Code) and make sure the mode is set to **Plan**.
+2. Open the Copilot chat panel (the chat icon at the top of VS Code) and make sure the mode is set to **Interactive** (**Agent** in some versions).
 
      ![The Copilot chat panel with the mode picker open](images/vscode_mode_picker.png){:width="500px"}
 
@@ -177,7 +177,7 @@ If your Copilot student license hasn't been approved yet, use the free plan for 
 
     Compare its answer to what you see in the files.
 
-3. Switch the mode to **Interactive** and ask:
+3. Now ask:
 
     !!! prompt "Prompt"
         Add a pause feature. Pressing P should pause the game and show the word "PAUSED" in the middle of the screen. Pressing P again should resume.

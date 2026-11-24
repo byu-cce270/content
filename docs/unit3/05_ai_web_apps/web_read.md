@@ -86,7 +86,7 @@ The numbers keep the folders in order, because VS Code sorts names alphabeticall
 **0c. Make the folders.** You can make them yourself or have the agent make them:
 
 - **Make them yourself.** In the Explorer panel, hover over the project folder's name, click the **New Folder** icon, type a name such as `00_planning`, and press Enter. Click an empty spot in the Explorer panel before you make the next one, or VS Code puts it inside the folder you just made. Then add a line for each folder to `AGENTS.md` (create it at the top level if you don't have one yet) saying what belongs in it, so the agent knows where to save files. Git doesn't save empty folders, so a folder won't show up in your commits until it has a file in it.
-- **Have the agent make them.** In the Copilot chat panel, switch to **Interactive** mode ([Step 2](#2-write-and-review-the-spec-with-the-agent) explains the modes). Edit the folder list in this prompt to match your project, then enter it:
+- **Have the agent make them.** In the Copilot chat panel, edit the folder list in this prompt to match your project, then enter it:
 
     !!! prompt "Prompt"
         Set up the folders for this project, a single-file web app. AGENTS.md, spec.md, prompts.md, and index.html go at the top level, because GitHub Pages needs index.html there. Create numbered folders for everything else: 00_planning for notes and sketches, 01_data for data files, 02_validation for hand calculations and test cases, and 03_output for screenshots and exported results. Put a short README.md in each folder that says what belongs there. Then describe this layout in AGENTS.md, with a rule to save new files in the right folder. Don't build anything else.
@@ -151,19 +151,9 @@ Your first draft doesn't have to be complete. Each section can start as a rough 
 
 Now you and the agent work through the spec together until it is complete and correct.
 
-The Copilot chat panel (the chat icon at the top of VS Code) has a mode picker that sets how much the agent is allowed to do:
+Start each spec request by telling the agent not to build anything. You are only working on the spec, and an agent that starts writing code too early will build something you haven't finished deciding on.
 
-![The Copilot chat panel with the mode picker open](../04_local_python/images/vscode_mode_picker.png){:width="400px"}
-
-- **Plan** reads your files, answers questions, and writes a plan. It doesn't change your files.
-- **Interactive** edits files and runs commands, asking your permission as it goes.
-- **Autopilot** works through a whole task without stopping to ask. You won't use it in this section.
-
-If your picker shows **Ask** and **Agent** instead, use **Ask** wherever these pages say **Plan**, and **Agent** wherever they say **Interactive**.
-
-Do all of the spec work in **Plan** mode, and start each request by telling the agent not to build anything. You are only working on the spec, and an agent that starts writing code too early will build something you haven't finished deciding on.
-
-**2a. Review the whole spec.** Open the Copilot chat panel, switch to **Plan** mode, and have the agent read your draft. Some questions can only be answered by looking at the whole spec at once: Is anything missing? Are these the right sections? Are they in a sensible order?
+**2a. Review the whole spec.** Open the Copilot chat panel and have the agent read your draft. Some questions can only be answered by looking at the whole spec at once: Is anything missing? Are these the right sections? Are they in a sensible order?
 
 !!! prompt "Prompt"
     Read spec.md. Don't write any code or build anything. We are only working on the spec. First, tell me in a few sentences what you think the app will do. Then look at the spec as a whole: is anything missing, are these the right sections, and are they in a sensible order? Don't go into the details of each section yet.
@@ -188,7 +178,7 @@ Answer its questions and decide which suggestions to take. The agent is good at 
 **Making the changes.** Because `spec.md` is a plain text file, you can change it in any of these ways, and you can mix them:
 
 - **Edit the file yourself.** Open `spec.md`, type your changes directly, and save the file (**Ctrl+S** on Windows, **Cmd+S** on Mac).
-- **Ask the agent to change it.** For example, "Update spec.md with the input ranges we agreed on. Only edit spec.md. Don't build anything." Switch to **Interactive** mode first, because Plan mode can't edit files, then switch back to **Plan** mode for the next section.
+- **Ask the agent to change it.** For example, "Update spec.md with the input ranges we agreed on. Only edit spec.md. Don't build anything."
 - **Leave notes and questions in the file.** This is often the easiest. Add lines anywhere in the spec, then save the file (**Ctrl+S** or **Cmd+S**) so the agent reads your latest version. For example:
 
     ```
@@ -196,7 +186,7 @@ Answer its questions and decide which suggestions to take. The agent is good at 
     [NOTE: Show the volume in cubic feet as well as cubic yards.]
     ```
 
-    The format doesn't matter, as long as you tell the agent what you did. In **Interactive** mode, enter:
+    The format doesn't matter, as long as you tell the agent what you did. Enter:
 
     !!! prompt "Prompt"
         I added notes to spec.md in lines that start with [NOTE. Answer each question and make the changes they ask for in spec.md. Then move each note you've addressed, with a one-line summary of what you changed, to a Resolved notes section at the bottom of spec.md. Don't build anything.
@@ -222,14 +212,14 @@ Don't ask the agent to build the whole app in one step. If it builds everything 
 
 Some parts of an app, such as the layout, a diagram, or how a plot looks, are hard to get right on paper. For those, go back and forth between the spec and the app: build a rough version, look at it, update the spec, and rebuild until it looks the way you want. Only then move on to the next stage. You still need a spec of the whole app before you start, though. The agent can only plan sensible stages if it knows what the finished app is supposed to do.
 
-**3a. Plan the stages.** In **Plan** mode, ask the agent to help you break the work into stages:
+**3a. Plan the stages.** Ask the agent to help you break the work into stages:
 
 !!! prompt "Prompt"
     Read spec.md. Don't write any code. Suggest how to build this app in 4 to 6 stages, starting with a mockup of the page layout with no real calculations. Each stage should be small enough that I can test it before moving on. For each stage, tell me what I should check when it's done.
 
-Adjust the stages until they make sense to you. Then switch to **Interactive** mode and ask the agent to add them to the end of `spec.md` under a heading such as `## Build stages`, so you and the agent can refer to them later.
+Adjust the stages until they make sense to you. Then ask the agent to add them to the end of `spec.md` under a heading such as `## Build stages`, so you and the agent can refer to them later.
 
-**3b. Build a mockup.** The first stage is a mockup: a page that shows what the finished app will look like, with the inputs, the output numbers, and the plots in place, but with made-up values instead of real calculations. In **Interactive** mode, enter:
+**3b. Build a mockup.** The first stage is a mockup: a page that shows what the finished app will look like, with the inputs, the output numbers, and the plots in place, but with made-up values instead of real calculations. Enter:
 
 !!! prompt "Prompt"
     Build stage 1 from the Build stages section of spec.md: a mockup of the app as a single file named index.html. Use plain HTML, CSS, and JavaScript with no build tools. You may load libraries from a CDN. Show every input, output, and plot from the spec, filled with realistic placeholder values. Don't write any calculations yet.
@@ -289,7 +279,7 @@ Now you have a basic working app that gives correct answers. This is where you m
 - A cost breakdown table for the concrete, delivery, and pump truck
 - A warning, shown in red, when the slab is thinner than 4 in
 
-Come up with your own ideas, or work with the agent to decide what to add. In **Plan** mode, enter:
+Come up with your own ideas, or work with the agent to decide what to add. Enter:
 
 !!! prompt "Prompt"
     Read spec.md and index.html. Don't write any code. I want to make this app more useful to a practicing engineer and more polished to look at. Suggest 5 to 8 features I could add, such as new inputs, better plots, or drawings. For each one, explain what it adds, how hard it will be to build, and whether it would change any of the calculations.
@@ -299,7 +289,7 @@ Iterate on the plan before anything is built. Ask follow-up questions, drop idea
 !!! prompt "Prompt"
     For the truck icons, describe what they will look like. Where will they go on the page, how will a partly full last truck be shown, and what happens when I move the thickness slider?
 
-When you've settled on the features, add them to `spec.md` so the spec still describes the whole app. Then switch to **Interactive** mode and build them **one at a time**:
+When you've settled on the features, add them to `spec.md` so the spec still describes the whole app. Then build them **one at a time**:
 
 !!! prompt "Prompt"
     Add the slab shape selector described in spec.md. Only add this one feature.

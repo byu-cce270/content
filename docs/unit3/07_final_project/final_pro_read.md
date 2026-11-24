@@ -36,11 +36,11 @@ Decide how you will prove the app's answers are right before you build it, so th
 - **Edge cases:** Inputs at the limits, such as zero, very large values, or missing data. Decide what the app should do with each.
 - **How you will check them:** Plan to have the agent run every case and report a table of expected versus actual values, and to rerun that check after every change. Also plan to confirm some cases yourself in the app.
 
-You can ask the agent to suggest additional test cases, but the expected values must come from your team.
+Ask the agent to suggest more cases. It is good at finding property checks and edge cases you might not think of, and inputs that exercise every part of the calculation.
 
 ### Step 4: Build, review, and test
 
-Now have the agent build the app, the way you did in the homework. Get a plan from the agent first, build one feature at a time, run your validation cases after every change, and commit after each working step. Read the code the agent writes for your calculations. You are responsible for every line of it, and in your presentation you may be asked to explain any part of it.
+Now have the agent build the app, the way you did in the homework. Build one feature at a time, run your validation cases after every change, and commit after each working step. Read the code the agent writes for your calculations. You are responsible for every line of it, and in your presentation you may be asked to explain any part of it.
 
 ## Working as a Team
 
@@ -99,5 +99,5 @@ You have used `AGENTS.md` since the web apps section to have the agent keep your
 - After each request, add an entry to prompts.md: who asked, what they asked, what you changed, and whether it worked.
 - Pull before starting work, and push after every change that passes validation.
 - Units are US customary; label every number shown to the user.
-- Rerun the validation cases in spec.md after every change. Never change an expected value.
+- Rerun the validation cases in spec.md after every change.
 ```
