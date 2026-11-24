@@ -123,6 +123,7 @@ For each feature:
         Write a short README.md that says what this app does, which packages to install, and the command that starts it.
 
 2. Click **Publish Branch** in the Source Control panel and publish a public repository.
+3. Open the new repository on GitHub. VS Code shows an **Open on GitHub** button when it finishes publishing. Check that all of your files are there and that the README appears below the file list. Then click the commit count above the file list to see the commits the agent made along the way.
 
 ## Optional Step - Just for Fun
 
