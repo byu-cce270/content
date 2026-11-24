@@ -26,7 +26,7 @@ Ask it to rerun them after every change. A change that breaks a calculation that
 The agent is also good at finding cases worth testing, including edge cases and property checks you might not think of. Ask it for more:
 
 !!! prompt "Prompt"
-    Suggest validation cases that test every calculation in spec.md, including edge cases and property checks such as symmetry. Work out the expected values from the equations in the spec, show your work, and add the cases to the Validation section. Don't change the app.
+    Suggest more validation cases for spec.md. Work out the expected values from the spec's equations, show your work, and add them to the Validation section.
 
 ## Sharing a Desktop App
 
