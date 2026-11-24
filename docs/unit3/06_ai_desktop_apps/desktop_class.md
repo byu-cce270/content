@@ -63,7 +63,7 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 Ask the agent to change the spec for a desktop app:
 
 !!! prompt "Prompt"
-    Update spec.md so it describes a Python desktop app instead of a web app: a Tkinter app started with `python app.py`, with numpy for the calculations and matplotlib for the diagrams, and the calculations kept separate from the window code. Add a Platform section that says this, and change anything else in the spec that only applies to a web page. Only edit spec.md. Don't build anything.
+    Update spec.md to describe a desktop app built with Tkinter, numpy, and matplotlib, started with `python app.py`. Don't build anything.
 
 Read the updated spec all the way through before you build.
 
