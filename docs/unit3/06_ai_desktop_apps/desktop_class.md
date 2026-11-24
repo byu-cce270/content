@@ -60,29 +60,12 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 
 ## Step 2 - Update the Spec
 
-Edit `spec.md` to describe the desktop version.
+Ask the agent to change the spec for a desktop app:
 
-1. Add this section near the top:
+!!! prompt "Prompt"
+    Update spec.md so it describes a Python desktop app instead of a web app: a Tkinter app started with `python app.py`, with numpy for the calculations and matplotlib for the diagrams, and the calculations kept separate from the window code. Add a Platform section that says this, and change anything else in the spec that only applies to a web page. Only edit spec.md. Don't build anything.
 
-    ```markdown
-    ## Platform
-    - Python desktop app using Tkinter, started with `python app.py`
-    - Calculations with numpy, kept in their own module, separate from
-      the window code
-    - Diagrams drawn with matplotlib, embedded in the window
-    ```
-
-2. Change the **Look and feel** section for a desktop window: inputs in a panel on the left, the beam and diagrams on the right, and a window that can be resized. Remove the lines about phones.
-
-3. Add this case to the **Validation** section:
-
-    ```markdown
-    5. Simply supported, 30 ft, W18x35, uniform 2 kips/ft from 0 to 15 ft
-       only: reactions 22.5 k (left) and 7.5 k (right); max moment
-       126.6 kip-ft at 11.25 ft.
-    ```
-
-    Read the spec all the way through before you build.
+Read the updated spec all the way through before you build.
 
 ## Step 3 - Build It
 
