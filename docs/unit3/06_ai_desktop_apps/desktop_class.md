@@ -1,6 +1,6 @@
 # In-Class Exercise: Beam Designer on the Desktop
 
-In this exercise, you will have the agent build the [Beam Designer](../05_ai_web_apps/web_class.md#beam-designer) as a Python desktop app, with numpy for the calculations and matplotlib for the diagrams, then add features that a desktop app does well, such as saving designs as files. The process is the same as for the web app. You change the spec to describe a desktop app, and the agent runs the validation cases for you.
+In this exercise, you will have the agent build the [Beam Designer](../05_ai_web_apps/web_class.md#beam-designer) as a Python desktop app, then add features that a desktop app does well, such as saving designs as files. The process is the same as for the web app. You change the spec to describe a desktop app, and the agent runs the validation cases for you.
 
 <!-- TEMPORARY: added mid-semester because BYU's ChatGPT Edu access was new.
      Remove next semester and fold it into the Using Python Locally reading. -->
@@ -63,7 +63,7 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 Ask the agent to change the spec for a desktop app:
 
 !!! prompt "Prompt"
-    Update spec.md to describe a desktop app built with Tkinter, numpy, and matplotlib, started with `python app.py`. Don't build anything.
+    Update spec.md to describe a Python desktop app using Tkinter. Don't build anything.
 
 Read the updated spec all the way through before you build.
 
@@ -74,7 +74,7 @@ Ask the agent to build the app:
 !!! prompt "Prompt"
     Read spec.md and build the desktop app it describes. Use index.html as a reference for how the app should behave.
 
-When the agent finishes, run the app:
+When the agent finishes, run the app with the command it gives you, such as:
 
 ```
 python app.py
