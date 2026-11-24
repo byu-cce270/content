@@ -25,24 +25,11 @@ In this exercise, you will have the agent build the [Beam Designer](../05_ai_web
 
 1. Make a folder named `beam_desktop` in your class folder.
 2. Open `beam_desktop` in VS Code, then click **Initialize Repository** in the **Source Control** panel.
-3. Copy the polished Beam Designer spec from the [web apps in-class exercise](../05_ai_web_apps/web_class.md#beam-designer) into a file named `spec.md` in `beam_desktop`. If your class built Beam Designer as its web app, copy your own `spec.md` and `index.html` from your `first_app` folder instead. The agent will use `index.html` as a reference for how the app should behave.
+3. Copy `spec.md` and `index.html` from your `first_app` folder into `beam_desktop`. The agent will use `index.html` as a reference for how the app should behave.
 4. Make an `AGENTS.md` so the agent keeps a prompt log for this project too. In the Copilot chat panel, enter:
 
     !!! prompt "Prompt"
         Create an AGENTS.md at the top level of this project containing this line: "After each request, add an entry to prompts.md: what I asked, what you changed, and whether it worked." Don't build anything else.
-
-    !!! note "If you copy AGENTS.md from first_app instead"
-        You can reuse the file from your web app if you added your own rules to it and want them back. Be careful, though: that file describes a web app. It may name folders that don't exist here, or tell the agent that `index.html` goes at the top level, and the agent follows those rules in every conversation. Ask the agent what is in it:
-
-        !!! prompt "Prompt"
-            Read AGENTS.md and list the rules it contains. Tell me which ones apply to a Python desktop app and which ones only make sense for a web app.
-
-        Then have it update the file for this project:
-
-        !!! prompt "Prompt"
-            Update AGENTS.md for this project, a Python desktop app built with Tkinter, numpy, and matplotlib, started with `python app.py`. Remove the rules that only apply to a web app. Keep the prompt log rule. Don't build anything else.
-
-        Read the result yourself before you move on. You are responsible for what the agent is told to do.
 
 5. Ask the agent to commit.
 6. In the terminal, install the packages you'll need:
@@ -105,7 +92,7 @@ Ask the agent to commit.
 Ask the agent to build the app:
 
 !!! prompt "Prompt"
-    Read spec.md and build the desktop app it describes. If index.html is in this folder, use it as a reference for how the app should behave.
+    Read spec.md and build the desktop app it describes. Use index.html as a reference for how the app should behave.
 
 When the agent finishes, run the app:
 
