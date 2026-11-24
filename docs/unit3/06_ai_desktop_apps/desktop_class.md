@@ -123,7 +123,6 @@ For each feature:
         Write a short README.md that says what this app does, which packages to install, and the command that starts it.
 
 2. Click **Publish Branch** in the Source Control panel and publish a public repository.
-3. Trade repository addresses with a neighbor. Clone their repository (**File → New Window**, then **Clone Git Repository**), follow their README, and run their app. If the README left anything out, tell them.
 
 ## Optional Step - Just for Fun
 
