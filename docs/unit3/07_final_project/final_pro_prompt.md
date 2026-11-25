@@ -1,50 +1,51 @@
 #  Final Project
 
-**Purpose:** As a team, design, build, validate, and present an app that solves a real problem in civil engineering or construction, using an AI coding agent.
+**Purpose:** As a team, design, build, validate, and present an app that solves a real problem, using an AI coding agent.
 
-If you haven't done the proposal yet, you can find the instructions here: [Final Project Proposal](final_pro_proposal.md). The [final project reading](final_pro_read.md) describes the design process and how to work as a team.
+Do [Part 1: Design](final_pro_proposal.md) first. This page picks up where it leaves off: building the app from your spec as a team, presenting it, and turning it in. You will work with your [team](final_pro_class.md#your-team) in the repository you set up in Part 1.
 
-## Instructions
+## What Your Project Must Include
 
-1. You will work with the team you formed earlier. You can find your team here:
-</br>(If you need to change teams for any reason, please contact the head TA or the professor)
+- **A working app,** built as the web app or desktop app your spec describes.
+- **Substance:** The app must do real work for its users, such as calculating, simulating, mapping, scheduling, tracking, or managing something. A page that only shows fixed information is not enough.
+- **A final spec** (`spec.md`) updated to match what you actually built, including the Design review and Validation plan sections from Part 1.
+- **Validation results:** A **Validation results** section in the spec showing each hand-worked case, the app's output, and whether they match, plus your property checks and edge cases.
+- **Documentation:** A `README.md` at the top of the repository with:
+    - What the app does and who it is for
+    - How to use it, with at least two screenshots
+    - How to run it: the GitHub Pages address, or the packages to install and the command to start it
+    - A report of how each team member contributed
+    - Links to any outside resources and data sources you used
+- **A prompt log** (`prompts.md`) kept by the agent throughout the project, and read and corrected by the team
+- **Each team member's agent chats:** a `chats/` folder with every team member's exported conversations with the AI agent, in a file or subfolder named for that person (for example, `chats/jane-smith.md`). In VS Code, you can save a Copilot chat by opening the Command Palette and running **Chat: Export Chat...**.
+- **A GitHub repository** containing all of the above, with every team member added as a collaborator
 
-    - [Section 1 (Tue/Thur) F26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1wuC_wtIl35VIJQPS_9wqFshkSZB9AH3bdgrOphxBbao/edit?gid=2018473579#gid=2018473579){:target="_blank"}
-    - [Section 2 (Mon/Wed) F26 Team Sign up Sheet](https://docs.google.com/spreadsheets/d/1BbOlW3br0eThzIEGwqug39G6jgy3ZJRTF82djzRp0IA/edit?gid=2018473579#gid=2018473579){:target="_blank"}
+## Building the App
 
-2. Sign up for a time to present your project to the class:
+Have the agent build the app from your spec, the way you did in the homework. Build one feature at a time, run your validation cases after every change, and commit after each working step. Read the code the agent writes for the app's core logic, such as its calculations, cost totals, or scheduling rules. You are responsible for every line of it, and in your presentation you may be asked to explain any part of it.
 
-    - [Section 1 (Tue/Thur) W26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1nDVYvtjEuYaGbyBVqcca9jvJ2Bi295bQr9OErrtKDKI/edit?gid=161779235#gid=161779235){:target="_blank"}
-    - [Section 2 (Mon/Wed) W26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1VF3Kz6_FpXtXYWbdA36d2gVFDtvJPrkBni9LlTZ56Tg/edit?gid=1979404871#gid=1979404871){:target="_blank"}
+Keep working in the team repository the way you did in Part 1: pull at the start of [every work session](final_pro_proposal.md#every-work-session), push after every change that passes validation, and have the agent resolve any merge conflicts with your approval.
 
-3. Build the app described in your spec, following Step 4 of the design process in the reading. You may build either:
-    - **A web app:** a single `index.html` file, published on GitHub Pages, or
-    - **A desktop app:** a Python app with a graphical interface (Tkinter, CustomTkinter, or PySide6), started with `python app.py`
+## How Teamwork Is Graded
 
-4. Your project must include:
-    - **Engineering substance:** The app must perform real calculations, analysis, or modeling from civil engineering or construction. An app that only displays or organizes information is not enough.
-    - **A final spec** (`spec.md`) updated to match what you actually built, including the Design review and Validation plan sections from your proposal.
-    - **Validation results:** A **Validation results** section in the spec showing each hand-worked case, the app's output, and whether they match, plus your property checks and edge cases.
-    - **Documentation:** A `README.md` at the top of the repository with:
-        - What the app does and who it is for
-        - How to use it, with at least two screenshots
-        - How to run it: the GitHub Pages address, or the packages to install and the command to start it
-        - A report of how each team member contributed
-        - Links to any outside resources and data sources you used
-    - **A prompt log** (`prompts.md`) kept by the agent throughout the project, and read and corrected by the team
-    - **Each team member's agent chats:** a `chats/` folder with every team member's exported conversations with the AI agent, in a file or subfolder named for that person (for example, `chats/jane-smith.md`). In VS Code, you can save a Copilot chat by opening the Command Palette and running **Chat: Export Chat...**.
-    - **A GitHub repository** containing all of the above, with every team member added as a collaborator
+This is a team project, and we grade it that way:
 
-5. Work as a team. This is a team project, and we grade it that way:
-    - **Every team member commits.** Graders will look at the commit history to see that each team member made their own commits throughout the project, from their own GitHub account. A repository where one person made all of the commits will lose points, even if the whole team met together.
-    - **Every team member turns in their chats.** The chats in `chats/` show how each person worked with the agent. A team member with no chats loses points for the team.
+- **Every team member commits and prompts.** Graders will look at the commit history and the prompt log to see that each team member made their own commits and entered their own prompts throughout the project, from their own computer and GitHub account. A repository where one person made all of the commits will lose points, even if the whole team met together.
+- **Every team member turns in their chats.** The chats in `chats/` show how each person worked with the agent. A team member with no chats loses points for the team.
 
-    !!! warning "Work with your group"
-        If you do not work with your group, **50% will be taken off your final project grade**. If you are having trouble working with a group member, tell your professor and the Head TA **as soon as possible**, not at the end of the project. We can help while there is still time to fix it.
+!!! warning "Work with your group"
+    If you do not work with your group, **50% will be taken off your final project grade**. If you are having trouble working with a group member, tell your professor and the Head TA **as soon as possible**, not at the end of the project. We can help while there is still time to fix it.
 
-6. Present your project to the class. Your presentation should include a live demonstration of the app and a walkthrough of how you validated it. Be prepared to explain how any part of your code works.
+## Presentation
 
-    Every team member must be present for the presentation. Being present is worth 5 points (5%) of the Presentation and demo score, and a team member who is not there loses those 5 points.
+Sign up for a time to present your project to the class:
+
+- [Section 1 (Tue/Thur) W26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1nDVYvtjEuYaGbyBVqcca9jvJ2Bi295bQr9OErrtKDKI/edit?gid=161779235#gid=161779235){:target="_blank"}
+- [Section 2 (Mon/Wed) W26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1VF3Kz6_FpXtXYWbdA36d2gVFDtvJPrkBni9LlTZ56Tg/edit?gid=1979404871#gid=1979404871){:target="_blank"}
+
+Your presentation should include a live demonstration of the app and a walkthrough of how you validated it. Be prepared to explain how any part of your code works.
+
+Every team member must be present for the presentation. Being present is worth 5 points (5%) of the Presentation and demo score, and a team member who is not there loses those 5 points.
 
 ---
 
@@ -69,13 +70,13 @@ To build the zip archive:
 |                                  Item                                   | Points Possible |
 |:-----------------------------------------------------------------------:|:---------------:|
 |        App works as described in the final spec, without bugs           |       16        |
-|               Engineering substance of the calculations                 |       10        |
+|            Substance: the real, useful work the app does                |       10        |
 |      Final spec, with design review and validation plan                 |       10        |
 |                       Validation results                                |       13        |
 |          README: description, usage, screenshots, how to run            |        6        |
 |                             Prompt log                                  |        5        |
 |                     **Teamwork:**                                       |                 |
-|   Commit history shows every team member committing throughout the project |    10        |
+|   Commit history and prompt log show every team member working throughout the project |    10        |
 |              Every team member's agent chats turned in                  |        5        |
 |           Report of each team member's contribution                     |        5        |
 |   Presentation and demo (5 of these points are for being present)      |       10        |
@@ -92,25 +93,3 @@ The following is not a part of the rubric, but specifies how you can lose points
 |                      File uploaded incorrectly                       |     10     |
 |                       No prompt log submitted                         |     50     |
 |     Not working with your group (taken off that team member's grade)  |     50     |
-
----
-
-## Choosing a Problem
-
-Your team chooses the problem. The best final projects solve a problem someone actually has, and the hardest part of the project is finding one. Spend real time on it before you commit.
-
-**Where to look:**
-
-- **Work you've done by hand.** Think about internships, summer jobs, and other classes. What did you calculate over and over, look up in tables, or track in a messy spreadsheet?
-- **People you know.** Ask a professor, a TA, an engineer or contractor you've worked for, or a classmate in another major what they wish they had a tool for.
-- **Your surroundings.** Campus, your apartment complex, a construction site you walk past, Utah's water, roads, snow, and earthquakes. What would be useful to measure, predict, or explain?
-- **Things you're curious about.** A good app can also make an engineering idea visible: how a structure carries load, how water moves through a basin, how a schedule slips.
-
-**What makes a problem a good one:**
-
-- **A real user.** You can name who would use the app and what decision it helps them make.
-- **Engineering substance.** The app calculates, analyzes, or simulates something from civil engineering or construction. Displaying or organizing information isn't enough.
-- **Checkable answers.** You can work at least three cases by hand or find them in a reference, so you can prove the app is right.
-- **The right size.** Your team can build a working first version in a week and spend the rest of the time improving and validating it. If you can't describe the first version in two sentences, narrow the problem.
-
-Before you write your proposal, describe your problem to a TA or the instructor in a few sentences and get their approval. They will help you scale it up or down.
