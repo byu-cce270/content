@@ -40,8 +40,8 @@ This is a team project, and we grade it that way:
 
 Sign up for a time to present your project to the class:
 
-- [Section 1 (Tue/Thur) W26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1nDVYvtjEuYaGbyBVqcca9jvJ2Bi295bQr9OErrtKDKI/edit?gid=161779235#gid=161779235){:target="_blank"}
-- [Section 2 (Mon/Wed) W26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1VF3Kz6_FpXtXYWbdA36d2gVFDtvJPrkBni9LlTZ56Tg/edit?gid=1979404871#gid=1979404871){:target="_blank"}
+- [Section 1 (Tue/Thur) F26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1wuC_wtIl35VIJQPS_9wqFshkSZB9AH3bdgrOphxBbao/edit?gid=1979404871#gid=1979404871){:target="_blank"}
+- [Section 2 (Mon/Wed) F26 Final Project Presentation Time](https://docs.google.com/spreadsheets/d/1BbOlW3br0eThzIEGwqug39G6jgy3ZJRTF82djzRp0IA/edit?gid=1979404871#gid=1979404871){:target="_blank"}
 
 Your presentation should include a live demonstration of the app and a walkthrough of how you validated it. Be prepared to explain how any part of your code works.
 
